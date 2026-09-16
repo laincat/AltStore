@@ -47,17 +47,28 @@ SideStore 的测试版**默认隐藏**，要三层都满足才会出现：
 
 ## 自动更新
 
-`.github/workflows/update-source.yml`，**每天北京时间 09:00**（UTC 01:00）跑一次，也可以手动触发（Actions → 更新 SideStore 源 → Run workflow）：
+`.github/workflows/update-source.yml` **每 15 分钟**检查一次上游（在每小时的 7、22、37、52 分跑，刻意错开整点）。上游一发新版，**最长 15 分钟**源文件就会跟上——不用等每天一次。也可以随时手动触发：Actions → 更新 SideStore 源 → Run workflow。
+
+每轮做的事：
 
 ```
-拉上游 Release（--refresh） → 重新生成 apps.json → verify_source.py 结构校验
+检查上游 Release（--refresh） → 重新生成 apps.json → verify_source.py 结构校验
   → 有变更才提交到本仓库 → 同步产物到 cnb.cool
 ```
 
+- 单次实测约 **12 秒**，公开仓库的 Actions 分钟数免费不限量，约 96 次/天
 - 只在检测到真实变更时才产生提交，没有新版本就不动
 - **校验不通过就不提交**：宁可这轮不动，也不把一个结构坏掉的源推上去（某个 app 的 `releases` 变成空数组时，SideStore 会整体解码失败、整个源都加载不了）
 - 某个仓库抓取失败时会**沿用上一次生成的数据**，不会把那个应用从源里抹掉
 - 同步到 cnb.cool 需要仓库里配好 `CNB_TOKEN` 与 `CNB_USER` 两个 Secrets；没配就自动跳过，只更新本仓库
+
+### 为什么是轮询，不是「上游发版就触发」
+
+想做到「上游一发版立刻同步」，需要在别的仓库发生 release 事件时触发本仓库的工作流。**GitHub 做不到这件事**：release 事件只在事件发生的那一个仓库里触发工作流，跨仓库收不到；官方给外部事件准备的机制是 `repository_dispatch`，但那需要上游主动往我们的 API 发请求——而给别人的仓库配 webhook，得先有那个仓库的管理权限。
+
+所以现实可行的就是短间隔轮询。按官方文档，定时任务最短只能 5 分钟一次，且负载高时会被延迟、甚至丢弃排队中的任务（整点前后最严重，所以这里错开了整点）。对轮询来说偶尔丢一轮无所谓，下一轮会补上。
+
+真想要「秒级」的话，工作流已经留了 `repository_dispatch` 入口（事件类型 `upstream-release`）：用 Cloudflare Workers 的 1 分钟定时之类去轮询上游 release，命中就打一次这个接口即可。
 
 > 为什么不用 cnb.cool 自带的定时构建：CNB 免费额度只有 160 核时/月，且构建前要预冻结 5 分钟（0.08 核时），额度见底时**所有构建**都会在 Prepare 阶段失败（2026-09 就被 `laincat/Rules` 一个仓库烧光了）。GitHub 公开仓库的 Actions 分钟数免费不限量，且 runner 原生直连 GitHub Release，不需要任何镜像代理。
 
