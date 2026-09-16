@@ -35,6 +35,24 @@
 #  公开仓库的 Actions 分钟数免费且不限量。
 #  15 分钟一轮 + 手动触发，对 GitHub 侧无任何成本。
 #
+#  ⚠️ 实测补充（2026-09-16）：cron 是 best-effort，而且「越密越丢」
+#  拿三个仍在活跃使用 cron 的公开仓库做的对照：
+#    · DIYgod/RSSHub         每天 1 次   → 连续 10 天 100%，迟到 +5~6 分
+#    · home-assistant/core   每小时      → 基本不漏，但迟到 +11~15 分
+#    · NixOS/nixpkgs         每 10 分钟  → 193 分钟里只跑了 10 次（应约 19 次），约 53%
+#  结论：**密 cron 不是「更快」，是「更多次抽奖」。** 丢槽不累积（下一槽会补上），
+#  所以轮询场景下反而该跑密一点 —— 前提是单次任务足够轻（本任务实测约 12 秒）。
+#
+#  ⚠️ 另一个坑：**新建的工作流，cron 要先「注册」**。GitHub 需要 15 分钟到
+#  1 小时以上才会认领一个新的 schedule；在第一次 schedule 运行真正发生之前，
+#  Actions 页面上只显示 "This workflow has a workflow_dispatch event trigger"，
+#  看起来就像 schedule 根本没被解析。所以刚上线时「一个定时都没跑」是正常的，
+#  别急着改配置。判断方法（**别盯 UI** —— Actions 页面正文是客户端渲染的，
+#  curl 到的 HTML 里没有那句话）：
+#    curl -s -H "Authorization: Bearer $TOKEN" \
+#      "https://api.github.com/repos/laincat/AltStore/actions/runs?event=schedule"
+#  返回 total_count = 0 就是还没被认领过。
+#
 #  ── 想做到「秒级」怎么办 ─────────────────────────────────────────────────
 #  见下面 repository_dispatch 那段的注释。
 # ==============================================================================
@@ -111,6 +129,17 @@ jobs:
           # 某个 app 的 releases 变成空数组时 SideStore 解码会整体抛错，
           # 一个坏条目能让整个源加载不了，而这种情况肉眼看不出来 —— 必须卡住。
           python tools/verify_source.py --min-apps 6
+
+      - name: 核对两个客户端的解析结果
+        run: |
+          set -e
+          # 同一份 apps.json，两边读的字段完全不同：
+          #   SideStore / AltStore → releaseChannels 里的轨道（beta 要用户手动开开关）
+          #   LiveContainer        → 只读扁平 versions，且只取 [0]，没有开关也没有版本选择器
+          # EhPanda 的测试版就是靠「扁平 versions[0]」送到 LiveContainer 的，
+          # 一旦哪天生成逻辑改动把它挪走了，这里要能看出来。
+          python tools/simulate_client.py --client sidestore
+          python tools/simulate_client.py --client livecontainer
 
       - name: 提交到本仓库
         id: commit
