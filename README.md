@@ -146,7 +146,12 @@ EhPanda   (app.ehpanda)
 
 ## 自动更新
 
-`.github/workflows/update-source.yml` **每 15 分钟**检查一次上游（在每小时的 7、22、37、52 分跑，刻意错开整点）。上游一发新版，**最长 15 分钟**源文件就会跟上——不用等每天一次。也可以随时手动触发：Actions → 更新 SideStore 源 → Run workflow。
+`.github/workflows/update-source.yml` **每 15 分钟**检查一次上游（在每小时的 7、22、37、52 分跑，刻意错开整点）。也可以随时手动触发：Actions → 更新 SideStore 源 → Run workflow。
+
+> ⚠️ GitHub 的定时任务是 **best-effort**，不是保证：实测会迟到几分钟，负载高时还会直接丢掉这一轮，而且**频率越高丢得越多**（对照实测：每天一次 100% 准点、每小时基本不漏、`NixOS/nixpkgs` 的 10 分钟粒度只跑到约一半）。
+> 丢一轮不影响结果——下一轮会补上，所以实际延迟通常 15~40 分钟，偶发更长。
+> 另：**新建的工作流，cron 要先被 GitHub「认领」，需要 15 分钟到 1 小时以上**，这期间一个定时都不会跑（配置是对的，别急着改）。
+> 真要「秒级」，工作流已经留了 `repository_dispatch` 入口（见下）。
 
 每轮做的事：
 
