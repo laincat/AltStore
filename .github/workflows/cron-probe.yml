@@ -1,0 +1,33 @@
+# ==============================================================================
+#  临时探针：诊断「schedule 一直不触发」（用完即删）
+#
+#  背景：update-source.yml 里的 cron 是 7,22,37,52 * * * *，上线后连续 6 个槽位
+#  一次都没跑，Actions 运行列表里 event=schedule 的数量始终是 0。
+#
+#  已知 GitHub 的两条事实：
+#    · 新建/改动过 schedule 的工作流，GitHub 需要一段时间才「认领」（文档说
+#      15 分钟起，社区实测最长可到数小时）
+#    · cron 是 best-effort，负载高会丢槽
+#
+#  这两种解释要靠实验区分。本探针故意用**另一条 cron 表达式**（*/5，整点对齐）
+#  和一个**独立文件**，所以：
+#    · 探针跑了、update-source 没跑 → 问题出在 update-source 那个文件或那条 cron
+#    · 两个都不跑                  → 问题在仓库/账号层面（就是还没被认领，只能等）
+# ==============================================================================
+
+name: cron-probe
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: 记录触发时间
+        run: |
+          echo "cron-probe 触发事件: $GITHUB_EVENT_NAME"
+          echo "触发时间(UTC): $(date -u '+%Y-%m-%dT%H:%M:%SZ')"
