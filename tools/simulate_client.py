@@ -111,6 +111,7 @@ def main():
     for app in src.get("apps", []):
         name = app.get("name")
         bid = app.get("bundleIdentifier")
+        has_channels = app.get("releaseChannels") is not None
         off, why_off = resolve_visible(app, beta_enabled=False, beta_track=args.track)
         on, why_on = resolve_visible(app, beta_enabled=True, beta_track=args.track)
 
@@ -125,8 +126,14 @@ def main():
         if extra:
             print("   ⚠️ 多出来的测试版 %s 只有开了开关才可见（%s）" % (extra, why_on))
             hidden_beta.append((name, extra))
+        elif not has_channels:
+            # 旧式源：没有 releaseChannels，客户端只读扁平 versions 数组，
+            # betaReleases 恒为 nil → 预发布混在 versions 里会**永远显示**。
+            print("   ✓ 两态一致，但原因是「没有 releaseChannels」：")
+            print("     客户端只读扁平 versions，betaReleases 恒为 nil，"
+                  "所以列在这里的预发布版本会**一直可见**，开关管不着。")
         else:
-            print("   ✓ 两种状态下一致")
+            print("   ✓ 两态一致（该应用没有可用的测试轨道）")
 
         # 顺带体检：唯一约束不能在源内被违反
         dup = {}
