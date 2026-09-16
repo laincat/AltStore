@@ -198,5 +198,13 @@
     "displayName": "EhPanda",
     "minOSVersion": "26.0",
     "size": 10143094
+  },
+  "https://github.com/open-ani/animeko/releases/download/v6.1.0-beta01/ani-6.1.0-beta01.ipa": {
+    "bundleIdentifier": "org.animeko.animeko",
+    "version": "6.1.0",
+    "buildVersion": "60107",
+    "displayName": "Animeko",
+    "minOSVersion": "14.0",
+    "size": 44434411
   }
 }

@@ -1,6 +1,6 @@
-# AltStore — SideStore / AltStore 源文件
+# Laincat 工具箱 — SideStore / AltStore 源文件
 
-自用的 SideStore 源：收录 6 个开源 iOS 应用（番剧 + 漫画），**自动跟随上游 GitHub Release 更新**。
+自用的 SideStore 源（源名称 **Laincat 工具箱**）：收录 6 个开源 iOS 应用（番剧 + 漫画），**自动跟随上游 GitHub Release 更新**。
 
 ## 在 SideStore 里添加
 
@@ -39,11 +39,57 @@ SideStore → Sources → 右上角 `+` → 粘贴上面的地址。
 
 ## 怎么看到 EhPanda 的测试版
 
-SideStore 的测试版**默认隐藏**，要三层都满足才会出现：
+SideStore 的测试版**默认隐藏**，这是客户端行为，不是源的问题。要让它出现需要三层都满足：
 
-1. 设置里启用 beta / test 更新
-2. 把测试轨道选为 `nightly`（源里用的就是这个轨道名）
-3. 测试版版本号 ≥ 稳定版版本号——SideStore 源码里写死的 `betaSemVer >= stableSemVer`，3.0.0 > 2.8.1 满足
+1. **设置 → Beta Testing（测试版）→ 打开 `Beta Updates` 开关** ← 只有这一层需要你动手
+2. 轨道选 `nightly`（**默认就是它**，不用改；下拉框只提供 `alpha` 和 `nightly`）
+3. 测试版版本号 ≥ 稳定版版本号——3.0.0 > 2.8.1 满足
+
+### 为什么是这个开关
+
+判定逻辑在 SideStore 源码 `AltStore/Core/Model/StoreApp.swift`：
+
+```swift
+private var betaReleases: [AppVersion]? {
+    if UserDefaults.standard.isBetaUpdatesEnabled,          // ← 默认 false，必须手动打开
+       let betaTrack = UserDefaults.standard.betaUdpatesTrack {   // ← 默认 "nightly"
+        ...
+        betaSemVer >= stableSemVer                          // ← 3.0.0 >= 2.8.1 ✓
+    }
+    return nil
+}
+// 展示的版本列表：betaReleases ?? stableTrack.releases
+```
+
+开关关闭时，客户端**只会读取 stable 轨道**，也就是只看到 2.8.1。
+
+### 本地就能验证，不用装到手机上
+
+```bash
+python tools/simulate_client.py
+```
+
+这个脚本把上面那段客户端门控逻辑照抄成 Python，把「开关 ON / OFF」两种状态下的可见结果都打印出来。当前输出：
+
+```
+EhPanda   (app.ehpanda)
+  开关 OFF → 看到 ['2.8.1']
+  开关 ON  → 看到 ['3.0.0']
+```
+
+### ⚠️ 为什么不用「拆成两个 app 条目」的做法
+
+有些源（例如 `maxchang3/ani-altstore-source`）把测试版拆成**独立的 app 条目**，效果是两条永远可见、不需要任何开关。这个做法**有代价**，本仓库不采用：
+
+| 约束 / 校验 | 出处 | 后果 |
+|---|---|---|
+| `StoreApp` 唯一约束 `(sourceIdentifier, bundleIdentifier)` | CoreData 模型 | 同一源内两个条目**不能共用 Bundle ID**，否则会被合并成一个 |
+| 所以拆出来的测试版条目**必须编造一个 Bundle ID** | 参考源里写的是 `org.animeko.animeko.beta` | 但 Animeko 测试包内的真实 ID 是 `org.animeko.animeko` |
+| `verifyApp` 校验源声明 ID **必须等于** IPA 内真实 ID | `AltStore/…/StoreApp.swift` | 安装时抛 `mismatchedBundleIdentifiers` |
+| 该步骤是**安装流水线第 2 步** | `OperationStepDefinition.install` | 即默认就在流程里 |
+| 校验开关 `isBundleIDVerificationEnabled` 默认 **true** | `UserDefaults+AltStore.swift` | 而且**设置界面里没有这个开关**（`DeveloperOptionsView` / `ExperimentalFeaturesView` 里都搜不到） |
+
+**结论**：拆条目的源「看得见、装不上」。本仓库的做法是保留正确的 `releaseChannels` 轨道机制——**看得见、也装得上**，代价只是多开一个开关。
 
 ## 自动更新
 
@@ -87,6 +133,7 @@ apps.json                                    # 源文件本体，SideStore 消�
 .github/workflows/update-source.yml          # 定时更新流水线
 tools/build_source.py                        # 生成脚本（抓 GitHub Release + 探测 IPA 元数据）
 tools/verify_source.py                       # 结构校验，提交前的守门人
+tools/simulate_client.py                     # 模拟客户端门控，回答「改完到底看不看得见」
 cache/releases.json                          # 各仓库的 Release 列表缓存
 cache/probes.json                            # IPA 元数据缓存（按 URL 永久复用，上游发新版才新增）
 cache/icons.json                             # 图标可达性缓存
@@ -117,7 +164,7 @@ python tools/build_source.py --versions 4    # 稳定版轨道保留最近 4 个
 | 仓库 | 情况 | 结论 |
 |---|---|---|
 | Kazumi | 最近 100+ 个发布里没有任何 beta/alpha/rc | 无测试版 |
-| Animeko | 有 `v6.1.0-beta01`，但更新日志与正式版 6.1.0 **逐字相同**，包内版本号也是 `6.1.0` | 同一版本的早期构建，收录会出现两个 6.1.0，不收 |
+| Animeko | 有 `v6.1.0-beta01`，但更新日志与正式版 6.1.0 **逐字相同**，且包内真实 Bundle ID 就是 `org.animeko.animeko`（**没有**独立的 beta ID，`org.animeko.animeko.beta` 是别的源编出来的） | 不收 |
 | EhPanda | `3.0.0`，比稳定版 2.8.1 新一个月（离线下载、文件夹分类等） | **收录** |
 | VeneraX | `v2.1.8-beta.1`，比稳定版 2.3.2 **落后 5 个小版本**；作者发布说明写着「内部测试版，仅用于开发验证，**请勿分发**」 | 不收（版本号更低，SideStore 也不会显示） |
 | Breeze | 最近 100 个发布里无 beta/alpha | 无测试版 |

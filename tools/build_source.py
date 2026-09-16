@@ -41,7 +41,9 @@ UA = {"User-Agent": "Mozilla/5.0"}
 MIRRORS = ["", "https://gh-proxy.com/", "https://ghfast.top/"]
 
 SOURCE = {
-    "name": "ACG 工具箱",
+    "name": "Laincat 工具箱",
+    # ⚠️ identifier 故意不改：SideStore 用 identifier 认源，改了会被当成一个「新源」，
+    #    设备上旧的源还在、要手动删，且所有源内应用的缓存数据会重建。
     "identifier": "com.acgtoolbox.source",
     "subtitle": "番剧 · 漫画 iOS 自签源",
     "description": (
