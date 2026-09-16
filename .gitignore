@@ -1,0 +1,10 @@
+# 生成脚本只用标准库，但本地跑过就会留下这些
+__pycache__/
+*.py[cod]
+
+# build_source.py 的原子写入临时文件
+*.tmp
+
+# 绝不入库的凭据文件（历史上踩过：git add -A 把 token 一起提交了）
+.cnbcred*
+*.credential

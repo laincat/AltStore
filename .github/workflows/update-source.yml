@@ -1,0 +1,152 @@
+# ==============================================================================
+#  SideStore 源文件 apps.json 的自动更新（GitHub Actions 版）
+#
+#  ── 为什么要有这一份 ──────────────────────────────────────────────────────
+#  原方案把自动更新放在 cnb.cool 的云原生构建里。问题是 CNB 免费额度只有
+#  160 核时/月，而且构建开始前要「预冻结」5 分钟（0.08 核时）——额度见底时
+#  所有构建直接失败。2026-09 就被 laincat/Rules 一个仓库把额度烧光了。
+#
+#  GitHub Actions 在公开仓库上**不计分钟数**，且原生直连 GitHub Release
+#  （不需要任何镜像代理），是目前最省心的执行端。
+#
+#  ── 两种用法，靠 secret 是否存在自动切换 ─────────────────────────────────
+#  1) 只更新本仓库（默认）——源地址用 GitHub 侧的直链
+#  2) 再同步回 cnb.cool（可选）——额外配 CNB_TOKEN / CNB_USER 两个 secrets，
+#     cnb.cool 那份就变成纯托管镜像，国内访问更快
+#
+#  ── 配额/成本 ────────────────────────────────────────────────────────────
+#  公开仓库的 Actions 分钟数免费且不限量；本任务单次约 1 分钟。
+#  每天 1 次 + 手动触发，对 GitHub 侧无任何成本。
+# ==============================================================================
+
+name: 更新 SideStore 源
+
+on:
+  # 定时：UTC 01:00 = 北京 09:00。Actions 的 cron 只认 UTC。
+  schedule:
+    - cron: "0 1 * * *"
+
+  # 手动触发（改了脚本或想立刻刷新时用）
+  workflow_dispatch:
+
+  # 只有"会改变生成结果"的改动才触发，避免改 README 也跑一轮
+  push:
+    branches: [main]
+    paths:
+      - "tools/**"
+      - ".github/workflows/update-source.yml"
+
+# 要把生成结果提交回本仓库，必须有写权限
+permissions:
+  contents: write
+
+# 定时与手动触发可能撞车，串行化；不取消进行中的，避免推到一半被中断
+concurrency:
+  group: update-source
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    env:
+      # 未配置时为：空字符串 → 下面的同步步骤会自动跳过
+      CNB_TOKEN: ${{ secrets.CNB_TOKEN }}
+      CNB_USER: ${{ secrets.CNB_USER }}
+      CNB_REPO: laincat/AltStore
+
+    steps:
+      - name: 取出仓库
+        uses: actions/checkout@v7
+        with:
+          # 需要能 push 回去
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: 准备 Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+
+      - name: 重新生成源文件
+        run: |
+          set -e
+          # --refresh：重新问 GitHub 要最新 Release 列表；
+          #           IPA 元数据仍走 cache/probes.json（已探过的版本不重复下载）
+          python tools/build_source.py --refresh
+
+      - name: 校验（不通过就整轮中止）
+        run: |
+          set -e
+          # 某个 app 的 releases 变成空数组时 SideStore 解码会整体抛错，
+          # 一个坏条目能让整个源加载不了，而这种情况肉眼看不出来 —— 必须卡住。
+          python tools/verify_source.py --min-apps 6
+
+      - name: 提交到本仓库
+        id: commit
+        run: |
+          set -e
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+          if git diff --cached --quiet; then
+            echo "上游无新版本，无变更"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          git commit -m "chore(source): 自动更新 $(date -u '+%Y-%m-%d')"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: 同步到 cnb.cool（没配 secret 就跳过）
+        if: ${{ env.CNB_TOKEN != '' }}
+        run: |
+          set -e
+
+          # 凭据只在这条命令里临时注入：不写进 .git/config，不落盘。
+          # 前面那个空的 -c credential.helper= 用来清掉系统级 helper。
+          # 注意：token 里若有单引号会破坏这里的引号，CNB 的 cnb_at_ 令牌是
+          # [A-Za-z0-9_-]，不含引号，安全。
+          CRED='!f() { echo "username='"${CNB_USER}"'"; echo "password='"${CNB_TOKEN}"'"; }; f'
+
+          # 做法是「克隆 cnb 侧 → 覆盖产物 → 提交推送」，而不是直接把 GitHub 的
+          # 历史整段推过去。两个仓库的历史本来就不相关，硬推会被拒或需要 force；
+          # 只同步产物则两边历史各自独立，永远不会有分叉冲突。
+          rm -rf /tmp/cnb-mirror
+          git -c credential.helper= -c credential.helper="$CRED" \
+              clone -q "https://cnb.cool/${CNB_REPO}.git" /tmp/cnb-mirror
+
+          cp apps.json /tmp/cnb-mirror/apps.json
+          mkdir -p /tmp/cnb-mirror/cache /tmp/cnb-mirror/tools
+          cp cache/*.json  /tmp/cnb-mirror/cache/
+          cp tools/*.py    /tmp/cnb-mirror/tools/
+          cp README.md     /tmp/cnb-mirror/README.md
+
+          cd /tmp/cnb-mirror
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "cnb.cool 侧已是最新，无需同步"
+            exit 0
+          fi
+          git commit -q -m "chore(source): 同步自 GitHub Actions $(date -u '+%Y-%m-%d')"
+          git -c credential.helper= -c credential.helper="$CRED" push -q origin HEAD:main
+          echo "已同步到 cnb.cool/${CNB_REPO}"
+
+      - name: 小结
+        if: always()
+        run: |
+          {
+            echo "### 源文件更新结果"
+            echo ""
+            if [ "${{ steps.commit.outputs.changed }}" = "true" ]; then
+              echo "- ✅ 有更新，已提交"
+            else
+              echo "- ⏸ 上游无新版本，未产生提交"
+            fi
+            echo "- cnb.cool 同步：${{ env.CNB_TOKEN != '' && '已启用' || '未配置（跳过）' }}"
+          } >> "$GITHUB_STEP_SUMMARY"

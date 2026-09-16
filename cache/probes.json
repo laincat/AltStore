@@ -1,0 +1,202 @@
+{
+  "https://github.com/Predidit/Kazumi/releases/download/2.3.3/Kazumi_ios_2.3.3_no_sign.ipa": {
+    "bundleIdentifier": "com.example.kazumi",
+    "version": "2.3.3",
+    "buildVersion": "20303",
+    "displayName": "Kazumi",
+    "minOSVersion": "15.0",
+    "size": 29823335
+  },
+  "https://github.com/Predidit/Kazumi/releases/download/2.3.2/Kazumi_ios_2.3.2_no_sign.ipa": {
+    "bundleIdentifier": "com.example.kazumi",
+    "version": "2.3.2",
+    "buildVersion": "20302",
+    "displayName": "Kazumi",
+    "minOSVersion": "15.0",
+    "size": 29823319
+  },
+  "https://github.com/Predidit/Kazumi/releases/download/2.3.1/Kazumi_ios_2.3.1_no_sign.ipa": {
+    "bundleIdentifier": "com.example.kazumi",
+    "version": "2.3.1",
+    "buildVersion": "20301",
+    "displayName": "Kazumi",
+    "minOSVersion": "15.0",
+    "size": 29812172
+  },
+  "https://github.com/Predidit/Kazumi/releases/download/2.3.0/Kazumi_ios_2.3.0_no_sign.ipa": {
+    "bundleIdentifier": "com.example.kazumi",
+    "version": "2.3.0",
+    "buildVersion": "20300",
+    "displayName": "Kazumi",
+    "minOSVersion": "15.0",
+    "size": 29656485
+  },
+  "https://github.com/open-ani/animeko/releases/download/v6.1.0/ani-6.1.0.ipa": {
+    "bundleIdentifier": "org.animeko.animeko",
+    "version": "6.1.0",
+    "buildVersion": "60100",
+    "displayName": "Animeko",
+    "minOSVersion": "14.0",
+    "size": 44425669
+  },
+  "https://github.com/open-ani/animeko/releases/download/v6.0.0/ani-6.0.0.ipa": {
+    "bundleIdentifier": "org.animeko.animeko",
+    "version": "6.0.0",
+    "buildVersion": "60000",
+    "displayName": "Animeko",
+    "minOSVersion": "14.0",
+    "size": 41391524
+  },
+  "https://github.com/open-ani/animeko/releases/download/v5.7.1/ani-5.7.1.ipa": {
+    "bundleIdentifier": "org.animeko.animeko",
+    "version": "5.7.1",
+    "buildVersion": "50710",
+    "displayName": "Animeko",
+    "minOSVersion": "14.0",
+    "size": 30505730
+  },
+  "https://github.com/open-ani/animeko/releases/download/v5.7.0/ani-5.7.0.ipa": {
+    "bundleIdentifier": "org.animeko.animeko",
+    "version": "5.7.0",
+    "buildVersion": "50700",
+    "displayName": "Animeko",
+    "minOSVersion": "14.0",
+    "size": 30504854
+  },
+  "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.8.1/EhPanda.ipa": {
+    "bundleIdentifier": "app.ehpanda",
+    "version": "2.8.1",
+    "buildVersion": "158",
+    "displayName": "EhPanda",
+    "minOSVersion": "26.0",
+    "size": 7352364
+  },
+  "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.7.10/EhPanda.ipa": {
+    "bundleIdentifier": "app.ehpanda",
+    "version": "2.7.10",
+    "buildVersion": "156",
+    "displayName": "EhPanda",
+    "minOSVersion": "17.0",
+    "size": 7231227
+  },
+  "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.7.9/EhPanda.ipa": {
+    "bundleIdentifier": "app.ehpanda",
+    "version": "2.7.9",
+    "buildVersion": "155",
+    "displayName": "EhPanda",
+    "minOSVersion": "17.0",
+    "size": 7231285
+  },
+  "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.7.8/EhPanda.ipa": {
+    "bundleIdentifier": "app.ehpanda",
+    "version": "2.7.8",
+    "buildVersion": "154",
+    "displayName": "EhPanda",
+    "minOSVersion": "17.0",
+    "size": 7193274
+  },
+  "https://github.com/Kyosee/VeneraX/releases/download/v2.3.2/VeneraX-ios-2.3.2%2B245.ipa": {
+    "bundleIdentifier": "io.github.kyosee.venera",
+    "version": "2.3.2",
+    "buildVersion": "245",
+    "displayName": "VeneraX",
+    "minOSVersion": "16.0",
+    "size": 35444623
+  },
+  "https://github.com/Kyosee/VeneraX/releases/download/v2.3.1/VeneraX-ios-2.3.1%2B244.ipa": {
+    "bundleIdentifier": "io.github.kyosee.venera",
+    "version": "2.3.1",
+    "buildVersion": "244",
+    "displayName": "VeneraX",
+    "minOSVersion": "16.0",
+    "size": 35444412
+  },
+  "https://github.com/Kyosee/VeneraX/releases/download/v2.3.0/VeneraX-ios-2.3.0%2B243.ipa": {
+    "bundleIdentifier": "io.github.kyosee.venera",
+    "version": "2.3.0",
+    "buildVersion": "243",
+    "displayName": "VeneraX",
+    "minOSVersion": "16.0",
+    "size": 35258521
+  },
+  "https://github.com/Kyosee/VeneraX/releases/download/v2.2.12/VeneraX-ios-2.2.12%2B242.ipa": {
+    "bundleIdentifier": "io.github.kyosee.venera",
+    "version": "2.2.12",
+    "buildVersion": "242",
+    "displayName": "VeneraX",
+    "minOSVersion": "16.0",
+    "size": 35251387
+  },
+  "https://github.com/deretame/Breeze/releases/download/v3.0.31/Breeze-iOS-v3.0.31.ipa": {
+    "bundleIdentifier": "com.zephyr.breeze",
+    "version": "3.0.31",
+    "buildVersion": "2219",
+    "displayName": "Breeze",
+    "minOSVersion": "15.0",
+    "size": 25767710
+  },
+  "https://github.com/deretame/Breeze/releases/download/v3.0.30/Breeze-iOS-v3.0.30.ipa": {
+    "bundleIdentifier": "com.zephyr.breeze",
+    "version": "3.0.30",
+    "buildVersion": "2218",
+    "displayName": "Breeze",
+    "minOSVersion": "15.0",
+    "size": 25322321
+  },
+  "https://github.com/deretame/Breeze/releases/download/v3.0.29/Breeze-iOS-v3.0.29.ipa": {
+    "bundleIdentifier": "com.zephyr.breeze",
+    "version": "3.0.29",
+    "buildVersion": "2217",
+    "displayName": "Breeze",
+    "minOSVersion": "15.0",
+    "size": 25322370
+  },
+  "https://github.com/deretame/Breeze/releases/download/v3.0.28/Breeze-iOS-v3.0.28.ipa": {
+    "bundleIdentifier": "com.zephyr.breeze",
+    "version": "3.0.28",
+    "buildVersion": "2216",
+    "displayName": "Breeze",
+    "minOSVersion": "15.0",
+    "size": 25251002
+  },
+  "https://github.com/youshen2/PicaX/releases/download/v1.2.3/PicaX-unsigned.ipa": {
+    "bundleIdentifier": "moye.PicaX",
+    "version": "1.2.3",
+    "buildVersion": "2609051",
+    "displayName": "PicaX",
+    "minOSVersion": "15.2",
+    "size": 11241040
+  },
+  "https://github.com/youshen2/PicaX/releases/download/v1.2.2/PicaX-unsigned.ipa": {
+    "bundleIdentifier": "moye.PicaX",
+    "version": "1.2.2",
+    "buildVersion": "2608291",
+    "displayName": "PicaX",
+    "minOSVersion": "15.2",
+    "size": 9821679
+  },
+  "https://github.com/youshen2/PicaX/releases/download/v1.2.1/PicaX-unsigned.ipa": {
+    "bundleIdentifier": "moye.PicaX",
+    "version": "1.2.1",
+    "buildVersion": "2608111",
+    "displayName": "PicaX",
+    "minOSVersion": "15.2",
+    "size": 9789544
+  },
+  "https://github.com/youshen2/PicaX/releases/download/v1.2.0/PicaX-unsigned.ipa": {
+    "bundleIdentifier": "moye.PicaX",
+    "version": "1.2.0",
+    "buildVersion": "2608072",
+    "displayName": "PicaX",
+    "minOSVersion": "15.2",
+    "size": 9784891
+  },
+  "https://github.com/EhPanda-Team/EhPanda/releases/download/3.0.0/EhPanda.ipa": {
+    "bundleIdentifier": "app.ehpanda",
+    "version": "3.0.0",
+    "buildVersion": "158",
+    "displayName": "EhPanda",
+    "minOSVersion": "26.0",
+    "size": 10143094
+  }
+}
