@@ -4,14 +4,21 @@
 
 ## 在 SideStore 里添加
 
-两个地址内容完全一致，**任选一个**。国内用 cnb.cool 更稳，GitHub 直链作为备用。
+两个地址内容完全一致，**任选一个**。
+
+国内访问更快，推荐用这个：
 
 ```
-https://cnb.cool/laincat/AltStore/-/git/raw/main/apps.json          ← 国内推荐
-https://raw.githubusercontent.com/laincat/AltStore/main/apps.json   ← 备用
+https://cnb.cool/laincat/AltStore/-/git/raw/main/apps.json
 ```
 
-SideStore → Sources → 右上角 `+` → 粘贴地址。
+GitHub 直链，作为备用（大陆可能被墙或极慢）：
+
+```
+https://raw.githubusercontent.com/laincat/AltStore/main/apps.json
+```
+
+SideStore → Sources → 右上角 `+` → 粘贴上面的地址。
 
 > - cnb.cool 的原文直链必须是 `/-/git/raw/`，别用 `/-/raw/`——那个返回的是仓库网页的 HTML 外壳，不是文件内容。
 > - 两个地址都返回 `text/plain`，SideStore 只按内容解析 JSON，不受影响。
