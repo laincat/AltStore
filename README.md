@@ -1,8 +1,13 @@
-# Laincat 工具箱 — SideStore / AltStore 源文件
+# Laincat 工具箱 — SideStore / AltStore / LiveContainer 源文件
 
-自用的 SideStore 源（源名称 **Laincat 工具箱**）：收录 6 个开源 iOS 应用（番剧 + 漫画），**自动跟随上游 GitHub Release 更新**。
+自用的 iOS 侧载源（源名称 **Laincat 工具箱**，图标是 [@laincat](https://github.com/laincat) 的 GitHub 头像）：收录 6 个开源 iOS 应用（番剧 + 漫画），**自动跟随上游 GitHub Release 更新**。
 
-## 在 SideStore 里添加
+三个客户端都能用：**SideStore / AltStore / LiveContainer**。
+
+> ⚠️ SideStore、AltStore 与 LiveContainer 的解析逻辑**不一样**，同一个源在两边看到的东西可能不同。
+> 典型例子就是 EhPanda 的测试版 3.0.0 —— 详见《两个客户端的差异》。
+
+## 添加这个源
 
 两个地址内容完全一致，**任选一个**。
 
@@ -18,10 +23,13 @@ GitHub 直链，作为备用（大陆可能被墙或极慢）：
 https://raw.githubusercontent.com/laincat/AltStore/main/apps.json
 ```
 
-SideStore → Sources → 右上角 `+` → 粘贴上面的地址。
+怎么加：
+
+- **SideStore / AltStore**：`Sources（源）` → 右上角 `+` → 粘贴上面的地址
+- **LiveContainer**：底部标签栏 `源`（英文是 `Sources`）→ 右上角 `+`（`添加源`）→ 粘贴同一地址
 
 > - cnb.cool 的原文直链必须是 `/-/git/raw/`，别用 `/-/raw/`——那个返回的是仓库网页的 HTML 外壳，不是文件内容。
-> - 两个地址都返回 `text/plain`，SideStore 只按内容解析 JSON，不受影响。
+> - 两个地址都返回 `text/plain`，客户端只按内容解析 JSON，不受影响。
 > - `raw.githubusercontent.com` 在大陆经常被墙或极慢，用不了就换 cnb.cool 那个。
 
 ## 应用清单
@@ -37,59 +45,104 @@ SideStore → Sources → 右上角 `+` → 粘贴上面的地址。
 
 每个应用提供 **stable（稳定）** 轨道；只有 EhPanda 有可用的测试版，额外提供 **nightly（测试）** 轨道，内含 3.0.0。
 
-## 怎么看到 EhPanda 的测试版
+## 两个客户端的差异（重要）
 
-SideStore 的测试版**默认隐藏**，这是客户端行为，不是源的问题。要让它出现需要三层都满足：
+同一个 `apps.json`，两家客户端读的字段**完全不同**：
 
-1. **设置 → Beta Testing（测试版）→ 打开 `Beta Updates` 开关** ← 只有这一层需要你动手
-2. 轨道选 `nightly`（**默认就是它**，不用改；下拉框只提供 `alpha` 和 `nightly`）
-3. 测试版版本号 ≥ 稳定版版本号——3.0.0 > 2.8.1 满足
+| | SideStore / AltStore | LiveContainer |
+|---|---|---|
+| 读哪个字段 | `releaseChannels` 里的轨道 | 只读扁平的 `versions` 数组 |
+| 认不认 `releaseChannels` | 认 | **完全不认**（代码里没有这个字段） |
+| 测试版开关 | 有，`设置 → Beta Testing`，**默认关闭** | **没有开关** |
+| 版本选择器 | 有（能挑历史版本） | **没有**，界面上只显示并安装 `versions[0]` |
+| 显示哪个版本 | stable 轨道；开关打开后 beta 轨道**取代** stable | 永远是 `versions[0]` |
 
-### 为什么是这个开关
+所以本仓库**两处都写**：
 
-判定逻辑在 SideStore 源码 `AltStore/Core/Model/StoreApp.swift`：
+```jsonc
+{
+  "releaseChannels": [                  // ← SideStore / AltStore 走这里
+    { "track": "stable",  "releases": [ /* 2.8.1 */ ] },
+    { "track": "nightly", "releases": [ /* 3.0.0 */ ] }
+  ],
+  "versions": [ /* 3.0.0, 2.8.1 */ ],   // ← LiveContainer 走这里，只取第 1 条
+  "beta": true                          // ← LiveContainer 会显示「测试版」角标
+}
+```
+
+**往扁平 `versions` 里塞测试版，对 SideStore 没有任何副作用。** 它的解码逻辑是：
+
+```swift
+var versions = getReleases(default: stableTrack) ?? []
+if versions.isEmpty {          // ← 只有轨道取不到东西时，才会回头看扁平 versions
+    versions = try container.decodeIfPresent([AppVersion].self, forKey: .versions) ?? ...
+}
+```
+
+stable 轨道非空，这个 `if` 永远不成立（整个 `StoreApp.swift` 里搜 `forKey: .versions` 只有这一处）。
+
+## EhPanda 的测试版 3.0.0
+
+| 客户端 | 怎么才能拿到 3.0.0 |
+|---|---|
+| **LiveContainer** | **什么都不用做**。源里 `versions[0]` 就是 3.0.0，列表里直接显示、点安装就是它，旁边带「测试版」角标 |
+| **SideStore / AltStore** | 要手动开开关：`设置 → Beta Testing → 打开 Beta Updates`（轨道选 `nightly`，默认就是它，不用改） |
+
+SideStore 那三层门槛（源码 `AltStore/Core/Model/StoreApp.swift`）：
+
+1. `isBetaUpdatesEnabled` —— 设置里的 `Beta Updates` 开关，**默认 false**
+2. `betaUdpatesTrack` —— 轨道名，默认 `nightly`（下拉框只提供 `alpha` 和 `nightly`）
+3. `betaSemVer >= stableSemVer` —— 3.0.0 > 2.8.1 ✓
 
 ```swift
 private var betaReleases: [AppVersion]? {
-    if UserDefaults.standard.isBetaUpdatesEnabled,          // ← 默认 false，必须手动打开
-       let betaTrack = UserDefaults.standard.betaUdpatesTrack {   // ← 默认 "nightly"
+    if UserDefaults.standard.isBetaUpdatesEnabled,               // ← 必须手动打开
+       let betaTrack = UserDefaults.standard.betaUdpatesTrack {  // ← 默认 "nightly"
         ...
-        betaSemVer >= stableSemVer                          // ← 3.0.0 >= 2.8.1 ✓
+        betaSemVer >= stableSemVer
     }
     return nil
 }
 // 展示的版本列表：betaReleases ?? stableTrack.releases
+// 注意是「取代」不是「合并」：开关打开后看到的就是 beta 轨道的内容
 ```
-
-开关关闭时，客户端**只会读取 stable 轨道**，也就是只看到 2.8.1。
 
 ### 本地就能验证，不用装到手机上
 
 ```bash
-python tools/simulate_client.py
+python tools/simulate_client.py                        # 两个客户端都算
+python tools/simulate_client.py --client livecontainer
+python tools/simulate_client.py --client sidestore
 ```
 
-这个脚本把上面那段客户端门控逻辑照抄成 Python，把「开关 ON / OFF」两种状态下的可见结果都打印出来。当前输出：
+这个脚本把两家客户端的解析逻辑都照抄成了 Python，直接告诉你「谁会看到、会安装哪个版本」：
 
 ```
 EhPanda   (app.ehpanda)
-  开关 OFF → 看到 ['2.8.1']
-  开关 ON  → 看到 ['3.0.0']
+   SideStore · 关 Beta → ['2.8.1']
+   SideStore · 开 Beta → ['3.0.0']
+      ⚠️ ['3.0.0'] 只有开了 Beta 开关才可见
+   LiveContainer       → 会安装 3.0.0 (158)  [BETA 角标]   [来源：扁平 versions[0]]
+                          最低系统 26.0
 ```
+
+它还会报告「两个客户端结论分歧」的条目 —— 万一以后扁平 `versions` 忘了放测试版，这里会立刻报出来。
 
 ### ⚠️ 为什么不用「拆成两个 app 条目」的做法
 
-有些源（例如 `maxchang3/ani-altstore-source`）把测试版拆成**独立的 app 条目**，效果是两条永远可见、不需要任何开关。这个做法**有代价**，本仓库不采用：
+有些源（例如 `maxchang3/ani-altstore-source`）把测试版拆成**独立的 app 条目**（`Animeko` + `Animeko (Pre-Release)`）。它的 `versions` 是**不带 `releaseChannels` 的扁平列表**，所以预发布在两边都会一直显示、不需要任何开关。
+
+看起来省事，但代价是拆出来的条目**必须编造一个 Bundle ID**（参考源写的是 `org.animeko.animeko.beta`），而 Animeko 测试包内的真实 ID 是 `org.animeko.animeko`：
 
 | 约束 / 校验 | 出处 | 后果 |
 |---|---|---|
 | `StoreApp` 唯一约束 `(sourceIdentifier, bundleIdentifier)` | CoreData 模型 | 同一源内两个条目**不能共用 Bundle ID**，否则会被合并成一个 |
-| 所以拆出来的测试版条目**必须编造一个 Bundle ID** | 参考源里写的是 `org.animeko.animeko.beta` | 但 Animeko 测试包内的真实 ID 是 `org.animeko.animeko` |
-| `verifyApp` 校验源声明 ID **必须等于** IPA 内真实 ID | `AltStore/…/StoreApp.swift` | 安装时抛 `mismatchedBundleIdentifiers` |
-| 该步骤是**安装流水线第 2 步** | `OperationStepDefinition.install` | 即默认就在流程里 |
-| 校验开关 `isBundleIDVerificationEnabled` 默认 **true** | `UserDefaults+AltStore.swift` | 而且**设置界面里没有这个开关**（`DeveloperOptionsView` / `ExperimentalFeaturesView` 里都搜不到） |
+| 于是测试版条目只能**编造 ID** | 参考源写的是 `org.animeko.animeko.beta` | 与包内真实 ID 不符 |
+| `verifyApp` 要求源声明 ID **必须等于** IPA 内真实 ID | `VerifyAppOperation.swift` | 安装时抛 `mismatchedBundleIdentifiers` |
+| 该步骤是**安装流水线第 2 步** | `OperationStepDefinition.install` | 默认就在流程里 |
+| 校验开关 `isBundleIDVerificationEnabled` 默认 **true** | `UserDefaults+AltStore.swift` | 且**设置界面里没有这个开关**（`DeveloperOptionsView` / `ExperimentalFeaturesView` 里都搜不到） |
 
-**结论**：拆条目的源「看得见、装不上」。本仓库的做法是保留正确的 `releaseChannels` 轨道机制——**看得见、也装得上**，代价只是多开一个开关。
+**结论**：拆条目的做法在 SideStore 上是「看得见、装不上」。本仓库不这么做——保留规范的 `releaseChannels` 轨道，**同时**用扁平 `versions` 照顾 LiveContainer，两边都看得见、也都装得上。
 
 ## 自动更新
 
@@ -129,11 +182,11 @@ python tools/verify_source.py --min-apps 6  # 校验
 ## 目录结构
 
 ```
-apps.json                                    # 源文件本体，SideStore 消费的就是它
+apps.json                                    # 源文件本体，客户端消费的就是它
 .github/workflows/update-source.yml          # 定时更新流水线
 tools/build_source.py                        # 生成脚本（抓 GitHub Release + 探测 IPA 元数据）
 tools/verify_source.py                       # 结构校验，提交前的守门人
-tools/simulate_client.py                     # 模拟客户端门控，回答「改完到底看不看得见」
+tools/simulate_client.py                     # 模拟两个客户端的解析，回答「改完到底看不看得见」
 cache/releases.json                          # 各仓库的 Release 列表缓存
 cache/probes.json                            # IPA 元数据缓存（按 URL 永久复用，上游发新版才新增）
 cache/icons.json                             # 图标可达性缓存
@@ -156,6 +209,7 @@ python tools/build_source.py --versions 4    # 稳定版轨道保留最近 4 个
 - 同一应用的测试版与稳定版做 Bundle ID 一致性校验，不一致的丢弃
 - 跨版本 Bundle ID 不一致的版本会被丢弃
 - 图标取自各仓库对应 tag 下的 AppIcon 资源（1024×1024），探测失败自动回退为仓库头像
+- **源自身的 logo** 用的是 `https://github.com/laincat.png`（GitHub 头像，会 302 到 `avatars.githubusercontent.com`），换头像时源里自动跟着变
 
 ## 为什么只有 EhPanda 有测试版
 

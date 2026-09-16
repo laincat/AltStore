@@ -100,19 +100,45 @@ def main() -> int:
                     errs.append("%s/%s 的 date 格式应为 YYYY-MM-DD：%r"
                                 % (nm, v.get("version"), v.get("date")))
 
-        # 旧客户端的扁平列表必须与 stable 轨道一致，且不能混入测试版
-        stable_vs = [v["version"] for c in chans if c.get("track") == "stable"
-                     for v in c.get("releases", [])]
-        legacy_vs = [v.get("version") for v in (a.get("versions") or [])]
-        if legacy_vs != stable_vs:
-            errs.append("%s 的 versions %s 与 stable 轨道 %s 不一致" % (nm, legacy_vs, stable_vs))
+        # 扁平 versions：给不认 releaseChannels 的客户端用（LiveContainer 就只读这个，
+        # 而且只取 versions[0] 去安装，既没有 beta 开关也没有版本选择器）。
+        # 所以它必须是「所有轨道的并集 + 按日期倒序 + 无重复」，否则那些客户端会
+        # 显示错版本、或者干脆什么都看不到。
+        legacy = a.get("versions") or []
+        if not legacy:
+            errs.append("%s 的 versions 为空 —— LiveContainer 会一个版本都看不到" % nm)
+        else:
+            dates = [str(v.get("date") or "") for v in legacy]
+            if dates != sorted(dates, reverse=True):
+                errs.append("%s 的 versions 未按日期倒序：%s（LiveContainer 取第 1 条）"
+                            % (nm, dates))
+            keys = [(v.get("version"), v.get("buildVersion")) for v in legacy]
+            if len(set(keys)) != len(keys):
+                errs.append("%s 的 versions 有重复条目：%s" % (nm, keys))
+            have = {(v.get("version"), v.get("date")) for v in legacy}
+            want = {(v.get("version"), v.get("date")) for c in chans for v in c.get("releases", [])}
+            if have != want:
+                errs.append("%s 的 versions 与轨道内容对不上\n      仅 versions 有：%s\n      仅轨道有：%s"
+                            % (nm, sorted(have - want), sorted(want - have)))
+            for v in legacy:
+                for k in REQ_REL:
+                    if k not in v:
+                        errs.append("%s 的 versions 条目 %s 缺少 %s" % (nm, v.get("version"), k))
 
         # 测试版版本号必须 >= 稳定版，否则 SideStore 根本不显示
+        stable_vs = [v["version"] for c in chans if c.get("track") == "stable"
+                     for v in c.get("releases", [])]
         nightly = [v["version"] for c in chans if c.get("track") == "nightly"
                    for v in c.get("releases", [])]
         if nightly and stable_vs and semver(nightly[0]) < semver(stable_vs[0]):
             warns.append("%s 的测试版 %s 低于稳定版 %s，SideStore 不会显示"
                          % (nm, nightly[0], stable_vs[0]))
+
+        # 提醒：这是 LiveContainer 侧的实际安装结果，不是一个可以「取消」的行为
+        if legacy and nightly and legacy[0].get("version") == nightly[0]:
+            warns.append("%s 的 versions[0] 是测试版 %s —— LiveContainer 没有 beta 开关、"
+                         "也没有版本选择器，会直接安装它（这是设计如此，不是缺陷）"
+                         % (nm, nightly[0]))
 
     for w in warns:
         print("⚠ %s" % w)

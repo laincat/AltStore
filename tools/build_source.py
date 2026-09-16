@@ -14,10 +14,27 @@ SideStore / AltStore 源文件生成器（仅用标准库，可离线复跑）
       {"track": "stable",  "releases": [...]},
       {"track": "nightly", "releases": [...]}   # 仅配置了 nightly 的应用
   ]
-  apps[].versions 同时保留「仅稳定版」的扁平列表，供不认 releaseChannels 的旧客户端使用。
+  apps[].versions = 「所有轨道合并、按日期倒序」的扁平列表。
 
-  ⚠️ SideStore 的 beta 版本默认隐藏：需在设置里开启 beta 更新并选中对应轨道，
-     且要求 beta 的版本号 >= stable 的版本号（StoreApp.swift 的硬门槛），否则不显示。
+  ⚠️ 两个客户端的解析逻辑完全不同，改动这里前务必先看 tools/simulate_client.py：
+
+  【SideStore / AltStore】StoreApp.swift decodeVersions():
+        var versions = getReleases(default: stableTrack) ?? []
+        if versions.isEmpty { ...才回退去读扁平的 versions... }
+      → 有 releaseChannels 且 stable 轨道非空时，**扁平 versions 被彻底忽略**。
+        beta 默认隐藏，要用户手动开「Beta Testing」开关 + 版本号 >= stable 才显示。
+        （所以往扁平 versions 里塞测试版，对 SideStore 没有任何副作用 —— 这是实测过的。）
+
+  【LiveContainer】LCAltStoreSourcesView.swift:
+        let versions = buildVersions(...)          // 只读扁平 versions
+        let latest   = versions.first ?? 旧式单版本字段
+      → **完全不认识 releaseChannels**，也没有 beta 开关、没有版本选择器，
+        没得选，永远只显示并安装 versions[0]。所以「测试版在 LiveContainer 里看不见」
+        的唯一解法就是把测试版放进扁平 versions 并排到第一位。
+
+  另外两处 LiveContainer 专有约定（SideStore 会无视，多写不冲突）：
+    · 版本条目的 buildVersion 它读的是 `buildNumber` 键 → 本脚本两个键都写
+    · app 级 `"beta": true` 会在 LiveContainer 里显示橙色 BETA 角标
 
 用法：
   python build_source.py                 # 生成 ../apps.json（稳定版取最新 1 个）
@@ -29,6 +46,7 @@ import argparse
 import json
 import os
 import plistlib
+import re
 import ssl
 import struct
 import sys
@@ -45,11 +63,16 @@ SOURCE = {
     # ⚠️ identifier 故意不改：SideStore 用 identifier 认源，改了会被当成一个「新源」，
     #    设备上旧的源还在、要手动删，且所有源内应用的缓存数据会重建。
     "identifier": "com.acgtoolbox.source",
+    # 源列表里显示的那个 logo。用 GitHub 头像地址：
+    # github.com/<user>.png 会 302 到 avatars.githubusercontent.com，实测
+    # 普通 GET 与 Range 请求都能拿到 image/jpeg，客户端都会跟随跳转。
+    # 好处是头像换了源里自动跟着变，不用改这里。
+    "iconURL": "https://github.com/laincat.png?size=512",
     "subtitle": "番剧 · 漫画 iOS 自签源",
     "description": (
         "收录 6 款开源 iOS 应用：番剧类 Kazumi、Animeko，漫画阅读类 EhPanda、"
         "VeneraX、Breeze、PicaX。所有 IPA 均直连各项目 GitHub Release 官方资产，"
-        "由 SideStore 本地签名安装。"
+        "由 SideStore / AltStore / LiveContainer 本地签名安装。"
     ),
     "tintColor": "#7C5CFF",
 }
@@ -409,7 +432,11 @@ def make_versions(picks, repo, bundle_id=None, reprobe=False):
         out.append({
             "version": m["version"],
             "date": r["published_at"][:10],
+            # buildVersion 是 AltStore 规范里的键名；
+            # buildNumber 是 LiveContainer 实际解码的键名（CodingKeys 里写死了 buildNumber）。
+            # 两个都写，谁也别说谁错 —— 多出来的键两边都会忽略。
             "buildVersion": m["buildVersion"],
+            "buildNumber": m["buildVersion"],
             "localizedDescription": clean_notes(r.get("body")),
             "downloadURL": a["browser_download_url"],
             "size": a["size"],
@@ -419,6 +446,18 @@ def make_versions(picks, repo, bundle_id=None, reprobe=False):
         })
     out.sort(key=lambda v: v["date"], reverse=True)
     return out, bundle_id
+
+
+def sort_versions(vs):
+    """按日期倒序；同日期时按版本号倒序，保证结果稳定可复现。"""
+    return sorted(vs, key=lambda v: (str(v.get("date") or ""), semver_key(v.get("version"))),
+                  reverse=True)
+
+
+def semver_key(text):
+    """把 3.0.0 / v2.3.2 / 6.1.0-beta01 转成可比元组（只取前三段数字）。"""
+    nums = re.findall(r"\d+", str(text or ""))
+    return tuple(int(n) for n in nums[:3]) + (0,) * (3 - min(3, len(nums)))
 
 
 def collect(rels, cfg, per_app):
@@ -486,6 +525,20 @@ def build(per_app=1, refresh=False, reprobe=False, prev_path=None):
             elif nbid and nbid != bundle_id:
                 print("   ! %s 的测试版 bundleId 与稳定版不一致，已丢弃" % repo, file=sys.stderr)
 
+        # 扁平 versions：所有轨道合并、按日期倒序、按 (版本号, build) 去重。
+        # 给不认 releaseChannels 的客户端用 —— 尤其是 LiveContainer，
+        # 它只读这个数组、只取 [0] 安装，没有开关也没有版本选择器。
+        # 对 SideStore 无副作用：它有 releaseChannels 时压根不读这个数组（源码已核实）。
+        flat_versions, seen_keys = [], set()
+        for v in sort_versions(list(stable_versions) + list(beta_versions)):
+            key = (v["version"], v.get("buildVersion"))
+            if key in seen_keys:
+                continue
+            seen_keys.add(key)
+            flat_versions.append(v)
+        is_beta_head = bool(beta_versions) and flat_versions and \
+            flat_versions[0]["version"] == beta_versions[0]["version"]
+
         icon = "https://raw.githubusercontent.com/%s/%s/%s" % (repo, latest["releaseTag"], cfg["icon"])
         if not icon_url_ok(icon):
             icon = "https://github.com/%s.png?size=460" % repo.split("/")[0]
@@ -501,10 +554,11 @@ def build(per_app=1, refresh=False, reprobe=False, prev_path=None):
             "tintColor": cfg["tintColor"],
             "category": cfg["category"],
             "appPermissions": {"entitlements": [], "privacy": {}},
-            # v2 源格式：稳定 / 测试双轨道
+            # v2 源格式：稳定 / 测试双轨道（SideStore 读这里）
             "releaseChannels": channels,
-            # 旧客户端兼容：只放稳定版，避免把测试版当稳定版默认安装
-            "versions": stable_versions,
+            # LiveContainer 等只读扁平列表的客户端走这里；
+            # 含测试版，因为 LiveContainer 没有开关可以打开它们
+            "versions": flat_versions,
             "version": latest["version"],
             "versionDate": latest["date"],
             "versionDescription": latest["localizedDescription"],
@@ -512,10 +566,19 @@ def build(per_app=1, refresh=False, reprobe=False, prev_path=None):
             "size": latest["size"],
             "minOSVersion": latest["minOSVersion"],
         }
+        if is_beta_head:
+            # 纯展示用的角标（LiveContainer 会渲染成橙色 BETA）。
+            # SideStore 只在「既无 releaseChannels 又无扁平 versions」的兜底分支读这个键，
+            # 我们两条都有，所以对它没有任何影响。
+            app["beta"] = True
+
         apps.append(app)
         btag = ("；nightly %s" % beta_versions[0]["version"]) if beta_versions else "；无测试版"
         print("  ✓ %-10s %-24s stable %-8s minOS %-5s%s"
               % (cfg["name"], bundle_id, latest["version"], latest["minOSVersion"], btag))
+        print("      扁平 versions（LiveContainer 只认这个，取第 1 条）：%s%s"
+              % ([v["version"] for v in flat_versions],
+                 "  ← 首条是测试版，会打 BETA 角标" if is_beta_head else ""))
 
     src = dict(SOURCE)
     src["apps"] = apps
@@ -525,8 +588,7 @@ def build(per_app=1, refresh=False, reprobe=False, prev_path=None):
         src["news"] = []
         return src, carried
 
-    src["iconURL"] = "https://raw.githubusercontent.com/Predidit/Kazumi/%s/%s" % (
-        apps[0]["versions"][0]["releaseTag"], APPS[0]["icon"])
+    src["iconURL"] = SOURCE["iconURL"]
     src["featuredApps"] = [a["bundleIdentifier"] for a in apps[:2]]
     src["news"] = [{
         "title": "源已建立",

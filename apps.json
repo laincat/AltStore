@@ -1,8 +1,9 @@
 {
   "name": "Laincat 工具箱",
   "identifier": "com.acgtoolbox.source",
+  "iconURL": "https://github.com/laincat.png?size=512",
   "subtitle": "番剧 · 漫画 iOS 自签源",
-  "description": "收录 6 款开源 iOS 应用：番剧类 Kazumi、Animeko，漫画阅读类 EhPanda、VeneraX、Breeze、PicaX。所有 IPA 均直连各项目 GitHub Release 官方资产，由 SideStore 本地签名安装。",
+  "description": "收录 6 款开源 iOS 应用：番剧类 Kazumi、Animeko，漫画阅读类 EhPanda、VeneraX、Breeze、PicaX。所有 IPA 均直连各项目 GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。",
   "tintColor": "#7C5CFF",
   "apps": [
     {
@@ -26,6 +27,7 @@
               "version": "2.3.3",
               "date": "2026-09-15",
               "buildVersion": "20303",
+              "buildNumber": "20303",
               "localizedDescription": "> [!NOTE]\r\n> 这是 2.3.2 的热修复版本，更多更新日志参考 2.3.2",
               "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.3.3/Kazumi_ios_2.3.3_no_sign.ipa",
               "size": 29823335,
@@ -41,6 +43,7 @@
           "version": "2.3.3",
           "date": "2026-09-15",
           "buildVersion": "20303",
+          "buildNumber": "20303",
           "localizedDescription": "> [!NOTE]\r\n> 这是 2.3.2 的热修复版本，更多更新日志参考 2.3.2",
           "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.3.3/Kazumi_ios_2.3.3_no_sign.ipa",
           "size": 29823335,
@@ -77,6 +80,7 @@
               "version": "6.1.0",
               "date": "2026-08-28",
               "buildVersion": "60100",
+              "buildNumber": "60100",
               "localizedDescription": "- 新增画质增强(超分)，支持 Android, Windows 和 macOS (#3291 by @black4der)\r\n- 新增在线源查询缓存，有缓存时跳过查源步骤，大幅加速开播速度\r\n- 播放页新增一起看入口，全屏时隐藏悬浮窗\r\n- 优化评论功能和 UI\r\n- 支持使用 PikPak 加速缓存 BT 源 (#3141 by @NihilDigit)\r\n- 新缓存管理页面\r\n\r\n----\r\n\r\n- 条目详情页封面与角色/制作人员图片支持点击放大查看\r\n- 修复 Windows mpv 画面偏暗\r\n- 支持鼠标侧键返回上一页\r\n- 支持 mpv 内核播放器设置自定义参数\r\n- 优化 jellyfin (#3190 by @jxing7036, #3244, #3248 by @IT-BillDeng)\r\n- 修复 Windows 原生触屏一系列问题 (#3223, #3234 by @NihilDigit)\r\n- 修复 Windows 10 可能会窗口透明 (#3319 by @myouo)\r\n- 优化性能 (#3236 by @NihilDigit)\r\n- 修复 macOS x86 无法打开或闪退\r\n- 修复 macOS 可能因为音频而崩溃\r\n- 修复 BT 源播放错误或无法开始播放 (#3337 by @GrahamZen)\r\n- 支持为 BT 下载设置额外的 trackers\r\n- 修复桌面端图片比较糊\r\n- 修复一系列 Linux 问题 (#3261 by @NihilDigit)\r\n- 修复手动匹配的弹幕请求会随着换集失效 (#3254 by @GrahamZe…",
               "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.1.0/ani-6.1.0.ipa",
               "size": 44425669,
@@ -92,6 +96,7 @@
           "version": "6.1.0",
           "date": "2026-08-28",
           "buildVersion": "60100",
+          "buildNumber": "60100",
           "localizedDescription": "- 新增画质增强(超分)，支持 Android, Windows 和 macOS (#3291 by @black4der)\r\n- 新增在线源查询缓存，有缓存时跳过查源步骤，大幅加速开播速度\r\n- 播放页新增一起看入口，全屏时隐藏悬浮窗\r\n- 优化评论功能和 UI\r\n- 支持使用 PikPak 加速缓存 BT 源 (#3141 by @NihilDigit)\r\n- 新缓存管理页面\r\n\r\n----\r\n\r\n- 条目详情页封面与角色/制作人员图片支持点击放大查看\r\n- 修复 Windows mpv 画面偏暗\r\n- 支持鼠标侧键返回上一页\r\n- 支持 mpv 内核播放器设置自定义参数\r\n- 优化 jellyfin (#3190 by @jxing7036, #3244, #3248 by @IT-BillDeng)\r\n- 修复 Windows 原生触屏一系列问题 (#3223, #3234 by @NihilDigit)\r\n- 修复 Windows 10 可能会窗口透明 (#3319 by @myouo)\r\n- 优化性能 (#3236 by @NihilDigit)\r\n- 修复 macOS x86 无法打开或闪退\r\n- 修复 macOS 可能因为音频而崩溃\r\n- 修复 BT 源播放错误或无法开始播放 (#3337 by @GrahamZen)\r\n- 支持为 BT 下载设置额外的 trackers\r\n- 修复桌面端图片比较糊\r\n- 修复一系列 Linux 问题 (#3261 by @NihilDigit)\r\n- 修复手动匹配的弹幕请求会随着换集失效 (#3254 by @GrahamZe…",
           "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.1.0/ani-6.1.0.ipa",
           "size": 44425669,
@@ -128,6 +133,7 @@
               "version": "2.8.1",
               "date": "2026-07-20",
               "buildVersion": "158",
+              "buildNumber": "158",
               "localizedDescription": "1. feat: Adapt to the new Liquid Glass design.\r\n3. fix: Gesture issue in the reading page.\r\n4. fix: Crash issue in eh setting page.\r\n5. fix: A minor issue in search page.",
               "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.8.1/EhPanda.ipa",
               "size": 7352364,
@@ -144,6 +150,7 @@
               "version": "3.0.0",
               "date": "2026-08-20",
               "buildVersion": "158",
+              "buildNumber": "158",
               "localizedDescription": "Features\r\n\r\n- Offline downloads. Save galleries to your device and read them with no connection. Sort them into folders, and let the app repair a download that got interrupted or update it later. Downloads keep going while the app is in the background and won't get cut off partway.\r\n- Date Seek. Jump straight to a specific date while paging through a gallery. It works on the Frontpage, Watched and Favorites lists.\r\n- WebP images are now supported.\r\n- Redesigned toasts. Progress and status messages (login, page jump, background updates, and more) now show as a sleek glass toast at the bottom of the screen instead of a pop-up spinner.\r\nBugfixes\r\n\r\n- The page slider and the current page no long…",
               "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/3.0.0/EhPanda.ipa",
               "size": 10143094,
@@ -156,9 +163,22 @@
       ],
       "versions": [
         {
+          "version": "3.0.0",
+          "date": "2026-08-20",
+          "buildVersion": "158",
+          "buildNumber": "158",
+          "localizedDescription": "Features\r\n\r\n- Offline downloads. Save galleries to your device and read them with no connection. Sort them into folders, and let the app repair a download that got interrupted or update it later. Downloads keep going while the app is in the background and won't get cut off partway.\r\n- Date Seek. Jump straight to a specific date while paging through a gallery. It works on the Frontpage, Watched and Favorites lists.\r\n- WebP images are now supported.\r\n- Redesigned toasts. Progress and status messages (login, page jump, background updates, and more) now show as a sleek glass toast at the bottom of the screen instead of a pop-up spinner.\r\nBugfixes\r\n\r\n- The page slider and the current page no long…",
+          "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/3.0.0/EhPanda.ipa",
+          "size": 10143094,
+          "minOSVersion": "26.0",
+          "releaseTag": "3.0.0",
+          "source": "https://github.com/EhPanda-Team/EhPanda/releases/tag/3.0.0"
+        },
+        {
           "version": "2.8.1",
           "date": "2026-07-20",
           "buildVersion": "158",
+          "buildNumber": "158",
           "localizedDescription": "1. feat: Adapt to the new Liquid Glass design.\r\n3. fix: Gesture issue in the reading page.\r\n4. fix: Crash issue in eh setting page.\r\n5. fix: A minor issue in search page.",
           "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.8.1/EhPanda.ipa",
           "size": 7352364,
@@ -172,7 +192,8 @@
       "versionDescription": "1. feat: Adapt to the new Liquid Glass design.\r\n3. fix: Gesture issue in the reading page.\r\n4. fix: Crash issue in eh setting page.\r\n5. fix: A minor issue in search page.",
       "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.8.1/EhPanda.ipa",
       "size": 7352364,
-      "minOSVersion": "26.0"
+      "minOSVersion": "26.0",
+      "beta": true
     },
     {
       "name": "VeneraX",
@@ -195,6 +216,7 @@
               "version": "2.3.2",
               "date": "2026-09-05",
               "buildVersion": "245",
+              "buildNumber": "245",
               "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nFixed\n- Fixed a few issues\n\nFull Changelog: https://github.com/Kyosee/VeneraX/compare/v2.3.1...v2.3.2",
               "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.2/VeneraX-ios-2.3.2%2B245.ipa",
               "size": 35444623,
@@ -210,6 +232,7 @@
           "version": "2.3.2",
           "date": "2026-09-05",
           "buildVersion": "245",
+          "buildNumber": "245",
           "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nFixed\n- Fixed a few issues\n\nFull Changelog: https://github.com/Kyosee/VeneraX/compare/v2.3.1...v2.3.2",
           "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.2/VeneraX-ios-2.3.2%2B245.ipa",
           "size": 35444623,
@@ -246,6 +269,7 @@
               "version": "3.0.31",
               "date": "2026-09-13",
               "buildVersion": "2219",
+              "buildNumber": "2219",
               "localizedDescription": "📝 更新日志\n[v3.0.31]\n功能更新\n\n- 新增双页无缝开关\n- 手机添加横版阅读模式\n- 添加 deb 打包 by cookieidea\n修复\n\n- 修复部分 webdav 提供商无法正常同步的问题 by cookieidea\n- 修复 iOS 无法正常选中文件的问题\n- 修复 Windows 始终获取定位的问题\n- 修复 Linux 下 flatpak 图片图标显示问题 by cookieidea\n- 修复 Linux 下关闭行为异常的问题 by cookieidea\n优化\n\n- 优化阅读体验\n- 优化双页模式拼页逻辑\n- 优化首页留白逻辑\n- 优化关于页贡献者获取逻辑 by cookieidea\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.31.exe |\n| macOS | Breeze-macOS-v3.0.31.dmg |\n| Android | app-arm64-v8a-release-v3.0.31.apk |\n| iOS | Breeze-iOS-v3.0.31.ipa |\n| Linux | breeze-v3.0.31.flatpak |\n| Linux (DEB) | breeze_3.0.31_amd64-v3.0.31.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
               "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.31/Breeze-iOS-v3.0.31.ipa",
               "size": 25767710,
@@ -261,6 +285,7 @@
           "version": "3.0.31",
           "date": "2026-09-13",
           "buildVersion": "2219",
+          "buildNumber": "2219",
           "localizedDescription": "📝 更新日志\n[v3.0.31]\n功能更新\n\n- 新增双页无缝开关\n- 手机添加横版阅读模式\n- 添加 deb 打包 by cookieidea\n修复\n\n- 修复部分 webdav 提供商无法正常同步的问题 by cookieidea\n- 修复 iOS 无法正常选中文件的问题\n- 修复 Windows 始终获取定位的问题\n- 修复 Linux 下 flatpak 图片图标显示问题 by cookieidea\n- 修复 Linux 下关闭行为异常的问题 by cookieidea\n优化\n\n- 优化阅读体验\n- 优化双页模式拼页逻辑\n- 优化首页留白逻辑\n- 优化关于页贡献者获取逻辑 by cookieidea\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.31.exe |\n| macOS | Breeze-macOS-v3.0.31.dmg |\n| Android | app-arm64-v8a-release-v3.0.31.apk |\n| iOS | Breeze-iOS-v3.0.31.ipa |\n| Linux | breeze-v3.0.31.flatpak |\n| Linux (DEB) | breeze_3.0.31_amd64-v3.0.31.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
           "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.31/Breeze-iOS-v3.0.31.ipa",
           "size": 25767710,
@@ -297,6 +322,7 @@
               "version": "1.2.3",
               "date": "2026-09-05",
               "buildVersion": "2609051",
+              "buildNumber": "2609051",
               "localizedDescription": "这是由 GitHub Actions 自动构建的发行版本。\n下载说明\n\n请在下方 Assets 中下载对应平台的构建产物。\n\n- PicaX-unsigned.ipa：iOS 未签名 IPA\n- PicaX-with-watch-unsigned.ipa：iOS + Watch 未签名 IPA\n- PicaX-WatchApp-unsigned.zip：Watch App 未签名 ZIP\n- PicaX.dmg：macOS 未签名 DMG\n安装说明\n\n这些产物均为未签名构建，不能像 App Store 应用一样直接安装。\n\niOS 版本通常需要自行签名后安装。\nWatch 版本通常需要自行通过XCode编译安装到Apple Watch。\nmacOS 版本如遇到系统安全拦截，需要在系统设置中手动允许打开，或自行重新签名。\n版本信息\n\n- 版本：v1.2.3\n- Commit：ae2e34f7349c259e99142c05429f249c4c4ed84a\n- 构建编号：61\n更新内容\n\n- 增加了搜索组合预览、逐平台请求进度、结果分批展示和失败平台重试\n- 增加了可命名、编辑和置顶的常用搜索\n- 增加了临时查看屏蔽内容功能\n- 增加了多源版本查看、详情页其他来源入口\n- 增加了下载完整性检查及缺失、损坏页面的单独修复\n- 增加了支持页面缩略图、备注和跨章节跳转的阅读书签\n- 增加了 ZIP、CBZ、PDF 本地漫画导入及 PDF 阅读分辨率设置\n- 增加了 iOS 应用锁，支持 Face ID、Touch ID、设备密码和后台锁定时间设置\n- 增加了常用搜索、书签和版本分组的备份…",
               "downloadURL": "https://github.com/youshen2/PicaX/releases/download/v1.2.3/PicaX-unsigned.ipa",
               "size": 11241040,
@@ -312,6 +338,7 @@
           "version": "1.2.3",
           "date": "2026-09-05",
           "buildVersion": "2609051",
+          "buildNumber": "2609051",
           "localizedDescription": "这是由 GitHub Actions 自动构建的发行版本。\n下载说明\n\n请在下方 Assets 中下载对应平台的构建产物。\n\n- PicaX-unsigned.ipa：iOS 未签名 IPA\n- PicaX-with-watch-unsigned.ipa：iOS + Watch 未签名 IPA\n- PicaX-WatchApp-unsigned.zip：Watch App 未签名 ZIP\n- PicaX.dmg：macOS 未签名 DMG\n安装说明\n\n这些产物均为未签名构建，不能像 App Store 应用一样直接安装。\n\niOS 版本通常需要自行签名后安装。\nWatch 版本通常需要自行通过XCode编译安装到Apple Watch。\nmacOS 版本如遇到系统安全拦截，需要在系统设置中手动允许打开，或自行重新签名。\n版本信息\n\n- 版本：v1.2.3\n- Commit：ae2e34f7349c259e99142c05429f249c4c4ed84a\n- 构建编号：61\n更新内容\n\n- 增加了搜索组合预览、逐平台请求进度、结果分批展示和失败平台重试\n- 增加了可命名、编辑和置顶的常用搜索\n- 增加了临时查看屏蔽内容功能\n- 增加了多源版本查看、详情页其他来源入口\n- 增加了下载完整性检查及缺失、损坏页面的单独修复\n- 增加了支持页面缩略图、备注和跨章节跳转的阅读书签\n- 增加了 ZIP、CBZ、PDF 本地漫画导入及 PDF 阅读分辨率设置\n- 增加了 iOS 应用锁，支持 Face ID、Touch ID、设备密码和后台锁定时间设置\n- 增加了常用搜索、书签和版本分组的备份…",
           "downloadURL": "https://github.com/youshen2/PicaX/releases/download/v1.2.3/PicaX-unsigned.ipa",
           "size": 11241040,
@@ -328,7 +355,6 @@
       "minOSVersion": "15.2"
     }
   ],
-  "iconURL": "https://raw.githubusercontent.com/Predidit/Kazumi/2.3.3/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
   "featuredApps": [
     "com.example.kazumi",
     "org.animeko.animeko"
