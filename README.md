@@ -5,7 +5,7 @@
 三个客户端都能用：**SideStore / AltStore / LiveContainer**。
 
 > ⚠️ SideStore、AltStore 与 LiveContainer 的解析逻辑**不一样**，同一个源在两边看到的东西可能不同。
-> 典型例子就是 EhPanda 的测试版 3.0.0 —— 详见《两个客户端的差异》。
+> 典型例子：测试版（EhPanda 3.0.0 / Animeko 6.2.0）在 LiveContainer 里默认就能装，在 SideStore 里得先开 Beta 开关 —— 详见《两个客户端的差异》。
 
 ## 添加这个源
 
@@ -37,13 +37,13 @@ https://raw.githubusercontent.com/laincat/AltStore/main/apps.json
 | 应用 | Bundle ID | 稳定版 | 体积 | 最低系统 | 测试版 | 上游 |
 |---|---|---|---|---|---|---|
 | Kazumi | `com.example.kazumi` | 2.3.3 | 28.4 MB | iOS 15.0+ | 无 | [Predidit/Kazumi](https://github.com/Predidit/Kazumi) |
-| Animeko | `org.animeko.animeko` | 6.1.0 | 42.4 MB | iOS 14.0+ | 无 | [open-ani/animeko](https://github.com/open-ani/animeko) |
+| Animeko | `org.animeko.animeko` | 6.1.0 | 42.4 MB | iOS 14.0+ | **6.2.0**（42.7 MB） | [open-ani/animeko](https://github.com/open-ani/animeko) |
 | EhPanda | `app.ehpanda` | 2.8.1 | 7.0 MB | **iOS 26.0+** | **3.0.0**（9.7 MB） | [EhPanda-Team/EhPanda](https://github.com/EhPanda-Team/EhPanda) |
 | VeneraX | `io.github.kyosee.venera` | 2.3.2 | 33.8 MB | iOS 16.0+ | 无 | [Kyosee/VeneraX](https://github.com/Kyosee/VeneraX) |
 | Breeze | `com.zephyr.breeze` | 3.0.31 | 24.6 MB | iOS 15.0+ | 无 | [deretame/Breeze](https://github.com/deretame/Breeze) |
 | PicaX | `moye.PicaX` | 1.2.3 | 10.7 MB | iOS 15.2+ | 无 | [youshen2/PicaX](https://github.com/youshen2/PicaX) |
 
-每个应用提供 **stable（稳定）** 轨道；只有 EhPanda 有可用的测试版，额外提供 **nightly（测试）** 轨道，内含 3.0.0。
+每个应用提供 **stable（稳定）** 轨道；**EhPanda** 与 **Animeko** 另有 **nightly（测试）** 轨道（分别是 3.0.0 与 6.2.0）。
 
 ## 两个客户端的差异（重要）
 
@@ -81,18 +81,20 @@ if versions.isEmpty {          // ← 只有轨道取不到东西时，才会回
 
 stable 轨道非空，这个 `if` 永远不成立（整个 `StoreApp.swift` 里搜 `forKey: .versions` 只有这一处）。
 
-## EhPanda 的测试版 3.0.0
+## 测试版（nightly 轨道）
 
-| 客户端 | 怎么才能拿到 3.0.0 |
+目前两个应用带测试版：**EhPanda 3.0.0**（正式版 2.8.1）与 **Animeko 6.2.0**（正式版 6.1.0，上游 tag 是 `v6.2.0-alpha01`）。
+
+| 客户端 | 怎么才能拿到测试版 |
 |---|---|
-| **LiveContainer** | **什么都不用做**。源里 `versions[0]` 就是 3.0.0，列表里直接显示、点安装就是它，旁边带「测试版」角标 |
+| **LiveContainer** | **什么都不用做**。源里 `versions[0]` 就是测试版，列表里直接显示、点安装就是它，旁边带「测试版」角标 |
 | **SideStore / AltStore** | 要手动开开关：`设置 → Beta Testing → 打开 Beta Updates`（轨道选 `nightly`，默认就是它，不用改） |
 
 SideStore 那三层门槛（源码 `AltStore/Core/Model/StoreApp.swift`）：
 
 1. `isBetaUpdatesEnabled` —— 设置里的 `Beta Updates` 开关，**默认 false**
 2. `betaUdpatesTrack` —— 轨道名，默认 `nightly`（下拉框只提供 `alpha` 和 `nightly`）
-3. `betaSemVer >= stableSemVer` —— 3.0.0 > 2.8.1 ✓
+3. `betaSemVer >= stableSemVer` —— EhPanda 3.0.0 > 2.8.1 ✓；Animeko 6.2.0 > 6.1.0 ✓
 
 ```swift
 private var betaReleases: [AppVersion]? {
@@ -107,6 +109,35 @@ private var betaReleases: [AppVersion]? {
 // 注意是「取代」不是「合并」：开关打开后看到的就是 beta 轨道的内容
 ```
 
+### ⚠️ 为什么 Animeko 写的是 6.2.0，而不是上游的 6.2.0-alpha01
+
+因为**写成 `6.2.0-alpha01` 就一定装不上**。SideStore 安装前会拿声明值和包内真实值逐字核对，
+源码 `AltStore/Core/Operations/VerifyAppOperation.swift`：
+
+```swift
+// 第 5 步：版本 & build 版本校验
+if let buildVersion {
+    guard buildVersion == appBundle.buildVersion else {
+        throw VerificationError.mismatchedBuildVersion(...)
+    }
+}
+if version != appBundle.version {
+    throw VerificationError.mismatchedVersion(...)      // ← 不一致就中止安装
+}
+```
+
+而 Animeko 的预发布包**里面**写的是：
+
+| 字段 | 包内真实值 | 上游 tag |
+|---|---|---|
+| `CFBundleShortVersionString` | `6.2.0` | `v6.2.0-alpha01` |
+| `CFBundleVersion` | `60201` | ← 预发布序号其实编码在这里（alpha01 → `…01`） |
+
+所以 `version` **只能**填 `6.2.0`、`buildVersion` 填 `60201`。想一眼看出是哪个预发布，就只能写进**说明文字**——
+每条预发布的更新日志开头会自动加一行 `🧪 预发布 <tag>（日期）`。
+
+> 顺带一提：把预发布拆成独立 app 条目、`version` 直接写 tag 串的那种源，在 SideStore 上就是被这一步挡住的。
+
 ### 本地就能验证，不用装到手机上
 
 ```bash
@@ -118,6 +149,12 @@ python tools/simulate_client.py --client sidestore
 这个脚本把两家客户端的解析逻辑都照抄成了 Python，直接告诉你「谁会看到、会安装哪个版本」：
 
 ```
+Animeko   (org.animeko.animeko)
+   SideStore · 关 Beta → ['6.1.0']
+   SideStore · 开 Beta → ['6.2.0']
+      ⚠️ ['6.2.0'] 只有开了 Beta 开关才可见
+   LiveContainer       → 会安装 6.2.0 (60201)  [BETA 角标]   [来源：扁平 versions[0]]
+
 EhPanda   (app.ehpanda)
    SideStore · 关 Beta → ['2.8.1']
    SideStore · 开 Beta → ['3.0.0']
@@ -212,23 +249,30 @@ python tools/build_source.py --versions 4    # 稳定版轨道保留最近 4 个
 源里的 **Bundle ID、版本号、最低系统版本都是从 IPA 包内读出来的**，不是猜的，也不是抄 README：
 
 - 对每个 IPA 发 HTTP Range 请求，只读 zip 尾部的中央目录 + `Payload/*.app/Info.plist`（几十 KB，**不下载整包**），解析 `CFBundleIdentifier` / `CFBundleShortVersionString` / `MinimumOSVersion` / 实际字节数
+- **声明的 `version` / `buildVersion` 一律取包内真实值，不取 tag**（SideStore 会逐字比对，见上文《为什么 Animeko 写的是 6.2.0》）；tag 另存在 `releaseTag` 字段里，预发布的 tag 还会写进更新日志开头
 - 同一应用的测试版与稳定版做 Bundle ID 一致性校验，不一致的丢弃
 - 跨版本 Bundle ID 不一致的版本会被丢弃
 - 图标取自各仓库对应 tag 下的 AppIcon 资源（1024×1024），探测失败自动回退为仓库头像
 - **源自身的 logo** 用的是 `https://github.com/laincat.png`（GitHub 头像，会 302 到 `avatars.githubusercontent.com`），换头像时源里自动跟着变
 
-## 为什么只有 EhPanda 有测试版
+## 哪些预发布会被收，为什么
 
 6 个仓库的发布记录全扫过（含 tag 名带 beta/alpha/rc/nightly 但没打预发布标记的）：
 
 | 仓库 | 情况 | 结论 |
 |---|---|---|
 | Kazumi | 最近 100+ 个发布里没有任何 beta/alpha/rc | 无测试版 |
-| Animeko | 有 `v6.1.0-beta01`，但更新日志与正式版 6.1.0 **逐字相同**，且包内真实 Bundle ID 就是 `org.animeko.animeko`（**没有**独立的 beta ID，`org.animeko.animeko.beta` 是别的源编出来的） | 不收 |
+| Animeko | `v6.2.0-alpha01`（2026-09-17），更新日志是**全新的**内容（Bangumi 收藏冲突处理、弹幕颜色与位置、图片查看器独立窗口等），比正式版 6.1.0 新 | **收录** |
 | EhPanda | `3.0.0`，比稳定版 2.8.1 新一个月（离线下载、文件夹分类等） | **收录** |
 | VeneraX | `v2.1.8-beta.1`，比稳定版 2.3.2 **落后 5 个小版本**；作者发布说明写着「内部测试版，仅用于开发验证，**请勿分发**」 | 不收（版本号更低，SideStore 也不会显示） |
 | Breeze | 最近 100 个发布里无 beta/alpha | 无测试版 |
 | PicaX | 仓库总共只有 13 个发布，无预发布 | 无测试版 |
+
+> **Animeko 早先为什么不收**：`v6.1.0-beta01` 的更新日志与正式版 6.1.0 **逐字相同**，等于没有独立内容；
+> `v6.2.0-alpha01` 是新东西，所以收了。判断标准是「有没有独立的新内容」，不是「tag 里带不带 alpha」。
+>
+> 另外，Animeko 包内真实 Bundle ID 就是 `org.animeko.animeko`，**没有**独立的 beta ID ——
+> `org.animeko.animeko.beta` 是别的源编出来的，本仓库不编造 ID。
 
 ## 注意事项
 

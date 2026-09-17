@@ -96,6 +96,12 @@ APPS = [
     {
         "repo": "open-ani/animeko",
         "asset": lambda n: n.endswith(".ipa"),
+        # Animeko 的预发布节奏是 alpha01→alpha02→…→beta01→…→正式版，
+        # 每个预发布都带真 ipa（ani-<ver>.ipa），所以 nightly 直接取「最新的预发布」。
+        # ⚠️ 注意：开了 nightly 之后，扁平 versions[0] 会变成预发布 ——
+        #    LiveContainer 没有开关也没有版本选择器，会直接装它；
+        #    SideStore 侧不受影响，stable 轨道仍是正式版。
+        "nightly": True,
         "name": "Animeko",
         "developerName": "open-ani",
         "subtitle": "一站式弹幕追番平台",
@@ -111,7 +117,7 @@ APPS = [
     {
         "repo": "EhPanda-Team/EhPanda",
         "asset": lambda n: n == "EhPanda.ipa",
-        # 唯一一个有真实可用测试版的应用：3.0.0（比稳定版 2.8.1 新，含离线下载）
+        # 有真实可用测试版：3.0.0（比稳定版 2.8.1 新，含离线下载）
         "nightly": True,
         "name": "EhPanda",
         "developerName": "EhPanda Team",
@@ -415,6 +421,28 @@ def load_previous(path):
 
 
 # ---------- 组装 ----------
+def notes_for(r):
+    """发布说明；预发布会在开头补一行 GitHub 上的预发布标签。
+
+    为什么只能写在说明里：SideStore 安装时会拿 `version` / `buildVersion` 跟
+    **下载下来的 IPA 里的真实值逐字比对**（`VerifyAppOperation` 第 5 步
+    `verifyDownloadedVersion`：buildVersion 和 version 任一不等就抛
+    mismatchedBuildVersion / mismatchedVersion，直接中止安装）。
+    而 Animeko 这类项目的预发布 IPA 里 `CFBundleShortVersionString` 只写基础版本
+    （`6.2.0`），预发布序号藏在 `CFBundleVersion` 里（`6.2.0-alpha01` → `60201`）。
+    所以 `version` 字段**必须**填探测到的 `6.2.0`，不能填 tag 上的 `6.2.0-alpha01`。
+    想让人一眼看出是哪个预发布，就只剩「说明文字」这个位置了。
+    """
+    notes = clean_notes(r.get("body"))
+    if not r.get("prerelease"):
+        return notes
+    tag = (r.get("tag_name") or "").strip().lstrip("vV")
+    if not tag:
+        return notes
+    head = "🧪 预发布 %s（%s）" % (tag, (r.get("published_at") or "")[:10])
+    return head + ("\n\n" + notes if notes else "")
+
+
 def make_versions(picks, repo, bundle_id=None, reprobe=False):
     """把 (release, asset) 列表探测成版本对象；bundleId 与首个不一致的会被丢弃。"""
     out = []
@@ -437,7 +465,7 @@ def make_versions(picks, repo, bundle_id=None, reprobe=False):
             # 两个都写，谁也别说谁错 —— 多出来的键两边都会忽略。
             "buildVersion": m["buildVersion"],
             "buildNumber": m["buildVersion"],
-            "localizedDescription": clean_notes(r.get("body")),
+            "localizedDescription": notes_for(r),
             "downloadURL": a["browser_download_url"],
             "size": a["size"],
             "minOSVersion": m["minOSVersion"],

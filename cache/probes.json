@@ -206,5 +206,13 @@
     "displayName": "Animeko",
     "minOSVersion": "14.0",
     "size": 44434411
+  },
+  "https://github.com/open-ani/animeko/releases/download/v6.2.0-alpha01/ani-6.2.0-alpha01.ipa": {
+    "bundleIdentifier": "org.animeko.animeko",
+    "version": "6.2.0",
+    "buildVersion": "60201",
+    "displayName": "Animeko",
+    "minOSVersion": "14.0",
+    "size": 44773293
   }
 }
