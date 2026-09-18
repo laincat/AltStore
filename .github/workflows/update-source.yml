@@ -159,6 +159,65 @@ jobs:
           git push
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
+      - name: 发布/滚动更新 Release（固定 tag，永远只留一个）
+        id: release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          TAG="latest"
+
+          # ── 为什么是「固定 tag + 滚动覆盖」，而不是「一次内容一个 tag」──────
+          # 本流水线每 15 分钟跑一轮。若每轮都建 tag/release，就是一天 96 个、
+          # 一周 672 个 —— 另一个仓库踩过同款坑：tag 用构建时间戳，一次清掉
+          # 1409 个。这里 tag 名永远叫 latest，只覆盖它下面的 asset，于是：
+          #   · URL 永久稳定：/releases/download/latest/apps.json
+          #   · tag / release 数量恒定为 1，不随时间膨胀
+          # ─────────────────────────────────────────────────────────────
+
+          exists=false
+          if gh release view "$TAG" >/dev/null 2>&1; then exists=true; fi
+
+          # 首次（release 还不存在）即使本轮无变化也要建一次，否则用户会以为没生效
+          if [ "${{ steps.commit.outputs.changed }}" != "true" ] && [ "$exists" = "true" ]; then
+            echo "apps.json 无变化且 release 已存在 → 跳过"
+            exit 0
+          fi
+
+          # ⚠️ 用 git rev-parse HEAD，不要用 $GITHUB_SHA：
+          #    schedule 触发时 GITHUB_SHA 是「触发那一刻」的提交，而上面刚产生
+          #    了新提交（自动更新），两者不是同一个。用错会让 tag 指向旧树。
+          SHA=$(git rev-parse HEAD)
+          git tag -f "$TAG" "$SHA"
+          # tag push 不会触发本工作流（触发器限定了 branches: [main]，tag 不匹配）
+          git push -f origin "refs/tags/$TAG"
+
+          if [ "$exists" = "true" ]; then
+            gh release upload "$TAG" apps.json --clobber
+            echo "已滚动覆盖 asset：apps.json（tag ${TAG} -> ${SHA:0:7}）"
+          else
+            cat > /tmp/release-notes.md <<'EOF'
+          本 release 的 tag 固定为 `latest`，其下的 `apps.json` 在每次内容变化后被覆盖。
+          也就是说本页永远只有这一个 release，tag 指向当前内容所在的那个提交。
+
+          一个永久稳定的备用下载地址：
+
+          ```
+          https://github.com/laincat/AltStore/releases/download/latest/apps.json
+          ```
+
+          注意：订阅这个源并不需要走 Release —— `raw.githubusercontent.com` 的直链
+          一直是可用的。这里主要提供「点击下载」入口与内容快照。
+          EOF
+            gh release create "$TAG" apps.json \
+              --title "最新源文件（滚动更新）" \
+              --notes-file /tmp/release-notes.md \
+              --latest
+            echo "已创建 release：$TAG"
+          fi
+
+          echo "url=https://github.com/laincat/AltStore/releases/download/$TAG/apps.json" >> "$GITHUB_OUTPUT"
+
       - name: 同步到 cnb.cool（没配 secret 就跳过）
         if: ${{ env.CNB_TOKEN != '' }}
         run: |
@@ -207,4 +266,7 @@ jobs:
               echo "- ⏸ 上游无新版本，未产生提交"
             fi
             echo "- cnb.cool 同步：${{ env.CNB_TOKEN != '' && '已启用' || '未配置（跳过）' }}"
+            if [ -n "${{ steps.release.outputs.url }}" ]; then
+              echo "- Release 地址（固定，滚动覆盖）：${{ steps.release.outputs.url }}"
+            fi
           } >> "$GITHUB_STEP_SUMMARY"
