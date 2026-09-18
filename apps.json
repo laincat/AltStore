@@ -3,7 +3,7 @@
   "identifier": "com.acgtoolbox.source",
   "iconURL": "https://github.com/laincat.png?size=512",
   "subtitle": "番剧 · 漫画 iOS 自签源",
-  "description": "收录 8 款开源 iOS 应用：番剧类 Kazumi、Animeko，漫画阅读类 EhPanda、VeneraX、Venera Prime、VeneraNext、Breeze、PicaX。所有 IPA 均直连各项目 GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。",
+  "description": "收录 9 款开源 iOS 应用：番剧类 Kazumi、Animeko，漫画阅读类 EhPanda、VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX。所有 IPA 均直连各项目 GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。",
   "tintColor": "#7C5CFF",
   "apps": [
     {
@@ -230,7 +230,7 @@
       "bundleIdentifier": "io.github.kyosee.venera",
       "developerName": "Kyosee",
       "subtitle": "多图源漫画阅读器",
-      "localizedDescription": "原版 Venera 的个人维护增强分支，支持通过插件接入多种漫画图源，提供本地收藏、阅读进度同步等能力。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Kyosee/VeneraX",
+      "localizedDescription": "原版 Venera 的个人维护增强分支，支持通过插件接入多种漫画图源，提供本地收藏、阅读进度同步等能力。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Kyosee/VeneraX",
       "iconURL": "https://raw.githubusercontent.com/Kyosee/VeneraX/v2.3.2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#4A8FE7",
       "category": "books",
@@ -283,7 +283,7 @@
       "bundleIdentifier": "com.github.wgh136.venera.prime",
       "developerName": "venera-app",
       "subtitle": "次世代多图源漫画阅读器",
-      "localizedDescription": "原版 Venera 的次世代重写版，Flutter + Rust 构建。支持本地漫画与网络图源阅读、用 JavaScript 编写自定义漫画源、收藏管理、下载、评论与标签查看；中文标签翻译来自 EhTagTranslation 项目。\n\n注意：这与源里的 VeneraX、VeneraNext 是三个独立应用（Bundle ID 各不相同），可以同时安装。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/venera-app/venera-prime",
+      "localizedDescription": "原版 Venera 的次世代重写版，Flutter + Rust 构建。支持本地漫画与网络图源阅读、用 JavaScript 编写自定义漫画源、收藏管理、下载、评论与标签查看；中文标签翻译来自 EhTagTranslation 项目。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/venera-app/venera-prime",
       "iconURL": "https://raw.githubusercontent.com/venera-app/venera-prime/v2.4.0/assets/app_icon.png",
       "tintColor": "#0784FC",
       "category": "books",
@@ -336,7 +336,7 @@
       "bundleIdentifier": "com.github.cyrilpeng.veneranext",
       "developerName": "CyrilPeng",
       "subtitle": "支持 WebDAV 同步的漫画阅读器",
-      "localizedDescription": "Venera 的 fork 分支，基于 Flutter 的跨平台漫画阅读器，支持本地漫画与网络漫画源，覆盖 iOS / Android / Windows / Linux / macOS。核心思路是尽量减少打断阅读：长篇作品可用瀑布流跨章节连续阅读，支持收藏、追更、离线下载，并能通过 WebDAV 在多台设备之间同步数据。\n\n注意：这与源里的 VeneraX、Venera Prime 是三个独立应用（Bundle ID 各不相同），可以同时安装。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/CyrilPeng/Venera-Next",
+      "localizedDescription": "Venera 的 fork 分支，基于 Flutter 的跨平台漫画阅读器，支持本地漫画与网络漫画源，覆盖 iOS / Android / Windows / Linux / macOS。核心思路是尽量减少打断阅读：长篇作品可用瀑布流跨章节连续阅读，支持收藏、追更、离线下载，并能通过 WebDAV 在多台设备之间同步数据。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/CyrilPeng/Venera-Next",
       "iconURL": "https://raw.githubusercontent.com/CyrilPeng/Venera-Next/v1.15.0/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
       "tintColor": "#2090E0",
       "category": "books",
@@ -382,6 +382,59 @@
       "versionDescription": "新增\n\n- 阅读器新增跨平台夜间调光与自定义亮度控制，支持在阅读设置和底部快捷面板中实时调整，并沿用全局、设备及漫画专属设置优先级。",
       "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.15.0/VeneraNext-ios-1.15.0%2B223.ipa",
       "size": 19875257,
+      "minOSVersion": "14.0"
+    },
+    {
+      "name": "Venera-SSR",
+      "bundleIdentifier": "com.github.kiastr.venera-ssr",
+      "developerName": "Kiastr",
+      "subtitle": "带 AI 上色 / 超分 / OCR 翻译的漫画阅读器",
+      "localizedDescription": "改版漫画阅读器，支持多种漫画源。特色是全部在本地运行的三类增强：阅读时实时做黑白漫画 AI 上色、Anime4K 超分辨率（含 Real-ESRGAN 推理模型 V4 版）、以及图片内嵌文字的 OCR 翻译（谷歌免费 API / 大模型 API / 下载翻译模型三种模式）。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n注意：这里取的是标准版 iOS 包。上游的「翻译版」（内置 OCR 等模型）只提供了 Android 包，iOS 侧需要的模型文件要另外到上游的模型发布（tag 为 model、translation-models）下载。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Kiastr/Venera-SSR",
+      "iconURL": "https://raw.githubusercontent.com/Kiastr/Venera-SSR/v2.1.5/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
+      "tintColor": "#C4BA12",
+      "category": "books",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "releaseChannels": [
+        {
+          "track": "stable",
+          "releases": [
+            {
+              "version": "2.1.5",
+              "date": "2026-08-01",
+              "buildVersion": "215",
+              "buildNumber": "215",
+              "localizedDescription": "Venera-SSR v2.1.5\r\n\r\n标准版基于 main 分支构建，翻译版（含 OCR 等模型）基于 feature/translation-embed 分支构建。\r\n\r\n> 🎉 此版本添加了带推理模型V4版超分功能，此功能效果速度远超基础超分功能，V4版Real-ESRGAN模式仅供测试。\r\n\r\n> 🎉 图片内嵌文字翻译功能已上线。：三种翻译模式：谷歌免费API翻译（国内网络不能直接用），大模型API接入翻译，下载翻译模型翻译。\r\n> 两种使用方式：推荐下载漫画后翻译\r\n\r\n> 🎉 上色功能优化：现在大部分设备可以使用AI 上色功能了，但可能存在以下问题：\r\n> 骁龙8gen2及以上可以流畅使用在线实时上色阅读。 性能更低的机型可以先尝试，刚打开功能的第一张可能卡住，可以先看后面的图片。The first image when you first open this feature might get stuck; please check the subsequent images first.\r\n> - 上色处理较慢，建议下载漫画后使用,或者调低颜色强度，推荐使用int8版本模型，\r\n> - 部分模型参数量较低，上色效果待优化\r\n\r\n> 🎉 超分功能可正常使用\r\n> - 黑白漫画超分效果劣化已修复，添加边缘感知 Unblur\"（按 Sobel 梯度保护细线），\r\n\r\n> ⚠️ 如果在不支持的设备想体验ai上色可以在此链接下载独立后的ai上色应用，GUI一键操作,带进度条批量上色：https://github.com/Kiastr/AiColorize/release…",
+              "downloadURL": "https://github.com/Kiastr/Venera-SSR/releases/download/v2.1.5/Venera-SSR-v2.1.5-ios.ipa",
+              "size": 15740079,
+              "minOSVersion": "14.0",
+              "releaseTag": "v2.1.5",
+              "source": "https://github.com/Kiastr/Venera-SSR/releases/tag/v2.1.5"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "version": "2.1.5",
+          "date": "2026-08-01",
+          "buildVersion": "215",
+          "buildNumber": "215",
+          "localizedDescription": "Venera-SSR v2.1.5\r\n\r\n标准版基于 main 分支构建，翻译版（含 OCR 等模型）基于 feature/translation-embed 分支构建。\r\n\r\n> 🎉 此版本添加了带推理模型V4版超分功能，此功能效果速度远超基础超分功能，V4版Real-ESRGAN模式仅供测试。\r\n\r\n> 🎉 图片内嵌文字翻译功能已上线。：三种翻译模式：谷歌免费API翻译（国内网络不能直接用），大模型API接入翻译，下载翻译模型翻译。\r\n> 两种使用方式：推荐下载漫画后翻译\r\n\r\n> 🎉 上色功能优化：现在大部分设备可以使用AI 上色功能了，但可能存在以下问题：\r\n> 骁龙8gen2及以上可以流畅使用在线实时上色阅读。 性能更低的机型可以先尝试，刚打开功能的第一张可能卡住，可以先看后面的图片。The first image when you first open this feature might get stuck; please check the subsequent images first.\r\n> - 上色处理较慢，建议下载漫画后使用,或者调低颜色强度，推荐使用int8版本模型，\r\n> - 部分模型参数量较低，上色效果待优化\r\n\r\n> 🎉 超分功能可正常使用\r\n> - 黑白漫画超分效果劣化已修复，添加边缘感知 Unblur\"（按 Sobel 梯度保护细线），\r\n\r\n> ⚠️ 如果在不支持的设备想体验ai上色可以在此链接下载独立后的ai上色应用，GUI一键操作,带进度条批量上色：https://github.com/Kiastr/AiColorize/release…",
+          "downloadURL": "https://github.com/Kiastr/Venera-SSR/releases/download/v2.1.5/Venera-SSR-v2.1.5-ios.ipa",
+          "size": 15740079,
+          "minOSVersion": "14.0",
+          "releaseTag": "v2.1.5",
+          "source": "https://github.com/Kiastr/Venera-SSR/releases/tag/v2.1.5"
+        }
+      ],
+      "version": "2.1.5",
+      "versionDate": "2026-08-01",
+      "versionDescription": "Venera-SSR v2.1.5\r\n\r\n标准版基于 main 分支构建，翻译版（含 OCR 等模型）基于 feature/translation-embed 分支构建。\r\n\r\n> 🎉 此版本添加了带推理模型V4版超分功能，此功能效果速度远超基础超分功能，V4版Real-ESRGAN模式仅供测试。\r\n\r\n> 🎉 图片内嵌文字翻译功能已上线。：三种翻译模式：谷歌免费API翻译（国内网络不能直接用），大模型API接入翻译，下载翻译模型翻译。\r\n> 两种使用方式：推荐下载漫画后翻译\r\n\r\n> 🎉 上色功能优化：现在大部分设备可以使用AI 上色功能了，但可能存在以下问题：\r\n> 骁龙8gen2及以上可以流畅使用在线实时上色阅读。 性能更低的机型可以先尝试，刚打开功能的第一张可能卡住，可以先看后面的图片。The first image when you first open this feature might get stuck; please check the subsequent images first.\r\n> - 上色处理较慢，建议下载漫画后使用,或者调低颜色强度，推荐使用int8版本模型，\r\n> - 部分模型参数量较低，上色效果待优化\r\n\r\n> 🎉 超分功能可正常使用\r\n> - 黑白漫画超分效果劣化已修复，添加边缘感知 Unblur\"（按 Sobel 梯度保护细线），\r\n\r\n> ⚠️ 如果在不支持的设备想体验ai上色可以在此链接下载独立后的ai上色应用，GUI一键操作,带进度条批量上色：https://github.com/Kiastr/AiColorize/release…",
+      "downloadURL": "https://github.com/Kiastr/Venera-SSR/releases/download/v2.1.5/Venera-SSR-v2.1.5-ios.ipa",
+      "size": 15740079,
       "minOSVersion": "14.0"
     },
     {
@@ -499,7 +552,7 @@
     {
       "title": "源已建立",
       "identifier": "source-created",
-      "caption": "收录 8 款应用，IPA 直连各项目 GitHub Release。",
+      "caption": "收录 9 款应用，IPA 直连各项目 GitHub Release。",
       "date": "2026-09-15",
       "tintColor": "#7C5CFF",
       "notify": false

@@ -230,5 +230,13 @@
     "displayName": "VeneraNext",
     "minOSVersion": "14.0",
     "size": 19875257
+  },
+  "https://github.com/Kiastr/Venera-SSR/releases/download/v2.1.5/Venera-SSR-v2.1.5-ios.ipa": {
+    "bundleIdentifier": "com.github.kiastr.venera-ssr",
+    "version": "2.1.5",
+    "buildVersion": "215",
+    "displayName": "Venera",
+    "minOSVersion": "14.0",
+    "size": 15740079
   }
 }

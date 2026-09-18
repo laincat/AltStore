@@ -134,7 +134,7 @@ jobs:
           # 凭空少一个 App。生成脚本本身在抓取失败时会沿用上一次的条目，
           # 所以正常情况下这个下限永远达标，真触发了一定是有问题。
           # ⚠️ 每加/删一个应用，这里都要跟着改。
-          python tools/verify_source.py --min-apps 8
+          python tools/verify_source.py --min-apps 9
 
       - name: 核对两个客户端的解析结果
         run: |

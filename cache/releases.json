@@ -2049,5 +2049,109 @@
         }
       ]
     }
+  ],
+  "Kiastr/Venera-SSR": [
+    {
+      "tag": "v2.1.5",
+      "name": "v2.1.5",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-01",
+      "body": "# Venera-SSR v2.1.5\r\n\r\n标准版基于 main 分支构建，翻译版（含 OCR 等模型）基于 feature/translation-embed 分支构建。\r\n\r\n> 🎉 **此版本添加了带推理模型V4版超分功能，此功能效果速度远超基础超分功能，V4版Real-ESRGAN模式仅供测试。**\r\n\r\n> 🎉 **图片内嵌文字翻译功能已上线。**：三种翻译模式：谷歌免费API翻译（国内网络不能直接用），大模型API接入翻译，下载翻译模型翻译。\r\n> 两种使用方式：推荐下载漫画后翻译\r\n\r\n> 🎉 **上色功能优化**：现在大部分设备可以使用AI 上色功能了，但可能存在以下问题：\r\n> **骁龙8gen2及以上可以流畅使用在线实时上色阅读。** 性能更低的机型可以先尝试，刚打开功能的第一张可能卡住，可以先看后面的图片。The first image when you first open this feature might get stuck; please check the subsequent images first.\r\n> - 上色处理较慢，**建议下载漫画后使用,或者调低颜色强度，推荐使用int8版本模型**，\r\n> - 部分模型参数量较低，上色效果待优化\r\n\r\n> 🎉 **超分功能可正常使用**\r\n> - 黑白漫画超分效果劣化已修复，添加边缘感知 Unblur\"（按 Sobel 梯度保护细线），\r\n\r\n> ⚠️ **如果在不支持的设备想体验ai上色可以在此链接下载独立后的ai上色应用，GUI一键操作,带进度条批量上色**：https://github.com/Kiastr/AiColorize/releases/\r\n\r\n> 如遇问题请在 Log 页面查看相关错误日志。\r\n\r\n### 下载 Download\r\n\r\n想使用翻译功能请下载名字带 Translate 的程序，由于带 ocr 等模型，占用大小会显著变大。\r\n\r\n| 平台 | 下载 | 说明 |\r\n|------|------|------|\r\n| 安卓 Android（arm64-v8a） | [Venera-SSR-v2.1.5-android-arm64-v8a.apk](https://github.com/Kiastr/Venera-SSR/releases/download/v2.1.5/Venera-SSR-v2.1.5-android-arm64-v8a.apk) | 最新架构，推荐多数设备 |\r\n| 安卓带翻译功能（arm64-v8a） | [Venera-SSR-Translate-v2.1.5-arm64-v8a.apk](https://github.com/Kiastr/Venera-SSR/releases/download/v2.1.5/Venera-SSR-Translate-v2.1.5-arm64-v8a.apk) | 最新架构，含 OCR 等模型 |\r\n| 安卓旧架构 Android Old Architecture | [Venera-SSR-v2.1.5-android.apk](https://github.com/Kiastr/Venera-SSR/releases/download/v2.1.5/Venera-SSR-v2.1.5-android.apk) | 旧 / 通用架构设备V7a/×86 |\r\n| 安卓带翻译功能（旧架构） | [Venera-SSR-Translate-v2.1.5.apk](https://github.com/Kiastr/Venera-SSR/releases/download/v2.1.5/Venera-SSR-Translate-v2.1.5.apk) | 旧 / 通用架构设备，含 OCR 等模型 |\r\n| iOS | [Venera-SSR-v2.1.5-ios.ipa](https://github.com/Kiastr/Venera-SSR/releases/download/v2.1.5/Venera-SSR-v2.1.5-ios.ipa) | |\r\n| macOS | [Venera-SSR-v2.1.5-macos.zip](https://github.com/Kiastr/Venera-SSR/releases/download/v2.1.5/Venera-SSR-v2.1.5-macos.zip) | |\r\n| Windows | [Venera-SSR-v2.1.5-windows.zip](https://github.com/Kiastr/Venera-SSR/releases/download/v2.1.5/Venera-SSR-v2.",
+      "ipas": [
+        {
+          "name": "Venera-SSR-v2.1.5-ios.ipa",
+          "size": 15740079,
+          "url": "https://github.com/Kiastr/Venera-SSR/releases/download/v2.1.5/Venera-SSR-v2.1.5-ios.ipa"
+        }
+      ]
+    },
+    {
+      "tag": "model",
+      "name": "AI 模型文件 / Model Files",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-31",
+      "body": "Anime4K v4 超分模型 (Real-ESRGAN animevideov3, ONNX)。\n\n- realesr_animevideov3.onnx (~2.5MB, fp32, 动态尺寸, 4x)\n\n此模型已打包进 APK，此处提供作为下载管理器的镜像源（删除后可重新下载/切换镜像）。",
+      "ipas": []
+    },
+    {
+      "tag": "v2.1.4",
+      "name": "Venera-SSR v2.1.4",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-20",
+      "body": "# Venera-SSR v2.1.4\r\n\r\n基于 feature/translation-embed 分支构建\r\n\r\n> 🎉**图片内嵌文字翻译功能已上线。**：三种翻译模式：谷歌免费API翻译（国内网络不能直接用），大模型API接入翻译，下载翻译模型翻译。\r\n两种使用方式：推荐下载漫画后翻译\r\n\r\n>  🎉 **上色功能优化**：现在大部分设备可以使用AI 上色功能了，但可能存在以下问题：\r\n>**骁龙8gen2及以上可以流畅使用在线实时上色阅读。** 性能更低的机型可以先尝试，刚打开功能的第一张可能卡住，可以先看后面的图片。The first image when you first open this feature might get stuck; please check the subsequent images first.\r\n> - 上色处理较慢，**建议下载漫画后使用,或者调低颜色强度，推荐使用int8版本模型**，\r\n> - 部分模型参数量较低，上色效果待优化\r\n\r\n> 🎉 **超分功能可正常使用**\r\n> - 黑白漫画超分效果劣化已修复，添加边缘感知 Unblur\"（按 Sobel 梯度保护细线），\r\n>⚠️**翻译版本添加了带推理模型上色功能，此功能效果远超基础超分功能，推荐使用。**\r\n\r\n> ⚠️ **如果在不支持的设备想体验ai上色可以在此链接下载独立后的ai上色应用，GUI一键操作,带进度条批量上色**：https://github.com/Kiastr/AiColorize/releases/\r\n\r\n> 如遇问题请在 Log 页面查看相关错误日志。\r\n\r\n\r\n### 下载 Download\r\n\r\n想使用翻译功能请下载名字带 Translate 的程序，由于带 ocr 等模型，占用大小会显著变大。\r\n\r\n| 平台 | 下载 | 说明 |\r\n|------|------|------|\r\n| 安卓 Android（arm64-v8a） | [Venera-SSR-v2.1.4-android-arm64-v8a.apk](https://github.com/Kiastr/Venera-SSR/releases/download/v2.1.4/Venera-SSR-v2.1.4-android-arm64-v8a.apk) | 最新架构，推荐多数设备 |\r\n| 安卓带翻译功能（arm64-v8a） | [Venera-SSR-Translate-v2.1.4-arm64-v8a.apk](https://github.com/Kiastr/Venera-SSR/releases/download/v2.1.4/Venera-SSR-Translate-v2.1.4-arm64-v8a.apk) | 最新架构，含 OCR 等模型 |\r\n| 安卓旧架构 Android Old Architecture | [Venera-SSR-v2.1.4-android.apk](https://github.com/Kiastr/Venera-SSR/releases/download/v2.1.4/Venera-SSR-v2.1.4-android.apk) | 旧 / 通用架构设备V7a/×86 |\r\n| 安卓带翻译功能（旧架构） | [Venera-SSR-Translate-v2.1.4.apk](https://github.com/Kiastr/Venera-SSR/releases/download/v2.1.4/Venera-SSR-Translate-v2.1.4.apk) | 旧 / 通用架构设备，含 OCR 等模型 |\r\n| iOS | [Venera-SSR-v2.1.4-ios.ipa](https://github.com/Kiastr/Venera-SSR/releases/download/v2.1.4/Venera-SSR-v2.1.4-ios.ipa) | |\r\n| macOS | [Venera-SSR-v2.1.4-macos.zip](https://github.com/Kiastr/Venera-SSR/releases/download/v2.1.4/Venera-SSR-v2.1.4-macos.zip) | |\r\n| Windows | [Venera-SSR-v2.1.4-windows.zip](https://github.com/Kiastr/Venera-SSR/releases/download/v2.1.4/Venera-SSR-v2.1.4-windows.zip) | |\r\n| Linux | [Venera-SSR-v2.1.4-linu",
+      "ipas": [
+        {
+          "name": "Venera-SSR-v2.1.4-ios.ipa",
+          "size": 15579343,
+          "url": "https://github.com/Kiastr/Venera-SSR/releases/download/v2.1.4/Venera-SSR-v2.1.4-ios.ipa"
+        }
+      ]
+    },
+    {
+      "tag": "translation-models",
+      "name": "翻译模型 translation-models",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-19",
+      "body": "本地翻译模型 MarianMT (en_zh) 下载包（约 470MB fp32 单文件）。\n\n包含运行时文件：model.onnx、source.spm、target.spm、vocab.json、tokenizer_config.json、README.md。\n\n解压到应用 translation_models/en_zh 目录即可启用离线英→中翻译（无需联网/API）。\n\n下载地址：https://github.com/Kiastr/Venera-SSR/releases/download/translation-models/en_zh.zip",
+      "ipas": []
+    },
+    {
+      "tag": "2.1.3",
+      "name": "2.1.3",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-15",
+      "body": "- 更换了应用图标（参见 https://github.com/Kiastr/Venera-SSR/issues/3）\r\n- 修改了应用包名为 com.github.kiastr.venera_ssr（参见 https://github.com/Kiastr/Venera-SSR/issues/1）\r\n\r\n## Venera-SSR v2.1.2\r\n\r\n基于 feature/colorization 分支构建\r\n\r\n> ⚠️ **如果在不支持的设备想体验ai上色可以在此链接下载独立后的ai上色应用，GUI一键操作,带进度条批量上色**：https://github.com/Kiastr/AiColorize/releases/\r\n>  🎉 **上色功能优化**：现在大部分设备可以使用AI 上色功能了，但可能存在以下问题：\r\n> - 上色处理较慢，**建议下载漫画后使用,或者调低颜色强度，推荐使用int8版本模型**，\r\n##**骁龙8gen2及以上可以在线实时上色阅读。**\r\n> - 部分模型参数量较低，上色效果待优化\r\n\r\n> 🎉 **超分功能可正常使用**\r\n> - 黑白漫画超分效果可能较差\r\n>\r\n> 如遇问题请在 Log 页面查看 `Colorization` 相关错误日志。\r\n\r\n\r\n### 下载\r\n| 平台 | 文件 | 说明 |\r\n|------|------|------|\r\n| Android (arm64) | app-arm64-v8a-release.apk | 64 位 ARM（大多数现代手机） |\r\n| Android (armv7) | app-armeabi-v7a-release.apk | 32 位 ARM（旧设备） |\r\n| Android (x86_64) | app-x86_64-release.apk | x86_64 模拟器 |\r\n| Android (全架构) | app-release.apk | 包含所有架构（体积最大） |\r\n| iOS | app-release-ios.ipa | 未签名 ipa，需自签 |\r\n| Linux | app-release-linux.zip | 解压后运行 |\r\n| macOS | app-release-macos.zip | 解压后运行 |\r\n| Windows | Venera-Windows-v1.6.2.zip | 解压后运行 |\r\n\r\n---\r\n\r\n### Version 2.1.3\r\n",
+      "ipas": [
+        {
+          "name": "Venera-iOS-NoCodesign.ipa",
+          "size": 15579348,
+          "url": "https://github.com/Kiastr/Venera-SSR/releases/download/2.1.3/Venera-iOS-NoCodesign.ipa"
+        }
+      ]
+    },
+    {
+      "tag": "2.1.2",
+      "name": "v2.1.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-14",
+      "body": "- 更换了应用图标（参见 https://github.com/Kiastr/Venera-SSR/issues/3）\r\n- 修改了应用包名为 com.github.kiastr.venera_ssr（参见 https://github.com/Kiastr/Venera-SSR/issues/1）\r\n\r\n## Venera-SSR v2.1.2\r\n\r\n基于 feature/colorization 分支构建\r\n\r\n> ⚠️ **如果在不支持的设备想体验ai上色可以在此链接下载独立后的ai上色应用，GUI一键操作,带进度条批量上色**：https://github.com/Kiastr/AiColorize/releases/\r\n> ⚠️ **上色功能测试中**：AI 上色功能仍在调试阶段，可能存在以下问题：\r\n> - 上色处理较慢（CPU 推理，单张图片可能需要数十秒）\r\n> - 大部分设备上色可能失败\r\n> - 上色效果待优化\r\n\r\n> 🎉 **超分功能可正常使用**\r\n> - 黑白漫画超分效果可能较差\r\n>\r\n> 如遇问题请在 Log 页面查看 `Colorization` 相关错误日志。\r\n\r\n\r\n### 下载\r\n| 平台 | 文件 | 说明 |\r\n|------|------|------|\r\n| Android (arm64) | app-arm64-v8a-release.apk | 64 位 ARM（大多数现代手机） |\r\n| Android (armv7) | app-armeabi-v7a-release.apk | 32 位 ARM（旧设备） |\r\n| Android (x86_64) | app-x86_64-release.apk | x86_64 模拟器 |\r\n| Android (全架构) | app-release.apk | 包含所有架构（体积最大） |\r\n| iOS | app-release-ios.ipa | 未签名 ipa，需自签 |\r\n| Linux | app-release-linux.zip | 解压后运行 |\r\n| macOS | app-release-macos.zip | 解压后运行 |\r\n| Windows | Venera-Windows-v1.6.2.zip | 解压后运行 |\r\n",
+      "ipas": [
+        {
+          "name": "app-release-ios.ipa",
+          "size": 15468372,
+          "url": "https://github.com/Kiastr/Venera-SSR/releases/download/2.1.2/app-release-ios.ipa"
+        }
+      ]
+    },
+    {
+      "tag": "2.1.1",
+      "name": "v2.1.1 ",
+      "pre": false,
+      "draft": false,
+      "date": "2026-06-17",
+      "body": "## Venera-SSR v2.1.1\r\n\r\n基于 feature/colorization 分支构建\r\n\r\n> ⚠️ **上色功能测试中**：AI 上色功能仍在调试阶段，可能存在以下问题：\r\n> - 上色处理较慢（CPU 推理，单张图片可能需要数十秒）\r\n> - 大部分设备上色可能失败\r\n> - 上色效果待优化\r\n\r\n\r\n> - 黑白漫画超分效果较差\r\n>\r\n> 如遇问题请在 Log 页面查看 `Colorization` 相关错误日志。\r\n\r\n\r\n### 下载\r\n| 平台 | 文件 | 说明 |\r\n|------|------|------|\r\n| Android (arm64) | app-arm64-v8a-release.apk | 64 位 ARM（大多数现代手机） |\r\n| Android (armv7) | app-armeabi-v7a-release.apk | 32 位 ARM（旧设备） |\r\n| Android (x86_64) | app-x86_64-release.apk | x86_64 模拟器 |\r\n| Android (全架构) | app-release.apk | 包含所有架构（体积最大） |\r\n| iOS | app-release-ios.ipa | 未签名 ipa，需自签 |\r\n| Linux | app-release-linux.zip | 解压后运行 |\r\n| macOS | app-release-macos.zip | 解压后运行 |\r\n| Windows | Venera-Windows-v1.6.2.zip | 解压后运行 |",
+      "ipas": [
+        {
+          "name": "app-release-ios.ipa",
+          "size": 21092079,
+          "url": "https://github.com/Kiastr/Venera-SSR/releases/download/2.1.1/app-release-ios.ipa"
+        }
+      ]
+    },
+    {
+      "tag": "1.0",
+      "name": "",
+      "pre": false,
+      "draft": false,
+      "date": "2026-03-01",
+      "body": "After test\r\n超分SR在in总设置General Settings里",
+      "ipas": []
+    }
   ]
 }

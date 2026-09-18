@@ -70,12 +70,22 @@ SOURCE = {
     "iconURL": "https://github.com/laincat.png?size=512",
     "subtitle": "番剧 · 漫画 iOS 自签源",
     "description": (
-        "收录 8 款开源 iOS 应用：番剧类 Kazumi、Animeko，漫画阅读类 EhPanda、"
-        "VeneraX、Venera Prime、VeneraNext、Breeze、PicaX。所有 IPA 均直连各项目 "
+        "收录 9 款开源 iOS 应用：番剧类 Kazumi、Animeko，漫画阅读类 EhPanda、"
+        "VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX。所有 IPA 均直连各项目 "
         "GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。"
     ),
     "tintColor": "#7C5CFF",
 }
+
+# 所有 Venera 系应用的描述共用这一段。
+# 抽成常量的理由：源里已经有 4 个 Venera 分支（还在一个个加），
+# 之前是把「与源里另外几个是独立应用」逐条手写进各自描述里，
+# 结果每加一个都得回头改前面几个 —— 现在只改这一处。
+VENERA_NOTE = (
+    "\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、"
+    "Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；"
+    "但功能高度重叠，一般按需选一个。"
+)
 
 APPS = [
     {
@@ -143,8 +153,9 @@ APPS = [
         "icon": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
         "description": (
             "原版 Venera 的个人维护增强分支，支持通过插件接入多种漫画图源，"
-            "提供本地收藏、阅读进度同步等能力。\n\n"
-            "开源协议：GPL-3.0　·　项目主页：https://github.com/Kyosee/VeneraX"
+            "提供本地收藏、阅读进度同步等能力。"
+        ) + VENERA_NOTE + (
+            "\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Kyosee/VeneraX"
         ),
     },
     {
@@ -166,10 +177,9 @@ APPS = [
         "description": (
             "原版 Venera 的次世代重写版，Flutter + Rust 构建。支持本地漫画与网络图源阅读、"
             "用 JavaScript 编写自定义漫画源、收藏管理、下载、评论与标签查看；"
-            "中文标签翻译来自 EhTagTranslation 项目。\n\n"
-            "注意：这与源里的 VeneraX、VeneraNext 是三个独立应用（Bundle ID 各不相同），"
-            "可以同时安装。\n\n"
-            "开源协议：GPL-3.0　·　项目主页：https://github.com/venera-app/venera-prime"
+            "中文标签翻译来自 EhTagTranslation 项目。"
+        ) + VENERA_NOTE + (
+            "\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/venera-app/venera-prime"
         ),
     },
     {
@@ -193,10 +203,46 @@ APPS = [
             "Venera 的 fork 分支，基于 Flutter 的跨平台漫画阅读器，支持本地漫画与网络漫画源，"
             "覆盖 iOS / Android / Windows / Linux / macOS。核心思路是尽量减少打断阅读："
             "长篇作品可用瀑布流跨章节连续阅读，支持收藏、追更、离线下载，"
-            "并能通过 WebDAV 在多台设备之间同步数据。\n\n"
-            "注意：这与源里的 VeneraX、Venera Prime 是三个独立应用（Bundle ID 各不相同），"
-            "可以同时安装。\n\n"
-            "开源协议：GPL-3.0　·　项目主页：https://github.com/CyrilPeng/Venera-Next"
+            "并能通过 WebDAV 在多台设备之间同步数据。"
+        ) + VENERA_NOTE + (
+            "\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/CyrilPeng/Venera-Next"
+        ),
+    },
+    {
+        "repo": "Kiastr/Venera-SSR",
+        # ⚠️ 这个仓库的发布列表里混着**非应用发布**：tag 为 `model`（AI 模型文件）
+        #    与 `translation-models`（翻译模型）的两个 release 夹在应用版本中间，
+        #    它们没有任何 .ipa，会被 collect() 直接跳过，不影响取到应用版本。
+        #    （唯一要留意的是 get_releases 的 per_page=20 —— 目前总共才 8 个发布，
+        #     离「应用版被挤出前 20 条」还很远。）
+        # ⚠️ 资产命名跨版本**不稳定**，所以这里**没法用前缀锁**：
+        #      v2.1.5 → Venera-SSR-v2.1.5-ios.ipa
+        #      2.1.3  → Venera-iOS-NoCodesign.ipa
+        #      v2.1.2 → app-release-ios.ipa
+        #    只能退回「.ipa 后缀」。实测每个应用版恰好 1 个匹配、
+        #    两个模型发布与最早的 `1.0` 各 0 个（1.0 的 iOS 包是 .zip，不是 .ipa）。
+        "asset": lambda n: n.lower().endswith(".ipa"),
+        "name": "Venera-SSR",
+        "developerName": "Kiastr",
+        "subtitle": "带 AI 上色 / 超分 / OCR 翻译的漫画阅读器",
+        "category": "books",
+        # 图标是纯黄底：主色 #EDE340 占全图 92%（另一张 assets/app_icon.png 也是 1024，
+        # 但内容不同，用 iOS appiconset 那张）。
+        # ⚠️ 别直接用 #EDE340 —— 与白底对比度只有 1.2:1，在现有这套 tint
+        #    （2.3–3.7:1）里会明显发飘。取同色相/饱和度把明度压到 42%
+        #    → #C4BA12（2.02:1）：还是「黄」，视觉重量和别的 tint 接近。
+        #    四个 Venera 里它是唯一的暖色，天然好认。
+        "tintColor": "#C4BA12",
+        "icon": "ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
+        "description": (
+            "改版漫画阅读器，支持多种漫画源。特色是全部在本地运行的三类增强："
+            "阅读时实时做黑白漫画 AI 上色、Anime4K 超分辨率（含 Real-ESRGAN 推理模型 V4 版）、"
+            "以及图片内嵌文字的 OCR 翻译（谷歌免费 API / 大模型 API / 下载翻译模型三种模式）。"
+        ) + VENERA_NOTE + (
+            "\n\n注意：这里取的是标准版 iOS 包。上游的「翻译版」（内置 OCR 等模型）"
+            "只提供了 Android 包，iOS 侧需要的模型文件要另外到上游的模型发布"
+            "（tag 为 model、translation-models）下载。"
+            "\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Kiastr/Venera-SSR"
         ),
     },
     {
