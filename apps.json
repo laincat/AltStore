@@ -3,7 +3,7 @@
   "identifier": "com.acgtoolbox.source",
   "iconURL": "https://github.com/laincat.png?size=512",
   "subtitle": "番剧 · 漫画 iOS 自签源",
-  "description": "收录 7 款开源 iOS 应用：番剧类 Kazumi、Animeko，漫画阅读类 EhPanda、VeneraX、Venera Prime、Breeze、PicaX。所有 IPA 均直连各项目 GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。",
+  "description": "收录 8 款开源 iOS 应用：番剧类 Kazumi、Animeko，漫画阅读类 EhPanda、VeneraX、Venera Prime、VeneraNext、Breeze、PicaX。所有 IPA 均直连各项目 GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。",
   "tintColor": "#7C5CFF",
   "apps": [
     {
@@ -283,7 +283,7 @@
       "bundleIdentifier": "com.github.wgh136.venera.prime",
       "developerName": "venera-app",
       "subtitle": "次世代多图源漫画阅读器",
-      "localizedDescription": "原版 Venera 的次世代重写版，Flutter + Rust 构建。支持本地漫画与网络图源阅读、用 JavaScript 编写自定义漫画源、收藏管理、下载、评论与标签查看；中文标签翻译来自 EhTagTranslation 项目。\n\n注意：这与源里的 VeneraX 是两个独立应用（Bundle ID 不同），可以同时安装。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/venera-app/venera-prime",
+      "localizedDescription": "原版 Venera 的次世代重写版，Flutter + Rust 构建。支持本地漫画与网络图源阅读、用 JavaScript 编写自定义漫画源、收藏管理、下载、评论与标签查看；中文标签翻译来自 EhTagTranslation 项目。\n\n注意：这与源里的 VeneraX、VeneraNext 是三个独立应用（Bundle ID 各不相同），可以同时安装。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/venera-app/venera-prime",
       "iconURL": "https://raw.githubusercontent.com/venera-app/venera-prime/v2.4.0/assets/app_icon.png",
       "tintColor": "#0784FC",
       "category": "books",
@@ -329,6 +329,59 @@
       "versionDescription": "上游未填写本版更新说明，可到项目发布页查看。",
       "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.0/venera-prime-ios-2.4.0%2B240.ipa",
       "size": 16021125,
+      "minOSVersion": "14.0"
+    },
+    {
+      "name": "VeneraNext",
+      "bundleIdentifier": "com.github.cyrilpeng.veneranext",
+      "developerName": "CyrilPeng",
+      "subtitle": "支持 WebDAV 同步的漫画阅读器",
+      "localizedDescription": "Venera 的 fork 分支，基于 Flutter 的跨平台漫画阅读器，支持本地漫画与网络漫画源，覆盖 iOS / Android / Windows / Linux / macOS。核心思路是尽量减少打断阅读：长篇作品可用瀑布流跨章节连续阅读，支持收藏、追更、离线下载，并能通过 WebDAV 在多台设备之间同步数据。\n\n注意：这与源里的 VeneraX、Venera Prime 是三个独立应用（Bundle ID 各不相同），可以同时安装。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/CyrilPeng/Venera-Next",
+      "iconURL": "https://raw.githubusercontent.com/CyrilPeng/Venera-Next/v1.15.0/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
+      "tintColor": "#2090E0",
+      "category": "books",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "releaseChannels": [
+        {
+          "track": "stable",
+          "releases": [
+            {
+              "version": "1.15.0",
+              "date": "2026-08-31",
+              "buildVersion": "223",
+              "buildNumber": "223",
+              "localizedDescription": "新增\n\n- 阅读器新增跨平台夜间调光与自定义亮度控制，支持在阅读设置和底部快捷面板中实时调整，并沿用全局、设备及漫画专属设置优先级。",
+              "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.15.0/VeneraNext-ios-1.15.0%2B223.ipa",
+              "size": 19875257,
+              "minOSVersion": "14.0",
+              "releaseTag": "v1.15.0",
+              "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.15.0"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "version": "1.15.0",
+          "date": "2026-08-31",
+          "buildVersion": "223",
+          "buildNumber": "223",
+          "localizedDescription": "新增\n\n- 阅读器新增跨平台夜间调光与自定义亮度控制，支持在阅读设置和底部快捷面板中实时调整，并沿用全局、设备及漫画专属设置优先级。",
+          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.15.0/VeneraNext-ios-1.15.0%2B223.ipa",
+          "size": 19875257,
+          "minOSVersion": "14.0",
+          "releaseTag": "v1.15.0",
+          "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.15.0"
+        }
+      ],
+      "version": "1.15.0",
+      "versionDate": "2026-08-31",
+      "versionDescription": "新增\n\n- 阅读器新增跨平台夜间调光与自定义亮度控制，支持在阅读设置和底部快捷面板中实时调整，并沿用全局、设备及漫画专属设置优先级。",
+      "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.15.0/VeneraNext-ios-1.15.0%2B223.ipa",
+      "size": 19875257,
       "minOSVersion": "14.0"
     },
     {
@@ -446,7 +499,7 @@
     {
       "title": "源已建立",
       "identifier": "source-created",
-      "caption": "收录 7 款应用，IPA 直连各项目 GitHub Release。",
+      "caption": "收录 8 款应用，IPA 直连各项目 GitHub Release。",
       "date": "2026-09-15",
       "tintColor": "#7C5CFF",
       "notify": false

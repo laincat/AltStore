@@ -70,9 +70,9 @@ SOURCE = {
     "iconURL": "https://github.com/laincat.png?size=512",
     "subtitle": "番剧 · 漫画 iOS 自签源",
     "description": (
-        "收录 7 款开源 iOS 应用：番剧类 Kazumi、Animeko，漫画阅读类 EhPanda、"
-        "VeneraX、Venera Prime、Breeze、PicaX。所有 IPA 均直连各项目 GitHub Release "
-        "官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。"
+        "收录 8 款开源 iOS 应用：番剧类 Kazumi、Animeko，漫画阅读类 EhPanda、"
+        "VeneraX、Venera Prime、VeneraNext、Breeze、PicaX。所有 IPA 均直连各项目 "
+        "GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。"
     ),
     "tintColor": "#7C5CFF",
 }
@@ -167,8 +167,36 @@ APPS = [
             "原版 Venera 的次世代重写版，Flutter + Rust 构建。支持本地漫画与网络图源阅读、"
             "用 JavaScript 编写自定义漫画源、收藏管理、下载、评论与标签查看；"
             "中文标签翻译来自 EhTagTranslation 项目。\n\n"
-            "注意：这与源里的 VeneraX 是两个独立应用（Bundle ID 不同），可以同时安装。\n\n"
+            "注意：这与源里的 VeneraX、VeneraNext 是三个独立应用（Bundle ID 各不相同），"
+            "可以同时安装。\n\n"
             "开源协议：GPL-3.0　·　项目主页：https://github.com/venera-app/venera-prime"
+        ),
+    },
+    {
+        "repo": "CyrilPeng/Venera-Next",
+        # 资产名形如 VeneraNext-ios-1.15.0+223.ipa。
+        # 该 release 有 11 个资产（apk×4、dmg、deb×2、pkg.tar.zst、exe、zip、ipa）；
+        # 18 个历史发布全都是「恰好 1 个 ipa」且命名一致，用前缀 + .ipa 后缀锁死（实测 1/11）。
+        "asset": lambda n: n.startswith("VeneraNext-ios-") and n.endswith(".ipa"),
+        "name": "VeneraNext",
+        "developerName": "CyrilPeng",
+        "subtitle": "支持 WebDAV 同步的漫画阅读器",
+        "category": "books",
+        # 从它自己的 1024 图标里量出来的点缀色（图标主体是深海军蓝 #105070 系，
+        # 亮部就是这个 #2090E0）。有意和 VeneraX 的 #4A8FE7、Venera Prime 的
+        # #0784FC 稍作区分 —— 三个 Venera 挤在一起，全用蓝会分不清。
+        "tintColor": "#2090E0",
+        # ⚠️ 别抄 Venera Prime 那行！这个仓库的 assets/app_icon.png 只有 512×512，
+        #    1024×1024 的那张在 iOS appiconset 里。是**量过尺寸**才定的，不是看谁存在。
+        "icon": "ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
+        "description": (
+            "Venera 的 fork 分支，基于 Flutter 的跨平台漫画阅读器，支持本地漫画与网络漫画源，"
+            "覆盖 iOS / Android / Windows / Linux / macOS。核心思路是尽量减少打断阅读："
+            "长篇作品可用瀑布流跨章节连续阅读，支持收藏、追更、离线下载，"
+            "并能通过 WebDAV 在多台设备之间同步数据。\n\n"
+            "注意：这与源里的 VeneraX、Venera Prime 是三个独立应用（Bundle ID 各不相同），"
+            "可以同时安装。\n\n"
+            "开源协议：GPL-3.0　·　项目主页：https://github.com/CyrilPeng/Venera-Next"
         ),
     },
     {

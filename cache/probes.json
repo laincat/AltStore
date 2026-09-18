@@ -222,5 +222,13 @@
     "displayName": "Venera Prime",
     "minOSVersion": "14.0",
     "size": 16021125
+  },
+  "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.15.0/VeneraNext-ios-1.15.0%2B223.ipa": {
+    "bundleIdentifier": "com.github.cyrilpeng.veneranext",
+    "version": "1.15.0",
+    "buildVersion": "223",
+    "displayName": "VeneraNext",
+    "minOSVersion": "14.0",
+    "size": 19875257
   }
 }

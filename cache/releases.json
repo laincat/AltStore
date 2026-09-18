@@ -1777,5 +1777,277 @@
         }
       ]
     }
+  ],
+  "CyrilPeng/Venera-Next": [
+    {
+      "tag": "v1.15.0",
+      "name": "v1.15.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-31",
+      "body": "### 新增\n\n- 阅读器新增跨平台夜间调光与自定义亮度控制，支持在阅读设置和底部快捷面板中实时调整，并沿用全局、设备及漫画专属设置优先级。\n",
+      "ipas": [
+        {
+          "name": "VeneraNext-ios-1.15.0+223.ipa",
+          "size": 19875257,
+          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.15.0/VeneraNext-ios-1.15.0%2B223.ipa"
+        }
+      ]
+    },
+    {
+      "tag": "v1.14.4",
+      "name": "v1.14.4",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-28",
+      "body": "### 新增\n\n- WebDAV 漫画库支持通过 `metadata.json` 标记深层目录中的漫画根目录；根目录的直接子目录会作为章节，并使用相对路径作为漫画 ID，避免分类目录下的同名漫画互相覆盖。\n\n### 维护\n\n- 修复 Windows Inno Setup 安装包遗漏 Flutter 原生插件 DLL 的问题；现在会完整收集 Release 目录，避免 `super_native_extensions_plugin.dll` 等新增运行库未随安装包发布。\n- 收束漫画展示组件的业务依赖：收藏、历史、本地漫画封面和收藏页显示偏好改由运行时注入，并增加结构检查防止展示层重新依赖具体业务管理器。\n- 收束漫画源功能域依赖：阅读历史元数据契约下沉到基础层，数据同步与 WebDAV 附加源改由运行时注入，并增加结构检查防止反向依赖回退。\n- 更新 `share_plus` 至 12.0.2，包含 iOS 分享流程的稳定性修复。\n- 预处理 Dio 5.11.0 的拦截器兼容性，避免自定义拦截器在异常路径中因缺少 Dio 内部调用链而导致请求挂起。\n- 更新 `battery_plus` 至 7.1.1，并通过 Android release 与 macOS DMG 构建验证。\n",
+      "ipas": [
+        {
+          "name": "VeneraNext-ios-1.14.4+222.ipa",
+          "size": 19867707,
+          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.14.4/VeneraNext-ios-1.14.4%2B222.ipa"
+        }
+      ]
+    },
+    {
+      "tag": "v1.14.3",
+      "name": "v1.14.3",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-25",
+      "body": "### 维护\n\n- 收紧 `path_provider`、`intl` 和 `archive` 的版本约束，并固定 Debian 打包工具依赖及发布工作流使用的 Git commit，降低依赖和构建环境漂移风险。\n- 增加 Git 依赖治理说明、可见的 Dart 覆盖率报告、贡献指南、安全政策、行为规范和 Dependabot 配置。\n- 合并已通过验证的依赖和 GitHub Actions 更新，并暂缓与当前 `flutter_rust_bridge` 或 Node.js 运行时不兼容的自动升级；`archive`、`image`、`crypto` 和 `uuid` 已更新到兼容版本。\n- 将 `sqlite3_flutter_libs` 更新到兼容 `sqlite3 2.x` 的 `0.5.42`，并忽略已停止使用的 `0.6.x` 迁移占位版本，避免破坏桌面端和移动端原生 SQLite 库。\n- 发布构建会在编译前重新安装并校验固定的 Rust 工具链及平台目标，避免运行器缓存损坏导致 `cargo` 缺失或并发下载 target 失败；Linux 打包现在也会直接传播 Flutter 构建错误。\n- 为 macOS 发布构建增加 Rustup 安装操作的串行保护，避免多个 Rust 插件并行准备 iOS 目标时造成下载文件竞态。\n\n### 修复\n\n- 完善在线漫画源只读加载的瞬时故障恢复：异常 JSON、连接中断和响应截断现在会短暂退避并最多自动重试两次，同时避免重试命中损坏的短期缓存。\n- 修复收藏初始化时无条件重建“追更”文件夹并覆盖用户选择的问题；自定义追更文件夹和主动停用状态现在会保留。\n- 修复阅读器页码、时间电量和系统状态栏开关绕过设备及漫画专属设置的问题，并在切换状态栏开关后立即应用系统界面模式。\n- 完善归档下载选项的异常、空列表和空下载地址处理，避免接口失败时一直加载或弹窗无提示。\n",
+      "ipas": [
+        {
+          "name": "VeneraNext-ios-1.14.3+221.ipa",
+          "size": 19859738,
+          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.14.3/VeneraNext-ios-1.14.3%2B221.ipa"
+        }
+      ]
+    },
+    {
+      "tag": "v1.14.2",
+      "name": "v1.14.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-07",
+      "body": "### 新增\n\n- 收藏页新增独立的封面画廊模式，支持自动或 2～6 列布局，并在本地收藏与网络收藏之间保持一致。\n\n### 修复\n\n- 修复阅读器中手动收藏章节封面后无法取消收藏的问题，同时继续保护收藏其他图片时自动补入的封面。\n- 修复 WebDAV 漫画详情只显示前三章的问题；升级后会自动识别并重建受影响版本生成的旧缓存。\n",
+      "ipas": [
+        {
+          "name": "VeneraNext-ios-1.14.2+220.ipa",
+          "size": 19316858,
+          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.14.2/VeneraNext-ios-1.14.2%2B220.ipa"
+        }
+      ]
+    },
+    {
+      "tag": "v1.14.1",
+      "name": "v1.14.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-07",
+      "body": "### 修复\n\n- 修复部分旧版或迁移后的历史数据库缺少单列唯一约束时，新漫画阅读进度和阅读时长无法保存的问题。\n",
+      "ipas": [
+        {
+          "name": "VeneraNext-ios-1.14.1+219.ipa",
+          "size": 19314837,
+          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.14.1/VeneraNext-ios-1.14.1%2B219.ipa"
+        }
+      ]
+    },
+    {
+      "tag": "v1.14.0",
+      "name": "v1.14.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-06",
+      "body": "### 新增\n\n- 新增阅读时长记录与统计：阅读器按前台有效阅读时间累计每部漫画时长，历史页可查看总时长、记录漫画数、阅读最久漫画和时长排行。\n- 本地漫画支持导入 PDF 和图片型 EPUB；导入后统一转换为现有本地图片漫画，PDF 逐页渲染并限制输出尺寸，EPUB 按 spine 顺序读取并保留有效元数据和章节导航。\n- WebDAV 漫画库增加本地缓存和增量同步：书架优先显示缓存内容，后台对比远端目录后刷新列表，并支持手动立即同步和可配置的自动更新周期。\n\n### 变更\n\n- 在设置首页增加阅读统计入口，并继续保留历史页面中的快捷入口。\n\n### 修复\n\n- 修复 EPUB 导出的图片 manifest 路径缺少扩展名分隔点，以及标题、作者或章节名含 XML 特殊字符时可能生成无效文件的问题。\n- 修复在线漫画下载完成后，AVIF 页面会被本地阅读列表过滤而表现为缺页的问题；未知或非图片响应现在会进入重试和错误流程，不再计为下载成功。\n- 修复桌面端鼠标悬停标题栏 logo 时，logo 消失并显示 `No Overlay widget found.` 的问题。\n- 修复阅读统计摘要在窄屏下标签被强制换行、排行榜时长挤压漫画标题的问题；摘要和排行现在会根据实际内容宽度切换布局。\n",
+      "ipas": [
+        {
+          "name": "VeneraNext-ios-1.14.0+218.ipa",
+          "size": 19301724,
+          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.14.0/VeneraNext-ios-1.14.0%2B218.ipa"
+        }
+      ]
+    },
+    {
+      "tag": "v1.14.0-rc.1",
+      "name": "v1.14.0-rc.1",
+      "pre": true,
+      "draft": false,
+      "date": "2026-08-06",
+      "body": "### 新增\n\n- 新增阅读时长记录与统计：阅读器按前台有效阅读时间累计每部漫画时长，历史页可查看总时长、记录漫画数、阅读最久漫画和时长排行。\n- 本地漫画支持导入 PDF 和图片型 EPUB；导入后统一转换为现有本地图片漫画，PDF 逐页渲染并限制输出尺寸，EPUB 按 spine 顺序读取并保留有效元数据和章节导航。\n\n### 修复\n\n- 修复 EPUB 导出的图片 manifest 路径缺少扩展名分隔点，以及标题、作者或章节名含 XML 特殊字符时可能生成无效文件的问题。\n- 修复在线漫画下载完成后，AVIF 页面会被本地阅读列表过滤而表现为缺页的问题；未知或非图片响应现在会进入重试和错误流程，不再计为下载成功。\n- 修复桌面端鼠标悬停标题栏 logo 时，logo 消失并显示 `No Overlay widget found.` 的问题。\n",
+      "ipas": [
+        {
+          "name": "VeneraNext-ios-1.14.0-rc.1+217.ipa",
+          "size": 19248930,
+          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.14.0-rc.1/VeneraNext-ios-1.14.0-rc.1%2B217.ipa"
+        }
+      ]
+    },
+    {
+      "tag": "v1.13.1",
+      "name": "v1.13.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-29",
+      "body": "### 新增\n\n- 在“关于”中新增赞助者名单页面，支持置顶赞助、当前赞助者和历史赞助者分区展示。\n\n### 变更\n\n- 赞助者名单改用结构化数据统一生成应用数据、GitHub 名单和 README 置顶宣传区，并增加格式校验、确定性检查及旧版数据兼容。\n- 赞助状态改由爱发电 API 定时同步，自动识别当前方案、到期状态、历史档位和符合条件的一次性赞助；同步失败时保留上次成功名单。\n\n### 修复\n\n- 修复桌面端标题栏品牌标识在侧栏折叠时仍显示文字并穿过分割线的问题；折叠状态下仅显示应用 logo。\n- 修复开启不可变 GitHub Release 后，预发布构建可能先发布空 Release 导致资产上传失败的问题。\n- 修复 Windows 升级后可能无法读取旧应用身份目录中本地数据的问题；迁移过程现在兼容多代目录，并且不会因新目录已生成日志等文件而跳过缺失数据。\n- 修复应用配置写入中断或内容异常时直接删除 `appdata.json` 的问题；配置文件现在采用原子替换并保留备份，启动时可从备份或同步数据恢复，同时保留损坏文件用于排查。\n- 修复稳定版可能收到预发布版本更新提示的问题；更新检查现在只使用已发布的 GitHub Release，稳定版忽略草稿和预发布，RC 版本才会跟踪后续预发布。\n\n### 文档\n\n- 更新 Windows 安装与分发说明，明确 winget 已正式可用，并补充安装、升级、源刷新、审核延迟和便携版限制。\n- 完善赞助档位、永久鸣谢、置顶宣传、排序规则和维护边界说明，并在项目介绍下方恢复漫画源分离声明。\n- 新增完整英文 README，并在中英文首页增加语言切换、GitHub 主仓库和 Gitee 国内镜像入口。\n",
+      "ipas": [
+        {
+          "name": "VeneraNext-ios-1.13.1+216.ipa",
+          "size": 15956938,
+          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.13.1/VeneraNext-ios-1.13.1%2B216.ipa"
+        }
+      ]
+    },
+    {
+      "tag": "v1.13.1-rc.3",
+      "name": "v1.13.1-rc.3",
+      "pre": true,
+      "draft": false,
+      "date": "2026-07-27",
+      "body": "### 新增\n\n- 在“关于”中新增赞助者名单页面，支持置顶赞助、当前赞助者和历史赞助者分区展示。\n\n### 变更\n\n- 赞助者名单改用结构化数据统一生成应用数据、GitHub 名单和 README 置顶宣传区，并增加格式校验、确定性检查及旧版数据兼容。\n- 赞助状态改由爱发电 API 定时同步，自动识别当前方案、到期状态、历史档位和符合条件的一次性赞助；同步失败时保留上次成功名单。\n\n### 修复\n\n- 修复桌面端标题栏品牌标识在侧栏折叠时仍显示文字并穿过分割线的问题；折叠状态下仅显示应用 logo。\n- 修复开启不可变 GitHub Release 后，预发布构建可能先发布空 Release 导致资产上传失败的问题。\n- 修复 Windows 升级后可能无法读取旧应用身份目录中本地数据的问题；迁移过程现在兼容多代目录，并且不会因新目录已生成日志等文件而跳过缺失数据。\n- 修复应用配置写入中断或内容异常时直接删除 `appdata.json` 的问题；配置文件现在采用原子替换并保留备份，启动时可从备份或同步数据恢复，同时保留损坏文件用于排查。\n\n### 文档\n\n- 更新 Windows 安装与分发说明，明确 winget 已正式可用，并补充安装、升级、源刷新、审核延迟和便携版限制。\n- 完善赞助档位、永久鸣谢、置顶宣传、排序规则和维护边界说明，并在项目介绍下方恢复漫画源分离声明。\n- 新增完整英文 README，并在中英文首页增加语言切换、GitHub 主仓库和 Gitee 国内镜像入口。\n",
+      "ipas": [
+        {
+          "name": "VeneraNext-ios-1.13.1-rc.3+215.ipa",
+          "size": 15957987,
+          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.13.1-rc.3/VeneraNext-ios-1.13.1-rc.3%2B215.ipa"
+        }
+      ]
+    },
+    {
+      "tag": "v1.13.0",
+      "name": "v1.13.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-20",
+      "body": "### 新增\n\n- WebDAV 漫画库支持识别 VeneraNext 单本 CBZ 的解压目录，通过 `metadata.json` 读取标题、作者、标签和章节页码范围，同时保持图片按需加载；无元数据或元数据无效时自动回退普通目录模式。\n\n### 变更\n\n- 统一本地目录、CBZ 和 WebDAV 的漫画图片扩展、封面识别及数字页码排序规则，并将单本归档元数据迁移到共享漫画存储功能域。\n- WebDAV 数据同步、漫画归档和在线漫画库统一复用端点认证、客户端创建与远端路径基础设施，同时继续保持三套业务配置和生命周期独立。\n- 漫画归档与 WebDAV 在线漫画库设置页复用连接输入字段和 controller 生命周期，保留各自独立的测试、保存和启停逻辑。\n\n### 修复\n\n- 修复 WebDAV 漫画库列表不显示推断封面，以及不可变目录列表异常可能取代漫画文件夹名称的问题；列表与详情现在统一从根目录或首个可读章节推断封面。\n- 修复本地漫画仅包含章节子目录且没有根目录封面时无法直接导入，以及非图片文件可能进入本地阅读页列表的问题。\n- 修复桌面端折叠侧栏分割线穿过左上角 `VeneraNext` 标识的问题。\n- 修复数据同步、本地下载、漫画源、代理设置等界面缺少翻译或同时显示中英文的问题，并增加翻译键完整性检查以防止回退。\n\n### 文档\n\n- 将根 README 调整为面向用户的安装与使用入口，把构建、测试、发布工作流和开发故障排查迁移到独立的中英文开发文档。\n",
+      "ipas": [
+        {
+          "name": "VeneraNext-ios-1.13.0+212.ipa",
+          "size": 15939487,
+          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.13.0/VeneraNext-ios-1.13.0%2B212.ipa"
+        }
+      ]
+    },
+    {
+      "tag": "v1.12.0",
+      "name": "v1.12.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-17",
+      "body": "### 新增\n\n- 为画廊阅读模式增加电子墨水屏刷新，可设置闪烁时长、刷新间隔以及黑色、白色、先白后黑三种刷新样式，以减少电子墨水屏残影。\n\n### 修复\n\n- 修复在线漫画源偶发收到异常或截断的 JSON 响应时直接显示 `SyntaxError: unexpected token` 的问题；只读加载会自动重试一次，并避免将损坏响应写入短期缓存。\n",
+      "ipas": [
+        {
+          "name": "VeneraNext-ios-1.12.0+211.ipa",
+          "size": 15932355,
+          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.12.0/VeneraNext-ios-1.12.0%2B211.ipa"
+        }
+      ]
+    },
+    {
+      "tag": "v1.11.0",
+      "name": "v1.11.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-12",
+      "body": "### 新增\n\n- 为纵向连续和瀑布流阅读模式增加拆分双页功能，可将横向双页图按阅读顺序拆成上下排列，并支持交换拆分顺序。\n- 本地漫画 CBZ/ZIP/7Z 导入支持顶层目录下的章节子目录结构，便于导入整部漫画打包后的单文件归档。\n- 新增 WebDAV 漫画库在线阅读渠道，仅支持远端目录图片结构按需加载；CBZ/ZIP/7Z 继续作为导入导出、归档和分发格式，不用于在线预览。\n\n### 修复\n\n- 修复瀑布流和纵向连续阅读到章节末尾时，阅读记录可能仍显示剩余 1-2 张图片未读的问题。\n- 修复多个 toast 连续出现时位置重叠，导致下方提示被遮挡的问题。\n- 修复部分 CBZ/ZIP 使用非 UTF-8 文件名编码时，本地导入可能抛出 `FormatException: Missing extension byte` 的问题。\n- 修复部分 Windows 压缩得到的 CBZ/ZIP 在原生解压器和 7z 均失败时，导入提示 `Failed to open archive` 的问题。\n- 修复 WebDAV 漫画库读取中文目录或不可变目录列表时，可能显示 `unsupported operation: cannot remove from an unmodifiable list`，以及详情页章节长时间加载的问题。\n\n### 文档\n\n- 按文档类型整理 `doc/` 分类目录，补充中英文文档索引、漫画源开发中文说明和图片增强实验设计记录。\n- 扩充 README 使用说明，细化本分支特色、本地漫画导入、CBZ 分发归档、WebDAV 在线漫画库和 WebDAV 数据同步/归档配置区别。\n- 明确区分本地漫画压缩包导入导出、WebDAV CBZ 归档和 WebDAV 漫画库在线阅读三类能力。\n",
+      "ipas": [
+        {
+          "name": "VeneraNext-ios-1.11.0+210.ipa",
+          "size": 15954623,
+          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.11.0/VeneraNext-ios-1.11.0%2B210.ipa"
+        }
+      ]
+    },
+    {
+      "tag": "v1.11.0-rc.3",
+      "name": "v1.11.0-rc.3",
+      "pre": true,
+      "draft": false,
+      "date": "2026-07-10",
+      "body": "### 修复\n\n- 修复多个 toast 连续出现时位置重叠，导致下方提示被遮挡的问题。\n- 修复部分 CBZ/ZIP 使用非 UTF-8 文件名编码时，本地导入可能抛出 `FormatException: Missing extension byte` 的问题。\n- 修复部分 Windows 压缩得到的 CBZ/ZIP 在原生解压器和 7z 均失败时，导入提示 `Failed to open archive` 的问题。\n- 修复 WebDAV 漫画库读取中文目录或不可变目录列表时，可能显示 `unsupported operation: cannot remove from an unmodifiable list`，以及详情页章节长时间加载的问题。\n\n### 文档\n\n- 扩充 README 使用说明，细化本分支特色、本地漫画导入、CBZ 分发归档、WebDAV 在线漫画库和 WebDAV 数据同步/归档配置区别。\n",
+      "ipas": [
+        {
+          "name": "VeneraNext-ios-1.11.0-rc.3+209.ipa",
+          "size": 15952881,
+          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.11.0-rc.3/VeneraNext-ios-1.11.0-rc.3%2B209.ipa"
+        }
+      ]
+    },
+    {
+      "tag": "v1.11.0-rc.2",
+      "name": "v1.11.0-rc.2",
+      "pre": true,
+      "draft": false,
+      "date": "2026-07-10",
+      "body": "### 新增\n\n- 本地漫画 CBZ/ZIP/7Z 导入支持顶层目录下的章节子目录结构，便于导入整部漫画打包后的单文件归档。\n- 新增 WebDAV 漫画库在线阅读渠道，仅支持远端目录图片结构按需加载；CBZ/ZIP/7Z 继续作为导入导出、归档和分发格式，不用于在线预览。\n\n### 文档\n\n- 按文档类型整理 `doc/` 分类目录，补充中英文文档索引、漫画源开发中文说明和图片增强实验设计记录。\n- 明确区分本地漫画压缩包导入导出、WebDAV CBZ 归档和 WebDAV 漫画库在线阅读三类能力。\n",
+      "ipas": [
+        {
+          "name": "VeneraNext-ios-1.11.0-rc.2+208.ipa",
+          "size": 15908217,
+          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.11.0-rc.2/VeneraNext-ios-1.11.0-rc.2%2B208.ipa"
+        }
+      ]
+    },
+    {
+      "tag": "v1.11.0-rc.1",
+      "name": "v1.11.0-rc.1",
+      "pre": true,
+      "draft": false,
+      "date": "2026-07-09",
+      "body": "### 新增\n\n- 为纵向连续和瀑布流阅读模式增加拆分双页功能，可将横向双页图按阅读顺序拆成上下排列，并支持交换拆分顺序。\n\n### 修复\n\n- 修复瀑布流和纵向连续阅读到章节末尾时，阅读记录可能仍显示剩余 1-2 张图片未读的问题。\n",
+      "ipas": [
+        {
+          "name": "VeneraNext-ios-1.11.0-rc.1+207.ipa",
+          "size": 15901687,
+          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.11.0-rc.1/VeneraNext-ios-1.11.0-rc.1%2B207.ipa"
+        }
+      ]
+    },
+    {
+      "tag": "v1.10.3",
+      "name": "v1.10.3",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-07",
+      "body": "### 新增\n\n- 为 Winget manifest 手动 workflow 增加可选 PR 提交能力，可通过 `WINGET_PKGS_TOKEN` 自动向 `microsoft/winget-pkgs` 创建更新 PR。\n\n### 变更\n\n- 漫画详情页章节排序从易误解的图标按钮改为正序/倒序分段切换，并将选择作为全局偏好持久化。\n- 新安装默认不再配置漫画源列表地址，已有用户配置的漫画源列表地址会保留。\n\n### 修复\n\n- 修复生成的 Winget manifest 缺少 schema header，导致 `winget-pkgs` 服务端校验失败的问题。\n",
+      "ipas": [
+        {
+          "name": "VeneraNext-ios-1.10.3+206.ipa",
+          "size": 15890529,
+          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.10.3/VeneraNext-ios-1.10.3%2B206.ipa"
+        }
+      ]
+    },
+    {
+      "tag": "v1.10.2",
+      "name": "v1.10.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-07",
+      "body": "### 新增\n\n- 为 Windows 正式版发布增加 winget manifest 生成脚本、发布工件和手动触发 workflow，为接入 `winget install/upgrade CyrilPeng.VeneraNext` 做准备。\n\n### 修复\n\n- 修复瀑布流模式中，进度条按本章页码定位时可能跳到已预加载的上一章，以及底栏上一章/下一章按钮不切换章节的问题。\n",
+      "ipas": [
+        {
+          "name": "VeneraNext-ios-1.10.2+205.ipa",
+          "size": 15875615,
+          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.10.2/VeneraNext-ios-1.10.2%2B205.ipa"
+        }
+      ]
+    },
+    {
+      "tag": "v1.10.1",
+      "name": "v1.10.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-06",
+      "body": "### 变更\n\n- 将 Dart package 名从 `venera` 迁移为 `venera_next`，使源码包名与 VeneraNext 分支命名保持一致。\n- 按功能域重整仓库结构，收拢 `app_shell`、`app_runtime`、`features`、`routing`、`foundation`、`components`、`network` 与测试目录的职责边界。\n- 将旧 `pages` 和 `utils` 中的业务页面、平台适配、文件能力、图片处理、初始化协议、并发原语和文本转换能力迁入对应功能域或基础层。\n- 为漫画详情、漫画源、阅读器、收藏、图片收藏、设置、同步、本地漫画、搜索、浏览发现和漫画展示组件建立稳定入口，并逐步拆除历史 `part` library。\n- 拆除阅读器剩余 `part` library，将阅读器主实现、脚手架、图片视图、手势、加载入口和章节列表改为普通 Dart 实现文件。\n- 将搜索自动语言过滤规则从搜索结果页抽出为搜索功能域逻辑，并通过 `features/search/search.dart` 稳定入口暴露。\n- 收窄组件层对 `foundation/app.dart` 的依赖，未使用 `App` 单例的组件改为直接引用 UI 扩展入口。\n- 收窄阅读器章节评论页对 `foundation/app.dart` 的依赖，改为直接引用 UI 扩展入口。\n- 收窄聚合搜索页对 `foundation/app.dart` 的依赖，改为直接引用 UI 扩展入口。\n- 收窄浏览发现分类漫画页和排行榜页对 `foundation/app.dart` 的依赖，改为直接引用 UI 扩展入口。\n- 收窄首页历史摘要对 `foundation/app.dart` 的依赖，改为直接引用 UI 扩展入口。\n- 收窄本地漫画下载队列弹窗对 `foundation/app.dart` 的依赖，改为直接引用 UI 扩展入口。\n- 收窄漫画详情操作按钮、章节列表、评论页、封面查看、评论预览和缩略图对 `foundation/app.dart` 的依赖，改为直接引用 UI 扩展入口。\n- 收窄设置页入口、本地收藏设置、调试页和日志页对 `foundation/app.dart` 的依赖，改为直接引用 UI 扩展入口。\n- 收窄漫画源首页摘要和同步漫画归档页对 `foundation/app.dart` 的依赖，改为直接引用 UI 扩展入口。\n- 将 `foundation/app.dart` 收窄为 `App` 单例入口，移除 UI 扩展 re-export，并为仍需使用 `App` 的调用点补齐显式 UI 扩展入口。\n- 新增项目结构约定文档和结构 import 边界检查，固化入口约束、退场目录和反向依赖规则，防止结构调整回退。\n\n### 修复\n\n- 修复瀑布流模式从章节列表进入靠前页时，预加载上一章可能导致当前章节回跳的问题。\n- 修复更新日志页面测试仍断言旧章节标题的问题，并为 CookieJar 测试补充缺少 sqlite3 native library 时的跳过条件。\n",
+      "ipas": [
+        {
+          "name": "VeneraNext-ios-1.10.1+204.ipa",
+          "size": 15876997,
+          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.10.1/VeneraNext-ios-1.10.1%2B204.ipa"
+        }
+      ]
+    }
   ]
 }
