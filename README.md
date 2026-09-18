@@ -9,7 +9,7 @@
 
 ## 添加这个源
 
-两个地址内容完全一致，**任选一个**。
+三个地址内容完全一致，**任选一个**。
 
 国内访问更快，推荐用这个：
 
@@ -23,13 +23,20 @@ GitHub 直链，作为备用（大陆可能被墙或极慢）：
 https://raw.githubusercontent.com/laincat/AltStore/main/apps.json
 ```
 
+GitHub Releases 的固定地址（走 release CDN；在浏览器里打开会直接触发下载）：
+
+```
+https://github.com/laincat/AltStore/releases/download/latest/apps.json
+```
+
 怎么加：
 
 - **SideStore / AltStore**：`Sources（源）` → 右上角 `+` → 粘贴上面的地址
 - **LiveContainer**：底部标签栏 `源`（英文是 `Sources`）→ 右上角 `+`（`添加源`）→ 粘贴同一地址
 
 > - cnb.cool 的原文直链必须是 `/-/git/raw/`，别用 `/-/raw/`——那个返回的是仓库网页的 HTML 外壳，不是文件内容。
-> - 两个地址都返回 `text/plain`，客户端只按内容解析 JSON，不受影响。
+> - 三个地址的 `Content-Type` **并不相同**：前两个是 `text/plain; charset=utf-8`，Releases 那个是 `application/octet-stream`。**客户端不看 `Content-Type`，只按 HTTP 状态码 + JSON 内容解析** —— 这一点是核过两个客户端源码的：SideStore 的 `FetchSourceOperation` 直接把 body 交给 `JSONDecoder`（还开了 `allowsJSON5`），LiveContainer 只判 `200...299`。所以三个都能用。
+> - Releases 那个地址背后**只有一个** release，tag 固定为 `latest`，内容在每次变化后被覆盖 —— 它不会随更新堆积，地址也永远不变。
 > - `raw.githubusercontent.com` 在大陆经常被墙或极慢，用不了就换 cnb.cool 那个。
 
 ## 应用清单
@@ -195,11 +202,12 @@ EhPanda   (app.ehpanda)
 
 ```
 检查上游 Release（--refresh） → 重新生成 apps.json → verify_source.py 结构校验
-  → 有变更才提交到本仓库 → 同步产物到 cnb.cool
+  → 有变更才提交到本仓库 → 发布/滚动更新 Release → 同步产物到 cnb.cool
 ```
 
 - 单次实测约 **12 秒**，公开仓库的 Actions 分钟数免费不限量，约 96 次/天
 - 只在检测到真实变更时才产生提交，没有新版本就不动
+- Releases 页那个 `latest` 是**固定 tag 滚动覆盖**的：只在内容变化时重传，永远只留**一个** release。之所以不做成「一次更新一个 tag」，是因为这条流水线每 15 分钟跑一轮 —— 那样一天就是 96 个 tag。tag 会跟着内容指向当轮提交，所以 tag 的树和附件内容始终对得上
 - **校验不通过就不提交**：宁可这轮不动，也不把一个结构坏掉的源推上去（某个 app 的 `releases` 变成空数组时，SideStore 会整体解码失败、整个源都加载不了）
 - 某个仓库抓取失败时会**沿用上一次生成的数据**，不会把那个应用从源里抹掉
 - 同步到 cnb.cool 需要仓库里配好 `CNB_TOKEN` 与 `CNB_USER` 两个 Secrets；没配就自动跳过，只更新本仓库
@@ -214,6 +222,18 @@ EhPanda   (app.ehpanda)
 
 > 为什么不用 cnb.cool 自带的定时构建：CNB 免费额度只有 160 核时/月，且构建前要预冻结 5 分钟（0.08 核时），额度见底时**所有构建**都会在 Prepare 阶段失败（2026-09 就被 `laincat/Rules` 一个仓库烧光了）。GitHub 公开仓库的 Actions 分钟数免费不限量，且 runner 原生直连 GitHub Release，不需要任何镜像代理。
 
+### 顺带：仓库自身的依赖更新（Dependabot）
+
+这个仓库**没有任何传统依赖** —— `tools/` 下三个脚本的 import 全部来自 Python 标准库（`argparse` / `json` / `os` / `plistlib` / `re` / `ssl` / `struct` / `sys` / `urllib` / `zlib`），仓库里也不存在 `requirements.txt` / `pyproject.toml` / `package.json`。所以依赖图里**唯一**的依赖，就是流水线用的那两个 Action。
+
+`.github/dependabot.yml` 因此只配了 `github-actions` 一个生态：每周一 09:00（北京时间）检查一次，minor + patch 合并成一个 PR，**major 单独开**（这条流水线负责发布源文件，major 升级可能改行为，要单独看清再合）。
+
+> ⚠️ 有个容易误会的点：workflow 里写的是 `actions/checkout@v7` 这种 **major 浮动标签**，不是精确版本。`v7` 是**会移动的**标签 —— 上游发 v7.0.2，下一轮跑的就是 v7.0.2，**minor / patch 早已自动跟随，不需要任何人批准**。
+> 也就是说 Dependabot 在这里**只会在上游出 v8 时提 PR**。配好之后长期看不到 PR 是**正常**的，别以为没生效。
+> （若想让它勤快地干活，得先把 `@v7` 改成 commit SHA pin——那属于供应链安全的取舍。）
+>
+> 另外，「自动更新依赖」其实有两半，另半是**安全更新**（Dependabot alerts + security updates）：本仓库这项本来就是开着的。
+
 想手动更新：
 
 ```bash
@@ -227,6 +247,7 @@ python tools/verify_source.py --min-apps 6  # 校验
 ```
 apps.json                                    # 源文件本体，客户端消费的就是它
 .github/workflows/update-source.yml          # 定时更新流水线
+.github/dependabot.yml                       # 只盯 github-actions 的版本（本仓库没有别的依赖）
 tools/build_source.py                        # 生成脚本（抓 GitHub Release + 探测 IPA 元数据）
 tools/verify_source.py                       # 结构校验，提交前的守门人
 tools/simulate_client.py                     # 模拟两个客户端的解析，回答「改完到底看不看得见」
