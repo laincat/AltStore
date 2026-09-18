@@ -1763,6 +1763,15 @@
   ],
   "venera-app/venera-prime": [
     {
+      "tag": "v2.4.1",
+      "name": "Venera Prime 2.4.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-18",
+      "body": "**Full Changelog**: https://github.com/venera-app/venera-prime/compare/v2.4.0...v2.4.1",
+      "ipas": []
+    },
+    {
       "tag": "v2.4.0",
       "name": "v2.4.0",
       "pre": false,
