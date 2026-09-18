@@ -1,0 +1,66 @@
+# ==============================================================================
+#  Dependabot —— 这个仓库到底有什么「依赖」可以自动更新？
+#
+#  ── 先泼一盆冷水：本仓库几乎没有传统依赖 ────────────────────────────────
+#  tools/ 下三个脚本的 import 全部来自标准库：
+#    argparse / json / os / plistlib / re / ssl / struct / sys / urllib / zlib
+#  仓库里也不存在 requirements.txt / pyproject.toml / package.json / Pipfile /
+#  poetry.lock —— 所以 **pip 与 npm 生态无事可做**。硬写上去只会让
+#  Dependabot 在依赖图里报「找不到清单文件」，属于自找噪音。
+#
+#  ── 唯一的真实依赖：workflow 里那 2 个 Action ───────────────────────────
+#    actions/checkout@v7         （上游最新 v7.0.1，2026-09-18 核）
+#    actions/setup-python@v7     （上游最新 v7.0.0，2026-09-18 核）
+#
+#  ⚠️ 关键认知：这两处写的是 **major 浮动标签**（@v7），不是精确版本。
+#     也就是说 minor / patch 级更新**现在就已经自动生效**了 —— 上游发
+#     v7.0.2，下一轮跑的就是 v7.0.2，不需要任何人批准，也不需要 Dependabot。
+#     所以 Dependabot 在这里的价值只有一个：**上游发 v8 时提醒你**。
+#     因此它注定是「一年响几次」的哨兵，而不是持续干活的机器人 ——
+#     配好之后看不到 PR 是正常的，别以为配置没生效。
+#
+#     （若希望它更频繁地工作，得先把 @v7 改成 commit SHA pin —— 那时
+#      Dependabot 才会接手更新 SHA。那属于供应链安全的取舍，不在本轮范围。）
+# ==============================================================================
+
+version: 2
+
+updates:
+  # --------------------------------------------------------------------------
+  #  Actions 的版本（唯一有意义的生态）
+  # --------------------------------------------------------------------------
+  - package-ecosystem: "github-actions"
+    # 注意：这里的 directory 指「workflow 文件所在目录」，而不是依赖清单所在目录
+    directory: "/"
+
+    schedule:
+      # 上游 Action 的迭代以月计，每日检查纯属浪费
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Asia/Shanghai"
+
+    # 未处理的旧 PR 上限。本仓库总共就 2 个 Action，5 绰绰有余
+    open-pull-requests-limit: 5
+
+    # minor + patch 合并成一个 PR，major 单独开
+    # —— major 有可能改行为（例如 checkout v3 把 node16 换成 node20），
+    #    这一条流水线是发布源文件的，必须单独看清再合
+    groups:
+      github-actions:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+    # 提交信息前缀跟本仓库既有风格（feat / ci / docs / chore）对齐
+    commit-message:
+      prefix: "ci"
+
+    labels:
+      - "dependencies"
+
+    # 仓库 owner，PR 直接指派，免得漏看
+    assignees:
+      - "laincat"
