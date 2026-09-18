@@ -284,7 +284,7 @@
       "developerName": "venera-app",
       "subtitle": "次世代多图源漫画阅读器",
       "localizedDescription": "原版 Venera 的次世代重写版，Flutter + Rust 构建。支持本地漫画与网络图源阅读、用 JavaScript 编写自定义漫画源、收藏管理、下载、评论与标签查看；中文标签翻译来自 EhTagTranslation 项目。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/venera-app/venera-prime",
-      "iconURL": "https://raw.githubusercontent.com/venera-app/venera-prime/v2.4.0/assets/app_icon.png",
+      "iconURL": "https://raw.githubusercontent.com/venera-app/venera-prime/v2.4.1/assets/app_icon.png",
       "tintColor": "#0784FC",
       "category": "books",
       "appPermissions": {
@@ -296,39 +296,39 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.4.0",
-              "date": "2026-09-15",
-              "buildVersion": "240",
-              "buildNumber": "240",
-              "localizedDescription": "上游未填写本版更新说明，可到项目发布页查看。",
-              "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.0/venera-prime-ios-2.4.0%2B240.ipa",
-              "size": 16021125,
+              "version": "2.4.1",
+              "date": "2026-09-18",
+              "buildVersion": "241",
+              "buildNumber": "241",
+              "localizedDescription": "Venera Prime 2.4.1\n改进\n\n- 收藏信息更新支持显示失败的漫画名称，并可从全部收藏视图依次更新各文件夹。\n- 跟随更新显示具体失败漫画与错误信息，并在取消更新时正确收尾进度提示。\n- WebDAV 下载期间发生的本地修改会排队，并在下载完成后自动上传。\n- 百宝箱调整为半屏沉浸式底部面板，点击上方空白区域即可关闭。\n验证\n\n- Flutter 静态检查通过。\n- Android Debug 构建已安装并启动于 TAS AN00 真机。",
+              "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.1/venera-prime-ios-2.4.1%2B241.ipa",
+              "size": 16023621,
               "minOSVersion": "14.0",
-              "releaseTag": "v2.4.0",
-              "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.4.0"
+              "releaseTag": "v2.4.1",
+              "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.4.1"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.4.0",
-          "date": "2026-09-15",
-          "buildVersion": "240",
-          "buildNumber": "240",
-          "localizedDescription": "上游未填写本版更新说明，可到项目发布页查看。",
-          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.0/venera-prime-ios-2.4.0%2B240.ipa",
-          "size": 16021125,
+          "version": "2.4.1",
+          "date": "2026-09-18",
+          "buildVersion": "241",
+          "buildNumber": "241",
+          "localizedDescription": "Venera Prime 2.4.1\n改进\n\n- 收藏信息更新支持显示失败的漫画名称，并可从全部收藏视图依次更新各文件夹。\n- 跟随更新显示具体失败漫画与错误信息，并在取消更新时正确收尾进度提示。\n- WebDAV 下载期间发生的本地修改会排队，并在下载完成后自动上传。\n- 百宝箱调整为半屏沉浸式底部面板，点击上方空白区域即可关闭。\n验证\n\n- Flutter 静态检查通过。\n- Android Debug 构建已安装并启动于 TAS AN00 真机。",
+          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.1/venera-prime-ios-2.4.1%2B241.ipa",
+          "size": 16023621,
           "minOSVersion": "14.0",
-          "releaseTag": "v2.4.0",
-          "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.4.0"
+          "releaseTag": "v2.4.1",
+          "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.4.1"
         }
       ],
-      "version": "2.4.0",
-      "versionDate": "2026-09-15",
-      "versionDescription": "上游未填写本版更新说明，可到项目发布页查看。",
-      "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.0/venera-prime-ios-2.4.0%2B240.ipa",
-      "size": 16021125,
+      "version": "2.4.1",
+      "versionDate": "2026-09-18",
+      "versionDescription": "Venera Prime 2.4.1\n改进\n\n- 收藏信息更新支持显示失败的漫画名称，并可从全部收藏视图依次更新各文件夹。\n- 跟随更新显示具体失败漫画与错误信息，并在取消更新时正确收尾进度提示。\n- WebDAV 下载期间发生的本地修改会排队，并在下载完成后自动上传。\n- 百宝箱调整为半屏沉浸式底部面板，点击上方空白区域即可关闭。\n验证\n\n- Flutter 静态检查通过。\n- Android Debug 构建已安装并启动于 TAS AN00 真机。",
+      "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.1/venera-prime-ios-2.4.1%2B241.ipa",
+      "size": 16023621,
       "minOSVersion": "14.0"
     },
     {
@@ -553,7 +553,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 9 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-09-15",
+      "date": "2026-09-18",
       "tintColor": "#7C5CFF",
       "notify": false
     }

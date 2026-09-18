@@ -1768,8 +1768,14 @@
       "pre": false,
       "draft": false,
       "date": "2026-09-18",
-      "body": "**Full Changelog**: https://github.com/venera-app/venera-prime/compare/v2.4.0...v2.4.1",
-      "ipas": []
+      "body": "# Venera Prime 2.4.1\n\n## 改进\n\n- 收藏信息更新支持显示失败的漫画名称，并可从全部收藏视图依次更新各文件夹。\n- 跟随更新显示具体失败漫画与错误信息，并在取消更新时正确收尾进度提示。\n- WebDAV 下载期间发生的本地修改会排队，并在下载完成后自动上传。\n- 百宝箱调整为半屏沉浸式底部面板，点击上方空白区域即可关闭。\n\n## 验证\n\n- Flutter 静态检查通过。\n- Android Debug 构建已安装并启动于 TAS AN00 真机。\n",
+      "ipas": [
+        {
+          "name": "venera-prime-ios-2.4.1+241.ipa",
+          "size": 16023621,
+          "url": "https://github.com/venera-app/venera-prime/releases/download/v2.4.1/venera-prime-ios-2.4.1%2B241.ipa"
+        }
+      ]
     },
     {
       "tag": "v2.4.0",
