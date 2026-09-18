@@ -70,9 +70,9 @@ SOURCE = {
     "iconURL": "https://github.com/laincat.png?size=512",
     "subtitle": "番剧 · 漫画 iOS 自签源",
     "description": (
-        "收录 6 款开源 iOS 应用：番剧类 Kazumi、Animeko，漫画阅读类 EhPanda、"
-        "VeneraX、Breeze、PicaX。所有 IPA 均直连各项目 GitHub Release 官方资产，"
-        "由 SideStore / AltStore / LiveContainer 本地签名安装。"
+        "收录 7 款开源 iOS 应用：番剧类 Kazumi、Animeko，漫画阅读类 EhPanda、"
+        "VeneraX、Venera Prime、Breeze、PicaX。所有 IPA 均直连各项目 GitHub Release "
+        "官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。"
     ),
     "tintColor": "#7C5CFF",
 }
@@ -145,6 +145,30 @@ APPS = [
             "原版 Venera 的个人维护增强分支，支持通过插件接入多种漫画图源，"
             "提供本地收藏、阅读进度同步等能力。\n\n"
             "开源协议：GPL-3.0　·　项目主页：https://github.com/Kyosee/VeneraX"
+        ),
+    },
+    {
+        "repo": "venera-app/venera-prime",
+        # 资产名形如 venera-prime-ios-2.4.0+240.ipa。
+        # ⚠️ 同一个 release 里有 14 个资产（3 个 apk、dmg、AppImage×2、deb×2、
+        #    pkg.tar.zst×2、exe、zip、ipa），必须「前缀 + .ipa 后缀」才唯一命中（实测 1/14）。
+        "asset": lambda n: n.startswith("venera-prime-ios-") and n.endswith(".ipa"),
+        "name": "Venera Prime",
+        "developerName": "venera-app",
+        "subtitle": "次世代多图源漫画阅读器",
+        "category": "books",
+        # 用上游自己的品牌色，和 VeneraX 的 #4A8FE7 区分开（两者都是蓝色系）。
+        "tintColor": "#0784FC",
+        # ⚠️ 这个仓库默认分支是 master（不是 main）。
+        #    但取图标用的是 release tag 作 ref（见 build() 里的 icon 拼装），
+        #    所以分支叫什么都不影响；路径只要在该 tag 下存在即可（已实测 200 / image/png）。
+        "icon": "assets/app_icon.png",
+        "description": (
+            "原版 Venera 的次世代重写版，Flutter + Rust 构建。支持本地漫画与网络图源阅读、"
+            "用 JavaScript 编写自定义漫画源、收藏管理、下载、评论与标签查看；"
+            "中文标签翻译来自 EhTagTranslation 项目。\n\n"
+            "注意：这与源里的 VeneraX 是两个独立应用（Bundle ID 不同），可以同时安装。\n\n"
+            "开源协议：GPL-3.0　·　项目主页：https://github.com/venera-app/venera-prime"
         ),
     },
     {
@@ -434,6 +458,11 @@ def notes_for(r):
     想让人一眼看出是哪个预发布，就只剩「说明文字」这个位置了。
     """
     notes = clean_notes(r.get("body"))
+    if not notes:
+        # 有些上游发布时正文是空的（实测 venera-prime v2.4.0 的 body 就是 null），
+        # 客户端里「版本说明」会渲染成一片空白，看着像我们生成的源有问题。
+        # 补一句兜底，明确这是上游没写，而不是源坏了。
+        notes = "上游未填写本版更新说明，可到项目发布页查看。"
     if not r.get("prerelease"):
         return notes
     tag = (r.get("tag_name") or "").strip().lstrip("vV")

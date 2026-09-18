@@ -1,6 +1,6 @@
 # Laincat 工具箱 — SideStore / AltStore / LiveContainer 源文件
 
-自用的 iOS 侧载源（源名称 **Laincat 工具箱**，图标是 [@laincat](https://github.com/laincat) 的 GitHub 头像）：收录 6 个开源 iOS 应用（番剧 + 漫画），**自动跟随上游 GitHub Release 更新**。
+自用的 iOS 侧载源（源名称 **Laincat 工具箱**，图标是 [@laincat](https://github.com/laincat) 的 GitHub 头像）：收录 7 个开源 iOS 应用（番剧 + 漫画），**自动跟随上游 GitHub Release 更新**。
 
 三个客户端都能用：**SideStore / AltStore / LiveContainer**。
 
@@ -47,6 +47,7 @@ https://github.com/laincat/AltStore/releases/download/latest/apps.json
 | Animeko | `org.animeko.animeko` | 6.1.0 | 42.4 MB | iOS 14.0+ | **6.2.0**（42.7 MB） | [open-ani/animeko](https://github.com/open-ani/animeko) |
 | EhPanda | `app.ehpanda` | 2.8.1 | 7.0 MB | **iOS 26.0+** | **3.0.0**（9.7 MB） | [EhPanda-Team/EhPanda](https://github.com/EhPanda-Team/EhPanda) |
 | VeneraX | `io.github.kyosee.venera` | 2.3.2 | 33.8 MB | iOS 16.0+ | 无 | [Kyosee/VeneraX](https://github.com/Kyosee/VeneraX) |
+| Venera Prime | `com.github.wgh136.venera.prime` | 2.4.0 | 15.3 MB | iOS 14.0+ | 无 | [venera-app/venera-prime](https://github.com/venera-app/venera-prime) |
 | Breeze | `com.zephyr.breeze` | 3.0.31 | 24.6 MB | iOS 15.0+ | 无 | [deretame/Breeze](https://github.com/deretame/Breeze) |
 | PicaX | `moye.PicaX` | 1.2.3 | 10.7 MB | iOS 15.2+ | 无 | [youshen2/PicaX](https://github.com/youshen2/PicaX) |
 
@@ -273,12 +274,12 @@ python tools/build_source.py --versions 4    # 稳定版轨道保留最近 4 个
 - **声明的 `version` / `buildVersion` 一律取包内真实值，不取 tag**（SideStore 会逐字比对，见上文《为什么 Animeko 写的是 6.2.0》）；tag 另存在 `releaseTag` 字段里，预发布的 tag 还会写进更新日志开头
 - 同一应用的测试版与稳定版做 Bundle ID 一致性校验，不一致的丢弃
 - 跨版本 Bundle ID 不一致的版本会被丢弃
-- 图标取自各仓库对应 tag 下的 AppIcon 资源（1024×1024），探测失败自动回退为仓库头像
+- 图标取自各仓库对应 tag 下的图标资源（1024×1024；Flutter 项目通常是 `ios/Runner/…/AppIcon`，venera-prime 用的是 `assets/app_icon.png`）。**用 tag 而不是分支名作 ref**，所以仓库默认分支叫 `main` 还是 `master` 都无所谓；探测失败自动回退为仓库头像
 - **源自身的 logo** 用的是 `https://github.com/laincat.png`（GitHub 头像，会 302 到 `avatars.githubusercontent.com`），换头像时源里自动跟着变
 
 ## 哪些预发布会被收，为什么
 
-6 个仓库的发布记录全扫过（含 tag 名带 beta/alpha/rc/nightly 但没打预发布标记的）：
+7 个仓库的发布记录全扫过（含 tag 名带 beta/alpha/rc/nightly 但没打预发布标记的）：
 
 | 仓库 | 情况 | 结论 |
 |---|---|---|
@@ -286,6 +287,7 @@ python tools/build_source.py --versions 4    # 稳定版轨道保留最近 4 个
 | Animeko | `v6.2.0-alpha01`（2026-09-17），更新日志是**全新的**内容（Bangumi 收藏冲突处理、弹幕颜色与位置、图片查看器独立窗口等），比正式版 6.1.0 新 | **收录** |
 | EhPanda | `3.0.0`，比稳定版 2.8.1 新一个月（离线下载、文件夹分类等） | **收录** |
 | VeneraX | `v2.1.8-beta.1`，比稳定版 2.3.2 **落后 5 个小版本**；作者发布说明写着「内部测试版，仅用于开发验证，**请勿分发**」 | 不收（版本号更低，SideStore 也不会显示） |
+| Venera Prime | 仓库刚起步，总共只有 1 个发布（`v2.4.0`），无预发布 | 无测试版 |
 | Breeze | 最近 100 个发布里无 beta/alpha | 无测试版 |
 | PicaX | 仓库总共只有 13 个发布，无预发布 | 无测试版 |
 
@@ -298,7 +300,8 @@ python tools/build_source.py --versions 4    # 稳定版轨道保留最近 4 个
 ## 注意事项
 
 1. **EhPanda 需 iOS 26.0 及以上**，稳定版 2.8.1 与测试版 3.0.0 都是这个要求。
-2. **免费 Apple ID 的侧载限制**：同时最多 3 个自签应用，签名 7 天过期（靠 SideStore 自身续签）。源里有 6 个应用，装不下全部。
+2. **免费 Apple ID 的侧载限制**：同时最多 3 个自签应用，签名 7 天过期（靠 SideStore 自身续签）。源里有 7 个应用，装不下全部。
 3. **PicaX 选的是不含 Watch 组件的包**（`PicaX-unsigned.ipa`）。带 Watch 的版本在免费账号签名时容易因附加 Target 失败。
 4. **EhPanda 含 Share Extension、PicaX 含 Widget**，签名时会额外占用标识符；报错可换用不带扩展的版本。
-5. **本仓库只做索引，IPA 全部由各项目自己在 GitHub Release 发布**，未重新打包、未修改任何二进制。使用请遵守各项目开源协议（GPL-3.0 / AGPL-3.0 / MPL-2.0 / MIT）及当地法律法规。
+5. **VeneraX 与 Venera Prime 是两个独立应用**（`io.github.kyosee.venera` / `com.github.wgh136.venera.prime`），Bundle ID 不同、可以同时安装 —— 但两者功能高度重叠，一般按需二选一。
+6. **本仓库只做索引，IPA 全部由各项目自己在 GitHub Release 发布**，未重新打包、未修改任何二进制。使用请遵守各项目开源协议（GPL-3.0 / AGPL-3.0 / MPL-2.0 / MIT）及当地法律法规。

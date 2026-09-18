@@ -1760,5 +1760,22 @@
         }
       ]
     }
+  ],
+  "venera-app/venera-prime": [
+    {
+      "tag": "v2.4.0",
+      "name": "v2.4.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-15",
+      "body": "",
+      "ipas": [
+        {
+          "name": "venera-prime-ios-2.4.0+240.ipa",
+          "size": 16021125,
+          "url": "https://github.com/venera-app/venera-prime/releases/download/v2.4.0/venera-prime-ios-2.4.0%2B240.ipa"
+        }
+      ]
+    }
   ]
 }

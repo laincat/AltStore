@@ -3,7 +3,7 @@
   "identifier": "com.acgtoolbox.source",
   "iconURL": "https://github.com/laincat.png?size=512",
   "subtitle": "番剧 · 漫画 iOS 自签源",
-  "description": "收录 6 款开源 iOS 应用：番剧类 Kazumi、Animeko，漫画阅读类 EhPanda、VeneraX、Breeze、PicaX。所有 IPA 均直连各项目 GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。",
+  "description": "收录 7 款开源 iOS 应用：番剧类 Kazumi、Animeko，漫画阅读类 EhPanda、VeneraX、Venera Prime、Breeze、PicaX。所有 IPA 均直连各项目 GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。",
   "tintColor": "#7C5CFF",
   "apps": [
     {
@@ -279,6 +279,59 @@
       "minOSVersion": "16.0"
     },
     {
+      "name": "Venera Prime",
+      "bundleIdentifier": "com.github.wgh136.venera.prime",
+      "developerName": "venera-app",
+      "subtitle": "次世代多图源漫画阅读器",
+      "localizedDescription": "原版 Venera 的次世代重写版，Flutter + Rust 构建。支持本地漫画与网络图源阅读、用 JavaScript 编写自定义漫画源、收藏管理、下载、评论与标签查看；中文标签翻译来自 EhTagTranslation 项目。\n\n注意：这与源里的 VeneraX 是两个独立应用（Bundle ID 不同），可以同时安装。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/venera-app/venera-prime",
+      "iconURL": "https://raw.githubusercontent.com/venera-app/venera-prime/v2.4.0/assets/app_icon.png",
+      "tintColor": "#0784FC",
+      "category": "books",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "releaseChannels": [
+        {
+          "track": "stable",
+          "releases": [
+            {
+              "version": "2.4.0",
+              "date": "2026-09-15",
+              "buildVersion": "240",
+              "buildNumber": "240",
+              "localizedDescription": "上游未填写本版更新说明，可到项目发布页查看。",
+              "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.0/venera-prime-ios-2.4.0%2B240.ipa",
+              "size": 16021125,
+              "minOSVersion": "14.0",
+              "releaseTag": "v2.4.0",
+              "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.4.0"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "version": "2.4.0",
+          "date": "2026-09-15",
+          "buildVersion": "240",
+          "buildNumber": "240",
+          "localizedDescription": "上游未填写本版更新说明，可到项目发布页查看。",
+          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.0/venera-prime-ios-2.4.0%2B240.ipa",
+          "size": 16021125,
+          "minOSVersion": "14.0",
+          "releaseTag": "v2.4.0",
+          "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.4.0"
+        }
+      ],
+      "version": "2.4.0",
+      "versionDate": "2026-09-15",
+      "versionDescription": "上游未填写本版更新说明，可到项目发布页查看。",
+      "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.0/venera-prime-ios-2.4.0%2B240.ipa",
+      "size": 16021125,
+      "minOSVersion": "14.0"
+    },
+    {
       "name": "Breeze",
       "bundleIdentifier": "com.zephyr.breeze",
       "developerName": "deretame",
@@ -393,7 +446,7 @@
     {
       "title": "源已建立",
       "identifier": "source-created",
-      "caption": "收录 6 款应用，IPA 直连各项目 GitHub Release。",
+      "caption": "收录 7 款应用，IPA 直连各项目 GitHub Release。",
       "date": "2026-09-15",
       "tintColor": "#7C5CFF",
       "notify": false
