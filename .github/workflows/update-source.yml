@@ -128,7 +128,12 @@ jobs:
           set -e
           # 某个 app 的 releases 变成空数组时 SideStore 解码会整体抛错，
           # 一个坏条目能让整个源加载不了，而这种情况肉眼看不出来 —— 必须卡住。
-          python tools/verify_source.py --min-apps 6
+          #
+          # --min-apps 取「等于当前应用数」：少一个就整轮中止，宁可这轮不提交、
+          # 15 分钟后重试，也不要把「应用数变少」的源推给用户 —— 那等于用户端
+          # 凭空少一个 App。生成脚本本身在抓取失败时会沿用上一次的条目，
+          # 所以正常情况下这个下限永远达标，真触发了一定是有问题。
+          python tools/verify_source.py --min-apps 7
 
       - name: 核对两个客户端的解析结果
         run: |
@@ -178,9 +183,27 @@ jobs:
           exists=false
           if gh release view "$TAG" >/dev/null 2>&1; then exists=true; fi
 
-          # 首次（release 还不存在）即使本轮无变化也要建一次，否则用户会以为没生效
-          if [ "${{ steps.commit.outputs.changed }}" != "true" ] && [ "$exists" = "true" ]; then
-            echo "apps.json 无变化且 release 已存在 → 跳过"
+          # ── 判据是「附件内容与当前 apps.json 是否一致」，不是「本轮有没有提交」──
+          # 这里踩过一个坑（2026-09-18 实测）：push 触发的运行里，apps.json 本身
+          # 就已经是新内容，「提交到本仓库」那步自然报 changed=false —— 于是这里
+          # 直接跳过，结果 raw 与 cnb.cool 两份都更新了，唯独 Release 附件停在旧
+          # 版本上，而且这一步还显示 success，从状态里完全看不出来。
+          # 改成 sha256 比对后就没这个问题：不管变化来自本轮的自动提交，还是来自
+          # 触发这次运行的 push 本身，都能正确识别。
+          # 拿不到 digest 时 have 为空 → 判定为「需要上传」，失败方向是安全的。
+          #
+          # 首次（release 还不存在）即使内容一致也要建一次，否则用户会以为没生效。
+          want=$(sha256sum apps.json | awk '{print $1}')
+          have=""
+          if [ "$exists" = "true" ]; then
+            have=$(gh api "repos/${GITHUB_REPOSITORY}/releases/tags/${TAG}" \
+                     --jq '.assets[] | select(.name=="apps.json") | (.digest // "")' \
+                     2>/dev/null | sed 's|^sha256:||' || true)
+          fi
+          if [ "$exists" = "true" ] && [ "$have" = "$want" ]; then
+            echo "附件内容与 apps.json 一致（sha256 ${want:0:16}…）→ 跳过"
+            echo "url=https://github.com/${GITHUB_REPOSITORY}/releases/download/$TAG/apps.json" \
+              >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
