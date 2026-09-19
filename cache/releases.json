@@ -907,6 +907,21 @@
   ],
   "Kyosee/VeneraX": [
     {
+      "tag": "v2.3.3",
+      "name": "v2.3.3",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-19",
+      "body": "> **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v2.3.3/release-notes/v2.3.3.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v2.3.3/release-notes/v2.3.3.zh-CN.md)\n\n## What's Changed\n\n### Added\n- Editable translation prompt\n- Batch actions for collections\n- Page count display on comic tiles\n- Visual indicator for comics already in a collection\n- Reading orientation toggle in reader\n\n### Changed\n- Moved reader overflow menu to the top bar for better accessibility\n- Folded rare reader actions into a menu to reduce clutter\n- Improved collection browsing experience\n\n### Fixed\n- AVIF images now fall back to WebP when decode fails\n- Type safety guards for episode loading responses\n- Deleted history records no longer reappear after background writes\n- Tag chips in search no longer crash when viewing collections\n- Local comics now correctly resume from last reading position\n\n**Full Changelog**: https://github.com/Kyosee/VeneraX/compare/v2.3.2...v2.3.3\n",
+      "ipas": [
+        {
+          "name": "VeneraX-ios-2.3.3+246.ipa",
+          "size": 35492246,
+          "url": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.3/VeneraX-ios-2.3.3%2B246.ipa"
+        }
+      ]
+    },
+    {
       "tag": "v2.3.2",
       "name": "v2.3.2",
       "pre": false,
@@ -1188,21 +1203,6 @@
           "name": "venera-ios-2.1.10+226.ipa",
           "size": 25092779,
           "url": "https://github.com/Kyosee/VeneraX/releases/download/v2.1.10/venera-ios-2.1.10%2B226.ipa"
-        }
-      ]
-    },
-    {
-      "tag": "v2.1.9",
-      "name": "v2.1.9",
-      "pre": false,
-      "draft": false,
-      "date": "2026-07-13",
-      "body": "> 🌐 **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v2.1.9/release-notes/v2.1.9.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v2.1.9/release-notes/v2.1.9.zh-CN.md)\n\n## What's Changed\n\n### Added\n- Customizable tap zones: set each screen edge (top / bottom / left / right) to previous page, next page, or none\n- Continuous mode: option to vertically center a short page after turning\n- Continuous mode: adjustable spacing between images\n\n### Changed\n- The app has been renamed to VeneraX with a new logo\n\n### Fixed\n- Seamless chapter reading: fixed tap-to-turn reloading the page after scrolling\n- Seamless chapter reading: fixed tap-to-turn not crossing into the next chapter on the join page\n- Fixed center-on-turn only turning a single page in continuous mode\n\n**Full Changelog**: https://github.com/Kyosee/VeneraX/compare/v2.1.8...v2.1.9\n\r\n",
-      "ipas": [
-        {
-          "name": "venera-ios-2.1.9+225.ipa",
-          "size": 24016933,
-          "url": "https://github.com/Kyosee/VeneraX/releases/download/v2.1.9/venera-ios-2.1.9%2B225.ipa"
         }
       ]
     }

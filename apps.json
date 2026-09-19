@@ -231,7 +231,7 @@
       "developerName": "Kyosee",
       "subtitle": "多图源漫画阅读器",
       "localizedDescription": "原版 Venera 的个人维护增强分支，支持通过插件接入多种漫画图源，提供本地收藏、阅读进度同步等能力。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Kyosee/VeneraX",
-      "iconURL": "https://raw.githubusercontent.com/Kyosee/VeneraX/v2.3.2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Kyosee/VeneraX/v2.3.3/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#4A8FE7",
       "category": "books",
       "appPermissions": {
@@ -243,39 +243,39 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.3.2",
-              "date": "2026-09-05",
-              "buildVersion": "245",
-              "buildNumber": "245",
-              "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nFixed\n- Fixed a few issues\n\nFull Changelog: https://github.com/Kyosee/VeneraX/compare/v2.3.1...v2.3.2",
-              "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.2/VeneraX-ios-2.3.2%2B245.ipa",
-              "size": 35444623,
+              "version": "2.3.3",
+              "date": "2026-09-19",
+              "buildVersion": "246",
+              "buildNumber": "246",
+              "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Editable translation prompt\n- Batch actions for collections\n- Page count display on comic tiles\n- Visual indicator for comics already in a collection\n- Reading orientation toggle in reader\nChanged\n- Moved reader overflow menu to the top bar for better accessibility\n- Folded rare reader actions into a menu to reduce clutter\n- Improved collection browsing experience\nFixed\n- AVIF images now fall back to WebP when decode fails\n- Type safety guards for episode loading responses\n- Deleted history records no longer reappear after background writes\n- Tag chips in search no longer crash when viewing collections\n- Local comics now correctly resume…",
+              "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.3/VeneraX-ios-2.3.3%2B246.ipa",
+              "size": 35492246,
               "minOSVersion": "16.0",
-              "releaseTag": "v2.3.2",
-              "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.2"
+              "releaseTag": "v2.3.3",
+              "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.3"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.3.2",
-          "date": "2026-09-05",
-          "buildVersion": "245",
-          "buildNumber": "245",
-          "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nFixed\n- Fixed a few issues\n\nFull Changelog: https://github.com/Kyosee/VeneraX/compare/v2.3.1...v2.3.2",
-          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.2/VeneraX-ios-2.3.2%2B245.ipa",
-          "size": 35444623,
+          "version": "2.3.3",
+          "date": "2026-09-19",
+          "buildVersion": "246",
+          "buildNumber": "246",
+          "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Editable translation prompt\n- Batch actions for collections\n- Page count display on comic tiles\n- Visual indicator for comics already in a collection\n- Reading orientation toggle in reader\nChanged\n- Moved reader overflow menu to the top bar for better accessibility\n- Folded rare reader actions into a menu to reduce clutter\n- Improved collection browsing experience\nFixed\n- AVIF images now fall back to WebP when decode fails\n- Type safety guards for episode loading responses\n- Deleted history records no longer reappear after background writes\n- Tag chips in search no longer crash when viewing collections\n- Local comics now correctly resume…",
+          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.3/VeneraX-ios-2.3.3%2B246.ipa",
+          "size": 35492246,
           "minOSVersion": "16.0",
-          "releaseTag": "v2.3.2",
-          "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.2"
+          "releaseTag": "v2.3.3",
+          "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.3"
         }
       ],
-      "version": "2.3.2",
-      "versionDate": "2026-09-05",
-      "versionDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nFixed\n- Fixed a few issues\n\nFull Changelog: https://github.com/Kyosee/VeneraX/compare/v2.3.1...v2.3.2",
-      "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.2/VeneraX-ios-2.3.2%2B245.ipa",
-      "size": 35444623,
+      "version": "2.3.3",
+      "versionDate": "2026-09-19",
+      "versionDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Editable translation prompt\n- Batch actions for collections\n- Page count display on comic tiles\n- Visual indicator for comics already in a collection\n- Reading orientation toggle in reader\nChanged\n- Moved reader overflow menu to the top bar for better accessibility\n- Folded rare reader actions into a menu to reduce clutter\n- Improved collection browsing experience\nFixed\n- AVIF images now fall back to WebP when decode fails\n- Type safety guards for episode loading responses\n- Deleted history records no longer reappear after background writes\n- Tag chips in search no longer crash when viewing collections\n- Local comics now correctly resume…",
+      "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.3/VeneraX-ios-2.3.3%2B246.ipa",
+      "size": 35492246,
       "minOSVersion": "16.0"
     },
     {
@@ -553,7 +553,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 9 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-09-18",
+      "date": "2026-09-19",
       "tintColor": "#7C5CFF",
       "notify": false
     }
