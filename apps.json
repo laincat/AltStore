@@ -337,7 +337,7 @@
       "developerName": "CyrilPeng",
       "subtitle": "支持 WebDAV 同步的漫画阅读器",
       "localizedDescription": "Venera 的 fork 分支，基于 Flutter 的跨平台漫画阅读器，支持本地漫画与网络漫画源，覆盖 iOS / Android / Windows / Linux / macOS。核心思路是尽量减少打断阅读：长篇作品可用瀑布流跨章节连续阅读，支持收藏、追更、离线下载，并能通过 WebDAV 在多台设备之间同步数据。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/CyrilPeng/Venera-Next",
-      "iconURL": "https://raw.githubusercontent.com/CyrilPeng/Venera-Next/v1.15.0/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
+      "iconURL": "https://raw.githubusercontent.com/CyrilPeng/Venera-Next/v1.16.0/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
       "tintColor": "#2090E0",
       "category": "books",
       "appPermissions": {
@@ -349,39 +349,39 @@
           "track": "stable",
           "releases": [
             {
-              "version": "1.15.0",
-              "date": "2026-08-31",
-              "buildVersion": "223",
-              "buildNumber": "223",
-              "localizedDescription": "新增\n\n- 阅读器新增跨平台夜间调光与自定义亮度控制，支持在阅读设置和底部快捷面板中实时调整，并沿用全局、设备及漫画专属设置优先级。",
-              "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.15.0/VeneraNext-ios-1.15.0%2B223.ipa",
-              "size": 19875257,
+              "version": "1.16.0",
+              "date": "2026-09-21",
+              "buildVersion": "225",
+              "buildNumber": "225",
+              "localizedDescription": "新增\n\n- 新增稍后阅读：漫画详情页可一键加入或移除，本地漫画可从列表菜单操作，主页显示待看列表并可进入完整列表；复用本地收藏和数据同步，保持快速收藏独立，并处理重命名、删除及同名收藏夹（#59）。\n- PDF 漫画支持多选批量导入，按顺序逐本转换和入库，显示文件及页数两级进度，支持安全取消、同名跳过和逐项结果汇总；Android 按需准备文件并隔离临时副本，避免整批复制及同名文件覆盖。\n修复\n\n- 修复本地图片空数据不会自动重试的问题；增加有限短延迟重试及短读校验，导入复制校验图片数据、等待子目录完成，并在失败时清理未完成内容和恢复原目录，避免空图片被当作导入成功（#67）。\n- 本地漫画文件名支持自然排序，例如 图片_1、图片_2、图片_10；目录与 WebDAV 共用规则，旧本地漫画首次续读时按原图片迁移页码，并重建旧 WebDAV 目录快照（#68）。\n- 修复首次填写或切换漫画源仓库地址后立即添加条目时使用旧地址的问题；列表与加载地址绑定，成功刷新后保存配置，并避免旧请求覆盖新列表。统一添加和更新源的下载清理，修复失败后加载框不关闭及取消更新时已安装源被移除的问题（#64）。\n- 修复 Android 阅读器手动切换横竖屏后，退出仍将书架和设置等页面锁定在阅读方向的问题；方向限制现在仅在阅读期间生效，退出和“自动”模式均恢复系统默认策略，再次进入时重置按钮状态（#66）。\n- 修复 macOS 系统语言为中文地区代码时无法正确匹配界面语言的问题；现在会按地区识别简体或繁体中文，并在应用包中声明对应本地化支持。\n- 修复 Windows 安装后在应用列表中将版本号拼入软…",
+              "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.16.0/VeneraNext-ios-1.16.0%2B225.ipa",
+              "size": 19931721,
               "minOSVersion": "14.0",
-              "releaseTag": "v1.15.0",
-              "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.15.0"
+              "releaseTag": "v1.16.0",
+              "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.16.0"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "1.15.0",
-          "date": "2026-08-31",
-          "buildVersion": "223",
-          "buildNumber": "223",
-          "localizedDescription": "新增\n\n- 阅读器新增跨平台夜间调光与自定义亮度控制，支持在阅读设置和底部快捷面板中实时调整，并沿用全局、设备及漫画专属设置优先级。",
-          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.15.0/VeneraNext-ios-1.15.0%2B223.ipa",
-          "size": 19875257,
+          "version": "1.16.0",
+          "date": "2026-09-21",
+          "buildVersion": "225",
+          "buildNumber": "225",
+          "localizedDescription": "新增\n\n- 新增稍后阅读：漫画详情页可一键加入或移除，本地漫画可从列表菜单操作，主页显示待看列表并可进入完整列表；复用本地收藏和数据同步，保持快速收藏独立，并处理重命名、删除及同名收藏夹（#59）。\n- PDF 漫画支持多选批量导入，按顺序逐本转换和入库，显示文件及页数两级进度，支持安全取消、同名跳过和逐项结果汇总；Android 按需准备文件并隔离临时副本，避免整批复制及同名文件覆盖。\n修复\n\n- 修复本地图片空数据不会自动重试的问题；增加有限短延迟重试及短读校验，导入复制校验图片数据、等待子目录完成，并在失败时清理未完成内容和恢复原目录，避免空图片被当作导入成功（#67）。\n- 本地漫画文件名支持自然排序，例如 图片_1、图片_2、图片_10；目录与 WebDAV 共用规则，旧本地漫画首次续读时按原图片迁移页码，并重建旧 WebDAV 目录快照（#68）。\n- 修复首次填写或切换漫画源仓库地址后立即添加条目时使用旧地址的问题；列表与加载地址绑定，成功刷新后保存配置，并避免旧请求覆盖新列表。统一添加和更新源的下载清理，修复失败后加载框不关闭及取消更新时已安装源被移除的问题（#64）。\n- 修复 Android 阅读器手动切换横竖屏后，退出仍将书架和设置等页面锁定在阅读方向的问题；方向限制现在仅在阅读期间生效，退出和“自动”模式均恢复系统默认策略，再次进入时重置按钮状态（#66）。\n- 修复 macOS 系统语言为中文地区代码时无法正确匹配界面语言的问题；现在会按地区识别简体或繁体中文，并在应用包中声明对应本地化支持。\n- 修复 Windows 安装后在应用列表中将版本号拼入软…",
+          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.16.0/VeneraNext-ios-1.16.0%2B225.ipa",
+          "size": 19931721,
           "minOSVersion": "14.0",
-          "releaseTag": "v1.15.0",
-          "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.15.0"
+          "releaseTag": "v1.16.0",
+          "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.16.0"
         }
       ],
-      "version": "1.15.0",
-      "versionDate": "2026-08-31",
-      "versionDescription": "新增\n\n- 阅读器新增跨平台夜间调光与自定义亮度控制，支持在阅读设置和底部快捷面板中实时调整，并沿用全局、设备及漫画专属设置优先级。",
-      "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.15.0/VeneraNext-ios-1.15.0%2B223.ipa",
-      "size": 19875257,
+      "version": "1.16.0",
+      "versionDate": "2026-09-21",
+      "versionDescription": "新增\n\n- 新增稍后阅读：漫画详情页可一键加入或移除，本地漫画可从列表菜单操作，主页显示待看列表并可进入完整列表；复用本地收藏和数据同步，保持快速收藏独立，并处理重命名、删除及同名收藏夹（#59）。\n- PDF 漫画支持多选批量导入，按顺序逐本转换和入库，显示文件及页数两级进度，支持安全取消、同名跳过和逐项结果汇总；Android 按需准备文件并隔离临时副本，避免整批复制及同名文件覆盖。\n修复\n\n- 修复本地图片空数据不会自动重试的问题；增加有限短延迟重试及短读校验，导入复制校验图片数据、等待子目录完成，并在失败时清理未完成内容和恢复原目录，避免空图片被当作导入成功（#67）。\n- 本地漫画文件名支持自然排序，例如 图片_1、图片_2、图片_10；目录与 WebDAV 共用规则，旧本地漫画首次续读时按原图片迁移页码，并重建旧 WebDAV 目录快照（#68）。\n- 修复首次填写或切换漫画源仓库地址后立即添加条目时使用旧地址的问题；列表与加载地址绑定，成功刷新后保存配置，并避免旧请求覆盖新列表。统一添加和更新源的下载清理，修复失败后加载框不关闭及取消更新时已安装源被移除的问题（#64）。\n- 修复 Android 阅读器手动切换横竖屏后，退出仍将书架和设置等页面锁定在阅读方向的问题；方向限制现在仅在阅读期间生效，退出和“自动”模式均恢复系统默认策略，再次进入时重置按钮状态（#66）。\n- 修复 macOS 系统语言为中文地区代码时无法正确匹配界面语言的问题；现在会按地区识别简体或繁体中文，并在应用包中声明对应本地化支持。\n- 修复 Windows 安装后在应用列表中将版本号拼入软…",
+      "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.16.0/VeneraNext-ios-1.16.0%2B225.ipa",
+      "size": 19931721,
       "minOSVersion": "14.0"
     },
     {
@@ -553,7 +553,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 9 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-09-19",
+      "date": "2026-09-21",
       "tintColor": "#7C5CFF",
       "notify": false
     }

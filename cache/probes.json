@@ -254,5 +254,13 @@
     "displayName": "VeneraX",
     "minOSVersion": "16.0",
     "size": 35492246
+  },
+  "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.16.0/VeneraNext-ios-1.16.0%2B225.ipa": {
+    "bundleIdentifier": "com.github.cyrilpeng.veneranext",
+    "version": "1.16.0",
+    "buildVersion": "225",
+    "displayName": "VeneraNext",
+    "minOSVersion": "14.0",
+    "size": 19931721
   }
 }
