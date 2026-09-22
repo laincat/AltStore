@@ -303,6 +303,21 @@
   ],
   "open-ani/animeko": [
     {
+      "tag": "v6.2.0-beta01",
+      "name": "6.2.0-beta01",
+      "pre": true,
+      "draft": false,
+      "date": "2026-09-22",
+      "body": "- 新增 Android TV 客户端，支持大屏首页、条目详情、播放、收藏、搜索、每日放送、设置与电视端扫码登录 (#3271)，感谢 @GrahamZen 在 #3217 中的前期探索\r\n- 缓存支持按线路批量选择多集，并按条目级查询资源，下载多集更顺畅\r\n- 自动跳过 OP/ED 前会提前缓存跳转后的内容\r\n- 条目详情新增系列关系图，可直观查看续集、番外和衍生并直接跳转\r\n- 剧集列表新增 TMDB 剧照、观看进度条与已看完角标，选集识别更直观\r\n- 在线播放进度条会显示已缓冲范围，缓冲时会显示当前下载速度\r\n- 播放页支持拖入本地视频文件直接播放，仅本次播放有效\r\n- 修复只标画质或语言的线路被当成集号不明而无法匹配的问题 (#3345 by @GrahamZen)\r\n\r\n----\r\n\r\n- 支持 GitHub 登录与账号绑定\r\n- 关于页新增构建信息，便于反馈问题时复制版本、分支、commit 与平台信息\r\n- 缓存详情页显示下载器状态、解析阶段与最近分片错误，便于诊断停滞任务\r\n- iOS 全屏播放期间锁定横屏，并优化横屏刘海侧边距\r\n- 修复重试下载更新包后进度在多个旧数值之间跳动的问题\r\n- 修复桌面端全屏播放时按 ESC 返回上一页而不是退出全屏的问题\r\n- 修复从播放页返回条目页后剧集看过状态没有及时更新的问题\r\n- 修复人物和角色侧边预览中的图片无法点击放大，以及移动端大图查看器覆盖范围不正确的问题\r\n- 图片加载恢复内存缓存，减少返回页面或滚动列表时的重复解码\r\n- 数据源搜索内容协商优化，提升部分站点的资源搜索兼容性\r\n- 播放缓冲策略在各平台统一，在线源回退播放时更不容易重新下载\r\n- 系列关系图中未在本地缓存的条目也能显示收藏状态\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v6.2.0-alpha01...v6.2.0-beta01\r\n\r\n[//]: # (ANI-SERVER-MAGIC-SEPARATOR)\r\n\r\n[//]: # (注意: api server 依赖这个特殊分隔符)\r\n\r\n[//]: # (对于所有可用的变量列表, 参考 CI release.yml 的 step release-notes)\r\n\r\n[github-win-x64]: https://github.com/open-ani/ani/releases/download/v6.2.0-beta01/ani-6.2.0-beta01-windows-x86_64.zip\r\n\r\n[github-win-aarch64]: https://github.com/open-ani/ani/releases/download/v6.2.0-beta01/ani-6.2.0-beta01-windows-aarch64.zip\r\n\r\n[github-mac-x64]: https://github.com/open-ani/ani/releases/download/v6.2.0-beta01/ani-6.2.0-beta01-macos-x86_64.dmg\r\n\r\n[github-mac-aarch64]: https://github.com/open-ani/ani/releases/download/v6.2.0-beta01/ani-6.2.0-beta01-macos-aarch64.dmg\r\n\r\n[github-android]: https://github.com/open-ani/ani/releases/download/v6.2.0-beta01/ani-6.2.0-beta01-universal.apk\r\n\r\n[github-android-arm64-v8a]: https://github.com/open-ani/ani/releases/download/v6.2.0-beta01/ani-6.2.0-beta01-arm64-v8a.apk\r\n\r\n[github-android-armeabi-v7a]: https://github.com/open-ani/ani/releases/download/v6.2.0-beta01/ani-6.2.0-beta01-armeabi-v7a.apk\r\n\r\n[github-android-x86_64]: https://github.com/open-ani/ani/releases/download/v6.2.0-beta01/ani-6.2.0-beta01-x86_64.apk\r\n\r\n[cf-win-x64]: https://d.myani.o",
+      "ipas": [
+        {
+          "name": "ani-6.2.0-beta01.ipa",
+          "size": 46220023,
+          "url": "https://github.com/open-ani/animeko/releases/download/v6.2.0-beta01/ani-6.2.0-beta01.ipa"
+        }
+      ]
+    },
+    {
       "tag": "v6.2.0-alpha01",
       "name": "6.2.0-alpha01",
       "pre": true,
@@ -584,21 +599,6 @@
           "name": "ani-5.5.1.ipa",
           "size": 29923207,
           "url": "https://github.com/open-ani/animeko/releases/download/v5.5.1/ani-5.5.1.ipa"
-        }
-      ]
-    },
-    {
-      "tag": "v5.5.0-beta02",
-      "name": "5.5.0-beta02",
-      "pre": true,
-      "draft": false,
-      "date": "2026-05-23",
-      "body": "- 弹幕匹配优先使用 Dandanplay 的 Bangumi ID 映射，提升条目识别和弹幕匹配准确性\r\n- Bangumi 登录过期时会提示重新登录，避免同步或相关操作失败时不清楚原因\r\n\r\n----\r\n\r\n- 修复 macOS 上无法修改头像的问题 by @undefined-hestudio in https://github.com/open-ani/animeko/pull/3017\r\n- 修复搜索结果中使用键盘方向键导航时可能选中无效位置的问题 by @Mystery406 in https://github.com/open-ani/animeko/pull/3021\r\n- 修复 HTTP 下载器处理媒体 ID 时可能因多余空白导致下载失败的问题\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v5.5.0-beta01...v5.5.0-beta02\r\n\r\n\r\n[//]: # (ANI-SERVER-MAGIC-SEPARATOR)\r\n\r\n[//]: # (注意: api server 依赖这个特殊分隔符)\r\n\r\n[//]: # (对于所有可用的变量列表, 参考 CI release.yml 的 step release-notes)\r\n\r\n[github-win-x64]: https://github.com/open-ani/ani/releases/download/v5.5.0-beta02/ani-5.5.0-beta02-windows-x86_64.zip\r\n\r\n[github-mac-x64]: https://github.com/open-ani/ani/releases/download/v5.5.0-beta02/ani-5.5.0-beta02-macos-x86_64.dmg\r\n\r\n[github-mac-aarch64]: https://github.com/open-ani/ani/releases/download/v5.5.0-beta02/ani-5.5.0-beta02-macos-aarch64.dmg\r\n\r\n[github-android]: https://github.com/open-ani/ani/releases/download/v5.5.0-beta02/ani-5.5.0-beta02-universal.apk\r\n\r\n[github-android-arm64-v8a]: https://github.com/open-ani/ani/releases/download/v5.5.0-beta02/ani-5.5.0-beta02-arm64-v8a.apk\r\n\r\n[github-android-armeabi-v7a]: https://github.com/open-ani/ani/releases/download/v5.5.0-beta02/ani-5.5.0-beta02-armeabi-v7a.apk\r\n\r\n[github-android-x86_64]: https://github.com/open-ani/ani/releases/download/v5.5.0-beta02/ani-5.5.0-beta02-x86_64.apk\r\n\r\n[cf-win-x64]: https://d.myani.org/v5.5.0-beta02/ani-5.5.0-beta02-windows-x86_64.zip\r\n\r\n[cf-linux-x64]: https://d.myani.org/v5.5.0-beta02/ani-5.5.0-beta02-linux-x86_64.appimage\r\n\r\n[cf-mac-x64]: https://d.myani.org/v5.5.0-beta02/ani-5.5.0-beta02-macos-x86_64.zip\r\n\r\n[cf-mac-aarch64]: https://d.myani.org/v5.5.0-beta02/ani-5.5.0-beta02-macos-aarch64.dmg\r\n\r\n[cf-ios]: https://d.myani.org/v5.5.0-beta02/ani-5.5.0-beta02.ipa\r\n\r\n[cf-android]: https://d.myani.org/v5.5.0-beta02/ani-5.5.0-beta02-universal.apk\r\n\r\n[cf-android-arm64-v8a]: https://d.myani.org/v5.5.0-beta02/a",
-      "ipas": [
-        {
-          "name": "ani-5.5.0-beta02.ipa",
-          "size": 29923308,
-          "url": "https://github.com/open-ani/animeko/releases/download/v5.5.0-beta02/ani-5.5.0-beta02.ipa"
         }
       ]
     }

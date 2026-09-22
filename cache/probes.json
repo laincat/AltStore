@@ -262,5 +262,13 @@
     "displayName": "VeneraNext",
     "minOSVersion": "14.0",
     "size": 19931721
+  },
+  "https://github.com/open-ani/animeko/releases/download/v6.2.0-beta01/ani-6.2.0-beta01.ipa": {
+    "bundleIdentifier": "org.animeko.animeko",
+    "version": "6.2.0",
+    "buildVersion": "6.2.31",
+    "displayName": "Animeko",
+    "minOSVersion": "14.0",
+    "size": 46220023
   }
 }
