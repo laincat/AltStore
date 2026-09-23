@@ -278,5 +278,13 @@
     "displayName": "Kazumi",
     "minOSVersion": "15.0",
     "size": 29106919
+  },
+  "https://github.com/Predidit/Kazumi/releases/download/2.3.6/Kazumi_ios_2.3.6_no_sign.ipa": {
+    "bundleIdentifier": "com.example.kazumi",
+    "version": "2.3.6",
+    "buildVersion": "20306",
+    "displayName": "Kazumi",
+    "minOSVersion": "15.0",
+    "size": 30406530
   }
 }

@@ -12,7 +12,7 @@
       "developerName": "Predidit",
       "subtitle": "自定义规则的番剧采集与在线观看",
       "localizedDescription": "基于自定义规则的番剧采集 App，支持流媒体在线观看、弹幕与实时超分辨率。支持多平台，此处为未签名 iOS 构建，需自行签名安装。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Predidit/Kazumi",
-      "iconURL": "https://raw.githubusercontent.com/Predidit/Kazumi/2.3.4/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Predidit/Kazumi/2.3.6/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#E86AA6",
       "category": "entertainment",
       "appPermissions": {
@@ -24,39 +24,39 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.3.4",
-              "date": "2026-09-22",
-              "buildVersion": "20304",
-              "buildNumber": "20304",
-              "localizedDescription": "- 重新设计的竖屏模式我的页面 (@Predidit)\r\n- 现在追番页面支持卡片样式与列表样式切换 (@Predidit)\r\n- 改进的弹幕检索流程 (@moonrailgun)\r\n- 修复 android 平台偶发的崩溃问题 (@Predidit)\r\n- 修复 macOS x64 应用界面闪烁的问题 (#2577) (@Predidit)",
-              "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.3.4/Kazumi_ios_2.3.4_no_sign.ipa",
-              "size": 29106919,
+              "version": "2.3.6",
+              "date": "2026-09-23",
+              "buildVersion": "20306",
+              "buildNumber": "20306",
+              "localizedDescription": "- 修复部分地区图片资源无法加载的问题 (#2581)\r\n> [!NOTE]\r\n> 这是 2.3.4 的热修复版本，更多更新日志参考 2.3.4",
+              "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.3.6/Kazumi_ios_2.3.6_no_sign.ipa",
+              "size": 30406530,
               "minOSVersion": "15.0",
-              "releaseTag": "2.3.4",
-              "source": "https://github.com/Predidit/Kazumi/releases/tag/2.3.4"
+              "releaseTag": "2.3.6",
+              "source": "https://github.com/Predidit/Kazumi/releases/tag/2.3.6"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.3.4",
-          "date": "2026-09-22",
-          "buildVersion": "20304",
-          "buildNumber": "20304",
-          "localizedDescription": "- 重新设计的竖屏模式我的页面 (@Predidit)\r\n- 现在追番页面支持卡片样式与列表样式切换 (@Predidit)\r\n- 改进的弹幕检索流程 (@moonrailgun)\r\n- 修复 android 平台偶发的崩溃问题 (@Predidit)\r\n- 修复 macOS x64 应用界面闪烁的问题 (#2577) (@Predidit)",
-          "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.3.4/Kazumi_ios_2.3.4_no_sign.ipa",
-          "size": 29106919,
+          "version": "2.3.6",
+          "date": "2026-09-23",
+          "buildVersion": "20306",
+          "buildNumber": "20306",
+          "localizedDescription": "- 修复部分地区图片资源无法加载的问题 (#2581)\r\n> [!NOTE]\r\n> 这是 2.3.4 的热修复版本，更多更新日志参考 2.3.4",
+          "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.3.6/Kazumi_ios_2.3.6_no_sign.ipa",
+          "size": 30406530,
           "minOSVersion": "15.0",
-          "releaseTag": "2.3.4",
-          "source": "https://github.com/Predidit/Kazumi/releases/tag/2.3.4"
+          "releaseTag": "2.3.6",
+          "source": "https://github.com/Predidit/Kazumi/releases/tag/2.3.6"
         }
       ],
-      "version": "2.3.4",
-      "versionDate": "2026-09-22",
-      "versionDescription": "- 重新设计的竖屏模式我的页面 (@Predidit)\r\n- 现在追番页面支持卡片样式与列表样式切换 (@Predidit)\r\n- 改进的弹幕检索流程 (@moonrailgun)\r\n- 修复 android 平台偶发的崩溃问题 (@Predidit)\r\n- 修复 macOS x64 应用界面闪烁的问题 (#2577) (@Predidit)",
-      "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.3.4/Kazumi_ios_2.3.4_no_sign.ipa",
-      "size": 29106919,
+      "version": "2.3.6",
+      "versionDate": "2026-09-23",
+      "versionDescription": "- 修复部分地区图片资源无法加载的问题 (#2581)\r\n> [!NOTE]\r\n> 这是 2.3.4 的热修复版本，更多更新日志参考 2.3.4",
+      "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.3.6/Kazumi_ios_2.3.6_no_sign.ipa",
+      "size": 30406530,
       "minOSVersion": "15.0"
     },
     {
@@ -553,7 +553,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 9 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-09-22",
+      "date": "2026-09-23",
       "tintColor": "#7C5CFF",
       "notify": false
     }
