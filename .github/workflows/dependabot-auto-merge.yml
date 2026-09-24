@@ -1,0 +1,142 @@
+# ==============================================================================
+#  Dependabot 自动合并 —— 只对 **patch** 生效
+#
+#  ── ⚠️ 先读这段：为什么这里用 `gh pr merge` 而不是 `--auto` ────────────────
+#
+#  直觉写法是 `gh pr merge --auto --squash`，让 GitHub「等 CI 过了再合」。
+#  **但在这个仓库里那样写是危险的**，原因是 gh CLI 的一个明确设计：
+#
+#      autoMerge: opts.AutoMergeEnable && !isImmediatelyMergeable(pr.MergeStateStatus)
+#                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#      func isImmediatelyMergeable(status string) bool   // 即 CLEAN 状态
+#      —— 源码 pkg/cmd/pr/merge/merge.go
+#
+#  也就是说：**当 PR 处于 CLEAN（没有任何未满足的必需条件）时，`--auto` 不会
+#  挂起等待，而是直接立即合并**。这不是 bug，是既定行为（cli/cli#8792 有完整
+#  讨论，官方确认「clean 状态下就是普通合并」）。
+#
+#  而本仓库**没有开启分支保护**（2026-09-24 实测：`branches/*/protection` 返回
+#  Branch not protected），所以：
+#      · 没有 required status checks
+#      · 没有 required reviews
+#      → Dependabot 的 PR **天然就是 CLEAN**
+#      → `--auto` 会立刻合并，**等于完全没有检查**，与「等 CI」的预期相反。
+#
+#  所以这里改用**显式两步**：先自己确认 PR 真的可合并，再直接 merge。
+#
+#  ── 如果你想要真正的「等 CI 再合」────────────────────────────────────────
+#  正确顺序是**先给默认分支加分支保护**（Require status checks to pass），
+#  届时 PR 会变成 BLOCKED 而非 CLEAN，`--auto` 才会真的挂起等待。
+#
+#  ── 本仓库的实际风险：低，但有一条硬底线 ─────────────────────────────────
+#  这个仓库只有 Actions 一个生态，patch 级更新基本无风险，可以放心自动合。
+#
+#  但硬底线是：**major 绝不能自动合**。本流水线是**发布源文件的**
+#  （altstore/apps.json 会推给真实用户），checkout 这类 Action 的 major 升级
+#  会改变默认行为（例如 node 运行时换代），一旦出错影响的是订阅方的源加载。
+#  所以 major 单独成组、不会落到这里；minor 也留人工扫一眼。
+#
+#  ⚠️ 另注意：update-source.yml **不在 PR 上触发**（它靠 cron 与 push），
+#     所以「自动合并」合进来之后才会在 main 上验证。这使上面的
+#     `mergeable` 判定成为唯一的合并前防线 —— 它挡的是冲突与 draft，
+#     不挡「代码本身有问题」。patch 级 Action 更新符合这个风险画像。
+# ==============================================================================
+name: Dependabot 自动合并（仅 patch）
+
+on: pull_request
+
+# 合并 PR 需要 contents:write（写分支）与 pull-requests:write（改 PR 状态）
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  auto-merge:
+    # 官方推荐用 pull_request.user.login 判定发起者（比 github.actor 更精确：
+    # actor 反映「是谁触发了本次运行」，而 user.login 就是 PR 的作者）
+    if: >
+      github.event.pull_request.user.login == 'dependabot[bot]' &&
+      github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+
+    steps:
+      # 读出这个 PR 的依赖元数据（update-type / dependency-type / 依赖列表）
+      - name: 取 Dependabot 元数据
+        id: meta
+        uses: dependabot/fetch-metadata@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      # 只有 patch 才继续；不是 patch 就在这一步结束，不进入合并
+      - name: 判定是否为 patch
+        id: gate
+        run: |
+          set -euo pipefail
+          echo "update-type    = ${{ steps.meta.outputs.update-type }}"
+          echo "依赖类型       = ${{ steps.meta.outputs.dependency-type }}"
+          echo "依赖列表       = ${{ steps.meta.outputs.dependency-names }}"
+          if [ "${{ steps.meta.outputs.update-type }}" = "version-update:semver-patch" ]; then
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+            echo "→ 不是 patch，按策略留人工 review，不自动合并。"
+          fi
+
+      # ⚠️ 合并前**必须**自己确认 PR 真的可合。
+      # 因为本仓库没有分支保护，--auto 不会替我们等检查，只能自己挡一道。
+      - name: 确认可合并（防冲突 / 防 draft）
+        id: ready
+        if: steps.gate.outputs.ok == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+        run: |
+          set -euo pipefail
+          # mergeable 由 GitHub 异步计算，首次查询可能是 UNKNOWN，需轮询
+          state=""
+          for i in $(seq 1 10); do
+            state="$(gh pr view "$PR_URL" --json mergeable,isDraft \
+              --jq 'if .isDraft then "DRAFT" else .mergeable end')"
+            [ "$state" != "UNKNOWN" ] && break
+            echo "mergeable=UNKNOWN，等待 3s 后重试（$i/10）"
+            sleep 3
+          done
+          echo "mergeable 状态: $state"
+          if [ "$state" != "MERGEABLE" ]; then
+            echo "::error::PR 当前不可合并（$state），跳过自动合并，留人工处理。"
+            exit 1
+          fi
+
+      # 真正的合并。两个刻意的选择：
+      #   · 带 --match-head-commit 作纵深防御：万一在「判定」到「合并」之间
+      #     有人往这个 PR 追加了提交，head 不再匹配，GitHub 会拒绝合并，
+      #     而不是把没审过的内容合进去。
+      #   · **不用 --delete-branch**：它删的是**本地**分支，而这里跑在 runner 上、
+      #     根本没有那个本地分支；cli/cli#8362 记录的正是「它删错了分支」
+      #     （把当前检出的分支删掉）。删分支改成下一步用 API 做。
+      - name: 执行合并（squash）
+        if: steps.gate.outputs.ok == 'true' && steps.ready.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          gh pr merge --squash --match-head-commit "$HEAD_SHA" "$PR_URL"
+          echo "✅ 已合并（patch 级，head=$HEAD_SHA）"
+
+      # 合并后删掉 Dependabot 的分支。用 API 而不是 --delete-branch —— 后者操作
+      # 本地分支，在 runner 上有删错的风险（cli/cli#8362）。删分支失败不影响
+      # 合并结果，所以这里不阻断。
+      - name: 删除已合并的分支
+        if: steps.gate.outputs.ok == 'true' && steps.ready.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: ${{ github.event.pull_request.head.ref }}
+        run: |
+          if gh api -X DELETE \
+               "repos/${{ github.repository }}/git/refs/heads/$BRANCH" 2>/dev/null; then
+            echo "已删除分支 $BRANCH"
+          else
+            echo "分支 $BRANCH 删除失败或已不存在（不影响合并）"
+          fi
