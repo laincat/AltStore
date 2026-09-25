@@ -286,5 +286,13 @@
     "displayName": "Kazumi",
     "minOSVersion": "15.0",
     "size": 30406530
+  },
+  "https://github.com/Kyosee/VeneraX/releases/download/v2.3.4/VeneraX-ios-2.3.4%2B247.ipa": {
+    "bundleIdentifier": "io.github.kyosee.venera",
+    "version": "2.3.4",
+    "buildVersion": "247",
+    "displayName": "VeneraX",
+    "minOSVersion": "16.0",
+    "size": 35525538
   }
 }

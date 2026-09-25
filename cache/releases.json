@@ -907,6 +907,21 @@
   ],
   "Kyosee/VeneraX": [
     {
+      "tag": "v2.3.4",
+      "name": "v2.3.4",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-25",
+      "body": "> **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v2.3.4/release-notes/v2.3.4.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v2.3.4/release-notes/v2.3.4.zh-CN.md)\n\n## What's Changed\n\n### Added\n- Customize the chapter order of each comic\n- Create a new folder directly from the favorites panel\n- Choose exactly which settings stay on this device in WebDAV sync, now covering all settings including AI translation, network, downloads, home layout and search history\n\n### Changed\n- Easier-to-use collection picker\n- Skip-sync options moved to their own page under WebDAV sync, with Select All\n\n### Fixed\n- Fix language tags disappearing or being hard to see on comic cards\n- Fix saved translations showing on the wrong page in some cases\n- Fix WebDAV upload failing when the local library is in a folder you picked yourself\n- Fix downloads of collection comics failing in some cases\n- Fix some images failing to display without a proper error\n\n**Full Changelog**: https://github.com/Kyosee/VeneraX/compare/v2.3.3...v2.3.4\n",
+      "ipas": [
+        {
+          "name": "VeneraX-ios-2.3.4+247.ipa",
+          "size": 35525538,
+          "url": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.4/VeneraX-ios-2.3.4%2B247.ipa"
+        }
+      ]
+    },
+    {
       "tag": "v2.3.3",
       "name": "v2.3.3",
       "pre": false,
@@ -1188,21 +1203,6 @@
           "name": "venera-ios-2.1.11+227.ipa",
           "size": 26957639,
           "url": "https://github.com/Kyosee/VeneraX/releases/download/v2.1.11/venera-ios-2.1.11%2B227.ipa"
-        }
-      ]
-    },
-    {
-      "tag": "v2.1.10",
-      "name": "v2.1.10",
-      "pre": false,
-      "draft": false,
-      "date": "2026-07-15",
-      "body": "> 🌐 **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v2.1.10/release-notes/v2.1.10.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v2.1.10/release-notes/v2.1.10.zh-CN.md)\n## What's Changed\n\n### Added\n- WebDAV online comic library: read comics directly from a remote directory online; reuses your existing WebDAV settings automatically when not configured separately\n- QR-code sync: config now saves and takes effect immediately after scanning, no manual save needed\n- Custom desktop app icon with three built-in presets to switch between\n- New \"Test Connection\" button in the WebDAV settings dialog\n\n### Changed\n- Added a collapsible \"WebDAV Sync\" group in Settings that gathers sync, logs, and comic library options; setting groups are now unified as collapsible headers with icons\n- Redesigned the detail page with an edge-to-edge layout, a main area that adapts to window width, and larger, better-proportioned reading buttons on wide screens\n- Renamed \"Disclaimer\" to \"User Agreement & Disclaimer\"\n\n### Fixed\n- Fixed the night-view toggle being overwritten across devices when restoring a backup (#125)\n- Fixed the multitasking view showing the old app name\n- Fixed clearing the reading history list also wiping per-chapter reading progress\n- Fixed some images failing to load in the WebDAV comic library\n- Fixed the About page description text touching the screen edges (#119)\n\n**Full Changelog**: https://github.com/Kyosee/VeneraX/compare/v2.1.9...v2.1.10\n\r\n",
-      "ipas": [
-        {
-          "name": "venera-ios-2.1.10+226.ipa",
-          "size": 25092779,
-          "url": "https://github.com/Kyosee/VeneraX/releases/download/v2.1.10/venera-ios-2.1.10%2B226.ipa"
         }
       ]
     }
