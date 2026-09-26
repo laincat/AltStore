@@ -303,6 +303,21 @@
   ],
   "open-ani/animeko": [
     {
+      "tag": "v6.2.0",
+      "name": "6.2.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-26",
+      "body": "- 安卓 TV 版已发布，全新设计精美 UI，更多功能开发中\r\n- 新增显示缓冲进度条，优化缓冲机制\r\n- 新增系列关系图，直观展示正片、续集、番外与衍生作品\r\n- 新增按线路批量缓存\r\n- 支持发送自定义位置和颜色的弹幕\r\n- 搜索支持年份与季度筛选 (#3396 by @Bonger34)\r\n- 新增 GitHub 账号绑定，贡献者可认证以免除广告\r\n\r\n----\r\n\r\n- 新增 Bangumi 收藏冲突处理，可对照两侧收藏、选择保留内容或采用较新的记录，并在合并后同步刷新收藏列表\r\n- 新增「显示原名」设置，可在条目、剧集、搜索、收藏和播放等页面显示原始名称 (#3451 by @azusachino)\r\n- 桌面端图片查看器支持独立窗口、缩放、保存、复制及拖出图片到其他应用，并支持触摸板手势\r\n- 人物与角色页面支持发表评论、回复、表情、点赞和举报\r\n- 剧集卡片支持显示剧照、播放进度和已看完标记，可在设置中关闭剧照显示，翻页时及时清除上一页图片\r\n- 桌面端播放页支持拖入本地视频文件，在当前剧集中直接播放\r\n- 缓存详情页显示下载器状态、视频地址解析进度、连接情况及最近错误，便于排查下载停滞\r\n- 已缓存剧集支持显示观看进度\r\n- 账号设置支持换绑邮箱，以及在保留其他登录方式时解绑邮箱\r\n- 时间表支持显示「时间未定」，跨午夜自动切换日期，并修正剧集播出时间与开播状态判断\r\n- 首次启动直接进入主界面，网络检测失败时显示提示，主题与代理可在设置中调整\r\n- 自动选源优先使用本地缓存，在线资源无结果时可回退到 BT 资源，并优化匹配与等待策略\r\n- 优化数据源线路展示，保留网站原有名称、分组和顺序，避免同名线路被合并\r\n- 优化下载管理，批量暂停、继续和删除按操作顺序执行，减少重复创建任务，切换条目时保持标题显示\r\n- 优化列表封面加载及人物、制作人员信息缓存，减少滚动列表和返回页面时的重复加载与流量消耗\r\n- 人物与角色头像支持点击放大，移动端侧边预览中的大图可完整覆盖窗口\r\n- 宽屏条目详情页支持选择并复制标题\r\n- 调整桌面端与平板顶栏头像尺寸，使其与相邻按钮对齐\r\n- Windows ARM64 支持在应用内下载更新后自动安装 (#3408 by @NihilDigit)\r\n- 关于页新增构建信息，可查看并复制版本、分支和提交等信息，方便反馈问题\r\n- 开发者设置支持浏览主分支构建状态，并通过提交编号、合并请求、构建产物链接或安装包地址下载指定版本，在支持的平台上自动安装\r\n- Windows 与 macOS 的开发者设置支持拖入安装包，确认后自动安装并重启\r\n- 修复下载部分大体积视频时内存不足导致崩溃，甚至重启后反复崩溃的问题 (#3407 by @azusachino)\r\n- 修复 Linux Wayland 环境下内置浏览器初始化失败，导致登录和网页解析不可用的问题 (#3359 by @Vedaru)\r\n- 修复收藏列表末页不足一页时反复刷新、卡片重排和滚动跳动的问题 (#3374 by @vaz1306011)\r\n- 修复剧场版与单集作品中仅标注画质或语言的线路被错误过滤，导致资源缺失的问题 (#3345 by @GrahamZen)\r\n- 修复 Emby 中独立分季条目包含特别篇时的季度匹配错误\r\n- 修复倍速播放时无法自动跳过片头片尾的问题 (#3365 by @Tantless)\r\n- 修复长按倍速操作被中断后未恢复原播放速度的问题\r\n- 修复追番条目菜单自动关闭的问题 (#3372 by @XYenon)\r\n- 修复从播放页返回后剧集已看状态不更新，以及条目详情信息更新不同步的问题\r\n- 修复 iOS 全屏播放从后台返回后意外切换为竖屏的问题\r\n- 修复全屏播放时控件、侧边栏与倍速弹层的边距和裁切问题，改善 iOS 刘海与圆角屏幕适配\r\n- 修复桌面端按 Esc 退出全屏或关闭图片窗口时意外返回上一页的问题\r\n- 修复 iOS 视频解析结束后浏览器资源未释放造成的内存占用累积\r\n- 修复安装开发版本后点击自动更新没有反应的问题\r\n- 修复更新下载重试或切换下载地址后进度反复跳动的问题\r\n- 修复桌面端安装包版本号与发布版本不一致的问题 (#3324 by @termtate)\r\n- 修复 Anime Garden 资源大小显示为实际大小 1024 倍的问题\r\n- 修复电视版在普通启动器中的入口与电视启动器横幅显示\r\n- 修复移动端顶部时间文字颜色不清晰的问题 (#3366 by @U29kaXVt)\r\n- 修复代理测试列表中 Animeko 图标过大、撑高列表行的问题 (#3348 by @GrahamZen)\r\n- 修复桌面端登录按钮在鼠标悬停时阴影重叠的问题 (#3352 by @ter",
+      "ipas": [
+        {
+          "name": "ani-6.2.0.ipa",
+          "size": 45401084,
+          "url": "https://github.com/open-ani/animeko/releases/download/v6.2.0/ani-6.2.0.ipa"
+        }
+      ]
+    },
+    {
       "tag": "v6.2.0-beta01",
       "name": "6.2.0-beta01",
       "pre": true,
@@ -584,21 +599,6 @@
           "name": "ani-5.6.0-alpha01.ipa",
           "size": 30360099,
           "url": "https://github.com/open-ani/animeko/releases/download/v5.6.0-alpha01/ani-5.6.0-alpha01.ipa"
-        }
-      ]
-    },
-    {
-      "tag": "v5.5.1",
-      "name": "5.5.1",
-      "pre": false,
-      "draft": false,
-      "date": "2026-05-24",
-      "body": "- 新增 PikPak 云端离线下载，可作为 BT 播放不稳定时的备选方案 (#2978 by @NihilDigit)\r\n- 桌面端支持最小化到系统托盘 (#2934 by @Mystery406)\r\n- Linux 播放时可通过 D-Bus 阻止屏幕保护和自动锁屏 (#2925 by @moetayuko)\r\n- 搜索结果支持按发布日期排序 (#2941 by @wellorbetter)\r\n- 弹幕正则过滤规则支持导入导出，并会纳入设置备份 (#3007 by @Calv1nJ)\r\n- 播放页、剧集页和弹幕列表体验优化，手机端也可查看弹幕列表\r\n- Bangumi 登录过期时会提示重新登录\r\n- 优先使用弹弹 Play 的 Bangumi 条目映射，提升条目匹配准确性\r\n\r\n----\r\n\r\n- 修复 Android 端语言选择不生效的问题 (#2929 by @Mystery406)\r\n- 修复点击搜索历史后搜索结果可能消失的问题 (#2942 by @wellorbetter)\r\n- 修复搜索结果键盘方向键导航可能越界的问题 (#3021 by @Mystery406)\r\n- 修复 iOS 发送剧集评论时可能崩溃的问题 (#2949 by @wellorbetter)\r\n- 修复切换媒体源后首个媒体源失败时可能错误自动跳到下一集的问题 (#2987 by @GeneralK1ng)\r\n- 修复桌面端读取剪贴板文本失败的问题 (#3004 by @Restia-Ashbell)\r\n- 修复选择器 URL 查询参数可能被错误编码的问题 (#3014 by @Restia-Ashbell)\r\n- 修复 macOS 桌面端无法修改头像的问题 (#3017 by @undefined-hestudio)\r\n- 完善账号弹窗等界面的多语言文本 (#2944 by @wellorbetter)\r\n- 完善部分多语言文本，并在桌面端语言设置中加入系统语言选项 (#3008 by @ByteFlowing1337)\r\n- 修复部分桌面内置网页组件资源缺失导致的显示问题 (#3010 by @ByteFlowing1337)\r\n- 修复 HTTP 下载器处理媒体 ID 时的异常情况\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v5.4.4...v5.5.1\r\n\r\n[//]: # (ANI-SERVER-MAGIC-SEPARATOR)\r\n\r\n[//]: # (注意: api server 依赖这个特殊分隔符)\r\n\r\n[//]: # (对于所有可用的变量列表, 参考 CI release.yml 的 step release-notes)\r\n\r\n[github-win-x64]: https://github.com/open-ani/ani/releases/download/v5.5.1/ani-5.5.1-windows-x86_64.zip\r\n\r\n[github-mac-x64]: https://github.com/open-ani/ani/releases/download/v5.5.1/ani-5.5.1-macos-x86_64.dmg\r\n\r\n[github-mac-aarch64]: https://github.com/open-ani/ani/releases/download/v5.5.1/ani-5.5.1-macos-aarch64.dmg\r\n\r\n[github-android]: https://github.com/open-ani/ani/releases/download/v5.5.1/ani-5.5.1-universal.apk\r\n\r\n[github-android-arm64-v8a]: https://github.com/open-ani/ani/releases/download/v5.5.1/ani-5.5.1-arm64-v8a.apk\r\n\r\n[github-android-armeabi-v7a]: https://github.com/open-ani/ani/releases/download/v5.5.1/ani-5.5.1-armeabi-v7a.apk\r\n\r\n[github-android-x86_64]: https://github.com/open-ani/ani/releases/download/v5.5.1/ani-5.5.1-x86_64.apk\r\n\r\n[cf-win-x64]: https://d.myani.org/v5.5.1/ani-5.5.1-windows-x8",
-      "ipas": [
-        {
-          "name": "ani-5.5.1.ipa",
-          "size": 29923207,
-          "url": "https://github.com/open-ani/animeko/releases/download/v5.5.1/ani-5.5.1.ipa"
         }
       ]
     }
@@ -1510,6 +1510,26 @@
     }
   ],
   "youshen2/PicaX": [
+    {
+      "tag": "v1.2.4",
+      "name": "PicaX v1.2.4",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-26",
+      "body": "这是由 GitHub Actions 自动构建的发行版本。\n\n## 下载说明\n\n请在下方 Assets 中下载对应平台的构建产物。\n\n- `PicaX-unsigned.ipa`：iOS 未签名 IPA\n- `PicaX-with-watch-unsigned.ipa`：iOS + Watch 未签名 IPA\n- `PicaX-WatchApp-unsigned.zip`：Watch App 未签名 ZIP\n- `PicaX.dmg`：macOS 未签名 DMG\n\n## 安装说明\n\n这些产物均为未签名构建，不能像 App Store 应用一样直接安装。\n\niOS 版本通常需要自行签名后安装。\nWatch 版本通常需要自行通过XCode编译安装到Apple Watch。\nmacOS 版本如遇到系统安全拦截，需要在系统设置中手动允许打开，或自行重新签名。\n\n## 版本信息\n\n- 版本：`v1.2.4`\n- Commit：`6be06e2d598643e07e8dcaddd2962d1aa1a62ea2`\n- 构建编号：`63`\n\n## 更新内容\n\n- 修改了应用图标并适配了深色图标\n- 增加了多书籍纵向连续阅读开关\n- 增加了默认开启本地阅后即焚开关\n- 修复了JMComic登录功能实现的问题\n- 优化了搜索页面的控件\n\n---\n\n由 GitHub Actions 自动发布。\n",
+      "ipas": [
+        {
+          "name": "PicaX-unsigned.ipa",
+          "size": 12107403,
+          "url": "https://github.com/youshen2/PicaX/releases/download/v1.2.4/PicaX-unsigned.ipa"
+        },
+        {
+          "name": "PicaX-with-watch-unsigned.ipa",
+          "size": 15161732,
+          "url": "https://github.com/youshen2/PicaX/releases/download/v1.2.4/PicaX-with-watch-unsigned.ipa"
+        }
+      ]
+    },
     {
       "tag": "v1.2.3",
       "name": "PicaX v1.2.3",

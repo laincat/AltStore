@@ -65,7 +65,7 @@
       "developerName": "open-ani",
       "subtitle": "一站式弹幕追番平台",
       "localizedDescription": "集找番、追番、看番于一体的弹幕追番平台，支持 Bangumi 云收藏同步、离线缓存、BitTorrent 与弹幕云过滤。100% Kotlin / Compose Multiplatform 实现。\n\n开源协议：AGPL-3.0　·　项目主页：https://github.com/open-ani/animeko",
-      "iconURL": "https://raw.githubusercontent.com/open-ani/animeko/v6.1.0/app/ios/Animeko/Assets.xcassets/AppIcon.appiconset/1024.png",
+      "iconURL": "https://raw.githubusercontent.com/open-ani/animeko/v6.2.0/app/ios/Animeko/Assets.xcassets/AppIcon.appiconset/1024.png",
       "tintColor": "#3B82F6",
       "category": "entertainment",
       "appPermissions": {
@@ -77,16 +77,16 @@
           "track": "stable",
           "releases": [
             {
-              "version": "6.1.0",
-              "date": "2026-08-28",
-              "buildVersion": "60100",
-              "buildNumber": "60100",
-              "localizedDescription": "- 新增画质增强(超分)，支持 Android, Windows 和 macOS (#3291 by @black4der)\r\n- 新增在线源查询缓存，有缓存时跳过查源步骤，大幅加速开播速度\r\n- 播放页新增一起看入口，全屏时隐藏悬浮窗\r\n- 优化评论功能和 UI\r\n- 支持使用 PikPak 加速缓存 BT 源 (#3141 by @NihilDigit)\r\n- 新缓存管理页面\r\n\r\n----\r\n\r\n- 条目详情页封面与角色/制作人员图片支持点击放大查看\r\n- 修复 Windows mpv 画面偏暗\r\n- 支持鼠标侧键返回上一页\r\n- 支持 mpv 内核播放器设置自定义参数\r\n- 优化 jellyfin (#3190 by @jxing7036, #3244, #3248 by @IT-BillDeng)\r\n- 修复 Windows 原生触屏一系列问题 (#3223, #3234 by @NihilDigit)\r\n- 修复 Windows 10 可能会窗口透明 (#3319 by @myouo)\r\n- 优化性能 (#3236 by @NihilDigit)\r\n- 修复 macOS x86 无法打开或闪退\r\n- 修复 macOS 可能因为音频而崩溃\r\n- 修复 BT 源播放错误或无法开始播放 (#3337 by @GrahamZen)\r\n- 支持为 BT 下载设置额外的 trackers\r\n- 修复桌面端图片比较糊\r\n- 修复一系列 Linux 问题 (#3261 by @NihilDigit)\r\n- 修复手动匹配的弹幕请求会随着换集失效 (#3254 by @GrahamZe…",
-              "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.1.0/ani-6.1.0.ipa",
-              "size": 44425669,
+              "version": "6.2.0",
+              "date": "2026-09-26",
+              "buildVersion": "6.2.99",
+              "buildNumber": "6.2.99",
+              "localizedDescription": "- 安卓 TV 版已发布，全新设计精美 UI，更多功能开发中\r\n- 新增显示缓冲进度条，优化缓冲机制\r\n- 新增系列关系图，直观展示正片、续集、番外与衍生作品\r\n- 新增按线路批量缓存\r\n- 支持发送自定义位置和颜色的弹幕\r\n- 搜索支持年份与季度筛选 (#3396 by @Bonger34)\r\n- 新增 GitHub 账号绑定，贡献者可认证以免除广告\r\n\r\n----\r\n\r\n- 新增 Bangumi 收藏冲突处理，可对照两侧收藏、选择保留内容或采用较新的记录，并在合并后同步刷新收藏列表\r\n- 新增「显示原名」设置，可在条目、剧集、搜索、收藏和播放等页面显示原始名称 (#3451 by @azusachino)\r\n- 桌面端图片查看器支持独立窗口、缩放、保存、复制及拖出图片到其他应用，并支持触摸板手势\r\n- 人物与角色页面支持发表评论、回复、表情、点赞和举报\r\n- 剧集卡片支持显示剧照、播放进度和已看完标记，可在设置中关闭剧照显示，翻页时及时清除上一页图片\r\n- 桌面端播放页支持拖入本地视频文件，在当前剧集中直接播放\r\n- 缓存详情页显示下载器状态、视频地址解析进度、连接情况及最近错误，便于排查下载停滞\r\n- 已缓存剧集支持显示观看进度\r\n- 账号设置支持换绑邮箱，以及在保留其他登录方式时解绑邮箱\r\n- 时间表支持显示「时间未定」，跨午夜自动切换日期，并修正剧集播出时间与开播状态判断\r\n- 首次启动直接进入主界面，网络检测失败时显示提示，主题与代理可在设置中调整\r\n- 自动选源优先使用本地缓存，在线资源无结果时可回退到 BT 资源，并优化匹配与等待策略\r\n- 优化数据源线路展示，…",
+              "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.2.0/ani-6.2.0.ipa",
+              "size": 45401084,
               "minOSVersion": "14.0",
-              "releaseTag": "v6.1.0",
-              "source": "https://github.com/open-ani/animeko/releases/tag/v6.1.0"
+              "releaseTag": "v6.2.0",
+              "source": "https://github.com/open-ani/animeko/releases/tag/v6.2.0"
             }
           ]
         },
@@ -111,6 +111,18 @@
       "versions": [
         {
           "version": "6.2.0",
+          "date": "2026-09-26",
+          "buildVersion": "6.2.99",
+          "buildNumber": "6.2.99",
+          "localizedDescription": "- 安卓 TV 版已发布，全新设计精美 UI，更多功能开发中\r\n- 新增显示缓冲进度条，优化缓冲机制\r\n- 新增系列关系图，直观展示正片、续集、番外与衍生作品\r\n- 新增按线路批量缓存\r\n- 支持发送自定义位置和颜色的弹幕\r\n- 搜索支持年份与季度筛选 (#3396 by @Bonger34)\r\n- 新增 GitHub 账号绑定，贡献者可认证以免除广告\r\n\r\n----\r\n\r\n- 新增 Bangumi 收藏冲突处理，可对照两侧收藏、选择保留内容或采用较新的记录，并在合并后同步刷新收藏列表\r\n- 新增「显示原名」设置，可在条目、剧集、搜索、收藏和播放等页面显示原始名称 (#3451 by @azusachino)\r\n- 桌面端图片查看器支持独立窗口、缩放、保存、复制及拖出图片到其他应用，并支持触摸板手势\r\n- 人物与角色页面支持发表评论、回复、表情、点赞和举报\r\n- 剧集卡片支持显示剧照、播放进度和已看完标记，可在设置中关闭剧照显示，翻页时及时清除上一页图片\r\n- 桌面端播放页支持拖入本地视频文件，在当前剧集中直接播放\r\n- 缓存详情页显示下载器状态、视频地址解析进度、连接情况及最近错误，便于排查下载停滞\r\n- 已缓存剧集支持显示观看进度\r\n- 账号设置支持换绑邮箱，以及在保留其他登录方式时解绑邮箱\r\n- 时间表支持显示「时间未定」，跨午夜自动切换日期，并修正剧集播出时间与开播状态判断\r\n- 首次启动直接进入主界面，网络检测失败时显示提示，主题与代理可在设置中调整\r\n- 自动选源优先使用本地缓存，在线资源无结果时可回退到 BT 资源，并优化匹配与等待策略\r\n- 优化数据源线路展示，…",
+          "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.2.0/ani-6.2.0.ipa",
+          "size": 45401084,
+          "minOSVersion": "14.0",
+          "releaseTag": "v6.2.0",
+          "source": "https://github.com/open-ani/animeko/releases/tag/v6.2.0"
+        },
+        {
+          "version": "6.2.0",
           "date": "2026-09-22",
           "buildVersion": "6.2.31",
           "buildNumber": "6.2.31",
@@ -120,25 +132,13 @@
           "minOSVersion": "14.0",
           "releaseTag": "v6.2.0-beta01",
           "source": "https://github.com/open-ani/animeko/releases/tag/v6.2.0-beta01"
-        },
-        {
-          "version": "6.1.0",
-          "date": "2026-08-28",
-          "buildVersion": "60100",
-          "buildNumber": "60100",
-          "localizedDescription": "- 新增画质增强(超分)，支持 Android, Windows 和 macOS (#3291 by @black4der)\r\n- 新增在线源查询缓存，有缓存时跳过查源步骤，大幅加速开播速度\r\n- 播放页新增一起看入口，全屏时隐藏悬浮窗\r\n- 优化评论功能和 UI\r\n- 支持使用 PikPak 加速缓存 BT 源 (#3141 by @NihilDigit)\r\n- 新缓存管理页面\r\n\r\n----\r\n\r\n- 条目详情页封面与角色/制作人员图片支持点击放大查看\r\n- 修复 Windows mpv 画面偏暗\r\n- 支持鼠标侧键返回上一页\r\n- 支持 mpv 内核播放器设置自定义参数\r\n- 优化 jellyfin (#3190 by @jxing7036, #3244, #3248 by @IT-BillDeng)\r\n- 修复 Windows 原生触屏一系列问题 (#3223, #3234 by @NihilDigit)\r\n- 修复 Windows 10 可能会窗口透明 (#3319 by @myouo)\r\n- 优化性能 (#3236 by @NihilDigit)\r\n- 修复 macOS x86 无法打开或闪退\r\n- 修复 macOS 可能因为音频而崩溃\r\n- 修复 BT 源播放错误或无法开始播放 (#3337 by @GrahamZen)\r\n- 支持为 BT 下载设置额外的 trackers\r\n- 修复桌面端图片比较糊\r\n- 修复一系列 Linux 问题 (#3261 by @NihilDigit)\r\n- 修复手动匹配的弹幕请求会随着换集失效 (#3254 by @GrahamZe…",
-          "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.1.0/ani-6.1.0.ipa",
-          "size": 44425669,
-          "minOSVersion": "14.0",
-          "releaseTag": "v6.1.0",
-          "source": "https://github.com/open-ani/animeko/releases/tag/v6.1.0"
         }
       ],
-      "version": "6.1.0",
-      "versionDate": "2026-08-28",
-      "versionDescription": "- 新增画质增强(超分)，支持 Android, Windows 和 macOS (#3291 by @black4der)\r\n- 新增在线源查询缓存，有缓存时跳过查源步骤，大幅加速开播速度\r\n- 播放页新增一起看入口，全屏时隐藏悬浮窗\r\n- 优化评论功能和 UI\r\n- 支持使用 PikPak 加速缓存 BT 源 (#3141 by @NihilDigit)\r\n- 新缓存管理页面\r\n\r\n----\r\n\r\n- 条目详情页封面与角色/制作人员图片支持点击放大查看\r\n- 修复 Windows mpv 画面偏暗\r\n- 支持鼠标侧键返回上一页\r\n- 支持 mpv 内核播放器设置自定义参数\r\n- 优化 jellyfin (#3190 by @jxing7036, #3244, #3248 by @IT-BillDeng)\r\n- 修复 Windows 原生触屏一系列问题 (#3223, #3234 by @NihilDigit)\r\n- 修复 Windows 10 可能会窗口透明 (#3319 by @myouo)\r\n- 优化性能 (#3236 by @NihilDigit)\r\n- 修复 macOS x86 无法打开或闪退\r\n- 修复 macOS 可能因为音频而崩溃\r\n- 修复 BT 源播放错误或无法开始播放 (#3337 by @GrahamZen)\r\n- 支持为 BT 下载设置额外的 trackers\r\n- 修复桌面端图片比较糊\r\n- 修复一系列 Linux 问题 (#3261 by @NihilDigit)\r\n- 修复手动匹配的弹幕请求会随着换集失效 (#3254 by @GrahamZe…",
-      "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.1.0/ani-6.1.0.ipa",
-      "size": 44425669,
+      "version": "6.2.0",
+      "versionDate": "2026-09-26",
+      "versionDescription": "- 安卓 TV 版已发布，全新设计精美 UI，更多功能开发中\r\n- 新增显示缓冲进度条，优化缓冲机制\r\n- 新增系列关系图，直观展示正片、续集、番外与衍生作品\r\n- 新增按线路批量缓存\r\n- 支持发送自定义位置和颜色的弹幕\r\n- 搜索支持年份与季度筛选 (#3396 by @Bonger34)\r\n- 新增 GitHub 账号绑定，贡献者可认证以免除广告\r\n\r\n----\r\n\r\n- 新增 Bangumi 收藏冲突处理，可对照两侧收藏、选择保留内容或采用较新的记录，并在合并后同步刷新收藏列表\r\n- 新增「显示原名」设置，可在条目、剧集、搜索、收藏和播放等页面显示原始名称 (#3451 by @azusachino)\r\n- 桌面端图片查看器支持独立窗口、缩放、保存、复制及拖出图片到其他应用，并支持触摸板手势\r\n- 人物与角色页面支持发表评论、回复、表情、点赞和举报\r\n- 剧集卡片支持显示剧照、播放进度和已看完标记，可在设置中关闭剧照显示，翻页时及时清除上一页图片\r\n- 桌面端播放页支持拖入本地视频文件，在当前剧集中直接播放\r\n- 缓存详情页显示下载器状态、视频地址解析进度、连接情况及最近错误，便于排查下载停滞\r\n- 已缓存剧集支持显示观看进度\r\n- 账号设置支持换绑邮箱，以及在保留其他登录方式时解绑邮箱\r\n- 时间表支持显示「时间未定」，跨午夜自动切换日期，并修正剧集播出时间与开播状态判断\r\n- 首次启动直接进入主界面，网络检测失败时显示提示，主题与代理可在设置中调整\r\n- 自动选源优先使用本地缓存，在线资源无结果时可回退到 BT 资源，并优化匹配与等待策略\r\n- 优化数据源线路展示，…",
+      "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.2.0/ani-6.2.0.ipa",
+      "size": 45401084,
       "minOSVersion": "14.0",
       "beta": true
     },
@@ -496,7 +496,7 @@
       "developerName": "youshen2",
       "subtitle": "iOS 原生聚合漫画阅读器",
       "localizedDescription": "使用 SwiftUI 开发、面向 iOS 的聚合漫画阅读器。此处选用不含 Watch 组件的未签名包，避免免费账号签名时因附加 Target 失败。\n\n开源协议：MPL-2.0　·　项目主页：https://github.com/youshen2/PicaX",
-      "iconURL": "https://raw.githubusercontent.com/youshen2/PicaX/v1.2.3/PicaX/Assets.xcassets/AppIcon.appiconset/app_icon_1024.png",
+      "iconURL": "https://raw.githubusercontent.com/youshen2/PicaX/v1.2.4/PicaX/Assets.xcassets/AppIcon.appiconset/app_icon_1024.png",
       "tintColor": "#FF5C7A",
       "category": "books",
       "appPermissions": {
@@ -508,39 +508,39 @@
           "track": "stable",
           "releases": [
             {
-              "version": "1.2.3",
-              "date": "2026-09-05",
-              "buildVersion": "2609051",
-              "buildNumber": "2609051",
-              "localizedDescription": "这是由 GitHub Actions 自动构建的发行版本。\n下载说明\n\n请在下方 Assets 中下载对应平台的构建产物。\n\n- PicaX-unsigned.ipa：iOS 未签名 IPA\n- PicaX-with-watch-unsigned.ipa：iOS + Watch 未签名 IPA\n- PicaX-WatchApp-unsigned.zip：Watch App 未签名 ZIP\n- PicaX.dmg：macOS 未签名 DMG\n安装说明\n\n这些产物均为未签名构建，不能像 App Store 应用一样直接安装。\n\niOS 版本通常需要自行签名后安装。\nWatch 版本通常需要自行通过XCode编译安装到Apple Watch。\nmacOS 版本如遇到系统安全拦截，需要在系统设置中手动允许打开，或自行重新签名。\n版本信息\n\n- 版本：v1.2.3\n- Commit：ae2e34f7349c259e99142c05429f249c4c4ed84a\n- 构建编号：61\n更新内容\n\n- 增加了搜索组合预览、逐平台请求进度、结果分批展示和失败平台重试\n- 增加了可命名、编辑和置顶的常用搜索\n- 增加了临时查看屏蔽内容功能\n- 增加了多源版本查看、详情页其他来源入口\n- 增加了下载完整性检查及缺失、损坏页面的单独修复\n- 增加了支持页面缩略图、备注和跨章节跳转的阅读书签\n- 增加了 ZIP、CBZ、PDF 本地漫画导入及 PDF 阅读分辨率设置\n- 增加了 iOS 应用锁，支持 Face ID、Touch ID、设备密码和后台锁定时间设置\n- 增加了常用搜索、书签和版本分组的备份…",
-              "downloadURL": "https://github.com/youshen2/PicaX/releases/download/v1.2.3/PicaX-unsigned.ipa",
-              "size": 11241040,
+              "version": "1.2.4",
+              "date": "2026-09-26",
+              "buildVersion": "2609261",
+              "buildNumber": "2609261",
+              "localizedDescription": "这是由 GitHub Actions 自动构建的发行版本。\n下载说明\n\n请在下方 Assets 中下载对应平台的构建产物。\n\n- PicaX-unsigned.ipa：iOS 未签名 IPA\n- PicaX-with-watch-unsigned.ipa：iOS + Watch 未签名 IPA\n- PicaX-WatchApp-unsigned.zip：Watch App 未签名 ZIP\n- PicaX.dmg：macOS 未签名 DMG\n安装说明\n\n这些产物均为未签名构建，不能像 App Store 应用一样直接安装。\n\niOS 版本通常需要自行签名后安装。\nWatch 版本通常需要自行通过XCode编译安装到Apple Watch。\nmacOS 版本如遇到系统安全拦截，需要在系统设置中手动允许打开，或自行重新签名。\n版本信息\n\n- 版本：v1.2.4\n- Commit：6be06e2d598643e07e8dcaddd2962d1aa1a62ea2\n- 构建编号：63\n更新内容\n\n- 修改了应用图标并适配了深色图标\n- 增加了多书籍纵向连续阅读开关\n- 增加了默认开启本地阅后即焚开关\n- 修复了JMComic登录功能实现的问题\n- 优化了搜索页面的控件\n\n---\n\n由 GitHub Actions 自动发布。",
+              "downloadURL": "https://github.com/youshen2/PicaX/releases/download/v1.2.4/PicaX-unsigned.ipa",
+              "size": 12107403,
               "minOSVersion": "15.2",
-              "releaseTag": "v1.2.3",
-              "source": "https://github.com/youshen2/PicaX/releases/tag/v1.2.3"
+              "releaseTag": "v1.2.4",
+              "source": "https://github.com/youshen2/PicaX/releases/tag/v1.2.4"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "1.2.3",
-          "date": "2026-09-05",
-          "buildVersion": "2609051",
-          "buildNumber": "2609051",
-          "localizedDescription": "这是由 GitHub Actions 自动构建的发行版本。\n下载说明\n\n请在下方 Assets 中下载对应平台的构建产物。\n\n- PicaX-unsigned.ipa：iOS 未签名 IPA\n- PicaX-with-watch-unsigned.ipa：iOS + Watch 未签名 IPA\n- PicaX-WatchApp-unsigned.zip：Watch App 未签名 ZIP\n- PicaX.dmg：macOS 未签名 DMG\n安装说明\n\n这些产物均为未签名构建，不能像 App Store 应用一样直接安装。\n\niOS 版本通常需要自行签名后安装。\nWatch 版本通常需要自行通过XCode编译安装到Apple Watch。\nmacOS 版本如遇到系统安全拦截，需要在系统设置中手动允许打开，或自行重新签名。\n版本信息\n\n- 版本：v1.2.3\n- Commit：ae2e34f7349c259e99142c05429f249c4c4ed84a\n- 构建编号：61\n更新内容\n\n- 增加了搜索组合预览、逐平台请求进度、结果分批展示和失败平台重试\n- 增加了可命名、编辑和置顶的常用搜索\n- 增加了临时查看屏蔽内容功能\n- 增加了多源版本查看、详情页其他来源入口\n- 增加了下载完整性检查及缺失、损坏页面的单独修复\n- 增加了支持页面缩略图、备注和跨章节跳转的阅读书签\n- 增加了 ZIP、CBZ、PDF 本地漫画导入及 PDF 阅读分辨率设置\n- 增加了 iOS 应用锁，支持 Face ID、Touch ID、设备密码和后台锁定时间设置\n- 增加了常用搜索、书签和版本分组的备份…",
-          "downloadURL": "https://github.com/youshen2/PicaX/releases/download/v1.2.3/PicaX-unsigned.ipa",
-          "size": 11241040,
+          "version": "1.2.4",
+          "date": "2026-09-26",
+          "buildVersion": "2609261",
+          "buildNumber": "2609261",
+          "localizedDescription": "这是由 GitHub Actions 自动构建的发行版本。\n下载说明\n\n请在下方 Assets 中下载对应平台的构建产物。\n\n- PicaX-unsigned.ipa：iOS 未签名 IPA\n- PicaX-with-watch-unsigned.ipa：iOS + Watch 未签名 IPA\n- PicaX-WatchApp-unsigned.zip：Watch App 未签名 ZIP\n- PicaX.dmg：macOS 未签名 DMG\n安装说明\n\n这些产物均为未签名构建，不能像 App Store 应用一样直接安装。\n\niOS 版本通常需要自行签名后安装。\nWatch 版本通常需要自行通过XCode编译安装到Apple Watch。\nmacOS 版本如遇到系统安全拦截，需要在系统设置中手动允许打开，或自行重新签名。\n版本信息\n\n- 版本：v1.2.4\n- Commit：6be06e2d598643e07e8dcaddd2962d1aa1a62ea2\n- 构建编号：63\n更新内容\n\n- 修改了应用图标并适配了深色图标\n- 增加了多书籍纵向连续阅读开关\n- 增加了默认开启本地阅后即焚开关\n- 修复了JMComic登录功能实现的问题\n- 优化了搜索页面的控件\n\n---\n\n由 GitHub Actions 自动发布。",
+          "downloadURL": "https://github.com/youshen2/PicaX/releases/download/v1.2.4/PicaX-unsigned.ipa",
+          "size": 12107403,
           "minOSVersion": "15.2",
-          "releaseTag": "v1.2.3",
-          "source": "https://github.com/youshen2/PicaX/releases/tag/v1.2.3"
+          "releaseTag": "v1.2.4",
+          "source": "https://github.com/youshen2/PicaX/releases/tag/v1.2.4"
         }
       ],
-      "version": "1.2.3",
-      "versionDate": "2026-09-05",
-      "versionDescription": "这是由 GitHub Actions 自动构建的发行版本。\n下载说明\n\n请在下方 Assets 中下载对应平台的构建产物。\n\n- PicaX-unsigned.ipa：iOS 未签名 IPA\n- PicaX-with-watch-unsigned.ipa：iOS + Watch 未签名 IPA\n- PicaX-WatchApp-unsigned.zip：Watch App 未签名 ZIP\n- PicaX.dmg：macOS 未签名 DMG\n安装说明\n\n这些产物均为未签名构建，不能像 App Store 应用一样直接安装。\n\niOS 版本通常需要自行签名后安装。\nWatch 版本通常需要自行通过XCode编译安装到Apple Watch。\nmacOS 版本如遇到系统安全拦截，需要在系统设置中手动允许打开，或自行重新签名。\n版本信息\n\n- 版本：v1.2.3\n- Commit：ae2e34f7349c259e99142c05429f249c4c4ed84a\n- 构建编号：61\n更新内容\n\n- 增加了搜索组合预览、逐平台请求进度、结果分批展示和失败平台重试\n- 增加了可命名、编辑和置顶的常用搜索\n- 增加了临时查看屏蔽内容功能\n- 增加了多源版本查看、详情页其他来源入口\n- 增加了下载完整性检查及缺失、损坏页面的单独修复\n- 增加了支持页面缩略图、备注和跨章节跳转的阅读书签\n- 增加了 ZIP、CBZ、PDF 本地漫画导入及 PDF 阅读分辨率设置\n- 增加了 iOS 应用锁，支持 Face ID、Touch ID、设备密码和后台锁定时间设置\n- 增加了常用搜索、书签和版本分组的备份…",
-      "downloadURL": "https://github.com/youshen2/PicaX/releases/download/v1.2.3/PicaX-unsigned.ipa",
-      "size": 11241040,
+      "version": "1.2.4",
+      "versionDate": "2026-09-26",
+      "versionDescription": "这是由 GitHub Actions 自动构建的发行版本。\n下载说明\n\n请在下方 Assets 中下载对应平台的构建产物。\n\n- PicaX-unsigned.ipa：iOS 未签名 IPA\n- PicaX-with-watch-unsigned.ipa：iOS + Watch 未签名 IPA\n- PicaX-WatchApp-unsigned.zip：Watch App 未签名 ZIP\n- PicaX.dmg：macOS 未签名 DMG\n安装说明\n\n这些产物均为未签名构建，不能像 App Store 应用一样直接安装。\n\niOS 版本通常需要自行签名后安装。\nWatch 版本通常需要自行通过XCode编译安装到Apple Watch。\nmacOS 版本如遇到系统安全拦截，需要在系统设置中手动允许打开，或自行重新签名。\n版本信息\n\n- 版本：v1.2.4\n- Commit：6be06e2d598643e07e8dcaddd2962d1aa1a62ea2\n- 构建编号：63\n更新内容\n\n- 修改了应用图标并适配了深色图标\n- 增加了多书籍纵向连续阅读开关\n- 增加了默认开启本地阅后即焚开关\n- 修复了JMComic登录功能实现的问题\n- 优化了搜索页面的控件\n\n---\n\n由 GitHub Actions 自动发布。",
+      "downloadURL": "https://github.com/youshen2/PicaX/releases/download/v1.2.4/PicaX-unsigned.ipa",
+      "size": 12107403,
       "minOSVersion": "15.2"
     }
   ],
@@ -553,7 +553,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 9 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-09-25",
+      "date": "2026-09-26",
       "tintColor": "#7C5CFF",
       "notify": false
     }

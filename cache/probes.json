@@ -294,5 +294,21 @@
     "displayName": "VeneraX",
     "minOSVersion": "16.0",
     "size": 35525538
+  },
+  "https://github.com/open-ani/animeko/releases/download/v6.2.0/ani-6.2.0.ipa": {
+    "bundleIdentifier": "org.animeko.animeko",
+    "version": "6.2.0",
+    "buildVersion": "6.2.99",
+    "displayName": "Animeko",
+    "minOSVersion": "14.0",
+    "size": 45401084
+  },
+  "https://github.com/youshen2/PicaX/releases/download/v1.2.4/PicaX-unsigned.ipa": {
+    "bundleIdentifier": "moye.PicaX",
+    "version": "1.2.4",
+    "buildVersion": "2609261",
+    "displayName": "PicaX",
+    "minOSVersion": "15.2",
+    "size": 12107403
   }
 }
