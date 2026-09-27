@@ -310,5 +310,13 @@
     "displayName": "PicaX",
     "minOSVersion": "15.2",
     "size": 12107403
+  },
+  "https://github.com/deretame/Breeze/releases/download/v3.0.32/Breeze-iOS-v3.0.32.ipa": {
+    "bundleIdentifier": "com.zephyr.breeze",
+    "version": "3.0.32",
+    "buildVersion": "2220",
+    "displayName": "Breeze",
+    "minOSVersion": "15.0",
+    "size": 25995512
   }
 }
