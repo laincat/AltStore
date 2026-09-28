@@ -443,7 +443,7 @@
       "developerName": "deretame",
       "subtitle": "插件化漫画阅读器",
       "localizedDescription": "使用 Flutter 构建的漫画阅读器，通过插件机制提供漫画源支持，已支持哔咔、禁漫、E-Hentai、nhentai、拷贝漫画、包子漫画等多个图源。\n\n开源协议：MPL-2.0　·　项目主页：https://github.com/deretame/Breeze",
-      "iconURL": "https://raw.githubusercontent.com/deretame/Breeze/v3.0.32/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/deretame/Breeze/v3.0.33/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#4FB3F5",
       "category": "books",
       "appPermissions": {
@@ -455,39 +455,39 @@
           "track": "stable",
           "releases": [
             {
-              "version": "3.0.32",
-              "date": "2026-09-27",
-              "buildVersion": "2220",
-              "buildNumber": "2220",
-              "localizedDescription": "📝 更新日志\n[v3.0.32]\n功能更新\n\n- 下载功能重构\n- 新增反转左右方向键行为功能\n- 新增当前漫画专属设置\n- 收藏和下载添加按观看时间排序功能\n修复\n\n- 修复Windows安装器安装后无法删除的问题\n- 修复部分下载问题\n优化\n\n- 优化部分ui样式及操作逻辑\n- 优化性能\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.32.exe |\n| macOS | Breeze-macOS-v3.0.32.dmg |\n| Android | app-arm64-v8a-release-v3.0.32.apk |\n| iOS | Breeze-iOS-v3.0.32.ipa |\n| Linux | breeze-v3.0.32.flatpak |\n| Linux (DEB) | breeze_3.0.32_amd64-v3.0.32.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
-              "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.32/Breeze-iOS-v3.0.32.ipa",
-              "size": 25995512,
+              "version": "3.0.33",
+              "date": "2026-09-28",
+              "buildVersion": "2221",
+              "buildNumber": "2221",
+              "localizedDescription": "📝 更新日志\n[v3.0.33]\n功能更新\n\n- 进度条跟随从右到左阅读方向反转\n- 添加墨水屏优化 by dororo42\n修复\n\n- 修复搜索栏部分情况下无法正常搜索的问题\n- 修复低版本安卓闪退 by dororo42\n优化\n\n- 优化搜索栏弹出逻辑\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.33.exe |\n| macOS | Breeze-macOS-v3.0.33.dmg |\n| Android | app-arm64-v8a-release-v3.0.33.apk |\n| iOS | Breeze-iOS-v3.0.33.ipa |\n| Linux | breeze-v3.0.33.flatpak |\n| Linux (DEB) | breeze_3.0.33_amd64-v3.0.33.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
+              "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.33/Breeze-iOS-v3.0.33.ipa",
+              "size": 26000157,
               "minOSVersion": "15.0",
-              "releaseTag": "v3.0.32",
-              "source": "https://github.com/deretame/Breeze/releases/tag/v3.0.32"
+              "releaseTag": "v3.0.33",
+              "source": "https://github.com/deretame/Breeze/releases/tag/v3.0.33"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "3.0.32",
-          "date": "2026-09-27",
-          "buildVersion": "2220",
-          "buildNumber": "2220",
-          "localizedDescription": "📝 更新日志\n[v3.0.32]\n功能更新\n\n- 下载功能重构\n- 新增反转左右方向键行为功能\n- 新增当前漫画专属设置\n- 收藏和下载添加按观看时间排序功能\n修复\n\n- 修复Windows安装器安装后无法删除的问题\n- 修复部分下载问题\n优化\n\n- 优化部分ui样式及操作逻辑\n- 优化性能\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.32.exe |\n| macOS | Breeze-macOS-v3.0.32.dmg |\n| Android | app-arm64-v8a-release-v3.0.32.apk |\n| iOS | Breeze-iOS-v3.0.32.ipa |\n| Linux | breeze-v3.0.32.flatpak |\n| Linux (DEB) | breeze_3.0.32_amd64-v3.0.32.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
-          "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.32/Breeze-iOS-v3.0.32.ipa",
-          "size": 25995512,
+          "version": "3.0.33",
+          "date": "2026-09-28",
+          "buildVersion": "2221",
+          "buildNumber": "2221",
+          "localizedDescription": "📝 更新日志\n[v3.0.33]\n功能更新\n\n- 进度条跟随从右到左阅读方向反转\n- 添加墨水屏优化 by dororo42\n修复\n\n- 修复搜索栏部分情况下无法正常搜索的问题\n- 修复低版本安卓闪退 by dororo42\n优化\n\n- 优化搜索栏弹出逻辑\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.33.exe |\n| macOS | Breeze-macOS-v3.0.33.dmg |\n| Android | app-arm64-v8a-release-v3.0.33.apk |\n| iOS | Breeze-iOS-v3.0.33.ipa |\n| Linux | breeze-v3.0.33.flatpak |\n| Linux (DEB) | breeze_3.0.33_amd64-v3.0.33.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
+          "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.33/Breeze-iOS-v3.0.33.ipa",
+          "size": 26000157,
           "minOSVersion": "15.0",
-          "releaseTag": "v3.0.32",
-          "source": "https://github.com/deretame/Breeze/releases/tag/v3.0.32"
+          "releaseTag": "v3.0.33",
+          "source": "https://github.com/deretame/Breeze/releases/tag/v3.0.33"
         }
       ],
-      "version": "3.0.32",
-      "versionDate": "2026-09-27",
-      "versionDescription": "📝 更新日志\n[v3.0.32]\n功能更新\n\n- 下载功能重构\n- 新增反转左右方向键行为功能\n- 新增当前漫画专属设置\n- 收藏和下载添加按观看时间排序功能\n修复\n\n- 修复Windows安装器安装后无法删除的问题\n- 修复部分下载问题\n优化\n\n- 优化部分ui样式及操作逻辑\n- 优化性能\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.32.exe |\n| macOS | Breeze-macOS-v3.0.32.dmg |\n| Android | app-arm64-v8a-release-v3.0.32.apk |\n| iOS | Breeze-iOS-v3.0.32.ipa |\n| Linux | breeze-v3.0.32.flatpak |\n| Linux (DEB) | breeze_3.0.32_amd64-v3.0.32.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
-      "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.32/Breeze-iOS-v3.0.32.ipa",
-      "size": 25995512,
+      "version": "3.0.33",
+      "versionDate": "2026-09-28",
+      "versionDescription": "📝 更新日志\n[v3.0.33]\n功能更新\n\n- 进度条跟随从右到左阅读方向反转\n- 添加墨水屏优化 by dororo42\n修复\n\n- 修复搜索栏部分情况下无法正常搜索的问题\n- 修复低版本安卓闪退 by dororo42\n优化\n\n- 优化搜索栏弹出逻辑\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.33.exe |\n| macOS | Breeze-macOS-v3.0.33.dmg |\n| Android | app-arm64-v8a-release-v3.0.33.apk |\n| iOS | Breeze-iOS-v3.0.33.ipa |\n| Linux | breeze-v3.0.33.flatpak |\n| Linux (DEB) | breeze_3.0.33_amd64-v3.0.33.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
+      "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.33/Breeze-iOS-v3.0.33.ipa",
+      "size": 26000157,
       "minOSVersion": "15.0"
     },
     {
@@ -553,7 +553,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 9 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-09-27",
+      "date": "2026-09-28",
       "tintColor": "#7C5CFF",
       "notify": false
     }

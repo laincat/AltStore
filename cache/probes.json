@@ -318,5 +318,13 @@
     "displayName": "Breeze",
     "minOSVersion": "15.0",
     "size": 25995512
+  },
+  "https://github.com/deretame/Breeze/releases/download/v3.0.33/Breeze-iOS-v3.0.33.ipa": {
+    "bundleIdentifier": "com.zephyr.breeze",
+    "version": "3.0.33",
+    "buildVersion": "2221",
+    "displayName": "Breeze",
+    "minOSVersion": "15.0",
+    "size": 26000157
   }
 }
