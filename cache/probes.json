@@ -326,5 +326,21 @@
     "displayName": "Breeze",
     "minOSVersion": "15.0",
     "size": 26000157
+  },
+  "https://github.com/venera-app/venera-prime/releases/download/v2.4.2/venera-prime-ios-2.4.2%2B242.ipa": {
+    "bundleIdentifier": "com.github.wgh136.venera.prime",
+    "version": "2.4.2",
+    "buildVersion": "242",
+    "displayName": "Venera Prime",
+    "minOSVersion": "14.0",
+    "size": 16031076
+  },
+  "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.17.0/VeneraNext-ios-1.17.0%2B228.ipa": {
+    "bundleIdentifier": "com.github.cyrilpeng.veneranext",
+    "version": "1.17.0",
+    "buildVersion": "228",
+    "displayName": "VeneraNext",
+    "minOSVersion": "14.0",
+    "size": 20070423
   }
 }
