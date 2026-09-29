@@ -1815,6 +1815,21 @@
   ],
   "CyrilPeng/Venera-Next": [
     {
+      "tag": "v1.17.0-rc.2",
+      "name": "v1.17.0-rc.2",
+      "pre": true,
+      "draft": false,
+      "date": "2026-09-29",
+      "body": "这是 v1.17.0 的第二个预发行版，重点修复 Linux AppImage 在未安装 WebKitGTK 的系统上无法启动的问题，并保留 rc.1 的全部功能。\r\n\r\n请重点验证 AppImage 启动、内嵌网页及漫画源登录。AppImage 仍需要 glibc 2.35 或更新版本、兼容的 OpenGL/EGL 驱动，以及可写、可执行并留有约 100 MB 空间的 `/tmp`。此版本不修改应用数据格式；如需回退，可使用 rc.1，但其 AppImage 需要系统安装 GTK/WebKit。\r\n\r\n### 修复\r\n\r\n- AppImage 打包 GTK 3、WebKitGTK 4.1 及依赖库、WebKit 子进程与沙箱辅助程序、图片加载器和字体配置，修复 AppImageHub 测试中缺少 `libwebkit2gtk-4.1.so.0` 导致启动失败的问题；通过私有临时副本重定位 WebKit 发布版硬编码路径，保留 glibc 2.35 与宿主显卡驱动要求，随包保存依赖版本和版权说明。\r\n- AppImage 文件名移除多余的 `linux`；两个 Linux 架构增加无预装 GTK/WebKit 容器中的窗口启动及 WebKit 网页加载检查，打包时拒绝遗漏非系统基础运行库。\r\n- WebKit 沙箱复验仅对测试容器放开外层 seccomp/AppArmor 和系统路径遮蔽限制，允许 GitHub Runner 中的嵌套挂载及私有 `/proc`；分发包保持 WebKit 沙箱设置。\r\n\r\n### 文档\r\n\r\n- 补齐中英文 README 的 Linux RPM、AppImage 下载与安装说明，标明 x86_64／ARM64 架构、系统依赖及已发布的 RC 下载入口；同步更新 Linux 分发指南。\r\n",
+      "ipas": [
+        {
+          "name": "VeneraNext-ios-1.17.0-rc.2+227.ipa",
+          "size": 20069291,
+          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.17.0-rc.2/VeneraNext-ios-1.17.0-rc.2%2B227.ipa"
+        }
+      ]
+    },
+    {
       "tag": "v1.17.0-rc.1",
       "name": "v1.17.0-rc.1",
       "pre": true,
@@ -2096,21 +2111,6 @@
           "name": "VeneraNext-ios-1.10.3+206.ipa",
           "size": 15890529,
           "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.10.3/VeneraNext-ios-1.10.3%2B206.ipa"
-        }
-      ]
-    },
-    {
-      "tag": "v1.10.2",
-      "name": "v1.10.2",
-      "pre": false,
-      "draft": false,
-      "date": "2026-07-07",
-      "body": "### 新增\n\n- 为 Windows 正式版发布增加 winget manifest 生成脚本、发布工件和手动触发 workflow，为接入 `winget install/upgrade CyrilPeng.VeneraNext` 做准备。\n\n### 修复\n\n- 修复瀑布流模式中，进度条按本章页码定位时可能跳到已预加载的上一章，以及底栏上一章/下一章按钮不切换章节的问题。\n",
-      "ipas": [
-        {
-          "name": "VeneraNext-ios-1.10.2+205.ipa",
-          "size": 15875615,
-          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.10.2/VeneraNext-ios-1.10.2%2B205.ipa"
         }
       ]
     }
