@@ -303,6 +303,21 @@
   ],
   "open-ani/animeko": [
     {
+      "tag": "v6.3.0-alpha01",
+      "name": "6.3.0-alpha01",
+      "pre": true,
+      "draft": false,
+      "date": "2026-10-02",
+      "body": "- 数据源选择器提供自动匹配、手动查找和 BT 资源三种模式，支持直接浏览数据源剧集并记住选择，方便后续切集，同时优化 BT 资源搜索、筛选和列表展示\r\n- Android 和 iOS 支持系统画中画播放，并提供应用切到后台时的播放行为设置 (#3466 by @GeneralK1ng)\r\n- PikPak 支持与本地 BT 同时启用，优先使用云端资源并在不可用时回退到本地 BT，优化播放、缓存下载和续传体验，支持 Android 后台下载，并显示云盘剩余空间及空间不足提示 (#3444 by @NihilDigit)\r\n- 改进在线视频插播广告过滤并默认开启，优化起播和续播速度，修复桌面端播放进度跳动，并在 iOS 提供广告过滤开关 (#3471 by @NihilDigit)\r\n\r\n----\r\n\r\n- 播放器弹幕设置支持直接管理弹幕来源和校准弹幕时间 (#3480 by @Tsukumi233)\r\n- Windows 支持多点触控和触控笔输入，可在图片查看器中双指缩放，并改善触摸拖动的响应和流畅度 (#3461 by @NihilDigit)\r\n- 支持离线自动或手动标记剧集看过，联网后自动同步，同步状态页面按剧集合并展示播放进度与看过状态\r\n- 剧集列表按正片、特别篇等类型分组，上一集、下一集及自动连播仅在同类型剧集间切换\r\n- 改善全屏、画中画及宽窄布局切换时的播放连续性，减少切换导致的播放中断\r\n- 同步状态页面中的删除操作显示对应的番剧和剧集名称\r\n- 优化电视端无障碍朗读，避免朗读探索页滚动进度\r\n- 修复看完一集后播放历史消失的问题，保留观看记录，再次播放已看完的剧集时从头开始\r\n- 修复 Android 切换全屏、切到后台或锁屏后可能黑屏且无法恢复的问题，支持在原播放位置自动恢复\r\n- 修复分段放送番剧在弹弹 play 中合并收录时匹配到错误剧集的问题，优先按剧集标题精确匹配\r\n- 修复弹弹 play 匹配请求失败时导致弹幕获取异常的问题\r\n- 修复 Android 复制日志时的崩溃，并改善视频增强效果的稳定性\r\n- 修复电视端列表刷新移除当前聚焦卡片时的焦点恢复问题，使焦点落到相邻卡片\r\n- 修复sync时全部模块 androidDeviceTest 无法解析 kotlin-test (#3500 by @GeneralK1ng)\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v6.2.0...v6.3.0-alpha01\r\n\r\n[//]: # (ANI-SERVER-MAGIC-SEPARATOR)\r\n\r\n[//]: # (注意: api server 依赖这个特殊分隔符)\r\n\r\n[//]: # (对于所有可用的变量列表, 参考 CI release.yml 的 step release-notes)\r\n\r\n[github-win-x64]: https://github.com/open-ani/ani/releases/download/v6.3.0-alpha01/ani-6.3.0-alpha01-windows-x86_64.zip\r\n\r\n[github-win-aarch64]: https://github.com/open-ani/ani/releases/download/v6.3.0-alpha01/ani-6.3.0-alpha01-windows-aarch64.zip\r\n\r\n[github-mac-x64]: https://github.com/open-ani/ani/releases/download/v6.3.0-alpha01/ani-6.3.0-alpha01-macos-x86_64.dmg\r\n\r\n[github-mac-aarch64]: https://github.com/open-ani/ani/releases/download/v6.3.0-alpha01/ani-6.3.0-alpha01-macos-aarch64.dmg\r\n\r\n[github-android]: https://github.com/open-ani/ani/releases/download/v6.3.0-alpha01/ani-6.3.0-alpha01-universal.apk\r\n\r\n[github-android-arm64-v8a]: https://github.com/open-ani/ani/releases/download/v6.3.0-alpha01/ani-6.3.0-alpha01-arm64-v8a.apk\r\n\r\n[github-android-armeabi-v7",
+      "ipas": [
+        {
+          "name": "ani-6.3.0-alpha01.ipa",
+          "size": 46121933,
+          "url": "https://github.com/open-ani/animeko/releases/download/v6.3.0-alpha01/ani-6.3.0-alpha01.ipa"
+        }
+      ]
+    },
+    {
       "tag": "v6.2.0",
       "name": "6.2.0",
       "pre": false,
@@ -584,21 +599,6 @@
           "name": "ani-5.5.2.ipa",
           "size": 29924579,
           "url": "https://github.com/open-ani/animeko/releases/download/v5.5.2/ani-5.5.2.ipa"
-        }
-      ]
-    },
-    {
-      "tag": "v5.6.0-alpha01",
-      "name": "5.6.0-alpha01",
-      "pre": true,
-      "draft": false,
-      "date": "2026-05-25",
-      "body": "- 新增剧集评论表情回应，并优化回应区域的显示体验\r\n- 增强网页数据源的验证码检测能力\r\n- 尽快释放 CEF 资源, 减少播放时的占用\r\n\r\n----\r\n\r\n- 更多界面文案支持多语言显示 (#2930 by @Mystery406)\r\n- 搜索页键盘导航会限制选中范围，避免列表切换时选中项异常 (#3021 by @Mystery406)\r\n- macOS 桌面端退出后会保留窗口大小 (#3032 by @SakuraKy)\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v5.5.1...v5.6.0-alpha01\r\n\r\n[//]: # (ANI-SERVER-MAGIC-SEPARATOR)\r\n\r\n[//]: # (注意: api server 依赖这个特殊分隔符)\r\n\r\n[//]: # (对于所有可用的变量列表, 参考 CI release.yml 的 step release-notes)\r\n\r\n[github-win-x64]: https://github.com/open-ani/ani/releases/download/v5.6.0-alpha01/ani-5.6.0-alpha01-windows-x86_64.zip\r\n\r\n[github-mac-x64]: https://github.com/open-ani/ani/releases/download/v5.6.0-alpha01/ani-5.6.0-alpha01-macos-x86_64.dmg\r\n\r\n[github-mac-aarch64]: https://github.com/open-ani/ani/releases/download/v5.6.0-alpha01/ani-5.6.0-alpha01-macos-aarch64.dmg\r\n\r\n[github-android]: https://github.com/open-ani/ani/releases/download/v5.6.0-alpha01/ani-5.6.0-alpha01-universal.apk\r\n\r\n[github-android-arm64-v8a]: https://github.com/open-ani/ani/releases/download/v5.6.0-alpha01/ani-5.6.0-alpha01-arm64-v8a.apk\r\n\r\n[github-android-armeabi-v7a]: https://github.com/open-ani/ani/releases/download/v5.6.0-alpha01/ani-5.6.0-alpha01-armeabi-v7a.apk\r\n\r\n[github-android-x86_64]: https://github.com/open-ani/ani/releases/download/v5.6.0-alpha01/ani-5.6.0-alpha01-x86_64.apk\r\n\r\n[cf-win-x64]: https://d.myani.org/v5.6.0-alpha01/ani-5.6.0-alpha01-windows-x86_64.zip\r\n\r\n[cf-linux-x64]: https://d.myani.org/v5.6.0-alpha01/ani-5.6.0-alpha01-linux-x86_64.appimage\r\n\r\n[cf-mac-x64]: https://d.myani.org/v5.6.0-alpha01/ani-5.6.0-alpha01-macos-x86_64.zip\r\n\r\n[cf-mac-aarch64]: https://d.myani.org/v5.6.0-alpha01/ani-5.6.0-alpha01-macos-aarch64.dmg\r\n\r\n[cf-ios]: https://d.myani.org/v5.6.0-alpha01/ani-5.6.0-alpha01.ipa\r\n\r\n[cf-android]: https://d.myani.org/v5.6.0-alpha01/ani-5.6.0-alpha01-universal.apk\r\n\r\n[cf-android-arm64-v8a]: https://d.myani.org/v5.6.0-alpha01/ani-5.6.0-alpha01-arm64-v8a.apk\r\n\r\n[cf-android-armeabi-v7a]: https://d.myani.org/v5.6.0-alpha01/ani-",
-      "ipas": [
-        {
-          "name": "ani-5.6.0-alpha01.ipa",
-          "size": 30360099,
-          "url": "https://github.com/open-ani/animeko/releases/download/v5.6.0-alpha01/ani-5.6.0-alpha01.ipa"
         }
       ]
     }

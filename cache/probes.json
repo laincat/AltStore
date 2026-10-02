@@ -350,5 +350,13 @@
     "displayName": "Kazumi",
     "minOSVersion": "15.0",
     "size": 30538813
+  },
+  "https://github.com/open-ani/animeko/releases/download/v6.3.0-alpha01/ani-6.3.0-alpha01.ipa": {
+    "bundleIdentifier": "org.animeko.animeko",
+    "version": "6.3.0",
+    "buildVersion": "6.3.1",
+    "displayName": "Animeko",
+    "minOSVersion": "14.0",
+    "size": 46121933
   }
 }

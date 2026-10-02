@@ -94,21 +94,33 @@
           "track": "nightly",
           "releases": [
             {
-              "version": "6.2.0",
-              "date": "2026-09-22",
-              "buildVersion": "6.2.31",
-              "buildNumber": "6.2.31",
-              "localizedDescription": "🧪 预发布 6.2.0-beta01（2026-09-22）\n\n- 新增 Android TV 客户端，支持大屏首页、条目详情、播放、收藏、搜索、每日放送、设置与电视端扫码登录 (#3271)，感谢 @GrahamZen 在 #3217 中的前期探索\r\n- 缓存支持按线路批量选择多集，并按条目级查询资源，下载多集更顺畅\r\n- 自动跳过 OP/ED 前会提前缓存跳转后的内容\r\n- 条目详情新增系列关系图，可直观查看续集、番外和衍生并直接跳转\r\n- 剧集列表新增 TMDB 剧照、观看进度条与已看完角标，选集识别更直观\r\n- 在线播放进度条会显示已缓冲范围，缓冲时会显示当前下载速度\r\n- 播放页支持拖入本地视频文件直接播放，仅本次播放有效\r\n- 修复只标画质或语言的线路被当成集号不明而无法匹配的问题 (#3345 by @GrahamZen)\r\n\r\n----\r\n\r\n- 支持 GitHub 登录与账号绑定\r\n- 关于页新增构建信息，便于反馈问题时复制版本、分支、commit 与平台信息\r\n- 缓存详情页显示下载器状态、解析阶段与最近分片错误，便于诊断停滞任务\r\n- iOS 全屏播放期间锁定横屏，并优化横屏刘海侧边距\r\n- 修复重试下载更新包后进度在多个旧数值之间跳动的问题\r\n- 修复桌面端全屏播放时按 ESC 返回上一页而不是退出全屏的问题\r\n- 修复从播放页返回条目页后剧集看过状态没有及时更新的问题\r\n- 修复人物和角色侧边预览中的图片无法点击放大，以及移动端大图查看器覆盖范围不正确的问题\r\n- 图片加载恢复内存缓存，减少返回页面或滚动列表时的重复解码\r\n- 数据源搜索内容协商优化，提升部分站点的资源搜索兼容性\r\n- 播放缓冲策略在各平台统一，在…",
-              "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.2.0-beta01/ani-6.2.0-beta01.ipa",
-              "size": 46220023,
+              "version": "6.3.0",
+              "date": "2026-10-02",
+              "buildVersion": "6.3.1",
+              "buildNumber": "6.3.1",
+              "localizedDescription": "🧪 预发布 6.3.0-alpha01（2026-10-02）\n\n- 数据源选择器提供自动匹配、手动查找和 BT 资源三种模式，支持直接浏览数据源剧集并记住选择，方便后续切集，同时优化 BT 资源搜索、筛选和列表展示\r\n- Android 和 iOS 支持系统画中画播放，并提供应用切到后台时的播放行为设置 (#3466 by @GeneralK1ng)\r\n- PikPak 支持与本地 BT 同时启用，优先使用云端资源并在不可用时回退到本地 BT，优化播放、缓存下载和续传体验，支持 Android 后台下载，并显示云盘剩余空间及空间不足提示 (#3444 by @NihilDigit)\r\n- 改进在线视频插播广告过滤并默认开启，优化起播和续播速度，修复桌面端播放进度跳动，并在 iOS 提供广告过滤开关 (#3471 by @NihilDigit)\r\n\r\n----\r\n\r\n- 播放器弹幕设置支持直接管理弹幕来源和校准弹幕时间 (#3480 by @Tsukumi233)\r\n- Windows 支持多点触控和触控笔输入，可在图片查看器中双指缩放，并改善触摸拖动的响应和流畅度 (#3461 by @NihilDigit)\r\n- 支持离线自动或手动标记剧集看过，联网后自动同步，同步状态页面按剧集合并展示播放进度与看过状态\r\n- 剧集列表按正片、特别篇等类型分组，上一集、下一集及自动连播仅在同类型剧集间切换\r\n- 改善全屏、画中画及宽窄布局切换时的播放连续性，减少切换导致的播放中断\r\n- 同步状态页面中的删除操作显示对应的番剧和剧集名称\r\n- 优化电视端无障碍朗读，避免朗读探索页滚动进度\r\n- 修复看完一集后播放历史消失的问题，保留观看记录，再次播放已看完…",
+              "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.3.0-alpha01/ani-6.3.0-alpha01.ipa",
+              "size": 46121933,
               "minOSVersion": "14.0",
-              "releaseTag": "v6.2.0-beta01",
-              "source": "https://github.com/open-ani/animeko/releases/tag/v6.2.0-beta01"
+              "releaseTag": "v6.3.0-alpha01",
+              "source": "https://github.com/open-ani/animeko/releases/tag/v6.3.0-alpha01"
             }
           ]
         }
       ],
       "versions": [
+        {
+          "version": "6.3.0",
+          "date": "2026-10-02",
+          "buildVersion": "6.3.1",
+          "buildNumber": "6.3.1",
+          "localizedDescription": "🧪 预发布 6.3.0-alpha01（2026-10-02）\n\n- 数据源选择器提供自动匹配、手动查找和 BT 资源三种模式，支持直接浏览数据源剧集并记住选择，方便后续切集，同时优化 BT 资源搜索、筛选和列表展示\r\n- Android 和 iOS 支持系统画中画播放，并提供应用切到后台时的播放行为设置 (#3466 by @GeneralK1ng)\r\n- PikPak 支持与本地 BT 同时启用，优先使用云端资源并在不可用时回退到本地 BT，优化播放、缓存下载和续传体验，支持 Android 后台下载，并显示云盘剩余空间及空间不足提示 (#3444 by @NihilDigit)\r\n- 改进在线视频插播广告过滤并默认开启，优化起播和续播速度，修复桌面端播放进度跳动，并在 iOS 提供广告过滤开关 (#3471 by @NihilDigit)\r\n\r\n----\r\n\r\n- 播放器弹幕设置支持直接管理弹幕来源和校准弹幕时间 (#3480 by @Tsukumi233)\r\n- Windows 支持多点触控和触控笔输入，可在图片查看器中双指缩放，并改善触摸拖动的响应和流畅度 (#3461 by @NihilDigit)\r\n- 支持离线自动或手动标记剧集看过，联网后自动同步，同步状态页面按剧集合并展示播放进度与看过状态\r\n- 剧集列表按正片、特别篇等类型分组，上一集、下一集及自动连播仅在同类型剧集间切换\r\n- 改善全屏、画中画及宽窄布局切换时的播放连续性，减少切换导致的播放中断\r\n- 同步状态页面中的删除操作显示对应的番剧和剧集名称\r\n- 优化电视端无障碍朗读，避免朗读探索页滚动进度\r\n- 修复看完一集后播放历史消失的问题，保留观看记录，再次播放已看完…",
+          "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.3.0-alpha01/ani-6.3.0-alpha01.ipa",
+          "size": 46121933,
+          "minOSVersion": "14.0",
+          "releaseTag": "v6.3.0-alpha01",
+          "source": "https://github.com/open-ani/animeko/releases/tag/v6.3.0-alpha01"
+        },
         {
           "version": "6.2.0",
           "date": "2026-09-26",
@@ -120,18 +132,6 @@
           "minOSVersion": "14.0",
           "releaseTag": "v6.2.0",
           "source": "https://github.com/open-ani/animeko/releases/tag/v6.2.0"
-        },
-        {
-          "version": "6.2.0",
-          "date": "2026-09-22",
-          "buildVersion": "6.2.31",
-          "buildNumber": "6.2.31",
-          "localizedDescription": "🧪 预发布 6.2.0-beta01（2026-09-22）\n\n- 新增 Android TV 客户端，支持大屏首页、条目详情、播放、收藏、搜索、每日放送、设置与电视端扫码登录 (#3271)，感谢 @GrahamZen 在 #3217 中的前期探索\r\n- 缓存支持按线路批量选择多集，并按条目级查询资源，下载多集更顺畅\r\n- 自动跳过 OP/ED 前会提前缓存跳转后的内容\r\n- 条目详情新增系列关系图，可直观查看续集、番外和衍生并直接跳转\r\n- 剧集列表新增 TMDB 剧照、观看进度条与已看完角标，选集识别更直观\r\n- 在线播放进度条会显示已缓冲范围，缓冲时会显示当前下载速度\r\n- 播放页支持拖入本地视频文件直接播放，仅本次播放有效\r\n- 修复只标画质或语言的线路被当成集号不明而无法匹配的问题 (#3345 by @GrahamZen)\r\n\r\n----\r\n\r\n- 支持 GitHub 登录与账号绑定\r\n- 关于页新增构建信息，便于反馈问题时复制版本、分支、commit 与平台信息\r\n- 缓存详情页显示下载器状态、解析阶段与最近分片错误，便于诊断停滞任务\r\n- iOS 全屏播放期间锁定横屏，并优化横屏刘海侧边距\r\n- 修复重试下载更新包后进度在多个旧数值之间跳动的问题\r\n- 修复桌面端全屏播放时按 ESC 返回上一页而不是退出全屏的问题\r\n- 修复从播放页返回条目页后剧集看过状态没有及时更新的问题\r\n- 修复人物和角色侧边预览中的图片无法点击放大，以及移动端大图查看器覆盖范围不正确的问题\r\n- 图片加载恢复内存缓存，减少返回页面或滚动列表时的重复解码\r\n- 数据源搜索内容协商优化，提升部分站点的资源搜索兼容性\r\n- 播放缓冲策略在各平台统一，在…",
-          "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.2.0-beta01/ani-6.2.0-beta01.ipa",
-          "size": 46220023,
-          "minOSVersion": "14.0",
-          "releaseTag": "v6.2.0-beta01",
-          "source": "https://github.com/open-ani/animeko/releases/tag/v6.2.0-beta01"
         }
       ],
       "version": "6.2.0",
