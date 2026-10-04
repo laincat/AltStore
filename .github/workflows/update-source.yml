@@ -278,6 +278,18 @@ jobs:
           git -c credential.helper= -c credential.helper="$CRED" push -q origin HEAD:main
           echo "已同步到 cnb.cool/${CNB_REPO}"
 
+      # 把 apps.json 镜像到 CNB Release：那边 releases 页面此前一直是空的
+      # （同步只推分支历史，从不建 Release）。CNB 没有 releases/latest 别名，
+      # 所以固定 tag `latest`，靠覆盖同名附件换稳定直链：
+      #   https://cnb.cool/laincat/AltStore/-/releases/download/latest/apps.json
+      - name: 镜像 apps.json 到 cnb.cool Release
+        if: ${{ env.CNB_TOKEN != '' }}
+        env:
+          CNB_REPO_SLUG: ${{ env.CNB_REPO }}
+        run: |
+          set -euo pipefail
+          python tools/publish_cnb_release.py --files apps.json --tag latest --ttl 0
+
       - name: 小结
         if: always()
         run: |
