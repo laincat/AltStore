@@ -1,0 +1,24 @@
+name: Dependency validation
+'on':
+  pull_request: null
+  push:
+    branches:
+    - main
+  workflow_dispatch: null
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v7
+      with:
+        persist-credentials: false
+    - uses: actions/setup-python@v7
+      with:
+        python-version: '3.13'
+    - run: python -m unittest discover -s .github/scripts
+    - run: python -m compileall -q tools .github/scripts
+    - run: python tools/verify_source.py --min-apps 9
+    - run: python tools/simulate_client.py --client sidestore
+    - run: python tools/simulate_client.py --client livecontainer
