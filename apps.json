@@ -12,7 +12,7 @@
       "developerName": "Predidit",
       "subtitle": "自定义规则的番剧采集与在线观看",
       "localizedDescription": "基于自定义规则的番剧采集 App，支持流媒体在线观看、弹幕与实时超分辨率。支持多平台，此处为未签名 iOS 构建，需自行签名安装。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Predidit/Kazumi",
-      "iconURL": "https://raw.githubusercontent.com/Predidit/Kazumi/2.3.7/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Predidit/Kazumi/2.3.8/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#E86AA6",
       "category": "entertainment",
       "appPermissions": {
@@ -24,39 +24,39 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.3.7",
-              "date": "2026-09-30",
-              "buildVersion": "20307",
-              "buildNumber": "20307",
-              "localizedDescription": "- 改进的视频截图功能 (#1697 #1144) (@Predidit)\r\n- 新增弹幕简繁转换设置 (#1108 #1923) (@Predidit)\r\n- 番剧详情页面现在支持复制标题与保存封面 (#2575) (@Predidit)\r\n- 现在可以在滑动快进时滑至播放器边缘取消操作 (#2592) (@Predidit)\r\n- 新增 Bangumi 番剧条目 ECH 加速选项 (@Predidit)\r\n- 修复手动检索弹幕时搜索记录无法保留的问题 (@moonrailgun)\r\n- 修复部分视频来源无法触发人机验证的问题 (#2578) (@jzy834894319)\r\n- 修复 Linux 平台打开播放器、切换剧集或播放结束时可能崩溃的问题 (#2587) (@Predidit)\r\n- 修复桌面平台设置子页面窗口控制按钮重复显示的问题 (#2589) (@Predidit)\r\n- 修复切换原生标题栏设置后窗口控制按钮显示异常的问题 (@Predidit)",
-              "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.3.7/Kazumi_ios_2.3.7_no_sign.ipa",
-              "size": 30538813,
+              "version": "2.3.8",
+              "date": "2026-10-07",
+              "buildVersion": "20308",
+              "buildNumber": "20308",
+              "localizedDescription": "- 优化截图交互 (#2599) (@Predidit)\r\n- 统一应用内下拉菜单样式 (@Predidit)\r\n- 修复大字体下番剧详情页追番按钮与其他按钮重叠而无法点击的问题 (#2622) (@Predidit)\r\n- 修复宽屏设置页重复点击已选中分类时二级页面重复嵌套的问题 (#2607) (@Predidit)\r\n- 修复鼠标悬停时播放器控制栏动画反复重启的问题 (@Predidit)\r\n- 修复分集评论标题栏显示多余副标题的问题 (@Predidit)\r\n- 其他UI改进 (@Predidit)",
+              "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.3.8/Kazumi_ios_2.3.8_no_sign.ipa",
+              "size": 30463104,
               "minOSVersion": "15.0",
-              "releaseTag": "2.3.7",
-              "source": "https://github.com/Predidit/Kazumi/releases/tag/2.3.7"
+              "releaseTag": "2.3.8",
+              "source": "https://github.com/Predidit/Kazumi/releases/tag/2.3.8"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.3.7",
-          "date": "2026-09-30",
-          "buildVersion": "20307",
-          "buildNumber": "20307",
-          "localizedDescription": "- 改进的视频截图功能 (#1697 #1144) (@Predidit)\r\n- 新增弹幕简繁转换设置 (#1108 #1923) (@Predidit)\r\n- 番剧详情页面现在支持复制标题与保存封面 (#2575) (@Predidit)\r\n- 现在可以在滑动快进时滑至播放器边缘取消操作 (#2592) (@Predidit)\r\n- 新增 Bangumi 番剧条目 ECH 加速选项 (@Predidit)\r\n- 修复手动检索弹幕时搜索记录无法保留的问题 (@moonrailgun)\r\n- 修复部分视频来源无法触发人机验证的问题 (#2578) (@jzy834894319)\r\n- 修复 Linux 平台打开播放器、切换剧集或播放结束时可能崩溃的问题 (#2587) (@Predidit)\r\n- 修复桌面平台设置子页面窗口控制按钮重复显示的问题 (#2589) (@Predidit)\r\n- 修复切换原生标题栏设置后窗口控制按钮显示异常的问题 (@Predidit)",
-          "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.3.7/Kazumi_ios_2.3.7_no_sign.ipa",
-          "size": 30538813,
+          "version": "2.3.8",
+          "date": "2026-10-07",
+          "buildVersion": "20308",
+          "buildNumber": "20308",
+          "localizedDescription": "- 优化截图交互 (#2599) (@Predidit)\r\n- 统一应用内下拉菜单样式 (@Predidit)\r\n- 修复大字体下番剧详情页追番按钮与其他按钮重叠而无法点击的问题 (#2622) (@Predidit)\r\n- 修复宽屏设置页重复点击已选中分类时二级页面重复嵌套的问题 (#2607) (@Predidit)\r\n- 修复鼠标悬停时播放器控制栏动画反复重启的问题 (@Predidit)\r\n- 修复分集评论标题栏显示多余副标题的问题 (@Predidit)\r\n- 其他UI改进 (@Predidit)",
+          "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.3.8/Kazumi_ios_2.3.8_no_sign.ipa",
+          "size": 30463104,
           "minOSVersion": "15.0",
-          "releaseTag": "2.3.7",
-          "source": "https://github.com/Predidit/Kazumi/releases/tag/2.3.7"
+          "releaseTag": "2.3.8",
+          "source": "https://github.com/Predidit/Kazumi/releases/tag/2.3.8"
         }
       ],
-      "version": "2.3.7",
-      "versionDate": "2026-09-30",
-      "versionDescription": "- 改进的视频截图功能 (#1697 #1144) (@Predidit)\r\n- 新增弹幕简繁转换设置 (#1108 #1923) (@Predidit)\r\n- 番剧详情页面现在支持复制标题与保存封面 (#2575) (@Predidit)\r\n- 现在可以在滑动快进时滑至播放器边缘取消操作 (#2592) (@Predidit)\r\n- 新增 Bangumi 番剧条目 ECH 加速选项 (@Predidit)\r\n- 修复手动检索弹幕时搜索记录无法保留的问题 (@moonrailgun)\r\n- 修复部分视频来源无法触发人机验证的问题 (#2578) (@jzy834894319)\r\n- 修复 Linux 平台打开播放器、切换剧集或播放结束时可能崩溃的问题 (#2587) (@Predidit)\r\n- 修复桌面平台设置子页面窗口控制按钮重复显示的问题 (#2589) (@Predidit)\r\n- 修复切换原生标题栏设置后窗口控制按钮显示异常的问题 (@Predidit)",
-      "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.3.7/Kazumi_ios_2.3.7_no_sign.ipa",
-      "size": 30538813,
+      "version": "2.3.8",
+      "versionDate": "2026-10-07",
+      "versionDescription": "- 优化截图交互 (#2599) (@Predidit)\r\n- 统一应用内下拉菜单样式 (@Predidit)\r\n- 修复大字体下番剧详情页追番按钮与其他按钮重叠而无法点击的问题 (#2622) (@Predidit)\r\n- 修复宽屏设置页重复点击已选中分类时二级页面重复嵌套的问题 (#2607) (@Predidit)\r\n- 修复鼠标悬停时播放器控制栏动画反复重启的问题 (@Predidit)\r\n- 修复分集评论标题栏显示多余副标题的问题 (@Predidit)\r\n- 其他UI改进 (@Predidit)",
+      "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.3.8/Kazumi_ios_2.3.8_no_sign.ipa",
+      "size": 30463104,
       "minOSVersion": "15.0"
     },
     {
@@ -284,7 +284,7 @@
       "developerName": "venera-app",
       "subtitle": "次世代多图源漫画阅读器",
       "localizedDescription": "原版 Venera 的次世代重写版，Flutter + Rust 构建。支持本地漫画与网络图源阅读、用 JavaScript 编写自定义漫画源、收藏管理、下载、评论与标签查看；中文标签翻译来自 EhTagTranslation 项目。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/venera-app/venera-prime",
-      "iconURL": "https://raw.githubusercontent.com/venera-app/venera-prime/v2.4.2/assets/app_icon.png",
+      "iconURL": "https://raw.githubusercontent.com/venera-app/venera-prime/v2.4.3/assets/app_icon.png",
       "tintColor": "#0784FC",
       "category": "books",
       "appPermissions": {
@@ -296,39 +296,39 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.4.2",
-              "date": "2026-09-29",
-              "buildVersion": "242",
-              "buildNumber": "242",
-              "localizedDescription": "Venera Prime 2.4.2\n修复\n\n- 修复手动代理地址解析，统一漫画源请求与文件下载的代理适配，并支持 Basic 代理认证。\n- 修复阅读进度条反复拖动可能导致无法继续滚动的问题，增加实时页码显示，并改进连续模式可见页码判定。\n- 调整横屏连续阅读的触摸范围，使两侧留白包含在滚动区域内。\n- 修复低高度横屏首页侧栏溢出，支持滚动访问底部操作。\n- 修复漫画源尚未加载或已移除时本地漫画区块的空值错误，并在源状态变化时刷新。\n- 全部收藏统一更新漫画信息，合并重复请求、显示失败标题；修复多目标移动和同文件夹移动的问题，并保留翻译标签。\n- 修复网络缓存替换与容量计算、不同授权上下文的缓存匹配，以及 HEAD 校验失败后的请求回退。\n- 分块下载失败后等待其他请求结束再关闭文件，使用未压缩的字节范围下载。\n- WebDAV 上传成功后再清理旧备份，保留本次上传的同名文件，并恢复备份数量上限。\n验证\n\n- Flutter 静态分析、自动化测试和 Android 调试构建通过。\n- 测试覆盖本地 HTTP 代理认证、WebDAV 上传失败保护、缓存 HEAD 失败回退，以及原生 ZIP 备份导入导出。\n- Android 实机已验证进度条往返、连续滚动和画廊 RTL 翻页。横屏留白竖向拖动、缩放复位及其他平台仍需补充验证。",
-              "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.2/venera-prime-ios-2.4.2%2B242.ipa",
-              "size": 16031076,
+              "version": "2.4.3",
+              "date": "2026-10-07",
+              "buildVersion": "243",
+              "buildNumber": "243",
+              "localizedDescription": "Venera Prime 2.4.3\n修复\n\n- 修复重叠追更检查覆盖未读标记的问题，重复检查只统计实际新增更新。\n- 取消追更检查后不再写入迟到的请求结果，切换追更文件夹保留并展示已有未读更新。\n- 保存章节 ID 基线，识别同一天新增章节；首次建立基线不把全部章节报为更新。\n- 切回已有追更记录的文件夹时继续检测新章节，避免静默初始化吞掉更新。\n- 阅读后的追更列表和首页计数同步刷新，保留进入任意章节即标记整部已读的现有规则。\n- 修复 Android 自选存储目录的下载完整性校验，调整下载元数据读写以兼容 SAF。\n- 恢复漫画源目录中版本号下的描述。\n- 历史记录增加本地搜索及上次阅读日期、时间。\n- Linux AppImage 打包 WebKit 库、辅助进程、注入模块和网络依赖。\n验证范围\n\n- 自动化回归覆盖重叠检查、同日新增章节、取消请求、基线建立、未读列表和已读刷新。\n- Android 集成测试使用独立包名及隔离临时数据，避免测试运行器卸载普通应用；测试不使用用户账户或 WebDAV 设置。\n- 第三方漫画源的章节标识变化、ARM64 SteamOS 兼容性仍需目标环境验证。",
+              "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.3/venera-prime-ios-2.4.3%2B243.ipa",
+              "size": 16048075,
               "minOSVersion": "14.0",
-              "releaseTag": "v2.4.2",
-              "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.4.2"
+              "releaseTag": "v2.4.3",
+              "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.4.3"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.4.2",
-          "date": "2026-09-29",
-          "buildVersion": "242",
-          "buildNumber": "242",
-          "localizedDescription": "Venera Prime 2.4.2\n修复\n\n- 修复手动代理地址解析，统一漫画源请求与文件下载的代理适配，并支持 Basic 代理认证。\n- 修复阅读进度条反复拖动可能导致无法继续滚动的问题，增加实时页码显示，并改进连续模式可见页码判定。\n- 调整横屏连续阅读的触摸范围，使两侧留白包含在滚动区域内。\n- 修复低高度横屏首页侧栏溢出，支持滚动访问底部操作。\n- 修复漫画源尚未加载或已移除时本地漫画区块的空值错误，并在源状态变化时刷新。\n- 全部收藏统一更新漫画信息，合并重复请求、显示失败标题；修复多目标移动和同文件夹移动的问题，并保留翻译标签。\n- 修复网络缓存替换与容量计算、不同授权上下文的缓存匹配，以及 HEAD 校验失败后的请求回退。\n- 分块下载失败后等待其他请求结束再关闭文件，使用未压缩的字节范围下载。\n- WebDAV 上传成功后再清理旧备份，保留本次上传的同名文件，并恢复备份数量上限。\n验证\n\n- Flutter 静态分析、自动化测试和 Android 调试构建通过。\n- 测试覆盖本地 HTTP 代理认证、WebDAV 上传失败保护、缓存 HEAD 失败回退，以及原生 ZIP 备份导入导出。\n- Android 实机已验证进度条往返、连续滚动和画廊 RTL 翻页。横屏留白竖向拖动、缩放复位及其他平台仍需补充验证。",
-          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.2/venera-prime-ios-2.4.2%2B242.ipa",
-          "size": 16031076,
+          "version": "2.4.3",
+          "date": "2026-10-07",
+          "buildVersion": "243",
+          "buildNumber": "243",
+          "localizedDescription": "Venera Prime 2.4.3\n修复\n\n- 修复重叠追更检查覆盖未读标记的问题，重复检查只统计实际新增更新。\n- 取消追更检查后不再写入迟到的请求结果，切换追更文件夹保留并展示已有未读更新。\n- 保存章节 ID 基线，识别同一天新增章节；首次建立基线不把全部章节报为更新。\n- 切回已有追更记录的文件夹时继续检测新章节，避免静默初始化吞掉更新。\n- 阅读后的追更列表和首页计数同步刷新，保留进入任意章节即标记整部已读的现有规则。\n- 修复 Android 自选存储目录的下载完整性校验，调整下载元数据读写以兼容 SAF。\n- 恢复漫画源目录中版本号下的描述。\n- 历史记录增加本地搜索及上次阅读日期、时间。\n- Linux AppImage 打包 WebKit 库、辅助进程、注入模块和网络依赖。\n验证范围\n\n- 自动化回归覆盖重叠检查、同日新增章节、取消请求、基线建立、未读列表和已读刷新。\n- Android 集成测试使用独立包名及隔离临时数据，避免测试运行器卸载普通应用；测试不使用用户账户或 WebDAV 设置。\n- 第三方漫画源的章节标识变化、ARM64 SteamOS 兼容性仍需目标环境验证。",
+          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.3/venera-prime-ios-2.4.3%2B243.ipa",
+          "size": 16048075,
           "minOSVersion": "14.0",
-          "releaseTag": "v2.4.2",
-          "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.4.2"
+          "releaseTag": "v2.4.3",
+          "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.4.3"
         }
       ],
-      "version": "2.4.2",
-      "versionDate": "2026-09-29",
-      "versionDescription": "Venera Prime 2.4.2\n修复\n\n- 修复手动代理地址解析，统一漫画源请求与文件下载的代理适配，并支持 Basic 代理认证。\n- 修复阅读进度条反复拖动可能导致无法继续滚动的问题，增加实时页码显示，并改进连续模式可见页码判定。\n- 调整横屏连续阅读的触摸范围，使两侧留白包含在滚动区域内。\n- 修复低高度横屏首页侧栏溢出，支持滚动访问底部操作。\n- 修复漫画源尚未加载或已移除时本地漫画区块的空值错误，并在源状态变化时刷新。\n- 全部收藏统一更新漫画信息，合并重复请求、显示失败标题；修复多目标移动和同文件夹移动的问题，并保留翻译标签。\n- 修复网络缓存替换与容量计算、不同授权上下文的缓存匹配，以及 HEAD 校验失败后的请求回退。\n- 分块下载失败后等待其他请求结束再关闭文件，使用未压缩的字节范围下载。\n- WebDAV 上传成功后再清理旧备份，保留本次上传的同名文件，并恢复备份数量上限。\n验证\n\n- Flutter 静态分析、自动化测试和 Android 调试构建通过。\n- 测试覆盖本地 HTTP 代理认证、WebDAV 上传失败保护、缓存 HEAD 失败回退，以及原生 ZIP 备份导入导出。\n- Android 实机已验证进度条往返、连续滚动和画廊 RTL 翻页。横屏留白竖向拖动、缩放复位及其他平台仍需补充验证。",
-      "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.2/venera-prime-ios-2.4.2%2B242.ipa",
-      "size": 16031076,
+      "version": "2.4.3",
+      "versionDate": "2026-10-07",
+      "versionDescription": "Venera Prime 2.4.3\n修复\n\n- 修复重叠追更检查覆盖未读标记的问题，重复检查只统计实际新增更新。\n- 取消追更检查后不再写入迟到的请求结果，切换追更文件夹保留并展示已有未读更新。\n- 保存章节 ID 基线，识别同一天新增章节；首次建立基线不把全部章节报为更新。\n- 切回已有追更记录的文件夹时继续检测新章节，避免静默初始化吞掉更新。\n- 阅读后的追更列表和首页计数同步刷新，保留进入任意章节即标记整部已读的现有规则。\n- 修复 Android 自选存储目录的下载完整性校验，调整下载元数据读写以兼容 SAF。\n- 恢复漫画源目录中版本号下的描述。\n- 历史记录增加本地搜索及上次阅读日期、时间。\n- Linux AppImage 打包 WebKit 库、辅助进程、注入模块和网络依赖。\n验证范围\n\n- 自动化回归覆盖重叠检查、同日新增章节、取消请求、基线建立、未读列表和已读刷新。\n- Android 集成测试使用独立包名及隔离临时数据，避免测试运行器卸载普通应用；测试不使用用户账户或 WebDAV 设置。\n- 第三方漫画源的章节标识变化、ARM64 SteamOS 兼容性仍需目标环境验证。",
+      "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.3/venera-prime-ios-2.4.3%2B243.ipa",
+      "size": 16048075,
       "minOSVersion": "14.0"
     },
     {
@@ -553,7 +553,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 9 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-09-30",
+      "date": "2026-10-07",
       "tintColor": "#7C5CFF",
       "notify": false
     }

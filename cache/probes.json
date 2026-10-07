@@ -358,5 +358,21 @@
     "displayName": "Animeko",
     "minOSVersion": "14.0",
     "size": 46121933
+  },
+  "https://github.com/Predidit/Kazumi/releases/download/2.3.8/Kazumi_ios_2.3.8_no_sign.ipa": {
+    "bundleIdentifier": "com.example.kazumi",
+    "version": "2.3.8",
+    "buildVersion": "20308",
+    "displayName": "Kazumi",
+    "minOSVersion": "15.0",
+    "size": 30463104
+  },
+  "https://github.com/venera-app/venera-prime/releases/download/v2.4.3/venera-prime-ios-2.4.3%2B243.ipa": {
+    "bundleIdentifier": "com.github.wgh136.venera.prime",
+    "version": "2.4.3",
+    "buildVersion": "243",
+    "displayName": "Venera Prime",
+    "minOSVersion": "14.0",
+    "size": 16048075
   }
 }

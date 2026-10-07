@@ -1,6 +1,21 @@
 {
   "Predidit/Kazumi": [
     {
+      "tag": "2.3.8",
+      "name": "2.3.8",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-07",
+      "body": "- 优化截图交互 (#2599) (@Predidit)\r\n- 统一应用内下拉菜单样式 (@Predidit)\r\n- 修复大字体下番剧详情页追番按钮与其他按钮重叠而无法点击的问题 (#2622) (@Predidit)\r\n- 修复宽屏设置页重复点击已选中分类时二级页面重复嵌套的问题 (#2607) (@Predidit)\r\n- 修复鼠标悬停时播放器控制栏动画反复重启的问题 (@Predidit)\r\n- 修复分集评论标题栏显示多余副标题的问题 (@Predidit)\r\n- 其他UI改进 (@Predidit)",
+      "ipas": [
+        {
+          "name": "Kazumi_ios_2.3.8_no_sign.ipa",
+          "size": 30463104,
+          "url": "https://github.com/Predidit/Kazumi/releases/download/2.3.8/Kazumi_ios_2.3.8_no_sign.ipa"
+        }
+      ]
+    },
+    {
       "tag": "2.3.7",
       "name": "2.3.7",
       "pre": false,
@@ -282,21 +297,6 @@
           "name": "Kazumi_ios_2.1.8_no_sign.ipa",
           "size": 28346335,
           "url": "https://github.com/Predidit/Kazumi/releases/download/2.1.8/Kazumi_ios_2.1.8_no_sign.ipa"
-        }
-      ]
-    },
-    {
-      "tag": "2.1.7",
-      "name": "2.1.7",
-      "pre": false,
-      "draft": false,
-      "date": "2026-06-25",
-      "body": "- 现在 Bangumi 镜像功能与 Bangumi 同步功能可以兼容 (@Predidit)\r\n- 现在缓存视频支持播放记录功能 (@liangyuR)\r\n- 新增可选的追番计数器功能 (@UzawaReisaQwQ)\r\n- 新增实验性 windows arm 支持 (@NihilDigit)",
-      "ipas": [
-        {
-          "name": "Kazumi_ios_2.1.7_no_sign.ipa",
-          "size": 28341165,
-          "url": "https://github.com/Predidit/Kazumi/releases/download/2.1.7/Kazumi_ios_2.1.7_no_sign.ipa"
         }
       ]
     }
@@ -1782,6 +1782,21 @@
     }
   ],
   "venera-app/venera-prime": [
+    {
+      "tag": "v2.4.3",
+      "name": "Venera Prime 2.4.3",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-07",
+      "body": "# Venera Prime 2.4.3\n\n## 修复\n\n- 修复重叠追更检查覆盖未读标记的问题，重复检查只统计实际新增更新。\n- 取消追更检查后不再写入迟到的请求结果，切换追更文件夹保留并展示已有未读更新。\n- 保存章节 ID 基线，识别同一天新增章节；首次建立基线不把全部章节报为更新。\n- 切回已有追更记录的文件夹时继续检测新章节，避免静默初始化吞掉更新。\n- 阅读后的追更列表和首页计数同步刷新，保留进入任意章节即标记整部已读的现有规则。\n- 修复 Android 自选存储目录的下载完整性校验，调整下载元数据读写以兼容 SAF。\n- 恢复漫画源目录中版本号下的描述。\n- 历史记录增加本地搜索及上次阅读日期、时间。\n- Linux AppImage 打包 WebKit 库、辅助进程、注入模块和网络依赖。\n\n## 验证范围\n\n- 自动化回归覆盖重叠检查、同日新增章节、取消请求、基线建立、未读列表和已读刷新。\n- Android 集成测试使用独立包名及隔离临时数据，避免测试运行器卸载普通应用；测试不使用用户账户或 WebDAV 设置。\n- 第三方漫画源的章节标识变化、ARM64 SteamOS 兼容性仍需目标环境验证。\n",
+      "ipas": [
+        {
+          "name": "venera-prime-ios-2.4.3+243.ipa",
+          "size": 16048075,
+          "url": "https://github.com/venera-app/venera-prime/releases/download/v2.4.3/venera-prime-ios-2.4.3%2B243.ipa"
+        }
+      ]
+    },
     {
       "tag": "v2.4.2",
       "name": "Venera Prime 2.4.2",
