@@ -374,5 +374,13 @@
     "displayName": "Venera Prime",
     "minOSVersion": "14.0",
     "size": 16048075
+  },
+  "https://github.com/Kyosee/VeneraX/releases/download/v2.3.5/VeneraX-ios-2.3.5%2B248.ipa": {
+    "bundleIdentifier": "io.github.kyosee.venera",
+    "version": "2.3.5",
+    "buildVersion": "248",
+    "displayName": "VeneraX",
+    "minOSVersion": "16.0",
+    "size": 38817938
   }
 }
