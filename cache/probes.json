@@ -382,5 +382,13 @@
     "displayName": "VeneraX",
     "minOSVersion": "16.0",
     "size": 38817938
+  },
+  "https://github.com/Kyosee/VeneraX/releases/download/v2.3.6/VeneraX-ios-2.3.6%2B249.ipa": {
+    "bundleIdentifier": "io.github.kyosee.venera",
+    "version": "2.3.6",
+    "buildVersion": "249",
+    "displayName": "VeneraX",
+    "minOSVersion": "16.0",
+    "size": 38818608
   }
 }

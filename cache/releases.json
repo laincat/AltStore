@@ -907,6 +907,21 @@
   ],
   "Kyosee/VeneraX": [
     {
+      "tag": "v2.3.6",
+      "name": "v2.3.6",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-09",
+      "body": "> **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v2.3.6/release-notes/v2.3.6.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v2.3.6/release-notes/v2.3.6.zh-CN.md)\n\n## What's Changed\n\n### Added\n- No new features were added in this release.\n\n### Changed\n- No other feature changes in this release.\n\n### Fixed\n- Fixed blank covers after opening details and returning when the same comic appears in multiple home sections, such as History, Read Later or Local.\n- Fixed the Tasks page showing an error instead of the empty list after an expanded upload task finishes.\n- Fixed task cards losing or sharing their expanded state after filtering the task list.\n\n### Removed\n- No features were removed in this release.\n\n**Full Changelog**: https://github.com/Kyosee/VeneraX/compare/v2.3.5...v2.3.6\n",
+      "ipas": [
+        {
+          "name": "VeneraX-ios-2.3.6+249.ipa",
+          "size": 38818608,
+          "url": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.6/VeneraX-ios-2.3.6%2B249.ipa"
+        }
+      ]
+    },
+    {
       "tag": "v2.3.5",
       "name": "v2.3.5",
       "pre": false,
@@ -1188,21 +1203,6 @@
           "name": "venera-ios-2.2.0+229.ipa",
           "size": 34928350,
           "url": "https://github.com/Kyosee/VeneraX/releases/download/v2.2.0/venera-ios-2.2.0%2B229.ipa"
-        }
-      ]
-    },
-    {
-      "tag": "v2.1.12",
-      "name": "v2.1.12",
-      "pre": false,
-      "draft": false,
-      "date": "2026-07-23",
-      "body": "> 🌐 **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v2.1.12/release-notes/v2.1.12.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v2.1.12/release-notes/v2.1.12.zh-CN.md)\n\n## What's Changed\n\n### Added\n- AI comic-page translation: while reading, page text can be translated and overlaid directly on the image, keeping the original artwork. Turned on per comic.\n- Pre-translate whole chapters ahead of time from a comic's menu, with a chapter picker and live progress; already-translated chapters are recognized across restarts.\n- Per-comic glossary: view and edit translated terms to keep names consistent across chapters, with a blocked-terms list for words you don't want translated.\n- Test translation button in settings to check your endpoint with a sample line before reading.\n- Choice of translation target language, now including Japanese, Korean, French, German, Spanish and Russian.\n- Downloadable on-device text-recognition models, organized by text detection and text recognition.\n- A help entry in AI translation settings that explains setup and usage in plain language.\n- WebDAV sync gains a \"sync local comic library\" toggle.\n- Progress bar while checking for follow-updates.\n\n### Changed\n- Translation results are now saved permanently and included in sync, so a page is only translated once.\n- Vertical text is now supported when overlaying translations on tall, narrow CJK bubbles.\n- Before pre-translating multiple chapters, an estimate of request volume is shown to avoid unexpected cost on paid endpoints.\n- Refined the translation prompt for a more natural, colloquial manga tone.\n- Minor icon visual tweak for a more comfortable look.\n\n### Fixed\n- Batch update check no longer misses comics with non-standard version numbers and wrongly reports no update.\n- Moving with one finger after zooming into an image no longer accidentally triggers swipe-to-favorite.\n- The reader top bar now reflects translating / failed status in real time.\n\n**Full Changelog",
-      "ipas": [
-        {
-          "name": "venera-ios-2.1.12+228.ipa",
-          "size": 34891546,
-          "url": "https://github.com/Kyosee/VeneraX/releases/download/v2.1.12/venera-ios-2.1.12%2B228.ipa"
         }
       ]
     }

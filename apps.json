@@ -231,7 +231,7 @@
       "developerName": "Kyosee",
       "subtitle": "多图源漫画阅读器",
       "localizedDescription": "原版 Venera 的个人维护增强分支，支持通过插件接入多种漫画图源，提供本地收藏、阅读进度同步等能力。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Kyosee/VeneraX",
-      "iconURL": "https://raw.githubusercontent.com/Kyosee/VeneraX/v2.3.5/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Kyosee/VeneraX/v2.3.6/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#4A8FE7",
       "category": "books",
       "appPermissions": {
@@ -243,39 +243,39 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.3.5",
-              "date": "2026-10-08",
-              "buildVersion": "248",
-              "buildNumber": "248",
-              "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Import PDF files as local comics.\n- Reorder comic chapters in batches.\n- Choose a custom comic cache directory, with a folder picker and an option to restore the default location.\n- Connect translation services through custom scripts, with an example and a test panel.\n- Search tasks and combine task type and status filters.\n- See whether reading settings come from global, device or per-comic preferences, and restore inherited values individually.\nChanged\n- Settings categories now have short descriptions, AI Translation has its own entry, and wide-screen settings open with content already selected.\n- Settings search opens and highlights t…",
-              "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.5/VeneraX-ios-2.3.5%2B248.ipa",
-              "size": 38817938,
+              "version": "2.3.6",
+              "date": "2026-10-09",
+              "buildVersion": "249",
+              "buildNumber": "249",
+              "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- No new features were added in this release.\nChanged\n- No other feature changes in this release.\nFixed\n- Fixed blank covers after opening details and returning when the same comic appears in multiple home sections, such as History, Read Later or Local.\n- Fixed the Tasks page showing an error instead of the empty list after an expanded upload task finishes.\n- Fixed task cards losing or sharing their expanded state after filtering the task list.\nRemoved\n- No features were removed in this release.\n\nFull Changelog: https://github.com/Kyosee/VeneraX/compare/v2.3.5...v2.3.6",
+              "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.6/VeneraX-ios-2.3.6%2B249.ipa",
+              "size": 38818608,
               "minOSVersion": "16.0",
-              "releaseTag": "v2.3.5",
-              "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.5"
+              "releaseTag": "v2.3.6",
+              "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.6"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.3.5",
-          "date": "2026-10-08",
-          "buildVersion": "248",
-          "buildNumber": "248",
-          "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Import PDF files as local comics.\n- Reorder comic chapters in batches.\n- Choose a custom comic cache directory, with a folder picker and an option to restore the default location.\n- Connect translation services through custom scripts, with an example and a test panel.\n- Search tasks and combine task type and status filters.\n- See whether reading settings come from global, device or per-comic preferences, and restore inherited values individually.\nChanged\n- Settings categories now have short descriptions, AI Translation has its own entry, and wide-screen settings open with content already selected.\n- Settings search opens and highlights t…",
-          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.5/VeneraX-ios-2.3.5%2B248.ipa",
-          "size": 38817938,
+          "version": "2.3.6",
+          "date": "2026-10-09",
+          "buildVersion": "249",
+          "buildNumber": "249",
+          "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- No new features were added in this release.\nChanged\n- No other feature changes in this release.\nFixed\n- Fixed blank covers after opening details and returning when the same comic appears in multiple home sections, such as History, Read Later or Local.\n- Fixed the Tasks page showing an error instead of the empty list after an expanded upload task finishes.\n- Fixed task cards losing or sharing their expanded state after filtering the task list.\nRemoved\n- No features were removed in this release.\n\nFull Changelog: https://github.com/Kyosee/VeneraX/compare/v2.3.5...v2.3.6",
+          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.6/VeneraX-ios-2.3.6%2B249.ipa",
+          "size": 38818608,
           "minOSVersion": "16.0",
-          "releaseTag": "v2.3.5",
-          "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.5"
+          "releaseTag": "v2.3.6",
+          "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.6"
         }
       ],
-      "version": "2.3.5",
-      "versionDate": "2026-10-08",
-      "versionDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Import PDF files as local comics.\n- Reorder comic chapters in batches.\n- Choose a custom comic cache directory, with a folder picker and an option to restore the default location.\n- Connect translation services through custom scripts, with an example and a test panel.\n- Search tasks and combine task type and status filters.\n- See whether reading settings come from global, device or per-comic preferences, and restore inherited values individually.\nChanged\n- Settings categories now have short descriptions, AI Translation has its own entry, and wide-screen settings open with content already selected.\n- Settings search opens and highlights t…",
-      "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.5/VeneraX-ios-2.3.5%2B248.ipa",
-      "size": 38817938,
+      "version": "2.3.6",
+      "versionDate": "2026-10-09",
+      "versionDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- No new features were added in this release.\nChanged\n- No other feature changes in this release.\nFixed\n- Fixed blank covers after opening details and returning when the same comic appears in multiple home sections, such as History, Read Later or Local.\n- Fixed the Tasks page showing an error instead of the empty list after an expanded upload task finishes.\n- Fixed task cards losing or sharing their expanded state after filtering the task list.\nRemoved\n- No features were removed in this release.\n\nFull Changelog: https://github.com/Kyosee/VeneraX/compare/v2.3.5...v2.3.6",
+      "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.6/VeneraX-ios-2.3.6%2B249.ipa",
+      "size": 38818608,
       "minOSVersion": "16.0"
     },
     {
@@ -553,7 +553,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 9 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "tintColor": "#7C5CFF",
       "notify": false
     }
