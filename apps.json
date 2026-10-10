@@ -284,7 +284,7 @@
       "developerName": "venera-app",
       "subtitle": "次世代多图源漫画阅读器",
       "localizedDescription": "原版 Venera 的次世代重写版，Flutter + Rust 构建。支持本地漫画与网络图源阅读、用 JavaScript 编写自定义漫画源、收藏管理、下载、评论与标签查看；中文标签翻译来自 EhTagTranslation 项目。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/venera-app/venera-prime",
-      "iconURL": "https://raw.githubusercontent.com/venera-app/venera-prime/v2.4.3/assets/app_icon.png",
+      "iconURL": "https://raw.githubusercontent.com/venera-app/venera-prime/v2.4.4/assets/app_icon.png",
       "tintColor": "#0784FC",
       "category": "books",
       "appPermissions": {
@@ -296,39 +296,39 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.4.3",
-              "date": "2026-10-07",
-              "buildVersion": "243",
-              "buildNumber": "243",
-              "localizedDescription": "Venera Prime 2.4.3\n修复\n\n- 修复重叠追更检查覆盖未读标记的问题，重复检查只统计实际新增更新。\n- 取消追更检查后不再写入迟到的请求结果，切换追更文件夹保留并展示已有未读更新。\n- 保存章节 ID 基线，识别同一天新增章节；首次建立基线不把全部章节报为更新。\n- 切回已有追更记录的文件夹时继续检测新章节，避免静默初始化吞掉更新。\n- 阅读后的追更列表和首页计数同步刷新，保留进入任意章节即标记整部已读的现有规则。\n- 修复 Android 自选存储目录的下载完整性校验，调整下载元数据读写以兼容 SAF。\n- 恢复漫画源目录中版本号下的描述。\n- 历史记录增加本地搜索及上次阅读日期、时间。\n- Linux AppImage 打包 WebKit 库、辅助进程、注入模块和网络依赖。\n验证范围\n\n- 自动化回归覆盖重叠检查、同日新增章节、取消请求、基线建立、未读列表和已读刷新。\n- Android 集成测试使用独立包名及隔离临时数据，避免测试运行器卸载普通应用；测试不使用用户账户或 WebDAV 设置。\n- 第三方漫画源的章节标识变化、ARM64 SteamOS 兼容性仍需目标环境验证。",
-              "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.3/venera-prime-ios-2.4.3%2B243.ipa",
-              "size": 16048075,
+              "version": "2.4.4",
+              "date": "2026-10-10",
+              "buildVersion": "244",
+              "buildNumber": "244",
+              "localizedDescription": "Venera Prime 2.4.4\n本次更新\n\n- 双页阅读 #26（@tkp206093）：阅读设置中选择左右翻页的画廊模式后，可开启“双页模式”。横竖屏每屏并排两页，支持从左到右、从右到左、首页单独显示和奇数末页留白；单双页切换保留阅读位置。\n- 作者搜索 #27（@fanhua2006）：点击详情页作者名称可跳转到当前漫画源搜索，优先沿用源自定义的作者跳转规则；作者标签缺少规则时回退到普通搜索，保留文字选择和复制。\n- WebDAV 自动同步 #28（@Arteiimis）：关闭自动同步后，应用及漫画源保存数据不再触发全量上传，也不会递增数据版本。手动上传仍可使用；重叠请求合并为一个后续上传任务，排队任务执行前重新检查开关，避免保存同步设置后重复上传。\n- 历史记录 #25（@suppermanzero）：修复搜索框多余的返回箭头和顶部留白，新增右侧可拖动滚动条，拖动时显示当前可见记录的日期。\n- 旧备份收藏夹排序：导入上游旧数据时，排序值相同或缺失的收藏夹保留原始顺序，已有手动排序继续生效。\n请更新后验证并反馈\n\n请各位 issue 提出者安装 2.4.4 后，按原来的复现步骤检查。\n\n- 如果问题已解决，请在原 issue 中确认，并及时关闭尚未关闭的 issue。\n- 如果问题仍存在，请继续在原 issue 反馈版本号、系统与设备、漫画源、复现步骤及必要的日志或录屏；已关闭的问题也可继续留言或重新打开。\n- 日志请遮盖账号、密码、令牌和 WebDAV 私有地址。此次关联不代表所有设备、漫画源及服务端都已验证，也不会自动关闭这些 issue。\n\n除本次 #26、#2…",
+              "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.4/venera-prime-ios-2.4.4%2B244.ipa",
+              "size": 16053526,
               "minOSVersion": "14.0",
-              "releaseTag": "v2.4.3",
-              "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.4.3"
+              "releaseTag": "v2.4.4",
+              "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.4.4"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.4.3",
-          "date": "2026-10-07",
-          "buildVersion": "243",
-          "buildNumber": "243",
-          "localizedDescription": "Venera Prime 2.4.3\n修复\n\n- 修复重叠追更检查覆盖未读标记的问题，重复检查只统计实际新增更新。\n- 取消追更检查后不再写入迟到的请求结果，切换追更文件夹保留并展示已有未读更新。\n- 保存章节 ID 基线，识别同一天新增章节；首次建立基线不把全部章节报为更新。\n- 切回已有追更记录的文件夹时继续检测新章节，避免静默初始化吞掉更新。\n- 阅读后的追更列表和首页计数同步刷新，保留进入任意章节即标记整部已读的现有规则。\n- 修复 Android 自选存储目录的下载完整性校验，调整下载元数据读写以兼容 SAF。\n- 恢复漫画源目录中版本号下的描述。\n- 历史记录增加本地搜索及上次阅读日期、时间。\n- Linux AppImage 打包 WebKit 库、辅助进程、注入模块和网络依赖。\n验证范围\n\n- 自动化回归覆盖重叠检查、同日新增章节、取消请求、基线建立、未读列表和已读刷新。\n- Android 集成测试使用独立包名及隔离临时数据，避免测试运行器卸载普通应用；测试不使用用户账户或 WebDAV 设置。\n- 第三方漫画源的章节标识变化、ARM64 SteamOS 兼容性仍需目标环境验证。",
-          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.3/venera-prime-ios-2.4.3%2B243.ipa",
-          "size": 16048075,
+          "version": "2.4.4",
+          "date": "2026-10-10",
+          "buildVersion": "244",
+          "buildNumber": "244",
+          "localizedDescription": "Venera Prime 2.4.4\n本次更新\n\n- 双页阅读 #26（@tkp206093）：阅读设置中选择左右翻页的画廊模式后，可开启“双页模式”。横竖屏每屏并排两页，支持从左到右、从右到左、首页单独显示和奇数末页留白；单双页切换保留阅读位置。\n- 作者搜索 #27（@fanhua2006）：点击详情页作者名称可跳转到当前漫画源搜索，优先沿用源自定义的作者跳转规则；作者标签缺少规则时回退到普通搜索，保留文字选择和复制。\n- WebDAV 自动同步 #28（@Arteiimis）：关闭自动同步后，应用及漫画源保存数据不再触发全量上传，也不会递增数据版本。手动上传仍可使用；重叠请求合并为一个后续上传任务，排队任务执行前重新检查开关，避免保存同步设置后重复上传。\n- 历史记录 #25（@suppermanzero）：修复搜索框多余的返回箭头和顶部留白，新增右侧可拖动滚动条，拖动时显示当前可见记录的日期。\n- 旧备份收藏夹排序：导入上游旧数据时，排序值相同或缺失的收藏夹保留原始顺序，已有手动排序继续生效。\n请更新后验证并反馈\n\n请各位 issue 提出者安装 2.4.4 后，按原来的复现步骤检查。\n\n- 如果问题已解决，请在原 issue 中确认，并及时关闭尚未关闭的 issue。\n- 如果问题仍存在，请继续在原 issue 反馈版本号、系统与设备、漫画源、复现步骤及必要的日志或录屏；已关闭的问题也可继续留言或重新打开。\n- 日志请遮盖账号、密码、令牌和 WebDAV 私有地址。此次关联不代表所有设备、漫画源及服务端都已验证，也不会自动关闭这些 issue。\n\n除本次 #26、#2…",
+          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.4/venera-prime-ios-2.4.4%2B244.ipa",
+          "size": 16053526,
           "minOSVersion": "14.0",
-          "releaseTag": "v2.4.3",
-          "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.4.3"
+          "releaseTag": "v2.4.4",
+          "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.4.4"
         }
       ],
-      "version": "2.4.3",
-      "versionDate": "2026-10-07",
-      "versionDescription": "Venera Prime 2.4.3\n修复\n\n- 修复重叠追更检查覆盖未读标记的问题，重复检查只统计实际新增更新。\n- 取消追更检查后不再写入迟到的请求结果，切换追更文件夹保留并展示已有未读更新。\n- 保存章节 ID 基线，识别同一天新增章节；首次建立基线不把全部章节报为更新。\n- 切回已有追更记录的文件夹时继续检测新章节，避免静默初始化吞掉更新。\n- 阅读后的追更列表和首页计数同步刷新，保留进入任意章节即标记整部已读的现有规则。\n- 修复 Android 自选存储目录的下载完整性校验，调整下载元数据读写以兼容 SAF。\n- 恢复漫画源目录中版本号下的描述。\n- 历史记录增加本地搜索及上次阅读日期、时间。\n- Linux AppImage 打包 WebKit 库、辅助进程、注入模块和网络依赖。\n验证范围\n\n- 自动化回归覆盖重叠检查、同日新增章节、取消请求、基线建立、未读列表和已读刷新。\n- Android 集成测试使用独立包名及隔离临时数据，避免测试运行器卸载普通应用；测试不使用用户账户或 WebDAV 设置。\n- 第三方漫画源的章节标识变化、ARM64 SteamOS 兼容性仍需目标环境验证。",
-      "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.3/venera-prime-ios-2.4.3%2B243.ipa",
-      "size": 16048075,
+      "version": "2.4.4",
+      "versionDate": "2026-10-10",
+      "versionDescription": "Venera Prime 2.4.4\n本次更新\n\n- 双页阅读 #26（@tkp206093）：阅读设置中选择左右翻页的画廊模式后，可开启“双页模式”。横竖屏每屏并排两页，支持从左到右、从右到左、首页单独显示和奇数末页留白；单双页切换保留阅读位置。\n- 作者搜索 #27（@fanhua2006）：点击详情页作者名称可跳转到当前漫画源搜索，优先沿用源自定义的作者跳转规则；作者标签缺少规则时回退到普通搜索，保留文字选择和复制。\n- WebDAV 自动同步 #28（@Arteiimis）：关闭自动同步后，应用及漫画源保存数据不再触发全量上传，也不会递增数据版本。手动上传仍可使用；重叠请求合并为一个后续上传任务，排队任务执行前重新检查开关，避免保存同步设置后重复上传。\n- 历史记录 #25（@suppermanzero）：修复搜索框多余的返回箭头和顶部留白，新增右侧可拖动滚动条，拖动时显示当前可见记录的日期。\n- 旧备份收藏夹排序：导入上游旧数据时，排序值相同或缺失的收藏夹保留原始顺序，已有手动排序继续生效。\n请更新后验证并反馈\n\n请各位 issue 提出者安装 2.4.4 后，按原来的复现步骤检查。\n\n- 如果问题已解决，请在原 issue 中确认，并及时关闭尚未关闭的 issue。\n- 如果问题仍存在，请继续在原 issue 反馈版本号、系统与设备、漫画源、复现步骤及必要的日志或录屏；已关闭的问题也可继续留言或重新打开。\n- 日志请遮盖账号、密码、令牌和 WebDAV 私有地址。此次关联不代表所有设备、漫画源及服务端都已验证，也不会自动关闭这些 issue。\n\n除本次 #26、#2…",
+      "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.4/venera-prime-ios-2.4.4%2B244.ipa",
+      "size": 16053526,
       "minOSVersion": "14.0"
     },
     {
@@ -553,7 +553,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 9 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "tintColor": "#7C5CFF",
       "notify": false
     }
