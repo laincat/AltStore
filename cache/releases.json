@@ -1783,6 +1783,21 @@
   ],
   "venera-app/venera-prime": [
     {
+      "tag": "v2.4.6",
+      "name": "Venera Prime 2.4.6",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-11",
+      "body": "# Venera Prime 2.4.6\n\n## 本次更新\n\n- **AVIF 图片支持 #30**：增加独立的 AVIF 解码能力，解决 Flutter 或系统解码器不支持该格式时图片加载失败的问题。适用于阅读页及使用公共图片加载组件的封面、历史、收藏和本地图片。\n- **AVIF 文件识别与缓存**：识别不同长度的文件头及兼容品牌，避免合法 AVIF 被误判为非图片而重新下载。\n- **透明度、动画与缩放**：保留透明像素、动画帧时长和循环次数，兼容图片缓存缩放；后台按需解码，不一次性展开所有动画帧。\n- **图片处理**：自定义图片处理及 Windows/Linux 图片复制共用兼容解码路径，本地封面查找增加 AVIF 格式。\n- **Android 兼容性**：三种 Android 架构的 AVIF 解码库均采用 16KB ELF 页对齐。\n\n## 验证范围\n\n- 完整回归测试 162 项通过；1 项需要外部地址的可选 TLS 探测按配置跳过。修改文件静态分析通过。\n- Android 真机独立 Profile 测试包的 11 项 AVIF 测试通过，覆盖静态图、透明图、动画、损坏文件、缩放、自定义图片处理及取消排队中的解码请求。\n- Linux x64 发布构建通过，Android 与 Linux 打包后的解码库校验值已核对。\n- 测试使用自制图片。反馈漫画站在验证环境返回 HTTP 403，尚未取得反馈中的原始图片；请 #30 的反馈者升级后按原场景复查。\n- 16KB ELF 检查不等于已在真实 16KB 页设备完成测试；Windows、macOS、iOS、Linux ARM64 的运行效果仍需相应设备反馈。Linux AVIF 解码库要求 glibc 2.34 或更新版本。\n\n## 请更新后验证并反馈\n\n如仍有图片加载失败，请在原 issue 提供设备、系统、漫画源、章节和错误日志；方便时可提供失败图片的原始文件。请遮盖账号、密码、令牌和私有地址。本次发布不会自动关闭 issue。\n",
+      "ipas": [
+        {
+          "name": "venera-prime-ios-2.4.6+246.ipa",
+          "size": 16459736,
+          "url": "https://github.com/venera-app/venera-prime/releases/download/v2.4.6/venera-prime-ios-2.4.6%2B246.ipa"
+        }
+      ]
+    },
+    {
       "tag": "v2.4.5",
       "name": "Venera Prime 2.4.5",
       "pre": false,

@@ -422,5 +422,13 @@
     "displayName": "Breeze",
     "minOSVersion": "15.0",
     "size": 26102438
+  },
+  "https://github.com/venera-app/venera-prime/releases/download/v2.4.6/venera-prime-ios-2.4.6%2B246.ipa": {
+    "bundleIdentifier": "com.github.wgh136.venera.prime",
+    "version": "2.4.6",
+    "buildVersion": "246",
+    "displayName": "Venera Prime",
+    "minOSVersion": "14.0",
+    "size": 16459736
   }
 }

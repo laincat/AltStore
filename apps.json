@@ -284,7 +284,7 @@
       "developerName": "venera-app",
       "subtitle": "次世代多图源漫画阅读器",
       "localizedDescription": "原版 Venera 的次世代重写版，Flutter + Rust 构建。支持本地漫画与网络图源阅读、用 JavaScript 编写自定义漫画源、收藏管理、下载、评论与标签查看；中文标签翻译来自 EhTagTranslation 项目。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/venera-app/venera-prime",
-      "iconURL": "https://raw.githubusercontent.com/venera-app/venera-prime/v2.4.5/assets/app_icon.png",
+      "iconURL": "https://raw.githubusercontent.com/venera-app/venera-prime/v2.4.6/assets/app_icon.png",
       "tintColor": "#0784FC",
       "category": "books",
       "appPermissions": {
@@ -296,39 +296,39 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.4.5",
+              "version": "2.4.6",
               "date": "2026-10-11",
-              "buildVersion": "245",
-              "buildNumber": "245",
-              "localizedDescription": "Venera Prime 2.4.5\n本次更新\n\n- 发现页滚动 #29：刷新按钮显隐改为局部更新，避免滚动方向变化时重建整个发现页及漫画网格，减少已确认的 UI 停顿。\n- 网络连接复用：封面等请求共享 HTTP 客户端，减少重复建立连接；修改代理、DNS、SNI 或证书校验设置后切换连接池，保留正在读取的响应流，各请求认证头独立。\n- 历史批量删除：使用事务批量删除，完成后统一刷新列表，避免逐条删除反复查询整张历史表。\n- 收藏列表：“全部”模式不再逐本查询阅读历史，减少大收藏夹进入及重建时的额外开销。\n- 收藏图片：修复已下载漫画的图片无法正确命中本地文件的问题；按漫画和章节标识读取本地图片，文件缺失时仍可回退到缓存或网络。\n- 滚动条：无日期等拖动标签时取消多余的下一帧重建，保留历史页日期提示更新。\n验证范围\n\n- 完成自动化回归与修改文件静态检查。\n- Android 真机 Profile 集成测试覆盖 HTTP 连接复用、并发复用、请求认证头隔离、代理/DNS 切换、活动响应流保留、本地图片读取及临时数据库批量删除。\n- 在 60Hz Android 设备上复测发现、历史及收藏页面。发现页重复滑动的整页重建尖峰明显减少；首次绘制新文字或图片仍可能存在额外开销，尚不能保证所有设备上的持续卡顿或残影均已解决。\n- 连接数与数据库耗时使用受控本地服务、临时数据库验证，不代表所有漫画源的外网速度或所有设备的性能。\n请更新后验证并反馈\n\n请 #29 的反馈者安装 2.4.5 后，使用相同漫画源和原来的滑动方式复查。若仍有问题，请反馈设备型号、系统、屏幕刷新率、漫画源，以及首次…",
-              "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.5/venera-prime-ios-2.4.5%2B245.ipa",
-              "size": 16058056,
+              "buildVersion": "246",
+              "buildNumber": "246",
+              "localizedDescription": "Venera Prime 2.4.6\n本次更新\n\n- AVIF 图片支持 #30：增加独立的 AVIF 解码能力，解决 Flutter 或系统解码器不支持该格式时图片加载失败的问题。适用于阅读页及使用公共图片加载组件的封面、历史、收藏和本地图片。\n- AVIF 文件识别与缓存：识别不同长度的文件头及兼容品牌，避免合法 AVIF 被误判为非图片而重新下载。\n- 透明度、动画与缩放：保留透明像素、动画帧时长和循环次数，兼容图片缓存缩放；后台按需解码，不一次性展开所有动画帧。\n- 图片处理：自定义图片处理及 Windows/Linux 图片复制共用兼容解码路径，本地封面查找增加 AVIF 格式。\n- Android 兼容性：三种 Android 架构的 AVIF 解码库均采用 16KB ELF 页对齐。\n验证范围\n\n- 完整回归测试 162 项通过；1 项需要外部地址的可选 TLS 探测按配置跳过。修改文件静态分析通过。\n- Android 真机独立 Profile 测试包的 11 项 AVIF 测试通过，覆盖静态图、透明图、动画、损坏文件、缩放、自定义图片处理及取消排队中的解码请求。\n- Linux x64 发布构建通过，Android 与 Linux 打包后的解码库校验值已核对。\n- 测试使用自制图片。反馈漫画站在验证环境返回 HTTP 403，尚未取得反馈中的原始图片；请 #30 的反馈者升级后按原场景复查。\n- 16KB ELF 检查不等于已在真实 16KB 页设备完成测试；Windows、macOS、iOS、Linux ARM64 的运行效果仍需相应设备反馈。Linux A…",
+              "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.6/venera-prime-ios-2.4.6%2B246.ipa",
+              "size": 16459736,
               "minOSVersion": "14.0",
-              "releaseTag": "v2.4.5",
-              "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.4.5"
+              "releaseTag": "v2.4.6",
+              "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.4.6"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.4.5",
+          "version": "2.4.6",
           "date": "2026-10-11",
-          "buildVersion": "245",
-          "buildNumber": "245",
-          "localizedDescription": "Venera Prime 2.4.5\n本次更新\n\n- 发现页滚动 #29：刷新按钮显隐改为局部更新，避免滚动方向变化时重建整个发现页及漫画网格，减少已确认的 UI 停顿。\n- 网络连接复用：封面等请求共享 HTTP 客户端，减少重复建立连接；修改代理、DNS、SNI 或证书校验设置后切换连接池，保留正在读取的响应流，各请求认证头独立。\n- 历史批量删除：使用事务批量删除，完成后统一刷新列表，避免逐条删除反复查询整张历史表。\n- 收藏列表：“全部”模式不再逐本查询阅读历史，减少大收藏夹进入及重建时的额外开销。\n- 收藏图片：修复已下载漫画的图片无法正确命中本地文件的问题；按漫画和章节标识读取本地图片，文件缺失时仍可回退到缓存或网络。\n- 滚动条：无日期等拖动标签时取消多余的下一帧重建，保留历史页日期提示更新。\n验证范围\n\n- 完成自动化回归与修改文件静态检查。\n- Android 真机 Profile 集成测试覆盖 HTTP 连接复用、并发复用、请求认证头隔离、代理/DNS 切换、活动响应流保留、本地图片读取及临时数据库批量删除。\n- 在 60Hz Android 设备上复测发现、历史及收藏页面。发现页重复滑动的整页重建尖峰明显减少；首次绘制新文字或图片仍可能存在额外开销，尚不能保证所有设备上的持续卡顿或残影均已解决。\n- 连接数与数据库耗时使用受控本地服务、临时数据库验证，不代表所有漫画源的外网速度或所有设备的性能。\n请更新后验证并反馈\n\n请 #29 的反馈者安装 2.4.5 后，使用相同漫画源和原来的滑动方式复查。若仍有问题，请反馈设备型号、系统、屏幕刷新率、漫画源，以及首次…",
-          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.5/venera-prime-ios-2.4.5%2B245.ipa",
-          "size": 16058056,
+          "buildVersion": "246",
+          "buildNumber": "246",
+          "localizedDescription": "Venera Prime 2.4.6\n本次更新\n\n- AVIF 图片支持 #30：增加独立的 AVIF 解码能力，解决 Flutter 或系统解码器不支持该格式时图片加载失败的问题。适用于阅读页及使用公共图片加载组件的封面、历史、收藏和本地图片。\n- AVIF 文件识别与缓存：识别不同长度的文件头及兼容品牌，避免合法 AVIF 被误判为非图片而重新下载。\n- 透明度、动画与缩放：保留透明像素、动画帧时长和循环次数，兼容图片缓存缩放；后台按需解码，不一次性展开所有动画帧。\n- 图片处理：自定义图片处理及 Windows/Linux 图片复制共用兼容解码路径，本地封面查找增加 AVIF 格式。\n- Android 兼容性：三种 Android 架构的 AVIF 解码库均采用 16KB ELF 页对齐。\n验证范围\n\n- 完整回归测试 162 项通过；1 项需要外部地址的可选 TLS 探测按配置跳过。修改文件静态分析通过。\n- Android 真机独立 Profile 测试包的 11 项 AVIF 测试通过，覆盖静态图、透明图、动画、损坏文件、缩放、自定义图片处理及取消排队中的解码请求。\n- Linux x64 发布构建通过，Android 与 Linux 打包后的解码库校验值已核对。\n- 测试使用自制图片。反馈漫画站在验证环境返回 HTTP 403，尚未取得反馈中的原始图片；请 #30 的反馈者升级后按原场景复查。\n- 16KB ELF 检查不等于已在真实 16KB 页设备完成测试；Windows、macOS、iOS、Linux ARM64 的运行效果仍需相应设备反馈。Linux A…",
+          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.6/venera-prime-ios-2.4.6%2B246.ipa",
+          "size": 16459736,
           "minOSVersion": "14.0",
-          "releaseTag": "v2.4.5",
-          "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.4.5"
+          "releaseTag": "v2.4.6",
+          "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.4.6"
         }
       ],
-      "version": "2.4.5",
+      "version": "2.4.6",
       "versionDate": "2026-10-11",
-      "versionDescription": "Venera Prime 2.4.5\n本次更新\n\n- 发现页滚动 #29：刷新按钮显隐改为局部更新，避免滚动方向变化时重建整个发现页及漫画网格，减少已确认的 UI 停顿。\n- 网络连接复用：封面等请求共享 HTTP 客户端，减少重复建立连接；修改代理、DNS、SNI 或证书校验设置后切换连接池，保留正在读取的响应流，各请求认证头独立。\n- 历史批量删除：使用事务批量删除，完成后统一刷新列表，避免逐条删除反复查询整张历史表。\n- 收藏列表：“全部”模式不再逐本查询阅读历史，减少大收藏夹进入及重建时的额外开销。\n- 收藏图片：修复已下载漫画的图片无法正确命中本地文件的问题；按漫画和章节标识读取本地图片，文件缺失时仍可回退到缓存或网络。\n- 滚动条：无日期等拖动标签时取消多余的下一帧重建，保留历史页日期提示更新。\n验证范围\n\n- 完成自动化回归与修改文件静态检查。\n- Android 真机 Profile 集成测试覆盖 HTTP 连接复用、并发复用、请求认证头隔离、代理/DNS 切换、活动响应流保留、本地图片读取及临时数据库批量删除。\n- 在 60Hz Android 设备上复测发现、历史及收藏页面。发现页重复滑动的整页重建尖峰明显减少；首次绘制新文字或图片仍可能存在额外开销，尚不能保证所有设备上的持续卡顿或残影均已解决。\n- 连接数与数据库耗时使用受控本地服务、临时数据库验证，不代表所有漫画源的外网速度或所有设备的性能。\n请更新后验证并反馈\n\n请 #29 的反馈者安装 2.4.5 后，使用相同漫画源和原来的滑动方式复查。若仍有问题，请反馈设备型号、系统、屏幕刷新率、漫画源，以及首次…",
-      "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.5/venera-prime-ios-2.4.5%2B245.ipa",
-      "size": 16058056,
+      "versionDescription": "Venera Prime 2.4.6\n本次更新\n\n- AVIF 图片支持 #30：增加独立的 AVIF 解码能力，解决 Flutter 或系统解码器不支持该格式时图片加载失败的问题。适用于阅读页及使用公共图片加载组件的封面、历史、收藏和本地图片。\n- AVIF 文件识别与缓存：识别不同长度的文件头及兼容品牌，避免合法 AVIF 被误判为非图片而重新下载。\n- 透明度、动画与缩放：保留透明像素、动画帧时长和循环次数，兼容图片缓存缩放；后台按需解码，不一次性展开所有动画帧。\n- 图片处理：自定义图片处理及 Windows/Linux 图片复制共用兼容解码路径，本地封面查找增加 AVIF 格式。\n- Android 兼容性：三种 Android 架构的 AVIF 解码库均采用 16KB ELF 页对齐。\n验证范围\n\n- 完整回归测试 162 项通过；1 项需要外部地址的可选 TLS 探测按配置跳过。修改文件静态分析通过。\n- Android 真机独立 Profile 测试包的 11 项 AVIF 测试通过，覆盖静态图、透明图、动画、损坏文件、缩放、自定义图片处理及取消排队中的解码请求。\n- Linux x64 发布构建通过，Android 与 Linux 打包后的解码库校验值已核对。\n- 测试使用自制图片。反馈漫画站在验证环境返回 HTTP 403，尚未取得反馈中的原始图片；请 #30 的反馈者升级后按原场景复查。\n- 16KB ELF 检查不等于已在真实 16KB 页设备完成测试；Windows、macOS、iOS、Linux ARM64 的运行效果仍需相应设备反馈。Linux A…",
+      "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.4.6/venera-prime-ios-2.4.6%2B246.ipa",
+      "size": 16459736,
       "minOSVersion": "14.0"
     },
     {
