@@ -1209,6 +1209,21 @@
   ],
   "deretame/Breeze": [
     {
+      "tag": "v3.0.34",
+      "name": "Breeze v3.0.34",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-11",
+      "body": "## 📝 更新日志\n## [v3.0.34]\n\n### 功能更新\n\n- 新增插件详情页，可查看插件介绍与作者信息\n- 优化登录功能，添加图像验证码支持\n- 追更页新增未读汇总与全部已读\n- 优化漫画独立设置功能\n- 漫画列表支持下拉刷新\n- 插件商店新增直达 GitHub 仓库按钮\n\n### 修复\n\n- 修复部分漫画详情页无法打开的问题\n- 修复禁漫部分图片加载异常的问题\n- 修复搜索栏浮层切换页面后仍悬浮的问题\n- 修复搜索框长按菜单异常收起的问题\n\n### 优化\n\n- 优化插件下载失败提示\n- 优化图片加载性能\n- 优化下载功能\n- 优化部分文本与ui样式\n\n### 杂项\n\n- 此版本起不再支持安卓7\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.34.exe](https://github.com/deretame/Breeze/releases/download/v3.0.34/windows-installer-v3.0.34.exe) |\n| **macOS** | [Breeze-macOS-v3.0.34.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.34/Breeze-macOS-v3.0.34.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.34.apk](https://github.com/deretame/Breeze/releases/download/v3.0.34/app-arm64-v8a-release-v3.0.34.apk) |\n| **iOS** | [Breeze-iOS-v3.0.34.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.34/Breeze-iOS-v3.0.34.ipa) |\n| **Linux** | [breeze-v3.0.34.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.34/breeze-v3.0.34.flatpak) |\n| **Linux (DEB)** | [breeze_3.0.34_amd64-v3.0.34.deb](https://github.com/deretame/Breeze/releases/download/v3.0.34/breeze_3.0.34_amd64-v3.0.34.deb) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
+      "ipas": [
+        {
+          "name": "Breeze-iOS-v3.0.34.ipa",
+          "size": 26102438,
+          "url": "https://github.com/deretame/Breeze/releases/download/v3.0.34/Breeze-iOS-v3.0.34.ipa"
+        }
+      ]
+    },
+    {
       "tag": "v3.0.33",
       "name": "Breeze v3.0.33",
       "pre": false,
@@ -1492,21 +1507,6 @@
           "url": "https://github.com/deretame/Breeze/releases/download/v3.0.14/Breeze-iOS-v3.0.14.ipa"
         }
       ]
-    },
-    {
-      "tag": "v3.0.13",
-      "name": "Breeze v3.0.13",
-      "pre": false,
-      "draft": false,
-      "date": "2026-05-23",
-      "body": "## 📝 更新日志\n## [v3.0.13]\n\n##### v2更新至v3前请先备份好数据以避免数据丢失，更新后可在设置中打开回退开关添加首页和排行版界面\n\n### 功能更新\n\n- 书架-下载添加文件夹管理功能\n- 添加app手势解锁功能\n\n### bug修复\n\n- 修复长时间运行后部分插件无响应的问题\n- 修复插件用户信息无法正常显示的问题\n- 修复搜索屏蔽关键词不生效的问题\n\n### 杂项\n\n- 优化windows安装器的使用体验\n- 优化桌面端关闭偶发错误\n- 优化插件下载体验，添加jsdelivr加速\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.13.exe](https://github.com/deretame/Breeze/releases/download/v3.0.13/windows-installer-v3.0.13.exe) |\n| **macOS** | [Breeze-macOS-v3.0.13.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.13/Breeze-macOS-v3.0.13.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.13.apk](https://github.com/deretame/Breeze/releases/download/v3.0.13/app-arm64-v8a-release-v3.0.13.apk) |\n| **iOS** | [Breeze-iOS-v3.0.13.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.13/Breeze-iOS-v3.0.13.ipa) |\n| **Linux** | [breeze-v3.0.13.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.13/breeze-v3.0.13.flatpak) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
-      "ipas": [
-        {
-          "name": "Breeze-iOS-v3.0.13.ipa",
-          "size": 26967040,
-          "url": "https://github.com/deretame/Breeze/releases/download/v3.0.13/Breeze-iOS-v3.0.13.ipa"
-        }
-      ]
     }
   ],
   "youshen2/PicaX": [
@@ -1782,6 +1782,21 @@
     }
   ],
   "venera-app/venera-prime": [
+    {
+      "tag": "v2.4.5",
+      "name": "Venera Prime 2.4.5",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-11",
+      "body": "# Venera Prime 2.4.5\n\n## 本次更新\n\n- **发现页滚动 #29**：刷新按钮显隐改为局部更新，避免滚动方向变化时重建整个发现页及漫画网格，减少已确认的 UI 停顿。\n- **网络连接复用**：封面等请求共享 HTTP 客户端，减少重复建立连接；修改代理、DNS、SNI 或证书校验设置后切换连接池，保留正在读取的响应流，各请求认证头独立。\n- **历史批量删除**：使用事务批量删除，完成后统一刷新列表，避免逐条删除反复查询整张历史表。\n- **收藏列表**：“全部”模式不再逐本查询阅读历史，减少大收藏夹进入及重建时的额外开销。\n- **收藏图片**：修复已下载漫画的图片无法正确命中本地文件的问题；按漫画和章节标识读取本地图片，文件缺失时仍可回退到缓存或网络。\n- **滚动条**：无日期等拖动标签时取消多余的下一帧重建，保留历史页日期提示更新。\n\n## 验证范围\n\n- 完成自动化回归与修改文件静态检查。\n- Android 真机 Profile 集成测试覆盖 HTTP 连接复用、并发复用、请求认证头隔离、代理/DNS 切换、活动响应流保留、本地图片读取及临时数据库批量删除。\n- 在 60Hz Android 设备上复测发现、历史及收藏页面。发现页重复滑动的整页重建尖峰明显减少；首次绘制新文字或图片仍可能存在额外开销，尚不能保证所有设备上的持续卡顿或残影均已解决。\n- 连接数与数据库耗时使用受控本地服务、临时数据库验证，不代表所有漫画源的外网速度或所有设备的性能。\n\n## 请更新后验证并反馈\n\n请 #29 的反馈者安装 2.4.5 后，使用相同漫画源和原来的滑动方式复查。若仍有问题，请反馈设备型号、系统、屏幕刷新率、漫画源，以及首次浏览和重复浏览是否有区别；本次发布不会自动关闭 issue。\n",
+      "ipas": [
+        {
+          "name": "venera-prime-ios-2.4.5+245.ipa",
+          "size": 16058056,
+          "url": "https://github.com/venera-app/venera-prime/releases/download/v2.4.5/venera-prime-ios-2.4.5%2B245.ipa"
+        }
+      ]
+    },
     {
       "tag": "v2.4.4",
       "name": "Venera Prime 2.4.4",

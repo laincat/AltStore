@@ -406,5 +406,21 @@
     "displayName": "Venera Prime",
     "minOSVersion": "14.0",
     "size": 16053526
+  },
+  "https://github.com/venera-app/venera-prime/releases/download/v2.4.5/venera-prime-ios-2.4.5%2B245.ipa": {
+    "bundleIdentifier": "com.github.wgh136.venera.prime",
+    "version": "2.4.5",
+    "buildVersion": "245",
+    "displayName": "Venera Prime",
+    "minOSVersion": "14.0",
+    "size": 16058056
+  },
+  "https://github.com/deretame/Breeze/releases/download/v3.0.34/Breeze-iOS-v3.0.34.ipa": {
+    "bundleIdentifier": "com.zephyr.breeze",
+    "version": "3.0.34",
+    "buildVersion": "2222",
+    "displayName": "Breeze",
+    "minOSVersion": "15.0",
+    "size": 26102438
   }
 }
