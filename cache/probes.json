@@ -438,5 +438,13 @@
     "displayName": "Animeko",
     "minOSVersion": "14.0",
     "size": 46485035
+  },
+  "https://github.com/venera-app/venera-prime/releases/download/v2.5.0/venera-prime-ios-2.5.0%2B250.ipa": {
+    "bundleIdentifier": "com.github.wgh136.venera.prime",
+    "version": "2.5.0",
+    "buildVersion": "250",
+    "displayName": "Venera Prime",
+    "minOSVersion": "14.0",
+    "size": 16530565
   }
 }
