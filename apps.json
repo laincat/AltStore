@@ -65,7 +65,7 @@
       "developerName": "open-ani",
       "subtitle": "一站式弹幕追番平台",
       "localizedDescription": "集找番、追番、看番于一体的弹幕追番平台，支持 Bangumi 云收藏同步、离线缓存、BitTorrent 与弹幕云过滤。100% Kotlin / Compose Multiplatform 实现。\n\n开源协议：AGPL-3.0　·　项目主页：https://github.com/open-ani/animeko",
-      "iconURL": "https://raw.githubusercontent.com/open-ani/animeko/v6.2.0/app/ios/Animeko/Assets.xcassets/AppIcon.appiconset/1024.png",
+      "iconURL": "https://raw.githubusercontent.com/open-ani/animeko/v6.3.0/app/ios/Animeko/Assets.xcassets/AppIcon.appiconset/1024.png",
       "tintColor": "#3B82F6",
       "category": "entertainment",
       "appPermissions": {
@@ -77,16 +77,16 @@
           "track": "stable",
           "releases": [
             {
-              "version": "6.2.0",
-              "date": "2026-09-26",
-              "buildVersion": "6.2.99",
-              "buildNumber": "6.2.99",
-              "localizedDescription": "- 安卓 TV 版已发布，全新设计精美 UI，更多功能开发中\r\n- 新增显示缓冲进度条，优化缓冲机制\r\n- 新增系列关系图，直观展示正片、续集、番外与衍生作品\r\n- 新增按线路批量缓存\r\n- 支持发送自定义位置和颜色的弹幕\r\n- 搜索支持年份与季度筛选 (#3396 by @Bonger34)\r\n- 新增 GitHub 账号绑定，贡献者可认证以免除广告\r\n\r\n----\r\n\r\n- 新增 Bangumi 收藏冲突处理，可对照两侧收藏、选择保留内容或采用较新的记录，并在合并后同步刷新收藏列表\r\n- 新增「显示原名」设置，可在条目、剧集、搜索、收藏和播放等页面显示原始名称 (#3451 by @azusachino)\r\n- 桌面端图片查看器支持独立窗口、缩放、保存、复制及拖出图片到其他应用，并支持触摸板手势\r\n- 人物与角色页面支持发表评论、回复、表情、点赞和举报\r\n- 剧集卡片支持显示剧照、播放进度和已看完标记，可在设置中关闭剧照显示，翻页时及时清除上一页图片\r\n- 桌面端播放页支持拖入本地视频文件，在当前剧集中直接播放\r\n- 缓存详情页显示下载器状态、视频地址解析进度、连接情况及最近错误，便于排查下载停滞\r\n- 已缓存剧集支持显示观看进度\r\n- 账号设置支持换绑邮箱，以及在保留其他登录方式时解绑邮箱\r\n- 时间表支持显示「时间未定」，跨午夜自动切换日期，并修正剧集播出时间与开播状态判断\r\n- 首次启动直接进入主界面，网络检测失败时显示提示，主题与代理可在设置中调整\r\n- 自动选源优先使用本地缓存，在线资源无结果时可回退到 BT 资源，并优化匹配与等待策略\r\n- 优化数据源线路展示，…",
-              "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.2.0/ani-6.2.0.ipa",
-              "size": 45401084,
+              "version": "6.3.0",
+              "date": "2026-10-13",
+              "buildVersion": "6.3.99",
+              "buildNumber": "6.3.99",
+              "localizedDescription": "- 数据源选择支持手动查找模式，支持直接浏览数据源剧集并记住选择，方便后续切集，同时优化 BT 资源搜索、筛选和列表展示\r\n- 新增热度排行页，可浏览完整的 Bangumi 动画热度榜\r\n- 大幅提升分季拆分放送的动画的选集准确性\r\n- Android 和 iOS 支持系统画中画播放 (#3466 by @GeneralK1ng)\r\n- 优化播放器截图体验，新增角落预览，支持查看、复制与系统分享\r\n- 观看进度支持离线处理, 上线后自动同步\r\n- 剧集列表按正片、特别篇等类型分组，上一集、下一集与自动连播只在同类型剧集之间切换\r\n- 优化 Windows 平台的兼容性和性能\r\n\r\n----\r\n\r\n新功能: \r\n- 改进在线视频插播广告过滤并默认开启，优化起播和续播速度，修复桌面端播放进度跳动，并在 iOS 提供广告过滤开关 (#3471 by @NihilDigit)\r\n- 支持折叠屏的半折叠模式，可在设置关闭 (#3446 by @U29kaXVt)\r\n- PikPak 失败时自动回退 BT 引擎 (#3444 by @NihilDigit)\r\n- Windows 支持多点触控与触控笔输入，图片查看器可双指缩放，改善触摸拖动的响应 (#3461 by @NihilDigit)\r\n- 播放器弹幕设置支持来源管理与时间校准 (#3480 by @Tsukumi233)\r\n- 重新设计数据源设置页，按订阅和自定义分组，订阅支持名称、描述、图标与详情页，可批量启用或禁用数据源，订阅内数据源改名后保留启用状态\r\n- 缓存选源支持手动查找，选定一集后可沿同一线路批量下载其他剧集\r\n- 资…",
+              "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.3.0/ani-6.3.0.ipa",
+              "size": 46485035,
               "minOSVersion": "14.0",
-              "releaseTag": "v6.2.0",
-              "source": "https://github.com/open-ani/animeko/releases/tag/v6.2.0"
+              "releaseTag": "v6.3.0",
+              "source": "https://github.com/open-ani/animeko/releases/tag/v6.3.0"
             }
           ]
         },
@@ -111,6 +111,18 @@
       "versions": [
         {
           "version": "6.3.0",
+          "date": "2026-10-13",
+          "buildVersion": "6.3.99",
+          "buildNumber": "6.3.99",
+          "localizedDescription": "- 数据源选择支持手动查找模式，支持直接浏览数据源剧集并记住选择，方便后续切集，同时优化 BT 资源搜索、筛选和列表展示\r\n- 新增热度排行页，可浏览完整的 Bangumi 动画热度榜\r\n- 大幅提升分季拆分放送的动画的选集准确性\r\n- Android 和 iOS 支持系统画中画播放 (#3466 by @GeneralK1ng)\r\n- 优化播放器截图体验，新增角落预览，支持查看、复制与系统分享\r\n- 观看进度支持离线处理, 上线后自动同步\r\n- 剧集列表按正片、特别篇等类型分组，上一集、下一集与自动连播只在同类型剧集之间切换\r\n- 优化 Windows 平台的兼容性和性能\r\n\r\n----\r\n\r\n新功能: \r\n- 改进在线视频插播广告过滤并默认开启，优化起播和续播速度，修复桌面端播放进度跳动，并在 iOS 提供广告过滤开关 (#3471 by @NihilDigit)\r\n- 支持折叠屏的半折叠模式，可在设置关闭 (#3446 by @U29kaXVt)\r\n- PikPak 失败时自动回退 BT 引擎 (#3444 by @NihilDigit)\r\n- Windows 支持多点触控与触控笔输入，图片查看器可双指缩放，改善触摸拖动的响应 (#3461 by @NihilDigit)\r\n- 播放器弹幕设置支持来源管理与时间校准 (#3480 by @Tsukumi233)\r\n- 重新设计数据源设置页，按订阅和自定义分组，订阅支持名称、描述、图标与详情页，可批量启用或禁用数据源，订阅内数据源改名后保留启用状态\r\n- 缓存选源支持手动查找，选定一集后可沿同一线路批量下载其他剧集\r\n- 资…",
+          "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.3.0/ani-6.3.0.ipa",
+          "size": 46485035,
+          "minOSVersion": "14.0",
+          "releaseTag": "v6.3.0",
+          "source": "https://github.com/open-ani/animeko/releases/tag/v6.3.0"
+        },
+        {
+          "version": "6.3.0",
           "date": "2026-10-09",
           "buildVersion": "6.3.31",
           "buildNumber": "6.3.31",
@@ -120,25 +132,13 @@
           "minOSVersion": "14.0",
           "releaseTag": "v6.3.0-beta01",
           "source": "https://github.com/open-ani/animeko/releases/tag/v6.3.0-beta01"
-        },
-        {
-          "version": "6.2.0",
-          "date": "2026-09-26",
-          "buildVersion": "6.2.99",
-          "buildNumber": "6.2.99",
-          "localizedDescription": "- 安卓 TV 版已发布，全新设计精美 UI，更多功能开发中\r\n- 新增显示缓冲进度条，优化缓冲机制\r\n- 新增系列关系图，直观展示正片、续集、番外与衍生作品\r\n- 新增按线路批量缓存\r\n- 支持发送自定义位置和颜色的弹幕\r\n- 搜索支持年份与季度筛选 (#3396 by @Bonger34)\r\n- 新增 GitHub 账号绑定，贡献者可认证以免除广告\r\n\r\n----\r\n\r\n- 新增 Bangumi 收藏冲突处理，可对照两侧收藏、选择保留内容或采用较新的记录，并在合并后同步刷新收藏列表\r\n- 新增「显示原名」设置，可在条目、剧集、搜索、收藏和播放等页面显示原始名称 (#3451 by @azusachino)\r\n- 桌面端图片查看器支持独立窗口、缩放、保存、复制及拖出图片到其他应用，并支持触摸板手势\r\n- 人物与角色页面支持发表评论、回复、表情、点赞和举报\r\n- 剧集卡片支持显示剧照、播放进度和已看完标记，可在设置中关闭剧照显示，翻页时及时清除上一页图片\r\n- 桌面端播放页支持拖入本地视频文件，在当前剧集中直接播放\r\n- 缓存详情页显示下载器状态、视频地址解析进度、连接情况及最近错误，便于排查下载停滞\r\n- 已缓存剧集支持显示观看进度\r\n- 账号设置支持换绑邮箱，以及在保留其他登录方式时解绑邮箱\r\n- 时间表支持显示「时间未定」，跨午夜自动切换日期，并修正剧集播出时间与开播状态判断\r\n- 首次启动直接进入主界面，网络检测失败时显示提示，主题与代理可在设置中调整\r\n- 自动选源优先使用本地缓存，在线资源无结果时可回退到 BT 资源，并优化匹配与等待策略\r\n- 优化数据源线路展示，…",
-          "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.2.0/ani-6.2.0.ipa",
-          "size": 45401084,
-          "minOSVersion": "14.0",
-          "releaseTag": "v6.2.0",
-          "source": "https://github.com/open-ani/animeko/releases/tag/v6.2.0"
         }
       ],
-      "version": "6.2.0",
-      "versionDate": "2026-09-26",
-      "versionDescription": "- 安卓 TV 版已发布，全新设计精美 UI，更多功能开发中\r\n- 新增显示缓冲进度条，优化缓冲机制\r\n- 新增系列关系图，直观展示正片、续集、番外与衍生作品\r\n- 新增按线路批量缓存\r\n- 支持发送自定义位置和颜色的弹幕\r\n- 搜索支持年份与季度筛选 (#3396 by @Bonger34)\r\n- 新增 GitHub 账号绑定，贡献者可认证以免除广告\r\n\r\n----\r\n\r\n- 新增 Bangumi 收藏冲突处理，可对照两侧收藏、选择保留内容或采用较新的记录，并在合并后同步刷新收藏列表\r\n- 新增「显示原名」设置，可在条目、剧集、搜索、收藏和播放等页面显示原始名称 (#3451 by @azusachino)\r\n- 桌面端图片查看器支持独立窗口、缩放、保存、复制及拖出图片到其他应用，并支持触摸板手势\r\n- 人物与角色页面支持发表评论、回复、表情、点赞和举报\r\n- 剧集卡片支持显示剧照、播放进度和已看完标记，可在设置中关闭剧照显示，翻页时及时清除上一页图片\r\n- 桌面端播放页支持拖入本地视频文件，在当前剧集中直接播放\r\n- 缓存详情页显示下载器状态、视频地址解析进度、连接情况及最近错误，便于排查下载停滞\r\n- 已缓存剧集支持显示观看进度\r\n- 账号设置支持换绑邮箱，以及在保留其他登录方式时解绑邮箱\r\n- 时间表支持显示「时间未定」，跨午夜自动切换日期，并修正剧集播出时间与开播状态判断\r\n- 首次启动直接进入主界面，网络检测失败时显示提示，主题与代理可在设置中调整\r\n- 自动选源优先使用本地缓存，在线资源无结果时可回退到 BT 资源，并优化匹配与等待策略\r\n- 优化数据源线路展示，…",
-      "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.2.0/ani-6.2.0.ipa",
-      "size": 45401084,
+      "version": "6.3.0",
+      "versionDate": "2026-10-13",
+      "versionDescription": "- 数据源选择支持手动查找模式，支持直接浏览数据源剧集并记住选择，方便后续切集，同时优化 BT 资源搜索、筛选和列表展示\r\n- 新增热度排行页，可浏览完整的 Bangumi 动画热度榜\r\n- 大幅提升分季拆分放送的动画的选集准确性\r\n- Android 和 iOS 支持系统画中画播放 (#3466 by @GeneralK1ng)\r\n- 优化播放器截图体验，新增角落预览，支持查看、复制与系统分享\r\n- 观看进度支持离线处理, 上线后自动同步\r\n- 剧集列表按正片、特别篇等类型分组，上一集、下一集与自动连播只在同类型剧集之间切换\r\n- 优化 Windows 平台的兼容性和性能\r\n\r\n----\r\n\r\n新功能: \r\n- 改进在线视频插播广告过滤并默认开启，优化起播和续播速度，修复桌面端播放进度跳动，并在 iOS 提供广告过滤开关 (#3471 by @NihilDigit)\r\n- 支持折叠屏的半折叠模式，可在设置关闭 (#3446 by @U29kaXVt)\r\n- PikPak 失败时自动回退 BT 引擎 (#3444 by @NihilDigit)\r\n- Windows 支持多点触控与触控笔输入，图片查看器可双指缩放，改善触摸拖动的响应 (#3461 by @NihilDigit)\r\n- 播放器弹幕设置支持来源管理与时间校准 (#3480 by @Tsukumi233)\r\n- 重新设计数据源设置页，按订阅和自定义分组，订阅支持名称、描述、图标与详情页，可批量启用或禁用数据源，订阅内数据源改名后保留启用状态\r\n- 缓存选源支持手动查找，选定一集后可沿同一线路批量下载其他剧集\r\n- 资…",
+      "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.3.0/ani-6.3.0.ipa",
+      "size": 46485035,
       "minOSVersion": "14.0",
       "beta": true
     },
@@ -553,7 +553,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 9 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-10-11",
+      "date": "2026-10-13",
       "tintColor": "#7C5CFF",
       "notify": false
     }

@@ -303,6 +303,21 @@
   ],
   "open-ani/animeko": [
     {
+      "tag": "v6.3.0",
+      "name": "6.3.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-13",
+      "body": "- 数据源选择支持手动查找模式，支持直接浏览数据源剧集并记住选择，方便后续切集，同时优化 BT 资源搜索、筛选和列表展示\r\n- 新增热度排行页，可浏览完整的 Bangumi 动画热度榜\r\n- 大幅提升分季拆分放送的动画的选集准确性\r\n- Android 和 iOS 支持系统画中画播放 (#3466 by @GeneralK1ng)\r\n- 优化播放器截图体验，新增角落预览，支持查看、复制与系统分享\r\n- 观看进度支持离线处理, 上线后自动同步\r\n- 剧集列表按正片、特别篇等类型分组，上一集、下一集与自动连播只在同类型剧集之间切换\r\n- 优化 Windows 平台的兼容性和性能\r\n\r\n----\r\n\r\n新功能: \r\n- 改进在线视频插播广告过滤并默认开启，优化起播和续播速度，修复桌面端播放进度跳动，并在 iOS 提供广告过滤开关 (#3471 by @NihilDigit)\r\n- 支持折叠屏的半折叠模式，可在设置关闭 (#3446 by @U29kaXVt)\r\n- PikPak 失败时自动回退 BT 引擎 (#3444 by @NihilDigit)\r\n- Windows 支持多点触控与触控笔输入，图片查看器可双指缩放，改善触摸拖动的响应 (#3461 by @NihilDigit)\r\n- 播放器弹幕设置支持来源管理与时间校准 (#3480 by @Tsukumi233)\r\n- 重新设计数据源设置页，按订阅和自定义分组，订阅支持名称、描述、图标与详情页，可批量启用或禁用数据源，订阅内数据源改名后保留启用状态\r\n- 缓存选源支持手动查找，选定一集后可沿同一线路批量下载其他剧集\r\n- 资源自动匹配支持在主名称搜索失败时尝试季度别名和系列名，并优先使用此前搜索成功的关键词\r\n- 自动匹配与手动选集支持分段放送番剧的整季合并页及连续编号，改善后半部分的剧集对应关系\r\n- 电视版支持 Android 8.0\r\n- 电视版支持启动时自动检查更新，也可在设置中手动检查、下载并安装更新\r\n- 账号设置新增注销账号功能，确认后可永久删除账号及其数据\r\n- 收藏或评分后，条目详情页立即更新全站收藏数与评分统计\r\n- 搜索补全支持排除已看过和已抛弃的条目，最高排名筛选仅展示有 Bangumi 排名的条目\r\n- 加快应用更新的下载速度\r\n- 提升资源较多时的列表筛选速度\r\n- 自定义数据源编辑器分组展示列表规则与自动匹配设置，支持单独开关自动匹配、设置数据源等级，并精简导出配置\r\n- 自定义数据源支持通过 url template 生成详情地址，兼容搜索结果仅返回条目编号的网站 (#3574 by @wdw89)\r\n\r\n问题修复:\r\n- 网页数据源支持统一设置浏览器 UA，覆盖搜索、验证码验证、播放页解析与视频播放，并修复桌面验证码页面偶尔无法打开的问题\r\n- 移除 Selector 与 RSS 数据源中无实际作用的「使用条目名称过滤」开关\r\n- 修复存在未完成下载时，已缓存剧集无法被找到并离线播放的问题 (#3495 by @lmikey9550)\r\n- 修复 Android 切换全屏、画中画、窗口布局或切到后台后黑屏、播放中断的问题\r\n- 修复 Android 复制日志时崩溃，以及开启画质增强后切换全屏可能卡死的问题\r\n- 修复桌面端网页解析初始化较慢时网页源无法播放的问题，网页引擎不可用时提示重启应用，避免反复自动换源\r\n- 修复桌面端最小化到托盘时崩溃的问题\r\n- 修复弹弹 play 在分段放送番剧中匹配错集，以及匹配请求失败时弹幕获取异常的问题\r\n- 修复搜索结果被过滤后分页提前结束、遗漏后续结果的问题 (#3514 by @BagunoMushi)\r\n- 修复隐藏 NSFW 时仍可通过分级筛选搜出相关条目的问题，隐藏时不显示分级筛选\r\n- 修复動漫花園搜索含冒号的番剧名时结果异常和长时间翻页的问题\r\n- 修复电视版播放时屏幕自动熄灭的问题 (#3563 by @nekomoyi)\r\n- 画中画模式下隐藏一起看悬浮窗，退出后保留原来的位置 (#3567 by @GeneralK1ng)\r\n- 修复从选集对话框进入播放页后，侧滑返回手势被取消的问题\r\n- 修复桌面端全屏侧边栏开关异常，全屏默认隐藏侧边栏，并分别记住窗口与全屏模式的开关状态\r\n- 修复横屏播放时画面受屏幕挖孔影响而偏离中心的问题\r\n- 修复 iOS 退出全屏后状态栏间距消失的问题\r\n- 修复播放页手动选择的资源匹配状态显示不准确的问题\r\n- 修复探索页热度轮播在窗口变宽后出现空白且无法点击的问题\r\n- 修复下载选集页快捷选择按钮在窄屏下被挤压或遮挡的问题\r\n- 改善电视版列表刷新后的焦点恢复，当前卡片被移除时将焦点恢复到相邻项\r\n- 改善电视版探索页的无障碍朗读，避免朗读滚动进度\r\n",
+      "ipas": [
+        {
+          "name": "ani-6.3.0.ipa",
+          "size": 46485035,
+          "url": "https://github.com/open-ani/animeko/releases/download/v6.3.0/ani-6.3.0.ipa"
+        }
+      ]
+    },
+    {
       "tag": "v6.3.0-beta01",
       "name": "6.3.0-beta01",
       "pre": true,
@@ -584,21 +599,6 @@
           "name": "ani-5.7.0-alpha01.ipa",
           "size": 30342304,
           "url": "https://github.com/open-ani/animeko/releases/download/v5.7.0-alpha01/ani-5.7.0-alpha01.ipa"
-        }
-      ]
-    },
-    {
-      "tag": "v5.6.0",
-      "name": "5.6.0",
-      "pre": false,
-      "draft": false,
-      "date": "2026-05-28",
-      "body": "- 首页推荐、放送日程、搜索和短评改用 Animeko 服务\r\n- 启用剧集评论表情回复，并优化评论区交互和显示效果\r\n- 优先使用弹弹 play 的 Bangumi ID 映射，提升条目匹配准确性\r\n\r\n----\r\n\r\n- 增加更多验证码检测，并在离开剧集页后及时清理网页验证码资源\r\n- 更多界面文本支持多语言显示 (#2930 by @Mystery406)\r\n- 修复搜索结果使用键盘向下导航时可能选中无效位置的问题 (#3021 by @Mystery406)\r\n- 修复 macOS 退出后桌面端窗口大小无法保留的问题 (#3032 by @SakuraKy)\r\n- 修复 Bangumi 登录过期提示中的 Snackbar 布局问题\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v5.5.2...v5.6.0\r\n\r\n[//]: # (ANI-SERVER-MAGIC-SEPARATOR)\r\n\r\n[//]: # (注意: api server 依赖这个特殊分隔符)\r\n\r\n[//]: # (对于所有可用的变量列表, 参考 CI release.yml 的 step release-notes)\r\n\r\n[github-win-x64]: https://github.com/open-ani/ani/releases/download/v5.6.0/ani-5.6.0-windows-x86_64.zip\r\n\r\n[github-mac-x64]: https://github.com/open-ani/ani/releases/download/v5.6.0/ani-5.6.0-macos-x86_64.dmg\r\n\r\n[github-mac-aarch64]: https://github.com/open-ani/ani/releases/download/v5.6.0/ani-5.6.0-macos-aarch64.dmg\r\n\r\n[github-android]: https://github.com/open-ani/ani/releases/download/v5.6.0/ani-5.6.0-universal.apk\r\n\r\n[github-android-arm64-v8a]: https://github.com/open-ani/ani/releases/download/v5.6.0/ani-5.6.0-arm64-v8a.apk\r\n\r\n[github-android-armeabi-v7a]: https://github.com/open-ani/ani/releases/download/v5.6.0/ani-5.6.0-armeabi-v7a.apk\r\n\r\n[github-android-x86_64]: https://github.com/open-ani/ani/releases/download/v5.6.0/ani-5.6.0-x86_64.apk\r\n\r\n[cf-win-x64]: https://d.myani.org/v5.6.0/ani-5.6.0-windows-x86_64.zip\r\n\r\n[cf-linux-x64]: https://d.myani.org/v5.6.0/ani-5.6.0-linux-x86_64.appimage\r\n\r\n[cf-mac-x64]: https://d.myani.org/v5.6.0/ani-5.6.0-macos-x86_64.zip\r\n\r\n[cf-mac-aarch64]: https://d.myani.org/v5.6.0/ani-5.6.0-macos-aarch64.dmg\r\n\r\n[cf-ios]: https://d.myani.org/v5.6.0/ani-5.6.0.ipa\r\n\r\n[cf-android]: https://d.myani.org/v5.6.0/ani-5.6.0-universal.apk\r\n\r\n[cf-android-arm64-v8a]: https://d.myani.org/v5.6.0/ani-5.6.0-arm64-v8a.apk\r\n\r\n[cf-android-armeabi-v7a]: https://d.myani.org/v5.6.0/ani-5.6.0-armeabi-v7a.apk\r\n\r\n[cf-android-x86_64]: https://d.myani.org/v5.6.0/ani-5.6.0-x86_64.apk\r\n\r\n[ghproxy-win-x64]: https://ghfast.top",
-      "ipas": [
-        {
-          "name": "ani-5.6.0.ipa",
-          "size": 30337983,
-          "url": "https://github.com/open-ani/animeko/releases/download/v5.6.0/ani-5.6.0.ipa"
         }
       ]
     }
@@ -1890,6 +1890,21 @@
   ],
   "CyrilPeng/Venera-Next": [
     {
+      "tag": "v1.18.0-rc.1",
+      "name": "v1.18.0-rc.1",
+      "pre": true,
+      "draft": false,
+      "date": "2026-10-13",
+      "body": "### 预发布说明\r\n\r\n- 发布 v1.18.0-rc.1（构建号 229），用于验证 v1.17.0 之后的大范围架构重构、稳定性修复及阅读体验增强；正式稳定版仍为 v1.17.0。\r\n- 继续沿用既有配置键、漫画源脚本接口及历史／收藏数据兼容路径。升级前请导出应用数据并备份本地漫画；降级前应另行备份新版数据，不应假定旧版能安全读取新版产生的恢复记录。\r\n- 本次为候选测试版，自动化测试和平台构建不替代各平台实机升级与交互验收；遇到问题请附平台、复现步骤及日志。\r\n- iOS 打包仅通过构建参数转换 Apple 原生版本，保留应用内的 RC 版本标识及预发布更新渠道，并校验实际打包版本，避免候选版被应用误认为稳定版。\r\n\r\n### 版本亮点\r\n\r\n- 阅读器可显示图片原始像素尺寸；收藏、追更和漫画卡片显示章节与页码进度。\r\n- 自动阅读支持 Android／iOS 屏幕常亮，以及默认关闭的「跳过不可用图片」选项；修复旋转后自动阅读中断等问题。\r\n- 强化收藏、历史、下载、本地导入和漫画库搬迁的数据一致性与中断恢复，减少跨实例串用、重复提交及误清理文件。\r\n- 重构阅读器、漫画源、同步及应用运行时的职责边界，完善异步任务取消、原生资源释放、退出等待和结构化错误诊断。\r\n- 日志持久化到磁盘并保留轮转记录；优化图片去混淆像素复制，完善 AVIF 格式识别。\r\n- 修复 Rust 依赖安全告警并更新相关依赖，保留 Flutter Rust Bridge 2.11.1 和本地取消回调补丁，增加 iOS 原生依赖兼容性门禁。\r\n\r\n### 已知限制与后续安排\r\n\r\n- 鸿蒙 HAP 支持（#77）、CBZ 分卷导出（#81）及图片请求 HTTP/3 回退（#100）留待后续版本；特定网络下部分图片 CDN 的 TCP／TLS 请求仍可能失败。\r\n- AVIF 格式识别改进不代表所有平台均已具备完整的通用／动画解码能力；通用内置解码器仍待接入（#94）。\r\n- 图片去混淆的移动端耗电收益仍需实机测量；完整工程变更记录保留在本版本的「变更」与「修复」章节。\n\n### 下载与测试\n\n- 请从本页 Assets 选择对应系统和架构的安装包；本次为 GitHub 预发布，不更新 AltStore 或 Winget 稳定渠道。\n- iOS IPA 为未签名产物，需要自行签名后侧载。\n- [完整更新日志](https://github.com/CyrilPeng/Venera-Next/blob/v1.18.0-rc.1/CHANGELOG.md) · [与 v1.17.0 的代码比较](https://github.com/CyrilPeng/Venera-Next/compare/v1.17.0...v1.18.0-rc.1)\n",
+      "ipas": [
+        {
+          "name": "VeneraNext-ios-1.18.0-rc.1+229.ipa",
+          "size": 21230585,
+          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.0-rc.1/VeneraNext-ios-1.18.0-rc.1%2B229.ipa"
+        }
+      ]
+    },
+    {
       "tag": "v1.17.0",
       "name": "v1.17.0",
       "pre": false,
@@ -2171,21 +2186,6 @@
           "name": "VeneraNext-ios-1.11.0-rc.2+208.ipa",
           "size": 15908217,
           "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.11.0-rc.2/VeneraNext-ios-1.11.0-rc.2%2B208.ipa"
-        }
-      ]
-    },
-    {
-      "tag": "v1.11.0-rc.1",
-      "name": "v1.11.0-rc.1",
-      "pre": true,
-      "draft": false,
-      "date": "2026-07-09",
-      "body": "### 新增\n\n- 为纵向连续和瀑布流阅读模式增加拆分双页功能，可将横向双页图按阅读顺序拆成上下排列，并支持交换拆分顺序。\n\n### 修复\n\n- 修复瀑布流和纵向连续阅读到章节末尾时，阅读记录可能仍显示剩余 1-2 张图片未读的问题。\n",
-      "ipas": [
-        {
-          "name": "VeneraNext-ios-1.11.0-rc.1+207.ipa",
-          "size": 15901687,
-          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.11.0-rc.1/VeneraNext-ios-1.11.0-rc.1%2B207.ipa"
         }
       ]
     }

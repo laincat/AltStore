@@ -430,5 +430,13 @@
     "displayName": "Venera Prime",
     "minOSVersion": "14.0",
     "size": 16459736
+  },
+  "https://github.com/open-ani/animeko/releases/download/v6.3.0/ani-6.3.0.ipa": {
+    "bundleIdentifier": "org.animeko.animeko",
+    "version": "6.3.0",
+    "buildVersion": "6.3.99",
+    "displayName": "Animeko",
+    "minOSVersion": "14.0",
+    "size": 46485035
   }
 }
