@@ -454,5 +454,21 @@
     "displayName": "Venera Prime",
     "minOSVersion": "14.0",
     "size": 16566250
+  },
+  "https://github.com/venera-app/venera-prime/releases/download/v2.5.6/venera-prime-ios-2.5.6%2B256.ipa": {
+    "bundleIdentifier": "com.github.wgh136.venera.prime",
+    "version": "2.5.6",
+    "buildVersion": "256",
+    "displayName": "Venera Prime",
+    "minOSVersion": "14.0",
+    "size": 16566312
+  },
+  "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.0/VeneraNext-ios-1.18.0%2B234.ipa": {
+    "bundleIdentifier": "com.github.cyrilpeng.veneranext",
+    "version": "1.18.0",
+    "buildVersion": "234",
+    "displayName": "VeneraNext",
+    "minOSVersion": "14.0",
+    "size": 21127254
   }
 }

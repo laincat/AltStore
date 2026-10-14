@@ -284,7 +284,7 @@
       "developerName": "venera-app",
       "subtitle": "次世代多图源漫画阅读器",
       "localizedDescription": "原版 Venera 的次世代重写版，Flutter + Rust 构建。支持本地漫画与网络图源阅读、用 JavaScript 编写自定义漫画源、收藏管理、下载、评论与标签查看；中文标签翻译来自 EhTagTranslation 项目。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/venera-app/venera-prime",
-      "iconURL": "https://raw.githubusercontent.com/venera-app/venera-prime/v2.5.3/assets/app_icon.png",
+      "iconURL": "https://raw.githubusercontent.com/venera-app/venera-prime/v2.5.6/assets/app_icon.png",
       "tintColor": "#0784FC",
       "category": "books",
       "appPermissions": {
@@ -296,39 +296,39 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.5.3",
+              "version": "2.5.6",
               "date": "2026-10-14",
-              "buildVersion": "253",
-              "buildNumber": "253",
-              "localizedDescription": "Venera Prime 2.5.3\n本次更新\n\n- 减少自动缓存清理频率：日常自动维护按本地日期每天执行一次，同一天重启应用或返回前台不再重复扫描；手动清理、缓存保留时间或容量配置变更、超过容量上限时的清理仍可正常触发。\n- 调整手动检测更新交互：检测弹窗仍在前台时，发现新版本后直接打开更新详情；已关闭弹窗时保留后台结果，不突然弹出。关于页检测到更新后显示“查看更新”，任务结果与更新操作使用主按钮，“关闭”作为次要按钮，复用现有简体中文、繁体中文和英文翻译。\n- 修复更新下载的 UnimplementedError：应用网络客户端改为复用 Dio 的原生下载实现，继续使用现有网络适配器、下载进度、取消、完整性和校验和验证流程。\n一键更新验证\n\n- 2.5.1、2.5.2 的旧下载实现可能报 UnimplementedError；首次请从 Release 下载对应架构 APK，手动安装 2.5.3。修复不会自动回写到已安装的旧版本。\n- 随后将发布 2.5.4，作为本轮一键更新的测试目标。请在 2.5.3 的“关于”页检测更新，确认能查看 2.5.4 详情、后台下载，并通过任务入口启动系统安装。\n- 安装后检查版本号、收藏、历史记录和设置是否保留。这是待实际设备执行的验证步骤，不表示该升级链路已通过真机测试。\n请更新后验证并反馈\n\n请相关 issue 的提出者安装 2.5.3 后，按原来的复现步骤复查。\n\n- 如果问题已解决，请在原 issue 中确认，并及时关闭尚未关闭的 issue。\n- 如果问题仍存在，请在原 issue 提供版本号、系统与设备、漫画源、复现步骤，以及必要…",
-              "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.5.3/venera-prime-ios-2.5.3%2B253.ipa",
-              "size": 16566250,
+              "buildVersion": "256",
+              "buildNumber": "256",
+              "localizedDescription": "Venera Prime 2.5.6\n本次更新\n\n- 一键更新测试版本：在 2.5.5 修复版基础上仅递增版本和构建号，没有新增功能变更。用于检查 2.5.5 是否能够发现新版、查看详情、后台下载完整 APK、进入待安装状态，并通过系统安装器升级到 2.5.6。\n- 发布范围说明：现有更新器只检测正式 Release，因此本版按正式 Release 发布，不是预发布版；所有启用更新检查的用户都能看到。下载完成后误报不完整、超时配置和诊断调整已包含在 2.5.5，不作为本版新增修复。\n一键更新验证\n\n1. 2.5.4 及更早版本的旧更新器可能无法完成下载校验；请先从 Release 手动下载对应架构 APK，覆盖安装 2.5.5，不要卸载或清除应用数据。\n2. 在 2.5.5 的“关于”页检测更新，确认可以查看 2.5.6 详情；关闭检测弹窗时，结果应保留在后台任务中，不突然弹出。\n3. 点击更新，检查后台下载进度。下载完成后应进入待安装状态，不再对完整文件提示 Update download is incomplete；从完成任务启动系统安装器，并按系统要求确认权限和安装。\n4. 安装后确认版本为 2.5.6，收藏、历史记录和设置仍保留。也可另行检查“启动时检查更新”的流程。\n\n上述是正式版本的待执行验证步骤，不表示 2.5.5 → 2.5.6 已通过真机升级测试。失败时请提供设备与系统、源版本和目标版本、操作步骤，以及任务中的错误信息。\n请更新后验证并反馈\n\n请相关 issue 的提出者安装 2.5.6 后，按原来的复现步骤复查。\n\n- 如果问题已解决，请在原 issue 中…",
+              "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.5.6/venera-prime-ios-2.5.6%2B256.ipa",
+              "size": 16566312,
               "minOSVersion": "14.0",
-              "releaseTag": "v2.5.3",
-              "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.5.3"
+              "releaseTag": "v2.5.6",
+              "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.5.6"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.5.3",
+          "version": "2.5.6",
           "date": "2026-10-14",
-          "buildVersion": "253",
-          "buildNumber": "253",
-          "localizedDescription": "Venera Prime 2.5.3\n本次更新\n\n- 减少自动缓存清理频率：日常自动维护按本地日期每天执行一次，同一天重启应用或返回前台不再重复扫描；手动清理、缓存保留时间或容量配置变更、超过容量上限时的清理仍可正常触发。\n- 调整手动检测更新交互：检测弹窗仍在前台时，发现新版本后直接打开更新详情；已关闭弹窗时保留后台结果，不突然弹出。关于页检测到更新后显示“查看更新”，任务结果与更新操作使用主按钮，“关闭”作为次要按钮，复用现有简体中文、繁体中文和英文翻译。\n- 修复更新下载的 UnimplementedError：应用网络客户端改为复用 Dio 的原生下载实现，继续使用现有网络适配器、下载进度、取消、完整性和校验和验证流程。\n一键更新验证\n\n- 2.5.1、2.5.2 的旧下载实现可能报 UnimplementedError；首次请从 Release 下载对应架构 APK，手动安装 2.5.3。修复不会自动回写到已安装的旧版本。\n- 随后将发布 2.5.4，作为本轮一键更新的测试目标。请在 2.5.3 的“关于”页检测更新，确认能查看 2.5.4 详情、后台下载，并通过任务入口启动系统安装。\n- 安装后检查版本号、收藏、历史记录和设置是否保留。这是待实际设备执行的验证步骤，不表示该升级链路已通过真机测试。\n请更新后验证并反馈\n\n请相关 issue 的提出者安装 2.5.3 后，按原来的复现步骤复查。\n\n- 如果问题已解决，请在原 issue 中确认，并及时关闭尚未关闭的 issue。\n- 如果问题仍存在，请在原 issue 提供版本号、系统与设备、漫画源、复现步骤，以及必要…",
-          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.5.3/venera-prime-ios-2.5.3%2B253.ipa",
-          "size": 16566250,
+          "buildVersion": "256",
+          "buildNumber": "256",
+          "localizedDescription": "Venera Prime 2.5.6\n本次更新\n\n- 一键更新测试版本：在 2.5.5 修复版基础上仅递增版本和构建号，没有新增功能变更。用于检查 2.5.5 是否能够发现新版、查看详情、后台下载完整 APK、进入待安装状态，并通过系统安装器升级到 2.5.6。\n- 发布范围说明：现有更新器只检测正式 Release，因此本版按正式 Release 发布，不是预发布版；所有启用更新检查的用户都能看到。下载完成后误报不完整、超时配置和诊断调整已包含在 2.5.5，不作为本版新增修复。\n一键更新验证\n\n1. 2.5.4 及更早版本的旧更新器可能无法完成下载校验；请先从 Release 手动下载对应架构 APK，覆盖安装 2.5.5，不要卸载或清除应用数据。\n2. 在 2.5.5 的“关于”页检测更新，确认可以查看 2.5.6 详情；关闭检测弹窗时，结果应保留在后台任务中，不突然弹出。\n3. 点击更新，检查后台下载进度。下载完成后应进入待安装状态，不再对完整文件提示 Update download is incomplete；从完成任务启动系统安装器，并按系统要求确认权限和安装。\n4. 安装后确认版本为 2.5.6，收藏、历史记录和设置仍保留。也可另行检查“启动时检查更新”的流程。\n\n上述是正式版本的待执行验证步骤，不表示 2.5.5 → 2.5.6 已通过真机升级测试。失败时请提供设备与系统、源版本和目标版本、操作步骤，以及任务中的错误信息。\n请更新后验证并反馈\n\n请相关 issue 的提出者安装 2.5.6 后，按原来的复现步骤复查。\n\n- 如果问题已解决，请在原 issue 中…",
+          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.5.6/venera-prime-ios-2.5.6%2B256.ipa",
+          "size": 16566312,
           "minOSVersion": "14.0",
-          "releaseTag": "v2.5.3",
-          "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.5.3"
+          "releaseTag": "v2.5.6",
+          "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.5.6"
         }
       ],
-      "version": "2.5.3",
+      "version": "2.5.6",
       "versionDate": "2026-10-14",
-      "versionDescription": "Venera Prime 2.5.3\n本次更新\n\n- 减少自动缓存清理频率：日常自动维护按本地日期每天执行一次，同一天重启应用或返回前台不再重复扫描；手动清理、缓存保留时间或容量配置变更、超过容量上限时的清理仍可正常触发。\n- 调整手动检测更新交互：检测弹窗仍在前台时，发现新版本后直接打开更新详情；已关闭弹窗时保留后台结果，不突然弹出。关于页检测到更新后显示“查看更新”，任务结果与更新操作使用主按钮，“关闭”作为次要按钮，复用现有简体中文、繁体中文和英文翻译。\n- 修复更新下载的 UnimplementedError：应用网络客户端改为复用 Dio 的原生下载实现，继续使用现有网络适配器、下载进度、取消、完整性和校验和验证流程。\n一键更新验证\n\n- 2.5.1、2.5.2 的旧下载实现可能报 UnimplementedError；首次请从 Release 下载对应架构 APK，手动安装 2.5.3。修复不会自动回写到已安装的旧版本。\n- 随后将发布 2.5.4，作为本轮一键更新的测试目标。请在 2.5.3 的“关于”页检测更新，确认能查看 2.5.4 详情、后台下载，并通过任务入口启动系统安装。\n- 安装后检查版本号、收藏、历史记录和设置是否保留。这是待实际设备执行的验证步骤，不表示该升级链路已通过真机测试。\n请更新后验证并反馈\n\n请相关 issue 的提出者安装 2.5.3 后，按原来的复现步骤复查。\n\n- 如果问题已解决，请在原 issue 中确认，并及时关闭尚未关闭的 issue。\n- 如果问题仍存在，请在原 issue 提供版本号、系统与设备、漫画源、复现步骤，以及必要…",
-      "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.5.3/venera-prime-ios-2.5.3%2B253.ipa",
-      "size": 16566250,
+      "versionDescription": "Venera Prime 2.5.6\n本次更新\n\n- 一键更新测试版本：在 2.5.5 修复版基础上仅递增版本和构建号，没有新增功能变更。用于检查 2.5.5 是否能够发现新版、查看详情、后台下载完整 APK、进入待安装状态，并通过系统安装器升级到 2.5.6。\n- 发布范围说明：现有更新器只检测正式 Release，因此本版按正式 Release 发布，不是预发布版；所有启用更新检查的用户都能看到。下载完成后误报不完整、超时配置和诊断调整已包含在 2.5.5，不作为本版新增修复。\n一键更新验证\n\n1. 2.5.4 及更早版本的旧更新器可能无法完成下载校验；请先从 Release 手动下载对应架构 APK，覆盖安装 2.5.5，不要卸载或清除应用数据。\n2. 在 2.5.5 的“关于”页检测更新，确认可以查看 2.5.6 详情；关闭检测弹窗时，结果应保留在后台任务中，不突然弹出。\n3. 点击更新，检查后台下载进度。下载完成后应进入待安装状态，不再对完整文件提示 Update download is incomplete；从完成任务启动系统安装器，并按系统要求确认权限和安装。\n4. 安装后确认版本为 2.5.6，收藏、历史记录和设置仍保留。也可另行检查“启动时检查更新”的流程。\n\n上述是正式版本的待执行验证步骤，不表示 2.5.5 → 2.5.6 已通过真机升级测试。失败时请提供设备与系统、源版本和目标版本、操作步骤，以及任务中的错误信息。\n请更新后验证并反馈\n\n请相关 issue 的提出者安装 2.5.6 后，按原来的复现步骤复查。\n\n- 如果问题已解决，请在原 issue 中…",
+      "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.5.6/venera-prime-ios-2.5.6%2B256.ipa",
+      "size": 16566312,
       "minOSVersion": "14.0"
     },
     {
@@ -337,7 +337,7 @@
       "developerName": "CyrilPeng",
       "subtitle": "支持 WebDAV 同步的漫画阅读器",
       "localizedDescription": "Venera 的 fork 分支，基于 Flutter 的跨平台漫画阅读器，支持本地漫画与网络漫画源，覆盖 iOS / Android / Windows / Linux / macOS。核心思路是尽量减少打断阅读：长篇作品可用瀑布流跨章节连续阅读，支持收藏、追更、离线下载，并能通过 WebDAV 在多台设备之间同步数据。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/CyrilPeng/Venera-Next",
-      "iconURL": "https://raw.githubusercontent.com/CyrilPeng/Venera-Next/v1.17.0/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
+      "iconURL": "https://raw.githubusercontent.com/CyrilPeng/Venera-Next/v1.18.0/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
       "tintColor": "#2090E0",
       "category": "books",
       "appPermissions": {
@@ -349,39 +349,39 @@
           "track": "stable",
           "releases": [
             {
-              "version": "1.17.0",
-              "date": "2026-09-29",
-              "buildVersion": "228",
-              "buildNumber": "228",
-              "localizedDescription": "本次正式版新增自动阅读、自动选择阅读模式、条漫左右边距、定时同步与多源仓库管理，完善 PDF 后台导入和离线阅读，并为 Linux x64／ARM64 增加 RPM、AppImage 分发格式。\n新增\n\n- 自动阅读覆盖全部七种阅读模式：分页按秒翻页，连续与瀑布流可选择平滑滚动或步进滚动，支持自动跨章及单本／设备设置。长按操作可选择放大图片、开始／停止自动阅读或无操作，并继承旧版长按缩放设置。\n- 阅读器可按漫画原图比例自动选择页漫或条漫模式，默认关闭；单本手动设置优先，切换时保留章节与源图片位置。纵向连续与瀑布流新增左右边距，每侧支持 0%–30%，沿用全局／设备／单本设置，宽度限制同步遵循对应设置范围（#82）。\n- 数据同步新增定时模式，可选 5／15／30／60／180／360 分钟，默认 30 分钟；合并本地修改，无修改时检查远端版本，保存待上传状态并在启动或恢复前台时补做到期同步，失败后按间隔重试。手动模式不再自动传输，所有模式均保留立即上传／下载。\n- 漫画源统一通过“添加来源”导入链接、粘贴内容或 JS／JSON 文件，按内容识别并预览脚本与来源列表，支持选择安装、保存在线仓库、管理多个仓库及来源关联。安装队列支持并发下载、取消、重试和进度查看。\n- PDF 导入独立于进度框运行，收起进度或返回后可继续阅读；主页及本地漫画页提供任务入口，可重新查看进度、取消排队／运行任务和管理完成结果。多批次串行转换，JPEG 编码移至工作 isolate，减少界面阻塞（#75）。\n- Linux x64／ARM64 在原有分发格式之外新增 RPM 和 AppImage；App…",
-              "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.17.0/VeneraNext-ios-1.17.0%2B228.ipa",
-              "size": 20070423,
+              "version": "1.18.0",
+              "date": "2026-10-14",
+              "buildVersion": "234",
+              "buildNumber": "234",
+              "localizedDescription": "本次正式版在 v1.17.0 基础上完成大范围架构重构，收束阅读器、漫画源、同步与运行时的职责边界，并新增图片原始像素尺寸、章节阅读进度、自动阅读屏幕常亮与跳过不可用图片。同步修复 WebDAV 应用数据同步、日志持久化、AVIF 识别及图片去混淆性能问题，修复 Rust 依赖安全告警并更新相关依赖。经 v1.18.0-rc.1 至 rc.5 逐版验证，Windows 与 Android 的 WebDAV 手动上传、云端下载覆盖及自动同步已通过实机验收。\n新增\n\n- 阅读器可选显示图片原始像素尺寸，支持单页、多页、连续阅读及宽图拆分；缩小解码和缓存命中仍保留原始尺寸，开关支持全局／设备／单本设置（#95）。\n- 收藏、追更及漫画卡片显示章节和页码进度，阅读时持久化章节／分组名称，图源不可用后仍可查看；旧历史兼容序号回退，长标题支持省略、完整提示和读屏（#93）。\n- 自动阅读默认保持 Android／iOS 屏幕常亮，提供全局／设备／单本开关；停止自动阅读、切后台和退出时恢复系统休眠，旋转与迟到的原生回调不会遗留常亮状态（#96）。\n- 自动阅读新增默认关闭的「跳过不可用图片」选项：失败图片按正常节奏跳过，加载中的图片在 1–60 秒可调的前台等待后继续；覆盖单页、并排页及连续／瀑布流视图，保留操作暂停和章节加载保护，修复瀑布流短错误占位在末章提前可见时的停止定位（#98 后续建议）。\n修复\n\n- 应用数据同步恢复 v1.17.0 的 WebDAV SDK 上传、下载及旧备份清理流程，沿用日期与数据版本文件名，不再要求条件 PUT、强 ETag 或内容基线；修复候选版上传已返回…",
+              "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.0/VeneraNext-ios-1.18.0%2B234.ipa",
+              "size": 21127254,
               "minOSVersion": "14.0",
-              "releaseTag": "v1.17.0",
-              "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.17.0"
+              "releaseTag": "v1.18.0",
+              "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.18.0"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "1.17.0",
-          "date": "2026-09-29",
-          "buildVersion": "228",
-          "buildNumber": "228",
-          "localizedDescription": "本次正式版新增自动阅读、自动选择阅读模式、条漫左右边距、定时同步与多源仓库管理，完善 PDF 后台导入和离线阅读，并为 Linux x64／ARM64 增加 RPM、AppImage 分发格式。\n新增\n\n- 自动阅读覆盖全部七种阅读模式：分页按秒翻页，连续与瀑布流可选择平滑滚动或步进滚动，支持自动跨章及单本／设备设置。长按操作可选择放大图片、开始／停止自动阅读或无操作，并继承旧版长按缩放设置。\n- 阅读器可按漫画原图比例自动选择页漫或条漫模式，默认关闭；单本手动设置优先，切换时保留章节与源图片位置。纵向连续与瀑布流新增左右边距，每侧支持 0%–30%，沿用全局／设备／单本设置，宽度限制同步遵循对应设置范围（#82）。\n- 数据同步新增定时模式，可选 5／15／30／60／180／360 分钟，默认 30 分钟；合并本地修改，无修改时检查远端版本，保存待上传状态并在启动或恢复前台时补做到期同步，失败后按间隔重试。手动模式不再自动传输，所有模式均保留立即上传／下载。\n- 漫画源统一通过“添加来源”导入链接、粘贴内容或 JS／JSON 文件，按内容识别并预览脚本与来源列表，支持选择安装、保存在线仓库、管理多个仓库及来源关联。安装队列支持并发下载、取消、重试和进度查看。\n- PDF 导入独立于进度框运行，收起进度或返回后可继续阅读；主页及本地漫画页提供任务入口，可重新查看进度、取消排队／运行任务和管理完成结果。多批次串行转换，JPEG 编码移至工作 isolate，减少界面阻塞（#75）。\n- Linux x64／ARM64 在原有分发格式之外新增 RPM 和 AppImage；App…",
-          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.17.0/VeneraNext-ios-1.17.0%2B228.ipa",
-          "size": 20070423,
+          "version": "1.18.0",
+          "date": "2026-10-14",
+          "buildVersion": "234",
+          "buildNumber": "234",
+          "localizedDescription": "本次正式版在 v1.17.0 基础上完成大范围架构重构，收束阅读器、漫画源、同步与运行时的职责边界，并新增图片原始像素尺寸、章节阅读进度、自动阅读屏幕常亮与跳过不可用图片。同步修复 WebDAV 应用数据同步、日志持久化、AVIF 识别及图片去混淆性能问题，修复 Rust 依赖安全告警并更新相关依赖。经 v1.18.0-rc.1 至 rc.5 逐版验证，Windows 与 Android 的 WebDAV 手动上传、云端下载覆盖及自动同步已通过实机验收。\n新增\n\n- 阅读器可选显示图片原始像素尺寸，支持单页、多页、连续阅读及宽图拆分；缩小解码和缓存命中仍保留原始尺寸，开关支持全局／设备／单本设置（#95）。\n- 收藏、追更及漫画卡片显示章节和页码进度，阅读时持久化章节／分组名称，图源不可用后仍可查看；旧历史兼容序号回退，长标题支持省略、完整提示和读屏（#93）。\n- 自动阅读默认保持 Android／iOS 屏幕常亮，提供全局／设备／单本开关；停止自动阅读、切后台和退出时恢复系统休眠，旋转与迟到的原生回调不会遗留常亮状态（#96）。\n- 自动阅读新增默认关闭的「跳过不可用图片」选项：失败图片按正常节奏跳过，加载中的图片在 1–60 秒可调的前台等待后继续；覆盖单页、并排页及连续／瀑布流视图，保留操作暂停和章节加载保护，修复瀑布流短错误占位在末章提前可见时的停止定位（#98 后续建议）。\n修复\n\n- 应用数据同步恢复 v1.17.0 的 WebDAV SDK 上传、下载及旧备份清理流程，沿用日期与数据版本文件名，不再要求条件 PUT、强 ETag 或内容基线；修复候选版上传已返回…",
+          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.0/VeneraNext-ios-1.18.0%2B234.ipa",
+          "size": 21127254,
           "minOSVersion": "14.0",
-          "releaseTag": "v1.17.0",
-          "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.17.0"
+          "releaseTag": "v1.18.0",
+          "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.18.0"
         }
       ],
-      "version": "1.17.0",
-      "versionDate": "2026-09-29",
-      "versionDescription": "本次正式版新增自动阅读、自动选择阅读模式、条漫左右边距、定时同步与多源仓库管理，完善 PDF 后台导入和离线阅读，并为 Linux x64／ARM64 增加 RPM、AppImage 分发格式。\n新增\n\n- 自动阅读覆盖全部七种阅读模式：分页按秒翻页，连续与瀑布流可选择平滑滚动或步进滚动，支持自动跨章及单本／设备设置。长按操作可选择放大图片、开始／停止自动阅读或无操作，并继承旧版长按缩放设置。\n- 阅读器可按漫画原图比例自动选择页漫或条漫模式，默认关闭；单本手动设置优先，切换时保留章节与源图片位置。纵向连续与瀑布流新增左右边距，每侧支持 0%–30%，沿用全局／设备／单本设置，宽度限制同步遵循对应设置范围（#82）。\n- 数据同步新增定时模式，可选 5／15／30／60／180／360 分钟，默认 30 分钟；合并本地修改，无修改时检查远端版本，保存待上传状态并在启动或恢复前台时补做到期同步，失败后按间隔重试。手动模式不再自动传输，所有模式均保留立即上传／下载。\n- 漫画源统一通过“添加来源”导入链接、粘贴内容或 JS／JSON 文件，按内容识别并预览脚本与来源列表，支持选择安装、保存在线仓库、管理多个仓库及来源关联。安装队列支持并发下载、取消、重试和进度查看。\n- PDF 导入独立于进度框运行，收起进度或返回后可继续阅读；主页及本地漫画页提供任务入口，可重新查看进度、取消排队／运行任务和管理完成结果。多批次串行转换，JPEG 编码移至工作 isolate，减少界面阻塞（#75）。\n- Linux x64／ARM64 在原有分发格式之外新增 RPM 和 AppImage；App…",
-      "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.17.0/VeneraNext-ios-1.17.0%2B228.ipa",
-      "size": 20070423,
+      "version": "1.18.0",
+      "versionDate": "2026-10-14",
+      "versionDescription": "本次正式版在 v1.17.0 基础上完成大范围架构重构，收束阅读器、漫画源、同步与运行时的职责边界，并新增图片原始像素尺寸、章节阅读进度、自动阅读屏幕常亮与跳过不可用图片。同步修复 WebDAV 应用数据同步、日志持久化、AVIF 识别及图片去混淆性能问题，修复 Rust 依赖安全告警并更新相关依赖。经 v1.18.0-rc.1 至 rc.5 逐版验证，Windows 与 Android 的 WebDAV 手动上传、云端下载覆盖及自动同步已通过实机验收。\n新增\n\n- 阅读器可选显示图片原始像素尺寸，支持单页、多页、连续阅读及宽图拆分；缩小解码和缓存命中仍保留原始尺寸，开关支持全局／设备／单本设置（#95）。\n- 收藏、追更及漫画卡片显示章节和页码进度，阅读时持久化章节／分组名称，图源不可用后仍可查看；旧历史兼容序号回退，长标题支持省略、完整提示和读屏（#93）。\n- 自动阅读默认保持 Android／iOS 屏幕常亮，提供全局／设备／单本开关；停止自动阅读、切后台和退出时恢复系统休眠，旋转与迟到的原生回调不会遗留常亮状态（#96）。\n- 自动阅读新增默认关闭的「跳过不可用图片」选项：失败图片按正常节奏跳过，加载中的图片在 1–60 秒可调的前台等待后继续；覆盖单页、并排页及连续／瀑布流视图，保留操作暂停和章节加载保护，修复瀑布流短错误占位在末章提前可见时的停止定位（#98 后续建议）。\n修复\n\n- 应用数据同步恢复 v1.17.0 的 WebDAV SDK 上传、下载及旧备份清理流程，沿用日期与数据版本文件名，不再要求条件 PUT、强 ETag 或内容基线；修复候选版上传已返回…",
+      "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.0/VeneraNext-ios-1.18.0%2B234.ipa",
+      "size": 21127254,
       "minOSVersion": "14.0"
     },
     {
