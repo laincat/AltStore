@@ -446,5 +446,13 @@
     "displayName": "Venera Prime",
     "minOSVersion": "14.0",
     "size": 16530565
+  },
+  "https://github.com/venera-app/venera-prime/releases/download/v2.5.3/venera-prime-ios-2.5.3%2B253.ipa": {
+    "bundleIdentifier": "com.github.wgh136.venera.prime",
+    "version": "2.5.3",
+    "buildVersion": "253",
+    "displayName": "Venera Prime",
+    "minOSVersion": "14.0",
+    "size": 16566250
   }
 }
