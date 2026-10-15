@@ -284,7 +284,7 @@
       "developerName": "venera-app",
       "subtitle": "次世代多图源漫画阅读器",
       "localizedDescription": "原版 Venera 的次世代重写版，Flutter + Rust 构建。支持本地漫画与网络图源阅读、用 JavaScript 编写自定义漫画源、收藏管理、下载、评论与标签查看；中文标签翻译来自 EhTagTranslation 项目。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/venera-app/venera-prime",
-      "iconURL": "https://raw.githubusercontent.com/venera-app/venera-prime/v2.5.6/assets/app_icon.png",
+      "iconURL": "https://raw.githubusercontent.com/venera-app/venera-prime/v2.6.0/assets/app_icon.png",
       "tintColor": "#0784FC",
       "category": "books",
       "appPermissions": {
@@ -296,39 +296,39 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.5.6",
-              "date": "2026-10-14",
-              "buildVersion": "256",
-              "buildNumber": "256",
-              "localizedDescription": "Venera Prime 2.5.6\n本次更新\n\n- 一键更新测试版本：在 2.5.5 修复版基础上仅递增版本和构建号，没有新增功能变更。用于检查 2.5.5 是否能够发现新版、查看详情、后台下载完整 APK、进入待安装状态，并通过系统安装器升级到 2.5.6。\n- 发布范围说明：现有更新器只检测正式 Release，因此本版按正式 Release 发布，不是预发布版；所有启用更新检查的用户都能看到。下载完成后误报不完整、超时配置和诊断调整已包含在 2.5.5，不作为本版新增修复。\n一键更新验证\n\n1. 2.5.4 及更早版本的旧更新器可能无法完成下载校验；请先从 Release 手动下载对应架构 APK，覆盖安装 2.5.5，不要卸载或清除应用数据。\n2. 在 2.5.5 的“关于”页检测更新，确认可以查看 2.5.6 详情；关闭检测弹窗时，结果应保留在后台任务中，不突然弹出。\n3. 点击更新，检查后台下载进度。下载完成后应进入待安装状态，不再对完整文件提示 Update download is incomplete；从完成任务启动系统安装器，并按系统要求确认权限和安装。\n4. 安装后确认版本为 2.5.6，收藏、历史记录和设置仍保留。也可另行检查“启动时检查更新”的流程。\n\n上述是正式版本的待执行验证步骤，不表示 2.5.5 → 2.5.6 已通过真机升级测试。失败时请提供设备与系统、源版本和目标版本、操作步骤，以及任务中的错误信息。\n请更新后验证并反馈\n\n请相关 issue 的提出者安装 2.5.6 后，按原来的复现步骤复查。\n\n- 如果问题已解决，请在原 issue 中…",
-              "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.5.6/venera-prime-ios-2.5.6%2B256.ipa",
-              "size": 16566312,
+              "version": "2.6.0",
+              "date": "2026-10-15",
+              "buildVersion": "260",
+              "buildNumber": "260",
+              "localizedDescription": "Venera Prime 2.6.0\n本次更新\n\n- 阅读页实时调节页边距 #33（@suppermanzero）：底部工具栏新增页边距按钮，可展开开关、连续滑杆和精确数值输入。拖动时立即预览，松手后保存，无需退出设置页查看效果；沿用漫画、设备和全局设置的优先级，保留阅读位置与单图画廊已有的相对缩放。\n- 双页与多图画廊单张移位 #34（@MisakaTukasa）：底部工具栏新增前移、后移一张图片的操作，可将 P3 | P4 调整为 P4 | P5，方便对齐跨页图；普通翻页仍按每屏图片数量前进。支持阅读方向、首页单张和旋转后的位置换算，切换章节时重置临时分组偏移。\n- 收藏夹检测信息 #35（@suppermanzero）：移除漫画列表顶部常驻的“尚未检查”和上次检查时间；检查操作仍可使用，进度与结果保留在后台任务中。\n- 连续阅读跨章节 #36（@zklall）：到已加载章节的实际边界后，普通滑动、边缘点击、滚轮、触控板及阅读方向对应的方向键可继续进入相邻章节；整章不足一屏时也能继续阅读，边界回弹不再吞掉翻页点击。保留章节分组、反向点击及长图未读完时先滚动的行为，小幅移动、取消手势和多指缩放不触发切章。整合了 @zklall 提供的修复及回归覆盖，感谢贡献。\n- 后台任务面板重复打开：连续点击悬浮球或使用键盘重复激活时，只保留一个任务列表面板；查看任务详情时再次点击也不会叠加列表，关闭后仍可重新打开。\n请更新后验证并反馈\n\n请关联 issue 的提出者安装 2.6.0 后，按原来的复现步骤复查。\n\n- 如果问题已解决，请在原 issue 中确认，并及时关闭尚未关闭的 iss…",
+              "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.6.0/venera-prime-ios-2.6.0%2B260.ipa",
+              "size": 16571605,
               "minOSVersion": "14.0",
-              "releaseTag": "v2.5.6",
-              "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.5.6"
+              "releaseTag": "v2.6.0",
+              "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.6.0"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.5.6",
-          "date": "2026-10-14",
-          "buildVersion": "256",
-          "buildNumber": "256",
-          "localizedDescription": "Venera Prime 2.5.6\n本次更新\n\n- 一键更新测试版本：在 2.5.5 修复版基础上仅递增版本和构建号，没有新增功能变更。用于检查 2.5.5 是否能够发现新版、查看详情、后台下载完整 APK、进入待安装状态，并通过系统安装器升级到 2.5.6。\n- 发布范围说明：现有更新器只检测正式 Release，因此本版按正式 Release 发布，不是预发布版；所有启用更新检查的用户都能看到。下载完成后误报不完整、超时配置和诊断调整已包含在 2.5.5，不作为本版新增修复。\n一键更新验证\n\n1. 2.5.4 及更早版本的旧更新器可能无法完成下载校验；请先从 Release 手动下载对应架构 APK，覆盖安装 2.5.5，不要卸载或清除应用数据。\n2. 在 2.5.5 的“关于”页检测更新，确认可以查看 2.5.6 详情；关闭检测弹窗时，结果应保留在后台任务中，不突然弹出。\n3. 点击更新，检查后台下载进度。下载完成后应进入待安装状态，不再对完整文件提示 Update download is incomplete；从完成任务启动系统安装器，并按系统要求确认权限和安装。\n4. 安装后确认版本为 2.5.6，收藏、历史记录和设置仍保留。也可另行检查“启动时检查更新”的流程。\n\n上述是正式版本的待执行验证步骤，不表示 2.5.5 → 2.5.6 已通过真机升级测试。失败时请提供设备与系统、源版本和目标版本、操作步骤，以及任务中的错误信息。\n请更新后验证并反馈\n\n请相关 issue 的提出者安装 2.5.6 后，按原来的复现步骤复查。\n\n- 如果问题已解决，请在原 issue 中…",
-          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.5.6/venera-prime-ios-2.5.6%2B256.ipa",
-          "size": 16566312,
+          "version": "2.6.0",
+          "date": "2026-10-15",
+          "buildVersion": "260",
+          "buildNumber": "260",
+          "localizedDescription": "Venera Prime 2.6.0\n本次更新\n\n- 阅读页实时调节页边距 #33（@suppermanzero）：底部工具栏新增页边距按钮，可展开开关、连续滑杆和精确数值输入。拖动时立即预览，松手后保存，无需退出设置页查看效果；沿用漫画、设备和全局设置的优先级，保留阅读位置与单图画廊已有的相对缩放。\n- 双页与多图画廊单张移位 #34（@MisakaTukasa）：底部工具栏新增前移、后移一张图片的操作，可将 P3 | P4 调整为 P4 | P5，方便对齐跨页图；普通翻页仍按每屏图片数量前进。支持阅读方向、首页单张和旋转后的位置换算，切换章节时重置临时分组偏移。\n- 收藏夹检测信息 #35（@suppermanzero）：移除漫画列表顶部常驻的“尚未检查”和上次检查时间；检查操作仍可使用，进度与结果保留在后台任务中。\n- 连续阅读跨章节 #36（@zklall）：到已加载章节的实际边界后，普通滑动、边缘点击、滚轮、触控板及阅读方向对应的方向键可继续进入相邻章节；整章不足一屏时也能继续阅读，边界回弹不再吞掉翻页点击。保留章节分组、反向点击及长图未读完时先滚动的行为，小幅移动、取消手势和多指缩放不触发切章。整合了 @zklall 提供的修复及回归覆盖，感谢贡献。\n- 后台任务面板重复打开：连续点击悬浮球或使用键盘重复激活时，只保留一个任务列表面板；查看任务详情时再次点击也不会叠加列表，关闭后仍可重新打开。\n请更新后验证并反馈\n\n请关联 issue 的提出者安装 2.6.0 后，按原来的复现步骤复查。\n\n- 如果问题已解决，请在原 issue 中确认，并及时关闭尚未关闭的 iss…",
+          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.6.0/venera-prime-ios-2.6.0%2B260.ipa",
+          "size": 16571605,
           "minOSVersion": "14.0",
-          "releaseTag": "v2.5.6",
-          "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.5.6"
+          "releaseTag": "v2.6.0",
+          "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.6.0"
         }
       ],
-      "version": "2.5.6",
-      "versionDate": "2026-10-14",
-      "versionDescription": "Venera Prime 2.5.6\n本次更新\n\n- 一键更新测试版本：在 2.5.5 修复版基础上仅递增版本和构建号，没有新增功能变更。用于检查 2.5.5 是否能够发现新版、查看详情、后台下载完整 APK、进入待安装状态，并通过系统安装器升级到 2.5.6。\n- 发布范围说明：现有更新器只检测正式 Release，因此本版按正式 Release 发布，不是预发布版；所有启用更新检查的用户都能看到。下载完成后误报不完整、超时配置和诊断调整已包含在 2.5.5，不作为本版新增修复。\n一键更新验证\n\n1. 2.5.4 及更早版本的旧更新器可能无法完成下载校验；请先从 Release 手动下载对应架构 APK，覆盖安装 2.5.5，不要卸载或清除应用数据。\n2. 在 2.5.5 的“关于”页检测更新，确认可以查看 2.5.6 详情；关闭检测弹窗时，结果应保留在后台任务中，不突然弹出。\n3. 点击更新，检查后台下载进度。下载完成后应进入待安装状态，不再对完整文件提示 Update download is incomplete；从完成任务启动系统安装器，并按系统要求确认权限和安装。\n4. 安装后确认版本为 2.5.6，收藏、历史记录和设置仍保留。也可另行检查“启动时检查更新”的流程。\n\n上述是正式版本的待执行验证步骤，不表示 2.5.5 → 2.5.6 已通过真机升级测试。失败时请提供设备与系统、源版本和目标版本、操作步骤，以及任务中的错误信息。\n请更新后验证并反馈\n\n请相关 issue 的提出者安装 2.5.6 后，按原来的复现步骤复查。\n\n- 如果问题已解决，请在原 issue 中…",
-      "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.5.6/venera-prime-ios-2.5.6%2B256.ipa",
-      "size": 16566312,
+      "version": "2.6.0",
+      "versionDate": "2026-10-15",
+      "versionDescription": "Venera Prime 2.6.0\n本次更新\n\n- 阅读页实时调节页边距 #33（@suppermanzero）：底部工具栏新增页边距按钮，可展开开关、连续滑杆和精确数值输入。拖动时立即预览，松手后保存，无需退出设置页查看效果；沿用漫画、设备和全局设置的优先级，保留阅读位置与单图画廊已有的相对缩放。\n- 双页与多图画廊单张移位 #34（@MisakaTukasa）：底部工具栏新增前移、后移一张图片的操作，可将 P3 | P4 调整为 P4 | P5，方便对齐跨页图；普通翻页仍按每屏图片数量前进。支持阅读方向、首页单张和旋转后的位置换算，切换章节时重置临时分组偏移。\n- 收藏夹检测信息 #35（@suppermanzero）：移除漫画列表顶部常驻的“尚未检查”和上次检查时间；检查操作仍可使用，进度与结果保留在后台任务中。\n- 连续阅读跨章节 #36（@zklall）：到已加载章节的实际边界后，普通滑动、边缘点击、滚轮、触控板及阅读方向对应的方向键可继续进入相邻章节；整章不足一屏时也能继续阅读，边界回弹不再吞掉翻页点击。保留章节分组、反向点击及长图未读完时先滚动的行为，小幅移动、取消手势和多指缩放不触发切章。整合了 @zklall 提供的修复及回归覆盖，感谢贡献。\n- 后台任务面板重复打开：连续点击悬浮球或使用键盘重复激活时，只保留一个任务列表面板；查看任务详情时再次点击也不会叠加列表，关闭后仍可重新打开。\n请更新后验证并反馈\n\n请关联 issue 的提出者安装 2.6.0 后，按原来的复现步骤复查。\n\n- 如果问题已解决，请在原 issue 中确认，并及时关闭尚未关闭的 iss…",
+      "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.6.0/venera-prime-ios-2.6.0%2B260.ipa",
+      "size": 16571605,
       "minOSVersion": "14.0"
     },
     {
@@ -553,7 +553,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 9 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-10-14",
+      "date": "2026-10-15",
       "tintColor": "#7C5CFF",
       "notify": false
     }
