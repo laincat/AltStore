@@ -552,5 +552,33 @@
       "size": 16571605,
       "digest": "sha256:94a3afb63e98b3c5886a1fcbdd0f8849d05518ea816cd49e863bd7865ba7d79a"
     }
+  },
+  "https://github.com/venera-app/venera-prime/releases/download/v2.6.1/venera-prime-ios-2.6.1%2B261.ipa": {
+    "bundleIdentifier": "com.github.wgh136.venera.prime",
+    "version": "2.6.1",
+    "buildVersion": "261",
+    "displayName": "Venera Prime",
+    "minOSVersion": "14.0",
+    "size": 16570331,
+    "assetIdentity": {
+      "id": 647297967,
+      "updated_at": "2026-10-16T12:39:52Z",
+      "size": 16570331,
+      "digest": "sha256:c4e271d63d8cbc51ba43044dd1854d180a1cb59b89bd1c9deb9917879159c75a"
+    }
+  },
+  "https://github.com/youshen2/PicaX/releases/download/v1.2.5/PicaX-unsigned.ipa": {
+    "bundleIdentifier": "moye.PicaX",
+    "version": "1.2.5",
+    "buildVersion": "2610161",
+    "displayName": "PicaX",
+    "minOSVersion": "15.2",
+    "size": 12107911,
+    "assetIdentity": {
+      "id": 647234785,
+      "updated_at": "2026-10-16T12:14:44Z",
+      "size": 12107911,
+      "digest": "sha256:2cb367464d5617fb0d0cb68c407b73886b9140ac291f7d80d3626fa483dba049"
+    }
   }
 }

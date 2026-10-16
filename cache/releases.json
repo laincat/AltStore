@@ -1911,6 +1911,33 @@
   ],
   "youshen2/PicaX": [
     {
+      "tag": "v1.2.5",
+      "name": "PicaX v1.2.5",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-16",
+      "published_at": "2026-10-16T12:14:42Z",
+      "body": "这是由 GitHub Actions 自动构建的发行版本。\n\n## 下载说明\n\n请在下方 Assets 中下载对应平台的构建产物。\n\n- `PicaX-unsigned.ipa`：iOS 未签名 IPA\n- `PicaX-with-watch-unsigned.ipa`：iOS + Watch 未签名 IPA\n- `PicaX-WatchApp-unsigned.zip`：Watch App 未签名 ZIP\n- `PicaX.dmg`：macOS 未签名 DMG\n\n## 安装说明\n\n这些产物均为未签名构建，不能像 App Store 应用一样直接安装。\n\niOS 版本通常需要自行签名后安装。\nWatch 版本通常需要自行通过XCode编译安装到Apple Watch。\nmacOS 版本如遇到系统安全拦截，需要在系统设置中手动允许打开，或自行重新签名。\n\n## 版本信息\n\n- 版本：`v1.2.5`\n- Commit：`04a9f1b93158605a6f92f250e09e079bb6c9f2fa`\n- 构建编号：`64`\n\n## 更新内容\n\n- 修改了搜索页UI\n- 增加了阅读器内放大后的跨页支持\n\n---\n\n由 GitHub Actions 自动发布。\n",
+      "ipas": [
+        {
+          "name": "PicaX-unsigned.ipa",
+          "size": 12107911,
+          "url": "https://github.com/youshen2/PicaX/releases/download/v1.2.5/PicaX-unsigned.ipa",
+          "id": 647234785,
+          "updated_at": "2026-10-16T12:14:44Z",
+          "digest": "sha256:2cb367464d5617fb0d0cb68c407b73886b9140ac291f7d80d3626fa483dba049"
+        },
+        {
+          "name": "PicaX-with-watch-unsigned.ipa",
+          "size": 15162659,
+          "url": "https://github.com/youshen2/PicaX/releases/download/v1.2.5/PicaX-with-watch-unsigned.ipa",
+          "id": 647234788,
+          "updated_at": "2026-10-16T12:14:44Z",
+          "digest": "sha256:761a0a931c1f5c8c545697ce5a1c77e790ce6fc148e5effc40d2f080efdaecf7"
+        }
+      ]
+    },
+    {
       "tag": "v1.2.4",
       "name": "PicaX v1.2.4",
       "pre": false,
@@ -2274,6 +2301,25 @@
     }
   ],
   "venera-app/venera-prime": [
+    {
+      "tag": "v2.6.1",
+      "name": "Venera Prime 2.6.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-16",
+      "published_at": "2026-10-16T12:39:57Z",
+      "body": "# Venera Prime 2.6.1\n\n## 本次更新\n\n- **收藏更新检查进度**：修复启动后的自动检查在漫画因检查间隔被跳过时显示 `0/0` 的问题。进度保留收藏夹的漫画总数，并将跳过项计入已处理数量；完成后分别显示检查数与跳过数。空收藏夹显示“没有需要检查的漫画”，后台任务列表和详情不再显示无意义的 `0/0`。\n- **备份导入兼容性**：导入 `.venera` 备份时，空文件或仅含空白的图源脚本不再阻断整份数据恢复；跳过这些脚本并列出文件名，本机同名非空脚本会保留。手动导入和 WebDAV 恢复均提供提示，并补充简体、繁体中文翻译。配置、账号数据、数据库、备份清单和压缩包安全校验仍然保留，导入失败时继续执行原有回滚。\n\n## 请更新后验证并反馈\n\n请关联 issue 的提出者安装 2.6.1 后，按原来的复现步骤复查；遇到上述两项问题的用户也请复查自动检查进度和备份导入结果。\n\n- 如果问题已解决，请在原 issue 中确认，并及时关闭尚未关闭的 issue。\n- 如果问题仍存在，请在原 issue 提供版本号、系统与设备、漫画源、复现步骤，以及必要的日志或录屏；已关闭的问题也可继续留言或重新打开。\n- 日志、截图和录屏请遮盖账号、密码、令牌及 WebDAV 私有地址等敏感信息。\n- 关联 issue 不代表所有设备、漫画源及服务端都已验证，也不会自动关闭这些 issue。\n\n## 历史待确认问题\n\n以下改动属于此前版本，本次再次关联仅为收集新版验证结果。发布前已重新核对正文、作者和最新评论；已关闭但没有明确验证结论的条目仍列出并注明状态。\n\n| 相关 issue | 提出者 | 请复查的行为 |\n| --- | --- | --- |\n| #21 | @huangshengshi | 更换本地漫画存储目录后能否正常下载 |\n| #22 | @18258163996 | 更换本地漫画存储目录后的下载；其他用户已反馈 2.4.1 有效，仍待提出者确认 |\n| #26 | @tkp206093 | 双页布局、阅读方向和切换后的阅读位置；issue 已关闭，最新反馈只有截图，尚无明确验证结论 |\n| #28 | @Arteiimis | 自动同步开启时，相同源数据是否仍重复上传，以及追更遇到 HTTP 429 后的请求与上传频率；关闭开关已有确认，后续上传风暴仍待复查 |\n| #32 | @akschy | 探索页设为初始页面时，图源后台加载完成后是否自动显示内容 |\n| #33 | @suppermanzero | 阅读页底部页边距按钮的实时预览、拖动和精确输入；issue 已关闭，尚无提出者明确验证反馈 |\n| #34 | @MisakaTukasa | 双页和多图画廊能否前移、后移一张图片以调整跨页配对；issue 已关闭，尚无提出者明确验证反馈 |\n| #35 | @suppermanzero | 收藏夹顶部不再常驻检测信息，进度和结果仍可在后台任务查看；issue 已关闭，尚无提出者明确验证反馈 |\n| #36 | @zklall | 连续阅读在章节实际边界通过滑动、边缘点击、滚轮、触控板及方向键进入相邻章节，短章节和边界回弹时也能继续阅读 |\n\n## 验证范围\n\n- Linux、Flutter 3.41.4 环境下，已完成本次更新进度与后台任务显示的相关回归，以及备份导入、旧 ZIP 兼容、文件回滚、压缩包安全、同步门禁、备份保留策略和凭据恢复相关回归；相关 Dart 静态分析与差异检查通过。\n- 导入回归使用合成备份和模拟图源，覆盖有无清单、空白脚本、保留本机同名脚本、账号数据恢复，以及清单缺失文件、损坏账号数据和数据库时拒绝导入。未执行用户原始备份的完整应用恢复，也未连接用户 WebDAV 服务验证。\n- 本版执行 Android、iOS、macOS、Windows、Linux x64 和 Linux ARM64 六平台构建，标准产物范围为十四个附件；以六平台构建及机器人 Release 任务全部成功作为发布完成条件。不额外执行附件下载、哈希比对或签名复核。\n- 尚未执行本版正式包的真机安装、从上一版本应用内升级、原始备份在各平台的导入及系统权限交互验证。iOS 工作流生成未签名 IPA；构建成功不表示完成签名安装或各平台真机验证。\n",
+      "ipas": [
+        {
+          "name": "venera-prime-ios-2.6.1+261.ipa",
+          "size": 16570331,
+          "url": "https://github.com/venera-app/venera-prime/releases/download/v2.6.1/venera-prime-ios-2.6.1%2B261.ipa",
+          "id": 647297967,
+          "updated_at": "2026-10-16T12:39:52Z",
+          "digest": "sha256:c4e271d63d8cbc51ba43044dd1854d180a1cb59b89bd1c9deb9917879159c75a"
+        }
+      ]
+    },
     {
       "tag": "v2.6.0",
       "name": "Venera Prime 2.6.0",
