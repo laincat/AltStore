@@ -61,9 +61,18 @@ def log(msg: str) -> None:
 
 # --------------------------------------------------------------------------- HTTP
 
+class NoAuthRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        raise ValueError("CNB API redirects are not allowed")
+
+
 def _api(method: str, url: str, token: str, payload: dict | None = None,
          timeout: int = 60) -> tuple[int, dict]:
     """调 CNB OpenAPI。4xx/5xx 不抛异常，交给调用方判断。"""
+    parts = urllib.parse.urlsplit(url)
+    if (parts.scheme != "https" or parts.hostname != "api.cnb.cool"
+            or parts.port not in (None, 443) or parts.username is not None or parts.password is not None):
+        raise ValueError("CNB token destination must be https://api.cnb.cool")
     data = json.dumps(payload).encode("utf-8") if payload is not None else None
     req = urllib.request.Request(url, data=data, method=method)
     req.add_header("Authorization", "Bearer %s" % token)
@@ -72,7 +81,7 @@ def _api(method: str, url: str, token: str, payload: dict | None = None,
     if data is not None:
         req.add_header("Content-Type", "application/json")
     try:
-        with urllib.request.urlopen(req, timeout=timeout) as r:
+        with urllib.request.build_opener(NoAuthRedirect()).open(req, timeout=timeout) as r:
             raw = r.read()
             return r.status, (json.loads(raw) if raw else {})
     except urllib.error.HTTPError as e:
@@ -93,7 +102,10 @@ def _put_file(url: str, path: str, timeout: int = 600, max_redirect: int = 5) ->
     cur = url
     for _ in range(max_redirect):
         parts = urllib.parse.urlsplit(cur)
-        conn_cls = http.client.HTTPSConnection if parts.scheme == "https" else http.client.HTTPConnection
+        if (parts.scheme != "https" or not parts.hostname or parts.username is not None
+                or parts.password is not None or parts.port not in (None, 443)):
+            raise ValueError("Upload destination must be credential-free HTTPS")
+        conn_cls = http.client.HTTPSConnection
         conn = conn_cls(parts.hostname, parts.port, timeout=timeout)
         target = parts.path + (("?" + parts.query) if parts.query else "")
         try:
@@ -329,3 +341,4 @@ if __name__ == "__main__":
         # CI 里让错误以「人话 + 非零退出码」收场，不要甩一坨 traceback
         log("失败：%s: %s" % (type(exc).__name__, exc))
         raise SystemExit(1)
+

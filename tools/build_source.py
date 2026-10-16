@@ -47,16 +47,18 @@ import json
 import os
 import plistlib
 import re
-import ssl
 import struct
+import datetime
+import urllib.parse
 import sys
 import urllib.request
 import zlib
 
-ssl._create_default_https_context = ssl._create_unverified_context
 UA = {"User-Agent": "Mozilla/5.0"}
-# GitHub 直连在大陆可能很慢/超时，这里按顺序回退到公共加速节点
-MIRRORS = ["", "https://gh-proxy.com/", "https://ghfast.top/"]
+# Authoritative metadata and IPA probes never use public proxy fallbacks.
+MAX_RESPONSE = 8 * 1024 * 1024
+MAX_PLIST = 2 * 1024 * 1024
+MAX_IPA = 8 * 1024 * 1024 * 1024
 
 SOURCE = {
     "name": "Laincat 工具箱",
@@ -279,69 +281,111 @@ APPS = [
 
 
 # ---------- 网络 ----------
+def https_url(url):
+    parts = urllib.parse.urlsplit(url)
+    if (parts.scheme != "https" or not parts.hostname or parts.username is not None
+            or parts.password is not None or parts.port not in (None, 443)
+            or any(c.isspace() or ord(c) < 32 for c in url)):
+        raise ValueError("Only credential-free HTTPS URLs are supported")
+    return parts
+
+
+class SafeRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        https_url(newurl)
+        # API credentials must never enter redirect processing, even same-host.
+        if req.has_header("Authorization"):
+            raise ValueError("Authenticated redirects are not allowed")
+        redirected = super().redirect_request(req, fp, code, msg, headers, newurl)
+        if redirected is not None:
+            for key in ("Authorization", "Cookie", "Proxy-authorization"):
+                redirected.remove_header(key)
+        return redirected
+
+
+def open_url(req, timeout=60):
+    https_url(req.full_url)
+    return urllib.request.build_opener(SafeRedirect()).open(req, timeout=timeout)
+
+
+def read_bounded(response, limit):
+    data = response.read(limit + 1)
+    if len(data) > limit:
+        raise ValueError("Response exceeds size limit")
+    return data
+
+
 def fetch(url, start=None, end=None, timeout=60):
-    headers = dict(UA)
+    headers = dict(UA, **{"Accept-Encoding": "identity"})
+    limit = MAX_RESPONSE
     if start is not None:
+        if not (0 <= start <= end < MAX_IPA and end - start + 1 <= MAX_RESPONSE):
+            raise ValueError("Invalid or oversized byte range")
         headers["Range"] = "bytes=%d-%d" % (start, end)
+        limit = end - start + 1
     req = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read(), dict(r.headers)
+    with open_url(req, timeout=timeout) as r:
+        if r.headers.get("Content-Encoding", "identity").lower() != "identity":
+            raise ValueError("Encoded range response is unsupported")
+        if start is not None:
+            match = re.fullmatch(r"bytes (\d+)-(\d+)/(\d+)", r.headers.get("Content-Range", ""))
+            if r.status != 206 or not match:
+                raise ValueError("Server did not honor byte range")
+            first, last, total = map(int, match.groups())
+            if (first, last) != (start, end) or not (last < total <= MAX_IPA):
+                raise ValueError("Inconsistent Content-Range")
+        elif r.status != 200:
+            raise ValueError("Unexpected HTTP status")
+        data = read_bounded(r, limit)
+        if start is not None and len(data) != limit:
+            raise ValueError("Truncated range response")
+        return data, r.headers
 
 
 def fetch_ranged(url, start, end, attempts=2):
-    """带加速镜像回退 + 重试的 Range 请求（大陆直连 GitHub 偶发超时）。"""
     last = None
-    for m in MIRRORS:
-        for _ in range(attempts):
-            try:
-                data, _ = fetch((m + url) if m else url, start, end)
-                if data:
-                    return data
-            except Exception as e:  # noqa: BLE001
-                last = e
-    raise last
+    for _ in range(attempts):
+        try:
+            return fetch(url, start, end)[0]
+        except Exception as e:
+            last = e
+    raise last or ValueError("No range attempts")
 
 
 def remote_total(url):
-    """取远端文件总长度，同样带镜像回退与重试。"""
-    last = None
-    for m in MIRRORS:
-        for _ in range(2):
-            try:
-                _, h = fetch((m + url) if m else url, 0, 0)
-                cr = h.get("Content-Range") or ""
-                if "/" in cr:
-                    return int(cr.split("/")[-1])
-            except Exception as e:  # noqa: BLE001
-                last = e
-    raise last
+    _, headers = fetch(url, 0, 0)
+    return int(headers["Content-Range"].split("/")[-1])
 
 
 def gh_json(url, timeout=60):
-    """调 GitHub API，带镜像回退。
-
-    gh-proxy.com 实测可代理 api.github.com（ghfast.top 不行，会 403）。
-    未登录的 API 限流是 60 次/小时/IP，CI 上可能撞到；有 GITHUB_TOKEN 就带上。
-    """
+    parts = https_url(url)
+    if parts.hostname != "api.github.com":
+        raise ValueError("GitHub API host required")
+    headers = dict(UA, Accept="application/vnd.github+json")
     token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
-    last = None
-    for m in MIRRORS:
-        try:
-            target = (m + url) if m else url
-            headers = dict(UA)
-            headers["Accept"] = "application/vnd.github+json"
-            if token:
-                headers["Authorization"] = "Bearer %s" % token
-            req = urllib.request.Request(target, headers=headers)
-            with urllib.request.urlopen(req, timeout=timeout) as r:
-                data = json.loads(r.read().decode("utf-8"))
-            if isinstance(data, dict) and "rate limit" in str(data.get("message", "")).lower():
-                last = RuntimeError(data["message"])
-                continue
-            return data
-        except Exception as e:  # noqa: BLE001
-            last = e
-    raise last if last else RuntimeError("GitHub API 请求失败：%s" % url)
+    if token:
+        headers["Authorization"] = "Bearer %s" % token
+    with open_url(urllib.request.Request(url, headers=headers), timeout=timeout) as r:
+        if r.status != 200:
+            raise ValueError("Unexpected GitHub API status")
+        return json.loads(read_bounded(r, MAX_RESPONSE).decode("utf-8"))
+
+
+def inflate_plist(comp, method, expected):
+    if not (0 < expected <= MAX_PLIST and 0 < len(comp) <= MAX_PLIST):
+        raise ValueError("Oversized or empty Info.plist")
+    if method == 0:
+        raw = comp
+    elif method == 8:
+        decoder = zlib.decompressobj(-15)
+        raw = decoder.decompress(comp, MAX_PLIST + 1)
+        if not decoder.eof or decoder.unused_data or decoder.unconsumed_tail:
+            raise ValueError("Invalid or oversized deflate stream")
+    else:
+        raise ValueError("Unsupported ZIP compression")
+    if len(raw) != expected or len(raw) > MAX_PLIST:
+        raise ValueError("Info.plist size mismatch")
+    return raw
 
 
 # ---------- 解析远端 IPA ----------
@@ -351,29 +395,50 @@ def probe_ipa(url):
     tail_len = min(200000, total)
     tail = fetch_ranged(url, total - tail_len, total - 1)
     i = tail.rfind(b"PK\x05\x06")
-    if i < 0:
+    if i < 0 or i + 22 > len(tail):
         raise RuntimeError("未找到 zip 中央目录（EOCD）")
+    disk, cd_disk, disk_entries, entries = struct.unpack_from("<HHHH", tail, i + 4)
+    comment_len = struct.unpack_from("<H", tail, i + 20)[0]
+    if disk or cd_disk or disk_entries != entries or entries == 65535 or i + 22 + comment_len != len(tail):
+        raise ValueError("Unsupported or malformed ZIP directory")
     cd_size, cd_off = struct.unpack_from("<II", tail, i + 12)
+    if not (0 < cd_size <= MAX_RESPONSE and cd_off + cd_size <= total - tail_len + i):
+        raise ValueError("Invalid central directory bounds")
     cd = fetch_ranged(url, cd_off, cd_off + cd_size - 1)
 
     p, n, info = 0, len(cd), None
     while p + 46 <= n and cd[p:p + 4] == b"PK\x01\x02":
+        flags = struct.unpack_from("<H", cd, p + 8)[0]
+        crc, csize, usize = struct.unpack_from("<III", cd, p + 16)
         method = struct.unpack_from("<H", cd, p + 10)[0]
         csize = struct.unpack_from("<I", cd, p + 20)[0]
         fnl = struct.unpack_from("<H", cd, p + 28)[0]
         exl = struct.unpack_from("<H", cd, p + 30)[0]
         cml = struct.unpack_from("<H", cd, p + 32)[0]
         lofs = struct.unpack_from("<I", cd, p + 42)[0]
+        if p + 46 + fnl + exl + cml > n:
+            raise ValueError("Truncated ZIP directory entry")
         name = cd[p + 46:p + 46 + fnl].decode("utf-8", "replace")
         is_main = (name.startswith("Payload/") and name.endswith(".app/Info.plist")
                    and name.count("/") == 2 and "Watch" not in name)
         if is_main:
+            if flags & 1 or not (0 < csize <= MAX_PLIST and 0 < usize <= MAX_PLIST) or lofs + 30 > cd_off:
+                raise ValueError("Invalid Info.plist ZIP entry")
             lh = fetch_ranged(url, lofs, lofs + 29)
+            if lh[:4] != b"PK\x03\x04" or struct.unpack_from("<H", lh, 8)[0] != method:
+                raise ValueError("Invalid local ZIP header")
             lf, le = struct.unpack_from("<HH", lh, 26)
             d0 = lofs + 30 + lf + le
+            if d0 + csize > cd_off:
+                raise ValueError("Info.plist exceeds archive bounds")
             comp = fetch_ranged(url, d0, d0 + csize - 1)
-            raw = zlib.decompress(comp, -15) if method == 8 else comp
+            raw = inflate_plist(comp, method, usize)
+            if zlib.crc32(raw) & 0xffffffff != crc:
+                raise ValueError("Info.plist CRC mismatch")
             pl = plistlib.loads(raw)
+            if not isinstance(pl, dict) or any(not isinstance(pl.get(k), str) or not pl[k].strip() for k in
+                    ("CFBundleIdentifier", "CFBundleShortVersionString", "CFBundleVersion", "MinimumOSVersion")):
+                raise ValueError("Info.plist lacks required string fields")
             info = {
                 "bundleIdentifier": pl.get("CFBundleIdentifier"),
                 "version": pl.get("CFBundleShortVersionString"),
@@ -434,7 +499,8 @@ def _load(name, default):
     p = os.path.join(CACHE_DIR, name)
     if os.path.exists(p):
         try:
-            return json.load(open(p, encoding="utf-8"))
+            with open(p, encoding="utf-8") as stream:
+                return json.load(stream)
         except Exception:  # noqa: BLE001
             return default
     return default
@@ -451,10 +517,11 @@ def normalize_cached(r):
         "tag_name": r["tag"],
         "prerelease": r["pre"],
         "draft": r["draft"],
-        "published_at": r["date"] + "T00:00:00Z",
+        "published_at": r.get("published_at") or r["date"] + "T00:00:00Z",
         "body": r.get("body", ""),
         "assets": [{"name": i["name"], "size": i["size"],
-                    "browser_download_url": i["url"]} for i in r["ipas"]],
+                    "browser_download_url": i["url"],
+                    **{k: i.get(k) for k in ("id", "updated_at", "digest")}} for i in r["ipas"]],
     }
 
 
@@ -466,28 +533,32 @@ def get_releases(repo, refresh=False):
     cache[repo] = [{
         "tag": x["tag_name"], "name": x.get("name"), "pre": x.get("prerelease"),
         "draft": x.get("draft"), "date": (x.get("published_at") or "")[:10],
+        "published_at": x.get("published_at"),
         "body": (x.get("body") or "")[:2000],
         "ipas": [{"name": a["name"], "size": a["size"],
-                  "url": a["browser_download_url"]} for a in x.get("assets", [])
+                  "url": a["browser_download_url"],
+                  **{k: a.get(k) for k in ("id", "updated_at", "digest")}} for a in x.get("assets", [])
                  if a["name"].lower().endswith(".ipa")],
     } for x in rels]
     _save("releases.json", cache)
     return rels
 
 
-def probe_cached(url, force=False):
-    """探测远端 IPA 元数据。
-
-    探测结果按 URL 永久缓存：同一个 Release 资产的内容不会变，
-    重复探测纯属浪费网络。CI 里这一点很关键（大陆直连 GitHub 不稳）。
-    需要重探时用 --reprobe。
-    """
+def probe_cached(url, force=False, asset=None):
+    """Reuse only identity-bound probes; legacy URL-only cache is untrusted."""
+    asset = asset or {}
+    identity = {k: asset.get(k) for k in ("id", "updated_at", "size", "digest")}
+    cacheable = bool(identity["id"] and identity["updated_at"] and identity["size"])
     cache = _load("probes.json", {})
-    if not force and url in cache and cache[url].get("bundleIdentifier"):
-        return cache[url]
+    entry = cache.get(url, {})
+    if not force and cacheable and entry.get("assetIdentity") == identity and entry.get("bundleIdentifier"):
+        return entry
     info = probe_ipa(url)
-    cache[url] = info
-    _save("probes.json", cache)
+    if asset.get("size") is not None and info["size"] != asset["size"]:
+        raise ValueError("GitHub asset size differs from IPA response")
+    if cacheable:
+        cache[url] = dict(info, assetIdentity=identity)
+        _save("probes.json", cache)
     return info
 
 
@@ -551,7 +622,7 @@ def make_versions(picks, repo, bundle_id=None, reprobe=False):
     out = []
     for r, a in picks:
         try:
-            m = probe_cached(a["browser_download_url"], reprobe)
+            m = probe_cached(a["browser_download_url"], reprobe, asset=a)
         except Exception as e:  # noqa: BLE001
             print("   ! %-22s %-10s 探测失败：%r" % (repo, r["tag_name"], e), file=sys.stderr)
             continue
@@ -563,6 +634,7 @@ def make_versions(picks, repo, bundle_id=None, reprobe=False):
         out.append({
             "version": m["version"],
             "date": r["published_at"][:10],
+            "publishedAt": r["published_at"],
             # buildVersion 是 AltStore 规范里的键名；
             # buildNumber 是 LiveContainer 实际解码的键名（CodingKeys 里写死了 buildNumber）。
             # 两个都写，谁也别说谁错 —— 多出来的键两边都会忽略。
@@ -575,14 +647,25 @@ def make_versions(picks, repo, bundle_id=None, reprobe=False):
             "releaseTag": r["tag_name"],
             "source": "https://github.com/%s/releases/tag/%s" % (repo, r["tag_name"]),
         })
-    out.sort(key=lambda v: v["date"], reverse=True)
-    return out, bundle_id
+    return sort_versions(out), bundle_id
+
+
+def release_identity(v):
+    return tuple(v.get(k) for k in ("version", "buildVersion", "downloadURL", "releaseTag", "date"))
+
+
+def version_order(v):
+    stamp = v.get("publishedAt") or v.get("date") or "1970-01-01"
+    parsed = datetime.datetime.fromisoformat(stamp.replace("Z", "+00:00"))
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=datetime.timezone.utc)
+    return (parsed.timestamp(), semver_key(v.get("version")), semver_key(v.get("buildVersion")),
+            str(v.get("releaseTag") or ""), str(v.get("downloadURL") or ""))
 
 
 def sort_versions(vs):
-    """按日期倒序；同日期时按版本号倒序，保证结果稳定可复现。"""
-    return sorted(vs, key=lambda v: (str(v.get("date") or ""), semver_key(v.get("version"))),
-                  reverse=True)
+    """Preserve publication time; deterministic version/build tie-breakers."""
+    return sorted(vs, key=version_order, reverse=True)
 
 
 def semver_key(text):
@@ -595,7 +678,7 @@ def collect(rels, cfg, per_app):
     """从发布列表里挑出：最近 per_app 个稳定版 + 最新的那个预发布版（若配置了 nightly）。"""
     stable, beta = [], None
     want_beta = bool(cfg.get("nightly"))
-    for r in rels:
+    for r in sorted(rels, key=lambda r: r.get("published_at") or "", reverse=True):
         if r.get("draft"):
             continue
         a = next((x for x in r.get("assets", []) if cfg["asset"](x["name"])), None)
@@ -662,13 +745,13 @@ def build(per_app=1, refresh=False, reprobe=False, prev_path=None):
         # 对 SideStore 无副作用：它有 releaseChannels 时压根不读这个数组（源码已核实）。
         flat_versions, seen_keys = [], set()
         for v in sort_versions(list(stable_versions) + list(beta_versions)):
-            key = (v["version"], v.get("buildVersion"))
+            key = release_identity(v)
             if key in seen_keys:
                 continue
             seen_keys.add(key)
             flat_versions.append(v)
         is_beta_head = bool(beta_versions) and flat_versions and \
-            flat_versions[0]["version"] == beta_versions[0]["version"]
+            release_identity(flat_versions[0]) in {release_identity(v) for v in beta_versions}
 
         icon = "https://raw.githubusercontent.com/%s/%s/%s" % (repo, latest["releaseTag"], cfg["icon"])
         if not icon_url_ok(icon):
@@ -740,7 +823,7 @@ if __name__ == "__main__":
     ap.add_argument("--refresh", action="store_true",
                     help="忽略 cache/ 里的 Release 列表，重新调 GitHub API 抓取")
     ap.add_argument("--reprobe", action="store_true",
-                    help="连 IPA 元数据也重新探测（默认永久复用 cache/probes.json）")
+                    help="连 IPA 元数据也重新探测（默认仅复用资产身份一致的缓存）")
     ap.add_argument("--no-probe-icons", action="store_true", help="跳过图标可达性检查")
     args = ap.parse_args()
 
@@ -768,3 +851,4 @@ if __name__ == "__main__":
     if not source["apps"]:
         print("!! 一个应用都没生成，判定为失败", file=sys.stderr)
         sys.exit(1)
+

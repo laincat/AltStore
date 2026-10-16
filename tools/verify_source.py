@@ -1,157 +1,174 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""apps.json 结构校验：流水线提交前的守门人。
-
-为什么需要它
-------------
-源文件是端上直接消费的，一旦结构不对（比如某个 app 的 releases 为空数组），
-SideStore 解码时会直接抛错，整个源都加载不了。而这类错误在生成阶段往往是
-「网络抽风导致某个 app 数据不完整」造成的，肉眼看不出来。所以提交前必须先过一遍。
-
-用法：
-    python tools/verify_source.py                 # 校验 ../apps.json
-    python tools/verify_source.py --file x.json --min-apps 6
-退出码：0 通过，1 有问题。
-"""
-from __future__ import annotations
-
+"""Validate every client representation before publishing apps.json."""
 import argparse
+import datetime
 import json
 import os
 import re
 import sys
+import urllib.parse
 
 TRACKS = {"stable", "alpha", "nightly", "local", "unknown"}
-REQ_APP = ["name", "bundleIdentifier", "developerName", "localizedDescription",
-           "iconURL", "tintColor", "category", "releaseChannels", "versions"]
-REQ_REL = ["version", "date", "downloadURL", "size", "minOSVersion"]
-DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+CRITICAL = ("version", "date", "downloadURL", "size", "minOSVersion", "buildVersion",
+            "buildNumber", "releaseTag", "source", "publishedAt")
 
 
-def semver(text):
-    """把 6.1.0 / v2.3.2 / 2.3.2+245 之类转成可比元组。"""
-    nums = re.findall(r"\d+", str(text))
-    return tuple(int(n) for n in nums[:3]) + (0,) * (3 - min(3, len(nums)))
+def text(value):
+    return isinstance(value, str) and bool(value.strip())
 
 
-def main() -> int:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--file", default=os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                                                   "..", "apps.json"))
-    ap.add_argument("--min-apps", type=int, default=1)
-    args = ap.parse_args()
-
-    path = os.path.abspath(args.file)
-    errs, warns = [], []
-
+def https(value):
+    if not text(value) or any(c.isspace() or ord(c) < 32 for c in value):
+        return False
     try:
-        with open(path, encoding="utf-8") as f:
-            src = json.load(f)
-    except Exception as e:  # noqa: BLE001
-        print("✗ 无法解析 %s：%r" % (path, e), file=sys.stderr)
-        return 1
+        u = urllib.parse.urlsplit(value)
+        return (u.scheme == "https" and bool(u.hostname) and u.username is None
+                and u.password is None and u.port in (None, 443)
+                and bool(re.fullmatch(r"[A-Za-z0-9.-]+", u.hostname))
+                and not u.hostname.startswith(".") and ".." not in u.hostname)
+    except ValueError:
+        return False
 
-    for k in ("name", "identifier", "apps"):
-        if not src.get(k):
-            errs.append("源缺少 %s" % k)
-    if src.get("identifier") and "." not in src["identifier"]:
-        warns.append("identifier 建议用反向域名（当前 %r）" % src["identifier"])
 
-    apps = src.get("apps") or []
-    if len(apps) < args.min_apps:
-        errs.append("应用数 %d 少于要求的 %d（可能生成不完整）" % (len(apps), args.min_apps))
+def identity(v):
+    return tuple(v.get(k) for k in ("version", "buildVersion", "downloadURL", "releaseTag", "date"))
 
+
+def fingerprint(v):
+    return json.dumps({k: v.get(k) for k in CRITICAL}, sort_keys=True)
+
+
+def validate(src, min_apps=1):
+    errors = []
+    def fail(where, message):
+        errors.append("%s: %s" % (where, message))
+
+    def release(v, where):
+        if not isinstance(v, dict):
+            fail(where, "release must be an object")
+            return False
+        for k in ("version", "date", "downloadURL", "minOSVersion"):
+            if not text(v.get(k)):
+                fail(where, "%s must be a nonempty string" % k)
+        if not https(v.get("downloadURL")):
+            fail(where, "downloadURL must have a valid HTTPS host")
+        if type(v.get("size")) is not int or v["size"] <= 0:
+            fail(where, "size must be a positive integer")
+        try:
+            if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(v.get("date", ""))):
+                raise ValueError()
+            datetime.date.fromisoformat(v["date"])
+        except (ValueError, TypeError):
+            fail(where, "invalid calendar date")
+        if "publishedAt" in v:
+            try:
+                stamp = datetime.datetime.fromisoformat(v["publishedAt"].replace("Z", "+00:00"))
+                if stamp.tzinfo is None or stamp.date().isoformat() != v.get("date"):
+                    raise ValueError()
+            except (ValueError, TypeError, AttributeError):
+                fail(where, "publishedAt must be a timezone-aware timestamp matching date")
+        for k in ("buildVersion", "buildNumber", "releaseTag", "source"):
+            if k in v and not text(v[k]):
+                fail(where, "%s must be a nonempty string" % k)
+        if "source" in v and not https(v["source"]):
+            fail(where, "invalid source URL")
+        if "buildNumber" in v and v["buildNumber"] != v.get("buildVersion"):
+            fail(where, "buildNumber differs from buildVersion")
+        return True
+
+    if not isinstance(src, dict):
+        return ["source must be an object"]
+    for k in ("name", "identifier"):
+        if not text(src.get(k)):
+            fail("source", "%s must be a nonempty string" % k)
+    apps = src.get("apps")
+    if not isinstance(apps, list):
+        return errors + ["apps must be an array"]
+    if len(apps) < min_apps:
+        fail("source", "too few apps: %d < %d" % (len(apps), min_apps))
     seen = set()
-    for a in apps:
-        nm = a.get("name") or "<未命名>"
-        for k in REQ_APP:
-            if k not in a:
-                errs.append("%s 缺少字段 %s" % (nm, k))
+    for index, a in enumerate(apps):
+        where = "app[%d]" % index
+        if not isinstance(a, dict):
+            fail(where, "must be an object")
+            continue
+        for k in ("name", "bundleIdentifier", "developerName", "localizedDescription", "iconURL", "tintColor", "category"):
+            if not text(a.get(k)):
+                fail(where, "%s must be a nonempty string" % k)
+        if not https(a.get("iconURL")):
+            fail(where, "invalid iconURL")
         bid = a.get("bundleIdentifier")
-        if bid in seen:
-            errs.append("bundleIdentifier 重复：%s" % bid)
-        seen.add(bid)
-        for u in [a.get("iconURL")] + [v.get("downloadURL") for c in (a.get("releaseChannels") or [])
-                                       for v in c.get("releases", [])]:
-            if u and not str(u).startswith("https://"):
-                errs.append("%s 的 URL 不是 https：%s" % (nm, u))
-
-        chans = a.get("releaseChannels") or []
-        tracks = [c.get("track") for c in chans]
-        if not chans:
-            errs.append("%s 没有 releaseChannels" % nm)
-        if tracks.count("stable") != 1:
-            errs.append("%s 的 stable 轨道数量应为 1，实际 %d" % (nm, tracks.count("stable")))
+        if text(bid):
+            if bid in seen:
+                fail(where, "duplicate bundleIdentifier")
+            seen.add(bid)
+        chans, flat = a.get("releaseChannels"), a.get("versions")
+        if not isinstance(chans, list) or not chans or not isinstance(flat, list) or not flat:
+            fail(where, "releaseChannels and versions must be nonempty arrays")
+            continue
+        tracks, all_releases, beta = [], [], []
         for c in chans:
-            t = c.get("track")
-            if t not in TRACKS:
-                errs.append("%s 出现未知轨道 %r" % (nm, t))
-            rels = c.get("releases") or []
-            if not rels:
-                # SideStore 的 ReleaseTrack 解码时显式拒绝空数组
-                errs.append("%s 的 %s 轨道 releases 为空（SideStore 会解码失败）" % (nm, t))
-            for v in rels:
-                for k in REQ_REL:
-                    if k not in v:
-                        errs.append("%s/%s 缺少 %s" % (nm, v.get("version"), k))
-                if not isinstance(v.get("size"), int) or (v.get("size") or 0) <= 0:
-                    errs.append("%s/%s 的 size 非法：%r" % (nm, v.get("version"), v.get("size")))
-                if not DATE_RE.match(str(v.get("date") or "")):
-                    errs.append("%s/%s 的 date 格式应为 YYYY-MM-DD：%r"
-                                % (nm, v.get("version"), v.get("date")))
+            if not isinstance(c, dict):
+                fail(where, "channel must be an object")
+                continue
+            track = c.get("track")
+            if not isinstance(track, str) or track not in TRACKS:
+                fail(where, "invalid track")
+            tracks.append(str(track))
+            rels = c.get("releases")
+            if not isinstance(rels, list) or not rels:
+                fail(where, "channel releases must be a nonempty array")
+                continue
+            valid = [v for v in rels if release(v, where)]
+            if len({fingerprint(v) for v in valid}) != len(valid):
+                fail(where, "duplicate channel release")
+            all_releases.extend(valid)
+            if track != "stable":
+                beta.extend(valid)
+        if len(set(tracks)) != len(tracks) or tracks.count("stable") != 1:
+            fail(where, "tracks must be unique with exactly one stable")
+        valid_flat = [v for v in flat if release(v, where)]
+        if {fingerprint(v) for v in valid_flat} != {fingerprint(v) for v in all_releases}:
+            fail(where, "flat/channel critical release payload mismatch")
+        # JSON identities are safe even when malformed scalar values are containers.
+        keys = [json.dumps(identity(v), sort_keys=True) for v in valid_flat]
+        if len(keys) != len(set(keys)):
+            fail(where, "duplicate flat release identity")
+        if not errors:
+            from build_source import sort_versions
+            if valid_flat != sort_versions(valid_flat):
+                fail(where, "versions are not ordered by timestamp/version/build")
+        if "beta" in a and type(a["beta"]) is not bool:
+            fail(where, "beta must be boolean")
+        if valid_flat:
+            expected = any(identity(valid_flat[0]) == identity(v) for v in beta)
+            if bool(a.get("beta", False)) != expected:
+                fail(where, "beta badge does not match first release identity")
+        stable = next((c.get("releases") for c in chans if isinstance(c, dict) and c.get("track") == "stable"), [])
+        if stable and isinstance(stable[0], dict):
+            mapping = {"version": "version", "versionDate": "date", "downloadURL": "downloadURL",
+                       "size": "size", "minOSVersion": "minOSVersion"}
+            for old, new in mapping.items():
+                if old in a and a[old] != stable[0].get(new):
+                    fail(where, "legacy %s differs from stable head" % old)
+    return errors
 
-        # 扁平 versions：给不认 releaseChannels 的客户端用（LiveContainer 就只读这个，
-        # 而且只取 versions[0] 去安装，既没有 beta 开关也没有版本选择器）。
-        # 所以它必须是「所有轨道的并集 + 按日期倒序 + 无重复」，否则那些客户端会
-        # 显示错版本、或者干脆什么都看不到。
-        legacy = a.get("versions") or []
-        if not legacy:
-            errs.append("%s 的 versions 为空 —— LiveContainer 会一个版本都看不到" % nm)
-        else:
-            dates = [str(v.get("date") or "") for v in legacy]
-            if dates != sorted(dates, reverse=True):
-                errs.append("%s 的 versions 未按日期倒序：%s（LiveContainer 取第 1 条）"
-                            % (nm, dates))
-            keys = [(v.get("version"), v.get("buildVersion")) for v in legacy]
-            if len(set(keys)) != len(keys):
-                errs.append("%s 的 versions 有重复条目：%s" % (nm, keys))
-            have = {(v.get("version"), v.get("date")) for v in legacy}
-            want = {(v.get("version"), v.get("date")) for c in chans for v in c.get("releases", [])}
-            if have != want:
-                errs.append("%s 的 versions 与轨道内容对不上\n      仅 versions 有：%s\n      仅轨道有：%s"
-                            % (nm, sorted(have - want), sorted(want - have)))
-            for v in legacy:
-                for k in REQ_REL:
-                    if k not in v:
-                        errs.append("%s 的 versions 条目 %s 缺少 %s" % (nm, v.get("version"), k))
 
-        # 测试版版本号必须 >= 稳定版，否则 SideStore 根本不显示
-        stable_vs = [v["version"] for c in chans if c.get("track") == "stable"
-                     for v in c.get("releases", [])]
-        nightly = [v["version"] for c in chans if c.get("track") == "nightly"
-                   for v in c.get("releases", [])]
-        if nightly and stable_vs and semver(nightly[0]) < semver(stable_vs[0]):
-            warns.append("%s 的测试版 %s 低于稳定版 %s，SideStore 不会显示"
-                         % (nm, nightly[0], stable_vs[0]))
-
-        # 提醒：这是 LiveContainer 侧的实际安装结果，不是一个可以「取消」的行为
-        if legacy and nightly and legacy[0].get("version") == nightly[0]:
-            warns.append("%s 的 versions[0] 是测试版 %s —— LiveContainer 没有 beta 开关、"
-                         "也没有版本选择器，会直接安装它（这是设计如此，不是缺陷）"
-                         % (nm, nightly[0]))
-
-    for w in warns:
-        print("⚠ %s" % w)
-    for e in errs:
-        print("✗ %s" % e, file=sys.stderr)
-    if errs:
-        print("\n校验未通过：%d 个错误" % len(errs), file=sys.stderr)
-        return 1
-
-    n_rel = sum(len(c.get("releases", [])) for a in apps for c in a["releaseChannels"])
-    print("✓ 校验通过：%d 个应用，%d 条版本记录%s"
-          % (len(apps), n_rel, ("，%d 条警告" % len(warns)) if warns else ""))
-    return 0
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--file", default=os.path.join(os.path.dirname(__file__), "..", "apps.json"))
+    parser.add_argument("--min-apps", type=int, default=1)
+    args = parser.parse_args()
+    try:
+        with open(args.file, encoding="utf-8") as stream:
+            errors = validate(json.load(stream), args.min_apps)
+    except (OSError, ValueError) as exc:
+        errors = [str(exc)]
+    for error in errors:
+        print("✗ " + error, file=sys.stderr)
+    if not errors:
+        print("✓ Source schema, identity and client payload validation passed")
+    return int(bool(errors))
 
 
 if __name__ == "__main__":

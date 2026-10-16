@@ -5,7 +5,7 @@
 三个客户端都能用：**SideStore / AltStore / LiveContainer**。
 
 > ⚠️ SideStore、AltStore 与 LiveContainer 的解析逻辑**不一样**，同一个源在两边看到的东西可能不同。
-> 典型例子：测试版（EhPanda 3.0.0 / Animeko 6.2.0）在 LiveContainer 里默认就能装，在 SideStore 里得先开 Beta 开关 —— 详见《两个客户端的差异》。
+> 典型例子：测试版（EhPanda 3.0.0 / Animeko 6.2.0）在 LiveContainer 里排在首位时默认就能装，在 SideStore 里得先开 Beta 开关 —— 详见《两个客户端的差异》。
 
 ## 添加这个源
 
@@ -41,6 +41,8 @@ https://github.com/laincat/AltStore/releases/download/latest/apps.json
 
 ## 应用清单
 
+以下版本、体积与案例为 2026-09-18 的历史说明，不代表最新状态；最新版本、最低系统与测试版标记以 [apps.json](apps.json) 为准。
+
 | 应用 | Bundle ID | 稳定版 | 体积 | 最低系统 | 测试版 | 上游 |
 |---|---|---|---|---|---|---|
 | Kazumi | `com.example.kazumi` | 2.3.3 | 28.4 MB | iOS 15.0+ | 无 | [Predidit/Kazumi](https://github.com/Predidit/Kazumi) |
@@ -53,7 +55,7 @@ https://github.com/laincat/AltStore/releases/download/latest/apps.json
 | Breeze | `com.zephyr.breeze` | 3.0.31 | 24.6 MB | iOS 15.0+ | 无 | [deretame/Breeze](https://github.com/deretame/Breeze) |
 | PicaX | `moye.PicaX` | 1.2.3 | 10.7 MB | iOS 15.2+ | 无 | [youshen2/PicaX](https://github.com/youshen2/PicaX) |
 
-每个应用提供 **stable（稳定）** 轨道；**EhPanda** 与 **Animeko** 另有 **nightly（测试）** 轨道（分别是 3.0.0 与 6.2.0）。
+历史清单中每个应用提供 **stable（稳定）** 轨道；**EhPanda** 与 **Animeko** 另有 **nightly（测试）** 轨道（分别是 3.0.0 与 6.2.0）。
 
 ## 两个客户端的差异（重要）
 
@@ -93,11 +95,11 @@ stable 轨道非空，这个 `if` 永远不成立（整个 `StoreApp.swift` 里�
 
 ## 测试版（nightly 轨道）
 
-目前两个应用带测试版：**EhPanda 3.0.0**（正式版 2.8.1）与 **Animeko 6.2.0**（正式版 6.1.0，上游 tag 是 `v6.2.0-alpha01`）。
+历史示例（2026-09-18）：两个应用带测试版：**EhPanda 3.0.0**（正式版 2.8.1）与 **Animeko 6.2.0**（正式版 6.1.0，上游 tag 是 `v6.2.0-alpha01`）。
 
 | 客户端 | 怎么才能拿到测试版 |
 |---|---|
-| **LiveContainer** | **什么都不用做**。源里 `versions[0]` 就是测试版，列表里直接显示、点安装就是它，旁边带「测试版」角标 |
+| **LiveContainer** | **什么都不用做**。当源里 `versions[0]` 是测试版时，列表里直接显示、点安装就是它，旁边带「测试版」角标 |
 | **SideStore / AltStore** | 要手动开开关：`设置 → Beta Testing → 打开 Beta Updates`（轨道选 `nightly`，默认就是它，不用改） |
 
 SideStore 那三层门槛（源码 `AltStore/Core/Model/StoreApp.swift`）：
@@ -229,13 +231,20 @@ EhPanda   (app.ehpanda)
 
 这个仓库**没有任何传统依赖** —— `tools/` 下三个脚本的 import 全部来自 Python 标准库（`argparse` / `json` / `os` / `plistlib` / `re` / `ssl` / `struct` / `sys` / `urllib` / `zlib`），仓库里也不存在 `requirements.txt` / `pyproject.toml` / `package.json`。所以依赖图里**唯一**的依赖，就是流水线用的那两个 Action。
 
-`.github/dependabot.yml` 因此只配了 `github-actions` 一个生态：每周一 09:00（北京时间）检查一次，minor + patch 合并成一个 PR，**major 单独开**（这条流水线负责发布源文件，major 升级可能改行为，要单独看清再合）。
+`.github/dependabot.yml` 因此只配了 `github-actions` 一个生态：每天 09:00（北京时间）检查一次，minor + patch 合并成一个 PR，**major 单独开**（这条流水线负责发布源文件，major 升级可能改行为，要单独看清再合）。
 
-> ⚠️ 有个容易误会的点：workflow 里写的是 `actions/checkout@v7` 这种 **major 浮动标签**，不是精确版本。`v7` 是**会移动的**标签 —— 上游发 v7.0.2，下一轮跑的就是 v7.0.2，**minor / patch 早已自动跟随，不需要任何人批准**。
-> 也就是说 Dependabot 在这里**只会在上游出 v8 时提 PR**。配好之后长期看不到 PR 是**正常**的，别以为没生效。
-> （若想让它勤快地干活，得先把 `@v7` 改成 commit SHA pin——那属于供应链安全的取舍。）
->
-> 另外，「自动更新依赖」其实有两半，另半是**安全更新**（Dependabot alerts + security updates）：本仓库这项本来就是开着的。
+Action 已固定到完整 commit SHA（保留版本注释）；Dependabot 每日提出更新，patch/minor 仅在对应提交验证通过后自动合并，major 单独审核。生成与发布前会在同一 checkout 上执行离线回归测试、结构校验和客户端模拟。
+
+### 网络与缓存安全
+
+- 所有 HTTPS 使用系统 CA 与主机名校验；不修改全局 SSL 上下文，不回退公共 GitHub 代理。
+- GitHub token 仅发送到 `https://api.github.com`；携带认证的请求拒绝全部重定向，普通资源禁止降级 HTTP。
+- IPA Range 必须返回精确的 206、Content-Range 和响应长度；单次最多 8 MiB，IPA 总长上限 8 GiB，Info.plist 压缩与展开均最多 2 MiB。ZIP64、多卷 ZIP、不支持的压缩算法和损坏 CRC 会失败并保留上一版条目。
+- IPA 探测缓存绑定资产 ID、updated_at、size、digest；旧的仅 URL 缓存会重新探测。`--refresh` 重新抓取发布和资产身份；`--reprobe` 强制探测。缺少资产身份时不永久缓存。
+- 完整发布时间用于排序，再按版本和构建号确定顺序；BETA 标记按完整发布身份判断，不能只比较版本号。
+- 如果曾在旧脚本中使用 GitHub token 且触发公共代理回退，应自行检查相关 token 的历史使用与撤销需求。本次代码修复不更改凭据或账号设置。
+
+离线测试：`python -m unittest discover -s tests -v`，再运行 `.github/scripts` 的合并门禁测试。测试使用模拟网络和虚拟 token，不访问真实凭据。
 
 想手动更新：
 
@@ -255,7 +264,7 @@ tools/build_source.py                        # 生成脚本（抓 GitHub Release
 tools/verify_source.py                       # 结构校验，提交前的守门人
 tools/simulate_client.py                     # 模拟两个客户端的解析，回答「改完到底看不看得见」
 cache/releases.json                          # 各仓库的 Release 列表缓存
-cache/probes.json                            # IPA 元数据缓存（按 URL 永久复用，上游发新版才新增）
+cache/probes.json                            # IPA 元数据缓存（绑定资产 ID、更新时间、大小和 digest）
 cache/icons.json                             # 图标可达性缓存
 ```
 
@@ -311,3 +320,4 @@ python tools/build_source.py --versions 4    # 稳定版轨道保留最近 4 个
    - 其中 **Venera-SSR** 主要在「阅读增强」上做文章：黑白漫画 AI 上色、Anime4K 超分（含 Real-ESRGAN V4 推理模型）、图片内嵌文字的 OCR 翻译。源里取的是**标准版** iOS 包；上游的「翻译版」（OCR 模型内置版）只出了 Android，iOS 侧需要的模型要另外到上游那两个模型发布（`model` / `translation-models`）里下。
    - 四个 Venera 的 tint 有意分开：三个蓝（`#4A8FE7` / `#0784FC` / `#2090E0`）+ 一个黄（`#C4BA12`），列表里好认。黄是会按白底可读性压过明度的，别照着图标原色改。
 6. **本仓库只做索引，IPA 全部由各项目自己在 GitHub Release 发布**，未重新打包、未修改任何二进制。使用请遵守各项目开源协议（GPL-3.0 / AGPL-3.0 / MPL-2.0 / MIT）及当地法律法规。
+

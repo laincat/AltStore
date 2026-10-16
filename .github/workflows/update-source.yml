@@ -99,22 +99,27 @@ jobs:
 
     env:
       # 未配置时为：空字符串 → 下面的同步步骤会自动跳过
-      CNB_TOKEN: ${{ secrets.CNB_TOKEN }}
-      CNB_USER: ${{ secrets.CNB_USER }}
       CNB_REPO: laincat/AltStore
 
     steps:
       - name: 取出仓库
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           # 需要能 push 回去
-          persist-credentials: true
+          persist-credentials: false
           fetch-depth: 0
 
       - name: 准备 Python
-        uses: actions/setup-python@v7
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
         with:
           python-version: "3.13"
+
+      - name: Same-SHA offline regression gate
+        run: |
+          python -m unittest discover -s tests -v
+          python -m unittest discover -s .github/scripts
+          python -m compileall -q tools tests .github/scripts
+          python tools/verify_source.py --min-apps 9
 
       - name: 重新生成源文件
         run: |
@@ -149,12 +154,14 @@ jobs:
 
       - name: 提交到本仓库
         id: commit
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -e
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add -A
+          git add apps.json cache/*.json
           if git diff --cached --quiet; then
             echo "上游无新版本，无变更"
             echo "changed=false" >> "$GITHUB_OUTPUT"
@@ -162,7 +169,7 @@ jobs:
           fi
 
           git commit -m "chore(source): 自动更新 $(date -u '+%Y-%m-%d')"
-          git push
+          git -c credential.helper= -c 'credential.helper=!gh auth git-credential' push
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
       - name: 发布/滚动更新 Release（固定 tag，永远只留一个）
@@ -214,7 +221,7 @@ jobs:
           SHA=$(git rev-parse HEAD)
           git tag -f "$TAG" "$SHA"
           # tag push 不会触发本工作流（触发器限定了 branches: [main]，tag 不匹配）
-          git push -f origin "refs/tags/$TAG"
+          git -c credential.helper= -c 'credential.helper=!gh auth git-credential' push -f origin "refs/tags/$TAG"
 
           if [ "$exists" = "true" ]; then
             gh release upload "$TAG" apps.json --clobber
@@ -243,9 +250,13 @@ jobs:
           echo "url=https://github.com/laincat/AltStore/releases/download/$TAG/apps.json" >> "$GITHUB_OUTPUT"
 
       - name: 同步到 cnb.cool（没配 secret 就跳过）
-        if: ${{ env.CNB_TOKEN != '' }}
+        env:
+          CNB_TOKEN: ${{ secrets.CNB_TOKEN }}
+          CNB_USER: ${{ secrets.CNB_USER }}
         run: |
           set -e
+
+          if [ -z "$CNB_TOKEN" ]; then echo "CNB mirror not configured"; exit 0; fi
 
           # 凭据只在这条命令里临时注入：不写进 .git/config，不落盘。
           # 前面那个空的 -c credential.helper= 用来清掉系统级 helper。
@@ -283,11 +294,12 @@ jobs:
       # 所以固定 tag `latest`，靠覆盖同名附件换稳定直链：
       #   https://cnb.cool/laincat/AltStore/-/releases/download/latest/apps.json
       - name: 镜像 apps.json 到 cnb.cool Release
-        if: ${{ env.CNB_TOKEN != '' }}
         env:
+          CNB_TOKEN: ${{ secrets.CNB_TOKEN }}
           CNB_REPO_SLUG: ${{ env.CNB_REPO }}
         run: |
           set -euo pipefail
+          if [ -z "$CNB_TOKEN" ]; then echo "CNB release mirror not configured"; exit 0; fi
           python tools/publish_cnb_release.py --files apps.json --tag latest --ttl 0
 
       - name: 小结
@@ -301,8 +313,9 @@ jobs:
             else
               echo "- ⏸ 上游无新版本，未产生提交"
             fi
-            echo "- cnb.cool 同步：${{ env.CNB_TOKEN != '' && '已启用' || '未配置（跳过）' }}"
+            echo "- cnb.cool 同步：见对应步骤日志"
             if [ -n "${{ steps.release.outputs.url }}" ]; then
               echo "- Release 地址（固定，滚动覆盖）：${{ steps.release.outputs.url }}"
             fi
           } >> "$GITHUB_STEP_SUMMARY"
+
