@@ -69,7 +69,13 @@
     "buildVersion": "158",
     "displayName": "EhPanda",
     "minOSVersion": "26.0",
-    "size": 7352364
+    "size": 7352364,
+    "assetIdentity": {
+      "id": 483426324,
+      "updated_at": "2026-07-20T12:12:03Z",
+      "size": 7352364,
+      "digest": "sha256:2f389e36270414a8d9f3537e330f5c2bbff80887109c56ff9b4ba68ed377d62b"
+    }
   },
   "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.7.10/EhPanda.ipa": {
     "bundleIdentifier": "app.ehpanda",
@@ -197,7 +203,13 @@
     "buildVersion": "158",
     "displayName": "EhPanda",
     "minOSVersion": "26.0",
-    "size": 10143094
+    "size": 10143094,
+    "assetIdentity": {
+      "id": 521644247,
+      "updated_at": "2026-08-20T02:37:45Z",
+      "size": 10143094,
+      "digest": "sha256:b7de953acb001c0cf7887a5b405a8328f88d3be403c458ec4689e56a96dabbae"
+    }
   },
   "https://github.com/open-ani/animeko/releases/download/v6.1.0-beta01/ani-6.1.0-beta01.ipa": {
     "bundleIdentifier": "org.animeko.animeko",
@@ -237,7 +249,13 @@
     "buildVersion": "215",
     "displayName": "Venera",
     "minOSVersion": "14.0",
-    "size": 15740079
+    "size": 15740079,
+    "assetIdentity": {
+      "id": 498260233,
+      "updated_at": "2026-08-01T21:01:21Z",
+      "size": 15740079,
+      "digest": "sha256:c964eb20cc17338304ce715d35c77fcb840a3d9d96b9c853298b8bd99cdaf6f8"
+    }
   },
   "https://github.com/venera-app/venera-prime/releases/download/v2.4.1/venera-prime-ios-2.4.1%2B241.ipa": {
     "bundleIdentifier": "com.github.wgh136.venera.prime",
@@ -309,7 +327,13 @@
     "buildVersion": "2609261",
     "displayName": "PicaX",
     "minOSVersion": "15.2",
-    "size": 12107403
+    "size": 12107403,
+    "assetIdentity": {
+      "id": 590797315,
+      "updated_at": "2026-09-26T14:17:25Z",
+      "size": 12107403,
+      "digest": "sha256:d76429211d4e774d7ca07fc47ab3fdca9c1d7415a5ffebfddc3717ee7acda719"
+    }
   },
   "https://github.com/deretame/Breeze/releases/download/v3.0.32/Breeze-iOS-v3.0.32.ipa": {
     "bundleIdentifier": "com.zephyr.breeze",
@@ -389,7 +413,13 @@
     "buildVersion": "249",
     "displayName": "VeneraX",
     "minOSVersion": "16.0",
-    "size": 38818608
+    "size": 38818608,
+    "assetIdentity": {
+      "id": 623486838,
+      "updated_at": "2026-10-09T01:11:35Z",
+      "size": 38818608,
+      "digest": "sha256:4f63914dd1056575a64de58aa5f1397d1648f79b7a248fa96dcc3baedf8dd37c"
+    }
   },
   "https://github.com/open-ani/animeko/releases/download/v6.3.0-beta01/ani-6.3.0-beta01.ipa": {
     "bundleIdentifier": "org.animeko.animeko",
@@ -397,7 +427,13 @@
     "buildVersion": "6.3.31",
     "displayName": "Animeko",
     "minOSVersion": "14.0",
-    "size": 46323955
+    "size": 46323955,
+    "assetIdentity": {
+      "id": 624681235,
+      "updated_at": "2026-10-09T10:47:35Z",
+      "size": 46323955,
+      "digest": "sha256:4891ea8b4a681449765acc321ea7eab4f3c2cd068a937a7f1a1c85c4cd0b7d0c"
+    }
   },
   "https://github.com/venera-app/venera-prime/releases/download/v2.4.4/venera-prime-ios-2.4.4%2B244.ipa": {
     "bundleIdentifier": "com.github.wgh136.venera.prime",
@@ -421,7 +457,13 @@
     "buildVersion": "2222",
     "displayName": "Breeze",
     "minOSVersion": "15.0",
-    "size": 26102438
+    "size": 26102438,
+    "assetIdentity": {
+      "id": 630483096,
+      "updated_at": "2026-10-11T10:46:36Z",
+      "size": 26102438,
+      "digest": "sha256:e140423f123c3e177384eac0f766c432dadd3959d1ba6955dc91f087b693a318"
+    }
   },
   "https://github.com/venera-app/venera-prime/releases/download/v2.4.6/venera-prime-ios-2.4.6%2B246.ipa": {
     "bundleIdentifier": "com.github.wgh136.venera.prime",
@@ -437,7 +479,13 @@
     "buildVersion": "6.3.99",
     "displayName": "Animeko",
     "minOSVersion": "14.0",
-    "size": 46485035
+    "size": 46485035,
+    "assetIdentity": {
+      "id": 635041330,
+      "updated_at": "2026-10-12T21:26:20Z",
+      "size": 46485035,
+      "digest": "sha256:26c23902238298fd5e19ac62e3eeca9624f9f3e63f7fd5d63d1d0d0846a4e079"
+    }
   },
   "https://github.com/venera-app/venera-prime/releases/download/v2.5.0/venera-prime-ios-2.5.0%2B250.ipa": {
     "bundleIdentifier": "com.github.wgh136.venera.prime",
@@ -469,7 +517,13 @@
     "buildVersion": "234",
     "displayName": "VeneraNext",
     "minOSVersion": "14.0",
-    "size": 21127254
+    "size": 21127254,
+    "assetIdentity": {
+      "id": 639960163,
+      "updated_at": "2026-10-14T09:59:27Z",
+      "size": 21127254,
+      "digest": "sha256:48a598be90bb5031dd389dbfd665fb067526dc65abc1c36b5303445b2ef13746"
+    }
   },
   "https://github.com/Predidit/Kazumi/releases/download/2.3.9/Kazumi_ios_2.3.9_no_sign.ipa": {
     "bundleIdentifier": "com.example.kazumi",
@@ -477,7 +531,13 @@
     "buildVersion": "20309",
     "displayName": "Kazumi",
     "minOSVersion": "15.0",
-    "size": 30477942
+    "size": 30477942,
+    "assetIdentity": {
+      "id": 640453660,
+      "updated_at": "2026-10-14T13:21:42Z",
+      "size": 30477942,
+      "digest": "sha256:af3f32ee66cdb2516a599b032fe91c316bff4c3c284a560b4884b3607b15448d"
+    }
   },
   "https://github.com/venera-app/venera-prime/releases/download/v2.6.0/venera-prime-ios-2.6.0%2B260.ipa": {
     "bundleIdentifier": "com.github.wgh136.venera.prime",
@@ -485,6 +545,12 @@
     "buildVersion": "260",
     "displayName": "Venera Prime",
     "minOSVersion": "14.0",
-    "size": 16571605
+    "size": 16571605,
+    "assetIdentity": {
+      "id": 643823343,
+      "updated_at": "2026-10-15T12:37:36Z",
+      "size": 16571605,
+      "digest": "sha256:94a3afb63e98b3c5886a1fcbdd0f8849d05518ea816cd49e863bd7865ba7d79a"
+    }
   }
 }

@@ -26,6 +26,7 @@
             {
               "version": "2.3.9",
               "date": "2026-10-14",
+              "publishedAt": "2026-10-14T13:21:43Z",
               "buildVersion": "20309",
               "buildNumber": "20309",
               "localizedDescription": "- 修复 Windows 偶发的闪退问题 (#2668) (@Predidit)\r\n- 修复 Android 平台播放内容开头数秒可能被跳过的问题 (#2687) (@Predidit)\r\n- 现在可以选择 GitHub 或镜像源进行应用更新 (@liangyuR)\r\n- Android 平台现在支持自定义视频下载目录 (#2464 #2632) (@LiggMax)\r\n- 截图挑选面板新增全选功能 (#2603) (@rinnki-L)\r\n- 规则 API 检索模式支持通过模板将 ID 拼接为详情页链接 (@JesseLee-CN)\r\n- 修复 iOS 平台应用更新后离线缓存失效的问题 (#2611 #2243) (@liangyuR)\r\n- 修复横屏时播放页侧边面板左侧出现多余空白的问题 (@LiggMax)\r\n- 其他UI改进 (@Predidit)",
@@ -42,6 +43,7 @@
         {
           "version": "2.3.9",
           "date": "2026-10-14",
+          "publishedAt": "2026-10-14T13:21:43Z",
           "buildVersion": "20309",
           "buildNumber": "20309",
           "localizedDescription": "- 修复 Windows 偶发的闪退问题 (#2668) (@Predidit)\r\n- 修复 Android 平台播放内容开头数秒可能被跳过的问题 (#2687) (@Predidit)\r\n- 现在可以选择 GitHub 或镜像源进行应用更新 (@liangyuR)\r\n- Android 平台现在支持自定义视频下载目录 (#2464 #2632) (@LiggMax)\r\n- 截图挑选面板新增全选功能 (#2603) (@rinnki-L)\r\n- 规则 API 检索模式支持通过模板将 ID 拼接为详情页链接 (@JesseLee-CN)\r\n- 修复 iOS 平台应用更新后离线缓存失效的问题 (#2611 #2243) (@liangyuR)\r\n- 修复横屏时播放页侧边面板左侧出现多余空白的问题 (@LiggMax)\r\n- 其他UI改进 (@Predidit)",
@@ -79,6 +81,7 @@
             {
               "version": "6.3.0",
               "date": "2026-10-13",
+              "publishedAt": "2026-10-13T06:34:15Z",
               "buildVersion": "6.3.99",
               "buildNumber": "6.3.99",
               "localizedDescription": "- 数据源选择支持手动查找模式，支持直接浏览数据源剧集并记住选择，方便后续切集，同时优化 BT 资源搜索、筛选和列表展示\r\n- 新增热度排行页，可浏览完整的 Bangumi 动画热度榜\r\n- 大幅提升分季拆分放送的动画的选集准确性\r\n- Android 和 iOS 支持系统画中画播放 (#3466 by @GeneralK1ng)\r\n- 优化播放器截图体验，新增角落预览，支持查看、复制与系统分享\r\n- 观看进度支持离线处理, 上线后自动同步\r\n- 剧集列表按正片、特别篇等类型分组，上一集、下一集与自动连播只在同类型剧集之间切换\r\n- 优化 Windows 平台的兼容性和性能\r\n\r\n----\r\n\r\n新功能: \r\n- 改进在线视频插播广告过滤并默认开启，优化起播和续播速度，修复桌面端播放进度跳动，并在 iOS 提供广告过滤开关 (#3471 by @NihilDigit)\r\n- 支持折叠屏的半折叠模式，可在设置关闭 (#3446 by @U29kaXVt)\r\n- PikPak 失败时自动回退 BT 引擎 (#3444 by @NihilDigit)\r\n- Windows 支持多点触控与触控笔输入，图片查看器可双指缩放，改善触摸拖动的响应 (#3461 by @NihilDigit)\r\n- 播放器弹幕设置支持来源管理与时间校准 (#3480 by @Tsukumi233)\r\n- 重新设计数据源设置页，按订阅和自定义分组，订阅支持名称、描述、图标与详情页，可批量启用或禁用数据源，订阅内数据源改名后保留启用状态\r\n- 缓存选源支持手动查找，选定一集后可沿同一线路批量下载其他剧集\r\n- 资…",
@@ -96,6 +99,7 @@
             {
               "version": "6.3.0",
               "date": "2026-10-09",
+              "publishedAt": "2026-10-09T11:19:10Z",
               "buildVersion": "6.3.31",
               "buildNumber": "6.3.31",
               "localizedDescription": "🧪 预发布 6.3.0-beta01（2026-10-09）\n\n- 新增热度排行页，可浏览完整的 Bangumi 动画热度榜\r\n- 缓存选源支持手动查找，选定一集后可批量下载同一线路的其他剧集\r\n- 优化播放器截图体验，新增角落预览，支持查看、复制与系统分享\r\n- 提升分季动画的选集准确性，自动匹配和手动查找可识别网站合并整季或连续编号的剧集，减少选错集和漏集\r\n\r\n\r\n----\r\n\r\n- 播放器支持折叠屏悬停模式，可在设置中开启或关闭 (#3446 by @U29kaXVt)\r\n- 加快应用更新与开发版安装包的下载速度，支持并行下载与失败分块重试\r\n- 账号设置新增注销账号功能，确认后可永久删除账号及其数据\r\n- 电视版支持安卓 8.0\r\n- 自动查找资源时支持尝试季度别名和系列名称，并优先使用曾成功找到结果的关键词\r\n- 收藏或评分后，详情页的全站收藏数与评分统计立即更新\r\n- 优化搜索筛选与排序，最高排名仅展示有排名的条目，忽略已看过或已抛弃的设置同时应用于搜索与搜索补全\r\n- 优化网页数据源编辑器，将列表规则与自动匹配设置分区展示，支持设置自动匹配开关和优先级，并精简导出的默认配置\r\n- 播放器画面比例设置移至右上角更多菜单，并显示当前模式\r\n- 提升资源较多时的列表筛选速度\r\n- 图片查看器窗口标题栏统一使用深色主题\r\n- 移除网页与订阅数据源编辑器中无实际过滤作用的“使用条目名称过滤”开关\r\n- 设置中的代理连接测试仅保留 Ani 服务\r\n- 移除关于页、登录帮助和帮助菜单中的 QQ 群入口\r\n- 修复安卓开启画质增强及着色器预加载后，切换全屏可能导致播放卡死的问题\r\n- 修复桌面端最小化到系统托盘时崩溃的问题\r\n- 修复电视版…",
@@ -112,6 +116,7 @@
         {
           "version": "6.3.0",
           "date": "2026-10-13",
+          "publishedAt": "2026-10-13T06:34:15Z",
           "buildVersion": "6.3.99",
           "buildNumber": "6.3.99",
           "localizedDescription": "- 数据源选择支持手动查找模式，支持直接浏览数据源剧集并记住选择，方便后续切集，同时优化 BT 资源搜索、筛选和列表展示\r\n- 新增热度排行页，可浏览完整的 Bangumi 动画热度榜\r\n- 大幅提升分季拆分放送的动画的选集准确性\r\n- Android 和 iOS 支持系统画中画播放 (#3466 by @GeneralK1ng)\r\n- 优化播放器截图体验，新增角落预览，支持查看、复制与系统分享\r\n- 观看进度支持离线处理, 上线后自动同步\r\n- 剧集列表按正片、特别篇等类型分组，上一集、下一集与自动连播只在同类型剧集之间切换\r\n- 优化 Windows 平台的兼容性和性能\r\n\r\n----\r\n\r\n新功能: \r\n- 改进在线视频插播广告过滤并默认开启，优化起播和续播速度，修复桌面端播放进度跳动，并在 iOS 提供广告过滤开关 (#3471 by @NihilDigit)\r\n- 支持折叠屏的半折叠模式，可在设置关闭 (#3446 by @U29kaXVt)\r\n- PikPak 失败时自动回退 BT 引擎 (#3444 by @NihilDigit)\r\n- Windows 支持多点触控与触控笔输入，图片查看器可双指缩放，改善触摸拖动的响应 (#3461 by @NihilDigit)\r\n- 播放器弹幕设置支持来源管理与时间校准 (#3480 by @Tsukumi233)\r\n- 重新设计数据源设置页，按订阅和自定义分组，订阅支持名称、描述、图标与详情页，可批量启用或禁用数据源，订阅内数据源改名后保留启用状态\r\n- 缓存选源支持手动查找，选定一集后可沿同一线路批量下载其他剧集\r\n- 资…",
@@ -124,6 +129,7 @@
         {
           "version": "6.3.0",
           "date": "2026-10-09",
+          "publishedAt": "2026-10-09T11:19:10Z",
           "buildVersion": "6.3.31",
           "buildNumber": "6.3.31",
           "localizedDescription": "🧪 预发布 6.3.0-beta01（2026-10-09）\n\n- 新增热度排行页，可浏览完整的 Bangumi 动画热度榜\r\n- 缓存选源支持手动查找，选定一集后可批量下载同一线路的其他剧集\r\n- 优化播放器截图体验，新增角落预览，支持查看、复制与系统分享\r\n- 提升分季动画的选集准确性，自动匹配和手动查找可识别网站合并整季或连续编号的剧集，减少选错集和漏集\r\n\r\n\r\n----\r\n\r\n- 播放器支持折叠屏悬停模式，可在设置中开启或关闭 (#3446 by @U29kaXVt)\r\n- 加快应用更新与开发版安装包的下载速度，支持并行下载与失败分块重试\r\n- 账号设置新增注销账号功能，确认后可永久删除账号及其数据\r\n- 电视版支持安卓 8.0\r\n- 自动查找资源时支持尝试季度别名和系列名称，并优先使用曾成功找到结果的关键词\r\n- 收藏或评分后，详情页的全站收藏数与评分统计立即更新\r\n- 优化搜索筛选与排序，最高排名仅展示有排名的条目，忽略已看过或已抛弃的设置同时应用于搜索与搜索补全\r\n- 优化网页数据源编辑器，将列表规则与自动匹配设置分区展示，支持设置自动匹配开关和优先级，并精简导出的默认配置\r\n- 播放器画面比例设置移至右上角更多菜单，并显示当前模式\r\n- 提升资源较多时的列表筛选速度\r\n- 图片查看器窗口标题栏统一使用深色主题\r\n- 移除网页与订阅数据源编辑器中无实际过滤作用的“使用条目名称过滤”开关\r\n- 设置中的代理连接测试仅保留 Ani 服务\r\n- 移除关于页、登录帮助和帮助菜单中的 QQ 群入口\r\n- 修复安卓开启画质增强及着色器预加载后，切换全屏可能导致播放卡死的问题\r\n- 修复桌面端最小化到系统托盘时崩溃的问题\r\n- 修复电视版…",
@@ -161,6 +167,7 @@
             {
               "version": "2.8.1",
               "date": "2026-07-20",
+              "publishedAt": "2026-07-20T12:12:04Z",
               "buildVersion": "158",
               "buildNumber": "158",
               "localizedDescription": "1. feat: Adapt to the new Liquid Glass design.\r\n3. fix: Gesture issue in the reading page.\r\n4. fix: Crash issue in eh setting page.\r\n5. fix: A minor issue in search page.",
@@ -178,6 +185,7 @@
             {
               "version": "3.0.0",
               "date": "2026-08-20",
+              "publishedAt": "2026-08-20T02:37:46Z",
               "buildVersion": "158",
               "buildNumber": "158",
               "localizedDescription": "🧪 预发布 3.0.0（2026-08-20）\n\nFeatures\r\n\r\n- Offline downloads. Save galleries to your device and read them with no connection. Sort them into folders, and let the app repair a download that got interrupted or update it later. Downloads keep going while the app is in the background and won't get cut off partway.\r\n- Date Seek. Jump straight to a specific date while paging through a gallery. It works on the Frontpage, Watched and Favorites lists.\r\n- WebP images are now supported.\r\n- Redesigned toasts. Progress and status messages (login, page jump, background updates, and more) now show as a sleek glass toast at the bottom of the screen instead of a pop-up spinner.\r\nBugfixes\r\n\r\n- The page slider and the current page no long…",
@@ -194,6 +202,7 @@
         {
           "version": "3.0.0",
           "date": "2026-08-20",
+          "publishedAt": "2026-08-20T02:37:46Z",
           "buildVersion": "158",
           "buildNumber": "158",
           "localizedDescription": "🧪 预发布 3.0.0（2026-08-20）\n\nFeatures\r\n\r\n- Offline downloads. Save galleries to your device and read them with no connection. Sort them into folders, and let the app repair a download that got interrupted or update it later. Downloads keep going while the app is in the background and won't get cut off partway.\r\n- Date Seek. Jump straight to a specific date while paging through a gallery. It works on the Frontpage, Watched and Favorites lists.\r\n- WebP images are now supported.\r\n- Redesigned toasts. Progress and status messages (login, page jump, background updates, and more) now show as a sleek glass toast at the bottom of the screen instead of a pop-up spinner.\r\nBugfixes\r\n\r\n- The page slider and the current page no long…",
@@ -206,6 +215,7 @@
         {
           "version": "2.8.1",
           "date": "2026-07-20",
+          "publishedAt": "2026-07-20T12:12:04Z",
           "buildVersion": "158",
           "buildNumber": "158",
           "localizedDescription": "1. feat: Adapt to the new Liquid Glass design.\r\n3. fix: Gesture issue in the reading page.\r\n4. fix: Crash issue in eh setting page.\r\n5. fix: A minor issue in search page.",
@@ -244,6 +254,7 @@
             {
               "version": "2.3.6",
               "date": "2026-10-09",
+              "publishedAt": "2026-10-09T01:11:40Z",
               "buildVersion": "249",
               "buildNumber": "249",
               "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- No new features were added in this release.\nChanged\n- No other feature changes in this release.\nFixed\n- Fixed blank covers after opening details and returning when the same comic appears in multiple home sections, such as History, Read Later or Local.\n- Fixed the Tasks page showing an error instead of the empty list after an expanded upload task finishes.\n- Fixed task cards losing or sharing their expanded state after filtering the task list.\nRemoved\n- No features were removed in this release.\n\nFull Changelog: https://github.com/Kyosee/VeneraX/compare/v2.3.5...v2.3.6",
@@ -260,6 +271,7 @@
         {
           "version": "2.3.6",
           "date": "2026-10-09",
+          "publishedAt": "2026-10-09T01:11:40Z",
           "buildVersion": "249",
           "buildNumber": "249",
           "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- No new features were added in this release.\nChanged\n- No other feature changes in this release.\nFixed\n- Fixed blank covers after opening details and returning when the same comic appears in multiple home sections, such as History, Read Later or Local.\n- Fixed the Tasks page showing an error instead of the empty list after an expanded upload task finishes.\n- Fixed task cards losing or sharing their expanded state after filtering the task list.\nRemoved\n- No features were removed in this release.\n\nFull Changelog: https://github.com/Kyosee/VeneraX/compare/v2.3.5...v2.3.6",
@@ -297,6 +309,7 @@
             {
               "version": "2.6.0",
               "date": "2026-10-15",
+              "publishedAt": "2026-10-15T12:37:41Z",
               "buildVersion": "260",
               "buildNumber": "260",
               "localizedDescription": "Venera Prime 2.6.0\n本次更新\n\n- 阅读页实时调节页边距 #33（@suppermanzero）：底部工具栏新增页边距按钮，可展开开关、连续滑杆和精确数值输入。拖动时立即预览，松手后保存，无需退出设置页查看效果；沿用漫画、设备和全局设置的优先级，保留阅读位置与单图画廊已有的相对缩放。\n- 双页与多图画廊单张移位 #34（@MisakaTukasa）：底部工具栏新增前移、后移一张图片的操作，可将 P3 | P4 调整为 P4 | P5，方便对齐跨页图；普通翻页仍按每屏图片数量前进。支持阅读方向、首页单张和旋转后的位置换算，切换章节时重置临时分组偏移。\n- 收藏夹检测信息 #35（@suppermanzero）：移除漫画列表顶部常驻的“尚未检查”和上次检查时间；检查操作仍可使用，进度与结果保留在后台任务中。\n- 连续阅读跨章节 #36（@zklall）：到已加载章节的实际边界后，普通滑动、边缘点击、滚轮、触控板及阅读方向对应的方向键可继续进入相邻章节；整章不足一屏时也能继续阅读，边界回弹不再吞掉翻页点击。保留章节分组、反向点击及长图未读完时先滚动的行为，小幅移动、取消手势和多指缩放不触发切章。整合了 @zklall 提供的修复及回归覆盖，感谢贡献。\n- 后台任务面板重复打开：连续点击悬浮球或使用键盘重复激活时，只保留一个任务列表面板；查看任务详情时再次点击也不会叠加列表，关闭后仍可重新打开。\n请更新后验证并反馈\n\n请关联 issue 的提出者安装 2.6.0 后，按原来的复现步骤复查。\n\n- 如果问题已解决，请在原 issue 中确认，并及时关闭尚未关闭的 iss…",
@@ -313,6 +326,7 @@
         {
           "version": "2.6.0",
           "date": "2026-10-15",
+          "publishedAt": "2026-10-15T12:37:41Z",
           "buildVersion": "260",
           "buildNumber": "260",
           "localizedDescription": "Venera Prime 2.6.0\n本次更新\n\n- 阅读页实时调节页边距 #33（@suppermanzero）：底部工具栏新增页边距按钮，可展开开关、连续滑杆和精确数值输入。拖动时立即预览，松手后保存，无需退出设置页查看效果；沿用漫画、设备和全局设置的优先级，保留阅读位置与单图画廊已有的相对缩放。\n- 双页与多图画廊单张移位 #34（@MisakaTukasa）：底部工具栏新增前移、后移一张图片的操作，可将 P3 | P4 调整为 P4 | P5，方便对齐跨页图；普通翻页仍按每屏图片数量前进。支持阅读方向、首页单张和旋转后的位置换算，切换章节时重置临时分组偏移。\n- 收藏夹检测信息 #35（@suppermanzero）：移除漫画列表顶部常驻的“尚未检查”和上次检查时间；检查操作仍可使用，进度与结果保留在后台任务中。\n- 连续阅读跨章节 #36（@zklall）：到已加载章节的实际边界后，普通滑动、边缘点击、滚轮、触控板及阅读方向对应的方向键可继续进入相邻章节；整章不足一屏时也能继续阅读，边界回弹不再吞掉翻页点击。保留章节分组、反向点击及长图未读完时先滚动的行为，小幅移动、取消手势和多指缩放不触发切章。整合了 @zklall 提供的修复及回归覆盖，感谢贡献。\n- 后台任务面板重复打开：连续点击悬浮球或使用键盘重复激活时，只保留一个任务列表面板；查看任务详情时再次点击也不会叠加列表，关闭后仍可重新打开。\n请更新后验证并反馈\n\n请关联 issue 的提出者安装 2.6.0 后，按原来的复现步骤复查。\n\n- 如果问题已解决，请在原 issue 中确认，并及时关闭尚未关闭的 iss…",
@@ -350,6 +364,7 @@
             {
               "version": "1.18.0",
               "date": "2026-10-14",
+              "publishedAt": "2026-10-14T09:59:36Z",
               "buildVersion": "234",
               "buildNumber": "234",
               "localizedDescription": "本次正式版在 v1.17.0 基础上完成大范围架构重构，收束阅读器、漫画源、同步与运行时的职责边界，并新增图片原始像素尺寸、章节阅读进度、自动阅读屏幕常亮与跳过不可用图片。同步修复 WebDAV 应用数据同步、日志持久化、AVIF 识别及图片去混淆性能问题，修复 Rust 依赖安全告警并更新相关依赖。经 v1.18.0-rc.1 至 rc.5 逐版验证，Windows 与 Android 的 WebDAV 手动上传、云端下载覆盖及自动同步已通过实机验收。\n新增\n\n- 阅读器可选显示图片原始像素尺寸，支持单页、多页、连续阅读及宽图拆分；缩小解码和缓存命中仍保留原始尺寸，开关支持全局／设备／单本设置（#95）。\n- 收藏、追更及漫画卡片显示章节和页码进度，阅读时持久化章节／分组名称，图源不可用后仍可查看；旧历史兼容序号回退，长标题支持省略、完整提示和读屏（#93）。\n- 自动阅读默认保持 Android／iOS 屏幕常亮，提供全局／设备／单本开关；停止自动阅读、切后台和退出时恢复系统休眠，旋转与迟到的原生回调不会遗留常亮状态（#96）。\n- 自动阅读新增默认关闭的「跳过不可用图片」选项：失败图片按正常节奏跳过，加载中的图片在 1–60 秒可调的前台等待后继续；覆盖单页、并排页及连续／瀑布流视图，保留操作暂停和章节加载保护，修复瀑布流短错误占位在末章提前可见时的停止定位（#98 后续建议）。\n修复\n\n- 应用数据同步恢复 v1.17.0 的 WebDAV SDK 上传、下载及旧备份清理流程，沿用日期与数据版本文件名，不再要求条件 PUT、强 ETag 或内容基线；修复候选版上传已返回…",
@@ -366,6 +381,7 @@
         {
           "version": "1.18.0",
           "date": "2026-10-14",
+          "publishedAt": "2026-10-14T09:59:36Z",
           "buildVersion": "234",
           "buildNumber": "234",
           "localizedDescription": "本次正式版在 v1.17.0 基础上完成大范围架构重构，收束阅读器、漫画源、同步与运行时的职责边界，并新增图片原始像素尺寸、章节阅读进度、自动阅读屏幕常亮与跳过不可用图片。同步修复 WebDAV 应用数据同步、日志持久化、AVIF 识别及图片去混淆性能问题，修复 Rust 依赖安全告警并更新相关依赖。经 v1.18.0-rc.1 至 rc.5 逐版验证，Windows 与 Android 的 WebDAV 手动上传、云端下载覆盖及自动同步已通过实机验收。\n新增\n\n- 阅读器可选显示图片原始像素尺寸，支持单页、多页、连续阅读及宽图拆分；缩小解码和缓存命中仍保留原始尺寸，开关支持全局／设备／单本设置（#95）。\n- 收藏、追更及漫画卡片显示章节和页码进度，阅读时持久化章节／分组名称，图源不可用后仍可查看；旧历史兼容序号回退，长标题支持省略、完整提示和读屏（#93）。\n- 自动阅读默认保持 Android／iOS 屏幕常亮，提供全局／设备／单本开关；停止自动阅读、切后台和退出时恢复系统休眠，旋转与迟到的原生回调不会遗留常亮状态（#96）。\n- 自动阅读新增默认关闭的「跳过不可用图片」选项：失败图片按正常节奏跳过，加载中的图片在 1–60 秒可调的前台等待后继续；覆盖单页、并排页及连续／瀑布流视图，保留操作暂停和章节加载保护，修复瀑布流短错误占位在末章提前可见时的停止定位（#98 后续建议）。\n修复\n\n- 应用数据同步恢复 v1.17.0 的 WebDAV SDK 上传、下载及旧备份清理流程，沿用日期与数据版本文件名，不再要求条件 PUT、强 ETag 或内容基线；修复候选版上传已返回…",
@@ -403,6 +419,7 @@
             {
               "version": "2.1.5",
               "date": "2026-08-01",
+              "publishedAt": "2026-08-01T05:16:58Z",
               "buildVersion": "215",
               "buildNumber": "215",
               "localizedDescription": "Venera-SSR v2.1.5\r\n\r\n标准版基于 main 分支构建，翻译版（含 OCR 等模型）基于 feature/translation-embed 分支构建。\r\n\r\n> 🎉 此版本添加了带推理模型V4版超分功能，此功能效果速度远超基础超分功能，V4版Real-ESRGAN模式仅供测试。\r\n\r\n> 🎉 图片内嵌文字翻译功能已上线。：三种翻译模式：谷歌免费API翻译（国内网络不能直接用），大模型API接入翻译，下载翻译模型翻译。\r\n> 两种使用方式：推荐下载漫画后翻译\r\n\r\n> 🎉 上色功能优化：现在大部分设备可以使用AI 上色功能了，但可能存在以下问题：\r\n> 骁龙8gen2及以上可以流畅使用在线实时上色阅读。 性能更低的机型可以先尝试，刚打开功能的第一张可能卡住，可以先看后面的图片。The first image when you first open this feature might get stuck; please check the subsequent images first.\r\n> - 上色处理较慢，建议下载漫画后使用,或者调低颜色强度，推荐使用int8版本模型，\r\n> - 部分模型参数量较低，上色效果待优化\r\n\r\n> 🎉 超分功能可正常使用\r\n> - 黑白漫画超分效果劣化已修复，添加边缘感知 Unblur\"（按 Sobel 梯度保护细线），\r\n\r\n> ⚠️ 如果在不支持的设备想体验ai上色可以在此链接下载独立后的ai上色应用，GUI一键操作,带进度条批量上色：https://github.com/Kiastr/AiColorize/release…",
@@ -419,6 +436,7 @@
         {
           "version": "2.1.5",
           "date": "2026-08-01",
+          "publishedAt": "2026-08-01T05:16:58Z",
           "buildVersion": "215",
           "buildNumber": "215",
           "localizedDescription": "Venera-SSR v2.1.5\r\n\r\n标准版基于 main 分支构建，翻译版（含 OCR 等模型）基于 feature/translation-embed 分支构建。\r\n\r\n> 🎉 此版本添加了带推理模型V4版超分功能，此功能效果速度远超基础超分功能，V4版Real-ESRGAN模式仅供测试。\r\n\r\n> 🎉 图片内嵌文字翻译功能已上线。：三种翻译模式：谷歌免费API翻译（国内网络不能直接用），大模型API接入翻译，下载翻译模型翻译。\r\n> 两种使用方式：推荐下载漫画后翻译\r\n\r\n> 🎉 上色功能优化：现在大部分设备可以使用AI 上色功能了，但可能存在以下问题：\r\n> 骁龙8gen2及以上可以流畅使用在线实时上色阅读。 性能更低的机型可以先尝试，刚打开功能的第一张可能卡住，可以先看后面的图片。The first image when you first open this feature might get stuck; please check the subsequent images first.\r\n> - 上色处理较慢，建议下载漫画后使用,或者调低颜色强度，推荐使用int8版本模型，\r\n> - 部分模型参数量较低，上色效果待优化\r\n\r\n> 🎉 超分功能可正常使用\r\n> - 黑白漫画超分效果劣化已修复，添加边缘感知 Unblur\"（按 Sobel 梯度保护细线），\r\n\r\n> ⚠️ 如果在不支持的设备想体验ai上色可以在此链接下载独立后的ai上色应用，GUI一键操作,带进度条批量上色：https://github.com/Kiastr/AiColorize/release…",
@@ -456,6 +474,7 @@
             {
               "version": "3.0.34",
               "date": "2026-10-11",
+              "publishedAt": "2026-10-11T10:46:38Z",
               "buildVersion": "2222",
               "buildNumber": "2222",
               "localizedDescription": "📝 更新日志\n[v3.0.34]\n功能更新\n\n- 新增插件详情页，可查看插件介绍与作者信息\n- 优化登录功能，添加图像验证码支持\n- 追更页新增未读汇总与全部已读\n- 优化漫画独立设置功能\n- 漫画列表支持下拉刷新\n- 插件商店新增直达 GitHub 仓库按钮\n修复\n\n- 修复部分漫画详情页无法打开的问题\n- 修复禁漫部分图片加载异常的问题\n- 修复搜索栏浮层切换页面后仍悬浮的问题\n- 修复搜索框长按菜单异常收起的问题\n优化\n\n- 优化插件下载失败提示\n- 优化图片加载性能\n- 优化下载功能\n- 优化部分文本与ui样式\n杂项\n\n- 此版本起不再支持安卓7\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.34.exe |\n| macOS | Breeze-macOS-v3.0.34.dmg |\n| Android | app-arm64-v8a-release-v3.0.34.apk |\n| iOS | Breeze-iOS-v3.0.34.ipa |\n| Linux | breeze-v3.0.34.flatpak |\n| Linux (DEB) | breeze_3.0.34_amd64-v3.0.34.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
@@ -472,6 +491,7 @@
         {
           "version": "3.0.34",
           "date": "2026-10-11",
+          "publishedAt": "2026-10-11T10:46:38Z",
           "buildVersion": "2222",
           "buildNumber": "2222",
           "localizedDescription": "📝 更新日志\n[v3.0.34]\n功能更新\n\n- 新增插件详情页，可查看插件介绍与作者信息\n- 优化登录功能，添加图像验证码支持\n- 追更页新增未读汇总与全部已读\n- 优化漫画独立设置功能\n- 漫画列表支持下拉刷新\n- 插件商店新增直达 GitHub 仓库按钮\n修复\n\n- 修复部分漫画详情页无法打开的问题\n- 修复禁漫部分图片加载异常的问题\n- 修复搜索栏浮层切换页面后仍悬浮的问题\n- 修复搜索框长按菜单异常收起的问题\n优化\n\n- 优化插件下载失败提示\n- 优化图片加载性能\n- 优化下载功能\n- 优化部分文本与ui样式\n杂项\n\n- 此版本起不再支持安卓7\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.34.exe |\n| macOS | Breeze-macOS-v3.0.34.dmg |\n| Android | app-arm64-v8a-release-v3.0.34.apk |\n| iOS | Breeze-iOS-v3.0.34.ipa |\n| Linux | breeze-v3.0.34.flatpak |\n| Linux (DEB) | breeze_3.0.34_amd64-v3.0.34.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
@@ -509,6 +529,7 @@
             {
               "version": "1.2.4",
               "date": "2026-09-26",
+              "publishedAt": "2026-09-26T14:17:23Z",
               "buildVersion": "2609261",
               "buildNumber": "2609261",
               "localizedDescription": "这是由 GitHub Actions 自动构建的发行版本。\n下载说明\n\n请在下方 Assets 中下载对应平台的构建产物。\n\n- PicaX-unsigned.ipa：iOS 未签名 IPA\n- PicaX-with-watch-unsigned.ipa：iOS + Watch 未签名 IPA\n- PicaX-WatchApp-unsigned.zip：Watch App 未签名 ZIP\n- PicaX.dmg：macOS 未签名 DMG\n安装说明\n\n这些产物均为未签名构建，不能像 App Store 应用一样直接安装。\n\niOS 版本通常需要自行签名后安装。\nWatch 版本通常需要自行通过XCode编译安装到Apple Watch。\nmacOS 版本如遇到系统安全拦截，需要在系统设置中手动允许打开，或自行重新签名。\n版本信息\n\n- 版本：v1.2.4\n- Commit：6be06e2d598643e07e8dcaddd2962d1aa1a62ea2\n- 构建编号：63\n更新内容\n\n- 修改了应用图标并适配了深色图标\n- 增加了多书籍纵向连续阅读开关\n- 增加了默认开启本地阅后即焚开关\n- 修复了JMComic登录功能实现的问题\n- 优化了搜索页面的控件\n\n---\n\n由 GitHub Actions 自动发布。",
@@ -525,6 +546,7 @@
         {
           "version": "1.2.4",
           "date": "2026-09-26",
+          "publishedAt": "2026-09-26T14:17:23Z",
           "buildVersion": "2609261",
           "buildNumber": "2609261",
           "localizedDescription": "这是由 GitHub Actions 自动构建的发行版本。\n下载说明\n\n请在下方 Assets 中下载对应平台的构建产物。\n\n- PicaX-unsigned.ipa：iOS 未签名 IPA\n- PicaX-with-watch-unsigned.ipa：iOS + Watch 未签名 IPA\n- PicaX-WatchApp-unsigned.zip：Watch App 未签名 ZIP\n- PicaX.dmg：macOS 未签名 DMG\n安装说明\n\n这些产物均为未签名构建，不能像 App Store 应用一样直接安装。\n\niOS 版本通常需要自行签名后安装。\nWatch 版本通常需要自行通过XCode编译安装到Apple Watch。\nmacOS 版本如遇到系统安全拦截，需要在系统设置中手动允许打开，或自行重新签名。\n版本信息\n\n- 版本：v1.2.4\n- Commit：6be06e2d598643e07e8dcaddd2962d1aa1a62ea2\n- 构建编号：63\n更新内容\n\n- 修改了应用图标并适配了深色图标\n- 增加了多书籍纵向连续阅读开关\n- 增加了默认开启本地阅后即焚开关\n- 修复了JMComic登录功能实现的问题\n- 优化了搜索页面的控件\n\n---\n\n由 GitHub Actions 自动发布。",
