@@ -97,22 +97,35 @@
           "track": "nightly",
           "releases": [
             {
-              "version": "6.3.0",
-              "date": "2026-10-09",
-              "publishedAt": "2026-10-09T11:19:10Z",
-              "buildVersion": "6.3.31",
-              "buildNumber": "6.3.31",
-              "localizedDescription": "🧪 预发布 6.3.0-beta01（2026-10-09）\n\n- 新增热度排行页，可浏览完整的 Bangumi 动画热度榜\r\n- 缓存选源支持手动查找，选定一集后可批量下载同一线路的其他剧集\r\n- 优化播放器截图体验，新增角落预览，支持查看、复制与系统分享\r\n- 提升分季动画的选集准确性，自动匹配和手动查找可识别网站合并整季或连续编号的剧集，减少选错集和漏集\r\n\r\n\r\n----\r\n\r\n- 播放器支持折叠屏悬停模式，可在设置中开启或关闭 (#3446 by @U29kaXVt)\r\n- 加快应用更新与开发版安装包的下载速度，支持并行下载与失败分块重试\r\n- 账号设置新增注销账号功能，确认后可永久删除账号及其数据\r\n- 电视版支持安卓 8.0\r\n- 自动查找资源时支持尝试季度别名和系列名称，并优先使用曾成功找到结果的关键词\r\n- 收藏或评分后，详情页的全站收藏数与评分统计立即更新\r\n- 优化搜索筛选与排序，最高排名仅展示有排名的条目，忽略已看过或已抛弃的设置同时应用于搜索与搜索补全\r\n- 优化网页数据源编辑器，将列表规则与自动匹配设置分区展示，支持设置自动匹配开关和优先级，并精简导出的默认配置\r\n- 播放器画面比例设置移至右上角更多菜单，并显示当前模式\r\n- 提升资源较多时的列表筛选速度\r\n- 图片查看器窗口标题栏统一使用深色主题\r\n- 移除网页与订阅数据源编辑器中无实际过滤作用的“使用条目名称过滤”开关\r\n- 设置中的代理连接测试仅保留 Ani 服务\r\n- 移除关于页、登录帮助和帮助菜单中的 QQ 群入口\r\n- 修复安卓开启画质增强及着色器预加载后，切换全屏可能导致播放卡死的问题\r\n- 修复桌面端最小化到系统托盘时崩溃的问题\r\n- 修复电视版…",
-              "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.3.0-beta01/ani-6.3.0-beta01.ipa",
-              "size": 46323955,
-              "minOSVersion": "14.0",
-              "releaseTag": "v6.3.0-beta01",
-              "source": "https://github.com/open-ani/animeko/releases/tag/v6.3.0-beta01"
+              "version": "6.4.0",
+              "date": "2026-10-18",
+              "publishedAt": "2026-10-18T10:23:58Z",
+              "buildVersion": "6.4.31",
+              "buildNumber": "6.4.31",
+              "localizedDescription": "🧪 预发布 6.4.0-beta01（2026-10-18）\n\n- 加快桌面端网页视频解析速度\r\n- 优化季度拆分资源的弹幕匹配准确性\r\n- 新增通知中心与公告，可查看互动消息、举报处理结果和账号安全提醒，并按类型设置通知\r\n- 新增弹幕文字转换设置，支持按弹幕来源单独配置并预览转换效果 (#3536 by @GeneralK1ng)\r\n- iOS 支持 Anime4K 视频增强，提升视频画面清晰度 (#3606 by @black4der)\r\n- Windows 和 macOS 自动更新支持增量下载，减少下载流量并加快更新\r\n- 新增 JSON API 数据源\r\n\r\n----\r\n\r\n- 修复桌面端在部分多显卡或渲染模式切换场景下视频黑屏、窗口空白的问题\r\n- Android 支持通过包含 Bangumi 章节 ID 或剧集 ID 的 ani 链接打开指定剧集\r\n- 优化续播与换源体验，直接从记忆进度开始播放，减少重复缓冲并避免换源后进度回退\r\n- 优化剧集页播放器快捷键，切换标签页或关闭侧边栏后可直接操作视频，输入文字时避免误触快捷键 (#3542 by @Tsukumi233)\r\n- 修复 Jellyfin 数据源切集后找不到下一集资源的问题\r\n- 修复 Android 应用语言切换不生效的问题\r\n\r\nFull Changelog: https://github.com/open-ani/animeko/compare/v6.3.0...v6.4.0-beta01\r\n\r\n[//]: # (ANI-SERVER-MAGIC-SEPARATOR)\r\n\r\n[//]: # (注意: api server 依赖这个特殊分隔符)\r\n\r\n[//]:…",
+              "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.4.0-beta01/ani-6.4.0-beta01.ipa",
+              "size": 48429769,
+              "minOSVersion": "16.0",
+              "releaseTag": "v6.4.0-beta01",
+              "source": "https://github.com/open-ani/animeko/releases/tag/v6.4.0-beta01"
             }
           ]
         }
       ],
       "versions": [
+        {
+          "version": "6.4.0",
+          "date": "2026-10-18",
+          "publishedAt": "2026-10-18T10:23:58Z",
+          "buildVersion": "6.4.31",
+          "buildNumber": "6.4.31",
+          "localizedDescription": "🧪 预发布 6.4.0-beta01（2026-10-18）\n\n- 加快桌面端网页视频解析速度\r\n- 优化季度拆分资源的弹幕匹配准确性\r\n- 新增通知中心与公告，可查看互动消息、举报处理结果和账号安全提醒，并按类型设置通知\r\n- 新增弹幕文字转换设置，支持按弹幕来源单独配置并预览转换效果 (#3536 by @GeneralK1ng)\r\n- iOS 支持 Anime4K 视频增强，提升视频画面清晰度 (#3606 by @black4der)\r\n- Windows 和 macOS 自动更新支持增量下载，减少下载流量并加快更新\r\n- 新增 JSON API 数据源\r\n\r\n----\r\n\r\n- 修复桌面端在部分多显卡或渲染模式切换场景下视频黑屏、窗口空白的问题\r\n- Android 支持通过包含 Bangumi 章节 ID 或剧集 ID 的 ani 链接打开指定剧集\r\n- 优化续播与换源体验，直接从记忆进度开始播放，减少重复缓冲并避免换源后进度回退\r\n- 优化剧集页播放器快捷键，切换标签页或关闭侧边栏后可直接操作视频，输入文字时避免误触快捷键 (#3542 by @Tsukumi233)\r\n- 修复 Jellyfin 数据源切集后找不到下一集资源的问题\r\n- 修复 Android 应用语言切换不生效的问题\r\n\r\nFull Changelog: https://github.com/open-ani/animeko/compare/v6.3.0...v6.4.0-beta01\r\n\r\n[//]: # (ANI-SERVER-MAGIC-SEPARATOR)\r\n\r\n[//]: # (注意: api server 依赖这个特殊分隔符)\r\n\r\n[//]:…",
+          "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.4.0-beta01/ani-6.4.0-beta01.ipa",
+          "size": 48429769,
+          "minOSVersion": "16.0",
+          "releaseTag": "v6.4.0-beta01",
+          "source": "https://github.com/open-ani/animeko/releases/tag/v6.4.0-beta01"
+        },
         {
           "version": "6.3.0",
           "date": "2026-10-13",
@@ -125,19 +138,6 @@
           "minOSVersion": "14.0",
           "releaseTag": "v6.3.0",
           "source": "https://github.com/open-ani/animeko/releases/tag/v6.3.0"
-        },
-        {
-          "version": "6.3.0",
-          "date": "2026-10-09",
-          "publishedAt": "2026-10-09T11:19:10Z",
-          "buildVersion": "6.3.31",
-          "buildNumber": "6.3.31",
-          "localizedDescription": "🧪 预发布 6.3.0-beta01（2026-10-09）\n\n- 新增热度排行页，可浏览完整的 Bangumi 动画热度榜\r\n- 缓存选源支持手动查找，选定一集后可批量下载同一线路的其他剧集\r\n- 优化播放器截图体验，新增角落预览，支持查看、复制与系统分享\r\n- 提升分季动画的选集准确性，自动匹配和手动查找可识别网站合并整季或连续编号的剧集，减少选错集和漏集\r\n\r\n\r\n----\r\n\r\n- 播放器支持折叠屏悬停模式，可在设置中开启或关闭 (#3446 by @U29kaXVt)\r\n- 加快应用更新与开发版安装包的下载速度，支持并行下载与失败分块重试\r\n- 账号设置新增注销账号功能，确认后可永久删除账号及其数据\r\n- 电视版支持安卓 8.0\r\n- 自动查找资源时支持尝试季度别名和系列名称，并优先使用曾成功找到结果的关键词\r\n- 收藏或评分后，详情页的全站收藏数与评分统计立即更新\r\n- 优化搜索筛选与排序，最高排名仅展示有排名的条目，忽略已看过或已抛弃的设置同时应用于搜索与搜索补全\r\n- 优化网页数据源编辑器，将列表规则与自动匹配设置分区展示，支持设置自动匹配开关和优先级，并精简导出的默认配置\r\n- 播放器画面比例设置移至右上角更多菜单，并显示当前模式\r\n- 提升资源较多时的列表筛选速度\r\n- 图片查看器窗口标题栏统一使用深色主题\r\n- 移除网页与订阅数据源编辑器中无实际过滤作用的“使用条目名称过滤”开关\r\n- 设置中的代理连接测试仅保留 Ani 服务\r\n- 移除关于页、登录帮助和帮助菜单中的 QQ 群入口\r\n- 修复安卓开启画质增强及着色器预加载后，切换全屏可能导致播放卡死的问题\r\n- 修复桌面端最小化到系统托盘时崩溃的问题\r\n- 修复电视版…",
-          "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.3.0-beta01/ani-6.3.0-beta01.ipa",
-          "size": 46323955,
-          "minOSVersion": "14.0",
-          "releaseTag": "v6.3.0-beta01",
-          "source": "https://github.com/open-ani/animeko/releases/tag/v6.3.0-beta01"
         }
       ],
       "version": "6.3.0",
@@ -145,7 +145,8 @@
       "versionDescription": "- 数据源选择支持手动查找模式，支持直接浏览数据源剧集并记住选择，方便后续切集，同时优化 BT 资源搜索、筛选和列表展示\r\n- 新增热度排行页，可浏览完整的 Bangumi 动画热度榜\r\n- 大幅提升分季拆分放送的动画的选集准确性\r\n- Android 和 iOS 支持系统画中画播放 (#3466 by @GeneralK1ng)\r\n- 优化播放器截图体验，新增角落预览，支持查看、复制与系统分享\r\n- 观看进度支持离线处理, 上线后自动同步\r\n- 剧集列表按正片、特别篇等类型分组，上一集、下一集与自动连播只在同类型剧集之间切换\r\n- 优化 Windows 平台的兼容性和性能\r\n\r\n----\r\n\r\n新功能: \r\n- 改进在线视频插播广告过滤并默认开启，优化起播和续播速度，修复桌面端播放进度跳动，并在 iOS 提供广告过滤开关 (#3471 by @NihilDigit)\r\n- 支持折叠屏的半折叠模式，可在设置关闭 (#3446 by @U29kaXVt)\r\n- PikPak 失败时自动回退 BT 引擎 (#3444 by @NihilDigit)\r\n- Windows 支持多点触控与触控笔输入，图片查看器可双指缩放，改善触摸拖动的响应 (#3461 by @NihilDigit)\r\n- 播放器弹幕设置支持来源管理与时间校准 (#3480 by @Tsukumi233)\r\n- 重新设计数据源设置页，按订阅和自定义分组，订阅支持名称、描述、图标与详情页，可批量启用或禁用数据源，订阅内数据源改名后保留启用状态\r\n- 缓存选源支持手动查找，选定一集后可沿同一线路批量下载其他剧集\r\n- 资…",
       "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.3.0/ani-6.3.0.ipa",
       "size": 46485035,
-      "minOSVersion": "14.0"
+      "minOSVersion": "14.0",
+      "beta": true
     },
     {
       "name": "EhPanda",
@@ -460,7 +461,7 @@
       "developerName": "deretame",
       "subtitle": "插件化漫画阅读器",
       "localizedDescription": "使用 Flutter 构建的漫画阅读器，通过插件机制提供漫画源支持，已支持哔咔、禁漫、E-Hentai、nhentai、拷贝漫画、包子漫画等多个图源。\n\n开源协议：MPL-2.0　·　项目主页：https://github.com/deretame/Breeze",
-      "iconURL": "https://raw.githubusercontent.com/deretame/Breeze/v3.0.34/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/deretame/Breeze/v3.0.35/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#4FB3F5",
       "category": "books",
       "appPermissions": {
@@ -472,41 +473,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "3.0.34",
-              "date": "2026-10-11",
-              "publishedAt": "2026-10-11T10:46:38Z",
-              "buildVersion": "2222",
-              "buildNumber": "2222",
-              "localizedDescription": "📝 更新日志\n[v3.0.34]\n功能更新\n\n- 新增插件详情页，可查看插件介绍与作者信息\n- 优化登录功能，添加图像验证码支持\n- 追更页新增未读汇总与全部已读\n- 优化漫画独立设置功能\n- 漫画列表支持下拉刷新\n- 插件商店新增直达 GitHub 仓库按钮\n修复\n\n- 修复部分漫画详情页无法打开的问题\n- 修复禁漫部分图片加载异常的问题\n- 修复搜索栏浮层切换页面后仍悬浮的问题\n- 修复搜索框长按菜单异常收起的问题\n优化\n\n- 优化插件下载失败提示\n- 优化图片加载性能\n- 优化下载功能\n- 优化部分文本与ui样式\n杂项\n\n- 此版本起不再支持安卓7\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.34.exe |\n| macOS | Breeze-macOS-v3.0.34.dmg |\n| Android | app-arm64-v8a-release-v3.0.34.apk |\n| iOS | Breeze-iOS-v3.0.34.ipa |\n| Linux | breeze-v3.0.34.flatpak |\n| Linux (DEB) | breeze_3.0.34_amd64-v3.0.34.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
-              "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.34/Breeze-iOS-v3.0.34.ipa",
-              "size": 26102438,
+              "version": "3.0.35",
+              "date": "2026-10-18",
+              "publishedAt": "2026-10-18T05:23:12Z",
+              "buildVersion": "2223",
+              "buildNumber": "2223",
+              "localizedDescription": "📝 更新日志\n[v3.0.35]\n功能更新\n\n- 章节目录添加分组支持\n- 评论添加复制，查看头像功能\n优化\n\n- 优化追更逻辑与追更页ui\n- 优化云收藏错误提示\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.35.exe |\n| macOS | Breeze-macOS-v3.0.35.dmg |\n| Android | app-arm64-v8a-release-v3.0.35.apk |\n| iOS | Breeze-iOS-v3.0.35.ipa |\n| Linux | breeze-v3.0.35.flatpak |\n| Linux (DEB) | breeze_3.0.35_amd64-v3.0.35.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
+              "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.35/Breeze-iOS-v3.0.35.ipa",
+              "size": 26309164,
               "minOSVersion": "15.0",
-              "releaseTag": "v3.0.34",
-              "source": "https://github.com/deretame/Breeze/releases/tag/v3.0.34"
+              "releaseTag": "v3.0.35",
+              "source": "https://github.com/deretame/Breeze/releases/tag/v3.0.35"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "3.0.34",
-          "date": "2026-10-11",
-          "publishedAt": "2026-10-11T10:46:38Z",
-          "buildVersion": "2222",
-          "buildNumber": "2222",
-          "localizedDescription": "📝 更新日志\n[v3.0.34]\n功能更新\n\n- 新增插件详情页，可查看插件介绍与作者信息\n- 优化登录功能，添加图像验证码支持\n- 追更页新增未读汇总与全部已读\n- 优化漫画独立设置功能\n- 漫画列表支持下拉刷新\n- 插件商店新增直达 GitHub 仓库按钮\n修复\n\n- 修复部分漫画详情页无法打开的问题\n- 修复禁漫部分图片加载异常的问题\n- 修复搜索栏浮层切换页面后仍悬浮的问题\n- 修复搜索框长按菜单异常收起的问题\n优化\n\n- 优化插件下载失败提示\n- 优化图片加载性能\n- 优化下载功能\n- 优化部分文本与ui样式\n杂项\n\n- 此版本起不再支持安卓7\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.34.exe |\n| macOS | Breeze-macOS-v3.0.34.dmg |\n| Android | app-arm64-v8a-release-v3.0.34.apk |\n| iOS | Breeze-iOS-v3.0.34.ipa |\n| Linux | breeze-v3.0.34.flatpak |\n| Linux (DEB) | breeze_3.0.34_amd64-v3.0.34.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
-          "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.34/Breeze-iOS-v3.0.34.ipa",
-          "size": 26102438,
+          "version": "3.0.35",
+          "date": "2026-10-18",
+          "publishedAt": "2026-10-18T05:23:12Z",
+          "buildVersion": "2223",
+          "buildNumber": "2223",
+          "localizedDescription": "📝 更新日志\n[v3.0.35]\n功能更新\n\n- 章节目录添加分组支持\n- 评论添加复制，查看头像功能\n优化\n\n- 优化追更逻辑与追更页ui\n- 优化云收藏错误提示\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.35.exe |\n| macOS | Breeze-macOS-v3.0.35.dmg |\n| Android | app-arm64-v8a-release-v3.0.35.apk |\n| iOS | Breeze-iOS-v3.0.35.ipa |\n| Linux | breeze-v3.0.35.flatpak |\n| Linux (DEB) | breeze_3.0.35_amd64-v3.0.35.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
+          "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.35/Breeze-iOS-v3.0.35.ipa",
+          "size": 26309164,
           "minOSVersion": "15.0",
-          "releaseTag": "v3.0.34",
-          "source": "https://github.com/deretame/Breeze/releases/tag/v3.0.34"
+          "releaseTag": "v3.0.35",
+          "source": "https://github.com/deretame/Breeze/releases/tag/v3.0.35"
         }
       ],
-      "version": "3.0.34",
-      "versionDate": "2026-10-11",
-      "versionDescription": "📝 更新日志\n[v3.0.34]\n功能更新\n\n- 新增插件详情页，可查看插件介绍与作者信息\n- 优化登录功能，添加图像验证码支持\n- 追更页新增未读汇总与全部已读\n- 优化漫画独立设置功能\n- 漫画列表支持下拉刷新\n- 插件商店新增直达 GitHub 仓库按钮\n修复\n\n- 修复部分漫画详情页无法打开的问题\n- 修复禁漫部分图片加载异常的问题\n- 修复搜索栏浮层切换页面后仍悬浮的问题\n- 修复搜索框长按菜单异常收起的问题\n优化\n\n- 优化插件下载失败提示\n- 优化图片加载性能\n- 优化下载功能\n- 优化部分文本与ui样式\n杂项\n\n- 此版本起不再支持安卓7\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.34.exe |\n| macOS | Breeze-macOS-v3.0.34.dmg |\n| Android | app-arm64-v8a-release-v3.0.34.apk |\n| iOS | Breeze-iOS-v3.0.34.ipa |\n| Linux | breeze-v3.0.34.flatpak |\n| Linux (DEB) | breeze_3.0.34_amd64-v3.0.34.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
-      "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.34/Breeze-iOS-v3.0.34.ipa",
-      "size": 26102438,
+      "version": "3.0.35",
+      "versionDate": "2026-10-18",
+      "versionDescription": "📝 更新日志\n[v3.0.35]\n功能更新\n\n- 章节目录添加分组支持\n- 评论添加复制，查看头像功能\n优化\n\n- 优化追更逻辑与追更页ui\n- 优化云收藏错误提示\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.35.exe |\n| macOS | Breeze-macOS-v3.0.35.dmg |\n| Android | app-arm64-v8a-release-v3.0.35.apk |\n| iOS | Breeze-iOS-v3.0.35.ipa |\n| Linux | breeze-v3.0.35.flatpak |\n| Linux (DEB) | breeze_3.0.35_amd64-v3.0.35.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
+      "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.35/Breeze-iOS-v3.0.35.ipa",
+      "size": 26309164,
       "minOSVersion": "15.0"
     },
     {
@@ -574,7 +575,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 9 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-10-17",
+      "date": "2026-10-18",
       "tintColor": "#7C5CFF",
       "notify": false
     }

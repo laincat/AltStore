@@ -383,6 +383,25 @@
   ],
   "open-ani/animeko": [
     {
+      "tag": "v6.4.0-beta01",
+      "name": "6.4.0-beta01",
+      "pre": true,
+      "draft": false,
+      "date": "2026-10-18",
+      "published_at": "2026-10-18T10:23:58Z",
+      "body": "- 加快桌面端网页视频解析速度\r\n- 优化季度拆分资源的弹幕匹配准确性\r\n- 新增通知中心与公告，可查看互动消息、举报处理结果和账号安全提醒，并按类型设置通知\r\n- 新增弹幕文字转换设置，支持按弹幕来源单独配置并预览转换效果 (#3536 by @GeneralK1ng)\r\n- iOS 支持 Anime4K 视频增强，提升视频画面清晰度 (#3606 by @black4der)\r\n- Windows 和 macOS 自动更新支持增量下载，减少下载流量并加快更新\r\n- 新增 JSON API 数据源\r\n\r\n----\r\n\r\n- 修复桌面端在部分多显卡或渲染模式切换场景下视频黑屏、窗口空白的问题\r\n- Android 支持通过包含 Bangumi 章节 ID 或剧集 ID 的 ani 链接打开指定剧集\r\n- 优化续播与换源体验，直接从记忆进度开始播放，减少重复缓冲并避免换源后进度回退\r\n- 优化剧集页播放器快捷键，切换标签页或关闭侧边栏后可直接操作视频，输入文字时避免误触快捷键 (#3542 by @Tsukumi233)\r\n- 修复 Jellyfin 数据源切集后找不到下一集资源的问题\r\n- 修复 Android 应用语言切换不生效的问题\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v6.3.0...v6.4.0-beta01\r\n\r\n[//]: # (ANI-SERVER-MAGIC-SEPARATOR)\r\n\r\n[//]: # (注意: api server 依赖这个特殊分隔符)\r\n\r\n[//]: # (对于所有可用的变量列表, 参考 CI release.yml 的 step release-notes)\r\n\r\n[github-win-x64]: https://github.com/open-ani/ani/releases/download/v6.4.0-beta01/ani-6.4.0-beta01-windows-x86_64.zip\r\n\r\n[github-win-aarch64]: https://github.com/open-ani/ani/releases/download/v6.4.0-beta01/ani-6.4.0-beta01-windows-aarch64.zip\r\n\r\n[github-mac-x64]: https://github.com/open-ani/ani/releases/download/v6.4.0-beta01/ani-6.4.0-beta01-macos-x86_64.dmg\r\n\r\n[github-mac-aarch64]: https://github.com/open-ani/ani/releases/download/v6.4.0-beta01/ani-6.4.0-beta01-macos-aarch64.dmg\r\n\r\n[github-android]: https://github.com/open-ani/ani/releases/download/v6.4.0-beta01/ani-6.4.0-beta01-universal.apk\r\n\r\n[github-android-arm64-v8a]: https://github.com/open-ani/ani/releases/download/v6.4.0-beta01/ani-6.4.0-beta01-arm64-v8a.apk\r\n\r\n[github-android-armeabi-v7a]: https://github.com/open-ani/ani/releases/download/v6.4.0-beta01/ani-6.4.0-beta01-armeabi-v7a.apk\r\n\r\n[github-android-x86_64]: https://github.com/open-ani/ani/releases/download/v6.4.0-beta01/ani-6.4.0-beta01-x86_64.apk\r\n\r\n[cf-win-x64]: https://d.myani.org/v6.4.0-beta01/ani-6.4.0-beta01-windows-x86_64.zip\r\n\r\n[cf-win-aarch64]: https://d.myani.org/v6.4.0-beta01/ani-6.4.0-beta01-windows-aarch64.zip\r\n\r\n[cf-linux-x64]: https://d.myani.org/v6.4.0-beta01/ani-6.4.0-beta01-linux-x86",
+      "ipas": [
+        {
+          "name": "ani-6.4.0-beta01.ipa",
+          "size": 48429769,
+          "url": "https://github.com/open-ani/animeko/releases/download/v6.4.0-beta01/ani-6.4.0-beta01.ipa",
+          "id": 651642387,
+          "updated_at": "2026-10-17T21:25:21Z",
+          "digest": "sha256:fe96d62f43c516a95e31217cb55d75a450b9ccbad911e23805571ad1db5e8a2d"
+        }
+      ]
+    },
+    {
       "tag": "v6.3.0",
       "name": "6.3.0",
       "pre": false,
@@ -740,25 +759,6 @@
           "id": 449619069,
           "updated_at": "2026-06-16T21:44:14Z",
           "digest": "sha256:14afdc62ab7f793097d368f607bc923042280a99d6be3c7db3a35f6f5e00a516"
-        }
-      ]
-    },
-    {
-      "tag": "v5.7.0-alpha01",
-      "name": "5.7.0-alpha01",
-      "pre": true,
-      "draft": false,
-      "date": "2026-06-10",
-      "published_at": "2026-06-10T07:24:55Z",
-      "body": "- 优化 Web 数据源选择\r\n- 修复断网时无法加载缓存的弹幕\r\n- 修复 Desktop JCEF 进程导致系统卡死\r\n\r\n----\r\n\r\n- 修复 Android WebView 验证码处理线程问题\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v5.6.0...v5.7.0-alpha01\r\n\r\n[//]: # (ANI-SERVER-MAGIC-SEPARATOR)\r\n\r\n[//]: # (注意: api server 依赖这个特殊分隔符)\r\n\r\n[//]: # (对于所有可用的变量列表, 参考 CI release.yml 的 step release-notes)\r\n\r\n[github-win-x64]: https://github.com/open-ani/ani/releases/download/v5.7.0-alpha01/ani-5.7.0-alpha01-windows-x86_64.zip\r\n\r\n[github-mac-x64]: https://github.com/open-ani/ani/releases/download/v5.7.0-alpha01/ani-5.7.0-alpha01-macos-x86_64.dmg\r\n\r\n[github-mac-aarch64]: https://github.com/open-ani/ani/releases/download/v5.7.0-alpha01/ani-5.7.0-alpha01-macos-aarch64.dmg\r\n\r\n[github-android]: https://github.com/open-ani/ani/releases/download/v5.7.0-alpha01/ani-5.7.0-alpha01-universal.apk\r\n\r\n[github-android-arm64-v8a]: https://github.com/open-ani/ani/releases/download/v5.7.0-alpha01/ani-5.7.0-alpha01-arm64-v8a.apk\r\n\r\n[github-android-armeabi-v7a]: https://github.com/open-ani/ani/releases/download/v5.7.0-alpha01/ani-5.7.0-alpha01-armeabi-v7a.apk\r\n\r\n[github-android-x86_64]: https://github.com/open-ani/ani/releases/download/v5.7.0-alpha01/ani-5.7.0-alpha01-x86_64.apk\r\n\r\n[cf-win-x64]: https://d.myani.org/v5.7.0-alpha01/ani-5.7.0-alpha01-windows-x86_64.zip\r\n\r\n[cf-linux-x64]: https://d.myani.org/v5.7.0-alpha01/ani-5.7.0-alpha01-linux-x86_64.appimage\r\n\r\n[cf-mac-x64]: https://d.myani.org/v5.7.0-alpha01/ani-5.7.0-alpha01-macos-x86_64.zip\r\n\r\n[cf-mac-aarch64]: https://d.myani.org/v5.7.0-alpha01/ani-5.7.0-alpha01-macos-aarch64.dmg\r\n\r\n[cf-ios]: https://d.myani.org/v5.7.0-alpha01/ani-5.7.0-alpha01.ipa\r\n\r\n[cf-android]: https://d.myani.org/v5.7.0-alpha01/ani-5.7.0-alpha01-universal.apk\r\n\r\n[cf-android-arm64-v8a]: https://d.myani.org/v5.7.0-alpha01/ani-5.7.0-alpha01-arm64-v8a.apk\r\n\r\n[cf-android-armeabi-v7a]: https://d.myani.org/v5.7.0-alpha01/ani-5.7.0-alpha01-armeabi-v7a.apk\r\n\r\n[cf-android-x86_64]: https://d.myani.org/v5.7.0-alpha01/ani-5.7.0-alpha01-x86_64.a",
-      "ipas": [
-        {
-          "name": "ani-5.7.0-alpha01.ipa",
-          "size": 30342304,
-          "url": "https://github.com/open-ani/animeko/releases/download/v5.7.0-alpha01/ani-5.7.0-alpha01.ipa",
-          "id": 443399264,
-          "updated_at": "2026-06-10T05:35:45Z",
-          "digest": "sha256:a7e39652a8f1df0be02b1040f2f999bdb6a760368a66daf023f9b407579262db"
         }
       ]
     }
@@ -1529,6 +1529,25 @@
   ],
   "deretame/Breeze": [
     {
+      "tag": "v3.0.35",
+      "name": "Breeze v3.0.35",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-18",
+      "published_at": "2026-10-18T05:23:12Z",
+      "body": "## 📝 更新日志\n## [v3.0.35]\n\n### 功能更新\n\n- 章节目录添加分组支持\n- 评论添加复制，查看头像功能\n\n### 优化\n\n- 优化追更逻辑与追更页ui\n- 优化云收藏错误提示\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.35.exe](https://github.com/deretame/Breeze/releases/download/v3.0.35/windows-installer-v3.0.35.exe) |\n| **macOS** | [Breeze-macOS-v3.0.35.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.35/Breeze-macOS-v3.0.35.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.35.apk](https://github.com/deretame/Breeze/releases/download/v3.0.35/app-arm64-v8a-release-v3.0.35.apk) |\n| **iOS** | [Breeze-iOS-v3.0.35.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.35/Breeze-iOS-v3.0.35.ipa) |\n| **Linux** | [breeze-v3.0.35.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.35/breeze-v3.0.35.flatpak) |\n| **Linux (DEB)** | [breeze_3.0.35_amd64-v3.0.35.deb](https://github.com/deretame/Breeze/releases/download/v3.0.35/breeze_3.0.35_amd64-v3.0.35.deb) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
+      "ipas": [
+        {
+          "name": "Breeze-iOS-v3.0.35.ipa",
+          "size": 26309164,
+          "url": "https://github.com/deretame/Breeze/releases/download/v3.0.35/Breeze-iOS-v3.0.35.ipa",
+          "id": 652568101,
+          "updated_at": "2026-10-18T05:23:11Z",
+          "digest": "sha256:427c5792810a70d61e65ebadd88960fd2b26c5c33078fbd5b535ee973f85e907"
+        }
+      ]
+    },
+    {
       "tag": "v3.0.34",
       "name": "Breeze v3.0.34",
       "pre": false,
@@ -1886,25 +1905,6 @@
           "id": 437058935,
           "updated_at": "2026-06-03T08:17:09Z",
           "digest": "sha256:ee8b9a086921f296e2dabea7070477ee4e5bc223f769201779b1306dad1ab0dd"
-        }
-      ]
-    },
-    {
-      "tag": "v3.0.14",
-      "name": "Breeze v3.0.14",
-      "pre": false,
-      "draft": false,
-      "date": "2026-05-31",
-      "published_at": "2026-05-31T14:29:14Z",
-      "body": "## 📝 更新日志\n## [v3.0.14]\n\n##### v2更新至v3前请先备份好数据以避免数据丢失，更新后可在设置中打开回退开关添加首页和排行版界面\n\n### 功能更新\n\n- s3添加 path style 开关\n- 桌面端添加隐藏软件功能\n- 添加缓存管理功能\n\n### bug修复\n\n- 修复部分情况下无法同步收藏的问题\n- 修复在不开启设置同步，仅开启插件同步的情况下，无法同步插件的问题\n- 修复书架搜索功能不全的问题\n\n### 杂项\n\n- 插件列表信息获取添加github加速功能\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.14.exe](https://github.com/deretame/Breeze/releases/download/v3.0.14/windows-installer-v3.0.14.exe) |\n| **macOS** | [Breeze-macOS-v3.0.14.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.14/Breeze-macOS-v3.0.14.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.14.apk](https://github.com/deretame/Breeze/releases/download/v3.0.14/app-arm64-v8a-release-v3.0.14.apk) |\n| **iOS** | [Breeze-iOS-v3.0.14.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.14/Breeze-iOS-v3.0.14.ipa) |\n| **Linux** | [breeze-v3.0.14.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.14/breeze-v3.0.14.flatpak) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
-      "ipas": [
-        {
-          "name": "Breeze-iOS-v3.0.14.ipa",
-          "size": 23030858,
-          "url": "https://github.com/deretame/Breeze/releases/download/v3.0.14/Breeze-iOS-v3.0.14.ipa",
-          "id": 434497893,
-          "updated_at": "2026-05-31T14:29:13Z",
-          "digest": "sha256:0bdc19aa5378b7d7fc323bd2b439841245294d6392869b329e0fdd0f059db5e7"
         }
       ]
     }
