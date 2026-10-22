@@ -664,5 +664,19 @@
       "size": 48605296,
       "digest": "sha256:10bdf5e489557c6620390d9e0da5678f65de1a84cc53be3ce256ae11918121b3"
     }
+  },
+  "https://github.com/Predidit/Kazumi/releases/download/2.4.1/Kazumi_ios_2.4.1_no_sign.ipa": {
+    "bundleIdentifier": "com.example.kazumi",
+    "version": "2.4.1",
+    "buildVersion": "20401",
+    "displayName": "Kazumi",
+    "minOSVersion": "15.0",
+    "size": 30514613,
+    "assetIdentity": {
+      "id": 666195881,
+      "updated_at": "2026-10-22T15:04:44Z",
+      "size": 30514613,
+      "digest": "sha256:e573c13a99c9f9aa2c28450f4a798b69df5cc616e5b09ba5ffdc13e5ce46957b"
+    }
   }
 }

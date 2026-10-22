@@ -1,6 +1,25 @@
 {
   "Predidit/Kazumi": [
     {
+      "tag": "2.4.1",
+      "name": "2.4.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T15:04:45Z",
+      "body": "- 修复规则镜像在部分地区无法访问的问题 (#2747 #2748) (@Predidit)\r\n- 修复 linux 平台 deeplink 无法使用的问题 (@Tobiichi-Origuchi)\r\n> [!NOTE]\r\n> 这是 2.4.0 的热修复版本，更多更新日志参考 2.4.0",
+      "ipas": [
+        {
+          "name": "Kazumi_ios_2.4.1_no_sign.ipa",
+          "size": 30514613,
+          "url": "https://github.com/Predidit/Kazumi/releases/download/2.4.1/Kazumi_ios_2.4.1_no_sign.ipa",
+          "id": 666195881,
+          "updated_at": "2026-10-22T15:04:44Z",
+          "digest": "sha256:e573c13a99c9f9aa2c28450f4a798b69df5cc616e5b09ba5ffdc13e5ce46957b"
+        }
+      ]
+    },
+    {
       "tag": "2.4.0",
       "name": "2.4.0",
       "pre": false,
@@ -358,25 +377,6 @@
           "id": 486757882,
           "updated_at": "2026-07-23T04:16:19Z",
           "digest": "sha256:9434d2e4d065adc1d5015bbe806cc7413909ade70bf774d80dfcebdfedff8851"
-        }
-      ]
-    },
-    {
-      "tag": "2.2.1",
-      "name": "2.2.1",
-      "pre": false,
-      "draft": false,
-      "date": "2026-07-16",
-      "published_at": "2026-07-16T06:29:26Z",
-      "body": "- 重新设计启动向导及多个页面 (@Predidit)\r\n- 新增 windows/macOS 平台缓存目录自定义功能 (#2237) (@NanoShiki @0Chencc)\r\n- 修复 android 平台动态取色不稳定的问题 (@Predidit)\r\n- 增强一起看功能可靠性 (#1710 #1850 #1992) (@ChEnylnti)\r\n- 增强桌面平台播放器快捷键的可靠性 (@Predidit)\r\n- 现在 Linux 平台支持外部播放器功能 (@Predidit)\r\n- 增强规则更新可靠性 (@Predidit)\r\n- 修复调试模式下热重载不可用的问题 (@Predidit)",
-      "ipas": [
-        {
-          "name": "Kazumi_ios_2.2.1_no_sign.ipa",
-          "size": 29172455,
-          "url": "https://github.com/Predidit/Kazumi/releases/download/2.2.1/Kazumi_ios_2.2.1_no_sign.ipa",
-          "id": 478856936,
-          "updated_at": "2026-07-16T06:29:25Z",
-          "digest": "sha256:404e675c2e675266ef7b5471c2779f820267dab65e51bbe1707233294bd59650"
         }
       ]
     }
