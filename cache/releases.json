@@ -1,6 +1,25 @@
 {
   "Predidit/Kazumi": [
     {
+      "tag": "2.4.2",
+      "name": "2.4.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T09:43:33Z",
+      "body": "- 修复部分地区规则仓库无法访问的问题",
+      "ipas": [
+        {
+          "name": "Kazumi_ios_2.4.2_no_sign.ipa",
+          "size": 30521004,
+          "url": "https://github.com/Predidit/Kazumi/releases/download/2.4.2/Kazumi_ios_2.4.2_no_sign.ipa",
+          "id": 668666453,
+          "updated_at": "2026-10-23T09:43:31Z",
+          "digest": "sha256:4fca62ccc6f1a0abb4d1666efe32bac961084f432225f241919743cbc78a9545"
+        }
+      ]
+    },
+    {
       "tag": "2.4.1",
       "name": "2.4.1",
       "pre": false,
@@ -358,25 +377,6 @@
           "id": 486797092,
           "updated_at": "2026-07-23T05:09:53Z",
           "digest": "sha256:36fbfb879a670e4598f269fa464879ddd39a6d8d431d161b7f4b3eb808bef068"
-        }
-      ]
-    },
-    {
-      "tag": "2.2.2",
-      "name": "2.2.2",
-      "pre": false,
-      "draft": false,
-      "date": "2026-07-23",
-      "published_at": "2026-07-23T04:16:20Z",
-      "body": "- 修复长分页状态下可能出现重复条目的问题 (@wanxinlei1)\r\n- 改进的规则导入机制 (@Predidit)\r\n- 新增 Linux 平台 X11 硬件加速渲染支持 (@Predidit)\r\n- 其他 UI 改进 (@Predidit)\r\n- 其他文档改进 (@Axiaobo7788)",
-      "ipas": [
-        {
-          "name": "Kazumi_ios_2.2.2_no_sign.ipa",
-          "size": 29183411,
-          "url": "https://github.com/Predidit/Kazumi/releases/download/2.2.2/Kazumi_ios_2.2.2_no_sign.ipa",
-          "id": 486757882,
-          "updated_at": "2026-07-23T04:16:19Z",
-          "digest": "sha256:9434d2e4d065adc1d5015bbe806cc7413909ade70bf774d80dfcebdfedff8851"
         }
       ]
     }
