@@ -240,7 +240,7 @@
       "developerName": "Kyosee",
       "subtitle": "多图源漫画阅读器",
       "localizedDescription": "原版 Venera 的个人维护增强分支，支持通过插件接入多种漫画图源，提供本地收藏、阅读进度同步等能力。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Kyosee/VeneraX",
-      "iconURL": "https://raw.githubusercontent.com/Kyosee/VeneraX/v2.3.6/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Kyosee/VeneraX/v2.3.7/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#4A8FE7",
       "category": "books",
       "appPermissions": {
@@ -252,41 +252,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.3.6",
-              "date": "2026-10-09",
-              "publishedAt": "2026-10-09T01:11:40Z",
-              "buildVersion": "249",
-              "buildNumber": "249",
-              "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- No new features were added in this release.\nChanged\n- No other feature changes in this release.\nFixed\n- Fixed blank covers after opening details and returning when the same comic appears in multiple home sections, such as History, Read Later or Local.\n- Fixed the Tasks page showing an error instead of the empty list after an expanded upload task finishes.\n- Fixed task cards losing or sharing their expanded state after filtering the task list.\nRemoved\n- No features were removed in this release.\n\nFull Changelog: https://github.com/Kyosee/VeneraX/compare/v2.3.5...v2.3.6",
-              "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.6/VeneraX-ios-2.3.6%2B249.ipa",
-              "size": 38818608,
+              "version": "2.3.7",
+              "date": "2026-10-24",
+              "publishedAt": "2026-10-24T11:28:23Z",
+              "buildVersion": "250",
+              "buildNumber": "250",
+              "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Image translation can now translate Traditional Chinese comics, including vertical text; choose Traditional Chinese as the source language or let auto-detect pick it.\n- Added a new Chinese text recognition model that reads both Traditional and Simplified Chinese; once downloaded it replaces the old one.\n- You can now add your own source languages and replace the text detector with your own models; their size is shown before download and they are checked after it.\n- Added Vietnamese as a translation target language.\n- You can now add translation target languages that are not in the built-in list, under Custom languages.\n- Image enhancemen…",
+              "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.7/VeneraX-ios-2.3.7%2B250.ipa",
+              "size": 38892754,
               "minOSVersion": "16.0",
-              "releaseTag": "v2.3.6",
-              "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.6"
+              "releaseTag": "v2.3.7",
+              "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.7"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.3.6",
-          "date": "2026-10-09",
-          "publishedAt": "2026-10-09T01:11:40Z",
-          "buildVersion": "249",
-          "buildNumber": "249",
-          "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- No new features were added in this release.\nChanged\n- No other feature changes in this release.\nFixed\n- Fixed blank covers after opening details and returning when the same comic appears in multiple home sections, such as History, Read Later or Local.\n- Fixed the Tasks page showing an error instead of the empty list after an expanded upload task finishes.\n- Fixed task cards losing or sharing their expanded state after filtering the task list.\nRemoved\n- No features were removed in this release.\n\nFull Changelog: https://github.com/Kyosee/VeneraX/compare/v2.3.5...v2.3.6",
-          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.6/VeneraX-ios-2.3.6%2B249.ipa",
-          "size": 38818608,
+          "version": "2.3.7",
+          "date": "2026-10-24",
+          "publishedAt": "2026-10-24T11:28:23Z",
+          "buildVersion": "250",
+          "buildNumber": "250",
+          "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Image translation can now translate Traditional Chinese comics, including vertical text; choose Traditional Chinese as the source language or let auto-detect pick it.\n- Added a new Chinese text recognition model that reads both Traditional and Simplified Chinese; once downloaded it replaces the old one.\n- You can now add your own source languages and replace the text detector with your own models; their size is shown before download and they are checked after it.\n- Added Vietnamese as a translation target language.\n- You can now add translation target languages that are not in the built-in list, under Custom languages.\n- Image enhancemen…",
+          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.7/VeneraX-ios-2.3.7%2B250.ipa",
+          "size": 38892754,
           "minOSVersion": "16.0",
-          "releaseTag": "v2.3.6",
-          "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.6"
+          "releaseTag": "v2.3.7",
+          "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.7"
         }
       ],
-      "version": "2.3.6",
-      "versionDate": "2026-10-09",
-      "versionDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- No new features were added in this release.\nChanged\n- No other feature changes in this release.\nFixed\n- Fixed blank covers after opening details and returning when the same comic appears in multiple home sections, such as History, Read Later or Local.\n- Fixed the Tasks page showing an error instead of the empty list after an expanded upload task finishes.\n- Fixed task cards losing or sharing their expanded state after filtering the task list.\nRemoved\n- No features were removed in this release.\n\nFull Changelog: https://github.com/Kyosee/VeneraX/compare/v2.3.5...v2.3.6",
-      "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.6/VeneraX-ios-2.3.6%2B249.ipa",
-      "size": 38818608,
+      "version": "2.3.7",
+      "versionDate": "2026-10-24",
+      "versionDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Image translation can now translate Traditional Chinese comics, including vertical text; choose Traditional Chinese as the source language or let auto-detect pick it.\n- Added a new Chinese text recognition model that reads both Traditional and Simplified Chinese; once downloaded it replaces the old one.\n- You can now add your own source languages and replace the text detector with your own models; their size is shown before download and they are checked after it.\n- Added Vietnamese as a translation target language.\n- You can now add translation target languages that are not in the built-in list, under Custom languages.\n- Image enhancemen…",
+      "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.7/VeneraX-ios-2.3.7%2B250.ipa",
+      "size": 38892754,
       "minOSVersion": "16.0"
     },
     {

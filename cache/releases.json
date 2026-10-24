@@ -1147,6 +1147,25 @@
   ],
   "Kyosee/VeneraX": [
     {
+      "tag": "v2.3.7",
+      "name": "v2.3.7",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-24",
+      "published_at": "2026-10-24T11:28:23Z",
+      "body": "> **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v2.3.7/release-notes/v2.3.7.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v2.3.7/release-notes/v2.3.7.zh-CN.md)\n\n## What's Changed\n\n### Added\n- Image translation can now translate Traditional Chinese comics, including vertical text; choose Traditional Chinese as the source language or let auto-detect pick it.\n- Added a new Chinese text recognition model that reads both Traditional and Simplified Chinese; once downloaded it replaces the old one.\n- You can now add your own source languages and replace the text detector with your own models; their size is shown before download and they are checked after it.\n- Added Vietnamese as a translation target language.\n- You can now add translation target languages that are not in the built-in list, under Custom languages.\n- Image enhancement settings now show a live before/after preview; drag the divider to compare, and when opened from the reader it previews the current page.\n- Each local favorites folder can now keep its own sort order; \"Apply to All Folders\" sets the default for every folder.\n\n### Changed\n- No other feature changes in this release.\n\n### Fixed\n- Fixed Traditional Chinese pages coming back untranslated or with wrong characters; pages that failed before can be fixed with \"Re-translate\".\n- Fixed the download button disappearing for comics with only some chapters downloaded.\n- Fixed the comic description appearing twice at the top of the details page.\n- Fixed dragging a zoomed-in image to the right on iOS sliding the whole reader page away.\n\n### Removed\n- No features were removed in this release.\n\n**Full Changelog**: https://github.com/Kyosee/VeneraX/compare/v2.3.6...v2.3.7\n",
+      "ipas": [
+        {
+          "name": "VeneraX-ios-2.3.7+250.ipa",
+          "size": 38892754,
+          "url": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.7/VeneraX-ios-2.3.7%2B250.ipa",
+          "id": 672091447,
+          "updated_at": "2026-10-24T11:28:17Z",
+          "digest": "sha256:5f21a7973043c64fc5be26259df9872ed59a48b612a8e6851649e877f0ec32cf"
+        }
+      ]
+    },
+    {
       "tag": "v2.3.6",
       "name": "v2.3.6",
       "pre": false,
@@ -1504,25 +1523,6 @@
           "id": 506385582,
           "updated_at": "2026-08-08T12:59:25Z",
           "digest": "sha256:b8a094c6c419dcaed4d3dcb4ba8e8e837277b80debf2e56850b9cf1a125c4b36"
-        }
-      ]
-    },
-    {
-      "tag": "v2.2.0",
-      "name": "v2.2.0",
-      "pre": false,
-      "draft": false,
-      "date": "2026-07-25",
-      "published_at": "2026-07-25T01:47:08Z",
-      "body": "> 🌐 **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v2.2.0/release-notes/v2.2.0.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v2.2.0/release-notes/v2.2.0.zh-CN.md)\n\n## What's Changed\n\n### Added\n- AI translation now lets you configure multiple LLM providers and switch between them\n- Migrate local comics to your WebDAV library, either the whole library or one comic at a time\n- Migration to WebDAV keeps grouped chapters (volumes / chapters / extras tabs)\n- Detail page three-dot menu now has an AI translation switch with pre-translate\n- Filter favorites by local download status (downloaded / not downloaded)\n- Pre-translate failed pages can now be retried automatically or manually\n- Confirmation prompt before pre-translating a comic that has no chapters\n- Tap a background task notification to jump straight to the matching page\n- New settings for OCR / image / translation concurrency\n\n### Changed\n- Faster pre-translation for long chapters\n- Migration dialog now keeps the original chapter titles by default, with a clearer explanation\n\n### Fixed\n- Prev / next chapter buttons at the bottom not working in seamless continuous reading\n- Comic images sometimes failing to load after a signed URL refresh\n- One failing page group no longer drags down pre-translation for the whole chapter\n- Same-name comic folders overwriting each other when resuming a migration\n- Detail page crashing for WebDAV library titles that contain a \"%\" character\n\n**Full Changelog**: https://github.com/Kyosee/VeneraX/compare/v2.1.12...v2.2.0\n",
-      "ipas": [
-        {
-          "name": "venera-ios-2.2.0+229.ipa",
-          "size": 34928350,
-          "url": "https://github.com/Kyosee/VeneraX/releases/download/v2.2.0/venera-ios-2.2.0%2B229.ipa",
-          "id": 489036807,
-          "updated_at": "2026-07-25T02:05:28Z",
-          "digest": "sha256:901784c9e679c238802bcccd7755c7b4d1f5f96792d8ec0065ea5fc25320e2cc"
         }
       ]
     }
