@@ -43,6 +43,8 @@ https://github.com/laincat/AltStore/releases/download/latest/apps.json
 
 以下版本、体积与案例为 2026-09-18 的历史说明，不代表最新状态；最新版本、最低系统与测试版标记以 [apps.json](apps.json) 为准。
 
+源中的应用按名称排序；源的精选应用仍保持独立配置。
+
 | 应用 | Bundle ID | 稳定版 | 体积 | 最低系统 | 测试版 | 上游 |
 |---|---|---|---|---|---|---|
 | Kazumi | `com.example.kazumi` | 2.3.3 | 28.4 MB | iOS 15.0+ | 无 | [Predidit/Kazumi](https://github.com/Predidit/Kazumi) |
