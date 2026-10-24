@@ -67,7 +67,7 @@
       "developerName": "open-ani",
       "subtitle": "一站式弹幕追番平台",
       "localizedDescription": "集找番、追番、看番于一体的弹幕追番平台，支持 Bangumi 云收藏同步、离线缓存、BitTorrent 与弹幕云过滤。100% Kotlin / Compose Multiplatform 实现。\n\n开源协议：AGPL-3.0　·　项目主页：https://github.com/open-ani/animeko",
-      "iconURL": "https://raw.githubusercontent.com/open-ani/animeko/v6.3.0/app/ios/Animeko/Assets.xcassets/AppIcon.appiconset/1024.png",
+      "iconURL": "https://raw.githubusercontent.com/open-ani/animeko/v6.4.0/app/ios/Animeko/Assets.xcassets/AppIcon.appiconset/1024.png",
       "tintColor": "#3B82F6",
       "category": "entertainment",
       "appPermissions": {
@@ -79,17 +79,17 @@
           "track": "stable",
           "releases": [
             {
-              "version": "6.3.0",
-              "date": "2026-10-13",
-              "publishedAt": "2026-10-13T06:34:15Z",
-              "buildVersion": "6.3.99",
-              "buildNumber": "6.3.99",
-              "localizedDescription": "- 数据源选择支持手动查找模式，支持直接浏览数据源剧集并记住选择，方便后续切集，同时优化 BT 资源搜索、筛选和列表展示\r\n- 新增热度排行页，可浏览完整的 Bangumi 动画热度榜\r\n- 大幅提升分季拆分放送的动画的选集准确性\r\n- Android 和 iOS 支持系统画中画播放 (#3466 by @GeneralK1ng)\r\n- 优化播放器截图体验，新增角落预览，支持查看、复制与系统分享\r\n- 观看进度支持离线处理, 上线后自动同步\r\n- 剧集列表按正片、特别篇等类型分组，上一集、下一集与自动连播只在同类型剧集之间切换\r\n- 优化 Windows 平台的兼容性和性能\r\n\r\n----\r\n\r\n新功能: \r\n- 改进在线视频插播广告过滤并默认开启，优化起播和续播速度，修复桌面端播放进度跳动，并在 iOS 提供广告过滤开关 (#3471 by @NihilDigit)\r\n- 支持折叠屏的半折叠模式，可在设置关闭 (#3446 by @U29kaXVt)\r\n- PikPak 失败时自动回退 BT 引擎 (#3444 by @NihilDigit)\r\n- Windows 支持多点触控与触控笔输入，图片查看器可双指缩放，改善触摸拖动的响应 (#3461 by @NihilDigit)\r\n- 播放器弹幕设置支持来源管理与时间校准 (#3480 by @Tsukumi233)\r\n- 重新设计数据源设置页，按订阅和自定义分组，订阅支持名称、描述、图标与详情页，可批量启用或禁用数据源，订阅内数据源改名后保留启用状态\r\n- 缓存选源支持手动查找，选定一集后可沿同一线路批量下载其他剧集\r\n- 资…",
-              "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.3.0/ani-6.3.0.ipa",
-              "size": 46485035,
-              "minOSVersion": "14.0",
-              "releaseTag": "v6.3.0",
-              "source": "https://github.com/open-ani/animeko/releases/tag/v6.3.0"
+              "version": "6.4.0",
+              "date": "2026-10-24",
+              "publishedAt": "2026-10-24T04:52:28Z",
+              "buildVersion": "6.4.99",
+              "buildNumber": "6.4.99",
+              "localizedDescription": "- 加快桌面端网页视频解析速度\r\n- 优化季度拆分资源的弹幕匹配准确性\r\n- 新增通知中心与公告，可查看互动消息、举报处理结果和账号安全提醒，并按类型设置通知\r\n- 新增弹幕文字转换设置，支持按弹幕来源单独配置并预览转换效果 (#3536 by @GeneralK1ng)\r\n- iOS 支持 Anime4K 视频增强，提升视频画面清晰度 (#3606 by @black4der)\r\n- Windows 和 macOS 自动更新支持增量下载，减少下载流量并加快更新\r\n- 新增 JSON API 数据源\r\n- 修复一系列播放相关问题\r\n\r\n----\r\n\r\n- TV 端支持配置全局网络代理 (#3550 by @LoliWolf)\r\n- Android 支持通过包含 Bangumi 章节 ID 或剧集 ID 的 ani 链接打开指定剧集\r\n- 优化续播与换源体验，直接从记忆进度开始播放，减少重复缓冲并避免换源后进度回退\r\n- 优化剧集页播放器快捷键，切换标签页或关闭侧边栏后可直接操作视频，输入文字时避免误触快捷键 (#3542 by @Tsukumi233)\r\n- 修复桌面端在部分多显卡或渲染模式切换场景下视频黑屏、窗口空白的问题\r\n- 修复 Windows 退出播放页时可能卡死的问题\r\n- 修复 Windows 和 Linux 播放纯音频媒体时可能卡在加载中的问题\r\n- 修复 Android 播放部分 MKV 视频时无法显示压缩字幕的问题，支持 ASS 和 SRT 字幕\r\n- 修复 Android 暂停或播放结束后切换全屏时画面缩在左侧或被裁切的问题\r\n- 修复 Android 应…",
+              "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.4.0/ani-6.4.0.ipa",
+              "size": 48615547,
+              "minOSVersion": "16.0",
+              "releaseTag": "v6.4.0",
+              "source": "https://github.com/open-ani/animeko/releases/tag/v6.4.0"
             }
           ]
         },
@@ -115,6 +115,19 @@
       "versions": [
         {
           "version": "6.4.0",
+          "date": "2026-10-24",
+          "publishedAt": "2026-10-24T04:52:28Z",
+          "buildVersion": "6.4.99",
+          "buildNumber": "6.4.99",
+          "localizedDescription": "- 加快桌面端网页视频解析速度\r\n- 优化季度拆分资源的弹幕匹配准确性\r\n- 新增通知中心与公告，可查看互动消息、举报处理结果和账号安全提醒，并按类型设置通知\r\n- 新增弹幕文字转换设置，支持按弹幕来源单独配置并预览转换效果 (#3536 by @GeneralK1ng)\r\n- iOS 支持 Anime4K 视频增强，提升视频画面清晰度 (#3606 by @black4der)\r\n- Windows 和 macOS 自动更新支持增量下载，减少下载流量并加快更新\r\n- 新增 JSON API 数据源\r\n- 修复一系列播放相关问题\r\n\r\n----\r\n\r\n- TV 端支持配置全局网络代理 (#3550 by @LoliWolf)\r\n- Android 支持通过包含 Bangumi 章节 ID 或剧集 ID 的 ani 链接打开指定剧集\r\n- 优化续播与换源体验，直接从记忆进度开始播放，减少重复缓冲并避免换源后进度回退\r\n- 优化剧集页播放器快捷键，切换标签页或关闭侧边栏后可直接操作视频，输入文字时避免误触快捷键 (#3542 by @Tsukumi233)\r\n- 修复桌面端在部分多显卡或渲染模式切换场景下视频黑屏、窗口空白的问题\r\n- 修复 Windows 退出播放页时可能卡死的问题\r\n- 修复 Windows 和 Linux 播放纯音频媒体时可能卡在加载中的问题\r\n- 修复 Android 播放部分 MKV 视频时无法显示压缩字幕的问题，支持 ASS 和 SRT 字幕\r\n- 修复 Android 暂停或播放结束后切换全屏时画面缩在左侧或被裁切的问题\r\n- 修复 Android 应…",
+          "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.4.0/ani-6.4.0.ipa",
+          "size": 48615547,
+          "minOSVersion": "16.0",
+          "releaseTag": "v6.4.0",
+          "source": "https://github.com/open-ani/animeko/releases/tag/v6.4.0"
+        },
+        {
+          "version": "6.4.0",
           "date": "2026-10-22",
           "publishedAt": "2026-10-22T07:55:11Z",
           "buildVersion": "6.4.32",
@@ -125,28 +138,14 @@
           "minOSVersion": "16.0",
           "releaseTag": "v6.4.0-beta02",
           "source": "https://github.com/open-ani/animeko/releases/tag/v6.4.0-beta02"
-        },
-        {
-          "version": "6.3.0",
-          "date": "2026-10-13",
-          "publishedAt": "2026-10-13T06:34:15Z",
-          "buildVersion": "6.3.99",
-          "buildNumber": "6.3.99",
-          "localizedDescription": "- 数据源选择支持手动查找模式，支持直接浏览数据源剧集并记住选择，方便后续切集，同时优化 BT 资源搜索、筛选和列表展示\r\n- 新增热度排行页，可浏览完整的 Bangumi 动画热度榜\r\n- 大幅提升分季拆分放送的动画的选集准确性\r\n- Android 和 iOS 支持系统画中画播放 (#3466 by @GeneralK1ng)\r\n- 优化播放器截图体验，新增角落预览，支持查看、复制与系统分享\r\n- 观看进度支持离线处理, 上线后自动同步\r\n- 剧集列表按正片、特别篇等类型分组，上一集、下一集与自动连播只在同类型剧集之间切换\r\n- 优化 Windows 平台的兼容性和性能\r\n\r\n----\r\n\r\n新功能: \r\n- 改进在线视频插播广告过滤并默认开启，优化起播和续播速度，修复桌面端播放进度跳动，并在 iOS 提供广告过滤开关 (#3471 by @NihilDigit)\r\n- 支持折叠屏的半折叠模式，可在设置关闭 (#3446 by @U29kaXVt)\r\n- PikPak 失败时自动回退 BT 引擎 (#3444 by @NihilDigit)\r\n- Windows 支持多点触控与触控笔输入，图片查看器可双指缩放，改善触摸拖动的响应 (#3461 by @NihilDigit)\r\n- 播放器弹幕设置支持来源管理与时间校准 (#3480 by @Tsukumi233)\r\n- 重新设计数据源设置页，按订阅和自定义分组，订阅支持名称、描述、图标与详情页，可批量启用或禁用数据源，订阅内数据源改名后保留启用状态\r\n- 缓存选源支持手动查找，选定一集后可沿同一线路批量下载其他剧集\r\n- 资…",
-          "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.3.0/ani-6.3.0.ipa",
-          "size": 46485035,
-          "minOSVersion": "14.0",
-          "releaseTag": "v6.3.0",
-          "source": "https://github.com/open-ani/animeko/releases/tag/v6.3.0"
         }
       ],
-      "version": "6.3.0",
-      "versionDate": "2026-10-13",
-      "versionDescription": "- 数据源选择支持手动查找模式，支持直接浏览数据源剧集并记住选择，方便后续切集，同时优化 BT 资源搜索、筛选和列表展示\r\n- 新增热度排行页，可浏览完整的 Bangumi 动画热度榜\r\n- 大幅提升分季拆分放送的动画的选集准确性\r\n- Android 和 iOS 支持系统画中画播放 (#3466 by @GeneralK1ng)\r\n- 优化播放器截图体验，新增角落预览，支持查看、复制与系统分享\r\n- 观看进度支持离线处理, 上线后自动同步\r\n- 剧集列表按正片、特别篇等类型分组，上一集、下一集与自动连播只在同类型剧集之间切换\r\n- 优化 Windows 平台的兼容性和性能\r\n\r\n----\r\n\r\n新功能: \r\n- 改进在线视频插播广告过滤并默认开启，优化起播和续播速度，修复桌面端播放进度跳动，并在 iOS 提供广告过滤开关 (#3471 by @NihilDigit)\r\n- 支持折叠屏的半折叠模式，可在设置关闭 (#3446 by @U29kaXVt)\r\n- PikPak 失败时自动回退 BT 引擎 (#3444 by @NihilDigit)\r\n- Windows 支持多点触控与触控笔输入，图片查看器可双指缩放，改善触摸拖动的响应 (#3461 by @NihilDigit)\r\n- 播放器弹幕设置支持来源管理与时间校准 (#3480 by @Tsukumi233)\r\n- 重新设计数据源设置页，按订阅和自定义分组，订阅支持名称、描述、图标与详情页，可批量启用或禁用数据源，订阅内数据源改名后保留启用状态\r\n- 缓存选源支持手动查找，选定一集后可沿同一线路批量下载其他剧集\r\n- 资…",
-      "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.3.0/ani-6.3.0.ipa",
-      "size": 46485035,
-      "minOSVersion": "14.0",
-      "beta": true
+      "version": "6.4.0",
+      "versionDate": "2026-10-24",
+      "versionDescription": "- 加快桌面端网页视频解析速度\r\n- 优化季度拆分资源的弹幕匹配准确性\r\n- 新增通知中心与公告，可查看互动消息、举报处理结果和账号安全提醒，并按类型设置通知\r\n- 新增弹幕文字转换设置，支持按弹幕来源单独配置并预览转换效果 (#3536 by @GeneralK1ng)\r\n- iOS 支持 Anime4K 视频增强，提升视频画面清晰度 (#3606 by @black4der)\r\n- Windows 和 macOS 自动更新支持增量下载，减少下载流量并加快更新\r\n- 新增 JSON API 数据源\r\n- 修复一系列播放相关问题\r\n\r\n----\r\n\r\n- TV 端支持配置全局网络代理 (#3550 by @LoliWolf)\r\n- Android 支持通过包含 Bangumi 章节 ID 或剧集 ID 的 ani 链接打开指定剧集\r\n- 优化续播与换源体验，直接从记忆进度开始播放，减少重复缓冲并避免换源后进度回退\r\n- 优化剧集页播放器快捷键，切换标签页或关闭侧边栏后可直接操作视频，输入文字时避免误触快捷键 (#3542 by @Tsukumi233)\r\n- 修复桌面端在部分多显卡或渲染模式切换场景下视频黑屏、窗口空白的问题\r\n- 修复 Windows 退出播放页时可能卡死的问题\r\n- 修复 Windows 和 Linux 播放纯音频媒体时可能卡在加载中的问题\r\n- 修复 Android 播放部分 MKV 视频时无法显示压缩字幕的问题，支持 ASS 和 SRT 字幕\r\n- 修复 Android 暂停或播放结束后切换全屏时画面缩在左侧或被裁切的问题\r\n- 修复 Android 应…",
+      "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.4.0/ani-6.4.0.ipa",
+      "size": 48615547,
+      "minOSVersion": "16.0"
     },
     {
       "name": "EhPanda",
@@ -575,7 +574,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 9 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-10-23",
+      "date": "2026-10-24",
       "tintColor": "#7C5CFF",
       "notify": false
     }

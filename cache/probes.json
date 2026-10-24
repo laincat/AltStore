@@ -692,5 +692,19 @@
       "size": 30521004,
       "digest": "sha256:4fca62ccc6f1a0abb4d1666efe32bac961084f432225f241919743cbc78a9545"
     }
+  },
+  "https://github.com/open-ani/animeko/releases/download/v6.4.0/ani-6.4.0.ipa": {
+    "bundleIdentifier": "org.animeko.animeko",
+    "version": "6.4.0",
+    "buildVersion": "6.4.99",
+    "displayName": "Animeko",
+    "minOSVersion": "16.0",
+    "size": 48615547,
+    "assetIdentity": {
+      "id": 670148908,
+      "updated_at": "2026-10-23T19:24:04Z",
+      "size": 48615547,
+      "digest": "sha256:c5797e772fa654b2a6723f3f61c8332465b760435e7ea5ee18da3448cb27ad8a"
+    }
   }
 }
