@@ -70,10 +70,11 @@ SOURCE = {
     # 普通 GET 与 Range 请求都能拿到 image/jpeg，客户端都会跟随跳转。
     # 好处是头像换了源里自动跟着变，不用改这里。
     "iconURL": "https://github.com/laincat.png?size=512",
-    "subtitle": "番剧 · 漫画 iOS 自签源",
+    "subtitle": "多类 iOS 自签应用源",
     "description": (
-        "收录 9 款开源 iOS 应用：番剧类 Kazumi、Animeko，漫画阅读类 EhPanda、"
-        "VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX。所有 IPA 均直连各项目 "
+        "收录 16 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka，漫画阅读类 EhPanda、"
+        "VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX、Aidoku，以及 AvPlay、ARMSX2、"
+        "AirCard、Rich4。所有 IPA 均直连各项目 "
         "GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。"
     ),
     "tintColor": "#7C5CFF",
@@ -275,6 +276,109 @@ APPS = [
             "使用 SwiftUI 开发、面向 iOS 的聚合漫画阅读器。"
             "此处选用不含 Watch 组件的未签名包，避免免费账号签名时因附加 Target 失败。\n\n"
             "开源协议：MPL-2.0　·　项目主页：https://github.com/youshen2/PicaX"
+        ),
+    },
+    {
+        "repo": "anonymousjav/AvPlayRelease",
+        "asset": lambda n: n.startswith("AvPlay-") and n.endswith(".ipa"),
+        "name": "AvPlay",
+        "developerName": "anonymousjav",
+        "subtitle": "成人影音播放应用",
+        "category": "entertainment",
+        "tintColor": "#6B5CE7",
+        "icon": "resources/logo.png",
+        "description": (
+            "面向成年人的影音播放应用。此处提供上游发布的未签名 iOS 安装包，需自行签名安装；"
+            "上游仓库未提供应用源代码或开源许可证。\n\n"
+            "项目主页：https://github.com/anonymousjav/AvPlayRelease"
+        ),
+    },
+    {
+        "repo": "openAnimeFlow/AnimeFlow",
+        "asset": lambda n: n.startswith("AnimeFlow-ios-") and n.endswith(".ipa"),
+        "name": "AnimeFlow",
+        "developerName": "openAnimeFlow",
+        "subtitle": "弹幕追番与 Bangumi 收藏同步",
+        "category": "entertainment",
+        "tintColor": "#4F7CF7",
+        "icon": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+        "description": (
+            "跨平台追番应用，支持 Bangumi 收藏同步与弹幕播放。未签名 iOS 安装包来自上游 GitHub Release。\n\n"
+            "开源协议：AGPL-3.0　·　项目主页：https://github.com/openAnimeFlow/AnimeFlow"
+        ),
+    },
+    {
+        "repo": "AniBakaBaka/AniBaka",
+        "asset": lambda n: n.startswith("baka-") and n.endswith("-ios-unsigned.ipa"),
+        "name": "AniBaka",
+        "developerName": "AniBakaBaka",
+        "subtitle": "开源弹幕追番应用",
+        "category": "entertainment",
+        "tintColor": "#F06C8B",
+        "icon": "ios/Runner/Assets.xcassets/AppIcon.appiconset/1024.png",
+        "description": (
+            "开源跨平台动画播放应用。此处提供未签名 iOS 安装包，需自行签名安装。\n\n"
+            "项目主页：https://github.com/AniBakaBaka/AniBaka"
+        ),
+    },
+    {
+        "repo": "Aidoku/Aidoku",
+        "asset": lambda n: n == "Aidoku.ipa",
+        "name": "Aidoku",
+        "developerName": "Aidoku",
+        "subtitle": "支持扩展漫画源的阅读器",
+        "category": "books",
+        "tintColor": "#B965E8",
+        "icon": "Aidoku/App/Resources/Assets.xcassets/AppIcon.appiconset/Icon.png",
+        "description": (
+            "漫画阅读器，可通过扩展添加在线漫画源。未签名 iOS 安装包来自上游 GitHub Release。\n\n"
+            "开源协议：GPL-3.0　·　项目主页：https://github.com/Aidoku/Aidoku"
+        ),
+    },
+    {
+        "repo": "ARMSX2/ARMSX2",
+        "asset": lambda n: n.endswith("-iOS-arm64.ipa"),
+        "name": "ARMSX2 Nightly",
+        "developerName": "ARMSX2",
+        "subtitle": "PlayStation 2 模拟器（每日构建）",
+        "category": "games",
+        "tintColor": "#D95F59",
+        "icon": "platforms/ios/app/src/main/assets/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
+        "prereleaseAsStable": True,
+        "description": (
+            "PlayStation 2 模拟器的 iOS 每日构建版。上游仅发布预览构建，版本可能变化或不稳定；"
+            "未签名安装包来自上游 GitHub Release。\n\n"
+            "开源协议：GPL-3.0　·　项目主页：https://github.com/ARMSX2/ARMSX2"
+        ),
+    },
+    {
+        "repo": "Mak5er/AirCard-iOS",
+        "asset": lambda n: n == "AirCard-iOS.ipa",
+        "name": "AirCard",
+        "developerName": "Mak5er",
+        "subtitle": "Apple Wallet 卡片与锁屏主题",
+        "category": "utilities",
+        "tintColor": "#111827",
+        "icon": "ios-app/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+        "description": (
+            "Apple Wallet 卡片样式与锁屏密码主题工具。部分功能可能要求较新 iOS 版本；"
+            "实际最低安装版本以安装包元数据为准。\n\n"
+            "开源协议：MIT　·　项目主页：https://github.com/Mak5er/AirCard-iOS"
+        ),
+    },
+    {
+        "repo": "iam567/rich4-renew-app",
+        "asset": lambda n: n.startswith("rich4-") and n.endswith("-unsigned.ipa"),
+        "name": "大富翁4重制版",
+        "developerName": "iam567",
+        "subtitle": "经典大富翁4重制版（大型安装包）",
+        "category": "games",
+        "tintColor": "#E9A83A",
+        "icon": "game/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png",
+        "description": (
+            "基于 Vite、TypeScript 与 Capacitor 的大富翁4重制版。当前 iOS 安装包约 1.79 GB，"
+            "请在下载前确认设备有足够空间。\n\n"
+            "开源协议：GPL-3.0　·　项目主页：https://github.com/iam567/rich4-renew-app"
         ),
     },
 ]
@@ -685,7 +789,9 @@ def collect(rels, cfg, per_app):
         if not a:
             continue
         if r.get("prerelease"):
-            if want_beta and beta is None:
+            if cfg.get("prereleaseAsStable") and not stable:
+                stable.append((r, a))
+            elif want_beta and beta is None:
                 beta = (r, a)
         elif len(stable) < per_app:
             stable.append((r, a))

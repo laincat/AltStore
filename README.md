@@ -1,6 +1,6 @@
 # Laincat 工具箱 — SideStore / AltStore / LiveContainer 源文件
 
-自用的 iOS 侧载源（源名称 **Laincat 工具箱**，图标是 [@laincat](https://github.com/laincat) 的 GitHub 头像）：收录 9 个开源 iOS 应用（番剧 + 漫画），**自动跟随上游 GitHub Release 更新**。
+自用的 iOS 侧载源（源名称 **Laincat 工具箱**，图标是 [@laincat](https://github.com/laincat) 的 GitHub 头像）：收录 16 个 iOS 应用，**自动跟随上游 GitHub Release 更新**。
 
 三个客户端都能用：**SideStore / AltStore / LiveContainer**。
 
@@ -54,6 +54,13 @@ https://github.com/laincat/AltStore/releases/download/latest/apps.json
 | Venera-SSR | `com.github.kiastr.venera-ssr` | 2.1.5 | 15.0 MB | iOS 14.0+ | 无 | [Kiastr/Venera-SSR](https://github.com/Kiastr/Venera-SSR) |
 | Breeze | `com.zephyr.breeze` | 3.0.31 | 24.6 MB | iOS 15.0+ | 无 | [deretame/Breeze](https://github.com/deretame/Breeze) |
 | PicaX | `moye.PicaX` | 1.2.3 | 10.7 MB | iOS 15.2+ | 无 | [youshen2/PicaX](https://github.com/youshen2/PicaX) |
+| AvPlay | `com.javdb.avplay` | 2.2.0 | 22.7 MB | iOS 15.3+ | 无 | [anonymousjav/AvPlayRelease](https://github.com/anonymousjav/AvPlayRelease) |
+| AnimeFlow | `com.ligg.anime_flow` | 2.6.4 | 28.1 MB | iOS 15.0+ | 无 | [openAnimeFlow/AnimeFlow](https://github.com/openAnimeFlow/AnimeFlow) |
+| AniBaka | `ani.baka` | 5.2.3 | 22.7 MB | iOS 13.0+ | 无 | [AniBakaBaka/AniBaka](https://github.com/AniBakaBaka/AniBaka) |
+| Aidoku | `app.aidoku.Aidoku` | 0.9 | 14.1 MB | iOS 15.0+ | 无 | [Aidoku/Aidoku](https://github.com/Aidoku/Aidoku) |
+| ARMSX2 Nightly | `com.armsx2.ios.nightly` | 2.6.0-nightly.20261023.1332 | 38.5 MB | iOS 17.4+ | 每日构建 | [ARMSX2/ARMSX2](https://github.com/ARMSX2/ARMSX2) |
+| AirCard | `com.mak5er.aircard` | 1.3.2 | 4.4 MB | iOS 18.0+ | 无 | [Mak5er/AirCard-iOS](https://github.com/Mak5er/AirCard-iOS) |
+| 大富翁4重制版 | `pro.areu.rich4` | 0.7.4 | 1.67 GiB | iOS 15.0+ | 无 | [iam567/rich4-renew-app](https://github.com/iam567/rich4-renew-app) |
 
 历史清单中每个应用提供 **stable（稳定）** 轨道；**EhPanda** 与 **Animeko** 另有 **nightly（测试）** 轨道（分别是 3.0.0 与 6.2.0）。
 
@@ -251,7 +258,7 @@ Action 已固定到完整 commit SHA（保留版本注释）；Dependabot 每日
 ```bash
 # 本地跑（需要 Python 3.8+，只用标准库）
 python tools/build_source.py --refresh      # 重新抓上游
-python tools/verify_source.py --min-apps 9  # 校验（数字取「等于当前应用数」）
+python tools/verify_source.py --min-apps 16  # 校验（数字取「等于当前应用数」）
 ```
 
 ## 目录结构
@@ -290,7 +297,7 @@ python tools/build_source.py --versions 4    # 稳定版轨道保留最近 4 个
 
 ## 哪些预发布会被收，为什么
 
-9 个仓库的发布记录全扫过（含 tag 名带 beta/alpha/rc/nightly 但没打预发布标记的）：
+9 个原有开源应用仓库的发布记录全扫过（含 tag 名带 beta/alpha/rc/nightly 但没打预发布标记的）：
 
 | 仓库 | 情况 | 结论 |
 |---|---|---|
@@ -313,11 +320,11 @@ python tools/build_source.py --versions 4    # 稳定版轨道保留最近 4 个
 ## 注意事项
 
 1. **EhPanda 需 iOS 26.0 及以上**，稳定版 2.8.1 与测试版 3.0.0 都是这个要求。
-2. **免费 Apple ID 的侧载限制**：同时最多 3 个自签应用，签名 7 天过期（靠 SideStore 自身续签）。源里有 9 个应用，装不下全部。
+2. **免费 Apple ID 的侧载限制**：同时最多 3 个自签应用，签名 7 天过期（靠 SideStore 自身续签）。源里有 16 个应用，装不下全部。
 3. **PicaX 选的是不含 Watch 组件的包**（`PicaX-unsigned.ipa`）。带 Watch 的版本在免费账号签名时容易因附加 Target 失败。
 4. **EhPanda 含 Share Extension、PicaX 含 Widget**，签名时会额外占用标识符；报错可换用不带扩展的版本。
 5. **源里有四个 Venera 系阅读器**：VeneraX（`io.github.kyosee.venera`）、Venera Prime（`com.github.wgh136.venera.prime`）、VeneraNext（`com.github.cyrilpeng.veneranext`）、Venera-SSR（`com.github.kiastr.venera-ssr`）。四者是**独立应用**（Bundle ID 各不相同，分别是不同作者维护的 Venera 分支），可以同时安装 —— 但功能高度重叠，实际按需选一个就够。
    - 其中 **Venera-SSR** 主要在「阅读增强」上做文章：黑白漫画 AI 上色、Anime4K 超分（含 Real-ESRGAN V4 推理模型）、图片内嵌文字的 OCR 翻译。源里取的是**标准版** iOS 包；上游的「翻译版」（OCR 模型内置版）只出了 Android，iOS 侧需要的模型要另外到上游那两个模型发布（`model` / `translation-models`）里下。
    - 四个 Venera 的 tint 有意分开：三个蓝（`#4A8FE7` / `#0784FC` / `#2090E0`）+ 一个黄（`#C4BA12`），列表里好认。黄是会按白底可读性压过明度的，别照着图标原色改。
-6. **本仓库只做索引，IPA 全部由各项目自己在 GitHub Release 发布**，未重新打包、未修改任何二进制。使用请遵守各项目开源协议（GPL-3.0 / AGPL-3.0 / MPL-2.0 / MIT）及当地法律法规。
+6. **本仓库只做索引，IPA 全部由各项目自己在 GitHub Release 发布**，未重新打包、未修改任何二进制。开源应用请遵守各项目许可证；AvPlay 上游未提供应用源代码或开源许可证。
 

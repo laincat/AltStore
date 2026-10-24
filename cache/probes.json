@@ -720,5 +720,103 @@
       "size": 38892754,
       "digest": "sha256:5f21a7973043c64fc5be26259df9872ed59a48b612a8e6851649e877f0ec32cf"
     }
+  },
+  "https://github.com/anonymousjav/AvPlayRelease/releases/download/v2.2.0/AvPlay-2.2.0.ipa": {
+    "bundleIdentifier": "com.javdb.avplay",
+    "version": "2.2.0",
+    "buildVersion": "2020001",
+    "displayName": "AvPlay",
+    "minOSVersion": "15.3",
+    "size": 23751956,
+    "assetIdentity": {
+      "id": 668558966,
+      "updated_at": "2026-10-23T08:59:27Z",
+      "size": 23751956,
+      "digest": "sha256:337a55087940c53dbbcc13b28634161197d895d98c793010dcbee62036efb025"
+    }
+  },
+  "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.6.4/AnimeFlow-ios-2.6.4.ipa": {
+    "bundleIdentifier": "com.ligg.anime_flow",
+    "version": "2.6.4",
+    "buildVersion": "2.6.4",
+    "displayName": "AnimeFlow",
+    "minOSVersion": "15.0",
+    "size": 29497158,
+    "assetIdentity": {
+      "id": 653765999,
+      "updated_at": "2026-10-18T15:14:20Z",
+      "size": 29497158,
+      "digest": "sha256:e49f3cebfbe3ac37934a56ee9d3f4416621bf28de13b0356943e825b1a4602c7"
+    }
+  },
+  "https://github.com/AniBakaBaka/AniBaka/releases/download/5.2.3%2B1020/baka-5.2.3%2B1020-ios-unsigned.ipa": {
+    "bundleIdentifier": "ani.baka",
+    "version": "5.2.3",
+    "buildVersion": "1020",
+    "displayName": "Baka",
+    "minOSVersion": "13.0",
+    "size": 23775885,
+    "assetIdentity": {
+      "id": 659414771,
+      "updated_at": "2026-10-20T13:31:36Z",
+      "size": 23775885,
+      "digest": "sha256:865dd56c04923fece7d36d05e3d380f688a4ea0708f41d1faca4654d03716130"
+    }
+  },
+  "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261023/ARMSX2-nightly-20261023-90126bdfea-iOS-arm64.ipa": {
+    "bundleIdentifier": "com.armsx2.ios.nightly",
+    "version": "2.6.0-nightly.20261023.1332",
+    "buildVersion": "260",
+    "displayName": "ARMSX2 Nightly",
+    "minOSVersion": "17.4",
+    "size": 40376158,
+    "assetIdentity": {
+      "id": 669324119,
+      "updated_at": "2026-10-23T14:10:16Z",
+      "size": 40376158,
+      "digest": "sha256:d69c486e567970e22049a4212c436aca5f948a5dca3c74d52edcce10428063ac"
+    }
+  },
+  "https://github.com/Mak5er/AirCard-iOS/releases/download/v1.3.2/AirCard-iOS.ipa": {
+    "bundleIdentifier": "com.mak5er.aircard",
+    "version": "1.3.2",
+    "buildVersion": "1.3.2",
+    "displayName": "AirCard-iOS",
+    "minOSVersion": "18.0",
+    "size": 4638147,
+    "assetIdentity": {
+      "id": 609803779,
+      "updated_at": "2026-10-04T12:22:52Z",
+      "size": 4638147,
+      "digest": "sha256:49aff0267546a2b27ad7eeef036c8af7f9b1d230fce0e92b24d7f6b97cfd7a86"
+    }
+  },
+  "https://github.com/iam567/rich4-renew-app/releases/download/v0.7.4/rich4-0.7.4-unsigned.ipa": {
+    "bundleIdentifier": "pro.areu.rich4",
+    "version": "0.7.4",
+    "buildVersion": "40",
+    "displayName": "大富翁4",
+    "minOSVersion": "15.0",
+    "size": 1790723589,
+    "assetIdentity": {
+      "id": 669169727,
+      "updated_at": "2026-10-23T13:13:19Z",
+      "size": 1790723589,
+      "digest": "sha256:775d2aa85e0429b4bf0b8df0a5412e7ea58812b023f657f0b176c01ba6abc030"
+    }
+  },
+  "https://github.com/Aidoku/Aidoku/releases/download/v0.9-4/Aidoku.ipa": {
+    "bundleIdentifier": "app.aidoku.Aidoku",
+    "version": "0.9",
+    "buildVersion": "4",
+    "displayName": "Aidoku",
+    "minOSVersion": "15.0",
+    "size": 14753154,
+    "assetIdentity": {
+      "id": 648802068,
+      "updated_at": "2026-10-16T22:24:47Z",
+      "size": 14753154,
+      "digest": "sha256:473e28cda194e57434f2a9e3ad26abbc8f9c18784047eb0e931a51b47df8970c"
+    }
   }
 }
