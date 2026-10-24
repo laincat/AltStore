@@ -3152,5 +3152,1996 @@
       "body": "After test\r\n超分SR在in总设置General Settings里",
       "ipas": []
     }
+  ],
+  "anonymousjav/AvPlayRelease": [
+    {
+      "tag": "v2.2.0",
+      "name": "AvPlay v2.2.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T09:02:21Z",
+      "body": "现已适配 iPhone Duo 🎉\r\n\r\n【最新更新】\r\n- 优化 JavDB图片加载速度起飞\r\n- 新增 短剧排行榜\r\n- 修复 已知问题\r\n\r\n【近期更新】\r\n- 新增 黄果AI短剧\r\n- 新增 JavDB的\"影片预览\"、\"想看\"和\"看过\"\r\n\r\n⚠️ v2.1.0版本 iOS 包 Bundle ID 已变，旧版本数据可通过导出数据或云备份迁移",
+      "ipas": [
+        {
+          "name": "AvPlay-2.2.0.ipa",
+          "size": 23751956,
+          "url": "https://github.com/anonymousjav/AvPlayRelease/releases/download/v2.2.0/AvPlay-2.2.0.ipa",
+          "id": 668558966,
+          "updated_at": "2026-10-23T08:59:27Z",
+          "digest": "sha256:337a55087940c53dbbcc13b28634161197d895d98c793010dcbee62036efb025"
+        }
+      ]
+    },
+    {
+      "tag": "v2.1.0",
+      "name": "AvPlay v2.1.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T15:08:06Z",
+      "body": "【最新更新】\n- 新增 JavDB的\"想看\"和\"看过\"\n- 新增 短剧排行榜\n- 新增 短剧快进手势\n- 新增 短剧横屏观影模式\n- 新增 快速回顶按钮\n- 优化 记住桌面端窗口状态\n- 优化 WebDAV云备份\n- 修复 已知问题\n\n【近期更新】\n- 新增 黄果AI短剧\n- 新增 影片预览\n\n⚠️ 此版本 iOS 包 Bundle ID 已变，旧版本数据可通过导出数据或云备份迁移\n\n现已适配 iPhone Duo 🎉\n",
+      "ipas": [
+        {
+          "name": "AvPlay-2.1.0.ipa",
+          "size": 23737585,
+          "url": "https://github.com/anonymousjav/AvPlayRelease/releases/download/v2.1.0/AvPlay-2.1.0.ipa",
+          "id": 665450173,
+          "updated_at": "2026-10-22T10:10:42Z",
+          "digest": "sha256:4fe769a9af2415f1fe670fea915c584524c7ea52505a3d54a2459dc85c6f9ea0"
+        }
+      ]
+    },
+    {
+      "tag": "AvPlay_2.0.0",
+      "name": "AvPlay v2.0.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-13",
+      "published_at": "2026-10-13T14:27:54Z",
+      "body": "【最新更新】\r\n- 新增 黄果AI短剧\r\n- 新增 AVDB在线平台\r\n- 新增 影片预览\r\n- 优化 首页有更大的阅读面积\r\n- 优化 桌面端不依赖VLC播放器\r\n- 修复 已知问题\r\n",
+      "ipas": [
+        {
+          "name": "AvPlay-2.0.0.ipa",
+          "size": 23400180,
+          "url": "https://github.com/anonymousjav/AvPlayRelease/releases/download/AvPlay_2.0.0/AvPlay-2.0.0.ipa",
+          "id": 637264623,
+          "updated_at": "2026-10-13T14:22:49Z",
+          "digest": "sha256:ceec91a26e68b8044b3b3f0b6ecd22f192a25971e75396b6d586faf72f884564"
+        }
+      ]
+    },
+    {
+      "tag": "AvPlay_1.9.1",
+      "name": "AvPlay v1.9.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T17:01:44Z",
+      "body": "【最新更新】\r\n- 优化 在线播放平台的线路获取\r\n- 优化 人机验证问题\r\n- 修复 已知问题\r\n\r\n【近期更新】\r\n- 新增 AV01、MemoJav、Jable 在线播放平台\r\n- 新增 JavDB Top250、热评和全短评\r\n- 新增 WebDAV 云备份\r\n",
+      "ipas": [
+        {
+          "name": "AvPlay-1.9.1.ipa",
+          "size": 22703538,
+          "url": "https://github.com/anonymousjav/AvPlayRelease/releases/download/AvPlay_1.9.1/AvPlay-1.9.1.ipa",
+          "id": 601398430,
+          "updated_at": "2026-09-30T16:58:01Z",
+          "digest": "sha256:ba362ad5fe5b34cbeb778e166482014156e16edac614af707e16380e1d07ff5c"
+        }
+      ]
+    },
+    {
+      "tag": "AvPlay_1.9.0",
+      "name": "AvPlay v1.9.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-25",
+      "published_at": "2026-09-25T16:22:28Z",
+      "body": "【最新更新】\r\n- 新增 AV01、MemoJav、Jable 在线播放平台\r\n- 新增 移动端应用后台时模糊\r\n- 优化 播放器可选清晰度\r\n- 优化 MissAV线路获取\r\n- 优化 JavDB人机验证问题\r\n- 优化 详情页面联动滚动\r\n- 优化 影片标题清洗\r\n- 修复 已知问题\r\n",
+      "ipas": [
+        {
+          "name": "AvPlay-1.9.0.ipa",
+          "size": 22593992,
+          "url": "https://github.com/anonymousjav/AvPlayRelease/releases/download/AvPlay_1.9.0/AvPlay-1.9.0.ipa",
+          "id": 588736156,
+          "updated_at": "2026-09-25T16:17:54Z",
+          "digest": "sha256:962e7dc809675b9130cd9da8692a7a2b281a4ab974dd10348210a9bdce90d682"
+        }
+      ]
+    },
+    {
+      "tag": "AvPlay_1.8.0",
+      "name": "AvPlay v1.8.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-25",
+      "published_at": "2026-08-25T12:48:43Z",
+      "body": "【最新更新】\r\n- 新增 FC2 回归\r\n- 新增 桌面端大图键盘翻页\r\n- 优化 桌面端系统主题跟随与窗口恢复\r\n- 修复 已知问题\r\n",
+      "ipas": [
+        {
+          "name": "AvPlay-1.8.0.ipa",
+          "size": 21101105,
+          "url": "https://github.com/anonymousjav/AvPlayRelease/releases/download/AvPlay_1.8.0/AvPlay-1.8.0.ipa",
+          "id": 529126804,
+          "updated_at": "2026-08-25T12:04:08Z",
+          "digest": "sha256:fe71e69cdd607b3c36b8590e19d8c3d5eeacf8bd4f56f234c3897ae76756ce72"
+        }
+      ]
+    },
+    {
+      "tag": "8.0.1",
+      "name": "8.0.1",
+      "pre": false,
+      "draft": false,
+      "date": "2024-11-01",
+      "published_at": "2024-11-01T03:12:37Z",
+      "body": "",
+      "ipas": []
+    },
+    {
+      "tag": "8.0.0",
+      "name": "8.0.0",
+      "pre": false,
+      "draft": false,
+      "date": "2024-10-31",
+      "published_at": "2024-10-31T07:31:45Z",
+      "body": "",
+      "ipas": []
+    },
+    {
+      "tag": "7.5.6",
+      "name": "7.5.6",
+      "pre": false,
+      "draft": false,
+      "date": "2024-02-10",
+      "published_at": "2024-02-10T17:28:23Z",
+      "body": "",
+      "ipas": []
+    },
+    {
+      "tag": "7.5.5",
+      "name": "7.5.5",
+      "pre": false,
+      "draft": false,
+      "date": "2024-02-08",
+      "published_at": "2024-02-08T02:29:18Z",
+      "body": "",
+      "ipas": []
+    },
+    {
+      "tag": "7.5.4",
+      "name": "7.5.4",
+      "pre": false,
+      "draft": false,
+      "date": "2023-12-15",
+      "published_at": "2023-12-15T09:48:26Z",
+      "body": "",
+      "ipas": []
+    },
+    {
+      "tag": "7.5.3",
+      "name": "7.5.3",
+      "pre": false,
+      "draft": false,
+      "date": "2023-11-29",
+      "published_at": "2023-11-29T09:20:55Z",
+      "body": "",
+      "ipas": []
+    },
+    {
+      "tag": "7.5.2",
+      "name": "7.5.2",
+      "pre": false,
+      "draft": false,
+      "date": "2023-11-13",
+      "published_at": "2023-11-13T13:02:54Z",
+      "body": "",
+      "ipas": []
+    },
+    {
+      "tag": "20231109",
+      "name": "20231109",
+      "pre": false,
+      "draft": false,
+      "date": "2023-11-09",
+      "published_at": "2023-11-09T09:18:56Z",
+      "body": "",
+      "ipas": []
+    },
+    {
+      "tag": "7.5.1",
+      "name": "7.5.1",
+      "pre": false,
+      "draft": false,
+      "date": "2023-11-08",
+      "published_at": "2023-11-08T01:41:56Z",
+      "body": "",
+      "ipas": []
+    },
+    {
+      "tag": "7.5.0",
+      "name": "7.5.0",
+      "pre": false,
+      "draft": false,
+      "date": "2023-11-07",
+      "published_at": "2023-11-07T06:17:59Z",
+      "body": "",
+      "ipas": []
+    },
+    {
+      "tag": "7.4.4",
+      "name": "7.4.4",
+      "pre": false,
+      "draft": false,
+      "date": "2023-08-29",
+      "published_at": "2023-08-29T09:47:34Z",
+      "body": "",
+      "ipas": []
+    },
+    {
+      "tag": "7.4.3",
+      "name": "7.4.3",
+      "pre": false,
+      "draft": false,
+      "date": "2023-08-15",
+      "published_at": "2023-08-15T03:22:57Z",
+      "body": "",
+      "ipas": []
+    },
+    {
+      "tag": "7.4.2",
+      "name": "7.4.2",
+      "pre": false,
+      "draft": false,
+      "date": "2023-07-12",
+      "published_at": "2023-07-12T02:09:12Z",
+      "body": "",
+      "ipas": []
+    }
+  ],
+  "openAnimeFlow/AnimeFlow": [
+    {
+      "tag": "v2.6.4",
+      "name": "AnimeFlow 2.6.4",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-18",
+      "published_at": "2026-10-18T15:14:24Z",
+      "body": "### 🔄 更新内容\r\n\r\n## 2.6.4 更新\r\n\r\n## 新增\r\n\r\n- 推荐页、番剧详情页添加缓存优化加载速度\r\n- 通用设置页面增加更丰富的缓存管理\r\n- 番剧详情页宽屏时展示评分柱状图\r\n- 关于页面中添加项目官网预览\r\n\r\n## 优化\r\n \r\n- 通过优选ip优化网络延迟\r\n- 优化番剧详情、用户收藏页面改变窗口宽度时的性能\r\n- 更多的ui优化\r\n\r\n## 修复\r\n\r\n- 修复在使用MDK内核时移动端会自动熄屏问题\r\n- 修复ios端在更新信息页面复制文本出现白屏问题\r\n- 修复版本更新弹窗中更新信息部分文字未同步深浅色主题\r\n\r\n---\r\n\r\n### 📦 下载\r\n- 每个设备的安装包后缀: ``苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip或.exe)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)``\r\n- android分多个包: ``v7a(32位架构旧手机或TV)、arm64(新手机,推荐用这个)、x86(模拟器) ``\r\n- windows分多个包: ``.zip(解压直接使用)、.exe(安装后使用，推荐用这个) ``\r\n",
+      "ipas": [
+        {
+          "name": "AnimeFlow-ios-2.6.4.ipa",
+          "size": 29497158,
+          "url": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.6.4/AnimeFlow-ios-2.6.4.ipa",
+          "id": 653765999,
+          "updated_at": "2026-10-18T15:14:20Z",
+          "digest": "sha256:e49f3cebfbe3ac37934a56ee9d3f4416621bf28de13b0356943e825b1a4602c7"
+        }
+      ]
+    },
+    {
+      "tag": "v2.6.3",
+      "name": "AnimeFlow 2.6.3",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-12",
+      "published_at": "2026-10-12T08:12:04Z",
+      "body": "### 🔄 更新内容\r\n\r\n## 2.6.3 更新\r\n\r\n## 新增\r\n\r\n- 新增播放器迷你进度条(可在设置页面关闭) #101\r\n- 新增图片缓存清理\r\n- 番剧角色页面补全声优信息 #105\r\n- 安卓端支持自定义视频下载路径\r\n- 用户收藏页面支持已最新观看记录排序 #100\r\n\r\n## 优化\r\n \r\n- 优化图片加载速度(在通用设置页面手动点击一次恢复ECH默认值)\r\n- 账户设置页面ID、账号支持复制\r\n- 优化多处ui细节\r\n- 优化新番时间表排序功能 #108\r\n- 优化播放资源权重排序 #98\r\n\r\n## 修复\r\n\r\n- 修复更新信息页面长按复制信息出现的白屏问题 #104\r\n- 修复播放器使用MDK内核快进时未使用缓冲进度导致视频重复加载\r\n\r\n---\r\n\r\n### 📦 下载\r\n- 每个设备的安装包后缀: ``苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip或.exe)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)``\r\n- android分多个包: ``v7a(32位架构旧手机或TV)、arm64(新手机,推荐用这个)、x86(模拟器) ``\r\n- windows分多个包: ``.zip(解压直接使用)、.exe(安装后使用) ``\r\n",
+      "ipas": [
+        {
+          "name": "AnimeFlow-ios-2.6.3.ipa",
+          "size": 29429482,
+          "url": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.6.3/AnimeFlow-ios-2.6.3.ipa",
+          "id": 633122628,
+          "updated_at": "2026-10-12T08:12:01Z",
+          "digest": "sha256:9a6d450d250c80a6a1c7a10766706df20d68f84ac637482e611929fb2a1f764d"
+        }
+      ]
+    },
+    {
+      "tag": "v2.6.2",
+      "name": "AnimeFlow 2.6.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-04",
+      "published_at": "2026-10-04T12:32:07Z",
+      "body": "### 🔄 更新内容\r\n\r\n## 2.6.2 更新\r\n\r\n## 新增\r\n\r\n- 番剧收藏支持取消收藏，同步收藏时不在同步已取消的番剧 #82\r\n- 番剧详情页添加预览图，添加剧集封面\r\n- 排行榜页面支持两种布局切换 #86\r\n- 截图成功展示缩略图\r\n- 升级规则系统支持更多规则配置\r\n\r\n## 优化\r\n \r\n- 移动端部分设置页面添加安全边距,统一最大宽度\r\n- 优化播放页弹幕设置弹窗布局\r\n- 删除已失效的数据源\r\n- 排行榜页面修改条件重新获取数据时添加加载状态反馈\r\n- 优化播放指示器显示隐藏逻辑\r\n- 视频源小于两分支不自动标记观看状态\r\n\r\n## 修复\r\n\r\n- 修复在“我的”页面中登录成功后出现两次页面刷新问题\r\n- 修复数据源拖拽排序异常问题\r\n\r\n---\r\n\r\n### 📦 下载\r\n- 每个设备的安装包后缀: ``苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip或.exe)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)``\r\n- android分多个包: ``v7a(32位架构旧手机或TV)、arm64(新手机,推荐用这个)、x86(模拟器) ``\r\n- windows分多个包: ``.zip(解压直接使用)、.exe(安装后使用) ``\r\n",
+      "ipas": [
+        {
+          "name": "AnimeFlow-ios-2.6.2.ipa",
+          "size": 29964323,
+          "url": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.6.2/AnimeFlow-ios-2.6.2.ipa",
+          "id": 610073226,
+          "updated_at": "2026-10-04T15:20:39Z",
+          "digest": "sha256:3bdab3e58aa7e7f54f4c86d950df941e0c466180ff74db8a7932e31827925a13"
+        }
+      ]
+    },
+    {
+      "tag": "v2.6.1",
+      "name": "AnimeFlow 2.6.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-26",
+      "published_at": "2026-09-26T12:55:01Z",
+      "body": "### 🔄 更新内容\n\n## 2.6.1 更新\n\n## 重要修复\n\n- 修复图片加载失败问题 [ech_http](https://github.com/ech-research/ech_http)\n\n## 新增\n\n- 新番时间表添加标签过滤功能\n\n## 优化\n \n- 搜索页面点击历史记录搜索自动取消输入框焦点\n- 优化搜索页面输入框的吸附效果\n- 优化推荐首页的输入框样式\n- 优化社区在线页面布局\n\n## 修复\n\n- 修复字体设置页面开关cdn可能导致的状态错误问题\n- 修复播放页数据源弹窗在移动端搜索时输入框被遮挡问题\n\n---\n\n### 📦 下载\n- 每个设备的安装包后缀: ``苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip或.exe)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)``\n- android分多个包: ``v7a(32位架构旧手机或TV)、arm64(新手机,推荐用这个)、x86(模拟器) ``\n- windows分多个包: ``.zip(解压直接使用)、.exe(安装后使用) ``\n",
+      "ipas": [
+        {
+          "name": "AnimeFlow-ios-2.6.1.ipa",
+          "size": 29694830,
+          "url": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.6.1/AnimeFlow-ios-2.6.1.ipa",
+          "id": 590662805,
+          "updated_at": "2026-09-26T12:55:03Z",
+          "digest": "sha256:3ff660cd747c51f48e4b3c2c24f4c99f42cb0e8ea34f9c1f7e650a31dddac192"
+        }
+      ]
+    },
+    {
+      "tag": "v2.6.0",
+      "name": "AnimeFlow 2.6.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-22",
+      "published_at": "2026-09-22T10:30:28Z",
+      "body": "### 🔄 更新内容\r\n\r\n## 2.6.0 更新\r\n\r\n## 新增\r\n\r\n- 新增社区页面可以查看在线人数和正在被观看的番剧\r\n- 播放器全屏时如果有人正在观看右上角会显示观看人数\r\n- 番剧收藏不在需要强制绑定bangumi账号，账户设置页面可以手动双向同步收藏数据，冲突时可以手动选择收藏类型\r\n- 弹幕适配系统字体\r\n- 已观看的剧集状态支持长按取消\r\n- 弹幕支持字体描边、粗细调节\r\n- 新番时间表页面增加季节筛选功能，并优化页面布局\r\n- 现在插件源可以分享，在插件编辑页面可以导入分析的插件 #69\r\n- 播放也数据弹窗优化部分区域可折叠，未搜索到资源的站点可以单独输入关键词搜索\r\n\r\n## 优化\r\n \r\n- 重构排行榜页面变得更美观\r\n- 更完善的播放准备状态展示\r\n- 更新播放进度时清理窗口中的弹幕\r\n\r\n## 修复\r\n\r\n- 修复弹幕简/繁体转换失效问题\r\n- 修复播放页正在播放视频时，数据源弹窗手动全量搜索会重新加载视频问题 #76\r\n\r\n---\r\n\r\n### 📦 下载\r\n- 每个设备的安装包后缀: ``苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip或.exe)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)``\r\n- android分多个包: ``v7a(32位架构旧手机或TV)、arm64(新手机,推荐用这个)、x86(模拟器) ``\r\n- windows分多个包: ``.zip(解压直接使用)、.exe(安装后使用) ``\r\n",
+      "ipas": [
+        {
+          "name": "AnimeFlow-ios-2.6.0.ipa",
+          "size": 28390036,
+          "url": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.6.0/AnimeFlow-ios-2.6.0.ipa",
+          "id": 581156797,
+          "updated_at": "2026-09-22T10:30:30Z",
+          "digest": "sha256:92e00c5dda139bfb3e6d6fd6fb5a8d5e6593fff2dae2c4c35cd526e2ef533f35"
+        }
+      ]
+    },
+    {
+      "tag": "v2.5.2",
+      "name": "AnimeFlow 2.5.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-16",
+      "published_at": "2026-09-16T12:24:40Z",
+      "body": "### 🔄 更新内容\r\n\r\n## 2.5.2 更新\r\n\r\n## 新增\r\n\r\n- 添加账号修改密码功能\r\n- 在设置关于菜单中可以直接查看项目的版本更新信息\r\n- 桌面端设置中添加自定义播放器快捷键功能\r\n- 用户收藏页面番剧卡片展示更多信息\r\n- 评论区图片支持多图预览\r\n\r\n## 优化\r\n \r\n- 优化移动端输入站点验证码时图片被键盘遮挡问题\r\n- 播放器点击暂停/播放按钮重新计算控件隐藏时间\r\n- 更新时根据安卓架构推荐安装包(下个版本生效)\r\n- 更多系统架构层面优化\r\n- 更多页面ui细节优化\r\n\r\n## 修复\r\n\r\n- 修复桌面端播放器快捷键不可用问题\r\n- 修复部分番剧详情页无法显示问题\r\n- 修复移动端平凡调整亮度、音量指示器闪烁问题\r\n- 修改插件下载页面开打镜像后展示的数据会被上一次请求失败影响\r\n- 修复windows平台视频解析稳定性\r\n\r\n---\r\n\r\n### 📦 下载\r\n- 每个设备的安装包后缀: ``苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip或.exe)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)``\r\n- android分多个包: ``v7a(32位架构旧手机或TV)、arm64(新手机,推荐用这个)、x86(模拟器) ``\r\n- windows分多个包: ``.zip(解压直接使用)、.exe(安装后使用) ``\r\n",
+      "ipas": [
+        {
+          "name": "AnimeFlow-ios-2.5.2.ipa",
+          "size": 28279194,
+          "url": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.5.2/AnimeFlow-ios-2.5.2.ipa",
+          "id": 567921565,
+          "updated_at": "2026-09-16T12:24:42Z",
+          "digest": "sha256:c2b7e0b36951c151e853e06c5b95f0ad3a7049b90065654643b98295dd276b05"
+        }
+      ]
+    },
+    {
+      "tag": "v2.5.1",
+      "name": "AnimeFlow 2.5.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-12",
+      "published_at": "2026-09-12T08:46:58Z",
+      "body": "### 🔄 更新内容\r\n\r\n## 2.5.1 更新\r\n\r\n## 新增\r\n\r\n- 更新数据源功能模块并新增age源 #59\r\n\r\n## 修复\r\n\r\n- 修复登录状态频繁过期问题 #58\r\n- 修复播放页设置按钮在非全屏下展示问题\r\n\r\n## 优化\r\n\r\n- 使用新的弹幕搜索api提高搜索效率，优化弹幕加载状态展示 #60\r\n\r\n---\r\n\r\n### 📦 下载\r\n- 每个设备的安装包后缀: ``苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip或.exe)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)``\r\n- android分多个包: ``v7a(旧手机)、arm64(新手机,推荐用这个)、x86(模拟器) ``\r\n- windows分多个包: ``.zip(解压直接使用)、.exe(安装后使用) ``\r\n",
+      "ipas": [
+        {
+          "name": "AnimeFlow-ios-2.5.1.ipa",
+          "size": 28191201,
+          "url": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.5.1/AnimeFlow-ios-2.5.1.ipa",
+          "id": 558935799,
+          "updated_at": "2026-09-12T08:46:59Z",
+          "digest": "sha256:2df7d915b1908a53fd06baa1a04c254a9efffc5e66712583be2bea15b8758bf8"
+        }
+      ]
+    },
+    {
+      "tag": "v2.5.0",
+      "name": "AnimeFlow 2.5.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-09",
+      "published_at": "2026-09-09T07:52:14Z",
+      "body": "### 🔄 更新内容\n\n## 2.5.0 更新\n\n## 新增\n\n- 新增多播放器内核，可在播放设置页面或播放页面切换(解决ios巨魔越狱环境mpv内核闪退问题)\n- 播放页、用户收藏页现在都可以修改或添加条目收藏\n- 现在下载页面也可以补全未下载弹幕资源的剧集\n- 点击播放页简介中的番剧名称，可在简介区域查看详情，并支持直接切集播放\n- 新增开/关播放器硬件解码设置\n\n## 修复\n\n- 修复修改条目收藏时收藏页面收藏状态没有同步问题\n- 修复下载视频资源时下载状态错误导致无法继续下载更多视频资源\n- 修复不同播放页面之间控制栏、手势和加载提示状态相互影响的问题，退出播放页时正确清理定时器、电量订阅并恢复亮度\n- 修复剧集分页请求并发重复、加载失败或无新增数据时持续请求的问题，支持失败后重试\n\n## 优化\n\n- 优化设置页导航：宽屏下左侧菜单常驻，窄屏下支持逐级返回，调整窗口大小时保留当前子页面和表单状态\n- 优化剧集评论加载，仅在当前剧集变化时自动重新请求，避免分页和已看状态变化导致重复加载\n- 优化下载页局部刷新，下载进度和状态变化仅更新相关区域；恢复下载时自动展开对应番剧卡片\n- 开启 Windows 平台 Impeller 渲染\n\n---\n\n### 📦 下载\n- 每个设备的安装包后缀: ``苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip或.exe)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)``\n- android分多个包: ``v7a(旧手机)、arm64(新手机,推荐用这个)、x86(模拟器) ``\n- windows分多个包: ``.zip(解压直接使用)、.exe(安装后使用) ``\n",
+      "ipas": [
+        {
+          "name": "AnimeFlow-ios-2.5.0.ipa",
+          "size": 28180022,
+          "url": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.5.0/AnimeFlow-ios-2.5.0.ipa",
+          "id": 552276339,
+          "updated_at": "2026-09-09T07:52:16Z",
+          "digest": "sha256:a5a57cfd7dc47202157c1786230a432f9ba5dcf226f9ee5053314045fd718622"
+        }
+      ]
+    },
+    {
+      "tag": "v2.4.0",
+      "name": "AnimeFlow 2.4.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-28",
+      "published_at": "2026-08-28T12:28:16Z",
+      "body": "### 🔄 更新内容\n\n## 2.4.0 更新\n\n- 新增视频资源下载功能，播放页选择数据源后可在数据源卡片区域点击下拉菜单选择“下载资源”\n- 优化每周番剧页面新增更多详细信息\n- 新增错误日志页面(设置中查看)\n- 优化滚动弹幕流畅度\n- 优化移动端播放器全屏时展示的电池图标效果\n\n---\n\n### 📦 下载\n- 每个设备的安装包后缀: ``苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)``\n- android分多个包: ``v7a(旧手机)、arm64(新手机,推荐用这个)、x86(模拟器) ``\n- windows分多个包: ``.zip(解压直接使用)、.exe(安装后使用) ``\n",
+      "ipas": [
+        {
+          "name": "AnimeFlow-ios-2.4.0.ipa",
+          "size": 23786765,
+          "url": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.4.0/AnimeFlow-ios-2.4.0.ipa",
+          "id": 533775223,
+          "updated_at": "2026-08-28T12:28:19Z",
+          "digest": "sha256:a08c50e52514f78c11e5fa428edb276bc5a3ebed8176701ad272f1559f92ee11"
+        }
+      ]
+    },
+    {
+      "tag": "v2.3.0",
+      "name": "AnimeFlow 2.3.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-21",
+      "published_at": "2026-08-21T15:25:20Z",
+      "body": "### 🔄 更新内容\n\n## 2.3.0 更新\n\n- 数据源管理页面支持排序功能\n- 弹幕支持简体中文/繁体中文转换\n- 添加云端播放记录同步(登录后自动开启)\n- 桌面端推荐页今日放送、播放记录区域添加水平滚动按钮(也可以shift+滚轮滚动)\n- 优化用户收藏页面部分ui动画效果\n- 修复调节弹幕透明度时没有实时生效问题\n- 更新软件logo\n\n---\n\n### 📦 下载\n- 每个设备的安装包后缀: ``苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)``\n- android分多个包: ``v7a(旧手机)、arm64(新手机,推荐用这个)、x86(模拟器) ``\n- windows分多个包: ``.zip(解压直接使用)、.exe(安装后使用) ``\n",
+      "ipas": [
+        {
+          "name": "AnimeFlow-ios-2.3.0.ipa",
+          "size": 22611592,
+          "url": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.3.0/AnimeFlow-ios-2.3.0.ipa",
+          "id": 523908620,
+          "updated_at": "2026-08-21T15:25:21Z",
+          "digest": "sha256:f1293f90d46f892dabf58d574a2295f4a536fd48d704e96472942ba02c7de76e"
+        }
+      ]
+    },
+    {
+      "tag": "v2.2.2",
+      "name": "AnimeFlow 2.2.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-01",
+      "published_at": "2026-08-01T19:52:57Z",
+      "body": "### 🔄 更新内容\r\n\r\n## 2.2.2 更新\r\n\r\n- 修复视频资源搜索时可能需要多次重试才有结果\r\n- 支持多语言(英语、繁体中文、简体中文)\r\n- 系统架构优化\r\n\r\n---\r\n\r\n### 📦 下载\r\n- 每个设备的安装包后缀: ``苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)``\r\n- android分多个包: ``v7a(旧手机)、arm64(新手机,推荐用这个)、x86(模拟器) ``\r\n- windows分多个包: ``.zip(解压直接使用)、.exe(安装后使用) ``\r\n",
+      "ipas": [
+        {
+          "name": "AnimeFlow-ios-2.2.2.ipa",
+          "size": 22155735,
+          "url": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.2.2/AnimeFlow-ios-2.2.2.ipa",
+          "id": 498213102,
+          "updated_at": "2026-08-01T19:52:59Z",
+          "digest": "sha256:11fdeda113d4514cbf6bcc3d5fd01ec053d1893596e824d0d26dee468e477a36"
+        }
+      ]
+    },
+    {
+      "tag": "v2.2.1",
+      "name": "AnimeFlow 2.2.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-22",
+      "published_at": "2026-07-22T13:35:24Z",
+      "body": "### 🔄 更新内容\n\n## 2.2.1 更新\n\n- 修复播放器声音过小问题\n- 修复播放器未展示缓冲指示器问题\n- 优化剧集选中效果\n- 优化视频源选择体验\n- 优化视频源筛选器，支持按线路筛选和集数升序/倒序排序\n\n---\n\n### 📦 下载\n- 每个设备的安装包后缀: ``苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)``\n- android分多个包: ``v7a(旧手机)、arm64(新手机,推荐用这个)、x86(模拟器) ``\n- windows分多个包: ``.zip(解压直接使用)、.exe(安装后使用) ``\n",
+      "ipas": [
+        {
+          "name": "AnimeFlow-ios-2.2.1.ipa",
+          "size": 21911121,
+          "url": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.2.1/AnimeFlow-ios-2.2.1.ipa",
+          "id": 485992842,
+          "updated_at": "2026-07-22T13:35:26Z",
+          "digest": "sha256:016db2530f7cf3f7ba5d67caca8ed7da4560016c69fa5ac06d58ebef6869b9e8"
+        }
+      ]
+    },
+    {
+      "tag": "v2.2.0",
+      "name": "AnimeFlow 2.2.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-12",
+      "published_at": "2026-07-12T04:56:55Z",
+      "body": "### 🔄 更新内容\r\n\r\n## 2.2.0 更新\r\n\r\n- 调整音量时会同步设备音量\r\n- 用户收藏页面支持关键词搜索内容\r\n- 播放页添加番剧推荐内容\r\n- 添加剧集观看记录功能、播放进度90%自动标记已看(剧集列表长按剧集手动标记已看)，进入播放页未选择观看剧集时自动播放未观看的剧集\r\n- 修复windows平台多次进入播放页后视频资源无法解析问题\r\n- 修复播放记录继续观看特殊剧集导致选集错误问题\r\n- 修复移动端视频长按加速可能导致无法恢复原始速度问题\r\n- 修复拖拽视频进度条没有实时更新效果\r\n\r\n---\r\n\r\n### 📦 下载\r\n- 每个设备的安装包后缀: ``苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)``\r\n- android分多个包: ``v7a(旧手机)、arm64(新手机,推荐用这个)、x86(模拟器) ``\r\n- windows分多个包: ``.zip(解压直接使用)、.exe(安装后使用) ``\r\n",
+      "ipas": [
+        {
+          "name": "AnimeFlow-ios-2.2.0.ipa",
+          "size": 21881599,
+          "url": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.2.0/AnimeFlow-ios-2.2.0.ipa",
+          "id": 474104530,
+          "updated_at": "2026-07-12T04:56:56Z",
+          "digest": "sha256:0f34912abd1f6ec5c1ca5773c96aed52b101e5830eee474ae32c2d76c1a7a0de"
+        }
+      ]
+    },
+    {
+      "tag": "v2.1.2",
+      "name": "AnimeFlow 2.1.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-06",
+      "published_at": "2026-07-06T14:20:23Z",
+      "body": "### 🔄 更新内容\r\n\r\n## 2.1.2 更新\r\n\r\n- 优化视频资源自动选择体验效果，不在等到所有站点资源加载完毕在选择加快自动选择时间，切换上/下一集时优先选择在上次播放的站点中选择资源播放\r\n- 优化资源抽屉体验效果，在自动选择数据源期间打开数据源抽屉弹窗不在自动跳转到选中的tab view页，避免影响用户选择资源、输入认证码\r\n- 优化剧集加载逻辑，现在可以在番剧详情也选择剧集直接播放，播放页有更好的剧集加载效果和错误提示\r\n- 新增一键跳过OP/ED功能，时间支持自定义，默认跳过85s\r\n- 新增视频画面填充方式切换，支持自动填充、剪切填充、拉伸填充\r\n- 优化用户收藏页面头部信息支持隐藏\r\n- 修复ios设备设置头像时选择相机拍照导致闪退问题\r\n- 修复本地播放记录更新时播放记录页面没有实时更新问题\r\n- 重构底层架构\r\n\r\n---\r\n\r\n### 📦 下载\r\n- 每个设备的安装包后缀: ``苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)``\r\n- android分多个包: ``v7a(旧手机)、arm64(新手机,推荐用这个)、x86(模拟器) ``\r\n- windows分多个包: ``.zip(解压直接使用)、.exe(安装后使用) ``\r\n",
+      "ipas": [
+        {
+          "name": "AnimeFlow-ios-2.1.2.ipa",
+          "size": 21822587,
+          "url": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.1.2/AnimeFlow-ios-2.1.2.ipa",
+          "id": 468153815,
+          "updated_at": "2026-07-06T14:29:24Z",
+          "digest": "sha256:37cf8a7a889545782689425a95248707e03da19cac0804e3a6566f1b580ffbb7"
+        }
+      ]
+    },
+    {
+      "tag": "v2.1.1",
+      "name": "AnimeFlow 2.1.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-06-27",
+      "published_at": "2026-06-27T13:09:55Z",
+      "body": "### 🔄 更新内容\n\n## 2.1.1 更新\n\n- 修复剧集列表中不同 type（特别篇/OP/ED/Trailer/MAD/其他）与正篇因同剧集号导致同时选中的问题\n- 修复用户信息可能的空异常导致获取用户数据失败\n- 现在支持自定义头像、设置用户页面背景\n- 现在账号支持解绑bangumi\n\n---\n\n### 📦 下载\n- 每个设备的安装包后缀: ``苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)``\n- android分多个包: ``v7a(旧手机)、arm64(新手机,推荐用这个)、x86(模拟器) ``\n- windows分多个包: ``.zip(解压直接使用)、.exe(安装后使用) ``\n",
+      "ipas": [
+        {
+          "name": "AnimeFlow-ios-2.1.1.ipa",
+          "size": 21741649,
+          "url": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.1.1/AnimeFlow-ios-2.1.1.ipa",
+          "id": 459491413,
+          "updated_at": "2026-06-27T13:09:57Z",
+          "digest": "sha256:e67d4e6cdd47d374bff1fb280b7791ea6fdd0764e3b87a0a24e7dfd93ef1e3e0"
+        }
+      ]
+    },
+    {
+      "tag": "v2.1.0",
+      "name": "AnimeFlow 2.1.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-06-23",
+      "published_at": "2026-06-23T14:51:08Z",
+      "body": "### 🔄 更新内容\n\n## 2.1.0 更新\n\n### 账户与 Bangumi 集成\n- 新增AnimeFow平台账号系统\n- 新增账户设置页面，支持查看与管理账户信息\n- 支持绑定 Bangumi 账号（OAuth 授权）\n- 支持 Bangumi 第三方授权登录\n- 支持将 Bangumi 收藏同步至 AnimeFlow 服务器\n- 用户收藏列表改由 AnimeFlow 服务器提供\n\n### 播放与资源\n- 现在支持过滤视频中的广告\n- 提高自动选择资源的正确性，以及选择的资源加载失败时自动加载下一个可用资源\n- 搜索结果排序优化后再加载视频源\n- 修复无法查看100集后的剧集\n\n### 界面与体验\n- 优化 Windows 端窗口标题栏显示效果\n- 优化用户空间页面布局，「我的」页面重构为用户页\n- 优化排行页面 UI 效果并重构页面逻辑\n- 优化检查版本更新反馈效果\n- 重构收藏页面数据加载逻辑与 UI 组件\n\n---\n\n### 📦 下载\n- 每个设备的安装包后缀: ``苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)``\n- android分多个包: ``v7a(旧手机)、arm64(新手机,推荐用这个)、x86(模拟器) ``\n- windows分多个包: ``.zip(解压直接使用)、.exe(安装后使用) ``\n",
+      "ipas": [
+        {
+          "name": "AnimeFlow-ios-2.1.0.ipa",
+          "size": 21307892,
+          "url": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.1.0/AnimeFlow-ios-2.1.0.ipa",
+          "id": 455710739,
+          "updated_at": "2026-06-23T14:51:11Z",
+          "digest": "sha256:31d168901bbd261d5e0cd7c79e34ca3f97186c1e6168bb426a7905a8b8c21018"
+        }
+      ]
+    },
+    {
+      "tag": "v2.0.0",
+      "name": "AnimeFlow 2.0.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-05-29",
+      "published_at": "2026-05-29T19:53:28Z",
+      "body": "### 🔄 更新内容\n\n## bangumi 网络解决\n\n- 服务器添加接口鉴权，旧版本将无法获取番剧数据请及时更新\n- 服务端新增排行榜、条目角色、角色详情、条目评论、条目制作人、搜索接口\n- 用户登录、用户收藏、个人空间暂时不可用将在后续完成适配，也可以直接通过代理网络解决\n\n---\n\n### 📦 下载\n- 每个设备的安装包后缀: ``苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)``\n- android分多个包: ``v7a(旧手机)、arm64(新手机,推荐用这个)、x86(模拟器) ``\n- windows分多个包: ``.zip(解压直接使用)、.exe(安装后使用) ``\n",
+      "ipas": [
+        {
+          "name": "AnimeFlow-ios-2.0.0.ipa",
+          "size": 21998738,
+          "url": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.0.0/AnimeFlow-ios-2.0.0.ipa",
+          "id": 433290380,
+          "updated_at": "2026-05-29T19:53:30Z",
+          "digest": "sha256:66a94190017b5f48c1dc49ad45829105b289d79c26a71fd769ba5fefa52369dd"
+        }
+      ]
+    },
+    {
+      "tag": "v1.9.9",
+      "name": "AnimeFlow 1.9.9",
+      "pre": false,
+      "draft": false,
+      "date": "2026-05-27",
+      "published_at": "2026-05-27T20:49:38Z",
+      "body": "### 🔄 更新内容\r\n\r\n- 由于上游bangumi服务被墙animeflow紧急更新对api进行中转以及图片资源进行cdn缓存。\r\n- 由于上游被墙目前animeflow服务器临时维持基础的看番功能，多数功能为暂时不可用状态将在后续更新中完善。\r\n\r\n---\r\n\r\n### 📦 下载\r\n- 每个设备的安装包后缀: ``苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)``\r\n- android分多个包: ``v7a(旧手机)、arm64(新手机,推荐用这个)、x86(模拟器) ``\r\n- windows分多个包: ``.zip(解压直接使用)、.exe(安装后使用) ``\r\n",
+      "ipas": [
+        {
+          "name": "AnimeFlow-ios-1.9.9.ipa",
+          "size": 21989313,
+          "url": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v1.9.9/AnimeFlow-ios-1.9.9.ipa",
+          "id": 431423259,
+          "updated_at": "2026-05-27T20:49:40Z",
+          "digest": "sha256:a5d6f6ac542fca3cdd6cb2ac264ce06670e3f5ffbac33dbf4bb85ac152879c36"
+        }
+      ]
+    },
+    {
+      "tag": "v1.9.8",
+      "name": "AnimeFlow 1.9.8",
+      "pre": false,
+      "draft": false,
+      "date": "2026-05-20",
+      "published_at": "2026-05-20T18:51:18Z",
+      "body": "### 🔄 更新内容\n\n- 修复本地插件更新后重启应用会重置到旧版本问题\n- 应用逻辑优化\n\n---\n\n### 📦 下载\n- 每个设备的安装包后缀: ``苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)``\n- android分多个包: ``v7a(旧手机)、arm64(新手机,推荐用这个)、x86(模拟器) ``\n- windows分多个包: ``.zip(解压直接使用)、.exe(安装后使用) ``\n",
+      "ipas": [
+        {
+          "name": "AnimeFlow-ios-1.9.8.ipa",
+          "size": 22006007,
+          "url": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v1.9.8/AnimeFlow-ios-1.9.8.ipa",
+          "id": 425472897,
+          "updated_at": "2026-05-20T18:51:20Z",
+          "digest": "sha256:618ee638ac24d131cf3689eea3de47580045a7f08c432923a9c787d133a3b70b"
+        }
+      ]
+    },
+    {
+      "tag": "v1.9.7",
+      "name": "AnimeFlow 1.9.7",
+      "pre": false,
+      "draft": false,
+      "date": "2026-05-19",
+      "published_at": "2026-05-19T17:33:47Z",
+      "body": "### 🔄 更新内容\n\n- 修复番剧详情评论加载逻辑错误导致评论数据重复\n- 修复番剧详情页标签内容对其问题\n- 添加字体样式功能，可在主题设置中下载字体\n\n---\n\n### 📦 下载\n- 每个设备的安装包后缀: ``苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)``\n- android分多个包: ``v7a(旧手机)、arm64(新手机,推荐用这个)、x86(模拟器) ``\n- windows分多个包: ``.zip(解压直接使用)、.exe(安装后使用) ``\n",
+      "ipas": [
+        {
+          "name": "AnimeFlow-ios-1.9.7.ipa",
+          "size": 21995528,
+          "url": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v1.9.7/AnimeFlow-ios-1.9.7.ipa",
+          "id": 424386670,
+          "updated_at": "2026-05-19T17:33:49Z",
+          "digest": "sha256:fed05054baebbfd75efd32f85d4fa7f26ee31bd2034909d66e9cdd1a26a863bf"
+        }
+      ]
+    }
+  ],
+  "AniBakaBaka/AniBaka": [
+    {
+      "tag": "5.2.3+1020",
+      "name": "5.2.3",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T11:26:14Z",
+      "body": "- 支持绑定、更换找回邮箱，通过邮箱验证码修改或找回密码；已填写 QQ 的账户可直接使用对应 QQ 邮箱找回。\r\n- 优化自动搜源与换源逻辑，减少重复加载，修复短标题误匹配及历史匹配记录可能关联到其他作品的问题。\r\n- 优化媒体代理、播放鉴权与 HLS 处理，更新部分内置源，改善播放兼容性与去广告处理。\r\n- 优化弹幕加载，减少重复请求，修复部分弹幕颜色解析错误，以及切集后旧弹幕加载结果覆盖当前内容的问题。\r\n- 调整番剧详情、评分、角色、收藏和评论界面，优化桌面播放器侧栏与剧集缩略图展示。\r\n- 公告与置顶评论支持关闭后记住状态，内容更新后再次提示。\r\n- 优化 Bangumi 数据缺失及请求异常的处理，完善网络设置说明。\r\n- 修复 Windows 首次构建可能遗漏原生依赖的问题，并增加发行包依赖校验。\r\n**Full Changelog**: https://github.com/AniBakaBaka/AniBaka/compare/5.2.2+1017...5.2.3+1020",
+      "ipas": [
+        {
+          "name": "baka-5.2.3+1020-ios-unsigned.ipa",
+          "size": 23775885,
+          "url": "https://github.com/AniBakaBaka/AniBaka/releases/download/5.2.3%2B1020/baka-5.2.3%2B1020-ios-unsigned.ipa",
+          "id": 659414771,
+          "updated_at": "2026-10-20T13:31:36Z",
+          "digest": "sha256:865dd56c04923fece7d36d05e3d380f688a4ea0708f41d1faca4654d03716130"
+        }
+      ]
+    },
+    {
+      "tag": "5.2.2+1017",
+      "name": "5.2.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-18",
+      "published_at": "2026-10-18T11:13:56Z",
+      "body": "### 新增\r\n\r\n- 新增网络设置，支持独立开启 DoH（DNS over HTTPS）与 ECH（Encrypted Client Hello），并自定义 DoH / ECH 配置查询服务地址。\r\n- 片头、片尾标注支持分别一键“应用到全集”，同一番剧、同片源线路和时间轴可复用标注；已有单集校准优先，登录后可共享全集标注。\r\n- 新增“隐藏 NSFW 内容”开关，可在设置中控制相关内容的展示。\r\n\r\n### 优化\r\n\r\n- 重整设置页面与播放器设置面板，统一分组和控件样式，优化字体、弹幕、字幕及播放参数的调节体验。\r\n- 优化视频源的 JSON、HTML 和种子资源解析，完善资源筛选、去重及备用结果处理；MiFun 内置规则启用 HLS 广告过滤。\r\n- 优化种子下载的分片调度、数据校验及超时处理，改善边下边播的稳定性。\r\n- 优化网络异常与图片加载失败提示，减少重复提醒；弹幕服务请求失败时停止重复尝试其他标题，避免累积等待。\r\n- 加强 Windows DLSS 帧生成运行库的完整性检查与取消处理。\r\n\r\n### 修复\r\n\r\n- 修复播放页初始追番状态未正确加载、快速重复操作及异步请求覆盖较新状态的问题。\r\n- 改善 Bangumi 授权登录对临时网络错误的重试处理，避免短暂网络波动直接中断登录。\r\n- 修复 Windows 窗口初始化或销毁期间访问未就绪 Flutter 引擎的风险，并补充启动失败诊断日志。\r\n\r\n### 使用说明\r\n\r\n- DoH 与 ECH 默认关闭，保存后需重启应用生效。ECH 需要目标站点支持；仅开启 ECH 时，IP 地址仍通过系统 DNS 解析。未发布 ECH 配置的站点继续使用普通 HTTPS。\r\n**Full Changelog**: https://github.com/AniBakaBaka/AniBaka/compare/5.2.1+1007...5.2.2+1017",
+      "ipas": [
+        {
+          "name": "baka-5.2.2+1017-ios-unsigned.ipa",
+          "size": 23777025,
+          "url": "https://github.com/AniBakaBaka/AniBaka/releases/download/5.2.2%2B1017/baka-5.2.2%2B1017-ios-unsigned.ipa",
+          "id": 653269897,
+          "updated_at": "2026-10-18T11:01:39Z",
+          "digest": "sha256:55ee744e97484ab7f8749d4774d4d8edc6bf2c458bc68fc33106deef8c534076"
+        }
+      ]
+    },
+    {
+      "tag": "5.2.1+1007",
+      "name": "5.2.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-07",
+      "published_at": "2026-10-07T09:28:39Z",
+      "body": "- 新增视频内片头、片尾区间选择，支持拖动起止位置、预览画面并保存到本机。\r\n- 优化片头片尾管理面板，支持分别控制当前片源的跳过开关，并查看区间来源、调整标注及提交反馈。\r\n- 修复标注时拖动、试看或切换后台可能覆盖观看进度、误记为已看完的问题。\r\n- 修复部分云端历史无法正常续播的问题，完善片源重新匹配、集数与线路恢复，保留本机播放信息。\r\n- 新增视频源更新提醒，支持启动及返回应用时检查更新，并提供批量更新、进度显示和失败重试。\r\n- 完善规则版本管理，规则库连接失败时保留上次检查结果并显示提示。\r\n- 新增 MuteFun 动漫（2kdm）、七色番及 GirigiriLove Beta 内置源，移除 Anime7，更新多个现有视频源规则。\r\n- 优化网页播放地址解析与 WebView 回退流程，修复部分带签名播放地址被重复解码的问题。\r\n- 修复收藏列表加载更多异常及封面过渡动画冲突，改善移动端简介选择、滚动和评论列表位置保留。 #31 \r\n- 精简 Windows 实验性 DLSS 增强功能，统一使用内置播放器，移除独立播放与离线增强入口，改用精简运行库。\r\n- 优化异常提示，主动取消请求时不再弹出网络错误；播放历史同步失败时保留本地记录，减少播放干扰。\r\n\r\n**Full Changelog**: https://github.com/AniBakaBaka/AniBaka/compare/5.2.0+1001...5.2.1+1007",
+      "ipas": [
+        {
+          "name": "baka-5.2.1+1007-ios-unsigned.ipa",
+          "size": 22588259,
+          "url": "https://github.com/AniBakaBaka/AniBaka/releases/download/5.2.1%2B1007/baka-5.2.1%2B1007-ios-unsigned.ipa",
+          "id": 618206652,
+          "updated_at": "2026-10-07T09:25:52Z",
+          "digest": "sha256:3691f3d5c8b38be518aa006af8077040f1ee5cb6369d27b19ced46062d424158"
+        }
+      ]
+    },
+    {
+      "tag": "5.2.0+1001",
+      "name": "5.2.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T13:40:58Z",
+      "body": "### 新增功能\r\n\r\n- **智能跳过片头片尾**：根据剧集匹配 OP / ED 区间，支持跳过后撤销、手动标注与校正，以及按片源关闭跳过；第 1 集保留正常播放。\r\n- **片头片尾标注共享**：登录后可共享标注，并对社区标注提交确认或纠错反馈。\r\n- **聚合搜索**：支持一次搜索多个视频源，覆盖自动匹配所使用的源集合。\r\n- **Windows 实验室**：新增 DLSS 实验性视频增强，提供实时播放、离线增强，以及增强强度、超分辨率和帧生成设置。\r\n\r\n### 更新时间表\r\n\r\n- **重新设计时间表页面**：采用时间线布局，放大番剧封面，按 UTC+8 放送时间排序，同一时刻的番剧集中展示。\r\n- 增加当日集数与本集标题，根据 Bangumi 章节播出日期匹配，支持长篇番剧章节加载。\r\n- 增加播放平台、平台上线时间、地区与链接信息，标明跨日上线时间。\r\n- 支持点击日期、左右滑动和方向键切换，完善下拉刷新、空列表与失败重试。\r\n- 排期服务不可用时回退到每日番剧列表，刷新失败时保留已有排期。\r\n\r\n### 体验优化\r\n\r\n- **重新设计「一起看」界面**：调整创建房间、加入房间、聊天、成员管理和邀请页面，加入当前视频预览与新的引导插画。\r\n- 优化房间聊天的消息分组、输入框和键盘避让；查看历史消息时显示新消息提示，重连期间保留输入草稿。\r\n- 优化邀请链接、邀请码与 Syncplay 配置的展示和复制操作。\r\n- 统一播放器设置、弹幕管理与投屏面板样式，改善横竖屏、小屏和大字号布局。\r\n- 播放器设置按功能重新分组，双击手势、解码与其他播放偏好集中到「更多播放设置」。\r\n- 优化投屏设备列表与播放控制，收起面板后保留投屏连接。\r\n- 优化继续播放、片头片尾跳过和下一集提示，以及弹幕匹配、选集和时间偏移调节。\r\n- 首页轮播改为展示 Bangumi 当季热门番剧，调整 Windows 首页与侧栏布局，更新应用图标。\r\n- 更新 AkiAnime、Anime7、XifanACG 等内置视频源规则，优化搜索、详情获取与播放解析。\r\n\r\n### 问题修复\r\n\r\n- 修复续播时未恢复上次观看集数、较旧记录覆盖最新观看记录的问题。\r\n- 修复切集、加载及跳转期间播放进度可能被错误保存的问题。\r\n- 优化搜索与时间表的异步请求处理，避免旧结果覆盖当前页面。\r\n- 改进播放地址缓存更新与失效处理，减少重复使用旧地址的情况。\r\n\r\n> DLSS 视频增强仅限 Windows，默认关闭，实际可用性取决于设备与运行环境。\r\n**Full Changelog**: https://github.com/AniBakaBaka/AniBaka/compare/5.1.1+0912...5.2.0+1001",
+      "ipas": [
+        {
+          "name": "baka-5.2.0+1001-ios-unsigned.ipa",
+          "size": 22426855,
+          "url": "https://github.com/AniBakaBaka/AniBaka/releases/download/5.2.0%2B1001/baka-5.2.0%2B1001-ios-unsigned.ipa",
+          "id": 603320241,
+          "updated_at": "2026-10-01T13:24:50Z",
+          "digest": "sha256:9a01d68e1974cc57cb0ddae58f3a8e6576c93e14a47ad1b8b3190b72bc9b528d"
+        }
+      ]
+    },
+    {
+      "tag": "5.1.1+0912",
+      "name": "5.1.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-14",
+      "published_at": "2026-09-14T13:37:00Z",
+      "body": "- 新增 **AI 修改/新增规则**：支持生成、修复和手动编辑视频源规则，并提供分步测试与验证。\r\n- 新增 **AI 模型配置**：支持接入 OpenAI 兼容服务，自行配置模型与 API Key。\r\n- 新增 **HLS 视频去广告**：可在播放设置中开启，自动识别并过滤部分内嵌广告片段。\r\n- 优化视频源管理与搜索结果界面，调整信息展示和操作布局。\r\n- 优化首页、番剧详情、评论区及播放器的加载与渲染，减少重复请求和不必要的界面刷新。\r\n- 优化播放源解析、媒体探测与线路切换，改善部分站点的播放兼容性。\r\n- 更新部分内置视频源规则，调整桌面端与 TV 端界面细节。\r\n- 完善 Windows 与 macOS 安装包签名及校验流程。\r\n**Full Changelog**: https://github.com/AniBakaBaka/AniBaka/compare/5.1.0+0823...5.1.1+0912",
+      "ipas": [
+        {
+          "name": "baka-5.1.1+0912-ios-unsigned.ipa",
+          "size": 20946986,
+          "url": "https://github.com/AniBakaBaka/AniBaka/releases/download/5.1.1%2B0912/baka-5.1.1%2B0912-ios-unsigned.ipa",
+          "id": 561310971,
+          "updated_at": "2026-09-13T13:58:45Z",
+          "digest": "sha256:93bd29d268e9e052fd49f30ce3f8ac1d8006e2e1cb1d1d2a91a8ddf6d59b904d"
+        }
+      ]
+    },
+    {
+      "tag": "5.1.0+0823",
+      "name": "5.1.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-26",
+      "published_at": "2026-08-26T11:58:52Z",
+      "body": "* 新增**一起看**功能，支持创建或加入房间、同步播放进度与选集，并支持成员列表、播放控制、延迟显示及断线重连\r\n* 支持连接**其他 Syncplay 服务端**，按软件内提示填写对应服务端信息即可一起观看；同时支持 **AniBaka 站内用户聊天**\r\n* 支持通过**邀请码、邀请链接和二维码**加入房间，Android、iOS、macOS、Windows 和 Linux 均支持邀请链接唤起\r\n* Baka 页面新增**正在播放的一起看房间**展示\r\n* 新增**播放数据悬浮窗**，可查看分辨率、帧率、编码、码率、掉帧及音频等信息\r\n* 重新调整 Windows 播放器、选集、侧边栏及全屏交互\r\n* 优化**弹幕与播放状态同步、播放源解析、自动匹配及 BT 分片调度**\r\n* 优化网络请求、缓存及首页、搜索、收藏、播放记录等数据处理，提升整体性能与流畅度\r\n* 修复部分页面状态异常、播放器生命周期等问题\r\n\r\n**Full Changelog**: https://github.com/AniBakaBaka/AniBaka/compare/5.0.7+0811...5.1.0+0823",
+      "ipas": [
+        {
+          "name": "baka-5.1.0+0823-ios-unsigned.ipa",
+          "size": 20904015,
+          "url": "https://github.com/AniBakaBaka/AniBaka/releases/download/5.1.0%2B0823/baka-5.1.0%2B0823-ios-unsigned.ipa",
+          "id": 530642222,
+          "updated_at": "2026-08-26T10:22:08Z",
+          "digest": "sha256:9616ab27bc60d29b4ff461e88de2f556a9d2ccc31900622463d2615516884feb"
+        }
+      ]
+    },
+    {
+      "tag": "5.0.7+0811",
+      "name": "5.0.7",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-12",
+      "published_at": "2026-08-12T07:34:31Z",
+      "body": "* Flutter 升级至 **3.44.9**\r\n* 调整视频源：删除失效源，新增多个规则源，具体变化请以软件内为准\r\n* 新增**弹幕字体自定义**功能\r\n* 修复**无法修改密码**的问题\r\n* 优化软件性能与运行流畅度，提升整体稳定性\r\n\r\n**Full Changelog**: https://github.com/AniBakaBaka/AniBaka/compare/5.0.6+0807...5.0.7+0811",
+      "ipas": [
+        {
+          "name": "baka-5.0.7+0811-ios-unsigned.ipa",
+          "size": 20822413,
+          "url": "https://github.com/AniBakaBaka/AniBaka/releases/download/5.0.7%2B0811/baka-5.0.7%2B0811-ios-unsigned.ipa",
+          "id": 511238642,
+          "updated_at": "2026-08-12T07:28:31Z",
+          "digest": "sha256:04b4a54955d61fbe4ad229b37ece01439a7304b1380c5a8ae4a13ceb9bc3f1bb"
+        }
+      ]
+    },
+    {
+      "tag": "5.0.6+0807",
+      "name": "5.0.6",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-08",
+      "published_at": "2026-08-08T12:53:22Z",
+      "body": "- 新增硬件解码与视频渲染器选项，改善部分设备黑屏、花屏及卡顿问题；优化特殊 HLS 拖动与离线缓存播放  #22 \r\n- 新增弹幕管理、手动检索与绑定功能，可查看弹幕来源及数量\r\n- 全面优化 TV 端首页、详情、选集、搜索、收藏、我的及设置页面\r\n- 新增 Moonci、TvTFun 内置源，更新 Lmm 与 Cycani 规则，移除缓慢访问的 AniWatch内置源\r\n- 优化视频源匹配、搜索和详情缓存，桌面端加入评分分布柱形图\r\n- 优化播放逻辑，即点即播放，仅在播放页面进行匹配\r\n- 移动端样式改动,新增Logo标题在各个页面的展示\r\n**Full Changelog**: https://github.com/AniBakaBaka/AniBaka/compare/5.0.5+0803...5.0.6+0807",
+      "ipas": [
+        {
+          "name": "baka-5.0.6+0807-ios-unsigned.ipa",
+          "size": 20918493,
+          "url": "https://github.com/AniBakaBaka/AniBaka/releases/download/5.0.6%2B0807/baka-5.0.6%2B0807-ios-unsigned.ipa",
+          "id": 506368116,
+          "updated_at": "2026-08-08T12:34:53Z",
+          "digest": "sha256:21cd3ab13b856b5f22f67d4d48e63cce1df01048c053e0e2314ea103f9fd73c1"
+        }
+      ]
+    },
+    {
+      "tag": "5.0.5+0803",
+      "name": "5.0.5",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-03",
+      "published_at": "2026-08-03T12:46:32Z",
+      "body": "* 新增 Bangumi 账号支持，可双向同步观看进度，并支持自动点格子。\r\n* 新增播放器详情功能。\r\n* 搜索结果新增列表展示模式。\r\n* 新增 AnimeWatch 视频源。\r\n* 修复 Windows 端弹幕性能问题，提升弹幕播放流畅度。\r\n* 优化电视端日志导出步骤。\r\n* 调整 Anime4K 配置。\r\n* 优化自动匹配逻辑，避免意外多次访问其他网站。\r\n* 调整内置视频源。\r\n* 修复 Cycani、Xifan 视频源。\r\n* 删除多余资源文件。\r\n**Full Changelog**: https://github.com/AniBakaBaka/AniBaka/compare/5.0.4+0727...5.0.5+0803",
+      "ipas": [
+        {
+          "name": "baka-5.0.5+0803-ios-unsigned.ipa",
+          "size": 20872170,
+          "url": "https://github.com/AniBakaBaka/AniBaka/releases/download/5.0.5%2B0803/baka-5.0.5%2B0803-ios-unsigned.ipa",
+          "id": 499950948,
+          "updated_at": "2026-08-03T10:58:41Z",
+          "digest": "sha256:82b7275f161c60a5f796360c1f389d156c7fce3d55c9217ea06891b0e248c57f"
+        }
+      ]
+    },
+    {
+      "tag": "5.0.4+0727",
+      "name": "5.0.4",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-27",
+      "published_at": "2026-07-27T08:40:06Z",
+      "body": "\r\n* 新增“低内存模式”，减少图片缓存和播放器缓冲占用，默认关闭。\r\n* 优化播放源自动匹配，减少等待时间和错误匹配。\r\n* 优化播放器缓冲、播放进度与弹幕同步。\r\n* 改善 Android TV 视频渲染兼容性，减少闪烁、黑屏和花屏。\r\n* 优化全部播放源的搜索速度。\r\n* 修复 Cycani 无法打开部分剧集的问题。\r\n* 减少中央处理器、内存和网络资源占用。\r\n* 减少首页、详情页和播放器的不必要刷新。\r\n* 优化播放源列表构建性能。\r\n* 本地缓存损坏时自动备份并重建异常数据。\r\n* 修复 Hive  数据库异常导致部分内容无法显示的问题。  #18 #16 \r\n* 修复 Baka 页面无限显示骨架屏的问题。\r\n* 调整“我的”页面样式和功能按键位置。\r\n* 新增版本检查功能。\r\n* 改进登录、注册、评论时间、关联作品及角色资料页面。\r\n* 修复若干播放、历史记录、播放源切换和界面显示问题。\r\n* 为 macOS 和 Windows 安装包增加数字签名。 #19 \r\n* Release 附带 `.asc` 签名文件，可用于验证下载文件的来源和完整性。\r\n\r\n---\r\n\r\n## Windows\r\n\r\n* `baka-5.0.4+0727-windows-x64.exe`：普通安装程序，推荐大多数用户使用。\r\n* `baka-5.0.4+0727-windows-x64.zip`：免安装便携版，解压后运行。\r\n* `baka-5.0.4+0727-windows-x64.msix`：Windows MSIX 安装包。\r\n\r\n安装 MSIX 时，请将以下文件放在同一文件夹：\r\n\r\n1. `baka-5.0.4+0727-windows-x64.msix`\r\n2. `baka-5.0.4+0727-windows-certificate.cer`\r\n3. `baka-5.0.4+0727-windows-install.ps1`\r\n\r\n右键安装脚本并选择“使用 PowerShell 运行”，或执行：\r\n\r\n```powershell\r\npowershell -ExecutionPolicy Bypass -File .\\baka-5.0.4+0727-windows-install.ps1\r\n```\r\n\r\n脚本会核对证书与 MSIX 签名、安装证书并完成应用安装。请勿混用不同版本的 MSIX、证书和安装脚本。\r\n\r\n> SignPath还在申请过程中\r\n\r\n---\r\n\r\n**Full Changelog**: https://github.com/AniBakaBaka/AniBaka/compare/5.0.3...5.0.4+0727",
+      "ipas": [
+        {
+          "name": "baka-5.0.4+0727-ios-unsigned.ipa",
+          "size": 20791701,
+          "url": "https://github.com/AniBakaBaka/AniBaka/releases/download/5.0.4%2B0727/baka-5.0.4%2B0727-ios-unsigned.ipa",
+          "id": 491193305,
+          "updated_at": "2026-07-27T08:05:03Z",
+          "digest": "sha256:979fd3ce2b3ac50406d09b8e98f97eb3a42e0a9d5cb8ae0b33fe6a004faaeaa5"
+        }
+      ]
+    },
+    {
+      "tag": "5.0.3",
+      "name": "5.0.3",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-22",
+      "published_at": "2026-07-22T14:00:41Z",
+      "body": "## 5.0.3\r\n\r\n* 新增对 **Linux 平台**的支持。\r\n* 弹幕服务新增 **DanDanPlay 弹幕数据源**支持。\r\n* 播放设置新增**解码器**与**视频渲染器**选择功能。\r\n* 新增动态取色功能，支持根据**壁纸**自动提取主题颜色。\r\n* TV 版新增**自动匹配视频源**功能。\r\n* 规则库新增包括**番薯动画**在内的 3 个视频源。\r\n* 优化 **Cycani** 视频源的解析与播放体验。\r\n* 清理规则库，删除已经失效的视频源。\r\n* 幻灯片现在会优先显示番剧背景图，未提供背景图时继续使用原有显示方式。\r\n* 针对 **#18** 与 **#16** 相关问题增加日志捕捉，以便进一步定位和修复问题。\r\n* 修复 5.0.2 版本中 TV 版解码器选择异常的问题。\r\n* 修复搜索结果中部分图片无法正常显示的问题。\r\n",
+      "ipas": [
+        {
+          "name": "ios-arm64-unsigned-ipa-baka-5.0.3-0722-ios-arm64-unsigned.ipa",
+          "size": 20716607,
+          "url": "https://github.com/AniBakaBaka/AniBaka/releases/download/5.0.3/ios-arm64-unsigned-ipa-baka-5.0.3-0722-ios-arm64-unsigned.ipa",
+          "id": 486005103,
+          "updated_at": "2026-07-22T13:49:11Z",
+          "digest": "sha256:3230b652ca1ab194256532aa2e3007d7df4b7da7a309c4e6adb63cb5b7d16f51"
+        }
+      ]
+    },
+    {
+      "tag": "5.0.2",
+      "name": "5.0.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-19",
+      "published_at": "2026-07-19T08:13:52Z",
+      "body": "## 5.0.2\r\n- 自动匹配获取首个可播放直链后立即播放，其他来源继续低并发后台匹配。\r\n- 复用已解析直链，避免重复请求\r\n- 限制搜索缓存、后台动画和无效界面刷新，降低 CPU 与内存占用。\r\n- 优化 BT 状态更新\r\n- 规则仓库默认使用 GitHub 加速节点\r\n- 新增低动画效果开关\r\n- 修复cycani，花子，xifan源\r\n- 避免播放中的临时错误和旧请求错误中断当前视频。",
+      "ipas": [
+        {
+          "name": "ios-arm64-unsigned-ipa-baka-5.0.2-0719-ios-arm64-unsigned.ipa",
+          "size": 20685216,
+          "url": "https://github.com/AniBakaBaka/AniBaka/releases/download/5.0.2/ios-arm64-unsigned-ipa-baka-5.0.2-0719-ios-arm64-unsigned.ipa",
+          "id": 482199683,
+          "updated_at": "2026-07-19T07:39:03Z",
+          "digest": "sha256:dd3d4a185f217f5cd51ed15b77ab3c1553b3cc6e574c5ae60d8144b53619bf5b"
+        }
+      ]
+    },
+    {
+      "tag": "5.0.1",
+      "name": "5.0.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-18",
+      "published_at": "2026-07-18T07:57:16Z",
+      "body": "# 5.0.1\r\n\r\n**正式开源**，规则源更新见https://github.com/AniBakaBaka/AniBakaRule \r\n规则源编写见https://github.com/AniBakaBaka/AniBakaWeb\r\n目前共有35个规则源(包括内置源)，重写全部规则源。\r\n\r\n## 主要变化\r\n\r\n- 视频源全面迁移至 v2 规则系统，统一搜索、详情、剧集与播放解析流程。\r\n- 重构自定义源管理和手动规则编辑界面，提升规则配置、校验与导入体验。\r\n- 默认规则订阅改为直接访问 GitHub，减少 CDN 缓存造成的更新延迟；已有 jsDelivr 订阅会自动转换。\r\n\r\n## 播放体验\r\n\r\n- 重构播放状态、剧集模型和播放会话管理，统一移动端、桌面端与 Android TV 的播放行为。\r\n- 优化线路搜索与切换流程，合并相同直链并复用已解析媒体，减少重复请求和等待时间。\r\n- 改进 BT/Magnet、Mikan、DMHY 等不同类型视频源的解析能力。\r\n- 提升播放器保活、换源和异常恢复的稳定性，提升加载速度。\r\n\r\n## 内容与界面\r\n- 重新设计播放器界面，精简播放页面的组件数量\r\n- 更新首页、标签页、搜索页、设置页和底部导航栏设计。\r\n- 优化 Android TV 设备识别、焦点操作、首页和播放器布局。\r\n- 调整默认字体为 ZCOOL QingKe HuangYou。\r\n\r\n## 问题修复与性能优化\r\n\r\n- 修复首次安装或缓存为空时首页可能一直加载的问题。\r\n- 修复首页推荐内容无法继续加载或分页状态异常的问题。\r\n- 修复 Windows 历史记录页面在特定布局下的渲染崩溃。\r\n- 修复IOS无法边缘返回的问题\r\n- 优化 BGM 请求并发、番剧匹配、源搜索和播放器直链解析性能。\r\n- 增强登录信息、刷新令牌和播放历史同步的持久化支持。\r\n- 补充规则引擎、播放器、BT 解析、首页加载及平台路由测试。\r\n\r\n## 升级提示\r\n\r\n- 本版本对视频源和播放器进行了较大规模重构，建议升级前备份重要的自定义源配置。\r\n- 旧版自定义规则将全部无法使用，请删除后全部重写安装\r\n- 社区视频源由独立规则仓库维护，具体可用性可能随第三方站点状态变化。",
+      "ipas": [
+        {
+          "name": "baka-5.0.1-0718-ios-arm64-unsigned.ipa",
+          "size": 20674348,
+          "url": "https://github.com/AniBakaBaka/AniBaka/releases/download/5.0.1/baka-5.0.1-0718-ios-arm64-unsigned.ipa",
+          "id": 481283401,
+          "updated_at": "2026-07-18T07:53:33Z",
+          "digest": "sha256:cbb5c00ee8b9b6603d0bd699fd45c4c7de75fb8d8aa1442d95399dc0b98ee543"
+        }
+      ]
+    },
+    {
+      "tag": "5.0.0",
+      "name": "5.0.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-06-25",
+      "published_at": "2026-06-25T14:02:10Z",
+      "body": "## 更新内容\r\n\r\n### 规则源与兼容性\r\n\r\n* 修复 iOS 无法正常观看部分规则源的问题。\r\n* 由于大部分 Animeko / Kazumi 规则在本软件中无法正常使用，同时为了避嫌，已删除对 Animeko 和 Kazumi 规则的支持。\r\n* 新建 **AniBaka 规则库**，新增对以下共 **25 个规则源** 的支持：\r\n\r\n  * 7sefun\r\n  * EACG 动漫\r\n  * 次元番\r\n  * lmm\r\n  * Milimili\r\n  * mwcy\r\n  * E站\r\n  * aowu\r\n  * AkiAnime\r\n  * 番茶屋\r\n  * TvTFun\r\n  * MiFun\r\n  * 等其他规则源\r\n* 根据设备环境不同，可用规则源可能存在差异。经测试，大部分规则源可正常使用。\r\n* 删除内置源 lmm，新增 bimi 内置源，lmm 已调整为规则源。\r\n* 修复 cycani 源播放第一集时无法加载的问题。\r\n* 修复 gugu 源和 giri 源无法搜索的问题。\r\n\r\n### 播放与投屏\r\n\r\n* 重新设计播放页面。\r\n* 新增相关番剧推荐功能。\r\n* 新增源切换功能。\r\n* 新增自动下一集功能。\r\n* 若正在连接电视投屏，自动下一集时电视端也会同步跳转。\r\n* 调整 DLNA 页面显示。\r\n* 支持 DLNA 调整与电视同步播放进度。\r\n\r\n### 页面与交互\r\n\r\n* 对部分页面添加微光效果，即骨架屏加载效果。\r\n* 调整源管理页面显示。\r\n* 调整大屏幕空间下动漫详情页的显示。\r\n* 在分类中新增年份分类选项。\r\n* 修复幻灯片无法点击对应番剧的问题。\r\n* 修改评论区样式。\r\n* 调整自动匹配算法。\r\n\r\n### 下载功能\r\n\r\n* 下载内容时支持批量下载。\r\n* 同一番剧的下载内容将统一整理在一起。\r\n\r\n### 平台支持与问题修复\r\n\r\n* TV 版新增扫码登录功能。\r\n* 新增 macOS ARM64 支持。\r\n* 修复 Windows HDR 显示异常问题。#15\r\n* 修复 iOS 版本相关问题。\r\n\r\n### 其他优化\r\n\r\n* 新增日志系统。\r\n* 优化软件流畅度。\r\n* 提高软件稳定性。\r\n* 删除部分不必要的功能。\r\n",
+      "ipas": [
+        {
+          "name": "baka-5.0.0-0624-ios-arm64-unsigned.ipa",
+          "size": 20843947,
+          "url": "https://github.com/AniBakaBaka/AniBaka/releases/download/5.0.0/baka-5.0.0-0624-ios-arm64-unsigned.ipa",
+          "id": 457666757,
+          "updated_at": "2026-06-25T13:31:17Z",
+          "digest": "sha256:7d74407ac0576baedb997b13a515229f776ce6712dcc8d40d61734db33908a72"
+        }
+      ]
+    },
+    {
+      "tag": "4.6.0",
+      "name": "4.6.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-05-30",
+      "published_at": "2026-05-30T11:11:02Z",
+      "body": "本次更新主要优化了 BGM 访问、番剧匹配、播放体验、页面设计、源适配和整体性能。\r\n\r\n### 主要更新\r\n\r\n* 由于 BGM 在部分网络环境下访问异常，更换为自建 BGM 镜像及 BGM 图片镜像\r\n* 修改动漫详情页面的排版和设计，删除玻璃风格设计，统一整体 UI 风格\r\n* 支持自动视频源匹配，匹配完成后自动加载并播放，默认开启\r\n* 支持自动和手动别名搜索，提高番剧匹配准确率\r\n* 重新设计追番按钮，合并评分与追番功能\r\n* 重新设计源管理页面和添加源页面\r\n* 支持导航栏在更新表页面隐藏\r\n* 支持导航栏滑动收起开关\r\n* 继续适配 animeko 和 kazumi 规则，更多源支持播放\r\n* 调整 Windows 播放页面 UI，删除不必要的文字描述\r\n* 提高多个页面性能，加快首页加载速度\r\n* 减少网页获取次数，提高资源利用率\r\n\r\n### 修复内容\r\n\r\n* 修复弹幕错误匹配系列番剧的问题\r\n* 修复 BGM 详情由于错误匹配导致弹幕和番剧详情匹配错误的问题\r\n* 修复 PC 端 x64 版本播放音画不同步的问题\r\n* 修复媒体库页面权限申请问题\r\n* 修复追番失败的问题\r\n* 修复播放页面不沉浸的问题\r\n* 修复播放器视频全屏返回时突然放大的问题\r\n* 修复次元城源搜索无法匹配的问题\r\n* 修复 gugu 源无法播放的问题\r\n* 修复 TV 端会突然竖屏的问题\r\n\r\n### 源相关调整\r\n\r\n* 更改 girigiri 源网站链接\r\n* 更改 xifan 源网站链接\r\n* 继续优化 animeko、kazumi 规则兼容性\r\n",
+      "ipas": [
+        {
+          "name": "baka-4.6.0-0530-ios-arm64-unsigned.ipa",
+          "size": 20611110,
+          "url": "https://github.com/AniBakaBaka/AniBaka/releases/download/4.6.0/baka-4.6.0-0530-ios-arm64-unsigned.ipa",
+          "id": 433749288,
+          "updated_at": "2026-05-30T11:09:58Z",
+          "digest": "sha256:dcb8795e4a33b9ce0702c72532d4f70b63593e7b8cde4c72e6ad537898911572"
+        }
+      ]
+    },
+    {
+      "tag": "4.5.2",
+      "name": "4.5.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-04-06",
+      "published_at": "2026-04-06T07:49:03Z",
+      "body": "## 4.5.2 清明版本\r\n\r\n本次更新主要围绕播放体验、TV 适配、源管理与本地流媒体能力展开，并对整体稳定性进行了进一步优化。\r\n\r\n### 更新内容\r\n\r\n* 删除 **aowu** 源，新增 **mgnacg** 源\r\n* 优化播放器加载速度与集数切换速度，播放体验更加流畅\r\n* 重构分类功能，交互逻辑更清晰，使用体验更人性化\r\n*  适配系统媒体组件，支持多种“岛” \r\n* 支持 **WebDAV**   等本地流媒体播放 #3 \r\n* 支持 **TV** 端，自动识别 TV 设备，并重新设计 TV 版页面#1\r\n* 重新设计源管理页面，支持关闭内置源\r\n* 新增 **BGM** 聚合搜索\r\n* 修复部分已知问题，提升软件稳定性",
+      "ipas": [
+        {
+          "name": "Baka4.5.2.ipa",
+          "size": 20380780,
+          "url": "https://github.com/AniBakaBaka/AniBaka/releases/download/4.5.2/Baka4.5.2.ipa",
+          "id": 389859464,
+          "updated_at": "2026-04-06T07:47:16Z",
+          "digest": "sha256:d05972d2a8ef13cbe9a72864be48f86d9079092765b87690cdc2b60d16d7b568"
+        }
+      ]
+    },
+    {
+      "tag": "4.5.0",
+      "name": "4.5.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-02-26",
+      "published_at": "2026-02-26T13:48:01Z",
+      "body": "**更新内容**\r\n\r\n* 增强自定义源功能，支持 Kazumi 规则\r\n* 修复稀饭源、Giri 源问题\r\n* 源列表新增：CYC 源、AGE 源\r\n* 搜索页新增：嗷呜源（需验证码）、西瓜源\r\n* 移除外站源\r\n* 评论区接入 Bangumi 评论\r\n* 动漫详情页新增：剧评与集评\r\n* 支持外站源下载\r\n\r\n**优化与修复**\r\n\r\n* 修复大量已知 Bug，优化多处细节，整体性能提升\r\n* 加快播放器启动速度，视频播放更加流畅\r\n* 修复播放历史功能异常\r\n* 重构评论区与 Baka 页面，提升使用体验\r\n* 优化弹幕性能\r\n\r\n**新功能**\r\n\r\n* 新增字体自定义功能\r\n* 支持自定义源导出\r\n* 新增番剧状态管理（在看 / 想看 等）",
+      "ipas": [
+        {
+          "name": "baka-4.5.0+0213-ios.ipa",
+          "size": 25089617,
+          "url": "https://github.com/AniBakaBaka/AniBaka/releases/download/4.5.0/baka-4.5.0%2B0213-ios.ipa",
+          "id": 362851737,
+          "updated_at": "2026-02-26T13:48:01Z",
+          "digest": "sha256:1b9b50c0a2d9ed9e59a6712cfec16be145e4348521f3f0fa902d5c15c3a007c1"
+        }
+      ]
+    },
+    {
+      "tag": "4.4.0",
+      "name": "4.4.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-01-29",
+      "published_at": "2026-01-29T14:31:52Z",
+      "body": "本次更新更新了以下内容，macOS 桌面端支持以及多项重大的 UI/UX 改进。\r\n\r\n## ✨ Highlights (突出亮点)\r\n\r\n* 正式支持 **macOS** 桌面端，并针对**平板设备**进行了特殊布局适配，使其本软件原生支持平板端\r\n* 新增Hero 动画及 BGM 缓存机制\r\n* 添加 macOS 平台编译支持，提供原生的桌面端体验，修改macos的播放配置\r\n* 针对平板等大屏设备优化 UI 布局，提升空间利用率\r\n* 实现 BGM 缓存机制，减少重复网络请求，提升加载速度\r\n* **重新设计**播放页面，剧集页面，番剧的简介页，弹幕发送页面，以及全屏后的播放器布局，亮度调节，音量调节，桌面端侧边栏 UI\r\n* 下载管理器底层从 http 迁移至 Dio，提升大文件下载稳定性与性能\r\n* 优化播放器弹幕加载逻辑与视频解析性能\r\n* 进行了大规模的代码格式化与重构，移除冗余代码，提升项目可维护性\r\n* 更换更加适合本应用的字体\r\n* 重新设计下载页面，使其更加美观和方便\r\n* 统一设计风格，支持oled黑屏。\r\n* 新增应用缓存清理功能\r\n* 更新github地址\r\n* 重构弹幕和播放器设置的ui\r\n* 提高软件稳定性，优化软件流畅度及性能\r\n\r\n## 🐛 Bug Fixes (问题修复)\r\n\r\n* 修复了部分缓存相关的逻辑错误。\r\n* 修复了播放器在特定场景下的瞬时错误问题，提升稳定性。\r\n* 修复首页状态栏的不正确显示\r\n* 修复了大量遗留问题\r\n* 修复了ios左滑返回\r\n* 减少了弹幕播放混乱的概率\r\n\r\n| 平台 / 文件 | 国内加速下载 |\r\n|------------|--------------|\r\n| Windows (MSIX) | [baka-4.4.0+0131-windows.msix](https://cc-im-kefu-1256921685.cos.ap-beijing.myqcloud.com/im/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/0d38a687-ff88-4dc5-a408-db723f2a6812/1.jpg#baka-4.4.0%2B0131-windows.msix) |\r\n| Windows (ZIP) | [baka-4.4.0+0131-windows.zip](https://cc-im-kefu-1256921685.cos.ap-beijing.myqcloud.com/im/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/071f12ca-8196-4081-b1a2-bf25678c7699/1.jpg#baka-4.4.0%2B0131-windows.zip) |\r\n| Windows (安装程序) | [baka-4.4.0+0131-windows-setup.exe](https://cc-im-kefu-1256921685.cos.ap-beijing.myqcloud.com/im/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/ff68d1bd-08ce-44ad-a286-d0f694f34878/1.jpg#baka-4.4.0%2B0131-windows-setup.exe) |\r\n| iOS | [baka-4.4.0+0131-ios.ipa](https://cc-im-kefu-1256921685.cos.ap-beijing.myqcloud.com/im/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/a03ef040-4376-49ba-a524-a0e12a403f1a/1.jpg#baka-4.4.0%2B0131-ios.ipa) |\r\n| macOS | [baka-4.4.0+0131-macos.dmg](https://cc-im-kefu-1256921685.cos.ap-beijing.myqcloud.com/im/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/b4147dcb-30ab-4771-b2b8-8c3fbc66abf9/1.jpg#baka-4.4.0%2B0131-macos.dmg) |\r\n| Android (AAB) | [baka-4.4.0+0131-android.aab](https://cc-im-kefu-1256921685.cos.ap-beijing.myqcloud.com/im/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1a1656f1-b367-4ed0-923",
+      "ipas": [
+        {
+          "name": "baka-4.4.0+0131-ios.ipa",
+          "size": 23739814,
+          "url": "https://github.com/AniBakaBaka/AniBaka/releases/download/4.4.0/baka-4.4.0%2B0131-ios.ipa",
+          "id": 347691691,
+          "updated_at": "2026-01-29T13:54:25Z",
+          "digest": "sha256:96a4ddc5fd909dea927773cdec9dd5f3be057596af29ad9ae7904ee64311454e"
+        }
+      ]
+    }
+  ],
+  "ARMSX2/ARMSX2": [
+    {
+      "tag": "nightly-20261023",
+      "name": "ARMSX2 nightly 20261023 (90126bdfea)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T14:10:10Z",
+      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- Android: ARMSX2_BUILD_EERUNNER requires ENABLE_RECOMPILER_TEST_HOOKS\n- Android: add the USE_PERF_JITDUMP build option\n- Android: make pcsx2-eerunner buildable as an NDK executable\n- Android: regenerate the PGO profile on the Adreno 722 source\n- Android PGO: record internal-linkage functions by file name, not build path\n- GS: trim one native pixel off each edge when upscaling 2x or more\n- GameDB: nativeCounterDraws for Shadow of the Colossus\n- GS: nativeCounterDraws, draw colour-wrap counter draws at native resolution\n- GameDB: OPHFlagHack for Shadow of the Colossus, as NetherSX2 has it\n\nFull changelog: https://github.com/ARMSX2/ARMSX2/compare/nightly-20261022...90126bdfea7a3ffb1fd288b2f7f0ae0b033af2d6",
+      "ipas": [
+        {
+          "name": "ARMSX2-nightly-20261023-90126bdfea-iOS-arm64.ipa",
+          "size": 40376158,
+          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261023/ARMSX2-nightly-20261023-90126bdfea-iOS-arm64.ipa",
+          "id": 669324119,
+          "updated_at": "2026-10-23T14:10:16Z",
+          "digest": "sha256:d69c486e567970e22049a4212c436aca5f948a5dca3c74d52edcce10428063ac"
+        }
+      ]
+    },
+    {
+      "tag": "nightly-20261022",
+      "name": "ARMSX2 nightly 20261022 (b276f045c6)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T14:35:03Z",
+      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- GS: keep the Adreno 722's barriers under a generation-2 Turnip\n- GS: put the Adreno 722 on the a7xx declared-loop rules under Turnip\n- GS: list the Adreno 722 in the model table\n- GameDB: IOP thread recommended for Shadow of the Colossus, God of War and God of War II\n- AutoTune: off by default\n\nFull changelog: https://github.com/ARMSX2/ARMSX2/compare/nightly-20261021...b276f045c6b8bd3e05637db4585a7eb6ee5c51f9",
+      "ipas": [
+        {
+          "name": "ARMSX2-nightly-20261022-b276f045c6-iOS-arm64.ipa",
+          "size": 40373291,
+          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261022/ARMSX2-nightly-20261022-b276f045c6-iOS-arm64.ipa",
+          "id": 666125606,
+          "updated_at": "2026-10-22T14:35:08Z",
+          "digest": "sha256:c0cfd12557a1e4251745db4945ec343958365af0a6bff424f87b516e4db265e3"
+        }
+      ]
+    },
+    {
+      "tag": "nightly-20261021",
+      "name": "ARMSX2 nightly 20261021 (65fd14b916)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T14:25:52Z",
+      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- GameDB back-thread hint: withheld when the IOP thread is on\n- GameDB: a back thread recommendation, set for Spider-Man 3, Sly 3 and Up Your Arsenal\n- GS back thread: the busiest emulation thread gets the prime core alone\n- GS/HW: an opaque draw whose blend was elided as the identity keeps the previous blended draw's pipeline\n- GS/HW: retire a target whose dirty rectangles together cover it, not only one that a single rectangle covers\n- GS/SW: CollectSprites takes the minify option at compile time\n- GS/SW: gather the 32-bit texel copy's rows with the tap counts fixed at compile time\n- GS/SW: the 32-bit texel copy takes bilinear lookups whose weights are zero or a half\n- GS/SW: copy 32-bit texture sprite draws into 32-bit frames straight from local memor",
+      "ipas": []
+    },
+    {
+      "tag": "nightly-20261020",
+      "name": "ARMSX2 nightly 20261020 (c66d053fe5)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-10-20",
+      "published_at": "2026-10-20T14:16:32Z",
+      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- GS: a 4-bit image write from an odd start X is one nibble stream, as on the console\n- DriverPacks tests: the setup-context test checks the installed count on every platform\n- DriverPacks tests: the setup-context test installs a pack only on Linux\n- GS: an odd-width 4-bit image write is one nibble stream, as on the console\n- Android: the GPU driver page recommends the ARMSX2 Turnip on Adreno 6xx and 7xx\n- Big Picture: setup step offering the ARMSX2 GPU driver on Adreno\n- Qt: setup wizard page offering the ARMSX2 GPU driver on Adreno\n- DriverPacks: decide whether the first-run setup should offer a pack\n- Android: setup page offering the ARMSX2 GPU driver built for this device\n\nFull changelog: https://github.com/ARMSX2/ARMSX2/compare/nightly-20261019...c6",
+      "ipas": [
+        {
+          "name": "ARMSX2-nightly-20261020-c66d053fe5-iOS-arm64.ipa",
+          "size": 40360087,
+          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261020/ARMSX2-nightly-20261020-c66d053fe5-iOS-arm64.ipa",
+          "id": 659522341,
+          "updated_at": "2026-10-20T14:16:38Z",
+          "digest": "sha256:610c975ad2ccf0b973b39252c10c1479c681ab851929ba763d870c41c1e881f6"
+        }
+      ]
+    },
+    {
+      "tag": "nightly-20261019",
+      "name": "ARMSX2 nightly 20261019 (83fe4e293f)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T13:17:07Z",
+      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- IOP thread: the default lag bound is 24576 EE cycles, up from 6144\n- Android: Reset gives back the player's value for a kept key the settings file no longer has\n- Android: a resolution auto-tune kept survives the next save from the app\n- AutoTune: test that a trial that is not kept never reaches the game's file or the host\n- AutoTune: a setting is kept only when the speed rose, never on a lower cost alone\n- Android: Reset gives back the value the player set in the app, not the global one\n- AutoTune: the EE governor's message says the emulated CPU is underclocked\n- AutoTune: say \"nothing left to try\" once per session, whatever the class\n- AutoTune: keep the game database hints and the unsafe settings warning quiet while it applies\n- AutoTune: settle 1.5",
+      "ipas": [
+        {
+          "name": "ARMSX2-nightly-20261019-83fe4e293f-iOS-arm64.ipa",
+          "size": 40356686,
+          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261019/ARMSX2-nightly-20261019-83fe4e293f-iOS-arm64.ipa",
+          "id": 656766043,
+          "updated_at": "2026-10-19T16:17:14Z",
+          "digest": "sha256:c703735468b3ef247ae3575e813d5ab590ebdc6701d731fab80e1a47e3a5e450"
+        }
+      ]
+    },
+    {
+      "tag": "nightly-20261018",
+      "name": "ARMSX2 nightly 20261018 (0d525e4bdb)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-10-18",
+      "published_at": "2026-10-18T14:27:28Z",
+      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- Tests: three Linux-only expectations are skipped on macOS\n- VU program cache: a copy the preload held is not answered after the session wrote the file\n- tests: VuAotCache.UnusableSavedCodeFallsBackToThePlan no longer races the cache's preload thread\n- vu-aot: the clear with no VM running follows the global setting, not the config a game ended with\n- vu-aot: the compile worker takes the process's processor mask, not that of the thread that starts it\n- Big Picture: a switch for the VU1 ahead-of-time compiler in the System settings\n- Qt: a checkbox for the VU1 ahead-of-time compiler in the Advanced settings\n- vu-aot: turning EnableVUAot off with no VM running clears the compiled cache too\n- VU program cache: opened by the first reset, not by mVUinit\n- And",
+      "ipas": [
+        {
+          "name": "ARMSX2-nightly-20261018-0d525e4bdb-iOS-arm64.ipa",
+          "size": 40304220,
+          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261018/ARMSX2-nightly-20261018-0d525e4bdb-iOS-arm64.ipa",
+          "id": 653670160,
+          "updated_at": "2026-10-18T14:27:33Z",
+          "digest": "sha256:684a77da8ee4b7f463dc232e7dfffd2d26540d2b7c403e69db366ecd3e939f28"
+        }
+      ]
+    },
+    {
+      "tag": "2.8.4",
+      "name": "ARMSX2 2.8.4 ",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-17",
+      "published_at": "2026-10-17T14:16:45Z",
+      "body": "# ARMSX2 2.8.4\r\n\r\nWhat's new:\r\n\r\n## Remote play\r\n\r\nStart a game, open the in-game menu, tap on the blue Friends icon, then pick Host on this Wi-Fi or Invite online. Your friend opens Remote play from their library menu and joins. On the same Wi-Fi your game shows up there by itself. Online, they enter the six-character code you send them (a code lasts 10 minutes), or paste the invite. Your game streams to their device and they play as player 2 with their own controller, or with their ARMSX2 touch controls. They don't need the game.\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/89687f27-2924-4a80-a02b-d0ec9f065be2\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/59b0c8b7-35a0-4fa2-a93f-0d97b285cb73\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/1f59a1e7-995b-4f32-9db5-6574813d2f81\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/5f80b8d6-dc28-42a3-b725-73ca79c4b58e\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/cf8428d0-fb9d-40be-a25e-1bbc91e3150c\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/d64ad8c2-e30e-430c-b1d8-b5b5df91e008\" />\r\n\r\n<img width=\"1280\" height=\"960\" alt=\"image\" src=\"https://github.com/user-attachments/assets/440e6b61-70ef-4d99-9a88-9a17114903f6\" />\r\n\r\n<img width=\"1280\" height=\"960\" alt=\"image\" src=\"https://github.com/user-attachments/assets/7d9eea79-958b-4566-87ea-b9c4c20ac7a7\" />\r\n\r\n- You choose who gets in. When a friend asks to join, the in-game menu opens with Accept and Decline, and nothing streams until you accept. An OSD popup tells you when they join and when they leave.\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/bf9584fe-d9d8-421b-a4a5-f9a1770ad48a\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt",
+      "ipas": []
+    },
+    {
+      "tag": "nightly-20261016",
+      "name": "ARMSX2 nightly 20261016 (25e7084fde)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-10-16",
+      "published_at": "2026-10-16T19:36:18Z",
+      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- About: the app's license, and the licenses of the open-source code it ships\n- Remote play: ask for Android 17's local network permission\n- Remote play: ARMSX2's copyright line on its new files\n- Remote play: the Vulkan buffer extensions both or neither, and a per-driver switch\n- Remote play: the host lets each friend in\n- Remote play: the host's main thread no longer waits on the stream\n- Remote play: no permanent port forward, and a renewal keeps its own port\n- Remote play: a bad pasted code or a peer that resets at once no longer crashes the app\n- Remote play: hosting no longer needs Discord\n- Remote play: WebRTC's license on the encoder taken from its HardwareVideoEncoder\n- Remote play: the join and leave notices and the Wi-Fi QoS option in every la",
+      "ipas": [
+        {
+          "name": "ARMSX2-nightly-20261016-25e7084fde-iOS-arm64.ipa",
+          "size": 39952375,
+          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261016/ARMSX2-nightly-20261016-25e7084fde-iOS-arm64.ipa",
+          "id": 648395118,
+          "updated_at": "2026-10-16T19:36:24Z",
+          "digest": "sha256:32c2c6bcd0b8c296b25534052e1ccb119a40643ce6afc59bba9dd7db064a66b9"
+        }
+      ]
+    },
+    {
+      "tag": "2.8.3",
+      "name": "ARMSX2 2.8.3 ",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-11",
+      "published_at": "2026-10-11T17:16:38Z",
+      "body": "# ARMSX2 2.8.3\r\n\r\nWhat's new: \r\n\r\n## MaliSX2 for Mali GPUs\r\n\r\nMaliSX2 is a Vulkan driver for Mali GPUs that @bmdhacks built for ARMSX2. In 2.8.2 it was offered only on the Mali-G615 and G715, under its old name, libmali. Now it also covers the Mali-G57, G68, G77 and G78 (including the G78AE), which a lot of handhelds use, the Anbernic RG 476H among them.\r\n\r\n<img width=\"2340\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/884734d3-d2b8-4651-a87c-1149d34c2c9b\" />\r\n\r\nWhat it does for a game: on @DIB1998 Mali G57, Ace Combat 4 and Ace Combat 5 were unplayable on the stock driver. With ARMSX2's driver MaliSX2 0.1.4 both run at full speed, as well as many other games that previously did not.\r\n\r\n<img width=\"2340\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/80fd3194-a831-4603-890f-e7e5fa296d0d\" />\r\n\r\n<img width=\"2340\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/543d4a85-83ec-4a17-b71c-7287369441b0\" />\r\n\r\nOn those GPUs:\r\n- The GPU driver list (Renderer settings, or the in-game menu) offers MaliSX2 to download.\r\n- Auto now picks Vulkan.\r\n- If Vulkan ends up on Arm's driver instead, a notice tells you to get MaliSX2.\r\n- With MaliSX2 loaded, several Mali workarounds are switched off, since it doesn't need them.\r\n\r\nMaliSX2 needs a fairly recent Mali kernel driver. On an older one it can't load, and the game runs on Arm's driver instead. done by @bmdhacks\r\n\r\n<img width=\"2340\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/35c42fec-e3bf-411d-a931-d4c0f81e689a\" />\r\n\r\n<img width=\"2340\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/915a73a0-04e3-46d5-91b4-c95bf3a5050e\" />\r\n\r\n<img width=\"2340\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/a378ff23-8b03-4e8c-a1c3-34b03fefc0d7\" />\r\n\r\n<img width=\"2340\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/a8464a7c-7612-4dd8-9e85-4570dbd975c0\" />\r\n\r\n<i",
+      "ipas": []
+    },
+    {
+      "tag": "2.8.2",
+      "name": "ARMSX2 2.8.2 ",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-07",
+      "published_at": "2026-10-07T00:57:22Z",
+      "body": "# ARMSX2 2.8.2\r\n\r\nWhat's new:\r\n\r\n**Texture upscaling.** RAISR filters sharpen game textures while you play. The upscaling happens in the background, so textures sharpen a moment after they first show up. Use RAISR 2x for most games, or RAISR 4x if you play at a high internal resolution. You'll find it in All Settings > Renderer, and in the quick menu right under the internal resolution. It works on Vulkan and OpenGL, and if a game has a texture pack loaded, the pack wins. done by @bmdhacks\r\n\r\n<img width=\"774\" height=\"725\" alt=\"image\" src=\"https://github.com/user-attachments/assets/b78cce3f-237c-4a1e-b93b-7e94e6f58b51\" />\r\n\r\n<img width=\"774\" height=\"725\" alt=\"image\" src=\"https://github.com/user-attachments/assets/c01c01e3-1ed7-43cb-a8f5-11423c8b8882\" />\r\n\r\n<img width=\"1669\" height=\"1214\" alt=\"image\" src=\"https://github.com/user-attachments/assets/67a28834-1342-4e94-b2d9-b9e63996d025\" />\r\n\r\n<img width=\"1669\" height=\"1214\" alt=\"image\" src=\"https://github.com/user-attachments/assets/3ec279da-da50-4f08-9d95-83bfaaf91281\" />\r\n\r\n**Two controllers, one player.** In Controls > Player & Rumble you can set your handheld's built-in controls and a Bluetooth controller both to Player 1, and both will work at the same time. Dock to a TV and keep playing without changing anything. Rumble goes to whichever one you used last. done by @jpolo1224\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/c9025a11-c5f0-4bc1-9769-af3e16f042d3\" />\r\n\r\n**More autosaves.** You can keep up to 5 autosaves now (3 by default). Set it in the save state picker. Each new autosave pushes the older ones back, so if one gets made right before you die, you still have earlier ones to go back to. done by @jpolo1224\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/6cc4d3ca-6f1c-435b-b71e-2edea0ea6d9b\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/1506345d-fbd8-4666-b278-6bc",
+      "ipas": []
+    },
+    {
+      "tag": "2.8.1",
+      "name": "ARMSX2 2.8.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-05",
+      "published_at": "2026-10-05T01:14:06Z",
+      "body": "# ARMSX2 2.8.1\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/986d5d9a-8878-40eb-88dd-bd31fb158867\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/23608d1d-4314-42ef-94dd-b8b69dd38f7a\" />\r\n\r\nWhat's new: \r\n\r\n## Namco System 246/256\r\n\r\nThe import is gone, an arcade game in your game folders shows up in the library by itself, as a PCSX2x6 game folder (.acgame) or just its image and dongle named after its game ID (NM00010.chd and NM00010.ps2). Nothing is copied but the 8 MB dongle, so there is no second game copy, and no more nameless duplicates in the library. done by @jpolo1224 \r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/9d103288-a35c-4ba2-aa94-b607be931bf1\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/f402b607-528e-4aaf-8c01-01cfdc6f504f\" />\r\n\r\n**Hard drive games start.** CHD hard drives over 10 GB (Battle Gear 3, Cobra the Arcade, Ace Driver 3)\r\nstopped at \"Cannot open the arcade game's media image\". They open now, and what a game writes to its\r\nhard drive is kept between sessions, beside its settings and never in the CHD. done by @jpolo1224 \r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/b0ef0824-fa40-4eda-a085-4b843d0f1100\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/d26b6892-3ddf-460e-baee-34110d59a5f0\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/d462fc68-67f2-4d49-acb8-d6b29bcc7c26\" />\r\n\r\n**The System 246 and 256 BIOS together.** Import both and there is nothing to pick: every game starts\r\non the System 256 BIOS, as in PCSX2x6, and Battle Gear 3 and Battle Gear 3 Tuned, which refuse it\r\n(\"RACK ERROR\"), on the System 246 one. A game that needs a BIOS you don't have says which. done by @jpolo1224 \r\n\r\n**Arcade c",
+      "ipas": []
+    },
+    {
+      "tag": "2.8",
+      "name": "ARMSX2 2.8 ",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-03",
+      "published_at": "2026-10-03T23:34:39Z",
+      "body": "# ARMSX2 2.8\r\n\r\nWhat's new: \r\n\r\n## Namco System 246/256\r\n\r\n**Namco's arcade board support in ARMSX2.** The boards are emulated whole: the drive (CD, DVD and hard\r\ndrive images, CHD included), the settings memory, the I/O boards for buttons, coins, wheels, drums, twin\r\nlevers, light guns and the touch panel, the security dongle, and the faster clocks of the System 256\r\nboards. 55 arcade games are in the game database, with PCSX2x6's fixes for them. *Board emulation from PCSX2x6 by @israpps, @Tovarichtch and @DiscoStarslayer. ported by @jpolo1224.*\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/0fb03cf6-4df3-4d56-9229-5008cbaac070\" />\r\n\r\n**The NAMCO screen.** In the left side menu in the game library, right under Texture Packs. It takes you through it in order:\r\n- **An arcade games folder**, picked or made in the system picker and added to your library folders.\r\n- **The boot files**, downloaded once (about 1 MB).\r\n- **The arcade BIOS**, with a shortcut to BIOS Location. A 2 MB System 246/256 dump works.\r\n- **Import a game:** its disc or hard drive image and its dongle, each with its own button and in any\r\n  order. plus Soul Calibur II's Conquest card. Gzipped dumps are unpacked as they are copied, a file\r\n  under 8 MB is refused as a dongle, and Cancel stops an import.\r\n- **Uninstall** an imported arcade game from the same screen.\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/c4170730-9fc0-4e75-9c66-bb605397a6b2\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/e557de2f-73f3-46a1-a2ab-7b6cdfdf649f\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/1463da4b-6679-44dd-80f6-474017497523\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/2a07f462-9f4a-4239-a51a-9bdaa74f9ec5\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https",
+      "ipas": []
+    },
+    {
+      "tag": "iOSv2.6.0",
+      "name": "ARMSX2 iOS 2.6.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-02",
+      "published_at": "2026-10-02T16:14:50Z",
+      "body": "This one is big. The whole app works with a controller now, and save states were rebuilt around auto-save and Undo. Shaders and texture packs are new on iOS. Everything below is compared with 2.5.2.\r\n\r\niOS 17.4 or newer is required now.\r\n\r\n## New\r\n\r\n**Controller support across the whole app** (@henyckma, @J1coding: #757, #753, #782)\r\n- Every screen works with a controller: the Games, BIOS and Settings tabs, the pause menu and its panels, Per-Game Settings, Shaders, Texture Packs, game menus, pop-ups, RetroAchievements and Licenses.\r\n- D-pad or left stick moves the focus box, the right stick scrolls, and holding a direction speeds up. Cross selects and Circle goes back. In the library, Square opens the game menu and Triangle adds a favorite.\r\n- Settings remembers the page, the option and the scroll position when you switch tabs or come back from a game. A fresh Down press on the last option loops to the top, while holding the D-pad stops at the end so you don't fly past it.\r\n- Pop-ups and confirmations work with the controller, and Circle cancels them. Stop asks in a small panel next to the Stop button.\r\n- The focus box style and colour, its glowing corners and the orbs are all in Settings > Appearance. L2 and R2 can switch themes in the menus if you turn that on (off by default).\r\n\r\n**Controller macros** (@henyckma, @J1coding: #757)\r\n- Settings > Game Controller > Controller Macros, at the top of the page.\r\n- Select + Start opens the pause menu. Start + R2 Quick Saves and Start + L2 Quick Loads. Start + D-pad changes the game speed and fast forward, and Start + Circle undoes the last save state action (press Start first).\r\n- Every macro can move to other buttons. Macros only read the D-pad, so steering with the stick while holding Start does nothing extra, and the buttons of a macro don't reach the game.\r\n\r\n**OrbitKeys** (@henyckma: #757)\r\n- A controller keyboard with grid and QWERTY layouts. It's used to rename games, save slots and themes, and to sign in to RetroA",
+      "ipas": [
+        {
+          "name": "ARMSX2-iOS-2.6.0.ipa",
+          "size": 39142823,
+          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/iOSv2.6.0/ARMSX2-iOS-2.6.0.ipa",
+          "id": 609725050,
+          "updated_at": "2026-10-04T11:33:37Z",
+          "digest": "sha256:86189c429769cbabdec2c842744a4541351c142a5576f5078c5fc94b553ee7d0"
+        }
+      ]
+    },
+    {
+      "tag": "2.7.2",
+      "name": "ARMSX2 2.7.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T01:17:44Z",
+      "body": "# ARMSX2 2.7.2\r\n\r\nSo we were thinking to ourselves, how could we match ARMSX3 supporting .p3t PS3 Themes directly in app for ARMSX2? Well: \r\n\r\n## Memory Card Covers\r\n\r\n**Your games, as their save icons.** Turn it on in the library's menu (⋮), under Memory card covers:\r\nCovers can be Animated or Still, and box art stays wherever a game has no icon. In Animated, every cover\r\non screen turns and plays its own animation, seen from a little above, as on the console, and lit the\r\nway its save asks. They are the real 3D icons, drawn by the GPU with smooth edges, not pictures of them.\r\nStill turns each one to face you. Icon motion chooses Spin, or No spin, which faces front and plays only\r\nthe icon's own animation. Covers work in the grid, the list, and on the shelf (reflection included) and in\r\nRecently Played, and in the grid and on the shelf they always carry the game's name underneath, since an\r\nicon says less than box art about which game it is. Off by default. done by @jpolo1224\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/a8371e45-a88a-4ede-b7bf-9b2243076f99\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/839eed72-3727-437a-a5de-49ad855cac30\" />\r\n\r\n**Where the icons come from.** First your own memory cards, any size, folder cards included. Then secondary, the\r\ngame's own disc: ARMSX2 looks inside ISO and CHD images, CVM containers included, for the icon the game\r\nwrites to a card. On the library we tested it and found one on about four discs in ten, it looks once per\r\ndisc and remembers the result for the future. Thirdly, there is Online Icons. A save's icon wins over the disc's, and the disc's over the online one. done by @jpolo1224\r\n\r\n**The Icon Museum.** Every icon you have, full screen and moving, one at a time: the ones on your cards,\r\nthen the ones found on your discs, then every icon of the online set (if you have it downloaded). Each stands on\r\nits save's own ",
+      "ipas": []
+    },
+    {
+      "tag": "2.7.1",
+      "name": "ARMSX2 2.7.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-25",
+      "published_at": "2026-09-25T18:39:10Z",
+      "body": "# ARMSX2 2.7.1\r\n\r\nWhat's new: \r\n\r\n## ARMSX2 Turnip: our own GPU driver\r\n\r\n**We now build our own Adreno driver.** ARMSX2 Turnip is our build of Turnip, the open-source Vulkan\r\ndriver for Adreno GPUs, with a change of our own made for PS2 emulation. Pick it from the driver\r\nlist: it is recommended on Adreno 650 to 699 (Snapdragon 865, 870 and 888). The source is public at\r\ngithub.com/bmdhacks/armsx2-turnip. done by @bmdhacks \r\n\r\n**Games that read back the frame they are drawing run much faster on Adreno.** PS2 games do this\r\nconstantly, and on Adreno it meant copying the frame before each such draw. The renderer now asks\r\nthe driver database how each GPU and driver handle it. With ARMSX2's own Turnip build on Adreno 650\r\nto 699, the driver orders those reads itself: 2 to 3 times faster where they are what the frame\r\ncosts, as in Splashdown at native resolution on a Snapdragon 865, which went from 54.7 ms to 22.4 ms\r\na frame. On Adreno 730 and up with any Turnip, Stuntman and WRC 3 run 17 to 21% faster, Every\r\nother GPU and driver keeps what it had. done by @bmdhacks \r\n\r\n**ARMSX2's Turnip driver is in the driver list**, and recommended on Adreno 650 to 699. It is Mesa\r\n26.1.2 plus one Turnip change for those GPUs. done by @bmdhacks \r\n\r\n## Emulation\r\n\r\n**Faster recompilers.** By implementing a host of optimization concepts dreamed up by @pstef, the EE, VU and IOP recompilers and VIF unpacks now generate tighter ARM64 code and run about 10% faster, with every change checked by new instruction-level tests. On lower-end devices most games are held back by GS, so expect this mostly as real battery and heat savings. VU LQD and SQD addressing from vi00 and ILW's lane selection also match the console now. \r\n\r\n**Analog trigger pressure for L2 and R2.** On pads and handhelds with analog triggers, Pad -> Button\r\nmapping now offers Analog pressure on L2 and R2, so the game gets how far the trigger is pulled\r\ninstead of on or off, with a response curve for short handheld triggers ",
+      "ipas": []
+    },
+    {
+      "tag": "2.7",
+      "name": "ARMSX2 2.7",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-19",
+      "published_at": "2026-09-19T15:24:50Z",
+      "body": "ARMSX2 2.7\r\n\r\nWhat's new: \r\n\r\n**Texture packs, rebuilt by @bmdhacks** \r\n\r\nThe online texture pack catalog now comes from ARMSX2's own repository, and the packs are far\r\nsmaller and faster. All 490 packs in the catalog have been converted to ASTC, the compressed\r\ntexture format that mobile GPUs read directly, with their mipmaps included. The God of War II pack\r\nwent from 4.5 GB to 538 MB. ASTC textures stay compressed in GPU memory instead of being unpacked\r\non the way in, so packs take a fraction of the storage, use far less memory, load faster and run\r\nbetter, which matters most on phones and handhelds where HD packs used to struggle. \r\n\r\nTexture packs are now also easier to find. They now sit right under the resolution setting, both in the renderer settings and on the in-game menu's Graphics page. The catalog's submit link now points pack authors to our Discord. Coalesce Render Passes moved out of the in-game menu into the full settings. done by @jpolo1224 \r\n\r\n**Touch controls:** \r\n\r\nOn-screen controls have a new Always option that never hides the buttons, for playing with a controller and touch buttons together. A new \"Touch controls play as\" setting puts the touch screen on Player 2, so one person can use a\r\ncontroller while another plays on the screen, restart the game after changing it. done by @jpolo1224 \r\n\r\nGlide modes for multi-touch. Choose what a finger sliding across buttons does: Follow presses whatever is under it, Hold first keeps the first button held, and Hold all holds every button it crosses. done by @jpolo1224 \r\n\r\nHalf-Screen Sticks can now keep the on-screen left stick now with a new option in the touch layout editor: Left Stick: Half Screen/Onscreen, so only the right half of the screen becomes a stick. done by @jpolo1224 \r\n\r\n**With Half-Screen Sticks on, the face, shoulder and Start/Select buttons stopped responding.** Only\r\nthe D-pad kept working. They work again, and a stick thumb sliding across a button no longer\r\npresses it. done by @jpolo",
+      "ipas": []
+    },
+    {
+      "tag": "2.6.9",
+      "name": "ARMSX2 2.6.9 ",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-09",
+      "published_at": "2026-09-09T03:22:46Z",
+      "body": "ARMSX2 2.6.9\r\n\r\n**What's new:**\r\n\r\n_Renderer speedups done by @bmdhacks:_\r\n\r\nA month of GS work aimed at ARM handhelds: the Classic (hardware) renderer, the software renderer that is its accuracy oracle, and per-device Vulkan policy. Measured on a Snapdragon 865 (Turnip) and a Dimensity 8300 / Mali-G615 (ARM r44p1), with real-console captures as the accuracy reference. \r\n\r\n**What changed:**\r\n\r\nSoftware renderer, console-exact. Dither on every destination, gouraud and depth interpolation on the hardware's grid and block width, truncated reciprocals, per-pixel MMAG/MMIN, four-bit trilinear weight, AA1 coverage, 16-bit DATE. Output moves on 21 of 24 corpus dumps, toward the console.\r\n\r\nGS core. A two-pass vertex kick kernel for the common packed layouts, the console's buffered local-to-local move, three console-measured CLUT rules, a narrower per-draw environment snapshot.\r\n\r\nHardware renderer. Per-target alpha known-bits tracking with an exact FBMSK-alpha drop, a clone road for blends that need the destination on devices without barriers (fixes Black and Brian Lara flicker, Katamari over-bright on Turnip, Splashdown bands, NASCAR's 2x seam, eight blank captures), sprite-edge snapping at upscale, a fixed-blend-factor reroute for Turnip, which ignores blend constants.\r\n\r\nVulkan device. Explicit external dependency on every render pass, frame descriptor-pool chain, halved stream rings with a startup pre-touch on UMA parts, deferred non-coherent flushes, device-fault reporting, readback transfer-size fix (also DX12), compute-scoped layout for CAS/FSR1/SGSR.\r\n\r\nUpstream. Eighteen PCSX2 GS commits cherry-picked with provenance lines (Native Scaling and jiggle detection, three texture-cache fixes, the target-update bilinear regression, depth conversion floor, PrimID range, fbmask alpha under RTA scaling, large-ST vertex rewrite with its GameDB rows, DX11 DS-as-RT state). One of them tripped a Devel-only assert on 16-bit colour targets, fixed at the call site. \r\n\r\nRunner. gsr",
+      "ipas": []
+    },
+    {
+      "tag": "2.6.8",
+      "name": "ARMSX2 2.6.8",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-04",
+      "published_at": "2026-09-04T03:13:54Z",
+      "body": "ARMSX2 2.6.8\r\n\r\nWhat's new: \r\n\r\nARMSX2 2.6.8\r\n\r\nThree emulation fixes:\r\n\r\nThree core fixes from @bmdhacks and @pstef. Other than Shaolin Monks, they almost certainly fix more games with the same issues than just these.\r\n\r\nSly 3: Sly rendered solid white. The VU divide unit applied the console's ceiling behaviour unconditionally when the hardware only does it in certain clamp modes. @pstef gated it properly (#645).\r\n\r\nMortal Kombat: Shaolin Monks divides toward positive infinity, which the EE doesn't do by default. Now in the GameDB. done by @bmdhacks \r\n\r\nTales of the Abyss and Metal Gear Solid 2/3: the GS blend-mix factor was assuming FBA instead of reading it from the context. Fixed by @bmdhacks \r\n\r\nControllers:\r\n\r\nFixes to controller rumble. \r\n\r\nDualSense and DualShock 4 rumble now works over USB. \r\n\r\nOptionally ARMSX2 can take a wired PlayStation pad over completely (Settings --> Pad --> Direct USB control), which gets you both motors independently and real analog triggers. Off by default: it claims the pad's only HID interface, so custom bindings don't apply while it's on, and you'll want to replug after turning it off.\r\n\r\nRumble also finds motors it used to miss. We were asking Android for a pad's vibrators in an order that silences controllers which work fine when asked the other way round.\r\n\r\nYou can now assign controllers to player slots (Settings --> Pad). Slots used to go to whoever pressed a button first, which on a handheld is the built-in pad, so external controllers kept landing on player 2. Assignments stick per controller across reconnects.\r\n\r\nYou can also pick where each pad's rumble goes: the controller, the device, or off.\r\n\r\nOne pad no longer answers for every player. An unclaimed slot fell back to \"whichever pad was touched last\", which names the same controller for every port, so one DualSense could swallow both players' rumble.\r\n\r\nDrawer rows can no longer become unreachable by controller.\r\n\r\nOther fixes:\r\n\r\nSustained Performance now overrides",
+      "ipas": []
+    },
+    {
+      "tag": "2.6.7",
+      "name": "ARMSX2 2.6.7",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-31",
+      "published_at": "2026-08-31T23:43:33Z",
+      "body": "ARMSX2 2.6.7\r\n\r\nWhat's new: \r\n\r\nUpstreamed to latest PCSX2 commits. (PCSX2 2.8/2.9.7 dev build.) \r\n\r\nQuick loading for Biohazard Outbreak (host: ELF method):\r\n\r\nThe obsrv \"quick loading\" method has never worked on Android before. It does now, and the whole setup happens inside the app. Long-press your disc --> click set up quick loading, pick the modified ELF from the package, and ARMSX2 does the rest: it extracts the disc's files itself, drops the ELF in beside them, and pairs it with the disc. Before it starts, you're told how much space it needs (read from that game's own disc) and how much you have on internal storage (that's where it installs). The ELF then appears in your library, launch it and the game boots. Afterwards, if for whatever reason you wish to uninstall, you can long press your elf file --> and click remove quick-load files on the entry which deletes everything again. Three things were stopping it. \r\n\r\nVU accuracy: a new \"Exact\" clamping mode: \r\n\r\n@pstef has spent 55 commits modelling what the PS2's vector units actually do, against captures from real hardware, and the result is a fourth VU Clamping setting: Exact. It covers the FMAC's saturation and the sign an overflowing one produces, what survives below the smallest normal float, the adder's guard bits, the MAC overflow and underflow flags, and the divide unit and EFU's own arithmetic, across the interpreter, microVU and the COP2 macro path alike, so all three now agree with the console. Stuntman is the first game set to it automatically, where VU0's macro adds were landing one unit short of the console's adder. Others will follow as they are identified, you can also select Exact yourself under Performance --> VU Clamping, though it is slower than Extra and only worth reaching for when a game misbehaves. @bmdhacks also made the VU Clamping picker reach the new Exact mode on Android, without which the setting above would have been un-selectable here. VU1 also now has its own clamping picker, so",
+      "ipas": []
+    },
+    {
+      "tag": "2.6.6.8.4",
+      "name": "ARMSX 2.6.6.8.4",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-25",
+      "published_at": "2026-08-25T02:04:47Z",
+      "body": "ARMSX2 2.6.6.8.4 \r\n\r\nSGSR Edge Direction, a second Qualcomm shader beside the one that shipped last update. Where plain SGSR sharpens the same amount in every direction, this one works out which way the edge under each pixel runs and sharpens along it. It costs more and it looks better, particularly on diagonals and text. It is its own entry under Display upscaler rather than a quality switch, (because that is what it is, a different shader), Done by @CamilleLaVey and @xinitrcn1\r\n\r\nSGSR has its own sharpness now, and it goes to 200%. Qualcomm's range runs to twice what FSR's does, and 100% is their own default rather than the maximum, so the two upscalers no longer share one setting. FSR's slider is untouched at 0-100 and every FSR configuration you already have means exactly what it did before.\r\n\r\nFixes:\r\n\r\nImporting Lossless.dll is fixed properly this time. Last update stopped a good DLL being rejected, by re-checking the file whenever it changed, which meant looking at it on every frame. The importer knows when it has replaced the file, so it says so instead, and the per-frame path goes back to costing nothing. This also closes a race that has been there a while: the DLL path was written from the interface and read by the renderer at the same time. Thanks again to @warley-oliveira (#624).",
+      "ipas": []
+    }
+  ],
+  "Mak5er/AirCard-iOS": [
+    {
+      "tag": "v1.3.2",
+      "name": "AirCard-iOS v1.3.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-04",
+      "published_at": "2026-10-04T12:22:53Z",
+      "body": "## What's Changed in v1.3.2 🚀\n\nThis update brings full feature parity with AirCard macOS v1.2.6, restores robust card discovery across all iOS versions, introduces automatic bank/network recognition with custom card nicknames, delivers an ultra-fast tunnel cache (0.02s connections), and completely resolves wallpaper flashing for Collections and Mercury wallpapers.\n\n### 💳 Wallet Card Discovery & Bank Identification\n• **Universal Wallet Log Parser**: Ported the proven `WalletScanParser` from AirCard macOS. Captures cards from `Dashboard loading (...): for SOO+`, `passIDs[InSession]`, `passIDs[global]`, and modern JSON NFC activations (`\"identifier\": \"HEX\"`).\n• **Automatic Bank & Network Detection**: Recognizes Visa, Mastercard, American Express, UnionPay, Discover, and JCB via applet AIDs during selection.\n• **Card Nicknames (Rename)**: Added a direct **Rename** button (✏️) so you can give your cards friendly names like *\"Monobank\"*, *\"Salary Card\"*, or *\"Revolut\"*, safely persisted in app settings.\n• **28-Character Fallback Token Matcher**: Restores dependable card discovery on devices where standard log patterns are redacted.\n\n### ⚡ Ultra-Fast Tunnel Routing (from 10s to 0.02s!)\n• **Working Route Caching**: `rust-core` now caches the active RSD connection route (`LAST_WORKING_ROUTE`), eliminating repeated port and interface scanning.\n• **RSD-First Priority**: Connects directly via RemoteXPC on port 49152, bypassing slow Lockdown retries and broken pipes on iOS 18+.\n• **Eliminated Loopback Policy Drops**: Removed local loopback attempts that caused `policy drop` control channel errors.\n\n### 🖼 Wallpapers (.tendies) — Collections & Mercury Fixes\n• **Dual Injection on iOS 18+**: Wallpapers are now injected into both their primary bundle (`com.apple.WallpaperKit.CollectionsPoster` or `com.apple.MercuryPoster`) and the modern iOS 18+ application container (`com.apple.Posters.CollectionsPosterApp` / `com.apple.Posters.MercuryPosterApp`).\n• **Metadata Synchronization**: Fix",
+      "ipas": [
+        {
+          "name": "AirCard-iOS.ipa",
+          "size": 4638147,
+          "url": "https://github.com/Mak5er/AirCard-iOS/releases/download/v1.3.2/AirCard-iOS.ipa",
+          "id": 609803779,
+          "updated_at": "2026-10-04T12:22:52Z",
+          "digest": "sha256:49aff0267546a2b27ad7eeef036c8af7f9b1d230fce0e92b24d7f6b97cfd7a86"
+        }
+      ]
+    },
+    {
+      "tag": "v1.3.1",
+      "name": "AirCard-iOS v1.3.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T23:01:18Z",
+      "body": "## What's Changed in v1.3.1\n\n### 📲 Pairing File Import (iOS 18 – iOS 26 Support!)\n• **SideStore & LiveContainer Pairing File Support**: You can now import pairing files (`.mobiledevicepairing`, `.plist`, `.mobilepair`) directly from SideStore, LiveContainer, iLoader, AltStore, Jitterbug, or PC/Mac.\n• **No iOS 27 Required**: Users on iOS 18.0 through iOS 26 can now fully use AirCard-iOS by simply importing their pairing file from SideStore or LiveContainer.\n• **Safe Unpair / Reset**: Added a dedicated \"Delete Pairing / Unpair\" button to reset or switch pairing configurations without having to reinstall the app.\n• **In-App Pairing Guide**: Added a step-by-step setup guide sheet with exact paths to locate pairing files in the Files app (e.g. `SideStore/ALTPairingFile.mobiledevicepairing`).\n• **iOS 27+ Gated**: The \"Pair on Phone\" developer pairing block is now cleanly gated to iOS 27+, avoiding confusion on older iOS versions.\n\n### 💳 Apple Wallet & Card Customization\n• **Interactive Photo Cropper**: Added custom zoom, pan, and framing when selecting card artwork (PR #29).\n\n### 🔒 Passcode Themes (.passthm)\n• **UTF-8 Encoding Fix**: Fixed filename encoding in generated passcode theme ZIP archives to support non-ASCII characters and localization (PR #12).\n\n### 🖼 Wallpapers (.tendies)\n• **Restored Rock-Solid Wallpaper Engine**: Reverted experimental template tracking to restore proven v1.3 Tendies injection, auto-detection of PosterBoard containers, and instant WebKit NeoSpring resprings.\n\n### ❤️ Developer Support & Links\n• **Donate Tab in Credits**: Added direct donation options (PayPal, TON, USDT TRC-20, BEP-20) with one-tap copy and quick links to developer socials (@mak5er).\n• **Startup Welcome**: Clean notice highlighting developer credits and quick links.\n\n**Full Changelog**: https://github.com/Mak5er/AirCard-iOS/compare/v1.3...v1.3.1",
+      "ipas": [
+        {
+          "name": "AirCard-iOS.ipa",
+          "size": 4597510,
+          "url": "https://github.com/Mak5er/AirCard-iOS/releases/download/v1.3.1/AirCard-iOS.ipa",
+          "id": 604307402,
+          "updated_at": "2026-10-01T23:01:17Z",
+          "digest": "sha256:3fe8c922f8f3512a016e6961b4a94807b74e2634fa4ea9de1029d82191ee07d0"
+        }
+      ]
+    },
+    {
+      "tag": "v1.3",
+      "name": "AirCard-iOS v1.3",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-20",
+      "published_at": "2026-09-20T02:08:32Z",
+      "body": "## What's Changed in v1.3\n\n> **Note**: AirCard-iOS currently supports **iOS 27.0 and newer (iOS 27+)**.\n\n### PosterBoard Wallpapers (.tendies)\n• Added support for importing and unpacking `.tendies` wallpaper archives.\n• Automatic PosterBoard container detection and active descriptor UUID preservation.\n• Integrated instant WebKit NeoSpring respring right after flashing (no device reboot required).\n\n### Apple Wallet & Passcode Theming\n• Added PDF artwork generation for transit passes (Suica, Pasmo, etc.).\n• Fixed keypad preview framing and TelephonyUI cache paths.\n• Cleaned up passcode number localization pickers.\n• Removed sluggish button glide animations when scanning cards and copying logs.\n\n### UI & Quality of Life\n• Centered action buttons and removed misplaced list divider lines across all tabs.\n• Removed disruptive import and install alert popups in favor of clean inline status logs.\n• Cleaned up the VPN status bar and removed redundant text labels.\n• General repository cleanup and project modernization.\n",
+      "ipas": [
+        {
+          "name": "AirCard-iOS.ipa",
+          "size": 4452235,
+          "url": "https://github.com/Mak5er/AirCard-iOS/releases/download/v1.3/AirCard-iOS.ipa",
+          "id": 575904654,
+          "updated_at": "2026-09-20T02:08:31Z",
+          "digest": "sha256:c531991ef6c4df9a5bb530334eb0fc7bad5a58bc725cbc7326b5afca8fde9c6b"
+        }
+      ]
+    },
+    {
+      "tag": "v1.2.5",
+      "name": "AirCard-iOS v1.2.5",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-19",
+      "published_at": "2026-09-19T22:19:08Z",
+      "body": "## What's Changed in v1.2.5\n\n### 🛡️ Crash & Memory Fixes\n- **Stack Overflow Crash Resolved:** Eliminated crashes on iOS 17/18 during TLS PSK and Tokio handshakes by delegating exploit and syslog routines to dedicated 4MB stack threads.\n- **Jetsam OOM Kill Prevention:** SwiftUI card grid now uses memory-efficient 512px thumbnails; full-resolution artwork is loaded on-demand during flash and immediately deallocated.\n\n### 🌐 Network & Tunnel Resilience\n- **LocalDevVPN & Loopback Routing:** Restored loopback priority (127.0.0.1, 10.7.0.1, 10.7.0.3) with adaptive 6s timeouts.\n- **Local Network Prompt:** Automatically verifies and requests Local Network permissions on launch.\n\n### ⚡ AirTraffic & PassKit Enhancements\n- **Airlock Directory Guarantee:** Automatically ensures `/var/mobile/Media/Airlock/Book` exists via AFC, preventing path traversal failures on devices without previous Apple Books syncs.\n- **Non-Fatal SyncFailed Handling:** Prevents premature sync terminations caused by delayed background session resets from `com.apple.atc`.\n- **Comprehensive Pass Artwork Suite:** Generates full 8-file skin variants (`cardBackgroundCombined`, `diffuse`, `background`, `strip` at @3x and @2x) in a single atomic batch write.\n- **Transit & Suica PDF Support:** Restored vector PDF generation (`cardBackgroundCombined.pdf`, `background.pdf`, `strip.pdf`) for complete support of transit and railway passes.\n- **Robust Card ID Sanitization:** Automatically cleans pasted paths, quotes, and `.pkpass` extensions to prevent invalid target paths.",
+      "ipas": [
+        {
+          "name": "AirCard-iOS.ipa",
+          "size": 4180858,
+          "url": "https://github.com/Mak5er/AirCard-iOS/releases/download/v1.2.5/AirCard-iOS.ipa",
+          "id": 575583801,
+          "updated_at": "2026-09-19T22:19:07Z",
+          "digest": "sha256:8a36aef779a7f2ce18aa0e7e5ab3596b1ebe5be3f3f0376fc7bff5173f36acb6"
+        }
+      ]
+    }
+  ],
+  "iam567/rich4-renew-app": [
+    {
+      "tag": "v0.7.4",
+      "name": "安装包 v0.7.4（2026-10-23）",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T13:18:08Z",
+      "body": "- 修正：安卓版（特别是鸿蒙系统）读取存档常常失败然后闪退。安卓的存档改成压缩格式（小 4–6 倍），读档列表只读摘要；读不出时会自动改读上一份备份，再不行就提示并回到列表，不再闪退或卡死。旧存档照样能读。iPhone 和电脑版的存档方式不变。\n- 派对模式：双方版本不同时会直接提示「版本不同，请两边都下载最新版本」，不再默默连不上；房间列表只显示同版本的房间。\n- 设置里新增「魔法屋提示对象」开关（默认开）：关掉后魔法屋不再提示法术会作用到谁，和原版一样自己判断。\n- 「激情岁月」：\n  - 新增 17 张坏事件（站错队关牛棚、国营餐馆食物中毒、赤脚医生乱诊断、误入原子弹研发现场、写《出身论》被下放、没收非法所得、收缴财产充公……），坏事件明显变多；\n  - 记工分和各种加票证的事件减少；\n  - 被「下放」「审查」等消失时，有解放大卡车和红卫兵来把人带走的动画。\n- 电脑版：\n  - Windows：下载 `rich4-0.7.4-windows.zip`，解压后打开 `Rich4` 文件夹，双击 `Rich4.exe`。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 `rich4-0.7.4-mac.dmg`，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew a6867b9\n",
+      "ipas": [
+        {
+          "name": "rich4-0.7.4-unsigned.ipa",
+          "size": 1790723589,
+          "url": "https://github.com/iam567/rich4-renew-app/releases/download/v0.7.4/rich4-0.7.4-unsigned.ipa",
+          "id": 669169727,
+          "updated_at": "2026-10-23T13:13:19Z",
+          "digest": "sha256:775d2aa85e0429b4bf0b8df0a5412e7ea58812b023f657f0b176c01ba6abc030"
+        }
+      ]
+    },
+    {
+      "tag": "v0.7.3",
+      "name": "安装包 v0.7.3（2026-10-23）",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T07:11:44Z",
+      "body": "> **已有新版本：请移步最新版 [v0.7.4](https://github.com/iam567/rich4-renew-app/releases/tag/v0.7.4)**。最新版本永远在 [这里](https://github.com/iam567/rich4-renew-app/releases/latest)。\n\n- 「激情岁月」专属背景音乐：五首那个年代风格的曲子（革命进行曲、恢弘颂歌、陕北民歌风、两首京剧唱段风）轮流播放，像从街头大喇叭里放出来一样；穿越片头结束和游戏结束时各有一段号角。只在这张地图播放，「系统」里可以关掉，改回原本的音乐。（音乐由 AI 生成。）\n- 电脑版：\n  - Windows：下载 `rich4-0.7.3-windows.zip`，解压后打开 `Rich4` 文件夹，双击 `Rich4.exe`。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 `rich4-0.7.3-mac.dmg`，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew a549b9b\n\n",
+      "ipas": [
+        {
+          "name": "rich4-0.7.3-unsigned.ipa",
+          "size": 1787468910,
+          "url": "https://github.com/iam567/rich4-renew-app/releases/download/v0.7.3/rich4-0.7.3-unsigned.ipa",
+          "id": 668282501,
+          "updated_at": "2026-10-23T07:07:15Z",
+          "digest": "sha256:347081e9831ec80133209ebc4cb97e92a49d6c2ba537e8035d0e80e79b9dd13b"
+        }
+      ]
+    },
+    {
+      "tag": "v0.7.2",
+      "name": "安装包 v0.7.2（2026-10-23）",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T04:47:58Z",
+      "body": "> **已有新版本：请移步最新版 [v0.7.4](https://github.com/iam567/rich4-renew-app/releases/tag/v0.7.4)**。最新版本永远在 [这里](https://github.com/iam567/rich4-renew-app/releases/latest)。\n\n- 岔路口新规则：每个玩家走过一次路口，箭头就会改指自己还没走过的路；都走过了，就走最久没走的那条。不会再几个月都在同一片区域绕圈子，地图上的箭头就是实际会走的路。\n- 道具、卡片的选择窗口在横屏时排得更整齐（不再是窄窄的两列）。\n- 角色说话的对话云永远盖在路口箭头之上；新闻卡出来后 1.5 秒内双击不会关掉，电脑回合也看得到新闻内容。\n- 选择大型设施时的说明文字去掉「同原版」字样。\n- 大富翁城的商店不再卖大富豪模式专用的卡片。\n- 「激情岁月」：\n  - 街上的人和车少了一半，不再走到棋盘的路上、挡住格子和棋子；\n  - 跳大神：法术图标嵌进八卦盘，施法改成盖朱红大印；\n  - 骰子按钮改成红旗「前进」；\n  - 先进工作者评比的横幅不再挡住头像；\n  - 大字报文字不出纸面；\n  - 费用名称改成那个年代的说法（例如「收音机修理费」）。\n- 电脑版：\n  - Windows：下载 `rich4-0.7.2-windows.zip`，解压后打开 `Rich4` 文件夹，双击 `Rich4.exe`。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 `rich4-0.7.2-mac.dmg`，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew 24a0c33\n\n\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.7.1",
+      "name": "安装包 v0.7.1（2026-10-22）",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T14:56:50Z",
+      "body": "> **已有新版本：请移步最新版 [v0.7.4](https://github.com/iam567/rich4-renew-app/releases/tag/v0.7.4)**。最新版本永远在 [这里](https://github.com/iam567/rich4-renew-app/releases/latest)。\n\nv0.7.0 在手机版和电脑版上有缺图（道具和卡片的动画黑屏、「激情岁月」的界面贴图没显示），已下架；v0.7.1 包含 v0.7.0 的全部内容并修正：\n- 修正：手机版、电脑版里道具和高级卡片的电影动画黑屏。\n- 修正：「激情岁月」的界面贴图（牛皮纸、横幅、红星等）在安装版里没有显示。\n- 修正：读档后每次掷出的骰子都一模一样（像原版一样，读档后重新打乱随机数）。\n- 「激情岁月」：\n  - 月底结算改成「先进工作者评比大会」：表彰大会的布置，红布横幅上的大字标题；\n  - 结算画面、分红、日历（1970 年代的撕页台历，星期按 1966 年算）也换成那个年代的样子；\n  - 接待员的图不再被裁掉手。\n\n**v0.7.0 的新内容（都在 v0.7.1 里）：**\n- 新地图「激情岁月」（自制地图第 8 张，经典模式）：\n  - 照 1966–76 年的北京旧城画：长安街、天安门、紫禁城、王府井、前门、天坛，胡同四合院和赫鲁晓夫楼，满街红旗、标语和大字报。\n  - 开局有一段「穿越」动画，所有人回到 1966 年。\n  - 五种大型设施：人民公园（地主抽好事卡、别人抽坏事卡）、招待所、供销社、宣传站（骑车开车来的人判「走资本主义道路」，罚款并进学习班 2 天，可升到 5 级）、研究所。\n  - 全新的新闻和大字报（命运）卡，写的是那个年代的事：上山下乡、大串联、学大寨、乒乓外交、一打三反、批林批孔……以调侃为主。\n  - 银行、卡片屋、道具屋、魔法屋、有奖销售、医院、牛棚、拍卖等界面都换成那个年代的样子；接待员换上那时的衣服、手握红宝书；称呼一律「同志」。\n  - 角色台词前加一句毛主席语录；街上有游行、忠字舞、广播体操、自行车流；大喇叭放原创的年代风格音乐（设置里都可以关）。\n- 单人模式：可以选电脑难度——简单（原版）、中级、困难。\n- 道具和高级卡片的电影动画：飞弹、核子飞弹、传送机、工程车、机器工人、超级工人、时光机、时空机、汽车、机车，以及均富卡、均贫卡、天使卡、恶魔卡、冬眠卡、怪兽卡等（点一下可跳过）。\n- 派对模式：新增「嘲讽」——选一位对手和一句话，对方画面会跳出你角色的嘲讽动画（不影响游戏）。同一房间的玩家请都更新到 v0.7.0。\n- 电脑版：\n  - Windows：下载 `rich4-0.7.1-windows.zip`，解压后打开 `Rich4` 文件夹，双击 `Rich4.exe`。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 `rich4-0.7.1-mac.dmg`，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew 67c39ac\n\n\n\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.7.0",
+      "name": "安装包 v0.7.0（2026-10-22）",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T14:56:53Z",
+      "body": "> **已有新版本：请移步最新版 [v0.7.4](https://github.com/iam567/rich4-renew-app/releases/tag/v0.7.4)**。最新版本永远在 [这里](https://github.com/iam567/rich4-renew-app/releases/latest)。\n\n**此版本有缺图问题已下架，安装包已删除，内容都包含在 v0.7.1 里。**\n\n- 新地图「激情岁月」（自制地图第 8 张，经典模式）：\n  - 照 1966–76 年的北京旧城画：长安街、天安门、紫禁城、王府井、前门、天坛，胡同四合院和赫鲁晓夫楼，满街红旗、标语和大字报。\n  - 开局有一段「穿越」动画，所有人回到 1966 年。\n  - 五种大型设施：人民公园（地主抽好事卡、别人抽坏事卡）、招待所、供销社、宣传站（骑车开车来的人判「走资本主义道路」，罚款并进学习班 2 天，可升到 5 级）、研究所。\n  - 全新的新闻和大字报（命运）卡，写的是那个年代的事：上山下乡、大串联、学大寨、乒乓外交、一打三反、批林批孔……以调侃为主。\n  - 银行、卡片屋、道具屋、魔法屋、有奖销售、医院、牛棚、拍卖等界面都换成那个年代的样子；接待员换上那时的衣服、手握红宝书；称呼一律「同志」。\n  - 角色台词前加一句毛主席语录；街上有游行、忠字舞、广播体操、自行车流；大喇叭放原创的年代风格音乐（设置里都可以关）。\n- 单人模式：可以选电脑难度——简单（原版）、中级、困难。\n- 道具和高级卡片的电影动画：飞弹、核子飞弹、传送机、工程车、机器工人、超级工人、时光机、时空机、汽车、机车，以及均富卡、均贫卡、天使卡、恶魔卡、冬眠卡、怪兽卡等（点一下可跳过）。\n- 派对模式：新增「嘲讽」——选一位对手和一句话，对方画面会跳出你角色的嘲讽动画（不影响游戏）。同一房间的玩家请都更新到 v0.7.0。\n- 代码：rich4-renew 05c41e2\n\n\n\n\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.6.7",
+      "name": "安装包 v0.6.7（2026-10-22）",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T04:09:31Z",
+      "body": "> **已有新版本：请移步最新版 [v0.7.4](https://github.com/iam567/rich4-renew-app/releases/tag/v0.7.4)**。最新版本永远在 [这里](https://github.com/iam567/rich4-renew-app/releases/latest)。\n\n- 派对模式：\n  - 修正：有人中途退出（包括房主）时，其他人会一直卡在「等待 … 操作」。现在掉线 10 秒后由电脑接手，房主走了由下一位接任。\n  - 总资产最多的玩家不能被投票请出。\n  - 被请出或掉线的玩家由电脑接着玩，土地不拍卖。\n  - 派对模式里的电脑变聪明了：会留够现金防过路费、挑骰子避开对手的贵地、对领先者用卡片和道具、善用银行和股票。单人模式的电脑保持原版不变。\n  - 同一房间的玩家请都更新到 v0.6.7，新旧版本混在一起会不同步。\n- 修正：出院、出狱时的行为和原版一致——先走到门口那一格并结算（门口有地雷会被炸回去）。\n- 星球、武侠、恐龙、海岛四张主题地图的旅馆恢复原版外观。\n- 电脑版：\n  - Windows：下载 `rich4-0.6.7-windows.zip`，解压后打开 `Rich4` 文件夹，双击 `Rich4.exe`。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 `rich4-0.6.7-mac.dmg`，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew 2d2a459\n\n\n\n\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.6.6",
+      "name": "安装包 v0.6.6（2026-10-20）",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-20",
+      "published_at": "2026-10-20T08:32:58Z",
+      "body": "> **已有新版本：请移步最新版 [v0.7.4](https://github.com/iam567/rich4-renew-app/releases/tag/v0.7.4)**。最新版本永远在 [这里](https://github.com/iam567/rich4-renew-app/releases/latest)。\n\n- 修正：电脑版（Windows / Mac）用鼠标拖动调整窗口大小时，游戏画面会黑屏闪烁。\n- 电脑版：\n  - Windows：下载 `rich4-0.6.6-windows.zip`，解压后打开 `Rich4` 文件夹，双击 `Rich4.exe`。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 `rich4-0.6.6-mac.dmg`，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew f9d0257\n\n\n\n\n\n\n\n",
+      "ipas": [
+        {
+          "name": "rich4-0.6.6-unsigned.ipa",
+          "size": 1654742465,
+          "url": "https://github.com/iam567/rich4-renew-app/releases/download/v0.6.6/rich4-0.6.6-unsigned.ipa",
+          "id": 658725848,
+          "updated_at": "2026-10-20T08:28:52Z",
+          "digest": "sha256:81e8db56dd6e77c411d5f807e6a98377280210936eb757a6842f8a2274ebc1d9"
+        }
+      ]
+    },
+    {
+      "tag": "v0.6.5",
+      "name": "安装包 v0.6.5（2026-10-20）",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-20",
+      "published_at": "2026-10-20T08:11:06Z",
+      "body": "> **已有新版本：请移步最新版 [v0.7.4](https://github.com/iam567/rich4-renew-app/releases/tag/v0.7.4)**。最新版本永远在 [这里](https://github.com/iam567/rich4-renew-app/releases/latest)。\n\n- 派对模式按钮上方显示目前的私享房间数和等待伙伴的人数。\n- 修正：iPad（iPadOS 16.3 等较旧的系统）打开游戏黑屏。\n- 修正：读取进度画面里角色头像竖着排、把格子撑得太高。\n- 电脑版：\n  - Windows：下载 `rich4-0.6.5-windows.zip`，解压后打开 `Rich4` 文件夹，双击 `Rich4.exe`。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 `rich4-0.6.5-mac.dmg`，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew 0d1d6b9\n\n\n\n\n\n\n\n\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.6.4",
+      "name": "安装包 v0.6.4（2026-10-20）",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-20",
+      "published_at": "2026-10-20T05:14:37Z",
+      "body": "> **已有新版本：请移步最新版 [v0.7.4](https://github.com/iam567/rich4-renew-app/releases/tag/v0.7.4)**。最新版本永远在 [这里](https://github.com/iam567/rich4-renew-app/releases/latest)。\n\n- 修正：派对模式在不同网络之间连不上（例如 iPhone 用 4G、电脑用 Wi-Fi），改用自己的中转服务器。\n- iPhone 第一次进派对模式会询问「本地网络」权限，请选「允许」。\n- 电脑版：\n  - Windows：下载 `rich4-0.6.4-windows.zip`，解压后打开 `Rich4` 文件夹，双击 `Rich4.exe`。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 `rich4-0.6.4-mac.dmg`，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew e19bc99\n\n\n\n\n\n\n\n\n\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.6.3",
+      "name": "安装包 v0.6.3（2026-10-20）",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-20",
+      "published_at": "2026-10-20T04:08:55Z",
+      "body": "> **已有新版本：请移步最新版 [v0.7.4](https://github.com/iam567/rich4-renew-app/releases/tag/v0.7.4)**。最新版本永远在 [这里](https://github.com/iam567/rich4-renew-app/releases/latest)。\n\n- 修正：5 级旅馆等几栋大楼从某些角度看地基还是斜的，现在每个角度的地基都对准地块。\n- 电脑版：\n  - Windows：下载 `rich4-0.6.3-windows.zip`，解压后打开 `Rich4` 文件夹，双击 `Rich4.exe`。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 `rich4-0.6.3-mac.dmg`，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew c9a75d2\n\n\n\n\n\n\n\n\n\n\n",
+      "ipas": [
+        {
+          "name": "rich4-0.6.3-unsigned.ipa",
+          "size": 1654740777,
+          "url": "https://github.com/iam567/rich4-renew-app/releases/download/v0.6.3/rich4-0.6.3-unsigned.ipa",
+          "id": 658213746,
+          "updated_at": "2026-10-20T04:04:55Z",
+          "digest": "sha256:7575f93772357787d7aeebcc455f462268d58011dbf627c897fbfa88b3486fa6"
+        }
+      ]
+    },
+    {
+      "tag": "v0.6.2",
+      "name": "安装包 v0.6.2（2026-10-20）",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-20",
+      "published_at": "2026-10-20T02:51:16Z",
+      "body": "> **已有新版本：请移步最新版 [v0.7.4](https://github.com/iam567/rich4-renew-app/releases/tag/v0.7.4)**。最新版本永远在 [这里](https://github.com/iam567/rich4-renew-app/releases/latest)。\n\n- 修正：4/5 级旅馆和 HOTEL 景观大楼与地块对齐，旅馆大门朝向马路。\n- 修正：几栋城市小楼转动地图时角度不对、两栋店混在一起的问题。\n- 电脑版：\n  - Windows：下载 `rich4-0.6.2-windows.zip`，解压后打开 `Rich4` 文件夹，双击 `Rich4.exe`。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 `rich4-0.6.2-mac.dmg`，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew b7a0ce6\n\n\n\n\n\n\n\n\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.6.1",
+      "name": "安装包 v0.6.1（2026-10-20）",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T17:36:43Z",
+      "body": "> **已有新版本：请移步最新版 [v0.7.4](https://github.com/iam567/rich4-renew-app/releases/tag/v0.7.4)**。最新版本永远在 [这里](https://github.com/iam567/rich4-renew-app/releases/latest)。\n\n- 修正：五座城市的小楼和地块对齐（之前是斜的）。\n- 新增电脑版：\n  - Windows：下载 `rich4-0.6.1-windows.zip`，解压后打开 `Rich4` 文件夹，双击 `Rich4.exe`。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 `rich4-0.6.1-mac.dmg`，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n  - F11 切换全屏；存档、派对模式联机都和手机版一样。\n- 代码：rich4-renew 3db88db（电脑版外壳 7e988cf）\n\n\n\n\n\n\n\n\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.6.0",
+      "name": "安装包 v0.6.0（2026-10-20）",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T16:34:05Z",
+      "body": "> **已有新版本：请移步最新版 [v0.7.4](https://github.com/iam567/rich4-renew-app/releases/tag/v0.7.4)**。最新版本永远在 [这里](https://github.com/iam567/rich4-renew-app/releases/latest)。\n\n- 派对模式：联机按钮栏（新图标）、12 个角色的专属表情包、自己取名。\n- 画面：五座城市的当地特色小楼、新外观的 4/5 级旅馆、随机出现的 HOTEL景观大楼。\n- 代码：rich4-renew 3fd82c9\n\n\n\n\n\n\n\n\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.5.1",
+      "name": "v0.5.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T12:40:30Z",
+      "body": "> **已有新版本：请移步最新版 [v0.7.4](https://github.com/iam567/rich4-renew-app/releases/tag/v0.7.4)**。最新版本永远在 [这里](https://github.com/iam567/rich4-renew-app/releases/latest)。\n\n- 派对模式最多 8 人一起玩：房主可选「电脑补满 4 人」「电脑补满 8 人」或「只有玩家」\n- 进入派对模式前先检查网络：没有网路、手机不支持联机、连不上联机服务器、网络挡住手机之间的连线时，直接提示「这支手机无法进行多人对战」，可以「重新检查」\n- 文字聊天：房间里和游戏中都有 💬，有快捷短语，也能自己打字；可以把某人静音\n- 显示每位玩家所在地区（依手机时区判断，例如日本、台湾）\n- 投票请人离开：任何人（包括房主）只要另外两位玩家同意就会被请出，他的角色由电脑接手；房主离开时由下一位玩家自动接任\n- 防拖时间：轮到你后 60 秒内没掷骰（用卡片、道具、思考都算在内），或断线超过 10 秒，就改由电脑托管；按「取消托管」从下一回合起恢复手动\n- 修正：房主在等其他玩家时画面可能卡住\n- 代码：rich4-renew feef957\n\n\n\n\n\n\n\n\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.5.0",
+      "name": "安装包 v0.5.0（2026-10-19）",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T11:38:56Z",
+      "body": "> **已有新版本：请移步最新版 [v0.7.4](https://github.com/iam567/rich4-renew-app/releases/tag/v0.7.4)**。最新版本永远在 [这里](https://github.com/iam567/rich4-renew-app/releases/latest)。\n\n- 新增「派对模式」：好友各用自己的手机一起玩同一局（2–4 位玩家，可用电脑补满 4 人，普通模式的地图）\n  - 建立房间：私享（给朋友 4 位数房间码）或共享（公开在「寻找伙伴」）\n  - 进入房间：输入房间码加入\n  - 寻找伙伴：看到大家公开的房间，点「加入」\n  - 点自己的头像换角色；轮到别人时画面显示「等待 某某 操作…」；手机切到后台断线，回来会自动补上进度接着玩\n- 标题画面新增「派对模式」按钮（新画的按钮）\n\n包含 v0.4.5（没有单独发布）：\n- 大富豪模式平衡，让游戏更耐玩：电脑只在缺钱时才借钱、借的不超过手上的钱、有钱就先还；贷款到期钱不够时银行展期一次（30 天、加收 10%）；付不起钱时先自动卖股票、再把最便宜的地产半价卖给银行，卖完还不够才破产。实测进大富翁城的时间从约第 370 天延长到约第 660 天，因贷款破产的情况没了\n- 「最终决战」页面可以储存到相册、分享\n- 代码：rich4-renew b95fddf\n\n\n\n\n\n\n\n\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.4.4",
+      "name": "安装包 v0.4.4（2026-10-19）",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T09:50:37Z",
+      "body": "> **已有新版本：请移步最新版 [v0.7.4](https://github.com/iam567/rich4-renew-app/releases/tag/v0.7.4)**。最新版本永远在 [这里](https://github.com/iam567/rich4-renew-app/releases/latest)。\n\n- 洲际飞弹动画重做成电影感：四张新绘的电影画面（夜间发射、从太空看日本、火球重返大气层、俯冲向棋盘城市），加上镜头推进、震动、火花、光晕和上下黑边，再接目标城市地图放大和核爆\n- 被洲际飞弹炸到的人（房子被炸、被炸进医院）会一个个冒出来，头上一脸「？？？」\n\n包含 v0.4.3（没有单独发布）：\n- 洲际飞弹打别的城市：选好城市后打开那座城市的地图，直接点黄点选轰炸位置（不再是一长串地块列表）\n- 洲际飞弹全屏动画：从自己的城市发射升空 → 飞越转动的地球 → 落向目标城市、地图逐渐放大锁定 → 原版核弹爆炸动画加白光震动；点一下可跳过\n- 大富豪模式的游荡死神：破产满 6 人后每月出现\n- 代码：rich4-renew 0e75b7a\n\n\n\n\n\n\n\n\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.4.2",
+      "name": "安装包 v0.4.2（2026-10-19）",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T09:16:57Z",
+      "body": "> **已有新版本：请移步最新版 [v0.7.4](https://github.com/iam567/rich4-renew-app/releases/tag/v0.7.4)**。最新版本永远在 [这里](https://github.com/iam567/rich4-renew-app/releases/latest)。\n\n- 修正：股市「离开股市」按了没反应（v0.3.3 修快速点击卡住时带出来的问题：用自己的大画面的选单，关闭时找错了画面）\n- 代码：rich4-renew ced0f8d\n\n\n\n\n\n\n\n\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.4.1",
+      "name": "安装包 v0.4.1（2026-10-19）",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T09:05:51Z",
+      "body": "> **已有新版本：请移步最新版 [v0.7.4](https://github.com/iam567/rich4-renew-app/releases/tag/v0.7.4)**。最新版本永远在 [这里](https://github.com/iam567/rich4-renew-app/releases/latest)。\n\n- 修正：飛行卡一直没有卡面图（显示成黑色的「Loading」牌）——原版资源里正好有一张同编号的图挡住了它\n- 修正：复制卡的卡面图没有打包进 App\n- 代码：rich4-renew c7be790\n\n\n\n\n\n\n\n\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.4.0",
+      "name": "安装包 v0.4.0（2026-10-19）",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T07:21:37Z",
+      "body": "> **已有新版本：请移步最新版 [v0.7.4](https://github.com/iam567/rich4-renew-app/releases/tag/v0.7.4)**。最新版本永远在 [这里](https://github.com/iam567/rich4-renew-app/releases/latest)。\n\n- 大富豪模式：破产达到 6 人以后，每个月月初如果全国没有死神，就会在随机一座城市的随机一格出现一位死神；停在那一格就被附身，附身解除后下个月再出现。時空機可以把它送到别的城市\n- 時空機（大富豪模式）改成升级版傳送機：在地图上点选路上的任何东西——自己、对手、神明、恶犬、礼物、宝箱、路障、地雷、炸弹、地块——再选送到「本城（点选位置）」或别的城市（随机一格）\n- 用時空機把自己送到别的城市：随机落在那座城市的一格，附身的神明一起跟过去（例如在東京附身土地公后去占沖繩的地），回合结束\n- 复制卡改成只能复制自己手上已有的卡片或道具；道具也用图标选\n- 代码：rich4-renew ed18b13\n\n\n\n\n\n\n\n\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.3.4",
+      "name": "安装包 v0.3.4（2026-10-19）",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T06:53:27Z",
+      "body": "> **已有新版本：请移步最新版 [v0.7.4](https://github.com/iam567/rich4-renew-app/releases/tag/v0.7.4)**。最新版本永远在 [这里](https://github.com/iam567/rich4-renew-app/releases/latest)。\n\n- 大富豪模式：手牌叠放——同一种卡一格最多 3 张（停留卡×3、停留卡×1、转向卡×2……），还是 15 格，格子自动合并\n- 手牌满了又拿到卡时，自己选丢掉哪一张，或者不要刚拿到的那张（两种模式都一样）\n- 新卡「复制卡」（大富豪模式）：从自己手上的卡片或道具里任选一样再复制一份，用完消失；每张地图 4 张，卡片商店买不到，只会出现在董事长踩自家商店的赠品里\n- 设置里新增「自动买地」：打开后两种模式都自动买空地、自动盖房，不再一一询问（空的大型用地仍要选盖哪种设施）\n- 小衰神、大衰神、死神附身对手时，也会弹出对手失去了哪些卡片\n- 复制卡、卡片满了要丢哪一张：画面都是卡片图，叠放的格子标「×3」\n\n包含 v0.3.3（没有单独发布）：\n- 修正（重要）：用完卡片后点得快一点，画面会卡住、点哪里都没反应，只能重新读档。原因是选卡、选目标这类「等你回答」的框，会被别的框（例如点工具栏弹出的「请在自己的回合使用」）盖掉并一起清除，游戏却还在等你回答。现在每个框关闭时只关自己；等你回答的框被盖住后，上面的框一关就自动回来\n- 标题画面右下角显示版本号\n- 代码：rich4-renew bfaef50\n\n\n\n\n\n\n\n\n",
+      "ipas": []
+    }
+  ],
+  "Aidoku/Aidoku": [
+    {
+      "tag": "v0.9-4",
+      "name": "v0.9 (4)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-16",
+      "published_at": "2026-10-16T22:25:27Z",
+      "body": "A small build update for 0.9 with a number of bug fixes.\r\n\r\n- Fixed some pages not loading in webtoon reader\r\n- Improved webtoon reader memory usage (hopefully fixes crash after reading multiple chapters)\r\n- Fixed crash when searching anywhere in the macOS app\r\n- Various other bug fixes",
+      "ipas": [
+        {
+          "name": "Aidoku.ipa",
+          "size": 14753154,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.9-4/Aidoku.ipa",
+          "id": 648802068,
+          "updated_at": "2026-10-16T22:24:47Z",
+          "digest": "sha256:473e28cda194e57434f2a9e3ad26abbc8f9c18784047eb0e931a51b47df8970c"
+        }
+      ]
+    },
+    {
+      "tag": "v0.9",
+      "name": "v0.9",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-03",
+      "published_at": "2026-09-03T20:17:08Z",
+      "body": "- OCR dictionary support (iOS 18+): import Yomitan-compatible dictionaries in the app and look up words while reading.\r\n- Suwayomi built-in source: read and track from a Suwayomi instance, just like Komga and Kavita.\r\n- Auto scroll for webtoon reader: enable and press the play button to scroll without touching your device.\r\n- Fixed CloudFlare handling: CloudFlare issues that caused external sources to break should be resolved.\r\n- Overall performance improvements: the library loads much faster (@Amqx), and the webtoon reader was improved.\r\n- Source stability fixes and disable option: the issue where sources were causing the app to crash should not happen again, and now you can even disable a source that is broken until it receives an update.\r\n- Many more things: see [the website](https://aidoku.app/release-notes/) for a more complete list.",
+      "ipas": [
+        {
+          "name": "Aidoku.ipa",
+          "size": 14731108,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.9/Aidoku.ipa",
+          "id": 548206943,
+          "updated_at": "2026-09-07T05:15:22Z",
+          "digest": "sha256:86405861d3a0c90876a90aa1ca668bee54f4555a56249fede4444be5382833e8"
+        }
+      ]
+    },
+    {
+      "tag": "v0.8.4",
+      "name": "v0.8.4",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-03",
+      "published_at": "2026-07-03T05:27:41Z",
+      "body": "- Fixes for iOS 27: fixed settings pages freezing the app, along with other minor visual issues.\r\n- Improved backup restore time: restores should now take seconds instead of minutes. (@Amqx)\r\n- Failed download page retrying: less chance of missing pages in downloaded chapters from sources with aggressive rate limits. (@pxseu)\r\n- New chapter notifications (experimental): when Aidoku refreshes in the background, notification(s) of new chapters should be sent if enabled. (@Zareix)\r\n- Various other bug fixes and small features: see [the website](<https://aidoku.app/release-notes/>) for a more complete list.",
+      "ipas": [
+        {
+          "name": "Aidoku.ipa",
+          "size": 10136987,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.8.4/Aidoku.ipa",
+          "id": 465072203,
+          "updated_at": "2026-07-03T05:26:01Z",
+          "digest": "sha256:4629068fac5fe7155e8d0d6eb4dcb594a63eb5485ec754b4d7ebb11371c54947"
+        }
+      ]
+    },
+    {
+      "tag": "v0.8.3",
+      "name": "v0.8.3",
+      "pre": false,
+      "draft": false,
+      "date": "2026-05-18",
+      "published_at": "2026-05-18T19:02:38Z",
+      "body": "- New migration flow: view series details and optionally copy data instead of completely migrating.\r\n- Kavita API key login: in addition to OIDC and basic auth, use an API key if it works better for you.\r\n- Continuous with gaps reading mode: like the Webtoon mode, but with gaps between pages.\r\n- Fixed tracker search bar: should show again on iOS 26.4+.\r\n- Improved double page reader: new page offset setting and double page handling fixes.\r\n- Various other bug fixes and small features: see [the website](<https://aidoku.app/release-notes/>) for a more complete list.",
+      "ipas": [
+        {
+          "name": "Aidoku.ipa",
+          "size": 9287296,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.8.3/Aidoku.ipa",
+          "id": 425901870,
+          "updated_at": "2026-05-21T06:31:09Z",
+          "digest": "sha256:261b0d1c3eb6df4bbd5d105cb385cc7b516ac64c455d084eaebe86ee044159a1"
+        }
+      ]
+    },
+    {
+      "tag": "v0.8.2",
+      "name": "v0.8.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-03-18",
+      "published_at": "2026-03-18T13:47:13Z",
+      "body": "- Filter groups: save library filter configurations to categories library items.\r\n- Saved source searches: save and load search text and filter configurations in sources.\r\n- MangaBaka tracker: log in and track items with mangabaka.org.\r\n- Hide bars on swipe setting: automatically dismiss bars in the reader after swiping to the next page.\r\n- Missing source list indicator: displays a warning if a source was removed from a source list and will no longer receive updates.\r\n- Improved text reader (experimental): now with a paged reading style and font configuration for text-only chapters.\r\n- Scanlator affinity: prefers next chapters from the scanlator you're already reading.\r\n- Komga/Kavita mirror list option and various source improvements\r\n- Various bug fixes and stability improvements: see [the website](https://aidoku.app/release-notes/) for a more complete list.",
+      "ipas": [
+        {
+          "name": "Aidoku.ipa",
+          "size": 9119989,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.8.2/Aidoku.ipa",
+          "id": 378095759,
+          "updated_at": "2026-03-20T18:11:05Z",
+          "digest": "sha256:a5a131bf876a3f6aa4bd845aff57c816722037d54033137c3a8171a34caf80a0"
+        }
+      ]
+    },
+    {
+      "tag": "v0.8.1",
+      "name": "v0.8.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-02-09",
+      "published_at": "2026-02-09T15:18:25Z",
+      "body": "- Pinned sources should stay pinned\r\n- Error when restoring chapters from backup resolved\r\n- Insights page more accurately determines chapter read count\r\n- Kavita source login issues resolved\r\n- Lots of other fixes (30+)! Check [the website](https://aidoku.app/release-notes/) for a more complete list.",
+      "ipas": [
+        {
+          "name": "Aidoku.ipa",
+          "size": 8636349,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.8.1/Aidoku.ipa",
+          "id": 354821469,
+          "updated_at": "2026-02-12T14:20:11Z",
+          "digest": "sha256:b9e5ab726b1f2de591473d9e3752eb4e60821884fe48f8386d140679a2a1903e"
+        }
+      ]
+    },
+    {
+      "tag": "v0.8",
+      "name": "v0.8",
+      "pre": false,
+      "draft": false,
+      "date": "2026-01-03",
+      "published_at": "2026-01-03T16:07:38Z",
+      "body": "- New icon: updated for liquid glass.\r\n- Fluid transitions: Aidoku now fits in with more iOS 26 apps, letting you swipe to close the reader and other views.\r\n- Insights: reading time is now tracked (starting from this update), and you can see reading statistics in the insights page.\r\n- Library improvements: list mode, additional filter options, persistent filters, and improved multi-select.\r\n- Auto reader background color option: determine the reader background based on page color.\r\n- Live Text support: copy text and use Apple's built in image text translation feature by pressing the live text icon in the bottom right corner of page images.\r\n- Incognito indicator: a noticeable banner at the top now reminds you when reading history won't be tracked.\r\n- Fixed library refresh: should be more stable/consistent now, as I've seen a lot of people with issues recently.\r\n- Lots of other things! Check [the website](https://aidoku.app/release-notes/) for a more complete list.",
+      "ipas": [
+        {
+          "name": "Aidoku.ipa",
+          "size": 8599915,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.8/Aidoku.ipa",
+          "id": 336237258,
+          "updated_at": "2026-01-04T18:55:26Z",
+          "digest": "sha256:70146d72191e0f20213bb01149d58ca7bc8a87be2fce7233e01d701e282f066e"
+        }
+      ]
+    },
+    {
+      "tag": "v0.7.3",
+      "name": "v0.7.3",
+      "pre": false,
+      "draft": false,
+      "date": "2025-11-17",
+      "published_at": "2025-11-17T15:00:18Z",
+      "body": "- Background downloading (iOS 26+): feel free to switch off the app while your downloads (and library refresh) complete.\r\n- Download compression: downloading should now be significantly faster and result in less storage usage by default, and you can now export downloaded chapters as cbz files.\r\n- Automatic backups: Aidoku can now schedule periodic backups in the background just in case something happens and you need to restore old data.\r\n- Built-in Kavita source and tracker (just like Komga).\r\n- New search tab: redesigned look, now with filter options and search history.\r\n- Local files improvements: metadata can now be parsed from ComicInfo.xml files (and downloads from other sources now save this).\r\n- Download badges: see how many downloaded chapters you have, next to the unread badge.\r\n- Many bug fixes: various iPadOS issues, Komga PDF pages, download crashes, auto tracking logic, etc.",
+      "ipas": [
+        {
+          "name": "Aidoku.ipa",
+          "size": 6197921,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.7.3/Aidoku.ipa",
+          "id": 318426287,
+          "updated_at": "2025-11-19T16:34:36Z",
+          "digest": "sha256:cae27bcd622331cfa648dd562b648c7ac8a528815f692644e6c22c317aaa5631"
+        }
+      ]
+    },
+    {
+      "tag": "v0.7.2",
+      "name": "v0.7.2",
+      "pre": false,
+      "draft": false,
+      "date": "2025-10-15",
+      "published_at": "2025-10-15T17:54:22Z",
+      "body": "- New settings tab: now with better organization and search support.\r\n- Wide page isolation and splitting: when using the double page layout (e.g. on iPads), wide pages can be detected and isolated, and when using the single page layout, there’s a new option to automatically split into two pages.\r\n- Komga tracker: automatically tracks reading history for Komga sources, including page progress in individual volumes.\r\n- Library refresh progress bar: when a library refresh starts, there’s now a better indicator of the progress towards completion.\r\n- Backup user settings: the content that’s backed up can now be configured, and allows including user settings.\r\n- Other features and fixes: content rating tags in search results, an invert tap zones option, a Bangumi tracker, relative dates for chapter releases, and many bug fixes!\r\n\r\nThe latest ipa is `Aidoku.ipa`, build 0.7.2 (3), up to commit be6089aefa58d4a2bd77c0c93dcad40deb19bbf6.",
+      "ipas": [
+        {
+          "name": "Aidoku.ipa",
+          "size": 5818726,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.7.2/Aidoku.ipa",
+          "id": 306175528,
+          "updated_at": "2025-10-19T17:21:24Z",
+          "digest": "sha256:0490e3c9750a44a8e2d6126dda772bd3d28a1315400abb25839af3c993bac5fb"
+        },
+        {
+          "name": "build2.ipa",
+          "size": 5808482,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.7.2/build2.ipa",
+          "id": 304680746,
+          "updated_at": "2025-10-19T17:20:23Z",
+          "digest": "sha256:71083e481718b1c3ef20b5a3638f33a452f3865a7abe015e10d79f6262e33b8e"
+        }
+      ]
+    },
+    {
+      "tag": "v0.7.1",
+      "name": "v0.7.1",
+      "pre": false,
+      "draft": false,
+      "date": "2025-08-07",
+      "published_at": "2025-08-07T18:14:37Z",
+      "body": "- Tap zones: tap the sides of the screen to switch pages without needing to swipe.\r\n- Download manager: view and read all downloaded chapters, and see more detailed storage usage.\r\n- Image upscaling (experimental): download ML image upscaling models to improve low quality images while reading. Note that this can increase the time it takes for images to load, especially for slower/older devices, and is still very much an experimental feature.\r\n- Keyboard support: use a connected keyboard (or if you’re just using macOS) to turn pages.\r\n- Custom series covers: select from alternate covers if a source provides them, or upload your own cover images.\r\n- Rewritten History tab: it should hopefully look pretty much the same… but be a bit less buggy! The excessive stuttering, long loading times, and needless reloading in some cases were fixed.\r\n- Other features and fixes:\r\n    - Manual page image reload option (if a page loads incorrectly)\r\n    - Uploading local files should actually work now\r\n    - Tracker searching now has a toggle-able filter for NSFW results\r\n    - …and more!",
+      "ipas": [
+        {
+          "name": "Aidoku.ipa",
+          "size": 5619068,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.7.1/Aidoku.ipa",
+          "id": 280352612,
+          "updated_at": "2025-08-07T18:00:25Z",
+          "digest": "sha256:f33f998a402f8e688dc91acf9b1ee61dfd8ee1b7d09744400adaedeaf03b0772"
+        }
+      ]
+    },
+    {
+      "tag": "v0.7",
+      "name": "v0.7",
+      "pre": false,
+      "draft": false,
+      "date": "2025-06-22",
+      "published_at": "2025-06-22T15:48:11Z",
+      "body": "- Local file reading support (via cbz and zip archives)\r\n- Built-in Komga support\r\n- Many new source features (which you may not see until the future)\r\n- iOS 26 support\r\n\r\nThe latest ipa is `Aidoku.ipa`, build 0.7 (6), up to commit a90099d66ae7c36892403d20baac300fa028b48d.",
+      "ipas": [
+        {
+          "name": "Aidoku.ipa",
+          "size": 12490545,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.7/Aidoku.ipa",
+          "id": 269067560,
+          "updated_at": "2025-07-01T17:50:40Z",
+          "digest": "sha256:3ea979030079e7ebefa8310d6b2ebef52c109f12833e9b713c2dbd19d4b767ea"
+        },
+        {
+          "name": "build4.ipa",
+          "size": 12367185,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.7/build4.ipa",
+          "id": 266220599,
+          "updated_at": "2025-06-23T18:30:53Z",
+          "digest": "sha256:bcd6114681c937d2fe2f6b4e6a9c1dfab7d894d4392ba553b0521c9abafc2c5c"
+        },
+        {
+          "name": "build5.ipa",
+          "size": 12457134,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.7/build5.ipa",
+          "id": 266559410,
+          "updated_at": "2025-07-01T17:49:59Z",
+          "digest": "sha256:ff91af9568cb25b583443e66b8e6deeaa014c32d61266e7729c6398430dace2a"
+        }
+      ]
+    },
+    {
+      "tag": "v0.6.11",
+      "name": "v0.6.11",
+      "pre": false,
+      "draft": false,
+      "date": "2025-03-27",
+      "published_at": "2025-03-27T16:45:47Z",
+      "body": "- Mark duplicate chapters as read option (after build 3)\r\n- Reader view orientation lock option (after build 3)\r\n- Improved batch migration speed\r\n- Resolved some Cloudflare captcha issues\r\n- Fixed status bar showing in the reader on iPads\r\n- Fixed unread badges not showing sometimes\r\n- Shikimori tracker (after build 3)\r\n\r\nThe latest build is `Aidoku.ipa`, v0.6.11 (4).",
+      "ipas": [
+        {
+          "name": "Aidoku.ipa",
+          "size": 3429327,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.6.11/Aidoku.ipa",
+          "id": 246945489,
+          "updated_at": "2025-04-16T15:36:15Z",
+          "digest": null
+        },
+        {
+          "name": "build1.ipa",
+          "size": 3393932,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.6.11/build1.ipa",
+          "id": 241334694,
+          "updated_at": "2025-03-29T16:33:25Z",
+          "digest": null
+        },
+        {
+          "name": "build2.ipa",
+          "size": 3395283,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.6.11/build2.ipa",
+          "id": 241851442,
+          "updated_at": "2025-04-14T19:32:46Z",
+          "digest": null
+        },
+        {
+          "name": "build3.ipa",
+          "size": 3429303,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.6.11/build3.ipa",
+          "id": 246363083,
+          "updated_at": "2025-04-16T15:36:06Z",
+          "digest": null
+        }
+      ]
+    },
+    {
+      "tag": "v0.6.10",
+      "name": "v0.6.10",
+      "pre": false,
+      "draft": false,
+      "date": "2024-11-08",
+      "published_at": "2024-11-08T01:08:36Z",
+      "body": "- Added scanlator filter option for chapters\r\n- Fixed reload button showing incorrectly on double page reader\r\n- Fixed manga not being marked as opened from updates tab\r\n- Various other small fixes",
+      "ipas": [
+        {
+          "name": "Aidoku.ipa",
+          "size": 3354421,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.6.10/Aidoku.ipa",
+          "id": 204943845,
+          "updated_at": "2024-11-08T01:08:11Z",
+          "digest": null
+        }
+      ]
+    },
+    {
+      "tag": "v0.6.9",
+      "name": "v0.6.9",
+      "pre": false,
+      "draft": false,
+      "date": "2024-08-18",
+      "published_at": "2024-08-18T00:08:55Z",
+      "body": "- Delete download after reading option\r\n- Warning when skipping chapters\r\n- Fixed history/updates date grouping",
+      "ipas": [
+        {
+          "name": "Aidoku.ipa",
+          "size": 3386857,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.6.9/Aidoku.ipa",
+          "id": 186629309,
+          "updated_at": "2024-08-17T23:53:33Z",
+          "digest": null
+        }
+      ]
+    },
+    {
+      "tag": "v0.6.8",
+      "name": "v0.6.8",
+      "pre": false,
+      "draft": false,
+      "date": "2024-05-13",
+      "published_at": "2024-05-13T00:03:42Z",
+      "body": "- Fixed CloudFlare bypass\r\n- New “Only Download on Wi-Fi” option\r\n- Manga links can be copied now by holding down the web view button\r\n- Various other small fixes\r\n\r\nNote: build2.ipa is for commit 54ffc02087820850d957a84f447f12ee36767389",
+      "ipas": [
+        {
+          "name": "Aidoku.ipa",
+          "size": 3297836,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.6.8/Aidoku.ipa",
+          "id": 167528110,
+          "updated_at": "2024-05-13T00:02:51Z",
+          "digest": null
+        },
+        {
+          "name": "build2.ipa",
+          "size": 3359225,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.6.8/build2.ipa",
+          "id": 170387797,
+          "updated_at": "2024-05-27T18:53:18Z",
+          "digest": null
+        }
+      ]
+    },
+    {
+      "tag": "v0.6.7",
+      "name": "v0.6.7",
+      "pre": false,
+      "draft": false,
+      "date": "2024-02-14",
+      "published_at": "2024-02-14T21:54:56Z",
+      "body": "- Read position is now also saved whenever the app enters the background or is closed\r\n- Opening read chapters now starts you at the first page\r\n- Chapter sort order is now saved and filtering options were added\r\n- Fixed an issue with searching not working in some sources\r\n- Fixed tracker token expiration & MAL tracker status update issues\r\n- Other small bug fixes",
+      "ipas": [
+        {
+          "name": "Aidoku.ipa",
+          "size": 3264880,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.6.7/Aidoku.ipa",
+          "id": 151591722,
+          "updated_at": "2024-02-14T21:54:46Z",
+          "digest": null
+        }
+      ]
+    },
+    {
+      "tag": "v0.6.6",
+      "name": "v0.6.6",
+      "pre": false,
+      "draft": false,
+      "date": "2023-11-27",
+      "published_at": "2023-11-27T01:41:51Z",
+      "body": "- Added ability to copy manga titles\r\n- Improved Webtoon page loading a bit\r\n- Fixed some issues with crop borders setting\r\n- Fixed some image scaling issues",
+      "ipas": [
+        {
+          "name": "Aidoku.ipa",
+          "size": 3235795,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.6.6/Aidoku.ipa",
+          "id": 137575326,
+          "updated_at": "2023-11-27T01:41:40Z",
+          "digest": null
+        }
+      ]
+    },
+    {
+      "tag": "v0.6.5",
+      "name": "v0.6.5",
+      "pre": false,
+      "draft": false,
+      "date": "2023-09-03",
+      "published_at": "2023-09-03T22:47:52Z",
+      "body": "- Pin sources option\r\n- Ability to save cover images\r\n- Crop page borders setting\r\n- Haptic feedback for reader slider\r\n- Mark all chapters option in manga page",
+      "ipas": [
+        {
+          "name": "Aidoku.ipa",
+          "size": 3206258,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.6.5/Aidoku.ipa",
+          "id": 124406555,
+          "updated_at": "2023-09-03T22:47:40Z",
+          "digest": null
+        }
+      ]
+    },
+    {
+      "tag": "v0.6.4",
+      "name": "v0.6.4",
+      "pre": false,
+      "draft": false,
+      "date": "2023-07-09",
+      "published_at": "2023-07-09T20:30:43Z",
+      "body": "- Fixed Webtoon reader crash\r\n- Fixed MAL tracker updating\r\n- Fixed library sorting after searching issues\r\n- Fixed tracker sync not triggering sometimes",
+      "ipas": [
+        {
+          "name": "Aidoku.ipa",
+          "size": 3304012,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.6.4/Aidoku.ipa",
+          "id": 116454756,
+          "updated_at": "2023-07-11T04:20:32Z",
+          "digest": null
+        }
+      ]
+    },
+    {
+      "tag": "v0.6.3",
+      "name": "v0.6.3",
+      "pre": false,
+      "draft": false,
+      "date": "2023-06-04",
+      "published_at": "2023-06-04T16:23:22Z",
+      "body": "- Fixed MAL tracker expiration\r\n- Fixed iCloud sync object duplication\r\n- Fixed incorrect unread badge count\r\n- Fixed library reader opening bug",
+      "ipas": [
+        {
+          "name": "Aidoku.ipa",
+          "size": 3309365,
+          "url": "https://github.com/Aidoku/Aidoku/releases/download/v0.6.3/Aidoku.ipa",
+          "id": 111129424,
+          "updated_at": "2023-06-03T16:48:41Z",
+          "digest": null
+        }
+      ]
+    }
   ]
 }

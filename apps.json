@@ -2,8 +2,8 @@
   "name": "Laincat 工具箱",
   "identifier": "com.acgtoolbox.source",
   "iconURL": "https://github.com/laincat.png?size=512",
-  "subtitle": "番剧 · 漫画 iOS 自签源",
-  "description": "收录 9 款开源 iOS 应用：番剧类 Kazumi、Animeko，漫画阅读类 EhPanda、VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX。所有 IPA 均直连各项目 GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。",
+  "subtitle": "多类 iOS 自签应用源",
+  "description": "收录 16 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka，漫画阅读类 EhPanda、VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX、Aidoku，以及 AvPlay、ARMSX2、AirCard、Rich4。所有 IPA 均直连各项目 GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。",
   "tintColor": "#7C5CFF",
   "apps": [
     {
@@ -563,6 +563,391 @@
       "downloadURL": "https://github.com/youshen2/PicaX/releases/download/v1.2.5/PicaX-unsigned.ipa",
       "size": 12107911,
       "minOSVersion": "15.2"
+    },
+    {
+      "name": "AvPlay",
+      "bundleIdentifier": "com.javdb.avplay",
+      "developerName": "anonymousjav",
+      "subtitle": "成人影音播放应用",
+      "localizedDescription": "面向成年人的影音播放应用。此处提供上游发布的未签名 iOS 安装包，需自行签名安装；上游仓库未提供应用源代码或开源许可证。\n\n项目主页：https://github.com/anonymousjav/AvPlayRelease",
+      "iconURL": "https://raw.githubusercontent.com/anonymousjav/AvPlayRelease/v2.2.0/resources/logo.png",
+      "tintColor": "#6B5CE7",
+      "category": "entertainment",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "releaseChannels": [
+        {
+          "track": "stable",
+          "releases": [
+            {
+              "version": "2.2.0",
+              "date": "2026-10-23",
+              "publishedAt": "2026-10-23T09:02:21Z",
+              "buildVersion": "2020001",
+              "buildNumber": "2020001",
+              "localizedDescription": "现已适配 iPhone Duo 🎉\r\n\r\n【最新更新】\r\n- 优化 JavDB图片加载速度起飞\r\n- 新增 短剧排行榜\r\n- 修复 已知问题\r\n\r\n【近期更新】\r\n- 新增 黄果AI短剧\r\n- 新增 JavDB的\"影片预览\"、\"想看\"和\"看过\"\r\n\r\n⚠️ v2.1.0版本 iOS 包 Bundle ID 已变，旧版本数据可通过导出数据或云备份迁移",
+              "downloadURL": "https://github.com/anonymousjav/AvPlayRelease/releases/download/v2.2.0/AvPlay-2.2.0.ipa",
+              "size": 23751956,
+              "minOSVersion": "15.3",
+              "releaseTag": "v2.2.0",
+              "source": "https://github.com/anonymousjav/AvPlayRelease/releases/tag/v2.2.0"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "version": "2.2.0",
+          "date": "2026-10-23",
+          "publishedAt": "2026-10-23T09:02:21Z",
+          "buildVersion": "2020001",
+          "buildNumber": "2020001",
+          "localizedDescription": "现已适配 iPhone Duo 🎉\r\n\r\n【最新更新】\r\n- 优化 JavDB图片加载速度起飞\r\n- 新增 短剧排行榜\r\n- 修复 已知问题\r\n\r\n【近期更新】\r\n- 新增 黄果AI短剧\r\n- 新增 JavDB的\"影片预览\"、\"想看\"和\"看过\"\r\n\r\n⚠️ v2.1.0版本 iOS 包 Bundle ID 已变，旧版本数据可通过导出数据或云备份迁移",
+          "downloadURL": "https://github.com/anonymousjav/AvPlayRelease/releases/download/v2.2.0/AvPlay-2.2.0.ipa",
+          "size": 23751956,
+          "minOSVersion": "15.3",
+          "releaseTag": "v2.2.0",
+          "source": "https://github.com/anonymousjav/AvPlayRelease/releases/tag/v2.2.0"
+        }
+      ],
+      "version": "2.2.0",
+      "versionDate": "2026-10-23",
+      "versionDescription": "现已适配 iPhone Duo 🎉\r\n\r\n【最新更新】\r\n- 优化 JavDB图片加载速度起飞\r\n- 新增 短剧排行榜\r\n- 修复 已知问题\r\n\r\n【近期更新】\r\n- 新增 黄果AI短剧\r\n- 新增 JavDB的\"影片预览\"、\"想看\"和\"看过\"\r\n\r\n⚠️ v2.1.0版本 iOS 包 Bundle ID 已变，旧版本数据可通过导出数据或云备份迁移",
+      "downloadURL": "https://github.com/anonymousjav/AvPlayRelease/releases/download/v2.2.0/AvPlay-2.2.0.ipa",
+      "size": 23751956,
+      "minOSVersion": "15.3"
+    },
+    {
+      "name": "AnimeFlow",
+      "bundleIdentifier": "com.ligg.anime_flow",
+      "developerName": "openAnimeFlow",
+      "subtitle": "弹幕追番与 Bangumi 收藏同步",
+      "localizedDescription": "跨平台追番应用，支持 Bangumi 收藏同步与弹幕播放。未签名 iOS 安装包来自上游 GitHub Release。\n\n开源协议：AGPL-3.0　·　项目主页：https://github.com/openAnimeFlow/AnimeFlow",
+      "iconURL": "https://raw.githubusercontent.com/openAnimeFlow/AnimeFlow/v2.6.4/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "tintColor": "#4F7CF7",
+      "category": "entertainment",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "releaseChannels": [
+        {
+          "track": "stable",
+          "releases": [
+            {
+              "version": "2.6.4",
+              "date": "2026-10-18",
+              "publishedAt": "2026-10-18T15:14:24Z",
+              "buildVersion": "2.6.4",
+              "buildNumber": "2.6.4",
+              "localizedDescription": "🔄 更新内容\r\n2.6.4 更新\r\n新增\r\n\r\n- 推荐页、番剧详情页添加缓存优化加载速度\r\n- 通用设置页面增加更丰富的缓存管理\r\n- 番剧详情页宽屏时展示评分柱状图\r\n- 关于页面中添加项目官网预览\r\n优化\r\n \r\n- 通过优选ip优化网络延迟\r\n- 优化番剧详情、用户收藏页面改变窗口宽度时的性能\r\n- 更多的ui优化\r\n修复\r\n\r\n- 修复在使用MDK内核时移动端会自动熄屏问题\r\n- 修复ios端在更新信息页面复制文本出现白屏问题\r\n- 修复版本更新弹窗中更新信息部分文字未同步深浅色主题\r\n\r\n---\r\n📦 下载\r\n- 每个设备的安装包后缀: 苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip或.exe)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)\r\n- android分多个包: v7a(32位架构旧手机或TV)、arm64(新手机,推荐用这个)、x86(模拟器) \r\n- windows分多个包: .zip(解压直接使用)、.exe(安装后使用，推荐用这个)",
+              "downloadURL": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.6.4/AnimeFlow-ios-2.6.4.ipa",
+              "size": 29497158,
+              "minOSVersion": "15.0",
+              "releaseTag": "v2.6.4",
+              "source": "https://github.com/openAnimeFlow/AnimeFlow/releases/tag/v2.6.4"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "version": "2.6.4",
+          "date": "2026-10-18",
+          "publishedAt": "2026-10-18T15:14:24Z",
+          "buildVersion": "2.6.4",
+          "buildNumber": "2.6.4",
+          "localizedDescription": "🔄 更新内容\r\n2.6.4 更新\r\n新增\r\n\r\n- 推荐页、番剧详情页添加缓存优化加载速度\r\n- 通用设置页面增加更丰富的缓存管理\r\n- 番剧详情页宽屏时展示评分柱状图\r\n- 关于页面中添加项目官网预览\r\n优化\r\n \r\n- 通过优选ip优化网络延迟\r\n- 优化番剧详情、用户收藏页面改变窗口宽度时的性能\r\n- 更多的ui优化\r\n修复\r\n\r\n- 修复在使用MDK内核时移动端会自动熄屏问题\r\n- 修复ios端在更新信息页面复制文本出现白屏问题\r\n- 修复版本更新弹窗中更新信息部分文字未同步深浅色主题\r\n\r\n---\r\n📦 下载\r\n- 每个设备的安装包后缀: 苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip或.exe)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)\r\n- android分多个包: v7a(32位架构旧手机或TV)、arm64(新手机,推荐用这个)、x86(模拟器) \r\n- windows分多个包: .zip(解压直接使用)、.exe(安装后使用，推荐用这个)",
+          "downloadURL": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.6.4/AnimeFlow-ios-2.6.4.ipa",
+          "size": 29497158,
+          "minOSVersion": "15.0",
+          "releaseTag": "v2.6.4",
+          "source": "https://github.com/openAnimeFlow/AnimeFlow/releases/tag/v2.6.4"
+        }
+      ],
+      "version": "2.6.4",
+      "versionDate": "2026-10-18",
+      "versionDescription": "🔄 更新内容\r\n2.6.4 更新\r\n新增\r\n\r\n- 推荐页、番剧详情页添加缓存优化加载速度\r\n- 通用设置页面增加更丰富的缓存管理\r\n- 番剧详情页宽屏时展示评分柱状图\r\n- 关于页面中添加项目官网预览\r\n优化\r\n \r\n- 通过优选ip优化网络延迟\r\n- 优化番剧详情、用户收藏页面改变窗口宽度时的性能\r\n- 更多的ui优化\r\n修复\r\n\r\n- 修复在使用MDK内核时移动端会自动熄屏问题\r\n- 修复ios端在更新信息页面复制文本出现白屏问题\r\n- 修复版本更新弹窗中更新信息部分文字未同步深浅色主题\r\n\r\n---\r\n📦 下载\r\n- 每个设备的安装包后缀: 苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip或.exe)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)\r\n- android分多个包: v7a(32位架构旧手机或TV)、arm64(新手机,推荐用这个)、x86(模拟器) \r\n- windows分多个包: .zip(解压直接使用)、.exe(安装后使用，推荐用这个)",
+      "downloadURL": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.6.4/AnimeFlow-ios-2.6.4.ipa",
+      "size": 29497158,
+      "minOSVersion": "15.0"
+    },
+    {
+      "name": "AniBaka",
+      "bundleIdentifier": "ani.baka",
+      "developerName": "AniBakaBaka",
+      "subtitle": "开源弹幕追番应用",
+      "localizedDescription": "开源跨平台动画播放应用。此处提供未签名 iOS 安装包，需自行签名安装。\n\n项目主页：https://github.com/AniBakaBaka/AniBaka",
+      "iconURL": "https://raw.githubusercontent.com/AniBakaBaka/AniBaka/5.2.3+1020/ios/Runner/Assets.xcassets/AppIcon.appiconset/1024.png",
+      "tintColor": "#F06C8B",
+      "category": "entertainment",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "releaseChannels": [
+        {
+          "track": "stable",
+          "releases": [
+            {
+              "version": "5.2.3",
+              "date": "2026-10-21",
+              "publishedAt": "2026-10-21T11:26:14Z",
+              "buildVersion": "1020",
+              "buildNumber": "1020",
+              "localizedDescription": "- 支持绑定、更换找回邮箱，通过邮箱验证码修改或找回密码；已填写 QQ 的账户可直接使用对应 QQ 邮箱找回。\r\n- 优化自动搜源与换源逻辑，减少重复加载，修复短标题误匹配及历史匹配记录可能关联到其他作品的问题。\r\n- 优化媒体代理、播放鉴权与 HLS 处理，更新部分内置源，改善播放兼容性与去广告处理。\r\n- 优化弹幕加载，减少重复请求，修复部分弹幕颜色解析错误，以及切集后旧弹幕加载结果覆盖当前内容的问题。\r\n- 调整番剧详情、评分、角色、收藏和评论界面，优化桌面播放器侧栏与剧集缩略图展示。\r\n- 公告与置顶评论支持关闭后记住状态，内容更新后再次提示。\r\n- 优化 Bangumi 数据缺失及请求异常的处理，完善网络设置说明。\r\n- 修复 Windows 首次构建可能遗漏原生依赖的问题，并增加发行包依赖校验。\r\nFull Changelog: https://github.com/AniBakaBaka/AniBaka/compare/5.2.2+1017...5.2.3+1020",
+              "downloadURL": "https://github.com/AniBakaBaka/AniBaka/releases/download/5.2.3%2B1020/baka-5.2.3%2B1020-ios-unsigned.ipa",
+              "size": 23775885,
+              "minOSVersion": "13.0",
+              "releaseTag": "5.2.3+1020",
+              "source": "https://github.com/AniBakaBaka/AniBaka/releases/tag/5.2.3+1020"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "version": "5.2.3",
+          "date": "2026-10-21",
+          "publishedAt": "2026-10-21T11:26:14Z",
+          "buildVersion": "1020",
+          "buildNumber": "1020",
+          "localizedDescription": "- 支持绑定、更换找回邮箱，通过邮箱验证码修改或找回密码；已填写 QQ 的账户可直接使用对应 QQ 邮箱找回。\r\n- 优化自动搜源与换源逻辑，减少重复加载，修复短标题误匹配及历史匹配记录可能关联到其他作品的问题。\r\n- 优化媒体代理、播放鉴权与 HLS 处理，更新部分内置源，改善播放兼容性与去广告处理。\r\n- 优化弹幕加载，减少重复请求，修复部分弹幕颜色解析错误，以及切集后旧弹幕加载结果覆盖当前内容的问题。\r\n- 调整番剧详情、评分、角色、收藏和评论界面，优化桌面播放器侧栏与剧集缩略图展示。\r\n- 公告与置顶评论支持关闭后记住状态，内容更新后再次提示。\r\n- 优化 Bangumi 数据缺失及请求异常的处理，完善网络设置说明。\r\n- 修复 Windows 首次构建可能遗漏原生依赖的问题，并增加发行包依赖校验。\r\nFull Changelog: https://github.com/AniBakaBaka/AniBaka/compare/5.2.2+1017...5.2.3+1020",
+          "downloadURL": "https://github.com/AniBakaBaka/AniBaka/releases/download/5.2.3%2B1020/baka-5.2.3%2B1020-ios-unsigned.ipa",
+          "size": 23775885,
+          "minOSVersion": "13.0",
+          "releaseTag": "5.2.3+1020",
+          "source": "https://github.com/AniBakaBaka/AniBaka/releases/tag/5.2.3+1020"
+        }
+      ],
+      "version": "5.2.3",
+      "versionDate": "2026-10-21",
+      "versionDescription": "- 支持绑定、更换找回邮箱，通过邮箱验证码修改或找回密码；已填写 QQ 的账户可直接使用对应 QQ 邮箱找回。\r\n- 优化自动搜源与换源逻辑，减少重复加载，修复短标题误匹配及历史匹配记录可能关联到其他作品的问题。\r\n- 优化媒体代理、播放鉴权与 HLS 处理，更新部分内置源，改善播放兼容性与去广告处理。\r\n- 优化弹幕加载，减少重复请求，修复部分弹幕颜色解析错误，以及切集后旧弹幕加载结果覆盖当前内容的问题。\r\n- 调整番剧详情、评分、角色、收藏和评论界面，优化桌面播放器侧栏与剧集缩略图展示。\r\n- 公告与置顶评论支持关闭后记住状态，内容更新后再次提示。\r\n- 优化 Bangumi 数据缺失及请求异常的处理，完善网络设置说明。\r\n- 修复 Windows 首次构建可能遗漏原生依赖的问题，并增加发行包依赖校验。\r\nFull Changelog: https://github.com/AniBakaBaka/AniBaka/compare/5.2.2+1017...5.2.3+1020",
+      "downloadURL": "https://github.com/AniBakaBaka/AniBaka/releases/download/5.2.3%2B1020/baka-5.2.3%2B1020-ios-unsigned.ipa",
+      "size": 23775885,
+      "minOSVersion": "13.0"
+    },
+    {
+      "name": "Aidoku",
+      "bundleIdentifier": "app.aidoku.Aidoku",
+      "developerName": "Aidoku",
+      "subtitle": "支持扩展漫画源的阅读器",
+      "localizedDescription": "漫画阅读器，可通过扩展添加在线漫画源。未签名 iOS 安装包来自上游 GitHub Release。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Aidoku/Aidoku",
+      "iconURL": "https://raw.githubusercontent.com/Aidoku/Aidoku/v0.9-4/Aidoku/App/Resources/Assets.xcassets/AppIcon.appiconset/Icon.png",
+      "tintColor": "#B965E8",
+      "category": "books",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "releaseChannels": [
+        {
+          "track": "stable",
+          "releases": [
+            {
+              "version": "0.9",
+              "date": "2026-10-16",
+              "publishedAt": "2026-10-16T22:25:27Z",
+              "buildVersion": "4",
+              "buildNumber": "4",
+              "localizedDescription": "A small build update for 0.9 with a number of bug fixes.\r\n\r\n- Fixed some pages not loading in webtoon reader\r\n- Improved webtoon reader memory usage (hopefully fixes crash after reading multiple chapters)\r\n- Fixed crash when searching anywhere in the macOS app\r\n- Various other bug fixes",
+              "downloadURL": "https://github.com/Aidoku/Aidoku/releases/download/v0.9-4/Aidoku.ipa",
+              "size": 14753154,
+              "minOSVersion": "15.0",
+              "releaseTag": "v0.9-4",
+              "source": "https://github.com/Aidoku/Aidoku/releases/tag/v0.9-4"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "version": "0.9",
+          "date": "2026-10-16",
+          "publishedAt": "2026-10-16T22:25:27Z",
+          "buildVersion": "4",
+          "buildNumber": "4",
+          "localizedDescription": "A small build update for 0.9 with a number of bug fixes.\r\n\r\n- Fixed some pages not loading in webtoon reader\r\n- Improved webtoon reader memory usage (hopefully fixes crash after reading multiple chapters)\r\n- Fixed crash when searching anywhere in the macOS app\r\n- Various other bug fixes",
+          "downloadURL": "https://github.com/Aidoku/Aidoku/releases/download/v0.9-4/Aidoku.ipa",
+          "size": 14753154,
+          "minOSVersion": "15.0",
+          "releaseTag": "v0.9-4",
+          "source": "https://github.com/Aidoku/Aidoku/releases/tag/v0.9-4"
+        }
+      ],
+      "version": "0.9",
+      "versionDate": "2026-10-16",
+      "versionDescription": "A small build update for 0.9 with a number of bug fixes.\r\n\r\n- Fixed some pages not loading in webtoon reader\r\n- Improved webtoon reader memory usage (hopefully fixes crash after reading multiple chapters)\r\n- Fixed crash when searching anywhere in the macOS app\r\n- Various other bug fixes",
+      "downloadURL": "https://github.com/Aidoku/Aidoku/releases/download/v0.9-4/Aidoku.ipa",
+      "size": 14753154,
+      "minOSVersion": "15.0"
+    },
+    {
+      "name": "ARMSX2 Nightly",
+      "bundleIdentifier": "com.armsx2.ios.nightly",
+      "developerName": "ARMSX2",
+      "subtitle": "PlayStation 2 模拟器（每日构建）",
+      "localizedDescription": "PlayStation 2 模拟器的 iOS 每日构建版。上游仅发布预览构建，版本可能变化或不稳定；未签名安装包来自上游 GitHub Release。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/ARMSX2/ARMSX2",
+      "iconURL": "https://raw.githubusercontent.com/ARMSX2/ARMSX2/nightly-20261023/platforms/ios/app/src/main/assets/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
+      "tintColor": "#D95F59",
+      "category": "games",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "releaseChannels": [
+        {
+          "track": "stable",
+          "releases": [
+            {
+              "version": "2.6.0-nightly.20261023.1332",
+              "date": "2026-10-23",
+              "publishedAt": "2026-10-23T14:10:10Z",
+              "buildVersion": "260",
+              "buildNumber": "260",
+              "localizedDescription": "🧪 预发布 nightly-20261023（2026-10-23）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+              "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261023/ARMSX2-nightly-20261023-90126bdfea-iOS-arm64.ipa",
+              "size": 40376158,
+              "minOSVersion": "17.4",
+              "releaseTag": "nightly-20261023",
+              "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261023"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "version": "2.6.0-nightly.20261023.1332",
+          "date": "2026-10-23",
+          "publishedAt": "2026-10-23T14:10:10Z",
+          "buildVersion": "260",
+          "buildNumber": "260",
+          "localizedDescription": "🧪 预发布 nightly-20261023（2026-10-23）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261023/ARMSX2-nightly-20261023-90126bdfea-iOS-arm64.ipa",
+          "size": 40376158,
+          "minOSVersion": "17.4",
+          "releaseTag": "nightly-20261023",
+          "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261023"
+        }
+      ],
+      "version": "2.6.0-nightly.20261023.1332",
+      "versionDate": "2026-10-23",
+      "versionDescription": "🧪 预发布 nightly-20261023（2026-10-23）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+      "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261023/ARMSX2-nightly-20261023-90126bdfea-iOS-arm64.ipa",
+      "size": 40376158,
+      "minOSVersion": "17.4"
+    },
+    {
+      "name": "AirCard",
+      "bundleIdentifier": "com.mak5er.aircard",
+      "developerName": "Mak5er",
+      "subtitle": "Apple Wallet 卡片与锁屏主题",
+      "localizedDescription": "Apple Wallet 卡片样式与锁屏密码主题工具。部分功能可能要求较新 iOS 版本；实际最低安装版本以安装包元数据为准。\n\n开源协议：MIT　·　项目主页：https://github.com/Mak5er/AirCard-iOS",
+      "iconURL": "https://raw.githubusercontent.com/Mak5er/AirCard-iOS/v1.3.2/ios-app/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+      "tintColor": "#111827",
+      "category": "utilities",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "releaseChannels": [
+        {
+          "track": "stable",
+          "releases": [
+            {
+              "version": "1.3.2",
+              "date": "2026-10-04",
+              "publishedAt": "2026-10-04T12:22:53Z",
+              "buildVersion": "1.3.2",
+              "buildNumber": "1.3.2",
+              "localizedDescription": "What's Changed in v1.3.2 🚀\n\nThis update brings full feature parity with AirCard macOS v1.2.6, restores robust card discovery across all iOS versions, introduces automatic bank/network recognition with custom card nicknames, delivers an ultra-fast tunnel cache (0.02s connections), and completely resolves wallpaper flashing for Collections and Mercury wallpapers.\n💳 Wallet Card Discovery & Bank Identification\n• Universal Wallet Log Parser: Ported the proven WalletScanParser from AirCard macOS. Captures cards from Dashboard loading (...): for SOO+, passIDs[InSession], passIDs[global], and modern JSON NFC activations (\"identifier\": \"HEX\").\n• Automatic Bank & Network Detection: Recognizes Visa, Ma…",
+              "downloadURL": "https://github.com/Mak5er/AirCard-iOS/releases/download/v1.3.2/AirCard-iOS.ipa",
+              "size": 4638147,
+              "minOSVersion": "18.0",
+              "releaseTag": "v1.3.2",
+              "source": "https://github.com/Mak5er/AirCard-iOS/releases/tag/v1.3.2"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "version": "1.3.2",
+          "date": "2026-10-04",
+          "publishedAt": "2026-10-04T12:22:53Z",
+          "buildVersion": "1.3.2",
+          "buildNumber": "1.3.2",
+          "localizedDescription": "What's Changed in v1.3.2 🚀\n\nThis update brings full feature parity with AirCard macOS v1.2.6, restores robust card discovery across all iOS versions, introduces automatic bank/network recognition with custom card nicknames, delivers an ultra-fast tunnel cache (0.02s connections), and completely resolves wallpaper flashing for Collections and Mercury wallpapers.\n💳 Wallet Card Discovery & Bank Identification\n• Universal Wallet Log Parser: Ported the proven WalletScanParser from AirCard macOS. Captures cards from Dashboard loading (...): for SOO+, passIDs[InSession], passIDs[global], and modern JSON NFC activations (\"identifier\": \"HEX\").\n• Automatic Bank & Network Detection: Recognizes Visa, Ma…",
+          "downloadURL": "https://github.com/Mak5er/AirCard-iOS/releases/download/v1.3.2/AirCard-iOS.ipa",
+          "size": 4638147,
+          "minOSVersion": "18.0",
+          "releaseTag": "v1.3.2",
+          "source": "https://github.com/Mak5er/AirCard-iOS/releases/tag/v1.3.2"
+        }
+      ],
+      "version": "1.3.2",
+      "versionDate": "2026-10-04",
+      "versionDescription": "What's Changed in v1.3.2 🚀\n\nThis update brings full feature parity with AirCard macOS v1.2.6, restores robust card discovery across all iOS versions, introduces automatic bank/network recognition with custom card nicknames, delivers an ultra-fast tunnel cache (0.02s connections), and completely resolves wallpaper flashing for Collections and Mercury wallpapers.\n💳 Wallet Card Discovery & Bank Identification\n• Universal Wallet Log Parser: Ported the proven WalletScanParser from AirCard macOS. Captures cards from Dashboard loading (...): for SOO+, passIDs[InSession], passIDs[global], and modern JSON NFC activations (\"identifier\": \"HEX\").\n• Automatic Bank & Network Detection: Recognizes Visa, Ma…",
+      "downloadURL": "https://github.com/Mak5er/AirCard-iOS/releases/download/v1.3.2/AirCard-iOS.ipa",
+      "size": 4638147,
+      "minOSVersion": "18.0"
+    },
+    {
+      "name": "大富翁4重制版",
+      "bundleIdentifier": "pro.areu.rich4",
+      "developerName": "iam567",
+      "subtitle": "经典大富翁4重制版（大型安装包）",
+      "localizedDescription": "基于 Vite、TypeScript 与 Capacitor 的大富翁4重制版。当前 iOS 安装包约 1.79 GB，请在下载前确认设备有足够空间。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/iam567/rich4-renew-app",
+      "iconURL": "https://raw.githubusercontent.com/iam567/rich4-renew-app/v0.7.4/game/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png",
+      "tintColor": "#E9A83A",
+      "category": "games",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "releaseChannels": [
+        {
+          "track": "stable",
+          "releases": [
+            {
+              "version": "0.7.4",
+              "date": "2026-10-23",
+              "publishedAt": "2026-10-23T13:18:08Z",
+              "buildVersion": "40",
+              "buildNumber": "40",
+              "localizedDescription": "- 修正：安卓版（特别是鸿蒙系统）读取存档常常失败然后闪退。安卓的存档改成压缩格式（小 4–6 倍），读档列表只读摘要；读不出时会自动改读上一份备份，再不行就提示并回到列表，不再闪退或卡死。旧存档照样能读。iPhone 和电脑版的存档方式不变。\n- 派对模式：双方版本不同时会直接提示「版本不同，请两边都下载最新版本」，不再默默连不上；房间列表只显示同版本的房间。\n- 设置里新增「魔法屋提示对象」开关（默认开）：关掉后魔法屋不再提示法术会作用到谁，和原版一样自己判断。\n- 「激情岁月」：\n  - 新增 17 张坏事件（站错队关牛棚、国营餐馆食物中毒、赤脚医生乱诊断、误入原子弹研发现场、写《出身论》被下放、没收非法所得、收缴财产充公……），坏事件明显变多；\n  - 记工分和各种加票证的事件减少；\n  - 被「下放」「审查」等消失时，有解放大卡车和红卫兵来把人带走的动画。\n- 电脑版：\n  - Windows：下载 rich4-0.7.4-windows.zip，解压后打开 Rich4 文件夹，双击 Rich4.exe。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 rich4-0.7.4-mac.dmg，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew a6867b9",
+              "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.7.4/rich4-0.7.4-unsigned.ipa",
+              "size": 1790723589,
+              "minOSVersion": "15.0",
+              "releaseTag": "v0.7.4",
+              "source": "https://github.com/iam567/rich4-renew-app/releases/tag/v0.7.4"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "version": "0.7.4",
+          "date": "2026-10-23",
+          "publishedAt": "2026-10-23T13:18:08Z",
+          "buildVersion": "40",
+          "buildNumber": "40",
+          "localizedDescription": "- 修正：安卓版（特别是鸿蒙系统）读取存档常常失败然后闪退。安卓的存档改成压缩格式（小 4–6 倍），读档列表只读摘要；读不出时会自动改读上一份备份，再不行就提示并回到列表，不再闪退或卡死。旧存档照样能读。iPhone 和电脑版的存档方式不变。\n- 派对模式：双方版本不同时会直接提示「版本不同，请两边都下载最新版本」，不再默默连不上；房间列表只显示同版本的房间。\n- 设置里新增「魔法屋提示对象」开关（默认开）：关掉后魔法屋不再提示法术会作用到谁，和原版一样自己判断。\n- 「激情岁月」：\n  - 新增 17 张坏事件（站错队关牛棚、国营餐馆食物中毒、赤脚医生乱诊断、误入原子弹研发现场、写《出身论》被下放、没收非法所得、收缴财产充公……），坏事件明显变多；\n  - 记工分和各种加票证的事件减少；\n  - 被「下放」「审查」等消失时，有解放大卡车和红卫兵来把人带走的动画。\n- 电脑版：\n  - Windows：下载 rich4-0.7.4-windows.zip，解压后打开 Rich4 文件夹，双击 Rich4.exe。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 rich4-0.7.4-mac.dmg，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew a6867b9",
+          "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.7.4/rich4-0.7.4-unsigned.ipa",
+          "size": 1790723589,
+          "minOSVersion": "15.0",
+          "releaseTag": "v0.7.4",
+          "source": "https://github.com/iam567/rich4-renew-app/releases/tag/v0.7.4"
+        }
+      ],
+      "version": "0.7.4",
+      "versionDate": "2026-10-23",
+      "versionDescription": "- 修正：安卓版（特别是鸿蒙系统）读取存档常常失败然后闪退。安卓的存档改成压缩格式（小 4–6 倍），读档列表只读摘要；读不出时会自动改读上一份备份，再不行就提示并回到列表，不再闪退或卡死。旧存档照样能读。iPhone 和电脑版的存档方式不变。\n- 派对模式：双方版本不同时会直接提示「版本不同，请两边都下载最新版本」，不再默默连不上；房间列表只显示同版本的房间。\n- 设置里新增「魔法屋提示对象」开关（默认开）：关掉后魔法屋不再提示法术会作用到谁，和原版一样自己判断。\n- 「激情岁月」：\n  - 新增 17 张坏事件（站错队关牛棚、国营餐馆食物中毒、赤脚医生乱诊断、误入原子弹研发现场、写《出身论》被下放、没收非法所得、收缴财产充公……），坏事件明显变多；\n  - 记工分和各种加票证的事件减少；\n  - 被「下放」「审查」等消失时，有解放大卡车和红卫兵来把人带走的动画。\n- 电脑版：\n  - Windows：下载 rich4-0.7.4-windows.zip，解压后打开 Rich4 文件夹，双击 Rich4.exe。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 rich4-0.7.4-mac.dmg，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew a6867b9",
+      "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.7.4/rich4-0.7.4-unsigned.ipa",
+      "size": 1790723589,
+      "minOSVersion": "15.0"
     }
   ],
   "featuredApps": [
@@ -573,7 +958,7 @@
     {
       "title": "源已建立",
       "identifier": "source-created",
-      "caption": "收录 9 款应用，IPA 直连各项目 GitHub Release。",
+      "caption": "收录 16 款应用，IPA 直连各项目 GitHub Release。",
       "date": "2026-10-24",
       "tintColor": "#7C5CFF",
       "notify": false
