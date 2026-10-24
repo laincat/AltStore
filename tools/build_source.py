@@ -900,6 +900,9 @@ def build(per_app=1, refresh=False, reprobe=False, prev_path=None):
               % ([v["version"] for v in flat_versions],
                  "  ← 首条是测试版，会打 BETA 角标" if is_beta_head else ""))
 
+    featured_apps = [app["bundleIdentifier"] for app in apps[:2]]
+    apps.sort(key=lambda app: app["name"].casefold())
+
     src = dict(SOURCE)
     src["apps"] = apps
     if not apps:
@@ -909,7 +912,7 @@ def build(per_app=1, refresh=False, reprobe=False, prev_path=None):
         return src, carried
 
     src["iconURL"] = SOURCE["iconURL"]
-    src["featuredApps"] = [a["bundleIdentifier"] for a in apps[:2]]
+    src["featuredApps"] = featured_apps
     src["news"] = [{
         "title": "源已建立",
         "identifier": "source-created",
