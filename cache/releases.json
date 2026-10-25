@@ -3401,6 +3401,25 @@
   ],
   "openAnimeFlow/AnimeFlow": [
     {
+      "tag": "v2.6.5",
+      "name": "AnimeFlow 2.6.5",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-25",
+      "published_at": "2026-10-25T11:37:13Z",
+      "body": "### 🔄 更新内容\n\n## 2.6.5 更新\n\n## 新增\n\n- 添加壁纸页面\n- 发送弹幕功能支持类型选择和颜色选择(旧接口已关闭，未更新的客户端将不支持发送弹幕到服务器) #109\n- 桌面端添加更丰富的快捷键 #115\n\n## 优化\n \n- 优化系统底层架构更规范化\n- 用户数据添加本地缓存避免每次启动都重新加载\n\n## 修复\n\n- 修复使用mdk内核时退出页面出现卡顿问题\n- 修复特定情况下导的接口请求失败问题 #113\n- 修复macos登录失败问题 #113\n\n---\n\n### 📦 下载\n- 每个设备的安装包后缀: ``苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip或.exe)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)``\n- android分多个包: ``v7a(32位架构旧手机或TV)、arm64(新手机,推荐用这个)、x86(模拟器) ``\n- windows分多个包: ``.zip(解压直接使用)、.exe(安装后使用，推荐用这个) ``\n",
+      "ipas": [
+        {
+          "name": "AnimeFlow-ios-2.6.5.ipa",
+          "size": 29290778,
+          "url": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.6.5/AnimeFlow-ios-2.6.5.ipa",
+          "id": 674884774,
+          "updated_at": "2026-10-25T11:37:10Z",
+          "digest": "sha256:0608d33a6f4750a90c6c29cec2e0d3c3e7b9d78455514cf94d39dd93dabdde5d"
+        }
+      ]
+    },
+    {
       "tag": "v2.6.4",
       "name": "AnimeFlow 2.6.4",
       "pre": false,
@@ -3758,25 +3777,6 @@
           "id": 425472897,
           "updated_at": "2026-05-20T18:51:20Z",
           "digest": "sha256:618ee638ac24d131cf3689eea3de47580045a7f08c432923a9c787d133a3b70b"
-        }
-      ]
-    },
-    {
-      "tag": "v1.9.7",
-      "name": "AnimeFlow 1.9.7",
-      "pre": false,
-      "draft": false,
-      "date": "2026-05-19",
-      "published_at": "2026-05-19T17:33:47Z",
-      "body": "### 🔄 更新内容\n\n- 修复番剧详情评论加载逻辑错误导致评论数据重复\n- 修复番剧详情页标签内容对其问题\n- 添加字体样式功能，可在主题设置中下载字体\n\n---\n\n### 📦 下载\n- 每个设备的安装包后缀: ``苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)``\n- android分多个包: ``v7a(旧手机)、arm64(新手机,推荐用这个)、x86(模拟器) ``\n- windows分多个包: ``.zip(解压直接使用)、.exe(安装后使用) ``\n",
-      "ipas": [
-        {
-          "name": "AnimeFlow-ios-1.9.7.ipa",
-          "size": 21995528,
-          "url": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v1.9.7/AnimeFlow-ios-1.9.7.ipa",
-          "id": 424386670,
-          "updated_at": "2026-05-19T17:33:49Z",
-          "digest": "sha256:fed05054baebbfd75efd32f85d4fa7f26ee31bd2034909d66e9cdd1a26a863bf"
         }
       ]
     }
