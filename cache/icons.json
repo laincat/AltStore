@@ -52,5 +52,7 @@
   "https://raw.githubusercontent.com/ARMSX2/ARMSX2/nightly-20261023/platforms/ios/app/src/main/assets/Assets.xcassets/AppIcon.appiconset/icon-1024.png": true,
   "https://raw.githubusercontent.com/Mak5er/AirCard-iOS/v1.3.2/ios-app/Assets.xcassets/AppIcon.appiconset/AppIcon.png": true,
   "https://raw.githubusercontent.com/iam567/rich4-renew-app/v0.7.4/game/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png": true,
-  "https://raw.githubusercontent.com/Aidoku/Aidoku/v0.9-4/Aidoku/App/Resources/Assets.xcassets/AppIcon.appiconset/Icon.png": true
+  "https://raw.githubusercontent.com/Aidoku/Aidoku/v0.9-4/Aidoku/App/Resources/Assets.xcassets/AppIcon.appiconset/Icon.png": true,
+  "https://raw.githubusercontent.com/CyrilPeng/Venera-Next/v1.18.1/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png": true,
+  "https://raw.githubusercontent.com/deretame/Breeze/v3.0.36/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png": true
 }

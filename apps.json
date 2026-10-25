@@ -428,7 +428,7 @@
       "developerName": "deretame",
       "subtitle": "插件化漫画阅读器",
       "localizedDescription": "使用 Flutter 构建的漫画阅读器，通过插件机制提供漫画源支持，已支持哔咔、禁漫、E-Hentai、nhentai、拷贝漫画、包子漫画等多个图源。\n\n开源协议：MPL-2.0　·　项目主页：https://github.com/deretame/Breeze",
-      "iconURL": "https://raw.githubusercontent.com/deretame/Breeze/v3.0.35/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/deretame/Breeze/v3.0.36/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#4FB3F5",
       "category": "books",
       "appPermissions": {
@@ -440,41 +440,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "3.0.35",
-              "date": "2026-10-18",
-              "publishedAt": "2026-10-18T05:23:12Z",
-              "buildVersion": "2223",
-              "buildNumber": "2223",
-              "localizedDescription": "📝 更新日志\n[v3.0.35]\n功能更新\n\n- 章节目录添加分组支持\n- 评论添加复制，查看头像功能\n优化\n\n- 优化追更逻辑与追更页ui\n- 优化云收藏错误提示\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.35.exe |\n| macOS | Breeze-macOS-v3.0.35.dmg |\n| Android | app-arm64-v8a-release-v3.0.35.apk |\n| iOS | Breeze-iOS-v3.0.35.ipa |\n| Linux | breeze-v3.0.35.flatpak |\n| Linux (DEB) | breeze_3.0.35_amd64-v3.0.35.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
-              "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.35/Breeze-iOS-v3.0.35.ipa",
-              "size": 26309164,
+              "version": "3.0.36",
+              "date": "2026-10-25",
+              "publishedAt": "2026-10-25T05:46:26Z",
+              "buildVersion": "2224",
+              "buildNumber": "2224",
+              "localizedDescription": "📝 更新日志\n[v3.0.36]\n功能更新\n\n- 导航添加首页和云收藏页\n- 添加详情风格漫画列表\n- 添加默认章节倒序选项\n- 漫画详情页操作栏添加云收藏按钮\n优化\n\n- 优化书架多选操作体验\n- 优化性能\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.36.exe |\n| macOS | Breeze-macOS-v3.0.36.dmg |\n| Android | app-arm64-v8a-release-v3.0.36.apk |\n| iOS | Breeze-iOS-v3.0.36.ipa |\n| Linux | breeze-v3.0.36.flatpak |\n| Linux (DEB) | breeze_3.0.36_amd64-v3.0.36.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
+              "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.36/Breeze-iOS-v3.0.36.ipa",
+              "size": 26377539,
               "minOSVersion": "15.0",
-              "releaseTag": "v3.0.35",
-              "source": "https://github.com/deretame/Breeze/releases/tag/v3.0.35"
+              "releaseTag": "v3.0.36",
+              "source": "https://github.com/deretame/Breeze/releases/tag/v3.0.36"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "3.0.35",
-          "date": "2026-10-18",
-          "publishedAt": "2026-10-18T05:23:12Z",
-          "buildVersion": "2223",
-          "buildNumber": "2223",
-          "localizedDescription": "📝 更新日志\n[v3.0.35]\n功能更新\n\n- 章节目录添加分组支持\n- 评论添加复制，查看头像功能\n优化\n\n- 优化追更逻辑与追更页ui\n- 优化云收藏错误提示\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.35.exe |\n| macOS | Breeze-macOS-v3.0.35.dmg |\n| Android | app-arm64-v8a-release-v3.0.35.apk |\n| iOS | Breeze-iOS-v3.0.35.ipa |\n| Linux | breeze-v3.0.35.flatpak |\n| Linux (DEB) | breeze_3.0.35_amd64-v3.0.35.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
-          "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.35/Breeze-iOS-v3.0.35.ipa",
-          "size": 26309164,
+          "version": "3.0.36",
+          "date": "2026-10-25",
+          "publishedAt": "2026-10-25T05:46:26Z",
+          "buildVersion": "2224",
+          "buildNumber": "2224",
+          "localizedDescription": "📝 更新日志\n[v3.0.36]\n功能更新\n\n- 导航添加首页和云收藏页\n- 添加详情风格漫画列表\n- 添加默认章节倒序选项\n- 漫画详情页操作栏添加云收藏按钮\n优化\n\n- 优化书架多选操作体验\n- 优化性能\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.36.exe |\n| macOS | Breeze-macOS-v3.0.36.dmg |\n| Android | app-arm64-v8a-release-v3.0.36.apk |\n| iOS | Breeze-iOS-v3.0.36.ipa |\n| Linux | breeze-v3.0.36.flatpak |\n| Linux (DEB) | breeze_3.0.36_amd64-v3.0.36.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
+          "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.36/Breeze-iOS-v3.0.36.ipa",
+          "size": 26377539,
           "minOSVersion": "15.0",
-          "releaseTag": "v3.0.35",
-          "source": "https://github.com/deretame/Breeze/releases/tag/v3.0.35"
+          "releaseTag": "v3.0.36",
+          "source": "https://github.com/deretame/Breeze/releases/tag/v3.0.36"
         }
       ],
-      "version": "3.0.35",
-      "versionDate": "2026-10-18",
-      "versionDescription": "📝 更新日志\n[v3.0.35]\n功能更新\n\n- 章节目录添加分组支持\n- 评论添加复制，查看头像功能\n优化\n\n- 优化追更逻辑与追更页ui\n- 优化云收藏错误提示\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.35.exe |\n| macOS | Breeze-macOS-v3.0.35.dmg |\n| Android | app-arm64-v8a-release-v3.0.35.apk |\n| iOS | Breeze-iOS-v3.0.35.ipa |\n| Linux | breeze-v3.0.35.flatpak |\n| Linux (DEB) | breeze_3.0.35_amd64-v3.0.35.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
-      "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.35/Breeze-iOS-v3.0.35.ipa",
-      "size": 26309164,
+      "version": "3.0.36",
+      "versionDate": "2026-10-25",
+      "versionDescription": "📝 更新日志\n[v3.0.36]\n功能更新\n\n- 导航添加首页和云收藏页\n- 添加详情风格漫画列表\n- 添加默认章节倒序选项\n- 漫画详情页操作栏添加云收藏按钮\n优化\n\n- 优化书架多选操作体验\n- 优化性能\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.36.exe |\n| macOS | Breeze-macOS-v3.0.36.dmg |\n| Android | app-arm64-v8a-release-v3.0.36.apk |\n| iOS | Breeze-iOS-v3.0.36.ipa |\n| Linux | breeze-v3.0.36.flatpak |\n| Linux (DEB) | breeze_3.0.36_amd64-v3.0.36.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
+      "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.36/Breeze-iOS-v3.0.36.ipa",
+      "size": 26377539,
       "minOSVersion": "15.0"
     },
     {
@@ -790,7 +790,7 @@
       "developerName": "CyrilPeng",
       "subtitle": "支持 WebDAV 同步的漫画阅读器",
       "localizedDescription": "Venera 的 fork 分支，基于 Flutter 的跨平台漫画阅读器，支持本地漫画与网络漫画源，覆盖 iOS / Android / Windows / Linux / macOS。核心思路是尽量减少打断阅读：长篇作品可用瀑布流跨章节连续阅读，支持收藏、追更、离线下载，并能通过 WebDAV 在多台设备之间同步数据。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/CyrilPeng/Venera-Next",
-      "iconURL": "https://raw.githubusercontent.com/CyrilPeng/Venera-Next/v1.18.0/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
+      "iconURL": "https://raw.githubusercontent.com/CyrilPeng/Venera-Next/v1.18.1/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
       "tintColor": "#2090E0",
       "category": "books",
       "appPermissions": {
@@ -802,41 +802,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "1.18.0",
-              "date": "2026-10-14",
-              "publishedAt": "2026-10-14T09:59:36Z",
-              "buildVersion": "234",
-              "buildNumber": "234",
-              "localizedDescription": "本次正式版在 v1.17.0 基础上完成大范围架构重构，收束阅读器、漫画源、同步与运行时的职责边界，并新增图片原始像素尺寸、章节阅读进度、自动阅读屏幕常亮与跳过不可用图片。同步修复 WebDAV 应用数据同步、日志持久化、AVIF 识别及图片去混淆性能问题，修复 Rust 依赖安全告警并更新相关依赖。经 v1.18.0-rc.1 至 rc.5 逐版验证，Windows 与 Android 的 WebDAV 手动上传、云端下载覆盖及自动同步已通过实机验收。\n新增\n\n- 阅读器可选显示图片原始像素尺寸，支持单页、多页、连续阅读及宽图拆分；缩小解码和缓存命中仍保留原始尺寸，开关支持全局／设备／单本设置（#95）。\n- 收藏、追更及漫画卡片显示章节和页码进度，阅读时持久化章节／分组名称，图源不可用后仍可查看；旧历史兼容序号回退，长标题支持省略、完整提示和读屏（#93）。\n- 自动阅读默认保持 Android／iOS 屏幕常亮，提供全局／设备／单本开关；停止自动阅读、切后台和退出时恢复系统休眠，旋转与迟到的原生回调不会遗留常亮状态（#96）。\n- 自动阅读新增默认关闭的「跳过不可用图片」选项：失败图片按正常节奏跳过，加载中的图片在 1–60 秒可调的前台等待后继续；覆盖单页、并排页及连续／瀑布流视图，保留操作暂停和章节加载保护，修复瀑布流短错误占位在末章提前可见时的停止定位（#98 后续建议）。\n修复\n\n- 应用数据同步恢复 v1.17.0 的 WebDAV SDK 上传、下载及旧备份清理流程，沿用日期与数据版本文件名，不再要求条件 PUT、强 ETag 或内容基线；修复候选版上传已返回…",
-              "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.0/VeneraNext-ios-1.18.0%2B234.ipa",
-              "size": 21127254,
+              "version": "1.18.1",
+              "date": "2026-10-25",
+              "publishedAt": "2026-10-25T03:30:26Z",
+              "buildVersion": "236",
+              "buildNumber": "236",
+              "localizedDescription": "正式版说明\n\n- 发布补丁正式版 1.18.1+236，完整承接 RC1 的阅读器、本地漫画、启动诊断、后台下载与依赖安全修复；本次转正不额外加入运行时代码或依赖变更。\n- RC1 发布后暂未收到新的问题反馈，这不等同于所有原设备问题已经验收通过。维护者决定保留明确的已知限制发布正式版，并继续邀请相关 issue 的反馈者复测，不自动将未确认的报告标为已解决。\n- 升级前请导出并另存应用数据备份，保留原漫画文件；覆盖安装沿用现有数据，不需要清空应用数据、删除数据库或重建同步配置。若回退旧版，请先另存新版数据，并使用升级前的备份恢复，不保证旧版能读取新版已修改的数据。iOS IPA 仍需自行侧载签名。\n重点复测与已知限制\n\n- #111 升级／恢复后启动：已修复 Windows 旧收藏库的 SQLite 内部表迁移错误，并完善不被异步收尾阻挡的启动诊断页；Android 原设备卡启动图的根因尚未确认。请复测覆盖升级和完整应用数据恢复；若仍失败，提供启动阶段与脱敏后的原始错误，不要以清空数据代替定位。\n- #119 Android 自定义存储目录：已修复 SAF 选择器返回的 android:// 路径被误判为相对路径；真实 Android 目录权限、双向迁移及重启恢复仍需确认。请先备份，不要删除迁移失败时保留的原文件或副本。\n- #115 归档导入后不显示：已修复全部失败仍报成功及省略具体错误的问题；原附件在本机按原名／改名均可导入，原设备“不显示”的根因尚未复现。请核对导入数量、具体失败文件、列表筛选／屏蔽设置，以及重启后的列表与页面读取结果，不自动改名或绕过屏蔽规则。\n- #…",
+              "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.1/VeneraNext-ios-1.18.1%2B236.ipa",
+              "size": 21194544,
               "minOSVersion": "14.0",
-              "releaseTag": "v1.18.0",
-              "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.18.0"
+              "releaseTag": "v1.18.1",
+              "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.18.1"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "1.18.0",
-          "date": "2026-10-14",
-          "publishedAt": "2026-10-14T09:59:36Z",
-          "buildVersion": "234",
-          "buildNumber": "234",
-          "localizedDescription": "本次正式版在 v1.17.0 基础上完成大范围架构重构，收束阅读器、漫画源、同步与运行时的职责边界，并新增图片原始像素尺寸、章节阅读进度、自动阅读屏幕常亮与跳过不可用图片。同步修复 WebDAV 应用数据同步、日志持久化、AVIF 识别及图片去混淆性能问题，修复 Rust 依赖安全告警并更新相关依赖。经 v1.18.0-rc.1 至 rc.5 逐版验证，Windows 与 Android 的 WebDAV 手动上传、云端下载覆盖及自动同步已通过实机验收。\n新增\n\n- 阅读器可选显示图片原始像素尺寸，支持单页、多页、连续阅读及宽图拆分；缩小解码和缓存命中仍保留原始尺寸，开关支持全局／设备／单本设置（#95）。\n- 收藏、追更及漫画卡片显示章节和页码进度，阅读时持久化章节／分组名称，图源不可用后仍可查看；旧历史兼容序号回退，长标题支持省略、完整提示和读屏（#93）。\n- 自动阅读默认保持 Android／iOS 屏幕常亮，提供全局／设备／单本开关；停止自动阅读、切后台和退出时恢复系统休眠，旋转与迟到的原生回调不会遗留常亮状态（#96）。\n- 自动阅读新增默认关闭的「跳过不可用图片」选项：失败图片按正常节奏跳过，加载中的图片在 1–60 秒可调的前台等待后继续；覆盖单页、并排页及连续／瀑布流视图，保留操作暂停和章节加载保护，修复瀑布流短错误占位在末章提前可见时的停止定位（#98 后续建议）。\n修复\n\n- 应用数据同步恢复 v1.17.0 的 WebDAV SDK 上传、下载及旧备份清理流程，沿用日期与数据版本文件名，不再要求条件 PUT、强 ETag 或内容基线；修复候选版上传已返回…",
-          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.0/VeneraNext-ios-1.18.0%2B234.ipa",
-          "size": 21127254,
+          "version": "1.18.1",
+          "date": "2026-10-25",
+          "publishedAt": "2026-10-25T03:30:26Z",
+          "buildVersion": "236",
+          "buildNumber": "236",
+          "localizedDescription": "正式版说明\n\n- 发布补丁正式版 1.18.1+236，完整承接 RC1 的阅读器、本地漫画、启动诊断、后台下载与依赖安全修复；本次转正不额外加入运行时代码或依赖变更。\n- RC1 发布后暂未收到新的问题反馈，这不等同于所有原设备问题已经验收通过。维护者决定保留明确的已知限制发布正式版，并继续邀请相关 issue 的反馈者复测，不自动将未确认的报告标为已解决。\n- 升级前请导出并另存应用数据备份，保留原漫画文件；覆盖安装沿用现有数据，不需要清空应用数据、删除数据库或重建同步配置。若回退旧版，请先另存新版数据，并使用升级前的备份恢复，不保证旧版能读取新版已修改的数据。iOS IPA 仍需自行侧载签名。\n重点复测与已知限制\n\n- #111 升级／恢复后启动：已修复 Windows 旧收藏库的 SQLite 内部表迁移错误，并完善不被异步收尾阻挡的启动诊断页；Android 原设备卡启动图的根因尚未确认。请复测覆盖升级和完整应用数据恢复；若仍失败，提供启动阶段与脱敏后的原始错误，不要以清空数据代替定位。\n- #119 Android 自定义存储目录：已修复 SAF 选择器返回的 android:// 路径被误判为相对路径；真实 Android 目录权限、双向迁移及重启恢复仍需确认。请先备份，不要删除迁移失败时保留的原文件或副本。\n- #115 归档导入后不显示：已修复全部失败仍报成功及省略具体错误的问题；原附件在本机按原名／改名均可导入，原设备“不显示”的根因尚未复现。请核对导入数量、具体失败文件、列表筛选／屏蔽设置，以及重启后的列表与页面读取结果，不自动改名或绕过屏蔽规则。\n- #…",
+          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.1/VeneraNext-ios-1.18.1%2B236.ipa",
+          "size": 21194544,
           "minOSVersion": "14.0",
-          "releaseTag": "v1.18.0",
-          "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.18.0"
+          "releaseTag": "v1.18.1",
+          "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.18.1"
         }
       ],
-      "version": "1.18.0",
-      "versionDate": "2026-10-14",
-      "versionDescription": "本次正式版在 v1.17.0 基础上完成大范围架构重构，收束阅读器、漫画源、同步与运行时的职责边界，并新增图片原始像素尺寸、章节阅读进度、自动阅读屏幕常亮与跳过不可用图片。同步修复 WebDAV 应用数据同步、日志持久化、AVIF 识别及图片去混淆性能问题，修复 Rust 依赖安全告警并更新相关依赖。经 v1.18.0-rc.1 至 rc.5 逐版验证，Windows 与 Android 的 WebDAV 手动上传、云端下载覆盖及自动同步已通过实机验收。\n新增\n\n- 阅读器可选显示图片原始像素尺寸，支持单页、多页、连续阅读及宽图拆分；缩小解码和缓存命中仍保留原始尺寸，开关支持全局／设备／单本设置（#95）。\n- 收藏、追更及漫画卡片显示章节和页码进度，阅读时持久化章节／分组名称，图源不可用后仍可查看；旧历史兼容序号回退，长标题支持省略、完整提示和读屏（#93）。\n- 自动阅读默认保持 Android／iOS 屏幕常亮，提供全局／设备／单本开关；停止自动阅读、切后台和退出时恢复系统休眠，旋转与迟到的原生回调不会遗留常亮状态（#96）。\n- 自动阅读新增默认关闭的「跳过不可用图片」选项：失败图片按正常节奏跳过，加载中的图片在 1–60 秒可调的前台等待后继续；覆盖单页、并排页及连续／瀑布流视图，保留操作暂停和章节加载保护，修复瀑布流短错误占位在末章提前可见时的停止定位（#98 后续建议）。\n修复\n\n- 应用数据同步恢复 v1.17.0 的 WebDAV SDK 上传、下载及旧备份清理流程，沿用日期与数据版本文件名，不再要求条件 PUT、强 ETag 或内容基线；修复候选版上传已返回…",
-      "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.0/VeneraNext-ios-1.18.0%2B234.ipa",
-      "size": 21127254,
+      "version": "1.18.1",
+      "versionDate": "2026-10-25",
+      "versionDescription": "正式版说明\n\n- 发布补丁正式版 1.18.1+236，完整承接 RC1 的阅读器、本地漫画、启动诊断、后台下载与依赖安全修复；本次转正不额外加入运行时代码或依赖变更。\n- RC1 发布后暂未收到新的问题反馈，这不等同于所有原设备问题已经验收通过。维护者决定保留明确的已知限制发布正式版，并继续邀请相关 issue 的反馈者复测，不自动将未确认的报告标为已解决。\n- 升级前请导出并另存应用数据备份，保留原漫画文件；覆盖安装沿用现有数据，不需要清空应用数据、删除数据库或重建同步配置。若回退旧版，请先另存新版数据，并使用升级前的备份恢复，不保证旧版能读取新版已修改的数据。iOS IPA 仍需自行侧载签名。\n重点复测与已知限制\n\n- #111 升级／恢复后启动：已修复 Windows 旧收藏库的 SQLite 内部表迁移错误，并完善不被异步收尾阻挡的启动诊断页；Android 原设备卡启动图的根因尚未确认。请复测覆盖升级和完整应用数据恢复；若仍失败，提供启动阶段与脱敏后的原始错误，不要以清空数据代替定位。\n- #119 Android 自定义存储目录：已修复 SAF 选择器返回的 android:// 路径被误判为相对路径；真实 Android 目录权限、双向迁移及重启恢复仍需确认。请先备份，不要删除迁移失败时保留的原文件或副本。\n- #115 归档导入后不显示：已修复全部失败仍报成功及省略具体错误的问题；原附件在本机按原名／改名均可导入，原设备“不显示”的根因尚未复现。请核对导入数量、具体失败文件、列表筛选／屏蔽设置，以及重启后的列表与页面读取结果，不自动改名或绕过屏蔽规则。\n- #…",
+      "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.1/VeneraNext-ios-1.18.1%2B236.ipa",
+      "size": 21194544,
       "minOSVersion": "14.0"
     },
     {
@@ -959,7 +959,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 16 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-10-24",
+      "date": "2026-10-25",
       "tintColor": "#7C5CFF",
       "notify": false
     }

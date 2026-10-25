@@ -818,5 +818,33 @@
       "size": 14753154,
       "digest": "sha256:473e28cda194e57434f2a9e3ad26abbc8f9c18784047eb0e931a51b47df8970c"
     }
+  },
+  "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.1/VeneraNext-ios-1.18.1%2B236.ipa": {
+    "bundleIdentifier": "com.github.cyrilpeng.veneranext",
+    "version": "1.18.1",
+    "buildVersion": "236",
+    "displayName": "VeneraNext",
+    "minOSVersion": "14.0",
+    "size": 21194544,
+    "assetIdentity": {
+      "id": 673985360,
+      "updated_at": "2026-10-25T03:30:17Z",
+      "size": 21194544,
+      "digest": "sha256:df2b976711bc75c0af2053c0441d1907c2c368a5feaa1dc0efdf6d4bb3de1156"
+    }
+  },
+  "https://github.com/deretame/Breeze/releases/download/v3.0.36/Breeze-iOS-v3.0.36.ipa": {
+    "bundleIdentifier": "com.zephyr.breeze",
+    "version": "3.0.36",
+    "buildVersion": "2224",
+    "displayName": "Breeze",
+    "minOSVersion": "15.0",
+    "size": 26377539,
+    "assetIdentity": {
+      "id": 674220613,
+      "updated_at": "2026-10-25T05:46:25Z",
+      "size": 26377539,
+      "digest": "sha256:8886584b808c3ceb48d58a7e50aa9961998f7789996df86fac3c69b51f6df69a"
+    }
   }
 }
