@@ -916,5 +916,19 @@
       "size": 1802804112,
       "digest": "sha256:66e6748d1f3801bd329af50a002e1217f059bb4c6da2074c0a2ebcb27fe5a730"
     }
+  },
+  "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.6.6/AnimeFlow-ios-2.6.6.ipa": {
+    "bundleIdentifier": "com.ligg.anime_flow",
+    "version": "2.6.6",
+    "buildVersion": "2.6.6",
+    "displayName": "AnimeFlow",
+    "minOSVersion": "15.0",
+    "size": 29290748,
+    "assetIdentity": {
+      "id": 677583465,
+      "updated_at": "2026-10-26T08:58:34Z",
+      "size": 29290748,
+      "digest": "sha256:8e4a3b1fada88757be5eefafa50935df588920d765c10e8cd95820202b9eefdb"
+    }
   }
 }
