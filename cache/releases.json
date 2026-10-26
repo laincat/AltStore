@@ -5179,5 +5179,387 @@
         }
       ]
     }
+  ],
+  "Sle2p/AniCh": [
+    {
+      "tag": "1.5.27",
+      "name": "1.5.27",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-05",
+      "published_at": "2026-10-05T03:15:29Z",
+      "body": "- 修复内存泄漏的问题",
+      "ipas": [
+        {
+          "name": "anich-ios-no_sign-1.5.27.ipa",
+          "size": 41226765,
+          "url": "https://github.com/Sle2p/AniCh/releases/download/1.5.27/anich-ios-no_sign-1.5.27.ipa",
+          "id": 611302632,
+          "updated_at": "2026-10-05T02:53:36Z",
+          "digest": "sha256:5dfd1457449b74502a4db187696d605b8b5878c3cb14275066166bdaf376258e"
+        }
+      ]
+    },
+    {
+      "tag": "1.5.26",
+      "name": "1.5.26",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T23:19:57Z",
+      "body": "- 修复应用有时会莫名卡死的问题\r\n- 降低部分组件的刷新频率以优化性能\r\n- 修改观看记录上传逻辑以降低服务器压力\r\n- 修改本地缓存的检测逻辑",
+      "ipas": [
+        {
+          "name": "anich-ios-no_sign-1.5.26.ipa",
+          "size": 41219984,
+          "url": "https://github.com/Sle2p/AniCh/releases/download/1.5.26/anich-ios-no_sign-1.5.26.ipa",
+          "id": 604314995,
+          "updated_at": "2026-10-01T23:06:10Z",
+          "digest": "sha256:2cbcaa2d3b12f2313bda248ac574be87455249e7f1a2c35d861635c26161274f"
+        }
+      ]
+    },
+    {
+      "tag": "1.5.25",
+      "name": "1.5.25",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-15",
+      "published_at": "2026-09-15T22:35:34Z",
+      "body": "- 优化保存截图按钮的样式\r\n- 新增弹幕密度设置功能\r\n- 新增手动导入本地外挂字幕的功能\r\n- 新增画廊上划打开详情的功能\r\n- 新增开启公共模式时的二次确认的功能\r\n- 新增线路列表HLS格式视频的大小预估功能\r\n- 修复视频链接存在重定向时会下载失败的问题\r\n- 修复部分HLS格式视频假下载的问题\r\n- 修复部分视频链接可以访问却显示错误状态码的问题\r\n- 修复评分只显示整数的问题\r\n- 修复注册与修改用户名、密码失败时错误提示不够详细的问题",
+      "ipas": [
+        {
+          "name": "anich-ios-no_sign-1.5.25.ipa",
+          "size": 41219710,
+          "url": "https://github.com/Sle2p/AniCh/releases/download/1.5.25/anich-ios-no_sign-1.5.25.ipa",
+          "id": 566625572,
+          "updated_at": "2026-09-15T22:21:16Z",
+          "digest": "sha256:69c4bd3a4c3873ab1ea0d07de27e877efa66442ea7f60f5fee2c150fd68dd09f"
+        }
+      ]
+    },
+    {
+      "tag": "1.5.24",
+      "name": "1.5.24",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-04",
+      "published_at": "2026-09-04T16:27:59Z",
+      "body": "- 下载页面新增线路排序入口\r\n- 搜索记录关键词支持长按删除\r\n- 画廊灯箱组件支持鼠标滚轮、键盘方向切换图片\r\n- 画廊灯箱组件支持鼠标右键打开详情\r\n- 修复画中画模式不显示弹幕设置按钮的问题\r\n- 修复进入搜索面板时输入框无法直接获取焦点的问题\r\n- 修复鸿蒙平台播放器控制栏状态异常的问题\r\n- 尝试修复鸿蒙平台锁定屏幕旋转时无法横屏的问题",
+      "ipas": [
+        {
+          "name": "anich-ios-no_sign-1.5.24.ipa",
+          "size": 41197017,
+          "url": "https://github.com/Sle2p/AniCh/releases/download/1.5.24/anich-ios-no_sign-1.5.24.ipa",
+          "id": 544584564,
+          "updated_at": "2026-09-04T16:17:07Z",
+          "digest": "sha256:001e4ea9c7f03684cfd1993eb4d32d35c675ad09e61c65c2ffa6febbd974df20"
+        }
+      ]
+    },
+    {
+      "tag": "1.5.23",
+      "name": "1.5.23",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-24",
+      "published_at": "2026-08-24T13:24:04Z",
+      "body": "- 修复PC端播放器快捷键失效的问题\r\n- 优化弹幕列表显示逻辑\r\n- 新增导入本地弹幕(.xml/.ass)功能\r\n- 新增资源下载适用线路排序的功能\r\n- 新增批量下载失败时自动尝试其他线路的功能\r\n- 新增暂停状态下的帧步进功能\r\n- 新增键盘ESC键与鼠标侧键返回的功能\r\n- 新增磁力链接解析后手动选择资源的功能\r\n- 修复Android平台使用audiotrack会闪退的问题\r\n- 修复Windows平台permission_handler依赖会使用位置权限的问题\r\n- 修复鸿蒙平台播放器控制界面无法正常呼出的问题",
+      "ipas": [
+        {
+          "name": "anich-ios-no_sign-1.5.23.ipa",
+          "size": 41195569,
+          "url": "https://github.com/Sle2p/AniCh/releases/download/1.5.23/anich-ios-no_sign-1.5.23.ipa",
+          "id": 527636155,
+          "updated_at": "2026-08-24T13:15:36Z",
+          "digest": "sha256:3fd3b68556ae074cebdc1d755fada309f2dedccc3905a9628ccf77cc9211c7ea"
+        }
+      ]
+    },
+    {
+      "tag": "1.5.22",
+      "name": "1.5.22",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-24",
+      "published_at": "2026-08-24T11:48:20Z",
+      "body": "- 优化弹幕列表显示逻辑\r\n- 新增导入本地弹幕(.xml/.ass)功能\r\n- 新增资源下载适用线路排序的功能\r\n- 新增批量下载失败时自动尝试其他线路的功能\r\n- 新增暂停状态下的帧步进功能\r\n- 新增键盘ESC键与鼠标侧键返回的功能\r\n- 新增磁力链接解析后手动选择资源的功能\r\n- 修复Android平台使用audiotrack会闪退的问题\r\n- 修复Windows平台permission_handler依赖会使用位置权限的问题\r\n- 修复鸿蒙平台播放器控制界面无法正常呼出的问题",
+      "ipas": [
+        {
+          "name": "anich-ios-no_sign-1.5.22.ipa",
+          "size": 41196151,
+          "url": "https://github.com/Sle2p/AniCh/releases/download/1.5.22/anich-ios-no_sign-1.5.22.ipa",
+          "id": 527525767,
+          "updated_at": "2026-08-24T11:37:03Z",
+          "digest": "sha256:9f396253c764117b7c154cb52d0e9860998fdde2a014c4db9bc654d3f2d13c69"
+        }
+      ]
+    },
+    {
+      "tag": "1.5.21",
+      "name": "1.5.21",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-15",
+      "published_at": "2026-07-15T15:36:10Z",
+      "body": "- 回退旧版番剧列表样式(可在外观设置使用新版)\r\n- 新增番剧评论、评分功能\r\n- 新增播放页面追番按钮\r\n- 新增应用内下载最新版功能",
+      "ipas": [
+        {
+          "name": "anich-ios-no_sign-1.5.21.ipa",
+          "size": 41268193,
+          "url": "https://github.com/Sle2p/AniCh/releases/download/1.5.21/anich-ios-no_sign-1.5.21.ipa",
+          "id": 478078673,
+          "updated_at": "2026-07-15T15:24:23Z",
+          "digest": "sha256:e49c737753a969bb9de89f24fb78b09d9971ccc0951ecac3c5eaa8c965f81b2f"
+        }
+      ]
+    },
+    {
+      "tag": "1.5.20",
+      "name": "1.5.20",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-13",
+      "published_at": "2026-07-13T04:35:19Z",
+      "body": "- 修复1.5.19版本标签页跳转错误的问题\r\n- 修复一些错误\r\n- 修复本地观看记录有时无法记录进度的问题\r\n- 优化部分UI\r\n- 更改列表卡片的样式\r\n- 番剧、剧集卡片显示本地观看进度\r\n- 重构每日放送组件\r\n- 适配TV端",
+      "ipas": [
+        {
+          "name": "anich-ios-no_sign-1.5.20.ipa",
+          "size": 41188323,
+          "url": "https://github.com/Sle2p/AniCh/releases/download/1.5.20/anich-ios-no_sign-1.5.20.ipa",
+          "id": 475073558,
+          "updated_at": "2026-07-13T04:29:18Z",
+          "digest": "sha256:e1bb067edb1ca22bbe422a3ad2646ff28463ac9d2838b8e97332468b7ab3831d"
+        }
+      ]
+    },
+    {
+      "tag": "1.5.19",
+      "name": "1.5.19",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-13",
+      "published_at": "2026-07-13T03:27:35Z",
+      "body": "- 修复一些错误\r\n- 修复本地观看记录有时无法记录进度的问题\r\n- 优化部分UI\r\n- 更改列表卡片的样式\r\n- 番剧、剧集卡片显示本地观看进度\r\n- 重构每日放送组件\r\n- 适配TV端",
+      "ipas": [
+        {
+          "name": "anich-ios-no_sign-1.5.19.ipa",
+          "size": 41187349,
+          "url": "https://github.com/Sle2p/AniCh/releases/download/1.5.19/anich-ios-no_sign-1.5.19.ipa",
+          "id": 475007148,
+          "updated_at": "2026-07-13T03:07:13Z",
+          "digest": "sha256:59c0020a5f8ea0f475c03e362e27887618fb6d712631c20cf870ecb8437dc335"
+        }
+      ]
+    },
+    {
+      "tag": "1.5.18",
+      "name": "1.5.18",
+      "pre": false,
+      "draft": false,
+      "date": "2026-06-17",
+      "published_at": "2026-06-17T17:35:07Z",
+      "body": "- 修复三指以上触摸屏幕后会一直处于拖动画面状态的问题\r\n- 部分操作添加二次确定窗口，防止误操作\r\n- 优化上传观看记录的逻辑\r\n- 优化收藏按钮显示的逻辑\r\n- 版本信息可查看历史版本更新日志",
+      "ipas": [
+        {
+          "name": "anich-ios-no_sign-1.5.18.ipa",
+          "size": 41078733,
+          "url": "https://github.com/Sle2p/AniCh/releases/download/1.5.18/anich-ios-no_sign-1.5.18.ipa",
+          "id": 450427739,
+          "updated_at": "2026-06-17T17:28:18Z",
+          "digest": "sha256:a1fa527c730e203e614e3a0cd6055a4b50c0ca864201e1e3fe6fa9c65de2ed1e"
+        }
+      ]
+    },
+    {
+      "tag": "1.5.17",
+      "name": "1.5.17",
+      "pre": false,
+      "draft": false,
+      "date": "2026-06-13",
+      "published_at": "2026-06-13T20:32:09Z",
+      "body": "- 部分UI优化\r\n- 修复无法设置画廊为主页的问题\r\n- 新增禁用画廊功能选项(主页设置)\r\n- 新增视频画面缩放与拖动功能(双指/鼠标滚轮)\r\n- 新增视频画面上下、左右翻转功能\r\n- 新增色觉辅助/风格化滤镜\r\n- 新增一起看功能\r\n- 适配鸿蒙(需要自签名、侧载)",
+      "ipas": [
+        {
+          "name": "anich-ios-no_sign-1.5.17.ipa",
+          "size": 41075272,
+          "url": "https://github.com/Sle2p/AniCh/releases/download/1.5.17/anich-ios-no_sign-1.5.17.ipa",
+          "id": 446761438,
+          "updated_at": "2026-06-13T19:38:58Z",
+          "digest": "sha256:f2773fbab896c468239993c444778ddc4d4cd22532661b16fca25dde0e071647"
+        }
+      ]
+    },
+    {
+      "tag": "1.5.16",
+      "name": "1.5.16",
+      "pre": false,
+      "draft": false,
+      "date": "2026-05-30",
+      "published_at": "2026-05-30T20:28:11Z",
+      "body": "- 修复播放时打开弹出层会导致播放暂停的问题",
+      "ipas": [
+        {
+          "name": "anich-ios-no_sign-1.5.16.ipa",
+          "size": 41017987,
+          "url": "https://github.com/Sle2p/AniCh/releases/download/1.5.16/anich-ios-no_sign-1.5.16.ipa",
+          "id": 433991016,
+          "updated_at": "2026-05-30T20:20:09Z",
+          "digest": "sha256:087939e408af37a383bdf1d018c2f3f1748dd47f16c97532175fdd0ce4f09e2f"
+        }
+      ]
+    },
+    {
+      "tag": "1.5.15",
+      "name": "1.5.15",
+      "pre": false,
+      "draft": false,
+      "date": "2026-05-29",
+      "published_at": "2026-05-29T12:24:55Z",
+      "body": "- 重启画廊\r\n- 修复系统媒体会话失效的问题\r\n- 修复一些页面复用时旧页面数据被新页面数据覆盖的问题\r\n- 安卓平台音频输出驱动默认使用OpenslES解决换集闪退的问题",
+      "ipas": [
+        {
+          "name": "anich-ios-no_sign-1.5.15.ipa",
+          "size": 41017616,
+          "url": "https://github.com/Sle2p/AniCh/releases/download/1.5.15/anich-ios-no_sign-1.5.15.ipa",
+          "id": 433001326,
+          "updated_at": "2026-05-29T12:15:31Z",
+          "digest": "sha256:7401bac9be0f590a99fe276ee98a2b5d0ce27b857e50d3efb62058518ea2ffab"
+        }
+      ]
+    },
+    {
+      "tag": "1.5.14",
+      "name": "1.5.14",
+      "pre": false,
+      "draft": false,
+      "date": "2026-05-26",
+      "published_at": "2026-05-26T18:14:08Z",
+      "body": "- 修复自定义下载目录后进入播放器后会清空之前的缓存的问题\r\n---\r\n- 修复部分报错问题\r\n- 修复播放页面查看详情会跳转到错误番剧页面的问题\r\n- 修复通过通知栏进入播放页面会导致无法加载数据的问题\r\n- 修复复用播放器时返回闪退的问题\r\n- 修复番剧页面复用时旧页面会被新页面数据覆盖的问题\r\n---\r\n- 优化部分UI\r\n- 剧集页面显示视频缓存状态\r\n- 进入播放页面后优先播放已缓存视频\r\n- 合并离线播放器与在线播放器\r\n- 搜索后搜索框保留关键词\r\n- 关闭弹幕后隐藏弹幕输入框\r\n- 评论支持bbcode\r\n- 新增“我在看的”番剧更新通知(需要通知权限)\r\n- 新增查看弹幕列表功能\r\n- 修复Windows平台下载通知异常的问题",
+      "ipas": [
+        {
+          "name": "anich-ios-no_sign-1.5.14.ipa",
+          "size": 40899559,
+          "url": "https://github.com/Sle2p/AniCh/releases/download/1.5.14/anich-ios-no_sign-1.5.14.ipa",
+          "id": 430382737,
+          "updated_at": "2026-05-26T18:04:03Z",
+          "digest": "sha256:693c658b81221d20770e9f5c7aa58ac3a91f6cd14030ebdc5b35d7a9d1866f30"
+        }
+      ]
+    },
+    {
+      "tag": "1.5.13",
+      "name": "1.5.13",
+      "pre": false,
+      "draft": false,
+      "date": "2026-05-26",
+      "published_at": "2026-05-26T06:42:51Z",
+      "body": "- 修复部分报错问题\r\n- 修复播放页面查看详情会跳转到错误番剧页面的问题\r\n- 修复通过通知栏进入播放页面会导致无法加载数据的问题\r\n- 修复复用播放器时返回闪退的问题\r\n- 修复番剧页面复用时旧页面会被新页面数据覆盖的问题\r\n---\r\n- 优化部分UI\r\n- 剧集页面显示视频缓存状态\r\n- 进入播放页面后优先播放已缓存视频\r\n- 合并离线播放器与在线播放器\r\n- 搜索后搜索框保留关键词\r\n- 关闭弹幕后隐藏弹幕输入框\r\n- 评论支持bbcode\r\n- 新增“我在看的”番剧更新通知(需要通知权限)\r\n- 新增查看弹幕列表功能\r\n- 修复Windows平台下载通知异常的问题",
+      "ipas": [
+        {
+          "name": "anich-ios-no_sign-1.5.13.ipa",
+          "size": 40899838,
+          "url": "https://github.com/Sle2p/AniCh/releases/download/1.5.13/anich-ios-no_sign-1.5.13.ipa",
+          "id": 429971986,
+          "updated_at": "2026-05-26T06:30:51Z",
+          "digest": "sha256:6518137f46d477a06e43a27be8145bb382cbb765483954649e6f342a73d66ed3"
+        }
+      ]
+    },
+    {
+      "tag": "1.5.12",
+      "name": "1.5.12",
+      "pre": false,
+      "draft": false,
+      "date": "2026-05-25",
+      "published_at": "2026-05-25T17:36:25Z",
+      "body": "- 优化部分UI\r\n- 剧集页面显示视频缓存状态\r\n- 进入播放页面后优先播放已缓存视频\r\n- 合并离线播放器与在线播放器\r\n- 搜索后搜索框保留关键词\r\n- 关闭弹幕后隐藏弹幕输入框\r\n- 评论支持bbcode\r\n- 新增“我在看的”番剧更新通知(需要通知权限)\r\n- 新增查看弹幕列表功能\r\n- 修复Windows平台下载通知异常的问题",
+      "ipas": [
+        {
+          "name": "anich-ios-no_sign-1.5.12.ipa",
+          "size": 40903439,
+          "url": "https://github.com/Sle2p/AniCh/releases/download/1.5.12/anich-ios-no_sign-1.5.12.ipa",
+          "id": 429522282,
+          "updated_at": "2026-05-25T17:21:07Z",
+          "digest": "sha256:09c76f4def427e1aec56412fac61a65bd7aed373f19f399c6d7e24732f790ac9"
+        }
+      ]
+    },
+    {
+      "tag": "1.5.11",
+      "name": "1.5.11",
+      "pre": false,
+      "draft": false,
+      "date": "2026-05-20",
+      "published_at": "2026-05-20T12:19:35Z",
+      "body": "- 新增通知栏显示下载进度功能\r\n- 新增后台播放开关(默认关)\r\n- 修复暂停状态下切换至后台会自动播放的问题\r\n---\r\n- 修改应用图标\r\n- 适配骨架屏\r\n- 重构下载组件，支持批量下载与更新弹幕\r\n- 新增后台播放功能\r\n- 新增系统媒体会话支持\r\n- 新增磁力链接在线播放功能\r\n- 优化筛选年份功能",
+      "ipas": [
+        {
+          "name": "anich-ios-no_sign-1.5.11.ipa",
+          "size": 40863622,
+          "url": "https://github.com/Sle2p/AniCh/releases/download/1.5.11/anich-ios-no_sign-1.5.11.ipa",
+          "id": 425178910,
+          "updated_at": "2026-05-20T12:02:37Z",
+          "digest": "sha256:a646e197c9e3f90135f86c6e6569e8ca829bb7b8a8697a4f44b02b6f12acf29e"
+        }
+      ]
+    },
+    {
+      "tag": "1.5.10",
+      "name": "1.5.10",
+      "pre": false,
+      "draft": false,
+      "date": "2026-05-19",
+      "published_at": "2026-05-19T22:01:50Z",
+      "body": "- 修改应用图标\r\n- 适配骨架屏\r\n- 重构下载组件，支持批量下载与更新弹幕\r\n- 新增后台播放功能\r\n- 新增系统媒体会话支持\r\n- 新增磁力链接在线播放功能\r\n- 优化筛选年份功能",
+      "ipas": [
+        {
+          "name": "anich-ios-no_sign-1.5.10.ipa",
+          "size": 40813605,
+          "url": "https://github.com/Sle2p/AniCh/releases/download/1.5.10/anich-ios-no_sign-1.5.10.ipa",
+          "id": 424554028,
+          "updated_at": "2026-05-19T21:53:09Z",
+          "digest": "sha256:1040eeab903ebe4aa481f2055e6712c719317105514b5574aedeb565da1b1471"
+        }
+      ]
+    },
+    {
+      "tag": "1.5.9",
+      "name": "1.5.9",
+      "pre": false,
+      "draft": false,
+      "date": "2026-03-23",
+      "published_at": "2026-03-23T12:04:41Z",
+      "body": "- 新增上传截图作为剧集预览图的功能\r\n- 新增点击进度条上方的时间进行片头片尾的标记与上传功能\r\n- 修复拖动下方进度条调整进度时进度错位的问题",
+      "ipas": [
+        {
+          "name": "anich-ios-no_sign-1.5.9.ipa",
+          "size": 36073012,
+          "url": "https://github.com/Sle2p/AniCh/releases/download/1.5.9/anich-ios-no_sign-1.5.9.ipa",
+          "id": 379687855,
+          "updated_at": "2026-03-23T11:52:14Z",
+          "digest": "sha256:cfdb5ec1d275508ec07a613fcaa64de56e744ef3692cc237f986f025dcd8de68"
+        }
+      ]
+    },
+    {
+      "tag": "1.5.8",
+      "name": "1.5.8",
+      "pre": false,
+      "draft": false,
+      "date": "2026-03-08",
+      "published_at": "2026-03-08T07:35:04Z",
+      "body": "- 新增自定义缓冲时长设置\r\n- 新增音频输出驱动设置\r\n- 新增自动同步(--autosync)设置\r\n- 移除画廊以降低服务器压力\r\n- 默认开启弹幕速度跟随倍速\r\n- 修复弹幕速度跟随倍速设置持久化失效的问题",
+      "ipas": [
+        {
+          "name": "anich-ios-no_sign-1.5.8.ipa",
+          "size": 36063403,
+          "url": "https://github.com/Sle2p/AniCh/releases/download/1.5.8/anich-ios-no_sign-1.5.8.ipa",
+          "id": 369323361,
+          "updated_at": "2026-03-08T07:16:49Z",
+          "digest": "sha256:b84ce03d80730577a593c0072c0d7a32791d964dd713819defc9250341049005"
+        }
+      ]
+    }
   ]
 }
