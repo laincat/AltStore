@@ -845,7 +845,7 @@
       "developerName": "Kyosee",
       "subtitle": "多图源漫画阅读器",
       "localizedDescription": "原版 Venera 的个人维护增强分支，支持通过插件接入多种漫画图源，提供本地收藏、阅读进度同步等能力。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Kyosee/VeneraX",
-      "iconURL": "https://raw.githubusercontent.com/Kyosee/VeneraX/v2.3.7/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Kyosee/VeneraX/v2.3.8/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#4A8FE7",
       "category": "books",
       "appPermissions": {
@@ -857,42 +857,42 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.3.7",
-              "date": "2026-10-24",
-              "publishedAt": "2026-10-24T11:28:23Z",
-              "buildVersion": "250",
-              "buildNumber": "250",
-              "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Image translation can now translate Traditional Chinese comics, including vertical text; choose Traditional Chinese as the source language or let auto-detect pick it.\n- Added a new Chinese text recognition model that reads both Traditional and Simplified Chinese; once downloaded it replaces the old one.\n- You can now add your own source languages and replace the text detector with your own models; their size is shown before download and they are checked after it.\n- Added Vietnamese as a translation target language.\n- You can now add translation target languages that are not in the built-in list, under Custom languages.\n- Image enhancemen…",
-              "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.7/VeneraX-ios-2.3.7%2B250.ipa",
-              "size": 38892754,
-              "minOSVersion": "16.0",
-              "releaseTag": "v2.3.7",
-              "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.7"
+              "version": "2.3.8",
+              "date": "2026-10-26",
+              "publishedAt": "2026-10-26T01:35:54Z",
+              "buildVersion": "251",
+              "buildNumber": "251",
+              "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Added a full refresh on page turn for e-ink screens: after a page turn the screen briefly flashes a solid color to clear ghosting. Color, interval and duration are adjustable. Gallery modes only.\n- Added a ripple page turn for iReader e-readers: tap and key page turns in gallery modes use the device's own ripple effect, with adjustable speed. The option only appears on supported devices.\n- Auto page turning can now scroll continuously in continuous reading modes, at an adjustable speed. Touching or scrolling takes over, and auto scrolling picks up again shortly after you let go.\n- While auto page turning is running, speed / interval cont…",
+              "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.8/VeneraX-ios-2.3.8%2B251.ipa",
+              "size": 38931594,
+              "minOSVersion": "15.1",
+              "releaseTag": "v2.3.8",
+              "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.8"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.3.7",
-          "date": "2026-10-24",
-          "publishedAt": "2026-10-24T11:28:23Z",
-          "buildVersion": "250",
-          "buildNumber": "250",
-          "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Image translation can now translate Traditional Chinese comics, including vertical text; choose Traditional Chinese as the source language or let auto-detect pick it.\n- Added a new Chinese text recognition model that reads both Traditional and Simplified Chinese; once downloaded it replaces the old one.\n- You can now add your own source languages and replace the text detector with your own models; their size is shown before download and they are checked after it.\n- Added Vietnamese as a translation target language.\n- You can now add translation target languages that are not in the built-in list, under Custom languages.\n- Image enhancemen…",
-          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.7/VeneraX-ios-2.3.7%2B250.ipa",
-          "size": 38892754,
-          "minOSVersion": "16.0",
-          "releaseTag": "v2.3.7",
-          "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.7"
+          "version": "2.3.8",
+          "date": "2026-10-26",
+          "publishedAt": "2026-10-26T01:35:54Z",
+          "buildVersion": "251",
+          "buildNumber": "251",
+          "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Added a full refresh on page turn for e-ink screens: after a page turn the screen briefly flashes a solid color to clear ghosting. Color, interval and duration are adjustable. Gallery modes only.\n- Added a ripple page turn for iReader e-readers: tap and key page turns in gallery modes use the device's own ripple effect, with adjustable speed. The option only appears on supported devices.\n- Auto page turning can now scroll continuously in continuous reading modes, at an adjustable speed. Touching or scrolling takes over, and auto scrolling picks up again shortly after you let go.\n- While auto page turning is running, speed / interval cont…",
+          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.8/VeneraX-ios-2.3.8%2B251.ipa",
+          "size": 38931594,
+          "minOSVersion": "15.1",
+          "releaseTag": "v2.3.8",
+          "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.8"
         }
       ],
-      "version": "2.3.7",
-      "versionDate": "2026-10-24",
-      "versionDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Image translation can now translate Traditional Chinese comics, including vertical text; choose Traditional Chinese as the source language or let auto-detect pick it.\n- Added a new Chinese text recognition model that reads both Traditional and Simplified Chinese; once downloaded it replaces the old one.\n- You can now add your own source languages and replace the text detector with your own models; their size is shown before download and they are checked after it.\n- Added Vietnamese as a translation target language.\n- You can now add translation target languages that are not in the built-in list, under Custom languages.\n- Image enhancemen…",
-      "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.7/VeneraX-ios-2.3.7%2B250.ipa",
-      "size": 38892754,
-      "minOSVersion": "16.0"
+      "version": "2.3.8",
+      "versionDate": "2026-10-26",
+      "versionDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Added a full refresh on page turn for e-ink screens: after a page turn the screen briefly flashes a solid color to clear ghosting. Color, interval and duration are adjustable. Gallery modes only.\n- Added a ripple page turn for iReader e-readers: tap and key page turns in gallery modes use the device's own ripple effect, with adjustable speed. The option only appears on supported devices.\n- Auto page turning can now scroll continuously in continuous reading modes, at an adjustable speed. Touching or scrolling takes over, and auto scrolling picks up again shortly after you let go.\n- While auto page turning is running, speed / interval cont…",
+      "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.8/VeneraX-ios-2.3.8%2B251.ipa",
+      "size": 38931594,
+      "minOSVersion": "15.1"
     },
     {
       "name": "大富翁4重制版",
@@ -959,7 +959,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 16 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-10-25",
+      "date": "2026-10-26",
       "tintColor": "#7C5CFF",
       "notify": false
     }

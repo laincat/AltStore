@@ -888,5 +888,19 @@
       "size": 1802795105,
       "digest": "sha256:bc264b4035b2c6e25f30abe2d3c521cf9f0136c79fd39c8b48f315eb325b9013"
     }
+  },
+  "https://github.com/Kyosee/VeneraX/releases/download/v2.3.8/VeneraX-ios-2.3.8%2B251.ipa": {
+    "bundleIdentifier": "io.github.kyosee.venera",
+    "version": "2.3.8",
+    "buildVersion": "251",
+    "displayName": "VeneraX",
+    "minOSVersion": "15.1",
+    "size": 38931594,
+    "assetIdentity": {
+      "id": 676654842,
+      "updated_at": "2026-10-26T01:35:49Z",
+      "size": 38931594,
+      "digest": "sha256:698ef4b9616799b389659638769e7b81d282bcce2566138377982385c42f5c32"
+    }
   }
 }

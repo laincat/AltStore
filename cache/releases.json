@@ -1147,6 +1147,25 @@
   ],
   "Kyosee/VeneraX": [
     {
+      "tag": "v2.3.8",
+      "name": "v2.3.8",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T01:35:54Z",
+      "body": "> **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v2.3.8/release-notes/v2.3.8.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v2.3.8/release-notes/v2.3.8.zh-CN.md)\n\n## What's Changed\n\n### Added\n- Added a full refresh on page turn for e-ink screens: after a page turn the screen briefly flashes a solid color to clear ghosting. Color, interval and duration are adjustable. Gallery modes only.\n- Added a ripple page turn for iReader e-readers: tap and key page turns in gallery modes use the device's own ripple effect, with adjustable speed. The option only appears on supported devices.\n- Auto page turning can now scroll continuously in continuous reading modes, at an adjustable speed. Touching or scrolling takes over, and auto scrolling picks up again shortly after you let go.\n- While auto page turning is running, speed / interval controls and a stop button appear above the bottom bar.\n- Added \"Keep screen on while reading\" to the reader settings, which keeps the screen on for the whole reading session (mobile only).\n\n### Changed\n- Auto page turning now pauses while the menu, a popup or another page is open, or the app is in the background, and continues when you return.\n- Auto page turning now keeps the screen on while it runs (mobile only).\n- Auto page turning now waits for a page that is still loading, and restarts its countdown after you turn a page yourself.\n- The app now runs on iOS 15.1 and later; it previously required iOS 16.\n\n### Fixed\n- Fixed the app crashing on launch on iOS 15 devices.\n- Fixed auto page turning sometimes stopping on its own, with no notice, while the next chapter was loading. It now stops only at the end or when a chapter fails to load, and shows a notice.\n\n### Removed\n- No features were removed in this release.\n\n**Full Changelog**: https://github.com/Kyosee/VeneraX/compare/v2.3.7...v2.3.8\n",
+      "ipas": [
+        {
+          "name": "VeneraX-ios-2.3.8+251.ipa",
+          "size": 38931594,
+          "url": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.8/VeneraX-ios-2.3.8%2B251.ipa",
+          "id": 676654842,
+          "updated_at": "2026-10-26T01:35:49Z",
+          "digest": "sha256:698ef4b9616799b389659638769e7b81d282bcce2566138377982385c42f5c32"
+        }
+      ]
+    },
+    {
       "tag": "v2.3.7",
       "name": "v2.3.7",
       "pre": false,
@@ -1504,25 +1523,6 @@
           "id": 513072996,
           "updated_at": "2026-08-13T14:12:40Z",
           "digest": "sha256:b8de8c773a8d33545c7734456a2dcd72028b6aa43f4a38f6a3127d05dd2cdadf"
-        }
-      ]
-    },
-    {
-      "tag": "v2.2.1",
-      "name": "v2.2.1",
-      "pre": false,
-      "draft": false,
-      "date": "2026-08-08",
-      "published_at": "2026-08-08T12:42:01Z",
-      "body": "> 🌐 **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v2.2.1/release-notes/v2.2.1.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v2.2.1/release-notes/v2.2.1.zh-CN.md)\n\n## What's Changed\n\n### Added\n- Comic collections: combine comics released as separate volumes or parts into one, across sources\n- Collection chapters can be merged into a single list or shown as one tab per comic, with renaming and reordering\n- A collection tracks its own reading progress, downloads and follow-updates; member comics keep theirs\n- Collection cover can be taken from a member comic, picked from a local image, or reset to default\n- Add to a collection from the list long-press menu, swipe, multi-select, detail page menu, or the favorites multi-select menu\n- Blocked tags, kept separate from blocked keywords, with a shortcut to block a comic's tags from its detail page\n- Detail pages matching a blocked tag now show a notice, with the option to view anyway\n- WebDAV comic library supports multiple addresses and accounts: add, edit, delete, reorder, and switch with one tap\n- Each WebDAV library keeps its own reading progress, favorites and image cache; you can pick the target library when uploading local comics\n- AI translation can now erase the original lettering and rebuild the bubble background instead of covering it with a solid block\n- Cancel a single chapter mid pre-translation without stopping the rest\n- Delete or re-translate one chapter's translation, or delete every translation for a comic\n- Pre-translate chapter picker shows tabs per group for grouped comics\n\n### Changed\n- Source language, target language and text-erase mode for AI translation are now saved per comic\n- Network request logs only record failures by default; full logging can be enabled on the logs page when troubleshooting\n- Faster pre-translation for long chapters\n\n### Fixed\n- Continuous battery drain and heating while reading\n- Pre-translation stuck with no progress for a long time\n- Crash on",
-      "ipas": [
-        {
-          "name": "venera-ios-2.2.1+230.ipa",
-          "size": 35028762,
-          "url": "https://github.com/Kyosee/VeneraX/releases/download/v2.2.1/venera-ios-2.2.1%2B230.ipa",
-          "id": 506385582,
-          "updated_at": "2026-08-08T12:59:25Z",
-          "digest": "sha256:b8a094c6c419dcaed4d3dcb4ba8e8e837277b80debf2e56850b9cf1a125c4b36"
         }
       ]
     }
