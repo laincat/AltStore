@@ -3,7 +3,7 @@
   "identifier": "com.acgtoolbox.source",
   "iconURL": "https://github.com/laincat.png?size=512",
   "subtitle": "多类 iOS 自签应用源",
-  "description": "收录 16 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka，漫画阅读类 EhPanda、VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX、Aidoku，以及 AvPlay、ARMSX2、AirCard、Rich4。所有 IPA 均直连各项目 GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。",
+  "description": "收录 17 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh，漫画阅读类 EhPanda、VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX、Aidoku，以及 AvPlay、ARMSX2、AirCard、Rich4。所有 IPA 均直连各项目 GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。",
   "tintColor": "#7C5CFF",
   "apps": [
     {
@@ -170,6 +170,61 @@
       "downloadURL": "https://github.com/AniBakaBaka/AniBaka/releases/download/5.2.3%2B1020/baka-5.2.3%2B1020-ios-unsigned.ipa",
       "size": 23775885,
       "minOSVersion": "13.0"
+    },
+    {
+      "name": "AniCh",
+      "bundleIdentifier": "app.anich",
+      "developerName": "Sle2p",
+      "subtitle": "支持超分辨率的弹幕追番应用",
+      "localizedDescription": "多平台动漫弹幕应用，支持多番剧源、超分辨率、弹幕过滤、追番管理与离线缓存。此处提供上游发布的未签名 iOS 安装包，需自行签名安装。\n\n项目主页：https://github.com/Sle2p/AniCh",
+      "iconURL": "https://raw.githubusercontent.com/Sle2p/AniCh/1.5.27/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "tintColor": "#5A8DEE",
+      "category": "entertainment",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "releaseChannels": [
+        {
+          "track": "stable",
+          "releases": [
+            {
+              "version": "1.5.27",
+              "date": "2026-10-05",
+              "publishedAt": "2026-10-05T03:15:29Z",
+              "buildVersion": "1",
+              "buildNumber": "1",
+              "localizedDescription": "- 修复内存泄漏的问题",
+              "downloadURL": "https://github.com/Sle2p/AniCh/releases/download/1.5.27/anich-ios-no_sign-1.5.27.ipa",
+              "size": 41226765,
+              "minOSVersion": "12.0",
+              "releaseTag": "1.5.27",
+              "source": "https://github.com/Sle2p/AniCh/releases/tag/1.5.27"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "version": "1.5.27",
+          "date": "2026-10-05",
+          "publishedAt": "2026-10-05T03:15:29Z",
+          "buildVersion": "1",
+          "buildNumber": "1",
+          "localizedDescription": "- 修复内存泄漏的问题",
+          "downloadURL": "https://github.com/Sle2p/AniCh/releases/download/1.5.27/anich-ios-no_sign-1.5.27.ipa",
+          "size": 41226765,
+          "minOSVersion": "12.0",
+          "releaseTag": "1.5.27",
+          "source": "https://github.com/Sle2p/AniCh/releases/tag/1.5.27"
+        }
+      ],
+      "version": "1.5.27",
+      "versionDate": "2026-10-05",
+      "versionDescription": "- 修复内存泄漏的问题",
+      "downloadURL": "https://github.com/Sle2p/AniCh/releases/download/1.5.27/anich-ios-no_sign-1.5.27.ipa",
+      "size": 41226765,
+      "minOSVersion": "12.0"
     },
     {
       "name": "AnimeFlow",
@@ -958,7 +1013,7 @@
     {
       "title": "源已建立",
       "identifier": "source-created",
-      "caption": "收录 16 款应用，IPA 直连各项目 GitHub Release。",
+      "caption": "收录 17 款应用，IPA 直连各项目 GitHub Release。",
       "date": "2026-10-26",
       "tintColor": "#7C5CFF",
       "notify": false

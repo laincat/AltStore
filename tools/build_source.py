@@ -72,7 +72,7 @@ SOURCE = {
     "iconURL": "https://github.com/laincat.png?size=512",
     "subtitle": "多类 iOS 自签应用源",
     "description": (
-        "收录 16 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka，漫画阅读类 EhPanda、"
+        "收录 17 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh，漫画阅读类 EhPanda、"
         "VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX、Aidoku，以及 AvPlay、ARMSX2、"
         "AirCard、Rich4。所有 IPA 均直连各项目 "
         "GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。"
@@ -319,6 +319,21 @@ APPS = [
         "description": (
             "开源跨平台动画播放应用。此处提供未签名 iOS 安装包，需自行签名安装。\n\n"
             "项目主页：https://github.com/AniBakaBaka/AniBaka"
+        ),
+    },
+    {
+        "repo": "Sle2p/AniCh",
+        "asset": lambda n: n.startswith("anich-ios-no_sign-") and n.endswith(".ipa"),
+        "name": "AniCh",
+        "developerName": "Sle2p",
+        "subtitle": "支持超分辨率的弹幕追番应用",
+        "category": "entertainment",
+        "tintColor": "#5A8DEE",
+        "icon": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+        "description": (
+            "多平台动漫弹幕应用，支持多番剧源、超分辨率、弹幕过滤、追番管理与离线缓存。"
+            "此处提供上游发布的未签名 iOS 安装包，需自行签名安装。\n\n"
+            "项目主页：https://github.com/Sle2p/AniCh"
         ),
     },
     {

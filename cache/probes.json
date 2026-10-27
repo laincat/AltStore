@@ -944,5 +944,19 @@
       "size": 1802804232,
       "digest": "sha256:1b53a7dbe712c61442a803b9097b4c0459b08a560802b51a806f9c80c81b6f87"
     }
+  },
+  "https://github.com/Sle2p/AniCh/releases/download/1.5.27/anich-ios-no_sign-1.5.27.ipa": {
+    "bundleIdentifier": "app.anich",
+    "version": "1.5.27",
+    "buildVersion": "1",
+    "displayName": "AniCh",
+    "minOSVersion": "12.0",
+    "size": 41226765,
+    "assetIdentity": {
+      "id": 611302632,
+      "updated_at": "2026-10-05T02:53:36Z",
+      "size": 41226765,
+      "digest": "sha256:5dfd1457449b74502a4db187696d605b8b5878c3cb14275066166bdaf376258e"
+    }
   }
 }
