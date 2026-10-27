@@ -958,5 +958,19 @@
       "size": 41226765,
       "digest": "sha256:5dfd1457449b74502a4db187696d605b8b5878c3cb14275066166bdaf376258e"
     }
+  },
+  "https://github.com/iam567/rich4-renew-app/releases/download/v0.8.0/rich4-0.8.0-unsigned.ipa": {
+    "bundleIdentifier": "pro.areu.rich4",
+    "version": "0.8.0",
+    "buildVersion": "46",
+    "displayName": "大富翁4",
+    "minOSVersion": "15.0",
+    "size": 1802804433,
+    "assetIdentity": {
+      "id": 680730465,
+      "updated_at": "2026-10-27T06:52:33Z",
+      "size": 1802804433,
+      "digest": "sha256:a5c7677d9f1487f9b4332e6671c6d0e72cba2ab2f7d0aa58731fae8f751dbc16"
+    }
   }
 }

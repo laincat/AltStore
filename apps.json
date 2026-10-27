@@ -955,7 +955,7 @@
       "developerName": "iam567",
       "subtitle": "经典大富翁4重制版（大型安装包）",
       "localizedDescription": "基于 Vite、TypeScript 与 Capacitor 的大富翁4重制版。当前 iOS 安装包约 1.79 GB，请在下载前确认设备有足够空间。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/iam567/rich4-renew-app",
-      "iconURL": "https://raw.githubusercontent.com/iam567/rich4-renew-app/v0.7.9/game/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png",
+      "iconURL": "https://raw.githubusercontent.com/iam567/rich4-renew-app/v0.8.0/game/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png",
       "tintColor": "#E9A83A",
       "category": "games",
       "appPermissions": {
@@ -967,41 +967,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "0.7.9",
-              "date": "2026-10-26",
-              "publishedAt": "2026-10-26T17:08:30Z",
-              "buildVersion": "45",
-              "buildNumber": "45",
-              "localizedDescription": "- 修正：「激情岁月」里手机切到后台再回来（或被 Siri、来电打断）之后，踩到广播站时新闻板不出来、只显示结果；街上的大喇叭也会因此没声音。\n- 电脑版：\n  - Windows：下载 rich4-0.7.9-windows.zip，解压后打开 Rich4 文件夹，双击 Rich4.exe。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 rich4-0.7.9-mac.dmg，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew 3cab2fe",
-              "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.7.9/rich4-0.7.9-unsigned.ipa",
-              "size": 1802804232,
+              "version": "0.8.0",
+              "date": "2026-10-27",
+              "publishedAt": "2026-10-27T06:55:37Z",
+              "buildVersion": "46",
+              "buildNumber": "46",
+              "localizedDescription": "- 折叠屏适配：安卓大折叠（OPPO Find N、三星 Z Fold 等）展开后接近正方形的屏幕，改用棋盘在左、资料栏在右的排版，棋盘大了很多；商店和各场所画面在这类屏幕上也更大。\n- iPhone Duo：内屏、外屏都检查过，横竖屏都能正常玩，游戏中途合上或展开会自动重新排版。\n- 修正：某些宽屏尺寸下右边的资料栏会被工具栏挤出屏幕。\n- 电脑版：\n  - Windows：下载 rich4-0.8.0-windows.zip，解压后打开 Rich4 文件夹，双击 Rich4.exe。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 rich4-0.8.0-mac.dmg，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew 68b43e6",
+              "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.8.0/rich4-0.8.0-unsigned.ipa",
+              "size": 1802804433,
               "minOSVersion": "15.0",
-              "releaseTag": "v0.7.9",
-              "source": "https://github.com/iam567/rich4-renew-app/releases/tag/v0.7.9"
+              "releaseTag": "v0.8.0",
+              "source": "https://github.com/iam567/rich4-renew-app/releases/tag/v0.8.0"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "0.7.9",
-          "date": "2026-10-26",
-          "publishedAt": "2026-10-26T17:08:30Z",
-          "buildVersion": "45",
-          "buildNumber": "45",
-          "localizedDescription": "- 修正：「激情岁月」里手机切到后台再回来（或被 Siri、来电打断）之后，踩到广播站时新闻板不出来、只显示结果；街上的大喇叭也会因此没声音。\n- 电脑版：\n  - Windows：下载 rich4-0.7.9-windows.zip，解压后打开 Rich4 文件夹，双击 Rich4.exe。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 rich4-0.7.9-mac.dmg，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew 3cab2fe",
-          "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.7.9/rich4-0.7.9-unsigned.ipa",
-          "size": 1802804232,
+          "version": "0.8.0",
+          "date": "2026-10-27",
+          "publishedAt": "2026-10-27T06:55:37Z",
+          "buildVersion": "46",
+          "buildNumber": "46",
+          "localizedDescription": "- 折叠屏适配：安卓大折叠（OPPO Find N、三星 Z Fold 等）展开后接近正方形的屏幕，改用棋盘在左、资料栏在右的排版，棋盘大了很多；商店和各场所画面在这类屏幕上也更大。\n- iPhone Duo：内屏、外屏都检查过，横竖屏都能正常玩，游戏中途合上或展开会自动重新排版。\n- 修正：某些宽屏尺寸下右边的资料栏会被工具栏挤出屏幕。\n- 电脑版：\n  - Windows：下载 rich4-0.8.0-windows.zip，解压后打开 Rich4 文件夹，双击 Rich4.exe。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 rich4-0.8.0-mac.dmg，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew 68b43e6",
+          "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.8.0/rich4-0.8.0-unsigned.ipa",
+          "size": 1802804433,
           "minOSVersion": "15.0",
-          "releaseTag": "v0.7.9",
-          "source": "https://github.com/iam567/rich4-renew-app/releases/tag/v0.7.9"
+          "releaseTag": "v0.8.0",
+          "source": "https://github.com/iam567/rich4-renew-app/releases/tag/v0.8.0"
         }
       ],
-      "version": "0.7.9",
-      "versionDate": "2026-10-26",
-      "versionDescription": "- 修正：「激情岁月」里手机切到后台再回来（或被 Siri、来电打断）之后，踩到广播站时新闻板不出来、只显示结果；街上的大喇叭也会因此没声音。\n- 电脑版：\n  - Windows：下载 rich4-0.7.9-windows.zip，解压后打开 Rich4 文件夹，双击 Rich4.exe。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 rich4-0.7.9-mac.dmg，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew 3cab2fe",
-      "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.7.9/rich4-0.7.9-unsigned.ipa",
-      "size": 1802804232,
+      "version": "0.8.0",
+      "versionDate": "2026-10-27",
+      "versionDescription": "- 折叠屏适配：安卓大折叠（OPPO Find N、三星 Z Fold 等）展开后接近正方形的屏幕，改用棋盘在左、资料栏在右的排版，棋盘大了很多；商店和各场所画面在这类屏幕上也更大。\n- iPhone Duo：内屏、外屏都检查过，横竖屏都能正常玩，游戏中途合上或展开会自动重新排版。\n- 修正：某些宽屏尺寸下右边的资料栏会被工具栏挤出屏幕。\n- 电脑版：\n  - Windows：下载 rich4-0.8.0-windows.zip，解压后打开 Rich4 文件夹，双击 Rich4.exe。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 rich4-0.8.0-mac.dmg，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew 68b43e6",
+      "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.8.0/rich4-0.8.0-unsigned.ipa",
+      "size": 1802804433,
       "minOSVersion": "15.0"
     }
   ],
@@ -1014,7 +1014,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 17 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-10-26",
+      "date": "2026-10-27",
       "tintColor": "#7C5CFF",
       "notify": false
     }
