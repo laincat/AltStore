@@ -1147,6 +1147,25 @@
   ],
   "Kyosee/VeneraX": [
     {
+      "tag": "v2.3.9",
+      "name": "v2.3.9",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-28",
+      "published_at": "2026-10-28T14:26:38Z",
+      "body": "> **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v2.3.9/release-notes/v2.3.9.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v2.3.9/release-notes/v2.3.9.zh-CN.md)\n\n## What's Changed\n\n### Added\n- Local favorites can now have subfolders. Long-press or right-click a folder to create a subfolder, rename, move, sort its subfolders or delete it; when you delete a folder, you can move its subfolders up a level or delete them too.\n- Opening a folder shows its path, its subfolders and then its comics. A switch also shows the comics in its subfolders, and Back goes up one folder at a time.\n- Added a Keyboard shortcuts page on desktop (App settings > Window): change, clear or reset any shortcut, with a warning when two actions share one.\n- The reader's shortcuts can be changed: next/previous page, next/previous chapter, menu, auto page turning, night mode and collect image.\n- Windows: you can set a shortcut that hides the window to the tray and brings it back, even when \"Minimize to tray\" is off. It has no key by default.\n- Added \"Split wide pages\" for continuous top-to-bottom reading, set per comic: a landscape page (usually two pages scanned as one) is cut down the middle and the halves are stacked, each filling the screen width. Choose which half goes on top.\n\n### Changed\n- Fullscreen now toggles anywhere in the app with F11 (Ctrl+Cmd+F on macOS), replacing F12, which worked only in the reader.\n- Leaving the reader restores the fullscreen state you had before opening it.\n- With several images per page in gallery modes, a landscape image now gets a page of its own instead of sharing one with a portrait image.\n- In a narrow window, the favorites folder list opens as a side panel instead of squeezing the comics into a single column. Where it sits beside the comics, you can hide and show it.\n- With no folder selected, the favorites page shows all folders and network favorites as cards.\n\n### Fixed\n- Fixed right-to-left gallery pages with several image",
+      "ipas": [
+        {
+          "name": "VeneraX-ios-2.3.9+252.ipa",
+          "size": 38992132,
+          "url": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.9/VeneraX-ios-2.3.9%2B252.ipa",
+          "id": 685247989,
+          "updated_at": "2026-10-28T14:26:32Z",
+          "digest": "sha256:65e43882e83eb871dc3b371544d60e5107425b68ff0196f924c44ed30b56fa25"
+        }
+      ]
+    },
+    {
       "tag": "v2.3.8",
       "name": "v2.3.8",
       "pre": false,
@@ -1504,25 +1523,6 @@
           "id": 514272385,
           "updated_at": "2026-08-14T10:17:27Z",
           "digest": "sha256:acda6c3d05f14ebec2261975f4b612e6b425b9e478488f7c3087056ae307fcdc"
-        }
-      ]
-    },
-    {
-      "tag": "v2.2.2",
-      "name": "v2.2.2",
-      "pre": false,
-      "draft": false,
-      "date": "2026-08-13",
-      "published_at": "2026-08-13T13:54:29Z",
-      "body": "> 🌐 **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v2.2.2/release-notes/v2.2.2.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v2.2.2/release-notes/v2.2.2.zh-CN.md)\n\n## What's Changed\n\n### Added\n- A built-in guide covering AI translation, collections and hidden gestures, from Settings → About → Guide\n- Comic source list can be reordered by long-pressing and dragging, or sorted by name in one tap; the order is kept when syncing to another device\n- Pre-translation task cards now show the live stage (downloading images, loading the recognition model, recognizing text, translating, rendering), and expand to show which chapter is running\n- Translation tasks have a \"View details\" button that opens the matching comic\n- A performance mode for AI translation with Save resources / Balanced / Fast presets, with the old per-item sliders moved under Advanced settings\n- Category and ranking pages now support multi-select and swipe-to-favorite, same as search results\n- Multi-select bar can remove the selected comics from every favorites folder at once\n- Reading history multi-select can add several entries to the same collection\n- Swipe left on a comic for Add to collection and Add to favorites; a long swipe favorites it immediately, and a long right swipe on a favorited comic un-favorites it\n- WebDAV library browser can filter the current folder by name\n- Appearance setting to turn off the predictive back animation, for systems that force the back gesture without a matching animation\n- New Data & Sync settings section, with backup, sync and storage options moved out of the App section\n\n### Changed\n- Chapter lists of comics you have opened before are cached and shown instantly, then refreshed in the background with an indicator next to the \"Chapters\" title\n- Search fields and list scrollbars now look the same across the app\n- Multi-select actions (add to favorites, add to collection, remove from favorites) moved into the three-dot menu\n- Reading settings",
-      "ipas": [
-        {
-          "name": "VeneraX-ios-2.2.2+231.ipa",
-          "size": 35072761,
-          "url": "https://github.com/Kyosee/VeneraX/releases/download/v2.2.2/VeneraX-ios-2.2.2%2B231.ipa",
-          "id": 513072996,
-          "updated_at": "2026-08-13T14:12:40Z",
-          "digest": "sha256:b8de8c773a8d33545c7734456a2dcd72028b6aa43f4a38f6a3127d05dd2cdadf"
         }
       ]
     }
@@ -4127,6 +4127,25 @@
   ],
   "ARMSX2/ARMSX2": [
     {
+      "tag": "nightly-20261028",
+      "name": "ARMSX2 nightly 20261028 (e3c7d2102e)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-10-28",
+      "published_at": "2026-10-28T14:04:50Z",
+      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- GS: keep shader caches in RAM, one pack per game, written in the background\n- tests: compare a VU pack's age as an integer, which gtest can print on macOS\n- microVU: keep the VU program cache in RAM, one pack file per game\n- microVU: keep one program cache per options sentinel\n- COP2 macro: bound every product's multiplicands from vuClampMode 2\n- GS/Vulkan: describe the pre-rotation switch as troubleshooting, not the sideways fix\n- GS: size the shader chain, Bilinear (Sharp) and CAS against the presentation size\n- GS/Vulkan: the Lottes CRT filter scales to the target rect's own size\n- GS/Vulkan: present filters take the window position from v_tex\n- GS/Vulkan: name the Android window system in the swap chain log line\n- Android: offer the swap chain pre-",
+      "ipas": [
+        {
+          "name": "ARMSX2-nightly-20261028-e3c7d2102e-iOS-arm64.ipa",
+          "size": 40405112,
+          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261028/ARMSX2-nightly-20261028-e3c7d2102e-iOS-arm64.ipa",
+          "id": 685189941,
+          "updated_at": "2026-10-28T14:04:56Z",
+          "digest": "sha256:bd0160f85c7b722203ba19f81d5e365c4b39539717a4f9d13d712f59a76eb265"
+        }
+      ]
+    },
+    {
       "tag": "2.9",
       "name": "ARMSX2 2.9",
       "pre": false,
@@ -4250,25 +4269,6 @@
       "published_at": "2026-10-17T14:16:45Z",
       "body": "# ARMSX2 2.8.4\r\n\r\nWhat's new:\r\n\r\n## Remote play\r\n\r\nStart a game, open the in-game menu, tap on the blue Friends icon, then pick Host on this Wi-Fi or Invite online. Your friend opens Remote play from their library menu and joins. On the same Wi-Fi your game shows up there by itself. Online, they enter the six-character code you send them (a code lasts 10 minutes), or paste the invite. Your game streams to their device and they play as player 2 with their own controller, or with their ARMSX2 touch controls. They don't need the game.\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/89687f27-2924-4a80-a02b-d0ec9f065be2\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/59b0c8b7-35a0-4fa2-a93f-0d97b285cb73\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/1f59a1e7-995b-4f32-9db5-6574813d2f81\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/5f80b8d6-dc28-42a3-b725-73ca79c4b58e\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/cf8428d0-fb9d-40be-a25e-1bbc91e3150c\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/d64ad8c2-e30e-430c-b1d8-b5b5df91e008\" />\r\n\r\n<img width=\"1280\" height=\"960\" alt=\"image\" src=\"https://github.com/user-attachments/assets/440e6b61-70ef-4d99-9a88-9a17114903f6\" />\r\n\r\n<img width=\"1280\" height=\"960\" alt=\"image\" src=\"https://github.com/user-attachments/assets/7d9eea79-958b-4566-87ea-b9c4c20ac7a7\" />\r\n\r\n- You choose who gets in. When a friend asks to join, the in-game menu opens with Accept and Decline, and nothing streams until you accept. An OSD popup tells you when they join and when they leave.\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/bf9584fe-d9d8-421b-a4a5-f9a1770ad48a\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt",
       "ipas": []
-    },
-    {
-      "tag": "nightly-20261016",
-      "name": "ARMSX2 nightly 20261016 (25e7084fde)",
-      "pre": true,
-      "draft": false,
-      "date": "2026-10-16",
-      "published_at": "2026-10-16T19:36:18Z",
-      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- About: the app's license, and the licenses of the open-source code it ships\n- Remote play: ask for Android 17's local network permission\n- Remote play: ARMSX2's copyright line on its new files\n- Remote play: the Vulkan buffer extensions both or neither, and a per-driver switch\n- Remote play: the host lets each friend in\n- Remote play: the host's main thread no longer waits on the stream\n- Remote play: no permanent port forward, and a renewal keeps its own port\n- Remote play: a bad pasted code or a peer that resets at once no longer crashes the app\n- Remote play: hosting no longer needs Discord\n- Remote play: WebRTC's license on the encoder taken from its HardwareVideoEncoder\n- Remote play: the join and leave notices and the Wi-Fi QoS option in every la",
-      "ipas": [
-        {
-          "name": "ARMSX2-nightly-20261016-25e7084fde-iOS-arm64.ipa",
-          "size": 39952375,
-          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261016/ARMSX2-nightly-20261016-25e7084fde-iOS-arm64.ipa",
-          "id": 648395118,
-          "updated_at": "2026-10-16T19:36:24Z",
-          "digest": "sha256:32c2c6bcd0b8c296b25534052e1ccb119a40643ce6afc59bba9dd7db064a66b9"
-        }
-      ]
     },
     {
       "tag": "2.8.3",

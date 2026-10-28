@@ -373,7 +373,7 @@
       "developerName": "ARMSX2",
       "subtitle": "PlayStation 2 模拟器（每日构建）",
       "localizedDescription": "PlayStation 2 模拟器的 iOS 每日构建版。上游仅发布预览构建，版本可能变化或不稳定；未签名安装包来自上游 GitHub Release。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/ARMSX2/ARMSX2",
-      "iconURL": "https://raw.githubusercontent.com/ARMSX2/ARMSX2/nightly-20261023/platforms/ios/app/src/main/assets/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
+      "iconURL": "https://raw.githubusercontent.com/ARMSX2/ARMSX2/nightly-20261028/platforms/ios/app/src/main/assets/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
       "tintColor": "#D95F59",
       "category": "games",
       "appPermissions": {
@@ -385,41 +385,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.6.0-nightly.20261023.1332",
-              "date": "2026-10-23",
-              "publishedAt": "2026-10-23T14:10:10Z",
+              "version": "2.6.0-nightly.20261028.1320",
+              "date": "2026-10-28",
+              "publishedAt": "2026-10-28T14:04:50Z",
               "buildVersion": "260",
               "buildNumber": "260",
-              "localizedDescription": "🧪 预发布 nightly-20261023（2026-10-23）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-              "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261023/ARMSX2-nightly-20261023-90126bdfea-iOS-arm64.ipa",
-              "size": 40376158,
+              "localizedDescription": "🧪 预发布 nightly-20261028（2026-10-28）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+              "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261028/ARMSX2-nightly-20261028-e3c7d2102e-iOS-arm64.ipa",
+              "size": 40405112,
               "minOSVersion": "17.4",
-              "releaseTag": "nightly-20261023",
-              "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261023"
+              "releaseTag": "nightly-20261028",
+              "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261028"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.6.0-nightly.20261023.1332",
-          "date": "2026-10-23",
-          "publishedAt": "2026-10-23T14:10:10Z",
+          "version": "2.6.0-nightly.20261028.1320",
+          "date": "2026-10-28",
+          "publishedAt": "2026-10-28T14:04:50Z",
           "buildVersion": "260",
           "buildNumber": "260",
-          "localizedDescription": "🧪 预发布 nightly-20261023（2026-10-23）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261023/ARMSX2-nightly-20261023-90126bdfea-iOS-arm64.ipa",
-          "size": 40376158,
+          "localizedDescription": "🧪 预发布 nightly-20261028（2026-10-28）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261028/ARMSX2-nightly-20261028-e3c7d2102e-iOS-arm64.ipa",
+          "size": 40405112,
           "minOSVersion": "17.4",
-          "releaseTag": "nightly-20261023",
-          "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261023"
+          "releaseTag": "nightly-20261028",
+          "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261028"
         }
       ],
-      "version": "2.6.0-nightly.20261023.1332",
-      "versionDate": "2026-10-23",
-      "versionDescription": "🧪 预发布 nightly-20261023（2026-10-23）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-      "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261023/ARMSX2-nightly-20261023-90126bdfea-iOS-arm64.ipa",
-      "size": 40376158,
+      "version": "2.6.0-nightly.20261028.1320",
+      "versionDate": "2026-10-28",
+      "versionDescription": "🧪 预发布 nightly-20261028（2026-10-28）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+      "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261028/ARMSX2-nightly-20261028-e3c7d2102e-iOS-arm64.ipa",
+      "size": 40405112,
       "minOSVersion": "17.4"
     },
     {
@@ -900,7 +900,7 @@
       "developerName": "Kyosee",
       "subtitle": "多图源漫画阅读器",
       "localizedDescription": "原版 Venera 的个人维护增强分支，支持通过插件接入多种漫画图源，提供本地收藏、阅读进度同步等能力。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Kyosee/VeneraX",
-      "iconURL": "https://raw.githubusercontent.com/Kyosee/VeneraX/v2.3.8/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Kyosee/VeneraX/v2.3.9/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#4A8FE7",
       "category": "books",
       "appPermissions": {
@@ -912,41 +912,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.3.8",
-              "date": "2026-10-26",
-              "publishedAt": "2026-10-26T01:35:54Z",
-              "buildVersion": "251",
-              "buildNumber": "251",
-              "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Added a full refresh on page turn for e-ink screens: after a page turn the screen briefly flashes a solid color to clear ghosting. Color, interval and duration are adjustable. Gallery modes only.\n- Added a ripple page turn for iReader e-readers: tap and key page turns in gallery modes use the device's own ripple effect, with adjustable speed. The option only appears on supported devices.\n- Auto page turning can now scroll continuously in continuous reading modes, at an adjustable speed. Touching or scrolling takes over, and auto scrolling picks up again shortly after you let go.\n- While auto page turning is running, speed / interval cont…",
-              "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.8/VeneraX-ios-2.3.8%2B251.ipa",
-              "size": 38931594,
+              "version": "2.3.9",
+              "date": "2026-10-28",
+              "publishedAt": "2026-10-28T14:26:38Z",
+              "buildVersion": "252",
+              "buildNumber": "252",
+              "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Local favorites can now have subfolders. Long-press or right-click a folder to create a subfolder, rename, move, sort its subfolders or delete it; when you delete a folder, you can move its subfolders up a level or delete them too.\n- Opening a folder shows its path, its subfolders and then its comics. A switch also shows the comics in its subfolders, and Back goes up one folder at a time.\n- Added a Keyboard shortcuts page on desktop (App settings > Window): change, clear or reset any shortcut, with a warning when two actions share one.\n- The reader's shortcuts can be changed: next/previous page, next/previous chapter, menu, auto page tur…",
+              "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.9/VeneraX-ios-2.3.9%2B252.ipa",
+              "size": 38992132,
               "minOSVersion": "15.1",
-              "releaseTag": "v2.3.8",
-              "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.8"
+              "releaseTag": "v2.3.9",
+              "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.9"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.3.8",
-          "date": "2026-10-26",
-          "publishedAt": "2026-10-26T01:35:54Z",
-          "buildVersion": "251",
-          "buildNumber": "251",
-          "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Added a full refresh on page turn for e-ink screens: after a page turn the screen briefly flashes a solid color to clear ghosting. Color, interval and duration are adjustable. Gallery modes only.\n- Added a ripple page turn for iReader e-readers: tap and key page turns in gallery modes use the device's own ripple effect, with adjustable speed. The option only appears on supported devices.\n- Auto page turning can now scroll continuously in continuous reading modes, at an adjustable speed. Touching or scrolling takes over, and auto scrolling picks up again shortly after you let go.\n- While auto page turning is running, speed / interval cont…",
-          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.8/VeneraX-ios-2.3.8%2B251.ipa",
-          "size": 38931594,
+          "version": "2.3.9",
+          "date": "2026-10-28",
+          "publishedAt": "2026-10-28T14:26:38Z",
+          "buildVersion": "252",
+          "buildNumber": "252",
+          "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Local favorites can now have subfolders. Long-press or right-click a folder to create a subfolder, rename, move, sort its subfolders or delete it; when you delete a folder, you can move its subfolders up a level or delete them too.\n- Opening a folder shows its path, its subfolders and then its comics. A switch also shows the comics in its subfolders, and Back goes up one folder at a time.\n- Added a Keyboard shortcuts page on desktop (App settings > Window): change, clear or reset any shortcut, with a warning when two actions share one.\n- The reader's shortcuts can be changed: next/previous page, next/previous chapter, menu, auto page tur…",
+          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.9/VeneraX-ios-2.3.9%2B252.ipa",
+          "size": 38992132,
           "minOSVersion": "15.1",
-          "releaseTag": "v2.3.8",
-          "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.8"
+          "releaseTag": "v2.3.9",
+          "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.9"
         }
       ],
-      "version": "2.3.8",
-      "versionDate": "2026-10-26",
-      "versionDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Added a full refresh on page turn for e-ink screens: after a page turn the screen briefly flashes a solid color to clear ghosting. Color, interval and duration are adjustable. Gallery modes only.\n- Added a ripple page turn for iReader e-readers: tap and key page turns in gallery modes use the device's own ripple effect, with adjustable speed. The option only appears on supported devices.\n- Auto page turning can now scroll continuously in continuous reading modes, at an adjustable speed. Touching or scrolling takes over, and auto scrolling picks up again shortly after you let go.\n- While auto page turning is running, speed / interval cont…",
-      "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.8/VeneraX-ios-2.3.8%2B251.ipa",
-      "size": 38931594,
+      "version": "2.3.9",
+      "versionDate": "2026-10-28",
+      "versionDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Local favorites can now have subfolders. Long-press or right-click a folder to create a subfolder, rename, move, sort its subfolders or delete it; when you delete a folder, you can move its subfolders up a level or delete them too.\n- Opening a folder shows its path, its subfolders and then its comics. A switch also shows the comics in its subfolders, and Back goes up one folder at a time.\n- Added a Keyboard shortcuts page on desktop (App settings > Window): change, clear or reset any shortcut, with a warning when two actions share one.\n- The reader's shortcuts can be changed: next/previous page, next/previous chapter, menu, auto page tur…",
+      "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.9/VeneraX-ios-2.3.9%2B252.ipa",
+      "size": 38992132,
       "minOSVersion": "15.1"
     },
     {
@@ -1069,7 +1069,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 18 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-10-27",
+      "date": "2026-10-28",
       "tintColor": "#7C5CFF",
       "notify": false
     }

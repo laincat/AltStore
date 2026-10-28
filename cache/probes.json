@@ -1000,5 +1000,33 @@
       "size": 29959729,
       "digest": "sha256:4653061ce16d6da51a8173a22695e0758ab4289137a5a2cf81e69109c83c677e"
     }
+  },
+  "https://github.com/Kyosee/VeneraX/releases/download/v2.3.9/VeneraX-ios-2.3.9%2B252.ipa": {
+    "bundleIdentifier": "io.github.kyosee.venera",
+    "version": "2.3.9",
+    "buildVersion": "252",
+    "displayName": "VeneraX",
+    "minOSVersion": "15.1",
+    "size": 38992132,
+    "assetIdentity": {
+      "id": 685247989,
+      "updated_at": "2026-10-28T14:26:32Z",
+      "size": 38992132,
+      "digest": "sha256:65e43882e83eb871dc3b371544d60e5107425b68ff0196f924c44ed30b56fa25"
+    }
+  },
+  "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261028/ARMSX2-nightly-20261028-e3c7d2102e-iOS-arm64.ipa": {
+    "bundleIdentifier": "com.armsx2.ios.nightly",
+    "version": "2.6.0-nightly.20261028.1320",
+    "buildVersion": "260",
+    "displayName": "ARMSX2 Nightly",
+    "minOSVersion": "17.4",
+    "size": 40405112,
+    "assetIdentity": {
+      "id": 685189941,
+      "updated_at": "2026-10-28T14:04:56Z",
+      "size": 40405112,
+      "digest": "sha256:bd0160f85c7b722203ba19f81d5e365c4b39539717a4f9d13d712f59a76eb265"
+    }
   }
 }
