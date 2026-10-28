@@ -575,8 +575,8 @@
               "buildNumber": "158",
               "localizedDescription": "🧪 预发布 3.0.0（2026-08-20）\n\nFeatures\r\n\r\n- Offline downloads. Save galleries to your device and read them with no connection. Sort them into folders, and let the app repair a download that got interrupted or update it later. Downloads keep going while the app is in the background and won't get cut off partway.\r\n- Date Seek. Jump straight to a specific date while paging through a gallery. It works on the Frontpage, Watched and Favorites lists.\r\n- WebP images are now supported.\r\n- Redesigned toasts. Progress and status messages (login, page jump, background updates, and more) now show as a sleek glass toast at the bottom of the screen instead of a pop-up spinner.\r\nBugfixes\r\n\r\n- The page slider and the current page no long…",
               "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/3.0.0/EhPanda.ipa",
-              "size": 10143094,
-              "minOSVersion": "26.0",
+              "size": 19041995,
+              "minOSVersion": "27.0",
               "releaseTag": "3.0.0",
               "source": "https://github.com/EhPanda-Team/EhPanda/releases/tag/3.0.0"
             }
@@ -592,8 +592,8 @@
           "buildNumber": "158",
           "localizedDescription": "🧪 预发布 3.0.0（2026-08-20）\n\nFeatures\r\n\r\n- Offline downloads. Save galleries to your device and read them with no connection. Sort them into folders, and let the app repair a download that got interrupted or update it later. Downloads keep going while the app is in the background and won't get cut off partway.\r\n- Date Seek. Jump straight to a specific date while paging through a gallery. It works on the Frontpage, Watched and Favorites lists.\r\n- WebP images are now supported.\r\n- Redesigned toasts. Progress and status messages (login, page jump, background updates, and more) now show as a sleek glass toast at the bottom of the screen instead of a pop-up spinner.\r\nBugfixes\r\n\r\n- The page slider and the current page no long…",
           "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/3.0.0/EhPanda.ipa",
-          "size": 10143094,
-          "minOSVersion": "26.0",
+          "size": 19041995,
+          "minOSVersion": "27.0",
           "releaseTag": "3.0.0",
           "source": "https://github.com/EhPanda-Team/EhPanda/releases/tag/3.0.0"
         },

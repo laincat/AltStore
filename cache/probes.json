@@ -202,13 +202,13 @@
     "version": "3.0.0",
     "buildVersion": "158",
     "displayName": "EhPanda",
-    "minOSVersion": "26.0",
-    "size": 10143094,
+    "minOSVersion": "27.0",
+    "size": 19041995,
     "assetIdentity": {
-      "id": 521644247,
-      "updated_at": "2026-08-20T02:37:45Z",
-      "size": 10143094,
-      "digest": "sha256:b7de953acb001c0cf7887a5b405a8328f88d3be403c458ec4689e56a96dabbae"
+      "id": 683686424,
+      "updated_at": "2026-10-28T03:26:17Z",
+      "size": 19041995,
+      "digest": "sha256:e4bea6a954242430c3db031d8bf68649640884fb9911eb6aa972f3ef150eaa89"
     }
   },
   "https://github.com/open-ani/animeko/releases/download/v6.1.0-beta01/ani-6.1.0-beta01.ipa": {
