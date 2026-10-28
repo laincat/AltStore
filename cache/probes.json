@@ -972,5 +972,33 @@
       "size": 1802804433,
       "digest": "sha256:a5c7677d9f1487f9b4332e6671c6d0e72cba2ab2f7d0aa58731fae8f751dbc16"
     }
+  },
+  "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.0-100/hongguojian-1.0.0%2B100-ios-unsigned.ipa": {
+    "bundleIdentifier": "com.duanju.duanjuApp",
+    "version": "1.0.0",
+    "buildVersion": "100",
+    "displayName": "HongGuoJian",
+    "minOSVersion": "15.1",
+    "size": 29955552,
+    "assetIdentity": {
+      "id": 680966315,
+      "updated_at": "2026-10-27T08:37:41Z",
+      "size": 29955552,
+      "digest": "sha256:f46cec2ecd49eff0167044d85686751d95c4f43edf6ca46e6e7bf65b82636015"
+    }
+  },
+  "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.0-100/zhenguojian-1.0.0%2B100-ios-unsigned.ipa": {
+    "bundleIdentifier": "com.duanju.duanjuApp",
+    "version": "1.0.0",
+    "buildVersion": "100",
+    "displayName": "ZhenGuoJian",
+    "minOSVersion": "15.1",
+    "size": 29959729,
+    "assetIdentity": {
+      "id": 680966395,
+      "updated_at": "2026-10-27T08:37:43Z",
+      "size": 29959729,
+      "digest": "sha256:4653061ce16d6da51a8173a22695e0758ab4289137a5a2cf81e69109c83c677e"
+    }
   }
 }
