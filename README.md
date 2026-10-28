@@ -1,6 +1,6 @@
 # Laincat 工具箱 — SideStore / AltStore / LiveContainer 源文件
 
-自用的 iOS 侧载源（源名称 **Laincat 工具箱**，图标是 [@laincat](https://github.com/laincat) 的 GitHub 头像）：收录 17 个 iOS 应用，**自动跟随上游 GitHub Release 更新**。
+自用的 iOS 侧载源（源名称 **Laincat 工具箱**，图标是 [@laincat](https://github.com/laincat) 的 GitHub 头像）：收录 18 个 iOS 应用，**自动跟随上游 GitHub Release 更新**。
 
 三个客户端都能用：**SideStore / AltStore / LiveContainer**。
 
@@ -60,6 +60,7 @@ https://github.com/laincat/AltStore/releases/download/latest/apps.json
 | AnimeFlow | `com.ligg.anime_flow` | 2.6.4 | 28.1 MB | iOS 15.0+ | 无 | [openAnimeFlow/AnimeFlow](https://github.com/openAnimeFlow/AnimeFlow) |
 | AniBaka | `ani.baka` | 5.2.3 | 22.7 MB | iOS 13.0+ | 无 | [AniBakaBaka/AniBaka](https://github.com/AniBakaBaka/AniBaka) |
 | AniCh | `app.anich` | 1.5.27 | 39.3 MB | iOS 12.0+ | 无 | [Sle2p/AniCh](https://github.com/Sle2p/AniCh) |
+| 真果鉴 | `com.duanju.duanjuApp` | 1.0.0（100） | 28.6 MB | iOS 15.1+ | 无 | [Xanerix/guoapp](https://github.com/Xanerix/guoapp) |
 | Aidoku | `app.aidoku.Aidoku` | 0.9 | 14.1 MB | iOS 15.0+ | 无 | [Aidoku/Aidoku](https://github.com/Aidoku/Aidoku) |
 | ARMSX2 Nightly | `com.armsx2.ios.nightly` | 2.6.0-nightly.20261023.1332 | 38.5 MB | iOS 17.4+ | 每日构建 | [ARMSX2/ARMSX2](https://github.com/ARMSX2/ARMSX2) |
 | AirCard | `com.mak5er.aircard` | 1.3.2 | 4.4 MB | iOS 18.0+ | 无 | [Mak5er/AirCard-iOS](https://github.com/Mak5er/AirCard-iOS) |
@@ -261,7 +262,7 @@ Action 已固定到完整 commit SHA（保留版本注释）；Dependabot 每日
 ```bash
 # 本地跑（需要 Python 3.8+，只用标准库）
 python tools/build_source.py --refresh      # 重新抓上游
-python tools/verify_source.py --min-apps 17  # 校验（数字取「等于当前应用数」）
+python tools/verify_source.py --min-apps 18  # 校验（数字取「等于当前应用数」）
 ```
 
 ## 目录结构
@@ -323,7 +324,7 @@ python tools/build_source.py --versions 4    # 稳定版轨道保留最近 4 个
 ## 注意事项
 
 1. **EhPanda 需 iOS 26.0 及以上**，稳定版 2.8.1 与测试版 3.0.0 都是这个要求。
-2. **免费 Apple ID 的侧载限制**：同时最多 3 个自签应用，签名 7 天过期（靠 SideStore 自身续签）。源里有 17 个应用，装不下全部。
+2. **免费 Apple ID 的侧载限制**：同时最多 3 个自签应用，签名 7 天过期（靠 SideStore 自身续签）。源里有 18 个应用，装不下全部。
 3. **PicaX 选的是不含 Watch 组件的包**（`PicaX-unsigned.ipa`）。带 Watch 的版本在免费账号签名时容易因附加 Target 失败。
 4. **EhPanda 含 Share Extension、PicaX 含 Widget**，签名时会额外占用标识符；报错可换用不带扩展的版本。
 5. **源里有四个 Venera 系阅读器**：VeneraX（`io.github.kyosee.venera`）、Venera Prime（`com.github.wgh136.venera.prime`）、VeneraNext（`com.github.cyrilpeng.veneranext`）、Venera-SSR（`com.github.kiastr.venera-ssr`）。四者是**独立应用**（Bundle ID 各不相同，分别是不同作者维护的 Venera 分支），可以同时安装 —— 但功能高度重叠，实际按需选一个就够。

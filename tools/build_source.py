@@ -72,9 +72,9 @@ SOURCE = {
     "iconURL": "https://github.com/laincat.png?size=512",
     "subtitle": "多类 iOS 自签应用源",
     "description": (
-        "收录 17 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh，漫画阅读类 EhPanda、"
+        "收录 18 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh，漫画阅读类 EhPanda、"
         "VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX、Aidoku，以及 AvPlay、ARMSX2、"
-        "AirCard、Rich4。所有 IPA 均直连各项目 "
+        "AirCard、Rich4、真果鉴。所有 IPA 均直连各项目 "
         "GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。"
     ),
     "tintColor": "#7C5CFF",
@@ -334,6 +334,24 @@ APPS = [
             "多平台动漫弹幕应用，支持多番剧源、超分辨率、弹幕过滤、追番管理与离线缓存。"
             "此处提供上游发布的未签名 iOS 安装包，需自行签名安装。\n\n"
             "项目主页：https://github.com/Sle2p/AniCh"
+        ),
+    },
+    {
+        "repo": "Xanerix/guoapp",
+        "asset": lambda n: n.startswith("zhenguojian-") and n.endswith("-ios-unsigned.ipa"),
+        "name": "真果鉴",
+        "developerName": "Xanerix",
+        "subtitle": "支持多站源的短剧与影视客户端",
+        "category": "entertainment",
+        "tintColor": "#E97642",
+        "icon": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+        "description": (
+            "Flutter 多平台短剧与影视客户端，包含全部站源，可在设置中逐个开关。"
+            "支持追剧、观看记录、多用户、本地下载与备份。此处收录真果鉴全站源版；"
+            "它与仅含红果站源的红果鉴共用 Bundle ID，属于同一应用的不同构建。\n\n"
+            "安装包由上游发布，需自行签名安装。站源可用性取决于源站及网络；"
+            "应用不解除源站 VIP 或其他授权限制。\n\n"
+            "开源协议：GPL-3.0　·　项目主页：https://github.com/Xanerix/guoapp"
         ),
     },
     {
