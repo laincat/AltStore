@@ -2646,6 +2646,25 @@
   ],
   "CyrilPeng/Venera-Next": [
     {
+      "tag": "v1.18.2-rc.4",
+      "name": "v1.18.2-rc.4",
+      "pre": true,
+      "draft": false,
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T15:44:52Z",
+      "body": "### 预发布说明\n\n- 发布第四个补丁候选测试版 `1.18.2-rc.4+240`，新增 WebDAV CBZ 批量归档及下载导入的逐项结果与失败重试（#126）；完整保留 rc.3 的导入列表选择和阅读器缓存键修复，以及此前候选版的既有改动。\n- 稳定渠道仍为 v1.18.1，不更新 AltStore 稳定源或 Winget。请从本版本 Release 手动下载，iOS IPA 仍需自行签名侧载；升级前另存应用数据备份并保留原漫画文件，无需清空数据或重建云盘配置。回退时使用升级前的备份。\n\n### 修复\n\n- WebDAV CBZ 批量归档及下载导入改为常驻本轮结果窗口，显示每本的标题、远端文件名、状态和可选择的错误详情，支持单项／全部失败重试及继续未开始项目（#126）；已成功项不重复执行，取消等待当前操作安全结束，未开始项目不计为失败。本轮结果与重试仅在窗口关闭前可用，不是后台或跨重启传输队列。\n- 归档上传使用不覆盖同名文件的条件请求；初次遇同名文件明确显示“跳过（未核验）”，不计为成功。失败重试遇远端同名时，仅与该项上次实际上传字节的 SHA-256 一致才确认成功，否则保留冲突且不覆盖、不删除远端文件；导入提交结果不确定或已提交后报错时禁用直接重试，避免重复入库。保留原始诊断，显示常见凭据脱敏后的错误；并未确认 #126 的云盘失败根因或真实服务的条件写入兼容性。\n\n### 重点复测与已知限制\n\n- **#126 批量归档**：请在原 Android／Windows 与 WebDAV 云盘环境核对每本结果、失败明细、单项／全部失败重试和取消后继续。成功项不应重复操作；同名跳过不是归档完整的证明，冲突时先核对现有文件，不要批量删除或覆盖。上传应答丢失后的摘要核验需要额外下载流量及临时空间；真实服务的条件写入支持、原网络／服务端失败仍待复测，不保证修复云盘断联或限流。\n- **#126 下载导入**：结果提示可能已保存时，请先检查本地条目、封面、页面与重启后的显示；直接重试会禁用以避免重复入库。结果及重试记录只保留到关闭本轮窗口，不提供后台或跨重启传输队列，也不改变应用数据同步及 WebDAV 在线阅读流程。\n- **#115／#125 原设备反馈**：保留 rc.3 的本地隐藏条目误选／刷新选择维护及图片缓存键修复，没有新增这两个报告的设备验收。本机没有可连接的 Android 测试设备，APK 构建和自动回归不等于已安装运行或验证原设备不显示／卡顿；相关 issue 继续开放，不因发布或暂无反馈认定原作者已验收。\n- rc.2 的收藏恢复（#110）、Windows 快捷键（#117）及 rc.1 的阅读器／缺页续传改动沿用各自验收边界；没有新增真实 SAF 权限及数据恢复（#119）的验证，也未测得 #91 的移动端功耗收益。两级收藏目录（#123）、Android TV（#120）、HarmonyOS（#77）实验分支及尚未交付的通用 AVIF 解码器（#94）、CBZ 分卷导出（#81）不包含在本版；分享诊断信息前请检查凭据、私人链接和个人路径。\n\n### 维护\n\n- 发布版本配置与应用版本同步为 `1.18.2-rc.4+240`，同步中英文归档操作说明；稳定分发配置、历史 Release 与已发布标签保持不变。\n",
+      "ipas": [
+        {
+          "name": "VeneraNext-ios-1.18.2-rc.4+240.ipa",
+          "size": 21205798,
+          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.2-rc.4/VeneraNext-ios-1.18.2-rc.4%2B240.ipa",
+          "id": 689040128,
+          "updated_at": "2026-10-29T15:44:43Z",
+          "digest": "sha256:01a0c372e7456d22d5f84d0bf0621346598c98a50ae4a9e8d030dcd5773f92ce"
+        }
+      ]
+    },
+    {
       "tag": "v1.18.2-rc.3",
       "name": "v1.18.2-rc.3",
       "pre": true,
@@ -3003,25 +3022,6 @@
           "id": 491280602,
           "updated_at": "2026-07-27T09:43:17Z",
           "digest": "sha256:d39e905ce57de5f6ce5504df20a191ea0ff17c4f7de3181f6144b2fa1e3c3287"
-        }
-      ]
-    },
-    {
-      "tag": "v1.13.0",
-      "name": "v1.13.0",
-      "pre": false,
-      "draft": false,
-      "date": "2026-07-20",
-      "published_at": "2026-07-20T04:02:09Z",
-      "body": "### 新增\n\n- WebDAV 漫画库支持识别 VeneraNext 单本 CBZ 的解压目录，通过 `metadata.json` 读取标题、作者、标签和章节页码范围，同时保持图片按需加载；无元数据或元数据无效时自动回退普通目录模式。\n\n### 变更\n\n- 统一本地目录、CBZ 和 WebDAV 的漫画图片扩展、封面识别及数字页码排序规则，并将单本归档元数据迁移到共享漫画存储功能域。\n- WebDAV 数据同步、漫画归档和在线漫画库统一复用端点认证、客户端创建与远端路径基础设施，同时继续保持三套业务配置和生命周期独立。\n- 漫画归档与 WebDAV 在线漫画库设置页复用连接输入字段和 controller 生命周期，保留各自独立的测试、保存和启停逻辑。\n\n### 修复\n\n- 修复 WebDAV 漫画库列表不显示推断封面，以及不可变目录列表异常可能取代漫画文件夹名称的问题；列表与详情现在统一从根目录或首个可读章节推断封面。\n- 修复本地漫画仅包含章节子目录且没有根目录封面时无法直接导入，以及非图片文件可能进入本地阅读页列表的问题。\n- 修复桌面端折叠侧栏分割线穿过左上角 `VeneraNext` 标识的问题。\n- 修复数据同步、本地下载、漫画源、代理设置等界面缺少翻译或同时显示中英文的问题，并增加翻译键完整性检查以防止回退。\n\n### 文档\n\n- 将根 README 调整为面向用户的安装与使用入口，把构建、测试、发布工作流和开发故障排查迁移到独立的中英文开发文档。\n",
-      "ipas": [
-        {
-          "name": "VeneraNext-ios-1.13.0+212.ipa",
-          "size": 15939487,
-          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.13.0/VeneraNext-ios-1.13.0%2B212.ipa",
-          "id": 483031525,
-          "updated_at": "2026-07-20T04:02:08Z",
-          "digest": "sha256:653abaf164b814a14b581f8ae55af02d75d4b0510e7ccc515a23b99e1e18175f"
         }
       ]
     }
@@ -4127,6 +4127,25 @@
   ],
   "ARMSX2/ARMSX2": [
     {
+      "tag": "nightly-20261029",
+      "name": "ARMSX2 nightly 20261029 (aa52a1fdc7)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T13:29:45Z",
+      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- iOS: move the cheats list sections out of the view body\n- iOS: compile the Swift UI at -Onone in Debug\n- iOS: build the core once with Ninja, outside the app project\n- iOS: use the helpers that already exist instead of copies\n- iOS: trim the logs to what a bug report needs\n- iOS: trim the bridge to what Swift calls\n- iOS: reconnect two features that lost their caller\n- iOS: delete dead Swift code\n- iOS: read Haptic Feedback on every rumble, not once a session\n- iOS: get the Mac Catalyst build working again\n- iOS: move the app out of the Gradle-style app/src/main tree\n- Comments: trim the comments added since 2026-09-28\n- GameDB: Tekken 5's arcade entries use bilinearUpscale\n- GameDB: load only once the resources folder is set\n- OSD: ARMSX2 2.9 on Andro",
+      "ipas": [
+        {
+          "name": "ARMSX2-nightly-20261029-aa52a1fdc7-iOS-arm64.ipa",
+          "size": 40543149,
+          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261029/ARMSX2-nightly-20261029-aa52a1fdc7-iOS-arm64.ipa",
+          "id": 688658948,
+          "updated_at": "2026-10-29T13:29:51Z",
+          "digest": "sha256:87f9f8b8c6349c38df7a1837299f77ef2de7f6f813d9bd469bfff3b93c794d4d"
+        }
+      ]
+    },
+    {
       "tag": "2.9.1",
       "name": "ARMSX2 2.9.1",
       "pre": false,
@@ -4248,25 +4267,6 @@
           "id": 656766043,
           "updated_at": "2026-10-19T16:17:14Z",
           "digest": "sha256:c703735468b3ef247ae3575e813d5ab590ebdc6701d731fab80e1a47e3a5e450"
-        }
-      ]
-    },
-    {
-      "tag": "nightly-20261018",
-      "name": "ARMSX2 nightly 20261018 (0d525e4bdb)",
-      "pre": true,
-      "draft": false,
-      "date": "2026-10-18",
-      "published_at": "2026-10-18T14:27:28Z",
-      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- Tests: three Linux-only expectations are skipped on macOS\n- VU program cache: a copy the preload held is not answered after the session wrote the file\n- tests: VuAotCache.UnusableSavedCodeFallsBackToThePlan no longer races the cache's preload thread\n- vu-aot: the clear with no VM running follows the global setting, not the config a game ended with\n- vu-aot: the compile worker takes the process's processor mask, not that of the thread that starts it\n- Big Picture: a switch for the VU1 ahead-of-time compiler in the System settings\n- Qt: a checkbox for the VU1 ahead-of-time compiler in the Advanced settings\n- vu-aot: turning EnableVUAot off with no VM running clears the compiled cache too\n- VU program cache: opened by the first reset, not by mVUinit\n- And",
-      "ipas": [
-        {
-          "name": "ARMSX2-nightly-20261018-0d525e4bdb-iOS-arm64.ipa",
-          "size": 40304220,
-          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261018/ARMSX2-nightly-20261018-0d525e4bdb-iOS-arm64.ipa",
-          "id": 653670160,
-          "updated_at": "2026-10-18T14:27:33Z",
-          "digest": "sha256:684a77da8ee4b7f463dc232e7dfffd2d26540d2b7c403e69db366ecd3e939f28"
         }
       ]
     },

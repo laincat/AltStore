@@ -373,7 +373,7 @@
       "developerName": "ARMSX2",
       "subtitle": "PlayStation 2 模拟器（每日构建）",
       "localizedDescription": "PlayStation 2 模拟器的 iOS 每日构建版。上游仅发布预览构建，版本可能变化或不稳定；未签名安装包来自上游 GitHub Release。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/ARMSX2/ARMSX2",
-      "iconURL": "https://raw.githubusercontent.com/ARMSX2/ARMSX2/nightly-20261028/platforms/ios/app/src/main/assets/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
+      "iconURL": "https://github.com/ARMSX2.png?size=460",
       "tintColor": "#D95F59",
       "category": "games",
       "appPermissions": {
@@ -385,41 +385,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.6.0-nightly.20261028.1320",
-              "date": "2026-10-28",
-              "publishedAt": "2026-10-28T14:04:50Z",
+              "version": "2.6.0-nightly.20261029.1302",
+              "date": "2026-10-29",
+              "publishedAt": "2026-10-29T13:29:45Z",
               "buildVersion": "260",
               "buildNumber": "260",
-              "localizedDescription": "🧪 预发布 nightly-20261028（2026-10-28）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-              "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261028/ARMSX2-nightly-20261028-e3c7d2102e-iOS-arm64.ipa",
-              "size": 40405112,
+              "localizedDescription": "🧪 预发布 nightly-20261029（2026-10-29）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+              "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261029/ARMSX2-nightly-20261029-aa52a1fdc7-iOS-arm64.ipa",
+              "size": 40543149,
               "minOSVersion": "17.4",
-              "releaseTag": "nightly-20261028",
-              "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261028"
+              "releaseTag": "nightly-20261029",
+              "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261029"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.6.0-nightly.20261028.1320",
-          "date": "2026-10-28",
-          "publishedAt": "2026-10-28T14:04:50Z",
+          "version": "2.6.0-nightly.20261029.1302",
+          "date": "2026-10-29",
+          "publishedAt": "2026-10-29T13:29:45Z",
           "buildVersion": "260",
           "buildNumber": "260",
-          "localizedDescription": "🧪 预发布 nightly-20261028（2026-10-28）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261028/ARMSX2-nightly-20261028-e3c7d2102e-iOS-arm64.ipa",
-          "size": 40405112,
+          "localizedDescription": "🧪 预发布 nightly-20261029（2026-10-29）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261029/ARMSX2-nightly-20261029-aa52a1fdc7-iOS-arm64.ipa",
+          "size": 40543149,
           "minOSVersion": "17.4",
-          "releaseTag": "nightly-20261028",
-          "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261028"
+          "releaseTag": "nightly-20261029",
+          "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261029"
         }
       ],
-      "version": "2.6.0-nightly.20261028.1320",
-      "versionDate": "2026-10-28",
-      "versionDescription": "🧪 预发布 nightly-20261028（2026-10-28）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-      "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261028/ARMSX2-nightly-20261028-e3c7d2102e-iOS-arm64.ipa",
-      "size": 40405112,
+      "version": "2.6.0-nightly.20261029.1302",
+      "versionDate": "2026-10-29",
+      "versionDescription": "🧪 预发布 nightly-20261029（2026-10-29）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+      "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261029/ARMSX2-nightly-20261029-aa52a1fdc7-iOS-arm64.ipa",
+      "size": 40543149,
       "minOSVersion": "17.4"
     },
     {
