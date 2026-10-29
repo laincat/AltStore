@@ -955,7 +955,7 @@
       "developerName": "iam567",
       "subtitle": "经典大富翁4重制版（大型安装包）",
       "localizedDescription": "基于 Vite、TypeScript 与 Capacitor 的大富翁4重制版。当前 iOS 安装包约 1.79 GB，请在下载前确认设备有足够空间。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/iam567/rich4-renew-app",
-      "iconURL": "https://raw.githubusercontent.com/iam567/rich4-renew-app/v0.8.0/game/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png",
+      "iconURL": "https://raw.githubusercontent.com/iam567/rich4-renew-app/v0.8.1/game/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png",
       "tintColor": "#E9A83A",
       "category": "games",
       "appPermissions": {
@@ -967,41 +967,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "0.8.0",
-              "date": "2026-10-27",
-              "publishedAt": "2026-10-27T06:55:37Z",
-              "buildVersion": "46",
-              "buildNumber": "46",
-              "localizedDescription": "- 折叠屏适配：安卓大折叠（OPPO Find N、三星 Z Fold 等）展开后接近正方形的屏幕，改用棋盘在左、资料栏在右的排版，棋盘大了很多；商店和各场所画面在这类屏幕上也更大。\n- iPhone Duo：内屏、外屏都检查过，横竖屏都能正常玩，游戏中途合上或展开会自动重新排版。\n- 修正：某些宽屏尺寸下右边的资料栏会被工具栏挤出屏幕。\n- 电脑版：\n  - Windows：下载 rich4-0.8.0-windows.zip，解压后打开 Rich4 文件夹，双击 Rich4.exe。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 rich4-0.8.0-mac.dmg，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew 68b43e6",
-              "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.8.0/rich4-0.8.0-unsigned.ipa",
-              "size": 1802804433,
+              "version": "0.8.1",
+              "date": "2026-10-29",
+              "publishedAt": "2026-10-29T02:15:51Z",
+              "buildVersion": "47",
+              "buildNumber": "47",
+              "localizedDescription": "- 派对模式：房主可以在房间里设定总资金、行进方式、土地权限、游戏时间和胜利条件（和单人模式的选项一样），其他玩家会实时看到；开局时所有人都按这套规则玩。\n- 派对模式：手机横屏时房间画面放不下会可以上下滚动，「开始游戏」不再被挡住。\n- 电脑版：\n  - Windows：下载 rich4-0.8.1-windows.zip，解压后打开 Rich4 文件夹，双击 Rich4.exe。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 rich4-0.8.1-mac.dmg，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew a73d17d",
+              "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.8.1/rich4-0.8.1-unsigned.ipa",
+              "size": 1802805252,
               "minOSVersion": "15.0",
-              "releaseTag": "v0.8.0",
-              "source": "https://github.com/iam567/rich4-renew-app/releases/tag/v0.8.0"
+              "releaseTag": "v0.8.1",
+              "source": "https://github.com/iam567/rich4-renew-app/releases/tag/v0.8.1"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "0.8.0",
-          "date": "2026-10-27",
-          "publishedAt": "2026-10-27T06:55:37Z",
-          "buildVersion": "46",
-          "buildNumber": "46",
-          "localizedDescription": "- 折叠屏适配：安卓大折叠（OPPO Find N、三星 Z Fold 等）展开后接近正方形的屏幕，改用棋盘在左、资料栏在右的排版，棋盘大了很多；商店和各场所画面在这类屏幕上也更大。\n- iPhone Duo：内屏、外屏都检查过，横竖屏都能正常玩，游戏中途合上或展开会自动重新排版。\n- 修正：某些宽屏尺寸下右边的资料栏会被工具栏挤出屏幕。\n- 电脑版：\n  - Windows：下载 rich4-0.8.0-windows.zip，解压后打开 Rich4 文件夹，双击 Rich4.exe。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 rich4-0.8.0-mac.dmg，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew 68b43e6",
-          "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.8.0/rich4-0.8.0-unsigned.ipa",
-          "size": 1802804433,
+          "version": "0.8.1",
+          "date": "2026-10-29",
+          "publishedAt": "2026-10-29T02:15:51Z",
+          "buildVersion": "47",
+          "buildNumber": "47",
+          "localizedDescription": "- 派对模式：房主可以在房间里设定总资金、行进方式、土地权限、游戏时间和胜利条件（和单人模式的选项一样），其他玩家会实时看到；开局时所有人都按这套规则玩。\n- 派对模式：手机横屏时房间画面放不下会可以上下滚动，「开始游戏」不再被挡住。\n- 电脑版：\n  - Windows：下载 rich4-0.8.1-windows.zip，解压后打开 Rich4 文件夹，双击 Rich4.exe。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 rich4-0.8.1-mac.dmg，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew a73d17d",
+          "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.8.1/rich4-0.8.1-unsigned.ipa",
+          "size": 1802805252,
           "minOSVersion": "15.0",
-          "releaseTag": "v0.8.0",
-          "source": "https://github.com/iam567/rich4-renew-app/releases/tag/v0.8.0"
+          "releaseTag": "v0.8.1",
+          "source": "https://github.com/iam567/rich4-renew-app/releases/tag/v0.8.1"
         }
       ],
-      "version": "0.8.0",
-      "versionDate": "2026-10-27",
-      "versionDescription": "- 折叠屏适配：安卓大折叠（OPPO Find N、三星 Z Fold 等）展开后接近正方形的屏幕，改用棋盘在左、资料栏在右的排版，棋盘大了很多；商店和各场所画面在这类屏幕上也更大。\n- iPhone Duo：内屏、外屏都检查过，横竖屏都能正常玩，游戏中途合上或展开会自动重新排版。\n- 修正：某些宽屏尺寸下右边的资料栏会被工具栏挤出屏幕。\n- 电脑版：\n  - Windows：下载 rich4-0.8.0-windows.zip，解压后打开 Rich4 文件夹，双击 Rich4.exe。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 rich4-0.8.0-mac.dmg，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew 68b43e6",
-      "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.8.0/rich4-0.8.0-unsigned.ipa",
-      "size": 1802804433,
+      "version": "0.8.1",
+      "versionDate": "2026-10-29",
+      "versionDescription": "- 派对模式：房主可以在房间里设定总资金、行进方式、土地权限、游戏时间和胜利条件（和单人模式的选项一样），其他玩家会实时看到；开局时所有人都按这套规则玩。\n- 派对模式：手机横屏时房间画面放不下会可以上下滚动，「开始游戏」不再被挡住。\n- 电脑版：\n  - Windows：下载 rich4-0.8.1-windows.zip，解压后打开 Rich4 文件夹，双击 Rich4.exe。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 rich4-0.8.1-mac.dmg，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew a73d17d",
+      "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.8.1/rich4-0.8.1-unsigned.ipa",
+      "size": 1802805252,
       "minOSVersion": "15.0"
     },
     {
@@ -1010,7 +1010,7 @@
       "developerName": "Xanerix",
       "subtitle": "支持多站源的短剧与影视客户端",
       "localizedDescription": "Flutter 多平台短剧与影视客户端，包含全部站源，可在设置中逐个开关。支持追剧、观看记录、多用户、本地下载与备份。此处收录真果鉴全站源版；它与仅含红果站源的红果鉴共用 Bundle ID，属于同一应用的不同构建。\n\n安装包由上游发布，需自行签名安装。站源可用性取决于源站及网络；应用不解除源站 VIP 或其他授权限制。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Xanerix/guoapp",
-      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v1.0.0-100/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v1.0.1-101/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#E97642",
       "category": "entertainment",
       "appPermissions": {
@@ -1022,41 +1022,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "1.0.0",
-              "date": "2026-10-27",
-              "publishedAt": "2026-10-27T08:37:49Z",
-              "buildVersion": "100",
-              "buildNumber": "100",
-              "localizedDescription": "更新内容：\n\n界面整体重建，手机、平板、电脑和电视分别适配。\n界面与导航\n- 新主题：跟随系统取色（Android 12 及以上跟随壁纸，Windows 跟随强调色）或 6 个预设色板，浅色 / 深色 / 跟随系统照旧；主题色随备份导出。\n- 导航改为发现 / 追剧 / 我的：手机用底栏，平板和电脑用侧栏（可展开或收起，会记住选择），电视用顶部 Tab；宽屏的子页面在侧栏右侧打开。\n- 界面模式分自动识别、电视、手机、平板、窗口（只有电脑提供）；手动选定后不再随窗口宽度切换。电视模式强制横屏，手机模式锁定竖屏（iPhone 上为开发快照，未在设备上验证）。\n- 焦点导航只在电视端启用：按钮获焦放大加描边，长条只显示描边，外框在元素之间平滑移动；电视页面边距统一，避免被过扫描切掉，不再显示屏幕返回按钮。手机、平板和电脑不再显示焦点外框。\n- 新应用图标：Android 改为自适应图标，支持主题图标；电视桌面横幅改为浅色底。\n发现与搜索\n- 站源切换放在站源名旁边；分类用文字 Tab：推荐 / 全部 / 各榜单 / 各题材。榜单并入分类，封面标出名次，不再显示热度。\n- 第一个 Tab 顶部有大卡片，显示本站源最近看过的剧或推荐的第一部。\n- 滑到底部自动加载下一页；下拉或点「刷新」重新拉取当前分类，不再触发整库更新。\n- 修复剧库缓存越积越大，最后提示「剧库超过本地保存上限」、无法继续加载：每个分类的缓存最多保留前 5000 部，旧版整库更新留下的大缓存会自动缩减。\n- 红果推荐改用「找剧」混排流，每次加载约 12 部；红果题材改用红果 App 的题材筛选。\n- 新搜索页：只搜当…",
-              "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.0-100/zhenguojian-1.0.0%2B100-ios-unsigned.ipa",
-              "size": 29959729,
+              "version": "1.0.1",
+              "date": "2026-10-29",
+              "publishedAt": "2026-10-29T10:39:52Z",
+              "buildVersion": "101",
+              "buildNumber": "101",
+              "localizedDescription": "更新内容：\n\n- 修复红果搜索失效：改用红果 App 的剧集搜索，滑到底部继续加载下一页，不再频繁报错。\n- 手机和平板播放手势：竖屏短剧左右滑动快进快退；横屏全屏再加左半屏上下滑调亮度、右半屏上下滑调系统媒体音量，亮度只作用于播放页，退出后恢复；横屏双击两侧快退 / 快进和上下滑调亮度 / 音量可在设置 › 播放中分别关闭（iPhone / iPad 上为开发快照，未在设备上验证）。\n- 新增小窗播放：Android 手机和平板点播放页的「小窗」（竖屏短剧在长按画面弹出的「播放设置」里）进入系统画中画，小窗内可播放 / 暂停、切上下集；设置 › 播放可开启「离开应用时自动小窗」（默认关闭）。Windows 和 macOS 点播控栏的「画中画」把窗口缩成置顶小窗，可拖动、拖边缘等比缩放，悬停显示播控，双击或点「还原」回到原窗口，点「关闭」退出播放，会记住上次的位置和大小。iPhone / iPad 和电视不提供（macOS 上为开发快照，未在 Mac 上验证）。\n- 电脑播放页按 F11 进入或退出全屏，焦点在控件上时也能用。\n- 修复 Windows 上窗口最大化时进入全屏，标题栏不隐藏、两侧露出桌面；退出全屏后恢复原来的窗口状态。\n- 修复部分电视放完一集后卡住、不能自动播放下一集：设置 › 播放新增「预开下一集」，电视默认关闭，手机、平板和电脑默认开启。\n- 启动时检查新版本，有新版时每次启动都会提示，可选择更新、忽略、忽略此版本或不再提醒；另有匿名使用统计，只发送随机编号、版本号、平台和红果鉴 / 真果鉴。两项可在设置 › 关于中分别关闭；关于页另有「检查更新」，关掉启…",
+              "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.1-101/zhenguojian-1.0.1%2B101-ios-unsigned.ipa",
+              "size": 30492704,
               "minOSVersion": "15.1",
-              "releaseTag": "app-v1.0.0-100",
-              "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.0-100"
+              "releaseTag": "app-v1.0.1-101",
+              "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.1-101"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "1.0.0",
-          "date": "2026-10-27",
-          "publishedAt": "2026-10-27T08:37:49Z",
-          "buildVersion": "100",
-          "buildNumber": "100",
-          "localizedDescription": "更新内容：\n\n界面整体重建，手机、平板、电脑和电视分别适配。\n界面与导航\n- 新主题：跟随系统取色（Android 12 及以上跟随壁纸，Windows 跟随强调色）或 6 个预设色板，浅色 / 深色 / 跟随系统照旧；主题色随备份导出。\n- 导航改为发现 / 追剧 / 我的：手机用底栏，平板和电脑用侧栏（可展开或收起，会记住选择），电视用顶部 Tab；宽屏的子页面在侧栏右侧打开。\n- 界面模式分自动识别、电视、手机、平板、窗口（只有电脑提供）；手动选定后不再随窗口宽度切换。电视模式强制横屏，手机模式锁定竖屏（iPhone 上为开发快照，未在设备上验证）。\n- 焦点导航只在电视端启用：按钮获焦放大加描边，长条只显示描边，外框在元素之间平滑移动；电视页面边距统一，避免被过扫描切掉，不再显示屏幕返回按钮。手机、平板和电脑不再显示焦点外框。\n- 新应用图标：Android 改为自适应图标，支持主题图标；电视桌面横幅改为浅色底。\n发现与搜索\n- 站源切换放在站源名旁边；分类用文字 Tab：推荐 / 全部 / 各榜单 / 各题材。榜单并入分类，封面标出名次，不再显示热度。\n- 第一个 Tab 顶部有大卡片，显示本站源最近看过的剧或推荐的第一部。\n- 滑到底部自动加载下一页；下拉或点「刷新」重新拉取当前分类，不再触发整库更新。\n- 修复剧库缓存越积越大，最后提示「剧库超过本地保存上限」、无法继续加载：每个分类的缓存最多保留前 5000 部，旧版整库更新留下的大缓存会自动缩减。\n- 红果推荐改用「找剧」混排流，每次加载约 12 部；红果题材改用红果 App 的题材筛选。\n- 新搜索页：只搜当…",
-          "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.0-100/zhenguojian-1.0.0%2B100-ios-unsigned.ipa",
-          "size": 29959729,
+          "version": "1.0.1",
+          "date": "2026-10-29",
+          "publishedAt": "2026-10-29T10:39:52Z",
+          "buildVersion": "101",
+          "buildNumber": "101",
+          "localizedDescription": "更新内容：\n\n- 修复红果搜索失效：改用红果 App 的剧集搜索，滑到底部继续加载下一页，不再频繁报错。\n- 手机和平板播放手势：竖屏短剧左右滑动快进快退；横屏全屏再加左半屏上下滑调亮度、右半屏上下滑调系统媒体音量，亮度只作用于播放页，退出后恢复；横屏双击两侧快退 / 快进和上下滑调亮度 / 音量可在设置 › 播放中分别关闭（iPhone / iPad 上为开发快照，未在设备上验证）。\n- 新增小窗播放：Android 手机和平板点播放页的「小窗」（竖屏短剧在长按画面弹出的「播放设置」里）进入系统画中画，小窗内可播放 / 暂停、切上下集；设置 › 播放可开启「离开应用时自动小窗」（默认关闭）。Windows 和 macOS 点播控栏的「画中画」把窗口缩成置顶小窗，可拖动、拖边缘等比缩放，悬停显示播控，双击或点「还原」回到原窗口，点「关闭」退出播放，会记住上次的位置和大小。iPhone / iPad 和电视不提供（macOS 上为开发快照，未在 Mac 上验证）。\n- 电脑播放页按 F11 进入或退出全屏，焦点在控件上时也能用。\n- 修复 Windows 上窗口最大化时进入全屏，标题栏不隐藏、两侧露出桌面；退出全屏后恢复原来的窗口状态。\n- 修复部分电视放完一集后卡住、不能自动播放下一集：设置 › 播放新增「预开下一集」，电视默认关闭，手机、平板和电脑默认开启。\n- 启动时检查新版本，有新版时每次启动都会提示，可选择更新、忽略、忽略此版本或不再提醒；另有匿名使用统计，只发送随机编号、版本号、平台和红果鉴 / 真果鉴。两项可在设置 › 关于中分别关闭；关于页另有「检查更新」，关掉启…",
+          "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.1-101/zhenguojian-1.0.1%2B101-ios-unsigned.ipa",
+          "size": 30492704,
           "minOSVersion": "15.1",
-          "releaseTag": "app-v1.0.0-100",
-          "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.0-100"
+          "releaseTag": "app-v1.0.1-101",
+          "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.1-101"
         }
       ],
-      "version": "1.0.0",
-      "versionDate": "2026-10-27",
-      "versionDescription": "更新内容：\n\n界面整体重建，手机、平板、电脑和电视分别适配。\n界面与导航\n- 新主题：跟随系统取色（Android 12 及以上跟随壁纸，Windows 跟随强调色）或 6 个预设色板，浅色 / 深色 / 跟随系统照旧；主题色随备份导出。\n- 导航改为发现 / 追剧 / 我的：手机用底栏，平板和电脑用侧栏（可展开或收起，会记住选择），电视用顶部 Tab；宽屏的子页面在侧栏右侧打开。\n- 界面模式分自动识别、电视、手机、平板、窗口（只有电脑提供）；手动选定后不再随窗口宽度切换。电视模式强制横屏，手机模式锁定竖屏（iPhone 上为开发快照，未在设备上验证）。\n- 焦点导航只在电视端启用：按钮获焦放大加描边，长条只显示描边，外框在元素之间平滑移动；电视页面边距统一，避免被过扫描切掉，不再显示屏幕返回按钮。手机、平板和电脑不再显示焦点外框。\n- 新应用图标：Android 改为自适应图标，支持主题图标；电视桌面横幅改为浅色底。\n发现与搜索\n- 站源切换放在站源名旁边；分类用文字 Tab：推荐 / 全部 / 各榜单 / 各题材。榜单并入分类，封面标出名次，不再显示热度。\n- 第一个 Tab 顶部有大卡片，显示本站源最近看过的剧或推荐的第一部。\n- 滑到底部自动加载下一页；下拉或点「刷新」重新拉取当前分类，不再触发整库更新。\n- 修复剧库缓存越积越大，最后提示「剧库超过本地保存上限」、无法继续加载：每个分类的缓存最多保留前 5000 部，旧版整库更新留下的大缓存会自动缩减。\n- 红果推荐改用「找剧」混排流，每次加载约 12 部；红果题材改用红果 App 的题材筛选。\n- 新搜索页：只搜当…",
-      "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.0-100/zhenguojian-1.0.0%2B100-ios-unsigned.ipa",
-      "size": 29959729,
+      "version": "1.0.1",
+      "versionDate": "2026-10-29",
+      "versionDescription": "更新内容：\n\n- 修复红果搜索失效：改用红果 App 的剧集搜索，滑到底部继续加载下一页，不再频繁报错。\n- 手机和平板播放手势：竖屏短剧左右滑动快进快退；横屏全屏再加左半屏上下滑调亮度、右半屏上下滑调系统媒体音量，亮度只作用于播放页，退出后恢复；横屏双击两侧快退 / 快进和上下滑调亮度 / 音量可在设置 › 播放中分别关闭（iPhone / iPad 上为开发快照，未在设备上验证）。\n- 新增小窗播放：Android 手机和平板点播放页的「小窗」（竖屏短剧在长按画面弹出的「播放设置」里）进入系统画中画，小窗内可播放 / 暂停、切上下集；设置 › 播放可开启「离开应用时自动小窗」（默认关闭）。Windows 和 macOS 点播控栏的「画中画」把窗口缩成置顶小窗，可拖动、拖边缘等比缩放，悬停显示播控，双击或点「还原」回到原窗口，点「关闭」退出播放，会记住上次的位置和大小。iPhone / iPad 和电视不提供（macOS 上为开发快照，未在 Mac 上验证）。\n- 电脑播放页按 F11 进入或退出全屏，焦点在控件上时也能用。\n- 修复 Windows 上窗口最大化时进入全屏，标题栏不隐藏、两侧露出桌面；退出全屏后恢复原来的窗口状态。\n- 修复部分电视放完一集后卡住、不能自动播放下一集：设置 › 播放新增「预开下一集」，电视默认关闭，手机、平板和电脑默认开启。\n- 启动时检查新版本，有新版时每次启动都会提示，可选择更新、忽略、忽略此版本或不再提醒；另有匿名使用统计，只发送随机编号、版本号、平台和红果鉴 / 真果鉴。两项可在设置 › 关于中分别关闭；关于页另有「检查更新」，关掉启…",
+      "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.1-101/zhenguojian-1.0.1%2B101-ios-unsigned.ipa",
+      "size": 30492704,
       "minOSVersion": "15.1"
     }
   ],
@@ -1069,7 +1069,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 18 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-10-28",
+      "date": "2026-10-29",
       "tintColor": "#7C5CFF",
       "notify": false
     }

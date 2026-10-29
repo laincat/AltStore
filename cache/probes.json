@@ -1028,5 +1028,33 @@
       "size": 40405112,
       "digest": "sha256:bd0160f85c7b722203ba19f81d5e365c4b39539717a4f9d13d712f59a76eb265"
     }
+  },
+  "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.1-101/zhenguojian-1.0.1%2B101-ios-unsigned.ipa": {
+    "bundleIdentifier": "com.duanju.duanjuApp",
+    "version": "1.0.1",
+    "buildVersion": "101",
+    "displayName": "ZhenGuoJian",
+    "minOSVersion": "15.1",
+    "size": 30492704,
+    "assetIdentity": {
+      "id": 688206108,
+      "updated_at": "2026-10-29T10:39:49Z",
+      "size": 30492704,
+      "digest": "sha256:162c656e1366c29799217e96f1b0ff53cd03c97a03c0b0b9962c9dd4810a92f4"
+    }
+  },
+  "https://github.com/iam567/rich4-renew-app/releases/download/v0.8.1/rich4-0.8.1-unsigned.ipa": {
+    "bundleIdentifier": "pro.areu.rich4",
+    "version": "0.8.1",
+    "buildVersion": "47",
+    "displayName": "大富翁4",
+    "minOSVersion": "15.0",
+    "size": 1802805252,
+    "assetIdentity": {
+      "id": 687049602,
+      "updated_at": "2026-10-29T02:08:46Z",
+      "size": 1802805252,
+      "digest": "sha256:4ed80e69ebd050517f2d19fe51f477dac836a575565451cd6745c99f8224ec2e"
+    }
   }
 }
