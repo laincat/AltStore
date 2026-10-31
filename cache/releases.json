@@ -4127,6 +4127,16 @@
   ],
   "ARMSX2/ARMSX2": [
     {
+      "tag": "nightly-20261031",
+      "name": "ARMSX2 nightly 20261031 (cb78946d6e)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-10-31",
+      "published_at": "2026-10-31T15:05:23Z",
+      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- Library screensaver starts after 5 minutes by default\n- Android tests: skip the stuck-file case where a folder cannot be made read-only (#906)\n- Android: cite the malisx2 release, not the driver PR, in the offer comment\n- Offer malisx2 on the Bifrost v7 parts it drives (Mali-G52, Mali-G76)\n- What's new: reach the top with the pad, and outline the card itself\n- What's new: let the pad read through an opened release\n- What's new: show the pictures in release notes\n- iOS: point the hack reason comment at the file with the enum\n- iOS: apply turbo and slow motion speeds as saved\n- iOS: reach the base settings only through Host's locked accessors\n- iOS: split the bridge into one file per concern\n- iOS: fail the build when a bridge method has no body\n- VK: ke",
+      "ipas": []
+    },
+    {
       "tag": "nightly-20261029",
       "name": "ARMSX2 nightly 20261029 (aa52a1fdc7)",
       "pre": true,
@@ -4248,25 +4258,6 @@
           "id": 659522341,
           "updated_at": "2026-10-20T14:16:38Z",
           "digest": "sha256:610c975ad2ccf0b973b39252c10c1479c681ab851929ba763d870c41c1e881f6"
-        }
-      ]
-    },
-    {
-      "tag": "nightly-20261019",
-      "name": "ARMSX2 nightly 20261019 (83fe4e293f)",
-      "pre": true,
-      "draft": false,
-      "date": "2026-10-19",
-      "published_at": "2026-10-19T13:17:07Z",
-      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- IOP thread: the default lag bound is 24576 EE cycles, up from 6144\n- Android: Reset gives back the player's value for a kept key the settings file no longer has\n- Android: a resolution auto-tune kept survives the next save from the app\n- AutoTune: test that a trial that is not kept never reaches the game's file or the host\n- AutoTune: a setting is kept only when the speed rose, never on a lower cost alone\n- Android: Reset gives back the value the player set in the app, not the global one\n- AutoTune: the EE governor's message says the emulated CPU is underclocked\n- AutoTune: say \"nothing left to try\" once per session, whatever the class\n- AutoTune: keep the game database hints and the unsafe settings warning quiet while it applies\n- AutoTune: settle 1.5",
-      "ipas": [
-        {
-          "name": "ARMSX2-nightly-20261019-83fe4e293f-iOS-arm64.ipa",
-          "size": 40356686,
-          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261019/ARMSX2-nightly-20261019-83fe4e293f-iOS-arm64.ipa",
-          "id": 656766043,
-          "updated_at": "2026-10-19T16:17:14Z",
-          "digest": "sha256:c703735468b3ef247ae3575e813d5ab590ebdc6701d731fab80e1a47e3a5e450"
         }
       ]
     },
