@@ -1070,5 +1070,19 @@
       "size": 40543149,
       "digest": "sha256:87f9f8b8c6349c38df7a1837299f77ef2de7f6f813d9bd469bfff3b93c794d4d"
     }
+  },
+  "https://github.com/deretame/Breeze/releases/download/v3.0.37/Breeze-iOS-v3.0.37.ipa": {
+    "bundleIdentifier": "com.zephyr.breeze",
+    "version": "3.0.37",
+    "buildVersion": "2225",
+    "displayName": "Breeze",
+    "minOSVersion": "15.0",
+    "size": 26431983,
+    "assetIdentity": {
+      "id": 694944294,
+      "updated_at": "2026-10-31T09:28:30Z",
+      "size": 26431983,
+      "digest": "sha256:ca6d6508b60e004b99c47f07a7e0d6c5546eb9384a91f69ba87c8f470fe1e32f"
+    }
   }
 }

@@ -483,7 +483,7 @@
       "developerName": "deretame",
       "subtitle": "插件化漫画阅读器",
       "localizedDescription": "使用 Flutter 构建的漫画阅读器，通过插件机制提供漫画源支持，已支持哔咔、禁漫、E-Hentai、nhentai、拷贝漫画、包子漫画等多个图源。\n\n开源协议：MPL-2.0　·　项目主页：https://github.com/deretame/Breeze",
-      "iconURL": "https://raw.githubusercontent.com/deretame/Breeze/v3.0.36/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/deretame/Breeze/v3.0.37/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#4FB3F5",
       "category": "books",
       "appPermissions": {
@@ -495,41 +495,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "3.0.36",
-              "date": "2026-10-25",
-              "publishedAt": "2026-10-25T05:46:26Z",
-              "buildVersion": "2224",
-              "buildNumber": "2224",
-              "localizedDescription": "📝 更新日志\n[v3.0.36]\n功能更新\n\n- 导航添加首页和云收藏页\n- 添加详情风格漫画列表\n- 添加默认章节倒序选项\n- 漫画详情页操作栏添加云收藏按钮\n优化\n\n- 优化书架多选操作体验\n- 优化性能\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.36.exe |\n| macOS | Breeze-macOS-v3.0.36.dmg |\n| Android | app-arm64-v8a-release-v3.0.36.apk |\n| iOS | Breeze-iOS-v3.0.36.ipa |\n| Linux | breeze-v3.0.36.flatpak |\n| Linux (DEB) | breeze_3.0.36_amd64-v3.0.36.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
-              "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.36/Breeze-iOS-v3.0.36.ipa",
-              "size": 26377539,
+              "version": "3.0.37",
+              "date": "2026-10-31",
+              "publishedAt": "2026-10-31T09:28:32Z",
+              "buildVersion": "2225",
+              "buildNumber": "2225",
+              "localizedDescription": "📝 更新日志\n[v3.0.37]\n功能更新\n\n- 添加关闭首页和云收藏页的功能\n- 漫画详情页长按收藏按钮现可选择收藏夹\n- 添加本地收藏后自动云收藏的开关\n- 添加滑动验证码支持\n- 移动平台阅读设置添加显示状态栏功能\n- 添加搜索书签 with AdySnowflake\n修复\n\n- 修复自定义插件顺序无效的问题\n优化\n\n- 首页添加常驻搜索按钮\n- 优化报错显示\n- 优化部分文本\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.37.exe |\n| macOS | Breeze-macOS-v3.0.37.dmg |\n| Android | app-arm64-v8a-release-v3.0.37.apk |\n| iOS | Breeze-iOS-v3.0.37.ipa |\n| Linux | breeze-v3.0.37.flatpak |\n| Linux (DEB) | breeze_3.0.37_amd64-v3.0.37.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
+              "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.37/Breeze-iOS-v3.0.37.ipa",
+              "size": 26431983,
               "minOSVersion": "15.0",
-              "releaseTag": "v3.0.36",
-              "source": "https://github.com/deretame/Breeze/releases/tag/v3.0.36"
+              "releaseTag": "v3.0.37",
+              "source": "https://github.com/deretame/Breeze/releases/tag/v3.0.37"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "3.0.36",
-          "date": "2026-10-25",
-          "publishedAt": "2026-10-25T05:46:26Z",
-          "buildVersion": "2224",
-          "buildNumber": "2224",
-          "localizedDescription": "📝 更新日志\n[v3.0.36]\n功能更新\n\n- 导航添加首页和云收藏页\n- 添加详情风格漫画列表\n- 添加默认章节倒序选项\n- 漫画详情页操作栏添加云收藏按钮\n优化\n\n- 优化书架多选操作体验\n- 优化性能\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.36.exe |\n| macOS | Breeze-macOS-v3.0.36.dmg |\n| Android | app-arm64-v8a-release-v3.0.36.apk |\n| iOS | Breeze-iOS-v3.0.36.ipa |\n| Linux | breeze-v3.0.36.flatpak |\n| Linux (DEB) | breeze_3.0.36_amd64-v3.0.36.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
-          "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.36/Breeze-iOS-v3.0.36.ipa",
-          "size": 26377539,
+          "version": "3.0.37",
+          "date": "2026-10-31",
+          "publishedAt": "2026-10-31T09:28:32Z",
+          "buildVersion": "2225",
+          "buildNumber": "2225",
+          "localizedDescription": "📝 更新日志\n[v3.0.37]\n功能更新\n\n- 添加关闭首页和云收藏页的功能\n- 漫画详情页长按收藏按钮现可选择收藏夹\n- 添加本地收藏后自动云收藏的开关\n- 添加滑动验证码支持\n- 移动平台阅读设置添加显示状态栏功能\n- 添加搜索书签 with AdySnowflake\n修复\n\n- 修复自定义插件顺序无效的问题\n优化\n\n- 首页添加常驻搜索按钮\n- 优化报错显示\n- 优化部分文本\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.37.exe |\n| macOS | Breeze-macOS-v3.0.37.dmg |\n| Android | app-arm64-v8a-release-v3.0.37.apk |\n| iOS | Breeze-iOS-v3.0.37.ipa |\n| Linux | breeze-v3.0.37.flatpak |\n| Linux (DEB) | breeze_3.0.37_amd64-v3.0.37.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
+          "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.37/Breeze-iOS-v3.0.37.ipa",
+          "size": 26431983,
           "minOSVersion": "15.0",
-          "releaseTag": "v3.0.36",
-          "source": "https://github.com/deretame/Breeze/releases/tag/v3.0.36"
+          "releaseTag": "v3.0.37",
+          "source": "https://github.com/deretame/Breeze/releases/tag/v3.0.37"
         }
       ],
-      "version": "3.0.36",
-      "versionDate": "2026-10-25",
-      "versionDescription": "📝 更新日志\n[v3.0.36]\n功能更新\n\n- 导航添加首页和云收藏页\n- 添加详情风格漫画列表\n- 添加默认章节倒序选项\n- 漫画详情页操作栏添加云收藏按钮\n优化\n\n- 优化书架多选操作体验\n- 优化性能\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.36.exe |\n| macOS | Breeze-macOS-v3.0.36.dmg |\n| Android | app-arm64-v8a-release-v3.0.36.apk |\n| iOS | Breeze-iOS-v3.0.36.ipa |\n| Linux | breeze-v3.0.36.flatpak |\n| Linux (DEB) | breeze_3.0.36_amd64-v3.0.36.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
-      "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.36/Breeze-iOS-v3.0.36.ipa",
-      "size": 26377539,
+      "version": "3.0.37",
+      "versionDate": "2026-10-31",
+      "versionDescription": "📝 更新日志\n[v3.0.37]\n功能更新\n\n- 添加关闭首页和云收藏页的功能\n- 漫画详情页长按收藏按钮现可选择收藏夹\n- 添加本地收藏后自动云收藏的开关\n- 添加滑动验证码支持\n- 移动平台阅读设置添加显示状态栏功能\n- 添加搜索书签 with AdySnowflake\n修复\n\n- 修复自定义插件顺序无效的问题\n优化\n\n- 首页添加常驻搜索按钮\n- 优化报错显示\n- 优化部分文本\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.37.exe |\n| macOS | Breeze-macOS-v3.0.37.dmg |\n| Android | app-arm64-v8a-release-v3.0.37.apk |\n| iOS | Breeze-iOS-v3.0.37.ipa |\n| Linux | breeze-v3.0.37.flatpak |\n| Linux (DEB) | breeze_3.0.37_amd64-v3.0.37.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
+      "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.37/Breeze-iOS-v3.0.37.ipa",
+      "size": 26431983,
       "minOSVersion": "15.0"
     },
     {
@@ -1069,7 +1069,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 18 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-10-29",
+      "date": "2026-10-31",
       "tintColor": "#7C5CFF",
       "notify": false
     }
