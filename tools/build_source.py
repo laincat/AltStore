@@ -92,6 +92,21 @@ VENERA_NOTE = (
 
 APPS = [
     {
+        "repo": "laincat/Nekularity",
+        "asset": lambda n: n == "Nekularity.ipa",
+        "name": "Nekularity",
+        "developerName": "laincat",
+        "subtitle": "漫画阅读与源管理",
+        "category": "entertainment",
+        "tintColor": "#6D5DF6",
+        "icon": None,
+        "description": (
+            "基于 VeneraCat Core 的 iOS 漫画阅读客户端，支持漫画源、书架与阅读进度。"
+            "未签名构建，需要使用侧载工具签名安装。\n\n"
+            "项目主页：https://github.com/laincat/Nekularity"
+        ),
+    },
+    {
         "repo": "Predidit/Kazumi",
         "asset": lambda n: n.startswith("Kazumi_ios_") and n.endswith(".ipa"),
         "name": "Kazumi",
@@ -892,8 +907,9 @@ def build(per_app=1, refresh=False, reprobe=False, prev_path=None):
         is_beta_head = bool(beta_versions) and flat_versions and \
             release_identity(flat_versions[0]) in {release_identity(v) for v in beta_versions}
 
-        icon = "https://raw.githubusercontent.com/%s/%s/%s" % (repo, latest["releaseTag"], cfg["icon"])
-        if not icon_url_ok(icon):
+        icon = ("https://raw.githubusercontent.com/%s/%s/%s" % (repo, latest["releaseTag"], cfg["icon"])
+                if cfg.get("icon") else "https://github.com/%s.png?size=460" % repo.split("/")[0])
+        if cfg.get("icon") and not icon_url_ok(icon):
             icon = "https://github.com/%s.png?size=460" % repo.split("/")[0]
             print("   ~ %s 图标回退为仓库头像" % repo, file=sys.stderr)
 
