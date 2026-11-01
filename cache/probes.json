@@ -1084,5 +1084,47 @@
       "size": 26431983,
       "digest": "sha256:ca6d6508b60e004b99c47f07a7e0d6c5546eb9384a91f69ba87c8f470fe1e32f"
     }
+  },
+  "https://github.com/laincat/Nekularity/releases/download/v0.1.0/Nekularity.ipa": {
+    "bundleIdentifier": "com.laincat.nekularity",
+    "version": "0.1.0",
+    "buildVersion": "1",
+    "displayName": "Nekularity",
+    "minOSVersion": "26.0",
+    "size": 8980063,
+    "assetIdentity": {
+      "id": 697626258,
+      "updated_at": "2026-11-01T07:17:41Z",
+      "size": 8980063,
+      "digest": "sha256:28f7df20d77f562654b0b4ea186c8e7600a7d182389c6fff5a43add1040bf34c"
+    }
+  },
+  "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.2/VeneraNext-ios-1.18.2%2B243.ipa": {
+    "bundleIdentifier": "com.github.cyrilpeng.veneranext",
+    "version": "1.18.2",
+    "buildVersion": "243",
+    "displayName": "VeneraNext",
+    "minOSVersion": "14.0",
+    "size": 21307925,
+    "assetIdentity": {
+      "id": 697226599,
+      "updated_at": "2026-11-01T03:37:06Z",
+      "size": 21307925,
+      "digest": "sha256:dd2e06d9e5eb49bad6a83eda2588d5ffc9b630ea862bed684bb82c9c86685251"
+    }
+  },
+  "https://github.com/iam567/rich4-renew-app/releases/download/v0.8.2/rich4-0.8.2-unsigned.ipa": {
+    "bundleIdentifier": "pro.areu.rich4",
+    "version": "0.8.2",
+    "buildVersion": "48",
+    "displayName": "大富翁4",
+    "minOSVersion": "15.0",
+    "size": 1802805559,
+    "assetIdentity": {
+      "id": 697197405,
+      "updated_at": "2026-11-01T03:24:37Z",
+      "size": 1802805559,
+      "digest": "sha256:e4400ce24cf0a303ac30b4a90db668060049c99c090f604935dd4acbe06f0ae8"
+    }
   }
 }

@@ -675,6 +675,61 @@
       "minOSVersion": "15.0"
     },
     {
+      "name": "Nekularity",
+      "bundleIdentifier": "com.laincat.nekularity",
+      "developerName": "laincat",
+      "subtitle": "漫画阅读与源管理",
+      "localizedDescription": "基于 VeneraCat Core 的 iOS 漫画阅读客户端，支持漫画源、书架与阅读进度。未签名构建，需要使用侧载工具签名安装。\n\n项目主页：https://github.com/laincat/Nekularity",
+      "iconURL": "https://github.com/laincat.png?size=460",
+      "tintColor": "#6D5DF6",
+      "category": "entertainment",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "releaseChannels": [
+        {
+          "track": "stable",
+          "releases": [
+            {
+              "version": "0.1.0",
+              "date": "2026-11-01",
+              "publishedAt": "2026-11-01T07:17:41Z",
+              "buildVersion": "1",
+              "buildNumber": "1",
+              "localizedDescription": "首个公开测试版本。此 IPA 未签名，需要使用 AltStore 或 SideStore 签名安装；支持 iOS 26 及以上版本。尚未在真机验证。",
+              "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.1.0/Nekularity.ipa",
+              "size": 8980063,
+              "minOSVersion": "26.0",
+              "releaseTag": "v0.1.0",
+              "source": "https://github.com/laincat/Nekularity/releases/tag/v0.1.0"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "date": "2026-11-01",
+          "publishedAt": "2026-11-01T07:17:41Z",
+          "buildVersion": "1",
+          "buildNumber": "1",
+          "localizedDescription": "首个公开测试版本。此 IPA 未签名，需要使用 AltStore 或 SideStore 签名安装；支持 iOS 26 及以上版本。尚未在真机验证。",
+          "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.1.0/Nekularity.ipa",
+          "size": 8980063,
+          "minOSVersion": "26.0",
+          "releaseTag": "v0.1.0",
+          "source": "https://github.com/laincat/Nekularity/releases/tag/v0.1.0"
+        }
+      ],
+      "version": "0.1.0",
+      "versionDate": "2026-11-01",
+      "versionDescription": "首个公开测试版本。此 IPA 未签名，需要使用 AltStore 或 SideStore 签名安装；支持 iOS 26 及以上版本。尚未在真机验证。",
+      "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.1.0/Nekularity.ipa",
+      "size": 8980063,
+      "minOSVersion": "26.0"
+    },
+    {
       "name": "PicaX",
       "bundleIdentifier": "moye.PicaX",
       "developerName": "youshen2",
@@ -845,7 +900,7 @@
       "developerName": "CyrilPeng",
       "subtitle": "支持 WebDAV 同步的漫画阅读器",
       "localizedDescription": "Venera 的 fork 分支，基于 Flutter 的跨平台漫画阅读器，支持本地漫画与网络漫画源，覆盖 iOS / Android / Windows / Linux / macOS。核心思路是尽量减少打断阅读：长篇作品可用瀑布流跨章节连续阅读，支持收藏、追更、离线下载，并能通过 WebDAV 在多台设备之间同步数据。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/CyrilPeng/Venera-Next",
-      "iconURL": "https://raw.githubusercontent.com/CyrilPeng/Venera-Next/v1.18.1/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
+      "iconURL": "https://raw.githubusercontent.com/CyrilPeng/Venera-Next/v1.18.2/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
       "tintColor": "#2090E0",
       "category": "books",
       "appPermissions": {
@@ -857,41 +912,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "1.18.1",
-              "date": "2026-10-25",
-              "publishedAt": "2026-10-25T03:30:26Z",
-              "buildVersion": "236",
-              "buildNumber": "236",
-              "localizedDescription": "正式版说明\n\n- 发布补丁正式版 1.18.1+236，完整承接 RC1 的阅读器、本地漫画、启动诊断、后台下载与依赖安全修复；本次转正不额外加入运行时代码或依赖变更。\n- RC1 发布后暂未收到新的问题反馈，这不等同于所有原设备问题已经验收通过。维护者决定保留明确的已知限制发布正式版，并继续邀请相关 issue 的反馈者复测，不自动将未确认的报告标为已解决。\n- 升级前请导出并另存应用数据备份，保留原漫画文件；覆盖安装沿用现有数据，不需要清空应用数据、删除数据库或重建同步配置。若回退旧版，请先另存新版数据，并使用升级前的备份恢复，不保证旧版能读取新版已修改的数据。iOS IPA 仍需自行侧载签名。\n重点复测与已知限制\n\n- #111 升级／恢复后启动：已修复 Windows 旧收藏库的 SQLite 内部表迁移错误，并完善不被异步收尾阻挡的启动诊断页；Android 原设备卡启动图的根因尚未确认。请复测覆盖升级和完整应用数据恢复；若仍失败，提供启动阶段与脱敏后的原始错误，不要以清空数据代替定位。\n- #119 Android 自定义存储目录：已修复 SAF 选择器返回的 android:// 路径被误判为相对路径；真实 Android 目录权限、双向迁移及重启恢复仍需确认。请先备份，不要删除迁移失败时保留的原文件或副本。\n- #115 归档导入后不显示：已修复全部失败仍报成功及省略具体错误的问题；原附件在本机按原名／改名均可导入，原设备“不显示”的根因尚未复现。请核对导入数量、具体失败文件、列表筛选／屏蔽设置，以及重启后的列表与页面读取结果，不自动改名或绕过屏蔽规则。\n- #…",
-              "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.1/VeneraNext-ios-1.18.1%2B236.ipa",
-              "size": 21194544,
+              "version": "1.18.2",
+              "date": "2026-11-01",
+              "publishedAt": "2026-11-01T03:37:14Z",
+              "buildVersion": "243",
+              "buildNumber": "243",
+              "localizedDescription": "升级提示\n\n- 发布正式版 1.18.2+243，包含本轮 RC 的阅读器、下载和归档改进，以及两级收藏目录、Android TV、图片处理优化和 Windows 网页代理修复。\n- 升级前请导出并另存应用数据备份，保留原漫画文件。 首次启动会迁移旧收藏库，即使不使用子目录也会执行；迁移前自动保留独立数据库快照，旧收藏夹作为一级目录保留。不需要清库、卸载或重新导入漫画。\n- 使用 WebDAV 同步的设备请统一升级，不要让新旧版本交替写入同一份收藏／同步数据。回退使用升级前的备份，不保证旧版能读取新版数据；单夹 JSON 仅包含该目录直接收藏，完整层级请使用应用数据备份。\n- Android 手机与 TV 分别提供通用、ARM64、ARM32 和 x86_64 安装包；TV 可与手机版共存，数据独立，官方 TV Alpha 可保留数据覆盖升级。iOS IPA 仍需自行签名侧载，Winget 新版本需等待公共源审核。\n新增\n\n- 两级本地收藏目录（#123）：支持父子目录、展开／折叠、路径搜索、目录移动和同级排序；收藏、批量转移、快捷收藏及追更共用可搜索的目录选择器。父目录与子目录分别保存直接收藏，「全部」按漫画身份去重；目录移动不搬动漫画，目录名称保持全局唯一，不支持三级嵌套。\n- 完整应用备份和 WebDAV 快照保留收藏层级、稳定标识、顺序、网络关联及追更设置；恢复先在暂存副本校验，拒绝损坏或未知版本再替换活动数据库。旧格式单夹 JSON 仍可导入为一级目录。\n- Android TV（#120）：独立电视入口、固定横屏、遥控器导航和可见焦点。阅读时方向键翻页／滚动，确定打…",
+              "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.2/VeneraNext-ios-1.18.2%2B243.ipa",
+              "size": 21307925,
               "minOSVersion": "14.0",
-              "releaseTag": "v1.18.1",
-              "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.18.1"
+              "releaseTag": "v1.18.2",
+              "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.18.2"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "1.18.1",
-          "date": "2026-10-25",
-          "publishedAt": "2026-10-25T03:30:26Z",
-          "buildVersion": "236",
-          "buildNumber": "236",
-          "localizedDescription": "正式版说明\n\n- 发布补丁正式版 1.18.1+236，完整承接 RC1 的阅读器、本地漫画、启动诊断、后台下载与依赖安全修复；本次转正不额外加入运行时代码或依赖变更。\n- RC1 发布后暂未收到新的问题反馈，这不等同于所有原设备问题已经验收通过。维护者决定保留明确的已知限制发布正式版，并继续邀请相关 issue 的反馈者复测，不自动将未确认的报告标为已解决。\n- 升级前请导出并另存应用数据备份，保留原漫画文件；覆盖安装沿用现有数据，不需要清空应用数据、删除数据库或重建同步配置。若回退旧版，请先另存新版数据，并使用升级前的备份恢复，不保证旧版能读取新版已修改的数据。iOS IPA 仍需自行侧载签名。\n重点复测与已知限制\n\n- #111 升级／恢复后启动：已修复 Windows 旧收藏库的 SQLite 内部表迁移错误，并完善不被异步收尾阻挡的启动诊断页；Android 原设备卡启动图的根因尚未确认。请复测覆盖升级和完整应用数据恢复；若仍失败，提供启动阶段与脱敏后的原始错误，不要以清空数据代替定位。\n- #119 Android 自定义存储目录：已修复 SAF 选择器返回的 android:// 路径被误判为相对路径；真实 Android 目录权限、双向迁移及重启恢复仍需确认。请先备份，不要删除迁移失败时保留的原文件或副本。\n- #115 归档导入后不显示：已修复全部失败仍报成功及省略具体错误的问题；原附件在本机按原名／改名均可导入，原设备“不显示”的根因尚未复现。请核对导入数量、具体失败文件、列表筛选／屏蔽设置，以及重启后的列表与页面读取结果，不自动改名或绕过屏蔽规则。\n- #…",
-          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.1/VeneraNext-ios-1.18.1%2B236.ipa",
-          "size": 21194544,
+          "version": "1.18.2",
+          "date": "2026-11-01",
+          "publishedAt": "2026-11-01T03:37:14Z",
+          "buildVersion": "243",
+          "buildNumber": "243",
+          "localizedDescription": "升级提示\n\n- 发布正式版 1.18.2+243，包含本轮 RC 的阅读器、下载和归档改进，以及两级收藏目录、Android TV、图片处理优化和 Windows 网页代理修复。\n- 升级前请导出并另存应用数据备份，保留原漫画文件。 首次启动会迁移旧收藏库，即使不使用子目录也会执行；迁移前自动保留独立数据库快照，旧收藏夹作为一级目录保留。不需要清库、卸载或重新导入漫画。\n- 使用 WebDAV 同步的设备请统一升级，不要让新旧版本交替写入同一份收藏／同步数据。回退使用升级前的备份，不保证旧版能读取新版数据；单夹 JSON 仅包含该目录直接收藏，完整层级请使用应用数据备份。\n- Android 手机与 TV 分别提供通用、ARM64、ARM32 和 x86_64 安装包；TV 可与手机版共存，数据独立，官方 TV Alpha 可保留数据覆盖升级。iOS IPA 仍需自行签名侧载，Winget 新版本需等待公共源审核。\n新增\n\n- 两级本地收藏目录（#123）：支持父子目录、展开／折叠、路径搜索、目录移动和同级排序；收藏、批量转移、快捷收藏及追更共用可搜索的目录选择器。父目录与子目录分别保存直接收藏，「全部」按漫画身份去重；目录移动不搬动漫画，目录名称保持全局唯一，不支持三级嵌套。\n- 完整应用备份和 WebDAV 快照保留收藏层级、稳定标识、顺序、网络关联及追更设置；恢复先在暂存副本校验，拒绝损坏或未知版本再替换活动数据库。旧格式单夹 JSON 仍可导入为一级目录。\n- Android TV（#120）：独立电视入口、固定横屏、遥控器导航和可见焦点。阅读时方向键翻页／滚动，确定打…",
+          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.2/VeneraNext-ios-1.18.2%2B243.ipa",
+          "size": 21307925,
           "minOSVersion": "14.0",
-          "releaseTag": "v1.18.1",
-          "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.18.1"
+          "releaseTag": "v1.18.2",
+          "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.18.2"
         }
       ],
-      "version": "1.18.1",
-      "versionDate": "2026-10-25",
-      "versionDescription": "正式版说明\n\n- 发布补丁正式版 1.18.1+236，完整承接 RC1 的阅读器、本地漫画、启动诊断、后台下载与依赖安全修复；本次转正不额外加入运行时代码或依赖变更。\n- RC1 发布后暂未收到新的问题反馈，这不等同于所有原设备问题已经验收通过。维护者决定保留明确的已知限制发布正式版，并继续邀请相关 issue 的反馈者复测，不自动将未确认的报告标为已解决。\n- 升级前请导出并另存应用数据备份，保留原漫画文件；覆盖安装沿用现有数据，不需要清空应用数据、删除数据库或重建同步配置。若回退旧版，请先另存新版数据，并使用升级前的备份恢复，不保证旧版能读取新版已修改的数据。iOS IPA 仍需自行侧载签名。\n重点复测与已知限制\n\n- #111 升级／恢复后启动：已修复 Windows 旧收藏库的 SQLite 内部表迁移错误，并完善不被异步收尾阻挡的启动诊断页；Android 原设备卡启动图的根因尚未确认。请复测覆盖升级和完整应用数据恢复；若仍失败，提供启动阶段与脱敏后的原始错误，不要以清空数据代替定位。\n- #119 Android 自定义存储目录：已修复 SAF 选择器返回的 android:// 路径被误判为相对路径；真实 Android 目录权限、双向迁移及重启恢复仍需确认。请先备份，不要删除迁移失败时保留的原文件或副本。\n- #115 归档导入后不显示：已修复全部失败仍报成功及省略具体错误的问题；原附件在本机按原名／改名均可导入，原设备“不显示”的根因尚未复现。请核对导入数量、具体失败文件、列表筛选／屏蔽设置，以及重启后的列表与页面读取结果，不自动改名或绕过屏蔽规则。\n- #…",
-      "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.1/VeneraNext-ios-1.18.1%2B236.ipa",
-      "size": 21194544,
+      "version": "1.18.2",
+      "versionDate": "2026-11-01",
+      "versionDescription": "升级提示\n\n- 发布正式版 1.18.2+243，包含本轮 RC 的阅读器、下载和归档改进，以及两级收藏目录、Android TV、图片处理优化和 Windows 网页代理修复。\n- 升级前请导出并另存应用数据备份，保留原漫画文件。 首次启动会迁移旧收藏库，即使不使用子目录也会执行；迁移前自动保留独立数据库快照，旧收藏夹作为一级目录保留。不需要清库、卸载或重新导入漫画。\n- 使用 WebDAV 同步的设备请统一升级，不要让新旧版本交替写入同一份收藏／同步数据。回退使用升级前的备份，不保证旧版能读取新版数据；单夹 JSON 仅包含该目录直接收藏，完整层级请使用应用数据备份。\n- Android 手机与 TV 分别提供通用、ARM64、ARM32 和 x86_64 安装包；TV 可与手机版共存，数据独立，官方 TV Alpha 可保留数据覆盖升级。iOS IPA 仍需自行签名侧载，Winget 新版本需等待公共源审核。\n新增\n\n- 两级本地收藏目录（#123）：支持父子目录、展开／折叠、路径搜索、目录移动和同级排序；收藏、批量转移、快捷收藏及追更共用可搜索的目录选择器。父目录与子目录分别保存直接收藏，「全部」按漫画身份去重；目录移动不搬动漫画，目录名称保持全局唯一，不支持三级嵌套。\n- 完整应用备份和 WebDAV 快照保留收藏层级、稳定标识、顺序、网络关联及追更设置；恢复先在暂存副本校验，拒绝损坏或未知版本再替换活动数据库。旧格式单夹 JSON 仍可导入为一级目录。\n- Android TV（#120）：独立电视入口、固定横屏、遥控器导航和可见焦点。阅读时方向键翻页／滚动，确定打…",
+      "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.2/VeneraNext-ios-1.18.2%2B243.ipa",
+      "size": 21307925,
       "minOSVersion": "14.0"
     },
     {
@@ -955,7 +1010,7 @@
       "developerName": "iam567",
       "subtitle": "经典大富翁4重制版（大型安装包）",
       "localizedDescription": "基于 Vite、TypeScript 与 Capacitor 的大富翁4重制版。当前 iOS 安装包约 1.79 GB，请在下载前确认设备有足够空间。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/iam567/rich4-renew-app",
-      "iconURL": "https://raw.githubusercontent.com/iam567/rich4-renew-app/v0.8.1/game/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png",
+      "iconURL": "https://raw.githubusercontent.com/iam567/rich4-renew-app/v0.8.2/game/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png",
       "tintColor": "#E9A83A",
       "category": "games",
       "appPermissions": {
@@ -967,41 +1022,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "0.8.1",
-              "date": "2026-10-29",
-              "publishedAt": "2026-10-29T02:15:51Z",
-              "buildVersion": "47",
-              "buildNumber": "47",
-              "localizedDescription": "- 派对模式：房主可以在房间里设定总资金、行进方式、土地权限、游戏时间和胜利条件（和单人模式的选项一样），其他玩家会实时看到；开局时所有人都按这套规则玩。\n- 派对模式：手机横屏时房间画面放不下会可以上下滚动，「开始游戏」不再被挡住。\n- 电脑版：\n  - Windows：下载 rich4-0.8.1-windows.zip，解压后打开 Rich4 文件夹，双击 Rich4.exe。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 rich4-0.8.1-mac.dmg，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew a73d17d",
-              "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.8.1/rich4-0.8.1-unsigned.ipa",
-              "size": 1802805252,
+              "version": "0.8.2",
+              "date": "2026-11-01",
+              "publishedAt": "2026-11-01T03:31:49Z",
+              "buildVersion": "48",
+              "buildNumber": "48",
+              "localizedDescription": "- 修正：安卓手机上大富豪模式的「最终决战」筹码结算画面卡住，无法继续。\n  - 原因：安卓系统的「字体大小」设置会让游戏里的字跟着变大。很多安卓手机（例如红米、小米）默认字号就比标准大，字一放大，四张筹码卡片就把画面撑满了，「前往大富翁城」按钮被挤到屏幕外面，按不到，看起来就像卡死。iPhone 和电脑版不会跟着系统字号放大，所以没有这个问题。\n  - 现在安卓版的字号固定为游戏设计的大小，不再受系统设置影响（其他画面被大字体挤乱的情况也一起解决）；结算画面另外加了保护，万一放不下，卡片会自动缩小，按钮一定在画面里。\n- 路过上市公司认购股份时，数字框下面多了「+10」「+100」「一半」「最多」快捷按钮，不用再一个个输入。\n- 修正：手机横屏时，角色被神仙附身后，「查询」画面左下角的「股票」按钮被挤出框外。\n- 电脑版：\n  - Windows：下载 rich4-0.8.2-windows.zip，解压后打开 Rich4 文件夹，双击 Rich4.exe。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 rich4-0.8.2-mac.dmg，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew 3f39462",
+              "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.8.2/rich4-0.8.2-unsigned.ipa",
+              "size": 1802805559,
               "minOSVersion": "15.0",
-              "releaseTag": "v0.8.1",
-              "source": "https://github.com/iam567/rich4-renew-app/releases/tag/v0.8.1"
+              "releaseTag": "v0.8.2",
+              "source": "https://github.com/iam567/rich4-renew-app/releases/tag/v0.8.2"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "0.8.1",
-          "date": "2026-10-29",
-          "publishedAt": "2026-10-29T02:15:51Z",
-          "buildVersion": "47",
-          "buildNumber": "47",
-          "localizedDescription": "- 派对模式：房主可以在房间里设定总资金、行进方式、土地权限、游戏时间和胜利条件（和单人模式的选项一样），其他玩家会实时看到；开局时所有人都按这套规则玩。\n- 派对模式：手机横屏时房间画面放不下会可以上下滚动，「开始游戏」不再被挡住。\n- 电脑版：\n  - Windows：下载 rich4-0.8.1-windows.zip，解压后打开 Rich4 文件夹，双击 Rich4.exe。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 rich4-0.8.1-mac.dmg，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew a73d17d",
-          "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.8.1/rich4-0.8.1-unsigned.ipa",
-          "size": 1802805252,
+          "version": "0.8.2",
+          "date": "2026-11-01",
+          "publishedAt": "2026-11-01T03:31:49Z",
+          "buildVersion": "48",
+          "buildNumber": "48",
+          "localizedDescription": "- 修正：安卓手机上大富豪模式的「最终决战」筹码结算画面卡住，无法继续。\n  - 原因：安卓系统的「字体大小」设置会让游戏里的字跟着变大。很多安卓手机（例如红米、小米）默认字号就比标准大，字一放大，四张筹码卡片就把画面撑满了，「前往大富翁城」按钮被挤到屏幕外面，按不到，看起来就像卡死。iPhone 和电脑版不会跟着系统字号放大，所以没有这个问题。\n  - 现在安卓版的字号固定为游戏设计的大小，不再受系统设置影响（其他画面被大字体挤乱的情况也一起解决）；结算画面另外加了保护，万一放不下，卡片会自动缩小，按钮一定在画面里。\n- 路过上市公司认购股份时，数字框下面多了「+10」「+100」「一半」「最多」快捷按钮，不用再一个个输入。\n- 修正：手机横屏时，角色被神仙附身后，「查询」画面左下角的「股票」按钮被挤出框外。\n- 电脑版：\n  - Windows：下载 rich4-0.8.2-windows.zip，解压后打开 Rich4 文件夹，双击 Rich4.exe。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 rich4-0.8.2-mac.dmg，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew 3f39462",
+          "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.8.2/rich4-0.8.2-unsigned.ipa",
+          "size": 1802805559,
           "minOSVersion": "15.0",
-          "releaseTag": "v0.8.1",
-          "source": "https://github.com/iam567/rich4-renew-app/releases/tag/v0.8.1"
+          "releaseTag": "v0.8.2",
+          "source": "https://github.com/iam567/rich4-renew-app/releases/tag/v0.8.2"
         }
       ],
-      "version": "0.8.1",
-      "versionDate": "2026-10-29",
-      "versionDescription": "- 派对模式：房主可以在房间里设定总资金、行进方式、土地权限、游戏时间和胜利条件（和单人模式的选项一样），其他玩家会实时看到；开局时所有人都按这套规则玩。\n- 派对模式：手机横屏时房间画面放不下会可以上下滚动，「开始游戏」不再被挡住。\n- 电脑版：\n  - Windows：下载 rich4-0.8.1-windows.zip，解压后打开 Rich4 文件夹，双击 Rich4.exe。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 rich4-0.8.1-mac.dmg，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew a73d17d",
-      "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.8.1/rich4-0.8.1-unsigned.ipa",
-      "size": 1802805252,
+      "version": "0.8.2",
+      "versionDate": "2026-11-01",
+      "versionDescription": "- 修正：安卓手机上大富豪模式的「最终决战」筹码结算画面卡住，无法继续。\n  - 原因：安卓系统的「字体大小」设置会让游戏里的字跟着变大。很多安卓手机（例如红米、小米）默认字号就比标准大，字一放大，四张筹码卡片就把画面撑满了，「前往大富翁城」按钮被挤到屏幕外面，按不到，看起来就像卡死。iPhone 和电脑版不会跟着系统字号放大，所以没有这个问题。\n  - 现在安卓版的字号固定为游戏设计的大小，不再受系统设置影响（其他画面被大字体挤乱的情况也一起解决）；结算画面另外加了保护，万一放不下，卡片会自动缩小，按钮一定在画面里。\n- 路过上市公司认购股份时，数字框下面多了「+10」「+100」「一半」「最多」快捷按钮，不用再一个个输入。\n- 修正：手机横屏时，角色被神仙附身后，「查询」画面左下角的「股票」按钮被挤出框外。\n- 电脑版：\n  - Windows：下载 rich4-0.8.2-windows.zip，解压后打开 Rich4 文件夹，双击 Rich4.exe。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 rich4-0.8.2-mac.dmg，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew 3f39462",
+      "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.8.2/rich4-0.8.2-unsigned.ipa",
+      "size": 1802805559,
       "minOSVersion": "15.0"
     },
     {
@@ -1061,15 +1116,15 @@
     }
   ],
   "featuredApps": [
-    "com.example.kazumi",
-    "org.animeko.animeko"
+    "com.laincat.nekularity",
+    "com.example.kazumi"
   ],
   "news": [
     {
       "title": "源已建立",
       "identifier": "source-created",
-      "caption": "收录 18 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-10-31",
+      "caption": "收录 19 款应用，IPA 直连各项目 GitHub Release。",
+      "date": "2026-11-01",
       "tintColor": "#7C5CFF",
       "notify": false
     }
