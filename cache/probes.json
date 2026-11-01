@@ -1154,5 +1154,19 @@
       "size": 19229059,
       "digest": "sha256:17f568aff0e6b6e88b8914c3c002d078994bf49fa066a84c905f9878e1709f46"
     }
+  },
+  "https://github.com/laincat/Nekularity/releases/download/v0.2.2/Nekularity.ipa": {
+    "bundleIdentifier": "com.laincat.nekularity",
+    "version": "0.2.2",
+    "buildVersion": "4",
+    "displayName": "Nekularity",
+    "minOSVersion": "26.0",
+    "size": 19229392,
+    "assetIdentity": {
+      "id": 699239882,
+      "updated_at": "2026-11-01T19:04:19Z",
+      "size": 19229392,
+      "digest": "sha256:cd2d715be5300f370337a75f55344e806fe7c2c18e40a88c8b45ec050fdda503"
+    }
   }
 }
