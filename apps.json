@@ -692,41 +692,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "0.1.0",
+              "version": "0.2.0",
               "date": "2026-11-01",
-              "publishedAt": "2026-11-01T07:17:41Z",
-              "buildVersion": "1",
-              "buildNumber": "1",
-              "localizedDescription": "首个公开测试版本。此 IPA 未签名，需要使用 AltStore 或 SideStore 签名安装；支持 iOS 26 及以上版本。尚未在真机验证。",
-              "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.1.0/Nekularity.ipa",
-              "size": 8980063,
+              "publishedAt": "2026-11-01T16:28:06Z",
+              "buildVersion": "2",
+              "buildNumber": "2",
+              "localizedDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.1.0...v0.2.0",
+              "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.2.0/Nekularity.ipa",
+              "size": 19213038,
               "minOSVersion": "26.0",
-              "releaseTag": "v0.1.0",
-              "source": "https://github.com/laincat/Nekularity/releases/tag/v0.1.0"
+              "releaseTag": "v0.2.0",
+              "source": "https://github.com/laincat/Nekularity/releases/tag/v0.2.0"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "0.1.0",
+          "version": "0.2.0",
           "date": "2026-11-01",
-          "publishedAt": "2026-11-01T07:17:41Z",
-          "buildVersion": "1",
-          "buildNumber": "1",
-          "localizedDescription": "首个公开测试版本。此 IPA 未签名，需要使用 AltStore 或 SideStore 签名安装；支持 iOS 26 及以上版本。尚未在真机验证。",
-          "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.1.0/Nekularity.ipa",
-          "size": 8980063,
+          "publishedAt": "2026-11-01T16:28:06Z",
+          "buildVersion": "2",
+          "buildNumber": "2",
+          "localizedDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.1.0...v0.2.0",
+          "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.2.0/Nekularity.ipa",
+          "size": 19213038,
           "minOSVersion": "26.0",
-          "releaseTag": "v0.1.0",
-          "source": "https://github.com/laincat/Nekularity/releases/tag/v0.1.0"
+          "releaseTag": "v0.2.0",
+          "source": "https://github.com/laincat/Nekularity/releases/tag/v0.2.0"
         }
       ],
-      "version": "0.1.0",
+      "version": "0.2.0",
       "versionDate": "2026-11-01",
-      "versionDescription": "首个公开测试版本。此 IPA 未签名，需要使用 AltStore 或 SideStore 签名安装；支持 iOS 26 及以上版本。尚未在真机验证。",
-      "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.1.0/Nekularity.ipa",
-      "size": 8980063,
+      "versionDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.1.0...v0.2.0",
+      "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.2.0/Nekularity.ipa",
+      "size": 19213038,
       "minOSVersion": "26.0"
     },
     {
