@@ -692,41 +692,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "0.2.3",
-              "date": "2026-11-01",
-              "publishedAt": "2026-11-01T21:33:04Z",
-              "buildVersion": "5",
-              "buildNumber": "5",
-              "localizedDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.2.2...v0.2.3",
-              "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.2.3/Nekularity.ipa",
-              "size": 19231771,
+              "version": "0.2.4",
+              "date": "2026-11-02",
+              "publishedAt": "2026-11-02T00:12:23Z",
+              "buildVersion": "6",
+              "buildNumber": "6",
+              "localizedDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.2.3...v0.2.4",
+              "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.2.4/Nekularity.ipa",
+              "size": 19233518,
               "minOSVersion": "26.0",
-              "releaseTag": "v0.2.3",
-              "source": "https://github.com/laincat/Nekularity/releases/tag/v0.2.3"
+              "releaseTag": "v0.2.4",
+              "source": "https://github.com/laincat/Nekularity/releases/tag/v0.2.4"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "0.2.3",
-          "date": "2026-11-01",
-          "publishedAt": "2026-11-01T21:33:04Z",
-          "buildVersion": "5",
-          "buildNumber": "5",
-          "localizedDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.2.2...v0.2.3",
-          "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.2.3/Nekularity.ipa",
-          "size": 19231771,
+          "version": "0.2.4",
+          "date": "2026-11-02",
+          "publishedAt": "2026-11-02T00:12:23Z",
+          "buildVersion": "6",
+          "buildNumber": "6",
+          "localizedDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.2.3...v0.2.4",
+          "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.2.4/Nekularity.ipa",
+          "size": 19233518,
           "minOSVersion": "26.0",
-          "releaseTag": "v0.2.3",
-          "source": "https://github.com/laincat/Nekularity/releases/tag/v0.2.3"
+          "releaseTag": "v0.2.4",
+          "source": "https://github.com/laincat/Nekularity/releases/tag/v0.2.4"
         }
       ],
-      "version": "0.2.3",
-      "versionDate": "2026-11-01",
-      "versionDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.2.2...v0.2.3",
-      "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.2.3/Nekularity.ipa",
-      "size": 19231771,
+      "version": "0.2.4",
+      "versionDate": "2026-11-02",
+      "versionDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.2.3...v0.2.4",
+      "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.2.4/Nekularity.ipa",
+      "size": 19233518,
       "minOSVersion": "26.0"
     },
     {
@@ -1124,7 +1124,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 19 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-11-01",
+      "date": "2026-11-02",
       "tintColor": "#7C5CFF",
       "notify": false
     }
