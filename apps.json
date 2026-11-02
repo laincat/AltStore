@@ -680,7 +680,7 @@
       "developerName": "laincat",
       "subtitle": "漫画阅读与源管理",
       "localizedDescription": "基于 VeneraCat Core 的 iOS 漫画阅读客户端，支持漫画源、书架与阅读进度。未签名构建，需要使用侧载工具签名安装。\n\n项目主页：https://github.com/laincat/Nekularity",
-      "iconURL": "https://raw.githubusercontent.com/laincat/Nekularity/v0.3.0/App/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "iconURL": "https://raw.githubusercontent.com/laincat/Nekularity/v0.3.1/App/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
       "tintColor": "#6D5DF6",
       "category": "entertainment",
       "appPermissions": {
@@ -692,41 +692,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "0.3.0",
+              "version": "0.3.1",
               "date": "2026-11-02",
-              "publishedAt": "2026-11-02T21:43:23Z",
-              "buildVersion": "12",
-              "buildNumber": "12",
-              "localizedDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.2.9...v0.3.0",
-              "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.0/Nekularity.ipa",
-              "size": 29393130,
+              "publishedAt": "2026-11-02T23:09:56Z",
+              "buildVersion": "13",
+              "buildNumber": "13",
+              "localizedDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.3.0...v0.3.1",
+              "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.1/Nekularity.ipa",
+              "size": 29416931,
               "minOSVersion": "26.0",
-              "releaseTag": "v0.3.0",
-              "source": "https://github.com/laincat/Nekularity/releases/tag/v0.3.0"
+              "releaseTag": "v0.3.1",
+              "source": "https://github.com/laincat/Nekularity/releases/tag/v0.3.1"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "0.3.0",
+          "version": "0.3.1",
           "date": "2026-11-02",
-          "publishedAt": "2026-11-02T21:43:23Z",
-          "buildVersion": "12",
-          "buildNumber": "12",
-          "localizedDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.2.9...v0.3.0",
-          "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.0/Nekularity.ipa",
-          "size": 29393130,
+          "publishedAt": "2026-11-02T23:09:56Z",
+          "buildVersion": "13",
+          "buildNumber": "13",
+          "localizedDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.3.0...v0.3.1",
+          "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.1/Nekularity.ipa",
+          "size": 29416931,
           "minOSVersion": "26.0",
-          "releaseTag": "v0.3.0",
-          "source": "https://github.com/laincat/Nekularity/releases/tag/v0.3.0"
+          "releaseTag": "v0.3.1",
+          "source": "https://github.com/laincat/Nekularity/releases/tag/v0.3.1"
         }
       ],
-      "version": "0.3.0",
+      "version": "0.3.1",
       "versionDate": "2026-11-02",
-      "versionDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.2.9...v0.3.0",
-      "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.0/Nekularity.ipa",
-      "size": 29393130,
+      "versionDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.3.0...v0.3.1",
+      "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.1/Nekularity.ipa",
+      "size": 29416931,
       "minOSVersion": "26.0"
     },
     {
