@@ -3411,11 +3411,11 @@
       "ipas": [
         {
           "name": "AnimeFlow-ios-2.6.7.ipa",
-          "size": 29386614,
+          "size": 29386618,
           "url": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.6.7/AnimeFlow-ios-2.6.7.ipa",
-          "id": 702467255,
-          "updated_at": "2026-11-02T16:50:07Z",
-          "digest": "sha256:dfeb70a44ef557ef3bdd42418d2e32da39abe8dca82677d89d4b1d13d501da8b"
+          "id": 702831479,
+          "updated_at": "2026-11-02T18:59:40Z",
+          "digest": "sha256:bcf706a07af7fa8b62398c7b7c1fcd575d21a0f1215bcaacb8ae4601cfa7dcb6"
         }
       ]
     },
@@ -5952,6 +5952,25 @@
     }
   ],
   "laincat/Nekularity": [
+    {
+      "tag": "v0.2.9",
+      "name": "v0.2.9",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-02",
+      "published_at": "2026-11-02T19:01:02Z",
+      "body": "**Full Changelog**: https://github.com/laincat/Nekularity/compare/v0.2.8...v0.2.9",
+      "ipas": [
+        {
+          "name": "Nekularity.ipa",
+          "size": 29370355,
+          "url": "https://github.com/laincat/Nekularity/releases/download/v0.2.9/Nekularity.ipa",
+          "id": 702835529,
+          "updated_at": "2026-11-02T19:01:01Z",
+          "digest": "sha256:2076378ee48080f5922143b9a07fb9b62edab338587aea4439c5af6b028a5952"
+        }
+      ]
+    },
     {
       "tag": "v0.2.8",
       "name": "v0.2.8",
