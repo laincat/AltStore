@@ -5944,6 +5944,25 @@
   ],
   "laincat/Nekularity": [
     {
+      "tag": "v0.2.6",
+      "name": "v0.2.6",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-02",
+      "published_at": "2026-11-02T11:14:22Z",
+      "body": "**Full Changelog**: https://github.com/laincat/Nekularity/compare/v0.2.5...v0.2.6",
+      "ipas": [
+        {
+          "name": "Nekularity.ipa",
+          "size": 29361985,
+          "url": "https://github.com/laincat/Nekularity/releases/download/v0.2.6/Nekularity.ipa",
+          "id": 701488356,
+          "updated_at": "2026-11-02T11:14:22Z",
+          "digest": "sha256:c25a35851a8310a593bcac89f3d2205c7c8cdc6a2b349ad484dc70498c729ae2"
+        }
+      ]
+    },
+    {
       "tag": "v0.2.5",
       "name": "v0.2.5",
       "pre": false,
