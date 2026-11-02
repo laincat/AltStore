@@ -99,7 +99,7 @@ APPS = [
         "subtitle": "漫画阅读与源管理",
         "category": "entertainment",
         "tintColor": "#6D5DF6",
-        "icon": None,
+        "icon": "App/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
         "description": (
             "基于 VeneraCat Core 的 iOS 漫画阅读客户端，支持漫画源、书架与阅读进度。"
             "未签名构建，需要使用侧载工具签名安装。\n\n"
