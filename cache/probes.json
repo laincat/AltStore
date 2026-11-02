@@ -1287,12 +1287,12 @@
     "buildVersion": "2.6.7",
     "displayName": "AnimeFlow",
     "minOSVersion": "15.0",
-    "size": 29386615,
+    "size": 29378160,
     "assetIdentity": {
-      "id": 702916122,
-      "updated_at": "2026-11-02T19:28:59Z",
-      "size": 29386615,
-      "digest": "sha256:de7e248b8657faf55b00ff264452e4e8bf16b2f3b522b538d8eec4ffd32af7ce"
+      "id": 702997809,
+      "updated_at": "2026-11-02T19:58:22Z",
+      "size": 29378160,
+      "digest": "sha256:375a7a4d5b6e533bbfde69f20fec9148103dab0b46efe815aed89674f6d60848"
     }
   },
   "https://github.com/laincat/Nekularity/releases/download/v0.2.9/Nekularity.ipa": {
@@ -1307,6 +1307,20 @@
       "updated_at": "2026-11-02T19:01:01Z",
       "size": 29370355,
       "digest": "sha256:2076378ee48080f5922143b9a07fb9b62edab338587aea4439c5af6b028a5952"
+    }
+  },
+  "https://github.com/laincat/Nekularity/releases/download/v0.3.0/Nekularity.ipa": {
+    "bundleIdentifier": "com.laincat.nekularity",
+    "version": "0.3.0",
+    "buildVersion": "12",
+    "displayName": "Nekularity",
+    "minOSVersion": "26.0",
+    "size": 29393130,
+    "assetIdentity": {
+      "id": 703276175,
+      "updated_at": "2026-11-02T21:43:22Z",
+      "size": 29393130,
+      "digest": "sha256:8100da3764346d13f53321562e26b53336273c52e9b50d171a0d6a2395284e36"
     }
   }
 }
