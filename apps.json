@@ -228,11 +228,11 @@
     },
     {
       "name": "AnimeFlow",
-      "bundleIdentifier": "com.ligg.anime_flow",
+      "bundleIdentifier": "com.ligg.animeflow",
       "developerName": "openAnimeFlow",
       "subtitle": "弹幕追番与 Bangumi 收藏同步",
       "localizedDescription": "跨平台追番应用，支持 Bangumi 收藏同步与弹幕播放。未签名 iOS 安装包来自上游 GitHub Release。\n\n开源协议：AGPL-3.0　·　项目主页：https://github.com/openAnimeFlow/AnimeFlow",
-      "iconURL": "https://raw.githubusercontent.com/openAnimeFlow/AnimeFlow/v2.6.6/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/openAnimeFlow/AnimeFlow/v2.6.7/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#4F7CF7",
       "category": "entertainment",
       "appPermissions": {
@@ -244,41 +244,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.6.6",
-              "date": "2026-10-26",
-              "publishedAt": "2026-10-26T08:58:38Z",
-              "buildVersion": "2.6.6",
-              "buildNumber": "2.6.6",
-              "localizedDescription": "🔄 更新内容\n2.6.6 更新\n\n- 这是热修版本，修复桌面端视频解析时切换视频源出现的闪退问题，具体的更新内容在 设置->关于->更新信息页面查看2.6.5更新信息\n\n---\n📦 下载\n- 每个设备的安装包后缀: 苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip或.exe)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)\n- android分多个包: v7a(32位架构旧手机或TV)、arm64(新手机,推荐用这个)、x86(模拟器) \n- windows分多个包: .zip(解压直接使用)、.exe(安装后使用，推荐用这个)",
-              "downloadURL": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.6.6/AnimeFlow-ios-2.6.6.ipa",
-              "size": 29290748,
+              "version": "2.6.7",
+              "date": "2026-11-02",
+              "publishedAt": "2026-11-02T16:24:50Z",
+              "buildVersion": "2.6.7",
+              "buildNumber": "2.6.7",
+              "localizedDescription": "🔄 更新内容\n2.6.7 更新\n新增\n\n- 播放页竖屏时播放器右上角添加更多功能按钮 #118\n- 页面标题栏和导航栏支持磨砂玻璃风格(可在页面设置中关闭恢复旧版风格)\n- 新增设备原生播放器内核(支持Android、ios、Macos)，可在视频设置中切换\n- 规则下载支持更多线路选择\n- 应用内版本更新支持镜像加速选择(下个版本生效)\n优化\n\n- 优化推荐、排行榜、用户收藏页面大屏时滚动卡顿问题\n- 播放器缓冲速度不在使用设备实时网速，改用真是的视频缓冲速度(仅支持mpv内核)\n修复\n\n- 修复封面下载失败问题 #121\n- 修复mdk内核每次快退视频进度时都需要重新缓冲问题\n- 标准化ios包名(需要手动删除旧应用) #117\n\n---\n📦 下载\n- 每个设备的安装包后缀: 苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip或.exe)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)\n- android分多个包: v7a(32位架构旧手机或TV)、arm64(新手机,推荐用这个)、x86(模拟器) \n- windows分多个包: .zip(解压直接使用)、.exe(安装后使用，推荐用这个)",
+              "downloadURL": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.6.7/AnimeFlow-ios-2.6.7.ipa",
+              "size": 29386614,
               "minOSVersion": "15.0",
-              "releaseTag": "v2.6.6",
-              "source": "https://github.com/openAnimeFlow/AnimeFlow/releases/tag/v2.6.6"
+              "releaseTag": "v2.6.7",
+              "source": "https://github.com/openAnimeFlow/AnimeFlow/releases/tag/v2.6.7"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.6.6",
-          "date": "2026-10-26",
-          "publishedAt": "2026-10-26T08:58:38Z",
-          "buildVersion": "2.6.6",
-          "buildNumber": "2.6.6",
-          "localizedDescription": "🔄 更新内容\n2.6.6 更新\n\n- 这是热修版本，修复桌面端视频解析时切换视频源出现的闪退问题，具体的更新内容在 设置->关于->更新信息页面查看2.6.5更新信息\n\n---\n📦 下载\n- 每个设备的安装包后缀: 苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip或.exe)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)\n- android分多个包: v7a(32位架构旧手机或TV)、arm64(新手机,推荐用这个)、x86(模拟器) \n- windows分多个包: .zip(解压直接使用)、.exe(安装后使用，推荐用这个)",
-          "downloadURL": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.6.6/AnimeFlow-ios-2.6.6.ipa",
-          "size": 29290748,
+          "version": "2.6.7",
+          "date": "2026-11-02",
+          "publishedAt": "2026-11-02T16:24:50Z",
+          "buildVersion": "2.6.7",
+          "buildNumber": "2.6.7",
+          "localizedDescription": "🔄 更新内容\n2.6.7 更新\n新增\n\n- 播放页竖屏时播放器右上角添加更多功能按钮 #118\n- 页面标题栏和导航栏支持磨砂玻璃风格(可在页面设置中关闭恢复旧版风格)\n- 新增设备原生播放器内核(支持Android、ios、Macos)，可在视频设置中切换\n- 规则下载支持更多线路选择\n- 应用内版本更新支持镜像加速选择(下个版本生效)\n优化\n\n- 优化推荐、排行榜、用户收藏页面大屏时滚动卡顿问题\n- 播放器缓冲速度不在使用设备实时网速，改用真是的视频缓冲速度(仅支持mpv内核)\n修复\n\n- 修复封面下载失败问题 #121\n- 修复mdk内核每次快退视频进度时都需要重新缓冲问题\n- 标准化ios包名(需要手动删除旧应用) #117\n\n---\n📦 下载\n- 每个设备的安装包后缀: 苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip或.exe)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)\n- android分多个包: v7a(32位架构旧手机或TV)、arm64(新手机,推荐用这个)、x86(模拟器) \n- windows分多个包: .zip(解压直接使用)、.exe(安装后使用，推荐用这个)",
+          "downloadURL": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.6.7/AnimeFlow-ios-2.6.7.ipa",
+          "size": 29386614,
           "minOSVersion": "15.0",
-          "releaseTag": "v2.6.6",
-          "source": "https://github.com/openAnimeFlow/AnimeFlow/releases/tag/v2.6.6"
+          "releaseTag": "v2.6.7",
+          "source": "https://github.com/openAnimeFlow/AnimeFlow/releases/tag/v2.6.7"
         }
       ],
-      "version": "2.6.6",
-      "versionDate": "2026-10-26",
-      "versionDescription": "🔄 更新内容\n2.6.6 更新\n\n- 这是热修版本，修复桌面端视频解析时切换视频源出现的闪退问题，具体的更新内容在 设置->关于->更新信息页面查看2.6.5更新信息\n\n---\n📦 下载\n- 每个设备的安装包后缀: 苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip或.exe)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)\n- android分多个包: v7a(32位架构旧手机或TV)、arm64(新手机,推荐用这个)、x86(模拟器) \n- windows分多个包: .zip(解压直接使用)、.exe(安装后使用，推荐用这个)",
-      "downloadURL": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.6.6/AnimeFlow-ios-2.6.6.ipa",
-      "size": 29290748,
+      "version": "2.6.7",
+      "versionDate": "2026-11-02",
+      "versionDescription": "🔄 更新内容\n2.6.7 更新\n新增\n\n- 播放页竖屏时播放器右上角添加更多功能按钮 #118\n- 页面标题栏和导航栏支持磨砂玻璃风格(可在页面设置中关闭恢复旧版风格)\n- 新增设备原生播放器内核(支持Android、ios、Macos)，可在视频设置中切换\n- 规则下载支持更多线路选择\n- 应用内版本更新支持镜像加速选择(下个版本生效)\n优化\n\n- 优化推荐、排行榜、用户收藏页面大屏时滚动卡顿问题\n- 播放器缓冲速度不在使用设备实时网速，改用真是的视频缓冲速度(仅支持mpv内核)\n修复\n\n- 修复封面下载失败问题 #121\n- 修复mdk内核每次快退视频进度时都需要重新缓冲问题\n- 标准化ios包名(需要手动删除旧应用) #117\n\n---\n📦 下载\n- 每个设备的安装包后缀: 苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip或.exe)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)\n- android分多个包: v7a(32位架构旧手机或TV)、arm64(新手机,推荐用这个)、x86(模拟器) \n- windows分多个包: .zip(解压直接使用)、.exe(安装后使用，推荐用这个)",
+      "downloadURL": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.6.7/AnimeFlow-ios-2.6.7.ipa",
+      "size": 29386614,
       "minOSVersion": "15.0"
     },
     {
@@ -680,7 +680,7 @@
       "developerName": "laincat",
       "subtitle": "漫画阅读与源管理",
       "localizedDescription": "基于 VeneraCat Core 的 iOS 漫画阅读客户端，支持漫画源、书架与阅读进度。未签名构建，需要使用侧载工具签名安装。\n\n项目主页：https://github.com/laincat/Nekularity",
-      "iconURL": "https://raw.githubusercontent.com/laincat/Nekularity/v0.2.7/App/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "iconURL": "https://raw.githubusercontent.com/laincat/Nekularity/v0.2.8/App/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
       "tintColor": "#6D5DF6",
       "category": "entertainment",
       "appPermissions": {
@@ -692,41 +692,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "0.2.7",
+              "version": "0.2.8",
               "date": "2026-11-02",
-              "publishedAt": "2026-11-02T15:17:00Z",
-              "buildVersion": "9",
-              "buildNumber": "9",
-              "localizedDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.2.6...v0.2.7",
-              "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.2.7/Nekularity.ipa",
-              "size": 29368112,
+              "publishedAt": "2026-11-02T17:54:16Z",
+              "buildVersion": "10",
+              "buildNumber": "10",
+              "localizedDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.2.7...v0.2.8",
+              "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.2.8/Nekularity.ipa",
+              "size": 29370482,
               "minOSVersion": "26.0",
-              "releaseTag": "v0.2.7",
-              "source": "https://github.com/laincat/Nekularity/releases/tag/v0.2.7"
+              "releaseTag": "v0.2.8",
+              "source": "https://github.com/laincat/Nekularity/releases/tag/v0.2.8"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "0.2.7",
+          "version": "0.2.8",
           "date": "2026-11-02",
-          "publishedAt": "2026-11-02T15:17:00Z",
-          "buildVersion": "9",
-          "buildNumber": "9",
-          "localizedDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.2.6...v0.2.7",
-          "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.2.7/Nekularity.ipa",
-          "size": 29368112,
+          "publishedAt": "2026-11-02T17:54:16Z",
+          "buildVersion": "10",
+          "buildNumber": "10",
+          "localizedDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.2.7...v0.2.8",
+          "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.2.8/Nekularity.ipa",
+          "size": 29370482,
           "minOSVersion": "26.0",
-          "releaseTag": "v0.2.7",
-          "source": "https://github.com/laincat/Nekularity/releases/tag/v0.2.7"
+          "releaseTag": "v0.2.8",
+          "source": "https://github.com/laincat/Nekularity/releases/tag/v0.2.8"
         }
       ],
-      "version": "0.2.7",
+      "version": "0.2.8",
       "versionDate": "2026-11-02",
-      "versionDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.2.6...v0.2.7",
-      "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.2.7/Nekularity.ipa",
-      "size": 29368112,
+      "versionDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.2.7...v0.2.8",
+      "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.2.8/Nekularity.ipa",
+      "size": 29370482,
       "minOSVersion": "26.0"
     },
     {

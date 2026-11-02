@@ -1266,5 +1266,33 @@
       "size": 1424230155,
       "digest": "sha256:913a3d7746412e46586b79ea9f08f295bc92ec2e22487bb6caab0051d7691b18"
     }
+  },
+  "https://github.com/laincat/Nekularity/releases/download/v0.2.8/Nekularity.ipa": {
+    "bundleIdentifier": "com.laincat.nekularity",
+    "version": "0.2.8",
+    "buildVersion": "10",
+    "displayName": "Nekularity",
+    "minOSVersion": "26.0",
+    "size": 29370482,
+    "assetIdentity": {
+      "id": 702654355,
+      "updated_at": "2026-11-02T17:54:16Z",
+      "size": 29370482,
+      "digest": "sha256:392c5d7a9d8e73f060ee04b8f4c7ca35966188b16d299a4122aeea00afe80159"
+    }
+  },
+  "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.6.7/AnimeFlow-ios-2.6.7.ipa": {
+    "bundleIdentifier": "com.ligg.animeflow",
+    "version": "2.6.7",
+    "buildVersion": "2.6.7",
+    "displayName": "AnimeFlow",
+    "minOSVersion": "15.0",
+    "size": 29386614,
+    "assetIdentity": {
+      "id": 702467255,
+      "updated_at": "2026-11-02T16:50:07Z",
+      "size": 29386614,
+      "digest": "sha256:dfeb70a44ef557ef3bdd42418d2e32da39abe8dca82677d89d4b1d13d501da8b"
+    }
   }
 }
