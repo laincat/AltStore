@@ -680,7 +680,7 @@
       "developerName": "laincat",
       "subtitle": "漫画阅读与源管理",
       "localizedDescription": "基于 VeneraCat Core 的 iOS 漫画阅读客户端，支持漫画源、书架与阅读进度。未签名构建，需要使用侧载工具签名安装。\n\n项目主页：https://github.com/laincat/Nekularity",
-      "iconURL": "https://raw.githubusercontent.com/laincat/Nekularity/v0.2.6/App/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "iconURL": "https://raw.githubusercontent.com/laincat/Nekularity/v0.2.7/App/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
       "tintColor": "#6D5DF6",
       "category": "entertainment",
       "appPermissions": {
@@ -692,41 +692,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "0.2.6",
+              "version": "0.2.7",
               "date": "2026-11-02",
-              "publishedAt": "2026-11-02T11:14:22Z",
-              "buildVersion": "8",
-              "buildNumber": "8",
-              "localizedDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.2.5...v0.2.6",
-              "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.2.6/Nekularity.ipa",
-              "size": 29361985,
+              "publishedAt": "2026-11-02T15:17:00Z",
+              "buildVersion": "9",
+              "buildNumber": "9",
+              "localizedDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.2.6...v0.2.7",
+              "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.2.7/Nekularity.ipa",
+              "size": 29368112,
               "minOSVersion": "26.0",
-              "releaseTag": "v0.2.6",
-              "source": "https://github.com/laincat/Nekularity/releases/tag/v0.2.6"
+              "releaseTag": "v0.2.7",
+              "source": "https://github.com/laincat/Nekularity/releases/tag/v0.2.7"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "0.2.6",
+          "version": "0.2.7",
           "date": "2026-11-02",
-          "publishedAt": "2026-11-02T11:14:22Z",
-          "buildVersion": "8",
-          "buildNumber": "8",
-          "localizedDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.2.5...v0.2.6",
-          "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.2.6/Nekularity.ipa",
-          "size": 29361985,
+          "publishedAt": "2026-11-02T15:17:00Z",
+          "buildVersion": "9",
+          "buildNumber": "9",
+          "localizedDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.2.6...v0.2.7",
+          "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.2.7/Nekularity.ipa",
+          "size": 29368112,
           "minOSVersion": "26.0",
-          "releaseTag": "v0.2.6",
-          "source": "https://github.com/laincat/Nekularity/releases/tag/v0.2.6"
+          "releaseTag": "v0.2.7",
+          "source": "https://github.com/laincat/Nekularity/releases/tag/v0.2.7"
         }
       ],
-      "version": "0.2.6",
+      "version": "0.2.7",
       "versionDate": "2026-11-02",
-      "versionDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.2.5...v0.2.6",
-      "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.2.6/Nekularity.ipa",
-      "size": 29361985,
+      "versionDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.2.6...v0.2.7",
+      "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.2.7/Nekularity.ipa",
+      "size": 29368112,
       "minOSVersion": "26.0"
     },
     {
@@ -1010,7 +1010,7 @@
       "developerName": "iam567",
       "subtitle": "经典大富翁4重制版（大型安装包）",
       "localizedDescription": "基于 Vite、TypeScript 与 Capacitor 的大富翁4重制版。当前 iOS 安装包约 1.79 GB，请在下载前确认设备有足够空间。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/iam567/rich4-renew-app",
-      "iconURL": "https://raw.githubusercontent.com/iam567/rich4-renew-app/v0.9.0/game/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png",
+      "iconURL": "https://raw.githubusercontent.com/iam567/rich4-renew-app/v0.9.1/game/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png",
       "tintColor": "#E9A83A",
       "category": "games",
       "appPermissions": {
@@ -1022,41 +1022,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "0.9.0",
+              "version": "0.9.1",
               "date": "2026-11-02",
-              "publishedAt": "2026-11-02T07:11:19Z",
-              "buildVersion": "49",
-              "buildNumber": "49",
-              "localizedDescription": "> 这是测试版（beta）。 挑战模式和成就图鉴是这一版新追加的，任务多、规则也新，难免有算错、太难或太容易的地方。请大家多玩多测，发现问题或有改进想法，欢迎到 Issues 告诉我们。\n>\n> 想玩稳定版：请下载上一版 v0.8.2（没有挑战模式和图鉴，其他都一样）。普通模式和大富豪模式的存档两版都能读；挑战模式的存档只能用 v0.9.0 读。\n新模式：挑战模式\n\n在「新游戏」里选「挑战模式」。和大富翁、大富豪不一样，这里比的不是把对手搞破产，而是完成各种奇怪又困难的任务来拿星星。\n\n- 每局从这张地图的任务里随机抽，抽到满分合计 120 颗星为止。\n- 期限可选 1 年、3 年、5 年（到期时星最多的人赢），或不限（先拿到 100 颗星的人赢）。\n- 不会破产：钱不够就欠银行的，不收利息；欠债时照样能买地、盖房，但不能贷款、不能融资；欠债的人收过路费 ×1.5（狗急跳墙）。\n- 开局先列出任务清单，游戏中点地图左上角的「★ 任務」随时查看每个人的进度（左右翻页）；结束时显示星数排名。\n- 电脑会想办法抢星星：会为了任务去买特定的地、用特定的卡片和道具。\n- 单机最多 4 人，真人、电脑随意搭配（全是真人轮流玩也行）；派对模式（联机）也能玩挑战，最多 8 人，房间里选「挑战 1 年／3 年／5 年」。\n- 任务共 327 个：通用 81 个，每张地图另有自己的任务（15 张地图）。\n成就图鉴（所有模式都有）\n\n- 不只挑战模式：普通模式、大富豪模式里达成任务的条件，也一样记录成就。挑战模式只是把任务摆上台面，大家都冲着任务去，比较容易收集。\n- 每个任务一张原创插画卡，共 3…",
-              "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.9.0/rich4-0.9.0-unsigned.ipa",
-              "size": 1824831124,
+              "publishedAt": "2026-11-02T13:46:35Z",
+              "buildVersion": "51",
+              "buildNumber": "51",
+              "localizedDescription": "> 这是测试版（beta）。 挑战模式、成就图鉴和这一版新加的「每月任务」都还在测试，难免有算错、太难或太容易的地方。请大家多玩多测，发现问题或有改进想法，欢迎到 Issues 告诉我们。\n>\n> 想玩稳定版：请下载 v0.8.2（没有挑战模式和图鉴，其他都一样）。\n新玩法：每月任务（挑战模式）\n\n- 每月 1 日翻一张「本月任务」卡，全桌公开，只在当月有效；拿到就是 ★★★，算在原本的 120 颗星之外。\n- 100 张卡，开局洗一副牌，每月翻下一张，翻完才会重复。三种卡：\n  - 抢先：本月第一个做到的人拿走（例如：本月内每个对手都被你送进过监狱）；\n  - 比拼：月底最多的人拿，平手都拿（例如：收租王、冤大头）；\n  - 坚持：整个月都做到的人都拿（例如：整个月一次道具都不用）。\n- 新游戏的挑战模式里可以开关「每月任务」，默认开；派对模式的挑战局一律开。\n- 地图上「★ 任务」下面会显示本月的卡，任务列表最上面有每个人的进度；每月 1 日弹出上个月的结果和新的卡。\n- 电脑也会去抢本月的卡。\n- 每张卡都有原创插画，拿到的卡会收进图鉴（新的一组「每月任务」，共 100 张）。（插画由 AI 生成。）\n其他更新\n\n- 挑战模式的电脑更强：会抢董事长、在拍卖会抬价、避开别人的地、凑齐任务要的道具。\n- 任务列表更紧凑：横屏每页 6 个任务、竖屏每页 4 个，所有标签、规则、星数都不再换行；三位数的星数、8 人联机也排得下。\n- 设置里新增「道具动画」开关：关掉后，贵重道具和高级卡片的电影动画（以及大富豪模式洲际飞弹的飞行动画）都会跳过，效果照常。\n- 安装包变小：图片重新压…",
+              "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.9.1/rich4-0.9.1-unsigned.ipa",
+              "size": 1424230155,
               "minOSVersion": "15.0",
-              "releaseTag": "v0.9.0",
-              "source": "https://github.com/iam567/rich4-renew-app/releases/tag/v0.9.0"
+              "releaseTag": "v0.9.1",
+              "source": "https://github.com/iam567/rich4-renew-app/releases/tag/v0.9.1"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "0.9.0",
+          "version": "0.9.1",
           "date": "2026-11-02",
-          "publishedAt": "2026-11-02T07:11:19Z",
-          "buildVersion": "49",
-          "buildNumber": "49",
-          "localizedDescription": "> 这是测试版（beta）。 挑战模式和成就图鉴是这一版新追加的，任务多、规则也新，难免有算错、太难或太容易的地方。请大家多玩多测，发现问题或有改进想法，欢迎到 Issues 告诉我们。\n>\n> 想玩稳定版：请下载上一版 v0.8.2（没有挑战模式和图鉴，其他都一样）。普通模式和大富豪模式的存档两版都能读；挑战模式的存档只能用 v0.9.0 读。\n新模式：挑战模式\n\n在「新游戏」里选「挑战模式」。和大富翁、大富豪不一样，这里比的不是把对手搞破产，而是完成各种奇怪又困难的任务来拿星星。\n\n- 每局从这张地图的任务里随机抽，抽到满分合计 120 颗星为止。\n- 期限可选 1 年、3 年、5 年（到期时星最多的人赢），或不限（先拿到 100 颗星的人赢）。\n- 不会破产：钱不够就欠银行的，不收利息；欠债时照样能买地、盖房，但不能贷款、不能融资；欠债的人收过路费 ×1.5（狗急跳墙）。\n- 开局先列出任务清单，游戏中点地图左上角的「★ 任務」随时查看每个人的进度（左右翻页）；结束时显示星数排名。\n- 电脑会想办法抢星星：会为了任务去买特定的地、用特定的卡片和道具。\n- 单机最多 4 人，真人、电脑随意搭配（全是真人轮流玩也行）；派对模式（联机）也能玩挑战，最多 8 人，房间里选「挑战 1 年／3 年／5 年」。\n- 任务共 327 个：通用 81 个，每张地图另有自己的任务（15 张地图）。\n成就图鉴（所有模式都有）\n\n- 不只挑战模式：普通模式、大富豪模式里达成任务的条件，也一样记录成就。挑战模式只是把任务摆上台面，大家都冲着任务去，比较容易收集。\n- 每个任务一张原创插画卡，共 3…",
-          "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.9.0/rich4-0.9.0-unsigned.ipa",
-          "size": 1824831124,
+          "publishedAt": "2026-11-02T13:46:35Z",
+          "buildVersion": "51",
+          "buildNumber": "51",
+          "localizedDescription": "> 这是测试版（beta）。 挑战模式、成就图鉴和这一版新加的「每月任务」都还在测试，难免有算错、太难或太容易的地方。请大家多玩多测，发现问题或有改进想法，欢迎到 Issues 告诉我们。\n>\n> 想玩稳定版：请下载 v0.8.2（没有挑战模式和图鉴，其他都一样）。\n新玩法：每月任务（挑战模式）\n\n- 每月 1 日翻一张「本月任务」卡，全桌公开，只在当月有效；拿到就是 ★★★，算在原本的 120 颗星之外。\n- 100 张卡，开局洗一副牌，每月翻下一张，翻完才会重复。三种卡：\n  - 抢先：本月第一个做到的人拿走（例如：本月内每个对手都被你送进过监狱）；\n  - 比拼：月底最多的人拿，平手都拿（例如：收租王、冤大头）；\n  - 坚持：整个月都做到的人都拿（例如：整个月一次道具都不用）。\n- 新游戏的挑战模式里可以开关「每月任务」，默认开；派对模式的挑战局一律开。\n- 地图上「★ 任务」下面会显示本月的卡，任务列表最上面有每个人的进度；每月 1 日弹出上个月的结果和新的卡。\n- 电脑也会去抢本月的卡。\n- 每张卡都有原创插画，拿到的卡会收进图鉴（新的一组「每月任务」，共 100 张）。（插画由 AI 生成。）\n其他更新\n\n- 挑战模式的电脑更强：会抢董事长、在拍卖会抬价、避开别人的地、凑齐任务要的道具。\n- 任务列表更紧凑：横屏每页 6 个任务、竖屏每页 4 个，所有标签、规则、星数都不再换行；三位数的星数、8 人联机也排得下。\n- 设置里新增「道具动画」开关：关掉后，贵重道具和高级卡片的电影动画（以及大富豪模式洲际飞弹的飞行动画）都会跳过，效果照常。\n- 安装包变小：图片重新压…",
+          "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.9.1/rich4-0.9.1-unsigned.ipa",
+          "size": 1424230155,
           "minOSVersion": "15.0",
-          "releaseTag": "v0.9.0",
-          "source": "https://github.com/iam567/rich4-renew-app/releases/tag/v0.9.0"
+          "releaseTag": "v0.9.1",
+          "source": "https://github.com/iam567/rich4-renew-app/releases/tag/v0.9.1"
         }
       ],
-      "version": "0.9.0",
+      "version": "0.9.1",
       "versionDate": "2026-11-02",
-      "versionDescription": "> 这是测试版（beta）。 挑战模式和成就图鉴是这一版新追加的，任务多、规则也新，难免有算错、太难或太容易的地方。请大家多玩多测，发现问题或有改进想法，欢迎到 Issues 告诉我们。\n>\n> 想玩稳定版：请下载上一版 v0.8.2（没有挑战模式和图鉴，其他都一样）。普通模式和大富豪模式的存档两版都能读；挑战模式的存档只能用 v0.9.0 读。\n新模式：挑战模式\n\n在「新游戏」里选「挑战模式」。和大富翁、大富豪不一样，这里比的不是把对手搞破产，而是完成各种奇怪又困难的任务来拿星星。\n\n- 每局从这张地图的任务里随机抽，抽到满分合计 120 颗星为止。\n- 期限可选 1 年、3 年、5 年（到期时星最多的人赢），或不限（先拿到 100 颗星的人赢）。\n- 不会破产：钱不够就欠银行的，不收利息；欠债时照样能买地、盖房，但不能贷款、不能融资；欠债的人收过路费 ×1.5（狗急跳墙）。\n- 开局先列出任务清单，游戏中点地图左上角的「★ 任務」随时查看每个人的进度（左右翻页）；结束时显示星数排名。\n- 电脑会想办法抢星星：会为了任务去买特定的地、用特定的卡片和道具。\n- 单机最多 4 人，真人、电脑随意搭配（全是真人轮流玩也行）；派对模式（联机）也能玩挑战，最多 8 人，房间里选「挑战 1 年／3 年／5 年」。\n- 任务共 327 个：通用 81 个，每张地图另有自己的任务（15 张地图）。\n成就图鉴（所有模式都有）\n\n- 不只挑战模式：普通模式、大富豪模式里达成任务的条件，也一样记录成就。挑战模式只是把任务摆上台面，大家都冲着任务去，比较容易收集。\n- 每个任务一张原创插画卡，共 3…",
-      "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.9.0/rich4-0.9.0-unsigned.ipa",
-      "size": 1824831124,
+      "versionDescription": "> 这是测试版（beta）。 挑战模式、成就图鉴和这一版新加的「每月任务」都还在测试，难免有算错、太难或太容易的地方。请大家多玩多测，发现问题或有改进想法，欢迎到 Issues 告诉我们。\n>\n> 想玩稳定版：请下载 v0.8.2（没有挑战模式和图鉴，其他都一样）。\n新玩法：每月任务（挑战模式）\n\n- 每月 1 日翻一张「本月任务」卡，全桌公开，只在当月有效；拿到就是 ★★★，算在原本的 120 颗星之外。\n- 100 张卡，开局洗一副牌，每月翻下一张，翻完才会重复。三种卡：\n  - 抢先：本月第一个做到的人拿走（例如：本月内每个对手都被你送进过监狱）；\n  - 比拼：月底最多的人拿，平手都拿（例如：收租王、冤大头）；\n  - 坚持：整个月都做到的人都拿（例如：整个月一次道具都不用）。\n- 新游戏的挑战模式里可以开关「每月任务」，默认开；派对模式的挑战局一律开。\n- 地图上「★ 任务」下面会显示本月的卡，任务列表最上面有每个人的进度；每月 1 日弹出上个月的结果和新的卡。\n- 电脑也会去抢本月的卡。\n- 每张卡都有原创插画，拿到的卡会收进图鉴（新的一组「每月任务」，共 100 张）。（插画由 AI 生成。）\n其他更新\n\n- 挑战模式的电脑更强：会抢董事长、在拍卖会抬价、避开别人的地、凑齐任务要的道具。\n- 任务列表更紧凑：横屏每页 6 个任务、竖屏每页 4 个，所有标签、规则、星数都不再换行；三位数的星数、8 人联机也排得下。\n- 设置里新增「道具动画」开关：关掉后，贵重道具和高级卡片的电影动画（以及大富豪模式洲际飞弹的飞行动画）都会跳过，效果照常。\n- 安装包变小：图片重新压…",
+      "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v0.9.1/rich4-0.9.1-unsigned.ipa",
+      "size": 1424230155,
       "minOSVersion": "15.0"
     },
     {

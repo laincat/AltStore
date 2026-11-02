@@ -1238,5 +1238,33 @@
       "size": 29361985,
       "digest": "sha256:c25a35851a8310a593bcac89f3d2205c7c8cdc6a2b349ad484dc70498c729ae2"
     }
+  },
+  "https://github.com/laincat/Nekularity/releases/download/v0.2.7/Nekularity.ipa": {
+    "bundleIdentifier": "com.laincat.nekularity",
+    "version": "0.2.7",
+    "buildVersion": "9",
+    "displayName": "Nekularity",
+    "minOSVersion": "26.0",
+    "size": 29368112,
+    "assetIdentity": {
+      "id": 702170910,
+      "updated_at": "2026-11-02T15:16:59Z",
+      "size": 29368112,
+      "digest": "sha256:182f62cf2aea32d6b8183effd0f0f31aede1deeab4270ce02d22b6a12bc8b7f3"
+    }
+  },
+  "https://github.com/iam567/rich4-renew-app/releases/download/v0.9.1/rich4-0.9.1-unsigned.ipa": {
+    "bundleIdentifier": "pro.areu.rich4",
+    "version": "0.9.1",
+    "buildVersion": "51",
+    "displayName": "大富翁4",
+    "minOSVersion": "15.0",
+    "size": 1424230155,
+    "assetIdentity": {
+      "id": 701892865,
+      "updated_at": "2026-11-02T13:43:06Z",
+      "size": 1424230155,
+      "digest": "sha256:913a3d7746412e46586b79ea9f08f295bc92ec2e22487bb6caab0051d7691b18"
+    }
   }
 }
