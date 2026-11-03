@@ -1364,5 +1364,19 @@
       "size": 1446221294,
       "digest": "sha256:e1d918f790b7533a3ef9e01e2a5894915fabd91c1c5b4fea41514e704160f2b3"
     }
+  },
+  "https://github.com/venera-app/venera-prime/releases/download/v2.7.0/venera-prime-ios-2.7.0%2B270.ipa": {
+    "bundleIdentifier": "com.github.wgh136.venera.prime",
+    "version": "2.7.0",
+    "buildVersion": "270",
+    "displayName": "Venera Prime",
+    "minOSVersion": "14.0",
+    "size": 16692937,
+    "assetIdentity": {
+      "id": 706652009,
+      "updated_at": "2026-11-03T18:31:23Z",
+      "size": 16692937,
+      "digest": "sha256:ac764cd2eb2dcfa8cb8df80bc0c6b1bcc84ef77db908a1eaa0ca27bc31be05b7"
+    }
   }
 }
