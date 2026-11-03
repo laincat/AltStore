@@ -5972,6 +5972,25 @@
   ],
   "laincat/Nekularity": [
     {
+      "tag": "v0.3.3",
+      "name": "Nekularity 0.3.3 (build 15)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-03",
+      "published_at": "2026-11-03T22:17:56Z",
+      "body": "Nekularity 0.3.3 · build 15\n\n修复同名漫画下载分组冲突、辅助字号发现页布局，以及播放器手势退出时未保存进度的问题。App 与 Widget 均为 0.3.3/15，最低 iOS 26.0。\n\n- 下载条目以源和漫画 ID 区分，删除同名条目不会混淆另一组。\n- 辅助字号使用单列；普通字号保留已有列数、尺寸和顺序。\n- 手势收起与关闭按钮统一保存播放进度；30 秒本地 HLS 的两条退出/重开路径均从保存的 7 秒恢复。\n- Magpie 登录成功后立即绑定 Core；标准 AI 包含取消与 HTTP 错误处理修复，页面回答仍为整包显示。\n- Core 更新至 `3be57b5ceb848bb9623c090abc463764add14de4`，包含 Magpie 首段流式、UTF-8 跨块及取消修复。\n\n验证：精确 tag 提交 `736e3645b8786f75c23845ca928cfde7dbc5072c` 的 [CI 41720810029](https://github.com/laincat/Nekularity/actions/runs/41720810029) 第二次尝试成功，实际执行 Kit 单测并构建 App、编译 UITests 和打包。CI 没有执行 UI；相关界面、字幕、续播与 AI 另有专用模拟器的定向实测，不把编译视为 UI 或真机验收。\n\n公开 IPA 已实际下载：HTTP 200，29,457,850 字节；ZIP CRC、App/Widget 版本、最低系统和 Core marker 已核对。SHA-256：\n`cb1ab0ca717b7e0a7181bda12e02f7b09a970974f818d16c84edbf2fe51b3a0d`\n\n这是未签名 IPA，需要侧载工具签名安装。真机安装、后台/锁屏、Live Activity、PiP、扬声器和真实账号仍需相应设备/账号验证。AltStore 同步单独核验。\n\nEnglish\n\nThis release repairs same-title download identity, accessibility-size discovery layout and progress persistence on player-sheet dismissal. App and Widget are both 0.3.3/15; minimum iOS is 26.0.\n\nDownloads retain distinct source/comic identities. Accessibility sizes use one column while ordinary layout, saved sizes and order are preserved. Both swipe and button exits persist playback; targeted thirty-second HLS tests restore the saved seven-second position. Magpie authentication binds to Core immediately, and standard AI includes cancellation and HTTP-error handling repairs; its UI still delivers whole responses. Core is pinned to `3be57b5ceb848bb9623c090abc463764add14de4`.\n\nCI 41720810029 attempt2 passed on exact tag commit `736e364`: Kit tests executed, App built, UITests compiled and IPA packaged. UI tests were not executed by CI; targeted simulator acceptance is separate. The public IPA returned HTTP200 and 29,457,850 bytes, with verified CRC, App/Widget metadata and Core marker. SHA-256 is shown above.\n\nThe IPA is unsigned and needs signing through a sideloading tool. Physical-device installation, background/lock-sc",
+      "ipas": [
+        {
+          "name": "Nekularity.ipa",
+          "size": 29457850,
+          "url": "https://github.com/laincat/Nekularity/releases/download/v0.3.3/Nekularity.ipa",
+          "id": 707292409,
+          "updated_at": "2026-11-03T22:17:56Z",
+          "digest": "sha256:cb1ab0ca717b7e0a7181bda12e02f7b09a970974f818d16c84edbf2fe51b3a0d"
+        }
+      ]
+    },
+    {
       "tag": "v0.3.2",
       "name": "v0.3.2",
       "pre": false,

@@ -680,7 +680,7 @@
       "developerName": "laincat",
       "subtitle": "漫画阅读与源管理",
       "localizedDescription": "基于 VeneraCat Core 的 iOS 漫画阅读客户端，支持漫画源、书架与阅读进度。未签名构建，需要使用侧载工具签名安装。\n\n项目主页：https://github.com/laincat/Nekularity",
-      "iconURL": "https://raw.githubusercontent.com/laincat/Nekularity/v0.3.2/App/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "iconURL": "https://raw.githubusercontent.com/laincat/Nekularity/v0.3.3/App/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
       "tintColor": "#6D5DF6",
       "category": "entertainment",
       "appPermissions": {
@@ -692,41 +692,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "0.3.2",
+              "version": "0.3.3",
               "date": "2026-11-03",
-              "publishedAt": "2026-11-03T04:50:40Z",
-              "buildVersion": "14",
-              "buildNumber": "14",
-              "localizedDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.3.1...v0.3.2",
-              "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.2/Nekularity.ipa",
-              "size": 29418522,
+              "publishedAt": "2026-11-03T22:17:56Z",
+              "buildVersion": "15",
+              "buildNumber": "15",
+              "localizedDescription": "Nekularity 0.3.3 · build 15\n\n修复同名漫画下载分组冲突、辅助字号发现页布局，以及播放器手势退出时未保存进度的问题。App 与 Widget 均为 0.3.3/15，最低 iOS 26.0。\n\n- 下载条目以源和漫画 ID 区分，删除同名条目不会混淆另一组。\n- 辅助字号使用单列；普通字号保留已有列数、尺寸和顺序。\n- 手势收起与关闭按钮统一保存播放进度；30 秒本地 HLS 的两条退出/重开路径均从保存的 7 秒恢复。\n- Magpie 登录成功后立即绑定 Core；标准 AI 包含取消与 HTTP 错误处理修复，页面回答仍为整包显示。\n- Core 更新至 3be57b5ceb848bb9623c090abc463764add14de4，包含 Magpie 首段流式、UTF-8 跨块及取消修复。\n\n验证：精确 tag 提交 736e3645b8786f75c23845ca928cfde7dbc5072c 的 CI 41720810029 第二次尝试成功，实际执行 Kit 单测并构建 App、编译 UITests 和打包。CI 没有执行 UI；相关界面、字幕、续播与 AI 另有专用模拟器的定向实测，不把编译视为 UI 或真机验收。\n\n公开 IPA 已实际下载：HTTP 200，29,457,850 字节；ZIP CRC、App/Widget 版本、最低系统和 Core marker 已核对。SHA-256：\ncb1ab0ca717b7e0a7181bda12e02f7b09a970974f818d16c84edbf2fe51b3a0d\n\n这是未签名…",
+              "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.3/Nekularity.ipa",
+              "size": 29457850,
               "minOSVersion": "26.0",
-              "releaseTag": "v0.3.2",
-              "source": "https://github.com/laincat/Nekularity/releases/tag/v0.3.2"
+              "releaseTag": "v0.3.3",
+              "source": "https://github.com/laincat/Nekularity/releases/tag/v0.3.3"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "0.3.2",
+          "version": "0.3.3",
           "date": "2026-11-03",
-          "publishedAt": "2026-11-03T04:50:40Z",
-          "buildVersion": "14",
-          "buildNumber": "14",
-          "localizedDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.3.1...v0.3.2",
-          "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.2/Nekularity.ipa",
-          "size": 29418522,
+          "publishedAt": "2026-11-03T22:17:56Z",
+          "buildVersion": "15",
+          "buildNumber": "15",
+          "localizedDescription": "Nekularity 0.3.3 · build 15\n\n修复同名漫画下载分组冲突、辅助字号发现页布局，以及播放器手势退出时未保存进度的问题。App 与 Widget 均为 0.3.3/15，最低 iOS 26.0。\n\n- 下载条目以源和漫画 ID 区分，删除同名条目不会混淆另一组。\n- 辅助字号使用单列；普通字号保留已有列数、尺寸和顺序。\n- 手势收起与关闭按钮统一保存播放进度；30 秒本地 HLS 的两条退出/重开路径均从保存的 7 秒恢复。\n- Magpie 登录成功后立即绑定 Core；标准 AI 包含取消与 HTTP 错误处理修复，页面回答仍为整包显示。\n- Core 更新至 3be57b5ceb848bb9623c090abc463764add14de4，包含 Magpie 首段流式、UTF-8 跨块及取消修复。\n\n验证：精确 tag 提交 736e3645b8786f75c23845ca928cfde7dbc5072c 的 CI 41720810029 第二次尝试成功，实际执行 Kit 单测并构建 App、编译 UITests 和打包。CI 没有执行 UI；相关界面、字幕、续播与 AI 另有专用模拟器的定向实测，不把编译视为 UI 或真机验收。\n\n公开 IPA 已实际下载：HTTP 200，29,457,850 字节；ZIP CRC、App/Widget 版本、最低系统和 Core marker 已核对。SHA-256：\ncb1ab0ca717b7e0a7181bda12e02f7b09a970974f818d16c84edbf2fe51b3a0d\n\n这是未签名…",
+          "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.3/Nekularity.ipa",
+          "size": 29457850,
           "minOSVersion": "26.0",
-          "releaseTag": "v0.3.2",
-          "source": "https://github.com/laincat/Nekularity/releases/tag/v0.3.2"
+          "releaseTag": "v0.3.3",
+          "source": "https://github.com/laincat/Nekularity/releases/tag/v0.3.3"
         }
       ],
-      "version": "0.3.2",
+      "version": "0.3.3",
       "versionDate": "2026-11-03",
-      "versionDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.3.1...v0.3.2",
-      "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.2/Nekularity.ipa",
-      "size": 29418522,
+      "versionDescription": "Nekularity 0.3.3 · build 15\n\n修复同名漫画下载分组冲突、辅助字号发现页布局，以及播放器手势退出时未保存进度的问题。App 与 Widget 均为 0.3.3/15，最低 iOS 26.0。\n\n- 下载条目以源和漫画 ID 区分，删除同名条目不会混淆另一组。\n- 辅助字号使用单列；普通字号保留已有列数、尺寸和顺序。\n- 手势收起与关闭按钮统一保存播放进度；30 秒本地 HLS 的两条退出/重开路径均从保存的 7 秒恢复。\n- Magpie 登录成功后立即绑定 Core；标准 AI 包含取消与 HTTP 错误处理修复，页面回答仍为整包显示。\n- Core 更新至 3be57b5ceb848bb9623c090abc463764add14de4，包含 Magpie 首段流式、UTF-8 跨块及取消修复。\n\n验证：精确 tag 提交 736e3645b8786f75c23845ca928cfde7dbc5072c 的 CI 41720810029 第二次尝试成功，实际执行 Kit 单测并构建 App、编译 UITests 和打包。CI 没有执行 UI；相关界面、字幕、续播与 AI 另有专用模拟器的定向实测，不把编译视为 UI 或真机验收。\n\n公开 IPA 已实际下载：HTTP 200，29,457,850 字节；ZIP CRC、App/Widget 版本、最低系统和 Core marker 已核对。SHA-256：\ncb1ab0ca717b7e0a7181bda12e02f7b09a970974f818d16c84edbf2fe51b3a0d\n\n这是未签名…",
+      "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.3/Nekularity.ipa",
+      "size": 29457850,
       "minOSVersion": "26.0"
     },
     {
