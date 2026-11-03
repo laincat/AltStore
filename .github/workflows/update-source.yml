@@ -122,6 +122,8 @@ jobs:
           python tools/verify_source.py --min-apps 18
 
       - name: 重新生成源文件
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -e
           # --refresh：重新问 GitHub 要最新 Release 列表；
