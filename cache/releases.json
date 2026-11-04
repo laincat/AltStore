@@ -1,6 +1,25 @@
 {
   "Predidit/Kazumi": [
     {
+      "tag": "2.4.3",
+      "name": "2.4.3",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-04",
+      "published_at": "2026-11-04T12:12:33Z",
+      "body": "- 新增自定义规则仓库支持 (#2485) (@chendianshuiyin)\r\n- 优化远程投屏体验 (#2797 #2798) (@DSplay123)\r\n- 新增 iPhone Duo 内屏支持 (@Predidit)\r\n- 修复批量下载时排队剧集没有缓存弹幕的问题 (#2780) (@wanxinlei1)\r\n- 修复退出后系统托盘图标残留的问题 (#2762) (@fgfsgsgvo)\r\n- 修复 deb 软件包在精简安装的发行版上无法启动的问题 (#2755) (@Huayuluoshi)\r\n- 优化追番页切换分类时的流畅度 (@Predidit)\r\n- 文档更新 (@Predidit)",
+      "ipas": [
+        {
+          "name": "Kazumi_ios_2.4.3_no_sign.ipa",
+          "size": 30439714,
+          "url": "https://github.com/Predidit/Kazumi/releases/download/2.4.3/Kazumi_ios_2.4.3_no_sign.ipa",
+          "id": 709380398,
+          "updated_at": "2026-11-04T12:12:30Z",
+          "digest": "sha256:d62822b316d361a8296cb0b7e1ca49b55d9378463b181ea624562e147a2c7516"
+        }
+      ]
+    },
+    {
       "tag": "2.4.2",
       "name": "2.4.2",
       "pre": false,
@@ -358,25 +377,6 @@
           "id": 495015729,
           "updated_at": "2026-07-30T06:36:59Z",
           "digest": "sha256:2bea4b4fe7ecf70cce7eef0c6257d291e879eee552265da7ce012f0eb2983431"
-        }
-      ]
-    },
-    {
-      "tag": "2.2.3",
-      "name": "2.2.3",
-      "pre": false,
-      "draft": false,
-      "date": "2026-07-23",
-      "published_at": "2026-07-23T05:09:55Z",
-      "body": "> [!NOTE]\r\n> 这是 2.2.2 的热修复版本，更多更新日志参考 2.2.2",
-      "ipas": [
-        {
-          "name": "Kazumi_ios_2.2.3_no_sign.ipa",
-          "size": 29182954,
-          "url": "https://github.com/Predidit/Kazumi/releases/download/2.2.3/Kazumi_ios_2.2.3_no_sign.ipa",
-          "id": 486797092,
-          "updated_at": "2026-07-23T05:09:53Z",
-          "digest": "sha256:36fbfb879a670e4598f269fa464879ddd39a6d8d431d161b7f4b3eb808bef068"
         }
       ]
     }
@@ -4165,6 +4165,25 @@
   ],
   "ARMSX2/ARMSX2": [
     {
+      "tag": "nightly-20261104",
+      "name": "ARMSX2 nightly 20261104 (720f409f00)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-11-04",
+      "published_at": "2026-11-04T11:52:04Z",
+      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- Android: graphics problem reports take a savestate by default\n- Android: problem reports scrub the app's own /data paths\n- Android: problem report takes the save state first and stops the game when the dump's frames are recorded\n- GS dump: say where a requested dump is, so the caller can act when its frames are recorded\n- Android: a crash report says which driver the crashed run actually opened\n- Android: problem reports fill in the game's CRC\n- Android: problem reports name the build's commit without the driver report\n- Android: a crash report that fails to build keeps its Not sent line\n- Android: crash startup work runs once per process\n- Android: problem report screens go back a step, ask before deleting, and keep their work off the main thread\n- An",
+      "ipas": [
+        {
+          "name": "ARMSX2-nightly-20261104-720f409f00-iOS-arm64.ipa",
+          "size": 40568716,
+          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261104/ARMSX2-nightly-20261104-720f409f00-iOS-arm64.ipa",
+          "id": 709318350,
+          "updated_at": "2026-11-04T11:52:10Z",
+          "digest": "sha256:710d401aee5667f5459165d6077e78353f8ec568801b3ca5f48de5d0f7d2c3fb"
+        }
+      ]
+    },
+    {
       "tag": "nightly-20261031",
       "name": "ARMSX2 nightly 20261031 (cb78946d6e)",
       "pre": true,
@@ -4279,25 +4298,6 @@
       "published_at": "2026-10-21T14:25:52Z",
       "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- GameDB back-thread hint: withheld when the IOP thread is on\n- GameDB: a back thread recommendation, set for Spider-Man 3, Sly 3 and Up Your Arsenal\n- GS back thread: the busiest emulation thread gets the prime core alone\n- GS/HW: an opaque draw whose blend was elided as the identity keeps the previous blended draw's pipeline\n- GS/HW: retire a target whose dirty rectangles together cover it, not only one that a single rectangle covers\n- GS/SW: CollectSprites takes the minify option at compile time\n- GS/SW: gather the 32-bit texel copy's rows with the tap counts fixed at compile time\n- GS/SW: the 32-bit texel copy takes bilinear lookups whose weights are zero or a half\n- GS/SW: copy 32-bit texture sprite draws into 32-bit frames straight from local memor",
       "ipas": []
-    },
-    {
-      "tag": "nightly-20261020",
-      "name": "ARMSX2 nightly 20261020 (c66d053fe5)",
-      "pre": true,
-      "draft": false,
-      "date": "2026-10-20",
-      "published_at": "2026-10-20T14:16:32Z",
-      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- GS: a 4-bit image write from an odd start X is one nibble stream, as on the console\n- DriverPacks tests: the setup-context test checks the installed count on every platform\n- DriverPacks tests: the setup-context test installs a pack only on Linux\n- GS: an odd-width 4-bit image write is one nibble stream, as on the console\n- Android: the GPU driver page recommends the ARMSX2 Turnip on Adreno 6xx and 7xx\n- Big Picture: setup step offering the ARMSX2 GPU driver on Adreno\n- Qt: setup wizard page offering the ARMSX2 GPU driver on Adreno\n- DriverPacks: decide whether the first-run setup should offer a pack\n- Android: setup page offering the ARMSX2 GPU driver built for this device\n\nFull changelog: https://github.com/ARMSX2/ARMSX2/compare/nightly-20261019...c6",
-      "ipas": [
-        {
-          "name": "ARMSX2-nightly-20261020-c66d053fe5-iOS-arm64.ipa",
-          "size": 40360087,
-          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261020/ARMSX2-nightly-20261020-c66d053fe5-iOS-arm64.ipa",
-          "id": 659522341,
-          "updated_at": "2026-10-20T14:16:38Z",
-          "digest": "sha256:610c975ad2ccf0b973b39252c10c1479c681ab851929ba763d870c41c1e881f6"
-        }
-      ]
     },
     {
       "tag": "2.8.4",
@@ -6027,6 +6027,25 @@
     }
   ],
   "laincat/Nekularity": [
+    {
+      "tag": "v0.3.6",
+      "name": "v0.3.6",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-04",
+      "published_at": "2026-11-04T13:55:32Z",
+      "body": "改进漫画索引条目的安装身份校验。\n\n- 从索引安装新源时改用 Core 的安装入口：索引里声明的 key 与脚本实际注册的 key 不一致时，在写入前拒绝，已安装的源保持不变。\n- 升级 Core 至 25e5ca3，包含该移动端安装入口；Core 主线四作业 CI 已在 Linux、Windows、macOS Go 与 Apple xcframework/Swift smoke 上通过。\n- 通用 URL 安装行为不变，重复 key 仍走既有的更新路径。\n\nApp 与 Widget：0.3.6 / build 18。最低 iOS 26.0。IPA 未签名。\nMac 隔离副本上 `swift test --filter SourceLibrary --no-parallel` 为 13 tests / 4 suites、0 失败，其中 `anIndexEntryCannotRedirectIntoAnotherInstalledSource` 实际执行并通过；设备 App 编译与 UI 测试编译均通过。发布 CI 通过 Kit 测试、设备 App 构建、UI 测试编译与 IPA 打包；CI 不执行 UI。真机、后台、PiP 和真实账号仍单独验收。\n\n---\n\nRejects index entries that would install under a different identity.\n\n- Installing a new source from an index now goes through Core's install entry: when the key declared in the index disagrees with the key the script actually registers, the write is rejected before publication and installed sources stay unchanged.\n- Updates Core to 25e5ca3, which carries that mobile install entry; Core's main CI passed all four jobs on Linux, Windows and macOS Go plus the Apple xcframework and Swift smoke.\n- Generic URL installation is unchanged, and duplicate keys still take the existing update path.\n\nApp and Widget: 0.3.6 / build 18. Minimum iOS 26.0. The IPA is unsigned.\nOn the Mac isolated copy, `swift test --filter SourceLibrary --no-parallel` recorded 13 tests / 4 suites with 0 failures, and `anIndexEntryCannotRedirectIntoAnotherInstalledSource` actually executed and passed; the device App build and UI-test compilation both passed. Release CI passes Kit tests, the device App build, UI-test compilation and IPA packaging; it does not execute UI tests. Devices, background, PiP and real accounts retain separate acceptance.\n",
+      "ipas": [
+        {
+          "name": "Nekularity.ipa",
+          "size": 29485726,
+          "url": "https://github.com/laincat/Nekularity/releases/download/v0.3.6/Nekularity.ipa",
+          "id": 709699541,
+          "updated_at": "2026-11-04T13:55:32Z",
+          "digest": "sha256:9dfa95840c1b105a7f8ecf0a0aaf4abfaaf363614fbff8509d2c8c61622a0ff0"
+        }
+      ]
+    },
     {
       "tag": "v0.3.5",
       "name": "v0.3.5",

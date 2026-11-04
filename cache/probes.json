@@ -1448,5 +1448,47 @@
       "size": 30436646,
       "digest": "sha256:36db74cc97eeebedf247824f91120a6cb92eaf61bb7f0cb9d7d48ad2a7c747a6"
     }
+  },
+  "https://github.com/laincat/Nekularity/releases/download/v0.3.6/Nekularity.ipa": {
+    "bundleIdentifier": "com.laincat.nekularity",
+    "version": "0.3.6",
+    "buildVersion": "18",
+    "displayName": "Nekularity",
+    "minOSVersion": "26.0",
+    "size": 29485726,
+    "assetIdentity": {
+      "id": 709699541,
+      "updated_at": "2026-11-04T13:55:32Z",
+      "size": 29485726,
+      "digest": "sha256:9dfa95840c1b105a7f8ecf0a0aaf4abfaaf363614fbff8509d2c8c61622a0ff0"
+    }
+  },
+  "https://github.com/Predidit/Kazumi/releases/download/2.4.3/Kazumi_ios_2.4.3_no_sign.ipa": {
+    "bundleIdentifier": "com.example.kazumi",
+    "version": "2.4.3",
+    "buildVersion": "20403",
+    "displayName": "Kazumi",
+    "minOSVersion": "15.0",
+    "size": 30439714,
+    "assetIdentity": {
+      "id": 709380398,
+      "updated_at": "2026-11-04T12:12:30Z",
+      "size": 30439714,
+      "digest": "sha256:d62822b316d361a8296cb0b7e1ca49b55d9378463b181ea624562e147a2c7516"
+    }
+  },
+  "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261104/ARMSX2-nightly-20261104-720f409f00-iOS-arm64.ipa": {
+    "bundleIdentifier": "com.armsx2.ios.nightly",
+    "version": "2.6.0-nightly.20261104.1113",
+    "buildVersion": "260",
+    "displayName": "ARMSX2 Nightly",
+    "minOSVersion": "17.4",
+    "size": 40568716,
+    "assetIdentity": {
+      "id": 709318350,
+      "updated_at": "2026-11-04T11:52:10Z",
+      "size": 40568716,
+      "digest": "sha256:710d401aee5667f5459165d6077e78353f8ec568801b3ca5f48de5d0f7d2c3fb"
+    }
   }
 }

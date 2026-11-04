@@ -385,41 +385,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.6.0-nightly.20261029.1302",
-              "date": "2026-10-29",
-              "publishedAt": "2026-10-29T13:29:45Z",
+              "version": "2.6.0-nightly.20261104.1113",
+              "date": "2026-11-04",
+              "publishedAt": "2026-11-04T11:52:04Z",
               "buildVersion": "260",
               "buildNumber": "260",
-              "localizedDescription": "🧪 预发布 nightly-20261029（2026-10-29）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-              "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261029/ARMSX2-nightly-20261029-aa52a1fdc7-iOS-arm64.ipa",
-              "size": 40543149,
+              "localizedDescription": "🧪 预发布 nightly-20261104（2026-11-04）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+              "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261104/ARMSX2-nightly-20261104-720f409f00-iOS-arm64.ipa",
+              "size": 40568716,
               "minOSVersion": "17.4",
-              "releaseTag": "nightly-20261029",
-              "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261029"
+              "releaseTag": "nightly-20261104",
+              "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261104"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.6.0-nightly.20261029.1302",
-          "date": "2026-10-29",
-          "publishedAt": "2026-10-29T13:29:45Z",
+          "version": "2.6.0-nightly.20261104.1113",
+          "date": "2026-11-04",
+          "publishedAt": "2026-11-04T11:52:04Z",
           "buildVersion": "260",
           "buildNumber": "260",
-          "localizedDescription": "🧪 预发布 nightly-20261029（2026-10-29）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261029/ARMSX2-nightly-20261029-aa52a1fdc7-iOS-arm64.ipa",
-          "size": 40543149,
+          "localizedDescription": "🧪 预发布 nightly-20261104（2026-11-04）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261104/ARMSX2-nightly-20261104-720f409f00-iOS-arm64.ipa",
+          "size": 40568716,
           "minOSVersion": "17.4",
-          "releaseTag": "nightly-20261029",
-          "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261029"
+          "releaseTag": "nightly-20261104",
+          "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261104"
         }
       ],
-      "version": "2.6.0-nightly.20261029.1302",
-      "versionDate": "2026-10-29",
-      "versionDescription": "🧪 预发布 nightly-20261029（2026-10-29）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-      "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261029/ARMSX2-nightly-20261029-aa52a1fdc7-iOS-arm64.ipa",
-      "size": 40543149,
+      "version": "2.6.0-nightly.20261104.1113",
+      "versionDate": "2026-11-04",
+      "versionDescription": "🧪 预发布 nightly-20261104（2026-11-04）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+      "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261104/ARMSX2-nightly-20261104-720f409f00-iOS-arm64.ipa",
+      "size": 40568716,
       "minOSVersion": "17.4"
     },
     {
@@ -625,7 +625,7 @@
       "developerName": "Predidit",
       "subtitle": "自定义规则的番剧采集与在线观看",
       "localizedDescription": "基于自定义规则的番剧采集 App，支持流媒体在线观看、弹幕与实时超分辨率。支持多平台，此处为未签名 iOS 构建，需自行签名安装。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Predidit/Kazumi",
-      "iconURL": "https://raw.githubusercontent.com/Predidit/Kazumi/2.4.2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Predidit/Kazumi/2.4.3/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#E86AA6",
       "category": "entertainment",
       "appPermissions": {
@@ -637,41 +637,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.4.2",
-              "date": "2026-10-23",
-              "publishedAt": "2026-10-23T09:43:33Z",
-              "buildVersion": "20402",
-              "buildNumber": "20402",
-              "localizedDescription": "- 修复部分地区规则仓库无法访问的问题",
-              "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.2/Kazumi_ios_2.4.2_no_sign.ipa",
-              "size": 30521004,
+              "version": "2.4.3",
+              "date": "2026-11-04",
+              "publishedAt": "2026-11-04T12:12:33Z",
+              "buildVersion": "20403",
+              "buildNumber": "20403",
+              "localizedDescription": "- 新增自定义规则仓库支持 (#2485) (@chendianshuiyin)\r\n- 优化远程投屏体验 (#2797 #2798) (@DSplay123)\r\n- 新增 iPhone Duo 内屏支持 (@Predidit)\r\n- 修复批量下载时排队剧集没有缓存弹幕的问题 (#2780) (@wanxinlei1)\r\n- 修复退出后系统托盘图标残留的问题 (#2762) (@fgfsgsgvo)\r\n- 修复 deb 软件包在精简安装的发行版上无法启动的问题 (#2755) (@Huayuluoshi)\r\n- 优化追番页切换分类时的流畅度 (@Predidit)\r\n- 文档更新 (@Predidit)",
+              "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.3/Kazumi_ios_2.4.3_no_sign.ipa",
+              "size": 30439714,
               "minOSVersion": "15.0",
-              "releaseTag": "2.4.2",
-              "source": "https://github.com/Predidit/Kazumi/releases/tag/2.4.2"
+              "releaseTag": "2.4.3",
+              "source": "https://github.com/Predidit/Kazumi/releases/tag/2.4.3"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.4.2",
-          "date": "2026-10-23",
-          "publishedAt": "2026-10-23T09:43:33Z",
-          "buildVersion": "20402",
-          "buildNumber": "20402",
-          "localizedDescription": "- 修复部分地区规则仓库无法访问的问题",
-          "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.2/Kazumi_ios_2.4.2_no_sign.ipa",
-          "size": 30521004,
+          "version": "2.4.3",
+          "date": "2026-11-04",
+          "publishedAt": "2026-11-04T12:12:33Z",
+          "buildVersion": "20403",
+          "buildNumber": "20403",
+          "localizedDescription": "- 新增自定义规则仓库支持 (#2485) (@chendianshuiyin)\r\n- 优化远程投屏体验 (#2797 #2798) (@DSplay123)\r\n- 新增 iPhone Duo 内屏支持 (@Predidit)\r\n- 修复批量下载时排队剧集没有缓存弹幕的问题 (#2780) (@wanxinlei1)\r\n- 修复退出后系统托盘图标残留的问题 (#2762) (@fgfsgsgvo)\r\n- 修复 deb 软件包在精简安装的发行版上无法启动的问题 (#2755) (@Huayuluoshi)\r\n- 优化追番页切换分类时的流畅度 (@Predidit)\r\n- 文档更新 (@Predidit)",
+          "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.3/Kazumi_ios_2.4.3_no_sign.ipa",
+          "size": 30439714,
           "minOSVersion": "15.0",
-          "releaseTag": "2.4.2",
-          "source": "https://github.com/Predidit/Kazumi/releases/tag/2.4.2"
+          "releaseTag": "2.4.3",
+          "source": "https://github.com/Predidit/Kazumi/releases/tag/2.4.3"
         }
       ],
-      "version": "2.4.2",
-      "versionDate": "2026-10-23",
-      "versionDescription": "- 修复部分地区规则仓库无法访问的问题",
-      "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.2/Kazumi_ios_2.4.2_no_sign.ipa",
-      "size": 30521004,
+      "version": "2.4.3",
+      "versionDate": "2026-11-04",
+      "versionDescription": "- 新增自定义规则仓库支持 (#2485) (@chendianshuiyin)\r\n- 优化远程投屏体验 (#2797 #2798) (@DSplay123)\r\n- 新增 iPhone Duo 内屏支持 (@Predidit)\r\n- 修复批量下载时排队剧集没有缓存弹幕的问题 (#2780) (@wanxinlei1)\r\n- 修复退出后系统托盘图标残留的问题 (#2762) (@fgfsgsgvo)\r\n- 修复 deb 软件包在精简安装的发行版上无法启动的问题 (#2755) (@Huayuluoshi)\r\n- 优化追番页切换分类时的流畅度 (@Predidit)\r\n- 文档更新 (@Predidit)",
+      "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.3/Kazumi_ios_2.4.3_no_sign.ipa",
+      "size": 30439714,
       "minOSVersion": "15.0"
     },
     {
@@ -680,7 +680,7 @@
       "developerName": "laincat",
       "subtitle": "漫画阅读与源管理",
       "localizedDescription": "基于 VeneraCat Core 的 iOS 漫画阅读客户端，支持漫画源、书架与阅读进度。未签名构建，需要使用侧载工具签名安装。\n\n项目主页：https://github.com/laincat/Nekularity",
-      "iconURL": "https://raw.githubusercontent.com/laincat/Nekularity/v0.3.5/App/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "iconURL": "https://raw.githubusercontent.com/laincat/Nekularity/v0.3.6/App/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
       "tintColor": "#6D5DF6",
       "category": "entertainment",
       "appPermissions": {
@@ -692,41 +692,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "0.3.5",
+              "version": "0.3.6",
               "date": "2026-11-04",
-              "publishedAt": "2026-11-04T07:47:11Z",
-              "buildVersion": "17",
-              "buildNumber": "17",
-              "localizedDescription": "改进网络请求取消与 Magpie 供应商包兼容性。\n\n- 修复失败、响应超限和取消后的传输状态释放，避免已完成请求继续回调，以及取消和任务注册交错导致挂起。\n- 修复请求 ID 复用时旧请求清理误删新任务映射的问题。\n- 使用预编译 JS 入口的 Magpie 包，不再因未使用的 TypeScript 源文件或损坏的备用入口而被拒绝；实际使用的入口和依赖仍须满足当前宿主能力。\n- 升级 Core 至 ccb6268，包含多端统一源合集的底层接口；客户端统一目录入口与模块执行器仍在后续工作中。\n\nApp 与 Widget：0.3.5 / build 17。最低 iOS 26.0。IPA 未签名。\n同功能源码的已验收组合通过 Swift Testing 443 tests / 82 suites，另有 XCTest 31 项、0 失败。本次发布 CI 41791891766 已通过 Kit 测试、设备 App 构建及 UI 测试编译；CI 不执行 UI。真机、后台、PiP 和真实账号仍单独验收。\n\n---\n\nImproves request cancellation and Magpie provider-package compatibility.\n\n- Releases transport state after failures, response limits and cancellation; prevents callbacks after completion and hangs when cancellation races with task attachment…",
-              "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.5/Nekularity.ipa",
-              "size": 29478760,
+              "publishedAt": "2026-11-04T13:55:32Z",
+              "buildVersion": "18",
+              "buildNumber": "18",
+              "localizedDescription": "改进漫画索引条目的安装身份校验。\n\n- 从索引安装新源时改用 Core 的安装入口：索引里声明的 key 与脚本实际注册的 key 不一致时，在写入前拒绝，已安装的源保持不变。\n- 升级 Core 至 25e5ca3，包含该移动端安装入口；Core 主线四作业 CI 已在 Linux、Windows、macOS Go 与 Apple xcframework/Swift smoke 上通过。\n- 通用 URL 安装行为不变，重复 key 仍走既有的更新路径。\n\nApp 与 Widget：0.3.6 / build 18。最低 iOS 26.0。IPA 未签名。\nMac 隔离副本上 swift test --filter SourceLibrary --no-parallel 为 13 tests / 4 suites、0 失败，其中 anIndexEntryCannotRedirectIntoAnotherInstalledSource 实际执行并通过；设备 App 编译与 UI 测试编译均通过。发布 CI 通过 Kit 测试、设备 App 构建、UI 测试编译与 IPA 打包；CI 不执行 UI。真机、后台、PiP 和真实账号仍单独验收。\n\n---\n\nRejects index entries that would install under a different identity.\n\n- Installing a new source from an index now goes through Core's install entry: when the key decl…",
+              "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.6/Nekularity.ipa",
+              "size": 29485726,
               "minOSVersion": "26.0",
-              "releaseTag": "v0.3.5",
-              "source": "https://github.com/laincat/Nekularity/releases/tag/v0.3.5"
+              "releaseTag": "v0.3.6",
+              "source": "https://github.com/laincat/Nekularity/releases/tag/v0.3.6"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "0.3.5",
+          "version": "0.3.6",
           "date": "2026-11-04",
-          "publishedAt": "2026-11-04T07:47:11Z",
-          "buildVersion": "17",
-          "buildNumber": "17",
-          "localizedDescription": "改进网络请求取消与 Magpie 供应商包兼容性。\n\n- 修复失败、响应超限和取消后的传输状态释放，避免已完成请求继续回调，以及取消和任务注册交错导致挂起。\n- 修复请求 ID 复用时旧请求清理误删新任务映射的问题。\n- 使用预编译 JS 入口的 Magpie 包，不再因未使用的 TypeScript 源文件或损坏的备用入口而被拒绝；实际使用的入口和依赖仍须满足当前宿主能力。\n- 升级 Core 至 ccb6268，包含多端统一源合集的底层接口；客户端统一目录入口与模块执行器仍在后续工作中。\n\nApp 与 Widget：0.3.5 / build 17。最低 iOS 26.0。IPA 未签名。\n同功能源码的已验收组合通过 Swift Testing 443 tests / 82 suites，另有 XCTest 31 项、0 失败。本次发布 CI 41791891766 已通过 Kit 测试、设备 App 构建及 UI 测试编译；CI 不执行 UI。真机、后台、PiP 和真实账号仍单独验收。\n\n---\n\nImproves request cancellation and Magpie provider-package compatibility.\n\n- Releases transport state after failures, response limits and cancellation; prevents callbacks after completion and hangs when cancellation races with task attachment…",
-          "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.5/Nekularity.ipa",
-          "size": 29478760,
+          "publishedAt": "2026-11-04T13:55:32Z",
+          "buildVersion": "18",
+          "buildNumber": "18",
+          "localizedDescription": "改进漫画索引条目的安装身份校验。\n\n- 从索引安装新源时改用 Core 的安装入口：索引里声明的 key 与脚本实际注册的 key 不一致时，在写入前拒绝，已安装的源保持不变。\n- 升级 Core 至 25e5ca3，包含该移动端安装入口；Core 主线四作业 CI 已在 Linux、Windows、macOS Go 与 Apple xcframework/Swift smoke 上通过。\n- 通用 URL 安装行为不变，重复 key 仍走既有的更新路径。\n\nApp 与 Widget：0.3.6 / build 18。最低 iOS 26.0。IPA 未签名。\nMac 隔离副本上 swift test --filter SourceLibrary --no-parallel 为 13 tests / 4 suites、0 失败，其中 anIndexEntryCannotRedirectIntoAnotherInstalledSource 实际执行并通过；设备 App 编译与 UI 测试编译均通过。发布 CI 通过 Kit 测试、设备 App 构建、UI 测试编译与 IPA 打包；CI 不执行 UI。真机、后台、PiP 和真实账号仍单独验收。\n\n---\n\nRejects index entries that would install under a different identity.\n\n- Installing a new source from an index now goes through Core's install entry: when the key decl…",
+          "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.6/Nekularity.ipa",
+          "size": 29485726,
           "minOSVersion": "26.0",
-          "releaseTag": "v0.3.5",
-          "source": "https://github.com/laincat/Nekularity/releases/tag/v0.3.5"
+          "releaseTag": "v0.3.6",
+          "source": "https://github.com/laincat/Nekularity/releases/tag/v0.3.6"
         }
       ],
-      "version": "0.3.5",
+      "version": "0.3.6",
       "versionDate": "2026-11-04",
-      "versionDescription": "改进网络请求取消与 Magpie 供应商包兼容性。\n\n- 修复失败、响应超限和取消后的传输状态释放，避免已完成请求继续回调，以及取消和任务注册交错导致挂起。\n- 修复请求 ID 复用时旧请求清理误删新任务映射的问题。\n- 使用预编译 JS 入口的 Magpie 包，不再因未使用的 TypeScript 源文件或损坏的备用入口而被拒绝；实际使用的入口和依赖仍须满足当前宿主能力。\n- 升级 Core 至 ccb6268，包含多端统一源合集的底层接口；客户端统一目录入口与模块执行器仍在后续工作中。\n\nApp 与 Widget：0.3.5 / build 17。最低 iOS 26.0。IPA 未签名。\n同功能源码的已验收组合通过 Swift Testing 443 tests / 82 suites，另有 XCTest 31 项、0 失败。本次发布 CI 41791891766 已通过 Kit 测试、设备 App 构建及 UI 测试编译；CI 不执行 UI。真机、后台、PiP 和真实账号仍单独验收。\n\n---\n\nImproves request cancellation and Magpie provider-package compatibility.\n\n- Releases transport state after failures, response limits and cancellation; prevents callbacks after completion and hangs when cancellation races with task attachment…",
-      "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.5/Nekularity.ipa",
-      "size": 29478760,
+      "versionDescription": "改进漫画索引条目的安装身份校验。\n\n- 从索引安装新源时改用 Core 的安装入口：索引里声明的 key 与脚本实际注册的 key 不一致时，在写入前拒绝，已安装的源保持不变。\n- 升级 Core 至 25e5ca3，包含该移动端安装入口；Core 主线四作业 CI 已在 Linux、Windows、macOS Go 与 Apple xcframework/Swift smoke 上通过。\n- 通用 URL 安装行为不变，重复 key 仍走既有的更新路径。\n\nApp 与 Widget：0.3.6 / build 18。最低 iOS 26.0。IPA 未签名。\nMac 隔离副本上 swift test --filter SourceLibrary --no-parallel 为 13 tests / 4 suites、0 失败，其中 anIndexEntryCannotRedirectIntoAnotherInstalledSource 实际执行并通过；设备 App 编译与 UI 测试编译均通过。发布 CI 通过 Kit 测试、设备 App 构建、UI 测试编译与 IPA 打包；CI 不执行 UI。真机、后台、PiP 和真实账号仍单独验收。\n\n---\n\nRejects index entries that would install under a different identity.\n\n- Installing a new source from an index now goes through Core's install entry: when the key decl…",
+      "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.6/Nekularity.ipa",
+      "size": 29485726,
       "minOSVersion": "26.0"
     },
     {
