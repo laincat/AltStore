@@ -1406,5 +1406,47 @@
       "size": 29459904,
       "digest": "sha256:c31d240513f2f82d97a507d8255bf586a28a8e518eff03d3a027c16f6571454c"
     }
+  },
+  "https://github.com/laincat/Nekularity/releases/download/v0.3.5/Nekularity.ipa": {
+    "bundleIdentifier": "com.laincat.nekularity",
+    "version": "0.3.5",
+    "buildVersion": "17",
+    "displayName": "Nekularity",
+    "minOSVersion": "26.0",
+    "size": 29478760,
+    "assetIdentity": {
+      "id": 708695531,
+      "updated_at": "2026-11-04T07:47:10Z",
+      "size": 29478760,
+      "digest": "sha256:34091cbbaa23db16b95f34d1ee86a4909c3b0e99a649216274f6760efcc801bd"
+    }
+  },
+  "https://github.com/venera-app/venera-prime/releases/download/v2.7.1/venera-prime-ios-2.7.1%2B271.ipa": {
+    "bundleIdentifier": "com.github.wgh136.venera.prime",
+    "version": "2.7.1",
+    "buildVersion": "271",
+    "displayName": "Venera Prime",
+    "minOSVersion": "14.0",
+    "size": 16708609,
+    "assetIdentity": {
+      "id": 708751910,
+      "updated_at": "2026-11-04T08:07:58Z",
+      "size": 16708609,
+      "digest": "sha256:ff66c5ac51cacd6cf3f35b791e65371c1e52948511d7222ba666855ba441c68b"
+    }
+  },
+  "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.2-102/zhenguojian-1.0.2%2B102-ios-unsigned.ipa": {
+    "bundleIdentifier": "com.duanju.duanjuApp",
+    "version": "1.0.2",
+    "buildVersion": "102",
+    "displayName": "ZhenGuoJian",
+    "minOSVersion": "15.1",
+    "size": 30436646,
+    "assetIdentity": {
+      "id": 708163140,
+      "updated_at": "2026-11-04T04:06:52Z",
+      "size": 30436646,
+      "digest": "sha256:36db74cc97eeebedf247824f91120a6cb92eaf61bb7f0cb9d7d48ad2a7c747a6"
+    }
   }
 }
