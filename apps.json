@@ -680,7 +680,7 @@
       "developerName": "laincat",
       "subtitle": "漫画阅读与源管理",
       "localizedDescription": "基于 VeneraCat Core 的 iOS 漫画阅读客户端，支持漫画源、书架与阅读进度。未签名构建，需要使用侧载工具签名安装。\n\n项目主页：https://github.com/laincat/Nekularity",
-      "iconURL": "https://raw.githubusercontent.com/laincat/Nekularity/v0.3.6/App/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "iconURL": "https://raw.githubusercontent.com/laincat/Nekularity/v0.3.7/App/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
       "tintColor": "#6D5DF6",
       "category": "entertainment",
       "appPermissions": {
@@ -692,41 +692,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "0.3.6",
+              "version": "0.3.7",
               "date": "2026-11-04",
-              "publishedAt": "2026-11-04T13:55:32Z",
-              "buildVersion": "18",
-              "buildNumber": "18",
-              "localizedDescription": "改进漫画索引条目的安装身份校验。\n\n- 从索引安装新源时改用 Core 的安装入口：索引里声明的 key 与脚本实际注册的 key 不一致时，在写入前拒绝，已安装的源保持不变。\n- 升级 Core 至 25e5ca3，包含该移动端安装入口；Core 主线四作业 CI 已在 Linux、Windows、macOS Go 与 Apple xcframework/Swift smoke 上通过。\n- 通用 URL 安装行为不变，重复 key 仍走既有的更新路径。\n\nApp 与 Widget：0.3.6 / build 18。最低 iOS 26.0。IPA 未签名。\nMac 隔离副本上 swift test --filter SourceLibrary --no-parallel 为 13 tests / 4 suites、0 失败，其中 anIndexEntryCannotRedirectIntoAnotherInstalledSource 实际执行并通过；设备 App 编译与 UI 测试编译均通过。发布 CI 通过 Kit 测试、设备 App 构建、UI 测试编译与 IPA 打包；CI 不执行 UI。真机、后台、PiP 和真实账号仍单独验收。\n\n---\n\nRejects index entries that would install under a different identity.\n\n- Installing a new source from an index now goes through Core's install entry: when the key decl…",
-              "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.6/Nekularity.ipa",
-              "size": 29485726,
+              "publishedAt": "2026-11-04T16:41:32Z",
+              "buildVersion": "19",
+              "buildNumber": "19",
+              "localizedDescription": "修复登录页打开期间源被更新或删除时的错误提示。\n\n- 网页登录的句柄只属于签发它的运行时。源在登录过程中被更新或删除后，旧句柄不再有回调，之前会把“回调没执行”当成登录完成并提示已保存。\n- 现在这类失效句柄会明确报错，界面提示“漫画源在登录过程中被更新或删除，这次登录已经失效”；源在普通页面上的其他报错仍然继续等待，不会被误判为失败。\n- 只写登录地址、没有回调的源仍可正常完成登录。\n- 升级 Core 至 b882bf9。\n\nApp 与 Widget：0.3.7 / build 19。最低 iOS 26.0。IPA 未签名。\n同一组合在 macOS 上 Swift Testing 444 tests / 82 suites 通过，XCTest 段 34 tests / 0 failures（含本次新增的 3 条句柄用例）。0.3.6 的完整 UI 套件为 26 通过 / 2 跳过 / 0 失败，2 条跳过是缺真实 nhentai 与 Komiic 种子。真机、后台、PiP 和真实账号仍单独验收。\n\n---\n\nReports when the source is updated or removed while its login page is open.\n\n- A webview login handle belongs to the runtime that issued it. If the source is updated or removed mid-login the old handle has no callbacks left, and the app…",
+              "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.7/Nekularity.ipa",
+              "size": 29483547,
               "minOSVersion": "26.0",
-              "releaseTag": "v0.3.6",
-              "source": "https://github.com/laincat/Nekularity/releases/tag/v0.3.6"
+              "releaseTag": "v0.3.7",
+              "source": "https://github.com/laincat/Nekularity/releases/tag/v0.3.7"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "0.3.6",
+          "version": "0.3.7",
           "date": "2026-11-04",
-          "publishedAt": "2026-11-04T13:55:32Z",
-          "buildVersion": "18",
-          "buildNumber": "18",
-          "localizedDescription": "改进漫画索引条目的安装身份校验。\n\n- 从索引安装新源时改用 Core 的安装入口：索引里声明的 key 与脚本实际注册的 key 不一致时，在写入前拒绝，已安装的源保持不变。\n- 升级 Core 至 25e5ca3，包含该移动端安装入口；Core 主线四作业 CI 已在 Linux、Windows、macOS Go 与 Apple xcframework/Swift smoke 上通过。\n- 通用 URL 安装行为不变，重复 key 仍走既有的更新路径。\n\nApp 与 Widget：0.3.6 / build 18。最低 iOS 26.0。IPA 未签名。\nMac 隔离副本上 swift test --filter SourceLibrary --no-parallel 为 13 tests / 4 suites、0 失败，其中 anIndexEntryCannotRedirectIntoAnotherInstalledSource 实际执行并通过；设备 App 编译与 UI 测试编译均通过。发布 CI 通过 Kit 测试、设备 App 构建、UI 测试编译与 IPA 打包；CI 不执行 UI。真机、后台、PiP 和真实账号仍单独验收。\n\n---\n\nRejects index entries that would install under a different identity.\n\n- Installing a new source from an index now goes through Core's install entry: when the key decl…",
-          "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.6/Nekularity.ipa",
-          "size": 29485726,
+          "publishedAt": "2026-11-04T16:41:32Z",
+          "buildVersion": "19",
+          "buildNumber": "19",
+          "localizedDescription": "修复登录页打开期间源被更新或删除时的错误提示。\n\n- 网页登录的句柄只属于签发它的运行时。源在登录过程中被更新或删除后，旧句柄不再有回调，之前会把“回调没执行”当成登录完成并提示已保存。\n- 现在这类失效句柄会明确报错，界面提示“漫画源在登录过程中被更新或删除，这次登录已经失效”；源在普通页面上的其他报错仍然继续等待，不会被误判为失败。\n- 只写登录地址、没有回调的源仍可正常完成登录。\n- 升级 Core 至 b882bf9。\n\nApp 与 Widget：0.3.7 / build 19。最低 iOS 26.0。IPA 未签名。\n同一组合在 macOS 上 Swift Testing 444 tests / 82 suites 通过，XCTest 段 34 tests / 0 failures（含本次新增的 3 条句柄用例）。0.3.6 的完整 UI 套件为 26 通过 / 2 跳过 / 0 失败，2 条跳过是缺真实 nhentai 与 Komiic 种子。真机、后台、PiP 和真实账号仍单独验收。\n\n---\n\nReports when the source is updated or removed while its login page is open.\n\n- A webview login handle belongs to the runtime that issued it. If the source is updated or removed mid-login the old handle has no callbacks left, and the app…",
+          "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.7/Nekularity.ipa",
+          "size": 29483547,
           "minOSVersion": "26.0",
-          "releaseTag": "v0.3.6",
-          "source": "https://github.com/laincat/Nekularity/releases/tag/v0.3.6"
+          "releaseTag": "v0.3.7",
+          "source": "https://github.com/laincat/Nekularity/releases/tag/v0.3.7"
         }
       ],
-      "version": "0.3.6",
+      "version": "0.3.7",
       "versionDate": "2026-11-04",
-      "versionDescription": "改进漫画索引条目的安装身份校验。\n\n- 从索引安装新源时改用 Core 的安装入口：索引里声明的 key 与脚本实际注册的 key 不一致时，在写入前拒绝，已安装的源保持不变。\n- 升级 Core 至 25e5ca3，包含该移动端安装入口；Core 主线四作业 CI 已在 Linux、Windows、macOS Go 与 Apple xcframework/Swift smoke 上通过。\n- 通用 URL 安装行为不变，重复 key 仍走既有的更新路径。\n\nApp 与 Widget：0.3.6 / build 18。最低 iOS 26.0。IPA 未签名。\nMac 隔离副本上 swift test --filter SourceLibrary --no-parallel 为 13 tests / 4 suites、0 失败，其中 anIndexEntryCannotRedirectIntoAnotherInstalledSource 实际执行并通过；设备 App 编译与 UI 测试编译均通过。发布 CI 通过 Kit 测试、设备 App 构建、UI 测试编译与 IPA 打包；CI 不执行 UI。真机、后台、PiP 和真实账号仍单独验收。\n\n---\n\nRejects index entries that would install under a different identity.\n\n- Installing a new source from an index now goes through Core's install entry: when the key decl…",
-      "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.6/Nekularity.ipa",
-      "size": 29485726,
+      "versionDescription": "修复登录页打开期间源被更新或删除时的错误提示。\n\n- 网页登录的句柄只属于签发它的运行时。源在登录过程中被更新或删除后，旧句柄不再有回调，之前会把“回调没执行”当成登录完成并提示已保存。\n- 现在这类失效句柄会明确报错，界面提示“漫画源在登录过程中被更新或删除，这次登录已经失效”；源在普通页面上的其他报错仍然继续等待，不会被误判为失败。\n- 只写登录地址、没有回调的源仍可正常完成登录。\n- 升级 Core 至 b882bf9。\n\nApp 与 Widget：0.3.7 / build 19。最低 iOS 26.0。IPA 未签名。\n同一组合在 macOS 上 Swift Testing 444 tests / 82 suites 通过，XCTest 段 34 tests / 0 failures（含本次新增的 3 条句柄用例）。0.3.6 的完整 UI 套件为 26 通过 / 2 跳过 / 0 失败，2 条跳过是缺真实 nhentai 与 Komiic 种子。真机、后台、PiP 和真实账号仍单独验收。\n\n---\n\nReports when the source is updated or removed while its login page is open.\n\n- A webview login handle belongs to the runtime that issued it. If the source is updated or removed mid-login the old handle has no callbacks left, and the app…",
+      "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.7/Nekularity.ipa",
+      "size": 29483547,
       "minOSVersion": "26.0"
     },
     {

@@ -2302,6 +2302,16 @@
   ],
   "venera-app/venera-prime": [
     {
+      "tag": "v2.7.2",
+      "name": "Venera Prime 2.7.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-04",
+      "published_at": "2026-11-04T16:17:55Z",
+      "body": "# Venera Prime 2.7.2\n\n## 本次更新\n\n- **WebDAV 自动同步触发**：补齐稍后阅读、阅读历史删除、阅读统计删除与图片收藏增删后的自动上传通知。关闭自动同步时仍不会自动上传，恢复备份不会再次触发上传；阅读进度继续在退出阅读器时保存同步。\n- **WebDAV 最新备份选择**：优先按数据修订号选择和保留备份，避免两端日期不一致或设备时钟回退时把较新的数据当作旧备份。恢复不含详细搜索记录字段的旧版备份时保留本地记录，明确为空的记录仍可清空。\n- **同步卡住与网络超时**：为 WebDAV 设置连接、发送与接收超时，并补齐网络适配器对请求取消、上传停滞、等待响应和接收停滞的处理；单次请求超时后仍可继续发起请求。慢速但持续传输的上传不会被响应等待计时提前中断。\n- **首页收藏卡片界面**：添加收藏夹改用应用统一的弹出面板、文件夹图标和列表样式，首页自定义页与设置弹窗沿用公共组件，并修正窄屏长标题溢出。\n- **首页收藏夹返回**：从首页卡片进入收藏夹后显示返回按钮，正常浏览时点击返回或使用系统返回可直接回到首页，不再先返回收藏夹主页。搜索和多选模式仍先退出当前模式。\n\n## 请更新后验证并反馈\n\n请相关 issue 的提出者更新至 **2.7.2**，按原复现步骤复查。已解决时，请在原 issue 确认并及时关闭尚未关闭的问题；仍存在时，请提供版本号、系统与设备、漫画源、复现步骤，以及必要的日志或录屏。已关闭的问题也可继续留言或重新打开。\n\n请遮盖账号、密码、令牌及 WebDAV 私有地址等敏感信息。关联 issue 不代表所有设备、漫画源或服务端均已验证，本次发布不会自动关闭 issue。\n\n## 历史待确认问题\n\n以下相关改动已包含在此前版本，本次列出是为了收集新版复查结果，并非本次新增功能。发布前已重新核对，表内 issue 当前均为开放状态。\n\n| 相关 issue | 提出者 | 请复查的行为 |\n| --- | --- | --- |\n| #34 | @MisakaTukasa | 首张单页时前后调整双页配对，检查 P1/P2 等配对是否符合预期，复查后续回归反馈。 |\n| #43 | @lzx377z | 在原荣耀设备及漫画上导出 EPUB，检查图片是否完整、是否仍出现 Empty image data。 |\n| #45 | @Arteiimis | 打开原约 674.7 MiB 的 ZIP/CBZ，检查大压缩包读取与内存限制表现。 |\n| #47 | @zklall | 检查双页等高显示、宽图跨页、手动配对保存与双击定位。 |\n| #48 | @zklall | 检查数字、中文与英文章节标签混合时是否按实际章节号排序。 |\n| #49 | @sakana155 | 移动端 JM 源遇到黑图时尝试重新加载并反馈；原始偶发黑图原因尚未在原环境复现。 |\n| #50 | @lzx377z | 在 Windows 图片收藏页检查横向滚动操作。 |\n\n## 验证范围\n\n- Linux 环境、Flutter 3.41.4：完整自动化测试 **392 项通过、2 项跳过**，启用原生压缩与传输测试。覆盖同步触发、备份选择／恢复、上传与接收超时、取消后继续请求、首页收藏卡片添加及窄屏／宽屏返回。\n- 本次修改涉及的 20 个 Dart 文件静态分析通过；全仓分析存在 1 条原有提示（about.dart 的组件参数排序），无新增问题。\n- 版本一致性检查与 git diff --check 通过。\n\nWebDAV 测试使用本地服务与模拟数据，未连接用户实际 WebDAV 账户；未完成各平台真机升级、侧边返回手势及原 issue 设备／漫画源验证。同步仍为整份快照，不支持多端同时修改的自动合并；系统挂起或终止应用时不保证后台上传完成。本地下载文件及下载分类不在同步范围内。平台构建状态以本次 GitHub Actions 发布工作流结果为准，构建成功不等于真机功能验证。\n",
+      "ipas": []
+    },
+    {
       "tag": "v2.7.1",
       "name": "Venera Prime 2.7.1",
       "pre": false,
@@ -2659,25 +2669,6 @@
           "id": 572750379,
           "updated_at": "2026-09-18T14:05:02Z",
           "digest": "sha256:e08432e423ff1813606273daed9c85c75834b7574dea454fc882fd8112a6bb08"
-        }
-      ]
-    },
-    {
-      "tag": "v2.4.0",
-      "name": "v2.4.0",
-      "pre": false,
-      "draft": false,
-      "date": "2026-09-15",
-      "published_at": "2026-09-15T14:57:29Z",
-      "body": "",
-      "ipas": [
-        {
-          "name": "venera-prime-ios-2.4.0+240.ipa",
-          "size": 16021125,
-          "url": "https://github.com/venera-app/venera-prime/releases/download/v2.4.0/venera-prime-ios-2.4.0%2B240.ipa",
-          "id": 565913342,
-          "updated_at": "2026-09-15T14:57:27Z",
-          "digest": "sha256:52db01a9262747a0d1dc5dd2283d31aa80fe0c3ac7b314d18d1813de99f474e5"
         }
       ]
     }
@@ -6027,6 +6018,25 @@
     }
   ],
   "laincat/Nekularity": [
+    {
+      "tag": "v0.3.7",
+      "name": "Nekularity 0.3.7",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-04",
+      "published_at": "2026-11-04T16:41:32Z",
+      "body": "修复登录页打开期间源被更新或删除时的错误提示。\n\n- 网页登录的句柄只属于签发它的运行时。源在登录过程中被更新或删除后，旧句柄不再有回调，之前会把“回调没执行”当成登录完成并提示已保存。\n- 现在这类失效句柄会明确报错，界面提示“漫画源在登录过程中被更新或删除，这次登录已经失效”；源在普通页面上的其他报错仍然继续等待，不会被误判为失败。\n- 只写登录地址、没有回调的源仍可正常完成登录。\n- 升级 Core 至 b882bf9。\n\nApp 与 Widget：0.3.7 / build 19。最低 iOS 26.0。IPA 未签名。\n同一组合在 macOS 上 Swift Testing 444 tests / 82 suites 通过，XCTest 段 34 tests / 0 failures（含本次新增的 3 条句柄用例）。0.3.6 的完整 UI 套件为 26 通过 / 2 跳过 / 0 失败，2 条跳过是缺真实 nhentai 与 Komiic 种子。真机、后台、PiP 和真实账号仍单独验收。\n\n---\n\nReports when the source is updated or removed while its login page is open.\n\n- A webview login handle belongs to the runtime that issued it. If the source is updated or removed mid-login the old handle has no callbacks left, and the app used to treat \"the callback never ran\" as a finished login and report success.\n- Such an expired handle now reports an error, and the interface says the source was updated or removed during login. Other errors a source throws on an ordinary page still keep the wait going instead of failing it.\n- A source that declares only a login URL, with no callbacks, still completes normally.\n- Updates Core to b882bf9.\n\nApp and Widget: 0.3.7 / build 19. Minimum iOS 26.0. The IPA is unsigned.\nThe same combination passed Swift Testing 444 tests / 82 suites on macOS, with an XCTest section of 34 tests / 0 failures, including the three new handle cases. The full UI suite on 0.3.6 recorded 26 passed / 2 skipped / 0 failed; the two skips need real nhentai and Komiic seeds. Devices, background, PiP and real accounts retain separate acceptance.\n",
+      "ipas": [
+        {
+          "name": "Nekularity.ipa",
+          "size": 29483547,
+          "url": "https://github.com/laincat/Nekularity/releases/download/v0.3.7/Nekularity.ipa",
+          "id": 710170571,
+          "updated_at": "2026-11-04T16:41:31Z",
+          "digest": "sha256:5ab46820836e5945b9bfbf0e1c0512dda12bac1e3cf4b9834cd5a41450f8a98a"
+        }
+      ]
+    },
     {
       "tag": "v0.3.6",
       "name": "v0.3.6",
