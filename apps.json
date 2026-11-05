@@ -3,7 +3,7 @@
   "identifier": "com.acgtoolbox.source",
   "iconURL": "https://github.com/laincat.png?size=512",
   "subtitle": "多类 iOS 自签应用源",
-  "description": "收录 18 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh，漫画阅读类 EhPanda、VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX、Aidoku，以及 AvPlay、ARMSX2、AirCard、Rich4、真果鉴。所有 IPA 均直连各项目 GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。",
+  "description": "收录 20 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh，漫画阅读类 EhPanda、VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX、PicaComic、Aidoku，以及 AvPlay、ARMSX2、AirCard、Rich4、真果鉴。所有 IPA 均直连各项目 GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。",
   "tintColor": "#7C5CFF",
   "apps": [
     {
@@ -730,6 +730,61 @@
       "minOSVersion": "26.0"
     },
     {
+      "name": "PicaComic",
+      "bundleIdentifier": "com.github.pacalini.picaComic",
+      "developerName": "ccbkv",
+      "subtitle": "多源漫画阅读器（Pica Comic 分支）",
+      "localizedDescription": "Flutter 编写的多源漫画阅读器，源自 wgh136/PicaComic（上游已归档），由 nyne 继续维护。内置 picacg、E-Hentai、JM、hitomi、nhentai 等漫画源，支持在线阅读、离线下载、本地与网络收藏、阅读历史以及 WebDAV 数据同步。此处为未签名 iOS 构建，需自行签名安装。\n\n开源协议：MIT　·　项目主页：https://github.com/ccbkv/PicaComic",
+      "iconURL": "https://raw.githubusercontent.com/ccbkv/PicaComic/5.0.5/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
+      "tintColor": "#F2683C",
+      "category": "books",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "releaseChannels": [
+        {
+          "track": "stable",
+          "releases": [
+            {
+              "version": "5.0.5",
+              "date": "2026-10-27",
+              "publishedAt": "2026-10-27T19:56:55Z",
+              "buildVersion": "46201",
+              "buildNumber": "46201",
+              "localizedDescription": "5.0.5 (2026-10-27)\r\n更新说明\r\n- 没什么大更新\r\n- 为app增加codeberg代码托管平台,开关在设置的关于里边\r\n- 打开可切换至codeberg更新漫画源和更新，关闭可切换回github\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n安装&更新\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\nFull Changelog: https://github.com/ccbkv/PicaComic/compare/5.0.3...5.0.5",
+              "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.0.5/PicaComic-5.0.5-app-ios-build_no_sign.ipa",
+              "size": 23585269,
+              "minOSVersion": "15.0",
+              "releaseTag": "5.0.5",
+              "source": "https://github.com/ccbkv/PicaComic/releases/tag/5.0.5"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "version": "5.0.5",
+          "date": "2026-10-27",
+          "publishedAt": "2026-10-27T19:56:55Z",
+          "buildVersion": "46201",
+          "buildNumber": "46201",
+          "localizedDescription": "5.0.5 (2026-10-27)\r\n更新说明\r\n- 没什么大更新\r\n- 为app增加codeberg代码托管平台,开关在设置的关于里边\r\n- 打开可切换至codeberg更新漫画源和更新，关闭可切换回github\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n安装&更新\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\nFull Changelog: https://github.com/ccbkv/PicaComic/compare/5.0.3...5.0.5",
+          "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.0.5/PicaComic-5.0.5-app-ios-build_no_sign.ipa",
+          "size": 23585269,
+          "minOSVersion": "15.0",
+          "releaseTag": "5.0.5",
+          "source": "https://github.com/ccbkv/PicaComic/releases/tag/5.0.5"
+        }
+      ],
+      "version": "5.0.5",
+      "versionDate": "2026-10-27",
+      "versionDescription": "5.0.5 (2026-10-27)\r\n更新说明\r\n- 没什么大更新\r\n- 为app增加codeberg代码托管平台,开关在设置的关于里边\r\n- 打开可切换至codeberg更新漫画源和更新，关闭可切换回github\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n安装&更新\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\nFull Changelog: https://github.com/ccbkv/PicaComic/compare/5.0.3...5.0.5",
+      "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.0.5/PicaComic-5.0.5-app-ios-build_no_sign.ipa",
+      "size": 23585269,
+      "minOSVersion": "15.0"
+    },
+    {
       "name": "PicaX",
       "bundleIdentifier": "moye.PicaX",
       "developerName": "youshen2",
@@ -1123,7 +1178,7 @@
     {
       "title": "源已建立",
       "identifier": "source-created",
-      "caption": "收录 19 款应用，IPA 直连各项目 GitHub Release。",
+      "caption": "收录 20 款应用，IPA 直连各项目 GitHub Release。",
       "date": "2026-11-04",
       "tintColor": "#7C5CFF",
       "notify": false

@@ -6388,5 +6388,387 @@
         }
       ]
     }
+  ],
+  "ccbkv/PicaComic": [
+    {
+      "tag": "5.0.5",
+      "name": "5.0.5",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T19:56:55Z",
+      "body": "# 5.0.5 (2026-10-27)\r\n**更新说明**\r\n- 没什么大更新\r\n- 为app增加codeberg代码托管平台,开关在设置的关于里边\r\n- 打开可切换至codeberg更新漫画源和更新，关闭可切换回github\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/5.0.3...5.0.5",
+      "ipas": [
+        {
+          "name": "PicaComic-5.0.5-app-ios-build_no_sign.ipa",
+          "size": 23585269,
+          "url": "https://github.com/ccbkv/PicaComic/releases/download/5.0.5/PicaComic-5.0.5-app-ios-build_no_sign.ipa",
+          "id": 682671837,
+          "updated_at": "2026-10-27T19:43:35Z",
+          "digest": "sha256:56835ff8ccbdd8b73c2b6fa04959b82be9995503ad878e2e9d4f80cea9e8c7c9"
+        }
+      ]
+    },
+    {
+      "tag": "5.0.3",
+      "name": "5.0.3",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T16:38:35Z",
+      "body": "# 5.0.3 (2026-10-26)\r\n**更新说明**\r\n- 修复本地章节信息的显示BUG,5.0.1忘修\r\n- 修复eh nh 的自动添加语言筛选(需更新漫画源配合本版本) \r\n- 修复copy漫画和登入(需更新漫画源配合本版本) \r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/5.0.0...5.0.3",
+      "ipas": [
+        {
+          "name": "PicaComic-5.0.3-app-ios-build_no_sign.ipa",
+          "size": 23587616,
+          "url": "https://github.com/ccbkv/PicaComic/releases/download/5.0.3/PicaComic-5.0.3-app-ios-build_no_sign.ipa",
+          "id": 678767924,
+          "updated_at": "2026-10-26T16:34:39Z",
+          "digest": "sha256:f421f4f34477ba41fe8b837c8a6ddd838a8f3a90ac06ac870a7a9827003a2377"
+        }
+      ]
+    },
+    {
+      "tag": "5.0.0",
+      "name": "5.0.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-16",
+      "published_at": "2026-10-16T14:24:31Z",
+      "body": "# 5.0.0 (2026-10-16)\r\n**更新说明**\r\n- 修复eh卡死(需更新漫画源),加上eh cookie，修复漫画评论，点讚(需更新漫画源配合本版本)\r\n- 修复搜索框直接输入数字，可跳转jm或者nh(需更新漫画源配合本版本)\r\n- 修复绅士漫画，以及增加点上传者id可查看上传的漫画(需更新漫画源配合本版本)\r\n- 修复eh,nh漫画原文标题及修改eh 显示tags( 強制extended)(需更新漫画源配合本版本)\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/4.9.3...5.0.0",
+      "ipas": [
+        {
+          "name": "PicaComic-5.0.0-app-ios-build_no_sign.ipa",
+          "size": 23528544,
+          "url": "https://github.com/ccbkv/PicaComic/releases/download/5.0.0/PicaComic-5.0.0-app-ios-build_no_sign.ipa",
+          "id": 647565403,
+          "updated_at": "2026-10-16T14:21:20Z",
+          "digest": "sha256:2bc7f909cb4ee149bd24d891f1eed7085cc77a9b1e78d38487a5f0081b0cf66a"
+        }
+      ]
+    },
+    {
+      "tag": "4.9.3",
+      "name": "4.9.3",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-10",
+      "published_at": "2026-10-10T17:55:11Z",
+      "body": "# 4.9.3 (2026-10-11)\r\n**更新说明**\r\n- 修复旧版本本地收藏,不兼容新版本的bug\r\n- 修复ehentai登入 (在线漫画源) ,去漫画源更新\r\n- 修复.js漫画源页数\r\n- 在主页加入漫画源更新提示\r\n- 把内置漫画源改成在线.js漫画源(基于venera的改),目前大致正常,请重新安装内置漫画源 \r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/4.9.2...4.9.3",
+      "ipas": [
+        {
+          "name": "PicaComic-4.9.3-app-ios-build_no_sign.ipa",
+          "size": 23521288,
+          "url": "https://github.com/ccbkv/PicaComic/releases/download/4.9.3/PicaComic-4.9.3-app-ios-build_no_sign.ipa",
+          "id": 628609395,
+          "updated_at": "2026-10-10T17:55:28Z",
+          "digest": "sha256:110ad8a38ebc897e261f24d478fde3a7773cff8238e59bb2322eb56c7fb31819"
+        }
+      ]
+    },
+    {
+      "tag": "4.9.2",
+      "name": "4.9.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T19:18:58Z",
+      "body": "# 4.9.2 (2026-10-09)\r\n**更新说明**\r\n\r\n-  把内置漫画源改成在线.js漫画源(基于venera的改),目前大致正常,请重新安装内置漫画源 \r\n- 欢迎提issues\r\n- 只有少部份漫画源(nh)要重新登入\r\n- 在本地收藏夹加入右侧滑动条,\r\n- 增加picacg留言板功能\r\n-  [修改Windows 的 260 個字元路徑限制 ,修复导入\r\n- 优化界面\r\n- 修复绅士漫画章节漫画 (在线漫画源) https://github.com/ccbkv/PicaComic/issues/123\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/4.9.0...4.9.2",
+      "ipas": [
+        {
+          "name": "PicaComic-4.9.2-app-ios-build_no_sign.ipa",
+          "size": 23519867,
+          "url": "https://github.com/ccbkv/PicaComic/releases/download/4.9.2/PicaComic-4.9.2-app-ios-build_no_sign.ipa",
+          "id": 625909959,
+          "updated_at": "2026-10-09T19:10:28Z",
+          "digest": "sha256:50e229b3211ab4a3a9c333aa8211daed4e2a96e65d73a6c27b2c50a22842ba5f"
+        }
+      ]
+    },
+    {
+      "tag": "4.9.0",
+      "name": "4.9.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-12",
+      "published_at": "2026-09-12T14:13:43Z",
+      "body": "# 4.9.0 (2026-09-12)\r\n**更新说明**\r\n- 连续滚动模式滚到章节边界后继续滑动下一章( by @Anyi-lab in https://github.com/ccbkv/PicaComic/pull/103\r\n- 连续模式暂时取消@Anyi-lab的蓄力进度条和浮按钮,改用分段落提醒,不必再点悬浮按钮,直接滑动\r\n- 修复绅士漫画403图片校验签名 by @Anyi-lab in https://github.com/ccbkv/PicaComic/pull/106\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n- 优化界面\r\n-  MyLogInterceptor 改用 extends Interceptor，修复 dio 5.11.0 下的 NoSuchMethodError by @Anyi-lab in https://github.com/ccbkv/PicaComic/pull/102\r\n\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/4.8.8...4.9.0",
+      "ipas": [
+        {
+          "name": "PicaComic-4.9.0-app-ios-build_no_sign.ipa",
+          "size": 23263379,
+          "url": "https://github.com/ccbkv/PicaComic/releases/download/4.9.0/PicaComic-4.9.0-app-ios-build_no_sign.ipa",
+          "id": 559365461,
+          "updated_at": "2026-09-12T14:06:31Z",
+          "digest": "sha256:1b3cd3446de7c08b844e6fa60ae9fe360bccffc742e4e4a6dc484100b314bef3"
+        }
+      ]
+    },
+    {
+      "tag": "4.8.8",
+      "name": "4.8.8",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-27",
+      "published_at": "2026-08-27T13:51:47Z",
+      "body": "# 4.8.8 (2026-08-27)\r\n**更新说明**\r\n-  ios  目前已修复错误, 是github actions的bug,用真mac build 出来的ipa无bug\r\n- 此版本无更新，只是更新了版本号和上传了新的版本。\r\n- 添加并浏览本地漫画,只限已解压的文件夹,不支持压缩包 \r\n- 加入安卓原生桌面历史记录小组件\r\n- 历史记录加入分页 \r\n- 数据导入导出现在支持评论和导入本地的漫画\r\n- 修复windows无法导出pdf , zip的问题\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n- 优化界面\r\n- **安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何测试，不受任何支持.\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/4.8.3...4.8.8\r\n",
+      "ipas": [
+        {
+          "name": "PicaComic-4.8.8-new-app-ios-build_no_sign.ipa",
+          "size": 23261590,
+          "url": "https://github.com/ccbkv/PicaComic/releases/download/4.8.8/PicaComic-4.8.8-new-app-ios-build_no_sign.ipa",
+          "id": 532358490,
+          "updated_at": "2026-08-27T13:40:01Z",
+          "digest": "sha256:30691776869a09440746633ca472164e27954a4786e9de0c1c202b25cba0b691"
+        }
+      ]
+    },
+    {
+      "tag": "4.8.7",
+      "name": "4.8.7",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-25",
+      "published_at": "2026-08-25T13:57:47Z",
+      "body": "# 4.8.7 (2026-08-25)\r\n**更新说明**\r\n\r\n- 添加并浏览本地漫画,只限已解压的文件夹,不支持压缩包 \r\n- 加入安卓原生桌面历史记录小组件\r\n- 历史记录加入分页 \r\n- 数据导入导出现在支持评论和导入本地的漫画\r\n- 修复windows无法导出pdf , zip的问题\r\n- 优化界面\r\n- **安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何测试，不受任何支持.\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/4.8.3...4.8.7",
+      "ipas": [
+        {
+          "name": "PicaComic-4.8.7-new-app-ios-build_no_sign.ipa",
+          "size": 23262469,
+          "url": "https://github.com/ccbkv/PicaComic/releases/download/4.8.7/PicaComic-4.8.7-new-app-ios-build_no_sign.ipa",
+          "id": 532232939,
+          "updated_at": "2026-08-27T11:48:53Z",
+          "digest": "sha256:90276d02dcfb3f2072280137fc45d6034627a0e9f4fcc03253abff2559bd3aea"
+        }
+      ]
+    },
+    {
+      "tag": "4.8.3",
+      "name": "4.8.3",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-05",
+      "published_at": "2026-07-05T21:19:33Z",
+      "body": "# 4.8.3 (2026-07-06)\r\n**更新说明**\r\n- 修复无法应用内安裝更新的bug\r\n- 修复无法删除应用内更新的apk，在APP清理键也可以清理apk\r\n- 修复追更看过更新的漫画还在提示有更新\r\n- 修复更新已下载漫画的章节列表\r\n- 增加文件管理器与评论管理器，开关在设置→阅读\r\n- 增加评论下载 ,开关在阅读,功能参考youshen2/PicaX\r\n- 修复pc右键 bug\r\n- 修复因名字太长无法导出pdf zip的 问题\r\n- 增强阅读器的导航栏的模糊效果\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何测试，不受任何支持.\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/4.8.2...4.8.3",
+      "ipas": [
+        {
+          "name": "PicaComic-4.8.3-app-ios-build-no-sign.ipa",
+          "size": 16515489,
+          "url": "https://github.com/ccbkv/PicaComic/releases/download/4.8.3/PicaComic-4.8.3-app-ios-build-no-sign.ipa",
+          "id": 467443942,
+          "updated_at": "2026-07-05T21:18:28Z",
+          "digest": "sha256:84c6401114762a62c0887d05b9583c079df866eb05863eae706652cdd21de489"
+        }
+      ]
+    },
+    {
+      "tag": "4.8.2",
+      "name": "4.8.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-01",
+      "published_at": "2026-07-01T19:58:08Z",
+      "body": "# 4.8.2 (2026-07-02)\r\n**更新说明**\r\n- 修复移动端长按不能复制文字的bug ,\r\n- 修复 https://github.com/ccbkv/PicaComic/issues/66 - 收藏夹下载异常 ,\r\n- 修复https://github.com/ccbkv/PicaComic/issues/71 - 收藏夹漫画总数量统计bug\r\n- 修复滑动bug 优化液態玻璃 UI ,修复已下载漫画章节信息,在设置增加历史版本功能\r\n- 优化https://github.com/ccbkv/PicaComic/issues/81 本地收藏夹 UI 按钮\r\n- 增加了一个新搜图功能,点开主页工具，图片搜索，代码来自Kazumi\r\n- 在设置关于里增加了开源许可证，代码来自Kazumi\r\n- 修改 app更新界面，代码来自Kazumi\r\n\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何测试，不受任何支持.\r\n\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/4.8.0...4.8.2",
+      "ipas": [
+        {
+          "name": "PicaComic-4.8.2-app-ios-build_no_sign.ipa",
+          "size": 16493541,
+          "url": "https://github.com/ccbkv/PicaComic/releases/download/4.8.2/PicaComic-4.8.2-app-ios-build_no_sign.ipa",
+          "id": 463572319,
+          "updated_at": "2026-07-01T19:55:13Z",
+          "digest": "sha256:8b6fe5716ff7283eba066050e81d7a0fc07f05da6de3f97d2dc7f494bdd85858"
+        }
+      ]
+    },
+    {
+      "tag": "4.8.0",
+      "name": "4.8.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-06-22",
+      "published_at": "2026-06-22T18:39:11Z",
+      "body": "# 4.8.0 (2026-06-23)\r\n\r\n\r\n\r\n\r\n**更新说明**\r\n\r\n\r\n- 可能比较多bug\r\n- 增加液态玻璃(liquid_glass_widgets )\r\n- fix and refactor page num\r\n- 为nhentai添加标签分类筛选,添加标签搜索自动补全,,\r\n- 修复下载页如果漫画有更新不会显示的bug\r\n- 修复漫画图片收藏页数bug\r\n- 修复JM收藏图片时 RangeError bug\r\n- 修复漫画上次阅读为 EP0的bug\r\n- 修复修改聚合搜索不会保存搜索记录的bug\r\n- 修复nh漫画评论不显示的bug\r\n- 修复本地收藏 UI bug\r\n- 删除了appdata.settings[90] (adaptive_platform_ui) \r\n\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何测试，不受任何支持.\r\n\r\n## What's Changed\r\n* fix and refactor page num by @fengye-su in https://github.com/ccbkv/PicaComic/pull/74\r\n* Nhentai/categorypage by @fengye-su in https://github.com/ccbkv/PicaComic/pull/75\r\n* feat:新特性 by @youshen2 in https://github.com/ccbkv/PicaComic/pull/76\r\n\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/4.7.0...4.8.0\r\n\r\n\r\n\r\n\r\n",
+      "ipas": [
+        {
+          "name": "PicaComic-4.8.0-app-ios-build.ipa",
+          "size": 16143184,
+          "url": "https://github.com/ccbkv/PicaComic/releases/download/4.8.0/PicaComic-4.8.0-app-ios-build.ipa",
+          "id": 454850347,
+          "updated_at": "2026-06-22T18:35:06Z",
+          "digest": "sha256:c5a64185d61a4c978a43348d0a49a8ada6621265eaac7bd50e24b737a7728f79"
+        }
+      ]
+    },
+    {
+      "tag": "4.7.0",
+      "name": "4.7.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-04-19",
+      "published_at": "2026-04-19T15:21:59Z",
+      "body": "# 4.7.0 (2026-04-19)\r\n\r\n\r\n\r\n\r\n**更新说明**\r\n\r\n\r\n- 1..为章节评论增加下载保存，删改和锁定功能,在设置里点阅读入口在里面\r\n- 2.增加漫画特定设置功能\r\n\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何测试，不受任何支持.\r\n\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/4.6.9...4.7.0",
+      "ipas": [
+        {
+          "name": "PicaComic-4.7.0-app-ios-build.ipa",
+          "size": 15937051,
+          "url": "https://github.com/ccbkv/PicaComic/releases/download/4.7.0/PicaComic-4.7.0-app-ios-build.ipa",
+          "id": 400003481,
+          "updated_at": "2026-04-19T15:21:40Z",
+          "digest": "sha256:3c569cab3b60ac4af247c33f19ebd91ac829ea2ddc97086faf303c05b0c88ba1"
+        }
+      ]
+    },
+    {
+      "tag": "4.6.9",
+      "name": "4.6.9",
+      "pre": false,
+      "draft": false,
+      "date": "2026-04-10",
+      "published_at": "2026-04-10T20:57:58Z",
+      "body": "# 4.6.9 (2026-04-11)\r\n\r\n\r\n\r\n\r\n**更新说明**\r\n\r\n\r\n- 1.为拷贝源加上网页登入, 安装本版本后去漫画源的浏览列表里更新了拷贝漫画源\r\n- 2.加上venera 的追更功能，未测\r\n- 3.修复特定系統开屏页状态栏瞬间1秒黑色的问题https://github.com/ccbkv/PicaComic/issues/52\r\n\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何测试，不受任何支持.\r\n\r\n\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/4.6.7...4.6.8",
+      "ipas": [
+        {
+          "name": "PicaComic-4.6.9-app-ios-build.ipa",
+          "size": 15891993,
+          "url": "https://github.com/ccbkv/PicaComic/releases/download/4.6.9/PicaComic-4.6.9-app-ios-build.ipa",
+          "id": 393592331,
+          "updated_at": "2026-04-10T20:57:41Z",
+          "digest": "sha256:36400781c33bc9ae3edb25d8f49b0faa907374e8d5cd3a792f3646025a6b99ce"
+        }
+      ]
+    },
+    {
+      "tag": "4.6.7",
+      "name": "4.6.7",
+      "pre": false,
+      "draft": false,
+      "date": "2026-04-08",
+      "published_at": "2026-04-08T22:34:42Z",
+      "body": "# 4.6.7 (2026-04-09)\r\n\r\n\r\n\r\n\r\n**更新说明**\r\n\r\n\r\n- 1.修复横屏时UI跟前摄所在的屏幕区域存在冲突https://github.com/ccbkv/PicaComic/issues/52\r\n- 2.増加章节末尾显示评论\r\n- 3.増加在阅读器中显示时间和电量信息\r\n- 4.為拷贝增加分组 p.s 要在漫画源更新拷贝漫画源\r\n- 5.我更新了拷贝漫画源,在漫画源的浏览列表里\r\n\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何测试，不受任何支持.\r\n\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/4.6.3...4.6.7",
+      "ipas": [
+        {
+          "name": "PicaComic-4.6.7-app-ios-build.ipa",
+          "size": 15859791,
+          "url": "https://github.com/ccbkv/PicaComic/releases/download/4.6.7/PicaComic-4.6.7-app-ios-build.ipa",
+          "id": 391920493,
+          "updated_at": "2026-04-08T22:34:11Z",
+          "digest": "sha256:d7e3db7f30adeabfab4bd6c15bc3da61ab6f747491e6723f18283310fa766019"
+        }
+      ]
+    },
+    {
+      "tag": "4.6.3",
+      "name": "4.6.3",
+      "pre": false,
+      "draft": false,
+      "date": "2026-04-07",
+      "published_at": "2026-04-07T17:33:18Z",
+      "body": "# 4.6.3 (2026-04-08)\r\n\r\n\r\n\r\n\r\n**更新说明**\r\n\r\n\r\n- 1.修复hitomi搜索结果只有最新的bug\r\n- 2.增加滚动界面回弹效果\r\n- 3.修复章节评论\r\n- 4.修复rule.json编辑器滑动异常\r\n我更新了拷贝漫画源,在漫画源的浏览列表里\r\n\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何测试，不受任何支持.\r\n\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/4.5.8...4.6.3",
+      "ipas": [
+        {
+          "name": "PicaComic-4.6.3-app-ios-build.ipa",
+          "size": 15819140,
+          "url": "https://github.com/ccbkv/PicaComic/releases/download/4.6.3/PicaComic-4.6.3-app-ios-build.ipa",
+          "id": 390961323,
+          "updated_at": "2026-04-07T17:31:16Z",
+          "digest": "sha256:e449fb82d1da71b28d2cf8cb84d0fb27942177d34280d36cc2cf5409d781a10b"
+        }
+      ]
+    },
+    {
+      "tag": "4.6.2",
+      "name": "4.6.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-04-07",
+      "published_at": "2026-04-07T14:54:16Z",
+      "body": "",
+      "ipas": [
+        {
+          "name": "PicaComic-4.6.2-app-ios-build.ipa",
+          "size": 15819550,
+          "url": "https://github.com/ccbkv/PicaComic/releases/download/4.6.2/PicaComic-4.6.2-app-ios-build.ipa",
+          "id": 390872741,
+          "updated_at": "2026-04-07T14:53:03Z",
+          "digest": "sha256:3d39b288e251cff133d455ff1c5a8cec1e9fc0f9b8df72b5fb422f0d4842092e"
+        }
+      ]
+    },
+    {
+      "tag": "4.6.1",
+      "name": "4.6.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-04-06",
+      "published_at": "2026-04-06T14:17:42Z",
+      "body": "# 4.6.1 (2026-04-06)\r\n\r\n\r\n\r\n\r\n**更新说明**\r\n\r\n\r\n- 1. 修复nhentai的登录过期\r\n * fix(nhentai): refresh auth tokens on expiry by @fengye-su in https://github.com/ccbkv/PicaComic/pull/46\r\n\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何测试，不受任何支持.\r\n\r\n\r\n\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/4.5.8...4.6.1",
+      "ipas": [
+        {
+          "name": "PicaComic-4.6.1-app-ios-build.ipa",
+          "size": 15816395,
+          "url": "https://github.com/ccbkv/PicaComic/releases/download/4.6.1/PicaComic-4.6.1-app-ios-build.ipa",
+          "id": 390058639,
+          "updated_at": "2026-04-06T14:17:15Z",
+          "digest": "sha256:25592e9f9c3d7e41d2b41eb9ecbda9c2236685f67df7f084db8c892a75fd8cd7"
+        }
+      ]
+    },
+    {
+      "tag": "4.6.0",
+      "name": "4.6.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-04-05",
+      "published_at": "2026-04-05T20:23:09Z",
+      "body": "# 4.6.0 (2026-04-06)\r\n\r\n\r\n\r\n**更新说明**\r\n\r\n\r\n- 1. 修改与修复nhentai的登录方式\r\n- 2. 重构了nhentai的登录和收藏功能 by @fengye-su in https://github.com/ccbkv/PicaComic/pull/43\r\n- 3.优化阅读体验的功能 by @youshen2 in https://github.com/ccbkv/PicaComic/pull/44\r\n\r\n\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何测试，不受任何支持.\r\n\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/4.5.7...4.5.8",
+      "ipas": [
+        {
+          "name": "PicaComic-4.6.0-app-ios-build.ipa",
+          "size": 15934045,
+          "url": "https://github.com/ccbkv/PicaComic/releases/download/4.6.0/PicaComic-4.6.0-app-ios-build.ipa",
+          "id": 389517829,
+          "updated_at": "2026-04-05T20:18:03Z",
+          "digest": "sha256:b8e5abc8dc50b10ab8a095f4e0e6c5e289eb45896e25265def9c36984c8fc331"
+        }
+      ]
+    },
+    {
+      "tag": "4.5.8",
+      "name": "4.5.8",
+      "pre": false,
+      "draft": false,
+      "date": "2026-03-30",
+      "published_at": "2026-03-30T12:04:12Z",
+      "body": "# 4.5.8 (2026-03-30)\r\n\r\n\r\n- \r\n\r\n\r\n**更新说明**\r\n\r\n-  \r\n- 更新nhentai API,该版本已更新至 nhentai API v2，但登录和在线收藏等功能仍在开发中\r\n- 修复搜图bot酱\r\n- 修复分页\r\n- 增加章节评论功能\r\n\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何测试，不受任何支持.\r\n\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/4.5.7...4.5.8",
+      "ipas": [
+        {
+          "name": "PicaComic-4.5.8-app-ios-build.ipa",
+          "size": 15901789,
+          "url": "https://github.com/ccbkv/PicaComic/releases/download/4.5.8/PicaComic-4.5.8-app-ios-build.ipa",
+          "id": 384699429,
+          "updated_at": "2026-03-30T12:04:45Z",
+          "digest": "sha256:2c51673057eda8e4bc10a491e90057815d75bd5f4125751f3f4f85fba821fda8"
+        }
+      ]
+    },
+    {
+      "tag": "4.5.7",
+      "name": "4.5.7",
+      "pre": false,
+      "draft": false,
+      "date": "2026-03-26",
+      "published_at": "2026-03-26T18:26:19Z",
+      "body": "# 4.5.7 (2026-03-27)\r\n\r\n- \r\n\r\n\r\n**更新说明**\r\n\r\n-  1. [修复输入禁漫漫画ID点確认后黑屏](https://github.com/ccbkv/PicaComic/commit/c38818c08d36b2bcee4712787f3ed9bbbea3b74b)\r\n\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何测试，不受任何支持.\r\n\r\n\r\n\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/4.5.6...4.5.7",
+      "ipas": [
+        {
+          "name": "PicaComic-4.5.7-app-ios-build.ipa",
+          "size": 15890953,
+          "url": "https://github.com/ccbkv/PicaComic/releases/download/4.5.7/PicaComic-4.5.7-app-ios-build.ipa",
+          "id": 382306187,
+          "updated_at": "2026-03-26T18:26:04Z",
+          "digest": "sha256:39ce95696eb0cef085a026ec4f73f7865d3f312f09a47de3d0ab44df9ff479c5"
+        }
+      ]
+    }
   ]
 }

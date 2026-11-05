@@ -72,8 +72,8 @@ SOURCE = {
     "iconURL": "https://github.com/laincat.png?size=512",
     "subtitle": "多类 iOS 自签应用源",
     "description": (
-        "收录 18 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh，漫画阅读类 EhPanda、"
-        "VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX、Aidoku，以及 AvPlay、ARMSX2、"
+        "收录 20 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh，漫画阅读类 EhPanda、"
+        "VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX、PicaComic、Aidoku，以及 AvPlay、ARMSX2、"
         "AirCard、Rich4、真果鉴。所有 IPA 均直连各项目 "
         "GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。"
     ),
@@ -291,6 +291,27 @@ APPS = [
             "使用 SwiftUI 开发、面向 iOS 的聚合漫画阅读器。"
             "此处选用不含 Watch 组件的未签名包，避免免费账号签名时因附加 Target 失败。\n\n"
             "开源协议：MPL-2.0　·　项目主页：https://github.com/youshen2/PicaX"
+        ),
+    },
+    {
+        "repo": "ccbkv/PicaComic",
+        # 资产名形如 PicaComic-5.0.5-app-ios-build_no_sign.ipa。
+        # ⚠️ 同一 release 有 8 个资产（deb、macOS zip、Windows zip、pkg.tar.zst、
+        #    三个 apk 和这个 ipa），必须用「app-ios-build + _no_sign.ipa」锁死，实测 1/8。
+        "asset": lambda n: n.startswith("PicaComic-") and n.endswith("-app-ios-build_no_sign.ipa"),
+        "name": "PicaComic",
+        "developerName": "ccbkv",
+        "subtitle": "多源漫画阅读器（Pica Comic 分支）",
+        "category": "books",
+        # 与同为聚合阅读器的 PicaX（#FF5C7A 粉）区分开，取应用图标里的橙红色。
+        "tintColor": "#F2683C",
+        # 仓库默认分支是 master；图标按 release tag 拼地址，分支名不影响。
+        "icon": "ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
+        "description": (
+            "Flutter 编写的多源漫画阅读器，源自 wgh136/PicaComic（上游已归档），由 nyne 继续维护。"
+            "内置 picacg、E-Hentai、JM、hitomi、nhentai 等漫画源，支持在线阅读、离线下载、"
+            "本地与网络收藏、阅读历史以及 WebDAV 数据同步。此处为未签名 iOS 构建，需自行签名安装。\n\n"
+            "开源协议：MIT　·　项目主页：https://github.com/ccbkv/PicaComic"
         ),
     },
     {
