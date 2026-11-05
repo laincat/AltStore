@@ -6074,13 +6074,32 @@
   ],
   "laincat/Nekularity": [
     {
+      "tag": "v0.4.2",
+      "name": "v0.4.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-05",
+      "published_at": "2026-11-05T22:22:45Z",
+      "body": "**Full Changelog**: https://github.com/laincat/Nekularity/compare/v0.4.1...v0.4.2",
+      "ipas": [
+        {
+          "name": "Nekularity.ipa",
+          "size": 29751122,
+          "url": "https://github.com/laincat/Nekularity/releases/download/v0.4.2/Nekularity.ipa",
+          "id": 715028097,
+          "updated_at": "2026-11-05T22:22:45Z",
+          "digest": "sha256:5fddfb300482215c45df73cf541e8e711e10c9b96a3a91d11b42cd5f497901a2"
+        }
+      ]
+    },
+    {
       "tag": "v0.4.1",
       "name": "v0.4.1",
       "pre": false,
       "draft": false,
       "date": "2026-11-05",
       "published_at": "2026-11-05T20:53:53Z",
-      "body": "**Full Changelog**: https://github.com/laincat/Nekularity/compare/v0.4.0...v0.4.1",
+      "body": "### 简体中文\n\n- 修复 0.4.0 账号值界面把插值当字面量显示的问题（页脚与保存/删除提示）\n- 运行服务可以选择服务声明的方法、填写 JSON 参数；非 JSON 在本地就拦下不发送\n- 移除服务包时一并清掉 Keychain 里的账号值，并丢弃 Core 的旧运行时\n\n---\n\n### English\n\n- Fixes 0.4.0's account-value screen showing its own interpolation as literal text (footer, save and delete notices)\n- Running a service now lets you choose a method it declares and write a JSON payload; non-JSON is stopped locally instead of sent\n- Removing a service package clears its Keychain values and drops Core's old runtime\n",
       "ipas": [
         {
           "name": "Nekularity.ipa",
@@ -6431,25 +6450,6 @@
           "id": 699584975,
           "updated_at": "2026-11-01T21:33:03Z",
           "digest": "sha256:7e3934ab6ef6f89baa988ed554514395eec1aded3bbdc072cbfa002862424102"
-        }
-      ]
-    },
-    {
-      "tag": "v0.2.2",
-      "name": "v0.2.2",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-01",
-      "published_at": "2026-11-01T19:04:20Z",
-      "body": "**Full Changelog**: https://github.com/laincat/Nekularity/compare/v0.2.1...v0.2.2",
-      "ipas": [
-        {
-          "name": "Nekularity.ipa",
-          "size": 19229392,
-          "url": "https://github.com/laincat/Nekularity/releases/download/v0.2.2/Nekularity.ipa",
-          "id": 699239882,
-          "updated_at": "2026-11-01T19:04:19Z",
-          "digest": "sha256:cd2d715be5300f370337a75f55344e806fe7c2c18e40a88c8b45ec050fdda503"
         }
       ]
     }
