@@ -6074,6 +6074,25 @@
   ],
   "laincat/Nekularity": [
     {
+      "tag": "v0.4.0",
+      "name": "v0.4.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-05",
+      "published_at": "2026-11-05T18:35:58Z",
+      "body": "### 简体中文\n\n- 服务包从「能装」到「能用」：列表、从文件导入（摘要按实际字节）、移除、被拒绝时说明原因\n- 运行前先问服务 `describe()`，按它声明的方法给按钮；没有声明才回退 `ping`。权限在运行前确认，Core 只按交集放行\n- 账号值存本机 Keychain（`AfterFirstUnlockThisDeviceOnly`），只显示键名，只在一次调用里交给 Core；移除包时一并清除，旧运行时也丢弃\n- 标准接口一次提问不再画两条回复\n- 包内 Core pin `1574076`\n\n---\n\n### English\n\n- Service packages go from installable to usable: list, import from Files (digest from the actual bytes), remove, and a reason when a package is refused\n- Running asks the service's `describe()` first and offers the methods it declares, falling back to `ping` only when there are none; permissions are confirmed before a run and Core grants only the intersection\n- Account values live in this device's Keychain (`AfterFirstUnlockThisDeviceOnly`), only key names are shown, and they are handed to Core for one call; removing a package clears them and drops its old runtime\n- One question on the standard-protocol screen no longer draws two answers\n- The binary carries Core `1574076`\n",
+      "ipas": [
+        {
+          "name": "Nekularity.ipa",
+          "size": 29758353,
+          "url": "https://github.com/laincat/Nekularity/releases/download/v0.4.0/Nekularity.ipa",
+          "id": 714402211,
+          "updated_at": "2026-11-05T18:35:58Z",
+          "digest": "sha256:642feabaea7cec136abe1b69d6760676ade93acd26630a81a01f356172454e26"
+        }
+      ]
+    },
+    {
       "tag": "v0.3.9",
       "name": "v0.3.9",
       "pre": false,
@@ -6431,25 +6450,6 @@
           "id": 699166984,
           "updated_at": "2026-11-01T18:33:33Z",
           "digest": "sha256:17f568aff0e6b6e88b8914c3c002d078994bf49fa066a84c905f9878e1709f46"
-        }
-      ]
-    },
-    {
-      "tag": "v0.2.0",
-      "name": "v0.2.0",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-01",
-      "published_at": "2026-11-01T16:28:06Z",
-      "body": "**Full Changelog**: https://github.com/laincat/Nekularity/compare/v0.1.0...v0.2.0",
-      "ipas": [
-        {
-          "name": "Nekularity.ipa",
-          "size": 19213038,
-          "url": "https://github.com/laincat/Nekularity/releases/download/v0.2.0/Nekularity.ipa",
-          "id": 698854250,
-          "updated_at": "2026-11-01T16:28:05Z",
-          "digest": "sha256:27de648898a904955781b72fae912a5fac274b030ef974f8dc93a825b56da6ec"
         }
       ]
     }

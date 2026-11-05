@@ -680,7 +680,7 @@
       "developerName": "laincat",
       "subtitle": "漫画阅读与源管理",
       "localizedDescription": "基于 VeneraCat Core 的 iOS 漫画阅读客户端，支持漫画源、书架与阅读进度。未签名构建，需要使用侧载工具签名安装。\n\n项目主页：https://github.com/laincat/Nekularity",
-      "iconURL": "https://raw.githubusercontent.com/laincat/Nekularity/v0.3.9/App/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "iconURL": "https://raw.githubusercontent.com/laincat/Nekularity/v0.4.0/App/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
       "tintColor": "#6D5DF6",
       "category": "entertainment",
       "appPermissions": {
@@ -692,41 +692,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "0.3.9",
+              "version": "0.4.0",
               "date": "2026-11-05",
-              "publishedAt": "2026-11-05T13:33:57Z",
-              "buildVersion": "21",
-              "buildNumber": "21",
-              "localizedDescription": "简体中文\n\n- 标准接口问一次不再画两条回复（会话状态收进 StandardConversation，附 5 条单测）\n- 新增服务包界面：列表、从文件导入（摘要按实际字节计算）、移除；被拒绝的包会说明原因\n- 服务包可以运行：服务的网络走 App 自己的传输，权限在运行前由你确认，Core 只按交集放行\n- Core 跟到 998f3b9\n\n---\nEnglish\n\n- One question on the standard-protocol screen no longer draws two answers (the conversation moved into StandardConversation, with five unit tests)\n- A service screen: list, import from Files (the digest is computed from the actual bytes), remove; a refused package now says why\n- A service can run: its network goes through the app's own transport, permissions are confirmed by you before a run, and Core grants only the intersection\n- Core pin moved to 998f3b9",
-              "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.9/Nekularity.ipa",
-              "size": 29694417,
+              "publishedAt": "2026-11-05T18:35:58Z",
+              "buildVersion": "22",
+              "buildNumber": "22",
+              "localizedDescription": "简体中文\n\n- 服务包从「能装」到「能用」：列表、从文件导入（摘要按实际字节）、移除、被拒绝时说明原因\n- 运行前先问服务 describe()，按它声明的方法给按钮；没有声明才回退 ping。权限在运行前确认，Core 只按交集放行\n- 账号值存本机 Keychain（AfterFirstUnlockThisDeviceOnly），只显示键名，只在一次调用里交给 Core；移除包时一并清除，旧运行时也丢弃\n- 标准接口一次提问不再画两条回复\n- 包内 Core pin 1574076\n\n---\nEnglish\n\n- Service packages go from installable to usable: list, import from Files (digest from the actual bytes), remove, and a reason when a package is refused\n- Running asks the service's describe() first and offers the methods it declares, falling back to ping only when there are none; permissions are confirmed before a run and Core grants only the intersection\n- Account values live in this device's Keychain (AfterFirstUnlockThisDeviceOnly),…",
+              "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.4.0/Nekularity.ipa",
+              "size": 29758353,
               "minOSVersion": "26.0",
-              "releaseTag": "v0.3.9",
-              "source": "https://github.com/laincat/Nekularity/releases/tag/v0.3.9"
+              "releaseTag": "v0.4.0",
+              "source": "https://github.com/laincat/Nekularity/releases/tag/v0.4.0"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "0.3.9",
+          "version": "0.4.0",
           "date": "2026-11-05",
-          "publishedAt": "2026-11-05T13:33:57Z",
-          "buildVersion": "21",
-          "buildNumber": "21",
-          "localizedDescription": "简体中文\n\n- 标准接口问一次不再画两条回复（会话状态收进 StandardConversation，附 5 条单测）\n- 新增服务包界面：列表、从文件导入（摘要按实际字节计算）、移除；被拒绝的包会说明原因\n- 服务包可以运行：服务的网络走 App 自己的传输，权限在运行前由你确认，Core 只按交集放行\n- Core 跟到 998f3b9\n\n---\nEnglish\n\n- One question on the standard-protocol screen no longer draws two answers (the conversation moved into StandardConversation, with five unit tests)\n- A service screen: list, import from Files (the digest is computed from the actual bytes), remove; a refused package now says why\n- A service can run: its network goes through the app's own transport, permissions are confirmed by you before a run, and Core grants only the intersection\n- Core pin moved to 998f3b9",
-          "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.9/Nekularity.ipa",
-          "size": 29694417,
+          "publishedAt": "2026-11-05T18:35:58Z",
+          "buildVersion": "22",
+          "buildNumber": "22",
+          "localizedDescription": "简体中文\n\n- 服务包从「能装」到「能用」：列表、从文件导入（摘要按实际字节）、移除、被拒绝时说明原因\n- 运行前先问服务 describe()，按它声明的方法给按钮；没有声明才回退 ping。权限在运行前确认，Core 只按交集放行\n- 账号值存本机 Keychain（AfterFirstUnlockThisDeviceOnly），只显示键名，只在一次调用里交给 Core；移除包时一并清除，旧运行时也丢弃\n- 标准接口一次提问不再画两条回复\n- 包内 Core pin 1574076\n\n---\nEnglish\n\n- Service packages go from installable to usable: list, import from Files (digest from the actual bytes), remove, and a reason when a package is refused\n- Running asks the service's describe() first and offers the methods it declares, falling back to ping only when there are none; permissions are confirmed before a run and Core grants only the intersection\n- Account values live in this device's Keychain (AfterFirstUnlockThisDeviceOnly),…",
+          "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.4.0/Nekularity.ipa",
+          "size": 29758353,
           "minOSVersion": "26.0",
-          "releaseTag": "v0.3.9",
-          "source": "https://github.com/laincat/Nekularity/releases/tag/v0.3.9"
+          "releaseTag": "v0.4.0",
+          "source": "https://github.com/laincat/Nekularity/releases/tag/v0.4.0"
         }
       ],
-      "version": "0.3.9",
+      "version": "0.4.0",
       "versionDate": "2026-11-05",
-      "versionDescription": "简体中文\n\n- 标准接口问一次不再画两条回复（会话状态收进 StandardConversation，附 5 条单测）\n- 新增服务包界面：列表、从文件导入（摘要按实际字节计算）、移除；被拒绝的包会说明原因\n- 服务包可以运行：服务的网络走 App 自己的传输，权限在运行前由你确认，Core 只按交集放行\n- Core 跟到 998f3b9\n\n---\nEnglish\n\n- One question on the standard-protocol screen no longer draws two answers (the conversation moved into StandardConversation, with five unit tests)\n- A service screen: list, import from Files (the digest is computed from the actual bytes), remove; a refused package now says why\n- A service can run: its network goes through the app's own transport, permissions are confirmed by you before a run, and Core grants only the intersection\n- Core pin moved to 998f3b9",
-      "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.9/Nekularity.ipa",
-      "size": 29694417,
+      "versionDescription": "简体中文\n\n- 服务包从「能装」到「能用」：列表、从文件导入（摘要按实际字节）、移除、被拒绝时说明原因\n- 运行前先问服务 describe()，按它声明的方法给按钮；没有声明才回退 ping。权限在运行前确认，Core 只按交集放行\n- 账号值存本机 Keychain（AfterFirstUnlockThisDeviceOnly），只显示键名，只在一次调用里交给 Core；移除包时一并清除，旧运行时也丢弃\n- 标准接口一次提问不再画两条回复\n- 包内 Core pin 1574076\n\n---\nEnglish\n\n- Service packages go from installable to usable: list, import from Files (digest from the actual bytes), remove, and a reason when a package is refused\n- Running asks the service's describe() first and offers the methods it declares, falling back to ping only when there are none; permissions are confirmed before a run and Core grants only the intersection\n- Account values live in this device's Keychain (AfterFirstUnlockThisDeviceOnly),…",
+      "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.4.0/Nekularity.ipa",
+      "size": 29758353,
       "minOSVersion": "26.0"
     },
     {
