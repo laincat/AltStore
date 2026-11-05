@@ -680,7 +680,7 @@
       "developerName": "laincat",
       "subtitle": "漫画阅读与源管理",
       "localizedDescription": "基于 VeneraCat Core 的 iOS 漫画阅读客户端，支持漫画源、书架与阅读进度。未签名构建，需要使用侧载工具签名安装。\n\n项目主页：https://github.com/laincat/Nekularity",
-      "iconURL": "https://raw.githubusercontent.com/laincat/Nekularity/v0.3.8/App/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "iconURL": "https://raw.githubusercontent.com/laincat/Nekularity/v0.3.9/App/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
       "tintColor": "#6D5DF6",
       "category": "entertainment",
       "appPermissions": {
@@ -692,41 +692,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "0.3.8",
+              "version": "0.3.9",
               "date": "2026-11-05",
-              "publishedAt": "2026-11-05T06:59:25Z",
-              "buildVersion": "20",
-              "buildNumber": "20",
-              "localizedDescription": "简体中文\n\n0.3.8 / build 20，Core 0f1e7b8。\n\n- 发现页修复与随后几轮界面修正进入正式版\n- 设置页新增「外观」三态（系统 / 亮 / 暗），立即生效并在重开后保持\n- 挑战完成规则补齐「回到被保护主机」与查询参数回传（Cloudflare 窗口不再卡死在不会消失的标记上）\n- iPad 与辅助功能大字号下的模拟器套件各 0 失败\nEnglish\n\n0.3.8 / build 20, Core 0f1e7b8.\n\n- the discovery-page fix and the interface corrections that followed it ship here\n- 设置 gains a three-way 外观 control (system / light / dark) that applies at once and survives a relaunch\n- the challenge rule now carries \"back on the guarded host\" and returns the query parameters it cleared with, so a Cloudflare window no longer waits on a marker that never leaves\n- the simulator suites on an iPad and at the largest accessibility text size both finish with 0 failures",
-              "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.8/Nekularity.ipa",
-              "size": 29563915,
+              "publishedAt": "2026-11-05T13:33:57Z",
+              "buildVersion": "21",
+              "buildNumber": "21",
+              "localizedDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.3.8...v0.3.9",
+              "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.9/Nekularity.ipa",
+              "size": 29694417,
               "minOSVersion": "26.0",
-              "releaseTag": "v0.3.8",
-              "source": "https://github.com/laincat/Nekularity/releases/tag/v0.3.8"
+              "releaseTag": "v0.3.9",
+              "source": "https://github.com/laincat/Nekularity/releases/tag/v0.3.9"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "0.3.8",
+          "version": "0.3.9",
           "date": "2026-11-05",
-          "publishedAt": "2026-11-05T06:59:25Z",
-          "buildVersion": "20",
-          "buildNumber": "20",
-          "localizedDescription": "简体中文\n\n0.3.8 / build 20，Core 0f1e7b8。\n\n- 发现页修复与随后几轮界面修正进入正式版\n- 设置页新增「外观」三态（系统 / 亮 / 暗），立即生效并在重开后保持\n- 挑战完成规则补齐「回到被保护主机」与查询参数回传（Cloudflare 窗口不再卡死在不会消失的标记上）\n- iPad 与辅助功能大字号下的模拟器套件各 0 失败\nEnglish\n\n0.3.8 / build 20, Core 0f1e7b8.\n\n- the discovery-page fix and the interface corrections that followed it ship here\n- 设置 gains a three-way 外观 control (system / light / dark) that applies at once and survives a relaunch\n- the challenge rule now carries \"back on the guarded host\" and returns the query parameters it cleared with, so a Cloudflare window no longer waits on a marker that never leaves\n- the simulator suites on an iPad and at the largest accessibility text size both finish with 0 failures",
-          "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.8/Nekularity.ipa",
-          "size": 29563915,
+          "publishedAt": "2026-11-05T13:33:57Z",
+          "buildVersion": "21",
+          "buildNumber": "21",
+          "localizedDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.3.8...v0.3.9",
+          "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.9/Nekularity.ipa",
+          "size": 29694417,
           "minOSVersion": "26.0",
-          "releaseTag": "v0.3.8",
-          "source": "https://github.com/laincat/Nekularity/releases/tag/v0.3.8"
+          "releaseTag": "v0.3.9",
+          "source": "https://github.com/laincat/Nekularity/releases/tag/v0.3.9"
         }
       ],
-      "version": "0.3.8",
+      "version": "0.3.9",
       "versionDate": "2026-11-05",
-      "versionDescription": "简体中文\n\n0.3.8 / build 20，Core 0f1e7b8。\n\n- 发现页修复与随后几轮界面修正进入正式版\n- 设置页新增「外观」三态（系统 / 亮 / 暗），立即生效并在重开后保持\n- 挑战完成规则补齐「回到被保护主机」与查询参数回传（Cloudflare 窗口不再卡死在不会消失的标记上）\n- iPad 与辅助功能大字号下的模拟器套件各 0 失败\nEnglish\n\n0.3.8 / build 20, Core 0f1e7b8.\n\n- the discovery-page fix and the interface corrections that followed it ship here\n- 设置 gains a three-way 外观 control (system / light / dark) that applies at once and survives a relaunch\n- the challenge rule now carries \"back on the guarded host\" and returns the query parameters it cleared with, so a Cloudflare window no longer waits on a marker that never leaves\n- the simulator suites on an iPad and at the largest accessibility text size both finish with 0 failures",
-      "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.8/Nekularity.ipa",
-      "size": 29563915,
+      "versionDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.3.8...v0.3.9",
+      "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.3.9/Nekularity.ipa",
+      "size": 29694417,
       "minOSVersion": "26.0"
     },
     {
@@ -1116,11 +1116,11 @@
     },
     {
       "name": "真果鉴",
-      "bundleIdentifier": "com.duanju.duanjuApp",
+      "bundleIdentifier": "com.guoapp.all",
       "developerName": "Xanerix",
       "subtitle": "支持多站源的短剧与影视客户端",
       "localizedDescription": "Flutter 多平台短剧与影视客户端，包含全部站源，可在设置中逐个开关。支持追剧、观看记录、多用户、本地下载与备份。此处收录真果鉴全站源版；它与仅含红果站源的红果鉴共用 Bundle ID，属于同一应用的不同构建。\n\n安装包由上游发布，需自行签名安装。站源可用性取决于源站及网络；应用不解除源站 VIP 或其他授权限制。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Xanerix/guoapp",
-      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v1.0.2-102/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v1.0.3-103/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#E97642",
       "category": "entertainment",
       "appPermissions": {
@@ -1132,41 +1132,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "1.0.2",
-              "date": "2026-11-04",
-              "publishedAt": "2026-11-04T04:06:57Z",
-              "buildVersion": "102",
-              "buildNumber": "102",
-              "localizedDescription": "更新内容：\n\n- 检查更新和使用统计新增国内可直连的线路，原线路连不上时自动切换。\n- Windows 和 macOS 启动时恢复上次的窗口位置和大小（最大化、全屏和小窗时不记录，启动时总是普通窗口）；上次所在的显示器不在了就用默认位置。Windows 首次启动的默认位置改为主屏幕居中（macOS 上为开发快照，未在 Mac 上验证）。\n- 本地的用户、设置和记录改为按用户、按类别分文件保存，升级后自动迁移：播放时只重写观看记录；某一类记录的文件损坏时只清空这一类，不再锁住整个应用。备份新增检查更新、使用统计、自动导出和删除副本、电视字母键盘几项设置。\n- 修复手机和平板看剧时下拉通知栏、收到消息弹窗或打开其他应用的小窗 / 分屏后视频自动暂停；现在只有真正切到后台、锁屏时才暂停（开发快照，未在设备上验证）。\n- 修复电视上新建 / 编辑用户的用户名、密码框和切换用户、从备份恢复时的管理员密码框按确认键不弹输入法，改为和搜索框一样由系统输入法输入。代理地址弹窗同样改用系统输入法，并去掉显示 / 隐藏按钮，地址直接显示（代理地址为开发快照，未在电视上验证）。\n- 播放器记住上次的音量：电脑和手机全屏播放时调过的音量换剧后不再跳回 100%，静音不记录；电视和手机滑动调的是系统媒体音量，不受影响（#61）。\n- 升级到 Flutter 3.47.9：HTTPS 连接不再信任已被攻破的 eMudhra 中间证书，Android 14 及以上改用系统可更新的根证书库；修复 Flutter 已知的 Windows 正式版卡死问题。合并视频用的 FFmpeg 组件同步更新。\n\n版本 1.0…",
-              "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.2-102/zhenguojian-1.0.2%2B102-ios-unsigned.ipa",
-              "size": 30436646,
+              "version": "1.0.3",
+              "date": "2026-11-05",
+              "publishedAt": "2026-11-05T11:29:25Z",
+              "buildVersion": "103",
+              "buildNumber": "103",
+              "localizedDescription": "更新内容：\n\n- 红果去掉已失效的第三方备用取流接口，App 和网页都取流失败时不再多等一次请求，报错里也不再出现备用接口的连接错误。\n- 修复首次安装后打开红果视频容易报「红果设备注册暂不可用」：设备注册遇到网络波动或超时不再锁住 10 分钟，下次请求直接重试；只有红果明确拒绝注册时才暂停，提示里会带上被拒绝的原因。\n- 首次启动时先注册红果设备：关掉检查更新提示后弹出「正在注册设备...」，红果设备和辅助设备都注册成功后自动关闭，之后才加载推荐等内容；注册失败时显示原因，可点「重试」或「网络设置」改代理，不能跳过。已注册过的设备直接进入；老版本升级后会弹一次，只补注册辅助设备。\n- 包名改为红果鉴 com.guoapp.phoenix、真果鉴 com.guoapp.all，Android、iPhone / iPad、macOS 统一，红果鉴和真果鉴可同时安装；iPhone / iPad 上真果鉴的桌面名称不再显示为「红果鉴」。旧版不会被覆盖升级，需手动卸载，原有设置、追剧和下载记录不会带过来。\n- 黄果 AI 改用站点自己的接口：分类列表、详情和分集、播放地址、热播 / 推荐 / 潜力榜都直接读接口数据，不再解析网页，站点改版后不容易出现剧名乱码、分集缺失或取不到播放地址；搜索改为在线搜索黄果全站并支持翻页，不再只搜本机缓存。已有的追剧和下载记录继续可用。\n- 黄果 AI 新增发布页当前的 lbvrhyir.cc 和上一批 xxbgwypx.cc 线路，主站连不上时会自动换线；随机备用线路改为在这几个域名之间轮换，不再只用 ediayikma.cc 一个域名（开发快照，未在…",
+              "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.3-103/zhenguojian-1.0.3%2B103-ios-unsigned.ipa",
+              "size": 30452198,
               "minOSVersion": "15.1",
-              "releaseTag": "app-v1.0.2-102",
-              "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.2-102"
+              "releaseTag": "app-v1.0.3-103",
+              "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.3-103"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "1.0.2",
-          "date": "2026-11-04",
-          "publishedAt": "2026-11-04T04:06:57Z",
-          "buildVersion": "102",
-          "buildNumber": "102",
-          "localizedDescription": "更新内容：\n\n- 检查更新和使用统计新增国内可直连的线路，原线路连不上时自动切换。\n- Windows 和 macOS 启动时恢复上次的窗口位置和大小（最大化、全屏和小窗时不记录，启动时总是普通窗口）；上次所在的显示器不在了就用默认位置。Windows 首次启动的默认位置改为主屏幕居中（macOS 上为开发快照，未在 Mac 上验证）。\n- 本地的用户、设置和记录改为按用户、按类别分文件保存，升级后自动迁移：播放时只重写观看记录；某一类记录的文件损坏时只清空这一类，不再锁住整个应用。备份新增检查更新、使用统计、自动导出和删除副本、电视字母键盘几项设置。\n- 修复手机和平板看剧时下拉通知栏、收到消息弹窗或打开其他应用的小窗 / 分屏后视频自动暂停；现在只有真正切到后台、锁屏时才暂停（开发快照，未在设备上验证）。\n- 修复电视上新建 / 编辑用户的用户名、密码框和切换用户、从备份恢复时的管理员密码框按确认键不弹输入法，改为和搜索框一样由系统输入法输入。代理地址弹窗同样改用系统输入法，并去掉显示 / 隐藏按钮，地址直接显示（代理地址为开发快照，未在电视上验证）。\n- 播放器记住上次的音量：电脑和手机全屏播放时调过的音量换剧后不再跳回 100%，静音不记录；电视和手机滑动调的是系统媒体音量，不受影响（#61）。\n- 升级到 Flutter 3.47.9：HTTPS 连接不再信任已被攻破的 eMudhra 中间证书，Android 14 及以上改用系统可更新的根证书库；修复 Flutter 已知的 Windows 正式版卡死问题。合并视频用的 FFmpeg 组件同步更新。\n\n版本 1.0…",
-          "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.2-102/zhenguojian-1.0.2%2B102-ios-unsigned.ipa",
-          "size": 30436646,
+          "version": "1.0.3",
+          "date": "2026-11-05",
+          "publishedAt": "2026-11-05T11:29:25Z",
+          "buildVersion": "103",
+          "buildNumber": "103",
+          "localizedDescription": "更新内容：\n\n- 红果去掉已失效的第三方备用取流接口，App 和网页都取流失败时不再多等一次请求，报错里也不再出现备用接口的连接错误。\n- 修复首次安装后打开红果视频容易报「红果设备注册暂不可用」：设备注册遇到网络波动或超时不再锁住 10 分钟，下次请求直接重试；只有红果明确拒绝注册时才暂停，提示里会带上被拒绝的原因。\n- 首次启动时先注册红果设备：关掉检查更新提示后弹出「正在注册设备...」，红果设备和辅助设备都注册成功后自动关闭，之后才加载推荐等内容；注册失败时显示原因，可点「重试」或「网络设置」改代理，不能跳过。已注册过的设备直接进入；老版本升级后会弹一次，只补注册辅助设备。\n- 包名改为红果鉴 com.guoapp.phoenix、真果鉴 com.guoapp.all，Android、iPhone / iPad、macOS 统一，红果鉴和真果鉴可同时安装；iPhone / iPad 上真果鉴的桌面名称不再显示为「红果鉴」。旧版不会被覆盖升级，需手动卸载，原有设置、追剧和下载记录不会带过来。\n- 黄果 AI 改用站点自己的接口：分类列表、详情和分集、播放地址、热播 / 推荐 / 潜力榜都直接读接口数据，不再解析网页，站点改版后不容易出现剧名乱码、分集缺失或取不到播放地址；搜索改为在线搜索黄果全站并支持翻页，不再只搜本机缓存。已有的追剧和下载记录继续可用。\n- 黄果 AI 新增发布页当前的 lbvrhyir.cc 和上一批 xxbgwypx.cc 线路，主站连不上时会自动换线；随机备用线路改为在这几个域名之间轮换，不再只用 ediayikma.cc 一个域名（开发快照，未在…",
+          "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.3-103/zhenguojian-1.0.3%2B103-ios-unsigned.ipa",
+          "size": 30452198,
           "minOSVersion": "15.1",
-          "releaseTag": "app-v1.0.2-102",
-          "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.2-102"
+          "releaseTag": "app-v1.0.3-103",
+          "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.3-103"
         }
       ],
-      "version": "1.0.2",
-      "versionDate": "2026-11-04",
-      "versionDescription": "更新内容：\n\n- 检查更新和使用统计新增国内可直连的线路，原线路连不上时自动切换。\n- Windows 和 macOS 启动时恢复上次的窗口位置和大小（最大化、全屏和小窗时不记录，启动时总是普通窗口）；上次所在的显示器不在了就用默认位置。Windows 首次启动的默认位置改为主屏幕居中（macOS 上为开发快照，未在 Mac 上验证）。\n- 本地的用户、设置和记录改为按用户、按类别分文件保存，升级后自动迁移：播放时只重写观看记录；某一类记录的文件损坏时只清空这一类，不再锁住整个应用。备份新增检查更新、使用统计、自动导出和删除副本、电视字母键盘几项设置。\n- 修复手机和平板看剧时下拉通知栏、收到消息弹窗或打开其他应用的小窗 / 分屏后视频自动暂停；现在只有真正切到后台、锁屏时才暂停（开发快照，未在设备上验证）。\n- 修复电视上新建 / 编辑用户的用户名、密码框和切换用户、从备份恢复时的管理员密码框按确认键不弹输入法，改为和搜索框一样由系统输入法输入。代理地址弹窗同样改用系统输入法，并去掉显示 / 隐藏按钮，地址直接显示（代理地址为开发快照，未在电视上验证）。\n- 播放器记住上次的音量：电脑和手机全屏播放时调过的音量换剧后不再跳回 100%，静音不记录；电视和手机滑动调的是系统媒体音量，不受影响（#61）。\n- 升级到 Flutter 3.47.9：HTTPS 连接不再信任已被攻破的 eMudhra 中间证书，Android 14 及以上改用系统可更新的根证书库；修复 Flutter 已知的 Windows 正式版卡死问题。合并视频用的 FFmpeg 组件同步更新。\n\n版本 1.0…",
-      "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.2-102/zhenguojian-1.0.2%2B102-ios-unsigned.ipa",
-      "size": 30436646,
+      "version": "1.0.3",
+      "versionDate": "2026-11-05",
+      "versionDescription": "更新内容：\n\n- 红果去掉已失效的第三方备用取流接口，App 和网页都取流失败时不再多等一次请求，报错里也不再出现备用接口的连接错误。\n- 修复首次安装后打开红果视频容易报「红果设备注册暂不可用」：设备注册遇到网络波动或超时不再锁住 10 分钟，下次请求直接重试；只有红果明确拒绝注册时才暂停，提示里会带上被拒绝的原因。\n- 首次启动时先注册红果设备：关掉检查更新提示后弹出「正在注册设备...」，红果设备和辅助设备都注册成功后自动关闭，之后才加载推荐等内容；注册失败时显示原因，可点「重试」或「网络设置」改代理，不能跳过。已注册过的设备直接进入；老版本升级后会弹一次，只补注册辅助设备。\n- 包名改为红果鉴 com.guoapp.phoenix、真果鉴 com.guoapp.all，Android、iPhone / iPad、macOS 统一，红果鉴和真果鉴可同时安装；iPhone / iPad 上真果鉴的桌面名称不再显示为「红果鉴」。旧版不会被覆盖升级，需手动卸载，原有设置、追剧和下载记录不会带过来。\n- 黄果 AI 改用站点自己的接口：分类列表、详情和分集、播放地址、热播 / 推荐 / 潜力榜都直接读接口数据，不再解析网页，站点改版后不容易出现剧名乱码、分集缺失或取不到播放地址；搜索改为在线搜索黄果全站并支持翻页，不再只搜本机缓存。已有的追剧和下载记录继续可用。\n- 黄果 AI 新增发布页当前的 lbvrhyir.cc 和上一批 xxbgwypx.cc 线路，主站连不上时会自动换线；随机备用线路改为在这几个域名之间轮换，不再只用 ediayikma.cc 一个域名（开发快照，未在…",
+      "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.3-103/zhenguojian-1.0.3%2B103-ios-unsigned.ipa",
+      "size": 30452198,
       "minOSVersion": "15.1"
     }
   ],

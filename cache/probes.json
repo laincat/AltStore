@@ -1560,5 +1560,33 @@
       "size": 23708307,
       "digest": "sha256:5fac01f0fecd326333cd40224cdb4f75913b2d95c139886bd629e6bd796e0d38"
     }
+  },
+  "https://github.com/laincat/Nekularity/releases/download/v0.3.9/Nekularity.ipa": {
+    "bundleIdentifier": "com.laincat.nekularity",
+    "version": "0.3.9",
+    "buildVersion": "21",
+    "displayName": "Nekularity",
+    "minOSVersion": "26.0",
+    "size": 29694417,
+    "assetIdentity": {
+      "id": 713528269,
+      "updated_at": "2026-11-05T13:33:56Z",
+      "size": 29694417,
+      "digest": "sha256:ca8bf68c1ceca40ddff8cad0ba82349c3f0f33d8792bdb21b733ad42a90d0067"
+    }
+  },
+  "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.3-103/zhenguojian-1.0.3%2B103-ios-unsigned.ipa": {
+    "bundleIdentifier": "com.guoapp.all",
+    "version": "1.0.3",
+    "buildVersion": "103",
+    "displayName": "ZhenGuoJian",
+    "minOSVersion": "15.1",
+    "size": 30452198,
+    "assetIdentity": {
+      "id": 713175268,
+      "updated_at": "2026-11-05T11:29:20Z",
+      "size": 30452198,
+      "digest": "sha256:dc560506f00754d573a5ea32d4313b9096e06dfc2004313b9b89be2eb37b627e"
+    }
   }
 }
