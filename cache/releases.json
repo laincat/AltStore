@@ -6080,7 +6080,7 @@
       "draft": false,
       "date": "2026-11-05",
       "published_at": "2026-11-05T22:22:45Z",
-      "body": "**Full Changelog**: https://github.com/laincat/Nekularity/compare/v0.4.1...v0.4.2",
+      "body": "### 简体中文\n\n- 修 0.4.1 运行面板的缺陷：参数校验误把默认的 `null` 判成非法，导致「什么都不填」时发不出去\n- 校验抽成 Kit 里的 `ServicePayload` 并允许 JSON 片段：`null`、`42`、`true`、`\"text\"` 都是合法参数\n- 新增 3 条 Kit 用例钉住「空 → null」「非 JSON 拦下」「标量 JSON 合法」\n\n---\n\n### English\n\n- Fixes 0.4.1's run sheet: validation wrongly rejected the default `null`, so an empty payload could not be sent at all\n- The check moved into Kit as `ServicePayload` and now allows JSON fragments, so `null`, `42`, `true` and `\"text\"` are valid payloads\n- Three Kit cases pin \"empty means null\", \"non-JSON is stopped\" and \"scalar JSON is valid\"\n",
       "ipas": [
         {
           "name": "Nekularity.ipa",
