@@ -6074,6 +6074,25 @@
   ],
   "laincat/Nekularity": [
     {
+      "tag": "v0.4.1",
+      "name": "v0.4.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-05",
+      "published_at": "2026-11-05T20:53:53Z",
+      "body": "**Full Changelog**: https://github.com/laincat/Nekularity/compare/v0.4.0...v0.4.1",
+      "ipas": [
+        {
+          "name": "Nekularity.ipa",
+          "size": 29754414,
+          "url": "https://github.com/laincat/Nekularity/releases/download/v0.4.1/Nekularity.ipa",
+          "id": 714782321,
+          "updated_at": "2026-11-05T20:53:53Z",
+          "digest": "sha256:6be3769c0a9447100740b6893e3031c07f172580cb46a3c655bfa26b9447bcb5"
+        }
+      ]
+    },
+    {
       "tag": "v0.4.0",
       "name": "v0.4.0",
       "pre": false,
@@ -6433,28 +6452,28 @@
           "digest": "sha256:cd2d715be5300f370337a75f55344e806fe7c2c18e40a88c8b45ec050fdda503"
         }
       ]
-    },
-    {
-      "tag": "v0.2.1",
-      "name": "v0.2.1",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-01",
-      "published_at": "2026-11-01T18:33:34Z",
-      "body": "**Full Changelog**: https://github.com/laincat/Nekularity/compare/v0.2.0...v0.2.1",
-      "ipas": [
-        {
-          "name": "Nekularity.ipa",
-          "size": 19229059,
-          "url": "https://github.com/laincat/Nekularity/releases/download/v0.2.1/Nekularity.ipa",
-          "id": 699166984,
-          "updated_at": "2026-11-01T18:33:33Z",
-          "digest": "sha256:17f568aff0e6b6e88b8914c3c002d078994bf49fa066a84c905f9878e1709f46"
-        }
-      ]
     }
   ],
   "ccbkv/PicaComic": [
+    {
+      "tag": "5.0.6",
+      "name": "5.0.6",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-05",
+      "published_at": "2026-11-05T18:54:45Z",
+      "body": "# 5.0.5 (2026-11-05)\r\n**更新说明**\r\n- 增加ai图片翻译,在设置开启后在漫画阅读器对具体漫画开启\r\n- 优化app无响应\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/5.0.5...5.0.6",
+      "ipas": [
+        {
+          "name": "PicaComic-5.0.6-app-ios-build_no_sign.ipa",
+          "size": 31826074,
+          "url": "https://github.com/ccbkv/PicaComic/releases/download/5.0.6/PicaComic-5.0.6-app-ios-build_no_sign.ipa",
+          "id": 714435349,
+          "updated_at": "2026-11-05T18:48:52Z",
+          "digest": "sha256:84167da5d7280a31bb986155628b288539b00f88904eecc75a926bb77da402d6"
+        }
+      ]
+    },
     {
       "tag": "5.0.5",
       "name": "5.0.5",
@@ -6813,25 +6832,6 @@
           "id": 384699429,
           "updated_at": "2026-03-30T12:04:45Z",
           "digest": "sha256:2c51673057eda8e4bc10a491e90057815d75bd5f4125751f3f4f85fba821fda8"
-        }
-      ]
-    },
-    {
-      "tag": "4.5.7",
-      "name": "4.5.7",
-      "pre": false,
-      "draft": false,
-      "date": "2026-03-26",
-      "published_at": "2026-03-26T18:26:19Z",
-      "body": "# 4.5.7 (2026-03-27)\r\n\r\n- \r\n\r\n\r\n**更新说明**\r\n\r\n-  1. [修复输入禁漫漫画ID点確认后黑屏](https://github.com/ccbkv/PicaComic/commit/c38818c08d36b2bcee4712787f3ed9bbbea3b74b)\r\n\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何测试，不受任何支持.\r\n\r\n\r\n\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/4.5.6...4.5.7",
-      "ipas": [
-        {
-          "name": "PicaComic-4.5.7-app-ios-build.ipa",
-          "size": 15890953,
-          "url": "https://github.com/ccbkv/PicaComic/releases/download/4.5.7/PicaComic-4.5.7-app-ios-build.ipa",
-          "id": 382306187,
-          "updated_at": "2026-03-26T18:26:04Z",
-          "digest": "sha256:39ce95696eb0cef085a026ec4f73f7865d3f312f09a47de3d0ab44df9ff479c5"
         }
       ]
     }

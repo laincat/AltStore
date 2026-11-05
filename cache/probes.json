@@ -1602,5 +1602,33 @@
       "size": 29758353,
       "digest": "sha256:642feabaea7cec136abe1b69d6760676ade93acd26630a81a01f356172454e26"
     }
+  },
+  "https://github.com/laincat/Nekularity/releases/download/v0.4.1/Nekularity.ipa": {
+    "bundleIdentifier": "com.laincat.nekularity",
+    "version": "0.4.1",
+    "buildVersion": "23",
+    "displayName": "Nekularity",
+    "minOSVersion": "26.0",
+    "size": 29754414,
+    "assetIdentity": {
+      "id": 714782321,
+      "updated_at": "2026-11-05T20:53:53Z",
+      "size": 29754414,
+      "digest": "sha256:6be3769c0a9447100740b6893e3031c07f172580cb46a3c655bfa26b9447bcb5"
+    }
+  },
+  "https://github.com/ccbkv/PicaComic/releases/download/5.0.6/PicaComic-5.0.6-app-ios-build_no_sign.ipa": {
+    "bundleIdentifier": "com.github.pacalini.picaComic",
+    "version": "5.0.6",
+    "buildVersion": "46202",
+    "displayName": "Pica Comic",
+    "minOSVersion": "15.1",
+    "size": 31826074,
+    "assetIdentity": {
+      "id": 714435349,
+      "updated_at": "2026-11-05T18:48:52Z",
+      "size": 31826074,
+      "digest": "sha256:84167da5d7280a31bb986155628b288539b00f88904eecc75a926bb77da402d6"
+    }
   }
 }
