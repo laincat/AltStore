@@ -6053,7 +6053,7 @@
       "draft": false,
       "date": "2026-11-05",
       "published_at": "2026-11-05T06:59:25Z",
-      "body": "**Full Changelog**: https://github.com/laincat/Nekularity/compare/v0.3.7...v0.3.8",
+      "body": "## 简体中文\n\n0.3.8 / build 20，Core `0f1e7b8`。\n\n- 发现页修复与随后几轮界面修正进入正式版\n- 设置页新增「外观」三态（系统 / 亮 / 暗），立即生效并在重开后保持\n- 挑战完成规则补齐「回到被保护主机」与查询参数回传（Cloudflare 窗口不再卡死在不会消失的标记上）\n- iPad 与辅助功能大字号下的模拟器套件各 0 失败\n\n## English\n\n0.3.8 / build 20, Core `0f1e7b8`.\n\n- the discovery-page fix and the interface corrections that followed it ship here\n- 设置 gains a three-way 外观 control (system / light / dark) that applies at once and survives a relaunch\n- the challenge rule now carries \"back on the guarded host\" and returns the query parameters it cleared with, so a Cloudflare window no longer waits on a marker that never leaves\n- the simulator suites on an iPad and at the largest accessibility text size both finish with 0 failures\n",
       "ipas": [
         {
           "name": "Nekularity.ipa",
