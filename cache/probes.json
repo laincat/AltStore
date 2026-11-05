@@ -1532,5 +1532,33 @@
       "size": 23585269,
       "digest": "sha256:56835ff8ccbdd8b73c2b6fa04959b82be9995503ad878e2e9d4f80cea9e8c7c9"
     }
+  },
+  "https://github.com/laincat/Nekularity/releases/download/v0.3.8/Nekularity.ipa": {
+    "bundleIdentifier": "com.laincat.nekularity",
+    "version": "0.3.8",
+    "buildVersion": "20",
+    "displayName": "Nekularity",
+    "minOSVersion": "26.0",
+    "size": 29563915,
+    "assetIdentity": {
+      "id": 712409386,
+      "updated_at": "2026-11-05T06:59:24Z",
+      "size": 29563915,
+      "digest": "sha256:55dc841b70b1601ec110a92e49b8f9f02f8cf34c04ebe7ebcd657f05fbf4dc72"
+    }
+  },
+  "https://github.com/AniBakaBaka/AniBaka/releases/download/5.2.4%2B1101/baka-5.2.4%2B1101-ios-unsigned.ipa": {
+    "bundleIdentifier": "ani.baka",
+    "version": "5.2.4",
+    "buildVersion": "1101",
+    "displayName": "Baka",
+    "minOSVersion": "13.0",
+    "size": 23708307,
+    "assetIdentity": {
+      "id": 698552397,
+      "updated_at": "2026-11-01T14:22:52Z",
+      "size": 23708307,
+      "digest": "sha256:5fac01f0fecd326333cd40224cdb4f75913b2d95c139886bd629e6bd796e0d38"
+    }
   }
 }
