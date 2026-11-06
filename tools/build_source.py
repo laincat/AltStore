@@ -264,7 +264,7 @@ APPS = [
         ),
     },
     {
-        "repo": "deretame/Breeze",
+        "repo": "breeze-project-org/Breeze",
         "asset": lambda n: n.lower().endswith(".ipa"),
         "name": "Breeze",
         "developerName": "deretame",
@@ -275,7 +275,7 @@ APPS = [
         "description": (
             "使用 Flutter 构建的漫画阅读器，通过插件机制提供漫画源支持，"
             "已支持哔咔、禁漫、E-Hentai、nhentai、拷贝漫画、包子漫画等多个图源。\n\n"
-            "开源协议：MPL-2.0　·　项目主页：https://github.com/deretame/Breeze"
+            "开源协议：MPL-2.0　·　项目主页：https://github.com/breeze-project-org/Breeze"
         ),
     },
     {
@@ -384,7 +384,8 @@ APPS = [
         "description": (
             "Flutter 多平台短剧与影视客户端，包含全部站源，可在设置中逐个开关。"
             "支持追剧、观看记录、多用户、本地下载与备份。此处收录真果鉴全站源版；"
-            "它与仅含红果站源的红果鉴共用 Bundle ID，属于同一应用的不同构建。\n\n"
+            "自 1.0.3 起使用独立 Bundle ID com.guoapp.all，可与仅含红果站源的红果鉴同时安装。"
+            "旧包名版本不能覆盖升级，原有设置、追剧和下载记录不会自动迁移。\n\n"
             "安装包由上游发布，需自行签名安装。站源可用性取决于源站及网络；"
             "应用不解除源站 VIP 或其他授权限制。\n\n"
             "开源协议：GPL-3.0　·　项目主页：https://github.com/Xanerix/guoapp"

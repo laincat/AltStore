@@ -1147,6 +1147,25 @@
   ],
   "Kyosee/VeneraX": [
     {
+      "tag": "v2.3.10",
+      "name": "v2.3.10",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-06",
+      "published_at": "2026-11-06T13:00:33Z",
+      "body": "> **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v2.3.10/release-notes/v2.3.10.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v2.3.10/release-notes/v2.3.10.zh-CN.md)\n\n## What's Changed\n\n### Added\n- \"Split wide pages\" now works in gallery modes too: a landscape page (usually two pages scanned as one) is cut down the middle and each half gets a screen of its own. Choose \"Right half first\" or \"Left half first\"; pick \"Right half first\" for comics read right to left. It applies only with one image per screen.\n- With two or more images per screen in gallery modes, a new \"Shift pages by one\" button in the reader's bottom bar helps when an extra single page in a chapter, such as a color page or an ad, throws every later two-page spread out of line. Tap it and the current screen shows only its first image, and the pages after it are paired again from the next screen. Tap \"Undo page shift\" on the same screen to undo it. Shifts are saved per chapter and synced with your other reading settings.\n- Added \"Export Translation Results\" under Data & Sync. The file holds only translated pages; open it with \"Import App Data\" on another device to add them without changing anything else there.\n- \"Skip Sync Items\" has a new \"Translation Results\" entry that keeps translations on this device only, out of WebDAV sync.\n\n### Changed\n- When translations sync over WebDAV, translations you delete on one device (a chapter's, a whole comic's, or all of them with \"Clear translation results\") are now deleted on your other devices too, instead of being synced back.\n- With WebDAV sync on, translations are uploaded automatically when a pre-translation finishes.\n\n### Fixed\n- Fixed re-translated pages not reaching other devices over WebDAV sync. When two devices both have a page's translation, the newer one is now kept.\n- Fixed some pages failing AI translation over and over while still spending API tokens: replies that took a long time were cut off midway.\n- Fixed image enhan",
+      "ipas": [
+        {
+          "name": "VeneraX-ios-2.3.10+253.ipa",
+          "size": 39013148,
+          "url": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.10/VeneraX-ios-2.3.10%2B253.ipa",
+          "id": 717189260,
+          "updated_at": "2026-11-06T13:00:28Z",
+          "digest": "sha256:187b13ca320756424a1ea1039a562a2e2486c2ea49f9ac4def762a95d6a8e71d"
+        }
+      ]
+    },
+    {
       "tag": "v2.3.9",
       "name": "v2.3.9",
       "pre": false,
@@ -1504,25 +1523,6 @@
           "id": 516354153,
           "updated_at": "2026-08-16T02:57:21Z",
           "digest": "sha256:0a09984f5340bedef5e8e1a11c7000a8e273732d57a8423778c497680be009e0"
-        }
-      ]
-    },
-    {
-      "tag": "v2.2.3",
-      "name": "v2.2.3",
-      "pre": false,
-      "draft": false,
-      "date": "2026-08-14",
-      "published_at": "2026-08-14T09:58:53Z",
-      "body": "> 🌐 **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v2.2.3/release-notes/v2.2.3.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v2.2.3/release-notes/v2.2.3.zh-CN.md)\n\n## What's Changed\n\n### Added\n- AI translation now offers a \"Google Translate (no key)\" service type — no account, address or API key to fill in, just save it and start translating\n- The no-key service does not support the glossary, and the endpoint it uses is unofficial, so it may be rate-limited or stop working at any time; stay on an AI model if you need reliability\n\n### Fixed\n- Fixed pages translated before an update coming back as untranslated and needing a full re-translation\n- Fixed pre-translation progress freezing as soon as one page failed to translate\n- Fixed the pre-translation button disappearing on a second device for a comic where translation was enabled; the button now always shows, tells you what is missing and jumps straight to the model download or service settings\n- Fixed a backup or sync run failing entirely because a single file was missing, leaving the device unable to upload from then on\n- Fixed the text-removal setting still describing an option that no longer exists\n\n**Full Changelog**: https://github.com/Kyosee/VeneraX/compare/v2.2.2...v2.2.3\n\r\n",
-      "ipas": [
-        {
-          "name": "VeneraX-ios-2.2.3+232.ipa",
-          "size": 35098644,
-          "url": "https://github.com/Kyosee/VeneraX/releases/download/v2.2.3/VeneraX-ios-2.2.3%2B232.ipa",
-          "id": 514272385,
-          "updated_at": "2026-08-14T10:17:27Z",
-          "digest": "sha256:acda6c3d05f14ebec2261975f4b612e6b425b9e478488f7c3087056ae307fcdc"
         }
       ]
     }
@@ -5657,6 +5657,33 @@
   ],
   "Xanerix/guoapp": [
     {
+      "tag": "app-v1.0.4-104",
+      "name": "红果鉴 / 真果鉴 1.0.4+104",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-06",
+      "published_at": "2026-11-06T11:51:49Z",
+      "body": "更新内容：\n\n- 真果鉴新增站源「禁果短剧」（jinguoduanju.app 网页版，与同名的「禁果」App 不是同一个产品，剧库不同）：目录、详情、分集和播放走网页同一套接口。可选推荐、热度、站点分类和题材，支持在线搜索和翻页；站点不分页，翻页时复用第一页取回的整份目录，不再每页重新下载。播放权限以站点接口返回为准，目前站点对会员和金币解锁剧集也直接放行；站点拒绝播放时提示需要会员或解锁，不会代为解锁。站点不少剧本身只有 1 集。默认关闭，可在站源管理中打开。\n- 真果鉴新增站源「禁果」（禁果短剧 App，com.hgaidj.ozThree）：与黄果旧版是同一套后台的另一个部署，但剧库不同。可选精选、最新和站点分类，支持在线搜索和翻页；访客会话自动注册并保存，失效后自动重新登录；主线路不可用时自动切换到同一部署的备用线路。付费集（需金币或会员）在分集列表标为 VIP，播放时提示需要解锁，不会代为解锁，也不会播放站点给未解锁分集的广告片花。默认关闭，可在站源管理中打开。\n- 修复青空播放报「暂无可用播放地址」：青空现在要求登录后才能播放。设置 › 站源新增「站源账号」，点进去登录青空账号：输入用户名或邮箱和密码，再拖动滑块完成安全验证即可登录；没有账号可点链接到浏览器注册。登录状态保存在本机，过期前自动续期；未登录或登录失效时，播放页不再报笼统的错误，原来的「重试」换成「去登录」，点击直接弹出登录框，登录成功后自动重新播放。仅管理员可登录和退出。电视上可用遥控器完成验证：按左右方向键移动拼图块，对齐后按确定键。输完用户名按「完成」或回车直接跳到密码框。电视上进入站源账号页时焦点直接落在青空账号上，退出登录后焦点也不会丢失。\n- 修复车机、电视、投影等 4K~6K 大屏上字号和按钮过小、几乎无法阅读和点击（#73）：Android 上屏幕逻辑短边超过 1000dp 时，界面整体等比放大到接近平板的尺寸，布局仍按平板或电视排列；手机和平板不受影响。放大后运行中切换深色模式、字体大小和语言照常生效（已在模拟大屏上验证，未在真实车机和电视上验证）。\n- 修复野果站点改版后无法加载（「野果页面未提供有效的接口入口」）：站点改为通过当前线路下的接口地址取数据，现在从站点脚本中识别这种写法。野果线路换为 `attract.vgbyziuz.cc`、`as.vgbyziuz.cc`、`anyway.vgbyziuz.cc`，原线路 `analyze.buxefaex.cc` 保留为最后的备用，主线路连不上时依次切换。\n\n版本 1.0.4+104。两个版本功能相同，区别只在站源范围，按需选择：\n\n- 红果鉴 hongguojian：仅红果站源\n- 真果鉴 zhenguojian：全部站源\n\nAndroid：\n- *-arm64-v8a.apk：适用于较新的安卓设备\n- *-armeabi-v7a.apk：适用于较老的安卓设备，电视推荐使用此版本\n- *-x86_64.apk：适用于模拟器\n\niOS：\n- *-ios-unsigned.ipa：未签名 IPA，可用相关工具安装\n\nWindows：\n- *-windows-x64.zip：解压后运行 hongguojian.exe 或 zhenguojian.exe\n\nmacOS：\n- *-macos-universal.dmg：适用于 macOS 12 及以上的 Apple 芯片和 Intel 电脑，打开后拖入 Applications；未经公证，首次打开前在终端执行 xattr -dr com.apple.quarantine /Applications/红果鉴.app（真果鉴为 真果鉴.app）\n\n签名证书 SHA-256：f819175143d1bff5b06c9bfdb4c2f6001ae73077cc8e35ce2adb43bd3f9aed92\n",
+      "ipas": [
+        {
+          "name": "hongguojian-1.0.4+104-ios-unsigned.ipa",
+          "size": 30523627,
+          "url": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.4-104/hongguojian-1.0.4%2B104-ios-unsigned.ipa",
+          "id": 717000853,
+          "updated_at": "2026-11-06T11:51:41Z",
+          "digest": "sha256:7e06c031e3819f38a0b92e84f3a632143aaafb71c00cb585bf44525aa63d9177"
+        },
+        {
+          "name": "zhenguojian-1.0.4+104-ios-unsigned.ipa",
+          "size": 30529027,
+          "url": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.4-104/zhenguojian-1.0.4%2B104-ios-unsigned.ipa",
+          "id": 717001063,
+          "updated_at": "2026-11-06T11:51:45Z",
+          "digest": "sha256:73f675088fd20081d35c2e7e7712cd806ba83f8c829774c73e5bd1b836f84e17"
+        }
+      ]
+    },
+    {
       "tag": "app-v1.0.3-103",
       "name": "红果鉴 / 真果鉴 1.0.3+103",
       "pre": false,
@@ -6832,6 +6859,388 @@
           "id": 384699429,
           "updated_at": "2026-03-30T12:04:45Z",
           "digest": "sha256:2c51673057eda8e4bc10a491e90057815d75bd5f4125751f3f4f85fba821fda8"
+        }
+      ]
+    }
+  ],
+  "breeze-project-org/Breeze": [
+    {
+      "tag": "v3.0.37",
+      "name": "Breeze v3.0.37",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-31",
+      "published_at": "2026-10-31T09:28:32Z",
+      "body": "## 📝 更新日志\n## [v3.0.37]\n\n### 功能更新\n\n- 添加关闭首页和云收藏页的功能\n- 漫画详情页长按收藏按钮现可选择收藏夹\n- 添加本地收藏后自动云收藏的开关\n- 添加滑动验证码支持\n- 移动平台阅读设置添加显示状态栏功能\n- 添加搜索书签 with [AdySnowflake](https://github.com/AdySnowflake)\n\n### 修复\n\n- 修复自定义插件顺序无效的问题\n\n### 优化\n\n- 首页添加常驻搜索按钮\n- 优化报错显示\n- 优化部分文本\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.37.exe](https://github.com/deretame/Breeze/releases/download/v3.0.37/windows-installer-v3.0.37.exe) |\n| **macOS** | [Breeze-macOS-v3.0.37.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.37/Breeze-macOS-v3.0.37.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.37.apk](https://github.com/deretame/Breeze/releases/download/v3.0.37/app-arm64-v8a-release-v3.0.37.apk) |\n| **iOS** | [Breeze-iOS-v3.0.37.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.37/Breeze-iOS-v3.0.37.ipa) |\n| **Linux** | [breeze-v3.0.37.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.37/breeze-v3.0.37.flatpak) |\n| **Linux (DEB)** | [breeze_3.0.37_amd64-v3.0.37.deb](https://github.com/deretame/Breeze/releases/download/v3.0.37/breeze_3.0.37_amd64-v3.0.37.deb) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
+      "ipas": [
+        {
+          "name": "Breeze-iOS-v3.0.37.ipa",
+          "size": 26431983,
+          "url": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.37/Breeze-iOS-v3.0.37.ipa",
+          "id": 694944294,
+          "updated_at": "2026-10-31T09:28:30Z",
+          "digest": "sha256:ca6d6508b60e004b99c47f07a7e0d6c5546eb9384a91f69ba87c8f470fe1e32f"
+        }
+      ]
+    },
+    {
+      "tag": "v3.0.36",
+      "name": "Breeze v3.0.36",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-25",
+      "published_at": "2026-10-25T05:46:26Z",
+      "body": "## 📝 更新日志\n## [v3.0.36]\n\n### 功能更新\n\n- 导航添加首页和云收藏页\n- 添加详情风格漫画列表\n- 添加默认章节倒序选项\n- 漫画详情页操作栏添加云收藏按钮\n\n### 优化\n\n- 优化书架多选操作体验\n- 优化性能\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.36.exe](https://github.com/deretame/Breeze/releases/download/v3.0.36/windows-installer-v3.0.36.exe) |\n| **macOS** | [Breeze-macOS-v3.0.36.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.36/Breeze-macOS-v3.0.36.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.36.apk](https://github.com/deretame/Breeze/releases/download/v3.0.36/app-arm64-v8a-release-v3.0.36.apk) |\n| **iOS** | [Breeze-iOS-v3.0.36.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.36/Breeze-iOS-v3.0.36.ipa) |\n| **Linux** | [breeze-v3.0.36.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.36/breeze-v3.0.36.flatpak) |\n| **Linux (DEB)** | [breeze_3.0.36_amd64-v3.0.36.deb](https://github.com/deretame/Breeze/releases/download/v3.0.36/breeze_3.0.36_amd64-v3.0.36.deb) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
+      "ipas": [
+        {
+          "name": "Breeze-iOS-v3.0.36.ipa",
+          "size": 26377539,
+          "url": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.36/Breeze-iOS-v3.0.36.ipa",
+          "id": 674220613,
+          "updated_at": "2026-10-25T05:46:25Z",
+          "digest": "sha256:8886584b808c3ceb48d58a7e50aa9961998f7789996df86fac3c69b51f6df69a"
+        }
+      ]
+    },
+    {
+      "tag": "v3.0.35",
+      "name": "Breeze v3.0.35",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-18",
+      "published_at": "2026-10-18T05:23:12Z",
+      "body": "## 📝 更新日志\n## [v3.0.35]\n\n### 功能更新\n\n- 章节目录添加分组支持\n- 评论添加复制，查看头像功能\n\n### 优化\n\n- 优化追更逻辑与追更页ui\n- 优化云收藏错误提示\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.35.exe](https://github.com/deretame/Breeze/releases/download/v3.0.35/windows-installer-v3.0.35.exe) |\n| **macOS** | [Breeze-macOS-v3.0.35.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.35/Breeze-macOS-v3.0.35.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.35.apk](https://github.com/deretame/Breeze/releases/download/v3.0.35/app-arm64-v8a-release-v3.0.35.apk) |\n| **iOS** | [Breeze-iOS-v3.0.35.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.35/Breeze-iOS-v3.0.35.ipa) |\n| **Linux** | [breeze-v3.0.35.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.35/breeze-v3.0.35.flatpak) |\n| **Linux (DEB)** | [breeze_3.0.35_amd64-v3.0.35.deb](https://github.com/deretame/Breeze/releases/download/v3.0.35/breeze_3.0.35_amd64-v3.0.35.deb) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
+      "ipas": [
+        {
+          "name": "Breeze-iOS-v3.0.35.ipa",
+          "size": 26309164,
+          "url": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.35/Breeze-iOS-v3.0.35.ipa",
+          "id": 652568101,
+          "updated_at": "2026-10-18T05:23:11Z",
+          "digest": "sha256:427c5792810a70d61e65ebadd88960fd2b26c5c33078fbd5b535ee973f85e907"
+        }
+      ]
+    },
+    {
+      "tag": "v3.0.34",
+      "name": "Breeze v3.0.34",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-11",
+      "published_at": "2026-10-11T10:46:38Z",
+      "body": "## 📝 更新日志\n## [v3.0.34]\n\n### 功能更新\n\n- 新增插件详情页，可查看插件介绍与作者信息\n- 优化登录功能，添加图像验证码支持\n- 追更页新增未读汇总与全部已读\n- 优化漫画独立设置功能\n- 漫画列表支持下拉刷新\n- 插件商店新增直达 GitHub 仓库按钮\n\n### 修复\n\n- 修复部分漫画详情页无法打开的问题\n- 修复禁漫部分图片加载异常的问题\n- 修复搜索栏浮层切换页面后仍悬浮的问题\n- 修复搜索框长按菜单异常收起的问题\n\n### 优化\n\n- 优化插件下载失败提示\n- 优化图片加载性能\n- 优化下载功能\n- 优化部分文本与ui样式\n\n### 杂项\n\n- 此版本起不再支持安卓7\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.34.exe](https://github.com/deretame/Breeze/releases/download/v3.0.34/windows-installer-v3.0.34.exe) |\n| **macOS** | [Breeze-macOS-v3.0.34.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.34/Breeze-macOS-v3.0.34.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.34.apk](https://github.com/deretame/Breeze/releases/download/v3.0.34/app-arm64-v8a-release-v3.0.34.apk) |\n| **iOS** | [Breeze-iOS-v3.0.34.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.34/Breeze-iOS-v3.0.34.ipa) |\n| **Linux** | [breeze-v3.0.34.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.34/breeze-v3.0.34.flatpak) |\n| **Linux (DEB)** | [breeze_3.0.34_amd64-v3.0.34.deb](https://github.com/deretame/Breeze/releases/download/v3.0.34/breeze_3.0.34_amd64-v3.0.34.deb) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
+      "ipas": [
+        {
+          "name": "Breeze-iOS-v3.0.34.ipa",
+          "size": 26102438,
+          "url": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.34/Breeze-iOS-v3.0.34.ipa",
+          "id": 630483096,
+          "updated_at": "2026-10-11T10:46:36Z",
+          "digest": "sha256:e140423f123c3e177384eac0f766c432dadd3959d1ba6955dc91f087b693a318"
+        }
+      ]
+    },
+    {
+      "tag": "v3.0.33",
+      "name": "Breeze v3.0.33",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-28",
+      "published_at": "2026-09-28T10:23:04Z",
+      "body": "## 📝 更新日志\n## [v3.0.33]\n\n### 功能更新\n\n- 进度条跟随从右到左阅读方向反转\n- 添加墨水屏优化 by [dororo42](https://github.com/dororo42)\n\n### 修复\n\n- 修复搜索栏部分情况下无法正常搜索的问题\n- 修复低版本安卓闪退 by [dororo42](https://github.com/dororo42)\n\n### 优化\n\n- 优化搜索栏弹出逻辑\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.33.exe](https://github.com/deretame/Breeze/releases/download/v3.0.33/windows-installer-v3.0.33.exe) |\n| **macOS** | [Breeze-macOS-v3.0.33.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.33/Breeze-macOS-v3.0.33.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.33.apk](https://github.com/deretame/Breeze/releases/download/v3.0.33/app-arm64-v8a-release-v3.0.33.apk) |\n| **iOS** | [Breeze-iOS-v3.0.33.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.33/Breeze-iOS-v3.0.33.ipa) |\n| **Linux** | [breeze-v3.0.33.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.33/breeze-v3.0.33.flatpak) |\n| **Linux (DEB)** | [breeze_3.0.33_amd64-v3.0.33.deb](https://github.com/deretame/Breeze/releases/download/v3.0.33/breeze_3.0.33_amd64-v3.0.33.deb) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
+      "ipas": [
+        {
+          "name": "Breeze-iOS-v3.0.33.ipa",
+          "size": 26000157,
+          "url": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.33/Breeze-iOS-v3.0.33.ipa",
+          "id": 595126758,
+          "updated_at": "2026-09-28T10:23:02Z",
+          "digest": "sha256:7d9b8e1fb54c561f81405d46c3b6f0973ebdc7439bbf7a1e7bf0d1b8f8b9c540"
+        }
+      ]
+    },
+    {
+      "tag": "v3.0.32",
+      "name": "Breeze v3.0.32",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-27",
+      "published_at": "2026-09-27T06:03:46Z",
+      "body": "## 📝 更新日志\n## [v3.0.32]\n\n### 功能更新\n\n- 下载功能重构\n- 新增反转左右方向键行为功能\n- 新增当前漫画专属设置\n- 收藏和下载添加按观看时间排序功能\n\n### 修复\n\n- 修复Windows安装器安装后无法删除的问题\n- 修复部分下载问题\n\n### 优化\n\n- 优化部分ui样式及操作逻辑\n- 优化性能\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.32.exe](https://github.com/deretame/Breeze/releases/download/v3.0.32/windows-installer-v3.0.32.exe) |\n| **macOS** | [Breeze-macOS-v3.0.32.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.32/Breeze-macOS-v3.0.32.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.32.apk](https://github.com/deretame/Breeze/releases/download/v3.0.32/app-arm64-v8a-release-v3.0.32.apk) |\n| **iOS** | [Breeze-iOS-v3.0.32.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.32/Breeze-iOS-v3.0.32.ipa) |\n| **Linux** | [breeze-v3.0.32.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.32/breeze-v3.0.32.flatpak) |\n| **Linux (DEB)** | [breeze_3.0.32_amd64-v3.0.32.deb](https://github.com/deretame/Breeze/releases/download/v3.0.32/breeze_3.0.32_amd64-v3.0.32.deb) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
+      "ipas": [
+        {
+          "name": "Breeze-iOS-v3.0.32.ipa",
+          "size": 25995512,
+          "url": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.32/Breeze-iOS-v3.0.32.ipa",
+          "id": 592274098,
+          "updated_at": "2026-09-27T06:03:45Z",
+          "digest": "sha256:902fe9f04adf7165025b3c17524cd27239722d04f8a6c0af64b0c4f71ff5b57d"
+        }
+      ]
+    },
+    {
+      "tag": "v3.0.31",
+      "name": "Breeze v3.0.31",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-13",
+      "published_at": "2026-09-13T05:29:41Z",
+      "body": "## 📝 更新日志\n## [v3.0.31]\n\n### 功能更新\n\n- 新增双页无缝开关\n- 手机添加横版阅读模式\n- 添加 deb 打包 by [cookieidea](https://github.com/cookieidea)\n\n### 修复\n\n- 修复部分 webdav 提供商无法正常同步的问题 by [cookieidea](https://github.com/cookieidea)\n- 修复 iOS 无法正常选中文件的问题\n- 修复 Windows 始终获取定位的问题\n- 修复 Linux 下 flatpak 图片图标显示问题 by [cookieidea](https://github.com/cookieidea)\n- 修复 Linux 下关闭行为异常的问题 by [cookieidea](https://github.com/cookieidea)\n\n### 优化\n\n- 优化阅读体验\n- 优化双页模式拼页逻辑\n- 优化首页留白逻辑\n- 优化关于页贡献者获取逻辑 by [cookieidea](https://github.com/cookieidea)\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.31.exe](https://github.com/deretame/Breeze/releases/download/v3.0.31/windows-installer-v3.0.31.exe) |\n| **macOS** | [Breeze-macOS-v3.0.31.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.31/Breeze-macOS-v3.0.31.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.31.apk](https://github.com/deretame/Breeze/releases/download/v3.0.31/app-arm64-v8a-release-v3.0.31.apk) |\n| **iOS** | [Breeze-iOS-v3.0.31.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.31/Breeze-iOS-v3.0.31.ipa) |\n| **Linux** | [breeze-v3.0.31.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.31/breeze-v3.0.31.flatpak) |\n| **Linux (DEB)** | [breeze_3.0.31_amd64-v3.0.31.deb](https://github.com/deretame/Breeze/releases/download/v3.0.31/breeze_3.0.31_amd64-v3.0.31.deb) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
+      "ipas": [
+        {
+          "name": "Breeze-iOS-v3.0.31.ipa",
+          "size": 25767710,
+          "url": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.31/Breeze-iOS-v3.0.31.ipa",
+          "id": 560637228,
+          "updated_at": "2026-09-13T05:29:40Z",
+          "digest": "sha256:36b80b3da960df73447ed083d6549c378067f335abbe977e8afc44d7d9b418d5"
+        }
+      ]
+    },
+    {
+      "tag": "v3.0.30",
+      "name": "Breeze v3.0.30",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-06",
+      "published_at": "2026-09-06T08:22:28Z",
+      "body": "## 📝 更新日志\n## [v3.0.30]\n\n### 功能更新\n\n- MacOS与Linux添加托盘图标 by [cookieidea](https://github.com/cookieidea)\n- 漫画详情页新增漫画预览功能（需漫画源支持，如ehentai，禁漫天堂）\n- 追更添加已更新未读功能\n\n### 修复\n\n- 修复部分漫画无法正常下载的问题\n- 修复部分漫画无法正常获取章节信息的问题\n- 修复MacOS下桌面位置与窗口大小记录异常的问题\n\n### 优化\n\n- 优化漫画阅读页的性能\n- 优化发现页样式\n- 优化发现页插件封面获取逻辑\n- 优化追更页样式\n- 优化下载重试逻辑\n- 优化下载任务进度文本显示\n- 优化更新日志加载方式\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.30.exe](https://github.com/deretame/Breeze/releases/download/v3.0.30/windows-installer-v3.0.30.exe) |\n| **macOS** | [Breeze-macOS-v3.0.30.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.30/Breeze-macOS-v3.0.30.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.30.apk](https://github.com/deretame/Breeze/releases/download/v3.0.30/app-arm64-v8a-release-v3.0.30.apk) |\n| **iOS** | [Breeze-iOS-v3.0.30.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.30/Breeze-iOS-v3.0.30.ipa) |\n| **Linux** | [breeze-v3.0.30.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.30/breeze-v3.0.30.flatpak) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
+      "ipas": [
+        {
+          "name": "Breeze-iOS-v3.0.30.ipa",
+          "size": 25322321,
+          "url": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.30/Breeze-iOS-v3.0.30.ipa",
+          "id": 546931049,
+          "updated_at": "2026-09-06T08:22:26Z",
+          "digest": "sha256:261fbbbb1993ffc06deaf682b99aad11b469daf96112dd94113e9648426da428"
+        }
+      ]
+    },
+    {
+      "tag": "v3.0.29",
+      "name": "Breeze v3.0.29",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-06",
+      "published_at": "2026-09-06T05:01:45Z",
+      "body": "## 📝 更新日志\n## [v3.0.29]\n\n### 功能更新\n\n- MacOS与Linux添加托盘图标 by [cookieidea](https://github.com/cookieidea)\n- 漫画详情页新增漫画预览功能\n- 追更添加已更新未读功能\n\n### 修复\n\n- 修复部分漫画无法正常获取章节信息的问题\n- 修复MacOS下桌面位置与窗口大小记录异常的问题\n\n### 优化\n\n- 优化漫画阅读页的性能\n- 优化发现页样式\n- 优化发现页插件封面获取逻辑\n- 优化追更页样式\n- 优化下载重试逻辑\n- 优化下载任务进度文本显示\n- 优化更新日志加载方式\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.29.exe](https://github.com/deretame/Breeze/releases/download/v3.0.29/windows-installer-v3.0.29.exe) |\n| **macOS** | [Breeze-macOS-v3.0.29.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.29/Breeze-macOS-v3.0.29.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.29.apk](https://github.com/deretame/Breeze/releases/download/v3.0.29/app-arm64-v8a-release-v3.0.29.apk) |\n| **iOS** | [Breeze-iOS-v3.0.29.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.29/Breeze-iOS-v3.0.29.ipa) |\n| **Linux** | [breeze-v3.0.29.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.29/breeze-v3.0.29.flatpak) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
+      "ipas": [
+        {
+          "name": "Breeze-iOS-v3.0.29.ipa",
+          "size": 25322370,
+          "url": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.29/Breeze-iOS-v3.0.29.ipa",
+          "id": 546756635,
+          "updated_at": "2026-09-06T05:01:44Z",
+          "digest": "sha256:5cd98a1433fec462ec9523e101a5fe71cd1f7f613869513ee1803e1458698c9f"
+        }
+      ]
+    },
+    {
+      "tag": "v3.0.28",
+      "name": "Breeze v3.0.28",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-23",
+      "published_at": "2026-08-23T11:13:12Z",
+      "body": "## 📝 更新日志\n## [v3.0.28]\n\n### 功能更新\n\n- 添加调整插件顺序的功能\n\n### 修复\n\n- 修复部分下载漫画无法正常获取占用空间大小的问题\n- 修复部分漫画无法正常导出或导出缓慢的问题\n- 修复部分情况下请求无法正常读取的问题\n\n### 优化\n\n- 优化搜索界面视觉效果，修复图片闪烁的问题\n- 优化漫画收藏逻辑，插件添加更多可选项\n- 优化漫画下载逻辑\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.28.exe](https://github.com/deretame/Breeze/releases/download/v3.0.28/windows-installer-v3.0.28.exe) |\n| **macOS** | [Breeze-macOS-v3.0.28.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.28/Breeze-macOS-v3.0.28.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.28.apk](https://github.com/deretame/Breeze/releases/download/v3.0.28/app-arm64-v8a-release-v3.0.28.apk) |\n| **iOS** | [Breeze-iOS-v3.0.28.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.28/Breeze-iOS-v3.0.28.ipa) |\n| **Linux** | [breeze-v3.0.28.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.28/breeze-v3.0.28.flatpak) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
+      "ipas": [
+        {
+          "name": "Breeze-iOS-v3.0.28.ipa",
+          "size": 25251002,
+          "url": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.28/Breeze-iOS-v3.0.28.ipa",
+          "id": 526134251,
+          "updated_at": "2026-08-23T11:13:11Z",
+          "digest": "sha256:ede579022ba824845f105f1d7d1ba9974edf23b3d3b01fd03412791c1838d7a5"
+        }
+      ]
+    },
+    {
+      "tag": "v3.0.27",
+      "name": "Breeze v3.0.27",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-16",
+      "published_at": "2026-08-16T09:28:14Z",
+      "body": "## 📝 更新日志\n## [v3.0.27]\n\n### 功能更新\n\n- 安卓添加可以直接返回至桌面的功能开关\n- 添加设置预加载图片数量的功能\n- 添加预加载章节和设置预加载数量的功能\n- 添加条漫点击滚动功能\n- 添加自动阅读模式下可关闭暂停键的功能\n\n### ui 调整\n\n- 迁移翻页模式至手势界面\n- 漫画详情页章节仅保留序号，并跟随章节倒序排列\n- 优化文件夹操作功能ui效果，添加滑动提示\n\n### 修复\n\n- 修复部分图片无法下载的问题\n\n### 优化\n\n- 优化图片下载速度\n- 优化性能\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.27.exe](https://github.com/deretame/Breeze/releases/download/v3.0.27/windows-installer-v3.0.27.exe) |\n| **macOS** | [Breeze-macOS-v3.0.27.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.27/Breeze-macOS-v3.0.27.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.27.apk](https://github.com/deretame/Breeze/releases/download/v3.0.27/app-arm64-v8a-release-v3.0.27.apk) |\n| **iOS** | [Breeze-iOS-v3.0.27.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.27/Breeze-iOS-v3.0.27.ipa) |\n| **Linux** | [breeze-v3.0.27.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.27/breeze-v3.0.27.flatpak) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
+      "ipas": [
+        {
+          "name": "Breeze-iOS-v3.0.27.ipa",
+          "size": 24994618,
+          "url": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.27/Breeze-iOS-v3.0.27.ipa",
+          "id": 516651758,
+          "updated_at": "2026-08-16T09:28:13Z",
+          "digest": "sha256:e15d4c7c9729e876751281e2669e9c858c90f48d32c60422c5808fad8287c3e1"
+        }
+      ]
+    },
+    {
+      "tag": "v3.0.25",
+      "name": "Breeze v3.0.25",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-02",
+      "published_at": "2026-08-02T11:32:05Z",
+      "body": "## 📝 更新日志\n## [v3.0.25]\n\n### 功能更新\n\n- 添加超分模型手动下载导入功能\n- 添加左手优化模式\n- 添加漫画阅读页点击封面自动开始阅读功能\n- 添加http代理支持\n- 添加同步手动触发下载和上传的功能\n\n### ui调整\n\n- 同步功能入口迁移至更多页\n\n### 修复\n\n- 修复部分图片因超分导致无法正常显示的问题\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.25.exe](https://github.com/deretame/Breeze/releases/download/v3.0.25/windows-installer-v3.0.25.exe) |\n| **macOS** | [Breeze-macOS-v3.0.25.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.25/Breeze-macOS-v3.0.25.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.25.apk](https://github.com/deretame/Breeze/releases/download/v3.0.25/app-arm64-v8a-release-v3.0.25.apk) |\n| **iOS** | [Breeze-iOS-v3.0.25.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.25/Breeze-iOS-v3.0.25.ipa) |\n| **Linux** | [breeze-v3.0.25.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.25/breeze-v3.0.25.flatpak) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
+      "ipas": [
+        {
+          "name": "Breeze-iOS-v3.0.25.ipa",
+          "size": 25061054,
+          "url": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.25/Breeze-iOS-v3.0.25.ipa",
+          "id": 498842491,
+          "updated_at": "2026-08-02T11:32:04Z",
+          "digest": "sha256:47a0da70942b3363bc39e9da157ac3ad5a2343818966345c79d23aa4a85bf9b1"
+        }
+      ]
+    },
+    {
+      "tag": "v3.0.24",
+      "name": "Breeze v3.0.24",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-26",
+      "published_at": "2026-07-26T13:33:40Z",
+      "body": "## 📝 更新日志\n## [v3.0.24]\n\n### 功能更新\n\n- 添加书架页选择默认tab功能\n- 添加记忆书架页时间排序开关 \n\n### 修复\n\n- 修复超分模型无法正常下载的问题\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.24.exe](https://github.com/deretame/Breeze/releases/download/v3.0.24/windows-installer-v3.0.24.exe) |\n| **macOS** | [Breeze-macOS-v3.0.24.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.24/Breeze-macOS-v3.0.24.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.24.apk](https://github.com/deretame/Breeze/releases/download/v3.0.24/app-arm64-v8a-release-v3.0.24.apk) |\n| **iOS** | [Breeze-iOS-v3.0.24.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.24/Breeze-iOS-v3.0.24.ipa) |\n| **Linux** | [breeze-v3.0.24.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.24/breeze-v3.0.24.flatpak) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
+      "ipas": [
+        {
+          "name": "Breeze-iOS-v3.0.24.ipa",
+          "size": 24690370,
+          "url": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.24/Breeze-iOS-v3.0.24.ipa",
+          "id": 490379107,
+          "updated_at": "2026-07-26T13:33:39Z",
+          "digest": "sha256:630b26735891856f37b4de3720ebbf424cb6d9c01905c96c3a0ba35963a9ec3a"
+        }
+      ]
+    },
+    {
+      "tag": "v3.0.23",
+      "name": "Breeze v3.0.23",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-19",
+      "published_at": "2026-07-19T15:16:28Z",
+      "body": "## 📝 更新日志\n## [v3.0.23]\n\n### 功能更新\n\n- 漫画阅读页添加双页模式下在章节首页插入空白占位组件的功能\n- 添加漫画详情页云端本地收藏按钮位置交换的功能\n- 添加收藏自动追更的开关\n- 添加安卓增强保活开关（会增加耗电，谨慎开启）\n- 添加插件手动检测更新，手动更新的功能\n- 添加不在插件列表内的插件自动更新的功能\n- 添加漫画自动阅读平滑滚动的功能\n- 添加删除超分模型的功能\n\n### 优化\n\n- 优化安卓导出数据的体验\n- 优化ui\n\n### 修复\n\n- 修复部分情况下，windows窗口操作无响应的问题\n- 修复章节倒序无响应的问题\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.23.exe](https://github.com/deretame/Breeze/releases/download/v3.0.23/windows-installer-v3.0.23.exe) |\n| **macOS** | [Breeze-macOS-v3.0.23.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.23/Breeze-macOS-v3.0.23.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.23.apk](https://github.com/deretame/Breeze/releases/download/v3.0.23/app-arm64-v8a-release-v3.0.23.apk) |\n| **iOS** | [Breeze-iOS-v3.0.23.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.23/Breeze-iOS-v3.0.23.ipa) |\n| **Linux** | [breeze-v3.0.23.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.23/breeze-v3.0.23.flatpak) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
+      "ipas": [
+        {
+          "name": "Breeze-iOS-v3.0.23.ipa",
+          "size": 24685281,
+          "url": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.23/Breeze-iOS-v3.0.23.ipa",
+          "id": 482495839,
+          "updated_at": "2026-07-19T15:16:27Z",
+          "digest": "sha256:c855f7f4a43146815c0f513a3410e4260519a2899597a61248682582268034cb"
+        }
+      ]
+    },
+    {
+      "tag": "v3.0.22",
+      "name": "Breeze v3.0.22",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-19",
+      "published_at": "2026-07-19T13:14:38Z",
+      "body": "## 📝 更新日志\n## [v3.0.22]\n\n### 功能更新\n\n- 漫画阅读页添加双页模式下在章节首页插入空白占位组件的功能\n- 添加漫画详情页云端本地收藏按钮位置交换的功能\n- 添加收藏自动追更的开关\n- 添加安卓增强保活开关（会增加耗电，谨慎开启）\n- 添加插件手动检测更新，手动更新的功能\n- 添加不在插件列表内的插件自动更新的功能\n- 添加漫画自动阅读平滑滚动的功能\n- 添加删除超分模型的功能\n\n### 优化\n\n- 优化安卓导出数据的体验\n- 优化ui\n\n### 修复\n\n- 修复部分情况下，windows窗口操作无响应的问题\n- 修复章节倒序无响应的问题\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.22.exe](https://github.com/deretame/Breeze/releases/download/v3.0.22/windows-installer-v3.0.22.exe) |\n| **macOS** | [Breeze-macOS-v3.0.22.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.22/Breeze-macOS-v3.0.22.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.22.apk](https://github.com/deretame/Breeze/releases/download/v3.0.22/app-arm64-v8a-release-v3.0.22.apk) |\n| **iOS** | [Breeze-iOS-v3.0.22.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.22/Breeze-iOS-v3.0.22.ipa) |\n| **Linux** | [breeze-v3.0.22.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.22/breeze-v3.0.22.flatpak) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
+      "ipas": [
+        {
+          "name": "Breeze-iOS-v3.0.22.ipa",
+          "size": 24685393,
+          "url": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.22/Breeze-iOS-v3.0.22.ipa",
+          "id": 482403544,
+          "updated_at": "2026-07-19T13:14:37Z",
+          "digest": "sha256:80222887db5ceadae8c2f1529a8b85ca6e8e5b055b3decd43ab303336ed6ad65"
+        }
+      ]
+    },
+    {
+      "tag": "v3.0.21",
+      "name": "Breeze v3.0.21",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-12",
+      "published_at": "2026-07-12T10:36:22Z",
+      "body": "## 📝 更新日志\n## [v3.0.21]\n\n### 功能更新\n\n- 添加下载漫画导出后再次导入的功能（注：从此版本开始导出的漫画才可导入）\n- 添加追更功能\n\n### 优化\n\n- 优化阅读历史历史显示\n- 优化部分ui显示效果\n- 优化导入导出逻辑\n- 优化插件初始化逻辑，降低初始化等待时间\n\n### 修复\n\n- 修复windows下如果在最小化时关闭软件，下次开启软件时，无法正常显示的问题\n- 修复部分情况下插件名称显示错误的问题\n- 修复部分漫画因名称过长导致无法导出的问题\n\n### 杂项\n\n- 添加i18n支持\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.21.exe](https://github.com/deretame/Breeze/releases/download/v3.0.21/windows-installer-v3.0.21.exe) |\n| **macOS** | [Breeze-macOS-v3.0.21.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.21/Breeze-macOS-v3.0.21.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.21.apk](https://github.com/deretame/Breeze/releases/download/v3.0.21/app-arm64-v8a-release-v3.0.21.apk) |\n| **iOS** | [Breeze-iOS-v3.0.21.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.21/Breeze-iOS-v3.0.21.ipa) |\n| **Linux** | [breeze-v3.0.21.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.21/breeze-v3.0.21.flatpak) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
+      "ipas": [
+        {
+          "name": "Breeze-iOS-v3.0.21.ipa",
+          "size": 23687347,
+          "url": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.21/Breeze-iOS-v3.0.21.ipa",
+          "id": 474313207,
+          "updated_at": "2026-07-12T10:36:21Z",
+          "digest": "sha256:ffd6b01703739896dfd0300df85ca3e48c805a3fd68a28226671d93dd4d3bf7d"
+        }
+      ]
+    },
+    {
+      "tag": "v3.0.20",
+      "name": "Breeze v3.0.20",
+      "pre": false,
+      "draft": false,
+      "date": "2026-07-05",
+      "published_at": "2026-07-05T18:02:20Z",
+      "body": "## 📝 更新日志\n## [v3.0.20]\n\n### 功能更新\n\n- 添加app数据导出导入功能\n\n### 优化\n\n- 优化书架搜索逻辑\n- 优化书架文件夹操作逻辑\n\n### 修复\n\n- 修复书架右上角筛选不生效的问题\n- 修复部分情况下webdav证书验证失败的问题\n\n### 杂项\n\n- 书架筛选处文件夹功能在一段时间后会删除，请尽快迁移\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.20.exe](https://github.com/deretame/Breeze/releases/download/v3.0.20/windows-installer-v3.0.20.exe) |\n| **macOS** | [Breeze-macOS-v3.0.20.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.20/Breeze-macOS-v3.0.20.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.20.apk](https://github.com/deretame/Breeze/releases/download/v3.0.20/app-arm64-v8a-release-v3.0.20.apk) |\n| **iOS** | [Breeze-iOS-v3.0.20.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.20/Breeze-iOS-v3.0.20.ipa) |\n| **Linux** | [breeze-v3.0.20.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.20/breeze-v3.0.20.flatpak) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
+      "ipas": [
+        {
+          "name": "Breeze-iOS-v3.0.20.ipa",
+          "size": 23613530,
+          "url": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.20/Breeze-iOS-v3.0.20.ipa",
+          "id": 467329659,
+          "updated_at": "2026-07-05T18:02:19Z",
+          "digest": "sha256:f614e33710dc1ced52bca421e04e688b4dd2944e813f389c74467948eaed4497"
+        }
+      ]
+    },
+    {
+      "tag": "v3.0.19",
+      "name": "Breeze v3.0.19",
+      "pre": false,
+      "draft": false,
+      "date": "2026-06-29",
+      "published_at": "2026-06-29T02:00:19Z",
+      "body": "## 📝 更新日志\n## [v3.0.19]\n\n### 功能更新\n\n- 书架收藏与下载添加类资源管理模式文件夹逻辑\n- 新增全局简繁转换开关(issue #128) by [@Enigma-Soul](https://github.com/deretame/Breeze/pull/143)\n\n### 优化\n\n- 修复部分情况下章节列表高亮不正确的问题 by [@Enigma-Soul](https://github.com/deretame/Breeze/pull/135)\n- 优化插件性能\n- 优化部分ui显示效果及部分文本描述\n\n### bug 修复\n\n- 修复Windows安装器在部分设备上无法正常安装的问题\n\n### 杂项\n\n- 部分设置不再跟随同步\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.19.exe](https://github.com/deretame/Breeze/releases/download/v3.0.19/windows-installer-v3.0.19.exe) |\n| **macOS** | [Breeze-macOS-v3.0.19.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.19/Breeze-macOS-v3.0.19.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.19.apk](https://github.com/deretame/Breeze/releases/download/v3.0.19/app-arm64-v8a-release-v3.0.19.apk) |\n| **iOS** | [Breeze-iOS-v3.0.19.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.19/Breeze-iOS-v3.0.19.ipa) |\n| **Linux** | [breeze-v3.0.19.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.19/breeze-v3.0.19.flatpak) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
+      "ipas": [
+        {
+          "name": "Breeze-iOS-v3.0.19.ipa",
+          "size": 23296013,
+          "url": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.19/Breeze-iOS-v3.0.19.ipa",
+          "id": 460667466,
+          "updated_at": "2026-06-29T02:00:18Z",
+          "digest": "sha256:87b6897a4c0dde59d9a11a021c513cd254cd3596f429196b11c3457ed5ac649b"
+        }
+      ]
+    },
+    {
+      "tag": "v3.0.18",
+      "name": "Breeze v3.0.18",
+      "pre": false,
+      "draft": false,
+      "date": "2026-06-21",
+      "published_at": "2026-06-21T15:28:44Z",
+      "body": "## 📝 更新日志\n## [v3.0.18]\n\n### 功能更新\n\n- 添加图片自动超分功能（实验性，可能不稳定）\n\n### 优化\n\n- 阅读界面章节选择对话框定位到当前章节并高亮的功能 by @Enigma-Soul in https://github.com/deretame/Breeze/pull/135\n\n#### New Contributors\n\n- @Enigma-Soul made their first contribution in https://github.com/deretame/Breeze/pull/135\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.18.exe](https://github.com/deretame/Breeze/releases/download/v3.0.18/windows-installer-v3.0.18.exe) |\n| **macOS** | [Breeze-macOS-v3.0.18.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.18/Breeze-macOS-v3.0.18.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.18.apk](https://github.com/deretame/Breeze/releases/download/v3.0.18/app-arm64-v8a-release-v3.0.18.apk) |\n| **iOS** | [Breeze-iOS-v3.0.18.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.18/Breeze-iOS-v3.0.18.ipa) |\n| **Linux** | [breeze-v3.0.18.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.18/breeze-v3.0.18.flatpak) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
+      "ipas": [
+        {
+          "name": "Breeze-iOS-v3.0.18.ipa",
+          "size": 23643829,
+          "url": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.18/Breeze-iOS-v3.0.18.ipa",
+          "id": 453784248,
+          "updated_at": "2026-06-21T15:28:43Z",
+          "digest": "sha256:c1c1525a7ff4ce323be5999fb1297c5ab57aa998c7a2f91e78b4b84c28550b69"
+        }
+      ]
+    },
+    {
+      "tag": "v3.0.17",
+      "name": "Breeze v3.0.17",
+      "pre": false,
+      "draft": false,
+      "date": "2026-06-16",
+      "published_at": "2026-06-16T15:27:52Z",
+      "body": "## 📝 更新日志\n## [v3.0.17]\n\n### bug修复\n\n- 修复下载漫画封面可能无法加载的问题\n- 修复部分漫画下载后无法离线观看的问题（部分漫画可能需要重新下载）\n- 修复部分情况下无法正常写入观看历史的问题\n\n### 优化\n\n- 优化安卓端后台下载体验，降低因被系统冻结导致无法正常下载的概率\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.17.exe](https://github.com/deretame/Breeze/releases/download/v3.0.17/windows-installer-v3.0.17.exe) |\n| **macOS** | [Breeze-macOS-v3.0.17.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.17/Breeze-macOS-v3.0.17.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.17.apk](https://github.com/deretame/Breeze/releases/download/v3.0.17/app-arm64-v8a-release-v3.0.17.apk) |\n| **iOS** | [Breeze-iOS-v3.0.17.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.17/Breeze-iOS-v3.0.17.ipa) |\n| **Linux** | [breeze-v3.0.17.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.17/breeze-v3.0.17.flatpak) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
+      "ipas": [
+        {
+          "name": "Breeze-iOS-v3.0.17.ipa",
+          "size": 23364475,
+          "url": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.17/Breeze-iOS-v3.0.17.ipa",
+          "id": 449349271,
+          "updated_at": "2026-06-16T15:27:51Z",
+          "digest": "sha256:9db9081bf23e3ada6989ebe98ffb6d9e7ad83641090a594bbc0a318b6353ffb8"
         }
       ]
     }

@@ -1644,5 +1644,47 @@
       "size": 29751122,
       "digest": "sha256:5fddfb300482215c45df73cf541e8e711e10c9b96a3a91d11b42cd5f497901a2"
     }
+  },
+  "https://github.com/Kyosee/VeneraX/releases/download/v2.3.10/VeneraX-ios-2.3.10%2B253.ipa": {
+    "bundleIdentifier": "io.github.kyosee.venera",
+    "version": "2.3.10",
+    "buildVersion": "253",
+    "displayName": "VeneraX",
+    "minOSVersion": "15.1",
+    "size": 39013148,
+    "assetIdentity": {
+      "id": 717189260,
+      "updated_at": "2026-11-06T13:00:28Z",
+      "size": 39013148,
+      "digest": "sha256:187b13ca320756424a1ea1039a562a2e2486c2ea49f9ac4def762a95d6a8e71d"
+    }
+  },
+  "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.4-104/zhenguojian-1.0.4%2B104-ios-unsigned.ipa": {
+    "bundleIdentifier": "com.guoapp.all",
+    "version": "1.0.4",
+    "buildVersion": "104",
+    "displayName": "ZhenGuoJian",
+    "minOSVersion": "15.1",
+    "size": 30529027,
+    "assetIdentity": {
+      "id": 717001063,
+      "updated_at": "2026-11-06T11:51:45Z",
+      "size": 30529027,
+      "digest": "sha256:73f675088fd20081d35c2e7e7712cd806ba83f8c829774c73e5bd1b836f84e17"
+    }
+  },
+  "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.37/Breeze-iOS-v3.0.37.ipa": {
+    "bundleIdentifier": "com.zephyr.breeze",
+    "version": "3.0.37",
+    "buildVersion": "2225",
+    "displayName": "Breeze",
+    "minOSVersion": "15.0",
+    "size": 26431983,
+    "assetIdentity": {
+      "id": 694944294,
+      "updated_at": "2026-10-31T09:28:30Z",
+      "size": 26431983,
+      "digest": "sha256:ca6d6508b60e004b99c47f07a7e0d6c5546eb9384a91f69ba87c8f470fe1e32f"
+    }
   }
 }

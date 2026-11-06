@@ -54,7 +54,7 @@ https://github.com/laincat/AltStore/releases/download/latest/apps.json
 | Venera Prime | `com.github.wgh136.venera.prime` | 2.4.0 | 15.3 MB | iOS 14.0+ | 无 | [venera-app/venera-prime](https://github.com/venera-app/venera-prime) |
 | VeneraNext | `com.github.cyrilpeng.veneranext` | 1.15.0 | 19.0 MB | iOS 14.0+ | 无 | [CyrilPeng/Venera-Next](https://github.com/CyrilPeng/Venera-Next) |
 | Venera-SSR | `com.github.kiastr.venera-ssr` | 2.1.5 | 15.0 MB | iOS 14.0+ | 无 | [Kiastr/Venera-SSR](https://github.com/Kiastr/Venera-SSR) |
-| Breeze | `com.zephyr.breeze` | 3.0.31 | 24.6 MB | iOS 15.0+ | 无 | [deretame/Breeze](https://github.com/deretame/Breeze) |
+| Breeze | `com.zephyr.breeze` | 3.0.31 | 24.6 MB | iOS 15.0+ | 无 | [breeze-project-org/Breeze](https://github.com/breeze-project-org/Breeze) |
 | PicaX | `moye.PicaX` | 1.2.3 | 10.7 MB | iOS 15.2+ | 无 | [youshen2/PicaX](https://github.com/youshen2/PicaX) |
 | PicaComic | `com.github.pacalini.picaComic` | 5.0.5 | 22.5 MB | iOS 15.0+ | 无 | [ccbkv/PicaComic](https://github.com/ccbkv/PicaComic) |
 | AvPlay | `com.javdb.avplay` | 2.2.0 | 22.7 MB | iOS 15.3+ | 无 | [anonymousjav/AvPlayRelease](https://github.com/anonymousjav/AvPlayRelease) |

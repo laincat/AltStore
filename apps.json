@@ -482,8 +482,8 @@
       "bundleIdentifier": "com.zephyr.breeze",
       "developerName": "deretame",
       "subtitle": "插件化漫画阅读器",
-      "localizedDescription": "使用 Flutter 构建的漫画阅读器，通过插件机制提供漫画源支持，已支持哔咔、禁漫、E-Hentai、nhentai、拷贝漫画、包子漫画等多个图源。\n\n开源协议：MPL-2.0　·　项目主页：https://github.com/deretame/Breeze",
-      "iconURL": "https://raw.githubusercontent.com/deretame/Breeze/v3.0.37/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "localizedDescription": "使用 Flutter 构建的漫画阅读器，通过插件机制提供漫画源支持，已支持哔咔、禁漫、E-Hentai、nhentai、拷贝漫画、包子漫画等多个图源。\n\n开源协议：MPL-2.0　·　项目主页：https://github.com/breeze-project-org/Breeze",
+      "iconURL": "https://raw.githubusercontent.com/breeze-project-org/Breeze/v3.0.37/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#4FB3F5",
       "category": "books",
       "appPermissions": {
@@ -501,11 +501,11 @@
               "buildVersion": "2225",
               "buildNumber": "2225",
               "localizedDescription": "📝 更新日志\n[v3.0.37]\n功能更新\n\n- 添加关闭首页和云收藏页的功能\n- 漫画详情页长按收藏按钮现可选择收藏夹\n- 添加本地收藏后自动云收藏的开关\n- 添加滑动验证码支持\n- 移动平台阅读设置添加显示状态栏功能\n- 添加搜索书签 with AdySnowflake\n修复\n\n- 修复自定义插件顺序无效的问题\n优化\n\n- 首页添加常驻搜索按钮\n- 优化报错显示\n- 优化部分文本\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.37.exe |\n| macOS | Breeze-macOS-v3.0.37.dmg |\n| Android | app-arm64-v8a-release-v3.0.37.apk |\n| iOS | Breeze-iOS-v3.0.37.ipa |\n| Linux | breeze-v3.0.37.flatpak |\n| Linux (DEB) | breeze_3.0.37_amd64-v3.0.37.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
-              "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.37/Breeze-iOS-v3.0.37.ipa",
+              "downloadURL": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.37/Breeze-iOS-v3.0.37.ipa",
               "size": 26431983,
               "minOSVersion": "15.0",
               "releaseTag": "v3.0.37",
-              "source": "https://github.com/deretame/Breeze/releases/tag/v3.0.37"
+              "source": "https://github.com/breeze-project-org/Breeze/releases/tag/v3.0.37"
             }
           ]
         }
@@ -518,17 +518,17 @@
           "buildVersion": "2225",
           "buildNumber": "2225",
           "localizedDescription": "📝 更新日志\n[v3.0.37]\n功能更新\n\n- 添加关闭首页和云收藏页的功能\n- 漫画详情页长按收藏按钮现可选择收藏夹\n- 添加本地收藏后自动云收藏的开关\n- 添加滑动验证码支持\n- 移动平台阅读设置添加显示状态栏功能\n- 添加搜索书签 with AdySnowflake\n修复\n\n- 修复自定义插件顺序无效的问题\n优化\n\n- 首页添加常驻搜索按钮\n- 优化报错显示\n- 优化部分文本\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.37.exe |\n| macOS | Breeze-macOS-v3.0.37.dmg |\n| Android | app-arm64-v8a-release-v3.0.37.apk |\n| iOS | Breeze-iOS-v3.0.37.ipa |\n| Linux | breeze-v3.0.37.flatpak |\n| Linux (DEB) | breeze_3.0.37_amd64-v3.0.37.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
-          "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.37/Breeze-iOS-v3.0.37.ipa",
+          "downloadURL": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.37/Breeze-iOS-v3.0.37.ipa",
           "size": 26431983,
           "minOSVersion": "15.0",
           "releaseTag": "v3.0.37",
-          "source": "https://github.com/deretame/Breeze/releases/tag/v3.0.37"
+          "source": "https://github.com/breeze-project-org/Breeze/releases/tag/v3.0.37"
         }
       ],
       "version": "3.0.37",
       "versionDate": "2026-10-31",
       "versionDescription": "📝 更新日志\n[v3.0.37]\n功能更新\n\n- 添加关闭首页和云收藏页的功能\n- 漫画详情页长按收藏按钮现可选择收藏夹\n- 添加本地收藏后自动云收藏的开关\n- 添加滑动验证码支持\n- 移动平台阅读设置添加显示状态栏功能\n- 添加搜索书签 with AdySnowflake\n修复\n\n- 修复自定义插件顺序无效的问题\n优化\n\n- 首页添加常驻搜索按钮\n- 优化报错显示\n- 优化部分文本\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.0.37.exe |\n| macOS | Breeze-macOS-v3.0.37.dmg |\n| Android | app-arm64-v8a-release-v3.0.37.apk |\n| iOS | Breeze-iOS-v3.0.37.ipa |\n| Linux | breeze-v3.0.37.flatpak |\n| Linux (DEB) | breeze_3.0.37_amd64-v3.0.37.deb |\n\n> 💡 不知道该下载哪个文件？\n> 请查看 详细安装指南。",
-      "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.37/Breeze-iOS-v3.0.37.ipa",
+      "downloadURL": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.37/Breeze-iOS-v3.0.37.ipa",
       "size": 26431983,
       "minOSVersion": "15.0"
     },
@@ -1010,7 +1010,7 @@
       "developerName": "Kyosee",
       "subtitle": "多图源漫画阅读器",
       "localizedDescription": "原版 Venera 的个人维护增强分支，支持通过插件接入多种漫画图源，提供本地收藏、阅读进度同步等能力。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Kyosee/VeneraX",
-      "iconURL": "https://raw.githubusercontent.com/Kyosee/VeneraX/v2.3.9/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Kyosee/VeneraX/v2.3.10/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#4A8FE7",
       "category": "books",
       "appPermissions": {
@@ -1022,41 +1022,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.3.9",
-              "date": "2026-10-28",
-              "publishedAt": "2026-10-28T14:26:38Z",
-              "buildVersion": "252",
-              "buildNumber": "252",
-              "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Local favorites can now have subfolders. Long-press or right-click a folder to create a subfolder, rename, move, sort its subfolders or delete it; when you delete a folder, you can move its subfolders up a level or delete them too.\n- Opening a folder shows its path, its subfolders and then its comics. A switch also shows the comics in its subfolders, and Back goes up one folder at a time.\n- Added a Keyboard shortcuts page on desktop (App settings > Window): change, clear or reset any shortcut, with a warning when two actions share one.\n- The reader's shortcuts can be changed: next/previous page, next/previous chapter, menu, auto page tur…",
-              "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.9/VeneraX-ios-2.3.9%2B252.ipa",
-              "size": 38992132,
+              "version": "2.3.10",
+              "date": "2026-11-06",
+              "publishedAt": "2026-11-06T13:00:33Z",
+              "buildVersion": "253",
+              "buildNumber": "253",
+              "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- \"Split wide pages\" now works in gallery modes too: a landscape page (usually two pages scanned as one) is cut down the middle and each half gets a screen of its own. Choose \"Right half first\" or \"Left half first\"; pick \"Right half first\" for comics read right to left. It applies only with one image per screen.\n- With two or more images per screen in gallery modes, a new \"Shift pages by one\" button in the reader's bottom bar helps when an extra single page in a chapter, such as a color page or an ad, throws every later two-page spread out of line. Tap it and the current screen shows only its first image, and the pages after it are paired…",
+              "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.10/VeneraX-ios-2.3.10%2B253.ipa",
+              "size": 39013148,
               "minOSVersion": "15.1",
-              "releaseTag": "v2.3.9",
-              "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.9"
+              "releaseTag": "v2.3.10",
+              "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.10"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.3.9",
-          "date": "2026-10-28",
-          "publishedAt": "2026-10-28T14:26:38Z",
-          "buildVersion": "252",
-          "buildNumber": "252",
-          "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Local favorites can now have subfolders. Long-press or right-click a folder to create a subfolder, rename, move, sort its subfolders or delete it; when you delete a folder, you can move its subfolders up a level or delete them too.\n- Opening a folder shows its path, its subfolders and then its comics. A switch also shows the comics in its subfolders, and Back goes up one folder at a time.\n- Added a Keyboard shortcuts page on desktop (App settings > Window): change, clear or reset any shortcut, with a warning when two actions share one.\n- The reader's shortcuts can be changed: next/previous page, next/previous chapter, menu, auto page tur…",
-          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.9/VeneraX-ios-2.3.9%2B252.ipa",
-          "size": 38992132,
+          "version": "2.3.10",
+          "date": "2026-11-06",
+          "publishedAt": "2026-11-06T13:00:33Z",
+          "buildVersion": "253",
+          "buildNumber": "253",
+          "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- \"Split wide pages\" now works in gallery modes too: a landscape page (usually two pages scanned as one) is cut down the middle and each half gets a screen of its own. Choose \"Right half first\" or \"Left half first\"; pick \"Right half first\" for comics read right to left. It applies only with one image per screen.\n- With two or more images per screen in gallery modes, a new \"Shift pages by one\" button in the reader's bottom bar helps when an extra single page in a chapter, such as a color page or an ad, throws every later two-page spread out of line. Tap it and the current screen shows only its first image, and the pages after it are paired…",
+          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.10/VeneraX-ios-2.3.10%2B253.ipa",
+          "size": 39013148,
           "minOSVersion": "15.1",
-          "releaseTag": "v2.3.9",
-          "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.9"
+          "releaseTag": "v2.3.10",
+          "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.10"
         }
       ],
-      "version": "2.3.9",
-      "versionDate": "2026-10-28",
-      "versionDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Local favorites can now have subfolders. Long-press or right-click a folder to create a subfolder, rename, move, sort its subfolders or delete it; when you delete a folder, you can move its subfolders up a level or delete them too.\n- Opening a folder shows its path, its subfolders and then its comics. A switch also shows the comics in its subfolders, and Back goes up one folder at a time.\n- Added a Keyboard shortcuts page on desktop (App settings > Window): change, clear or reset any shortcut, with a warning when two actions share one.\n- The reader's shortcuts can be changed: next/previous page, next/previous chapter, menu, auto page tur…",
-      "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.9/VeneraX-ios-2.3.9%2B252.ipa",
-      "size": 38992132,
+      "version": "2.3.10",
+      "versionDate": "2026-11-06",
+      "versionDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- \"Split wide pages\" now works in gallery modes too: a landscape page (usually two pages scanned as one) is cut down the middle and each half gets a screen of its own. Choose \"Right half first\" or \"Left half first\"; pick \"Right half first\" for comics read right to left. It applies only with one image per screen.\n- With two or more images per screen in gallery modes, a new \"Shift pages by one\" button in the reader's bottom bar helps when an extra single page in a chapter, such as a color page or an ad, throws every later two-page spread out of line. Tap it and the current screen shows only its first image, and the pages after it are paired…",
+      "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.10/VeneraX-ios-2.3.10%2B253.ipa",
+      "size": 39013148,
       "minOSVersion": "15.1"
     },
     {
@@ -1119,8 +1119,8 @@
       "bundleIdentifier": "com.guoapp.all",
       "developerName": "Xanerix",
       "subtitle": "支持多站源的短剧与影视客户端",
-      "localizedDescription": "Flutter 多平台短剧与影视客户端，包含全部站源，可在设置中逐个开关。支持追剧、观看记录、多用户、本地下载与备份。此处收录真果鉴全站源版；它与仅含红果站源的红果鉴共用 Bundle ID，属于同一应用的不同构建。\n\n安装包由上游发布，需自行签名安装。站源可用性取决于源站及网络；应用不解除源站 VIP 或其他授权限制。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Xanerix/guoapp",
-      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v1.0.3-103/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "localizedDescription": "Flutter 多平台短剧与影视客户端，包含全部站源，可在设置中逐个开关。支持追剧、观看记录、多用户、本地下载与备份。此处收录真果鉴全站源版；自 1.0.3 起使用独立 Bundle ID com.guoapp.all，可与仅含红果站源的红果鉴同时安装。旧包名版本不能覆盖升级，原有设置、追剧和下载记录不会自动迁移。\n\n安装包由上游发布，需自行签名安装。站源可用性取决于源站及网络；应用不解除源站 VIP 或其他授权限制。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Xanerix/guoapp",
+      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v1.0.4-104/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#E97642",
       "category": "entertainment",
       "appPermissions": {
@@ -1132,41 +1132,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "1.0.3",
-              "date": "2026-11-05",
-              "publishedAt": "2026-11-05T11:29:25Z",
-              "buildVersion": "103",
-              "buildNumber": "103",
-              "localizedDescription": "更新内容：\n\n- 红果去掉已失效的第三方备用取流接口，App 和网页都取流失败时不再多等一次请求，报错里也不再出现备用接口的连接错误。\n- 修复首次安装后打开红果视频容易报「红果设备注册暂不可用」：设备注册遇到网络波动或超时不再锁住 10 分钟，下次请求直接重试；只有红果明确拒绝注册时才暂停，提示里会带上被拒绝的原因。\n- 首次启动时先注册红果设备：关掉检查更新提示后弹出「正在注册设备...」，红果设备和辅助设备都注册成功后自动关闭，之后才加载推荐等内容；注册失败时显示原因，可点「重试」或「网络设置」改代理，不能跳过。已注册过的设备直接进入；老版本升级后会弹一次，只补注册辅助设备。\n- 包名改为红果鉴 com.guoapp.phoenix、真果鉴 com.guoapp.all，Android、iPhone / iPad、macOS 统一，红果鉴和真果鉴可同时安装；iPhone / iPad 上真果鉴的桌面名称不再显示为「红果鉴」。旧版不会被覆盖升级，需手动卸载，原有设置、追剧和下载记录不会带过来。\n- 黄果 AI 改用站点自己的接口：分类列表、详情和分集、播放地址、热播 / 推荐 / 潜力榜都直接读接口数据，不再解析网页，站点改版后不容易出现剧名乱码、分集缺失或取不到播放地址；搜索改为在线搜索黄果全站并支持翻页，不再只搜本机缓存。已有的追剧和下载记录继续可用。\n- 黄果 AI 新增发布页当前的 lbvrhyir.cc 和上一批 xxbgwypx.cc 线路，主站连不上时会自动换线；随机备用线路改为在这几个域名之间轮换，不再只用 ediayikma.cc 一个域名（开发快照，未在…",
-              "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.3-103/zhenguojian-1.0.3%2B103-ios-unsigned.ipa",
-              "size": 30452198,
+              "version": "1.0.4",
+              "date": "2026-11-06",
+              "publishedAt": "2026-11-06T11:51:49Z",
+              "buildVersion": "104",
+              "buildNumber": "104",
+              "localizedDescription": "更新内容：\n\n- 真果鉴新增站源「禁果短剧」（jinguoduanju.app 网页版，与同名的「禁果」App 不是同一个产品，剧库不同）：目录、详情、分集和播放走网页同一套接口。可选推荐、热度、站点分类和题材，支持在线搜索和翻页；站点不分页，翻页时复用第一页取回的整份目录，不再每页重新下载。播放权限以站点接口返回为准，目前站点对会员和金币解锁剧集也直接放行；站点拒绝播放时提示需要会员或解锁，不会代为解锁。站点不少剧本身只有 1 集。默认关闭，可在站源管理中打开。\n- 真果鉴新增站源「禁果」（禁果短剧 App，com.hgaidj.ozThree）：与黄果旧版是同一套后台的另一个部署，但剧库不同。可选精选、最新和站点分类，支持在线搜索和翻页；访客会话自动注册并保存，失效后自动重新登录；主线路不可用时自动切换到同一部署的备用线路。付费集（需金币或会员）在分集列表标为 VIP，播放时提示需要解锁，不会代为解锁，也不会播放站点给未解锁分集的广告片花。默认关闭，可在站源管理中打开。\n- 修复青空播放报「暂无可用播放地址」：青空现在要求登录后才能播放。设置 › 站源新增「站源账号」，点进去登录青空账号：输入用户名或邮箱和密码，再拖动滑块完成安全验证即可登录；没有账号可点链接到浏览器注册。登录状态保存在本机，过期前自动续期；未登录或登录失效时，播放页不再报笼统的错误，原来的「重试」换成「去登录」，点击直接弹出登录框，登录成功后自动重新播放。仅管理员可登录和退出。电视上可用遥控器完成验证：按左右方向键移动拼图块，对齐后按确定键。输完用户名按「完成」或回车直接跳到密码框。电视上进入站源账号页时…",
+              "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.4-104/zhenguojian-1.0.4%2B104-ios-unsigned.ipa",
+              "size": 30529027,
               "minOSVersion": "15.1",
-              "releaseTag": "app-v1.0.3-103",
-              "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.3-103"
+              "releaseTag": "app-v1.0.4-104",
+              "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.4-104"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "1.0.3",
-          "date": "2026-11-05",
-          "publishedAt": "2026-11-05T11:29:25Z",
-          "buildVersion": "103",
-          "buildNumber": "103",
-          "localizedDescription": "更新内容：\n\n- 红果去掉已失效的第三方备用取流接口，App 和网页都取流失败时不再多等一次请求，报错里也不再出现备用接口的连接错误。\n- 修复首次安装后打开红果视频容易报「红果设备注册暂不可用」：设备注册遇到网络波动或超时不再锁住 10 分钟，下次请求直接重试；只有红果明确拒绝注册时才暂停，提示里会带上被拒绝的原因。\n- 首次启动时先注册红果设备：关掉检查更新提示后弹出「正在注册设备...」，红果设备和辅助设备都注册成功后自动关闭，之后才加载推荐等内容；注册失败时显示原因，可点「重试」或「网络设置」改代理，不能跳过。已注册过的设备直接进入；老版本升级后会弹一次，只补注册辅助设备。\n- 包名改为红果鉴 com.guoapp.phoenix、真果鉴 com.guoapp.all，Android、iPhone / iPad、macOS 统一，红果鉴和真果鉴可同时安装；iPhone / iPad 上真果鉴的桌面名称不再显示为「红果鉴」。旧版不会被覆盖升级，需手动卸载，原有设置、追剧和下载记录不会带过来。\n- 黄果 AI 改用站点自己的接口：分类列表、详情和分集、播放地址、热播 / 推荐 / 潜力榜都直接读接口数据，不再解析网页，站点改版后不容易出现剧名乱码、分集缺失或取不到播放地址；搜索改为在线搜索黄果全站并支持翻页，不再只搜本机缓存。已有的追剧和下载记录继续可用。\n- 黄果 AI 新增发布页当前的 lbvrhyir.cc 和上一批 xxbgwypx.cc 线路，主站连不上时会自动换线；随机备用线路改为在这几个域名之间轮换，不再只用 ediayikma.cc 一个域名（开发快照，未在…",
-          "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.3-103/zhenguojian-1.0.3%2B103-ios-unsigned.ipa",
-          "size": 30452198,
+          "version": "1.0.4",
+          "date": "2026-11-06",
+          "publishedAt": "2026-11-06T11:51:49Z",
+          "buildVersion": "104",
+          "buildNumber": "104",
+          "localizedDescription": "更新内容：\n\n- 真果鉴新增站源「禁果短剧」（jinguoduanju.app 网页版，与同名的「禁果」App 不是同一个产品，剧库不同）：目录、详情、分集和播放走网页同一套接口。可选推荐、热度、站点分类和题材，支持在线搜索和翻页；站点不分页，翻页时复用第一页取回的整份目录，不再每页重新下载。播放权限以站点接口返回为准，目前站点对会员和金币解锁剧集也直接放行；站点拒绝播放时提示需要会员或解锁，不会代为解锁。站点不少剧本身只有 1 集。默认关闭，可在站源管理中打开。\n- 真果鉴新增站源「禁果」（禁果短剧 App，com.hgaidj.ozThree）：与黄果旧版是同一套后台的另一个部署，但剧库不同。可选精选、最新和站点分类，支持在线搜索和翻页；访客会话自动注册并保存，失效后自动重新登录；主线路不可用时自动切换到同一部署的备用线路。付费集（需金币或会员）在分集列表标为 VIP，播放时提示需要解锁，不会代为解锁，也不会播放站点给未解锁分集的广告片花。默认关闭，可在站源管理中打开。\n- 修复青空播放报「暂无可用播放地址」：青空现在要求登录后才能播放。设置 › 站源新增「站源账号」，点进去登录青空账号：输入用户名或邮箱和密码，再拖动滑块完成安全验证即可登录；没有账号可点链接到浏览器注册。登录状态保存在本机，过期前自动续期；未登录或登录失效时，播放页不再报笼统的错误，原来的「重试」换成「去登录」，点击直接弹出登录框，登录成功后自动重新播放。仅管理员可登录和退出。电视上可用遥控器完成验证：按左右方向键移动拼图块，对齐后按确定键。输完用户名按「完成」或回车直接跳到密码框。电视上进入站源账号页时…",
+          "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.4-104/zhenguojian-1.0.4%2B104-ios-unsigned.ipa",
+          "size": 30529027,
           "minOSVersion": "15.1",
-          "releaseTag": "app-v1.0.3-103",
-          "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.3-103"
+          "releaseTag": "app-v1.0.4-104",
+          "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.4-104"
         }
       ],
-      "version": "1.0.3",
-      "versionDate": "2026-11-05",
-      "versionDescription": "更新内容：\n\n- 红果去掉已失效的第三方备用取流接口，App 和网页都取流失败时不再多等一次请求，报错里也不再出现备用接口的连接错误。\n- 修复首次安装后打开红果视频容易报「红果设备注册暂不可用」：设备注册遇到网络波动或超时不再锁住 10 分钟，下次请求直接重试；只有红果明确拒绝注册时才暂停，提示里会带上被拒绝的原因。\n- 首次启动时先注册红果设备：关掉检查更新提示后弹出「正在注册设备...」，红果设备和辅助设备都注册成功后自动关闭，之后才加载推荐等内容；注册失败时显示原因，可点「重试」或「网络设置」改代理，不能跳过。已注册过的设备直接进入；老版本升级后会弹一次，只补注册辅助设备。\n- 包名改为红果鉴 com.guoapp.phoenix、真果鉴 com.guoapp.all，Android、iPhone / iPad、macOS 统一，红果鉴和真果鉴可同时安装；iPhone / iPad 上真果鉴的桌面名称不再显示为「红果鉴」。旧版不会被覆盖升级，需手动卸载，原有设置、追剧和下载记录不会带过来。\n- 黄果 AI 改用站点自己的接口：分类列表、详情和分集、播放地址、热播 / 推荐 / 潜力榜都直接读接口数据，不再解析网页，站点改版后不容易出现剧名乱码、分集缺失或取不到播放地址；搜索改为在线搜索黄果全站并支持翻页，不再只搜本机缓存。已有的追剧和下载记录继续可用。\n- 黄果 AI 新增发布页当前的 lbvrhyir.cc 和上一批 xxbgwypx.cc 线路，主站连不上时会自动换线；随机备用线路改为在这几个域名之间轮换，不再只用 ediayikma.cc 一个域名（开发快照，未在…",
-      "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.3-103/zhenguojian-1.0.3%2B103-ios-unsigned.ipa",
-      "size": 30452198,
+      "version": "1.0.4",
+      "versionDate": "2026-11-06",
+      "versionDescription": "更新内容：\n\n- 真果鉴新增站源「禁果短剧」（jinguoduanju.app 网页版，与同名的「禁果」App 不是同一个产品，剧库不同）：目录、详情、分集和播放走网页同一套接口。可选推荐、热度、站点分类和题材，支持在线搜索和翻页；站点不分页，翻页时复用第一页取回的整份目录，不再每页重新下载。播放权限以站点接口返回为准，目前站点对会员和金币解锁剧集也直接放行；站点拒绝播放时提示需要会员或解锁，不会代为解锁。站点不少剧本身只有 1 集。默认关闭，可在站源管理中打开。\n- 真果鉴新增站源「禁果」（禁果短剧 App，com.hgaidj.ozThree）：与黄果旧版是同一套后台的另一个部署，但剧库不同。可选精选、最新和站点分类，支持在线搜索和翻页；访客会话自动注册并保存，失效后自动重新登录；主线路不可用时自动切换到同一部署的备用线路。付费集（需金币或会员）在分集列表标为 VIP，播放时提示需要解锁，不会代为解锁，也不会播放站点给未解锁分集的广告片花。默认关闭，可在站源管理中打开。\n- 修复青空播放报「暂无可用播放地址」：青空现在要求登录后才能播放。设置 › 站源新增「站源账号」，点进去登录青空账号：输入用户名或邮箱和密码，再拖动滑块完成安全验证即可登录；没有账号可点链接到浏览器注册。登录状态保存在本机，过期前自动续期；未登录或登录失效时，播放页不再报笼统的错误，原来的「重试」换成「去登录」，点击直接弹出登录框，登录成功后自动重新播放。仅管理员可登录和退出。电视上可用遥控器完成验证：按左右方向键移动拼图块，对齐后按确定键。输完用户名按「完成」或回车直接跳到密码框。电视上进入站源账号页时…",
+      "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.4-104/zhenguojian-1.0.4%2B104-ios-unsigned.ipa",
+      "size": 30529027,
       "minOSVersion": "15.1"
     }
   ],
@@ -1179,7 +1179,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 20 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "tintColor": "#7C5CFF",
       "notify": false
     }
