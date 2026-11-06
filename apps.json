@@ -385,41 +385,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.6.0-nightly.20261104.1113",
-              "date": "2026-11-04",
-              "publishedAt": "2026-11-04T11:52:04Z",
+              "version": "2.6.0-nightly.20261106.1507",
+              "date": "2026-11-06",
+              "publishedAt": "2026-11-06T15:32:28Z",
               "buildVersion": "260",
               "buildNumber": "260",
-              "localizedDescription": "🧪 预发布 nightly-20261104（2026-11-04）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-              "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261104/ARMSX2-nightly-20261104-720f409f00-iOS-arm64.ipa",
-              "size": 40568716,
+              "localizedDescription": "🧪 预发布 nightly-20261106（2026-11-06）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+              "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261106/ARMSX2-nightly-20261106-afd93842f9-iOS-arm64.ipa",
+              "size": 40577893,
               "minOSVersion": "17.4",
-              "releaseTag": "nightly-20261104",
-              "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261104"
+              "releaseTag": "nightly-20261106",
+              "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261106"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.6.0-nightly.20261104.1113",
-          "date": "2026-11-04",
-          "publishedAt": "2026-11-04T11:52:04Z",
+          "version": "2.6.0-nightly.20261106.1507",
+          "date": "2026-11-06",
+          "publishedAt": "2026-11-06T15:32:28Z",
           "buildVersion": "260",
           "buildNumber": "260",
-          "localizedDescription": "🧪 预发布 nightly-20261104（2026-11-04）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261104/ARMSX2-nightly-20261104-720f409f00-iOS-arm64.ipa",
-          "size": 40568716,
+          "localizedDescription": "🧪 预发布 nightly-20261106（2026-11-06）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261106/ARMSX2-nightly-20261106-afd93842f9-iOS-arm64.ipa",
+          "size": 40577893,
           "minOSVersion": "17.4",
-          "releaseTag": "nightly-20261104",
-          "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261104"
+          "releaseTag": "nightly-20261106",
+          "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261106"
         }
       ],
-      "version": "2.6.0-nightly.20261104.1113",
-      "versionDate": "2026-11-04",
-      "versionDescription": "🧪 预发布 nightly-20261104（2026-11-04）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-      "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261104/ARMSX2-nightly-20261104-720f409f00-iOS-arm64.ipa",
-      "size": 40568716,
+      "version": "2.6.0-nightly.20261106.1507",
+      "versionDate": "2026-11-06",
+      "versionDescription": "🧪 预发布 nightly-20261106（2026-11-06）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+      "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261106/ARMSX2-nightly-20261106-afd93842f9-iOS-arm64.ipa",
+      "size": 40577893,
       "minOSVersion": "17.4"
     },
     {
@@ -845,7 +845,7 @@
       "developerName": "venera-app",
       "subtitle": "次世代多图源漫画阅读器",
       "localizedDescription": "原版 Venera 的次世代重写版，Flutter + Rust 构建。支持本地漫画与网络图源阅读、用 JavaScript 编写自定义漫画源、收藏管理、下载、评论与标签查看；中文标签翻译来自 EhTagTranslation 项目。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/venera-app/venera-prime",
-      "iconURL": "https://raw.githubusercontent.com/venera-app/venera-prime/v2.7.2/assets/app_icon.png",
+      "iconURL": "https://raw.githubusercontent.com/venera-app/venera-prime/v2.8.0/assets/app_icon.png",
       "tintColor": "#0784FC",
       "category": "books",
       "appPermissions": {
@@ -857,41 +857,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.7.2",
-              "date": "2026-11-04",
-              "publishedAt": "2026-11-04T16:17:55Z",
-              "buildVersion": "272",
-              "buildNumber": "272",
-              "localizedDescription": "Venera Prime 2.7.2\n本次更新\n\n- WebDAV 自动同步触发：补齐稍后阅读、阅读历史删除、阅读统计删除与图片收藏增删后的自动上传通知。关闭自动同步时仍不会自动上传，恢复备份不会再次触发上传；阅读进度继续在退出阅读器时保存同步。\n- WebDAV 最新备份选择：优先按数据修订号选择和保留备份，避免两端日期不一致或设备时钟回退时把较新的数据当作旧备份。恢复不含详细搜索记录字段的旧版备份时保留本地记录，明确为空的记录仍可清空。\n- 同步卡住与网络超时：为 WebDAV 设置连接、发送与接收超时，并补齐网络适配器对请求取消、上传停滞、等待响应和接收停滞的处理；单次请求超时后仍可继续发起请求。慢速但持续传输的上传不会被响应等待计时提前中断。\n- 首页收藏卡片界面：添加收藏夹改用应用统一的弹出面板、文件夹图标和列表样式，首页自定义页与设置弹窗沿用公共组件，并修正窄屏长标题溢出。\n- 首页收藏夹返回：从首页卡片进入收藏夹后显示返回按钮，正常浏览时点击返回或使用系统返回可直接回到首页，不再先返回收藏夹主页。搜索和多选模式仍先退出当前模式。\n请更新后验证并反馈\n\n请相关 issue 的提出者更新至 2.7.2，按原复现步骤复查。已解决时，请在原 issue 确认并及时关闭尚未关闭的问题；仍存在时，请提供版本号、系统与设备、漫画源、复现步骤，以及必要的日志或录屏。已关闭的问题也可继续留言或重新打开。\n\n请遮盖账号、密码、令牌及 WebDAV 私有地址等敏感信息。关联 issue 不代表所有设备、漫画源或服务端均已验证，本次发布不会自动关闭 issue。\n历史待确认问题\n\n以下相…",
-              "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.7.2/venera-prime-ios-2.7.2%2B272.ipa",
-              "size": 16716650,
+              "version": "2.8.0",
+              "date": "2026-11-06",
+              "publishedAt": "2026-11-06T17:18:11Z",
+              "buildVersion": "280",
+              "buildNumber": "280",
+              "localizedDescription": "Venera Prime 2.8.0\n本次更新\n\n- 搜索记录新旧切换 #51（@suppermanzero）：搜索页“清空”左侧新增切换按钮。旧版仅显示去重关键词，点击后按当前选择的漫画源及筛选条件重新搜索；新版保留来源、筛选和页码恢复。切换选择在重启后保留，两种记录同时保存，多个来源／筛选组合不再挤掉关键词模式中的其他历史词。默认仍为新版。\n- 自定义本地目录的 EPUB 与大小统计 #43（@lzx377z）：修正 Android 授权目录扫描返回的文件句柄，导出 EPUB 时在工作线程内重新打开文件，修复已有漫画重新加载后导出失败及大小显示为 0 B 的问题。请在原存储目录中重启应用后复查已有漫画，并检查导出图片完整性。\n- 目录扫描与线程生命周期 #43（@lzx377z）：扫描句柄数组改为显式复制和释放，修正压力测试中 384 个文件仅返回 64 个的遗漏；补齐 JNI 线程附着／解除的作用域管理。用户报告的启动一段时间后闪退仍未复现，尚未确认根因，不能视为已修复。\n- 连续音量键翻页：翻页动画尚未结束时，下一次按键从待到达页继续计算，避免快速按两三次只翻一页，并修正快速反向操作。\n请更新后验证并反馈\n\n请关联 issue 的提出者安装 2.8.0，按原复现步骤检查。已解决时，请在原 issue 确认，并及时关闭尚未关闭的问题；仍存在时，请提供版本号、系统与设备、漫画源、复现步骤及必要的日志或录屏。已关闭的问题也可继续留言或重新打开。\n\n请遮盖账号、密码、令牌及 WebDAV 私有地址等敏感信息。关联 issue 不代表所有设备、漫画源与服务端均已验证，本次发布不会…",
+              "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.8.0/venera-prime-ios-2.8.0%2B280.ipa",
+              "size": 16717141,
               "minOSVersion": "14.0",
-              "releaseTag": "v2.7.2",
-              "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.7.2"
+              "releaseTag": "v2.8.0",
+              "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.8.0"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.7.2",
-          "date": "2026-11-04",
-          "publishedAt": "2026-11-04T16:17:55Z",
-          "buildVersion": "272",
-          "buildNumber": "272",
-          "localizedDescription": "Venera Prime 2.7.2\n本次更新\n\n- WebDAV 自动同步触发：补齐稍后阅读、阅读历史删除、阅读统计删除与图片收藏增删后的自动上传通知。关闭自动同步时仍不会自动上传，恢复备份不会再次触发上传；阅读进度继续在退出阅读器时保存同步。\n- WebDAV 最新备份选择：优先按数据修订号选择和保留备份，避免两端日期不一致或设备时钟回退时把较新的数据当作旧备份。恢复不含详细搜索记录字段的旧版备份时保留本地记录，明确为空的记录仍可清空。\n- 同步卡住与网络超时：为 WebDAV 设置连接、发送与接收超时，并补齐网络适配器对请求取消、上传停滞、等待响应和接收停滞的处理；单次请求超时后仍可继续发起请求。慢速但持续传输的上传不会被响应等待计时提前中断。\n- 首页收藏卡片界面：添加收藏夹改用应用统一的弹出面板、文件夹图标和列表样式，首页自定义页与设置弹窗沿用公共组件，并修正窄屏长标题溢出。\n- 首页收藏夹返回：从首页卡片进入收藏夹后显示返回按钮，正常浏览时点击返回或使用系统返回可直接回到首页，不再先返回收藏夹主页。搜索和多选模式仍先退出当前模式。\n请更新后验证并反馈\n\n请相关 issue 的提出者更新至 2.7.2，按原复现步骤复查。已解决时，请在原 issue 确认并及时关闭尚未关闭的问题；仍存在时，请提供版本号、系统与设备、漫画源、复现步骤，以及必要的日志或录屏。已关闭的问题也可继续留言或重新打开。\n\n请遮盖账号、密码、令牌及 WebDAV 私有地址等敏感信息。关联 issue 不代表所有设备、漫画源或服务端均已验证，本次发布不会自动关闭 issue。\n历史待确认问题\n\n以下相…",
-          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.7.2/venera-prime-ios-2.7.2%2B272.ipa",
-          "size": 16716650,
+          "version": "2.8.0",
+          "date": "2026-11-06",
+          "publishedAt": "2026-11-06T17:18:11Z",
+          "buildVersion": "280",
+          "buildNumber": "280",
+          "localizedDescription": "Venera Prime 2.8.0\n本次更新\n\n- 搜索记录新旧切换 #51（@suppermanzero）：搜索页“清空”左侧新增切换按钮。旧版仅显示去重关键词，点击后按当前选择的漫画源及筛选条件重新搜索；新版保留来源、筛选和页码恢复。切换选择在重启后保留，两种记录同时保存，多个来源／筛选组合不再挤掉关键词模式中的其他历史词。默认仍为新版。\n- 自定义本地目录的 EPUB 与大小统计 #43（@lzx377z）：修正 Android 授权目录扫描返回的文件句柄，导出 EPUB 时在工作线程内重新打开文件，修复已有漫画重新加载后导出失败及大小显示为 0 B 的问题。请在原存储目录中重启应用后复查已有漫画，并检查导出图片完整性。\n- 目录扫描与线程生命周期 #43（@lzx377z）：扫描句柄数组改为显式复制和释放，修正压力测试中 384 个文件仅返回 64 个的遗漏；补齐 JNI 线程附着／解除的作用域管理。用户报告的启动一段时间后闪退仍未复现，尚未确认根因，不能视为已修复。\n- 连续音量键翻页：翻页动画尚未结束时，下一次按键从待到达页继续计算，避免快速按两三次只翻一页，并修正快速反向操作。\n请更新后验证并反馈\n\n请关联 issue 的提出者安装 2.8.0，按原复现步骤检查。已解决时，请在原 issue 确认，并及时关闭尚未关闭的问题；仍存在时，请提供版本号、系统与设备、漫画源、复现步骤及必要的日志或录屏。已关闭的问题也可继续留言或重新打开。\n\n请遮盖账号、密码、令牌及 WebDAV 私有地址等敏感信息。关联 issue 不代表所有设备、漫画源与服务端均已验证，本次发布不会…",
+          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.8.0/venera-prime-ios-2.8.0%2B280.ipa",
+          "size": 16717141,
           "minOSVersion": "14.0",
-          "releaseTag": "v2.7.2",
-          "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.7.2"
+          "releaseTag": "v2.8.0",
+          "source": "https://github.com/venera-app/venera-prime/releases/tag/v2.8.0"
         }
       ],
-      "version": "2.7.2",
-      "versionDate": "2026-11-04",
-      "versionDescription": "Venera Prime 2.7.2\n本次更新\n\n- WebDAV 自动同步触发：补齐稍后阅读、阅读历史删除、阅读统计删除与图片收藏增删后的自动上传通知。关闭自动同步时仍不会自动上传，恢复备份不会再次触发上传；阅读进度继续在退出阅读器时保存同步。\n- WebDAV 最新备份选择：优先按数据修订号选择和保留备份，避免两端日期不一致或设备时钟回退时把较新的数据当作旧备份。恢复不含详细搜索记录字段的旧版备份时保留本地记录，明确为空的记录仍可清空。\n- 同步卡住与网络超时：为 WebDAV 设置连接、发送与接收超时，并补齐网络适配器对请求取消、上传停滞、等待响应和接收停滞的处理；单次请求超时后仍可继续发起请求。慢速但持续传输的上传不会被响应等待计时提前中断。\n- 首页收藏卡片界面：添加收藏夹改用应用统一的弹出面板、文件夹图标和列表样式，首页自定义页与设置弹窗沿用公共组件，并修正窄屏长标题溢出。\n- 首页收藏夹返回：从首页卡片进入收藏夹后显示返回按钮，正常浏览时点击返回或使用系统返回可直接回到首页，不再先返回收藏夹主页。搜索和多选模式仍先退出当前模式。\n请更新后验证并反馈\n\n请相关 issue 的提出者更新至 2.7.2，按原复现步骤复查。已解决时，请在原 issue 确认并及时关闭尚未关闭的问题；仍存在时，请提供版本号、系统与设备、漫画源、复现步骤，以及必要的日志或录屏。已关闭的问题也可继续留言或重新打开。\n\n请遮盖账号、密码、令牌及 WebDAV 私有地址等敏感信息。关联 issue 不代表所有设备、漫画源或服务端均已验证，本次发布不会自动关闭 issue。\n历史待确认问题\n\n以下相…",
-      "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.7.2/venera-prime-ios-2.7.2%2B272.ipa",
-      "size": 16716650,
+      "version": "2.8.0",
+      "versionDate": "2026-11-06",
+      "versionDescription": "Venera Prime 2.8.0\n本次更新\n\n- 搜索记录新旧切换 #51（@suppermanzero）：搜索页“清空”左侧新增切换按钮。旧版仅显示去重关键词，点击后按当前选择的漫画源及筛选条件重新搜索；新版保留来源、筛选和页码恢复。切换选择在重启后保留，两种记录同时保存，多个来源／筛选组合不再挤掉关键词模式中的其他历史词。默认仍为新版。\n- 自定义本地目录的 EPUB 与大小统计 #43（@lzx377z）：修正 Android 授权目录扫描返回的文件句柄，导出 EPUB 时在工作线程内重新打开文件，修复已有漫画重新加载后导出失败及大小显示为 0 B 的问题。请在原存储目录中重启应用后复查已有漫画，并检查导出图片完整性。\n- 目录扫描与线程生命周期 #43（@lzx377z）：扫描句柄数组改为显式复制和释放，修正压力测试中 384 个文件仅返回 64 个的遗漏；补齐 JNI 线程附着／解除的作用域管理。用户报告的启动一段时间后闪退仍未复现，尚未确认根因，不能视为已修复。\n- 连续音量键翻页：翻页动画尚未结束时，下一次按键从待到达页继续计算，避免快速按两三次只翻一页，并修正快速反向操作。\n请更新后验证并反馈\n\n请关联 issue 的提出者安装 2.8.0，按原复现步骤检查。已解决时，请在原 issue 确认，并及时关闭尚未关闭的问题；仍存在时，请提供版本号、系统与设备、漫画源、复现步骤及必要的日志或录屏。已关闭的问题也可继续留言或重新打开。\n\n请遮盖账号、密码、令牌及 WebDAV 私有地址等敏感信息。关联 issue 不代表所有设备、漫画源与服务端均已验证，本次发布不会…",
+      "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.8.0/venera-prime-ios-2.8.0%2B280.ipa",
+      "size": 16717141,
       "minOSVersion": "14.0"
     },
     {
@@ -1082,7 +1082,7 @@
               "publishedAt": "2026-11-03T13:40:33Z",
               "buildVersion": "52",
               "buildNumber": "52",
-              "localizedDescription": "- 派对模式（联机）重大升级：大幅减少掉线；手机短暂断线（切到后台、进电梯、Wi-Fi 换成流量）会自动续连，一分钟内接回来游戏完全不受影响，断线期间的操作自动补上。iPhone、安卓、Mac、Windows 都能一起玩。\n- 派对模式新增「途中加入」：建立房间时打开「途中加入」，一个人也能先和电脑开始玩（两个人就和两个电脑），不用等人齐。公开房间在游戏大厅里会标上「可途中加入」，游戏进行中也一直列着，并显示还有几个电脑可以接手。其他玩家随时点进来，就会接手其中一个电脑：等那个电脑的回合一到，它的钱、地、卡片、道具都交给新玩家继续玩，所有人都会看到「真人玩家 ××× 接替了电脑 ×××」。\n- 挑战模式改成开关：新游戏不再有单独的「挑战模式」分页，原版地图、自制地图的设定里多一项「挑战模式」：关／每月 1 张／每月 2 张／完成就抽。输赢照普通大富翁（破产出局），不再算星星。打开后会翻任务卡（每月 1 日；每月 2 张是 1 日和 16 日各一张、目标减半；完成就抽是有人完成马上换下一张，30 天没人完成也会换），拿下任务的人抽一张奖励卡（抢先卡是第一个做到的；比拼、坚持卡到期时结算；有抽卡动画，可以点一下跳过）：向每个对手收卡片和道具、收地、收红包、抽成、挪用存款、收点券，或让其他人坐牢、住院、冬眠，或拆掉对手的房子、自己的地加盖三层。奖励卡分 N、R、SR 三级（SR 1/10、R 2/10），等级越高收得越多。地图左上角的蓝条显示当前任务，点开看大家的进度。\n- 新增游戏内更新：这一版起，出新版本时游戏会提示「有新版本」，点「更新」只下载有变动的部分（通常几 MB），不必…",
+              "localizedDescription": "> 在线更新卡住怎么办： 如果游戏内更新时进度条一直不动（例如停在 0.1 MB），通常是网络连接不畅，中国大陆的玩家比较容易遇到。请关闭游戏，换个网络（Wi-Fi 和手机流量互换）或开启加速工具，再打开游戏重新更新。这个卡死的问题要等 1.1 的安装包出来后才能彻底解决。\n\n- 派对模式（联机）重大升级：大幅减少掉线；手机短暂断线（切到后台、进电梯、Wi-Fi 换成流量）会自动续连，一分钟内接回来游戏完全不受影响，断线期间的操作自动补上。iPhone、安卓、Mac、Windows 都能一起玩。\n- 派对模式新增「途中加入」：建立房间时打开「途中加入」，一个人也能先和电脑开始玩（两个人就和两个电脑），不用等人齐。公开房间在游戏大厅里会标上「可途中加入」，游戏进行中也一直列着，并显示还有几个电脑可以接手。其他玩家随时点进来，就会接手其中一个电脑：等那个电脑的回合一到，它的钱、地、卡片、道具都交给新玩家继续玩，所有人都会看到「真人玩家 ××× 接替了电脑 ×××」。\n- 挑战模式改成开关：新游戏不再有单独的「挑战模式」分页，原版地图、自制地图的设定里多一项「挑战模式」：关／每月 1 张／每月 2 张／完成就抽。输赢照普通大富翁（破产出局），不再算星星。打开后会翻任务卡（每月 1 日；每月 2 张是 1 日和 16 日各一张、目标减半；完成就抽是有人完成马上换下一张，30 天没人完成也会换），拿下任务的人抽一张奖励卡（抢先卡是第一个做到的；比拼、坚持卡到期时结算；有抽卡动画，可以点一下跳过）：向每个对手收卡片和道具、收地、收红包、抽成、挪用存款、收点券，或让其他人坐牢、住院、冬眠，或…",
               "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v1.0.0/rich4-1.0.0-unsigned.ipa",
               "size": 1446221294,
               "minOSVersion": "15.0",
@@ -1099,7 +1099,7 @@
           "publishedAt": "2026-11-03T13:40:33Z",
           "buildVersion": "52",
           "buildNumber": "52",
-          "localizedDescription": "- 派对模式（联机）重大升级：大幅减少掉线；手机短暂断线（切到后台、进电梯、Wi-Fi 换成流量）会自动续连，一分钟内接回来游戏完全不受影响，断线期间的操作自动补上。iPhone、安卓、Mac、Windows 都能一起玩。\n- 派对模式新增「途中加入」：建立房间时打开「途中加入」，一个人也能先和电脑开始玩（两个人就和两个电脑），不用等人齐。公开房间在游戏大厅里会标上「可途中加入」，游戏进行中也一直列着，并显示还有几个电脑可以接手。其他玩家随时点进来，就会接手其中一个电脑：等那个电脑的回合一到，它的钱、地、卡片、道具都交给新玩家继续玩，所有人都会看到「真人玩家 ××× 接替了电脑 ×××」。\n- 挑战模式改成开关：新游戏不再有单独的「挑战模式」分页，原版地图、自制地图的设定里多一项「挑战模式」：关／每月 1 张／每月 2 张／完成就抽。输赢照普通大富翁（破产出局），不再算星星。打开后会翻任务卡（每月 1 日；每月 2 张是 1 日和 16 日各一张、目标减半；完成就抽是有人完成马上换下一张，30 天没人完成也会换），拿下任务的人抽一张奖励卡（抢先卡是第一个做到的；比拼、坚持卡到期时结算；有抽卡动画，可以点一下跳过）：向每个对手收卡片和道具、收地、收红包、抽成、挪用存款、收点券，或让其他人坐牢、住院、冬眠，或拆掉对手的房子、自己的地加盖三层。奖励卡分 N、R、SR 三级（SR 1/10、R 2/10），等级越高收得越多。地图左上角的蓝条显示当前任务，点开看大家的进度。\n- 新增游戏内更新：这一版起，出新版本时游戏会提示「有新版本」，点「更新」只下载有变动的部分（通常几 MB），不必…",
+          "localizedDescription": "> 在线更新卡住怎么办： 如果游戏内更新时进度条一直不动（例如停在 0.1 MB），通常是网络连接不畅，中国大陆的玩家比较容易遇到。请关闭游戏，换个网络（Wi-Fi 和手机流量互换）或开启加速工具，再打开游戏重新更新。这个卡死的问题要等 1.1 的安装包出来后才能彻底解决。\n\n- 派对模式（联机）重大升级：大幅减少掉线；手机短暂断线（切到后台、进电梯、Wi-Fi 换成流量）会自动续连，一分钟内接回来游戏完全不受影响，断线期间的操作自动补上。iPhone、安卓、Mac、Windows 都能一起玩。\n- 派对模式新增「途中加入」：建立房间时打开「途中加入」，一个人也能先和电脑开始玩（两个人就和两个电脑），不用等人齐。公开房间在游戏大厅里会标上「可途中加入」，游戏进行中也一直列着，并显示还有几个电脑可以接手。其他玩家随时点进来，就会接手其中一个电脑：等那个电脑的回合一到，它的钱、地、卡片、道具都交给新玩家继续玩，所有人都会看到「真人玩家 ××× 接替了电脑 ×××」。\n- 挑战模式改成开关：新游戏不再有单独的「挑战模式」分页，原版地图、自制地图的设定里多一项「挑战模式」：关／每月 1 张／每月 2 张／完成就抽。输赢照普通大富翁（破产出局），不再算星星。打开后会翻任务卡（每月 1 日；每月 2 张是 1 日和 16 日各一张、目标减半；完成就抽是有人完成马上换下一张，30 天没人完成也会换），拿下任务的人抽一张奖励卡（抢先卡是第一个做到的；比拼、坚持卡到期时结算；有抽卡动画，可以点一下跳过）：向每个对手收卡片和道具、收地、收红包、抽成、挪用存款、收点券，或让其他人坐牢、住院、冬眠，或…",
           "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v1.0.0/rich4-1.0.0-unsigned.ipa",
           "size": 1446221294,
           "minOSVersion": "15.0",
@@ -1109,7 +1109,7 @@
       ],
       "version": "1.0.0",
       "versionDate": "2026-11-03",
-      "versionDescription": "- 派对模式（联机）重大升级：大幅减少掉线；手机短暂断线（切到后台、进电梯、Wi-Fi 换成流量）会自动续连，一分钟内接回来游戏完全不受影响，断线期间的操作自动补上。iPhone、安卓、Mac、Windows 都能一起玩。\n- 派对模式新增「途中加入」：建立房间时打开「途中加入」，一个人也能先和电脑开始玩（两个人就和两个电脑），不用等人齐。公开房间在游戏大厅里会标上「可途中加入」，游戏进行中也一直列着，并显示还有几个电脑可以接手。其他玩家随时点进来，就会接手其中一个电脑：等那个电脑的回合一到，它的钱、地、卡片、道具都交给新玩家继续玩，所有人都会看到「真人玩家 ××× 接替了电脑 ×××」。\n- 挑战模式改成开关：新游戏不再有单独的「挑战模式」分页，原版地图、自制地图的设定里多一项「挑战模式」：关／每月 1 张／每月 2 张／完成就抽。输赢照普通大富翁（破产出局），不再算星星。打开后会翻任务卡（每月 1 日；每月 2 张是 1 日和 16 日各一张、目标减半；完成就抽是有人完成马上换下一张，30 天没人完成也会换），拿下任务的人抽一张奖励卡（抢先卡是第一个做到的；比拼、坚持卡到期时结算；有抽卡动画，可以点一下跳过）：向每个对手收卡片和道具、收地、收红包、抽成、挪用存款、收点券，或让其他人坐牢、住院、冬眠，或拆掉对手的房子、自己的地加盖三层。奖励卡分 N、R、SR 三级（SR 1/10、R 2/10），等级越高收得越多。地图左上角的蓝条显示当前任务，点开看大家的进度。\n- 新增游戏内更新：这一版起，出新版本时游戏会提示「有新版本」，点「更新」只下载有变动的部分（通常几 MB），不必…",
+      "versionDescription": "> 在线更新卡住怎么办： 如果游戏内更新时进度条一直不动（例如停在 0.1 MB），通常是网络连接不畅，中国大陆的玩家比较容易遇到。请关闭游戏，换个网络（Wi-Fi 和手机流量互换）或开启加速工具，再打开游戏重新更新。这个卡死的问题要等 1.1 的安装包出来后才能彻底解决。\n\n- 派对模式（联机）重大升级：大幅减少掉线；手机短暂断线（切到后台、进电梯、Wi-Fi 换成流量）会自动续连，一分钟内接回来游戏完全不受影响，断线期间的操作自动补上。iPhone、安卓、Mac、Windows 都能一起玩。\n- 派对模式新增「途中加入」：建立房间时打开「途中加入」，一个人也能先和电脑开始玩（两个人就和两个电脑），不用等人齐。公开房间在游戏大厅里会标上「可途中加入」，游戏进行中也一直列着，并显示还有几个电脑可以接手。其他玩家随时点进来，就会接手其中一个电脑：等那个电脑的回合一到，它的钱、地、卡片、道具都交给新玩家继续玩，所有人都会看到「真人玩家 ××× 接替了电脑 ×××」。\n- 挑战模式改成开关：新游戏不再有单独的「挑战模式」分页，原版地图、自制地图的设定里多一项「挑战模式」：关／每月 1 张／每月 2 张／完成就抽。输赢照普通大富翁（破产出局），不再算星星。打开后会翻任务卡（每月 1 日；每月 2 张是 1 日和 16 日各一张、目标减半；完成就抽是有人完成马上换下一张，30 天没人完成也会换），拿下任务的人抽一张奖励卡（抢先卡是第一个做到的；比拼、坚持卡到期时结算；有抽卡动画，可以点一下跳过）：向每个对手收卡片和道具、收地、收红包、抽成、挪用存款、收点券，或让其他人坐牢、住院、冬眠，或…",
       "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v1.0.0/rich4-1.0.0-unsigned.ipa",
       "size": 1446221294,
       "minOSVersion": "15.0"

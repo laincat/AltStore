@@ -1686,5 +1686,33 @@
       "size": 26431983,
       "digest": "sha256:ca6d6508b60e004b99c47f07a7e0d6c5546eb9384a91f69ba87c8f470fe1e32f"
     }
+  },
+  "https://github.com/venera-app/venera-prime/releases/download/v2.8.0/venera-prime-ios-2.8.0%2B280.ipa": {
+    "bundleIdentifier": "com.github.wgh136.venera.prime",
+    "version": "2.8.0",
+    "buildVersion": "280",
+    "displayName": "Venera Prime",
+    "minOSVersion": "14.0",
+    "size": 16717141,
+    "assetIdentity": {
+      "id": 717920599,
+      "updated_at": "2026-11-06T17:18:06Z",
+      "size": 16717141,
+      "digest": "sha256:ba41382e08d291541e9ea573273b4990f7d85a5ff873fe0407d4f664ec64ad33"
+    }
+  },
+  "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261106/ARMSX2-nightly-20261106-afd93842f9-iOS-arm64.ipa": {
+    "bundleIdentifier": "com.armsx2.ios.nightly",
+    "version": "2.6.0-nightly.20261106.1507",
+    "buildVersion": "260",
+    "displayName": "ARMSX2 Nightly",
+    "minOSVersion": "17.4",
+    "size": 40577893,
+    "assetIdentity": {
+      "id": 717610743,
+      "updated_at": "2026-11-06T15:32:33Z",
+      "size": 40577893,
+      "digest": "sha256:d1d7c48a42b50e682c2fae8eba048f4f0b7cd52288b1256fa63b6ca1c8300557"
+    }
   }
 }

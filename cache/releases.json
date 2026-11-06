@@ -2302,6 +2302,25 @@
   ],
   "venera-app/venera-prime": [
     {
+      "tag": "v2.8.0",
+      "name": "Venera Prime 2.8.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-06",
+      "published_at": "2026-11-06T17:18:11Z",
+      "body": "# Venera Prime 2.8.0\n\n## 本次更新\n\n- **搜索记录新旧切换 #51**（@suppermanzero）：搜索页“清空”左侧新增切换按钮。旧版仅显示去重关键词，点击后按当前选择的漫画源及筛选条件重新搜索；新版保留来源、筛选和页码恢复。切换选择在重启后保留，两种记录同时保存，多个来源／筛选组合不再挤掉关键词模式中的其他历史词。默认仍为新版。\n- **自定义本地目录的 EPUB 与大小统计 #43**（@lzx377z）：修正 Android 授权目录扫描返回的文件句柄，导出 EPUB 时在工作线程内重新打开文件，修复已有漫画重新加载后导出失败及大小显示为 0 B 的问题。请在原存储目录中重启应用后复查已有漫画，并检查导出图片完整性。\n- **目录扫描与线程生命周期 #43**（@lzx377z）：扫描句柄数组改为显式复制和释放，修正压力测试中 384 个文件仅返回 64 个的遗漏；补齐 JNI 线程附着／解除的作用域管理。**用户报告的启动一段时间后闪退仍未复现，尚未确认根因，不能视为已修复。**\n- **连续音量键翻页**：翻页动画尚未结束时，下一次按键从待到达页继续计算，避免快速按两三次只翻一页，并修正快速反向操作。\n\n## 请更新后验证并反馈\n\n请关联 issue 的提出者安装 **2.8.0**，按原复现步骤检查。已解决时，请在原 issue 确认，并及时关闭尚未关闭的问题；仍存在时，请提供版本号、系统与设备、漫画源、复现步骤及必要的日志或录屏。已关闭的问题也可继续留言或重新打开。\n\n请遮盖账号、密码、令牌及 WebDAV 私有地址等敏感信息。关联 issue 不代表所有设备、漫画源与服务端均已验证，本次发布不会自动关闭 issue。闪退请尽可能提供系统 crash/logcat 或进程退出记录，应用内错误日志可能不包含原生崩溃。\n\n## 历史待确认问题\n\n以下改动已包含在此前版本，本次再次关联用于收集新版复查结果，并非本次新增功能。发布前重新核对，仅保留仍开放且需要复查的条目。\n\n| 相关 issue | 提出者 | 请复查的行为 |\n| --- | --- | --- |\n| #34 | @MisakaTukasa | 首页单张时前后移动一张图片，检查首页与第二组的配对是否符合预期，复查后续回归反馈。 |\n| #45 | @Arteiimis | 导入原约 674.7 MiB 的 ZIP/CBZ，检查大压缩包读取与内存限制表现。 |\n| #49 | @sakana155 | 原手机与 JM 源出现黑图时检查重新加载表现；最新反馈仍称需要重启应用，本次未确认解决黑图根因。 |\n\n## 验证范围\n\n- Flutter 3.41.4/Linux：发布前全量自动化测试 **392 项通过、2 项跳过**（启用原生压缩测试）；C++ SAF 短读、零长度管道、EOF 与读取错误回归通过。全仓静态分析无 error/warning，仅有 about.dart 原有的组件参数排序提示。版本一致性与 git diff --check 通过。\n- Android HUAWEI TAS-AN00 / Android 12，独立测试包：已验证授权目录同步／异步扫描、大小统计、本地数据库重新打开后的实际 EPUB 导出，导出封面和页图与测试输入逐字节一致。扫描数组改动的两次 Release 压测共检查 18,432 个文件条目，均完整且无读取错误；撤回该改动后再次出现目录遗漏。新版搜索切换已构建并经 ADB 安装，搜索记录保存／恢复和结果列表相关 11 项自动化测试通过。\n- 闪退对照包括旧版 JNI 的 32 并发 worker、最长 180 秒空闲、目录并发压力，以及去敏备份的 2.6.3 → 2.7.2 覆盖升级（保留 2,158 条历史，心跳观察 6 分钟），均未捕获 Venera 崩溃。这些测试用于本轮修复排查，不能替代 2.8.0 正式包在原设备上的升级验证。\n- 三份用户备份的 ZIP 与数据库完整性检查通过，但不含本地漫画文件和 local.db，未完整还原原漫画库；未导入账号／Cookie／WebDAV 或执行备份内漫画源脚本。荣耀 90 GT / MagicOS 7.2、真实第三方源及其他平台真机仍待复查。\n\n六平台构建与机器人发布结果以本次 GitHub Actions 为准；构建成功不等于对应平台真机功能验证。\n",
+      "ipas": [
+        {
+          "name": "venera-prime-ios-2.8.0+280.ipa",
+          "size": 16717141,
+          "url": "https://github.com/venera-app/venera-prime/releases/download/v2.8.0/venera-prime-ios-2.8.0%2B280.ipa",
+          "id": 717920599,
+          "updated_at": "2026-11-06T17:18:06Z",
+          "digest": "sha256:ba41382e08d291541e9ea573273b4990f7d85a5ff873fe0407d4f664ec64ad33"
+        }
+      ]
+    },
+    {
       "tag": "v2.7.2",
       "name": "Venera Prime 2.7.2",
       "pre": false,
@@ -2659,25 +2678,6 @@
           "id": 598508748,
           "updated_at": "2026-09-29T15:11:16Z",
           "digest": "sha256:b81e15bc7a3e5a0b57ca773f5639d0a1cfddee1e74123ca84b4a9f49f967ec00"
-        }
-      ]
-    },
-    {
-      "tag": "v2.4.1",
-      "name": "Venera Prime 2.4.1",
-      "pre": false,
-      "draft": false,
-      "date": "2026-09-18",
-      "published_at": "2026-09-18T14:05:04Z",
-      "body": "# Venera Prime 2.4.1\n\n## 改进\n\n- 收藏信息更新支持显示失败的漫画名称，并可从全部收藏视图依次更新各文件夹。\n- 跟随更新显示具体失败漫画与错误信息，并在取消更新时正确收尾进度提示。\n- WebDAV 下载期间发生的本地修改会排队，并在下载完成后自动上传。\n- 百宝箱调整为半屏沉浸式底部面板，点击上方空白区域即可关闭。\n\n## 验证\n\n- Flutter 静态检查通过。\n- Android Debug 构建已安装并启动于 TAS AN00 真机。\n",
-      "ipas": [
-        {
-          "name": "venera-prime-ios-2.4.1+241.ipa",
-          "size": 16023621,
-          "url": "https://github.com/venera-app/venera-prime/releases/download/v2.4.1/venera-prime-ios-2.4.1%2B241.ipa",
-          "id": 572750379,
-          "updated_at": "2026-09-18T14:05:02Z",
-          "digest": "sha256:e08432e423ff1813606273daed9c85c75834b7574dea454fc882fd8112a6bb08"
         }
       ]
     }
@@ -4184,6 +4184,25 @@
   ],
   "ARMSX2/ARMSX2": [
     {
+      "tag": "nightly-20261106",
+      "name": "ARMSX2 nightly 20261106 (afd93842f9)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-11-06",
+      "published_at": "2026-11-06T15:32:28Z",
+      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- Android: regenerate the PGO profile on the GS span source\n- GS/HW: a target takes the destination-alpha loop only after more than 64 such draws in a frame\n- GS/Vulkan: the Adreno 613's destination-alpha loop leaves only the targets it reads uncompressed\n- GS/Vulkan: on the Adreno 613 destination-alpha draws read the target in the pass\n- GS: with draw buffering off, the draw's environment is copied once\n- GS: sprite pair layouts enter the two-pass kick kernel, autoflush included\n- GS/SW: build only the colour table entry a row's span reads\n- GS/HW: copy road kernels read the texture a block at a time and write the frame a block row at a time\n- GS/TC: a block grid per target in place of the dirty rectangle lists\n- Android: Auto hides the on-screen contro",
+      "ipas": [
+        {
+          "name": "ARMSX2-nightly-20261106-afd93842f9-iOS-arm64.ipa",
+          "size": 40577893,
+          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261106/ARMSX2-nightly-20261106-afd93842f9-iOS-arm64.ipa",
+          "id": 717610743,
+          "updated_at": "2026-11-06T15:32:33Z",
+          "digest": "sha256:d1d7c48a42b50e682c2fae8eba048f4f0b7cd52288b1256fa63b6ca1c8300557"
+        }
+      ]
+    },
+    {
       "tag": "nightly-20261104",
       "name": "ARMSX2 nightly 20261104 (720f409f00)",
       "pre": true,
@@ -4307,16 +4326,6 @@
           "digest": "sha256:c0cfd12557a1e4251745db4945ec343958365af0a6bff424f87b516e4db265e3"
         }
       ]
-    },
-    {
-      "tag": "nightly-20261021",
-      "name": "ARMSX2 nightly 20261021 (65fd14b916)",
-      "pre": true,
-      "draft": false,
-      "date": "2026-10-21",
-      "published_at": "2026-10-21T14:25:52Z",
-      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- GameDB back-thread hint: withheld when the IOP thread is on\n- GameDB: a back thread recommendation, set for Spider-Man 3, Sly 3 and Up Your Arsenal\n- GS back thread: the busiest emulation thread gets the prime core alone\n- GS/HW: an opaque draw whose blend was elided as the identity keeps the previous blended draw's pipeline\n- GS/HW: retire a target whose dirty rectangles together cover it, not only one that a single rectangle covers\n- GS/SW: CollectSprites takes the minify option at compile time\n- GS/SW: gather the 32-bit texel copy's rows with the tap counts fixed at compile time\n- GS/SW: the 32-bit texel copy takes bilinear lookups whose weights are zero or a half\n- GS/SW: copy 32-bit texture sprite draws into 32-bit frames straight from local memor",
-      "ipas": []
     },
     {
       "tag": "2.8.4",
@@ -4524,7 +4533,7 @@
       "draft": false,
       "date": "2026-11-03",
       "published_at": "2026-11-03T13:40:33Z",
-      "body": "- **派对模式（联机）重大升级：大幅减少掉线；手机短暂断线（切到后台、进电梯、Wi-Fi 换成流量）会自动续连，一分钟内接回来游戏完全不受影响，断线期间的操作自动补上。iPhone、安卓、Mac、Windows 都能一起玩。**\n- **派对模式新增「途中加入」：建立房间时打开「途中加入」，一个人也能先和电脑开始玩（两个人就和两个电脑），不用等人齐。公开房间在游戏大厅里会标上「可途中加入」，游戏进行中也一直列着，并显示还有几个电脑可以接手。其他玩家随时点进来，就会接手其中一个电脑：等那个电脑的回合一到，它的钱、地、卡片、道具都交给新玩家继续玩，所有人都会看到「真人玩家 ××× 接替了电脑 ×××」。**\n- 挑战模式改成开关：新游戏不再有单独的「挑战模式」分页，原版地图、自制地图的设定里多一项「挑战模式」：关／每月 1 张／每月 2 张／完成就抽。输赢照普通大富翁（破产出局），不再算星星。打开后会翻任务卡（每月 1 日；每月 2 张是 1 日和 16 日各一张、目标减半；完成就抽是有人完成马上换下一张，30 天没人完成也会换），拿下任务的人抽一张奖励卡（抢先卡是第一个做到的；比拼、坚持卡到期时结算；有抽卡动画，可以点一下跳过）：向每个对手收卡片和道具、收地、收红包、抽成、挪用存款、收点券，或让其他人坐牢、住院、冬眠，或拆掉对手的房子、自己的地加盖三层。奖励卡分 N、R、SR 三级（SR 1/10、R 2/10），等级越高收得越多。地图左上角的蓝条显示当前任务，点开看大家的进度。\n- 新增游戏内更新：这一版起，出新版本时游戏会提示「有新版本」，点「更新」只下载有变动的部分（通常几 MB），不必再重新下载整个安装包；更新后右下角显示新的版本号，存档都会保留。单机可以选择以后再说；派对模式需要更新到最新版本才能进入，大家的规则才会一致。少数需要新安装包的版本会提示前往下载。（这一版本身还需要手动安装一次。）\n- 电脑难度新增「地狱」：电脑全力理财、低买高卖股票，而且所有电脑联手对付真人玩家。普通模式、大富豪模式、派对模式都能选；「中级」改叫「中等」。\n- 大富豪模式新增「电脑难度」（简单／中等／困难／地狱），五座城市的电脑都用这一级；旧存档照旧是简单。\n- 设置里的「街头行人」「街头车辆」「霓虹闪烁」合并成一项「地图动画」（开／关）。\n- 原版八张地图（台湾、中国大陆、日本、美国、星座、武侠、恐龙、城市）都换上了新的插画封面，选地图、读档、派对模式房间里都会显示。\n- 游戏速度新增「极快」：比「快」再快一倍，适合直播或想快点玩完的玩家。\n- 标题画面底部改成感谢大家的话：感谢 GitHub 回报问题的朋友和 B 站留言区的每一条意见。\n- 竖屏的平板或较宽的窗口：游戏画面下方的面板最多占三分之一高度，地图变大。\n- 新增字体选择：「游戏设置」→「字体」可选 粉圆／文楷（霞鹜文楷）／圆体（昭源圆体）／系统字体，马上套用到所有画面。\n- 修正：iPhone 上部分简体字（例如「图鉴」的「鉴」）显示成方框。\n- 新增存档备份：「游戏设置」→「存档备份」，可以把这台装置的所有存档导出成一个文件（手机上可存到「文件」、传给自己），换手机或重新安装后再导入；存档在 iPhone、安卓、Mac、Windows 之间通用（例如手机导出、电脑导入接着玩）。\n- 大富翁城只用筹码（大富豪模式的最终决战和普通模式的大富翁城地图都一样）：没有存款、提款机、贷款和利息，原本会存进存款的钱都直接变成筹码；买地、盖赌场、升级都用筹码；停在银行格什么都不办，月底也不再出现银行结算；人物面板显示 筹码／赌场／总资产。修正：电脑的筹码看起来是 0 却一直不出局（其实钱都在存款里）。\n- 普通模式的大富翁城：开局资金全部换成筹码（1 筹码 = 100 元），画面一律显示筹码；每个回合后筹码不到 1 个就出局。旧存档里的存款会在下一回合并进筹码（有贷款的先扣掉）。\n- 派对模式新增延迟面板：游戏中按联机按钮栏最右边的信号格按钮，可以显示或隐藏每位玩家的延迟（毫秒）；房间里每个座位也会显示。\n- 标题画面和派对模式里显示「派对模式现在有多少人在线」（游戏中、房间里、选单各几人）。\n- 派对模式游戏中，每位真人玩家的角色头顶会显示他的延迟（毫秒），跟着角色移动；等待某人操作时，提示条也会显示那个人的延迟。\n- 派对模式「建立房间」和房间画面重新设计：地图改成缩图卡片翻页；房间里的规则一直展开、用格子排好，横屏左右两栏一页放得下。\n- 派对模式新增「等待时间」：每一步操作可等 10～60 秒（房主设定）；时间到了只替玩家完成这一步，不会改成托管。\n- 派对模式新增「电脑难度」：简单、中等、困难、地狱。地狱的电脑更会理财、会低买高卖股票，而且所有电脑联手对付真人玩家。\n- 游戏",
+      "body": "> **在线更新卡住怎么办：** 如果游戏内更新时进度条一直不动（例如停在 0.1 MB），通常是网络连接不畅，中国大陆的玩家比较容易遇到。请关闭游戏，换个网络（Wi-Fi 和手机流量互换）或开启加速工具，再打开游戏重新更新。这个卡死的问题要等 1.1 的安装包出来后才能彻底解决。\n\n- **派对模式（联机）重大升级：大幅减少掉线；手机短暂断线（切到后台、进电梯、Wi-Fi 换成流量）会自动续连，一分钟内接回来游戏完全不受影响，断线期间的操作自动补上。iPhone、安卓、Mac、Windows 都能一起玩。**\n- **派对模式新增「途中加入」：建立房间时打开「途中加入」，一个人也能先和电脑开始玩（两个人就和两个电脑），不用等人齐。公开房间在游戏大厅里会标上「可途中加入」，游戏进行中也一直列着，并显示还有几个电脑可以接手。其他玩家随时点进来，就会接手其中一个电脑：等那个电脑的回合一到，它的钱、地、卡片、道具都交给新玩家继续玩，所有人都会看到「真人玩家 ××× 接替了电脑 ×××」。**\n- 挑战模式改成开关：新游戏不再有单独的「挑战模式」分页，原版地图、自制地图的设定里多一项「挑战模式」：关／每月 1 张／每月 2 张／完成就抽。输赢照普通大富翁（破产出局），不再算星星。打开后会翻任务卡（每月 1 日；每月 2 张是 1 日和 16 日各一张、目标减半；完成就抽是有人完成马上换下一张，30 天没人完成也会换），拿下任务的人抽一张奖励卡（抢先卡是第一个做到的；比拼、坚持卡到期时结算；有抽卡动画，可以点一下跳过）：向每个对手收卡片和道具、收地、收红包、抽成、挪用存款、收点券，或让其他人坐牢、住院、冬眠，或拆掉对手的房子、自己的地加盖三层。奖励卡分 N、R、SR 三级（SR 1/10、R 2/10），等级越高收得越多。地图左上角的蓝条显示当前任务，点开看大家的进度。\n- 新增游戏内更新：这一版起，出新版本时游戏会提示「有新版本」，点「更新」只下载有变动的部分（通常几 MB），不必再重新下载整个安装包；更新后右下角显示新的版本号，存档都会保留。单机可以选择以后再说；派对模式需要更新到最新版本才能进入，大家的规则才会一致。少数需要新安装包的版本会提示前往下载。（这一版本身还需要手动安装一次。）\n- 电脑难度新增「地狱」：电脑全力理财、低买高卖股票，而且所有电脑联手对付真人玩家。普通模式、大富豪模式、派对模式都能选；「中级」改叫「中等」。\n- 大富豪模式新增「电脑难度」（简单／中等／困难／地狱），五座城市的电脑都用这一级；旧存档照旧是简单。\n- 设置里的「街头行人」「街头车辆」「霓虹闪烁」合并成一项「地图动画」（开／关）。\n- 原版八张地图（台湾、中国大陆、日本、美国、星座、武侠、恐龙、城市）都换上了新的插画封面，选地图、读档、派对模式房间里都会显示。\n- 游戏速度新增「极快」：比「快」再快一倍，适合直播或想快点玩完的玩家。\n- 标题画面底部改成感谢大家的话：感谢 GitHub 回报问题的朋友和 B 站留言区的每一条意见。\n- 竖屏的平板或较宽的窗口：游戏画面下方的面板最多占三分之一高度，地图变大。\n- 新增字体选择：「游戏设置」→「字体」可选 粉圆／文楷（霞鹜文楷）／圆体（昭源圆体）／系统字体，马上套用到所有画面。\n- 修正：iPhone 上部分简体字（例如「图鉴」的「鉴」）显示成方框。\n- 新增存档备份：「游戏设置」→「存档备份」，可以把这台装置的所有存档导出成一个文件（手机上可存到「文件」、传给自己），换手机或重新安装后再导入；存档在 iPhone、安卓、Mac、Windows 之间通用（例如手机导出、电脑导入接着玩）。\n- 大富翁城只用筹码（大富豪模式的最终决战和普通模式的大富翁城地图都一样）：没有存款、提款机、贷款和利息，原本会存进存款的钱都直接变成筹码；买地、盖赌场、升级都用筹码；停在银行格什么都不办，月底也不再出现银行结算；人物面板显示 筹码／赌场／总资产。修正：电脑的筹码看起来是 0 却一直不出局（其实钱都在存款里）。\n- 普通模式的大富翁城：开局资金全部换成筹码（1 筹码 = 100 元），画面一律显示筹码；每个回合后筹码不到 1 个就出局。旧存档里的存款会在下一回合并进筹码（有贷款的先扣掉）。\n- 派对模式新增延迟面板：游戏中按联机按钮栏最右边的信号格按钮，可以显示或隐藏每位玩家的延迟（毫秒）；房间里每个座位也会显示。\n- 标题画面和派对模式里显示「派对模式现在有多少人在线」（游戏中、房间里、选单各几人）。\n- 派对模式游戏中，每位真人玩家的角色头顶会显示他的延迟（毫秒），跟着角色移动；等待某人操作时，提示条也会显示那个人的延迟。\n- 派对模式「建立房间」和房间画面重新设计：地图改成缩图卡片翻页；房间里的规则一直展开、",
       "ipas": [
         {
           "name": "rich4-1.0.0-unsigned.ipa",
