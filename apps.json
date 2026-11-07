@@ -385,41 +385,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.6.0-nightly.20261106.1507",
-              "date": "2026-11-06",
-              "publishedAt": "2026-11-06T15:32:28Z",
+              "version": "2.6.0-nightly.20261107.1455",
+              "date": "2026-11-07",
+              "publishedAt": "2026-11-07T15:31:52Z",
               "buildVersion": "260",
               "buildNumber": "260",
-              "localizedDescription": "🧪 预发布 nightly-20261106（2026-11-06）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-              "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261106/ARMSX2-nightly-20261106-afd93842f9-iOS-arm64.ipa",
-              "size": 40577893,
+              "localizedDescription": "🧪 预发布 nightly-20261107（2026-11-07）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+              "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261107/ARMSX2-nightly-20261107-acfe231f4a-iOS-arm64.ipa",
+              "size": 40589664,
               "minOSVersion": "17.4",
-              "releaseTag": "nightly-20261106",
-              "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261106"
+              "releaseTag": "nightly-20261107",
+              "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261107"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.6.0-nightly.20261106.1507",
-          "date": "2026-11-06",
-          "publishedAt": "2026-11-06T15:32:28Z",
+          "version": "2.6.0-nightly.20261107.1455",
+          "date": "2026-11-07",
+          "publishedAt": "2026-11-07T15:31:52Z",
           "buildVersion": "260",
           "buildNumber": "260",
-          "localizedDescription": "🧪 预发布 nightly-20261106（2026-11-06）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261106/ARMSX2-nightly-20261106-afd93842f9-iOS-arm64.ipa",
-          "size": 40577893,
+          "localizedDescription": "🧪 预发布 nightly-20261107（2026-11-07）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261107/ARMSX2-nightly-20261107-acfe231f4a-iOS-arm64.ipa",
+          "size": 40589664,
           "minOSVersion": "17.4",
-          "releaseTag": "nightly-20261106",
-          "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261106"
+          "releaseTag": "nightly-20261107",
+          "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261107"
         }
       ],
-      "version": "2.6.0-nightly.20261106.1507",
-      "versionDate": "2026-11-06",
-      "versionDescription": "🧪 预发布 nightly-20261106（2026-11-06）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-      "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261106/ARMSX2-nightly-20261106-afd93842f9-iOS-arm64.ipa",
-      "size": 40577893,
+      "version": "2.6.0-nightly.20261107.1455",
+      "versionDate": "2026-11-07",
+      "versionDescription": "🧪 预发布 nightly-20261107（2026-11-07）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+      "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261107/ARMSX2-nightly-20261107-acfe231f4a-iOS-arm64.ipa",
+      "size": 40589664,
       "minOSVersion": "17.4"
     },
     {
@@ -1010,7 +1010,7 @@
       "developerName": "Kyosee",
       "subtitle": "多图源漫画阅读器",
       "localizedDescription": "原版 Venera 的个人维护增强分支，支持通过插件接入多种漫画图源，提供本地收藏、阅读进度同步等能力。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Kyosee/VeneraX",
-      "iconURL": "https://raw.githubusercontent.com/Kyosee/VeneraX/v2.3.10/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Kyosee/VeneraX/v2.3.11/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#4A8FE7",
       "category": "books",
       "appPermissions": {
@@ -1022,41 +1022,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.3.10",
-              "date": "2026-11-06",
-              "publishedAt": "2026-11-06T13:00:33Z",
-              "buildVersion": "253",
-              "buildNumber": "253",
-              "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- \"Split wide pages\" now works in gallery modes too: a landscape page (usually two pages scanned as one) is cut down the middle and each half gets a screen of its own. Choose \"Right half first\" or \"Left half first\"; pick \"Right half first\" for comics read right to left. It applies only with one image per screen.\n- With two or more images per screen in gallery modes, a new \"Shift pages by one\" button in the reader's bottom bar helps when an extra single page in a chapter, such as a color page or an ad, throws every later two-page spread out of line. Tap it and the current screen shows only its first image, and the pages after it are paired…",
-              "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.10/VeneraX-ios-2.3.10%2B253.ipa",
-              "size": 39013148,
+              "version": "2.3.11",
+              "date": "2026-11-07",
+              "publishedAt": "2026-11-07T13:23:52Z",
+              "buildVersion": "254",
+              "buildNumber": "254",
+              "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- The reading settings sidebar now has a search box at the top. Search in your display language or English, then select a result to jump to the setting, including options inside collapsed groups.\n- Long-press the night mode button to adjust its intensity in a compact popup. Changes appear immediately and are saved automatically.\n- Long-press the auto page turning button to choose between turning pages and scrolling. Scrolling is available in continuous reading modes; a short press still starts or stops automatic reading.\n- Linux users can now download AppImage packages for x86_64 and ARM64, alongside the existing installation packages.\nCha…",
+              "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.11/VeneraX-ios-2.3.11%2B254.ipa",
+              "size": 39064421,
               "minOSVersion": "15.1",
-              "releaseTag": "v2.3.10",
-              "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.10"
+              "releaseTag": "v2.3.11",
+              "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.11"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.3.10",
-          "date": "2026-11-06",
-          "publishedAt": "2026-11-06T13:00:33Z",
-          "buildVersion": "253",
-          "buildNumber": "253",
-          "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- \"Split wide pages\" now works in gallery modes too: a landscape page (usually two pages scanned as one) is cut down the middle and each half gets a screen of its own. Choose \"Right half first\" or \"Left half first\"; pick \"Right half first\" for comics read right to left. It applies only with one image per screen.\n- With two or more images per screen in gallery modes, a new \"Shift pages by one\" button in the reader's bottom bar helps when an extra single page in a chapter, such as a color page or an ad, throws every later two-page spread out of line. Tap it and the current screen shows only its first image, and the pages after it are paired…",
-          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.10/VeneraX-ios-2.3.10%2B253.ipa",
-          "size": 39013148,
+          "version": "2.3.11",
+          "date": "2026-11-07",
+          "publishedAt": "2026-11-07T13:23:52Z",
+          "buildVersion": "254",
+          "buildNumber": "254",
+          "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- The reading settings sidebar now has a search box at the top. Search in your display language or English, then select a result to jump to the setting, including options inside collapsed groups.\n- Long-press the night mode button to adjust its intensity in a compact popup. Changes appear immediately and are saved automatically.\n- Long-press the auto page turning button to choose between turning pages and scrolling. Scrolling is available in continuous reading modes; a short press still starts or stops automatic reading.\n- Linux users can now download AppImage packages for x86_64 and ARM64, alongside the existing installation packages.\nCha…",
+          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.11/VeneraX-ios-2.3.11%2B254.ipa",
+          "size": 39064421,
           "minOSVersion": "15.1",
-          "releaseTag": "v2.3.10",
-          "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.10"
+          "releaseTag": "v2.3.11",
+          "source": "https://github.com/Kyosee/VeneraX/releases/tag/v2.3.11"
         }
       ],
-      "version": "2.3.10",
-      "versionDate": "2026-11-06",
-      "versionDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- \"Split wide pages\" now works in gallery modes too: a landscape page (usually two pages scanned as one) is cut down the middle and each half gets a screen of its own. Choose \"Right half first\" or \"Left half first\"; pick \"Right half first\" for comics read right to left. It applies only with one image per screen.\n- With two or more images per screen in gallery modes, a new \"Shift pages by one\" button in the reader's bottom bar helps when an extra single page in a chapter, such as a color page or an ad, throws every later two-page spread out of line. Tap it and the current screen shows only its first image, and the pages after it are paired…",
-      "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.10/VeneraX-ios-2.3.10%2B253.ipa",
-      "size": 39013148,
+      "version": "2.3.11",
+      "versionDate": "2026-11-07",
+      "versionDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- The reading settings sidebar now has a search box at the top. Search in your display language or English, then select a result to jump to the setting, including options inside collapsed groups.\n- Long-press the night mode button to adjust its intensity in a compact popup. Changes appear immediately and are saved automatically.\n- Long-press the auto page turning button to choose between turning pages and scrolling. Scrolling is available in continuous reading modes; a short press still starts or stops automatic reading.\n- Linux users can now download AppImage packages for x86_64 and ARM64, alongside the existing installation packages.\nCha…",
+      "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.11/VeneraX-ios-2.3.11%2B254.ipa",
+      "size": 39064421,
       "minOSVersion": "15.1"
     },
     {
@@ -1120,7 +1120,7 @@
       "developerName": "Xanerix",
       "subtitle": "支持多站源的短剧与影视客户端",
       "localizedDescription": "Flutter 多平台短剧与影视客户端，包含全部站源，可在设置中逐个开关。支持追剧、观看记录、多用户、本地下载与备份。此处收录真果鉴全站源版；自 1.0.3 起使用独立 Bundle ID com.guoapp.all，可与仅含红果站源的红果鉴同时安装。旧包名版本不能覆盖升级，原有设置、追剧和下载记录不会自动迁移。\n\n安装包由上游发布，需自行签名安装。站源可用性取决于源站及网络；应用不解除源站 VIP 或其他授权限制。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Xanerix/guoapp",
-      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v1.0.4-104/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v1.0.5-105/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#E97642",
       "category": "entertainment",
       "appPermissions": {
@@ -1132,41 +1132,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "1.0.4",
-              "date": "2026-11-06",
-              "publishedAt": "2026-11-06T11:51:49Z",
-              "buildVersion": "104",
-              "buildNumber": "104",
-              "localizedDescription": "更新内容：\n\n- 真果鉴新增站源「禁果短剧」（jinguoduanju.app 网页版，与同名的「禁果」App 不是同一个产品，剧库不同）：目录、详情、分集和播放走网页同一套接口。可选推荐、热度、站点分类和题材，支持在线搜索和翻页；站点不分页，翻页时复用第一页取回的整份目录，不再每页重新下载。播放权限以站点接口返回为准，目前站点对会员和金币解锁剧集也直接放行；站点拒绝播放时提示需要会员或解锁，不会代为解锁。站点不少剧本身只有 1 集。默认关闭，可在站源管理中打开。\n- 真果鉴新增站源「禁果」（禁果短剧 App，com.hgaidj.ozThree）：与黄果旧版是同一套后台的另一个部署，但剧库不同。可选精选、最新和站点分类，支持在线搜索和翻页；访客会话自动注册并保存，失效后自动重新登录；主线路不可用时自动切换到同一部署的备用线路。付费集（需金币或会员）在分集列表标为 VIP，播放时提示需要解锁，不会代为解锁，也不会播放站点给未解锁分集的广告片花。默认关闭，可在站源管理中打开。\n- 修复青空播放报「暂无可用播放地址」：青空现在要求登录后才能播放。设置 › 站源新增「站源账号」，点进去登录青空账号：输入用户名或邮箱和密码，再拖动滑块完成安全验证即可登录；没有账号可点链接到浏览器注册。登录状态保存在本机，过期前自动续期；未登录或登录失效时，播放页不再报笼统的错误，原来的「重试」换成「去登录」，点击直接弹出登录框，登录成功后自动重新播放。仅管理员可登录和退出。电视上可用遥控器完成验证：按左右方向键移动拼图块，对齐后按确定键。输完用户名按「完成」或回车直接跳到密码框。电视上进入站源账号页时…",
-              "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.4-104/zhenguojian-1.0.4%2B104-ios-unsigned.ipa",
-              "size": 30529027,
+              "version": "1.0.5",
+              "date": "2026-11-07",
+              "publishedAt": "2026-11-07T11:55:12Z",
+              "buildVersion": "105",
+              "buildNumber": "105",
+              "localizedDescription": "更新内容：\n\n- 真果鉴新增站源「黑桃」（heitaodj.com 黑桃短剧）：「全部」列出全站剧集，另可选站点分类，支持翻页、详情、分集和在线搜索。海报左下角照搬站点角标（如「6集」「完整版」），站点没有角标的剧看过详情后显示「共 N 集」。默认关闭，可在站源管理中打开。\n- 修复真果鉴的「黄豆」站源打不开：站点换了域名，原来写死的主域名 tideember.cc 已经解析不到，唯一写死的备用域名 xqjurgek.top 证书也过期了、证书上的域名还对不上，所以每次换线都必然失败。改用站点当前的可用域名池（ferncider.cc、onyxripple.cc、reeflumen.cc、niniharbor.top、halomeadow.top、larksummit.icu），主线路连不上时按顺序换到下一个，全部换完才报错；换域名属于换目标，不再空等重试间隔，连不上时能更快恢复。站点显示名也从域名改为「黄豆」（#76）。\n- 修复黄豆站点自制剧详情页显示「播放 0」：站点不给这类剧提供播放量，现在播放量为 0 时不再显示，其余站源同样处理。\n- 新增弹幕样式设置：字号改为 60%～200% 连续可调（原来的小、标准、大、特大设置照常生效），另可调颜色、透明度、加粗、描边和阴影，还能选弹幕占画面顶部四分之一、一半或全部，改动立即生效。入口在播放页 ›「播放设置」›「弹幕样式」，以及设置里新增的「弹幕」分组（#74）。\n- 新增弹幕屏蔽词：最多 60 个，单个最长 40 字，匹配时忽略大小写、全角和标点。含屏蔽词的弹幕直接不显示，这一段全被屏蔽时播放页提示「这段弹幕都被屏蔽了」（…",
+              "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.5-105/zhenguojian-1.0.5%2B105-ios-unsigned.ipa",
+              "size": 30628876,
               "minOSVersion": "15.1",
-              "releaseTag": "app-v1.0.4-104",
-              "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.4-104"
+              "releaseTag": "app-v1.0.5-105",
+              "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.5-105"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "1.0.4",
-          "date": "2026-11-06",
-          "publishedAt": "2026-11-06T11:51:49Z",
-          "buildVersion": "104",
-          "buildNumber": "104",
-          "localizedDescription": "更新内容：\n\n- 真果鉴新增站源「禁果短剧」（jinguoduanju.app 网页版，与同名的「禁果」App 不是同一个产品，剧库不同）：目录、详情、分集和播放走网页同一套接口。可选推荐、热度、站点分类和题材，支持在线搜索和翻页；站点不分页，翻页时复用第一页取回的整份目录，不再每页重新下载。播放权限以站点接口返回为准，目前站点对会员和金币解锁剧集也直接放行；站点拒绝播放时提示需要会员或解锁，不会代为解锁。站点不少剧本身只有 1 集。默认关闭，可在站源管理中打开。\n- 真果鉴新增站源「禁果」（禁果短剧 App，com.hgaidj.ozThree）：与黄果旧版是同一套后台的另一个部署，但剧库不同。可选精选、最新和站点分类，支持在线搜索和翻页；访客会话自动注册并保存，失效后自动重新登录；主线路不可用时自动切换到同一部署的备用线路。付费集（需金币或会员）在分集列表标为 VIP，播放时提示需要解锁，不会代为解锁，也不会播放站点给未解锁分集的广告片花。默认关闭，可在站源管理中打开。\n- 修复青空播放报「暂无可用播放地址」：青空现在要求登录后才能播放。设置 › 站源新增「站源账号」，点进去登录青空账号：输入用户名或邮箱和密码，再拖动滑块完成安全验证即可登录；没有账号可点链接到浏览器注册。登录状态保存在本机，过期前自动续期；未登录或登录失效时，播放页不再报笼统的错误，原来的「重试」换成「去登录」，点击直接弹出登录框，登录成功后自动重新播放。仅管理员可登录和退出。电视上可用遥控器完成验证：按左右方向键移动拼图块，对齐后按确定键。输完用户名按「完成」或回车直接跳到密码框。电视上进入站源账号页时…",
-          "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.4-104/zhenguojian-1.0.4%2B104-ios-unsigned.ipa",
-          "size": 30529027,
+          "version": "1.0.5",
+          "date": "2026-11-07",
+          "publishedAt": "2026-11-07T11:55:12Z",
+          "buildVersion": "105",
+          "buildNumber": "105",
+          "localizedDescription": "更新内容：\n\n- 真果鉴新增站源「黑桃」（heitaodj.com 黑桃短剧）：「全部」列出全站剧集，另可选站点分类，支持翻页、详情、分集和在线搜索。海报左下角照搬站点角标（如「6集」「完整版」），站点没有角标的剧看过详情后显示「共 N 集」。默认关闭，可在站源管理中打开。\n- 修复真果鉴的「黄豆」站源打不开：站点换了域名，原来写死的主域名 tideember.cc 已经解析不到，唯一写死的备用域名 xqjurgek.top 证书也过期了、证书上的域名还对不上，所以每次换线都必然失败。改用站点当前的可用域名池（ferncider.cc、onyxripple.cc、reeflumen.cc、niniharbor.top、halomeadow.top、larksummit.icu），主线路连不上时按顺序换到下一个，全部换完才报错；换域名属于换目标，不再空等重试间隔，连不上时能更快恢复。站点显示名也从域名改为「黄豆」（#76）。\n- 修复黄豆站点自制剧详情页显示「播放 0」：站点不给这类剧提供播放量，现在播放量为 0 时不再显示，其余站源同样处理。\n- 新增弹幕样式设置：字号改为 60%～200% 连续可调（原来的小、标准、大、特大设置照常生效），另可调颜色、透明度、加粗、描边和阴影，还能选弹幕占画面顶部四分之一、一半或全部，改动立即生效。入口在播放页 ›「播放设置」›「弹幕样式」，以及设置里新增的「弹幕」分组（#74）。\n- 新增弹幕屏蔽词：最多 60 个，单个最长 40 字，匹配时忽略大小写、全角和标点。含屏蔽词的弹幕直接不显示，这一段全被屏蔽时播放页提示「这段弹幕都被屏蔽了」（…",
+          "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.5-105/zhenguojian-1.0.5%2B105-ios-unsigned.ipa",
+          "size": 30628876,
           "minOSVersion": "15.1",
-          "releaseTag": "app-v1.0.4-104",
-          "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.4-104"
+          "releaseTag": "app-v1.0.5-105",
+          "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.5-105"
         }
       ],
-      "version": "1.0.4",
-      "versionDate": "2026-11-06",
-      "versionDescription": "更新内容：\n\n- 真果鉴新增站源「禁果短剧」（jinguoduanju.app 网页版，与同名的「禁果」App 不是同一个产品，剧库不同）：目录、详情、分集和播放走网页同一套接口。可选推荐、热度、站点分类和题材，支持在线搜索和翻页；站点不分页，翻页时复用第一页取回的整份目录，不再每页重新下载。播放权限以站点接口返回为准，目前站点对会员和金币解锁剧集也直接放行；站点拒绝播放时提示需要会员或解锁，不会代为解锁。站点不少剧本身只有 1 集。默认关闭，可在站源管理中打开。\n- 真果鉴新增站源「禁果」（禁果短剧 App，com.hgaidj.ozThree）：与黄果旧版是同一套后台的另一个部署，但剧库不同。可选精选、最新和站点分类，支持在线搜索和翻页；访客会话自动注册并保存，失效后自动重新登录；主线路不可用时自动切换到同一部署的备用线路。付费集（需金币或会员）在分集列表标为 VIP，播放时提示需要解锁，不会代为解锁，也不会播放站点给未解锁分集的广告片花。默认关闭，可在站源管理中打开。\n- 修复青空播放报「暂无可用播放地址」：青空现在要求登录后才能播放。设置 › 站源新增「站源账号」，点进去登录青空账号：输入用户名或邮箱和密码，再拖动滑块完成安全验证即可登录；没有账号可点链接到浏览器注册。登录状态保存在本机，过期前自动续期；未登录或登录失效时，播放页不再报笼统的错误，原来的「重试」换成「去登录」，点击直接弹出登录框，登录成功后自动重新播放。仅管理员可登录和退出。电视上可用遥控器完成验证：按左右方向键移动拼图块，对齐后按确定键。输完用户名按「完成」或回车直接跳到密码框。电视上进入站源账号页时…",
-      "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.4-104/zhenguojian-1.0.4%2B104-ios-unsigned.ipa",
-      "size": 30529027,
+      "version": "1.0.5",
+      "versionDate": "2026-11-07",
+      "versionDescription": "更新内容：\n\n- 真果鉴新增站源「黑桃」（heitaodj.com 黑桃短剧）：「全部」列出全站剧集，另可选站点分类，支持翻页、详情、分集和在线搜索。海报左下角照搬站点角标（如「6集」「完整版」），站点没有角标的剧看过详情后显示「共 N 集」。默认关闭，可在站源管理中打开。\n- 修复真果鉴的「黄豆」站源打不开：站点换了域名，原来写死的主域名 tideember.cc 已经解析不到，唯一写死的备用域名 xqjurgek.top 证书也过期了、证书上的域名还对不上，所以每次换线都必然失败。改用站点当前的可用域名池（ferncider.cc、onyxripple.cc、reeflumen.cc、niniharbor.top、halomeadow.top、larksummit.icu），主线路连不上时按顺序换到下一个，全部换完才报错；换域名属于换目标，不再空等重试间隔，连不上时能更快恢复。站点显示名也从域名改为「黄豆」（#76）。\n- 修复黄豆站点自制剧详情页显示「播放 0」：站点不给这类剧提供播放量，现在播放量为 0 时不再显示，其余站源同样处理。\n- 新增弹幕样式设置：字号改为 60%～200% 连续可调（原来的小、标准、大、特大设置照常生效），另可调颜色、透明度、加粗、描边和阴影，还能选弹幕占画面顶部四分之一、一半或全部，改动立即生效。入口在播放页 ›「播放设置」›「弹幕样式」，以及设置里新增的「弹幕」分组（#74）。\n- 新增弹幕屏蔽词：最多 60 个，单个最长 40 字，匹配时忽略大小写、全角和标点。含屏蔽词的弹幕直接不显示，这一段全被屏蔽时播放页提示「这段弹幕都被屏蔽了」（…",
+      "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.5-105/zhenguojian-1.0.5%2B105-ios-unsigned.ipa",
+      "size": 30628876,
       "minOSVersion": "15.1"
     }
   ],
@@ -1179,7 +1179,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 20 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-11-06",
+      "date": "2026-11-07",
       "tintColor": "#7C5CFF",
       "notify": false
     }

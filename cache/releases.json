@@ -1147,6 +1147,25 @@
   ],
   "Kyosee/VeneraX": [
     {
+      "tag": "v2.3.11",
+      "name": "v2.3.11",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-07",
+      "published_at": "2026-11-07T13:23:52Z",
+      "body": "> **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v2.3.11/release-notes/v2.3.11.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v2.3.11/release-notes/v2.3.11.zh-CN.md)\n\n## What's Changed\n\n### Added\n- The reading settings sidebar now has a search box at the top. Search in your display language or English, then select a result to jump to the setting, including options inside collapsed groups.\n- Long-press the night mode button to adjust its intensity in a compact popup. Changes appear immediately and are saved automatically.\n- Long-press the auto page turning button to choose between turning pages and scrolling. Scrolling is available in continuous reading modes; a short press still starts or stops automatic reading.\n- Linux users can now download AppImage packages for x86_64 and ARM64, alongside the existing installation packages.\n\n### Changed\n- Settings sliders and the reading progress bar now use rounded handles and gradient tracks that follow the app's theme color.\n\n### Fixed\n- Fixed the reading progress slider occasionally jumping to the page before the one selected.\n- Fixed chapter comments not appearing at the end of chapters in continuous reading modes when Show Chapter Comments is enabled.\n\n### Removed\n- No features were removed in this release.\n\n**Full Changelog**: https://github.com/Kyosee/VeneraX/compare/v2.3.10...v2.3.11\n",
+      "ipas": [
+        {
+          "name": "VeneraX-ios-2.3.11+254.ipa",
+          "size": 39064421,
+          "url": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.11/VeneraX-ios-2.3.11%2B254.ipa",
+          "id": 720777034,
+          "updated_at": "2026-11-07T13:23:46Z",
+          "digest": "sha256:8e49ce1320dcdf60f1fbad131a0d83e19eb65660766ad286a2dc458ed00b1942"
+        }
+      ]
+    },
+    {
       "tag": "v2.3.10",
       "name": "v2.3.10",
       "pre": false,
@@ -1504,25 +1523,6 @@
           "id": 517764972,
           "updated_at": "2026-08-17T07:14:35Z",
           "digest": "sha256:b6c8f167ff0e704f1febbd51c8bcd67f81e028673fe4ef33b2ac673ce2602421"
-        }
-      ]
-    },
-    {
-      "tag": "v2.2.4",
-      "name": "v2.2.4",
-      "pre": false,
-      "draft": false,
-      "date": "2026-08-16",
-      "published_at": "2026-08-16T02:57:28Z",
-      "body": "> **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v2.2.4/release-notes/v2.2.4.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v2.2.4/release-notes/v2.2.4.zh-CN.md)\n\n## What's Changed\n\n### Fixed\n- Fixed queued download tasks showing an empty cover box; every item in the queue now shows its cover while it waits\n- Fixed downloading a collection failing when the cover came from a comic already saved on the device\n- Fixed black flashes and the page jumping to the wrong position when tapping quickly to turn pages in continuous reading mode\n- Fixed pages near the start or end of a chapter not being ready in time in continuous reading mode\n\n**Full Changelog**: https://github.com/Kyosee/VeneraX/compare/v2.2.3...v2.2.4\n",
-      "ipas": [
-        {
-          "name": "VeneraX-ios-2.2.4+233.ipa",
-          "size": 35096319,
-          "url": "https://github.com/Kyosee/VeneraX/releases/download/v2.2.4/VeneraX-ios-2.2.4%2B233.ipa",
-          "id": 516354153,
-          "updated_at": "2026-08-16T02:57:21Z",
-          "digest": "sha256:0a09984f5340bedef5e8e1a11c7000a8e273732d57a8423778c497680be009e0"
         }
       ]
     }
@@ -4184,6 +4184,25 @@
   ],
   "ARMSX2/ARMSX2": [
     {
+      "tag": "nightly-20261107",
+      "name": "ARMSX2 nightly 20261107 (acfe231f4a)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-11-07",
+      "published_at": "2026-11-07T15:31:52Z",
+      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- EE arm64: stop with a post-mortem when ERET returns to an unaligned address\n- GS/HW: count colour-wrap counter draws in the stencil buffer\n- IOP arm64: log the post-mortem when the recompiler stops on its own error\n- EE arm64: log the post-mortem when the recompiler stops on its own error\n- arm64: a post-mortem for the errors the recompilers detect themselves\n- tests: JR and JALR jump to rs as it was before the delay slot\n- IOP arm64: report an unaligned pc at slice entry instead of dispatching it\n- EE arm64: report an unaligned pc at entry instead of dispatching it\n- EE arm64: leave generated code from recError\n- arm64: name the unmapped-page error as the x86 recompilers do\n- tests: StubHost keeps the errors the code under test reports\n- Android: impo",
+      "ipas": [
+        {
+          "name": "ARMSX2-nightly-20261107-acfe231f4a-iOS-arm64.ipa",
+          "size": 40589664,
+          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261107/ARMSX2-nightly-20261107-acfe231f4a-iOS-arm64.ipa",
+          "id": 721091078,
+          "updated_at": "2026-11-07T15:31:57Z",
+          "digest": "sha256:fcdde28bed9b3cc53ae276fd705d7ddd9ed4fa6fefde50868aaba97efbfff609"
+        }
+      ]
+    },
+    {
       "tag": "2.9.2",
       "name": "ARMSX2 2.9.2 ",
       "pre": false,
@@ -4315,25 +4334,6 @@
           "id": 669324119,
           "updated_at": "2026-10-23T14:10:16Z",
           "digest": "sha256:d69c486e567970e22049a4212c436aca5f948a5dca3c74d52edcce10428063ac"
-        }
-      ]
-    },
-    {
-      "tag": "nightly-20261022",
-      "name": "ARMSX2 nightly 20261022 (b276f045c6)",
-      "pre": true,
-      "draft": false,
-      "date": "2026-10-22",
-      "published_at": "2026-10-22T14:35:03Z",
-      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- GS: keep the Adreno 722's barriers under a generation-2 Turnip\n- GS: put the Adreno 722 on the a7xx declared-loop rules under Turnip\n- GS: list the Adreno 722 in the model table\n- GameDB: IOP thread recommended for Shadow of the Colossus, God of War and God of War II\n- AutoTune: off by default\n\nFull changelog: https://github.com/ARMSX2/ARMSX2/compare/nightly-20261021...b276f045c6b8bd3e05637db4585a7eb6ee5c51f9",
-      "ipas": [
-        {
-          "name": "ARMSX2-nightly-20261022-b276f045c6-iOS-arm64.ipa",
-          "size": 40373291,
-          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261022/ARMSX2-nightly-20261022-b276f045c6-iOS-arm64.ipa",
-          "id": 666125606,
-          "updated_at": "2026-10-22T14:35:08Z",
-          "digest": "sha256:c0cfd12557a1e4251745db4945ec343958365af0a6bff424f87b516e4db265e3"
         }
       ]
     },
@@ -5665,6 +5665,33 @@
     }
   ],
   "Xanerix/guoapp": [
+    {
+      "tag": "app-v1.0.5-105",
+      "name": "红果鉴 / 真果鉴 1.0.5+105",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-07",
+      "published_at": "2026-11-07T11:55:12Z",
+      "body": "更新内容：\n\n- 真果鉴新增站源「黑桃」（heitaodj.com 黑桃短剧）：「全部」列出全站剧集，另可选站点分类，支持翻页、详情、分集和在线搜索。海报左下角照搬站点角标（如「6集」「完整版」），站点没有角标的剧看过详情后显示「共 N 集」。默认关闭，可在站源管理中打开。\n- 修复真果鉴的「黄豆」站源打不开：站点换了域名，原来写死的主域名 tideember.cc 已经解析不到，唯一写死的备用域名 xqjurgek.top 证书也过期了、证书上的域名还对不上，所以每次换线都必然失败。改用站点当前的可用域名池（ferncider.cc、onyxripple.cc、reeflumen.cc、niniharbor.top、halomeadow.top、larksummit.icu），主线路连不上时按顺序换到下一个，全部换完才报错；换域名属于换目标，不再空等重试间隔，连不上时能更快恢复。站点显示名也从域名改为「黄豆」（#76）。\n- 修复黄豆站点自制剧详情页显示「播放 0」：站点不给这类剧提供播放量，现在播放量为 0 时不再显示，其余站源同样处理。\n- 新增弹幕样式设置：字号改为 60%～200% 连续可调（原来的小、标准、大、特大设置照常生效），另可调颜色、透明度、加粗、描边和阴影，还能选弹幕占画面顶部四分之一、一半或全部，改动立即生效。入口在播放页 ›「播放设置」›「弹幕样式」，以及设置里新增的「弹幕」分组（#74）。\n- 新增弹幕屏蔽词：最多 60 个，单个最长 40 字，匹配时忽略大小写、全角和标点。含屏蔽词的弹幕直接不显示，这一段全被屏蔽时播放页提示「这段弹幕都被屏蔽了」（#74）。\n- 修复平板横屏、桌面播放时自动连播下一集，底部进度条和右下角暂停图标会一闪而过（#77）：播控已经隐藏时，换集不再把它们显示出来。\n- 修复 Windows 上系统开启「使用设置脚本」（PAC 自动代理）时 App 无法联网：原来一律报「系统使用自动代理脚本」，现在网络设置为自动时会执行 PAC 脚本，按地址选择代理或直连；脚本取不到时退回系统静态代理或直连。网络设置里的系统代理状态显示「已读取系统自动代理脚本」。\n\n版本 1.0.5+105。两个版本功能相同，区别只在站源范围，按需选择：\n\n- 红果鉴 hongguojian：仅红果站源\n- 真果鉴 zhenguojian：全部站源\n\nAndroid：\n- *-arm64-v8a.apk：适用于较新的安卓设备\n- *-armeabi-v7a.apk：适用于较老的安卓设备，电视推荐使用此版本\n- *-x86_64.apk：适用于模拟器\n\niOS：\n- *-ios-unsigned.ipa：未签名 IPA，可用相关工具安装\n\nWindows：\n- *-windows-x64.zip：解压后运行 hongguojian.exe 或 zhenguojian.exe\n\nmacOS：\n- *-macos-universal.dmg：适用于 macOS 12 及以上的 Apple 芯片和 Intel 电脑，打开后拖入 Applications；未经公证，首次打开前在终端执行 xattr -dr com.apple.quarantine /Applications/红果鉴.app（真果鉴为 真果鉴.app）\n\n签名证书 SHA-256：f819175143d1bff5b06c9bfdb4c2f6001ae73077cc8e35ce2adb43bd3f9aed92\n",
+      "ipas": [
+        {
+          "name": "hongguojian-1.0.5+105-ios-unsigned.ipa",
+          "size": 30619401,
+          "url": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.5-105/hongguojian-1.0.5%2B105-ios-unsigned.ipa",
+          "id": 720571165,
+          "updated_at": "2026-11-07T11:55:04Z",
+          "digest": "sha256:15e1847131db4db3381e2b621a1747b32824f425c1febea3a83268b1154af81f"
+        },
+        {
+          "name": "zhenguojian-1.0.5+105-ios-unsigned.ipa",
+          "size": 30628876,
+          "url": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.5-105/zhenguojian-1.0.5%2B105-ios-unsigned.ipa",
+          "id": 720571355,
+          "updated_at": "2026-11-07T11:55:08Z",
+          "digest": "sha256:3acd1b4ac1a89b7db7835f836195f9baa94c280a438d490c91e46e338639d5d8"
+        }
+      ]
+    },
     {
       "tag": "app-v1.0.4-104",
       "name": "红果鉴 / 真果鉴 1.0.4+104",

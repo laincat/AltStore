@@ -1714,5 +1714,47 @@
       "size": 40577893,
       "digest": "sha256:d1d7c48a42b50e682c2fae8eba048f4f0b7cd52288b1256fa63b6ca1c8300557"
     }
+  },
+  "https://github.com/Kyosee/VeneraX/releases/download/v2.3.11/VeneraX-ios-2.3.11%2B254.ipa": {
+    "bundleIdentifier": "io.github.kyosee.venera",
+    "version": "2.3.11",
+    "buildVersion": "254",
+    "displayName": "VeneraX",
+    "minOSVersion": "15.1",
+    "size": 39064421,
+    "assetIdentity": {
+      "id": 720777034,
+      "updated_at": "2026-11-07T13:23:46Z",
+      "size": 39064421,
+      "digest": "sha256:8e49ce1320dcdf60f1fbad131a0d83e19eb65660766ad286a2dc458ed00b1942"
+    }
+  },
+  "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.5-105/zhenguojian-1.0.5%2B105-ios-unsigned.ipa": {
+    "bundleIdentifier": "com.guoapp.all",
+    "version": "1.0.5",
+    "buildVersion": "105",
+    "displayName": "ZhenGuoJian",
+    "minOSVersion": "15.1",
+    "size": 30628876,
+    "assetIdentity": {
+      "id": 720571355,
+      "updated_at": "2026-11-07T11:55:08Z",
+      "size": 30628876,
+      "digest": "sha256:3acd1b4ac1a89b7db7835f836195f9baa94c280a438d490c91e46e338639d5d8"
+    }
+  },
+  "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261107/ARMSX2-nightly-20261107-acfe231f4a-iOS-arm64.ipa": {
+    "bundleIdentifier": "com.armsx2.ios.nightly",
+    "version": "2.6.0-nightly.20261107.1455",
+    "buildVersion": "260",
+    "displayName": "ARMSX2 Nightly",
+    "minOSVersion": "17.4",
+    "size": 40589664,
+    "assetIdentity": {
+      "id": 721091078,
+      "updated_at": "2026-11-07T15:31:57Z",
+      "size": 40589664,
+      "digest": "sha256:fcdde28bed9b3cc53ae276fd705d7ddd9ed4fa6fefde50868aaba97efbfff609"
+    }
   }
 }
