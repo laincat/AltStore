@@ -2684,6 +2684,25 @@
   ],
   "CyrilPeng/Venera-Next": [
     {
+      "tag": "v1.18.3-rc.3",
+      "name": "v1.18.3-rc.3",
+      "pre": true,
+      "draft": false,
+      "date": "2026-11-07",
+      "published_at": "2026-11-07T16:23:02Z",
+      "body": "### 候选版与升级\n\n- 发布第三个 `1.18.3-rc.3+248` 候选版，集中交付收藏操作、目录导航、归档兼容与依赖解耦后的构建。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 与鸿蒙均从同一标签提交重新构建。原 RC1／RC2 均已构建但未公开 Release，标签和 Actions 记录保留不移动。\n- 稳定渠道仍为 `v1.18.2`；请从本候选版 Release 手动下载，不更新 AltStore 稳定源或 Winget。iOS IPA 与鸿蒙 HAP 仍需自行签名侧载。\n- 升级前导出并另存完整应用数据备份，保留原漫画文件。共享 WebDAV 数据的设备统一使用兼容版本；回退使用升级前的备份，不让旧版覆盖新版收藏库。覆盖升级保留原数据，无需清库或重新导入。\n\n### 鸿蒙随版分发\n\n- 自本候选版起，每次候选版与正式版发布均提供同版本的鸿蒙 ARM64 未签名测试版 HAP、`harmonyos-manifest.json`、`harmonyos-SHA256SUMS` 和中英文安装指南。应用源码与平台适配统一在 `main`，普通平台使用官方 Flutter 和根锁，鸿蒙使用独立固定 Flutter OH SDK、CPF 覆盖与受控锁模板。\n- 鸿蒙应用为 `VeneraNext (HarmonyOS Beta)`，包名为 `com.github.cyrilpeng.veneranext.harmony`，最低／目标 SDK 为 API 26。系统安装器显示 `1.18.3`，应用内保留完整 RC 后缀；构建号为 248。升级须沿用原签名身份／密钥，同一助手或账号不保证同一把密钥。\n- 完整构建强制等待鸿蒙成功；标签元数据阶段检查分发开关，HAP、来源、版本、原生库、资源和全部五项附件须通过本地资产、GitHub 草稿及公开资产核验，缺包或摘要不一致时阻止整次发布。\n- 发布源码、鸿蒙源码、生成说明和待上传资产使用隔离的兄弟目录，避免正常构建产物被严格源码检查误判为未跟踪输入；源码清洁、版本与摘要门禁继续执行。\n- 草稿校验通过完整分页的发布列表定位唯一同标签草稿，再按发布 ID 读取实际附件，修复 GitHub 仅查询已公开版本的标签接口返回 404 时无法发版的问题；公开后仍按标签复核。创建 Release 时显式绑定准确源码提交，草稿标识、版本、文件大小和摘要检查均参与发布门禁。\n- 鸿蒙本地导入支持系统提供的目录选择、多选归档，以及带一层可选外部总目录的「漫画合集 ZIP」；结构有多本漫画／单本多章节歧义时由用户确认，取消不入库。目录仅复制导入，PDF 导入、系统分享及生物认证等限制见安装指南。\n- 未签名测试版分发授权与真机验收分别记录，manifest 保留 `signed: false` 和 `runtime_verified: false`。需用户自行签装；本轮构建审核不代表新包的设备阅读、覆盖升级或签名续期已验收。\n\n### 修复与改进\n\n- 修复 Android 收藏侧栏关闭新建弹窗后不能连续新建的问题；支持收藏夹仅修改名称大小写，保留目录标识、层级、内容、网络关联和追更设置，失败完整回滚。新建与导入按 SQLite 的 ASCII 大小写规则识别重名，自动命名避开占用名称（#143）。\n- 收藏子目录返回时先关闭弹窗、退出搜索或多选，再进入真实父目录；保存目录选择期间的返回正常处理。工具栏父目录路径可以点击跳转，窄屏提供上一级按钮，大字体保留完整名称提示；名称中的 `/` 不作为层级数据。保持两级限制及现有备份／同步格式（#123，PR #144）。\n- 修复导航容器重建时替换封面转场控制器的问题，控制器与嵌套导航器共用生命周期，取消返回手势及移除导航器时清理悬浮层。这是已确认的生命周期路径修复，原 Android 偶发封面悬浮仍需新版复测（#129）。\n- 新导入同时避开本地库和各收藏夹已占用的同类型漫画 ID，未选收藏夹的导入也不会误关联残留收藏。保留旧记录、原文件与双库原子提交；存储不可读时拒绝冒险复用 ID。\n- 适配 `archive 4.6.0`，应用备份与 CBZ 的 Dart 解压显式校验 CRC、解压大小和目录完整性。损坏或截断的备份在替换活动数据前失败，保留原收藏、设置及正常重试能力。\n- 从 ZIP 原始文件名字节识别未标记的 UTF-8 和 GBK 中文名称，保留标准 UTF-8、有效 Unicode Path 扩展和 CP437 回退；合法 Unicode 名称不再被二次猜测编码，仍执行原有路径安全校验。\n- 官方滚动列表首次尚未通知页码边界时，像素滚动代理立即绑定唯一活动列表，修复早期读取滚动偏移没有客户端的",
+      "ipas": [
+        {
+          "name": "VeneraNext-ios-1.18.3-rc.3+248.ipa",
+          "size": 21467075,
+          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.3-rc.3/VeneraNext-ios-1.18.3-rc.3%2B248.ipa",
+          "id": 721225296,
+          "updated_at": "2026-11-07T16:22:06Z",
+          "digest": "sha256:727759d5469813bb7c55ee5b14d035b1490c0b53b5d7666b8581bdf765886fb4"
+        }
+      ]
+    },
+    {
       "tag": "v1.18.2",
       "name": "v1.18.2",
       "pre": false,
@@ -3041,25 +3060,6 @@
           "id": 503820304,
           "updated_at": "2026-08-06T10:47:07Z",
           "digest": "sha256:439d2bb67cb38b1d503412be2b8ce20e4a23e532ee79b8df1ec87853445ccb81"
-        }
-      ]
-    },
-    {
-      "tag": "v1.14.0-rc.1",
-      "name": "v1.14.0-rc.1",
-      "pre": true,
-      "draft": false,
-      "date": "2026-08-06",
-      "published_at": "2026-08-06T06:52:18Z",
-      "body": "### 新增\n\n- 新增阅读时长记录与统计：阅读器按前台有效阅读时间累计每部漫画时长，历史页可查看总时长、记录漫画数、阅读最久漫画和时长排行。\n- 本地漫画支持导入 PDF 和图片型 EPUB；导入后统一转换为现有本地图片漫画，PDF 逐页渲染并限制输出尺寸，EPUB 按 spine 顺序读取并保留有效元数据和章节导航。\n\n### 修复\n\n- 修复 EPUB 导出的图片 manifest 路径缺少扩展名分隔点，以及标题、作者或章节名含 XML 特殊字符时可能生成无效文件的问题。\n- 修复在线漫画下载完成后，AVIF 页面会被本地阅读列表过滤而表现为缺页的问题；未知或非图片响应现在会进入重试和错误流程，不再计为下载成功。\n- 修复桌面端鼠标悬停标题栏 logo 时，logo 消失并显示 `No Overlay widget found.` 的问题。\n",
-      "ipas": [
-        {
-          "name": "VeneraNext-ios-1.14.0-rc.1+217.ipa",
-          "size": 19248930,
-          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.14.0-rc.1/VeneraNext-ios-1.14.0-rc.1%2B217.ipa",
-          "id": 503592916,
-          "updated_at": "2026-08-06T06:52:15Z",
-          "digest": "sha256:5cb141279b6215aded747dd1c925e4b4f82c4ae7ae38d3be28e82ad133195625"
         }
       ]
     }
@@ -6137,6 +6137,25 @@
   ],
   "laincat/Nekularity": [
     {
+      "tag": "v0.4.3",
+      "name": "v0.4.3",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-07",
+      "published_at": "2026-11-07T17:08:26Z",
+      "body": "**Full Changelog**: https://github.com/laincat/Nekularity/compare/v0.4.2...v0.4.3",
+      "ipas": [
+        {
+          "name": "Nekularity.ipa",
+          "size": 29942512,
+          "url": "https://github.com/laincat/Nekularity/releases/download/v0.4.3/Nekularity.ipa",
+          "id": 721348296,
+          "updated_at": "2026-11-07T17:08:26Z",
+          "digest": "sha256:cc64a26d97945871ee6fc74ccecf4f5fe50d4c38b18018ce00690960c83dda2c"
+        }
+      ]
+    },
+    {
       "tag": "v0.4.2",
       "name": "v0.4.2",
       "pre": false,
@@ -6496,25 +6515,6 @@
           "digest": "sha256:98f581545377d7d39b3e5b1a8b1c18f8ffffd5a55034437f3881fe35c69cee62"
         }
       ]
-    },
-    {
-      "tag": "v0.2.3",
-      "name": "v0.2.3",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-01",
-      "published_at": "2026-11-01T21:33:04Z",
-      "body": "**Full Changelog**: https://github.com/laincat/Nekularity/compare/v0.2.2...v0.2.3",
-      "ipas": [
-        {
-          "name": "Nekularity.ipa",
-          "size": 19231771,
-          "url": "https://github.com/laincat/Nekularity/releases/download/v0.2.3/Nekularity.ipa",
-          "id": 699584975,
-          "updated_at": "2026-11-01T21:33:03Z",
-          "digest": "sha256:7e3934ab6ef6f89baa988ed554514395eec1aded3bbdc072cbfa002862424102"
-        }
-      ]
     }
   ],
   "ccbkv/PicaComic": [
@@ -6525,7 +6525,7 @@
       "draft": false,
       "date": "2026-11-05",
       "published_at": "2026-11-05T18:54:45Z",
-      "body": "# 5.0.5 (2026-11-05)\r\n**更新说明**\r\n- 增加ai图片翻译,在设置开启后在漫画阅读器对具体漫画开启\r\n- 优化app无响应\r\n- 绅士漫画几天前就修复了登陆\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/5.0.5...5.0.6",
+      "body": "# 5.0.6 (2026-11-05)\r\n**更新说明**\r\n- 增加ai图片翻译,在设置开启后在漫画阅读器对具体漫画开启\r\n- 优化app无响应\r\n- 绅士漫画几天前就修复了登陆\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/5.0.5...5.0.6",
       "ipas": [
         {
           "name": "PicaComic-5.0.6-app-ios-build_no_sign.ipa",

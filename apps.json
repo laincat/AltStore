@@ -680,7 +680,7 @@
       "developerName": "laincat",
       "subtitle": "漫画阅读与源管理",
       "localizedDescription": "基于 VeneraCat Core 的 iOS 漫画阅读客户端，支持漫画源、书架与阅读进度。未签名构建，需要使用侧载工具签名安装。\n\n项目主页：https://github.com/laincat/Nekularity",
-      "iconURL": "https://raw.githubusercontent.com/laincat/Nekularity/v0.4.2/App/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "iconURL": "https://raw.githubusercontent.com/laincat/Nekularity/v0.4.3/App/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
       "tintColor": "#6D5DF6",
       "category": "entertainment",
       "appPermissions": {
@@ -692,41 +692,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "0.4.2",
-              "date": "2026-11-05",
-              "publishedAt": "2026-11-05T22:22:45Z",
-              "buildVersion": "24",
-              "buildNumber": "24",
-              "localizedDescription": "简体中文\n\n- 修 0.4.1 运行面板的缺陷：参数校验误把默认的 null 判成非法，导致「什么都不填」时发不出去\n- 校验抽成 Kit 里的 ServicePayload 并允许 JSON 片段：null、42、true、\"text\" 都是合法参数\n- 新增 3 条 Kit 用例钉住「空 → null」「非 JSON 拦下」「标量 JSON 合法」\n\n---\nEnglish\n\n- Fixes 0.4.1's run sheet: validation wrongly rejected the default null, so an empty payload could not be sent at all\n- The check moved into Kit as ServicePayload and now allows JSON fragments, so null, 42, true and \"text\" are valid payloads\n- Three Kit cases pin \"empty means null\", \"non-JSON is stopped\" and \"scalar JSON is valid\"",
-              "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.4.2/Nekularity.ipa",
-              "size": 29751122,
+              "version": "0.4.3",
+              "date": "2026-11-07",
+              "publishedAt": "2026-11-07T17:08:26Z",
+              "buildVersion": "25",
+              "buildNumber": "25",
+              "localizedDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.4.2...v0.4.3",
+              "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.4.3/Nekularity.ipa",
+              "size": 29942512,
               "minOSVersion": "26.0",
-              "releaseTag": "v0.4.2",
-              "source": "https://github.com/laincat/Nekularity/releases/tag/v0.4.2"
+              "releaseTag": "v0.4.3",
+              "source": "https://github.com/laincat/Nekularity/releases/tag/v0.4.3"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "0.4.2",
-          "date": "2026-11-05",
-          "publishedAt": "2026-11-05T22:22:45Z",
-          "buildVersion": "24",
-          "buildNumber": "24",
-          "localizedDescription": "简体中文\n\n- 修 0.4.1 运行面板的缺陷：参数校验误把默认的 null 判成非法，导致「什么都不填」时发不出去\n- 校验抽成 Kit 里的 ServicePayload 并允许 JSON 片段：null、42、true、\"text\" 都是合法参数\n- 新增 3 条 Kit 用例钉住「空 → null」「非 JSON 拦下」「标量 JSON 合法」\n\n---\nEnglish\n\n- Fixes 0.4.1's run sheet: validation wrongly rejected the default null, so an empty payload could not be sent at all\n- The check moved into Kit as ServicePayload and now allows JSON fragments, so null, 42, true and \"text\" are valid payloads\n- Three Kit cases pin \"empty means null\", \"non-JSON is stopped\" and \"scalar JSON is valid\"",
-          "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.4.2/Nekularity.ipa",
-          "size": 29751122,
+          "version": "0.4.3",
+          "date": "2026-11-07",
+          "publishedAt": "2026-11-07T17:08:26Z",
+          "buildVersion": "25",
+          "buildNumber": "25",
+          "localizedDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.4.2...v0.4.3",
+          "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.4.3/Nekularity.ipa",
+          "size": 29942512,
           "minOSVersion": "26.0",
-          "releaseTag": "v0.4.2",
-          "source": "https://github.com/laincat/Nekularity/releases/tag/v0.4.2"
+          "releaseTag": "v0.4.3",
+          "source": "https://github.com/laincat/Nekularity/releases/tag/v0.4.3"
         }
       ],
-      "version": "0.4.2",
-      "versionDate": "2026-11-05",
-      "versionDescription": "简体中文\n\n- 修 0.4.1 运行面板的缺陷：参数校验误把默认的 null 判成非法，导致「什么都不填」时发不出去\n- 校验抽成 Kit 里的 ServicePayload 并允许 JSON 片段：null、42、true、\"text\" 都是合法参数\n- 新增 3 条 Kit 用例钉住「空 → null」「非 JSON 拦下」「标量 JSON 合法」\n\n---\nEnglish\n\n- Fixes 0.4.1's run sheet: validation wrongly rejected the default null, so an empty payload could not be sent at all\n- The check moved into Kit as ServicePayload and now allows JSON fragments, so null, 42, true and \"text\" are valid payloads\n- Three Kit cases pin \"empty means null\", \"non-JSON is stopped\" and \"scalar JSON is valid\"",
-      "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.4.2/Nekularity.ipa",
-      "size": 29751122,
+      "version": "0.4.3",
+      "versionDate": "2026-11-07",
+      "versionDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.4.2...v0.4.3",
+      "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.4.3/Nekularity.ipa",
+      "size": 29942512,
       "minOSVersion": "26.0"
     },
     {
@@ -752,7 +752,7 @@
               "publishedAt": "2026-11-05T18:54:45Z",
               "buildVersion": "46202",
               "buildNumber": "46202",
-              "localizedDescription": "5.0.5 (2026-11-05)\r\n更新说明\r\n- 增加ai图片翻译,在设置开启后在漫画阅读器对具体漫画开启\r\n- 优化app无响应\r\n- 绅士漫画几天前就修复了登陆\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n安装&更新\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\nFull Changelog: https://github.com/ccbkv/PicaComic/compare/5.0.5...5.0.6",
+              "localizedDescription": "5.0.6 (2026-11-05)\r\n更新说明\r\n- 增加ai图片翻译,在设置开启后在漫画阅读器对具体漫画开启\r\n- 优化app无响应\r\n- 绅士漫画几天前就修复了登陆\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n安装&更新\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\nFull Changelog: https://github.com/ccbkv/PicaComic/compare/5.0.5...5.0.6",
               "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.0.6/PicaComic-5.0.6-app-ios-build_no_sign.ipa",
               "size": 31826074,
               "minOSVersion": "15.1",
@@ -769,7 +769,7 @@
           "publishedAt": "2026-11-05T18:54:45Z",
           "buildVersion": "46202",
           "buildNumber": "46202",
-          "localizedDescription": "5.0.5 (2026-11-05)\r\n更新说明\r\n- 增加ai图片翻译,在设置开启后在漫画阅读器对具体漫画开启\r\n- 优化app无响应\r\n- 绅士漫画几天前就修复了登陆\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n安装&更新\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\nFull Changelog: https://github.com/ccbkv/PicaComic/compare/5.0.5...5.0.6",
+          "localizedDescription": "5.0.6 (2026-11-05)\r\n更新说明\r\n- 增加ai图片翻译,在设置开启后在漫画阅读器对具体漫画开启\r\n- 优化app无响应\r\n- 绅士漫画几天前就修复了登陆\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n安装&更新\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\nFull Changelog: https://github.com/ccbkv/PicaComic/compare/5.0.5...5.0.6",
           "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.0.6/PicaComic-5.0.6-app-ios-build_no_sign.ipa",
           "size": 31826074,
           "minOSVersion": "15.1",
@@ -779,7 +779,7 @@
       ],
       "version": "5.0.6",
       "versionDate": "2026-11-05",
-      "versionDescription": "5.0.5 (2026-11-05)\r\n更新说明\r\n- 增加ai图片翻译,在设置开启后在漫画阅读器对具体漫画开启\r\n- 优化app无响应\r\n- 绅士漫画几天前就修复了登陆\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n安装&更新\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\nFull Changelog: https://github.com/ccbkv/PicaComic/compare/5.0.5...5.0.6",
+      "versionDescription": "5.0.6 (2026-11-05)\r\n更新说明\r\n- 增加ai图片翻译,在设置开启后在漫画阅读器对具体漫画开启\r\n- 优化app无响应\r\n- 绅士漫画几天前就修复了登陆\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n安装&更新\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\nFull Changelog: https://github.com/ccbkv/PicaComic/compare/5.0.5...5.0.6",
       "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.0.6/PicaComic-5.0.6-app-ios-build_no_sign.ipa",
       "size": 31826074,
       "minOSVersion": "15.1"
