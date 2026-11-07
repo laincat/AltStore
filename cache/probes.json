@@ -1770,5 +1770,33 @@
       "size": 29942512,
       "digest": "sha256:cc64a26d97945871ee6fc74ccecf4f5fe50d4c38b18018ce00690960c83dda2c"
     }
+  },
+  "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.3/VeneraNext-ios-1.18.3%2B249.ipa": {
+    "bundleIdentifier": "com.github.cyrilpeng.veneranext",
+    "version": "1.18.3",
+    "buildVersion": "249",
+    "displayName": "VeneraNext",
+    "minOSVersion": "14.0",
+    "size": 21467556,
+    "assetIdentity": {
+      "id": 721511240,
+      "updated_at": "2026-11-07T18:10:04Z",
+      "size": 21467556,
+      "digest": "sha256:50a4bd7f2adda3936f9e5e3d26922c98cb8122e5bcbe1c746fb9bb45b571e091"
+    }
+  },
+  "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.6-106/zhenguojian-1.0.6%2B106-ios-unsigned.ipa": {
+    "bundleIdentifier": "com.yingshib.xg",
+    "version": "1.0.6",
+    "buildVersion": "106",
+    "displayName": "XiaoGuoYingShi",
+    "minOSVersion": "15.1",
+    "size": 30633845,
+    "assetIdentity": {
+      "id": 721436699,
+      "updated_at": "2026-11-07T17:42:09Z",
+      "size": 30633845,
+      "digest": "sha256:dba32a9ee6a7f97b2c384ca710ccb22f2e2f96184d92b3d8dc331d3a097be834"
+    }
   }
 }

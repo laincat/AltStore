@@ -955,7 +955,7 @@
       "developerName": "CyrilPeng",
       "subtitle": "支持 WebDAV 同步的漫画阅读器",
       "localizedDescription": "Venera 的 fork 分支，基于 Flutter 的跨平台漫画阅读器，支持本地漫画与网络漫画源，覆盖 iOS / Android / Windows / Linux / macOS。核心思路是尽量减少打断阅读：长篇作品可用瀑布流跨章节连续阅读，支持收藏、追更、离线下载，并能通过 WebDAV 在多台设备之间同步数据。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/CyrilPeng/Venera-Next",
-      "iconURL": "https://raw.githubusercontent.com/CyrilPeng/Venera-Next/v1.18.2/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
+      "iconURL": "https://raw.githubusercontent.com/CyrilPeng/Venera-Next/v1.18.3/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
       "tintColor": "#2090E0",
       "category": "books",
       "appPermissions": {
@@ -967,41 +967,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "1.18.2",
-              "date": "2026-11-01",
-              "publishedAt": "2026-11-01T03:37:14Z",
-              "buildVersion": "243",
-              "buildNumber": "243",
-              "localizedDescription": "升级提示\n\n- 发布正式版 1.18.2+243，包含本轮 RC 的阅读器、下载和归档改进，以及两级收藏目录、Android TV、图片处理优化和 Windows 网页代理修复。\n- 升级前请导出并另存应用数据备份，保留原漫画文件。 首次启动会迁移旧收藏库，即使不使用子目录也会执行；迁移前自动保留独立数据库快照，旧收藏夹作为一级目录保留。不需要清库、卸载或重新导入漫画。\n- 使用 WebDAV 同步的设备请统一升级，不要让新旧版本交替写入同一份收藏／同步数据。回退使用升级前的备份，不保证旧版能读取新版数据；单夹 JSON 仅包含该目录直接收藏，完整层级请使用应用数据备份。\n- Android 手机与 TV 分别提供通用、ARM64、ARM32 和 x86_64 安装包；TV 可与手机版共存，数据独立，官方 TV Alpha 可保留数据覆盖升级。iOS IPA 仍需自行签名侧载，Winget 新版本需等待公共源审核。\n新增\n\n- 两级本地收藏目录（#123）：支持父子目录、展开／折叠、路径搜索、目录移动和同级排序；收藏、批量转移、快捷收藏及追更共用可搜索的目录选择器。父目录与子目录分别保存直接收藏，「全部」按漫画身份去重；目录移动不搬动漫画，目录名称保持全局唯一，不支持三级嵌套。\n- 完整应用备份和 WebDAV 快照保留收藏层级、稳定标识、顺序、网络关联及追更设置；恢复先在暂存副本校验，拒绝损坏或未知版本再替换活动数据库。旧格式单夹 JSON 仍可导入为一级目录。\n- Android TV（#120）：独立电视入口、固定横屏、遥控器导航和可见焦点。阅读时方向键翻页／滚动，确定打…",
-              "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.2/VeneraNext-ios-1.18.2%2B243.ipa",
-              "size": 21307925,
+              "version": "1.18.3",
+              "date": "2026-11-07",
+              "publishedAt": "2026-11-07T18:10:18Z",
+              "buildVersion": "249",
+              "buildNumber": "249",
+              "localizedDescription": "正式版与升级\n\n- 发布正式版 1.18.3+249，集中交付收藏操作、目录导航、归档兼容和依赖解耦后的构建，运行时代码沿用已验收的 RC3。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 与鸿蒙从同一正式版提交重新构建；保留历史标签，不复用或重命名候选安装包。\n- 稳定更新渠道推进至本版；AltStore 与 Winget 元数据依据实际公开安装包更新，Winget 公共源收录需等待 Microsoft 审核。iOS IPA 与鸿蒙 HAP 仍需自行签名侧载。\n- 升级前导出并另存完整应用数据备份，保留原漫画文件。共享 WebDAV 数据的设备统一使用兼容版本；回退使用升级前的备份，不让旧版覆盖新版收藏库。覆盖升级保留原数据，无需清库或重新导入。\n鸿蒙随版分发\n\n- 正式版继续包含同版本的鸿蒙 ARM64 未签名测试版 HAP、harmonyos-manifest.json、harmonyos-SHA256SUMS 和中英文安装指南。应用源码与平台适配统一在 main；普通平台使用官方 Flutter 和根锁，鸿蒙使用独立固定 Flutter OH SDK、CPF 覆盖与受控锁模板。\n- 鸿蒙应用为 VeneraNext (HarmonyOS Beta)，包名为 com.github.cyrilpeng.veneranext.harmony，最低／目标 SDK 为 API 26，版本为 1.18.3，构建号为 249。升级须沿用原签名身份／密钥，同一助手或账号不保证同一把密钥。\n- 鸿蒙本地导入支持系统提供的目录选择、多选归档，…",
+              "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.3/VeneraNext-ios-1.18.3%2B249.ipa",
+              "size": 21467556,
               "minOSVersion": "14.0",
-              "releaseTag": "v1.18.2",
-              "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.18.2"
+              "releaseTag": "v1.18.3",
+              "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.18.3"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "1.18.2",
-          "date": "2026-11-01",
-          "publishedAt": "2026-11-01T03:37:14Z",
-          "buildVersion": "243",
-          "buildNumber": "243",
-          "localizedDescription": "升级提示\n\n- 发布正式版 1.18.2+243，包含本轮 RC 的阅读器、下载和归档改进，以及两级收藏目录、Android TV、图片处理优化和 Windows 网页代理修复。\n- 升级前请导出并另存应用数据备份，保留原漫画文件。 首次启动会迁移旧收藏库，即使不使用子目录也会执行；迁移前自动保留独立数据库快照，旧收藏夹作为一级目录保留。不需要清库、卸载或重新导入漫画。\n- 使用 WebDAV 同步的设备请统一升级，不要让新旧版本交替写入同一份收藏／同步数据。回退使用升级前的备份，不保证旧版能读取新版数据；单夹 JSON 仅包含该目录直接收藏，完整层级请使用应用数据备份。\n- Android 手机与 TV 分别提供通用、ARM64、ARM32 和 x86_64 安装包；TV 可与手机版共存，数据独立，官方 TV Alpha 可保留数据覆盖升级。iOS IPA 仍需自行签名侧载，Winget 新版本需等待公共源审核。\n新增\n\n- 两级本地收藏目录（#123）：支持父子目录、展开／折叠、路径搜索、目录移动和同级排序；收藏、批量转移、快捷收藏及追更共用可搜索的目录选择器。父目录与子目录分别保存直接收藏，「全部」按漫画身份去重；目录移动不搬动漫画，目录名称保持全局唯一，不支持三级嵌套。\n- 完整应用备份和 WebDAV 快照保留收藏层级、稳定标识、顺序、网络关联及追更设置；恢复先在暂存副本校验，拒绝损坏或未知版本再替换活动数据库。旧格式单夹 JSON 仍可导入为一级目录。\n- Android TV（#120）：独立电视入口、固定横屏、遥控器导航和可见焦点。阅读时方向键翻页／滚动，确定打…",
-          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.2/VeneraNext-ios-1.18.2%2B243.ipa",
-          "size": 21307925,
+          "version": "1.18.3",
+          "date": "2026-11-07",
+          "publishedAt": "2026-11-07T18:10:18Z",
+          "buildVersion": "249",
+          "buildNumber": "249",
+          "localizedDescription": "正式版与升级\n\n- 发布正式版 1.18.3+249，集中交付收藏操作、目录导航、归档兼容和依赖解耦后的构建，运行时代码沿用已验收的 RC3。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 与鸿蒙从同一正式版提交重新构建；保留历史标签，不复用或重命名候选安装包。\n- 稳定更新渠道推进至本版；AltStore 与 Winget 元数据依据实际公开安装包更新，Winget 公共源收录需等待 Microsoft 审核。iOS IPA 与鸿蒙 HAP 仍需自行签名侧载。\n- 升级前导出并另存完整应用数据备份，保留原漫画文件。共享 WebDAV 数据的设备统一使用兼容版本；回退使用升级前的备份，不让旧版覆盖新版收藏库。覆盖升级保留原数据，无需清库或重新导入。\n鸿蒙随版分发\n\n- 正式版继续包含同版本的鸿蒙 ARM64 未签名测试版 HAP、harmonyos-manifest.json、harmonyos-SHA256SUMS 和中英文安装指南。应用源码与平台适配统一在 main；普通平台使用官方 Flutter 和根锁，鸿蒙使用独立固定 Flutter OH SDK、CPF 覆盖与受控锁模板。\n- 鸿蒙应用为 VeneraNext (HarmonyOS Beta)，包名为 com.github.cyrilpeng.veneranext.harmony，最低／目标 SDK 为 API 26，版本为 1.18.3，构建号为 249。升级须沿用原签名身份／密钥，同一助手或账号不保证同一把密钥。\n- 鸿蒙本地导入支持系统提供的目录选择、多选归档，…",
+          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.3/VeneraNext-ios-1.18.3%2B249.ipa",
+          "size": 21467556,
           "minOSVersion": "14.0",
-          "releaseTag": "v1.18.2",
-          "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.18.2"
+          "releaseTag": "v1.18.3",
+          "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.18.3"
         }
       ],
-      "version": "1.18.2",
-      "versionDate": "2026-11-01",
-      "versionDescription": "升级提示\n\n- 发布正式版 1.18.2+243，包含本轮 RC 的阅读器、下载和归档改进，以及两级收藏目录、Android TV、图片处理优化和 Windows 网页代理修复。\n- 升级前请导出并另存应用数据备份，保留原漫画文件。 首次启动会迁移旧收藏库，即使不使用子目录也会执行；迁移前自动保留独立数据库快照，旧收藏夹作为一级目录保留。不需要清库、卸载或重新导入漫画。\n- 使用 WebDAV 同步的设备请统一升级，不要让新旧版本交替写入同一份收藏／同步数据。回退使用升级前的备份，不保证旧版能读取新版数据；单夹 JSON 仅包含该目录直接收藏，完整层级请使用应用数据备份。\n- Android 手机与 TV 分别提供通用、ARM64、ARM32 和 x86_64 安装包；TV 可与手机版共存，数据独立，官方 TV Alpha 可保留数据覆盖升级。iOS IPA 仍需自行签名侧载，Winget 新版本需等待公共源审核。\n新增\n\n- 两级本地收藏目录（#123）：支持父子目录、展开／折叠、路径搜索、目录移动和同级排序；收藏、批量转移、快捷收藏及追更共用可搜索的目录选择器。父目录与子目录分别保存直接收藏，「全部」按漫画身份去重；目录移动不搬动漫画，目录名称保持全局唯一，不支持三级嵌套。\n- 完整应用备份和 WebDAV 快照保留收藏层级、稳定标识、顺序、网络关联及追更设置；恢复先在暂存副本校验，拒绝损坏或未知版本再替换活动数据库。旧格式单夹 JSON 仍可导入为一级目录。\n- Android TV（#120）：独立电视入口、固定横屏、遥控器导航和可见焦点。阅读时方向键翻页／滚动，确定打…",
-      "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.2/VeneraNext-ios-1.18.2%2B243.ipa",
-      "size": 21307925,
+      "version": "1.18.3",
+      "versionDate": "2026-11-07",
+      "versionDescription": "正式版与升级\n\n- 发布正式版 1.18.3+249，集中交付收藏操作、目录导航、归档兼容和依赖解耦后的构建，运行时代码沿用已验收的 RC3。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 与鸿蒙从同一正式版提交重新构建；保留历史标签，不复用或重命名候选安装包。\n- 稳定更新渠道推进至本版；AltStore 与 Winget 元数据依据实际公开安装包更新，Winget 公共源收录需等待 Microsoft 审核。iOS IPA 与鸿蒙 HAP 仍需自行签名侧载。\n- 升级前导出并另存完整应用数据备份，保留原漫画文件。共享 WebDAV 数据的设备统一使用兼容版本；回退使用升级前的备份，不让旧版覆盖新版收藏库。覆盖升级保留原数据，无需清库或重新导入。\n鸿蒙随版分发\n\n- 正式版继续包含同版本的鸿蒙 ARM64 未签名测试版 HAP、harmonyos-manifest.json、harmonyos-SHA256SUMS 和中英文安装指南。应用源码与平台适配统一在 main；普通平台使用官方 Flutter 和根锁，鸿蒙使用独立固定 Flutter OH SDK、CPF 覆盖与受控锁模板。\n- 鸿蒙应用为 VeneraNext (HarmonyOS Beta)，包名为 com.github.cyrilpeng.veneranext.harmony，最低／目标 SDK 为 API 26，版本为 1.18.3，构建号为 249。升级须沿用原签名身份／密钥，同一助手或账号不保证同一把密钥。\n- 鸿蒙本地导入支持系统提供的目录选择、多选归档，…",
+      "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.3/VeneraNext-ios-1.18.3%2B249.ipa",
+      "size": 21467556,
       "minOSVersion": "14.0"
     },
     {
@@ -1116,11 +1116,11 @@
     },
     {
       "name": "真果鉴",
-      "bundleIdentifier": "com.guoapp.all",
+      "bundleIdentifier": "com.yingshib.xg",
       "developerName": "Xanerix",
       "subtitle": "支持多站源的短剧与影视客户端",
       "localizedDescription": "Flutter 多平台短剧与影视客户端，包含全部站源，可在设置中逐个开关。支持追剧、观看记录、多用户、本地下载与备份。此处收录真果鉴全站源版；自 1.0.3 起使用独立 Bundle ID com.guoapp.all，可与仅含红果站源的红果鉴同时安装。旧包名版本不能覆盖升级，原有设置、追剧和下载记录不会自动迁移。\n\n安装包由上游发布，需自行签名安装。站源可用性取决于源站及网络；应用不解除源站 VIP 或其他授权限制。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Xanerix/guoapp",
-      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v1.0.5-105/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v1.0.6-106/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#E97642",
       "category": "entertainment",
       "appPermissions": {
@@ -1132,41 +1132,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "1.0.5",
+              "version": "1.0.6",
               "date": "2026-11-07",
-              "publishedAt": "2026-11-07T11:55:12Z",
-              "buildVersion": "105",
-              "buildNumber": "105",
-              "localizedDescription": "更新内容：\n\n- 真果鉴新增站源「黑桃」（heitaodj.com 黑桃短剧）：「全部」列出全站剧集，另可选站点分类，支持翻页、详情、分集和在线搜索。海报左下角照搬站点角标（如「6集」「完整版」），站点没有角标的剧看过详情后显示「共 N 集」。默认关闭，可在站源管理中打开。\n- 修复真果鉴的「黄豆」站源打不开：站点换了域名，原来写死的主域名 tideember.cc 已经解析不到，唯一写死的备用域名 xqjurgek.top 证书也过期了、证书上的域名还对不上，所以每次换线都必然失败。改用站点当前的可用域名池（ferncider.cc、onyxripple.cc、reeflumen.cc、niniharbor.top、halomeadow.top、larksummit.icu），主线路连不上时按顺序换到下一个，全部换完才报错；换域名属于换目标，不再空等重试间隔，连不上时能更快恢复。站点显示名也从域名改为「黄豆」（#76）。\n- 修复黄豆站点自制剧详情页显示「播放 0」：站点不给这类剧提供播放量，现在播放量为 0 时不再显示，其余站源同样处理。\n- 新增弹幕样式设置：字号改为 60%～200% 连续可调（原来的小、标准、大、特大设置照常生效），另可调颜色、透明度、加粗、描边和阴影，还能选弹幕占画面顶部四分之一、一半或全部，改动立即生效。入口在播放页 ›「播放设置」›「弹幕样式」，以及设置里新增的「弹幕」分组（#74）。\n- 新增弹幕屏蔽词：最多 60 个，单个最长 40 字，匹配时忽略大小写、全角和标点。含屏蔽词的弹幕直接不显示，这一段全被屏蔽时播放页提示「这段弹幕都被屏蔽了」（…",
-              "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.5-105/zhenguojian-1.0.5%2B105-ios-unsigned.ipa",
-              "size": 30628876,
+              "publishedAt": "2026-11-07T17:42:14Z",
+              "buildVersion": "106",
+              "buildNumber": "106",
+              "localizedDescription": "更新内容：\n\n- 新增使用条款：首次打开时先显示使用条款，说明开源、与各站源无关、不存储分发内容、下载内容请于 24 小时内删除、不得在公开平台分享、站源内容需自行鉴别且不承担财产损失、匿名统计范围和免责事项。条款页打开后先倒计时 30 秒。手机、平板和桌面在倒计时结束后才能在输入框里输入，需手动输入「我已确认并同意以上使用条款」才能点「同意并继续」；电视上倒计时结束后直接点「同意并继续」，可用遥控器上下键逐条查看条款。同意后不再弹出，条款改版时会重新要求同意。已在用的设备升级后也会弹出一次。\n- 真果鉴更名，新名称以本页标题和安装包为准，Android、iPhone / iPad、macOS、Windows 的桌面名称、窗口标题和应用内名称同步更新，电视桌面横幅改为只显示图标。包名同时更换，Android、iPhone / iPad、macOS 上不会覆盖升级旧版，新旧两版可同时安装，旧版需手动卸载，原有设置、追剧和下载记录不会带过来。设置 › 关于中匿名使用统计的说明改为「所属版本」（开发快照，未在各平台实机验证）。\n- Windows 数据目录改为按包名存放：红果鉴为 %APPDATA%\\com.guoapp.phoenix，全站源版为 %APPDATA%\\<包名>，两个版本不再共用同一目录。升级后首次启动时，旧目录 %APPDATA%\\真果鉴\\真果鉴 里的设置、追剧、收藏、缓存和默认下载目录会整个移到新目录；旧目录原本由两个版本共用，只会归先启动的那个版本，另一个版本从空白开始。新目录已有数据时不迁移；迁移失败（如旧版仍在运行、文件被占用）时保留旧目录，不删除任何文件。…",
+              "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.6-106/zhenguojian-1.0.6%2B106-ios-unsigned.ipa",
+              "size": 30633845,
               "minOSVersion": "15.1",
-              "releaseTag": "app-v1.0.5-105",
-              "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.5-105"
+              "releaseTag": "app-v1.0.6-106",
+              "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.6-106"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "1.0.5",
+          "version": "1.0.6",
           "date": "2026-11-07",
-          "publishedAt": "2026-11-07T11:55:12Z",
-          "buildVersion": "105",
-          "buildNumber": "105",
-          "localizedDescription": "更新内容：\n\n- 真果鉴新增站源「黑桃」（heitaodj.com 黑桃短剧）：「全部」列出全站剧集，另可选站点分类，支持翻页、详情、分集和在线搜索。海报左下角照搬站点角标（如「6集」「完整版」），站点没有角标的剧看过详情后显示「共 N 集」。默认关闭，可在站源管理中打开。\n- 修复真果鉴的「黄豆」站源打不开：站点换了域名，原来写死的主域名 tideember.cc 已经解析不到，唯一写死的备用域名 xqjurgek.top 证书也过期了、证书上的域名还对不上，所以每次换线都必然失败。改用站点当前的可用域名池（ferncider.cc、onyxripple.cc、reeflumen.cc、niniharbor.top、halomeadow.top、larksummit.icu），主线路连不上时按顺序换到下一个，全部换完才报错；换域名属于换目标，不再空等重试间隔，连不上时能更快恢复。站点显示名也从域名改为「黄豆」（#76）。\n- 修复黄豆站点自制剧详情页显示「播放 0」：站点不给这类剧提供播放量，现在播放量为 0 时不再显示，其余站源同样处理。\n- 新增弹幕样式设置：字号改为 60%～200% 连续可调（原来的小、标准、大、特大设置照常生效），另可调颜色、透明度、加粗、描边和阴影，还能选弹幕占画面顶部四分之一、一半或全部，改动立即生效。入口在播放页 ›「播放设置」›「弹幕样式」，以及设置里新增的「弹幕」分组（#74）。\n- 新增弹幕屏蔽词：最多 60 个，单个最长 40 字，匹配时忽略大小写、全角和标点。含屏蔽词的弹幕直接不显示，这一段全被屏蔽时播放页提示「这段弹幕都被屏蔽了」（…",
-          "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.5-105/zhenguojian-1.0.5%2B105-ios-unsigned.ipa",
-          "size": 30628876,
+          "publishedAt": "2026-11-07T17:42:14Z",
+          "buildVersion": "106",
+          "buildNumber": "106",
+          "localizedDescription": "更新内容：\n\n- 新增使用条款：首次打开时先显示使用条款，说明开源、与各站源无关、不存储分发内容、下载内容请于 24 小时内删除、不得在公开平台分享、站源内容需自行鉴别且不承担财产损失、匿名统计范围和免责事项。条款页打开后先倒计时 30 秒。手机、平板和桌面在倒计时结束后才能在输入框里输入，需手动输入「我已确认并同意以上使用条款」才能点「同意并继续」；电视上倒计时结束后直接点「同意并继续」，可用遥控器上下键逐条查看条款。同意后不再弹出，条款改版时会重新要求同意。已在用的设备升级后也会弹出一次。\n- 真果鉴更名，新名称以本页标题和安装包为准，Android、iPhone / iPad、macOS、Windows 的桌面名称、窗口标题和应用内名称同步更新，电视桌面横幅改为只显示图标。包名同时更换，Android、iPhone / iPad、macOS 上不会覆盖升级旧版，新旧两版可同时安装，旧版需手动卸载，原有设置、追剧和下载记录不会带过来。设置 › 关于中匿名使用统计的说明改为「所属版本」（开发快照，未在各平台实机验证）。\n- Windows 数据目录改为按包名存放：红果鉴为 %APPDATA%\\com.guoapp.phoenix，全站源版为 %APPDATA%\\<包名>，两个版本不再共用同一目录。升级后首次启动时，旧目录 %APPDATA%\\真果鉴\\真果鉴 里的设置、追剧、收藏、缓存和默认下载目录会整个移到新目录；旧目录原本由两个版本共用，只会归先启动的那个版本，另一个版本从空白开始。新目录已有数据时不迁移；迁移失败（如旧版仍在运行、文件被占用）时保留旧目录，不删除任何文件。…",
+          "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.6-106/zhenguojian-1.0.6%2B106-ios-unsigned.ipa",
+          "size": 30633845,
           "minOSVersion": "15.1",
-          "releaseTag": "app-v1.0.5-105",
-          "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.5-105"
+          "releaseTag": "app-v1.0.6-106",
+          "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.6-106"
         }
       ],
-      "version": "1.0.5",
+      "version": "1.0.6",
       "versionDate": "2026-11-07",
-      "versionDescription": "更新内容：\n\n- 真果鉴新增站源「黑桃」（heitaodj.com 黑桃短剧）：「全部」列出全站剧集，另可选站点分类，支持翻页、详情、分集和在线搜索。海报左下角照搬站点角标（如「6集」「完整版」），站点没有角标的剧看过详情后显示「共 N 集」。默认关闭，可在站源管理中打开。\n- 修复真果鉴的「黄豆」站源打不开：站点换了域名，原来写死的主域名 tideember.cc 已经解析不到，唯一写死的备用域名 xqjurgek.top 证书也过期了、证书上的域名还对不上，所以每次换线都必然失败。改用站点当前的可用域名池（ferncider.cc、onyxripple.cc、reeflumen.cc、niniharbor.top、halomeadow.top、larksummit.icu），主线路连不上时按顺序换到下一个，全部换完才报错；换域名属于换目标，不再空等重试间隔，连不上时能更快恢复。站点显示名也从域名改为「黄豆」（#76）。\n- 修复黄豆站点自制剧详情页显示「播放 0」：站点不给这类剧提供播放量，现在播放量为 0 时不再显示，其余站源同样处理。\n- 新增弹幕样式设置：字号改为 60%～200% 连续可调（原来的小、标准、大、特大设置照常生效），另可调颜色、透明度、加粗、描边和阴影，还能选弹幕占画面顶部四分之一、一半或全部，改动立即生效。入口在播放页 ›「播放设置」›「弹幕样式」，以及设置里新增的「弹幕」分组（#74）。\n- 新增弹幕屏蔽词：最多 60 个，单个最长 40 字，匹配时忽略大小写、全角和标点。含屏蔽词的弹幕直接不显示，这一段全被屏蔽时播放页提示「这段弹幕都被屏蔽了」（…",
-      "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.5-105/zhenguojian-1.0.5%2B105-ios-unsigned.ipa",
-      "size": 30628876,
+      "versionDescription": "更新内容：\n\n- 新增使用条款：首次打开时先显示使用条款，说明开源、与各站源无关、不存储分发内容、下载内容请于 24 小时内删除、不得在公开平台分享、站源内容需自行鉴别且不承担财产损失、匿名统计范围和免责事项。条款页打开后先倒计时 30 秒。手机、平板和桌面在倒计时结束后才能在输入框里输入，需手动输入「我已确认并同意以上使用条款」才能点「同意并继续」；电视上倒计时结束后直接点「同意并继续」，可用遥控器上下键逐条查看条款。同意后不再弹出，条款改版时会重新要求同意。已在用的设备升级后也会弹出一次。\n- 真果鉴更名，新名称以本页标题和安装包为准，Android、iPhone / iPad、macOS、Windows 的桌面名称、窗口标题和应用内名称同步更新，电视桌面横幅改为只显示图标。包名同时更换，Android、iPhone / iPad、macOS 上不会覆盖升级旧版，新旧两版可同时安装，旧版需手动卸载，原有设置、追剧和下载记录不会带过来。设置 › 关于中匿名使用统计的说明改为「所属版本」（开发快照，未在各平台实机验证）。\n- Windows 数据目录改为按包名存放：红果鉴为 %APPDATA%\\com.guoapp.phoenix，全站源版为 %APPDATA%\\<包名>，两个版本不再共用同一目录。升级后首次启动时，旧目录 %APPDATA%\\真果鉴\\真果鉴 里的设置、追剧、收藏、缓存和默认下载目录会整个移到新目录；旧目录原本由两个版本共用，只会归先启动的那个版本，另一个版本从空白开始。新目录已有数据时不迁移；迁移失败（如旧版仍在运行、文件被占用）时保留旧目录，不删除任何文件。…",
+      "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.6-106/zhenguojian-1.0.6%2B106-ios-unsigned.ipa",
+      "size": 30633845,
       "minOSVersion": "15.1"
     }
   ],
