@@ -1812,5 +1812,19 @@
       "size": 29947415,
       "digest": "sha256:a9349d523fc0187ab829bee3964a164827f30bde5258b1df705865b1bbc12d83"
     }
+  },
+  "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261107/ARMSX2-nightly-20261107-9144e4ff1f-iOS-arm64.ipa": {
+    "bundleIdentifier": "com.armsx2.ios.nightly",
+    "version": "2.6.0-nightly.20261107.2334",
+    "buildVersion": "260",
+    "displayName": "ARMSX2 Nightly",
+    "minOSVersion": "17.4",
+    "size": 40593571,
+    "assetIdentity": {
+      "id": 722352219,
+      "updated_at": "2026-11-08T00:08:19Z",
+      "size": 40593571,
+      "digest": "sha256:baea750fe661ca384eeba609e5932caea10e543db99a5453c3140d9d1047c278"
+    }
   }
 }
