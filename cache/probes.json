@@ -1882,5 +1882,47 @@
       "size": 29949283,
       "digest": "sha256:a3dfb4f2ca8ebad2d467eedc2f841bcbb36164ee69560f9701e3708909b3b03f"
     }
+  },
+  "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.7-107/zhenguojian-1.0.7%2B107-ios-unsigned.ipa": {
+    "bundleIdentifier": "com.yingshib.xg",
+    "version": "1.0.7",
+    "buildVersion": "107",
+    "displayName": "XiaoGuoYingShi",
+    "minOSVersion": "15.1",
+    "size": 30676536,
+    "assetIdentity": {
+      "id": 724385886,
+      "updated_at": "2026-11-08T15:43:57Z",
+      "size": 30676536,
+      "digest": "sha256:124d1d880d30338580e450b7428dba12300e2e7c1960f5244e981936565d53db"
+    }
+  },
+  "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261108/ARMSX2-nightly-20261108-9144e4ff1f-iOS-arm64.ipa": {
+    "bundleIdentifier": "com.armsx2.ios.nightly",
+    "version": "2.6.0-nightly.20261108.1514",
+    "buildVersion": "260",
+    "displayName": "ARMSX2 Nightly",
+    "minOSVersion": "17.4",
+    "size": 40592382,
+    "assetIdentity": {
+      "id": 724395186,
+      "updated_at": "2026-11-08T15:47:03Z",
+      "size": 40592382,
+      "digest": "sha256:2db4f53d4659158267ae0e1380e85ef51573d2e6f10676e72908c3604b559032"
+    }
+  },
+  "https://github.com/iam567/rich4-renew-app/releases/download/v1.1.0/rich4-1.1.0-unsigned.ipa": {
+    "bundleIdentifier": "pro.areu.rich4",
+    "version": "1.1.0",
+    "buildVersion": "53",
+    "displayName": "大富翁4",
+    "minOSVersion": "15.0",
+    "size": 1449643468,
+    "assetIdentity": {
+      "id": 723347582,
+      "updated_at": "2026-11-08T08:19:55Z",
+      "size": 1449643468,
+      "digest": "sha256:e8817f1e807b4b4c1335414c00c2842eb8d47cde35b84a5912a0cb072d2ae4cb"
+    }
   }
 }

@@ -4184,6 +4184,25 @@
   ],
   "ARMSX2/ARMSX2": [
     {
+      "tag": "nightly-20261108",
+      "name": "ARMSX2 nightly 20261108 (9144e4ff1f)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-11-08",
+      "published_at": "2026-11-08T15:46:58Z",
+      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- Texture packs: a This Game list in both browsers, shown while a game runs\n- Driver list: show only the sources built for the device's GPU family\n- arm64: a post-mortem in the log for a fault in recompiled code\n- PageFaultHandler: a reporter for the faults it cannot handle\n- Crash handler: let the fault's own signal kill the process\n- Console: expose the log file's descriptor for crash handlers\n- arm64: read guest words for the post-mortems without allocating\n- AutoTune: lower the Android Display Resolution (HW scaler) to the render resolution when GPU-bound\n- AutoTune: add Disabled to the download mode ladder, and step over a rung that did not help\n- Driver list: a release with one zip per device lists each zip by its own name\n- Translations: the batch",
+      "ipas": [
+        {
+          "name": "ARMSX2-nightly-20261108-9144e4ff1f-iOS-arm64.ipa",
+          "size": 40592382,
+          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261108/ARMSX2-nightly-20261108-9144e4ff1f-iOS-arm64.ipa",
+          "id": 724395186,
+          "updated_at": "2026-11-08T15:47:03Z",
+          "digest": "sha256:2db4f53d4659158267ae0e1380e85ef51573d2e6f10676e72908c3604b559032"
+        }
+      ]
+    },
+    {
       "tag": "nightly-20261107",
       "name": "ARMSX2 nightly 20261107 (9144e4ff1f)",
       "pre": true,
@@ -4325,25 +4344,6 @@
       "published_at": "2026-10-26T14:16:39Z",
       "body": "# ARMSX2 2.9\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/9146d2ba-7653-4993-a258-1b28481b59a3\" />\r\n\r\nHappy one year anniversary to ARMSX2!\r\n\r\nARMSX2 is now one year old! On October 26th, 2025, the first version of ARMSX2 was released to the world. We are so grateful for all of the support and love we've received since then, and how far the project has come! This update brings a new VU1 compiler that makes 3D-heavy games faster, an option to run the PS2's I/O processor on its own thread, our own GPU drivers offered right in setup, a lot of work for the Retroid Pocket Duo and other Adreno handhelds, Automatic Performance Tuning, and a big batch of community fixes. \r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/558c0c6f-09ae-461b-8769-057af33f186b\" />\r\n\r\n## Our GPU drivers in setup, and the Retroid Pocket Duo\r\n\r\nFirst-run setup now offers the GPU driver ARMSX2 builds for your device: ARMSX2 Turnip on Adreno 6xx and 7xx, and MaliSX2 on the Mali GPUs it supports. One tap downloads it and makes it your driver. The GPU driver page recommends ARMSX2 Turnip on every Adreno 6xx and 7xx, including the Adreno 613 in the Anbernic RG 55G1, which calls itself \"Adreno A12\".\r\n\r\nMuch of this release was tuned on the Retroid Pocket Duo (Snapdragon 7 Gen 4, Adreno 722):\r\n\r\n- The Adreno 722 gets the rendering rules it needs under Turnip.\r\n- The app's optimized build is now trained on the Duo, across 16 games.\r\n- Shadow of the Colossus counts its shadows at native resolution, which takes about 15 ms off a 37 ms frame at 2x on the Duo, and it now holds a steady 30 fps, as on NetherSX2.\r\n- Screens mounted sideways, like the Duo's top screen and the RG 55G1's portrait panel, get the picture already rotated, so Android no longer spends GPU time turning every frame (16 to 17% of the RG 55G1's GPU).\r\n\r\nOn the Duo, Shadow of the Colossus now runs at 150% speed at 2.5x, God of War II in widescreen",
       "ipas": []
-    },
-    {
-      "tag": "nightly-20261023",
-      "name": "ARMSX2 nightly 20261023 (90126bdfea)",
-      "pre": true,
-      "draft": false,
-      "date": "2026-10-23",
-      "published_at": "2026-10-23T14:10:10Z",
-      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- Android: ARMSX2_BUILD_EERUNNER requires ENABLE_RECOMPILER_TEST_HOOKS\n- Android: add the USE_PERF_JITDUMP build option\n- Android: make pcsx2-eerunner buildable as an NDK executable\n- Android: regenerate the PGO profile on the Adreno 722 source\n- Android PGO: record internal-linkage functions by file name, not build path\n- GS: trim one native pixel off each edge when upscaling 2x or more\n- GameDB: nativeCounterDraws for Shadow of the Colossus\n- GS: nativeCounterDraws, draw colour-wrap counter draws at native resolution\n- GameDB: OPHFlagHack for Shadow of the Colossus, as NetherSX2 has it\n\nFull changelog: https://github.com/ARMSX2/ARMSX2/compare/nightly-20261022...90126bdfea7a3ffb1fd288b2f7f0ae0b033af2d6",
-      "ipas": [
-        {
-          "name": "ARMSX2-nightly-20261023-90126bdfea-iOS-arm64.ipa",
-          "size": 40376158,
-          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261023/ARMSX2-nightly-20261023-90126bdfea-iOS-arm64.ipa",
-          "id": 669324119,
-          "updated_at": "2026-10-23T14:10:16Z",
-          "digest": "sha256:d69c486e567970e22049a4212c436aca5f948a5dca3c74d52edcce10428063ac"
-        }
-      ]
     },
     {
       "tag": "2.8.4",
@@ -5682,6 +5682,33 @@
     }
   ],
   "Xanerix/guoapp": [
+    {
+      "tag": "app-v1.0.7-107",
+      "name": "红果鉴 / 小果影视 1.0.7+107",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-08",
+      "published_at": "2026-11-08T15:44:00Z",
+      "body": "更新内容：\n\n- 真果鉴新增站源「笔盒」（beabox.cc）：默认关闭，可在站源管理中打开。站点地址经常更换，当前域名失效时应用会从发布页自动发现可用域名，并记住上次可用的线路，重启后直接使用；「全部」列出最新视频，分类取站点的热门标签，支持翻页、详情、分集和在线搜索，需要解析的线路会自动向站点接口换取播放地址。\n- Windows 新增安装包 `*-windows-x64-setup.exe`：双击安装，默认装到当前用户（`%LOCALAPPDATA%\\Programs\\<包名>`，如红果鉴为 `com.guoapp.phoenix`），不需要管理员权限，安装时也可选择为所有用户安装；可选创建桌面快捷方式，开始菜单自动添加入口，可在系统「应用」里卸载。红果鉴和全站源版可同时安装，覆盖安装即升级，应用运行时安装或卸载，会提示先关闭应用再继续。卸载时可勾选「同时清除本地数据」，一并删除设置、追剧、收藏、缓存和默认目录中的下载，默认不勾选、全部保留；自选的下载目录和「文档\\合并视频」不受影响。原来的 zip 便携版继续提供。\n- 修复 Android 手机、平板和电视上按返回键（物理键、三键导航、侧滑手势和遥控器返回键）会一次退回两级甚至多级：例如在搜索结果里点进详情后按返回，会直接回到首页；在设置里从分组页返回，会越过设置根页。现在每按一次只退一层，桌面上按 Esc 不受影响。\n- 修复电视上自动连播下一集时，已经隐藏的播控会重新弹出来（#83）：现在换集时播控保持隐藏，只有手动暂停或最后一集播完时才显示。\n- 降低 Windows 播放时的显卡占用（#81）：原来不管窗口多大，视频都按原始分辨率（如 1080×1920）渲染再缩小显示，现在按画面实际显示的大小渲染，最大不超过原始分辨率。小窗和普通窗口播放时显卡占用更低，在核显上实测小窗播放的显卡占用降低约两成；最大化或全屏时，画面通常已不小于原始分辨率，占用基本不变。调整窗口大小后约 0.3 秒画面会按新尺寸重新渲染。\n- 降低带弹幕播放时的耗电：弹幕改为共用一个计时器、在绘制时直接移动位置，不再每帧重建界面。Android 手机实测竖屏开弹幕播放时主线程占用从约 27% 降到约 20%，每帧界面耗时减半（开发快照，已在 Android 手机、电视显示模式和 Windows 实机验证，iOS 和 macOS 待验证）。\n- 播控隐藏后，进度条和时间不再跟着播放进度刷新。Android 手机实测关弹幕竖屏播放时，画面刷新从约 42 帧/秒降到与视频一致的约 30 帧/秒，主线程占用从约 14% 降到约 9%。手机竖屏、横屏、平板和桌面播放页、电视播放页同步调整（开发快照，已在 Android 手机、电视显示模式和 Windows 实机验证，iOS 和 macOS 待验证）。\n- 消除播放时每 5 秒一次的短暂卡顿：播放中定时保存进度时只写入记录，不再让被播放页盖住的首页、详情页和历史页整体重绘；换集、暂停、退出播放时照常刷新。原来每次要重绘约 2600 个控件，实测耗时 15～26 毫秒，弹幕会顿一下。\n- 下载记录多时降低后台开销：下载列表没有变化时，不再每 2 秒重新传输、解析全部下载记录，记录越多效果越明显。\n- 亮色主题下，播放页不再在每次刷新时重新生成深色配色。\n- 修复 Android 侧滑返回没有预览：引入页面切换动效后，系统返回手势只能在松手后直接跳回上一页。现在从详情、搜索、观看记录、播放等页面侧滑返回时，页面跟着手指缩小、平移并露出上一页，松手后继续缩小淡出，拖回边缘则回弹；页面打开动画还没播完时也能侧滑返回。按返回键和点左上角返回仍是原来的淡出缩放（已在 Android 16 手机实机验证）。\n- 手机和平板新增手势（开发快照，已在 Android 手机实机验证，其中下载页的长按和电脑上的右键未验证，iPhone / iPad 和 Android 平板待验证）：\n  - 发现页内容区左右滑切换上一个 / 下一个分类，分类栏跟着滚动，下划线滑到新分类；下载页左右滑切换「下载中」「已下载」「合并」，多选时不响应。切换时旧内容向滑动方向退出、新内容从另一侧进入，点分类和标签也一样；新分类还没加载出来时旧内容先变暗停留，加载好再换，不再闪一下空白页。看过的分类会保留列表，切回来不用重新加载，下拉刷新照常重新获取。\n  - 详情页选集区左右滑切换分组（如 1-30 到 31-60），分组按钮自动滚到可见位置；手机详情页可下拉刷新，与右上角刷新相同。\n  - 再点一次底部导航的当前标签回到列表顶部，发现页已在顶部时再点会刷新；平板和电脑的侧边栏同样生效，在子页面时直接回到该标签首页。\n  - 长按追剧、观看记录、已下载的剧、下载任务和已下载剧集，直接进入多选并选中这",
+      "ipas": [
+        {
+          "name": "hongguojian-1.0.7+107-ios-unsigned.ipa",
+          "size": 30670392,
+          "url": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.7-107/hongguojian-1.0.7%2B107-ios-unsigned.ipa",
+          "id": 724385751,
+          "updated_at": "2026-11-08T15:43:54Z",
+          "digest": "sha256:0caaa235e9e93c27bc5f921ef8ca063de1bd41052216104b964c80ebf3cf0495"
+        },
+        {
+          "name": "zhenguojian-1.0.7+107-ios-unsigned.ipa",
+          "size": 30676536,
+          "url": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.7-107/zhenguojian-1.0.7%2B107-ios-unsigned.ipa",
+          "id": 724385886,
+          "updated_at": "2026-11-08T15:43:57Z",
+          "digest": "sha256:124d1d880d30338580e450b7428dba12300e2e7c1960f5244e981936565d53db"
+        }
+      ]
+    },
     {
       "tag": "app-v1.0.6-106",
       "name": "红果鉴 / 小果影视 1.0.6+106",
