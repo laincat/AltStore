@@ -1147,6 +1147,25 @@
   ],
   "Kyosee/VeneraX": [
     {
+      "tag": "v2.3.12",
+      "name": "v2.3.12",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-08",
+      "published_at": "2026-11-08T08:15:56Z",
+      "body": "> **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v2.3.12/release-notes/v2.3.12.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v2.3.12/release-notes/v2.3.12.zh-CN.md)\n\n## What's Changed\n\n### Added\n- Added a Multi-Select button to the local favorites toolbar for organizing comics in bulk.\n- Added Read and Continue reading actions to comic menus so you can start reading or resume your last position directly.\n- Added an Actions button to detailed comic lists on mobile for opening a comic's menu with a tap.\n\n### Changed\n- Improved compatibility with iOS 27 and iPhone Duo, including full-screen layouts on the unfolded inner display.\n- Organized settings into 10 categories, with category navigation on the left on desktop and a category list on mobile.\n- Settings pages now show common options first, with further options such as page layout and gestures under More settings.\n- Improved settings layouts on large screens, made single options fill their row, and tightened mobile header spacing to reduce empty space and duplicate titles.\n- Settings now switch between one and two panes based on the available width, improving layouts on foldables, split-screen views and smaller desktop windows.\n- Enlarged desktop comic menu text and click targets, and grouped actions such as favorites and collections more clearly.\n- Mobile comic menus now open as bottom sheets that emphasize reading and show shortcuts and current states for favorites, read later and downloads.\n- Updated the English and Chinese guides with the new settings paths, search, reader sidebar and menu controls.\n\n### Fixed\n- Fixed overlapping and overflowing text in the reading settings sidebar on high-resolution windows.\n- Fixed secondary settings opening full screen from the reader sidebar; navigation and Back now stay inside the sidebar.\n- Fixed duplicate spacing along screen edges on some devices and cramped settings content in narrow windows.\n- Fixed keyboard navigation not becoming availab",
+      "ipas": [
+        {
+          "name": "VeneraX-ios-2.3.12+257.ipa",
+          "size": 39009856,
+          "url": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.12/VeneraX-ios-2.3.12%2B257.ipa",
+          "id": 723343477,
+          "updated_at": "2026-11-08T08:15:46Z",
+          "digest": "sha256:ead2804ce248365009aed69503d099a0105f91469ff2039f75600ed161a08878"
+        }
+      ]
+    },
+    {
       "tag": "v2.3.11",
       "name": "v2.3.11",
       "pre": false,
@@ -1504,25 +1523,6 @@
           "id": 518720236,
           "updated_at": "2026-08-18T00:59:39Z",
           "digest": "sha256:55082cb813b48dd3d271fc4c507a0357258f182e8a5031c71d33dadfd7a5a0cb"
-        }
-      ]
-    },
-    {
-      "tag": "v2.2.5",
-      "name": "v2.2.5",
-      "pre": false,
-      "draft": false,
-      "date": "2026-08-17",
-      "published_at": "2026-08-17T07:14:39Z",
-      "body": "> **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v2.2.5/release-notes/v2.2.5.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v2.2.5/release-notes/v2.2.5.zh-CN.md)\n\n## What's Changed\n\n### Added\n- Added a random comic draw to pick something from your favorites when you cannot decide what to read\n- The draw can be limited by favorite folder and reading progress (not started / in progress / finished), and never repeats a comic within the same round\n- Migrating comics to an online library can now skip comics whose folder already exists there, and reports how many were skipped\n\n### Fixed\n- Fixed already translated images not showing their translation in the reader and being translated all over again\n- Fixed local comics occasionally loading a blank image; the file is now retried, and a clear error is shown when it truly cannot be read\n\n**Full Changelog**: https://github.com/Kyosee/VeneraX/compare/v2.2.4...v2.2.5\n",
-      "ipas": [
-        {
-          "name": "VeneraX-ios-2.2.5+234.ipa",
-          "size": 35150291,
-          "url": "https://github.com/Kyosee/VeneraX/releases/download/v2.2.5/VeneraX-ios-2.2.5%2B234.ipa",
-          "id": 517764972,
-          "updated_at": "2026-08-17T07:14:35Z",
-          "digest": "sha256:b6c8f167ff0e704f1febbd51c8bcd67f81e028673fe4ef33b2ac673ce2602421"
         }
       ]
     }
@@ -4535,13 +4535,32 @@
   ],
   "iam567/rich4-renew-app": [
     {
+      "tag": "v1.1.0",
+      "name": "安装包 v1.1.0（2026-11-08）",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-08",
+      "published_at": "2026-11-08T08:28:36Z",
+      "body": "> **1.1 是即时制的大更新，请重新下载安装包（游戏内更新不会升到 1.1）。** 直接覆盖安装，存档、设置都会保留；保险起见，可以先在「游戏设置 → 存档备份」导出一份。派对模式只能和同版本的玩家联机，1.0.x 和 1.1 不能进同一个房间。\n\n## v1.1 更新内容\n\n- **全新玩法「即时制」（测试版）：不再轮流等待，所有人同时行动。新游戏画面「回合制／即时制」一键切换；单机是一个人对电脑（练习），派对模式可以和朋友一起玩。只能用原版标准地图；对局时间 20 分钟／15 分钟／无限制，时间到总资产最多的人获胜。**\n- 即时制规则：一天 12 秒；每走完一步冷却 2 秒（GO 的位置显示 3、2、1，每个角色有自己的数字和等待动画）；电脑按难度思考（简单 5–6 秒、中等 4–5 秒、困难 3.5–5 秒、地狱 2.5–4 秒）；卡片随时能用（两次之间隔 5 秒）；两个人同时走到一块空地，先到的人有 5 秒优先决定；小游戏直接出结果；每有一个人破产，物价指数翻倍。\n- 即时制的时间限制：轮到你后 30 秒不按 GO 会自动掷骰子，走完后的每个问题（买地、加盖……）也各有 30 秒；道具店、卡片店、魔法屋、彩票、银行里最多停 20 秒。可爱的小秒表显示剩几秒，最后 5 秒会摇晃并「噔噔」响；小秒表可以拖到任何地方（会记住位置），点两下回到原位。\n- 即时制的保护：在道具店、卡片店、魔法屋、彩票、银行里时，头顶显示「购物中」，别人的卡片、魔法、飞弹都打不到你（派对模式也一样）。单机还有「一回合挨打上限」：两次掷骰之间被别人打中，简单最多 1 次、中等最多 2 次（困难、地狱不限），到了就显示「保护中」，直到你再掷骰子。\n- 即时制的飞弹：可以选「炸路上一点」（和原来一样点发光的位置，炸掉附近的建筑），或「锁定玩家」：对方会收到警告，3 秒后飞弹落在他当时站的地方，可以赶快跑开。\n- 即时制的画面：左下角像网游聊天框的消息记录（可以按头像筛选）；顶部细条只提示跟你有关的事（收到卡片、过路费、被谁施了魔法、地被炸……）；右上角实时排名（总资产、现金、存款，钱变动时会弹出，住院、坐牢、出国等状态和剩余天数也看得到，可以收起）；地图左右两边的「卡片」「道具」快捷栏，点一下直接使用；被关住时显示还要几秒出来；单机可以按「暂停」。\n- 即时制的节奏：走路像 RPG 一样顺；狗咬人、地雷、外星人、台风等动画在原地快速播放，镜头不会被拉走；转盘 1.5 秒自动停；股市开着时价格锁在进场那一刻，最多停 3 天，离开后要掷一次骰子、再过一天才能再进。\n- 派对模式：等别人的回合时也能看股市并下单（轮到那一回合结束时成交），也能查看资料、卡片、道具，还能像观众一样送礼物。\n- 派对模式：股市新增「杠杆」：2、3、5 倍，可以做多或做空，保证金从存款扣；亏光保证金就爆仓。\n- 派对模式：新股票「ＨＯＴＥＬ１１」酒店联盟，最大股东当董事长，住进别人的旅馆、情人酒店、招待所全部免单。\n- 派对模式：名字旁边可以填联系方式（微信／LINE／IG／Telegram，也可以不公开）。\n- 大富豪模式新增「城市决战」：剩下四个人时，由真人玩家选决战地点——大富翁城（筹码）或随机抽一座城市（现金）；其他地方的资产按市价卖成现金，过路费和设施费每 20 天翻倍（最多 64 倍）。\n- 新游戏画面的地图卡会显示「已通关 N 次」（一个人赢下这张地图的次数）。\n- **新增安卓电视版「大富翁4 TV」**：可以用电视遥控器玩，也可以接 1～4 个手柄（1P～4P 各用一个）；手机版的安卓安装包也能装在电视上。\n- 手柄：默认 PlayStation 键位（○ 确定、✕ 返回，可在设置里换成 Xbox 键位）；方向键可以在 GO、工具栏和资料栏之间跳；按下右摇杆进入「看地图」模式；「游戏设置」新增「摇杆测试」，可以看 1P～4P 是否连上、每个按键是否有反应和按键说明。\n- 电脑版（Windows / Mac）的「系统」里新增「视窗」（全屏／窗口）和「结束游戏」。\n- 在线更新：下载 15 秒没有进度时会提示可以怎么做。\n- 修正：在线更新后重启，有时又回到旧版本、下载好的更新被删掉（这一版起的安装包不会再这样）。\n- 修正：道具店、卡片店连续点太快时，有的点击没有反应。\n- 修正：城市地图「北海岸」的地块没有画出来；怪兽卡、恶魔卡的动画还没到，房子就先没了；坐车时每一格都会停顿一下；挑战模式和即时制在「继续游戏」的下一局没有延续；电脑用换屋卡时游戏可能报错。\n\n## 1.0 到 1.1 之间的小版本（这些都已通过游戏内更新发布过，1.1 全部包含）\n\n### v1.0.1.5（2026-11-06，游戏内更新）\n- **派对模式新增「换地图」：不用退出房间，有",
+      "ipas": [
+        {
+          "name": "rich4-1.1.0-unsigned.ipa",
+          "size": 1449643468,
+          "url": "https://github.com/iam567/rich4-renew-app/releases/download/v1.1.0/rich4-1.1.0-unsigned.ipa",
+          "id": 723347582,
+          "updated_at": "2026-11-08T08:19:55Z",
+          "digest": "sha256:e8817f1e807b4b4c1335414c00c2842eb8d47cde35b84a5912a0cb072d2ae4cb"
+        }
+      ]
+    },
+    {
       "tag": "v1.0.0",
       "name": "安装包 v1.0.0（2026-11-03）",
       "pre": false,
       "draft": false,
       "date": "2026-11-03",
       "published_at": "2026-11-03T13:40:33Z",
-      "body": "> **在线更新卡住怎么办：** 如果游戏内更新时进度条一直不动（例如停在 0.1 MB），通常是网络连接不畅，中国大陆的玩家比较容易遇到。请关闭游戏，换个网络（Wi-Fi 和手机流量互换）或开启加速工具，再打开游戏重新更新。这个卡死的问题要等 1.1 的安装包出来后才能彻底解决。\n\n- **派对模式（联机）重大升级：大幅减少掉线；手机短暂断线（切到后台、进电梯、Wi-Fi 换成流量）会自动续连，一分钟内接回来游戏完全不受影响，断线期间的操作自动补上。iPhone、安卓、Mac、Windows 都能一起玩。**\n- **派对模式新增「途中加入」：建立房间时打开「途中加入」，一个人也能先和电脑开始玩（两个人就和两个电脑），不用等人齐。公开房间在游戏大厅里会标上「可途中加入」，游戏进行中也一直列着，并显示还有几个电脑可以接手。其他玩家随时点进来，就会接手其中一个电脑：等那个电脑的回合一到，它的钱、地、卡片、道具都交给新玩家继续玩，所有人都会看到「真人玩家 ××× 接替了电脑 ×××」。**\n- 挑战模式改成开关：新游戏不再有单独的「挑战模式」分页，原版地图、自制地图的设定里多一项「挑战模式」：关／每月 1 张／每月 2 张／完成就抽。输赢照普通大富翁（破产出局），不再算星星。打开后会翻任务卡（每月 1 日；每月 2 张是 1 日和 16 日各一张、目标减半；完成就抽是有人完成马上换下一张，30 天没人完成也会换），拿下任务的人抽一张奖励卡（抢先卡是第一个做到的；比拼、坚持卡到期时结算；有抽卡动画，可以点一下跳过）：向每个对手收卡片和道具、收地、收红包、抽成、挪用存款、收点券，或让其他人坐牢、住院、冬眠，或拆掉对手的房子、自己的地加盖三层。奖励卡分 N、R、SR 三级（SR 1/10、R 2/10），等级越高收得越多。地图左上角的蓝条显示当前任务，点开看大家的进度。\n- 新增游戏内更新：这一版起，出新版本时游戏会提示「有新版本」，点「更新」只下载有变动的部分（通常几 MB），不必再重新下载整个安装包；更新后右下角显示新的版本号，存档都会保留。单机可以选择以后再说；派对模式需要更新到最新版本才能进入，大家的规则才会一致。少数需要新安装包的版本会提示前往下载。（这一版本身还需要手动安装一次。）\n- 电脑难度新增「地狱」：电脑全力理财、低买高卖股票，而且所有电脑联手对付真人玩家。普通模式、大富豪模式、派对模式都能选；「中级」改叫「中等」。\n- 大富豪模式新增「电脑难度」（简单／中等／困难／地狱），五座城市的电脑都用这一级；旧存档照旧是简单。\n- 设置里的「街头行人」「街头车辆」「霓虹闪烁」合并成一项「地图动画」（开／关）。\n- 原版八张地图（台湾、中国大陆、日本、美国、星座、武侠、恐龙、城市）都换上了新的插画封面，选地图、读档、派对模式房间里都会显示。\n- 游戏速度新增「极快」：比「快」再快一倍，适合直播或想快点玩完的玩家。\n- 标题画面底部改成感谢大家的话：感谢 GitHub 回报问题的朋友和 B 站留言区的每一条意见。\n- 竖屏的平板或较宽的窗口：游戏画面下方的面板最多占三分之一高度，地图变大。\n- 新增字体选择：「游戏设置」→「字体」可选 粉圆／文楷（霞鹜文楷）／圆体（昭源圆体）／系统字体，马上套用到所有画面。\n- 修正：iPhone 上部分简体字（例如「图鉴」的「鉴」）显示成方框。\n- 新增存档备份：「游戏设置」→「存档备份」，可以把这台装置的所有存档导出成一个文件（手机上可存到「文件」、传给自己），换手机或重新安装后再导入；存档在 iPhone、安卓、Mac、Windows 之间通用（例如手机导出、电脑导入接着玩）。\n- 大富翁城只用筹码（大富豪模式的最终决战和普通模式的大富翁城地图都一样）：没有存款、提款机、贷款和利息，原本会存进存款的钱都直接变成筹码；买地、盖赌场、升级都用筹码；停在银行格什么都不办，月底也不再出现银行结算；人物面板显示 筹码／赌场／总资产。修正：电脑的筹码看起来是 0 却一直不出局（其实钱都在存款里）。\n- 普通模式的大富翁城：开局资金全部换成筹码（1 筹码 = 100 元），画面一律显示筹码；每个回合后筹码不到 1 个就出局。旧存档里的存款会在下一回合并进筹码（有贷款的先扣掉）。\n- 派对模式新增延迟面板：游戏中按联机按钮栏最右边的信号格按钮，可以显示或隐藏每位玩家的延迟（毫秒）；房间里每个座位也会显示。\n- 标题画面和派对模式里显示「派对模式现在有多少人在线」（游戏中、房间里、选单各几人）。\n- 派对模式游戏中，每位真人玩家的角色头顶会显示他的延迟（毫秒），跟着角色移动；等待某人操作时，提示条也会显示那个人的延迟。\n- 派对模式「建立房间」和房间画面重新设计：地图改成缩图卡片翻页；房间里的规则一直展开、",
+      "body": "> 最新版是 **v1.1**（即时制大更新），请移步 [最新版本](https://github.com/iam567/rich4-renew-app/releases/latest) 下载。\n\n- **派对模式（联机）重大升级：大幅减少掉线；手机短暂断线（切到后台、进电梯、Wi-Fi 换成流量）会自动续连，一分钟内接回来游戏完全不受影响，断线期间的操作自动补上。iPhone、安卓、Mac、Windows 都能一起玩。**\n- **派对模式新增「途中加入」：建立房间时打开「途中加入」，一个人也能先和电脑开始玩（两个人就和两个电脑），不用等人齐。公开房间在游戏大厅里会标上「可途中加入」，游戏进行中也一直列着，并显示还有几个电脑可以接手。其他玩家随时点进来，就会接手其中一个电脑：等那个电脑的回合一到，它的钱、地、卡片、道具都交给新玩家继续玩，所有人都会看到「真人玩家 ××× 接替了电脑 ×××」。**\n- 挑战模式改成开关：新游戏不再有单独的「挑战模式」分页，原版地图、自制地图的设定里多一项「挑战模式」：关／每月 1 张／每月 2 张／完成就抽。输赢照普通大富翁（破产出局），不再算星星。打开后会翻任务卡（每月 1 日；每月 2 张是 1 日和 16 日各一张、目标减半；完成就抽是有人完成马上换下一张，30 天没人完成也会换），拿下任务的人抽一张奖励卡（抢先卡是第一个做到的；比拼、坚持卡到期时结算；有抽卡动画，可以点一下跳过）：向每个对手收卡片和道具、收地、收红包、抽成、挪用存款、收点券，或让其他人坐牢、住院、冬眠，或拆掉对手的房子、自己的地加盖三层。奖励卡分 N、R、SR 三级（SR 1/10、R 2/10），等级越高收得越多。地图左上角的蓝条显示当前任务，点开看大家的进度。\n- 新增游戏内更新：这一版起，出新版本时游戏会提示「有新版本」，点「更新」只下载有变动的部分（通常几 MB），不必再重新下载整个安装包；更新后右下角显示新的版本号，存档都会保留。单机可以选择以后再说；派对模式需要更新到最新版本才能进入，大家的规则才会一致。少数需要新安装包的版本会提示前往下载。（这一版本身还需要手动安装一次。）\n- 电脑难度新增「地狱」：电脑全力理财、低买高卖股票，而且所有电脑联手对付真人玩家。普通模式、大富豪模式、派对模式都能选；「中级」改叫「中等」。\n- 大富豪模式新增「电脑难度」（简单／中等／困难／地狱），五座城市的电脑都用这一级；旧存档照旧是简单。\n- 设置里的「街头行人」「街头车辆」「霓虹闪烁」合并成一项「地图动画」（开／关）。\n- 原版八张地图（台湾、中国大陆、日本、美国、星座、武侠、恐龙、城市）都换上了新的插画封面，选地图、读档、派对模式房间里都会显示。\n- 游戏速度新增「极快」：比「快」再快一倍，适合直播或想快点玩完的玩家。\n- 标题画面底部改成感谢大家的话：感谢 GitHub 回报问题的朋友和 B 站留言区的每一条意见。\n- 竖屏的平板或较宽的窗口：游戏画面下方的面板最多占三分之一高度，地图变大。\n- 新增字体选择：「游戏设置」→「字体」可选 粉圆／文楷（霞鹜文楷）／圆体（昭源圆体）／系统字体，马上套用到所有画面。\n- 修正：iPhone 上部分简体字（例如「图鉴」的「鉴」）显示成方框。\n- 新增存档备份：「游戏设置」→「存档备份」，可以把这台装置的所有存档导出成一个文件（手机上可存到「文件」、传给自己），换手机或重新安装后再导入；存档在 iPhone、安卓、Mac、Windows 之间通用（例如手机导出、电脑导入接着玩）。\n- 大富翁城只用筹码（大富豪模式的最终决战和普通模式的大富翁城地图都一样）：没有存款、提款机、贷款和利息，原本会存进存款的钱都直接变成筹码；买地、盖赌场、升级都用筹码；停在银行格什么都不办，月底也不再出现银行结算；人物面板显示 筹码／赌场／总资产。修正：电脑的筹码看起来是 0 却一直不出局（其实钱都在存款里）。\n- 普通模式的大富翁城：开局资金全部换成筹码（1 筹码 = 100 元），画面一律显示筹码；每个回合后筹码不到 1 个就出局。旧存档里的存款会在下一回合并进筹码（有贷款的先扣掉）。\n- 派对模式新增延迟面板：游戏中按联机按钮栏最右边的信号格按钮，可以显示或隐藏每位玩家的延迟（毫秒）；房间里每个座位也会显示。\n- 标题画面和派对模式里显示「派对模式现在有多少人在线」（游戏中、房间里、选单各几人）。\n- 派对模式游戏中，每位真人玩家的角色头顶会显示他的延迟（毫秒），跟着角色移动；等待某人操作时，提示条也会显示那个人的延迟。\n- 派对模式「建立房间」和房间画面重新设计：地图改成缩图卡片翻页；房间里的规则一直展开、用格子排好，横屏左右两栏一页放得下。\n- 派对模式新增「等待时间」：每一步操作可等 10",
       "ipas": [
         {
           "name": "rich4-1.0.0-unsigned.ipa",
@@ -4839,16 +4858,6 @@
       "date": "2026-10-20",
       "published_at": "2026-10-20T08:11:06Z",
       "body": "> **已有新版本：请移步最新版 [v1.0](https://github.com/iam567/rich4-renew-app/releases/tag/v1.0.0)**（iPhone、安卓、Mac、Windows、Win7 都有安装包）。从 v1.0 起游戏里就能直接更新，不用再来这里下载新安装包。最新版本永远在 [这里](https://github.com/iam567/rich4-renew-app/releases/latest)。\n\n- 派对模式按钮上方显示目前的私享房间数和等待伙伴的人数。\n- 修正：iPad（iPadOS 16.3 等较旧的系统）打开游戏黑屏。\n- 修正：读取进度画面里角色头像竖着排、把格子撑得太高。\n- 电脑版：\n  - Windows：下载 `rich4-0.6.5-windows.zip`，解压后打开 `Rich4` 文件夹，双击 `Rich4.exe`。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 `rich4-0.6.5-mac.dmg`，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew 0d1d6b9\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-      "ipas": []
-    },
-    {
-      "tag": "v0.6.4",
-      "name": "安装包 v0.6.4（2026-10-20）",
-      "pre": false,
-      "draft": false,
-      "date": "2026-10-20",
-      "published_at": "2026-10-20T05:14:37Z",
-      "body": "> **已有新版本：请移步最新版 [v1.0](https://github.com/iam567/rich4-renew-app/releases/tag/v1.0.0)**（iPhone、安卓、Mac、Windows、Win7 都有安装包）。从 v1.0 起游戏里就能直接更新，不用再来这里下载新安装包。最新版本永远在 [这里](https://github.com/iam567/rich4-renew-app/releases/latest)。\n\n- 修正：派对模式在不同网络之间连不上（例如 iPhone 用 4G、电脑用 Wi-Fi）。\n- iPhone 第一次进派对模式会询问「本地网络」权限，请选「允许」。\n- 电脑版：\n  - Windows：下载 `rich4-0.6.4-windows.zip`，解压后打开 `Rich4` 文件夹，双击 `Rich4.exe`。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 `rich4-0.6.4-mac.dmg`，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew e19bc99\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
       "ipas": []
     }
   ],

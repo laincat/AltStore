@@ -1840,5 +1840,19 @@
       "size": 29947418,
       "digest": "sha256:9342dc449092860596ffa5a447c7a4e9e3bd99b2570f1f72c42a22234942cd15"
     }
+  },
+  "https://github.com/Kyosee/VeneraX/releases/download/v2.3.12/VeneraX-ios-2.3.12%2B257.ipa": {
+    "bundleIdentifier": "io.github.kyosee.venera",
+    "version": "2.3.12",
+    "buildVersion": "257",
+    "displayName": "VeneraX",
+    "minOSVersion": "15.1",
+    "size": 39009856,
+    "assetIdentity": {
+      "id": 723343477,
+      "updated_at": "2026-11-08T08:15:46Z",
+      "size": 39009856,
+      "digest": "sha256:ead2804ce248365009aed69503d099a0105f91469ff2039f75600ed161a08878"
+    }
   }
 }
