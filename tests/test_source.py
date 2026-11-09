@@ -12,6 +12,7 @@ import sys
 import tempfile
 import unittest
 from unittest.mock import patch, Mock
+import urllib.error
 import urllib.request
 import zipfile
 import zlib
@@ -67,6 +68,78 @@ class NetworkTests(unittest.TestCase):
     def test_range_success(self):
         with patch.object(b, 'open_url', return_value=Response(b'abc', Content_Range='bytes 2-4/10')):
             self.assertEqual(b.fetch_ranged('https://github.com/a', 2, 4), b'abc')
+
+    def test_probe_falls_back_to_the_api_asset_when_download_route_fails(self):
+        # 2026-11-09 实测：releases/download 整段 504，同一时刻 API 资源端点仍能
+        # 302 到可用 CDN。兜底必须只在瞬时故障时启用，且只解析一次签名地址。
+        calls = []
+        def resolve(api_url):
+            calls.append(api_url)
+            return 'https://release-assets.githubusercontent.com/x'
+        gate = urllib.error.HTTPError('https://github.com/x', 504, 'gateway timeout', None, None)
+        tried = []
+        def fake_ranged(url, start, end):
+            tried.append(url)
+            if url.startswith('https://github.com/'):
+                raise gate
+            return b'ok'
+        source = b._ProbeTransport('https://github.com/x', 'https://api.github.com/repos/o/r/releases/assets/1', resolve=resolve)
+        with patch.object(b, 'remote_total', side_effect=gate),              patch.object(b, 'fetch_ranged', side_effect=fake_ranged):
+            self.assertEqual(source.ranged(0, 1), b'ok')
+            self.assertEqual(source.ranged(2, 3), b'ok')
+        self.assertEqual(len(calls), 1)
+        self.assertEqual(tried[-1], 'https://release-assets.githubusercontent.com/x')
+
+    def test_probe_does_not_fall_back_on_contract_errors(self):
+        def resolve(api_url):
+            raise AssertionError('must not resolve')
+        source = b._ProbeTransport('https://github.com/x', 'https://api.github.com/repos/o/r/releases/assets/1', resolve=resolve)
+        with patch.object(b, 'fetch_ranged', side_effect=ValueError('Server did not honor byte range')):
+            with self.assertRaises(ValueError):
+                source.ranged(0, 1)
+
+    def test_probe_without_api_url_keeps_failing(self):
+        gate = urllib.error.HTTPError('https://github.com/x', 504, 'gateway timeout', None, None)
+        source = b._ProbeTransport('https://github.com/x')
+        with patch.object(b, 'remote_total', side_effect=gate):
+            with self.assertRaises(urllib.error.HTTPError):
+                source.total()
+
+    def test_signed_asset_url_rejects_non_api_hosts(self):
+        with self.assertRaises(ValueError):
+            b.signed_asset_url('https://example.test/releases/assets/1')
+
+    def test_transient_failures_are_retried(self):
+        # 2026-11-09 实测：Release 资源刚上传后部分边缘节点返回 504，
+        # 探测失败会让该应用退回上一次的数据。重试必须能吃掉这种抖动。
+        calls = []
+        def flaky():
+            calls.append(1)
+            if len(calls) < 3:
+                raise urllib.error.HTTPError('https://github.com/x', 504, 'gateway timeout', None, None)
+            return b'ok'
+        slept = []
+        self.assertEqual(b.retry_transient(flaky, sleep=slept.append), b'ok')
+        self.assertEqual(len(calls), 3)
+        self.assertEqual(slept, [5, 15])
+
+    def test_contract_failures_are_not_retried(self):
+        calls = []
+        def broken():
+            calls.append(1)
+            raise ValueError('Server did not honor byte range')
+        with self.assertRaises(ValueError):
+            b.retry_transient(broken, sleep=lambda _s: None)
+        self.assertEqual(len(calls), 1)
+
+    def test_retries_give_up_and_raise_the_last_error(self):
+        calls = []
+        def always():
+            calls.append(1)
+            raise urllib.error.HTTPError('https://github.com/x', 503, 'unavailable', None, None)
+        with self.assertRaises(urllib.error.HTTPError):
+            b.retry_transient(always, attempts=3, sleep=lambda _s: None)
+        self.assertEqual(len(calls), 3)
 
     def test_range_rejects_wrong_status_bounds_and_body(self):
         responses = [Response(b'abc', status=200, Content_Range='bytes 2-4/10'),

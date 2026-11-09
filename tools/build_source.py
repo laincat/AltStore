@@ -51,6 +51,8 @@ import struct
 import datetime
 import urllib.parse
 import sys
+import time
+import urllib.error
 import urllib.request
 import zlib
 
@@ -516,18 +518,43 @@ def fetch(url, start=None, end=None, timeout=60):
         return data, r.headers
 
 
-def fetch_ranged(url, start, end, attempts=2):
+TRANSIENT_HTTP = frozenset((408, 425, 429, 500, 502, 503, 504))
+
+
+def is_transient(exc):
+    """CDN 边缘抖动值得重试，契约/校验失败不值得。"""
+    if isinstance(exc, urllib.error.HTTPError):
+        return exc.code in TRANSIENT_HTTP
+    return isinstance(exc, (urllib.error.URLError, TimeoutError, ConnectionError))
+
+
+def retry_transient(fn, attempts=4, delays=(5, 15, 30), sleep=time.sleep):
+    """按退避重试瞬时故障。
+
+    为什么需要：Release 资源刚上传后的一段时间里，`releases/download/...`
+    在部分边缘节点会返回 504（实测 2026-11-09 发布 0.4.9 时连续两轮），
+    探测失败会让这个应用退回上一次的数据，用户端就看不到新版本。
+    重试只包住传输层，响应校验仍然在 fetch 里逐条把关。
+    """
     last = None
-    for _ in range(attempts):
+    for i in range(attempts):
         try:
-            return fetch(url, start, end)[0]
-        except Exception as e:
+            return fn()
+        except Exception as e:  # noqa: BLE001
+            if not is_transient(e):
+                raise
             last = e
-    raise last or ValueError("No range attempts")
+            if i + 1 < attempts and delays:
+                sleep(delays[min(i, len(delays) - 1)])
+    raise last
+
+
+def fetch_ranged(url, start, end, attempts=4):
+    return retry_transient(lambda: fetch(url, start, end)[0], attempts=attempts)
 
 
 def remote_total(url):
-    _, headers = fetch(url, 0, 0)
+    _, headers = retry_transient(lambda: fetch(url, 0, 0))
     return int(headers["Content-Range"].split("/")[-1])
 
 
@@ -563,11 +590,77 @@ def inflate_plist(comp, method, expected):
 
 
 # ---------- 解析远端 IPA ----------
-def probe_ipa(url):
+def signed_asset_url(api_url, timeout=60):
+    """把 API 资源端点换成它 302 指向的签名地址。
+
+    为什么需要：`github.com/<owner>/<repo>/releases/download/...` 这条路由
+    自身会整段返回 504（实测 2026-11-09 发布 Nekularity 0.4.9 后连续约 20 分钟，
+    直接 GET 就是不重定向的 504），而 `api.github.com/repos/.../releases/assets/<id>`
+    同时刻仍能 302 到可用的 CDN 地址。带凭证的请求不跟随重定向（SafeRedirect
+    的既有约束），所以这里只取 Location，再匿名访问目标地址。
+    """
+    parts = https_url(api_url)
+    if parts.hostname != "api.github.com":
+        raise ValueError("GitHub API host required")
+    headers = dict(UA, Accept="application/octet-stream")
+    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    if token:
+        headers["Authorization"] = "Bearer %s" % token
+    seen = {}
+
+    class _Stop(urllib.request.HTTPRedirectHandler):
+        def redirect_request(self, req, fp, code, msg, hdrs, newurl):
+            seen["url"] = newurl
+            return None
+
+    try:
+        urllib.request.build_opener(_Stop()).open(
+            urllib.request.Request(api_url, headers=headers), timeout=timeout)
+    except urllib.error.HTTPError as e:
+        if e.code not in (301, 302, 303, 307, 308):
+            raise
+    target = seen.get("url")
+    if not target:
+        raise ValueError("Asset endpoint did not redirect")
+    https_url(target)
+    return target
+
+
+class _ProbeTransport(object):
+    """先走发布页直链；它被网关挡住时改用 API 签名地址。"""
+
+    def __init__(self, url, api_url=None, resolve=signed_asset_url):
+        self.url = url
+        self.api_url = api_url
+        self._resolve = resolve
+        self._signed = None
+
+    def _fallback(self, exc):
+        if not (self.api_url and is_transient(exc)):
+            raise exc
+        if self._signed is None:
+            self._signed = self._resolve(self.api_url)
+        return self._signed
+
+    def total(self):
+        try:
+            return remote_total(self.url)
+        except Exception as e:  # noqa: BLE001
+            return remote_total(self._fallback(e))
+
+    def ranged(self, start, end):
+        try:
+            return fetch_ranged(self.url, start, end)
+        except Exception as e:  # noqa: BLE001
+            return fetch_ranged(self._fallback(e), start, end)
+
+
+def probe_ipa(url, api_url=None):
     """只下载 zip 尾部目录 + Info.plist 压缩块，解析出包内元数据。"""
-    total = remote_total(url)
+    source = _ProbeTransport(url, api_url)
+    total = source.total()
     tail_len = min(200000, total)
-    tail = fetch_ranged(url, total - tail_len, total - 1)
+    tail = source.ranged(total - tail_len, total - 1)
     i = tail.rfind(b"PK\x05\x06")
     if i < 0 or i + 22 > len(tail):
         raise RuntimeError("未找到 zip 中央目录（EOCD）")
@@ -578,7 +671,7 @@ def probe_ipa(url):
     cd_size, cd_off = struct.unpack_from("<II", tail, i + 12)
     if not (0 < cd_size <= MAX_RESPONSE and cd_off + cd_size <= total - tail_len + i):
         raise ValueError("Invalid central directory bounds")
-    cd = fetch_ranged(url, cd_off, cd_off + cd_size - 1)
+    cd = source.ranged(cd_off, cd_off + cd_size - 1)
 
     p, n, info = 0, len(cd), None
     while p + 46 <= n and cd[p:p + 4] == b"PK\x01\x02":
@@ -598,14 +691,14 @@ def probe_ipa(url):
         if is_main:
             if flags & 1 or not (0 < csize <= MAX_PLIST and 0 < usize <= MAX_PLIST) or lofs + 30 > cd_off:
                 raise ValueError("Invalid Info.plist ZIP entry")
-            lh = fetch_ranged(url, lofs, lofs + 29)
+            lh = source.ranged(lofs, lofs + 29)
             if lh[:4] != b"PK\x03\x04" or struct.unpack_from("<H", lh, 8)[0] != method:
                 raise ValueError("Invalid local ZIP header")
             lf, le = struct.unpack_from("<HH", lh, 26)
             d0 = lofs + 30 + lf + le
             if d0 + csize > cd_off:
                 raise ValueError("Info.plist exceeds archive bounds")
-            comp = fetch_ranged(url, d0, d0 + csize - 1)
+            comp = source.ranged(d0, d0 + csize - 1)
             raw = inflate_plist(comp, method, usize)
             if zlib.crc32(raw) & 0xffffffff != crc:
                 raise ValueError("Info.plist CRC mismatch")
@@ -718,7 +811,7 @@ def get_releases(repo, refresh=False):
     return rels
 
 
-def probe_cached(url, force=False, asset=None):
+def probe_cached(url, force=False, asset=None, api_url=None):
     """Reuse only identity-bound probes; legacy URL-only cache is untrusted."""
     asset = asset or {}
     identity = {k: asset.get(k) for k in ("id", "updated_at", "size", "digest")}
@@ -727,7 +820,7 @@ def probe_cached(url, force=False, asset=None):
     entry = cache.get(url, {})
     if not force and cacheable and entry.get("assetIdentity") == identity and entry.get("bundleIdentifier"):
         return entry
-    info = probe_ipa(url)
+    info = probe_ipa(url, api_url)
     if asset.get("size") is not None and info["size"] != asset["size"]:
         raise ValueError("GitHub asset size differs from IPA response")
     if cacheable:
@@ -795,8 +888,11 @@ def make_versions(picks, repo, bundle_id=None, reprobe=False):
     """把 (release, asset) 列表探测成版本对象；bundleId 与首个不一致的会被丢弃。"""
     out = []
     for r, a in picks:
+        # 资源 id 存在时始终留一条 API 兜底路径：发布页直链被网关挡住时靠它。
+        api_url = ("https://api.github.com/repos/%s/releases/assets/%s" % (repo, a["id"])
+                   if a.get("id") else None)
         try:
-            m = probe_cached(a["browser_download_url"], reprobe, asset=a)
+            m = probe_cached(a["browser_download_url"], reprobe, asset=a, api_url=api_url)
         except Exception as e:  # noqa: BLE001
             print("   ! %-22s %-10s 探测失败：%r" % (repo, r["tag_name"], e), file=sys.stderr)
             continue
