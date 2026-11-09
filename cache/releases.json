@@ -1147,6 +1147,16 @@
   ],
   "Kyosee/VeneraX": [
     {
+      "tag": "harmonyos-2.3.12-test.1",
+      "name": "VeneraX 鸿蒙开发预览版 · 2.3.12 (test.1，未签名)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-11-09",
+      "published_at": "2026-11-09T04:56:31Z",
+      "body": "VeneraX 首个鸿蒙开发预览版，用于早期功能测试。应用版本保持 **2.3.12+257**，测试批次为 **test.1**。\n\n**模拟器包已验证安装与启动；真机包需自行签名，安装与运行尚未验证。**\n\n[安装指南与已知限制](https://github.com/Kyosee/VeneraX/blob/5c0d7c530c4bc14e46f660470708f9b96b147e9c/doc/harmonyos-testing.md) · [下载离线说明](https://github.com/Kyosee/VeneraX/releases/download/harmonyos-2.3.12-test.1/HarmonyOS-TESTING.md)\n\n| 下载 | 适用设备 | 安装条件与验证状态 |\n|---|---|---|\n| [模拟器用（x64，67.7 MiB）](https://github.com/Kyosee/VeneraX/releases/download/harmonyos-2.3.12-test.1/VeneraX-2.3.12%2B257-harmonyos-x64-emulator-test.1-unsigned.hap) | Windows 上的官方 x86_64 模拟器 | 已通过 `hdc` 在 HarmonyOS 7 / API 26 模拟器安装启动 |\n| [真机测试用（ARM64，61.6 MiB）](https://github.com/Kyosee/VeneraX/releases/download/harmonyos-2.3.12-test.1/VeneraX-2.3.12%2B257-harmonyos-arm64-test.1-unsigned.hap) | ARM64 鸿蒙手机 | 需自行签名；尚未完成真机安装与运行测试 |\n\n两个包均未签名。普通真机不能直接安装，需要按官方流程使用自己的开发者证书和包含目标设备的调试 Profile 签名。请按 CPU 架构选包；模拟器显示的手机型号不代表它采用 ARM64。\n\n已在官方 x64 模拟器验证备份导入、在线阅读、下载与离线阅读、历史收藏、六种阅读模式、WebDAV、系统保存和漫画归档导回。模拟器结果不能代替真机验收；PDF 渲染、PIN/生物认证成功、持久目录授权、真实扫码、具体书源登录及在线翻译仍需补测，详见安装指南。\n\n测试前请备份数据。反馈时请提供所下载的文件名、设备型号、系统版本、复现步骤及必要的脱敏日志；请勿公开账号、Cookie、令牌、书源配置或个人备份。\n\nThe first VeneraX HarmonyOS developer preview is intended for early testing. The app version remains **2.3.12+257**, with preview label **test.1**. **x64 emulator installation and startup are verified; ARM64 phone installation and execution are not.**\n\nChoose `x64-emulator` for the official x86_64 emulator on Windows (67.7 MiB) or `arm64` for ARM64 phone testing (61.6 MiB). Both packages are unsigned. The x64 package was installed using `hdc` on HarmonyOS 7 / API 26; ordinary phones require your developer certificate and a debug profile containing the target device. An emulator's displayed phone model does not determine its CPU architecture.\n\nBackup import, online/offline reading, downloads, history/favorites, six reading modes, WebDAV, system saving and archive round trips were verified on the x64 emulator. Phone testing, PDF rendering, successful PIN/biometric authentication, ",
+      "ipas": []
+    },
+    {
       "tag": "v2.3.12",
       "name": "v2.3.12",
       "pre": false,
@@ -1504,25 +1514,6 @@
           "id": 519438419,
           "updated_at": "2026-08-18T12:40:35Z",
           "digest": "sha256:a47d45e591b2c177cbb1336b4adc9e58efc976bad4bb8b5d3334bfb5c62cafdf"
-        }
-      ]
-    },
-    {
-      "tag": "v2.2.6",
-      "name": "v2.2.6",
-      "pre": false,
-      "draft": false,
-      "date": "2026-08-18",
-      "published_at": "2026-08-18T00:59:44Z",
-      "body": "> **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v2.2.6/release-notes/v2.2.6.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v2.2.6/release-notes/v2.2.6.zh-CN.md)\n\n## What's Changed\n\n### Added\n- Added a reading statistics page showing today's reading time, the last seven days, total reading time, a seven-day trend, and comics read in the last 30 days\n- Reading time is now tracked automatically while reading\n- Added an option for WebDAV libraries to detect linked comic folders, including folders some servers report as files\n\n### Changed\n- Comic details can now be refreshed manually, including local comics whose metadata, cover, or chapters changed on disk\n- WebDAV migration now checks local chapters before upload and shows detailed failure information, including the affected comic and chapter\n\n### Fixed\n- Fixed opening a favorite chapter at a specific index incorrectly applying the saved chapter-group offset\n- Fixed notification links opening content outside the safe area on some devices\n- Fixed reader menu and system UI changes occasionally destabilizing the reading viewport or page loading\n- Fixed images and chapters occasionally getting stuck loading indefinitely\n- Fixed rapid page turns in continuous reading jumping to incorrect positions or becoming stuck\n\n**Full Changelog**: https://github.com/Kyosee/VeneraX/compare/v2.2.5...v2.2.6\n",
-      "ipas": [
-        {
-          "name": "VeneraX-ios-2.2.6+236.ipa",
-          "size": 35202180,
-          "url": "https://github.com/Kyosee/VeneraX/releases/download/v2.2.6/VeneraX-ios-2.2.6%2B236.ipa",
-          "id": 518720236,
-          "updated_at": "2026-08-18T00:59:39Z",
-          "digest": "sha256:55082cb813b48dd3d271fc4c507a0357258f182e8a5031c71d33dadfd7a5a0cb"
         }
       ]
     }
@@ -6208,6 +6199,25 @@
   ],
   "laincat/Nekularity": [
     {
+      "tag": "v0.4.9",
+      "name": "v0.4.9",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-09",
+      "published_at": "2026-11-09T07:37:02Z",
+      "body": "**Full Changelog**: https://github.com/laincat/Nekularity/compare/v0.4.8...v0.4.9",
+      "ipas": [
+        {
+          "name": "Nekularity.ipa",
+          "size": 29963615,
+          "url": "https://github.com/laincat/Nekularity/releases/download/v0.4.9/Nekularity.ipa",
+          "id": 726632925,
+          "updated_at": "2026-11-09T07:37:01Z",
+          "digest": "sha256:b75fa0ea178f7786f3b92e764054172a1255bf38cd17d0a35e17952a0d0be70c"
+        }
+      ]
+    },
+    {
       "tag": "v0.4.8",
       "name": "v0.4.8",
       "pre": false,
@@ -6565,25 +6575,6 @@
           "id": 703276175,
           "updated_at": "2026-11-02T21:43:22Z",
           "digest": "sha256:8100da3764346d13f53321562e26b53336273c52e9b50d171a0d6a2395284e36"
-        }
-      ]
-    },
-    {
-      "tag": "v0.2.9",
-      "name": "v0.2.9",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-02",
-      "published_at": "2026-11-02T19:01:02Z",
-      "body": "**Full Changelog**: https://github.com/laincat/Nekularity/compare/v0.2.8...v0.2.9",
-      "ipas": [
-        {
-          "name": "Nekularity.ipa",
-          "size": 29370355,
-          "url": "https://github.com/laincat/Nekularity/releases/download/v0.2.9/Nekularity.ipa",
-          "id": 702835529,
-          "updated_at": "2026-11-02T19:01:01Z",
-          "digest": "sha256:2076378ee48080f5922143b9a07fb9b62edab338587aea4439c5af6b028a5952"
         }
       ]
     }
