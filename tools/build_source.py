@@ -74,10 +74,11 @@ SOURCE = {
     "iconURL": "https://github.com/laincat.png?size=512",
     "subtitle": "多类 iOS 自签应用源",
     "description": (
-        "收录 20 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh，漫画阅读类 EhPanda、"
-        "VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX、PicaComic、Aidoku，以及 AvPlay、ARMSX2、"
-        "AirCard、Rich4、真果鉴。所有 IPA 均直连各项目 "
-        "GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。"
+        "收录 23 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh，漫画阅读类 EhPanda、"
+        "VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX、PicaComic、Aidoku，"
+        "影音与工具类 AvPlay、真果鉴、HGhub、Swipt、AirCard，游戏类 ARMSX2、ARMSX3、Rich4。"
+        "IPA 直连各项目 GitHub Release 官方资产（HGhub 为上游构建产物的转发），"
+        "由 SideStore / AltStore / LiveContainer 本地签名安装。"
     ),
     "tintColor": "#7C5CFF",
 }
@@ -421,6 +422,29 @@ APPS = [
             "PlayStation 2 模拟器的 iOS 每日构建版。上游仅发布预览构建，版本可能变化或不稳定；"
             "未签名安装包来自上游 GitHub Release。\n\n"
             "开源协议：GPL-3.0　·　项目主页：https://github.com/ARMSX2/ARMSX2"
+        ),
+    },
+    {
+        # ARMSX3 的正式版 Release 只有 Android 的 apk；iOS 包只出现在
+        # ios-<版本> 预发布里（如 ARMSX3-0.0.2.ipa），所以同样按预览版收录。
+        "repo": "ARMSX2/ARMSX3",
+        "asset": lambda n: n.startswith("ARMSX3-") and n.endswith(".ipa"),
+        "name": "ARMSX3",
+        "developerName": "ARMSX2",
+        "subtitle": "PlayStation 3 模拟器（iOS 预览版）",
+        "category": "games",
+        "tintColor": "#0EA5A4",
+        "icon": "ios/app/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+        "prereleaseAsStable": True,
+        "description": (
+            "基于 RPCS3 的 PlayStation 3 模拟器 iOS 移植版，需 A14 或更新芯片、iOS 17.4 及以上。"
+            "运行游戏还需要开启 JIT（应用自带启用器，需配对文件或 StikDebug），以及自行准备 "
+            "PS3 系统软件与游戏镜像，两者均不随包提供。\n\n"
+            "上游只发布 ad hoc 签名的 iOS 预览构建，用 AltStore / SideStore 重签可保留其 "
+            "entitlements；当成完全未签名的包处理会丢失权限并在启动时退出。"
+            "0.0.2 起包名改为 com.armsx3.ARMSX3，旧版存档与设置不会自动迁移，"
+            "升级前请在旧版内使用「备份与恢复」导出。\n\n"
+            "开源协议：GPL-2.0　·　项目主页：https://github.com/ARMSX2/ARMSX3"
         ),
     },
     {

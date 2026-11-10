@@ -1980,5 +1980,19 @@
       "size": 48025399,
       "digest": "sha256:26d74c0844adc0e9930d378583e98bcba700e63e43d07f5ef3b72e8fa3bacac1"
     }
+  },
+  "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.2/ARMSX3-0.0.2.ipa": {
+    "bundleIdentifier": "com.armsx3.ARMSX3",
+    "version": "0.0.2",
+    "buildVersion": "2",
+    "displayName": "ARMSX3",
+    "minOSVersion": "17.4",
+    "size": 40900099,
+    "assetIdentity": {
+      "id": 731456756,
+      "updated_at": "2026-11-10T13:01:36Z",
+      "size": 40900099,
+      "digest": "sha256:996a8c0c9cd2c4c2a13d9d3bf95c700c3b565e706591a4dc00b86d7d37d461c7"
+    }
   }
 }
