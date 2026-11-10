@@ -1952,5 +1952,33 @@
       "size": 29963615,
       "digest": "sha256:b75fa0ea178f7786f3b92e764054172a1255bf38cd17d0a35e17952a0d0be70c"
     }
+  },
+  "https://github.com/laincat/HGhub/releases/download/ios-1.2.0/HGhub_1.2.0_ios.ipa": {
+    "bundleIdentifier": "com.hghub.huangguo",
+    "version": "1.2.0",
+    "buildVersion": "1.2.0",
+    "displayName": "HGhub",
+    "minOSVersion": "15.0",
+    "size": 3384042,
+    "assetIdentity": {
+      "id": 730672796,
+      "updated_at": "2026-11-10T08:25:08Z",
+      "size": 3384042,
+      "digest": "sha256:948858612dd8c063187be42bede8a134efbe02d95e2592b4dc3f1d8212a8a660"
+    }
+  },
+  "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa": {
+    "bundleIdentifier": "io.nekohasekai.swipt",
+    "version": "0.1.0",
+    "buildVersion": "74",
+    "displayName": "Swipt",
+    "minOSVersion": "16.4",
+    "size": 48025399,
+    "assetIdentity": {
+      "id": 730562073,
+      "updated_at": "2026-11-10T07:43:36Z",
+      "size": 48025399,
+      "digest": "sha256:26d74c0844adc0e9930d378583e98bcba700e63e43d07f5ef3b72e8fa3bacac1"
+    }
   }
 }

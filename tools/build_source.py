@@ -439,6 +439,38 @@ APPS = [
         ),
     },
     {
+        "repo": "laincat/HGhub",
+        "asset": lambda n: n.startswith("HGhub_") and n.endswith("_ios.ipa"),
+        "name": "HGhub",
+        "developerName": "Minireel",
+        "subtitle": "竖屏刷剧（未签名）",
+        "category": "entertainment",
+        "tintColor": "#F5A623",
+        "iconURL": "https://raw.githubusercontent.com/laincat/HGhub/main/icons/HGhub-1024.png",
+        "description": (
+            "横竖屏刷剧应用，支持推荐流、榜单、搜索与选集续播。"
+            "安装包由上游 Minireel/HGhub 的 iOS 构建产物转发，未签名，需自行签名安装。"
+            "上游协议为 PolyForm Noncommercial 1.0.0，禁止商业使用。\n\n"
+            "项目主页：https://github.com/Minireel/HGhub"
+        ),
+    },
+    {
+        "repo": "swipt-automation/swipt",
+        "asset": lambda n: n == "Swipt.ipa",
+        "name": "Swipt",
+        "developerName": "nekohasekai",
+        "subtitle": "用 JavaScript 自动化设备（每日构建）",
+        "category": "utilities",
+        "tintColor": "#3B82F6",
+        "iconURL": "https://raw.githubusercontent.com/laincat/HGhub/main/icons/Swipt-1024.png",
+        "prereleaseAsStable": True,
+        "description": (
+            "用 JavaScript swiplet 自动化操作这台 iPhone 或 iPad。"
+            "上游只提供 nightly 预发布构建，版本每日更新，未签名，需自行签名安装。\n\n"
+            "开源协议：AGPL-3.0　·　项目主页：https://github.com/swipt-automation/swipt"
+        ),
+    },
+    {
         "repo": "iam567/rich4-renew-app",
         "asset": lambda n: n.startswith("rich4-") and n.endswith("-unsigned.ipa"),
         "name": "大富翁4重制版",
@@ -1025,9 +1057,10 @@ def build(per_app=1, refresh=False, reprobe=False, prev_path=None):
         is_beta_head = bool(beta_versions) and flat_versions and \
             release_identity(flat_versions[0]) in {release_identity(v) for v in beta_versions}
 
-        icon = ("https://raw.githubusercontent.com/%s/%s/%s" % (repo, latest["releaseTag"], cfg["icon"])
-                if cfg.get("icon") else "https://github.com/%s.png?size=460" % repo.split("/")[0])
-        if cfg.get("icon") and not icon_url_ok(icon):
+        icon = (cfg.get("iconURL")
+                or ("https://raw.githubusercontent.com/%s/%s/%s" % (repo, latest["releaseTag"], cfg["icon"])
+                    if cfg.get("icon") else "https://github.com/%s.png?size=460" % repo.split("/")[0]))
+        if (cfg.get("icon") or cfg.get("iconURL")) and not icon_url_ok(icon):
             icon = "https://github.com/%s.png?size=460" % repo.split("/")[0]
             print("   ~ %s 图标回退为仓库头像" % repo, file=sys.stderr)
 

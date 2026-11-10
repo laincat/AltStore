@@ -620,6 +620,61 @@
       "beta": true
     },
     {
+      "name": "HGhub",
+      "bundleIdentifier": "com.hghub.huangguo",
+      "developerName": "Minireel",
+      "subtitle": "竖屏刷剧（未签名）",
+      "localizedDescription": "横竖屏刷剧应用，支持推荐流、榜单、搜索与选集续播。安装包由上游 Minireel/HGhub 的 iOS 构建产物转发，未签名，需自行签名安装。上游协议为 PolyForm Noncommercial 1.0.0，禁止商业使用。\n\n项目主页：https://github.com/Minireel/HGhub",
+      "iconURL": "https://raw.githubusercontent.com/laincat/HGhub/main/icons/HGhub-1024.png",
+      "tintColor": "#F5A623",
+      "category": "entertainment",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "releaseChannels": [
+        {
+          "track": "stable",
+          "releases": [
+            {
+              "version": "1.2.0",
+              "date": "2026-11-10",
+              "publishedAt": "2026-11-10T08:25:09Z",
+              "buildVersion": "1.2.0",
+              "buildNumber": "1.2.0",
+              "localizedDescription": "未签名 iOS 安装包，取自上游 Minireel/HGhub 的 GitHub Actions 构建产物（run 42735191705，commit 9ca69727）。\n\n上游 Release 不保留 IPA 附件，这里单独托管，供侧载源读取。\n\n- 包名：com.hghub.huangguo\n- 版本：1.2.0（最低 iOS 15.0，arm64）\n- 未签名，需用 SideStore / AltStore 等工具自行签名安装\n\n上游协议为 PolyForm Noncommercial 1.0.0，禁止商业使用。本仓库只转发构建产物，不修改内容。",
+              "downloadURL": "https://github.com/laincat/HGhub/releases/download/ios-1.2.0/HGhub_1.2.0_ios.ipa",
+              "size": 3384042,
+              "minOSVersion": "15.0",
+              "releaseTag": "ios-1.2.0",
+              "source": "https://github.com/laincat/HGhub/releases/tag/ios-1.2.0"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "version": "1.2.0",
+          "date": "2026-11-10",
+          "publishedAt": "2026-11-10T08:25:09Z",
+          "buildVersion": "1.2.0",
+          "buildNumber": "1.2.0",
+          "localizedDescription": "未签名 iOS 安装包，取自上游 Minireel/HGhub 的 GitHub Actions 构建产物（run 42735191705，commit 9ca69727）。\n\n上游 Release 不保留 IPA 附件，这里单独托管，供侧载源读取。\n\n- 包名：com.hghub.huangguo\n- 版本：1.2.0（最低 iOS 15.0，arm64）\n- 未签名，需用 SideStore / AltStore 等工具自行签名安装\n\n上游协议为 PolyForm Noncommercial 1.0.0，禁止商业使用。本仓库只转发构建产物，不修改内容。",
+          "downloadURL": "https://github.com/laincat/HGhub/releases/download/ios-1.2.0/HGhub_1.2.0_ios.ipa",
+          "size": 3384042,
+          "minOSVersion": "15.0",
+          "releaseTag": "ios-1.2.0",
+          "source": "https://github.com/laincat/HGhub/releases/tag/ios-1.2.0"
+        }
+      ],
+      "version": "1.2.0",
+      "versionDate": "2026-11-10",
+      "versionDescription": "未签名 iOS 安装包，取自上游 Minireel/HGhub 的 GitHub Actions 构建产物（run 42735191705，commit 9ca69727）。\n\n上游 Release 不保留 IPA 附件，这里单独托管，供侧载源读取。\n\n- 包名：com.hghub.huangguo\n- 版本：1.2.0（最低 iOS 15.0，arm64）\n- 未签名，需用 SideStore / AltStore 等工具自行签名安装\n\n上游协议为 PolyForm Noncommercial 1.0.0，禁止商业使用。本仓库只转发构建产物，不修改内容。",
+      "downloadURL": "https://github.com/laincat/HGhub/releases/download/ios-1.2.0/HGhub_1.2.0_ios.ipa",
+      "size": 3384042,
+      "minOSVersion": "15.0"
+    },
+    {
       "name": "Kazumi",
       "bundleIdentifier": "com.example.kazumi",
       "developerName": "Predidit",
@@ -838,6 +893,61 @@
       "downloadURL": "https://github.com/youshen2/PicaX/releases/download/v1.2.5/PicaX-unsigned.ipa",
       "size": 12107911,
       "minOSVersion": "15.2"
+    },
+    {
+      "name": "Swipt",
+      "bundleIdentifier": "io.nekohasekai.swipt",
+      "developerName": "nekohasekai",
+      "subtitle": "用 JavaScript 自动化设备（每日构建）",
+      "localizedDescription": "用 JavaScript swiplet 自动化操作这台 iPhone 或 iPad。上游只提供 nightly 预发布构建，版本每日更新，未签名，需自行签名安装。\n\n开源协议：AGPL-3.0　·　项目主页：https://github.com/swipt-automation/swipt",
+      "iconURL": "https://raw.githubusercontent.com/laincat/HGhub/main/icons/Swipt-1024.png",
+      "tintColor": "#3B82F6",
+      "category": "utilities",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "releaseChannels": [
+        {
+          "track": "stable",
+          "releases": [
+            {
+              "version": "0.1.0",
+              "date": "2026-11-10",
+              "publishedAt": "2026-11-10T07:43:38Z",
+              "buildVersion": "74",
+              "buildNumber": "74",
+              "localizedDescription": "🧪 预发布 nightly（2026-11-10）\n\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the developer service\n* Fix slow detection of unsupported networks\n* Resolve DNS with the system configuration on iOS\n* Detect the foreground app right after connecting\n* Connect touch input before the first tap\n* Send input without checking the lock state\n* Split the CLI commands into one file each\n* Fix the detection of the foregr…",
+              "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
+              "size": 48025399,
+              "minOSVersion": "16.4",
+              "releaseTag": "nightly",
+              "source": "https://github.com/swipt-automation/swipt/releases/tag/nightly"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "date": "2026-11-10",
+          "publishedAt": "2026-11-10T07:43:38Z",
+          "buildVersion": "74",
+          "buildNumber": "74",
+          "localizedDescription": "🧪 预发布 nightly（2026-11-10）\n\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the developer service\n* Fix slow detection of unsupported networks\n* Resolve DNS with the system configuration on iOS\n* Detect the foreground app right after connecting\n* Connect touch input before the first tap\n* Send input without checking the lock state\n* Split the CLI commands into one file each\n* Fix the detection of the foregr…",
+          "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
+          "size": 48025399,
+          "minOSVersion": "16.4",
+          "releaseTag": "nightly",
+          "source": "https://github.com/swipt-automation/swipt/releases/tag/nightly"
+        }
+      ],
+      "version": "0.1.0",
+      "versionDate": "2026-11-10",
+      "versionDescription": "🧪 预发布 nightly（2026-11-10）\n\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the developer service\n* Fix slow detection of unsupported networks\n* Resolve DNS with the system configuration on iOS\n* Detect the foreground app right after connecting\n* Connect touch input before the first tap\n* Send input without checking the lock state\n* Split the CLI commands into one file each\n* Fix the detection of the foregr…",
+      "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
+      "size": 48025399,
+      "minOSVersion": "16.4"
     },
     {
       "name": "Venera Prime",
@@ -1178,8 +1288,8 @@
     {
       "title": "源已建立",
       "identifier": "source-created",
-      "caption": "收录 20 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-11-09",
+      "caption": "收录 22 款应用，IPA 直连各项目 GitHub Release。",
+      "date": "2026-11-10",
       "tintColor": "#7C5CFF",
       "notify": false
     }
