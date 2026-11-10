@@ -1994,5 +1994,33 @@
       "size": 40900099,
       "digest": "sha256:996a8c0c9cd2c4c2a13d9d3bf95c700c3b565e706591a4dc00b86d7d37d461c7"
     }
+  },
+  "https://github.com/venera-app/venera-prime/releases/download/v2.8.1/venera-prime-ios-2.8.1%2B281.ipa": {
+    "bundleIdentifier": "com.github.wgh136.venera.prime",
+    "version": "2.8.1",
+    "buildVersion": "281",
+    "displayName": "Venera Prime",
+    "minOSVersion": "14.0",
+    "size": 16730617,
+    "assetIdentity": {
+      "id": 732408286,
+      "updated_at": "2026-11-10T18:00:19Z",
+      "size": 16730617,
+      "digest": "sha256:1ba149cce21ecd7e227901acc99f030b20b3102b55365436019f793753205482"
+    }
+  },
+  "https://github.com/ccbkv/PicaComic/releases/download/5.0.7/PicaComic-5.0.7-app-ios-build_no_sign.ipa": {
+    "bundleIdentifier": "com.github.pacalini.picaComic",
+    "version": "5.0.7",
+    "buildVersion": "46203",
+    "displayName": "Pica Comic",
+    "minOSVersion": "15.1",
+    "size": 31853008,
+    "assetIdentity": {
+      "id": 732367067,
+      "updated_at": "2026-11-10T17:45:46Z",
+      "size": 31853008,
+      "digest": "sha256:605f51944064f84f9b6c81053cdcde951b52e02055ffab8609daf02825042175"
+    }
   }
 }
