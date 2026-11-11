@@ -1959,12 +1959,12 @@
     "buildVersion": "1.2.0",
     "displayName": "HGhub",
     "minOSVersion": "15.0",
-    "size": 3384042,
+    "size": 3412051,
     "assetIdentity": {
-      "id": 730672796,
-      "updated_at": "2026-11-10T08:25:08Z",
-      "size": 3384042,
-      "digest": "sha256:948858612dd8c063187be42bede8a134efbe02d95e2592b4dc3f1d8212a8a660"
+      "id": 733547621,
+      "updated_at": "2026-11-11T00:43:38Z",
+      "size": 3412051,
+      "digest": "sha256:4ea1d008da010e10ca41f1752867fa358081724e9c3e4a720cc78b24a2df929b"
     }
   },
   "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa": {

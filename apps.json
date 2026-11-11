@@ -697,9 +697,9 @@
               "publishedAt": "2026-11-10T08:25:09Z",
               "buildVersion": "1.2.0",
               "buildNumber": "1.2.0",
-              "localizedDescription": "未签名 iOS 安装包，取自上游 Minireel/HGhub 的 GitHub Actions 构建产物（run 42735191705，commit 9ca69727）。\n\n上游 Release 不保留 IPA 附件，这里单独托管，供侧载源读取。\n\n- 包名：com.hghub.huangguo\n- 版本：1.2.0（最低 iOS 15.0，arm64）\n- 未签名，需用 SideStore / AltStore 等工具自行签名安装\n\n上游协议为 PolyForm Noncommercial 1.0.0，禁止商业使用。本仓库只转发构建产物，不修改内容。",
+              "localizedDescription": "本仓库自动编译的未签名 iOS 安装包。\n\n- 源码基线：上游 Minireel/HGhub commit 9ca69727（v1.2.0）\n- 上游已于 2026-11-10 停止维护并撤下源码、发布与构建记录\n- 包名 com.hghub.huangguo，arm64，需用 SideStore / AltStore 自行签名安装\n- 协议 PolyForm Noncommercial 1.0.0，禁止商业使用\n- 本次构建：https://github.com/laincat/HGhub/actions/runs/42933115147",
               "downloadURL": "https://github.com/laincat/HGhub/releases/download/ios-1.2.0/HGhub_1.2.0_ios.ipa",
-              "size": 3384042,
+              "size": 3412051,
               "minOSVersion": "15.0",
               "releaseTag": "ios-1.2.0",
               "source": "https://github.com/laincat/HGhub/releases/tag/ios-1.2.0"
@@ -714,9 +714,9 @@
           "publishedAt": "2026-11-10T08:25:09Z",
           "buildVersion": "1.2.0",
           "buildNumber": "1.2.0",
-          "localizedDescription": "未签名 iOS 安装包，取自上游 Minireel/HGhub 的 GitHub Actions 构建产物（run 42735191705，commit 9ca69727）。\n\n上游 Release 不保留 IPA 附件，这里单独托管，供侧载源读取。\n\n- 包名：com.hghub.huangguo\n- 版本：1.2.0（最低 iOS 15.0，arm64）\n- 未签名，需用 SideStore / AltStore 等工具自行签名安装\n\n上游协议为 PolyForm Noncommercial 1.0.0，禁止商业使用。本仓库只转发构建产物，不修改内容。",
+          "localizedDescription": "本仓库自动编译的未签名 iOS 安装包。\n\n- 源码基线：上游 Minireel/HGhub commit 9ca69727（v1.2.0）\n- 上游已于 2026-11-10 停止维护并撤下源码、发布与构建记录\n- 包名 com.hghub.huangguo，arm64，需用 SideStore / AltStore 自行签名安装\n- 协议 PolyForm Noncommercial 1.0.0，禁止商业使用\n- 本次构建：https://github.com/laincat/HGhub/actions/runs/42933115147",
           "downloadURL": "https://github.com/laincat/HGhub/releases/download/ios-1.2.0/HGhub_1.2.0_ios.ipa",
-          "size": 3384042,
+          "size": 3412051,
           "minOSVersion": "15.0",
           "releaseTag": "ios-1.2.0",
           "source": "https://github.com/laincat/HGhub/releases/tag/ios-1.2.0"
@@ -724,9 +724,9 @@
       ],
       "version": "1.2.0",
       "versionDate": "2026-11-10",
-      "versionDescription": "未签名 iOS 安装包，取自上游 Minireel/HGhub 的 GitHub Actions 构建产物（run 42735191705，commit 9ca69727）。\n\n上游 Release 不保留 IPA 附件，这里单独托管，供侧载源读取。\n\n- 包名：com.hghub.huangguo\n- 版本：1.2.0（最低 iOS 15.0，arm64）\n- 未签名，需用 SideStore / AltStore 等工具自行签名安装\n\n上游协议为 PolyForm Noncommercial 1.0.0，禁止商业使用。本仓库只转发构建产物，不修改内容。",
+      "versionDescription": "本仓库自动编译的未签名 iOS 安装包。\n\n- 源码基线：上游 Minireel/HGhub commit 9ca69727（v1.2.0）\n- 上游已于 2026-11-10 停止维护并撤下源码、发布与构建记录\n- 包名 com.hghub.huangguo，arm64，需用 SideStore / AltStore 自行签名安装\n- 协议 PolyForm Noncommercial 1.0.0，禁止商业使用\n- 本次构建：https://github.com/laincat/HGhub/actions/runs/42933115147",
       "downloadURL": "https://github.com/laincat/HGhub/releases/download/ios-1.2.0/HGhub_1.2.0_ios.ipa",
-      "size": 3384042,
+      "size": 3412051,
       "minOSVersion": "15.0"
     },
     {
