@@ -467,14 +467,16 @@ APPS = [
         "asset": lambda n: n.startswith("HGhub_") and n.endswith("_ios.ipa"),
         "name": "HGhub",
         "developerName": "Minireel",
-        "subtitle": "竖屏刷剧（未签名）",
+        "subtitle": "竖屏刷剧（侧载）",
         "category": "entertainment",
         "tintColor": "#F5A623",
         "iconURL": "https://raw.githubusercontent.com/laincat/HGhub/main/icons/HGhub-1024.png",
         "description": (
             "横竖屏刷剧应用，支持推荐流、榜单、搜索与选集续播。"
-            "安装包由上游 Minireel/HGhub 的 iOS 构建产物转发，未签名，需自行签名安装。"
-            "上游协议为 PolyForm Noncommercial 1.0.0，禁止商业使用。\n\n"
+            "安装包由 laincat/HGhub 镜像自动编译：iOS 专用源码、ad-hoc 签名并写入 "
+            "get-task-allow，适配 SideStore / AltStore 重签，修复了完全未签名包"
+            "重签后启动闪退的问题。\n\n"
+            "上游协议为 PolyForm Noncommercial 1.0.0，禁止商业使用。"
             "项目主页：https://github.com/Minireel/HGhub"
         ),
     },
