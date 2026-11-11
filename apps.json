@@ -618,40 +618,9 @@
               "source": "https://github.com/EhPanda-Team/EhPanda/releases/tag/v2.8.1"
             }
           ]
-        },
-        {
-          "track": "nightly",
-          "releases": [
-            {
-              "version": "3.0.0",
-              "date": "2026-08-20",
-              "publishedAt": "2026-08-20T02:37:46Z",
-              "buildVersion": "158",
-              "buildNumber": "158",
-              "localizedDescription": "🧪 预发布 3.0.0（2026-08-20）\n\nFeatures\r\n\r\n- Offline downloads. Save galleries to your device and read them with no connection. Sort them into folders, and let the app repair a download that got interrupted or update it later. Downloads keep going while the app is in the background and won't get cut off partway.\r\n- Date Seek. Jump straight to a specific date while paging through a gallery. It works on the Frontpage, Watched and Favorites lists.\r\n- WebP images are now supported.\r\n- Redesigned toasts. Progress and status messages (login, page jump, background updates, and more) now show as a sleek glass toast at the bottom of the screen instead of a pop-up spinner.\r\nBugfixes\r\n\r\n- The page slider and the current page no long…",
-              "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/3.0.0/EhPanda.ipa",
-              "size": 19041995,
-              "minOSVersion": "27.0",
-              "releaseTag": "3.0.0",
-              "source": "https://github.com/EhPanda-Team/EhPanda/releases/tag/3.0.0"
-            }
-          ]
         }
       ],
       "versions": [
-        {
-          "version": "3.0.0",
-          "date": "2026-08-20",
-          "publishedAt": "2026-08-20T02:37:46Z",
-          "buildVersion": "158",
-          "buildNumber": "158",
-          "localizedDescription": "🧪 预发布 3.0.0（2026-08-20）\n\nFeatures\r\n\r\n- Offline downloads. Save galleries to your device and read them with no connection. Sort them into folders, and let the app repair a download that got interrupted or update it later. Downloads keep going while the app is in the background and won't get cut off partway.\r\n- Date Seek. Jump straight to a specific date while paging through a gallery. It works on the Frontpage, Watched and Favorites lists.\r\n- WebP images are now supported.\r\n- Redesigned toasts. Progress and status messages (login, page jump, background updates, and more) now show as a sleek glass toast at the bottom of the screen instead of a pop-up spinner.\r\nBugfixes\r\n\r\n- The page slider and the current page no long…",
-          "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/3.0.0/EhPanda.ipa",
-          "size": 19041995,
-          "minOSVersion": "27.0",
-          "releaseTag": "3.0.0",
-          "source": "https://github.com/EhPanda-Team/EhPanda/releases/tag/3.0.0"
-        },
         {
           "version": "2.8.1",
           "date": "2026-07-20",
@@ -671,8 +640,7 @@
       "versionDescription": "1. feat: Adapt to the new Liquid Glass design.\r\n3. fix: Gesture issue in the reading page.\r\n4. fix: Crash issue in eh setting page.\r\n5. fix: A minor issue in search page.",
       "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.8.1/EhPanda.ipa",
       "size": 7352364,
-      "minOSVersion": "26.0",
-      "beta": true
+      "minOSVersion": "26.0"
     },
     {
       "name": "HGhub",
@@ -1285,7 +1253,7 @@
       "developerName": "Xanerix",
       "subtitle": "支持多站源的短剧与影视客户端",
       "localizedDescription": "Flutter 多平台短剧与影视客户端，包含全部站源，可在设置中逐个开关。支持追剧、观看记录、多用户、本地下载与备份。此处收录真果鉴全站源版；自 1.0.3 起使用独立 Bundle ID com.guoapp.all，可与仅含红果站源的红果鉴同时安装。旧包名版本不能覆盖升级，原有设置、追剧和下载记录不会自动迁移。\n\n安装包由上游发布，需自行签名安装。站源可用性取决于源站及网络；应用不解除源站 VIP 或其他授权限制。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Xanerix/guoapp",
-      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v1.0.7-107/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v1.0.8-108/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#E97642",
       "category": "entertainment",
       "appPermissions": {
@@ -1297,41 +1265,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "1.0.7",
-              "date": "2026-11-08",
-              "publishedAt": "2026-11-08T15:44:00Z",
-              "buildVersion": "107",
-              "buildNumber": "107",
-              "localizedDescription": "更新内容：\n\n- 真果鉴新增站源「笔盒」（beabox.cc）：默认关闭，可在站源管理中打开。站点地址经常更换，当前域名失效时应用会从发布页自动发现可用域名，并记住上次可用的线路，重启后直接使用；「全部」列出最新视频，分类取站点的热门标签，支持翻页、详情、分集和在线搜索，需要解析的线路会自动向站点接口换取播放地址。\n- Windows 新增安装包 *-windows-x64-setup.exe：双击安装，默认装到当前用户（%LOCALAPPDATA%\\Programs\\<包名>，如红果鉴为 com.guoapp.phoenix），不需要管理员权限，安装时也可选择为所有用户安装；可选创建桌面快捷方式，开始菜单自动添加入口，可在系统「应用」里卸载。红果鉴和全站源版可同时安装，覆盖安装即升级，应用运行时安装或卸载，会提示先关闭应用再继续。卸载时可勾选「同时清除本地数据」，一并删除设置、追剧、收藏、缓存和默认目录中的下载，默认不勾选、全部保留；自选的下载目录和「文档\\合并视频」不受影响。原来的 zip 便携版继续提供。\n- 修复 Android 手机、平板和电视上按返回键（物理键、三键导航、侧滑手势和遥控器返回键）会一次退回两级甚至多级：例如在搜索结果里点进详情后按返回，会直接回到首页；在设置里从分组页返回，会越过设置根页。现在每按一次只退一层，桌面上按 Esc 不受影响。\n- 修复电视上自动连播下一集时，已经隐藏的播控会重新弹出来（#83）：现在换集时播控保持隐藏，只有手动暂停或最后一集播完时才显示。\n- 降低 Windows 播放时的显卡占用（#81）：原来不管窗口多大，视频都按原…",
-              "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.7-107/zhenguojian-1.0.7%2B107-ios-unsigned.ipa",
-              "size": 30676536,
+              "version": "1.0.8",
+              "date": "2026-11-11",
+              "publishedAt": "2026-11-11T15:58:54Z",
+              "buildVersion": "108",
+              "buildNumber": "108",
+              "localizedDescription": "更新内容：\n\n- 新增站源「红果听书」（#78）：红果同一后端的听书、小说频道，可浏览、搜索、看目录并逐章下载有声书，每章是 MP4 容器里的音频。有主播录制的有声书直接播放真人录音，纯文字小说用免费 AI 音色朗读，都不需要登录，详情页标签会注明「真人录音」或「AI 朗读」。\n- 红果系列剧（#62）：详情页选集上方新增「系列多季」卡片条，显示各季集数或观看进度和上线日期，点击切换；本季播完自动接下一季第 1 集。季列表取自红果官方系列剧数据，同名的不同剧不会混在一起。\n- 设置 › 外观 新增「纯黑深色模式」，适合 OLED 屏幕，默认关闭（#90）。\n- 全屏播放显示网速和时间（#50）：手机横屏在电量旁显示下载速度，平板、电脑在右上角显示网速和时间；设置 › 播放 可分别关闭。\n- 定时停止（#106）：手机播放设置面板和平板、电脑播放条的月亮按钮可选「播完本集」或 15/30/60/90 分钟后暂停。暂不支持后台播放。\n- 下载管理「已下载」点「编辑」可多选整部剧批量删除（#109）。\n- Windows 便携版程序旁有 userdata 文件夹时，设置、记录、缓存、日志和默认下载都存到这里，便携 ZIP 自带该文件夹；旧便携版数据可先备份再在新版恢复（#92）。\n- 手机和平板横屏全屏可上下滑动切集（#87、#107）：设置 › 播放 开启「上下滑动切换剧集」，需先关闭「滑动调节亮度/音量」，默认关闭。\n- 设置 › 播放 新增「横屏底部进度线」开关，默认开启（#110）。\n- 手机底部导航和平板、电脑侧边栏新增「历史」（#64、#91），可在 设置 › 外观 关闭…",
+              "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.8-108/zhenguojian-1.0.8%2B108-ios-unsigned.ipa",
+              "size": 30761608,
               "minOSVersion": "15.1",
-              "releaseTag": "app-v1.0.7-107",
-              "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.7-107"
+              "releaseTag": "app-v1.0.8-108",
+              "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.8-108"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "1.0.7",
-          "date": "2026-11-08",
-          "publishedAt": "2026-11-08T15:44:00Z",
-          "buildVersion": "107",
-          "buildNumber": "107",
-          "localizedDescription": "更新内容：\n\n- 真果鉴新增站源「笔盒」（beabox.cc）：默认关闭，可在站源管理中打开。站点地址经常更换，当前域名失效时应用会从发布页自动发现可用域名，并记住上次可用的线路，重启后直接使用；「全部」列出最新视频，分类取站点的热门标签，支持翻页、详情、分集和在线搜索，需要解析的线路会自动向站点接口换取播放地址。\n- Windows 新增安装包 *-windows-x64-setup.exe：双击安装，默认装到当前用户（%LOCALAPPDATA%\\Programs\\<包名>，如红果鉴为 com.guoapp.phoenix），不需要管理员权限，安装时也可选择为所有用户安装；可选创建桌面快捷方式，开始菜单自动添加入口，可在系统「应用」里卸载。红果鉴和全站源版可同时安装，覆盖安装即升级，应用运行时安装或卸载，会提示先关闭应用再继续。卸载时可勾选「同时清除本地数据」，一并删除设置、追剧、收藏、缓存和默认目录中的下载，默认不勾选、全部保留；自选的下载目录和「文档\\合并视频」不受影响。原来的 zip 便携版继续提供。\n- 修复 Android 手机、平板和电视上按返回键（物理键、三键导航、侧滑手势和遥控器返回键）会一次退回两级甚至多级：例如在搜索结果里点进详情后按返回，会直接回到首页；在设置里从分组页返回，会越过设置根页。现在每按一次只退一层，桌面上按 Esc 不受影响。\n- 修复电视上自动连播下一集时，已经隐藏的播控会重新弹出来（#83）：现在换集时播控保持隐藏，只有手动暂停或最后一集播完时才显示。\n- 降低 Windows 播放时的显卡占用（#81）：原来不管窗口多大，视频都按原…",
-          "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.7-107/zhenguojian-1.0.7%2B107-ios-unsigned.ipa",
-          "size": 30676536,
+          "version": "1.0.8",
+          "date": "2026-11-11",
+          "publishedAt": "2026-11-11T15:58:54Z",
+          "buildVersion": "108",
+          "buildNumber": "108",
+          "localizedDescription": "更新内容：\n\n- 新增站源「红果听书」（#78）：红果同一后端的听书、小说频道，可浏览、搜索、看目录并逐章下载有声书，每章是 MP4 容器里的音频。有主播录制的有声书直接播放真人录音，纯文字小说用免费 AI 音色朗读，都不需要登录，详情页标签会注明「真人录音」或「AI 朗读」。\n- 红果系列剧（#62）：详情页选集上方新增「系列多季」卡片条，显示各季集数或观看进度和上线日期，点击切换；本季播完自动接下一季第 1 集。季列表取自红果官方系列剧数据，同名的不同剧不会混在一起。\n- 设置 › 外观 新增「纯黑深色模式」，适合 OLED 屏幕，默认关闭（#90）。\n- 全屏播放显示网速和时间（#50）：手机横屏在电量旁显示下载速度，平板、电脑在右上角显示网速和时间；设置 › 播放 可分别关闭。\n- 定时停止（#106）：手机播放设置面板和平板、电脑播放条的月亮按钮可选「播完本集」或 15/30/60/90 分钟后暂停。暂不支持后台播放。\n- 下载管理「已下载」点「编辑」可多选整部剧批量删除（#109）。\n- Windows 便携版程序旁有 userdata 文件夹时，设置、记录、缓存、日志和默认下载都存到这里，便携 ZIP 自带该文件夹；旧便携版数据可先备份再在新版恢复（#92）。\n- 手机和平板横屏全屏可上下滑动切集（#87、#107）：设置 › 播放 开启「上下滑动切换剧集」，需先关闭「滑动调节亮度/音量」，默认关闭。\n- 设置 › 播放 新增「横屏底部进度线」开关，默认开启（#110）。\n- 手机底部导航和平板、电脑侧边栏新增「历史」（#64、#91），可在 设置 › 外观 关闭…",
+          "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.8-108/zhenguojian-1.0.8%2B108-ios-unsigned.ipa",
+          "size": 30761608,
           "minOSVersion": "15.1",
-          "releaseTag": "app-v1.0.7-107",
-          "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.7-107"
+          "releaseTag": "app-v1.0.8-108",
+          "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.8-108"
         }
       ],
-      "version": "1.0.7",
-      "versionDate": "2026-11-08",
-      "versionDescription": "更新内容：\n\n- 真果鉴新增站源「笔盒」（beabox.cc）：默认关闭，可在站源管理中打开。站点地址经常更换，当前域名失效时应用会从发布页自动发现可用域名，并记住上次可用的线路，重启后直接使用；「全部」列出最新视频，分类取站点的热门标签，支持翻页、详情、分集和在线搜索，需要解析的线路会自动向站点接口换取播放地址。\n- Windows 新增安装包 *-windows-x64-setup.exe：双击安装，默认装到当前用户（%LOCALAPPDATA%\\Programs\\<包名>，如红果鉴为 com.guoapp.phoenix），不需要管理员权限，安装时也可选择为所有用户安装；可选创建桌面快捷方式，开始菜单自动添加入口，可在系统「应用」里卸载。红果鉴和全站源版可同时安装，覆盖安装即升级，应用运行时安装或卸载，会提示先关闭应用再继续。卸载时可勾选「同时清除本地数据」，一并删除设置、追剧、收藏、缓存和默认目录中的下载，默认不勾选、全部保留；自选的下载目录和「文档\\合并视频」不受影响。原来的 zip 便携版继续提供。\n- 修复 Android 手机、平板和电视上按返回键（物理键、三键导航、侧滑手势和遥控器返回键）会一次退回两级甚至多级：例如在搜索结果里点进详情后按返回，会直接回到首页；在设置里从分组页返回，会越过设置根页。现在每按一次只退一层，桌面上按 Esc 不受影响。\n- 修复电视上自动连播下一集时，已经隐藏的播控会重新弹出来（#83）：现在换集时播控保持隐藏，只有手动暂停或最后一集播完时才显示。\n- 降低 Windows 播放时的显卡占用（#81）：原来不管窗口多大，视频都按原…",
-      "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.7-107/zhenguojian-1.0.7%2B107-ios-unsigned.ipa",
-      "size": 30676536,
+      "version": "1.0.8",
+      "versionDate": "2026-11-11",
+      "versionDescription": "更新内容：\n\n- 新增站源「红果听书」（#78）：红果同一后端的听书、小说频道，可浏览、搜索、看目录并逐章下载有声书，每章是 MP4 容器里的音频。有主播录制的有声书直接播放真人录音，纯文字小说用免费 AI 音色朗读，都不需要登录，详情页标签会注明「真人录音」或「AI 朗读」。\n- 红果系列剧（#62）：详情页选集上方新增「系列多季」卡片条，显示各季集数或观看进度和上线日期，点击切换；本季播完自动接下一季第 1 集。季列表取自红果官方系列剧数据，同名的不同剧不会混在一起。\n- 设置 › 外观 新增「纯黑深色模式」，适合 OLED 屏幕，默认关闭（#90）。\n- 全屏播放显示网速和时间（#50）：手机横屏在电量旁显示下载速度，平板、电脑在右上角显示网速和时间；设置 › 播放 可分别关闭。\n- 定时停止（#106）：手机播放设置面板和平板、电脑播放条的月亮按钮可选「播完本集」或 15/30/60/90 分钟后暂停。暂不支持后台播放。\n- 下载管理「已下载」点「编辑」可多选整部剧批量删除（#109）。\n- Windows 便携版程序旁有 userdata 文件夹时，设置、记录、缓存、日志和默认下载都存到这里，便携 ZIP 自带该文件夹；旧便携版数据可先备份再在新版恢复（#92）。\n- 手机和平板横屏全屏可上下滑动切集（#87、#107）：设置 › 播放 开启「上下滑动切换剧集」，需先关闭「滑动调节亮度/音量」，默认关闭。\n- 设置 › 播放 新增「横屏底部进度线」开关，默认开启（#110）。\n- 手机底部导航和平板、电脑侧边栏新增「历史」（#64、#91），可在 设置 › 外观 关闭…",
+      "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.8-108/zhenguojian-1.0.8%2B108-ios-unsigned.ipa",
+      "size": 30761608,
       "minOSVersion": "15.1"
     }
   ],

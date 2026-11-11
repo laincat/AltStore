@@ -2036,5 +2036,19 @@
       "size": 40652510,
       "digest": "sha256:077525bd7e4ad4e183a2565f14417199fc30bc4d39ff8272b2ceb9d3a48a7d2a"
     }
+  },
+  "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.8-108/zhenguojian-1.0.8%2B108-ios-unsigned.ipa": {
+    "bundleIdentifier": "com.yingshib.xg",
+    "version": "1.0.8",
+    "buildVersion": "108",
+    "displayName": "XiaoGuoYingShi",
+    "minOSVersion": "15.1",
+    "size": 30761608,
+    "assetIdentity": {
+      "id": 736053079,
+      "updated_at": "2026-11-11T15:58:49Z",
+      "size": 30761608,
+      "digest": "sha256:93cd5c2b4a26cc9a42df101e7e0572860c6559c433d3381e1274da2ea1f74f03"
+    }
   }
 }
