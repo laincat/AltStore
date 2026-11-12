@@ -74,9 +74,10 @@ SOURCE = {
     "iconURL": "https://github.com/laincat.png?size=512",
     "subtitle": "多类 iOS 自签应用源",
     "description": (
-        "收录 22 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh，漫画阅读类 EhPanda、"
+        "收录 25 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh，漫画阅读类 EhPanda、"
         "VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX、PicaComic、Aidoku，"
-        "影音与工具类 AvPlay、真果鉴、Swipt、AirCard，游戏类 ARMSX2、ARMSX3、Rich4。"
+        "影音与工具类 One、AvPlay、INSAV、真果鉴、Swipt、AirCard、GestaltX，"
+        "游戏类 ARMSX2、ARMSX3、Rich4。"
         "IPA 均直连各项目 GitHub Release 官方资产，"
         "由 SideStore / AltStore / LiveContainer 本地签名安装。"
     ),
@@ -330,6 +331,54 @@ APPS = [
             "面向成年人的影音播放应用。此处提供上游发布的未签名 iOS 安装包，需自行签名安装；"
             "上游仓库未提供应用源代码或开源许可证。\n\n"
             "项目主页：https://github.com/anonymousjav/AvPlayRelease"
+        ),
+    },
+    {
+        "repo": "huamidev/GestaltX",
+        "asset": lambda n: n.startswith("GestaltX_") and n.endswith(".ipa"),
+        "name": "GestaltX",
+        "developerName": "huami",
+        "subtitle": "MobileGestalt 编辑器",
+        "category": "utilities",
+        "tintColor": "#0A84FF",
+        "icon": "GestaltX/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+        "description": (
+            "MobileGestalt 编辑器，可调整区域码、设备预设、备份配置，支持 7 种语言。"
+            "需要 iOS 26.0 及以上；未签名安装包来自上游 GitHub Release。\n\n"
+            "开源协议：GPL-3.0　·　项目主页：https://github.com/huamidev/GestaltX"
+        ),
+    },
+    {
+        "repo": "ios151/One-releases",
+        "asset": lambda n: n == "One-unsigned.ipa",
+        "name": "One",
+        "developerName": "ios151",
+        "subtitle": "ONE·一个 原生 iOS 客户端",
+        "category": "entertainment",
+        "tintColor": "#007AFF",
+        "icon": "icon.png",
+        "description": (
+            "ONE·一个 的第三方原生 iOS 客户端（SwiftUI，iOS 16+）。图文、影视点播、阅读、电台、"
+            "写真、漫画，支持系统原生播放器与外部播放器、下载到「文件」App、收藏与搜索。"
+            "未签名安装包来自上游 GitHub Release，需自行签名安装。\n\n"
+            "上游仓库只发布安装包，不含源码。　·　项目主页：https://github.com/ios151/One-releases"
+        ),
+    },
+    {
+        "repo": "ios151/Insav-releases",
+        "asset": lambda n: n == "Insav-unsigned.ipa",
+        "name": "INSAV",
+        "developerName": "ios151",
+        "subtitle": "insav 原生 iOS 客户端（成人向）",
+        "category": "entertainment",
+        "tintColor": "#E11D48",
+        "icon": "icon.png",
+        "description": (
+            "面向成年人的 insav 第三方原生 iOS 客户端（SwiftUI，iOS 16+）。"
+            "四个站点完整适配，支持浏览、搜索、原生与外部播放器、整部下载离线观看、"
+            "登录收藏订阅，并可挂载外部字幕库。未签名安装包来自上游 GitHub Release，"
+            "需自行签名安装。\n\n"
+            "上游仓库只发布安装包，不含源码。　·　项目主页：https://github.com/ios151/Insav-releases"
         ),
     },
     {
