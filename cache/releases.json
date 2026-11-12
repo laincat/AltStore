@@ -765,6 +765,41 @@
   ],
   "EhPanda-Team/EhPanda": [
     {
+      "tag": "3.0.0",
+      "name": "EhPanda 3.0: Reborn after four years",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-12",
+      "published_at": "2026-11-12T18:13:21Z",
+      "body": "EhPanda 3.0 is rebuilt with a new look.\r\n\r\n- Download galleries to read offline, sort them into folders, and keep downloading in the background.\r\n- Jump to galleries around any date with Seek to Date.\r\n- Log in with your username and password again, even behind a Cloudflare check.\r\n- Report comments, see a warning before posting, and block users.\r\n- Larger text, VoiceOver and Voice Control now work across the app.\r\n- Every screen rotates with your device, so the Enables landscape setting is gone.\r\n- The Auto-Lock setting is gone. To lock EhPanda, touch and hold its icon, then choose Require Face ID or Require Touch ID.\r\n- On first launch, you confirm you're an adult and choose how much anonymous usage data to share.\r\n- WebP images now display, and many bugs are fixed.\r\n\r\nhttps://ehpanda.app\r\n\r\n<details>\r\n<summary>Deutsch</summary>\r\n\r\nEhPanda 3.0 ist neu gebaut, mit neuem Design.\r\n\r\n- Lade Galerien zum Offline-Lesen herunter, sortiere sie in Ordner und lade im Hintergrund weiter.\r\n- Mit „Zu Datum springen“ gelangst du zu Galerien rund um ein beliebiges Datum.\r\n- Melde dich wieder mit Benutzername und Passwort an, auch hinter einer Cloudflare-Prüfung.\r\n- Du kannst Kommentare melden, vor dem Posten einen Hinweis sehen und Personen blockieren.\r\n- Größere Schrift, VoiceOver und Sprachsteuerung funktionieren jetzt in der ganzen App.\r\n- Jeder Bildschirm dreht sich mit deinem Gerät, daher entfällt die Einstellung „Enables landscape“.\r\n- Die Einstellung „Auto-Lock“ entfällt. Um EhPanda zu sperren, halte das Symbol gedrückt und wähle „Face ID anfordern“ oder „Touch ID anfordern“.\r\n- Beim ersten Start bestätigst du, dass du erwachsen bist, und wählst, wie viele anonyme Nutzungsdaten du teilst.\r\n- WebP-Bilder werden jetzt angezeigt, dazu viele Fehlerbehebungen.\r\n\r\n</details>\r\n\r\n<details>\r\n<summary>日本語</summary>\r\n\r\nEhPanda 3.0 は新しいデザインで生まれ変わりました。\r\n\r\n- ギャラリーをダウンロードしてオフラインで読めます。フォルダで整理でき、バックグラウンドでもダウンロードが続きます。\r\n- 「日付へ移動」で、指定した日付前後のギャラリーに移動できます。\r\n- Cloudflare の確認がある場合でも、ユーザー名とパスワード",
+      "ipas": [
+        {
+          "name": "EhPanda-AltStore.ipa",
+          "size": 18858405,
+          "url": "https://github.com/EhPanda-Team/EhPanda/releases/download/3.0.0/EhPanda-AltStore.ipa",
+          "id": 740554089,
+          "updated_at": "2026-11-12T18:13:19Z",
+          "digest": "sha256:e608764292ae550f6d73819e9b6822209e0205f9ddbb97300cef613fa3b2d490"
+        },
+        {
+          "name": "EhPanda-GitHub.ipa",
+          "size": 18858404,
+          "url": "https://github.com/EhPanda-Team/EhPanda/releases/download/3.0.0/EhPanda-GitHub.ipa",
+          "id": 740554093,
+          "updated_at": "2026-11-12T18:13:20Z",
+          "digest": "sha256:6d2f5b41dc673b305e75486d2fa8f23f5ce7711084106c3e2e148261cbab56fa"
+        },
+        {
+          "name": "EhPanda-SideStore.ipa",
+          "size": 18858399,
+          "url": "https://github.com/EhPanda-Team/EhPanda/releases/download/3.0.0/EhPanda-SideStore.ipa",
+          "id": 740554091,
+          "updated_at": "2026-11-12T18:13:20Z",
+          "digest": "sha256:71722fe94a6ce2e00580df7c7e2f8bcc2c2f8ea57814615066c00ed5d15bf8de"
+        }
+      ]
+    },
+    {
       "tag": "v2.8.1",
       "name": "Bugfixes & Liquid Glass adaptation",
       "pre": false,
@@ -1121,25 +1156,6 @@
           "url": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.4.3/EhPanda.ipa",
           "id": 83261350,
           "updated_at": "2022-11-03T05:59:46Z",
-          "digest": null
-        }
-      ]
-    },
-    {
-      "tag": "v2.4.2",
-      "name": "First iOS, iPadOS 16 release",
-      "pre": false,
-      "draft": false,
-      "date": "2022-10-03",
-      "published_at": "2022-10-03T18:15:16Z",
-      "body": "1. fix: Unexpected behaviors on iOS or iPadOS 16 devices.\r\niOS・iPadOS 16 デバイスでの予期せぬ動作を修正。\r\n修正了 iOS、iPadOS 16 裝置上的非預期行為。\r\n\r\n2. fix: Will not start loading automatically when navigating to PreviewsView issue.\r\nプレビュー画面へ遷移する際、読み込みが自動的に始まらない不具合を修正。\r\n修正進入預覽頁面時不自動開始載入的問題。\r\n\r\n3. refactor: Reduce the file size of releases.\r\nリリースのファイルサイズを減らす。\r\n減小發佈的檔案大小。",
-      "ipas": [
-        {
-          "name": "EhPanda.ipa",
-          "size": 5963114,
-          "url": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.4.2/EhPanda.ipa",
-          "id": 79835878,
-          "updated_at": "2022-10-03T18:15:17Z",
           "digest": null
         }
       ]
@@ -7350,16 +7366,16 @@
       "pre": true,
       "draft": false,
       "date": "2026-11-12",
-      "published_at": "2026-11-12T03:58:41Z",
-      "body": "* Extend Swiplet icon colors\n* Add the chart and data grid components\n* Remove the guards against bad values from Swiplets\n* Add stream actions and the process API\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the developer service\n* Fix slow detection of unsupported networks\n* Resolve DNS with the system configuration on iOS\n* Detect the foreground app right after connecting\n* Connect touch input before the first tap\n* Send input without checking the lock state\n* Split the CLI commands into one file each\n* Fix the detection of the foreground app\n* Download swiplet updates on demand and show progress\n* Number enumerations with iota\n* Skip unchanged builds in dev install\n* Reformat code\n* Fix the position of the repository loading indicator\n* Fix choosing VPN addresses that do not loop back\n* Generate the CLI's Protobuf code as TypeScript\n* Move the CLI to TypeScript\n* Generate Protobuf code with buf\n* Version releases automatically and publish packages on release\n* Use the stable official swiplets feed in stable builds\n* Replace outdated Developer Disk Images\n* Fix tunnel uploads stalling on large TLS records\n* Fix loopback setup not advancing after the tunnel is found\n* Merge the release workflow into the build workflow\n* Fix publishing when the new draft is not listed yet\n* Reject outdated swiplets\n* Add available() and minimum iOS versions for swiplets\n* Support iOS 17.4\n* Fix calls hanging when their results can't be converted\n* Fix accessibility snapshots failing on infinite frames\n* Refactor the screen API\n* Cancel Vision requests when the call is aborted\n* Accept only file handles as files\n* Track the foreground app without accessibility and clo",
+      "published_at": "2026-11-12T19:09:07Z",
+      "body": "* Require iOS 26 for the accessibility API\n* Fix network lockdown connections closing without a heartbeat\n* Extend Swiplet icon colors\n* Add the chart and data grid components\n* Remove the guards against bad values from Swiplets\n* Add stream actions and the process API\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the developer service\n* Fix slow detection of unsupported networks\n* Resolve DNS with the system configuration on iOS\n* Detect the foreground app right after connecting\n* Connect touch input before the first tap\n* Send input without checking the lock state\n* Split the CLI commands into one file each\n* Fix the detection of the foreground app\n* Download swiplet updates on demand and show progress\n* Number enumerations with iota\n* Skip unchanged builds in dev install\n* Reformat code\n* Fix the position of the repository loading indicator\n* Fix choosing VPN addresses that do not loop back\n* Generate the CLI's Protobuf code as TypeScript\n* Move the CLI to TypeScript\n* Generate Protobuf code with buf\n* Version releases automatically and publish packages on release\n* Use the stable official swiplets feed in stable builds\n* Replace outdated Developer Disk Images\n* Fix tunnel uploads stalling on large TLS records\n* Fix loopback setup not advancing after the tunnel is found\n* Merge the release workflow into the build workflow\n* Fix publishing when the new draft is not listed yet\n* Reject outdated swiplets\n* Add available() and minimum iOS versions for swiplets\n* Support iOS 17.4\n* Fix calls hanging when their results can't be converted\n* Fix accessibility snapshots failing on infinite frames\n* Refactor the screen API\n* Cancel Vision requests when the ca",
       "ipas": [
         {
           "name": "Swipt.ipa",
-          "size": 48135309,
+          "size": 48136565,
           "url": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-          "id": 737985156,
-          "updated_at": "2026-11-12T03:58:39Z",
-          "digest": "sha256:39120a86b004bda57351e7266b8140040ff73e1997982280686b4901f5843d9d"
+          "id": 740735617,
+          "updated_at": "2026-11-12T19:09:05Z",
+          "digest": "sha256:a52208d5a74becd4f0c7ebd3894cac3724b0531e30c4398e16fe94b87dcc3de7"
         }
       ]
     }
@@ -7372,7 +7388,7 @@
       "draft": false,
       "date": "2026-11-10",
       "published_at": "2026-11-10T13:03:24Z",
-      "body": "Changes since 0.0.1. Thanks to everyone who sent problem reports, since most of these fixes came from them. This is a beta: the JIT changes ran on an iPhone, and everything else was tested on a Mac. Please send a report if something works worse than in 0.0.1.\n\n## Requirements and install\n\nARMSX3 for iOS needs an iPhone or iPad with an A14 chip or newer, on iOS 26 or later. It isn't on the App Store, so install the IPA with SideStore, AltStore or LiveContainer. JIT needs a pairing file for your device (see Pairing files below).\n\n## Update LiveContainer first\n\nIf you run ARMSX3 inside LiveContainer, update LiveContainer to 3.8.13 or later before you install this build. That is the nightly build at the moment: https://github.com/LiveContainer/LiveContainer/releases/tag/nightly Older versions can't load the JIT helper, and ARMSX3 will fall back to StikDebug.\n\nIn LiveContainer, turn on Helper Process Support for ARMSX3, and open ARMSX3 full screen, not in a window.\n\n## Built-in JIT inside LiveContainer\n\nARMSX3 can now turn on JIT by itself inside LiveContainer, the same way it already did when installed on its own. You no longer need StikDebug for this. We tested it inside LiveContainer with SideStore; LiveContainer without SideStore hasn't been tested yet.\n\nIf built-in JIT can't start, the JIT and Device pane lists what it checked and how to fix each item: the LiveContainer version, Helper Process Support, full screen, and the pairing file. A new Test JIT Setup button checks the setup without restarting the app and tells you where it stopped.\n\n## Pairing files\n\nBuilt-in JIT needs a pairing file made for your device. There are now more ways to give ARMSX3 one:\n\n- Import Pairing File in Settings › JIT and Device, as before.\n- Get from SideStore, when SideStore is installed.\n- Share the file to ARMSX3, or use Open in from Files.\n- Put a file named pairingFile.plist in ARMSX3's folder in Files. ARMSX3 picks it up the next time it starts.\n- Inside LiveContainer, ARMSX3 can u",
+      "body": "Changes since 0.0.1. Thanks to everyone who sent problem reports, since most of these fixes came from them. This is a beta: the JIT changes ran on an iPhone, and everything else was tested on a Mac. Please send a report if something works worse than in 0.0.1.\r\n\r\n## Requirements and install\r\n\r\nARMSX3 for iOS needs an iPhone or iPad with an A14 chip or newer, on iOS 17.4 or later. It isn't on the App Store, so install the IPA with SideStore, AltStore or LiveContainer. JIT needs a pairing file for your device (see Pairing files below).\r\n\r\n## Update LiveContainer first\r\n\r\nIf you run ARMSX3 inside LiveContainer, update LiveContainer to 3.8.13 or later before you install this build. That is the nightly build at the moment: https://github.com/LiveContainer/LiveContainer/releases/tag/nightly Older versions can't load the JIT helper, and ARMSX3 will fall back to StikDebug.\r\n\r\nIn LiveContainer, turn on Helper Process Support for ARMSX3, and open ARMSX3 full screen, not in a window.\r\n\r\n## Built-in JIT inside LiveContainer\r\n\r\nARMSX3 can now turn on JIT by itself inside LiveContainer, the same way it already did when installed on its own. You no longer need StikDebug for this. We tested it inside LiveContainer with SideStore; LiveContainer without SideStore hasn't been tested yet.\r\n\r\nIf built-in JIT can't start, the JIT and Device pane lists what it checked and how to fix each item: the LiveContainer version, Helper Process Support, full screen, and the pairing file. A new Test JIT Setup button checks the setup without restarting the app and tells you where it stopped.\r\n\r\n## Pairing files\r\n\r\nBuilt-in JIT needs a pairing file made for your device. There are now more ways to give ARMSX3 one:\r\n\r\n- Import Pairing File in Settings › JIT and Device, as before.\r\n- Get from SideStore, when SideStore is installed.\r\n- Share the file to ARMSX3, or use Open in from Files.\r\n- Put a file named pairingFile.plist in ARMSX3's folder in Files. ARMSX3 picks it up the next time it starts.\r\n- Inside",
       "ipas": [
         {
           "name": "ARMSX3-0.0.2.ipa",
@@ -7592,15 +7608,15 @@
       "draft": false,
       "date": "2026-11-12",
       "published_at": "2026-11-12T17:14:29Z",
-      "body": "English | [简体中文](https://github.com/huamidev/GestaltX/blob/v1.0.7/CHANGELOG_ZH-CN.md)\n\nBuild `11130112`.\n\n### Fixed\n\n- Fix container discovery on iOS 27.3 so wallpaper and App Launch Images can locate their containers again.\n\n",
+      "body": "English | [简体中文](https://github.com/huamidev/GestaltX/blob/v1.0.7/CHANGELOG_ZH-CN.md)\r\n\r\nBuild `11130112`.\r\n\r\n### Fixed\r\n\r\n- Fix container discovery on iOS 27.3 so wallpaper and App Launch Images can locate their containers again.\r\n\r\n",
       "ipas": [
         {
           "name": "GestaltX_1.0.7.ipa",
-          "size": 3561079,
+          "size": 3563948,
           "url": "https://github.com/huamidev/GestaltX/releases/download/v1.0.7/GestaltX_1.0.7.ipa",
-          "id": 740353502,
-          "updated_at": "2026-11-12T17:14:31Z",
-          "digest": "sha256:a796e5b835f8423ecc6c8991926eefeb8bedc6fffff5865edb31a0dbd0a4b0b5"
+          "id": 740764196,
+          "updated_at": "2026-11-12T19:18:23Z",
+          "digest": "sha256:226f1a6ceb5267d6dcadbb5af228c1496bb4fd45c229857b9b2e19ca12ae5f72"
         }
       ]
     },

@@ -1956,15 +1956,15 @@
   "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa": {
     "bundleIdentifier": "io.nekohasekai.swipt",
     "version": "0.1.0",
-    "buildVersion": "75",
+    "buildVersion": "76",
     "displayName": "Swipt",
     "minOSVersion": "16.4",
-    "size": 48135309,
+    "size": 48136565,
     "assetIdentity": {
-      "id": 737985156,
-      "updated_at": "2026-11-12T03:58:39Z",
-      "size": 48135309,
-      "digest": "sha256:39120a86b004bda57351e7266b8140040ff73e1997982280686b4901f5843d9d"
+      "id": 740735617,
+      "updated_at": "2026-11-12T19:09:05Z",
+      "size": 48136565,
+      "digest": "sha256:a52208d5a74becd4f0c7ebd3894cac3724b0531e30c4398e16fe94b87dcc3de7"
     }
   },
   "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.2/ARMSX3-0.0.2.ipa": {
@@ -2099,12 +2099,12 @@
     "buildVersion": "11130112",
     "displayName": "GestaltX",
     "minOSVersion": "26.0",
-    "size": 3561079,
+    "size": 3563948,
     "assetIdentity": {
-      "id": 740353502,
-      "updated_at": "2026-11-12T17:14:31Z",
-      "size": 3561079,
-      "digest": "sha256:a796e5b835f8423ecc6c8991926eefeb8bedc6fffff5865edb31a0dbd0a4b0b5"
+      "id": 740764196,
+      "updated_at": "2026-11-12T19:18:23Z",
+      "size": 3563948,
+      "digest": "sha256:226f1a6ceb5267d6dcadbb5af228c1496bb4fd45c229857b9b2e19ca12ae5f72"
     }
   },
   "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.9-109/zhenguojian-1.0.9%2B109-ios-unsigned.ipa": {
