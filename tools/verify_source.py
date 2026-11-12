@@ -157,11 +157,20 @@ def validate(src, min_apps=1):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--file", default=os.path.join(os.path.dirname(__file__), "..", "apps.json"))
-    parser.add_argument("--min-apps", type=int, default=1)
+    parser.add_argument("--min-apps", default="1",
+                        help="最少应用数；传 auto 时直接取 build_source.APPS 的长度")
     args = parser.parse_args()
+    if args.min_apps == "auto":
+        # 门禁跟着配置走：加/删一个应用不用再改 workflow 里的硬编码数字。
+        # 仍然取「等于配置数」，少一个就整轮中止，不会把缩水的源推给用户。
+        from build_source import APPS
+        expected = len(APPS)
+        print("自动门禁：APPS=%d 个应用" % expected)
+    else:
+        expected = int(args.min_apps)
     try:
         with open(args.file, encoding="utf-8") as stream:
-            errors = validate(json.load(stream), args.min_apps)
+            errors = validate(json.load(stream), expected)
     except (OSError, ValueError) as exc:
         errors = [str(exc)]
     for error in errors:

@@ -94,7 +94,7 @@ VENERA_NOTE = (
     "但功能高度重叠，一般按需选一个。"
 )
 
-APPS = [
+BASE_APPS = [
     {
         "repo": "laincat/Nekularity",
         "asset": lambda n: n == "Nekularity.ipa",
@@ -544,6 +544,13 @@ APPS = [
     },
 ]
 
+# 补充应用：每个条目只依赖自己的上游 repo（Release 资产 / 自有图标与截图 / README 里的
+# 签名约束）。不再读取任何第三方聚合源的 apps.json —— 那份数据里的 Bundle ID、
+# minOSVersion 都可能与实际 IPA 不符，且上游一改名我们的源就跟着变。
+from apps_upstream import MIN_OS_FALLBACKS, UPSTREAM_APPS  # noqa: E402
+
+APPS = BASE_APPS + UPSTREAM_APPS
+
 
 # ---------- 网络 ----------
 def https_url(url):
@@ -792,15 +799,19 @@ def probe_ipa(url, api_url=None):
             if zlib.crc32(raw) & 0xffffffff != crc:
                 raise ValueError("Info.plist CRC mismatch")
             pl = plistlib.loads(raw)
-            if not isinstance(pl, dict) or any(not isinstance(pl.get(k), str) or not pl[k].strip() for k in
-                    ("CFBundleIdentifier", "CFBundleShortVersionString", "CFBundleVersion", "MinimumOSVersion")):
+            # MinimumOSVersion 不列为必需：实测 lpfoj/lsx4 的 IPA 里根本没有这个键。
+            # 缺了就返回空串，交给 make_versions() 用「上游 README 明示值」兜底；
+            # 绝不在这里猜一个默认系统版本。
+            required = ("CFBundleIdentifier", "CFBundleShortVersionString", "CFBundleVersion")
+            if not isinstance(pl, dict) or any(
+                    not isinstance(pl.get(k), str) or not pl[k].strip() for k in required):
                 raise ValueError("Info.plist lacks required string fields")
             info = {
                 "bundleIdentifier": pl.get("CFBundleIdentifier"),
                 "version": pl.get("CFBundleShortVersionString"),
                 "buildVersion": pl.get("CFBundleVersion"),
                 "displayName": pl.get("CFBundleDisplayName") or pl.get("CFBundleName"),
-                "minOSVersion": pl.get("MinimumOSVersion"),
+                "minOSVersion": pl.get("MinimumOSVersion") or "",
                 "size": total,
             }
             break
@@ -885,7 +896,9 @@ def get_releases(repo, refresh=False):
     cache = _load("releases.json", {})
     if not refresh and repo in cache and cache[repo]:
         return [normalize_cached(x) for x in cache[repo]]
-    rels = gh_json("https://api.github.com/repos/%s/releases?per_page=20" % repo)
+    # 77 个上游 repo 里，有些把应用版 release 夹在大量 nightly/模型发布之间；
+    # 20 条不够用，放宽到 GitHub API 上限 100，避免「明明有 IPA 却取不到」。
+    rels = gh_json("https://api.github.com/repos/%s/releases?per_page=100" % repo)
     cache[repo] = [{
         "tag": x["tag_name"], "name": x.get("name"), "pre": x.get("prerelease"),
         "draft": x.get("draft"), "date": (x.get("published_at") or "")[:10],
@@ -990,6 +1003,15 @@ def make_versions(picks, repo, bundle_id=None, reprobe=False):
         elif m["bundleIdentifier"] != bundle_id:
             print("   ! %s 的 %s bundleId 不一致，已丢弃" % (repo, r["tag_name"]), file=sys.stderr)
             continue
+        min_os = m.get("minOSVersion") or ""
+        if not min_os:
+            min_os = MIN_OS_FALLBACKS.get(repo, "")
+            if not min_os:
+                print("   ! %-22s %-10s IPA 缺 MinimumOSVersion 且无上游明示值，已跳过"
+                      % (repo, r["tag_name"]), file=sys.stderr)
+                continue
+            print("   ~ %-22s IPA 缺 MinimumOSVersion，按上游 README 明示值 %s 补齐"
+                  % (repo, min_os), file=sys.stderr)
         out.append({
             "version": m["version"],
             "date": r["published_at"][:10],
@@ -1002,7 +1024,7 @@ def make_versions(picks, repo, bundle_id=None, reprobe=False):
             "localizedDescription": notes_for(r),
             "downloadURL": a["browser_download_url"],
             "size": a["size"],
-            "minOSVersion": m["minOSVersion"],
+            "minOSVersion": min_os,
             "releaseTag": r["tag_name"],
             "source": "https://github.com/%s/releases/tag/%s" % (repo, r["tag_name"]),
         })
@@ -1148,6 +1170,14 @@ def build(per_app=1, refresh=False, reprobe=False, prev_path=None):
             # SideStore 只在「既无 releaseChannels 又无扁平 versions」的兜底分支读这个键，
             # 我们两条都有，所以对它没有任何影响。
             app["beta"] = True
+        # 上游自带的资源与安装约束。这两个键客户端不认识会直接忽略，
+        # 不影响解析；存在是为了让「需要 JIT / 特殊 entitlements / 与官方 App 同 ID」
+        # 这类信息能跟着源一起交付，而不是只写在本仓库 README 里。
+        if cfg.get("screenshots"):
+            app["screenshots"] = cfg["screenshots"]
+        if cfg.get("installNotes"):
+            app["installNotes"] = cfg["installNotes"]
+            app["installNotesSource"] = cfg.get("installNotesSource", "")
 
         apps.append(app)
         btag = ("；nightly %s" % beta_versions[0]["version"]) if beta_versions else "；无测试版"
@@ -1162,6 +1192,13 @@ def build(per_app=1, refresh=False, reprobe=False, prev_path=None):
 
     src = dict(SOURCE)
     src["apps"] = apps
+    src["description"] = (
+        "收录 %d 款 iOS 应用，全部直连各项目 GitHub Release 官方资产，"
+        "由 SideStore / AltStore / LiveContainer 本地签名安装。"
+        "每个条目的版本、Bundle ID、最低系统与体积均实读 IPA 内 Info.plist，"
+        "图标与截图取自各项目自己的仓库；需要 JIT 或特殊签名能力的应用在条目里另有安装说明。"
+        % len(apps)
+    )
     if not apps:
         # 一个都没生成（首次运行且全网失败）：交给入口判失败，别写出半成品
         src["featuredApps"] = []
@@ -1170,7 +1207,9 @@ def build(per_app=1, refresh=False, reprobe=False, prev_path=None):
 
     src["iconURL"] = SOURCE["iconURL"]
     src["featuredApps"] = featured_apps
-    src["news"] = [{
+    # News 也自己生成：一条源公告 + 每个应用一条版本公告，
+    # 内容来自各自上游 Release，不读取任何第三方聚合源的 news 数组。
+    news = [{
         "title": "源已建立",
         "identifier": "source-created",
         "caption": "收录 %d 款应用，IPA 直连各项目 GitHub Release。" % len(apps),
@@ -1178,6 +1217,23 @@ def build(per_app=1, refresh=False, reprobe=False, prev_path=None):
         "tintColor": SOURCE["tintColor"],
         "notify": False,
     }]
+    for a in apps:
+        stable = next((c["releases"][0] for c in a["releaseChannels"]
+                       if c.get("track") == "stable" and c.get("releases")), None)
+        if not stable:
+            continue
+        news.append({
+            "appID": a["bundleIdentifier"],
+            "identifier": "%s-%s-%s" % (a["bundleIdentifier"], stable["version"],
+                                          stable.get("buildVersion", "")),
+            "title": "%s %s" % (a["name"], stable["version"]),
+            "caption": (stable.get("localizedDescription") or "")[:140],
+            "date": stable.get("publishedAt") or stable["date"],
+            "tintColor": a["tintColor"],
+            "notify": False,
+            "url": stable.get("source"),
+        })
+    src["news"] = news
     return src, carried
 
 
@@ -1217,4 +1273,3 @@ if __name__ == "__main__":
     if not source["apps"]:
         print("!! 一个应用都没生成，判定为失败", file=sys.stderr)
         sys.exit(1)
-

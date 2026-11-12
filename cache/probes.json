@@ -2078,5 +2078,761 @@
       "size": 1630941,
       "digest": "sha256:3fbfee3f1fcd82fcce0b7f3fbd0381ef83ecf256b4d20b7984a39d95c3b1d7f9"
     }
+  },
+  "https://github.com/Predidit/Kazumi/releases/download/2.4.4/Kazumi_ios_2.4.4_no_sign.ipa": {
+    "bundleIdentifier": "com.example.kazumi",
+    "version": "2.4.4",
+    "buildVersion": "20404",
+    "displayName": "Kazumi",
+    "minOSVersion": "15.0",
+    "size": 30341213,
+    "assetIdentity": {
+      "id": 739042530,
+      "updated_at": "2026-11-12T10:27:42Z",
+      "size": 30341213,
+      "digest": "sha256:88d1146bf466a7dbbfd3a0649a8b36fb15a10e6186aca8388080c2e94747bfca"
+    }
+  },
+  "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261112/ARMSX2-nightly-20261112-c25493a202-iOS-arm64.ipa": {
+    "bundleIdentifier": "com.armsx2.ios.nightly",
+    "version": "2.6.0-nightly.20261112.1132",
+    "buildVersion": "260",
+    "displayName": "ARMSX2 Nightly",
+    "minOSVersion": "17.4",
+    "size": 40658081,
+    "assetIdentity": {
+      "id": 739312263,
+      "updated_at": "2026-11-12T11:58:16Z",
+      "size": 40658081,
+      "digest": "sha256:ca921e091824f59f3b2e85fb2349d631e522452b150fd25427464768a5e36458"
+    }
+  },
+  "https://github.com/altstoreio/AltStore/releases/download/v2.3/AltStore_Classic_Notarized_2_3.ipa": {
+    "bundleIdentifier": "com.rileytestut.AltStore",
+    "version": "2.3.1",
+    "buildVersion": "63",
+    "displayName": "AltStore",
+    "minOSVersion": "17.4",
+    "size": 40616419,
+    "assetIdentity": {
+      "id": 601889119,
+      "updated_at": "2026-09-30T22:08:53Z",
+      "size": 40616419,
+      "digest": "sha256:3cffaf3045f34a6728f51f1462fa14de7555130a4342c62837604563bdabef34"
+    }
+  },
+  "https://github.com/Apollo-Reborn/Apollo-Reborn/releases/download/v1.15.11_4.0.1/Apollo-Reborn-4.0.1-GLASS.ipa": {
+    "bundleIdentifier": "com.christianselig.Apollo",
+    "version": "4.0.1",
+    "buildVersion": "303",
+    "displayName": "Apollo",
+    "minOSVersion": "15.0",
+    "size": 129202414,
+    "assetIdentity": {
+      "id": 690507783,
+      "updated_at": "2026-10-30T01:23:18Z",
+      "size": 129202414,
+      "digest": "sha256:ab29739db55255f53c17a11ea949f46515af681257062728545e1813929679e9"
+    }
+  },
+  "https://github.com/Lakr233/Asspp/releases/download/4.2.2/Asspp.ipa": {
+    "bundleIdentifier": "wiki.qaq.Asspp",
+    "version": "4.2.0",
+    "buildVersion": "0",
+    "displayName": "Asspp",
+    "minOSVersion": "17.0",
+    "size": 16458246,
+    "assetIdentity": {
+      "id": 658153516,
+      "updated_at": "2026-10-20T03:30:09Z",
+      "size": 16458246,
+      "digest": "sha256:a51a06be4f79ac1d1283701da87b45e2228f9fcc39ef4f88599f4abca986f388"
+    }
+  },
+  "https://github.com/thebcd69/bcd-games/releases/download/v0.1.653/BCD.ipa": {
+    "bundleIdentifier": "com.thebcd69.bcd",
+    "version": "0.1.653",
+    "buildVersion": "653",
+    "displayName": "BCD",
+    "minOSVersion": "18.0",
+    "size": 194520705,
+    "assetIdentity": {
+      "id": 735345891,
+      "updated_at": "2026-11-11T11:56:56Z",
+      "size": 194520705,
+      "digest": "sha256:a19306da887f4849043e56c498fa61caa59a2c14e6bff66394433f8221dd362b"
+    }
+  },
+  "https://github.com/AhmedBafkir/DLiPA/releases/download/v1.4/DLiPA_v1.4.ipa": {
+    "bundleIdentifier": "com.ahmedbafkir.dlipa",
+    "version": "1.4",
+    "buildVersion": "1",
+    "displayName": "DLiPA",
+    "minOSVersion": "13.0",
+    "size": 534245,
+    "assetIdentity": {
+      "id": 499826096,
+      "updated_at": "2026-08-03T08:42:17Z",
+      "size": 534245,
+      "digest": "sha256:72012beabf55a12d70c5ad3bbe95384e7fd450c8de1bf6fbc62f8844512eea0f"
+    }
+  },
+  "https://github.com/moliango/doer/releases/download/v1.8.6/doer-unsigned.ipa": {
+    "bundleIdentifier": "com.naine.doer",
+    "version": "1.8.6",
+    "buildVersion": "43",
+    "displayName": "Doer",
+    "minOSVersion": "15.0",
+    "size": 28095758,
+    "assetIdentity": {
+      "id": 627379587,
+      "updated_at": "2026-10-10T08:03:04Z",
+      "size": 28095758,
+      "digest": "sha256:246c9de45c3a402e13c7528c31050981763afda5ae40cf552c8d7abfa10bdefa"
+    }
+  },
+  "https://github.com/OatmealDome/dolphin-ios/releases/download/v5.0.0b6/Non-Jailbroken.ipa": {
+    "bundleIdentifier": "me.oatmealdome.DolphiniOS-njb-patreon-beta",
+    "version": "5.0.0b6",
+    "buildVersion": "26",
+    "displayName": "DolphiniOS",
+    "minOSVersion": "14.0",
+    "size": 17963367,
+    "assetIdentity": {
+      "id": 452803474,
+      "updated_at": "2026-06-20T07:09:18Z",
+      "size": 17963367,
+      "digest": "sha256:8460c194f0b24ab3a15594e800e1533cb14e90e0aa51527b3609c7ac0f9745c2"
+    }
+  },
+  "https://github.com/MaftyManicEMU/DukeX/releases/download/v1.0.2/DukeX.v1.0.2.ipa": {
+    "bundleIdentifier": "com.mafty.dukex",
+    "version": "1.0.2",
+    "buildVersion": "102",
+    "displayName": "DukeX",
+    "minOSVersion": "16.0",
+    "size": 20345841,
+    "assetIdentity": {
+      "id": 462159780,
+      "updated_at": "2026-06-30T12:54:48Z",
+      "size": 20345841,
+      "digest": "sha256:06565826bc2279e9201d6ffd883c9947e7df97c96a9421f9fba7748e6628d63b"
+    }
+  },
+  "https://github.com/Leviidev/Fathom/releases/download/v1.0.0/Fathom.ipa": {
+    "bundleIdentifier": "app.fathom.emulator",
+    "version": "1.0.0",
+    "buildVersion": "1",
+    "displayName": "Fathom",
+    "minOSVersion": "18.0",
+    "size": 1175175,
+    "assetIdentity": {
+      "id": 564422070,
+      "updated_at": "2026-09-14T23:13:24Z",
+      "size": 1175175,
+      "digest": "sha256:5527909766a037d2a6c881244d5d68945ac75ac8b2e4aa57503cc11d7689f6d1"
+    }
+  },
+  "https://github.com/claration/feather/releases/download/v2.9.0/Feather.ipa": {
+    "bundleIdentifier": "thewonderofyou.Feather",
+    "version": "2.9.0",
+    "buildVersion": "1",
+    "displayName": "Feather",
+    "minOSVersion": "16.0",
+    "size": 14241853,
+    "assetIdentity": {
+      "id": 466792685,
+      "updated_at": "2026-07-05T02:11:19Z",
+      "size": 14241853,
+      "digest": "sha256:833c57d3c4bf4b4a9fe408be72e1c720cbb949f736a00286750f50e7915730ea"
+    }
+  },
+  "https://github.com/pookjw/HermesEnabler/releases/download/1.5.2/HermesEnabler.ipa": {
+    "bundleIdentifier": "com.example.HermesEnabler",
+    "version": "1.0",
+    "buildVersion": "1",
+    "displayName": "HermesEnabler",
+    "minOSVersion": "17.0",
+    "size": 948274,
+    "assetIdentity": {
+      "id": 739861661,
+      "updated_at": "2026-11-12T14:49:05Z",
+      "size": 948274,
+      "digest": "sha256:7a086d091231a9e520a6dd8648fc7fbc56776c5f7920585f5088811ac3bb206d"
+    }
+  },
+  "https://github.com/Leviidev/Husk/releases/download/3.4/Husk.ipa": {
+    "bundleIdentifier": "com.husk.app",
+    "version": "3.4",
+    "buildVersion": "149",
+    "displayName": "Husk",
+    "minOSVersion": "15.5",
+    "size": 142303569,
+    "assetIdentity": {
+      "id": 711925305,
+      "updated_at": "2026-11-05T03:33:21Z",
+      "size": 142303569,
+      "digest": "sha256:3907f099d91411c24d703d825276102d2ba213c628cd6701fb977c25fe398fab"
+    }
+  },
+  "https://github.com/kuscholar/iDeck/releases/download/v0.1.3-alpha.6/iDeck-0.1.3-alpha.6-build145.ipa": {
+    "bundleIdentifier": "com.kuschqin.madeira.steamui",
+    "version": "0.1.3",
+    "buildVersion": "145",
+    "displayName": "iDeck",
+    "minOSVersion": "26.0",
+    "size": 173835258,
+    "assetIdentity": {
+      "id": 716063183,
+      "updated_at": "2026-11-06T05:44:25Z",
+      "size": 173835258,
+      "digest": "sha256:caf3be231ec7968ca337287d603d90b2674179a362715292d2ddb302d5cacb65"
+    }
+  },
+  "https://github.com/mengangs/ipadn/releases/download/v2.0.0/iPadn-2.0.0-lite-unsigned.ipa": {
+    "bundleIdentifier": "app.local.iPadn",
+    "version": "2.0.0",
+    "buildVersion": "28",
+    "displayName": "iPadn",
+    "minOSVersion": "16.0",
+    "size": 48080581,
+    "assetIdentity": {
+      "id": 739085063,
+      "updated_at": "2026-11-12T10:41:39Z",
+      "size": 48080581,
+      "digest": "sha256:35fea94250e608195cf1a21d9435415fa8b53c8c26f01abb320678e86755480b"
+    }
+  },
+  "https://github.com/intraducine/iridium/releases/download/v0.2.0/Iridium-unsigned.ipa": {
+    "bundleIdentifier": "software.iridium",
+    "version": "0.2.0",
+    "buildVersion": "115.1",
+    "displayName": "Iridium",
+    "minOSVersion": "18.0",
+    "size": 399916792,
+    "assetIdentity": {
+      "id": 608903695,
+      "updated_at": "2026-10-04T01:35:19Z",
+      "size": 399916792,
+      "digest": "sha256:1934922a1fcf1509e305a29d6f0d26579a4318ba95dfcf5b406d5e38f88c9763"
+    }
+  },
+  "https://github.com/XITRIX/iTorrent/releases/download/v2.2.0-1/iTorrent.ipa": {
+    "bundleIdentifier": "com.xitrix.iTorrent2",
+    "version": "2.2.0",
+    "buildVersion": "1",
+    "displayName": "iTorrent",
+    "minOSVersion": "16.0",
+    "size": 24288935,
+    "assetIdentity": {
+      "id": 482285253,
+      "updated_at": "2026-07-19T09:59:39Z",
+      "size": 24288935,
+      "digest": "sha256:50457a89299bd62836ca1eb1ae0a5adbe097454c58ce67605bbe6710c37193d7"
+    }
+  },
+  "https://github.com/LinkPass888/Kazumi-Swift/releases/download/3.0.5/Kazumi_ios_3.0.5_no_sign.ipa": {
+    "bundleIdentifier": "com.linkpass.kazumi",
+    "version": "3.0.5",
+    "buildVersion": "30005",
+    "displayName": "Kazumi",
+    "minOSVersion": "26.0",
+    "size": 24130346,
+    "assetIdentity": {
+      "id": 738236036,
+      "updated_at": "2026-11-12T05:41:29Z",
+      "size": 24130346,
+      "digest": "sha256:ae5cb56f5fa300cfaaaff63a1b30bd363b914e199b3850b7f3cafae23a86bb1e"
+    }
+  },
+  "https://github.com/Mac-XK/KMusic/releases/download/%E6%AD%8C%E4%B8%80%E5%88%802.3.0/_2.3.0_22.2.ipa": {
+    "bundleIdentifier": "com.macxk.KMusic",
+    "version": "2.3.0",
+    "buildVersion": "22.2",
+    "displayName": "歌一刀",
+    "minOSVersion": "14.0",
+    "size": 3836900,
+    "assetIdentity": {
+      "id": 372194461,
+      "updated_at": "2026-03-12T08:39:56Z",
+      "size": 3836900,
+      "digest": "sha256:f53c2363cad89ffe1b5cf64836daa6b39741bcf55ab7aadb0ed3f393ef83ad04"
+    }
+  },
+  "https://github.com/missuo/kumone/releases/download/v0.3.32/Kumone-iOS-0.3.32.ipa": {
+    "bundleIdentifier": "sb.moe.kumone-ios",
+    "version": "0.3.32",
+    "buildVersion": "416",
+    "displayName": "Kumone",
+    "minOSVersion": "16.0",
+    "size": 4060424,
+    "assetIdentity": {
+      "id": 728405198,
+      "updated_at": "2026-11-09T17:48:55Z",
+      "size": 4060424,
+      "digest": "sha256:186456b578a7b94067c4387453383c17a5cb55eb631067644793f46936a691be"
+    }
+  },
+  "https://github.com/LightNovelShelf/Flutter/releases/download/v1.13.2/app-ios-unsigned.ipa": {
+    "bundleIdentifier": "app.lightnovel.shelf",
+    "version": "1.13.2",
+    "buildVersion": "26",
+    "displayName": "轻书架",
+    "minOSVersion": "15.0",
+    "size": 11957867,
+    "assetIdentity": {
+      "id": 653238955,
+      "updated_at": "2026-10-18T10:47:39Z",
+      "size": 11957867,
+      "digest": "sha256:b35b68e1e2af4fe686a7d68fc5d7aeaee3986c832fb5038c74baef2c4f5b1a35"
+    }
+  },
+  "https://github.com/mxhm11cr/LinuxRunner/releases/download/v1.1.1/LinuxRunner-1.1.1-build905.ipa": {
+    "bundleIdentifier": "dev.linuxrunner.app",
+    "version": "1.1.1",
+    "buildVersion": "905",
+    "displayName": "LinuxRunner",
+    "minOSVersion": "15.0",
+    "size": 26429748,
+    "assetIdentity": {
+      "id": 724488379,
+      "updated_at": "2026-11-08T16:24:38Z",
+      "size": 26429748,
+      "digest": "sha256:99497f75a6be81179c688d0cd63d30c9727481ee698551a6910accba8a9338bd"
+    }
+  },
+  "https://github.com/LiveContainer/LiveContainer/releases/download/3.8.0/LiveContainer%2BSideStore.ipa": {
+    "bundleIdentifier": "com.kdt.livecontainer",
+    "version": "3.8.0",
+    "buildVersion": "3.8.0",
+    "displayName": "LiveContainer",
+    "minOSVersion": "15.0",
+    "size": 35403538,
+    "assetIdentity": {
+      "id": 480113517,
+      "updated_at": "2026-07-17T07:44:08Z",
+      "size": 35403538,
+      "digest": "sha256:97dc0fd2202fd4460efcab389943b8d5fdbb4988efff76b116b92b84a4662425"
+    }
+  },
+  "https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9934/LSX4-JIT-128.9934.ipa": {
+    "bundleIdentifier": "com.llayerlinux.LSX4RuntimeProbe",
+    "version": "128.9934",
+    "buildVersion": "128.9934",
+    "displayName": "LSX4",
+    "minOSVersion": "",
+    "size": 77017813,
+    "assetIdentity": {
+      "id": 722402370,
+      "updated_at": "2026-11-08T00:33:03Z",
+      "size": 77017813,
+      "digest": "sha256:cde3e4e12289d1518a5882260c9c6d4e60166fcdae44686834f65761fc6a66c5"
+    }
+  },
+  "https://github.com/willfaust/Madeira/releases/download/v0.2.0/Madeira-0.2.0.ipa": {
+    "bundleIdentifier": "com.willfaust.madeora",
+    "version": "0.2.0",
+    "buildVersion": "5",
+    "displayName": "Madeira",
+    "minOSVersion": "18.0",
+    "size": 186400561,
+    "assetIdentity": {
+      "id": 708075502,
+      "updated_at": "2026-11-04T03:29:03Z",
+      "size": 186400561,
+      "digest": "sha256:7cdab35d6029b9a7701775ac794ac2674cac501ec6503465775e7a35ae046154"
+    }
+  },
+  "https://github.com/kodjodevf/mangayomi/releases/download/v0.9.95/Mangayomi-v0.9.95-ios.ipa": {
+    "bundleIdentifier": "com.kodjodevf.mangayomi",
+    "version": "0.9.95",
+    "buildVersion": "128",
+    "displayName": "Mangayomi",
+    "minOSVersion": "15.0",
+    "size": 115450399,
+    "assetIdentity": {
+      "id": 698744128,
+      "updated_at": "2026-11-01T15:42:14Z",
+      "size": 115450399,
+      "digest": "sha256:da0fd7eb5989dce528d6ba2a2b12ec4b6c43dec5e1e600cd9036085498a2cb96"
+    }
+  },
+  "https://github.com/Manic-EMU/ManicEMU/releases/download/v2.0.2/ManicEMU.v2.0.2.SideloadJIT.ipa": {
+    "bundleIdentifier": "com.aoshuang.manicemu",
+    "version": "2.0.2",
+    "buildVersion": "5",
+    "displayName": "Manic EMU",
+    "minOSVersion": "15.0",
+    "size": 293317769,
+    "assetIdentity": {
+      "id": 700962292,
+      "updated_at": "2026-11-02T07:56:25Z",
+      "size": 293317769,
+      "digest": "sha256:fa3d1a272298b02de44eeec182ea5c2bb1f9800b65b3239a4f2ee1ea4f0d99a7"
+    }
+  },
+  "https://github.com/youshen2/MeloX/releases/download/v1.4.1/MeloX-iOS-unsigned.ipa": {
+    "bundleIdentifier": "moye.MeloX",
+    "version": "2.0",
+    "buildVersion": "9110401",
+    "displayName": "MeloX",
+    "minOSVersion": "26.0",
+    "size": 30440912,
+    "assetIdentity": {
+      "id": 692248323,
+      "updated_at": "2026-10-30T13:43:13Z",
+      "size": 30440912,
+      "digest": "sha256:289af8ecbe32b0c61261f92d96fcac63ac58563c916bd7eb2f48bac708090436"
+    }
+  },
+  "https://github.com/ResistanceTo/MiniWatts/releases/download/v1.7.0/MiniWatts-unsigned.ipa": {
+    "bundleIdentifier": "org.zhaohe.MiniWatts",
+    "version": "1.7.0",
+    "buildVersion": "22",
+    "displayName": "MiniWatts",
+    "minOSVersion": "17.0",
+    "size": 3374224,
+    "assetIdentity": {
+      "id": 720061199,
+      "updated_at": "2026-11-07T08:08:32Z",
+      "size": 3374224,
+      "digest": "sha256:c8f1332e6f41244be9309a465d17dadef571ffe88d6c650af8f04c2b485768f8"
+    }
+  },
+  "https://github.com/mornyeapp/Mornye/releases/download/v5.3.1/Mornye-v5.3.1-ios-unsigned.ipa": {
+    "bundleIdentifier": "com.zarz.mornye",
+    "version": "5.3.1",
+    "buildVersion": "167",
+    "displayName": "Mornye",
+    "minOSVersion": "16.0",
+    "size": 38671004,
+    "assetIdentity": {
+      "id": 713015199,
+      "updated_at": "2026-11-05T10:34:10Z",
+      "size": 38671004,
+      "digest": "sha256:ef635146157b3d2f957fd620390a0ded16812b287982c02fb56480ef00c10725"
+    }
+  },
+  "https://github.com/jxxghp/MoviePilot-App/releases/download/v1.2.2/MoviePilot-1.2.2-unsigned.ipa": {
+    "bundleIdentifier": "com.moviepilot.app",
+    "version": "1.2.2",
+    "buildVersion": "1",
+    "displayName": "MoviePilot",
+    "minOSVersion": "16.0",
+    "size": 4231532,
+    "assetIdentity": {
+      "id": 729354071,
+      "updated_at": "2026-11-09T23:20:55Z",
+      "size": 4231532,
+      "digest": "sha256:df712c33f0f2341995bb99ab574b4cd28d75d3cf463b8d779c2ae3741d3458f8"
+    }
+  },
+  "https://github.com/singleton-altman/MoviePilotLite/releases/download/release-v1.3.1-2026-11-06/ios-v1.3.1-2026-11-06.ipa": {
+    "bundleIdentifier": "com.altman.moviepilot",
+    "version": "1.3.1",
+    "buildVersion": "40",
+    "displayName": "MoviePilot",
+    "minOSVersion": "15.0",
+    "size": 37490597,
+    "assetIdentity": {
+      "id": 716202613,
+      "updated_at": "2026-11-06T06:45:44Z",
+      "size": 37490597,
+      "digest": "sha256:43875d7e3c39f6732c686a1f199977ff2b6a0559ca06cd9cf9184a9496e60358"
+    }
+  },
+  "https://github.com/dddevid/Musly/releases/download/v2.0.3/musly-ios.ipa": {
+    "bundleIdentifier": "com.dddevid.musly",
+    "version": "2.0.3",
+    "buildVersion": "8",
+    "displayName": "Musly",
+    "minOSVersion": "15.0",
+    "size": 14317899,
+    "assetIdentity": {
+      "id": 654151544,
+      "updated_at": "2026-10-18T18:19:29Z",
+      "size": 14317899,
+      "digest": "sha256:669c35e111c30e6161bbc5eae192d6598f48d669397a06dfb1f6ea1af8bb1450"
+    }
+  },
+  "https://github.com/verback2308/Opaline/releases/download/1.12.0/Opaline_1.12.0.ipa": {
+    "bundleIdentifier": "com.verback.YTLite",
+    "version": "1.12.0",
+    "buildVersion": "600",
+    "displayName": "Opaline",
+    "minOSVersion": "12.0",
+    "size": 6685919,
+    "assetIdentity": {
+      "id": 554014895,
+      "updated_at": "2026-09-10T02:01:41Z",
+      "size": 6685919,
+      "digest": "sha256:a254306109b09bcf4d3ba4de80592f7a89b3932e7484f41f570c4a81913141d1"
+    }
+  },
+  "https://github.com/hugeBlack/OpenParsec/releases/download/1.4.0/OpenParsec.ipa": {
+    "bundleIdentifier": "com.aigch.OpenParsec",
+    "version": "1.4.0",
+    "buildVersion": "218",
+    "displayName": "OpenParsec",
+    "minOSVersion": "14.0",
+    "size": 4358332,
+    "assetIdentity": {
+      "id": 622320096,
+      "updated_at": "2026-10-08T16:08:14Z",
+      "size": 4358332,
+      "digest": "sha256:0fcea0b3d2cfaa7a8a5f566bc48d92f6bcba739ac7f275620aa41d6e8b5c9b3a"
+    }
+  },
+  "https://github.com/MakrSas/orchard-ios/releases/download/v0.2/Orchard.ipa": {
+    "bundleIdentifier": "com.makr.orchard",
+    "version": "0.2",
+    "buildVersion": "6",
+    "displayName": "Orchard",
+    "minOSVersion": "16.0",
+    "size": 18477287,
+    "assetIdentity": {
+      "id": 588723911,
+      "updated_at": "2026-09-25T16:12:03Z",
+      "size": 18477287,
+      "digest": "sha256:e8ebd32c325954d80dfaf0d3e1438cb1fc95bef040ee54edcd2d087ca46bbc81"
+    }
+  },
+  "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.2.0.2/PiliPlus_ios_2.2.0%2B5598.ipa": {
+    "bundleIdentifier": "com.example.piliplus",
+    "version": "2.2.0",
+    "buildVersion": "5598",
+    "displayName": "PiliPlus",
+    "minOSVersion": "15.0",
+    "size": 24933082,
+    "assetIdentity": {
+      "id": 704768537,
+      "updated_at": "2026-11-03T07:45:54Z",
+      "size": 24933082,
+      "digest": "sha256:b60cf81f7189787d912cba8f2a7d3dbadebcc415f16a50feee4fc7f8c9cd1471"
+    }
+  },
+  "https://github.com/Eslzzyl/Pixiv-SwiftUI/releases/download/v0.16.3/Pixiv-SwiftUI.ipa": {
+    "bundleIdentifier": "org.eu.eslzzyl.Pixiv-SwiftUI",
+    "version": "0.16.3",
+    "buildVersion": "1",
+    "displayName": "Pixiv-SwiftUI",
+    "minOSVersion": "17.0",
+    "size": 10379203,
+    "assetIdentity": {
+      "id": 656456233,
+      "updated_at": "2026-10-19T14:07:17Z",
+      "size": 10379203,
+      "digest": "sha256:8da30168148c9a1e4a1a2eeb53329653f897ec92fe50ef6267845f05ad2907eb"
+    }
+  },
+  "https://github.com/playportdev/playport/releases/download/v0.5.0/Playport-0.5.0.ipa": {
+    "bundleIdentifier": "dev.playport.app",
+    "version": "0.5.0",
+    "buildVersion": "1",
+    "displayName": "Playport",
+    "minOSVersion": "26.0",
+    "size": 413322913,
+    "assetIdentity": {
+      "id": 701880528,
+      "updated_at": "2026-11-02T13:37:58Z",
+      "size": 413322913,
+      "digest": "sha256:2620958cb60a0b452351976ec5d43fd179d1a2ada9d1cc4adef5b7b89beca04a"
+    }
+  },
+  "https://github.com/xmiguel911x/PSX3IOS/releases/download/v0.2.7-beta/PSX3IOS-beta.0.2.7-unsigned.ipa": {
+    "bundleIdentifier": "com.miguel.psx3ios",
+    "version": "beta.0.2.7",
+    "buildVersion": "202609022211",
+    "displayName": "PSX3IOS",
+    "minOSVersion": "15.0",
+    "size": 67644766,
+    "assetIdentity": {
+      "id": 541725194,
+      "updated_at": "2026-09-02T20:35:54Z",
+      "size": 67644766,
+      "digest": "sha256:86401e2332ff0c139e3a07db834b18bdf48225d8df77af88640042211232a14f"
+    }
+  },
+  "https://github.com/liuchuancong/pure_live/releases/download/v3.1.19/PureLive-3.1.19-4108-ios-arm64-trollstore.ipa": {
+    "bundleIdentifier": "com.mystyle.purelive.liu",
+    "version": "3.1.19",
+    "buildVersion": "4108",
+    "displayName": "Pure Live",
+    "minOSVersion": "15.6",
+    "size": 66858114,
+    "assetIdentity": {
+      "id": 627001047,
+      "updated_at": "2026-10-10T04:32:51Z",
+      "size": 66858114,
+      "digest": "sha256:81f32db0a967bb7687ca33c75272f04e9c56357104907050134b4043500a1691"
+    }
+  },
+  "https://github.com/TarbleFR/RewindBox/releases/download/0.0.11/RewindBox-0.0.11.ipa": {
+    "bundleIdentifier": "com.neogamelab.neostation",
+    "version": "0.0.8",
+    "buildVersion": "721",
+    "displayName": "RewindBox",
+    "minOSVersion": "18.0",
+    "size": 267033667,
+    "assetIdentity": {
+      "id": 732661386,
+      "updated_at": "2026-11-10T19:26:52Z",
+      "size": 267033667,
+      "digest": "sha256:bc640a83a01de8a623c16fb0b5977edf16ac6010b61c9c2489ae334d3db3c0d7"
+    }
+  },
+  "https://github.com/seanhowarthdev/Roam-Control/releases/download/v0.9.9/RoamControl-0.9.9-Build105.ipa": {
+    "bundleIdentifier": "com.roamcontrol",
+    "version": "0.9.9",
+    "buildVersion": "105",
+    "displayName": "Roam Control",
+    "minOSVersion": "27.0",
+    "size": 4627321,
+    "assetIdentity": {
+      "id": 660277857,
+      "updated_at": "2026-10-20T19:33:03Z",
+      "size": 4627321,
+      "digest": "sha256:211f1057c70292da468226b39808d8777549c02923c14afc504d9e1d2daba86e"
+    }
+  },
+  "https://github.com/ekomlenovic/rush_hour_ios_android/releases/download/v2.2.2-b70/rush-hours-unsigned.ipa": {
+    "bundleIdentifier": "com.rushhours.app",
+    "version": "2.2.2",
+    "buildVersion": "70",
+    "displayName": "Rush Hours",
+    "minOSVersion": "16.4",
+    "size": 19091977,
+    "assetIdentity": {
+      "id": 732352901,
+      "updated_at": "2026-11-10T17:40:40Z",
+      "size": 19091977,
+      "digest": "sha256:a5c80e3a17fc2b97a9de7e0666417edc219f79529dbf1ba200b99203bd5e18c5"
+    }
+  },
+  "https://github.com/donbytyqi/scenebox/releases/download/v1.0.4/SceneBox-1.0.4-tvOS.ipa": {
+    "bundleIdentifier": "app.scenebox.SceneBox",
+    "version": "1.0.4",
+    "buildVersion": "4",
+    "displayName": "SceneBox",
+    "minOSVersion": "18.0",
+    "size": 29820367,
+    "assetIdentity": {
+      "id": 601281527,
+      "updated_at": "2026-09-30T15:52:14Z",
+      "size": 29820367,
+      "digest": "sha256:3e0b170a26a28f94f67da4bb2d492fcc5ed633c4f25d0be425c8866824193e62"
+    }
+  },
+  "https://github.com/SideStore/SideStore/releases/download/0.7.0-alpha/SideStore.ipa": {
+    "bundleIdentifier": "com.SideStore.SideStore",
+    "version": "0.7.0-20260911.328+6032424a",
+    "buildVersion": "0700",
+    "displayName": "SideStore",
+    "minOSVersion": "15.0",
+    "size": 27770821,
+    "assetIdentity": {
+      "id": 565535942,
+      "updated_at": "2026-09-15T11:12:45Z",
+      "size": 27770821,
+      "digest": "sha256:e334f86e6ceeab2e0d886c07611246533f474bb18838cf13ebc09ed1f0d622b5"
+    }
+  },
+  "https://github.com/akinal5765-byte/Silverphase/releases/download/v1.1.1/Silverphase-1.1.1-iOS-unsigned.ipa": {
+    "bundleIdentifier": "com.silverphase.editor",
+    "version": "1.1.1",
+    "buildVersion": "3",
+    "displayName": "Silverphase",
+    "minOSVersion": "18.0",
+    "size": 92284015,
+    "assetIdentity": {
+      "id": 702345576,
+      "updated_at": "2026-11-02T16:14:04Z",
+      "size": 92284015,
+      "digest": "sha256:e0d9937c90a80ed68ae02beb672ad8ab4e7a4fb95ab901c5f2a4ff5d5242bba0"
+    }
+  },
+  "https://github.com/StikDebug/StikDebug/releases/download/3.2.2/StikDebug-3.2.2.ipa": {
+    "bundleIdentifier": "com.stik.stikdebug",
+    "version": "3.2.2",
+    "buildVersion": "1",
+    "displayName": "StikDebug",
+    "minOSVersion": "17.4",
+    "size": 16924687,
+    "assetIdentity": {
+      "id": 725349136,
+      "updated_at": "2026-11-08T22:07:37Z",
+      "size": 16924687,
+      "digest": "sha256:2f238d89ba828d41b7830e4b1bae44ee6fd04e50d3d8c0ffe15ad47bd66af170"
+    }
+  },
+  "https://github.com/infinityf4p/TiebaPure-iOS/releases/download/v1.4.15/TiebaPure-v1.4.15-unsigned.ipa": {
+    "bundleIdentifier": "dev.infinityf4p.tiebapure",
+    "version": "1.4.15",
+    "buildVersion": "59",
+    "displayName": "TiebaPure",
+    "minOSVersion": "16.4",
+    "size": 9347637,
+    "assetIdentity": {
+      "id": 627163585,
+      "updated_at": "2026-10-10T06:07:36Z",
+      "size": 9347637,
+      "digest": "sha256:28fbe31e673b1f2769043456324521afd87d04ade8d92d33832e967c19c31123"
+    }
+  },
+  "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v1.6.5/tsumiru-v1.6.5-ios.ipa": {
+    "bundleIdentifier": "com.suwayomi.tachideskSorayomi",
+    "version": "1.6.5",
+    "buildVersion": "5006",
+    "displayName": "Tsumiru",
+    "minOSVersion": "15.0",
+    "size": 17346615,
+    "assetIdentity": {
+      "id": 722282965,
+      "updated_at": "2026-11-07T23:33:41Z",
+      "size": 17346615,
+      "digest": "sha256:695878a0aaafac50f253ac52aad117493b119071d7e2573fbaaef463a2f2ca85"
+    }
+  },
+  "https://github.com/utmapp/UTM/releases/download/v5.0.8/UTM.ipa": {
+    "bundleIdentifier": "com.utmapp.UTM",
+    "version": "5.0.8",
+    "buildVersion": "128",
+    "displayName": "UTM",
+    "minOSVersion": "15.0",
+    "size": 150556413,
+    "assetIdentity": {
+      "id": 649396787,
+      "updated_at": "2026-10-17T03:18:57Z",
+      "size": 150556413,
+      "digest": "sha256:4875a1ec869278fb173b37467388ea627bfa6d95f1d64501bc41bb86dd7d53b2"
+    }
+  },
+  "https://github.com/mrdrvt99/YouProEXTRA/releases/download/youproextra-ipa2/YouProExtra_21.45.4_1.3.1.ipa": {
+    "bundleIdentifier": "com.google.ios.youtube",
+    "version": "21.45.4",
+    "buildVersion": "21.45.4",
+    "displayName": "YouTube",
+    "minOSVersion": "17.0",
+    "size": 133320959,
+    "assetIdentity": {
+      "id": 725143354,
+      "updated_at": "2026-11-08T20:44:31Z",
+      "size": 133320959,
+      "digest": "sha256:fe73328b9d9fa7ae5fa5db0f89e404bdaaa010f0a5a6c8b1ed181d4af05af89f"
+    }
+  },
+  "https://github.com/huamurui/zhihu-minus-minus/releases/download/v0.9.10/zhihu-minus-minus-v0.9.10-unsigned.ipa": {
+    "bundleIdentifier": "com.huamu013.ZhihuMinusMinus",
+    "version": "0.9.10",
+    "buildVersion": "1",
+    "displayName": "知乎--",
+    "minOSVersion": "16.4",
+    "size": 14833319,
+    "assetIdentity": {
+      "id": 717117930,
+      "updated_at": "2026-11-06T12:34:23Z",
+      "size": 14833319,
+      "digest": "sha256:8884c6f5913715d16b240241fb3ef33ad5d9b51cefaed689a755f332b43910c8"
+    }
   }
 }
