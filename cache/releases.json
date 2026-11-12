@@ -775,11 +775,11 @@
       "ipas": [
         {
           "name": "EhPanda-Beta.ipa",
-          "size": 18819632,
+          "size": 18850504,
           "url": "https://github.com/EhPanda-Team/EhPanda/releases/download/3.0.0/EhPanda-Beta.ipa",
-          "id": 735750711,
-          "updated_at": "2026-11-11T14:08:55Z",
-          "digest": "sha256:0196b935af79839f92f5c3994cddcb3e66072e972236bf8b1651944651e61dfe"
+          "id": 738272393,
+          "updated_at": "2026-11-12T05:57:25Z",
+          "digest": "sha256:ec1cd3c29a2e26044f2cc15cb5f409d3725c9089c95caf151780897506e129f9"
         }
       ]
     },
@@ -7349,17 +7349,17 @@
       "name": "Nightly build",
       "pre": true,
       "draft": false,
-      "date": "2026-11-10",
-      "published_at": "2026-11-10T07:43:38Z",
-      "body": "* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the developer service\n* Fix slow detection of unsupported networks\n* Resolve DNS with the system configuration on iOS\n* Detect the foreground app right after connecting\n* Connect touch input before the first tap\n* Send input without checking the lock state\n* Split the CLI commands into one file each\n* Fix the detection of the foreground app\n* Download swiplet updates on demand and show progress\n* Number enumerations with iota\n* Skip unchanged builds in dev install\n* Reformat code\n* Fix the position of the repository loading indicator\n* Fix choosing VPN addresses that do not loop back\n* Generate the CLI's Protobuf code as TypeScript\n* Move the CLI to TypeScript\n* Generate Protobuf code with buf\n* Version releases automatically and publish packages on release\n* Use the stable official swiplets feed in stable builds\n* Replace outdated Developer Disk Images\n* Fix tunnel uploads stalling on large TLS records\n* Fix loopback setup not advancing after the tunnel is found\n* Merge the release workflow into the build workflow\n* Fix publishing when the new draft is not listed yet\n* Reject outdated swiplets\n* Add available() and minimum iOS versions for swiplets\n* Support iOS 17.4\n* Fix calls hanging when their results can't be converted\n* Fix accessibility snapshots failing on infinite frames\n* Refactor the screen API\n* Cancel Vision requests when the call is aborted\n* Accept only file handles as files\n* Track the foreground app without accessibility and close idle accessibility connections\n* Fix setup failing to open Swipt\n* Fix slow device list\n* Fix screen-viewing notification dismissal\n* Add CONTRIBUTING.md\n* Fix l",
+      "date": "2026-11-12",
+      "published_at": "2026-11-12T03:58:41Z",
+      "body": "* Extend Swiplet icon colors\n* Add the chart and data grid components\n* Remove the guards against bad values from Swiplets\n* Add stream actions and the process API\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the developer service\n* Fix slow detection of unsupported networks\n* Resolve DNS with the system configuration on iOS\n* Detect the foreground app right after connecting\n* Connect touch input before the first tap\n* Send input without checking the lock state\n* Split the CLI commands into one file each\n* Fix the detection of the foreground app\n* Download swiplet updates on demand and show progress\n* Number enumerations with iota\n* Skip unchanged builds in dev install\n* Reformat code\n* Fix the position of the repository loading indicator\n* Fix choosing VPN addresses that do not loop back\n* Generate the CLI's Protobuf code as TypeScript\n* Move the CLI to TypeScript\n* Generate Protobuf code with buf\n* Version releases automatically and publish packages on release\n* Use the stable official swiplets feed in stable builds\n* Replace outdated Developer Disk Images\n* Fix tunnel uploads stalling on large TLS records\n* Fix loopback setup not advancing after the tunnel is found\n* Merge the release workflow into the build workflow\n* Fix publishing when the new draft is not listed yet\n* Reject outdated swiplets\n* Add available() and minimum iOS versions for swiplets\n* Support iOS 17.4\n* Fix calls hanging when their results can't be converted\n* Fix accessibility snapshots failing on infinite frames\n* Refactor the screen API\n* Cancel Vision requests when the call is aborted\n* Accept only file handles as files\n* Track the foreground app without accessibility and clo",
       "ipas": [
         {
           "name": "Swipt.ipa",
-          "size": 48025399,
+          "size": 48135309,
           "url": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-          "id": 730562073,
-          "updated_at": "2026-11-10T07:43:36Z",
-          "digest": "sha256:26d74c0844adc0e9930d378583e98bcba700e63e43d07f5ef3b72e8fa3bacac1"
+          "id": 737985156,
+          "updated_at": "2026-11-12T03:58:39Z",
+          "digest": "sha256:39120a86b004bda57351e7266b8140040ff73e1997982280686b4901f5843d9d"
         }
       ]
     }

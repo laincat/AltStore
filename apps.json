@@ -1046,13 +1046,13 @@
           "releases": [
             {
               "version": "0.1.0",
-              "date": "2026-11-10",
-              "publishedAt": "2026-11-10T07:43:38Z",
-              "buildVersion": "74",
-              "buildNumber": "74",
-              "localizedDescription": "🧪 预发布 nightly（2026-11-10）\n\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the developer service\n* Fix slow detection of unsupported networks\n* Resolve DNS with the system configuration on iOS\n* Detect the foreground app right after connecting\n* Connect touch input before the first tap\n* Send input without checking the lock state\n* Split the CLI commands into one file each\n* Fix the detection of the foregr…",
+              "date": "2026-11-12",
+              "publishedAt": "2026-11-12T03:58:41Z",
+              "buildVersion": "75",
+              "buildNumber": "75",
+              "localizedDescription": "🧪 预发布 nightly（2026-11-12）\n\n* Extend Swiplet icon colors\n* Add the chart and data grid components\n* Remove the guards against bad values from Swiplets\n* Add stream actions and the process API\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the developer service\n* Fix slow detection of unsupported networks\n* Resolve DNS with the system configuration on iOS\n* Detect the foreground app right after connecting\n*…",
               "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-              "size": 48025399,
+              "size": 48135309,
               "minOSVersion": "16.4",
               "releaseTag": "nightly",
               "source": "https://github.com/swipt-automation/swipt/releases/tag/nightly"
@@ -1063,23 +1063,23 @@
       "versions": [
         {
           "version": "0.1.0",
-          "date": "2026-11-10",
-          "publishedAt": "2026-11-10T07:43:38Z",
-          "buildVersion": "74",
-          "buildNumber": "74",
-          "localizedDescription": "🧪 预发布 nightly（2026-11-10）\n\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the developer service\n* Fix slow detection of unsupported networks\n* Resolve DNS with the system configuration on iOS\n* Detect the foreground app right after connecting\n* Connect touch input before the first tap\n* Send input without checking the lock state\n* Split the CLI commands into one file each\n* Fix the detection of the foregr…",
+          "date": "2026-11-12",
+          "publishedAt": "2026-11-12T03:58:41Z",
+          "buildVersion": "75",
+          "buildNumber": "75",
+          "localizedDescription": "🧪 预发布 nightly（2026-11-12）\n\n* Extend Swiplet icon colors\n* Add the chart and data grid components\n* Remove the guards against bad values from Swiplets\n* Add stream actions and the process API\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the developer service\n* Fix slow detection of unsupported networks\n* Resolve DNS with the system configuration on iOS\n* Detect the foreground app right after connecting\n*…",
           "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-          "size": 48025399,
+          "size": 48135309,
           "minOSVersion": "16.4",
           "releaseTag": "nightly",
           "source": "https://github.com/swipt-automation/swipt/releases/tag/nightly"
         }
       ],
       "version": "0.1.0",
-      "versionDate": "2026-11-10",
-      "versionDescription": "🧪 预发布 nightly（2026-11-10）\n\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the developer service\n* Fix slow detection of unsupported networks\n* Resolve DNS with the system configuration on iOS\n* Detect the foreground app right after connecting\n* Connect touch input before the first tap\n* Send input without checking the lock state\n* Split the CLI commands into one file each\n* Fix the detection of the foregr…",
+      "versionDate": "2026-11-12",
+      "versionDescription": "🧪 预发布 nightly（2026-11-12）\n\n* Extend Swiplet icon colors\n* Add the chart and data grid components\n* Remove the guards against bad values from Swiplets\n* Add stream actions and the process API\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the developer service\n* Fix slow detection of unsupported networks\n* Resolve DNS with the system configuration on iOS\n* Detect the foreground app right after connecting\n*…",
       "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-      "size": 48025399,
+      "size": 48135309,
       "minOSVersion": "16.4"
     },
     {
@@ -1422,7 +1422,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 25 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-11-11",
+      "date": "2026-11-12",
       "tintColor": "#7C5CFF",
       "notify": false
     }

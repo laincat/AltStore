@@ -1956,15 +1956,15 @@
   "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa": {
     "bundleIdentifier": "io.nekohasekai.swipt",
     "version": "0.1.0",
-    "buildVersion": "74",
+    "buildVersion": "75",
     "displayName": "Swipt",
     "minOSVersion": "16.4",
-    "size": 48025399,
+    "size": 48135309,
     "assetIdentity": {
-      "id": 730562073,
-      "updated_at": "2026-11-10T07:43:36Z",
-      "size": 48025399,
-      "digest": "sha256:26d74c0844adc0e9930d378583e98bcba700e63e43d07f5ef3b72e8fa3bacac1"
+      "id": 737985156,
+      "updated_at": "2026-11-12T03:58:39Z",
+      "size": 48135309,
+      "digest": "sha256:39120a86b004bda57351e7266b8140040ff73e1997982280686b4901f5843d9d"
     }
   },
   "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.2/ARMSX3-0.0.2.ipa": {
