@@ -2134,5 +2134,19 @@
       "size": 40658081,
       "digest": "sha256:ca921e091824f59f3b2e85fb2349d631e522452b150fd25427464768a5e36458"
     }
+  },
+  "https://github.com/LNPANDY/HGhub-MacOS-iOS-Version/releases/download/v1.2.2-ios/HGhub_1.2.2_ios.ipa": {
+    "bundleIdentifier": "com.hghub.huangguo",
+    "version": "1.2.2",
+    "buildVersion": "1.2.2",
+    "displayName": "HGhub",
+    "minOSVersion": "15.0",
+    "size": 3028648,
+    "assetIdentity": {
+      "id": 741321047,
+      "updated_at": "2026-11-12T22:25:05Z",
+      "size": 3028648,
+      "digest": "sha256:03a688abc3e66680c21ee425b37491cd89f62dd7fdc18d7b9274763d1568d5c7"
+    }
   }
 }

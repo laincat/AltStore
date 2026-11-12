@@ -8166,5 +8166,123 @@
         }
       ]
     }
+  ],
+  "LNPANDY/HGhub-MacOS-iOS-Version": [
+    {
+      "tag": "v1.2.2-macos",
+      "name": "HGhub v1.2.2 macOS 专属版",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-12",
+      "published_at": "2026-11-12T22:29:04Z",
+      "body": "## HGhub macOS 编译发布版 (v1.2.2)\n\n本项目为 [Minireel/HGhub](https://github.com/Minireel/HGhub) 官方源码针对 macOS 平台的编译产物。\n原项目已在 PR #1 完成 macOS 适配支持，但官方尚未在 Release 页面发布 Mac 版产物。\n\n### ✨ v1.2.2 增强特性\n- **多档位 GPU 实时视频超分引擎（WebGL2 / Apple Metal）**：桌面端底部控制栏内置「自然清透 / 影院质感 / 超清锐利 / 漫剧锐线 / 二次元重绘 / 原画直通」6 档实时画质超分选单，支持静帧与播放中一键对比。\n- **全功能媒体网关与原生交互**：支持最新鉴权播放接口、原生叠加红绿灯标题栏、影院模式、画中画及深浅主题切换。\n\n### 下载说明\n- **Apple Silicon (M1/M2/M3/M4 系列芯片)**: 推荐下载 `HGhub_1.2.2_arm64.dmg`\n- **Intel 芯片**: 推荐下载 `HGhub_1.2.2_x64.dmg`\n- **通用双架构版 (全机型支持)**: 推荐下载 `HGhub_1.2.2_universal.dmg`\n\n### macOS 首次打开说明（绕过未签名提示）\n由于开源个人构建未购买苹果开发者企业证书签名与公证，首次打开若提示“已损坏”或“无法打开”，请在「终端」中执行以下命令清除隔离属性：\n```bash\nsudo xattr -rd com.apple.quarantine /Applications/HGhub.app\n```\n",
+      "ipas": []
+    },
+    {
+      "tag": "v1.2.2-ios",
+      "name": "HGhub v1.2.2 iOS 正式版",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-12",
+      "published_at": "2026-11-12T22:25:05Z",
+      "body": "## HGhub iOS 增强版 (v1.2.2)\n\n### ✨ 核心特性\n- **多档位 GPU 实时视频超分引擎（WebGL2 / Apple Metal）**：针对低码率片源提供「自然清透 / 影院质感 / 超清锐利 / 漫剧锐线 / 二次元重绘 / 原画直通」6 大可实时直达切换的画质档位（支持零涂抹保纹理 AI/3D 漫剧锐线、播放及暂停静帧瞬时对比、像素健康自检与硬件卷积零黑屏回退）。\n- **沉浸式竖屏刷剧流**：支持首页无限推荐流、题材分类、三大榜单（热门/推荐/潜力）、搜索、吃瓜社区图文与视频帖、选集与历史续播。\n- **原生横竖屏智能切换**：横屏视频支持一键「横屏全屏」（调用 iOS 原生屏幕方向旋转），支持手机物理横置自动全屏、竖回自动退出，独立固定舞台层渲染不跑偏、不闪封面。\n- **丰富触控手势**：\n  - **双指自由缩放（1x~4x）与平移**：竖屏观看横屏视频可自由缩放，并提供「放大铺满 / 完整适应 / 还原缩放」胶囊按钮；\n  - **单击清屏 / 双击暂停**：单击屏幕隐藏所有控件与遮罩纯享画面，双击屏幕暂停/播放；\n  - **长按 2.0x 倍速 + 上滑锁定**：长按画面开启 2.0x 倍速，上滑即可锁定倍速；\n  - **左右横滑预览定位**：任意位置横滑精准跳转进度。\n- **HLS 播放稳定性加固**：内置 AES Key 与分片内存缓存、拖动进度条防卡死自愈重连、全屏旋转过渡期持续保活与片尾自动连播下一集。\n- **多线路与镜像测速**：内置固定主备线路 + 自动抓取最新镜像域名 + 一键延迟测速切换。\n\n### 📲 安装说明（免证书生产包 `.ipa`）\n1. **TrollStore（巨魔商店）**：下载 `HGhub_1.2.2_ios.ipa` 后直接导入巨魔永久安装。\n2. **AltStore / SideStore / Sideloadly**：使用个人 Apple ID 自签安装。\n3. **轻松签（ESign）/ 牛蛙助手 / Feather / 全能签**：导入证书签名后直接安装。",
+      "ipas": [
+        {
+          "name": "HGhub_1.2.2_ios.ipa",
+          "size": 3028648,
+          "url": "https://github.com/LNPANDY/HGhub-MacOS-iOS-Version/releases/download/v1.2.2-ios/HGhub_1.2.2_ios.ipa",
+          "id": 741321047,
+          "updated_at": "2026-11-12T22:25:05Z",
+          "digest": "sha256:03a688abc3e66680c21ee425b37491cd89f62dd7fdc18d7b9274763d1568d5c7"
+        }
+      ]
+    },
+    {
+      "tag": "v1.2.1-macos",
+      "name": "HGhub v1.2.1 macOS 专属版",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-12",
+      "published_at": "2026-11-12T19:45:29Z",
+      "body": "## HGhub macOS 编译发布版 (v1.2.1)\n\n本项目为 [Minireel/HGhub](https://github.com/Minireel/HGhub) 官方源码针对 macOS 平台的编译产物。\n原项目已在 PR #1 完成 macOS 适配支持，但官方尚未在 Release 页面发布 Mac 版产物。\n\n### 下载说明\n- **Apple Silicon (M1/M2/M3/M4 系列芯片)**: 推荐下载 `HGhub_1.2.1_arm64.dmg`\n- **Intel 芯片**: 推荐下载 `HGhub_1.2.1_x64.dmg`\n- **通用双架构版 (全机型支持)**: 推荐下载 `HGhub_1.2.1_universal.dmg`\n\n### macOS 首次打开说明（绕过未签名提示）\n由于开源个人构建未购买苹果开发者企业证书签名与公证，首次打开若提示“已损坏”或“无法打开”，请在「终端」中执行以下命令清除隔离属性：\n```bash\nsudo xattr -rd com.apple.quarantine /Applications/HGhub.app\n```\n",
+      "ipas": []
+    },
+    {
+      "tag": "v1.2.1-ios",
+      "name": "HGhub v1.2.1 iOS 正式版",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-12",
+      "published_at": "2026-11-12T19:55:51Z",
+      "body": "## HGhub iOS 增强版 (v1.2.1)\n\n### ✨ 核心特性\n- **沉浸式竖屏刷剧流**：支持首页无限推荐流、题材分类、三大榜单（热门/推荐/潜力）、搜索、吃瓜社区图文与视频帖、选集与历史续播。\n- **原生横竖屏智能切换**：横屏视频支持一键「横屏全屏」（调用 iOS 原生屏幕方向旋转），支持手机物理横置自动全屏、竖回自动退出，独立固定舞台层渲染不跑偏、不闪封面。\n- **丰富触控手势**：\n  - **双指自由缩放（1x~4x）与平移**：竖屏观看横屏视频可自由缩放，并提供「放大铺满 / 完整适应 / 还原缩放」胶囊按钮；\n  - **单击清屏 / 双击暂停**：单击屏幕隐藏所有控件与遮罩纯享画面，双击屏幕暂停/播放；\n  - **长按 2.0x 倍速 + 上滑锁定**：长按画面开启 2.0x 倍速，上滑即可锁定倍速；\n  - **左右横滑预览定位**：任意位置横滑精准跳转进度。\n- **HLS 播放稳定性加固**：内置 AES Key 与分片内存缓存、拖动进度条防卡死自愈重连、全屏旋转过渡期持续保活与片尾自动连播下一集。\n- **多线路与镜像测速**：内置固定主备线路 + 自动抓取最新镜像域名 + 一键延迟测速切换。\n\n### 📲 安装说明（免证书生产包 `.ipa`）\n1. **TrollStore（巨魔商店）**：下载 `HGhub_1.2.1_ios.ipa` 后直接导入巨魔永久安装。\n2. **AltStore / SideStore / Sideloadly**：使用个人 Apple ID 自签安装。\n3. **轻松签（ESign）/ 牛蛙助手 / Feather / 全能签**：导入证书签名后直接安装。",
+      "ipas": [
+        {
+          "name": "HGhub_1.2.1_ios.ipa",
+          "size": 3022231,
+          "url": "https://github.com/LNPANDY/HGhub-MacOS-iOS-Version/releases/download/v1.2.1-ios/HGhub_1.2.1_ios.ipa",
+          "id": 740872939,
+          "updated_at": "2026-11-12T19:55:50Z",
+          "digest": "sha256:caeb57813fb1fdbee332f3e8dd79cdbfc8b77825221bf5def2fdac7499cda74a"
+        }
+      ]
+    },
+    {
+      "tag": "v1.2.0-macos",
+      "name": "HGhub v1.2.0 macOS 专属版",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-09",
+      "published_at": "2026-11-09T22:41:01Z",
+      "body": "## HGhub macOS 编译发布版 (v1.2.0)\n\n本项目为 [Minireel/HGhub](https://github.com/Minireel/HGhub) 官方源码针对 macOS 平台的编译产物。\n原项目已在 PR #1 完成 macOS 适配支持，但官方尚未在 Release 页面发布 Mac 版产物。\n\n### 下载说明\n- **Apple Silicon (M1/M2/M3/M4 系列芯片)**: 推荐下载 `HGhub_1.2.0_arm64.dmg`\n- **Intel 芯片**: 推荐下载 `HGhub_1.2.0_x64.dmg`\n- **通用双架构版 (全机型支持)**: 推荐下载 `HGhub_1.2.0_universal.dmg`\n\n### macOS 首次打开说明（绕过未签名提示）\n由于开源个人构建未购买苹果开发者企业证书签名与公证，首次打开若提示“已损坏”或“无法打开”，请在「终端」中执行以下命令清除隔离属性：\n```bash\nsudo xattr -rd com.apple.quarantine /Applications/HGhub.app\n```\n",
+      "ipas": []
+    },
+    {
+      "tag": "v1.2.0-ios",
+      "name": "HGhub v1.2.0 iOS 正式版",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-09",
+      "published_at": "2026-11-09T22:37:07Z",
+      "body": "## HGhub iOS 增强版 (v1.2.0)\n\n### ✨ 核心特性\n- **沉浸式竖屏刷剧流**：支持首页无限推荐流、题材分类、三大榜单（热门/推荐/潜力）、搜索、吃瓜社区图文与视频帖、选集与历史续播。\n- **原生横竖屏智能切换**：横屏视频支持一键「横屏全屏」（调用 iOS 原生屏幕方向旋转），支持手机物理横置自动全屏、竖回自动退出，独立固定舞台层渲染不跑偏、不闪封面。\n- **丰富触控手势**：\n  - **双指自由缩放（1x~4x）与平移**：竖屏观看横屏视频可自由缩放，并提供「放大铺满 / 完整适应 / 还原缩放」胶囊按钮；\n  - **单击清屏 / 双击暂停**：单击屏幕隐藏所有控件与遮罩纯享画面，双击屏幕暂停/播放；\n  - **长按 2.0x 倍速 + 上滑锁定**：长按画面开启 2.0x 倍速，上滑即可锁定倍速；\n  - **左右横滑预览定位**：任意位置横滑精准跳转进度。\n- **HLS 播放稳定性加固**：内置 AES Key 与分片内存缓存、拖动进度条防卡死自愈重连、全屏旋转过渡期持续保活与片尾自动连播下一集。\n- **多线路与镜像测速**：内置固定主备线路 + 自动抓取最新镜像域名 + 一键延迟测速切换。\n\n### 📲 安装说明（免证书生产包 `.ipa`）\n1. **TrollStore（巨魔商店）**：下载 `HGhub_1.2.0_ios.ipa` 后直接导入巨魔永久安装。\n2. **AltStore / SideStore / Sideloadly**：使用个人 Apple ID 自签安装。\n3. **轻松签（ESign）/ 牛蛙助手 / Feather / 全能签**：导入证书签名后直接安装。",
+      "ipas": [
+        {
+          "name": "HGhub_1.2.0_ios.ipa",
+          "size": 3013319,
+          "url": "https://github.com/LNPANDY/HGhub-MacOS-iOS-Version/releases/download/v1.2.0-ios/HGhub_1.2.0_ios.ipa",
+          "id": 729239292,
+          "updated_at": "2026-11-09T22:37:06Z",
+          "digest": "sha256:ff4edc46814b16df3dcec1521d24649d331637b5100fb2912daed81ed55830d3"
+        }
+      ]
+    },
+    {
+      "tag": "v1.1.0-macos",
+      "name": "HGhub v1.1.0 macOS 专属版",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-07",
+      "published_at": "2026-11-07T21:00:39Z",
+      "body": "## HGhub macOS 编译发布版 (v1.1.0)\n\n本项目为 [Minireel/HGhub](https://github.com/Minireel/HGhub) 官方源码针对 macOS 平台的编译产物。\n原项目已在 PR #1 完成 macOS 适配支持，但官方尚未在 Release 页面发布 Mac 版产物。\n\n### 下载说明\n- **Apple Silicon (M1/M2/M3/M4 系列芯片)**: 推荐下载 `HGhub_1.1.0_arm64.dmg`\n- **Intel 芯片**: 推荐下载 `HGhub_1.1.0_x64.dmg`\n- **通用双架构版 (全机型支持)**: 推荐下载 `HGhub_1.1.0_universal.dmg`\n\n### macOS 首次打开说明（绕过未签名提示）\n由于开源个人构建未购买苹果开发者企业证书签名与公证，首次打开若提示“已损坏”或“无法打开”，请在「终端」中执行以下命令清除隔离属性：\n```bash\nsudo xattr -rd com.apple.quarantine /Applications/HGhub.app\n```\n",
+      "ipas": []
+    },
+    {
+      "tag": "v1.1.0-ios",
+      "name": "HGhub v1.1.0 iOS 正式版",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-07",
+      "published_at": "2026-11-07T22:11:24Z",
+      "body": "## HGhub iOS 增强版 (v1.1.0)\n\n### ✨ 核心特性\n- **沉浸式竖屏刷剧流**：支持首页无限推荐流、题材分类、三大榜单（热门/推荐/潜力）、搜索、吃瓜社区图文与视频帖、选集与历史续播。\n- **原生横竖屏智能切换**：横屏视频支持一键「横屏全屏」（调用 iOS 原生屏幕方向旋转），支持手机物理横置自动全屏、竖回自动退出，独立固定舞台层渲染不跑偏、不闪封面。\n- **丰富触控手势**：\n  - **双指自由缩放（1x~4x）与平移**：竖屏观看横屏视频可自由缩放，并提供「放大铺满 / 完整适应 / 还原缩放」胶囊按钮；\n  - **单击清屏 / 双击暂停**：单击屏幕隐藏所有控件与遮罩纯享画面，双击屏幕暂停/播放；\n  - **长按 2.0x 倍速 + 上滑锁定**：长按画面开启 2.0x 倍速，上滑即可锁定倍速；\n  - **左右横滑预览定位**：任意位置横滑精准跳转进度。\n- **HLS 播放稳定性加固**：内置 AES Key 与分片内存缓存、拖动进度条防卡死自愈重连、全屏旋转过渡期持续保活与片尾自动连播下一集。\n- **多线路与镜像测速**：内置固定主备线路 + 自动抓取最新镜像域名 + 一键延迟测速切换。\n\n### 📲 安装说明（免证书生产包 `.ipa`）\n1. **TrollStore（巨魔商店）**：下载 `HGhub_1.1.0_ios.ipa` 后直接导入巨魔永久安装。\n2. **AltStore / SideStore / Sideloadly**：使用个人 Apple ID 自签安装。\n3. **轻松签（ESign）/ 牛蛙助手 / Feather / 全能签**：导入证书签名后直接安装。",
+      "ipas": [
+        {
+          "name": "HGhub_1.1.0_ios.ipa",
+          "size": 2881206,
+          "url": "https://github.com/LNPANDY/HGhub-MacOS-iOS-Version/releases/download/v1.1.0-ios/HGhub_1.1.0_ios.ipa",
+          "id": 723734925,
+          "updated_at": "2026-11-08T11:29:59Z",
+          "digest": "sha256:5916fc8710910423c3c21c94b3e44307e7d9a812ce01a08f9366ff32374e56c8"
+        }
+      ]
+    }
   ]
 }

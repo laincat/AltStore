@@ -74,9 +74,9 @@ SOURCE = {
     "iconURL": "https://github.com/laincat.png?size=512",
     "subtitle": "多类 iOS 自签应用源",
     "description": (
-        "收录 25 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh，漫画阅读类 EhPanda、"
+        "收录 26 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh，漫画阅读类 EhPanda、"
         "VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX、PicaComic、Aidoku，"
-        "影音与工具类 One、AvPlay、INSAV、真果鉴、Swipt、AirCard、GestaltX，"
+        "影音与工具类 One、AvPlay、HGhub、INSAV、真果鉴、Swipt、AirCard、GestaltX，"
         "游戏类 ARMSX2、ARMSX3、Rich4。"
         "IPA 均直连各项目 GitHub Release 官方资产，"
         "由 SideStore / AltStore / LiveContainer 本地签名安装。"
@@ -379,6 +379,24 @@ APPS = [
             "登录收藏订阅，并可挂载外部字幕库。未签名安装包来自上游 GitHub Release，"
             "需自行签名安装。\n\n"
             "上游仓库只发布安装包，不含源码。　·　项目主页：https://github.com/ios151/Insav-releases"
+        ),
+    },
+    {
+        "repo": "LNPANDY/HGhub-MacOS-iOS-Version",
+        "asset": lambda n: n.startswith("HGhub_") and n.endswith("_ios.ipa"),
+        "name": "HGhub",
+        "developerName": "LNPANDY",
+        "subtitle": "竖屏刷剧与视频超分",
+        "category": "entertainment",
+        "tintColor": "#38BDF8",
+        "icon": "app-icon.png",
+        "description": (
+            "沉浸式竖屏刷剧客户端，支持推荐流、题材分类、榜单、搜索、选集续播，"
+            "并内置多档位实时视频超分（WebGL2 / Apple Metal）与手势缩放、横屏全屏。"
+            "上游仅提供未签名的 iOS 安装包，需自行用 Apple ID 签名安装"
+            "（TrollStore 可直接导入）。\n\n"
+            "上游协议为 PolyForm Noncommercial 1.0.0，仅限个人学习与非商业用途，禁止商业使用。"
+            "项目主页：https://github.com/LNPANDY/HGhub-MacOS-iOS-Version"
         ),
     },
     {

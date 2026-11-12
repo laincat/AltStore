@@ -3,7 +3,7 @@
   "identifier": "com.acgtoolbox.source",
   "iconURL": "https://github.com/laincat.png?size=512",
   "subtitle": "多类 iOS 自签应用源",
-  "description": "收录 25 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh，漫画阅读类 EhPanda、VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX、PicaComic、Aidoku，影音与工具类 One、AvPlay、INSAV、真果鉴、Swipt、AirCard、GestaltX，游戏类 ARMSX2、ARMSX3、Rich4。IPA 均直连各项目 GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。",
+  "description": "收录 26 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh，漫画阅读类 EhPanda、VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX、PicaComic、Aidoku，影音与工具类 One、AvPlay、HGhub、INSAV、真果鉴、Swipt、AirCard、GestaltX，游戏类 ARMSX2、ARMSX3、Rich4。IPA 均直连各项目 GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。",
   "tintColor": "#7C5CFF",
   "apps": [
     {
@@ -696,6 +696,61 @@
       "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.0.7/GestaltX_1.0.7.ipa",
       "size": 3563948,
       "minOSVersion": "26.0"
+    },
+    {
+      "name": "HGhub",
+      "bundleIdentifier": "com.hghub.huangguo",
+      "developerName": "LNPANDY",
+      "subtitle": "竖屏刷剧与视频超分",
+      "localizedDescription": "沉浸式竖屏刷剧客户端，支持推荐流、题材分类、榜单、搜索、选集续播，并内置多档位实时视频超分（WebGL2 / Apple Metal）与手势缩放、横屏全屏。上游仅提供未签名的 iOS 安装包，需自行用 Apple ID 签名安装（TrollStore 可直接导入）。\n\n上游协议为 PolyForm Noncommercial 1.0.0，仅限个人学习与非商业用途，禁止商业使用。项目主页：https://github.com/LNPANDY/HGhub-MacOS-iOS-Version",
+      "iconURL": "https://raw.githubusercontent.com/LNPANDY/HGhub-MacOS-iOS-Version/v1.2.2-ios/app-icon.png",
+      "tintColor": "#38BDF8",
+      "category": "entertainment",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "releaseChannels": [
+        {
+          "track": "stable",
+          "releases": [
+            {
+              "version": "1.2.2",
+              "date": "2026-11-12",
+              "publishedAt": "2026-11-12T22:25:05Z",
+              "buildVersion": "1.2.2",
+              "buildNumber": "1.2.2",
+              "localizedDescription": "HGhub iOS 增强版 (v1.2.2)\n✨ 核心特性\n- 多档位 GPU 实时视频超分引擎（WebGL2 / Apple Metal）：针对低码率片源提供「自然清透 / 影院质感 / 超清锐利 / 漫剧锐线 / 二次元重绘 / 原画直通」6 大可实时直达切换的画质档位（支持零涂抹保纹理 AI/3D 漫剧锐线、播放及暂停静帧瞬时对比、像素健康自检与硬件卷积零黑屏回退）。\n- 沉浸式竖屏刷剧流：支持首页无限推荐流、题材分类、三大榜单（热门/推荐/潜力）、搜索、吃瓜社区图文与视频帖、选集与历史续播。\n- 原生横竖屏智能切换：横屏视频支持一键「横屏全屏」（调用 iOS 原生屏幕方向旋转），支持手机物理横置自动全屏、竖回自动退出，独立固定舞台层渲染不跑偏、不闪封面。\n- 丰富触控手势：\n  - 双指自由缩放（1x~4x）与平移：竖屏观看横屏视频可自由缩放，并提供「放大铺满 / 完整适应 / 还原缩放」胶囊按钮；\n  - 单击清屏 / 双击暂停：单击屏幕隐藏所有控件与遮罩纯享画面，双击屏幕暂停/播放；\n  - 长按 2.0x 倍速 + 上滑锁定：长按画面开启 2.0x 倍速，上滑即可锁定倍速；\n  - 左右横滑预览定位：任意位置横滑精准跳转进度。\n- HLS 播放稳定性加固：内置 AES Key 与分片内存缓存、拖动进度条防卡死自愈重连、全屏旋转过渡期持续保活与片尾自动连播下一集。\n- 多线路与镜像测速：内置固定主备线路 + 自动抓取最新镜像域名 + 一键延迟测速切换。\n📲 安装说明（免证书生产包 .ipa）\n1. TrollStore（巨魔商店）：下载 HGhub_1.2.2_io…",
+              "downloadURL": "https://github.com/LNPANDY/HGhub-MacOS-iOS-Version/releases/download/v1.2.2-ios/HGhub_1.2.2_ios.ipa",
+              "size": 3028648,
+              "minOSVersion": "15.0",
+              "releaseTag": "v1.2.2-ios",
+              "source": "https://github.com/LNPANDY/HGhub-MacOS-iOS-Version/releases/tag/v1.2.2-ios"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "version": "1.2.2",
+          "date": "2026-11-12",
+          "publishedAt": "2026-11-12T22:25:05Z",
+          "buildVersion": "1.2.2",
+          "buildNumber": "1.2.2",
+          "localizedDescription": "HGhub iOS 增强版 (v1.2.2)\n✨ 核心特性\n- 多档位 GPU 实时视频超分引擎（WebGL2 / Apple Metal）：针对低码率片源提供「自然清透 / 影院质感 / 超清锐利 / 漫剧锐线 / 二次元重绘 / 原画直通」6 大可实时直达切换的画质档位（支持零涂抹保纹理 AI/3D 漫剧锐线、播放及暂停静帧瞬时对比、像素健康自检与硬件卷积零黑屏回退）。\n- 沉浸式竖屏刷剧流：支持首页无限推荐流、题材分类、三大榜单（热门/推荐/潜力）、搜索、吃瓜社区图文与视频帖、选集与历史续播。\n- 原生横竖屏智能切换：横屏视频支持一键「横屏全屏」（调用 iOS 原生屏幕方向旋转），支持手机物理横置自动全屏、竖回自动退出，独立固定舞台层渲染不跑偏、不闪封面。\n- 丰富触控手势：\n  - 双指自由缩放（1x~4x）与平移：竖屏观看横屏视频可自由缩放，并提供「放大铺满 / 完整适应 / 还原缩放」胶囊按钮；\n  - 单击清屏 / 双击暂停：单击屏幕隐藏所有控件与遮罩纯享画面，双击屏幕暂停/播放；\n  - 长按 2.0x 倍速 + 上滑锁定：长按画面开启 2.0x 倍速，上滑即可锁定倍速；\n  - 左右横滑预览定位：任意位置横滑精准跳转进度。\n- HLS 播放稳定性加固：内置 AES Key 与分片内存缓存、拖动进度条防卡死自愈重连、全屏旋转过渡期持续保活与片尾自动连播下一集。\n- 多线路与镜像测速：内置固定主备线路 + 自动抓取最新镜像域名 + 一键延迟测速切换。\n📲 安装说明（免证书生产包 .ipa）\n1. TrollStore（巨魔商店）：下载 HGhub_1.2.2_io…",
+          "downloadURL": "https://github.com/LNPANDY/HGhub-MacOS-iOS-Version/releases/download/v1.2.2-ios/HGhub_1.2.2_ios.ipa",
+          "size": 3028648,
+          "minOSVersion": "15.0",
+          "releaseTag": "v1.2.2-ios",
+          "source": "https://github.com/LNPANDY/HGhub-MacOS-iOS-Version/releases/tag/v1.2.2-ios"
+        }
+      ],
+      "version": "1.2.2",
+      "versionDate": "2026-11-12",
+      "versionDescription": "HGhub iOS 增强版 (v1.2.2)\n✨ 核心特性\n- 多档位 GPU 实时视频超分引擎（WebGL2 / Apple Metal）：针对低码率片源提供「自然清透 / 影院质感 / 超清锐利 / 漫剧锐线 / 二次元重绘 / 原画直通」6 大可实时直达切换的画质档位（支持零涂抹保纹理 AI/3D 漫剧锐线、播放及暂停静帧瞬时对比、像素健康自检与硬件卷积零黑屏回退）。\n- 沉浸式竖屏刷剧流：支持首页无限推荐流、题材分类、三大榜单（热门/推荐/潜力）、搜索、吃瓜社区图文与视频帖、选集与历史续播。\n- 原生横竖屏智能切换：横屏视频支持一键「横屏全屏」（调用 iOS 原生屏幕方向旋转），支持手机物理横置自动全屏、竖回自动退出，独立固定舞台层渲染不跑偏、不闪封面。\n- 丰富触控手势：\n  - 双指自由缩放（1x~4x）与平移：竖屏观看横屏视频可自由缩放，并提供「放大铺满 / 完整适应 / 还原缩放」胶囊按钮；\n  - 单击清屏 / 双击暂停：单击屏幕隐藏所有控件与遮罩纯享画面，双击屏幕暂停/播放；\n  - 长按 2.0x 倍速 + 上滑锁定：长按画面开启 2.0x 倍速，上滑即可锁定倍速；\n  - 左右横滑预览定位：任意位置横滑精准跳转进度。\n- HLS 播放稳定性加固：内置 AES Key 与分片内存缓存、拖动进度条防卡死自愈重连、全屏旋转过渡期持续保活与片尾自动连播下一集。\n- 多线路与镜像测速：内置固定主备线路 + 自动抓取最新镜像域名 + 一键延迟测速切换。\n📲 安装说明（免证书生产包 .ipa）\n1. TrollStore（巨魔商店）：下载 HGhub_1.2.2_io…",
+      "downloadURL": "https://github.com/LNPANDY/HGhub-MacOS-iOS-Version/releases/download/v1.2.2-ios/HGhub_1.2.2_ios.ipa",
+      "size": 3028648,
+      "minOSVersion": "15.0"
     },
     {
       "name": "INSAV",
@@ -1421,7 +1476,7 @@
     {
       "title": "源已建立",
       "identifier": "source-created",
-      "caption": "收录 25 款应用，IPA 直连各项目 GitHub Release。",
+      "caption": "收录 26 款应用，IPA 直连各项目 GitHub Release。",
       "date": "2026-11-12",
       "tintColor": "#7C5CFF",
       "notify": false
