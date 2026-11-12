@@ -1,6 +1,25 @@
 {
   "Predidit/Kazumi": [
     {
+      "tag": "2.4.4",
+      "name": "2.4.4",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-12",
+      "published_at": "2026-11-12T10:27:44Z",
+      "body": "- 适配 flutter 3.50",
+      "ipas": [
+        {
+          "name": "Kazumi_ios_2.4.4_no_sign.ipa",
+          "size": 30341213,
+          "url": "https://github.com/Predidit/Kazumi/releases/download/2.4.4/Kazumi_ios_2.4.4_no_sign.ipa",
+          "id": 739042530,
+          "updated_at": "2026-11-12T10:27:42Z",
+          "digest": "sha256:88d1146bf466a7dbbfd3a0649a8b36fb15a10e6186aca8388080c2e94747bfca"
+        }
+      ]
+    },
+    {
       "tag": "2.4.3",
       "name": "2.4.3",
       "pre": false,
@@ -358,25 +377,6 @@
           "id": 495627848,
           "updated_at": "2026-07-30T17:01:00Z",
           "digest": "sha256:571d3cc2ccff147d8c20fa94aeab9ad91177011fdc81021e71c57354e11e22f4"
-        }
-      ]
-    },
-    {
-      "tag": "2.2.4",
-      "name": "2.2.4",
-      "pre": false,
-      "draft": false,
-      "date": "2026-07-30",
-      "published_at": "2026-07-30T06:37:01Z",
-      "body": "- 重新设计的设置页 (@Predidit)\r\n- 新增番剧关联选项卡 (@liangyuR)\r\n- 优化验证码规则检索速度 (@Predidit)\r\n- 现在在移动数据网络下自动启用节流模式 (@Predidit)\r\n- 优化Linux平台软件解码功能 (@Predidit)\r\n- 修复镜像模式下评论区GIF只显示第一帧的问题 (@Predidit)\r\n- 修复一起看功能在大陆地区不稳定的问题 (#2388) (@Predidit)",
-      "ipas": [
-        {
-          "name": "Kazumi_ios_2.2.4_no_sign.ipa",
-          "size": 29243380,
-          "url": "https://github.com/Predidit/Kazumi/releases/download/2.2.4/Kazumi_ios_2.2.4_no_sign.ipa",
-          "id": 495015729,
-          "updated_at": "2026-07-30T06:36:59Z",
-          "digest": "sha256:2bea4b4fe7ecf70cce7eef0c6257d291e879eee552265da7ce012f0eb2983431"
         }
       ]
     }
@@ -765,25 +765,6 @@
   ],
   "EhPanda-Team/EhPanda": [
     {
-      "tag": "3.0.0",
-      "name": "[v3.0.0] Features, Bugfixes and Refactoring",
-      "pre": true,
-      "draft": false,
-      "date": "2026-11-11",
-      "published_at": "2026-11-11T14:08:56Z",
-      "body": "## Features\r\n\r\n- **Offline downloads.** Save galleries to your device and read them with no connection. Sort them into folders, and let the app repair a download that got interrupted or update it later. Downloads keep going while the app is in the background and won't get cut off partway.\r\n- **Date Seek.** Jump straight to a specific date while paging through a gallery. It works on the Frontpage, Watched and Favorites lists.\r\n- **WebP images** are now supported.\r\n- **Redesigned toasts.** Progress and status messages (login, page jump, background updates, and more) now show as a sleek glass toast at the bottom of the screen instead of a pop-up spinner.\r\n\r\n## Bugfixes\r\n\r\n- The page slider and the current page no longer drift out of sync\r\n- Fixed a gesture problem in the reading control panel\r\n- Fixed a crash on the EH settings page\r\n- Fixed the missing toolbar item on the reading settings page\r\n- Fixed an empty cell in quick search\r\n- Fixed layout issues on the tags extension settings, the About page, and gallery cells in other languages\r\n- Fixed the search title disappearing\r\n- Fixed two settings pages opening at once on iPad\r\n- Fixed page tracking and zoom boundaries while reading\r\n\r\n## Refactoring\r\n\r\nPlenty changed under the hood. The app now targets iOS 26 and was rebuilt on Apple's latest frameworks for smoother performance and fewer bugs down the road. Downloads moved to a new storage system that's faster and more reliable. Navigation was rebuilt on Apple's modern stack-based APIs, and several third-party dependencies (AlertKit, TTProgressHUD, FilePicker, SwiftUINavigation) were dropped in favor of native equivalents. We also reworked the reading view and rewrote the test suite to keep future updates stable.",
-      "ipas": [
-        {
-          "name": "EhPanda-Beta.ipa",
-          "size": 18850504,
-          "url": "https://github.com/EhPanda-Team/EhPanda/releases/download/3.0.0/EhPanda-Beta.ipa",
-          "id": 738272393,
-          "updated_at": "2026-11-12T05:57:25Z",
-          "digest": "sha256:ec1cd3c29a2e26044f2cc15cb5f409d3725c9089c95caf151780897506e129f9"
-        }
-      ]
-    },
-    {
       "tag": "v2.8.1",
       "name": "Bugfixes & Liquid Glass adaptation",
       "pre": false,
@@ -1140,6 +1121,25 @@
           "url": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.4.3/EhPanda.ipa",
           "id": 83261350,
           "updated_at": "2022-11-03T05:59:46Z",
+          "digest": null
+        }
+      ]
+    },
+    {
+      "tag": "v2.4.2",
+      "name": "First iOS, iPadOS 16 release",
+      "pre": false,
+      "draft": false,
+      "date": "2022-10-03",
+      "published_at": "2022-10-03T18:15:16Z",
+      "body": "1. fix: Unexpected behaviors on iOS or iPadOS 16 devices.\r\niOS・iPadOS 16 デバイスでの予期せぬ動作を修正。\r\n修正了 iOS、iPadOS 16 裝置上的非預期行為。\r\n\r\n2. fix: Will not start loading automatically when navigating to PreviewsView issue.\r\nプレビュー画面へ遷移する際、読み込みが自動的に始まらない不具合を修正。\r\n修正進入預覽頁面時不自動開始載入的問題。\r\n\r\n3. refactor: Reduce the file size of releases.\r\nリリースのファイルサイズを減らす。\r\n減小發佈的檔案大小。",
+      "ipas": [
+        {
+          "name": "EhPanda.ipa",
+          "size": 5963114,
+          "url": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.4.2/EhPanda.ipa",
+          "id": 79835878,
+          "updated_at": "2022-10-03T18:15:17Z",
           "digest": null
         }
       ]
@@ -4175,6 +4175,25 @@
   ],
   "ARMSX2/ARMSX2": [
     {
+      "tag": "nightly-20261112",
+      "name": "ARMSX2 nightly 20261112 (c25493a202)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-11-12",
+      "published_at": "2026-11-12T11:58:10Z",
+      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- IOP thread: hold the lag bound tight for 196,608 cycles after every SIF transfer the EE starts\n- GS/Vulkan: a run's texture set is a fixed array of 32, without a variable descriptor count\n- Android: Auto picks Vulkan on the Bifrost arch 7 parts\n- DriverPacks: offer malisx2 on every Mali of its four arches\n- Android: Auto picks Vulkan on every Mali Valhall v10 part\n- Offer malisx2 on every Mali of arch 7, 9, 10 and 11\n- GPU Drivers pages: name both pack families, pass the session to the setup offer\n- DriverPacks: a malisx2 feed for Mali GPUs on Arm's kbase driver\n- Android: Auto picks Vulkan on the Mali-G610 and G710\n- Android: Vulkan is the default renderer instead of Auto\n- Offer malisx2 on the Mali-G610 and G710 (Valhall v10)\n- GS/Vulkan: VkResultToS",
+      "ipas": [
+        {
+          "name": "ARMSX2-nightly-20261112-c25493a202-iOS-arm64.ipa",
+          "size": 40658081,
+          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261112/ARMSX2-nightly-20261112-c25493a202-iOS-arm64.ipa",
+          "id": 739312263,
+          "updated_at": "2026-11-12T11:58:16Z",
+          "digest": "sha256:ca921e091824f59f3b2e85fb2349d631e522452b150fd25427464768a5e36458"
+        }
+      ]
+    },
+    {
       "tag": "nightly-20261111",
       "name": "ARMSX2 nightly 20261111 (22b1a7661f)",
       "pre": true,
@@ -4306,25 +4325,6 @@
       "published_at": "2026-10-31T15:05:23Z",
       "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- Library screensaver starts after 5 minutes by default\n- Android tests: skip the stuck-file case where a folder cannot be made read-only (#906)\n- Android: cite the malisx2 release, not the driver PR, in the offer comment\n- Offer malisx2 on the Bifrost v7 parts it drives (Mali-G52, Mali-G76)\n- What's new: reach the top with the pad, and outline the card itself\n- What's new: let the pad read through an opened release\n- What's new: show the pictures in release notes\n- iOS: point the hack reason comment at the file with the enum\n- iOS: apply turbo and slow motion speeds as saved\n- iOS: reach the base settings only through Host's locked accessors\n- iOS: split the bridge into one file per concern\n- iOS: fail the build when a bridge method has no body\n- VK: ke",
       "ipas": []
-    },
-    {
-      "tag": "nightly-20261029",
-      "name": "ARMSX2 nightly 20261029 (aa52a1fdc7)",
-      "pre": true,
-      "draft": false,
-      "date": "2026-10-29",
-      "published_at": "2026-10-29T13:29:45Z",
-      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- iOS: move the cheats list sections out of the view body\n- iOS: compile the Swift UI at -Onone in Debug\n- iOS: build the core once with Ninja, outside the app project\n- iOS: use the helpers that already exist instead of copies\n- iOS: trim the logs to what a bug report needs\n- iOS: trim the bridge to what Swift calls\n- iOS: reconnect two features that lost their caller\n- iOS: delete dead Swift code\n- iOS: read Haptic Feedback on every rumble, not once a session\n- iOS: get the Mac Catalyst build working again\n- iOS: move the app out of the Gradle-style app/src/main tree\n- Comments: trim the comments added since 2026-09-28\n- GameDB: Tekken 5's arcade entries use bilinearUpscale\n- GameDB: load only once the resources folder is set\n- OSD: ARMSX2 2.9 on Andro",
-      "ipas": [
-        {
-          "name": "ARMSX2-nightly-20261029-aa52a1fdc7-iOS-arm64.ipa",
-          "size": 40543149,
-          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261029/ARMSX2-nightly-20261029-aa52a1fdc7-iOS-arm64.ipa",
-          "id": 688658948,
-          "updated_at": "2026-10-29T13:29:51Z",
-          "digest": "sha256:87f9f8b8c6349c38df7a1837299f77ef2de7f6f813d9bd469bfff3b93c794d4d"
-        }
-      ]
     },
     {
       "tag": "2.9.1",
@@ -5674,6 +5674,33 @@
   ],
   "Xanerix/guoapp": [
     {
+      "tag": "app-v1.0.9-109",
+      "name": "红果鉴 / 小果影视 1.0.9+109",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-12",
+      "published_at": "2026-11-12T16:48:08Z",
+      "body": "更新内容：\n\n- 设置 › 播放 新增「横屏视频也使用竖屏样式」，默认关闭（#122）：竖屏观看横屏视频时画面居中，上下滑动切集、底部选集，选集条右边的全屏按钮进入横屏全屏；打开后转动手机不再自动全屏。\n- 设置 › 外观 新增「在主页显示模糊封面按钮」和「开屏自动模糊封面」（#125）：发现页站源按钮左边的眼睛按钮可模糊或恢复发现页封面，电视不支持。\n- Windows 和 macOS 设置 › 播放 新增「窗口置顶」，默认关闭（#113）；独占全屏的游戏盖不住，需把游戏改成无边框窗口（macOS 上为开发快照，未在 Mac 上验证）。\n- 电脑播放页新增 Page Up / Page Down 切换上一集、下一集（#118，macOS 上为开发快照，未在 Mac 上验证）。\n- 倍速新增 1.1x 一档（#127）。\n- 电视详情页的「系列多季」可用遥控器切换：在选集第一行或分组按钮上按上键进入，左右换季，确认键切换，下键回到选集（#119）。\n- 电视播放页播控右上角显示网速和时间，可在 设置 › 播放 分别关闭（#119）。\n- 横屏视频全屏播放时，右上角「播放设置」面板可调倍速、清晰度、画面比例、定时停止和弹幕，和竖持时一致。\n- 横屏视频的竖屏播放页，「简介」和「选集」可左右滑动切换。\n- 修复电视上播放和发现页「继续观看」不同的剧时遥控器焦点被发现页抢走，按确认键会在播放页上面再打开一个详情页。\n- 修复平板、电脑横屏未全屏播放时窗口较窄、播放条按钮放不下：按画面宽度依次收起次要按钮，进入全屏或宽屏后恢复。\n- 修复手机和平板布局下切换发现页分类、详情页分组或下载管理标签时，内容可能停在半透明状态且点不动。\n- 修复红果榜单里的剧都显示「共 3 集」或「共 5 集」。\n- 修复拿不到总时长的视频正常播完后反复自动恢复。\n- 清晰度标签更准确：HLS 视频按画面短边计算，竖屏 720×1280 不再标成 1280P（已下载的旧记录不变）；本地视频显示实际清晰度，不再一律写「本地原画」。\n- 历史、收藏、追剧和设置文件读取时遇到系统报错（被占用、没有权限、存储暂时不可用），不再当成文件损坏改名并按空记录继续，改为锁定访问、保留原文件，稍后「重新读取」即可恢复。\n- 站点单次返回 403 不再让同一域名的全部请求暂停 1 分钟，连续 3 次才暂停；红果设备注册遇到 5xx 或网关错误页时不再暂停注册 10 分钟。\n- 一批报错改为显示实际原因，不再把猜测当成结论，原始报错写进日记：涉及检查更新、播放自动恢复、下载、迁移下载目录、榜单刷新、本地核心加载、系统代理状态和各站源的取流、权限提示。其中手动检查更新在没配置更新服务器或版本信息无效时，不再显示「已是最新版本」。\n- 红果听书只给已确认含义的类型打「真人录音」「AI 朗读」标签。\n\n版本 1.0.9+109。两个版本功能相同，区别只在站源范围，按需选择：\n\n- 红果鉴 hongguojian：仅红果站源\n- 小果影视 zhenguojian：全部站源\n\nAndroid：\n- *-arm64-v8a.apk：适用于较新的安卓设备\n- *-armeabi-v7a.apk：适用于较老的安卓设备，电视推荐使用此版本\n- *-x86_64.apk：适用于模拟器\n\niOS：\n- *-ios-unsigned.ipa：未签名 IPA，可用相关工具安装\n\nWindows：\n- *-windows-x64-setup.exe：安装包，默认安装到当前用户，无需管理员权限；安装时可改为所有用户\n- *-windows-x64.zip：便携版，解压后运行 hongguojian.exe 或 zhenguojian.exe；设置、记录、海报缓存和默认下载都保存在程序旁的 userdata 目录，升级时把旧版的 userdata 目录复制过来即可\n\nmacOS：\n- *-macos-universal.dmg：适用于 macOS 12 及以上的 Apple 芯片和 Intel 电脑，打开后拖入 Applications；未经公证，首次打开前在终端执行 xattr -dr com.apple.quarantine /Applications/红果鉴.app（小果影视为 小果影视.app）\n\n签名证书 SHA-256：\n- 红果鉴：f819175143d1bff5b06c9bfdb4c2f6001ae73077cc8e35ce2adb43bd3f9aed92\n- 小果影视：39ead05821dda5e60c820919eadac0f396edfd4bbf81f764f1d4a12bca889207\n",
+      "ipas": [
+        {
+          "name": "hongguojian-1.0.9+109-ios-unsigned.ipa",
+          "size": 30782144,
+          "url": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.9-109/hongguojian-1.0.9%2B109-ios-unsigned.ipa",
+          "id": 740264502,
+          "updated_at": "2026-11-12T16:47:59Z",
+          "digest": "sha256:07981232eab538dd3ad46b2843fd8ed8a820ee73862df4de32a1c7da86436276"
+        },
+        {
+          "name": "zhenguojian-1.0.9+109-ios-unsigned.ipa",
+          "size": 30782085,
+          "url": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.9-109/zhenguojian-1.0.9%2B109-ios-unsigned.ipa",
+          "id": 740264772,
+          "updated_at": "2026-11-12T16:48:02Z",
+          "digest": "sha256:6762caf44eb4b66f1b0e491045a8503e6f078843346f63547765b01aeb4f3b1b"
+        }
+      ]
+    },
+    {
       "tag": "app-v1.0.8-108",
       "name": "红果鉴 / 小果影视 1.0.8+108",
       "pre": false,
@@ -6166,33 +6193,6 @@
           "id": 642933968,
           "updated_at": "2026-10-15T06:34:51Z",
           "digest": "sha256:7bd40e5efcdbb01794df87c90937e4717b42ad563e1d609b848db646a6c87473"
-        }
-      ]
-    },
-    {
-      "tag": "app-v0.2.72-79",
-      "name": "红果鉴 / 真果鉴 0.2.72+79",
-      "pre": false,
-      "draft": false,
-      "date": "2026-10-10",
-      "published_at": "2026-10-10T08:53:59Z",
-      "body": "更新内容：\n\n- 移除站源密码锁，以及连点「最近观看」打开密码锁的隐藏入口。\n- 全站源版可在站源管理中逐个开关站源：黄豆、剧果、野果、帝果、黄果视频 / 黄果 AI / 黄果旧版默认关闭，其余站源默认开启。开关全局生效，仅管理员可以切换；关闭后等同当前用户没有该站源权限。\n- 升级后原密码锁设置不迁移，敏感站源回到默认关闭；站源开关不包含在备份中。\n- 修复站源管理页黄果分组内显示错误信息时页面构建失败的问题。\n- 站源全部关闭时，发现页隐藏切换站源按钮，排序与筛选、多选下载、搜索按钮置灰。\n\n版本 0.2.72+79。两个版本功能相同，区别只在站源范围，按需选择：\n\n- 红果鉴 hongguojian：仅红果站源\n- 真果鉴 zhenguojian：全部站源\n\nAndroid：\n- *-arm64-v8a.apk：适用于较新的安卓设备\n- *-armeabi-v7a.apk：适用于较老的安卓设备，电视推荐使用此版本\n- *-x86_64.apk：适用于模拟器\n\niOS：\n- *-ios-unsigned.ipa：未签名 IPA，可用相关工具安装\n\nWindows：\n- *-windows-x64.zip：解压后运行 hongguojian.exe 或 zhenguojian.exe\n\n签名证书 SHA-256：f819175143d1bff5b06c9bfdb4c2f6001ae73077cc8e35ce2adb43bd3f9aed92\n",
-      "ipas": [
-        {
-          "name": "hongguojian-0.2.72+79-ios-unsigned.ipa",
-          "size": 30415250,
-          "url": "https://github.com/Xanerix/guoapp/releases/download/app-v0.2.72-79/hongguojian-0.2.72%2B79-ios-unsigned.ipa",
-          "id": 627481282,
-          "updated_at": "2026-10-10T08:53:55Z",
-          "digest": "sha256:a01dd93a4378e0a6d4019e5867a3dbe41d741365dd117febe03a9a2cef608b58"
-        },
-        {
-          "name": "zhenguojian-0.2.72+79-ios-unsigned.ipa",
-          "size": 30415336,
-          "url": "https://github.com/Xanerix/guoapp/releases/download/app-v0.2.72-79/zhenguojian-0.2.72%2B79-ios-unsigned.ipa",
-          "id": 627481359,
-          "updated_at": "2026-10-10T08:53:57Z",
-          "digest": "sha256:94d1da9a0914e88d5be0adab857a4eb7d3d4fa62212adb22ca1aee964ebcb7b5"
         }
       ]
     }
@@ -7585,6 +7585,35 @@
     }
   ],
   "huamidev/GestaltX": [
+    {
+      "tag": "v1.0.7",
+      "name": "GestaltX v1.0.7",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-12",
+      "published_at": "2026-11-12T17:14:29Z",
+      "body": "English | [简体中文](https://github.com/huamidev/GestaltX/blob/v1.0.7/CHANGELOG_ZH-CN.md)\n\nBuild `11130112`.\n\n### Fixed\n\n- Fix container discovery on iOS 27.3 so wallpaper and App Launch Images can locate their containers again.\n\n",
+      "ipas": [
+        {
+          "name": "GestaltX_1.0.7.ipa",
+          "size": 3561079,
+          "url": "https://github.com/huamidev/GestaltX/releases/download/v1.0.7/GestaltX_1.0.7.ipa",
+          "id": 740353502,
+          "updated_at": "2026-11-12T17:14:31Z",
+          "digest": "sha256:a796e5b835f8423ecc6c8991926eefeb8bedc6fffff5865edb31a0dbd0a4b0b5"
+        }
+      ]
+    },
+    {
+      "tag": "v1.0.6",
+      "name": "GestaltX v1.0.6",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-12",
+      "published_at": "2026-11-12T15:08:16Z",
+      "body": "English | [简体中文](https://github.com/huamidev/GestaltX/blob/v1.0.6/CHANGELOG_ZH-CN.md)\r\n\r\nBuild `11122300`.\r\n\r\n### Added\r\n\r\n- Add custom lock screen text in System Settings, applied without restarting the device.\r\n- Add Wallpaper Settings for importing, applying and removing wallpaper packs, including `.tendies` and `.zip` import through the share extension.\r\n- Add App Launch Images with custom photos, full-resolution saving to Photos, automatic backups and restore.\r\n- Add Japanese localization based on [@kagithu](https://github.com/kagithu)'s contribution, with missing strings completed ([#124](https://github.com/huamidev/GestaltX/issues/124)).\r\n- Add the iPhone Air Dynamic Island layout ([#105](https://github.com/huamidev/GestaltX/pull/105)).\r\n\r\n### Changed\r\n\r\n- Add a symbol to Discard Changes. Apply Changes and Discard Changes now turn gray when there are no pending changes.\r\n\r\n### Fixed\r\n\r\n- Preserve device-specific On-Device Siri capability values instead of overwriting them with a generic value, which could revert the Apple Intelligence Siri interface ([#102](https://github.com/huamidev/GestaltX/pull/102), [#98](https://github.com/huamidev/GestaltX/issues/98)).\r\n- Improve shared-import cancellation and temporary-file cleanup.\r\n\r\n**Full Changelog**: https://github.com/huamidev/GestaltX/compare/v1.0.5...v1.0.6\r\n\r\n",
+      "ipas": []
+    },
     {
       "tag": "v1.0.5",
       "name": "GestaltX v1.0.5",

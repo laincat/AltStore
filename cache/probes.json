@@ -2078,5 +2078,61 @@
       "size": 1630941,
       "digest": "sha256:3fbfee3f1fcd82fcce0b7f3fbd0381ef83ecf256b4d20b7984a39d95c3b1d7f9"
     }
+  },
+  "https://github.com/Predidit/Kazumi/releases/download/2.4.4/Kazumi_ios_2.4.4_no_sign.ipa": {
+    "bundleIdentifier": "com.example.kazumi",
+    "version": "2.4.4",
+    "buildVersion": "20404",
+    "displayName": "Kazumi",
+    "minOSVersion": "15.0",
+    "size": 30341213,
+    "assetIdentity": {
+      "id": 739042530,
+      "updated_at": "2026-11-12T10:27:42Z",
+      "size": 30341213,
+      "digest": "sha256:88d1146bf466a7dbbfd3a0649a8b36fb15a10e6186aca8388080c2e94747bfca"
+    }
+  },
+  "https://github.com/huamidev/GestaltX/releases/download/v1.0.7/GestaltX_1.0.7.ipa": {
+    "bundleIdentifier": "com.huami.gestultx",
+    "version": "1.0.7",
+    "buildVersion": "11130112",
+    "displayName": "GestaltX",
+    "minOSVersion": "26.0",
+    "size": 3561079,
+    "assetIdentity": {
+      "id": 740353502,
+      "updated_at": "2026-11-12T17:14:31Z",
+      "size": 3561079,
+      "digest": "sha256:a796e5b835f8423ecc6c8991926eefeb8bedc6fffff5865edb31a0dbd0a4b0b5"
+    }
+  },
+  "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.9-109/zhenguojian-1.0.9%2B109-ios-unsigned.ipa": {
+    "bundleIdentifier": "com.yingshib.xg",
+    "version": "1.0.9",
+    "buildVersion": "109",
+    "displayName": "XiaoGuoYingShi",
+    "minOSVersion": "15.1",
+    "size": 30782085,
+    "assetIdentity": {
+      "id": 740264772,
+      "updated_at": "2026-11-12T16:48:02Z",
+      "size": 30782085,
+      "digest": "sha256:6762caf44eb4b66f1b0e491045a8503e6f078843346f63547765b01aeb4f3b1b"
+    }
+  },
+  "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261112/ARMSX2-nightly-20261112-c25493a202-iOS-arm64.ipa": {
+    "bundleIdentifier": "com.armsx2.ios.nightly",
+    "version": "2.6.0-nightly.20261112.1132",
+    "buildVersion": "260",
+    "displayName": "ARMSX2 Nightly",
+    "minOSVersion": "17.4",
+    "size": 40658081,
+    "assetIdentity": {
+      "id": 739312263,
+      "updated_at": "2026-11-12T11:58:16Z",
+      "size": 40658081,
+      "digest": "sha256:ca921e091824f59f3b2e85fb2349d631e522452b150fd25427464768a5e36458"
+    }
   }
 }
