@@ -3,7 +3,7 @@
   "identifier": "com.acgtoolbox.source",
   "iconURL": "https://github.com/laincat.png?size=512",
   "subtitle": "多类 iOS 自签应用源",
-  "description": "收录 23 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh，漫画阅读类 EhPanda、VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX、PicaComic、Aidoku，影音与工具类 AvPlay、真果鉴、HGhub、Swipt、AirCard，游戏类 ARMSX2、ARMSX3、Rich4。IPA 直连各项目 GitHub Release 官方资产（HGhub 为上游构建产物的转发），由 SideStore / AltStore / LiveContainer 本地签名安装。",
+  "description": "收录 22 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh，漫画阅读类 EhPanda、VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX、PicaComic、Aidoku，影音与工具类 AvPlay、真果鉴、Swipt、AirCard，游戏类 ARMSX2、ARMSX3、Rich4。IPA 均直连各项目 GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。",
   "tintColor": "#7C5CFF",
   "apps": [
     {
@@ -643,61 +643,6 @@
       "minOSVersion": "26.0"
     },
     {
-      "name": "HGhub",
-      "bundleIdentifier": "com.hghub.huangguo",
-      "developerName": "Minireel",
-      "subtitle": "竖屏刷剧（侧载）",
-      "localizedDescription": "横竖屏刷剧应用，支持推荐流、榜单、搜索与选集续播。安装包由 laincat/HGhub 镜像自动编译：iOS 专用源码、ad-hoc 签名并写入 get-task-allow，适配 SideStore / AltStore 重签，修复了完全未签名包重签后启动闪退的问题。\n\n上游协议为 PolyForm Noncommercial 1.0.0，禁止商业使用。项目主页：https://github.com/Minireel/HGhub",
-      "iconURL": "https://raw.githubusercontent.com/laincat/HGhub/main/icons/HGhub-1024.png",
-      "tintColor": "#F5A623",
-      "category": "entertainment",
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "releaseChannels": [
-        {
-          "track": "stable",
-          "releases": [
-            {
-              "version": "1.2.0",
-              "date": "2026-11-10",
-              "publishedAt": "2026-11-10T08:25:09Z",
-              "buildVersion": "1.2.0",
-              "buildNumber": "1.2.0",
-              "localizedDescription": "本仓库自动编译的 ad-hoc 签名 iOS 侧载包。\n\n- 源码基线：上游 Minireel/HGhub commit 9ca69727（v1.2.0）\n- 上游已于 2026-11-10 停止维护并撤下源码、发布与构建记录\n- 包名 com.hghub.huangguo，arm64，ad-hoc 签名；SideStore / AltStore 重签后可启动\n- 协议 PolyForm Noncommercial 1.0.0，禁止商业使用\n- 本次构建：https://github.com/laincat/HGhub/actions/runs/42941124166",
-              "downloadURL": "https://github.com/laincat/HGhub/releases/download/ios-1.2.0/HGhub_1.2.0_ios.ipa",
-              "size": 3506344,
-              "minOSVersion": "15.0",
-              "releaseTag": "ios-1.2.0",
-              "source": "https://github.com/laincat/HGhub/releases/tag/ios-1.2.0"
-            }
-          ]
-        }
-      ],
-      "versions": [
-        {
-          "version": "1.2.0",
-          "date": "2026-11-10",
-          "publishedAt": "2026-11-10T08:25:09Z",
-          "buildVersion": "1.2.0",
-          "buildNumber": "1.2.0",
-          "localizedDescription": "本仓库自动编译的 ad-hoc 签名 iOS 侧载包。\n\n- 源码基线：上游 Minireel/HGhub commit 9ca69727（v1.2.0）\n- 上游已于 2026-11-10 停止维护并撤下源码、发布与构建记录\n- 包名 com.hghub.huangguo，arm64，ad-hoc 签名；SideStore / AltStore 重签后可启动\n- 协议 PolyForm Noncommercial 1.0.0，禁止商业使用\n- 本次构建：https://github.com/laincat/HGhub/actions/runs/42941124166",
-          "downloadURL": "https://github.com/laincat/HGhub/releases/download/ios-1.2.0/HGhub_1.2.0_ios.ipa",
-          "size": 3506344,
-          "minOSVersion": "15.0",
-          "releaseTag": "ios-1.2.0",
-          "source": "https://github.com/laincat/HGhub/releases/tag/ios-1.2.0"
-        }
-      ],
-      "version": "1.2.0",
-      "versionDate": "2026-11-10",
-      "versionDescription": "本仓库自动编译的 ad-hoc 签名 iOS 侧载包。\n\n- 源码基线：上游 Minireel/HGhub commit 9ca69727（v1.2.0）\n- 上游已于 2026-11-10 停止维护并撤下源码、发布与构建记录\n- 包名 com.hghub.huangguo，arm64，ad-hoc 签名；SideStore / AltStore 重签后可启动\n- 协议 PolyForm Noncommercial 1.0.0，禁止商业使用\n- 本次构建：https://github.com/laincat/HGhub/actions/runs/42941124166",
-      "downloadURL": "https://github.com/laincat/HGhub/releases/download/ios-1.2.0/HGhub_1.2.0_ios.ipa",
-      "size": 3506344,
-      "minOSVersion": "15.0"
-    },
-    {
       "name": "Kazumi",
       "bundleIdentifier": "com.example.kazumi",
       "developerName": "Predidit",
@@ -923,7 +868,7 @@
       "developerName": "nekohasekai",
       "subtitle": "用 JavaScript 自动化设备（每日构建）",
       "localizedDescription": "用 JavaScript swiplet 自动化操作这台 iPhone 或 iPad。上游只提供 nightly 预发布构建，版本每日更新，未签名，需自行签名安装。\n\n开源协议：AGPL-3.0　·　项目主页：https://github.com/swipt-automation/swipt",
-      "iconURL": "https://raw.githubusercontent.com/laincat/HGhub/main/icons/Swipt-1024.png",
+      "iconURL": "https://raw.githubusercontent.com/laincat/AltStore/main/icons/Swipt-1024.png",
       "tintColor": "#3B82F6",
       "category": "utilities",
       "appPermissions": {
@@ -1311,7 +1256,7 @@
     {
       "title": "源已建立",
       "identifier": "source-created",
-      "caption": "收录 23 款应用，IPA 直连各项目 GitHub Release。",
+      "caption": "收录 22 款应用，IPA 直连各项目 GitHub Release。",
       "date": "2026-11-11",
       "tintColor": "#7C5CFF",
       "notify": false
