@@ -74,10 +74,10 @@ SOURCE = {
     "iconURL": "https://github.com/laincat.png?size=512",
     "subtitle": "多类 iOS 自签应用源",
     "description": (
-        "收录 23 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh，漫画阅读类 EhPanda、"
+        "收录 22 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh，漫画阅读类 EhPanda、"
         "VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX、PicaComic、Aidoku，"
-        "影音与工具类 AvPlay、真果鉴、HGhub、Swipt、AirCard，游戏类 ARMSX2、ARMSX3、Rich4。"
-        "IPA 直连各项目 GitHub Release 官方资产（HGhub 为上游构建产物的转发），"
+        "影音与工具类 AvPlay、真果鉴、Swipt、AirCard，游戏类 ARMSX2、ARMSX3、Rich4。"
+        "IPA 均直连各项目 GitHub Release 官方资产，"
         "由 SideStore / AltStore / LiveContainer 本地签名安装。"
     ),
     "tintColor": "#7C5CFF",
@@ -463,24 +463,6 @@ APPS = [
         ),
     },
     {
-        "repo": "laincat/HGhub",
-        "asset": lambda n: n.startswith("HGhub_") and n.endswith("_ios.ipa"),
-        "name": "HGhub",
-        "developerName": "Minireel",
-        "subtitle": "竖屏刷剧（侧载）",
-        "category": "entertainment",
-        "tintColor": "#F5A623",
-        "iconURL": "https://raw.githubusercontent.com/laincat/HGhub/main/icons/HGhub-1024.png",
-        "description": (
-            "横竖屏刷剧应用，支持推荐流、榜单、搜索与选集续播。"
-            "安装包由 laincat/HGhub 镜像自动编译：iOS 专用源码、ad-hoc 签名并写入 "
-            "get-task-allow，适配 SideStore / AltStore 重签，修复了完全未签名包"
-            "重签后启动闪退的问题。\n\n"
-            "上游协议为 PolyForm Noncommercial 1.0.0，禁止商业使用。"
-            "项目主页：https://github.com/Minireel/HGhub"
-        ),
-    },
-    {
         "repo": "swipt-automation/swipt",
         "asset": lambda n: n == "Swipt.ipa",
         "name": "Swipt",
@@ -488,7 +470,7 @@ APPS = [
         "subtitle": "用 JavaScript 自动化设备（每日构建）",
         "category": "utilities",
         "tintColor": "#3B82F6",
-        "iconURL": "https://raw.githubusercontent.com/laincat/HGhub/main/icons/Swipt-1024.png",
+        "iconURL": "https://raw.githubusercontent.com/laincat/AltStore/main/icons/Swipt-1024.png",
         "prereleaseAsStable": True,
         "description": (
             "用 JavaScript swiplet 自动化操作这台 iPhone 或 iPad。"
