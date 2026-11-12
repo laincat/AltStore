@@ -7343,27 +7343,6 @@
       ]
     }
   ],
-  "laincat/HGhub": [
-    {
-      "tag": "ios-1.2.0",
-      "name": "HGhub 1.2.0 iOS（未签名）",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-10",
-      "published_at": "2026-11-10T08:25:09Z",
-      "body": "本仓库自动编译的 ad-hoc 签名 iOS 侧载包。\n\n- 源码基线：上游 Minireel/HGhub commit 9ca69727（v1.2.0）\n- 上游已于 2026-11-10 停止维护并撤下源码、发布与构建记录\n- 包名 com.hghub.huangguo，arm64，ad-hoc 签名；SideStore / AltStore 重签后可启动\n- 协议 PolyForm Noncommercial 1.0.0，禁止商业使用\n- 本次构建：https://github.com/laincat/HGhub/actions/runs/42941124166\n",
-      "ipas": [
-        {
-          "name": "HGhub_1.2.0_ios.ipa",
-          "size": 3506344,
-          "url": "https://github.com/laincat/HGhub/releases/download/ios-1.2.0/HGhub_1.2.0_ios.ipa",
-          "id": 733711231,
-          "updated_at": "2026-11-11T01:48:19Z",
-          "digest": "sha256:4c31ac2ced2285387664840400a99b273c185ba2ec0db313052013da5f84b41c"
-        }
-      ]
-    }
-  ],
   "swipt-automation/swipt": [
     {
       "tag": "nightly",

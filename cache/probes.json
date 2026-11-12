@@ -1953,20 +1953,6 @@
       "digest": "sha256:b75fa0ea178f7786f3b92e764054172a1255bf38cd17d0a35e17952a0d0be70c"
     }
   },
-  "https://github.com/laincat/HGhub/releases/download/ios-1.2.0/HGhub_1.2.0_ios.ipa": {
-    "bundleIdentifier": "com.hghub.huangguo",
-    "version": "1.2.0",
-    "buildVersion": "1.2.0",
-    "displayName": "HGhub",
-    "minOSVersion": "15.0",
-    "size": 3506344,
-    "assetIdentity": {
-      "id": 733711231,
-      "updated_at": "2026-11-11T01:48:19Z",
-      "size": 3506344,
-      "digest": "sha256:4c31ac2ced2285387664840400a99b273c185ba2ec0db313052013da5f84b41c"
-    }
-  },
   "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa": {
     "bundleIdentifier": "io.nekohasekai.swipt",
     "version": "0.1.0",
