@@ -3,7 +3,7 @@
   "identifier": "com.acgtoolbox.source",
   "iconURL": "https://github.com/laincat.png?size=512",
   "subtitle": "多类 iOS 自签应用源",
-  "description": "收录 22 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh，漫画阅读类 EhPanda、VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX、PicaComic、Aidoku，影音与工具类 AvPlay、真果鉴、Swipt、AirCard，游戏类 ARMSX2、ARMSX3、Rich4。IPA 均直连各项目 GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。",
+  "description": "收录 25 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh，漫画阅读类 EhPanda、VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX、PicaComic、Aidoku，影音与工具类 One、AvPlay、INSAV、真果鉴、Swipt、AirCard、GestaltX，游戏类 ARMSX2、ARMSX3、Rich4。IPA 均直连各项目 GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。",
   "tintColor": "#7C5CFF",
   "apps": [
     {
@@ -643,6 +643,116 @@
       "minOSVersion": "26.0"
     },
     {
+      "name": "GestaltX",
+      "bundleIdentifier": "com.huami.gestultx",
+      "developerName": "huami",
+      "subtitle": "MobileGestalt 编辑器",
+      "localizedDescription": "MobileGestalt 编辑器，可调整区域码、设备预设、备份配置，支持 7 种语言。需要 iOS 26.0 及以上；未签名安装包来自上游 GitHub Release。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/huamidev/GestaltX",
+      "iconURL": "https://raw.githubusercontent.com/huamidev/GestaltX/v1.0.5/GestaltX/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+      "tintColor": "#0A84FF",
+      "category": "utilities",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "releaseChannels": [
+        {
+          "track": "stable",
+          "releases": [
+            {
+              "version": "1.0.5",
+              "date": "2026-11-11",
+              "publishedAt": "2026-11-11T03:45:16Z",
+              "buildVersion": "11111140",
+              "buildNumber": "11111140",
+              "localizedDescription": "English | 简体中文\n\nBuild 11111140.\nAdded\n\n- Spanish localization, bringing the app to nine supported locales (#97).\n- iPhone Air model presets (#92) and a Japanese README (#83).\nChanged\n\n- About now lists the supported OS as iOS / iPadOS 27.x. Installation remains\n  available on 26.x, where on-device MobileGestalt access is marked unsupported.\n- Updated Korean translations (#84) and corrected mixed-language text in\n  Traditional Chinese and other locales (#61).\n- Renamed the Chinese Photos Clean Up preset to “照片消除”.\n- Corrected the Internal Build label and added confirmation before enabling\n  this system-wide flag (#60).\nFixed\n\n- Device access preserves existing App Group cache contents (#55).…",
+              "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.0.5/GestaltX_1.0.5.ipa",
+              "size": 2942882,
+              "minOSVersion": "26.0",
+              "releaseTag": "v1.0.5",
+              "source": "https://github.com/huamidev/GestaltX/releases/tag/v1.0.5"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "version": "1.0.5",
+          "date": "2026-11-11",
+          "publishedAt": "2026-11-11T03:45:16Z",
+          "buildVersion": "11111140",
+          "buildNumber": "11111140",
+          "localizedDescription": "English | 简体中文\n\nBuild 11111140.\nAdded\n\n- Spanish localization, bringing the app to nine supported locales (#97).\n- iPhone Air model presets (#92) and a Japanese README (#83).\nChanged\n\n- About now lists the supported OS as iOS / iPadOS 27.x. Installation remains\n  available on 26.x, where on-device MobileGestalt access is marked unsupported.\n- Updated Korean translations (#84) and corrected mixed-language text in\n  Traditional Chinese and other locales (#61).\n- Renamed the Chinese Photos Clean Up preset to “照片消除”.\n- Corrected the Internal Build label and added confirmation before enabling\n  this system-wide flag (#60).\nFixed\n\n- Device access preserves existing App Group cache contents (#55).…",
+          "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.0.5/GestaltX_1.0.5.ipa",
+          "size": 2942882,
+          "minOSVersion": "26.0",
+          "releaseTag": "v1.0.5",
+          "source": "https://github.com/huamidev/GestaltX/releases/tag/v1.0.5"
+        }
+      ],
+      "version": "1.0.5",
+      "versionDate": "2026-11-11",
+      "versionDescription": "English | 简体中文\n\nBuild 11111140.\nAdded\n\n- Spanish localization, bringing the app to nine supported locales (#97).\n- iPhone Air model presets (#92) and a Japanese README (#83).\nChanged\n\n- About now lists the supported OS as iOS / iPadOS 27.x. Installation remains\n  available on 26.x, where on-device MobileGestalt access is marked unsupported.\n- Updated Korean translations (#84) and corrected mixed-language text in\n  Traditional Chinese and other locales (#61).\n- Renamed the Chinese Photos Clean Up preset to “照片消除”.\n- Corrected the Internal Build label and added confirmation before enabling\n  this system-wide flag (#60).\nFixed\n\n- Device access preserves existing App Group cache contents (#55).…",
+      "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.0.5/GestaltX_1.0.5.ipa",
+      "size": 2942882,
+      "minOSVersion": "26.0"
+    },
+    {
+      "name": "INSAV",
+      "bundleIdentifier": "com.ios151.insav",
+      "developerName": "ios151",
+      "subtitle": "insav 原生 iOS 客户端（成人向）",
+      "localizedDescription": "面向成年人的 insav 第三方原生 iOS 客户端（SwiftUI，iOS 16+）。四个站点完整适配，支持浏览、搜索、原生与外部播放器、整部下载离线观看、登录收藏订阅，并可挂载外部字幕库。未签名安装包来自上游 GitHub Release，需自行签名安装。\n\n上游仓库只发布安装包，不含源码。　·　项目主页：https://github.com/ios151/Insav-releases",
+      "iconURL": "https://raw.githubusercontent.com/ios151/Insav-releases/v1.3.0-5/icon.png",
+      "tintColor": "#E11D48",
+      "category": "entertainment",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "releaseChannels": [
+        {
+          "track": "stable",
+          "releases": [
+            {
+              "version": "1.3.0",
+              "date": "2026-11-10",
+              "publishedAt": "2026-11-10T18:39:00Z",
+              "buildVersion": "5",
+              "buildNumber": "5",
+              "localizedDescription": "1.3.0 (build 5)\n\n- 新增外部字幕：详情页的圆按钮行里多了「字幕」按钮（主站和无码站的片才有，4K 站和动漫站没有番号，没有这个按钮）。点开按番号去外部字幕库搜，选一份马上显示在画面上，可以调同步（提前 / 延后 0.5 秒、5 秒）；选过的字幕下次打开同一部片自动用，不用再搜\n- 下载时会把选好的字幕一起存：离线播放也有字幕；存到「文件」App 的下载，成品旁边还会放一份同名 .srt，Infuse、VLC 这类播放器会自动识别\n- 用 SenPlayer、Lumenic、Infuse 播放时，自动带上选好的字幕（它们读的是原字幕文件，不带这里调的同步）\n- 搜字幕只会把番号发给外部字幕库，别的信息不发；只在打开字幕面板时才搜\n- 其余功能同 1.2.0 (4)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
+              "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.3.0-5/Insav-unsigned.ipa",
+              "size": 1630941,
+              "minOSVersion": "16.0",
+              "releaseTag": "v1.3.0-5",
+              "source": "https://github.com/ios151/Insav-releases/releases/tag/v1.3.0-5"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "version": "1.3.0",
+          "date": "2026-11-10",
+          "publishedAt": "2026-11-10T18:39:00Z",
+          "buildVersion": "5",
+          "buildNumber": "5",
+          "localizedDescription": "1.3.0 (build 5)\n\n- 新增外部字幕：详情页的圆按钮行里多了「字幕」按钮（主站和无码站的片才有，4K 站和动漫站没有番号，没有这个按钮）。点开按番号去外部字幕库搜，选一份马上显示在画面上，可以调同步（提前 / 延后 0.5 秒、5 秒）；选过的字幕下次打开同一部片自动用，不用再搜\n- 下载时会把选好的字幕一起存：离线播放也有字幕；存到「文件」App 的下载，成品旁边还会放一份同名 .srt，Infuse、VLC 这类播放器会自动识别\n- 用 SenPlayer、Lumenic、Infuse 播放时，自动带上选好的字幕（它们读的是原字幕文件，不带这里调的同步）\n- 搜字幕只会把番号发给外部字幕库，别的信息不发；只在打开字幕面板时才搜\n- 其余功能同 1.2.0 (4)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
+          "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.3.0-5/Insav-unsigned.ipa",
+          "size": 1630941,
+          "minOSVersion": "16.0",
+          "releaseTag": "v1.3.0-5",
+          "source": "https://github.com/ios151/Insav-releases/releases/tag/v1.3.0-5"
+        }
+      ],
+      "version": "1.3.0",
+      "versionDate": "2026-11-10",
+      "versionDescription": "1.3.0 (build 5)\n\n- 新增外部字幕：详情页的圆按钮行里多了「字幕」按钮（主站和无码站的片才有，4K 站和动漫站没有番号，没有这个按钮）。点开按番号去外部字幕库搜，选一份马上显示在画面上，可以调同步（提前 / 延后 0.5 秒、5 秒）；选过的字幕下次打开同一部片自动用，不用再搜\n- 下载时会把选好的字幕一起存：离线播放也有字幕；存到「文件」App 的下载，成品旁边还会放一份同名 .srt，Infuse、VLC 这类播放器会自动识别\n- 用 SenPlayer、Lumenic、Infuse 播放时，自动带上选好的字幕（它们读的是原字幕文件，不带这里调的同步）\n- 搜字幕只会把番号发给外部字幕库，别的信息不发；只在打开字幕面板时才搜\n- 其余功能同 1.2.0 (4)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
+      "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.3.0-5/Insav-unsigned.ipa",
+      "size": 1630941,
+      "minOSVersion": "16.0"
+    },
+    {
       "name": "Kazumi",
       "bundleIdentifier": "com.example.kazumi",
       "developerName": "Predidit",
@@ -751,6 +861,61 @@
       "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.4.9/Nekularity.ipa",
       "size": 29963615,
       "minOSVersion": "26.0"
+    },
+    {
+      "name": "One",
+      "bundleIdentifier": "com.ios151.one",
+      "developerName": "ios151",
+      "subtitle": "ONE·一个 原生 iOS 客户端",
+      "localizedDescription": "ONE·一个 的第三方原生 iOS 客户端（SwiftUI，iOS 16+）。图文、影视点播、阅读、电台、写真、漫画，支持系统原生播放器与外部播放器、下载到「文件」App、收藏与搜索。未签名安装包来自上游 GitHub Release，需自行签名安装。\n\n上游仓库只发布安装包，不含源码。　·　项目主页：https://github.com/ios151/One-releases",
+      "iconURL": "https://raw.githubusercontent.com/ios151/One-releases/v1.7.1-22/icon.png",
+      "tintColor": "#007AFF",
+      "category": "entertainment",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "releaseChannels": [
+        {
+          "track": "stable",
+          "releases": [
+            {
+              "version": "1.7.1",
+              "date": "2026-11-04",
+              "publishedAt": "2026-11-04T16:15:28Z",
+              "buildVersion": "22",
+              "buildNumber": "22",
+              "localizedDescription": "1.7.1 (build 22)\n\n- 修复：开着系统「旋转锁定」时，视频全屏只显示半截画面\n- 改进：竖屏视频进全屏不再被强制转成横屏，全屏画面上多了「横 / 竖」小按钮，点一下就能切换\n- 新增：搜索结果里同一个合集的多期折成一行「共 N 期」，点开展开\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
+              "downloadURL": "https://github.com/ios151/One-releases/releases/download/v1.7.1-22/One-unsigned.ipa",
+              "size": 1692085,
+              "minOSVersion": "16.0",
+              "releaseTag": "v1.7.1-22",
+              "source": "https://github.com/ios151/One-releases/releases/tag/v1.7.1-22"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "version": "1.7.1",
+          "date": "2026-11-04",
+          "publishedAt": "2026-11-04T16:15:28Z",
+          "buildVersion": "22",
+          "buildNumber": "22",
+          "localizedDescription": "1.7.1 (build 22)\n\n- 修复：开着系统「旋转锁定」时，视频全屏只显示半截画面\n- 改进：竖屏视频进全屏不再被强制转成横屏，全屏画面上多了「横 / 竖」小按钮，点一下就能切换\n- 新增：搜索结果里同一个合集的多期折成一行「共 N 期」，点开展开\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
+          "downloadURL": "https://github.com/ios151/One-releases/releases/download/v1.7.1-22/One-unsigned.ipa",
+          "size": 1692085,
+          "minOSVersion": "16.0",
+          "releaseTag": "v1.7.1-22",
+          "source": "https://github.com/ios151/One-releases/releases/tag/v1.7.1-22"
+        }
+      ],
+      "version": "1.7.1",
+      "versionDate": "2026-11-04",
+      "versionDescription": "1.7.1 (build 22)\n\n- 修复：开着系统「旋转锁定」时，视频全屏只显示半截画面\n- 改进：竖屏视频进全屏不再被强制转成横屏，全屏画面上多了「横 / 竖」小按钮，点一下就能切换\n- 新增：搜索结果里同一个合集的多期折成一行「共 N 期」，点开展开\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
+      "downloadURL": "https://github.com/ios151/One-releases/releases/download/v1.7.1-22/One-unsigned.ipa",
+      "size": 1692085,
+      "minOSVersion": "16.0"
     },
     {
       "name": "PicaComic",
@@ -1256,7 +1421,7 @@
     {
       "title": "源已建立",
       "identifier": "source-created",
-      "caption": "收录 22 款应用，IPA 直连各项目 GitHub Release。",
+      "caption": "收录 25 款应用，IPA 直连各项目 GitHub Release。",
       "date": "2026-11-11",
       "tintColor": "#7C5CFF",
       "notify": false

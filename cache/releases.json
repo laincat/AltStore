@@ -7583,5 +7583,543 @@
       "body": "# ARMSX3 1.2.1\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/648241c3-1f4d-438f-933f-fbebbbce84bc\" />\r\n\r\n## Improvements\r\n\r\n- **Per-game settings are more reliable.** Each game always loads and saves its own settings, even when you switch between several games in one session.\r\n\r\n- **Emulated Clock Speed bug fix.** Changes now apply correctly when the game starts, and the in-game menu now has an Apply & Restart button for it under \"Speed Limit %\" in the in-game performance tab. Games that keep time by the clock speed up or slow down with it, while games paced by frames keep their normal speed.\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/552e6842-4235-4e40-b23f-7f6aa7bb3aae\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/488b4584-0efb-4209-8c18-883511fc1a0c\" />\r\n\r\n- **The Idolm@ster 2 is fixed and now starts reliably**\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/5b1766c3-b798-4c9f-935f-7e74a00679b5\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/1750bfeb-1062-465e-8d77-14c082cc3503\" />\r\n\r\n- **System messages always wait for your answer**, so first-time setup in games like The Idolm@ster 2 goes through smoothly.\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/4f6e6f02-8e87-4c6a-b4c2-7a4ef411f651\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/348b6b80-e954-4e60-869c-e9434c6b2a6c\" />",
       "ipas": []
     }
+  ],
+  "huamidev/GestaltX": [
+    {
+      "tag": "v1.0.5",
+      "name": "GestaltX v1.0.5",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-11",
+      "published_at": "2026-11-11T03:45:16Z",
+      "body": "English | [简体中文](https://github.com/huamidev/GestaltX/blob/144c0c44a762db616089faddfbc0581929ae1a0a/CHANGELOG_ZH-CN.md#105---2026-11-11)\n\nBuild `11111140`.\n\n### Added\n\n- Spanish localization, bringing the app to nine supported locales ([#97](https://github.com/huamidev/GestaltX/pull/97)).\n- iPhone Air model presets ([#92](https://github.com/huamidev/GestaltX/pull/92)) and a Japanese README ([#83](https://github.com/huamidev/GestaltX/pull/83)).\n\n### Changed\n\n- About now lists the supported OS as iOS / iPadOS 27.x. Installation remains\n  available on 26.x, where on-device MobileGestalt access is marked unsupported.\n- Updated Korean translations ([#84](https://github.com/huamidev/GestaltX/pull/84)) and corrected mixed-language text in\n  Traditional Chinese and other locales ([#61](https://github.com/huamidev/GestaltX/pull/61)).\n- Renamed the Chinese Photos Clean Up preset to “照片消除”.\n- Corrected the Internal Build label and added confirmation before enabling\n  this system-wide flag ([#60](https://github.com/huamidev/GestaltX/pull/60)).\n\n### Fixed\n\n- Device access preserves existing App Group cache contents ([#55](https://github.com/huamidev/GestaltX/pull/55)).\n- Reverting Dynamic Island restores its layout together with its capability\n  flag, without discarding unrelated staged artwork changes ([#58](https://github.com/huamidev/GestaltX/pull/58)).\n- Original-value recovery now checks the cache generation and layout, keeps\n  unavailable originals distinct from missing fields, and avoids repeatedly\n  reading old backup history ([#65](https://github.com/huamidev/GestaltX/pull/65), [#66](https://github.com/huamidev/GestaltX/pull/66)).\n- Restoring an unchanged backup skips unnecessary device writes ([#69](https://github.com/huamidev/GestaltX/pull/69)).\n  Failed backup deletions remain retryable ([#70](https://github.com/huamidev/GestaltX/pull/70)), and local backup\n  replacement clears inherited device-ownership status ([#64](https://github.com/huamidev/GestaltX/pull/64)).\n-",
+      "ipas": [
+        {
+          "name": "GestaltX_1.0.5.ipa",
+          "size": 2942882,
+          "url": "https://github.com/huamidev/GestaltX/releases/download/v1.0.5/GestaltX_1.0.5.ipa",
+          "id": 734018005,
+          "updated_at": "2026-11-11T03:45:18Z",
+          "digest": "sha256:d2bd9f80cd4c1b6c1504a9b8fc32783440e4fd4c997e98890c341f28014a1bfe"
+        }
+      ]
+    },
+    {
+      "tag": "v1.0.4",
+      "name": "GestaltX v1.0.4",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-10",
+      "published_at": "2026-11-10T07:27:47Z",
+      "body": "English | [简体中文](https://github.com/huamidev/GestaltX/blob/v1.0.4/CHANGELOG_ZH-CN.md)\n\nBuild `11101436`.\n\n### Added\n\n- WAPI preset under **Device → Presets**: disable the WAPI regulatory flag or\n  restore the recorded original value. The cached Boolean is resolved from the\n  device's own MobileGestalt image instead of a hard-coded slot (#30).\n- Per-device originals for the WAPI flag. The value survives edits, app\n  restarts, journal migration, and is restored together with the other cached\n  options (#30).\n- New display presets: high-luminance Always-On Display, AOD flipbook and its\n  entry count, HDR photo display, wallpaper parallax control, and experimental\n  PWM and DisplayPort capability flags.\n- New device presets: Collision SOS, Audio Mix, and Spatial FaceTime audio.\n- New intelligence presets: on-device Siri, Audio Intelligence, Personal\n  Translator, Photos Clean Up, Handwriting Synthesis, and always-listening Hey\n  Siri. These remain capability flags; hardware and region still decide what\n  actually runs.\n- Korean localization, bringing the app to eight supported languages (#24).\n- CI now builds an ad-hoc signed IPA automatically and uploads it as an\n  artifact; tag and release runs also attach it to the matching release.\n\n### Changed\n\n- Additional Options and the WAPI row are shown directly in\n  **Device → Presets**. The hidden ten-tap unlock on the About version string\n  was removed.\n- Restore and open actions are disabled while the current document has staged\n  edits. Save or discard them first instead of silently losing the changes\n  (#37).\n- Version bumped to 1.0.4 (`CURRENT_PROJECT_VERSION` 11101436). README version\n  badges and the build date were updated.\n- All new user-facing strings are localized in the eight supported languages\n  (English, Simplified Chinese, Traditional Chinese for Taiwan and Hong Kong,\n  Vietnamese, Russian, Persian, and Korean) (#30, #38).\n\n### Fixed\n\n- Device access now falls back across every signed App Group instead of\n  t",
+      "ipas": [
+        {
+          "name": "GestaltX_1.0.4.ipa",
+          "size": 2865180,
+          "url": "https://github.com/huamidev/GestaltX/releases/download/v1.0.4/GestaltX_1.0.4.ipa",
+          "id": 730531994,
+          "updated_at": "2026-11-10T07:33:13Z",
+          "digest": "sha256:d7b6e4aebf77ea42deab365af1cc206f7f84250307111ddb098242704bcb06b6"
+        }
+      ]
+    },
+    {
+      "tag": "v1.0.3",
+      "name": "v1.0.3",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-09",
+      "published_at": "2026-11-09T16:23:40Z",
+      "body": "GestaltX 1.0.3\r\n• 新增分享导入：在“文件”或其他 App 中分享 plist 到 GestaltX，核验后弹窗确认导入。\r\n• 加强设备归属校验，拒绝不匹配或无法核验的文件；本机导出的文件可携带设备校验凭证。\r\n• 优化 MG 控制，支持新增、修改、重命名和删除键值。\r\n• 支持恢复已核验的本机 plist，恢复前自动备份，完成后请重启设备。\r\n\r\n重签时请保留分享扩展，并为主应用和扩展配置同一个 App Group。\r\n\r\nGestaltX 1.0.3\r\n• Added share import: share a plist to GestaltX from Files or another app, then confirm the import after verification.\r\n• Strengthened device ownership checks. Mismatched or unverifiable files are rejected; exports can include a device-bound verification proof.\r\n• Improved MG Control with support for adding, editing, renaming, and deleting keys and values.\r\n• Added restoration of verified device plists, with an automatic backup before restoring. Restart your device afterward.\r\n\r\nWhen re-signing, keep the share extension and configure the same App Group for both the app and extension.",
+      "ipas": [
+        {
+          "name": "GestaltX_1.0.3.ipa",
+          "size": 2744822,
+          "url": "https://github.com/huamidev/GestaltX/releases/download/v1.0.3/GestaltX_1.0.3.ipa",
+          "id": 728298370,
+          "updated_at": "2026-11-09T17:15:15Z",
+          "digest": "sha256:7fa0e4486ea6e478fa00d7415351ffeba1fc4af72b5d067e4e2aa03ed6c45f3f"
+        }
+      ]
+    },
+    {
+      "tag": "v1.0.2",
+      "name": "v1.0.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-09",
+      "published_at": "2026-11-09T10:06:31Z",
+      "body": "GestaltX 1.0.2\r\n\r\n• 修复预设停用逻辑：原本不存在的字段会被删除，原本存在的字段恢复原值和类型，不再统一写入 0。\r\n• 首次没有备份时自动创建备份，并保留修改前的字段状态，重新打开 App 后仍可还原。\r\n• 每个预设新增“还原”按钮，支持单独还原该项，保留其他尚未应用的修改。\r\n• 新增“移除新增字段”，用于清理确认是后来添加的字段。\r\n• 调整 NeoSpring 的加载与触发时机，修正回到前台时提前关闭注销页面的问题。\r\n\r\nGestaltX 1.0.2\r\n\r\n• Fixed preset disabling: originally absent fields are removed; existing fields regain their original values and types instead of being set to 0.\r\n• Added automatic initial backups and persistent original-value records.\r\n• Added a Revert button to each preset, preserving unrelated pending changes.\r\n• Added Remove Added Fields for fields you know were added later.\r\n• Adjusted NeoSpring loading and startup timing, and fixed premature dismissal when returning to the app.\r\n\r\nSupports iOS / iPadOS 27.x. Signing requires at least one usable App Group.",
+      "ipas": [
+        {
+          "name": "GestaltX_1.0.2.ipa",
+          "size": 2489231,
+          "url": "https://github.com/huamidev/GestaltX/releases/download/v1.0.2/GestaltX_1.0.2.ipa",
+          "id": 727016803,
+          "updated_at": "2026-11-09T10:06:30Z",
+          "digest": "sha256:4748787786d45b57ff03449669a577ab086ec8b73b96d9109d72f4f6eca13f58"
+        }
+      ]
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "v1.0.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-09",
+      "published_at": "2026-11-09T05:28:40Z",
+      "body": "GestaltX 1.0.1\r\n\r\n• 新增独立的“地区代码”选项，支持美国、中国大陆、香港、台湾、日本和英国。\r\n• 单独修改地区代码时，保留原有销售地区后缀。\r\n• 修复地区代码与销售地区的组合设置，现在可以同时应用。\r\n• 通常只需修改地区代码即可尝试启用 AI，无需更改销售地区。\r\n\r\n* 之前修改过销售地区的用户，可以先恢复设备原本的销售地区。例如原本为国行 CH/A，可将销售地区选回“中国大陆”并应用，再按需修改地区代码。应用后请重启设备。\r\n\r\n支持 iOS / iPadOS 27.x；iOS / iPadOS 26.x 不支持本机 MobileGestalt 访问。AI 可用性及验机结果因设备与系统而异。\r\n\r\n———\r\n\r\nGestaltX 1.0.1\r\n\r\n• Added a separate Region Code option with presets for the United States, mainland China, Hong Kong, Taiwan, Japan and the United Kingdom.\r\n• Changing Region Code alone preserves the existing sales-region suffix.\r\n• Fixed combined settings: Region Code and Sales Region can now be applied together.\r\n• Usually, changing Region Code is enough to try enabling AI; changing Sales Region is unnecessary.\r\n\r\n* If you previously changed Sales Region, restore your device’s original sales region first. For example, if your device originally had the CH/A suffix, select China (Mainland) under Sales Region and apply it, then adjust Region Code as needed. Restart your device after applying changes.\r\n\r\nSupports iOS / iPadOS 27.x. On-device MobileGestalt access is unsupported on iOS / iPadOS 26.x. AI availability and verification results vary by device and OS.",
+      "ipas": [
+        {
+          "name": "GestaltX_1.0.1.ipa",
+          "size": 2459454,
+          "url": "https://github.com/huamidev/GestaltX/releases/download/v1.0.1/GestaltX_1.0.1.ipa",
+          "id": 726347691,
+          "updated_at": "2026-11-09T05:27:52Z",
+          "digest": "sha256:e4303156ab01ae23e327f014bd10ef6c1f5b81e8d10a35c15f6b907339b72546"
+        }
+      ]
+    }
+  ],
+  "ios151/One-releases": [
+    {
+      "tag": "v1.7.1-22",
+      "name": "One 1.7.1 (22)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-04",
+      "published_at": "2026-11-04T16:15:28Z",
+      "body": "## 1.7.1 (build 22)\n\n- 修复：开着系统「旋转锁定」时，视频全屏只显示半截画面\n- 改进：竖屏视频进全屏不再被强制转成横屏，全屏画面上多了「横 / 竖」小按钮，点一下就能切换\n- 新增：搜索结果里同一个合集的多期折成一行「共 N 期」，点开展开\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。\n",
+      "ipas": [
+        {
+          "name": "One-unsigned.ipa",
+          "size": 1692085,
+          "url": "https://github.com/ios151/One-releases/releases/download/v1.7.1-22/One-unsigned.ipa",
+          "id": 710102172,
+          "updated_at": "2026-11-04T16:15:57Z",
+          "digest": "sha256:96f2076f80bf5029aad7202fd2bfc040d2fd4d5ee7516fe17e832724f87ff8d5"
+        }
+      ]
+    },
+    {
+      "tag": "v1.7.0-21",
+      "name": "One 1.7.0 (21)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-31",
+      "published_at": "2026-10-31T12:36:53Z",
+      "body": "## 1.7.0 (build 21)\n\n- 新增：写真、阅读、图文、电台的详情页往下滚出一小段，右下角会浮出「回到顶部」小圆钮，点一下回到最上面\n- 新增：详情页最下面（评论上面）多了「收藏」和「回到顶部」两个按钮，看完不用再滑回去点收藏\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。\n",
+      "ipas": [
+        {
+          "name": "One-unsigned.ipa",
+          "size": 1668131,
+          "url": "https://github.com/ios151/One-releases/releases/download/v1.7.0-21/One-unsigned.ipa",
+          "id": 695349607,
+          "updated_at": "2026-10-31T12:36:52Z",
+          "digest": "sha256:aa7b56f88ef44d8af1a90ca43bb335e48285209039f51c74fcfc35ef2f489028"
+        }
+      ]
+    },
+    {
+      "tag": "v1.6.10-20",
+      "name": "One 1.6.10 (20)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T07:58:34Z",
+      "body": "## 1.6.10 (build 20)\n\n- 修复：看图页左右翻页时粘手、划到一半卡住、划了没反应；往下滑关闭只在明显竖着拖的时候才接，不再抢横划\n- 说明：图片还在加载或加载失败时，也能往下滑关闭；双指缩放、放大后拖动、双击放大、保存图片都和以前一样\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。\n",
+      "ipas": [
+        {
+          "name": "One-unsigned.ipa",
+          "size": 1653494,
+          "url": "https://github.com/ios151/One-releases/releases/download/v1.6.10-20/One-unsigned.ipa",
+          "id": 687803159,
+          "updated_at": "2026-10-29T07:58:33Z",
+          "digest": "sha256:a7a27199549d50c17fc21abdb16e9c3d167478c635151957329e5435488956d8"
+        }
+      ]
+    },
+    {
+      "tag": "v1.6.9-19",
+      "name": "One 1.6.9 (19)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T05:40:29Z",
+      "body": "## 1.6.9 (build 19)\n\n- 新增：备份与恢复——「我的 → 备份与恢复」里填一次 WebDAV（坚果云免费版就行）的服务器地址、账号、应用密码，就能一键把收藏、收藏夹、关注的演员、播放进度备份到云端；换证书重装之后再填一次，点「从云端恢复」，东西就都回来了\n- 说明：恢复只补上手机上没有的，已有的不会被覆盖；刚重装、手机上是空的时候点备份会被拦住，不会把云端的备份冲掉\n- 说明：账号密码只存在这台手机上，不会进备份文件；不用 WebDAV 的话，也可以导出成文件自己存，恢复时粘贴文件的链接\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。\n",
+      "ipas": [
+        {
+          "name": "One-unsigned.ipa",
+          "size": 1654669,
+          "url": "https://github.com/ios151/One-releases/releases/download/v1.6.9-19/One-unsigned.ipa",
+          "id": 687494917,
+          "updated_at": "2026-10-29T05:40:28Z",
+          "digest": "sha256:c15b0e866d3524f3798ebcf98312584aa8eb695fa6a4bab45d244b1498e7ddc6"
+        }
+      ]
+    },
+    {
+      "tag": "v1.6.8-18",
+      "name": "One 1.6.8 (18)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T00:43:04Z",
+      "body": "## 1.6.8 (build 18)\n\n- 新增：长视频起播更快——不用再先下完文件开头的一大段索引才能播，改用 HLS 流播放；短视频、码率高的视频自己会判断，还是用原来的方式，不会变慢；播不了会自动改回原来的方式，接着当前进度继续放。「我的 → 播放器 → 起播速度」里可以关掉\n- 说明：下载、外部播放器（Infuse 等）、AirPlay 投屏还是原来的方式，不受影响\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。\n",
+      "ipas": [
+        {
+          "name": "One-unsigned.ipa",
+          "size": 1591907,
+          "url": "https://github.com/ios151/One-releases/releases/download/v1.6.8-18/One-unsigned.ipa",
+          "id": 686858276,
+          "updated_at": "2026-10-29T00:43:03Z",
+          "digest": "sha256:f24505ac93fb50018a65b2185e019fe25fa92c1e1017588733171684cd4d5081"
+        }
+      ]
+    },
+    {
+      "tag": "v1.6.7-16",
+      "name": "One 1.6.7 (16)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-28",
+      "published_at": "2026-10-28T13:46:34Z",
+      "body": "## 1.6.7 (build 16)\n\n- 新增：收藏多了一个开关（「我的 → 收藏」）：关闭后，点一下心形直接收进默认收藏夹，再点一下取消收藏，不用每次都点两下；想放进别的收藏夹，长按心形。打开时和以前一样，点心形弹出收藏夹列表\n- 优化：各页底部的说明文字重新整理，一句一行，更简单明了\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。\n",
+      "ipas": [
+        {
+          "name": "One-unsigned.ipa",
+          "size": 1532862,
+          "url": "https://github.com/ios151/One-releases/releases/download/v1.6.7-16/One-unsigned.ipa",
+          "id": 685136850,
+          "updated_at": "2026-10-28T13:46:33Z",
+          "digest": "sha256:dacdb2f7fe1ffc713d32c3d3ec814be6dccf4c3bf3831af085918a5aa70ce5a0"
+        }
+      ]
+    },
+    {
+      "tag": "v1.6.6-15",
+      "name": "One 1.6.6 (15)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-28",
+      "published_at": "2026-10-28T06:14:36Z",
+      "body": "## 1.6.6 (build 15)\n\n- 修复：页面显示「Expired token」时，提示改成了怎么处理：到「我的 → 账号」点「换一个新账号」，然后重试\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。\n",
+      "ipas": [
+        {
+          "name": "One-unsigned.ipa",
+          "size": 1530695,
+          "url": "https://github.com/ios151/One-releases/releases/download/v1.6.6-15/One-unsigned.ipa",
+          "id": 684037996,
+          "updated_at": "2026-10-28T06:14:35Z",
+          "digest": "sha256:ba03d04bc66c1a7f6d9a0e988d9349906e2a7b0694d7a197d252ef07d05d6ba6"
+        }
+      ]
+    },
+    {
+      "tag": "v1.6.5-14",
+      "name": "One 1.6.5 (14)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-24",
+      "published_at": "2026-10-24T10:17:55Z",
+      "body": "## 1.6.5 (build 14)\n\n- 新增：用 LCSign 签名的，以后有新版本时，更新提示里会多一个「用 LCSign 更新」，点一下新版安装包就直接导入 LCSign，签名安装即可；没装 LCSign 还是原来的「去下载」\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。\n",
+      "ipas": [
+        {
+          "name": "One-unsigned.ipa",
+          "size": 1530271,
+          "url": "https://github.com/ios151/One-releases/releases/download/v1.6.5-14/One-unsigned.ipa",
+          "id": 671944149,
+          "updated_at": "2026-10-24T10:17:55Z",
+          "digest": "sha256:53584006b31eed5291d91762d8aa442877a6e0cff26a580fa7f91e8633c1e693"
+        }
+      ]
+    },
+    {
+      "tag": "v1.6.4-13",
+      "name": "One 1.6.4 (13)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-24",
+      "published_at": "2026-10-24T09:46:53Z",
+      "body": "## 1.6.4 (build 13)\n\n- 新增：看图时往下一滑就能关闭，和系统相册一样（评论区的图片、写真、点开的大图都可以），不用再点左上角\n- 优化：放大后拖动更顺滑、松手有惯性；双指缩放跟着手指走；双击放大到点的位置，再双击还原；放大后拖到左右边缘再往外拖，可以直接翻到上一张 / 下一张\n\n安装包是未签名的，请用自己的证书 / SideStore 等自签后安装。\n",
+      "ipas": [
+        {
+          "name": "One-unsigned.ipa",
+          "size": 1524656,
+          "url": "https://github.com/ios151/One-releases/releases/download/v1.6.4-13/One-unsigned.ipa",
+          "id": 671879932,
+          "updated_at": "2026-10-24T09:46:52Z",
+          "digest": "sha256:ea646ee2f65a47ed5dd9ea8a77ea3749b735bd8cffe2e4381b860eec10188da6"
+        }
+      ]
+    },
+    {
+      "tag": "v1.6.3-12",
+      "name": "One 1.6.3 (12)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-24",
+      "published_at": "2026-10-24T05:22:13Z",
+      "body": "## 1.6.3 (build 12)\n\n- 修复：iOS 17 等旧系统上，从「我的」里的设置页返回后，底部导航栏变成全透明的问题（iOS 26 及以上不受影响）\n\n安装包是未签名的，请用自己的证书 / SideStore 等自签后安装。\n",
+      "ipas": [
+        {
+          "name": "One-unsigned.ipa",
+          "size": 1517116,
+          "url": "https://github.com/ios151/One-releases/releases/download/v1.6.3-12/One-unsigned.ipa",
+          "id": 671358979,
+          "updated_at": "2026-10-24T05:22:13Z",
+          "digest": "sha256:76caed25f20828381c70e7f19869adb89ee499ffd399ebe3a0d3cc90083d1fa7"
+        }
+      ]
+    },
+    {
+      "tag": "v1.6.2-11",
+      "name": "One 1.6.2 (11)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-24",
+      "published_at": "2026-10-24T04:47:07Z",
+      "body": "## 1.6.2 (build 11)\n\n- 修复：图文详情里点收藏，会打开封面大图的问题\n- 同一类问题一起修好：图片旁边的按钮点不准、长按标题会弹出图片菜单\n\n安装包是未签名的，请用自己的证书 / SideStore 等自签后安装。\n",
+      "ipas": [
+        {
+          "name": "One-unsigned.ipa",
+          "size": 1517270,
+          "url": "https://github.com/ios151/One-releases/releases/download/v1.6.2-11/One-unsigned.ipa",
+          "id": 671292790,
+          "updated_at": "2026-10-24T04:47:06Z",
+          "digest": "sha256:e8be94377f988696632866a826d7907de208b1f32e7249adc67d6305a803495f"
+        }
+      ]
+    },
+    {
+      "tag": "v1.6.1-10",
+      "name": "One 1.6.1 (10)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T20:21:29Z",
+      "body": "## 1.6.1 (build 10)\n\n- 新增评论区：影视、图文、阅读、写真、漫画、电台的详情页最下面都能看评论（最热的 3 条），点「查看全部」打开评论弹层——可以切换最热 / 最新、展开楼中楼回复、点开评论里的图；首页主卡下面的评论数点一下也能看\n- 长按一条评论可以复制，或者屏蔽这个人（只存在本机，评论弹层左上角可以清空屏蔽名单）\n- 评论目前只能看，暂时不能发评论、点赞\n\n安装包是未签名的，请用自己的证书 / SideStore 等自签后安装。\n",
+      "ipas": [
+        {
+          "name": "One-unsigned.ipa",
+          "size": 1517517,
+          "url": "https://github.com/ios151/One-releases/releases/download/v1.6.1-10/One-unsigned.ipa",
+          "id": 670296861,
+          "updated_at": "2026-10-23T20:21:28Z",
+          "digest": "sha256:e1a997a96f19a7fb94eddfbac086943cde13ba784268ad39a9f9de5410077d24"
+        }
+      ]
+    },
+    {
+      "tag": "v1.6.0-9",
+      "name": "One 1.6.0 (9)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T19:19:01Z",
+      "body": "## 1.6.0 (build 9)\n\n- 阅读文章显示完整正文，插图穿插在段落之间（以前只显示开头一句）；收藏页顶部那一大块空白修好了\n- 图片加载更稳：只用能正常显示的图片线路，一条不行自动换下一条，不会再显示成坏图\n- 播放出错时告诉你怎么办：连不上时提示「换线路」或者切换网络 / 代理节点后「重试」，没网、格式打不开也各有说明，带错误码方便反馈\n- 电台迷你播放条：离开电台页面后，底部也能暂停 / 继续 / 关掉\n- iPad 和 iPhone Duo：首页大图和推文并排，影视详情横着拿时播放器在左、简介在右（转屏、折叠展开不中断播放），点播 / 发现多列显示，Tab 栏可以收成侧边栏；iPhone Duo 半折时内容按折痕分开\n- 细节：iOS 26 起的液态玻璃按钮和 Tab 栏（往下滚自动收起）；系统字号调大后排版不再挤坏；小按钮更好点；开了「增强对比度」时深色页面的文字更清楚\n\n安装包是未签名的，请用自己的证书 / SideStore 等自签后安装。\n",
+      "ipas": [
+        {
+          "name": "One-unsigned.ipa",
+          "size": 1442507,
+          "url": "https://github.com/ios151/One-releases/releases/download/v1.6.0-9/One-unsigned.ipa",
+          "id": 670136688,
+          "updated_at": "2026-10-23T19:19:00Z",
+          "digest": "sha256:d36741d0340b83e2d65640bf90eed2f5910325ff2e1d536f8dfbc7c2688beb31"
+        }
+      ]
+    },
+    {
+      "tag": "v1.5.0-8",
+      "name": "One 1.5.0 (8)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T05:42:26Z",
+      "body": "## 1.5.0 (build 8)\n\n- 首页改成官网首页的样子：每天一页，只显示当天那一篇图文——大图、署名和推文，下面是评论 / 收藏 / 点赞数和期号；左右滑动换日期，点日期打开日历，点卡片进详情，长按大图可以保存\n- 首页不再列当天的其它内容（到「发现」「点播」里看），右上角也不再有「大图卡片 / 紧凑列表」切换；点播、发现的切换不变\n\n安装包是未签名的，请用自己的证书 / SideStore 等自签后安装。\n",
+      "ipas": [
+        {
+          "name": "One-unsigned.ipa",
+          "size": 1301282,
+          "url": "https://github.com/ios151/One-releases/releases/download/v1.5.0-8/One-unsigned.ipa",
+          "id": 668106378,
+          "updated_at": "2026-10-23T05:42:25Z",
+          "digest": "sha256:b9dd91d0f4d55506d309f5f2d3377d7ab042038241d9707a218b7830206e4bed"
+        }
+      ]
+    },
+    {
+      "tag": "v1.4.2-7",
+      "name": "One 1.4.2 (7)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T04:41:38Z",
+      "body": "## 1.4.2 (build 7)\n\n- 修复 iPad 上横着拿时 App 显示成歪的竖屏：现在 iPhone / iPad 通用，iPad 横屏、竖屏都能正常使用\n- iPad 等宽屏上，「我的」页、影视详情页、已下载内容的播放页不再把内容拉到屏幕两边\n\niPad 上其它页面的版式还没有逐个调整，哪里看着不舒服欢迎反馈。\n\n安装包是未签名的，请用自己的证书 / SideStore 等自签后安装。\n",
+      "ipas": [
+        {
+          "name": "One-unsigned.ipa",
+          "size": 1287524,
+          "url": "https://github.com/ios151/One-releases/releases/download/v1.4.2-7/One-unsigned.ipa",
+          "id": 667982359,
+          "updated_at": "2026-10-23T04:41:38Z",
+          "digest": "sha256:ffaf33d516a95126bd2ea25ad263920927ea0630b4c50b378ea8746461692153"
+        }
+      ]
+    },
+    {
+      "tag": "v1.4.1-6",
+      "name": "One 1.4.1 (6)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T04:13:42Z",
+      "body": "## 1.4.1 (build 6)\n\n- 「我的关注」挪到了「收藏」页最上面：点进去能按名字搜索关注的演员，左滑可以取消关注\n- 首页、点播、发现的右上角都有排版按钮，点一下在「大图卡片」和「紧凑列表」之间切换（各页各记各的）；首页「左右滑动换日期」的开关挪进了日历菜单\n\n安装包是未签名的，请用自己的证书 / SideStore 等自签后安装。\n",
+      "ipas": [
+        {
+          "name": "One-unsigned.ipa",
+          "size": 1237080,
+          "url": "https://github.com/ios151/One-releases/releases/download/v1.4.1-6/One-unsigned.ipa",
+          "id": 667926934,
+          "updated_at": "2026-10-23T04:13:41Z",
+          "digest": "sha256:96e25c7195aca6a2d678e5fcccf44a91e336c72976cf98a872cd7b67d5ad91ab"
+        }
+      ]
+    },
+    {
+      "tag": "v1.4.0-5",
+      "name": "One 1.4.0 (5)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T03:34:36Z",
+      "body": "## 1.4.0 (build 5)\n\n- 首页：左右滑动切换不同日期的内容（往左滑是更早的一天）；日历图标里可以选日期、回到最新，也能关掉左右滑动改成单页\n- 演员：「发现 → 演员」可以按名字搜索；演员主页显示作品总数，可以「关注」，作品支持单列 / 双列切换\n- 影视详情页：多了演员和标签芯片，点演员进演员主页，点标签按名字搜索；标题下面显示观看 / 收藏 / 评论数\n- 直播：「发现」页最上面多了「ONE 直播」入口（在浏览器里打开直播站）；点播分类里的「ONE直播」录播合集也放回来了\n- 播放：详情页提前把播放地址准备好，恢复上次进度更快起播；「我的 → 播放器」里新增「显示起播耗时」和「快速起播（实验）」\n- 细节：图标按钮补了 VoiceOver 标签；系统开了「降低透明度」「减弱动态效果」时更友好；下载进度和速度的数字会滚动；点播分类多的时候改成下拉菜单\n\n安装包是未签名的，请用自己的证书 / SideStore 等自签后安装。\n",
+      "ipas": [
+        {
+          "name": "One-unsigned.ipa",
+          "size": 1225895,
+          "url": "https://github.com/ios151/One-releases/releases/download/v1.4.0-5/One-unsigned.ipa",
+          "id": 667854731,
+          "updated_at": "2026-10-23T03:34:36Z",
+          "digest": "sha256:dba9758a1db2f44acd5c298ce2be4d295e4fb39250cb3592c195412971a7aa09"
+        }
+      ]
+    },
+    {
+      "tag": "v1.3.0-4",
+      "name": "One 1.3.0 (4)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T00:18:33Z",
+      "body": "## 1.3.0 (build 4)\n\n- 已下载的内容，在「我的 → 下载」里点一下就能直接播放，不用联网，也不用去「文件」App 里翻；视频的字幕会跟着下载一起存下来，离线也有字幕\n- 自动检查更新：每天检查一次，有新版本会提示你去下载；也可以在「我的 → 检查更新」里手动检查\n- 公告：有公告时，输完口令后弹一次（每天最多一次）\n\n安装包是未签名的，请用自己的证书 / SideStore 等自签后安装。\n",
+      "ipas": [
+        {
+          "name": "One-unsigned.ipa",
+          "size": 1152058,
+          "url": "https://github.com/ios151/One-releases/releases/download/v1.3.0-4/One-unsigned.ipa",
+          "id": 667484085,
+          "updated_at": "2026-10-23T00:18:32Z",
+          "digest": "sha256:6a7058a1da8ebbb7883f2363192f11ef9f5bb2b8fe6661cee25c590fa4e80e22"
+        }
+      ]
+    }
+  ],
+  "ios151/Insav-releases": [
+    {
+      "tag": "v1.3.0-5",
+      "name": "Insav 1.3.0 (5)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-10",
+      "published_at": "2026-11-10T18:39:00Z",
+      "body": "## 1.3.0 (build 5)\n\n- 新增外部字幕：详情页的圆按钮行里多了「字幕」按钮（主站和无码站的片才有，4K 站和动漫站没有番号，没有这个按钮）。点开按番号去外部字幕库搜，选一份马上显示在画面上，可以调同步（提前 / 延后 0.5 秒、5 秒）；选过的字幕下次打开同一部片自动用，不用再搜\n- 下载时会把选好的字幕一起存：离线播放也有字幕；存到「文件」App 的下载，成品旁边还会放一份同名 .srt，Infuse、VLC 这类播放器会自动识别\n- 用 SenPlayer、Lumenic、Infuse 播放时，自动带上选好的字幕（它们读的是原字幕文件，不带这里调的同步）\n- 搜字幕只会把番号发给外部字幕库，别的信息不发；只在打开字幕面板时才搜\n- 其余功能同 1.2.0 (4)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。\n",
+      "ipas": [
+        {
+          "name": "Insav-unsigned.ipa",
+          "size": 1630941,
+          "url": "https://github.com/ios151/Insav-releases/releases/download/v1.3.0-5/Insav-unsigned.ipa",
+          "id": 732526394,
+          "updated_at": "2026-11-10T18:38:59Z",
+          "digest": "sha256:3fbfee3f1fcd82fcce0b7f3fbd0381ef83ecf256b4d20b7984a39d95c3b1d7f9"
+        }
+      ]
+    },
+    {
+      "tag": "v1.2.0-4",
+      "name": "Insav 1.2.0 (4)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-09",
+      "published_at": "2026-11-09T20:55:27Z",
+      "body": "## 1.2.0 (build 4)\n\n- 新增 4 个外部片源（选站页「更多片源」里）：各有栏目首页、搜索、详情和多线路播放，收藏和播放进度存在本机；暂时不支持下载和字幕\n- 新增聚合搜索：同一个关键词同时搜所有站点和片源，按来源分组显示\n- 外部播放器新增 Lumenic；Lumenic 和 SenPlayer 播放需要请求头的线路时会自动带上\n- 选站页重新排版；「我的」页改成短列表，设置点进去再看，「刷新令牌」放在最上面\n- 修复 VIP 令牌源在跨日 / 跨月后一直提示「正在续期」的问题（旧版本从 11 月 10 日起会遇到，升级后自动恢复）；去掉已经不再维护的第二个令牌源\n- 界面上的说明文字更简短\n- 其余功能同 1.0.0 (3)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。\n",
+      "ipas": [
+        {
+          "name": "Insav-unsigned.ipa",
+          "size": 1523510,
+          "url": "https://github.com/ios151/Insav-releases/releases/download/v1.2.0-4/Insav-unsigned.ipa",
+          "id": 728948042,
+          "updated_at": "2026-11-09T20:55:26Z",
+          "digest": "sha256:5586ce13a0fe9aa6bb9d7f7cdc239102e31eb0225093c6ce71d1477d041ac472"
+        }
+      ]
+    },
+    {
+      "tag": "v1.0.0-3",
+      "name": "Insav 1.0.0 (3)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-28",
+      "published_at": "2026-10-28T00:04:57Z",
+      "body": "## 1.0.0 (build 3)\n\n- 下载：新增「App 内下载」——片子存进「文件」App（我的 iPhone → INSAV），下完自动转成 MP4，可以直接预览，也能交给 Infuse、VLC 这类播放器；转不了或空间不够时保留原文件，设置里可以关掉自动转换。「下载方式」选「自动」时，这台设备上系统的后台下载用不了就自动改用它（要保持 App 在前台）\n- 下载失败时说清楚原因，失败的那一行可以复制诊断信息\n- 详情页新增「线路检测」按钮（在收藏、下载旁边）：播不了或很慢时，一键看是站点接口、VIP 令牌源还是视频服务器哪一段不通\n- VIP 内容：每次点播放都先取最新的令牌；「我的 → VIP 令牌源」里可以立即刷新，并显示每个源的结果\n- 修正了「用 VidHub 播放」的跳转\n- 其余功能同 build 2\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。\n",
+      "ipas": [
+        {
+          "name": "Insav-unsigned.ipa",
+          "size": 1152370,
+          "url": "https://github.com/ios151/Insav-releases/releases/download/v1.0.0-3/Insav-unsigned.ipa",
+          "id": 683269705,
+          "updated_at": "2026-10-28T00:04:56Z",
+          "digest": "sha256:e2c1c55bf8445754b1003044cecbed25f53d8abe38a8f1a080c7df32b32a96ca"
+        }
+      ]
+    },
+    {
+      "tag": "v1.0.0-2",
+      "name": "Insav 1.0.0 (2)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T07:45:44Z",
+      "body": "## 1.0.0 (build 2)\n\n- 换了新图标，桌面显示名改成 INSAV\n- 下载：调大了下载的连接数（实际速度看网络）；下好的片子在「我的 → 下载」里离线播放\n- 详情里没有真实字幕文件的条目，不再白请求一次字幕\n- 其余功能同 build 1：四个站点完整适配、浏览 / 搜索、内置和外部播放器、登录 / 收藏 / 订阅 / 兑换码\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。\n",
+      "ipas": [
+        {
+          "name": "Insav-unsigned.ipa",
+          "size": 901635,
+          "url": "https://github.com/ios151/Insav-releases/releases/download/v1.0.0-2/Insav-unsigned.ipa",
+          "id": 680849845,
+          "updated_at": "2026-10-27T07:45:43Z",
+          "digest": "sha256:bab64866656b71707722f65a19451471fe412654c34a22c7973a9e94d58750dc"
+        }
+      ]
+    },
+    {
+      "tag": "v1.0.0-1",
+      "name": "Insav 1.0.0 (1)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T07:11:16Z",
+      "body": "## 1.0.0 (build 1)\n\n- 首个版本：四个站点（主站、无码站、动漫站、4K 站）完整适配，启动时选站点，进去之后顶栏一键切换\n- 浏览、搜索、演员 / 片商 / 主题、影评；内置播放器（画中画、字幕）和外部播放器\n- 下载：详情页一键下载整部片，之后不联网也能看（离线文件只能在 App 里播放）\n- 登录 / 注册、收藏、订阅、兑换码\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。\n",
+      "ipas": [
+        {
+          "name": "Insav-unsigned.ipa",
+          "size": 1241522,
+          "url": "https://github.com/ios151/Insav-releases/releases/download/v1.0.0-1/Insav-unsigned.ipa",
+          "id": 680775681,
+          "updated_at": "2026-10-27T07:11:15Z",
+          "digest": "sha256:d8d7d10e5ace960e68129e011a6920d0e528d220d60d836281cc2e42ff74bb30"
+        }
+      ]
+    }
   ]
 }

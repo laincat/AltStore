@@ -2036,5 +2036,47 @@
       "size": 30761608,
       "digest": "sha256:93cd5c2b4a26cc9a42df101e7e0572860c6559c433d3381e1274da2ea1f74f03"
     }
+  },
+  "https://github.com/huamidev/GestaltX/releases/download/v1.0.5/GestaltX_1.0.5.ipa": {
+    "bundleIdentifier": "com.huami.gestultx",
+    "version": "1.0.5",
+    "buildVersion": "11111140",
+    "displayName": "GestaltX",
+    "minOSVersion": "26.0",
+    "size": 2942882,
+    "assetIdentity": {
+      "id": 734018005,
+      "updated_at": "2026-11-11T03:45:18Z",
+      "size": 2942882,
+      "digest": "sha256:d2bd9f80cd4c1b6c1504a9b8fc32783440e4fd4c997e98890c341f28014a1bfe"
+    }
+  },
+  "https://github.com/ios151/One-releases/releases/download/v1.7.1-22/One-unsigned.ipa": {
+    "bundleIdentifier": "com.ios151.one",
+    "version": "1.7.1",
+    "buildVersion": "22",
+    "displayName": "One",
+    "minOSVersion": "16.0",
+    "size": 1692085,
+    "assetIdentity": {
+      "id": 710102172,
+      "updated_at": "2026-11-04T16:15:57Z",
+      "size": 1692085,
+      "digest": "sha256:96f2076f80bf5029aad7202fd2bfc040d2fd4d5ee7516fe17e832724f87ff8d5"
+    }
+  },
+  "https://github.com/ios151/Insav-releases/releases/download/v1.3.0-5/Insav-unsigned.ipa": {
+    "bundleIdentifier": "com.ios151.insav",
+    "version": "1.3.0",
+    "buildVersion": "5",
+    "displayName": "INSAV",
+    "minOSVersion": "16.0",
+    "size": 1630941,
+    "assetIdentity": {
+      "id": 732526394,
+      "updated_at": "2026-11-10T18:38:59Z",
+      "size": 1630941,
+      "digest": "sha256:3fbfee3f1fcd82fcce0b7f3fbd0381ef83ecf256b4d20b7984a39d95c3b1d7f9"
+    }
   }
 }
