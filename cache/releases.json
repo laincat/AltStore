@@ -3200,6 +3200,25 @@
   ],
   "anonymousjav/AvPlayRelease": [
     {
+      "tag": "v2.2.1",
+      "name": "AvPlay v2.2.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-13",
+      "published_at": "2026-11-13T09:23:17Z",
+      "body": "【最新更新】\r\n- 修复 黄果短剧无法播放的问题\r\n- 修复 部分影片加入“想看、看过、清单”后不显示问题\r\n- 优化 视频播放器进度拖动效果\r\n- 优化 账号注册登录流程\r\n- 修复 macOS窗口拖动漂移问题\r\n- 修复 已知问题\r\n\r\n【近期更新】\r\n- 新增 黄果AI短剧\r\n- 新增 影片预览\r\n\r\n⚠️ iOS Bundle ID 又改了，iOS用户建议使用云备份",
+      "ipas": [
+        {
+          "name": "AvPlay-2.2.1.ipa",
+          "size": 23879590,
+          "url": "https://github.com/anonymousjav/AvPlayRelease/releases/download/v2.2.1/AvPlay-2.2.1.ipa",
+          "id": 742956763,
+          "updated_at": "2026-11-13T08:51:51Z",
+          "digest": "sha256:22fc80c647b747418cba594a132f5761471b93bb3f03ba9a895107f2108c9f62"
+        }
+      ]
+    },
+    {
       "tag": "v2.2.0",
       "name": "AvPlay v2.2.0",
       "pre": false,
@@ -4191,6 +4210,25 @@
   ],
   "ARMSX2/ARMSX2": [
     {
+      "tag": "nightly-20261113",
+      "name": "ARMSX2 nightly 20261113 (37ed35b88f)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-11-13",
+      "published_at": "2026-11-13T04:53:50Z",
+      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- microVU0: compute the VU1 register window's address at run time\n- Tests: a persisted VU0 program that uses the window onto VU1's registers\n- Android: link the core with emulated TLS when the minimum API is below 29\n- iOS: give the layout editor and the manifest skin their own views\n- iOS: split the patch and skin library stores by their own sections\n- iOS: split navigation and gameplay views into one file per view\n- iOS: split the controls and skin files along their types\n- iOS: split the dynamic backgrounds into one file per background\n\nFull changelog: https://github.com/ARMSX2/ARMSX2/compare/nightly-20261112...37ed35b88fe9a0164369c8042f2c9aa707e33667",
+      "ipas": [
+        {
+          "name": "ARMSX2-nightly-20261113-37ed35b88f-iOS-arm64.ipa",
+          "size": 40715589,
+          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261113/ARMSX2-nightly-20261113-37ed35b88f-iOS-arm64.ipa",
+          "id": 742320362,
+          "updated_at": "2026-11-13T04:53:55Z",
+          "digest": "sha256:10ae36945d8c76d806774bafcfde306c41e1c3f518df9461ea7e9bfe193a00d7"
+        }
+      ]
+    },
+    {
       "tag": "nightly-20261112",
       "name": "ARMSX2 nightly 20261112 (c25493a202)",
       "pre": true,
@@ -4331,16 +4369,6 @@
           "digest": "sha256:710d401aee5667f5459165d6077e78353f8ec568801b3ca5f48de5d0f7d2c3fb"
         }
       ]
-    },
-    {
-      "tag": "nightly-20261031",
-      "name": "ARMSX2 nightly 20261031 (cb78946d6e)",
-      "pre": true,
-      "draft": false,
-      "date": "2026-10-31",
-      "published_at": "2026-10-31T15:05:23Z",
-      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- Library screensaver starts after 5 minutes by default\n- Android tests: skip the stuck-file case where a folder cannot be made read-only (#906)\n- Android: cite the malisx2 release, not the driver PR, in the offer comment\n- Offer malisx2 on the Bifrost v7 parts it drives (Mali-G52, Mali-G76)\n- What's new: reach the top with the pad, and outline the card itself\n- What's new: let the pad read through an opened release\n- What's new: show the pictures in release notes\n- iOS: point the hack reason comment at the file with the enum\n- iOS: apply turbo and slow motion speeds as saved\n- iOS: reach the base settings only through Host's locked accessors\n- iOS: split the bridge into one file per concern\n- iOS: fail the build when a bridge method has no body\n- VK: ke",
-      "ipas": []
     },
     {
       "tag": "2.9.1",
@@ -4542,13 +4570,32 @@
   ],
   "iam567/rich4-renew-app": [
     {
+      "tag": "v1.2.0",
+      "name": "安装包 v1.2.0（2026-11-13）",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-13",
+      "published_at": "2026-11-13T04:14:57Z",
+      "body": "> **1.2 是「自建地图」和「局域网房间」的大更新。** 游戏内更新也能升到 1.2（自建地图、创作乐园都能用），但手机要加入局域网房间，必须重新下载 1.2 的安装包。直接覆盖安装，存档、设置都会保留；保险起见，可以先在「游戏设置 → 存档备份」导出一份。派对模式：1.2.x 之间可以互相联机，1.1 和 1.2 不能进同一个房间。\n\n## v1.2 更新内容\n\n- **全新「自建地图」：标题画面第五个按钮。在手机、平板、电脑上都能自己画一张大富翁地图——铺地面（草地、沙滩、海水、雪地……十几种）、画路（八个方向，七种样式）、放格子（银行、医院、监狱、新闻、命运、商店、点券……）、放地块和大型用地、种树、摆建筑和装饰（地标、房屋、植物、人物、车辆、小物分类挑选），横屏竖屏都能编辑。**\n- 自建地图的工具：「微调」可以拖动地块和建筑、转方向、调大小，拖动路上的格子时路会跟着弯，地块也跟着走；放地块时地图上会用绿色标出能放的位置；「随机创建」一键生成海岛、城市、沙漠、雪地、乡村主题的地图；「检查」会列出每一个问题并在地图上圈出位置，点一下就跳过去。\n- 自建地图还能改股票名字（从八套原版股票里选一套当底）、挑新闻和命运卡（卡库里有原版、五座城市和新做的共 200 张）、打开「特殊规则」（没有神仙、没有礼物宝箱、不能炒股、道具店不营业、周末银行不开门、银行不贷款、没有黑市）。\n- 自建地图的「试玩」：起始 10 万元、0 点券，可以加减电脑（1～3 个）、有更快的试玩速度、随时结束试玩、不能存档；试玩时有一个人破产，这张地图就算通过，可以发布。\n- **新增「创作乐园」：把试玩通过的地图发布出去，大家都能看到作者、被玩了几次、收到几朵花；可以按最热门、最多花、最新排序，切换卡片／列表显示；点进地图能看作者的说明、寄语和联系方式，喜欢就送一朵花，或者下载下来自己玩。下载来的地图也能改着玩，但不能再发布（只有自己新建或随机创建的地图可以发布）。**\n- 自带示例地图「梨园莱阳」：山东莱阳的恐龙公园、梨乡牌坊、羊郡盐田……还有莱阳自己的 12 支股票，可以拿来参考怎么做地图。\n- 新游戏新增「我的地图」分页：自己做的地图和下载来的地图都能像原版地图一样开局，卡片上有缩略图和状态（已发布／试玩通过・可发布／未试玩）。新游戏画面的「回合制／即时制」挪到了「玩法」一项里。\n- **新增「局域网房间」：电脑版（Windows／Mac）可以开房间，同一个 Wi-Fi 下的手机用 App 自动搜到房间或输入房间码加入，不用连外网也能一起玩。手机要装 1.2 的安装包才能加入。**\n- 派对模式：从 1.2 开始，1.2.x 的不同小版本也能进同一个房间，游戏按房间里最旧的版本来玩，新版本的玩家会收到提示哪些新玩法这局用不到。\n- 股市：手机竖屏时，持股表的「持有股数」下面会显示平均成本。\n- iPad 竖屏时，资料栏左右两边的空白处会显示玩家卡片。\n\n## 1.1 到 1.2 之间的小版本（这些都已通过游戏内更新发布过，1.2 全部包含）\n\n### v1.1.2（2026-11-11，游戏内更新）\n- **派对模式新规则「破产清算」：真人玩家钱不够付的时候，会先问要不要清算资产——选「是」就把股票、杠杆仓位全部卖掉，地和设施全部半价卖回银行，用这笔钱付账，卖完还不够才破产；选「否」照原样破产。托管中或时间到没回答，都当作「是」。在「追加玩法」里可以关掉（默认开）。**\n- 修正：大富豪模式的「城市决战」开始后，还能坐新干线、飞机回到其他城市（那里的地已经卖掉、全部变成无主）。现在决战中谁都不能离开抽到的城市，遣返、独裁卡和医院、监狱客满也不会把人送走。\n- 修正：新闻「政府开征证券交易税」在后期要缴的税多得离谱（股价本来就随行情涨，又再乘了一次物价指数）。现在是持股市值的 5%。\n- 修正：每月任务「用天使卡或恶魔卡」选了卡片再取消也算完成；「用请神符请到好神」请到土地公不算。\n\n### v1.1.1（2026-11-10，游戏内更新）\n- **对话框里的角色头像全部重画成高清，每个角色从 4 种表情增加到 8 种（新增吃惊、得意、冒汗、狂喜），说什么话就换什么表情（例如「耶稣保佑」是冒汗、用卡片整人是得意、被怪兽打中是吃惊）。**\n- **派对模式新增「称号」：真人玩家头顶的延迟下面会挂一个小牌子，显示最新获得的称号（锦鲤附体、非酋本酋、韭菜收割机、圈地狂魔、包租公本公、基建狂魔、天选之子、爆仓战神、破产制造机、丐帮帮主、打不死小强……一共 18 种），获得时会弹出来。**\n- 派对模式：建房间时新增「追加玩法」，点开后可以一项一项开关原版没有的新玩法（现在有「股票杠杆」「乞丐复活」，默认都开）。\n- **派对模式新规则「乞丐」：真人玩家破",
+      "ipas": [
+        {
+          "name": "rich4-1.2.0-unsigned.ipa",
+          "size": 1445698792,
+          "url": "https://github.com/iam567/rich4-renew-app/releases/download/v1.2.0/rich4-1.2.0-unsigned.ipa",
+          "id": 742182440,
+          "updated_at": "2026-11-13T04:00:41Z",
+          "digest": "sha256:b3a76f5e5c092da6134bd39ff74ffb05ebcac876ba15ac48122ae3b500cbf58a"
+        }
+      ]
+    },
+    {
       "tag": "v1.1.0",
       "name": "安装包 v1.1.0（2026-11-08）",
       "pre": false,
       "draft": false,
       "date": "2026-11-08",
       "published_at": "2026-11-08T08:28:36Z",
-      "body": "> **1.1 是即时制的大更新，请重新下载安装包（游戏内更新不会升到 1.1）。** 直接覆盖安装，存档、设置都会保留；保险起见，可以先在「游戏设置 → 存档备份」导出一份。派对模式只能和同版本的玩家联机，1.0.x 和 1.1 不能进同一个房间。\n\n## v1.1 更新内容\n\n- **全新玩法「即时制」（测试版）：不再轮流等待，所有人同时行动。新游戏画面「回合制／即时制」一键切换；单机是一个人对电脑（练习），派对模式可以和朋友一起玩。只能用原版标准地图；对局时间 20 分钟／15 分钟／无限制，时间到总资产最多的人获胜。**\n- 即时制规则：一天 12 秒；每走完一步冷却 2 秒（GO 的位置显示 3、2、1，每个角色有自己的数字和等待动画）；电脑按难度思考（简单 5–6 秒、中等 4–5 秒、困难 3.5–5 秒、地狱 2.5–4 秒）；卡片随时能用（两次之间隔 5 秒）；两个人同时走到一块空地，先到的人有 5 秒优先决定；小游戏直接出结果；每有一个人破产，物价指数翻倍。\n- 即时制的时间限制：轮到你后 30 秒不按 GO 会自动掷骰子，走完后的每个问题（买地、加盖……）也各有 30 秒；道具店、卡片店、魔法屋、彩票、银行里最多停 20 秒。可爱的小秒表显示剩几秒，最后 5 秒会摇晃并「噔噔」响；小秒表可以拖到任何地方（会记住位置），点两下回到原位。\n- 即时制的保护：在道具店、卡片店、魔法屋、彩票、银行里时，头顶显示「购物中」，别人的卡片、魔法、飞弹都打不到你（派对模式也一样）。单机还有「一回合挨打上限」：两次掷骰之间被别人打中，简单最多 1 次、中等最多 2 次（困难、地狱不限），到了就显示「保护中」，直到你再掷骰子。\n- 即时制的飞弹：可以选「炸路上一点」（和原来一样点发光的位置，炸掉附近的建筑），或「锁定玩家」：对方会收到警告，3 秒后飞弹落在他当时站的地方，可以赶快跑开。\n- 即时制的画面：左下角像网游聊天框的消息记录（可以按头像筛选）；顶部细条只提示跟你有关的事（收到卡片、过路费、被谁施了魔法、地被炸……）；右上角实时排名（总资产、现金、存款，钱变动时会弹出，住院、坐牢、出国等状态和剩余天数也看得到，可以收起）；地图左右两边的「卡片」「道具」快捷栏，点一下直接使用；被关住时显示还要几秒出来；单机可以按「暂停」。\n- 即时制的节奏：走路像 RPG 一样顺；狗咬人、地雷、外星人、台风等动画在原地快速播放，镜头不会被拉走；转盘 1.5 秒自动停；股市开着时价格锁在进场那一刻，最多停 3 天，离开后要掷一次骰子、再过一天才能再进。\n- 派对模式：等别人的回合时也能看股市并下单（轮到那一回合结束时成交），也能查看资料、卡片、道具，还能像观众一样送礼物。\n- 派对模式：股市新增「杠杆」：2、3、5 倍，可以做多或做空，保证金从存款扣；亏光保证金就爆仓。\n- 派对模式：新股票「ＨＯＴＥＬ１１」酒店联盟，最大股东当董事长，住进别人的旅馆、情人酒店、招待所全部免单。\n- 派对模式：名字旁边可以填联系方式（微信／LINE／IG／Telegram，也可以不公开）。\n- 大富豪模式新增「城市决战」：剩下四个人时，由真人玩家选决战地点——大富翁城（筹码）或随机抽一座城市（现金）；其他地方的资产按市价卖成现金，过路费和设施费每 20 天翻倍（最多 64 倍）。\n- 新游戏画面的地图卡会显示「已通关 N 次」（一个人赢下这张地图的次数）。\n- **新增安卓电视版「大富翁4 TV」**：可以用电视遥控器玩，也可以接 1～4 个手柄（1P～4P 各用一个）；手机版的安卓安装包也能装在电视上。\n- 手柄：默认 PlayStation 键位（○ 确定、✕ 返回，可在设置里换成 Xbox 键位）；方向键可以在 GO、工具栏和资料栏之间跳；按下右摇杆进入「看地图」模式；「游戏设置」新增「摇杆测试」，可以看 1P～4P 是否连上、每个按键是否有反应和按键说明。\n- 电脑版（Windows / Mac）的「系统」里新增「视窗」（全屏／窗口）和「结束游戏」。\n- 在线更新：下载 15 秒没有进度时会提示可以怎么做。\n- 修正：在线更新后重启，有时又回到旧版本、下载好的更新被删掉（这一版起的安装包不会再这样）。\n- 修正：道具店、卡片店连续点太快时，有的点击没有反应。\n- 修正：城市地图「北海岸」的地块没有画出来；怪兽卡、恶魔卡的动画还没到，房子就先没了；坐车时每一格都会停顿一下；挑战模式和即时制在「继续游戏」的下一局没有延续；电脑用换屋卡时游戏可能报错。\n\n## 1.0 到 1.1 之间的小版本（这些都已通过游戏内更新发布过，1.1 全部包含）\n\n### v1.0.1.5（2026-11-06，游戏内更新）\n- **派对模式新增「换地图」：不用退出房间，有",
+      "body": "> 最新版是 **v1.2**（自建地图 + 局域网联机），请移步 [最新版本](https://github.com/iam567/rich4-renew-app/releases/latest) 下载。\n\n> **1.1 是即时制的大更新，请重新下载安装包（游戏内更新不会升到 1.1）。** 直接覆盖安装，存档、设置都会保留；保险起见，可以先在「游戏设置 → 存档备份」导出一份。派对模式只能和同版本的玩家联机，1.0.x 和 1.1 不能进同一个房间。\n\n## v1.1 更新内容\n\n- **全新玩法「即时制」（测试版）：不再轮流等待，所有人同时行动。新游戏画面「回合制／即时制」一键切换；单机是一个人对电脑（练习），派对模式可以和朋友一起玩。只能用原版标准地图；对局时间 20 分钟／15 分钟／无限制，时间到总资产最多的人获胜。**\n- 即时制规则：一天 12 秒；每走完一步冷却 2 秒（GO 的位置显示 3、2、1，每个角色有自己的数字和等待动画）；电脑按难度思考（简单 5–6 秒、中等 4–5 秒、困难 3.5–5 秒、地狱 2.5–4 秒）；卡片随时能用（两次之间隔 5 秒）；两个人同时走到一块空地，先到的人有 5 秒优先决定；小游戏直接出结果；每有一个人破产，物价指数翻倍。\n- 即时制的时间限制：轮到你后 30 秒不按 GO 会自动掷骰子，走完后的每个问题（买地、加盖……）也各有 30 秒；道具店、卡片店、魔法屋、彩票、银行里最多停 20 秒。可爱的小秒表显示剩几秒，最后 5 秒会摇晃并「噔噔」响；小秒表可以拖到任何地方（会记住位置），点两下回到原位。\n- 即时制的保护：在道具店、卡片店、魔法屋、彩票、银行里时，头顶显示「购物中」，别人的卡片、魔法、飞弹都打不到你（派对模式也一样）。单机还有「一回合挨打上限」：两次掷骰之间被别人打中，简单最多 1 次、中等最多 2 次（困难、地狱不限），到了就显示「保护中」，直到你再掷骰子。\n- 即时制的飞弹：可以选「炸路上一点」（和原来一样点发光的位置，炸掉附近的建筑），或「锁定玩家」：对方会收到警告，3 秒后飞弹落在他当时站的地方，可以赶快跑开。\n- 即时制的画面：左下角像网游聊天框的消息记录（可以按头像筛选）；顶部细条只提示跟你有关的事（收到卡片、过路费、被谁施了魔法、地被炸……）；右上角实时排名（总资产、现金、存款，钱变动时会弹出，住院、坐牢、出国等状态和剩余天数也看得到，可以收起）；地图左右两边的「卡片」「道具」快捷栏，点一下直接使用；被关住时显示还要几秒出来；单机可以按「暂停」。\n- 即时制的节奏：走路像 RPG 一样顺；狗咬人、地雷、外星人、台风等动画在原地快速播放，镜头不会被拉走；转盘 1.5 秒自动停；股市开着时价格锁在进场那一刻，最多停 3 天，离开后要掷一次骰子、再过一天才能再进。\n- 派对模式：等别人的回合时也能看股市并下单（轮到那一回合结束时成交），也能查看资料、卡片、道具，还能像观众一样送礼物。\n- 派对模式：股市新增「杠杆」：2、3、5 倍，可以做多或做空，保证金从存款扣；亏光保证金就爆仓。\n- 派对模式：新股票「ＨＯＴＥＬ１１」酒店联盟，最大股东当董事长，住进别人的旅馆、情人酒店、招待所全部免单。\n- 派对模式：名字旁边可以填联系方式（微信／LINE／IG／Telegram，也可以不公开）。\n- 大富豪模式新增「城市决战」：剩下四个人时，由真人玩家选决战地点——大富翁城（筹码）或随机抽一座城市（现金）；其他地方的资产按市价卖成现金，过路费和设施费每 20 天翻倍（最多 64 倍）。\n- 新游戏画面的地图卡会显示「已通关 N 次」（一个人赢下这张地图的次数）。\n- **新增安卓电视版「大富翁4 TV」**：可以用电视遥控器玩，也可以接 1～4 个手柄（1P～4P 各用一个）；手机版的安卓安装包也能装在电视上。\n- 手柄：默认 PlayStation 键位（○ 确定、✕ 返回，可在设置里换成 Xbox 键位）；方向键可以在 GO、工具栏和资料栏之间跳；按下右摇杆进入「看地图」模式；「游戏设置」新增「摇杆测试」，可以看 1P～4P 是否连上、每个按键是否有反应和按键说明。\n- 电脑版（Windows / Mac）的「系统」里新增「视窗」（全屏／窗口）和「结束游戏」。\n- 在线更新：下载 15 秒没有进度时会提示可以怎么做。\n- 修正：在线更新后重启，有时又回到旧版本、下载好的更新被删掉（这一版起的安装包不会再这样）。\n- 修正：道具店、卡片店连续点太快时，有的点击没有反应。\n- 修正：城市地图「北海岸」的地块没有画出来；怪兽卡、恶魔卡的动画还没到，房子就先没了；坐车时每一格都会停顿一下；挑战模式和即时制在「继续游戏」的下一局没有延续；电脑用换屋卡时游戏可能报",
       "ipas": [
         {
           "name": "rich4-1.1.0-unsigned.ipa",
@@ -4567,7 +4614,7 @@
       "draft": false,
       "date": "2026-11-03",
       "published_at": "2026-11-03T13:40:33Z",
-      "body": "> 最新版是 **v1.1**（即时制大更新），请移步 [最新版本](https://github.com/iam567/rich4-renew-app/releases/latest) 下载。\n\n- **派对模式（联机）重大升级：大幅减少掉线；手机短暂断线（切到后台、进电梯、Wi-Fi 换成流量）会自动续连，一分钟内接回来游戏完全不受影响，断线期间的操作自动补上。iPhone、安卓、Mac、Windows 都能一起玩。**\n- **派对模式新增「途中加入」：建立房间时打开「途中加入」，一个人也能先和电脑开始玩（两个人就和两个电脑），不用等人齐。公开房间在游戏大厅里会标上「可途中加入」，游戏进行中也一直列着，并显示还有几个电脑可以接手。其他玩家随时点进来，就会接手其中一个电脑：等那个电脑的回合一到，它的钱、地、卡片、道具都交给新玩家继续玩，所有人都会看到「真人玩家 ××× 接替了电脑 ×××」。**\n- 挑战模式改成开关：新游戏不再有单独的「挑战模式」分页，原版地图、自制地图的设定里多一项「挑战模式」：关／每月 1 张／每月 2 张／完成就抽。输赢照普通大富翁（破产出局），不再算星星。打开后会翻任务卡（每月 1 日；每月 2 张是 1 日和 16 日各一张、目标减半；完成就抽是有人完成马上换下一张，30 天没人完成也会换），拿下任务的人抽一张奖励卡（抢先卡是第一个做到的；比拼、坚持卡到期时结算；有抽卡动画，可以点一下跳过）：向每个对手收卡片和道具、收地、收红包、抽成、挪用存款、收点券，或让其他人坐牢、住院、冬眠，或拆掉对手的房子、自己的地加盖三层。奖励卡分 N、R、SR 三级（SR 1/10、R 2/10），等级越高收得越多。地图左上角的蓝条显示当前任务，点开看大家的进度。\n- 新增游戏内更新：这一版起，出新版本时游戏会提示「有新版本」，点「更新」只下载有变动的部分（通常几 MB），不必再重新下载整个安装包；更新后右下角显示新的版本号，存档都会保留。单机可以选择以后再说；派对模式需要更新到最新版本才能进入，大家的规则才会一致。少数需要新安装包的版本会提示前往下载。（这一版本身还需要手动安装一次。）\n- 电脑难度新增「地狱」：电脑全力理财、低买高卖股票，而且所有电脑联手对付真人玩家。普通模式、大富豪模式、派对模式都能选；「中级」改叫「中等」。\n- 大富豪模式新增「电脑难度」（简单／中等／困难／地狱），五座城市的电脑都用这一级；旧存档照旧是简单。\n- 设置里的「街头行人」「街头车辆」「霓虹闪烁」合并成一项「地图动画」（开／关）。\n- 原版八张地图（台湾、中国大陆、日本、美国、星座、武侠、恐龙、城市）都换上了新的插画封面，选地图、读档、派对模式房间里都会显示。\n- 游戏速度新增「极快」：比「快」再快一倍，适合直播或想快点玩完的玩家。\n- 标题画面底部改成感谢大家的话：感谢 GitHub 回报问题的朋友和 B 站留言区的每一条意见。\n- 竖屏的平板或较宽的窗口：游戏画面下方的面板最多占三分之一高度，地图变大。\n- 新增字体选择：「游戏设置」→「字体」可选 粉圆／文楷（霞鹜文楷）／圆体（昭源圆体）／系统字体，马上套用到所有画面。\n- 修正：iPhone 上部分简体字（例如「图鉴」的「鉴」）显示成方框。\n- 新增存档备份：「游戏设置」→「存档备份」，可以把这台装置的所有存档导出成一个文件（手机上可存到「文件」、传给自己），换手机或重新安装后再导入；存档在 iPhone、安卓、Mac、Windows 之间通用（例如手机导出、电脑导入接着玩）。\n- 大富翁城只用筹码（大富豪模式的最终决战和普通模式的大富翁城地图都一样）：没有存款、提款机、贷款和利息，原本会存进存款的钱都直接变成筹码；买地、盖赌场、升级都用筹码；停在银行格什么都不办，月底也不再出现银行结算；人物面板显示 筹码／赌场／总资产。修正：电脑的筹码看起来是 0 却一直不出局（其实钱都在存款里）。\n- 普通模式的大富翁城：开局资金全部换成筹码（1 筹码 = 100 元），画面一律显示筹码；每个回合后筹码不到 1 个就出局。旧存档里的存款会在下一回合并进筹码（有贷款的先扣掉）。\n- 派对模式新增延迟面板：游戏中按联机按钮栏最右边的信号格按钮，可以显示或隐藏每位玩家的延迟（毫秒）；房间里每个座位也会显示。\n- 标题画面和派对模式里显示「派对模式现在有多少人在线」（游戏中、房间里、选单各几人）。\n- 派对模式游戏中，每位真人玩家的角色头顶会显示他的延迟（毫秒），跟着角色移动；等待某人操作时，提示条也会显示那个人的延迟。\n- 派对模式「建立房间」和房间画面重新设计：地图改成缩图卡片翻页；房间里的规则一直展开、用格子排好，横屏左右两栏一页放得下。\n- 派对模式新增「等待时间」：每一步操作可等 10",
+      "body": "> 最新版是 **v1.2**（自建地图 + 局域网联机），请移步 [最新版本](https://github.com/iam567/rich4-renew-app/releases/latest) 下载。\n\n- **派对模式（联机）重大升级：大幅减少掉线；手机短暂断线（切到后台、进电梯、Wi-Fi 换成流量）会自动续连，一分钟内接回来游戏完全不受影响，断线期间的操作自动补上。iPhone、安卓、Mac、Windows 都能一起玩。**\n- **派对模式新增「途中加入」：建立房间时打开「途中加入」，一个人也能先和电脑开始玩（两个人就和两个电脑），不用等人齐。公开房间在游戏大厅里会标上「可途中加入」，游戏进行中也一直列着，并显示还有几个电脑可以接手。其他玩家随时点进来，就会接手其中一个电脑：等那个电脑的回合一到，它的钱、地、卡片、道具都交给新玩家继续玩，所有人都会看到「真人玩家 ××× 接替了电脑 ×××」。**\n- 挑战模式改成开关：新游戏不再有单独的「挑战模式」分页，原版地图、自制地图的设定里多一项「挑战模式」：关／每月 1 张／每月 2 张／完成就抽。输赢照普通大富翁（破产出局），不再算星星。打开后会翻任务卡（每月 1 日；每月 2 张是 1 日和 16 日各一张、目标减半；完成就抽是有人完成马上换下一张，30 天没人完成也会换），拿下任务的人抽一张奖励卡（抢先卡是第一个做到的；比拼、坚持卡到期时结算；有抽卡动画，可以点一下跳过）：向每个对手收卡片和道具、收地、收红包、抽成、挪用存款、收点券，或让其他人坐牢、住院、冬眠，或拆掉对手的房子、自己的地加盖三层。奖励卡分 N、R、SR 三级（SR 1/10、R 2/10），等级越高收得越多。地图左上角的蓝条显示当前任务，点开看大家的进度。\n- 新增游戏内更新：这一版起，出新版本时游戏会提示「有新版本」，点「更新」只下载有变动的部分（通常几 MB），不必再重新下载整个安装包；更新后右下角显示新的版本号，存档都会保留。单机可以选择以后再说；派对模式需要更新到最新版本才能进入，大家的规则才会一致。少数需要新安装包的版本会提示前往下载。（这一版本身还需要手动安装一次。）\n- 电脑难度新增「地狱」：电脑全力理财、低买高卖股票，而且所有电脑联手对付真人玩家。普通模式、大富豪模式、派对模式都能选；「中级」改叫「中等」。\n- 大富豪模式新增「电脑难度」（简单／中等／困难／地狱），五座城市的电脑都用这一级；旧存档照旧是简单。\n- 设置里的「街头行人」「街头车辆」「霓虹闪烁」合并成一项「地图动画」（开／关）。\n- 原版八张地图（台湾、中国大陆、日本、美国、星座、武侠、恐龙、城市）都换上了新的插画封面，选地图、读档、派对模式房间里都会显示。\n- 游戏速度新增「极快」：比「快」再快一倍，适合直播或想快点玩完的玩家。\n- 标题画面底部改成感谢大家的话：感谢 GitHub 回报问题的朋友和 B 站留言区的每一条意见。\n- 竖屏的平板或较宽的窗口：游戏画面下方的面板最多占三分之一高度，地图变大。\n- 新增字体选择：「游戏设置」→「字体」可选 粉圆／文楷（霞鹜文楷）／圆体（昭源圆体）／系统字体，马上套用到所有画面。\n- 修正：iPhone 上部分简体字（例如「图鉴」的「鉴」）显示成方框。\n- 新增存档备份：「游戏设置」→「存档备份」，可以把这台装置的所有存档导出成一个文件（手机上可存到「文件」、传给自己），换手机或重新安装后再导入；存档在 iPhone、安卓、Mac、Windows 之间通用（例如手机导出、电脑导入接着玩）。\n- 大富翁城只用筹码（大富豪模式的最终决战和普通模式的大富翁城地图都一样）：没有存款、提款机、贷款和利息，原本会存进存款的钱都直接变成筹码；买地、盖赌场、升级都用筹码；停在银行格什么都不办，月底也不再出现银行结算；人物面板显示 筹码／赌场／总资产。修正：电脑的筹码看起来是 0 却一直不出局（其实钱都在存款里）。\n- 普通模式的大富翁城：开局资金全部换成筹码（1 筹码 = 100 元），画面一律显示筹码；每个回合后筹码不到 1 个就出局。旧存档里的存款会在下一回合并进筹码（有贷款的先扣掉）。\n- 派对模式新增延迟面板：游戏中按联机按钮栏最右边的信号格按钮，可以显示或隐藏每位玩家的延迟（毫秒）；房间里每个座位也会显示。\n- 标题画面和派对模式里显示「派对模式现在有多少人在线」（游戏中、房间里、选单各几人）。\n- 派对模式游戏中，每位真人玩家的角色头顶会显示他的延迟（毫秒），跟着角色移动；等待某人操作时，提示条也会显示那个人的延迟。\n- 派对模式「建立房间」和房间画面重新设计：地图改成缩图卡片翻页；房间里的规则一直展开、用格子排好，横屏左右两栏一页放得下。\n- 派对模式新增「等待时间」：每一步操",
       "ipas": [
         {
           "name": "rich4-1.0.0-unsigned.ipa",
@@ -4856,16 +4903,6 @@
           "digest": "sha256:81e8db56dd6e77c411d5f807e6a98377280210936eb757a6842f8a2274ebc1d9"
         }
       ]
-    },
-    {
-      "tag": "v0.6.5",
-      "name": "安装包 v0.6.5（2026-10-20）",
-      "pre": false,
-      "draft": false,
-      "date": "2026-10-20",
-      "published_at": "2026-10-20T08:11:06Z",
-      "body": "> **已有新版本：请移步最新版 [v1.0](https://github.com/iam567/rich4-renew-app/releases/tag/v1.0.0)**（iPhone、安卓、Mac、Windows、Win7 都有安装包）。从 v1.0 起游戏里就能直接更新，不用再来这里下载新安装包。最新版本永远在 [这里](https://github.com/iam567/rich4-renew-app/releases/latest)。\n\n- 派对模式按钮上方显示目前的私享房间数和等待伙伴的人数。\n- 修正：iPad（iPadOS 16.3 等较旧的系统）打开游戏黑屏。\n- 修正：读取进度画面里角色头像竖着排、把格子撑得太高。\n- 电脑版：\n  - Windows：下载 `rich4-0.6.5-windows.zip`，解压后打开 `Rich4` 文件夹，双击 `Rich4.exe`。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 `rich4-0.6.5-mac.dmg`，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew 0d1d6b9\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-      "ipas": []
     }
   ],
   "Aidoku/Aidoku": [
@@ -7365,17 +7402,17 @@
       "name": "Nightly build",
       "pre": true,
       "draft": false,
-      "date": "2026-11-12",
-      "published_at": "2026-11-12T19:09:07Z",
-      "body": "* Require iOS 26 for the accessibility API\n* Fix network lockdown connections closing without a heartbeat\n* Extend Swiplet icon colors\n* Add the chart and data grid components\n* Remove the guards against bad values from Swiplets\n* Add stream actions and the process API\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the developer service\n* Fix slow detection of unsupported networks\n* Resolve DNS with the system configuration on iOS\n* Detect the foreground app right after connecting\n* Connect touch input before the first tap\n* Send input without checking the lock state\n* Split the CLI commands into one file each\n* Fix the detection of the foreground app\n* Download swiplet updates on demand and show progress\n* Number enumerations with iota\n* Skip unchanged builds in dev install\n* Reformat code\n* Fix the position of the repository loading indicator\n* Fix choosing VPN addresses that do not loop back\n* Generate the CLI's Protobuf code as TypeScript\n* Move the CLI to TypeScript\n* Generate Protobuf code with buf\n* Version releases automatically and publish packages on release\n* Use the stable official swiplets feed in stable builds\n* Replace outdated Developer Disk Images\n* Fix tunnel uploads stalling on large TLS records\n* Fix loopback setup not advancing after the tunnel is found\n* Merge the release workflow into the build workflow\n* Fix publishing when the new draft is not listed yet\n* Reject outdated swiplets\n* Add available() and minimum iOS versions for swiplets\n* Support iOS 17.4\n* Fix calls hanging when their results can't be converted\n* Fix accessibility snapshots failing on infinite frames\n* Refactor the screen API\n* Cancel Vision requests when the ca",
+      "date": "2026-11-13",
+      "published_at": "2026-11-13T08:59:11Z",
+      "body": "* Remove unsourced and misattributed claims from comments\n* Require iOS 26 for the accessibility API\n* Fix network lockdown connections closing without a heartbeat\n* Extend Swiplet icon colors\n* Add the chart and data grid components\n* Remove the guards against bad values from Swiplets\n* Add stream actions and the process API\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the developer service\n* Fix slow detection of unsupported networks\n* Resolve DNS with the system configuration on iOS\n* Detect the foreground app right after connecting\n* Connect touch input before the first tap\n* Send input without checking the lock state\n* Split the CLI commands into one file each\n* Fix the detection of the foreground app\n* Download swiplet updates on demand and show progress\n* Number enumerations with iota\n* Skip unchanged builds in dev install\n* Reformat code\n* Fix the position of the repository loading indicator\n* Fix choosing VPN addresses that do not loop back\n* Generate the CLI's Protobuf code as TypeScript\n* Move the CLI to TypeScript\n* Generate Protobuf code with buf\n* Version releases automatically and publish packages on release\n* Use the stable official swiplets feed in stable builds\n* Replace outdated Developer Disk Images\n* Fix tunnel uploads stalling on large TLS records\n* Fix loopback setup not advancing after the tunnel is found\n* Merge the release workflow into the build workflow\n* Fix publishing when the new draft is not listed yet\n* Reject outdated swiplets\n* Add available() and minimum iOS versions for swiplets\n* Support iOS 17.4\n* Fix calls hanging when their results can't be converted\n* Fix accessibility snapshots failing on infinite frames\n* Re",
       "ipas": [
         {
           "name": "Swipt.ipa",
-          "size": 48136565,
+          "size": 48135363,
           "url": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-          "id": 740735617,
-          "updated_at": "2026-11-12T19:09:05Z",
-          "digest": "sha256:a52208d5a74becd4f0c7ebd3894cac3724b0531e30c4398e16fe94b87dcc3de7"
+          "id": 742976541,
+          "updated_at": "2026-11-13T08:59:09Z",
+          "digest": "sha256:f605ef9fa127b51f9fd4bcb6094a68ff855aa7ddce601e038f5aed5b52fca18f"
         }
       ]
     }
@@ -8071,6 +8108,25 @@
     }
   ],
   "ios151/Insav-releases": [
+    {
+      "tag": "v1.3.1-6",
+      "name": "Insav 1.3.1 (6)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-13",
+      "published_at": "2026-11-13T05:33:07Z",
+      "body": "## 1.3.1 (build 6)\n\n- 修复无码站打不开：无码站的域名会不定期更换，原来的自动发现方式已经失效，导致一直连不上；现在改成每次从官方的跳转页现取最新域名，换域名也能自动跟上，发现不了时提示里会说清楚卡在哪一步\n- 其余功能同 1.3.0 (5)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。\n",
+      "ipas": [
+        {
+          "name": "Insav-unsigned.ipa",
+          "size": 1634598,
+          "url": "https://github.com/ios151/Insav-releases/releases/download/v1.3.1-6/Insav-unsigned.ipa",
+          "id": 742416331,
+          "updated_at": "2026-11-13T05:33:06Z",
+          "digest": "sha256:6f4bd849c33691820c4331df9237e3949d6ee9c883c8c8205a541b8f50fdc024"
+        }
+      ]
+    },
     {
       "tag": "v1.3.0-5",
       "name": "Insav 1.3.0 (5)",

@@ -1956,15 +1956,15 @@
   "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa": {
     "bundleIdentifier": "io.nekohasekai.swipt",
     "version": "0.1.0",
-    "buildVersion": "76",
+    "buildVersion": "77",
     "displayName": "Swipt",
     "minOSVersion": "16.4",
-    "size": 48136565,
+    "size": 48135363,
     "assetIdentity": {
-      "id": 740735617,
-      "updated_at": "2026-11-12T19:09:05Z",
-      "size": 48136565,
-      "digest": "sha256:a52208d5a74becd4f0c7ebd3894cac3724b0531e30c4398e16fe94b87dcc3de7"
+      "id": 742976541,
+      "updated_at": "2026-11-13T08:59:09Z",
+      "size": 48135363,
+      "digest": "sha256:f605ef9fa127b51f9fd4bcb6094a68ff855aa7ddce601e038f5aed5b52fca18f"
     }
   },
   "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.2/ARMSX3-0.0.2.ipa": {
@@ -2147,6 +2147,62 @@
       "updated_at": "2026-11-12T22:25:05Z",
       "size": 3028648,
       "digest": "sha256:03a688abc3e66680c21ee425b37491cd89f62dd7fdc18d7b9274763d1568d5c7"
+    }
+  },
+  "https://github.com/anonymousjav/AvPlayRelease/releases/download/v2.2.1/AvPlay-2.2.1.ipa": {
+    "bundleIdentifier": "com.javdb.avplay2",
+    "version": "2.2.1",
+    "buildVersion": "2020101",
+    "displayName": "AvPlay",
+    "minOSVersion": "15.3",
+    "size": 23879590,
+    "assetIdentity": {
+      "id": 742956763,
+      "updated_at": "2026-11-13T08:51:51Z",
+      "size": 23879590,
+      "digest": "sha256:22fc80c647b747418cba594a132f5761471b93bb3f03ba9a895107f2108c9f62"
+    }
+  },
+  "https://github.com/ios151/Insav-releases/releases/download/v1.3.1-6/Insav-unsigned.ipa": {
+    "bundleIdentifier": "com.ios151.insav",
+    "version": "1.3.1",
+    "buildVersion": "6",
+    "displayName": "INSAV",
+    "minOSVersion": "16.0",
+    "size": 1634598,
+    "assetIdentity": {
+      "id": 742416331,
+      "updated_at": "2026-11-13T05:33:06Z",
+      "size": 1634598,
+      "digest": "sha256:6f4bd849c33691820c4331df9237e3949d6ee9c883c8c8205a541b8f50fdc024"
+    }
+  },
+  "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261113/ARMSX2-nightly-20261113-37ed35b88f-iOS-arm64.ipa": {
+    "bundleIdentifier": "com.armsx2.ios.nightly",
+    "version": "2.6.0-nightly.20261113.0426",
+    "buildVersion": "260",
+    "displayName": "ARMSX2 Nightly",
+    "minOSVersion": "17.4",
+    "size": 40715589,
+    "assetIdentity": {
+      "id": 742320362,
+      "updated_at": "2026-11-13T04:53:55Z",
+      "size": 40715589,
+      "digest": "sha256:10ae36945d8c76d806774bafcfde306c41e1c3f518df9461ea7e9bfe193a00d7"
+    }
+  },
+  "https://github.com/iam567/rich4-renew-app/releases/download/v1.2.0/rich4-1.2.0-unsigned.ipa": {
+    "bundleIdentifier": "pro.areu.rich4",
+    "version": "1.2.0",
+    "buildVersion": "54",
+    "displayName": "大富翁4",
+    "minOSVersion": "15.0",
+    "size": 1445698792,
+    "assetIdentity": {
+      "id": 742182440,
+      "updated_at": "2026-11-13T04:00:41Z",
+      "size": 1445698792,
+      "digest": "sha256:b3a76f5e5c092da6134bd39ff74ffb05ebcac876ba15ac48122ae3b500cbf58a"
     }
   }
 }

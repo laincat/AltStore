@@ -385,41 +385,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.6.0-nightly.20261112.1132",
-              "date": "2026-11-12",
-              "publishedAt": "2026-11-12T11:58:10Z",
+              "version": "2.6.0-nightly.20261113.0426",
+              "date": "2026-11-13",
+              "publishedAt": "2026-11-13T04:53:50Z",
               "buildVersion": "260",
               "buildNumber": "260",
-              "localizedDescription": "🧪 预发布 nightly-20261112（2026-11-12）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-              "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261112/ARMSX2-nightly-20261112-c25493a202-iOS-arm64.ipa",
-              "size": 40658081,
+              "localizedDescription": "🧪 预发布 nightly-20261113（2026-11-13）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+              "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261113/ARMSX2-nightly-20261113-37ed35b88f-iOS-arm64.ipa",
+              "size": 40715589,
               "minOSVersion": "17.4",
-              "releaseTag": "nightly-20261112",
-              "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261112"
+              "releaseTag": "nightly-20261113",
+              "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261113"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.6.0-nightly.20261112.1132",
-          "date": "2026-11-12",
-          "publishedAt": "2026-11-12T11:58:10Z",
+          "version": "2.6.0-nightly.20261113.0426",
+          "date": "2026-11-13",
+          "publishedAt": "2026-11-13T04:53:50Z",
           "buildVersion": "260",
           "buildNumber": "260",
-          "localizedDescription": "🧪 预发布 nightly-20261112（2026-11-12）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261112/ARMSX2-nightly-20261112-c25493a202-iOS-arm64.ipa",
-          "size": 40658081,
+          "localizedDescription": "🧪 预发布 nightly-20261113（2026-11-13）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261113/ARMSX2-nightly-20261113-37ed35b88f-iOS-arm64.ipa",
+          "size": 40715589,
           "minOSVersion": "17.4",
-          "releaseTag": "nightly-20261112",
-          "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261112"
+          "releaseTag": "nightly-20261113",
+          "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261113"
         }
       ],
-      "version": "2.6.0-nightly.20261112.1132",
-      "versionDate": "2026-11-12",
-      "versionDescription": "🧪 预发布 nightly-20261112（2026-11-12）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-      "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261112/ARMSX2-nightly-20261112-c25493a202-iOS-arm64.ipa",
-      "size": 40658081,
+      "version": "2.6.0-nightly.20261113.0426",
+      "versionDate": "2026-11-13",
+      "versionDescription": "🧪 预发布 nightly-20261113（2026-11-13）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+      "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261113/ARMSX2-nightly-20261113-37ed35b88f-iOS-arm64.ipa",
+      "size": 40715589,
       "minOSVersion": "17.4"
     },
     {
@@ -479,11 +479,11 @@
     },
     {
       "name": "AvPlay",
-      "bundleIdentifier": "com.javdb.avplay",
+      "bundleIdentifier": "com.javdb.avplay2",
       "developerName": "anonymousjav",
       "subtitle": "成人影音播放应用",
       "localizedDescription": "面向成年人的影音播放应用。此处提供上游发布的未签名 iOS 安装包，需自行签名安装；上游仓库未提供应用源代码或开源许可证。\n\n项目主页：https://github.com/anonymousjav/AvPlayRelease",
-      "iconURL": "https://raw.githubusercontent.com/anonymousjav/AvPlayRelease/v2.2.0/resources/logo.png",
+      "iconURL": "https://raw.githubusercontent.com/anonymousjav/AvPlayRelease/v2.2.1/resources/logo.png",
       "tintColor": "#6B5CE7",
       "category": "entertainment",
       "appPermissions": {
@@ -495,41 +495,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.2.0",
-              "date": "2026-10-23",
-              "publishedAt": "2026-10-23T09:02:21Z",
-              "buildVersion": "2020001",
-              "buildNumber": "2020001",
-              "localizedDescription": "现已适配 iPhone Duo 🎉\r\n\r\n【最新更新】\r\n- 优化 JavDB图片加载速度起飞\r\n- 新增 短剧排行榜\r\n- 修复 已知问题\r\n\r\n【近期更新】\r\n- 新增 黄果AI短剧\r\n- 新增 JavDB的\"影片预览\"、\"想看\"和\"看过\"\r\n\r\n⚠️ v2.1.0版本 iOS 包 Bundle ID 已变，旧版本数据可通过导出数据或云备份迁移",
-              "downloadURL": "https://github.com/anonymousjav/AvPlayRelease/releases/download/v2.2.0/AvPlay-2.2.0.ipa",
-              "size": 23751956,
+              "version": "2.2.1",
+              "date": "2026-11-13",
+              "publishedAt": "2026-11-13T09:23:17Z",
+              "buildVersion": "2020101",
+              "buildNumber": "2020101",
+              "localizedDescription": "【最新更新】\r\n- 修复 黄果短剧无法播放的问题\r\n- 修复 部分影片加入“想看、看过、清单”后不显示问题\r\n- 优化 视频播放器进度拖动效果\r\n- 优化 账号注册登录流程\r\n- 修复 macOS窗口拖动漂移问题\r\n- 修复 已知问题\r\n\r\n【近期更新】\r\n- 新增 黄果AI短剧\r\n- 新增 影片预览\r\n\r\n⚠️ iOS Bundle ID 又改了，iOS用户建议使用云备份",
+              "downloadURL": "https://github.com/anonymousjav/AvPlayRelease/releases/download/v2.2.1/AvPlay-2.2.1.ipa",
+              "size": 23879590,
               "minOSVersion": "15.3",
-              "releaseTag": "v2.2.0",
-              "source": "https://github.com/anonymousjav/AvPlayRelease/releases/tag/v2.2.0"
+              "releaseTag": "v2.2.1",
+              "source": "https://github.com/anonymousjav/AvPlayRelease/releases/tag/v2.2.1"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.2.0",
-          "date": "2026-10-23",
-          "publishedAt": "2026-10-23T09:02:21Z",
-          "buildVersion": "2020001",
-          "buildNumber": "2020001",
-          "localizedDescription": "现已适配 iPhone Duo 🎉\r\n\r\n【最新更新】\r\n- 优化 JavDB图片加载速度起飞\r\n- 新增 短剧排行榜\r\n- 修复 已知问题\r\n\r\n【近期更新】\r\n- 新增 黄果AI短剧\r\n- 新增 JavDB的\"影片预览\"、\"想看\"和\"看过\"\r\n\r\n⚠️ v2.1.0版本 iOS 包 Bundle ID 已变，旧版本数据可通过导出数据或云备份迁移",
-          "downloadURL": "https://github.com/anonymousjav/AvPlayRelease/releases/download/v2.2.0/AvPlay-2.2.0.ipa",
-          "size": 23751956,
+          "version": "2.2.1",
+          "date": "2026-11-13",
+          "publishedAt": "2026-11-13T09:23:17Z",
+          "buildVersion": "2020101",
+          "buildNumber": "2020101",
+          "localizedDescription": "【最新更新】\r\n- 修复 黄果短剧无法播放的问题\r\n- 修复 部分影片加入“想看、看过、清单”后不显示问题\r\n- 优化 视频播放器进度拖动效果\r\n- 优化 账号注册登录流程\r\n- 修复 macOS窗口拖动漂移问题\r\n- 修复 已知问题\r\n\r\n【近期更新】\r\n- 新增 黄果AI短剧\r\n- 新增 影片预览\r\n\r\n⚠️ iOS Bundle ID 又改了，iOS用户建议使用云备份",
+          "downloadURL": "https://github.com/anonymousjav/AvPlayRelease/releases/download/v2.2.1/AvPlay-2.2.1.ipa",
+          "size": 23879590,
           "minOSVersion": "15.3",
-          "releaseTag": "v2.2.0",
-          "source": "https://github.com/anonymousjav/AvPlayRelease/releases/tag/v2.2.0"
+          "releaseTag": "v2.2.1",
+          "source": "https://github.com/anonymousjav/AvPlayRelease/releases/tag/v2.2.1"
         }
       ],
-      "version": "2.2.0",
-      "versionDate": "2026-10-23",
-      "versionDescription": "现已适配 iPhone Duo 🎉\r\n\r\n【最新更新】\r\n- 优化 JavDB图片加载速度起飞\r\n- 新增 短剧排行榜\r\n- 修复 已知问题\r\n\r\n【近期更新】\r\n- 新增 黄果AI短剧\r\n- 新增 JavDB的\"影片预览\"、\"想看\"和\"看过\"\r\n\r\n⚠️ v2.1.0版本 iOS 包 Bundle ID 已变，旧版本数据可通过导出数据或云备份迁移",
-      "downloadURL": "https://github.com/anonymousjav/AvPlayRelease/releases/download/v2.2.0/AvPlay-2.2.0.ipa",
-      "size": 23751956,
+      "version": "2.2.1",
+      "versionDate": "2026-11-13",
+      "versionDescription": "【最新更新】\r\n- 修复 黄果短剧无法播放的问题\r\n- 修复 部分影片加入“想看、看过、清单”后不显示问题\r\n- 优化 视频播放器进度拖动效果\r\n- 优化 账号注册登录流程\r\n- 修复 macOS窗口拖动漂移问题\r\n- 修复 已知问题\r\n\r\n【近期更新】\r\n- 新增 黄果AI短剧\r\n- 新增 影片预览\r\n\r\n⚠️ iOS Bundle ID 又改了，iOS用户建议使用云备份",
+      "downloadURL": "https://github.com/anonymousjav/AvPlayRelease/releases/download/v2.2.1/AvPlay-2.2.1.ipa",
+      "size": 23879590,
       "minOSVersion": "15.3"
     },
     {
@@ -758,7 +758,7 @@
       "developerName": "ios151",
       "subtitle": "insav 原生 iOS 客户端（成人向）",
       "localizedDescription": "面向成年人的 insav 第三方原生 iOS 客户端（SwiftUI，iOS 16+）。四个站点完整适配，支持浏览、搜索、原生与外部播放器、整部下载离线观看、登录收藏订阅，并可挂载外部字幕库。未签名安装包来自上游 GitHub Release，需自行签名安装。\n\n上游仓库只发布安装包，不含源码。　·　项目主页：https://github.com/ios151/Insav-releases",
-      "iconURL": "https://raw.githubusercontent.com/ios151/Insav-releases/v1.3.0-5/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/ios151/Insav-releases/v1.3.1-6/icon.png",
       "tintColor": "#E11D48",
       "category": "entertainment",
       "appPermissions": {
@@ -770,41 +770,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "1.3.0",
-              "date": "2026-11-10",
-              "publishedAt": "2026-11-10T18:39:00Z",
-              "buildVersion": "5",
-              "buildNumber": "5",
-              "localizedDescription": "1.3.0 (build 5)\n\n- 新增外部字幕：详情页的圆按钮行里多了「字幕」按钮（主站和无码站的片才有，4K 站和动漫站没有番号，没有这个按钮）。点开按番号去外部字幕库搜，选一份马上显示在画面上，可以调同步（提前 / 延后 0.5 秒、5 秒）；选过的字幕下次打开同一部片自动用，不用再搜\n- 下载时会把选好的字幕一起存：离线播放也有字幕；存到「文件」App 的下载，成品旁边还会放一份同名 .srt，Infuse、VLC 这类播放器会自动识别\n- 用 SenPlayer、Lumenic、Infuse 播放时，自动带上选好的字幕（它们读的是原字幕文件，不带这里调的同步）\n- 搜字幕只会把番号发给外部字幕库，别的信息不发；只在打开字幕面板时才搜\n- 其余功能同 1.2.0 (4)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
-              "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.3.0-5/Insav-unsigned.ipa",
-              "size": 1630941,
+              "version": "1.3.1",
+              "date": "2026-11-13",
+              "publishedAt": "2026-11-13T05:33:07Z",
+              "buildVersion": "6",
+              "buildNumber": "6",
+              "localizedDescription": "1.3.1 (build 6)\n\n- 修复无码站打不开：无码站的域名会不定期更换，原来的自动发现方式已经失效，导致一直连不上；现在改成每次从官方的跳转页现取最新域名，换域名也能自动跟上，发现不了时提示里会说清楚卡在哪一步\n- 其余功能同 1.3.0 (5)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
+              "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.3.1-6/Insav-unsigned.ipa",
+              "size": 1634598,
               "minOSVersion": "16.0",
-              "releaseTag": "v1.3.0-5",
-              "source": "https://github.com/ios151/Insav-releases/releases/tag/v1.3.0-5"
+              "releaseTag": "v1.3.1-6",
+              "source": "https://github.com/ios151/Insav-releases/releases/tag/v1.3.1-6"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "1.3.0",
-          "date": "2026-11-10",
-          "publishedAt": "2026-11-10T18:39:00Z",
-          "buildVersion": "5",
-          "buildNumber": "5",
-          "localizedDescription": "1.3.0 (build 5)\n\n- 新增外部字幕：详情页的圆按钮行里多了「字幕」按钮（主站和无码站的片才有，4K 站和动漫站没有番号，没有这个按钮）。点开按番号去外部字幕库搜，选一份马上显示在画面上，可以调同步（提前 / 延后 0.5 秒、5 秒）；选过的字幕下次打开同一部片自动用，不用再搜\n- 下载时会把选好的字幕一起存：离线播放也有字幕；存到「文件」App 的下载，成品旁边还会放一份同名 .srt，Infuse、VLC 这类播放器会自动识别\n- 用 SenPlayer、Lumenic、Infuse 播放时，自动带上选好的字幕（它们读的是原字幕文件，不带这里调的同步）\n- 搜字幕只会把番号发给外部字幕库，别的信息不发；只在打开字幕面板时才搜\n- 其余功能同 1.2.0 (4)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
-          "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.3.0-5/Insav-unsigned.ipa",
-          "size": 1630941,
+          "version": "1.3.1",
+          "date": "2026-11-13",
+          "publishedAt": "2026-11-13T05:33:07Z",
+          "buildVersion": "6",
+          "buildNumber": "6",
+          "localizedDescription": "1.3.1 (build 6)\n\n- 修复无码站打不开：无码站的域名会不定期更换，原来的自动发现方式已经失效，导致一直连不上；现在改成每次从官方的跳转页现取最新域名，换域名也能自动跟上，发现不了时提示里会说清楚卡在哪一步\n- 其余功能同 1.3.0 (5)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
+          "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.3.1-6/Insav-unsigned.ipa",
+          "size": 1634598,
           "minOSVersion": "16.0",
-          "releaseTag": "v1.3.0-5",
-          "source": "https://github.com/ios151/Insav-releases/releases/tag/v1.3.0-5"
+          "releaseTag": "v1.3.1-6",
+          "source": "https://github.com/ios151/Insav-releases/releases/tag/v1.3.1-6"
         }
       ],
-      "version": "1.3.0",
-      "versionDate": "2026-11-10",
-      "versionDescription": "1.3.0 (build 5)\n\n- 新增外部字幕：详情页的圆按钮行里多了「字幕」按钮（主站和无码站的片才有，4K 站和动漫站没有番号，没有这个按钮）。点开按番号去外部字幕库搜，选一份马上显示在画面上，可以调同步（提前 / 延后 0.5 秒、5 秒）；选过的字幕下次打开同一部片自动用，不用再搜\n- 下载时会把选好的字幕一起存：离线播放也有字幕；存到「文件」App 的下载，成品旁边还会放一份同名 .srt，Infuse、VLC 这类播放器会自动识别\n- 用 SenPlayer、Lumenic、Infuse 播放时，自动带上选好的字幕（它们读的是原字幕文件，不带这里调的同步）\n- 搜字幕只会把番号发给外部字幕库，别的信息不发；只在打开字幕面板时才搜\n- 其余功能同 1.2.0 (4)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
-      "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.3.0-5/Insav-unsigned.ipa",
-      "size": 1630941,
+      "version": "1.3.1",
+      "versionDate": "2026-11-13",
+      "versionDescription": "1.3.1 (build 6)\n\n- 修复无码站打不开：无码站的域名会不定期更换，原来的自动发现方式已经失效，导致一直连不上；现在改成每次从官方的跳转页现取最新域名，换域名也能自动跟上，发现不了时提示里会说清楚卡在哪一步\n- 其余功能同 1.3.0 (5)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
+      "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.3.1-6/Insav-unsigned.ipa",
+      "size": 1634598,
       "minOSVersion": "16.0"
     },
     {
@@ -1101,13 +1101,13 @@
           "releases": [
             {
               "version": "0.1.0",
-              "date": "2026-11-12",
-              "publishedAt": "2026-11-12T19:09:07Z",
-              "buildVersion": "76",
-              "buildNumber": "76",
-              "localizedDescription": "🧪 预发布 nightly（2026-11-12）\n\n* Require iOS 26 for the accessibility API\n* Fix network lockdown connections closing without a heartbeat\n* Extend Swiplet icon colors\n* Add the chart and data grid components\n* Remove the guards against bad values from Swiplets\n* Add stream actions and the process API\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the developer service\n* Fix slow detection of unsupported networ…",
+              "date": "2026-11-13",
+              "publishedAt": "2026-11-13T08:59:11Z",
+              "buildVersion": "77",
+              "buildNumber": "77",
+              "localizedDescription": "🧪 预发布 nightly（2026-11-13）\n\n* Remove unsourced and misattributed claims from comments\n* Require iOS 26 for the accessibility API\n* Fix network lockdown connections closing without a heartbeat\n* Extend Swiplet icon colors\n* Add the chart and data grid components\n* Remove the guards against bad values from Swiplets\n* Add stream actions and the process API\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the de…",
               "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-              "size": 48136565,
+              "size": 48135363,
               "minOSVersion": "16.4",
               "releaseTag": "nightly",
               "source": "https://github.com/swipt-automation/swipt/releases/tag/nightly"
@@ -1118,23 +1118,23 @@
       "versions": [
         {
           "version": "0.1.0",
-          "date": "2026-11-12",
-          "publishedAt": "2026-11-12T19:09:07Z",
-          "buildVersion": "76",
-          "buildNumber": "76",
-          "localizedDescription": "🧪 预发布 nightly（2026-11-12）\n\n* Require iOS 26 for the accessibility API\n* Fix network lockdown connections closing without a heartbeat\n* Extend Swiplet icon colors\n* Add the chart and data grid components\n* Remove the guards against bad values from Swiplets\n* Add stream actions and the process API\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the developer service\n* Fix slow detection of unsupported networ…",
+          "date": "2026-11-13",
+          "publishedAt": "2026-11-13T08:59:11Z",
+          "buildVersion": "77",
+          "buildNumber": "77",
+          "localizedDescription": "🧪 预发布 nightly（2026-11-13）\n\n* Remove unsourced and misattributed claims from comments\n* Require iOS 26 for the accessibility API\n* Fix network lockdown connections closing without a heartbeat\n* Extend Swiplet icon colors\n* Add the chart and data grid components\n* Remove the guards against bad values from Swiplets\n* Add stream actions and the process API\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the de…",
           "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-          "size": 48136565,
+          "size": 48135363,
           "minOSVersion": "16.4",
           "releaseTag": "nightly",
           "source": "https://github.com/swipt-automation/swipt/releases/tag/nightly"
         }
       ],
       "version": "0.1.0",
-      "versionDate": "2026-11-12",
-      "versionDescription": "🧪 预发布 nightly（2026-11-12）\n\n* Require iOS 26 for the accessibility API\n* Fix network lockdown connections closing without a heartbeat\n* Extend Swiplet icon colors\n* Add the chart and data grid components\n* Remove the guards against bad values from Swiplets\n* Add stream actions and the process API\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the developer service\n* Fix slow detection of unsupported networ…",
+      "versionDate": "2026-11-13",
+      "versionDescription": "🧪 预发布 nightly（2026-11-13）\n\n* Remove unsourced and misattributed claims from comments\n* Require iOS 26 for the accessibility API\n* Fix network lockdown connections closing without a heartbeat\n* Extend Swiplet icon colors\n* Add the chart and data grid components\n* Remove the guards against bad values from Swiplets\n* Add stream actions and the process API\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the de…",
       "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-      "size": 48136565,
+      "size": 48135363,
       "minOSVersion": "16.4"
     },
     {
@@ -1363,7 +1363,7 @@
       "developerName": "iam567",
       "subtitle": "经典大富翁4重制版（大型安装包）",
       "localizedDescription": "基于 Vite、TypeScript 与 Capacitor 的大富翁4重制版。当前 iOS 安装包约 1.79 GB，请在下载前确认设备有足够空间。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/iam567/rich4-renew-app",
-      "iconURL": "https://raw.githubusercontent.com/iam567/rich4-renew-app/v1.1.0/game/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png",
+      "iconURL": "https://raw.githubusercontent.com/iam567/rich4-renew-app/v1.2.0/game/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png",
       "tintColor": "#E9A83A",
       "category": "games",
       "appPermissions": {
@@ -1375,41 +1375,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "1.1.0",
-              "date": "2026-11-08",
-              "publishedAt": "2026-11-08T08:28:36Z",
-              "buildVersion": "53",
-              "buildNumber": "53",
-              "localizedDescription": "> 1.1 是即时制的大更新，请重新下载安装包（游戏内更新不会升到 1.1）。 直接覆盖安装，存档、设置都会保留；保险起见，可以先在「游戏设置 → 存档备份」导出一份。派对模式只能和同版本的玩家联机，1.0.x 和 1.1 不能进同一个房间。\nv1.1 更新内容\n\n- 全新玩法「即时制」（测试版）：不再轮流等待，所有人同时行动。新游戏画面「回合制／即时制」一键切换；单机是一个人对电脑（练习），派对模式可以和朋友一起玩。只能用原版标准地图；对局时间 20 分钟／15 分钟／无限制，时间到总资产最多的人获胜。\n- 即时制规则：一天 12 秒；每走完一步冷却 2 秒（GO 的位置显示 3、2、1，每个角色有自己的数字和等待动画）；电脑按难度思考（简单 5–6 秒、中等 4–5 秒、困难 3.5–5 秒、地狱 2.5–4 秒）；卡片随时能用（两次之间隔 5 秒）；两个人同时走到一块空地，先到的人有 5 秒优先决定；小游戏直接出结果；每有一个人破产，物价指数翻倍。\n- 即时制的时间限制：轮到你后 30 秒不按 GO 会自动掷骰子，走完后的每个问题（买地、加盖……）也各有 30 秒；道具店、卡片店、魔法屋、彩票、银行里最多停 20 秒。可爱的小秒表显示剩几秒，最后 5 秒会摇晃并「噔噔」响；小秒表可以拖到任何地方（会记住位置），点两下回到原位。\n- 即时制的保护：在道具店、卡片店、魔法屋、彩票、银行里时，头顶显示「购物中」，别人的卡片、魔法、飞弹都打不到你（派对模式也一样）。单机还有「一回合挨打上限」：两次掷骰之间被别人打中，简单最多 1 次、中等最多 2 次（困难、地狱不限），到了就显示…",
-              "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v1.1.0/rich4-1.1.0-unsigned.ipa",
-              "size": 1449643468,
+              "version": "1.2.0",
+              "date": "2026-11-13",
+              "publishedAt": "2026-11-13T04:14:57Z",
+              "buildVersion": "54",
+              "buildNumber": "54",
+              "localizedDescription": "> 1.2 是「自建地图」和「局域网房间」的大更新。 游戏内更新也能升到 1.2（自建地图、创作乐园都能用），但手机要加入局域网房间，必须重新下载 1.2 的安装包。直接覆盖安装，存档、设置都会保留；保险起见，可以先在「游戏设置 → 存档备份」导出一份。派对模式：1.2.x 之间可以互相联机，1.1 和 1.2 不能进同一个房间。\nv1.2 更新内容\n\n- 全新「自建地图」：标题画面第五个按钮。在手机、平板、电脑上都能自己画一张大富翁地图——铺地面（草地、沙滩、海水、雪地……十几种）、画路（八个方向，七种样式）、放格子（银行、医院、监狱、新闻、命运、商店、点券……）、放地块和大型用地、种树、摆建筑和装饰（地标、房屋、植物、人物、车辆、小物分类挑选），横屏竖屏都能编辑。\n- 自建地图的工具：「微调」可以拖动地块和建筑、转方向、调大小，拖动路上的格子时路会跟着弯，地块也跟着走；放地块时地图上会用绿色标出能放的位置；「随机创建」一键生成海岛、城市、沙漠、雪地、乡村主题的地图；「检查」会列出每一个问题并在地图上圈出位置，点一下就跳过去。\n- 自建地图还能改股票名字（从八套原版股票里选一套当底）、挑新闻和命运卡（卡库里有原版、五座城市和新做的共 200 张）、打开「特殊规则」（没有神仙、没有礼物宝箱、不能炒股、道具店不营业、周末银行不开门、银行不贷款、没有黑市）。\n- 自建地图的「试玩」：起始 10 万元、0 点券，可以加减电脑（1～3 个）、有更快的试玩速度、随时结束试玩、不能存档；试玩时有一个人破产，这张地图就算通过，可以发布。\n- 新增「创作乐园」：把试玩通过的地图发布出去，大家都…",
+              "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v1.2.0/rich4-1.2.0-unsigned.ipa",
+              "size": 1445698792,
               "minOSVersion": "15.0",
-              "releaseTag": "v1.1.0",
-              "source": "https://github.com/iam567/rich4-renew-app/releases/tag/v1.1.0"
+              "releaseTag": "v1.2.0",
+              "source": "https://github.com/iam567/rich4-renew-app/releases/tag/v1.2.0"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "1.1.0",
-          "date": "2026-11-08",
-          "publishedAt": "2026-11-08T08:28:36Z",
-          "buildVersion": "53",
-          "buildNumber": "53",
-          "localizedDescription": "> 1.1 是即时制的大更新，请重新下载安装包（游戏内更新不会升到 1.1）。 直接覆盖安装，存档、设置都会保留；保险起见，可以先在「游戏设置 → 存档备份」导出一份。派对模式只能和同版本的玩家联机，1.0.x 和 1.1 不能进同一个房间。\nv1.1 更新内容\n\n- 全新玩法「即时制」（测试版）：不再轮流等待，所有人同时行动。新游戏画面「回合制／即时制」一键切换；单机是一个人对电脑（练习），派对模式可以和朋友一起玩。只能用原版标准地图；对局时间 20 分钟／15 分钟／无限制，时间到总资产最多的人获胜。\n- 即时制规则：一天 12 秒；每走完一步冷却 2 秒（GO 的位置显示 3、2、1，每个角色有自己的数字和等待动画）；电脑按难度思考（简单 5–6 秒、中等 4–5 秒、困难 3.5–5 秒、地狱 2.5–4 秒）；卡片随时能用（两次之间隔 5 秒）；两个人同时走到一块空地，先到的人有 5 秒优先决定；小游戏直接出结果；每有一个人破产，物价指数翻倍。\n- 即时制的时间限制：轮到你后 30 秒不按 GO 会自动掷骰子，走完后的每个问题（买地、加盖……）也各有 30 秒；道具店、卡片店、魔法屋、彩票、银行里最多停 20 秒。可爱的小秒表显示剩几秒，最后 5 秒会摇晃并「噔噔」响；小秒表可以拖到任何地方（会记住位置），点两下回到原位。\n- 即时制的保护：在道具店、卡片店、魔法屋、彩票、银行里时，头顶显示「购物中」，别人的卡片、魔法、飞弹都打不到你（派对模式也一样）。单机还有「一回合挨打上限」：两次掷骰之间被别人打中，简单最多 1 次、中等最多 2 次（困难、地狱不限），到了就显示…",
-          "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v1.1.0/rich4-1.1.0-unsigned.ipa",
-          "size": 1449643468,
+          "version": "1.2.0",
+          "date": "2026-11-13",
+          "publishedAt": "2026-11-13T04:14:57Z",
+          "buildVersion": "54",
+          "buildNumber": "54",
+          "localizedDescription": "> 1.2 是「自建地图」和「局域网房间」的大更新。 游戏内更新也能升到 1.2（自建地图、创作乐园都能用），但手机要加入局域网房间，必须重新下载 1.2 的安装包。直接覆盖安装，存档、设置都会保留；保险起见，可以先在「游戏设置 → 存档备份」导出一份。派对模式：1.2.x 之间可以互相联机，1.1 和 1.2 不能进同一个房间。\nv1.2 更新内容\n\n- 全新「自建地图」：标题画面第五个按钮。在手机、平板、电脑上都能自己画一张大富翁地图——铺地面（草地、沙滩、海水、雪地……十几种）、画路（八个方向，七种样式）、放格子（银行、医院、监狱、新闻、命运、商店、点券……）、放地块和大型用地、种树、摆建筑和装饰（地标、房屋、植物、人物、车辆、小物分类挑选），横屏竖屏都能编辑。\n- 自建地图的工具：「微调」可以拖动地块和建筑、转方向、调大小，拖动路上的格子时路会跟着弯，地块也跟着走；放地块时地图上会用绿色标出能放的位置；「随机创建」一键生成海岛、城市、沙漠、雪地、乡村主题的地图；「检查」会列出每一个问题并在地图上圈出位置，点一下就跳过去。\n- 自建地图还能改股票名字（从八套原版股票里选一套当底）、挑新闻和命运卡（卡库里有原版、五座城市和新做的共 200 张）、打开「特殊规则」（没有神仙、没有礼物宝箱、不能炒股、道具店不营业、周末银行不开门、银行不贷款、没有黑市）。\n- 自建地图的「试玩」：起始 10 万元、0 点券，可以加减电脑（1～3 个）、有更快的试玩速度、随时结束试玩、不能存档；试玩时有一个人破产，这张地图就算通过，可以发布。\n- 新增「创作乐园」：把试玩通过的地图发布出去，大家都…",
+          "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v1.2.0/rich4-1.2.0-unsigned.ipa",
+          "size": 1445698792,
           "minOSVersion": "15.0",
-          "releaseTag": "v1.1.0",
-          "source": "https://github.com/iam567/rich4-renew-app/releases/tag/v1.1.0"
+          "releaseTag": "v1.2.0",
+          "source": "https://github.com/iam567/rich4-renew-app/releases/tag/v1.2.0"
         }
       ],
-      "version": "1.1.0",
-      "versionDate": "2026-11-08",
-      "versionDescription": "> 1.1 是即时制的大更新，请重新下载安装包（游戏内更新不会升到 1.1）。 直接覆盖安装，存档、设置都会保留；保险起见，可以先在「游戏设置 → 存档备份」导出一份。派对模式只能和同版本的玩家联机，1.0.x 和 1.1 不能进同一个房间。\nv1.1 更新内容\n\n- 全新玩法「即时制」（测试版）：不再轮流等待，所有人同时行动。新游戏画面「回合制／即时制」一键切换；单机是一个人对电脑（练习），派对模式可以和朋友一起玩。只能用原版标准地图；对局时间 20 分钟／15 分钟／无限制，时间到总资产最多的人获胜。\n- 即时制规则：一天 12 秒；每走完一步冷却 2 秒（GO 的位置显示 3、2、1，每个角色有自己的数字和等待动画）；电脑按难度思考（简单 5–6 秒、中等 4–5 秒、困难 3.5–5 秒、地狱 2.5–4 秒）；卡片随时能用（两次之间隔 5 秒）；两个人同时走到一块空地，先到的人有 5 秒优先决定；小游戏直接出结果；每有一个人破产，物价指数翻倍。\n- 即时制的时间限制：轮到你后 30 秒不按 GO 会自动掷骰子，走完后的每个问题（买地、加盖……）也各有 30 秒；道具店、卡片店、魔法屋、彩票、银行里最多停 20 秒。可爱的小秒表显示剩几秒，最后 5 秒会摇晃并「噔噔」响；小秒表可以拖到任何地方（会记住位置），点两下回到原位。\n- 即时制的保护：在道具店、卡片店、魔法屋、彩票、银行里时，头顶显示「购物中」，别人的卡片、魔法、飞弹都打不到你（派对模式也一样）。单机还有「一回合挨打上限」：两次掷骰之间被别人打中，简单最多 1 次、中等最多 2 次（困难、地狱不限），到了就显示…",
-      "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v1.1.0/rich4-1.1.0-unsigned.ipa",
-      "size": 1449643468,
+      "version": "1.2.0",
+      "versionDate": "2026-11-13",
+      "versionDescription": "> 1.2 是「自建地图」和「局域网房间」的大更新。 游戏内更新也能升到 1.2（自建地图、创作乐园都能用），但手机要加入局域网房间，必须重新下载 1.2 的安装包。直接覆盖安装，存档、设置都会保留；保险起见，可以先在「游戏设置 → 存档备份」导出一份。派对模式：1.2.x 之间可以互相联机，1.1 和 1.2 不能进同一个房间。\nv1.2 更新内容\n\n- 全新「自建地图」：标题画面第五个按钮。在手机、平板、电脑上都能自己画一张大富翁地图——铺地面（草地、沙滩、海水、雪地……十几种）、画路（八个方向，七种样式）、放格子（银行、医院、监狱、新闻、命运、商店、点券……）、放地块和大型用地、种树、摆建筑和装饰（地标、房屋、植物、人物、车辆、小物分类挑选），横屏竖屏都能编辑。\n- 自建地图的工具：「微调」可以拖动地块和建筑、转方向、调大小，拖动路上的格子时路会跟着弯，地块也跟着走；放地块时地图上会用绿色标出能放的位置；「随机创建」一键生成海岛、城市、沙漠、雪地、乡村主题的地图；「检查」会列出每一个问题并在地图上圈出位置，点一下就跳过去。\n- 自建地图还能改股票名字（从八套原版股票里选一套当底）、挑新闻和命运卡（卡库里有原版、五座城市和新做的共 200 张）、打开「特殊规则」（没有神仙、没有礼物宝箱、不能炒股、道具店不营业、周末银行不开门、银行不贷款、没有黑市）。\n- 自建地图的「试玩」：起始 10 万元、0 点券，可以加减电脑（1～3 个）、有更快的试玩速度、随时结束试玩、不能存档；试玩时有一个人破产，这张地图就算通过，可以发布。\n- 新增「创作乐园」：把试玩通过的地图发布出去，大家都…",
+      "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v1.2.0/rich4-1.2.0-unsigned.ipa",
+      "size": 1445698792,
       "minOSVersion": "15.0"
     },
     {
@@ -1477,7 +1477,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 26 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-11-12",
+      "date": "2026-11-13",
       "tintColor": "#7C5CFF",
       "notify": false
     }
