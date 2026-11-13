@@ -1956,15 +1956,15 @@
   "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa": {
     "bundleIdentifier": "io.nekohasekai.swipt",
     "version": "0.1.0",
-    "buildVersion": "77",
+    "buildVersion": "82",
     "displayName": "Swipt",
     "minOSVersion": "16.4",
-    "size": 48135363,
+    "size": 48174029,
     "assetIdentity": {
-      "id": 742976541,
-      "updated_at": "2026-11-13T08:59:09Z",
-      "size": 48135363,
-      "digest": "sha256:f605ef9fa127b51f9fd4bcb6094a68ff855aa7ddce601e038f5aed5b52fca18f"
+      "id": 744489234,
+      "updated_at": "2026-11-13T17:15:23Z",
+      "size": 48174029,
+      "digest": "sha256:1f9e398fb9bbb5914e9ad649ea837dd479ab73b96d96a836fc89fa634a4bc179"
     }
   },
   "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.2/ARMSX3-0.0.2.ipa": {
@@ -2203,6 +2203,48 @@
       "updated_at": "2026-11-13T04:00:41Z",
       "size": 1445698792,
       "digest": "sha256:b3a76f5e5c092da6134bd39ff74ffb05ebcac876ba15ac48122ae3b500cbf58a"
+    }
+  },
+  "https://github.com/anonymousjav/AvPlayRelease/releases/download/v2.2.2/AvPlay-2.2.2.ipa": {
+    "bundleIdentifier": "com.javdb.avplay2",
+    "version": "2.2.2",
+    "buildVersion": "2020201",
+    "displayName": "AvPlay",
+    "minOSVersion": "15.3",
+    "size": 23878716,
+    "assetIdentity": {
+      "id": 743697469,
+      "updated_at": "2026-11-13T13:07:27Z",
+      "size": 23878716,
+      "digest": "sha256:be249a5d07c2830dcfdf258c4cc037d14ed4048841f5202ae57ad60a7398811e"
+    }
+  },
+  "https://github.com/huamidev/GestaltX/releases/download/v1.1.1/GestaltX_1.1.1.ipa": {
+    "bundleIdentifier": "com.huami.gestultx",
+    "version": "1.1.1",
+    "buildVersion": "11140102",
+    "displayName": "GestaltX",
+    "minOSVersion": "26.0",
+    "size": 6774794,
+    "assetIdentity": {
+      "id": 744397028,
+      "updated_at": "2026-11-13T16:46:07Z",
+      "size": 6774794,
+      "digest": "sha256:0621b070cafacb2f1f83fad459697d02263e513b04d77b462da333c5b0a4e708"
+    }
+  },
+  "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.10-110/zhenguojian-1.0.10%2B110-ios-unsigned.ipa": {
+    "bundleIdentifier": "com.yingshib.xg",
+    "version": "1.0.10",
+    "buildVersion": "110",
+    "displayName": "XiaoGuoYingShi",
+    "minOSVersion": "15.1",
+    "size": 30894930,
+    "assetIdentity": {
+      "id": 744159761,
+      "updated_at": "2026-11-13T15:32:51Z",
+      "size": 30894930,
+      "digest": "sha256:07a578204b4cff1ab02c9cffdefb75280acbd2e37052ee4e9962c5052ee44e2b"
     }
   }
 }
