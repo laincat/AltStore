@@ -2302,5 +2302,19 @@
       "size": 40717380,
       "digest": "sha256:d278d980f9b8b25610e48ce3b27eefa55e35c5786ab7946f973bc49acfb74ca0"
     }
+  },
+  "https://github.com/ccbkv/PicaComic/releases/download/5.1.0/PicaComic-5.1.0-app-ios-build_no_sign.ipa": {
+    "bundleIdentifier": "com.github.pacalini.picaComic",
+    "version": "5.1.0",
+    "buildVersion": "46205",
+    "displayName": "Pica Comic",
+    "minOSVersion": "15.1",
+    "size": 31707512,
+    "assetIdentity": {
+      "id": 748642186,
+      "updated_at": "2026-11-14T20:10:20Z",
+      "size": 31707512,
+      "digest": "sha256:5bfc9949cd5a56ffe2a3f842b61dde4878af353f69464aa135318cf778d8b818"
+    }
   }
 }

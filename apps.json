@@ -978,7 +978,7 @@
       "developerName": "ccbkv",
       "subtitle": "多源漫画阅读器（Pica Comic 分支）",
       "localizedDescription": "Flutter 编写的多源漫画阅读器，源自 wgh136/PicaComic（上游已归档），由 nyne 继续维护。内置 picacg、E-Hentai、JM、hitomi、nhentai 等漫画源，支持在线阅读、离线下载、本地与网络收藏、阅读历史以及 WebDAV 数据同步。此处为未签名 iOS 构建，需自行签名安装。\n\n开源协议：MIT　·　项目主页：https://github.com/ccbkv/PicaComic",
-      "iconURL": "https://raw.githubusercontent.com/ccbkv/PicaComic/5.0.7/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
+      "iconURL": "https://raw.githubusercontent.com/ccbkv/PicaComic/5.1.0/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
       "tintColor": "#F2683C",
       "category": "books",
       "appPermissions": {
@@ -990,41 +990,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "5.0.7",
-              "date": "2026-11-10",
-              "publishedAt": "2026-11-10T17:50:10Z",
-              "buildVersion": "46203",
-              "buildNumber": "46203",
-              "localizedDescription": "5.0.7 (2026-11-10)\r\n更新说明\r\n- 修复下载页排序模式- 优化app无响应,优化导致卡死的bug\r\n- 修改翻页，现改为翻页到下一章，翻回去会从上一章尾页开始\r\n- 修复eh订阅\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n安装&更新\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\nFull Changelog: https://github.com/ccbkv/PicaComic/compare/5.0.6...5.0.7",
-              "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.0.7/PicaComic-5.0.7-app-ios-build_no_sign.ipa",
-              "size": 31853008,
+              "version": "5.1.0",
+              "date": "2026-11-14",
+              "publishedAt": "2026-11-14T20:10:28Z",
+              "buildVersion": "46205",
+              "buildNumber": "46205",
+              "localizedDescription": "5.1.0 (2026-11-14)\r\n更新说明\r\n- 优化修复后台下载\r\n-  修复导出所有数据\r\n- 修复特定 soc 开启ai翻译后闪退, \r\n- 修复hitomi本地收藏 \r\n- 修复ios 27\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n安装&更新\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\n\r\nFull Changelog: https://github.com/ccbkv/PicaComic/compare/5.0.7...5.1.0",
+              "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.1.0/PicaComic-5.1.0-app-ios-build_no_sign.ipa",
+              "size": 31707512,
               "minOSVersion": "15.1",
-              "releaseTag": "5.0.7",
-              "source": "https://github.com/ccbkv/PicaComic/releases/tag/5.0.7"
+              "releaseTag": "5.1.0",
+              "source": "https://github.com/ccbkv/PicaComic/releases/tag/5.1.0"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "5.0.7",
-          "date": "2026-11-10",
-          "publishedAt": "2026-11-10T17:50:10Z",
-          "buildVersion": "46203",
-          "buildNumber": "46203",
-          "localizedDescription": "5.0.7 (2026-11-10)\r\n更新说明\r\n- 修复下载页排序模式- 优化app无响应,优化导致卡死的bug\r\n- 修改翻页，现改为翻页到下一章，翻回去会从上一章尾页开始\r\n- 修复eh订阅\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n安装&更新\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\nFull Changelog: https://github.com/ccbkv/PicaComic/compare/5.0.6...5.0.7",
-          "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.0.7/PicaComic-5.0.7-app-ios-build_no_sign.ipa",
-          "size": 31853008,
+          "version": "5.1.0",
+          "date": "2026-11-14",
+          "publishedAt": "2026-11-14T20:10:28Z",
+          "buildVersion": "46205",
+          "buildNumber": "46205",
+          "localizedDescription": "5.1.0 (2026-11-14)\r\n更新说明\r\n- 优化修复后台下载\r\n-  修复导出所有数据\r\n- 修复特定 soc 开启ai翻译后闪退, \r\n- 修复hitomi本地收藏 \r\n- 修复ios 27\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n安装&更新\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\n\r\nFull Changelog: https://github.com/ccbkv/PicaComic/compare/5.0.7...5.1.0",
+          "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.1.0/PicaComic-5.1.0-app-ios-build_no_sign.ipa",
+          "size": 31707512,
           "minOSVersion": "15.1",
-          "releaseTag": "5.0.7",
-          "source": "https://github.com/ccbkv/PicaComic/releases/tag/5.0.7"
+          "releaseTag": "5.1.0",
+          "source": "https://github.com/ccbkv/PicaComic/releases/tag/5.1.0"
         }
       ],
-      "version": "5.0.7",
-      "versionDate": "2026-11-10",
-      "versionDescription": "5.0.7 (2026-11-10)\r\n更新说明\r\n- 修复下载页排序模式- 优化app无响应,优化导致卡死的bug\r\n- 修改翻页，现改为翻页到下一章，翻回去会从上一章尾页开始\r\n- 修复eh订阅\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n安装&更新\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\nFull Changelog: https://github.com/ccbkv/PicaComic/compare/5.0.6...5.0.7",
-      "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.0.7/PicaComic-5.0.7-app-ios-build_no_sign.ipa",
-      "size": 31853008,
+      "version": "5.1.0",
+      "versionDate": "2026-11-14",
+      "versionDescription": "5.1.0 (2026-11-14)\r\n更新说明\r\n- 优化修复后台下载\r\n-  修复导出所有数据\r\n- 修复特定 soc 开启ai翻译后闪退, \r\n- 修复hitomi本地收藏 \r\n- 修复ios 27\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n安装&更新\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\n\r\nFull Changelog: https://github.com/ccbkv/PicaComic/compare/5.0.7...5.1.0",
+      "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.1.0/PicaComic-5.1.0-app-ios-build_no_sign.ipa",
+      "size": 31707512,
       "minOSVersion": "15.1"
     },
     {
