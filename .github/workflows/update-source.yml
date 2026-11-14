@@ -60,10 +60,10 @@
 name: 更新 SideStore 源
 
 on:
-  # 每 15 分钟一次，刻意错开整点（7/22/37/52 分）。
+  # 每小时一次，在每小时第 7 分钟运行。
   # Actions 的 cron 按 UTC 解释；轮询场景下时区无意义。
   schedule:
-    - cron: "7,22,37,52 * * * *"
+    - cron: "7 * * * *"
 
   # 手动触发（改了脚本或想立刻刷新时用）
   workflow_dispatch:
@@ -183,7 +183,7 @@ jobs:
           TAG="latest"
 
           # ── 为什么是「固定 tag + 滚动覆盖」，而不是「一次内容一个 tag」──────
-          # 本流水线每 15 分钟跑一轮。若每轮都建 tag/release，就是一天 96 个、
+          # 本流水线每小时跑一轮。若每轮都建 tag/release，就是一天 96 个、
           # 一周 672 个 —— 另一个仓库踩过同款坑：tag 用构建时间戳，一次清掉
           # 1409 个。这里 tag 名永远叫 latest，只覆盖它下面的 asset，于是：
           #   · URL 永久稳定：/releases/download/latest/apps.json
