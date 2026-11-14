@@ -1101,13 +1101,13 @@
           "releases": [
             {
               "version": "0.1.0",
-              "date": "2026-11-13",
-              "publishedAt": "2026-11-13T17:15:25Z",
-              "buildVersion": "82",
-              "buildNumber": "82",
-              "localizedDescription": "🧪 预发布 nightly（2026-11-13）\n\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack options for ZIP archives\n* Replace the hand-written ZIP code of the CLI with fflate\n* Simplify screen streaming and recording\n* Share one atomic file write\n* Fix mDNS browsing and name conflict handling\n* Simplify the JavaScriptCore adapter\n* Add swipt driver to serve a device from the computer\n* Build the Linux and Windows driver with the WebKit of a Bun release\n* Port the driver and the CLI to Li…",
+              "date": "2026-11-14",
+              "publishedAt": "2026-11-14T04:28:34Z",
+              "buildVersion": "83",
+              "buildNumber": "83",
+              "localizedDescription": "🧪 预发布 nightly（2026-11-14）\n\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack options for ZIP archives\n* Replace the hand-written ZIP code of the CLI with fflate\n* Simplify screen streaming and recording\n* Share one atomic file write\n* Fix mDNS browsing and name conflict handling\n* Simplify the JavaScriptCore adapter\n* Add swipt driver to serve a device from the computer\n* Build the Linux and Windows driver with the WebKit of a Bu…",
               "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-              "size": 48174029,
+              "size": 48174010,
               "minOSVersion": "16.4",
               "releaseTag": "nightly",
               "source": "https://github.com/swipt-automation/swipt/releases/tag/nightly"
@@ -1118,23 +1118,23 @@
       "versions": [
         {
           "version": "0.1.0",
-          "date": "2026-11-13",
-          "publishedAt": "2026-11-13T17:15:25Z",
-          "buildVersion": "82",
-          "buildNumber": "82",
-          "localizedDescription": "🧪 预发布 nightly（2026-11-13）\n\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack options for ZIP archives\n* Replace the hand-written ZIP code of the CLI with fflate\n* Simplify screen streaming and recording\n* Share one atomic file write\n* Fix mDNS browsing and name conflict handling\n* Simplify the JavaScriptCore adapter\n* Add swipt driver to serve a device from the computer\n* Build the Linux and Windows driver with the WebKit of a Bun release\n* Port the driver and the CLI to Li…",
+          "date": "2026-11-14",
+          "publishedAt": "2026-11-14T04:28:34Z",
+          "buildVersion": "83",
+          "buildNumber": "83",
+          "localizedDescription": "🧪 预发布 nightly（2026-11-14）\n\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack options for ZIP archives\n* Replace the hand-written ZIP code of the CLI with fflate\n* Simplify screen streaming and recording\n* Share one atomic file write\n* Fix mDNS browsing and name conflict handling\n* Simplify the JavaScriptCore adapter\n* Add swipt driver to serve a device from the computer\n* Build the Linux and Windows driver with the WebKit of a Bu…",
           "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-          "size": 48174029,
+          "size": 48174010,
           "minOSVersion": "16.4",
           "releaseTag": "nightly",
           "source": "https://github.com/swipt-automation/swipt/releases/tag/nightly"
         }
       ],
       "version": "0.1.0",
-      "versionDate": "2026-11-13",
-      "versionDescription": "🧪 预发布 nightly（2026-11-13）\n\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack options for ZIP archives\n* Replace the hand-written ZIP code of the CLI with fflate\n* Simplify screen streaming and recording\n* Share one atomic file write\n* Fix mDNS browsing and name conflict handling\n* Simplify the JavaScriptCore adapter\n* Add swipt driver to serve a device from the computer\n* Build the Linux and Windows driver with the WebKit of a Bun release\n* Port the driver and the CLI to Li…",
+      "versionDate": "2026-11-14",
+      "versionDescription": "🧪 预发布 nightly（2026-11-14）\n\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack options for ZIP archives\n* Replace the hand-written ZIP code of the CLI with fflate\n* Simplify screen streaming and recording\n* Share one atomic file write\n* Fix mDNS browsing and name conflict handling\n* Simplify the JavaScriptCore adapter\n* Add swipt driver to serve a device from the computer\n* Build the Linux and Windows driver with the WebKit of a Bu…",
       "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-      "size": 48174029,
+      "size": 48174010,
       "minOSVersion": "16.4"
     },
     {
@@ -1418,7 +1418,7 @@
       "developerName": "Xanerix",
       "subtitle": "支持多站源的短剧与影视客户端",
       "localizedDescription": "Flutter 多平台短剧与影视客户端，包含全部站源，可在设置中逐个开关。支持追剧、观看记录、多用户、本地下载与备份。此处收录真果鉴全站源版；自 1.0.3 起使用独立 Bundle ID com.guoapp.all，可与仅含红果站源的红果鉴同时安装。旧包名版本不能覆盖升级，原有设置、追剧和下载记录不会自动迁移。\n\n安装包由上游发布，需自行签名安装。站源可用性取决于源站及网络；应用不解除源站 VIP 或其他授权限制。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Xanerix/guoapp",
-      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v1.0.10-110/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v1.0.11-111/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#E97642",
       "category": "entertainment",
       "appPermissions": {
@@ -1430,41 +1430,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "1.0.10",
-              "date": "2026-11-13",
-              "publishedAt": "2026-11-13T15:32:56Z",
-              "buildVersion": "110",
-              "buildNumber": "110",
-              "localizedDescription": "更新内容：\n\n- 新增投屏（#120）：手机在 播放设置 › 投屏，平板和电脑点播放条的投屏按钮，搜索同一 Wi-Fi 下支持 DLNA 的电视或盒子，从当前进度接着播这一集。投屏页可暂停、拖动进度、切换上下集，播完自动下一集并记录观看进度；结束投屏后本机回到电视播到的位置。视频要经本机转给电视，安卓可以切到后台或熄屏，但不能划掉应用；已下载的剧集投屏时改用在线地址；iOS 暂不支持；Windows 首次投屏时系统防火墙可能询问是否允许联网，需要允许。\n- 红果、红果听书的加密视频也能投屏：由本机边转边解密，电视收到的是普通 MP4。红果部分清晰度是 H.265，听书的音频是 Opus，电视不支持这些编码时放不出来。\n- 弹幕设置新增「滚动速度」（#115）：0.5x 到 2.0x 可调，默认 1.0x，调慢后同屏弹幕停留更久。\n- 竖屏播放页按住画面右侧 1/5 也能 2 倍速播放（#130），和左侧对称；按住后下滑超过屏幕高度 1/3 再松手即可锁定或取消锁定，不必滑到底部。\n- 导出到 Movies 的分集文件名带上剧名（#121），如「剧名 第07集.mp4」，和合并视频的命名一致；之前导出的「第07集.mp4」不会改名，再次导出同一集会多出一份。\n- 修复发现页横幅的「继续第 N 集」「立即观看」按钮只打开详情页（#132）：现在直接进入播放页，从上次看到的位置继续，加载剧集时显示黑底加载圈；返回后停在详情页。\n- 修复电视详情页有「系列多季」时，选集最左、最右一列的焦点框被切掉一边。\n- 电脑上详情页的「系列多季」改为一条入口：显示共几季和当前所在的季，点击后在下方…",
-              "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.10-110/zhenguojian-1.0.10%2B110-ios-unsigned.ipa",
-              "size": 30894930,
+              "version": "1.0.11",
+              "date": "2026-11-14",
+              "publishedAt": "2026-11-14T05:45:45Z",
+              "buildVersion": "111",
+              "buildNumber": "111",
+              "localizedDescription": "更新内容：\nJS 迁移通知\n\n站源将改为可自行安装和卸载的 JS 模块，之后的版本不再内置站源。迁移期间不对用户数据做担保，数据可能在版本更新时丢失，请提前导出备份。\n更新内容\n\n- 封面、剧库和榜单缓存移到各平台专用的缓存目录（Windows 为 %LOCALAPPDATA%\\<包名>，便携版为 userdata\\cache），升级后自动迁移；Android 上系统「清除缓存」可释放这部分空间，设置、记录、下载和红果设备不受影响。\n- Windows 安装包卸载时总是删除缓存目录。\n- MissAV 的请求改用浏览器指纹，减少被站点要求浏览器验证而报 HTTP 403 的情况（开发快照，需在出现该报错的网络上实测）。\n\n版本 1.0.11+111。两个版本功能相同，区别只在站源范围，按需选择：\n\n- 红果鉴 hongguojian：仅红果站源\n- 小果影视 zhenguojian：全部站源\n\nAndroid：\n- *-arm64-v8a.apk：适用于较新的安卓设备\n- *-armeabi-v7a.apk：适用于较老的安卓设备，电视推荐使用此版本\n- *-x86_64.apk：适用于模拟器\n\niOS：\n- *-ios-unsigned.ipa：未签名 IPA，可用相关工具安装\n\nWindows：\n- *-windows-x64-setup.exe：安装包，默认安装到当前用户，无需管理员权限；安装时可改为所有用户\n- *-windows-x64.zip：便携版，解压后运行 hongguojian.exe 或 zhenguojian.exe；设置、记录、海报缓存和默认下载都保存在…",
+              "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.11-111/zhenguojian-1.0.11%2B111-ios-unsigned.ipa",
+              "size": 30898911,
               "minOSVersion": "15.1",
-              "releaseTag": "app-v1.0.10-110",
-              "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.10-110"
+              "releaseTag": "app-v1.0.11-111",
+              "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.11-111"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "1.0.10",
-          "date": "2026-11-13",
-          "publishedAt": "2026-11-13T15:32:56Z",
-          "buildVersion": "110",
-          "buildNumber": "110",
-          "localizedDescription": "更新内容：\n\n- 新增投屏（#120）：手机在 播放设置 › 投屏，平板和电脑点播放条的投屏按钮，搜索同一 Wi-Fi 下支持 DLNA 的电视或盒子，从当前进度接着播这一集。投屏页可暂停、拖动进度、切换上下集，播完自动下一集并记录观看进度；结束投屏后本机回到电视播到的位置。视频要经本机转给电视，安卓可以切到后台或熄屏，但不能划掉应用；已下载的剧集投屏时改用在线地址；iOS 暂不支持；Windows 首次投屏时系统防火墙可能询问是否允许联网，需要允许。\n- 红果、红果听书的加密视频也能投屏：由本机边转边解密，电视收到的是普通 MP4。红果部分清晰度是 H.265，听书的音频是 Opus，电视不支持这些编码时放不出来。\n- 弹幕设置新增「滚动速度」（#115）：0.5x 到 2.0x 可调，默认 1.0x，调慢后同屏弹幕停留更久。\n- 竖屏播放页按住画面右侧 1/5 也能 2 倍速播放（#130），和左侧对称；按住后下滑超过屏幕高度 1/3 再松手即可锁定或取消锁定，不必滑到底部。\n- 导出到 Movies 的分集文件名带上剧名（#121），如「剧名 第07集.mp4」，和合并视频的命名一致；之前导出的「第07集.mp4」不会改名，再次导出同一集会多出一份。\n- 修复发现页横幅的「继续第 N 集」「立即观看」按钮只打开详情页（#132）：现在直接进入播放页，从上次看到的位置继续，加载剧集时显示黑底加载圈；返回后停在详情页。\n- 修复电视详情页有「系列多季」时，选集最左、最右一列的焦点框被切掉一边。\n- 电脑上详情页的「系列多季」改为一条入口：显示共几季和当前所在的季，点击后在下方…",
-          "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.10-110/zhenguojian-1.0.10%2B110-ios-unsigned.ipa",
-          "size": 30894930,
+          "version": "1.0.11",
+          "date": "2026-11-14",
+          "publishedAt": "2026-11-14T05:45:45Z",
+          "buildVersion": "111",
+          "buildNumber": "111",
+          "localizedDescription": "更新内容：\nJS 迁移通知\n\n站源将改为可自行安装和卸载的 JS 模块，之后的版本不再内置站源。迁移期间不对用户数据做担保，数据可能在版本更新时丢失，请提前导出备份。\n更新内容\n\n- 封面、剧库和榜单缓存移到各平台专用的缓存目录（Windows 为 %LOCALAPPDATA%\\<包名>，便携版为 userdata\\cache），升级后自动迁移；Android 上系统「清除缓存」可释放这部分空间，设置、记录、下载和红果设备不受影响。\n- Windows 安装包卸载时总是删除缓存目录。\n- MissAV 的请求改用浏览器指纹，减少被站点要求浏览器验证而报 HTTP 403 的情况（开发快照，需在出现该报错的网络上实测）。\n\n版本 1.0.11+111。两个版本功能相同，区别只在站源范围，按需选择：\n\n- 红果鉴 hongguojian：仅红果站源\n- 小果影视 zhenguojian：全部站源\n\nAndroid：\n- *-arm64-v8a.apk：适用于较新的安卓设备\n- *-armeabi-v7a.apk：适用于较老的安卓设备，电视推荐使用此版本\n- *-x86_64.apk：适用于模拟器\n\niOS：\n- *-ios-unsigned.ipa：未签名 IPA，可用相关工具安装\n\nWindows：\n- *-windows-x64-setup.exe：安装包，默认安装到当前用户，无需管理员权限；安装时可改为所有用户\n- *-windows-x64.zip：便携版，解压后运行 hongguojian.exe 或 zhenguojian.exe；设置、记录、海报缓存和默认下载都保存在…",
+          "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.11-111/zhenguojian-1.0.11%2B111-ios-unsigned.ipa",
+          "size": 30898911,
           "minOSVersion": "15.1",
-          "releaseTag": "app-v1.0.10-110",
-          "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.10-110"
+          "releaseTag": "app-v1.0.11-111",
+          "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.11-111"
         }
       ],
-      "version": "1.0.10",
-      "versionDate": "2026-11-13",
-      "versionDescription": "更新内容：\n\n- 新增投屏（#120）：手机在 播放设置 › 投屏，平板和电脑点播放条的投屏按钮，搜索同一 Wi-Fi 下支持 DLNA 的电视或盒子，从当前进度接着播这一集。投屏页可暂停、拖动进度、切换上下集，播完自动下一集并记录观看进度；结束投屏后本机回到电视播到的位置。视频要经本机转给电视，安卓可以切到后台或熄屏，但不能划掉应用；已下载的剧集投屏时改用在线地址；iOS 暂不支持；Windows 首次投屏时系统防火墙可能询问是否允许联网，需要允许。\n- 红果、红果听书的加密视频也能投屏：由本机边转边解密，电视收到的是普通 MP4。红果部分清晰度是 H.265，听书的音频是 Opus，电视不支持这些编码时放不出来。\n- 弹幕设置新增「滚动速度」（#115）：0.5x 到 2.0x 可调，默认 1.0x，调慢后同屏弹幕停留更久。\n- 竖屏播放页按住画面右侧 1/5 也能 2 倍速播放（#130），和左侧对称；按住后下滑超过屏幕高度 1/3 再松手即可锁定或取消锁定，不必滑到底部。\n- 导出到 Movies 的分集文件名带上剧名（#121），如「剧名 第07集.mp4」，和合并视频的命名一致；之前导出的「第07集.mp4」不会改名，再次导出同一集会多出一份。\n- 修复发现页横幅的「继续第 N 集」「立即观看」按钮只打开详情页（#132）：现在直接进入播放页，从上次看到的位置继续，加载剧集时显示黑底加载圈；返回后停在详情页。\n- 修复电视详情页有「系列多季」时，选集最左、最右一列的焦点框被切掉一边。\n- 电脑上详情页的「系列多季」改为一条入口：显示共几季和当前所在的季，点击后在下方…",
-      "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.10-110/zhenguojian-1.0.10%2B110-ios-unsigned.ipa",
-      "size": 30894930,
+      "version": "1.0.11",
+      "versionDate": "2026-11-14",
+      "versionDescription": "更新内容：\nJS 迁移通知\n\n站源将改为可自行安装和卸载的 JS 模块，之后的版本不再内置站源。迁移期间不对用户数据做担保，数据可能在版本更新时丢失，请提前导出备份。\n更新内容\n\n- 封面、剧库和榜单缓存移到各平台专用的缓存目录（Windows 为 %LOCALAPPDATA%\\<包名>，便携版为 userdata\\cache），升级后自动迁移；Android 上系统「清除缓存」可释放这部分空间，设置、记录、下载和红果设备不受影响。\n- Windows 安装包卸载时总是删除缓存目录。\n- MissAV 的请求改用浏览器指纹，减少被站点要求浏览器验证而报 HTTP 403 的情况（开发快照，需在出现该报错的网络上实测）。\n\n版本 1.0.11+111。两个版本功能相同，区别只在站源范围，按需选择：\n\n- 红果鉴 hongguojian：仅红果站源\n- 小果影视 zhenguojian：全部站源\n\nAndroid：\n- *-arm64-v8a.apk：适用于较新的安卓设备\n- *-armeabi-v7a.apk：适用于较老的安卓设备，电视推荐使用此版本\n- *-x86_64.apk：适用于模拟器\n\niOS：\n- *-ios-unsigned.ipa：未签名 IPA，可用相关工具安装\n\nWindows：\n- *-windows-x64-setup.exe：安装包，默认安装到当前用户，无需管理员权限；安装时可改为所有用户\n- *-windows-x64.zip：便携版，解压后运行 hongguojian.exe 或 zhenguojian.exe；设置、记录、海报缓存和默认下载都保存在…",
+      "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.11-111/zhenguojian-1.0.11%2B111-ios-unsigned.ipa",
+      "size": 30898911,
       "minOSVersion": "15.1"
     }
   ],
@@ -1477,7 +1477,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 26 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-11-13",
+      "date": "2026-11-14",
       "tintColor": "#7C5CFF",
       "notify": false
     }

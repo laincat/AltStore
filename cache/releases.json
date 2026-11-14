@@ -1474,6 +1474,33 @@
   ],
   "Xanerix/guoapp": [
     {
+      "tag": "app-v1.0.11-111",
+      "name": "红果鉴 / 小果影视 1.0.11+111",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-14",
+      "published_at": "2026-11-14T05:45:45Z",
+      "body": "更新内容：\n\n### JS 迁移通知\n\n站源将改为可自行安装和卸载的 JS 模块，之后的版本不再内置站源。迁移期间不对用户数据做担保，数据可能在版本更新时丢失，请提前导出备份。\n\n### 更新内容\n\n- 封面、剧库和榜单缓存移到各平台专用的缓存目录（Windows 为 `%LOCALAPPDATA%\\<包名>`，便携版为 `userdata\\cache`），升级后自动迁移；Android 上系统「清除缓存」可释放这部分空间，设置、记录、下载和红果设备不受影响。\n- Windows 安装包卸载时总是删除缓存目录。\n- MissAV 的请求改用浏览器指纹，减少被站点要求浏览器验证而报 HTTP 403 的情况（开发快照，需在出现该报错的网络上实测）。\n\n版本 1.0.11+111。两个版本功能相同，区别只在站源范围，按需选择：\n\n- 红果鉴 hongguojian：仅红果站源\n- 小果影视 zhenguojian：全部站源\n\nAndroid：\n- *-arm64-v8a.apk：适用于较新的安卓设备\n- *-armeabi-v7a.apk：适用于较老的安卓设备，电视推荐使用此版本\n- *-x86_64.apk：适用于模拟器\n\niOS：\n- *-ios-unsigned.ipa：未签名 IPA，可用相关工具安装\n\nWindows：\n- *-windows-x64-setup.exe：安装包，默认安装到当前用户，无需管理员权限；安装时可改为所有用户\n- *-windows-x64.zip：便携版，解压后运行 hongguojian.exe 或 zhenguojian.exe；设置、记录、海报缓存和默认下载都保存在程序旁的 userdata 目录，升级时把旧版的 userdata 目录复制过来即可\n\nmacOS：\n- *-macos-universal.dmg：适用于 macOS 12 及以上的 Apple 芯片和 Intel 电脑，打开后拖入 Applications；未经公证，首次打开前在终端执行 xattr -dr com.apple.quarantine /Applications/红果鉴.app（小果影视为 小果影视.app）\n\n签名证书 SHA-256：\n- 红果鉴：f819175143d1bff5b06c9bfdb4c2f6001ae73077cc8e35ce2adb43bd3f9aed92\n- 小果影视：39ead05821dda5e60c820919eadac0f396edfd4bbf81f764f1d4a12bca889207\n",
+      "ipas": [
+        {
+          "name": "hongguojian-1.0.11+111-ios-unsigned.ipa",
+          "size": 30898550,
+          "url": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.11-111/hongguojian-1.0.11%2B111-ios-unsigned.ipa",
+          "id": 746456947,
+          "updated_at": "2026-11-14T05:45:34Z",
+          "digest": "sha256:9917e2d8c0466debba501a11de916ce7f225f5dedc5ffdc7753fdbd9fad0b2fb"
+        },
+        {
+          "name": "zhenguojian-1.0.11+111-ios-unsigned.ipa",
+          "size": 30898911,
+          "url": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.11-111/zhenguojian-1.0.11%2B111-ios-unsigned.ipa",
+          "id": 746457198,
+          "updated_at": "2026-11-14T05:45:39Z",
+          "digest": "sha256:a22185f69b9d68ffecaef8462f822da64d3712702fea238f90dbf1c399af414a"
+        }
+      ]
+    },
+    {
       "tag": "app-v1.0.10-110",
       "name": "红果鉴 / 小果影视 1.0.10+110",
       "pre": false,
@@ -1966,33 +1993,6 @@
           "id": 645818363,
           "updated_at": "2026-10-16T01:58:23Z",
           "digest": "sha256:ab424eab077566049bcd0963cba8f66a10c3cfa2a1b353941b65469538f38f14"
-        }
-      ]
-    },
-    {
-      "tag": "app-v0.2.72-81",
-      "name": "红果鉴 / 真果鉴 0.2.72+81",
-      "pre": false,
-      "draft": false,
-      "date": "2026-10-15",
-      "published_at": "2026-10-15T11:17:03Z",
-      "body": "更新内容：\n\n- 修复黄果 AI 剧集不对版：分集列表误把详情页的热门、推荐链接当作分集，导致不同剧的开头几集都是同一个视频、集数也与首页显示不一致。\n\n版本 0.2.72+81。两个版本功能相同，区别只在站源范围，按需选择：\n\n- 红果鉴 hongguojian：仅红果站源\n- 真果鉴 zhenguojian：全部站源\n\nAndroid：\n- *-arm64-v8a.apk：适用于较新的安卓设备\n- *-armeabi-v7a.apk：适用于较老的安卓设备，电视推荐使用此版本\n- *-x86_64.apk：适用于模拟器\n\niOS：\n- *-ios-unsigned.ipa：未签名 IPA，可用相关工具安装\n\nWindows：\n- *-windows-x64.zip：解压后运行 hongguojian.exe 或 zhenguojian.exe\n\n签名证书 SHA-256：f819175143d1bff5b06c9bfdb4c2f6001ae73077cc8e35ce2adb43bd3f9aed92\n",
-      "ipas": [
-        {
-          "name": "hongguojian-0.2.72+81-ios-unsigned.ipa",
-          "size": 30414984,
-          "url": "https://github.com/Xanerix/guoapp/releases/download/app-v0.2.72-81/hongguojian-0.2.72%2B81-ios-unsigned.ipa",
-          "id": 643618371,
-          "updated_at": "2026-10-15T11:16:59Z",
-          "digest": "sha256:88aeecbe9753aa9cfaae8a1c86a8008cbbd8e5b2038a5d1e1e919101a8d2e291"
-        },
-        {
-          "name": "zhenguojian-0.2.72+81-ios-unsigned.ipa",
-          "size": 30416323,
-          "url": "https://github.com/Xanerix/guoapp/releases/download/app-v0.2.72-81/zhenguojian-0.2.72%2B81-ios-unsigned.ipa",
-          "id": 643618466,
-          "updated_at": "2026-10-15T11:17:00Z",
-          "digest": "sha256:a5b8e62ddaa9ec3af7681203918c1b11912ba4e36ae6508632baac52fce596cb"
         }
       ]
     }
@@ -3021,17 +3021,17 @@
       "name": "Nightly build",
       "pre": true,
       "draft": false,
-      "date": "2026-11-13",
-      "published_at": "2026-11-13T17:15:25Z",
-      "body": "* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack options for ZIP archives\n* Replace the hand-written ZIP code of the CLI with fflate\n* Simplify screen streaming and recording\n* Share one atomic file write\n* Fix mDNS browsing and name conflict handling\n* Simplify the JavaScriptCore adapter\n* Add swipt driver to serve a device from the computer\n* Build the Linux and Windows driver with the WebKit of a Bun release\n* Port the driver and the CLI to Linux and Windows\n* Follow Apple's terms and style guides in the CLI translations\n* Improve automatic unlocking\n* Remove unsourced and misattributed claims from comments\n* Require iOS 26 for the accessibility API\n* Fix network lockdown connections closing without a heartbeat\n* Extend Swiplet icon colors\n* Add the chart and data grid components\n* Remove the guards against bad values from Swiplets\n* Add stream actions and the process API\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the developer service\n* Fix slow detection of unsupported networks\n* Resolve DNS with the system configuration on iOS\n* Detect the foreground app right after connecting\n* Connect touch input before the first tap\n* Send input without checking the lock state\n* Split the CLI commands into one file each\n* Fix the detection of the foreground app\n* Download swiplet updates on demand and show progress\n* Number enumerations with iota\n* Skip unchanged builds in dev install\n* Reformat code\n* Fix the p",
+      "date": "2026-11-14",
+      "published_at": "2026-11-14T04:28:34Z",
+      "body": "* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack options for ZIP archives\n* Replace the hand-written ZIP code of the CLI with fflate\n* Simplify screen streaming and recording\n* Share one atomic file write\n* Fix mDNS browsing and name conflict handling\n* Simplify the JavaScriptCore adapter\n* Add swipt driver to serve a device from the computer\n* Build the Linux and Windows driver with the WebKit of a Bun release\n* Port the driver and the CLI to Linux and Windows\n* Follow Apple's terms and style guides in the CLI translations\n* Improve automatic unlocking\n* Remove unsourced and misattributed claims from comments\n* Require iOS 26 for the accessibility API\n* Fix network lockdown connections closing without a heartbeat\n* Extend Swiplet icon colors\n* Add the chart and data grid components\n* Remove the guards against bad values from Swiplets\n* Add stream actions and the process API\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the developer service\n* Fix slow detection of unsupported networks\n* Resolve DNS with the system configuration on iOS\n* Detect the foreground app right after connecting\n* Connect touch input before the first tap\n* Send input without checking the lock state\n* Split the CLI commands into one file each\n* Fix the detection of the foreground app\n* Download swiplet updates on demand and show progress\n* Number enumerations with iota\n* Skip unchanged buil",
       "ipas": [
         {
           "name": "Swipt.ipa",
-          "size": 48174029,
+          "size": 48174010,
           "url": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-          "id": 744489234,
-          "updated_at": "2026-11-13T17:15:23Z",
-          "digest": "sha256:1f9e398fb9bbb5914e9ad649ea837dd479ab73b96d96a836fc89fa634a4bc179"
+          "id": 746286356,
+          "updated_at": "2026-11-14T04:28:32Z",
+          "digest": "sha256:b42585e0c988d200bd854219bc840510d6cf1867f27b38d64af0ef7a87aa9756"
         }
       ]
     }

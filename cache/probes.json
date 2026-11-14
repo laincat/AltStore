@@ -1956,15 +1956,15 @@
   "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa": {
     "bundleIdentifier": "io.nekohasekai.swipt",
     "version": "0.1.0",
-    "buildVersion": "82",
+    "buildVersion": "83",
     "displayName": "Swipt",
     "minOSVersion": "16.4",
-    "size": 48174029,
+    "size": 48174010,
     "assetIdentity": {
-      "id": 744489234,
-      "updated_at": "2026-11-13T17:15:23Z",
-      "size": 48174029,
-      "digest": "sha256:1f9e398fb9bbb5914e9ad649ea837dd479ab73b96d96a836fc89fa634a4bc179"
+      "id": 746286356,
+      "updated_at": "2026-11-14T04:28:32Z",
+      "size": 48174010,
+      "digest": "sha256:b42585e0c988d200bd854219bc840510d6cf1867f27b38d64af0ef7a87aa9756"
     }
   },
   "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.2/ARMSX3-0.0.2.ipa": {
@@ -2273,6 +2273,20 @@
       "updated_at": "2026-11-11T07:47:09Z",
       "size": 3521136,
       "digest": "sha256:449ef38a6f3e43436f7deaf1469a6fb8ce602e2e0cc768d9c05fb832c9dfa0ee"
+    }
+  },
+  "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.11-111/zhenguojian-1.0.11%2B111-ios-unsigned.ipa": {
+    "bundleIdentifier": "com.yingshib.xg",
+    "version": "1.0.11",
+    "buildVersion": "111",
+    "displayName": "XiaoGuoYingShi",
+    "minOSVersion": "15.1",
+    "size": 30898911,
+    "assetIdentity": {
+      "id": 746457198,
+      "updated_at": "2026-11-14T05:45:39Z",
+      "size": 30898911,
+      "digest": "sha256:a22185f69b9d68ffecaef8462f822da64d3712702fea238f90dbf1c399af414a"
     }
   }
 }
