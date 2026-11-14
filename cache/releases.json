@@ -2437,6 +2437,25 @@
   ],
   "ARMSX2/ARMSX2": [
     {
+      "tag": "nightly-20261114",
+      "name": "ARMSX2 nightly 20261114 (6d9511e29e)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-11-14",
+      "published_at": "2026-11-14T15:41:20Z",
+      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- macOS: a refused notarization is not a build failure\n- arm64: the crash post-mortem's microVU readers are Linux only\n- GameDB: Stuntman and Driv3r run the EE at Exact clamping\n- arm64: a SIGILL gets the crash post-mortem too\n- arm64: the crash post-mortem names where the lr points\n- arm64: the crash post-mortem's VU microcode comes from the program's copy\n- arm64: the crash post-mortem names the library a pc outside the JIT is in\n- arm64: the crash post-mortem shows the VU microcode at the fault block\n- arm64: the crash post-mortem names the microVU block that holds the pc\n- LSFG: rebuild the swap chain before the acquire, and make it FIFO\n- microVU: don't finish VU1 through a dispatcher that does not exist\n- Tests: a second boot after a VM that stoppe",
+      "ipas": [
+        {
+          "name": "ARMSX2-nightly-20261114-6d9511e29e-iOS-arm64.ipa",
+          "size": 40717380,
+          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261114/ARMSX2-nightly-20261114-6d9511e29e-iOS-arm64.ipa",
+          "id": 747939147,
+          "updated_at": "2026-11-14T15:41:26Z",
+          "digest": "sha256:d278d980f9b8b25610e48ce3b27eefa55e35c5786ab7946f973bc49acfb74ca0"
+        }
+      ]
+    },
+    {
       "tag": "nightly-20261113",
       "name": "ARMSX2 nightly 20261113 (37ed35b88f)",
       "pre": true,
@@ -2575,25 +2594,6 @@
           "id": 717610743,
           "updated_at": "2026-11-06T15:32:33Z",
           "digest": "sha256:d1d7c48a42b50e682c2fae8eba048f4f0b7cd52288b1256fa63b6ca1c8300557"
-        }
-      ]
-    },
-    {
-      "tag": "nightly-20261104",
-      "name": "ARMSX2 nightly 20261104 (720f409f00)",
-      "pre": true,
-      "draft": false,
-      "date": "2026-11-04",
-      "published_at": "2026-11-04T11:52:04Z",
-      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- Android: graphics problem reports take a savestate by default\n- Android: problem reports scrub the app's own /data paths\n- Android: problem report takes the save state first and stops the game when the dump's frames are recorded\n- GS dump: say where a requested dump is, so the caller can act when its frames are recorded\n- Android: a crash report says which driver the crashed run actually opened\n- Android: problem reports fill in the game's CRC\n- Android: problem reports name the build's commit without the driver report\n- Android: a crash report that fails to build keeps its Not sent line\n- Android: crash startup work runs once per process\n- Android: problem report screens go back a step, ask before deleting, and keep their work off the main thread\n- An",
-      "ipas": [
-        {
-          "name": "ARMSX2-nightly-20261104-720f409f00-iOS-arm64.ipa",
-          "size": 40568716,
-          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261104/ARMSX2-nightly-20261104-720f409f00-iOS-arm64.ipa",
-          "id": 709318350,
-          "updated_at": "2026-11-04T11:52:10Z",
-          "digest": "sha256:710d401aee5667f5459165d6077e78353f8ec568801b3ca5f48de5d0f7d2c3fb"
         }
       ]
     },
