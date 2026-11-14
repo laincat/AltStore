@@ -2260,5 +2260,19 @@
       "size": 29518672,
       "digest": "sha256:47213718dd9726691f7b2c9746be77ebcb6af1cafa8f96dd7a1a3c5d8a6342f3"
     }
+  },
+  "https://github.com/zxsos/HGhubX/releases/download/v1.2.19/HGhub_1.2.19_ios.ipa": {
+    "bundleIdentifier": "com.hghub.huangguo",
+    "version": "1.2.19",
+    "buildVersion": "1.2.19",
+    "displayName": "HGhub",
+    "minOSVersion": "15.0",
+    "size": 3521136,
+    "assetIdentity": {
+      "id": 734629947,
+      "updated_at": "2026-11-11T07:47:09Z",
+      "size": 3521136,
+      "digest": "sha256:449ef38a6f3e43436f7deaf1469a6fb8ce602e2e0cc768d9c05fb832c9dfa0ee"
+    }
   }
 }
