@@ -2330,5 +2330,33 @@
       "size": 31706166,
       "digest": "sha256:1bfec03b051fb6865751bcbed8cef45d4fcad4ae777553d22de3a39085c756b9"
     }
+  },
+  "https://github.com/Kyosee/VeneraX/releases/download/v3.0.0/VeneraX-ios-3.0.0%2B258.ipa": {
+    "bundleIdentifier": "io.github.kyosee.venera",
+    "version": "3.0.0",
+    "buildVersion": "258",
+    "displayName": "VeneraX",
+    "minOSVersion": "15.1",
+    "size": 39423677,
+    "assetIdentity": {
+      "id": 750651958,
+      "updated_at": "2026-11-15T10:37:35Z",
+      "size": 39423677,
+      "digest": "sha256:96190a192a04871538a2b35fd278647f861669a2caaabfee906bda2b5ec48832"
+    }
+  },
+  "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.38/Breeze-iOS-v3.0.38.ipa": {
+    "bundleIdentifier": "com.zephyr.breeze",
+    "version": "3.0.38",
+    "buildVersion": "2225",
+    "displayName": "Breeze",
+    "minOSVersion": "15.0",
+    "size": 27173399,
+    "assetIdentity": {
+      "id": 750425885,
+      "updated_at": "2026-11-15T09:03:38Z",
+      "size": 27173399,
+      "digest": "sha256:f627f1dc552c662441c02e17722038d5898474a0a1da2ff2126e3212dc00440e"
+    }
   }
 }

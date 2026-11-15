@@ -1,21 +1,40 @@
 {
   "zxsos/HGhubX": [
     {
+      "tag": "v2.1.1",
+      "name": "v2.1.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-15",
+      "published_at": "2026-11-15T15:26:37Z",
+      "body": "## HGhubX 2.1.1\r\n\r\n### 更新点\r\n\r\n- **线路选择**：合并重复的“推荐镜像”和“镜像线路”区域为一个镜像列表，当前线路置顶。\r\n- **启动体验**：统一各平台启动背景，减少启动首帧闪烁。\r\n- **搜索**：热门题材使用真实标签数据，并可直接打开对应片单。\r\n\r\n### 修复点\r\n\r\n- 修复播放恢复、代理切换后的恢复队列及媒体分片缓存隔离问题。\r\n- 修复专题分页、收藏同步空状态和搜索框焦点处理。\r\n- 补齐 iOS 原生媒体传输的 Range 响应，改善视频探测与播放兼容性。\r\n- 修复帖子详情热度和清理观看历史前的确认交互。\r\n\r\n### 构建产物\r\n\r\n- Linux amd64：`.deb`\r\n- Android：arm64、arm、x86_64 分 ABI  `.apk`\r\n- Windows：x64 安装包 `.exe` 和便携版 `.zip`\r\n- macOS：Universal `.dmg`\r\n- iOS：未签名 `.ipa`\r\n\r\n\r\n## What's Changed\r\n* fix: 2026-11-15 修复轮次合并 by @zxsos in https://github.com/zxsos/HGhubX/pull/131\r\n* fix: 修复播放恢复、缓存与收藏状态回归 by @zxsos in https://github.com/zxsos/HGhubX/pull/133\r\n* fix(launch): 补齐 Android 夜间与 macOS 启动背景 by @zxsos in https://github.com/zxsos/HGhubX/pull/132\r\n* fix(ios): 修复原生播放器的本地媒体传输 by @zxsos in https://github.com/zxsos/HGhubX/pull/130\r\n\r\n\r\n**Full Changelog**: https://github.com/zxsos/HGhubX/compare/v2.1.0...v2.1.1",
+      "ipas": [
+        {
+          "name": "HGhubX_2.1.1_ios.ipa",
+          "size": 3849882,
+          "url": "https://github.com/zxsos/HGhubX/releases/download/v2.1.1/HGhubX_2.1.1_ios.ipa",
+          "id": 751415610,
+          "updated_at": "2026-11-15T15:26:35Z",
+          "digest": "sha256:e7db7afc6e39df3658d5e0c76e5a1950dbd8f5669bb0acf04c11de45d7c133cb"
+        }
+      ]
+    },
+    {
       "tag": "v2.1.0",
       "name": "v2.1.0",
       "pre": false,
       "draft": false,
       "date": "2026-11-15",
-      "published_at": "2026-11-15T07:13:34Z",
-      "body": "## HGhubX 2.1.0\n\nHGhubX 2.1 新增标签屏蔽，完善账号同步，并优化播放和加载体验。\n\n### 更新点\n\n- **内容偏好**：新增按标签屏蔽，可在设置或视频“不感兴趣”中添加规则；首页自动跳过命中内容，列表支持临时展开，收藏和历史保留记录。\n- **播放手势**：手机端支持左下长按减速、右上长按加速，中心小方块长按“不感兴趣”；首次进入播放器显示区域提示，视频详情支持点击标签跳转。\n- **启动体验**：新增开屏动画和首次使用协议。\n- **性能**：优化页面按需加载、下一条视频和下一集预取，精简无效代码与重复请求。\n- **界面**：更新了 UI，自己体验。\n\n### 修复点\n\n- 修复首页刷视频后进入全屏跳到其他视频的问题。\n- 修复手机端吃瓜视频控制按钮隐藏的问题，调整小屏控制栏，并补充全屏失败时的屏幕内全屏模式。\n- 修复收藏和观看历史只显示首批内容、账号数据未完整回填的问题，完善关注列表分页和失败重试。\n- 修复账号、线路切换后的迟到请求污染当前数据，以及互动操作失败仍显示成功的问题。\n- 修复详情封面加载状态异常，优先加载详情封面，并合并同地址的下载和解密请求。\n- 补齐原生播放器的单段 Range 响应，返回正确的 `206`、`416` 和 `Content-Range`，改善 iOS 媒体探测流程。\n\n### 构建产物\n\n- Linux amd64：`.deb`\n- Android：arm64、arm、x86_64 分 ABI APK\n- Windows：x64 安装包和便携版 ZIP\n- macOS：Universal `.dmg`\n- iOS：未签名 `.ipa`\n\n\n## What's Changed\n* feat(app): integrate UI and playback updates for v2.1.0 by @zxsos in https://github.com/zxsos/HGhubX/pull/110\n\n\n**Full Changelog**: https://github.com/zxsos/HGhubX/compare/v2.0.0...v2.1.0",
+      "published_at": "2026-11-15T08:37:59Z",
+      "body": "## HGhubX 2.1.0\r\n\r\nHGhubX 2.1 新增标签屏蔽，完善账号同步，并优化播放和加载体验。\r\n\r\n### 更新点\r\n\r\n- **内容偏好**：新增按标签屏蔽，可在设置或视频“不感兴趣”中添加规则；首页自动跳过命中内容，列表支持临时展开，收藏和历史保留记录。\r\n- **播放手势**：手机端支持左下长按减速、右上长按加速，中心小方块长按“不感兴趣”；首次进入播放器显示区域提示，视频详情支持点击标签跳转。\r\n- **启动体验**：新增开屏动画和首次使用协议。\r\n- **性能**：优化页面按需加载、下一条视频和下一集预取，精简无效代码与重复请求。\r\n- **界面**：更新了 UI，自己体验。\r\n\r\n### 修复点\r\n\r\n- 修复游客模式保存观看进度、收藏等数据时回滚设置的问题，包括自动恢复静音，以及音量、启动静音、优先高清、滑动切集和搜索历史被旧快照覆盖。\r\n- 修复评论区出现 HTML 标签和脚本片段、长评论和长昵称换行异常的问题；手机播放页面显示评论数量，评论面板读取当前剧集的数量。\r\n- 修复首页刷视频后进入全屏跳到其他视频的问题。\r\n- 修复手机端吃瓜视频控制按钮隐藏的问题，调整小屏控制栏，并补充全屏失败时的屏幕内全屏模式。\r\n- 修复收藏和观看历史只显示首批内容、账号数据未完整回填的问题，完善关注列表分页和失败重试。\r\n- 修复账号、线路切换后的迟到请求污染当前数据，以及互动操作失败仍显示成功的问题。\r\n- 修复详情封面加载状态异常，优先加载详情封面，并合并同地址的下载和解密请求。\r\n- 补齐原生播放器的单段 Range 响应，返回正确的 `206`、`416` 和 `Content-Range`，改善 iOS 媒体探测流程。\r\n\r\n### 构建产物\r\n\r\n- Linux amd64：`.deb`\r\n- Android：arm64、arm、x86_64 分 ABI  `.apk`\r\n- Windows：x64 安装包 `.exe` 和便携版 `.zip`\r\n- macOS：Universal `.dmg`\r\n- iOS：未签名 `.ipa`\r\n\r\n\r\n## What's Changed\r\n* feat(app): integrate UI and playback updates for v2.1.0 by @zxsos in https://github.com/zxsos/HGhubX/pull/110\r\n* fix(comments): 修复评论显示并发布 v2.1.1 by @zxsos in https://github.com/zxsos/HGhubX/pull/111\r\n* fix(account): 修复游客设置被重置并重新发布 v2.1.0 by @zxsos in https://github.com/zxsos/HGhubX/pull/113\r\n\r\n\r\n**Full Changelog**: https://github.com/zxsos/HGhubX/compare/v2.0.0...v2.1.0",
       "ipas": [
         {
           "name": "HGhubX_2.1.0_ios.ipa",
-          "size": 3818931,
+          "size": 3819956,
           "url": "https://github.com/zxsos/HGhubX/releases/download/v2.1.0/HGhubX_2.1.0_ios.ipa",
-          "id": 750174061,
-          "updated_at": "2026-11-15T07:13:33Z",
-          "digest": "sha256:ac818e9ef53405ab31033db1644c421e07c7932c18cc07024582882a7cac2e46"
+          "id": 750365751,
+          "updated_at": "2026-11-15T08:37:59Z",
+          "digest": "sha256:7f9035c02a52c717eb87b7742331174c801a0d1f38225a6dd005ee054583bd98"
         }
       ]
     },
@@ -341,16 +360,6 @@
       "date": "2026-11-09",
       "published_at": "2026-11-09T21:14:49Z",
       "body": "## 线路自动切换（本次重点）\n\n- 自动选线：探一次 `/api/videos` 判活，主站不通就用发布页上的镜像，全不通才退 `.ai`\n- 无感切换：业务请求连续两次链路失败立刻体检，再加 60s → 120s → 300s 自适应巡检；后台 / 断网不耗电\n- 挂上代理自动回 `.com`：停留在镜像时每个巡检周期敲一次主站，通了就切回并提示\n- 切换时弹线路卡片：国内 / 国外 + 域名 + 实测延迟\n- 切完线路列表自动重拉：榜单、分类、吃瓜不再显示上个域名的缓存\n- 严格模式只放行发布页给过的镜像，手填域名照样拦\n\n## 关于应用内更新\n\n- `1.2.1+hg.1` 的用户这次需要手动安装一次：旧版客户端没有下载安装逻辑，只能打开浏览器\n- 装到 `1.2.2+hg.1` 之后，「设置 → 检查更新 → 立即更新」会自己下载并调起安装器，直连 GitHub 拉不动时自动走加速源\n- versionCode 按 major.minor.patch 算，所以这次抬到 1.2.2（1002002），否则系统认不出是新版本\n\n## 安装包\n\n| 平台 | 文件 |\n| --- | --- |\n| Android arm64 | `HGhub_1.2.2+hg.1_arm64.apk` |\n| Android armv7 | `HGhub_1.2.2+hg.1_arm.apk` |\n| Windows | NSIS 安装包 + 便携版 |\n| macOS | Universal dmg |\n| Linux | deb + AppImage |",
-      "ipas": []
-    },
-    {
-      "tag": "hgfix-1.2.1-r5",
-      "name": "HGhub 1.2.1+hg.1",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-09",
-      "published_at": "2026-11-09T16:40:23Z",
-      "body": "## 版本号递增\n\nversionCode `1002001`，上一版是 `1002000`。\n\n之前 `1.2.0` 和 `1.2.0+hg.1` 算出来是同一个号，装上去跟没升一样。现在这个号是算出来写死的，签名那一步还会打一行到日志里。\n\n## 安装\n\n直接覆盖，不用卸载。签名没变（`CN=HGhub`）。\n\n还在用 r3 或更早那个 `CN=HGhub Fork` 签名的，得卸载一次，那个私钥丢了重签不出来。\n\n## 改了什么\n\n- Android 严格模式下 m3u8 拉不下来，接口通了但一个字节发不出去，就是 `manifestLoadError` 和关掉严格模式后一直转圈那个（上游 #33）\n- `[play]` 那行不再拿废弃的 `video_url` 判断成败，之前看着像失败其实能放\n- Linux 装完直接能放，不用另装解码器\n- 诊断日志里带了版本、平台、内核、线路、哪部第几集、接口返回什么\n\n## 文件\n\n| 平台 | 文件 | 大小 | SHA-256 |\n|---|---|---|---|\n| Android arm64 | `HGhub_1.2.1+hg.1_arm64.apk` | 8.79 MB | `48f3cd7d2ef19119f97cc1ea092df472bba5cdcebfa3a34604743172dd89dc2b` |\n| Android arm32 | `HGhub_1.2.1+hg.1_arm.apk` | 6.58 MB | `fd08d2aa680554247ee6319df92b53d57ec5b6cbfe8788d6059ea1a8354f6e13` |\n| Android x86_64（模拟器） | `HGhub_1.2.1+hg.1_x86_64.apk` | 9.41 MB | `1608b4e25b84bb78a754034deac14755afbbdaebced2acc59929a3b105a0ffae` |\n| Windows 安装版 | `HGhub_1.2.1+hg.1_x64-setup.exe` | 2.18 MB | `99f190ff1ae9624b2aecc499b63f613467d7705e23e6afcbc236c556df6e4e17` |\n| Windows 便携版 | `HGhub_1.2.1+hg.1_x64_portable.zip` | 2.60 MB | `9a73fe70f878736a2216d2f4601d53a6ba8c517a22f6be66f817b0685ee7da8a` |\n| macOS 通用 | `HGhub_1.2.1+hg.1_universal.dmg` | 5.32 MB | `7cd4aaa30b88b959c4bab5cd3a04f71fcd1af872e47d8b7058927237ae7ed9d0` |\n| Linux x64 | `HGhub_1.2.1+hg.1_amd64.deb` | 3.13 MB | `64328a64520ad354a00960ed1cc5324aa2af02a7c1fb4a18af920e0f6b0234cd` |\n\n## 放不了\n\nhttps://github.com/zxsos/HGhub/issues/2\n\n设置 → 播放诊断 → 复制播放诊断日志 → 粘上去。开关不用开，不用写别的。",
       "ipas": []
     }
   ],
@@ -1483,6 +1492,25 @@
   ],
   "Xanerix/guoapp": [
     {
+      "tag": "app-v2.0.0-112",
+      "name": "小果影视 2.0.0+112",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-15",
+      "published_at": "2026-11-15T11:25:09Z",
+      "body": "更新内容：\n\n### 升级说明\n\n- 全站源版可直接覆盖安装，数据保留。\n- 红果鉴用户：先在 设置 › 诊断 › 导出备份，卸载后安装小果影视，再从 恢复备份 导入。\n- 除红果外的站源需在「模块」页的模块商店安装，追剧、记录和下载会在装回对应站源后恢复。\n\n### 更新内容\n\n- 可以从数据目录的 `modules` 文件夹加载 JS 站源模块，附带一个只有假数据的示例模块。\n- 站源改为运行时加载的模块，除内置的红果外不再随安装包提供。\n- 出包脚本去掉 `--sources`，删除示例 Go 站源 `native/sources_example`。\n- Go 核心改用 Go 1.26 编译。\n- 红果改写成 JS 模块，红果听书并入红果：分类里新增「听书」「小说」，搜索结果同时包含听书；旧版红果听书的追剧、记录和下载无法沿用。\n- 模块可提供搜索联想、推荐、弹幕、设备、榜单、分季、封面和补充元数据，宿主接口新增限流预约、共享缓存、HTML 解析、大整数保真和常用加密。\n- 新增模块管理：从 zip 文件或地址安装、更新、卸载站源模块，安装前列出可访问的域名和功能，不用重启即可生效。\n- 没有安装站源时，发现页提示去模块管理安装；追剧、观看记录和下载里来自未安装站源的内容保留并提示安装。\n- 推荐、搜索联想、弹幕和设备注册按站源能力启用，不再只认红果。\n- 修复卸载站源后，开放了该站源的本地用户配置被判为无效而无法进入应用。\n- 「站源账号」改为装了青空才显示，不再要求装有两个以上站源，没装青空时也不再列出青空。\n- MissAV、黑桃、剧果、禁果短剧、帝果改写成 JS 模块。\n- 去掉站源的「默认关闭」，新装的站源默认打开；在模块管理里重新安装之前关掉的站源也会打开，更新模块不改变开关。\n- 模块宿主新增相对地址解析，请求可把指定错误状态码当作正常响应，请求失败时附带状态码和响应体，报错里的站源名改用模块名称。\n- 笔盒、野果、黄果视频、黄果 AI 改写成 JS 模块。\n- 黄豆、禁果、黄果旧版不再提供。\n- 模块宿主新增 AES-CBC 解密、AES-GCM、ECDH P-256 和 HKDF，请求可改用普通连接、可附带域名轮换的候选地址，模块可读取当前优选的域名，并可为指定路径的媒体请求附加播放凭证。\n- 模块管理新增模块商店：列出 guoapp-modules 索引里的模块，一键安装或更新，从 GitHub 或 jsDelivr 下载并校验文件；未安装站源的追剧、记录和下载会标在对应模块上。\n- 模块管理从设置移到底栏（平板、电脑为侧栏）的「模块」页，仅管理员可见；首屏只列已装模块，商店和内置模块分别从入口进入，内置模块卸载后可在其中装回。\n- 红果鉴与全站源版合并为一个应用：中文名「小果影视」，英文名 GuoApp，安装包和 Windows 程序改以 `guoapp` 命名；沿用全站源版的包名和签名，全站源版可直接覆盖升级，红果鉴需改装并用导出 / 导入迁移数据。\n- 安装包内置红果模块：首次启动自动安装，内置版本更高时自动升级，卸载后不再自动装回，可在模块商店里重新安装；红果不再上架在线商店。\n- 使用条款新增站源模块一条，升级后需重新确认；确认方式由输入确认语改为逐条勾选，等待时间由 30 秒缩短为 15 秒。\n- README 去掉站源一节。\n- 模块描述文件新增必填的 `adult` 字段，声明是否为限制级；模块页、商店和安装确认里标出限制级模块。\n- 「开屏自动模糊封面」改为可选关闭、仅限制级、全部；新增「模糊所有界面的封面」（默认开），眼睛按钮的模糊状态同步到搜索、追剧、历史、详情和下载等界面。\n- 已下载剧集页顶栏新增「详情」，可打开该剧的详情页；「补齐缺集」移入编辑模式（#147）。\n- 尝试修复 Windows 退出播放页几秒后闪退（#116）：关闭播放器前先释放视频画面输出（开发快照，需在 Windows 上长时间播放后退出实测）。\n\n版本 2.0.0+112。安装包内置红果站源，其余站源在 设置 › 站源 › 模块管理 的模块商店安装。\n\nAndroid：\n- *-arm64-v8a.apk：适用于较新的安卓设备\n- *-armeabi-v7a.apk：适用于较老的安卓设备，电视推荐使用此版本\n- *-x86_64.apk：适用于模拟器\n\niOS：\n- *-ios-unsigned.ipa：未签名 IPA，可用相关工具安装\n\nWindows：\n- *-windows-x64-setup.exe：安装包，默认安装到当前用户，无需管理员权限；安装时可改为所有用户\n- *-windows-x64.zip：便携版，解压后运行 guoapp.exe；设置、记录、海报缓存和默认下载都保存在程序旁的 u",
+      "ipas": [
+        {
+          "name": "guoapp-2.0.0+112-ios-unsigned.ipa",
+          "size": 33819548,
+          "url": "https://github.com/Xanerix/guoapp/releases/download/app-v2.0.0-112/guoapp-2.0.0%2B112-ios-unsigned.ipa",
+          "id": 750768230,
+          "updated_at": "2026-11-15T11:25:04Z",
+          "digest": "sha256:1ff9a51067728afd356033fab60f0cb6493885d653ee7e8aa3ec01f515f573a8"
+        }
+      ]
+    },
+    {
       "tag": "app-v1.0.11-111",
       "name": "红果鉴 / 小果影视 1.0.11+111",
       "pre": false,
@@ -1975,33 +2003,6 @@
           "id": 647231324,
           "updated_at": "2026-10-16T12:13:16Z",
           "digest": "sha256:958c14f87c4e5d6f11cf1da31260a0752b50f27da2bf64fd6b03afa53fd50bf1"
-        }
-      ]
-    },
-    {
-      "tag": "app-v0.2.72-82",
-      "name": "红果鉴 / 真果鉴 0.2.72+82",
-      "pre": false,
-      "draft": false,
-      "date": "2026-10-16",
-      "published_at": "2026-10-16T01:58:28Z",
-      "body": "更新内容：\n\n- 修复红果源无法播放：红果 App 接口改用 Argus551 + Ladon 签名，并兼容新版播放信息的返回格式。\n- Windows 切换到其他窗口时不再暂停播放、弹幕和画质增强，只有最小化或隐藏窗口时才暂停。\n\n版本 0.2.72+82。两个版本功能相同，区别只在站源范围，按需选择：\n\n- 红果鉴 hongguojian：仅红果站源\n- 真果鉴 zhenguojian：全部站源\n\nAndroid：\n- *-arm64-v8a.apk：适用于较新的安卓设备\n- *-armeabi-v7a.apk：适用于较老的安卓设备，电视推荐使用此版本\n- *-x86_64.apk：适用于模拟器\n\niOS：\n- *-ios-unsigned.ipa：未签名 IPA，可用相关工具安装\n\nWindows：\n- *-windows-x64.zip：解压后运行 hongguojian.exe 或 zhenguojian.exe\n\n签名证书 SHA-256：f819175143d1bff5b06c9bfdb4c2f6001ae73077cc8e35ce2adb43bd3f9aed92\n",
-      "ipas": [
-        {
-          "name": "hongguojian-0.2.72+82-ios-unsigned.ipa",
-          "size": 30419239,
-          "url": "https://github.com/Xanerix/guoapp/releases/download/app-v0.2.72-82/hongguojian-0.2.72%2B82-ios-unsigned.ipa",
-          "id": 645818279,
-          "updated_at": "2026-10-16T01:58:21Z",
-          "digest": "sha256:63673d8fcd3473aef3eae7d1edb57504ec3283588ea103a4616d0d7778645550"
-        },
-        {
-          "name": "zhenguojian-0.2.72+82-ios-unsigned.ipa",
-          "size": 30420548,
-          "url": "https://github.com/Xanerix/guoapp/releases/download/app-v0.2.72-82/zhenguojian-0.2.72%2B82-ios-unsigned.ipa",
-          "id": 645818363,
-          "updated_at": "2026-10-16T01:58:23Z",
-          "digest": "sha256:ab424eab077566049bcd0963cba8f66a10c3cfa2a1b353941b65469538f38f14"
         }
       ]
     }
@@ -4591,6 +4592,25 @@
   ],
   "Kyosee/VeneraX": [
     {
+      "tag": "v3.0.0",
+      "name": "v3.0.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-15",
+      "published_at": "2026-11-15T10:37:41Z",
+      "body": "> **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v3.0.0/release-notes/v3.0.0.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v3.0.0/release-notes/v3.0.0.zh-CN.md)\n\n## What's Changed\n\n### Added\n- Added a HarmonyOS version with two packages: ARM64 for phones and x64 for the emulator. The packages are unsigned, so you need to sign them yourself before installing (#296).\n- Added Recent reading, Following, New updates and Local comics widgets for Android, HarmonyOS (service cards), iOS and macOS; whether they work on Apple platforms depends on how the app is signed and sideloaded (#338).\n- Long-press the app icon to jump to Favorites, Following, History or Search on Android, iOS and HarmonyOS; on Android and iOS, open the app once after updating for the shortcuts to appear (#346).\n- Added an optional adaptive reading mode that tells vertical-scroll comics from paged comics by their images and picks a suitable reading mode (#333).\n- Added a first-use guide that helps new users set up language, permissions, backup restore and WebDAV; existing users skip it.\n- Added a \"Clear reading progress when deleting a single history entry\" option; when enabled, deleting one history entry also clears its reading progress, while reading time statistics are kept (#341).\n\n### Changed\n- Redesigned reading statistics with recent, monthly, all-time and custom date ranges, a reading calendar and trends, and total reading time per comic (#332, #342).\n- Random picks now offer Single draw and Choose from three, with no duplicate comics in the same round.\n- Local comics can now open to details or start reading on tap, sort by file size, and let you choose separately whether deleting removes the comic files, favorites and history (#321).\n- The favorites dialog now lets you add to or remove from several folders in a row without closing after each change (#345).\n- The Auto Language Filters switch is replaced by choosing which comic sources the search language filter appli",
+      "ipas": [
+        {
+          "name": "VeneraX-ios-3.0.0+258.ipa",
+          "size": 39423677,
+          "url": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.0/VeneraX-ios-3.0.0%2B258.ipa",
+          "id": 750651958,
+          "updated_at": "2026-11-15T10:37:35Z",
+          "digest": "sha256:96190a192a04871538a2b35fd278647f861669a2caaabfee906bda2b5ec48832"
+        }
+      ]
+    },
+    {
       "tag": "harmonyos-2.3.12-test.1",
       "name": "VeneraX 鸿蒙开发预览版 · 2.3.12 (test.1，未签名)",
       "pre": true,
@@ -4939,25 +4959,6 @@
           "id": 521773866,
           "updated_at": "2026-08-20T04:53:34Z",
           "digest": "sha256:966c2002018f15b33f2fb14316b261efbe9fb2f3c2d8d8b87413149a0ebb61e1"
-        }
-      ]
-    },
-    {
-      "tag": "v2.2.7",
-      "name": "v2.2.7",
-      "pre": false,
-      "draft": false,
-      "date": "2026-08-18",
-      "published_at": "2026-08-18T12:40:39Z",
-      "body": "> **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v2.2.7/release-notes/v2.2.7.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v2.2.7/release-notes/v2.2.7.zh-CN.md)\n\n## What's Changed\n\n### Added\n- Reading statistics can now be opened directly from the Home page\n\n### Changed\n- Refined the Home, Explore, Categories, Follow Updates, and Favorites layouts for more consistent alignment, spacing, and visual hierarchy\n- Main navigation and menus now use clearer labels and larger, more consistent tap targets\n\n### Fixed\n- Fixed WebDAV backups failing with HTTP 404 on some services such as Nutstore\n- Fixed backups sometimes omitting the latest data-sync settings\n- Fixed duplicate tags appearing for local comics in list view\n- Fixed Follow Updates sometimes retaining an outdated layout after initial setup until the app state changed\n- Fixed additional source libraries sometimes being treated as duplicates and refusing to add\n\n**Full Changelog**: https://github.com/Kyosee/VeneraX/compare/v2.2.6...v2.2.7\n",
-      "ipas": [
-        {
-          "name": "VeneraX-ios-2.2.7+237.ipa",
-          "size": 35207701,
-          "url": "https://github.com/Kyosee/VeneraX/releases/download/v2.2.7/VeneraX-ios-2.2.7%2B237.ipa",
-          "id": 519438419,
-          "updated_at": "2026-08-18T12:40:35Z",
-          "digest": "sha256:a47d45e591b2c177cbb1336b4adc9e58efc976bad4bb8b5d3334bfb5c62cafdf"
         }
       ]
     }
@@ -5855,6 +5856,25 @@
   ],
   "breeze-project-org/Breeze": [
     {
+      "tag": "v3.0.38",
+      "name": "Breeze v3.0.38",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-15",
+      "published_at": "2026-11-15T09:03:41Z",
+      "body": "## 📝 更新日志\r\n## [v3.0.38]\r\n\r\n### 功能更新\r\n\r\n- 添加编辑已下载漫画的功能\r\n- 添加章节已读标记\r\n- 移动端阅读新增「横屏自动双页」功能\r\n- 新增「内网拦截」开关\r\n- 更新弹窗支持「一周内不再提醒」\r\n- 新增「显示搜索书签」开关\r\n- 追更与更新日志新增 NEW 提示\r\n- 插件筛选面板新增下拉框支持\r\n- 添加doh支持\r\n- 网络层支持域名前置（IP 直连 / SNI 绕过）与 ECH，改善部分图源的连通性 with [daiwenwen3](https://github.com/daiwenwen3)\r\n\r\n### 修复\r\n\r\n- 修复导入漫画时失败的问题\r\n\r\n### 优化\r\n\r\n- 优化部分性能\r\n- 调整部分文本与ui样式\r\n\r\n### 杂项\r\n\r\n- 重做Windows安装器\r\n\r\n---\r\n\r\n### 📦 推荐下载\r\n| 平台 | 下载链接 |\r\n| :--- | :--- |\r\n| **Windows** | [windows-installer-v3.0.38.exe](https://github.com/breeze-project-org/Breeze/releases/download/v3.0.38/windows-installer-v3.0.38.exe) |\r\n| **macOS** | [Breeze-macOS-v3.0.38.dmg](https://github.com/breeze-project-org/Breeze/releases/download/v3.0.38/Breeze-macOS-v3.0.38.dmg) |\r\n| **Android** | [app-arm64-v8a-release-v3.0.38.apk](https://github.com/breeze-project-org/Breeze/releases/download/v3.0.38/app-arm64-v8a-release-v3.0.38.apk) |\r\n| **iOS** | [Breeze-iOS-v3.0.38.ipa](https://github.com/breeze-project-org/Breeze/releases/download/v3.0.38/Breeze-iOS-v3.0.38.ipa) |\r\n| **Linux** | [breeze-v3.0.38.flatpak](https://github.com/breeze-project-org/Breeze/releases/download/v3.0.38/breeze-v3.0.38.flatpak) |\r\n| **Linux (DEB)** | [breeze_3.0.38_amd64-v3.0.38.deb](https://github.com/breeze-project-org/Breeze/releases/download/v3.0.38/breeze_3.0.38_amd64-v3.0.38.deb) |\r\n\r\n> 💡 **不知道该下载哪个文件？**\r\n> 请查看 [详细安装指南](https://github.com/breeze-project-org/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\r\n",
+      "ipas": [
+        {
+          "name": "Breeze-iOS-v3.0.38.ipa",
+          "size": 27173399,
+          "url": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.38/Breeze-iOS-v3.0.38.ipa",
+          "id": 750425885,
+          "updated_at": "2026-11-15T09:03:38Z",
+          "digest": "sha256:f627f1dc552c662441c02e17722038d5898474a0a1da2ff2126e3212dc00440e"
+        }
+      ]
+    },
+    {
       "tag": "v3.0.37",
       "name": "Breeze v3.0.37",
       "pre": false,
@@ -6212,25 +6232,6 @@
           "id": 453784248,
           "updated_at": "2026-06-21T15:28:43Z",
           "digest": "sha256:c1c1525a7ff4ce323be5999fb1297c5ab57aa998c7a2f91e78b4b84c28550b69"
-        }
-      ]
-    },
-    {
-      "tag": "v3.0.17",
-      "name": "Breeze v3.0.17",
-      "pre": false,
-      "draft": false,
-      "date": "2026-06-16",
-      "published_at": "2026-06-16T15:27:52Z",
-      "body": "## 📝 更新日志\n## [v3.0.17]\n\n### bug修复\n\n- 修复下载漫画封面可能无法加载的问题\n- 修复部分漫画下载后无法离线观看的问题（部分漫画可能需要重新下载）\n- 修复部分情况下无法正常写入观看历史的问题\n\n### 优化\n\n- 优化安卓端后台下载体验，降低因被系统冻结导致无法正常下载的概率\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.17.exe](https://github.com/deretame/Breeze/releases/download/v3.0.17/windows-installer-v3.0.17.exe) |\n| **macOS** | [Breeze-macOS-v3.0.17.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.17/Breeze-macOS-v3.0.17.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.17.apk](https://github.com/deretame/Breeze/releases/download/v3.0.17/app-arm64-v8a-release-v3.0.17.apk) |\n| **iOS** | [Breeze-iOS-v3.0.17.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.17/Breeze-iOS-v3.0.17.ipa) |\n| **Linux** | [breeze-v3.0.17.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.17/breeze-v3.0.17.flatpak) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
-      "ipas": [
-        {
-          "name": "Breeze-iOS-v3.0.17.ipa",
-          "size": 23364475,
-          "url": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.17/Breeze-iOS-v3.0.17.ipa",
-          "id": 449349271,
-          "updated_at": "2026-06-16T15:27:51Z",
-          "digest": "sha256:9db9081bf23e3ada6989ebe98ffb6d9e7ad83641090a594bbc0a318b6353ffb8"
         }
       ]
     }
