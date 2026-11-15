@@ -1,6 +1,25 @@
 {
   "zxsos/HGhubX": [
     {
+      "tag": "v2.1.0",
+      "name": "v2.1.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-15",
+      "published_at": "2026-11-15T07:13:34Z",
+      "body": "## HGhubX 2.1.0\n\nHGhubX 2.1 新增标签屏蔽，完善账号同步，并优化播放和加载体验。\n\n### 更新点\n\n- **内容偏好**：新增按标签屏蔽，可在设置或视频“不感兴趣”中添加规则；首页自动跳过命中内容，列表支持临时展开，收藏和历史保留记录。\n- **播放手势**：手机端支持左下长按减速、右上长按加速，中心小方块长按“不感兴趣”；首次进入播放器显示区域提示，视频详情支持点击标签跳转。\n- **启动体验**：新增开屏动画和首次使用协议。\n- **性能**：优化页面按需加载、下一条视频和下一集预取，精简无效代码与重复请求。\n- **界面**：更新了 UI，自己体验。\n\n### 修复点\n\n- 修复首页刷视频后进入全屏跳到其他视频的问题。\n- 修复手机端吃瓜视频控制按钮隐藏的问题，调整小屏控制栏，并补充全屏失败时的屏幕内全屏模式。\n- 修复收藏和观看历史只显示首批内容、账号数据未完整回填的问题，完善关注列表分页和失败重试。\n- 修复账号、线路切换后的迟到请求污染当前数据，以及互动操作失败仍显示成功的问题。\n- 修复详情封面加载状态异常，优先加载详情封面，并合并同地址的下载和解密请求。\n- 补齐原生播放器的单段 Range 响应，返回正确的 `206`、`416` 和 `Content-Range`，改善 iOS 媒体探测流程。\n\n### 构建产物\n\n- Linux amd64：`.deb`\n- Android：arm64、arm、x86_64 分 ABI APK\n- Windows：x64 安装包和便携版 ZIP\n- macOS：Universal `.dmg`\n- iOS：未签名 `.ipa`\n\n\n## What's Changed\n* feat(app): integrate UI and playback updates for v2.1.0 by @zxsos in https://github.com/zxsos/HGhubX/pull/110\n\n\n**Full Changelog**: https://github.com/zxsos/HGhubX/compare/v2.0.0...v2.1.0",
+      "ipas": [
+        {
+          "name": "HGhubX_2.1.0_ios.ipa",
+          "size": 3818931,
+          "url": "https://github.com/zxsos/HGhubX/releases/download/v2.1.0/HGhubX_2.1.0_ios.ipa",
+          "id": 750174061,
+          "updated_at": "2026-11-15T07:13:33Z",
+          "digest": "sha256:ac818e9ef53405ab31033db1644c421e07c7932c18cc07024582882a7cac2e46"
+        }
+      ]
+    },
+    {
       "tag": "v2.0.0",
       "name": "v2.0.0",
       "pre": false,
@@ -332,16 +351,6 @@
       "date": "2026-11-09",
       "published_at": "2026-11-09T16:40:23Z",
       "body": "## 版本号递增\n\nversionCode `1002001`，上一版是 `1002000`。\n\n之前 `1.2.0` 和 `1.2.0+hg.1` 算出来是同一个号，装上去跟没升一样。现在这个号是算出来写死的，签名那一步还会打一行到日志里。\n\n## 安装\n\n直接覆盖，不用卸载。签名没变（`CN=HGhub`）。\n\n还在用 r3 或更早那个 `CN=HGhub Fork` 签名的，得卸载一次，那个私钥丢了重签不出来。\n\n## 改了什么\n\n- Android 严格模式下 m3u8 拉不下来，接口通了但一个字节发不出去，就是 `manifestLoadError` 和关掉严格模式后一直转圈那个（上游 #33）\n- `[play]` 那行不再拿废弃的 `video_url` 判断成败，之前看着像失败其实能放\n- Linux 装完直接能放，不用另装解码器\n- 诊断日志里带了版本、平台、内核、线路、哪部第几集、接口返回什么\n\n## 文件\n\n| 平台 | 文件 | 大小 | SHA-256 |\n|---|---|---|---|\n| Android arm64 | `HGhub_1.2.1+hg.1_arm64.apk` | 8.79 MB | `48f3cd7d2ef19119f97cc1ea092df472bba5cdcebfa3a34604743172dd89dc2b` |\n| Android arm32 | `HGhub_1.2.1+hg.1_arm.apk` | 6.58 MB | `fd08d2aa680554247ee6319df92b53d57ec5b6cbfe8788d6059ea1a8354f6e13` |\n| Android x86_64（模拟器） | `HGhub_1.2.1+hg.1_x86_64.apk` | 9.41 MB | `1608b4e25b84bb78a754034deac14755afbbdaebced2acc59929a3b105a0ffae` |\n| Windows 安装版 | `HGhub_1.2.1+hg.1_x64-setup.exe` | 2.18 MB | `99f190ff1ae9624b2aecc499b63f613467d7705e23e6afcbc236c556df6e4e17` |\n| Windows 便携版 | `HGhub_1.2.1+hg.1_x64_portable.zip` | 2.60 MB | `9a73fe70f878736a2216d2f4601d53a6ba8c517a22f6be66f817b0685ee7da8a` |\n| macOS 通用 | `HGhub_1.2.1+hg.1_universal.dmg` | 5.32 MB | `7cd4aaa30b88b959c4bab5cd3a04f71fcd1af872e47d8b7058927237ae7ed9d0` |\n| Linux x64 | `HGhub_1.2.1+hg.1_amd64.deb` | 3.13 MB | `64328a64520ad354a00960ed1cc5324aa2af02a7c1fb4a18af920e0f6b0234cd` |\n\n## 放不了\n\nhttps://github.com/zxsos/HGhub/issues/2\n\n设置 → 播放诊断 → 复制播放诊断日志 → 粘上去。开关不用开，不用写别的。",
-      "ipas": []
-    },
-    {
-      "tag": "hgfix-1.2.0-r4",
-      "name": "1.2.0+hg.1",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-09",
-      "published_at": "2026-11-09T16:01:37Z",
-      "body": "> 新版是 [1.2.1+hg.1](https://github.com/zxsos/HGhub/releases/tag/hgfix-1.2.1-r5)，这页是 1.2.0。装新的那个就行，能直接覆盖。\n\n## 这版修了什么\n\n- **上游 #33**：Android 严格模式下，本机媒体代理被 Origin / 导航守卫挡掉，接口通了但 m3u8 一个字节都发不出去，表现就是 `manifestLoadError`、关严格模式后无限转圈。现在放行本机代理通道，安全校验仍然在后端做。\n- 播放诊断日志**复制即完整**：版本、平台、WebView 内核、当前线路、哪部剧第几集、接口返回什么，都自动带上，不用手写。\n- `[play]` 行改用 `src=kind=host`，不再用已经废弃的 `video_url` 判断成败（之前看着像失败其实正常）。\n- Linux 桌面端开箱能播，不用另外装解码器。\n\n## 装过旧版的，要先卸载一次\n\n签名换了：\n\n| | 旧版 | 本版 |\n|---|---|---|\n| 证书 | `CN=HGhub Fork` | `CN=HGhub` |\n| SHA-256 | `83:45:CE:05…` | `4B:83:B3:6B…` |\n\n旧私钥文件丢了，重签不出来，所以覆盖安装会报 `INSTALL_FAILED_UPDATE_INCOMPATIBLE`。卸载旧版再装本版就行（播放记录和设置会清一次，就这一次）。之后的新版都能正常覆盖升级。\n\n## 文件\n\n| 平台 | 文件 | 大小 | SHA-256 |\n|---|---|---|---|\n| Android arm64 | `HGhub_1.2.0+hg.1_arm64.apk` | 8.79 MB | `0987a3c29424794013094bca5d61c9e2c6c03a723e9dbc5951824bd353b768d8` |\n| Android arm32 | `HGhub_1.2.0+hg.1_arm.apk` | 6.58 MB | `37b60c00917aa06601a6fc21b6e5187d1f6d3ba962960d3d2f2223c9ddb1ccfe` |\n| Android x86_64（模拟器） | `HGhub_1.2.0+hg.1_x86_64.apk` | 9.41 MB | `1adfe4a320c246b2cdf2faca7acfa7895670c4fac455ee8c73ce7be8f1c4cd2f` |\n| Windows 安装版 | `HGhub_1.2.0+hg.1_x64-setup.exe` | 2.18 MB | `79e80e25700cb3a1cb2bcb033b5bb528173a3494cbb44fb48046cc3bac4089e8` |\n| Windows 便携版 | `HGhub_1.2.0+hg.1_x64_portable.zip` | 2.60 MB | `7619bda3f32ed32759e232558ef1250aeea13bdbbf64f79135590d6524de49dd` |\n| macOS 通用 | `HGhub_1.2.0+hg.1_universal.dmg` | 5.32 MB | `3bbfae9eb7ac45cfc3383d8cac644dd4a22bc378486fb7575590425726c8ef24` |\n| Linux x64 | `HGhub_1.2.0+hg.1_amd64.deb` | 3.13 MB | `e213b7787da9766387bf954f0d706c021f41046a16ddb34dbc5f627afaabff78` |\n\n## 放不了怎么办\n\n去 https://github.com/zxsos/HGhub/issues/2 。设置 → 播放诊断 → 复制播放诊断日志 → 粘上去，开关不用开，别的什么都不用写。\n",
       "ipas": []
     }
   ],
@@ -5337,6 +5346,25 @@
   ],
   "CyrilPeng/Venera-Next": [
     {
+      "tag": "v1.18.4-rc.2",
+      "name": "v1.18.4-rc.2",
+      "pre": true,
+      "draft": false,
+      "date": "2026-11-15",
+      "published_at": "2026-11-15T05:44:54Z",
+      "body": "### 预发布与测试\n\n- 发布第二个 `1.18.4-rc.2+251` 候选版，集中交付 Cloudflare 验证异常、设置与调光面板跳动、大收藏列表和阅读加载期间重复工作的修复；包含菜单锁、可选白边裁剪、收藏交互改进、鸿蒙桌面名称修复及测试／CI 整理。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 与鸿蒙均从本次标签提交重新构建。\n- 稳定更新渠道保持 `v1.18.3`，候选版需从 Release 页面手动下载；AltStore 与 Winget 不推进至 RC。保留原包名和签名身份，升级前导出并另存完整应用数据备份，保留原漫画文件；覆盖安装保留原数据，无需清库、卸载或重新导入。\n- 本版供实际设备测试。Android 120 Hz 下的收藏／阅读流畅性、原 Windows 站点的 Cloudflare 验证仍待提出者复测，构建及组件回归不代表真机帧率或原站点交互已经验收。鸿蒙 HAP 仍为 ARM64／API 26 未签名 Beta，须沿用原签名密钥自行签装，保留 `signed: false` 和 `runtime_verified: false`。\n- 完整安装包公开并核验后，分别邀请 #165、#167、#168、#169、#170、#178 及本版首次交付或追加改进的 #139、#152、#157、#162 提出者测试各自场景；保留问题开放状态，依据实际反馈确认结果。\n- #166 的服务端拒绝／TLS 连接问题、#159 的长期外部漫画库仍需独立处理；#163、#81、#123 按当前安排继续搁置，本版不把这些问题声明为已解决。\n\n### 开发与测试维护\n\n- 补充完整测试整理实施方案，明确运行基线、平台执行缺口、公共夹具与模块整理顺序、用例合并／删除依据、CI 分片与覆盖率验收及逐批回滚方式，作为本轮逐批实施与验证依据。\n- 新增全量、Windows 和真实 TV flavor 的测试执行清单，登记独立原生、脚本及手动探针入口；Flutter 测试保留原始 machine 事件和逐文件／用例耗时，核对选中文件是否实际加载，保留测试与协议失败退出码，CI 上传清单和运行记录供后续整理对照。\n- Windows PR 与完整构建按同一清单运行平台、原生和窗口生命周期回归，根测试变更纳入平台触发条件；原生库及字体跟随当前 Debug／Release 测试包，CI 缺少必需原生依赖直接失败。独立 Linux JVM 任务使用与 Android 一致的 Kotlin 2.1.0／Java 17，校验官方编译器摘要并执行下载会话、所选文件和音量键所有权的三个现有回归入口。\n- 测试执行器在启动进程前按 PATH 解析 Flutter 入口，修复 Windows 将 `flutter` 解析为 `.bat` 时无法启动的问题；新增实际批处理／Shell 入口回归，保留缺少工具、协议错误与用例失败的退出码。\n- Windows 测试进程使用 runner 专用临时目录并解析其实际路径，本地运行解析系统临时目录，避免 `RUNNER~1` 短路径影响事务和真实进程恢复夹具；路径别名、越界和所有权断言继续执行，并增加真实短路径子进程回归。\n- 将侧栏、JS 界面、归档、源编辑器和图片收藏的公共辅助函数集中到独立支持文件，保留原等待、异常传播及资源收尾；清单检查禁止借用其他测试文件的辅助函数，保留 photo_view 的合法入口包装，并记录搬移与用例名称对照。\n- 按布局、导航、菜单、评论、导出、设置及退出职责拆分阅读器集成测试，共用原会话夹具并保留 179 项回归及真实原生生命周期。Windows 清单识别经辅助文件传递的原生准备；鸿蒙宿主使用共享执行清单，包含全部拆分目标并保留实际 machine 事件，独立固定 SDK 与真机验收规则继续适用。\n- 将收藏管理器回归按事务、生命周期、旧库兼容和更新追踪拆为四个职责文件，共用目录和漫画夹具，保留 59 项原用例及失败后重启的结果断言；鸿蒙宿主清单包含全部拆分目标。\n- 真实同步崩溃／恢复探针在标记重命名完成后通过标准输出确认检查点，父进程收到确认再读标记并强制终止子进程，避免 Windows 已看到目标文件但重命名仍持有共享句柄的竞争；原实际磁盘恢复、进程退出与内容断言继续执行。\n- 将下载任务回归按任务策略、取消、队列和归档职责拆为四个文件，共用原漫画源、控制任务和存储夹具，保留 43 项原用例及取消／续传、失败清理和真实文件结果断言。\n- 同步崩溃回归复用现有 Dart VM 定位器，重定向与远程条件回归共用原响应夹具；清理桌面 Flutter host 始终无法执行的 Android 分享声明，保留实际通道序列化和",
+      "ipas": [
+        {
+          "name": "VeneraNext-ios-1.18.4-rc.2+251.ipa",
+          "size": 21538422,
+          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.4-rc.2/VeneraNext-ios-1.18.4-rc.2%2B251.ipa",
+          "id": 749979785,
+          "updated_at": "2026-11-15T05:44:37Z",
+          "digest": "sha256:113f2c06ab1e3e1e80c07245d38a7b5f5f548e6117385ccbf3b04515c2c6dd19"
+        }
+      ]
+    },
+    {
       "tag": "v1.18.4-rc.1",
       "name": "v1.18.4-rc.1",
       "pre": true,
@@ -5694,25 +5722,6 @@
           "id": 529069396,
           "updated_at": "2026-08-25T11:05:23Z",
           "digest": "sha256:9b9d37b3020aa97052ffa8ed6c4c4805adaa7ca30cdcc374849da8838b2a863d"
-        }
-      ]
-    },
-    {
-      "tag": "v1.14.2",
-      "name": "v1.14.2",
-      "pre": false,
-      "draft": false,
-      "date": "2026-08-07",
-      "published_at": "2026-08-07T16:03:31Z",
-      "body": "### 新增\n\n- 收藏页新增独立的封面画廊模式，支持自动或 2～6 列布局，并在本地收藏与网络收藏之间保持一致。\n\n### 修复\n\n- 修复阅读器中手动收藏章节封面后无法取消收藏的问题，同时继续保护收藏其他图片时自动补入的封面。\n- 修复 WebDAV 漫画详情只显示前三章的问题；升级后会自动识别并重建受影响版本生成的旧缓存。\n",
-      "ipas": [
-        {
-          "name": "VeneraNext-ios-1.14.2+220.ipa",
-          "size": 19316858,
-          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.14.2/VeneraNext-ios-1.14.2%2B220.ipa",
-          "id": 505356374,
-          "updated_at": "2026-08-07T16:03:28Z",
-          "digest": "sha256:f1bcc79f616ff8cc6327b1592d953e3dcd441a64ae2d0c6dfb046949ad06becc"
         }
       ]
     }
@@ -6619,6 +6628,25 @@
   ],
   "ccbkv/PicaComic": [
     {
+      "tag": "5.1.1",
+      "name": "5.1.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-15",
+      "published_at": "2026-11-15T05:45:19Z",
+      "body": "# 5.1.1 (2026-11-15)\r\n**更新说明**\r\n- 与5.1.0无差別，但5.1.1修复了翻页\r\n- 修复导出所有数据\r\n- 修复特定 soc 开启ai翻译后闪退, \r\n- 修复hitomi本地收藏 \r\n- 修复ios 27\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/5.0.7...5.1.1",
+      "ipas": [
+        {
+          "name": "PicaComic-5.1.1-app-ios-build_no_sign.ipa",
+          "size": 31706166,
+          "url": "https://github.com/ccbkv/PicaComic/releases/download/5.1.1/PicaComic-5.1.1-app-ios-build_no_sign.ipa",
+          "id": 749967902,
+          "updated_at": "2026-11-15T05:38:48Z",
+          "digest": "sha256:1bfec03b051fb6865751bcbed8cef45d4fcad4ae777553d22de3a39085c756b9"
+        }
+      ]
+    },
+    {
       "tag": "5.1.0",
       "name": "5.1.0",
       "pre": false,
@@ -6626,16 +6654,7 @@
       "date": "2026-11-14",
       "published_at": "2026-11-14T20:10:28Z",
       "body": "# 5.1.0 (2026-11-14)\r\n**更新说明**\r\n- 优化修复后台下载\r\n-  修复导出所有数据\r\n- 修复特定 soc 开启ai翻译后闪退, \r\n- 修复hitomi本地收藏 \r\n- 修复ios 27\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\n\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/5.0.7...5.1.0",
-      "ipas": [
-        {
-          "name": "PicaComic-5.1.0-app-ios-build_no_sign.ipa",
-          "size": 31707512,
-          "url": "https://github.com/ccbkv/PicaComic/releases/download/5.1.0/PicaComic-5.1.0-app-ios-build_no_sign.ipa",
-          "id": 748642186,
-          "updated_at": "2026-11-14T20:10:20Z",
-          "digest": "sha256:5bfc9949cd5a56ffe2a3f842b61dde4878af353f69464aa135318cf778d8b818"
-        }
-      ]
+      "ipas": []
     },
     {
       "tag": "5.0.7",
@@ -6976,25 +6995,6 @@
           "id": 390872741,
           "updated_at": "2026-04-07T14:53:03Z",
           "digest": "sha256:3d39b288e251cff133d455ff1c5a8cec1e9fc0f9b8df72b5fb422f0d4842092e"
-        }
-      ]
-    },
-    {
-      "tag": "4.6.1",
-      "name": "4.6.1",
-      "pre": false,
-      "draft": false,
-      "date": "2026-04-06",
-      "published_at": "2026-04-06T14:17:42Z",
-      "body": "# 4.6.1 (2026-04-06)\r\n\r\n\r\n\r\n\r\n**更新说明**\r\n\r\n\r\n- 1. 修复nhentai的登录过期\r\n * fix(nhentai): refresh auth tokens on expiry by @fengye-su in https://github.com/ccbkv/PicaComic/pull/46\r\n\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何测试，不受任何支持.\r\n\r\n\r\n\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/4.5.8...4.6.1",
-      "ipas": [
-        {
-          "name": "PicaComic-4.6.1-app-ios-build.ipa",
-          "size": 15816395,
-          "url": "https://github.com/ccbkv/PicaComic/releases/download/4.6.1/PicaComic-4.6.1-app-ios-build.ipa",
-          "id": 390058639,
-          "updated_at": "2026-04-06T14:17:15Z",
-          "digest": "sha256:25592e9f9c3d7e41d2b41eb9ecbda9c2236685f67df7f084db8c892a75fd8cd7"
         }
       ]
     }
