@@ -1,6 +1,25 @@
 {
   "zxsos/HGhubX": [
     {
+      "tag": "v2.1.2",
+      "name": "v2.1.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-15",
+      "published_at": "2026-11-15T16:56:37Z",
+      "body": "## HGhubX 2.1.2\n\n### 更新点\n\n- 标签详情同时展示短剧和吃瓜帖子，并分别分页；标签热度会明确标注，不再与内容数量混淆。\n- 横屏视频按当前播放源的媒体尺寸识别，尺寸确认前使用完整画面适配。\n\n### 修复点\n\n- 修复社区标签只查询短剧接口，导致官网存在帖子但应用显示空列表的问题。\n- 修复切集、切源时媒体尺寸报告竞态导致首页横屏视频被裁切或未显示横屏控制的问题。\n\n\n**Full Changelog**: https://github.com/zxsos/HGhubX/compare/v2.1.1...v2.1.2",
+      "ipas": [
+        {
+          "name": "HGhubX_2.1.2_ios.ipa",
+          "size": 3852817,
+          "url": "https://github.com/zxsos/HGhubX/releases/download/v2.1.2/HGhubX_2.1.2_ios.ipa",
+          "id": 751672739,
+          "updated_at": "2026-11-15T16:57:51Z",
+          "digest": "sha256:fdf8a64f296d7aa38720c21e440504dbfe6018bdc348b559902ce35382465254"
+        }
+      ]
+    },
+    {
       "tag": "v2.1.1",
       "name": "v2.1.1",
       "pre": false,
@@ -37,330 +56,6 @@
           "digest": "sha256:7f9035c02a52c717eb87b7742331174c801a0d1f38225a6dd005ee054583bd98"
         }
       ]
-    },
-    {
-      "tag": "v2.0.0",
-      "name": "v2.0.0",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-13",
-      "published_at": "2026-11-13T18:12:46Z",
-      "body": "## HGhubX 2.0.0\r\n\r\nHGhubX 2.0 是一次完整的品牌、网络、播放和跨平台界面升级。\r\n\r\n### 更新点\r\n\r\n- **播放源与线路**：恢复发布页线路解析、自动选线和手动选线；线路切换、取消和重新加载使用会话保护；保存的线路可在重启后恢复。\r\n- **镜像与代理**：新增自定义镜像；支持跟随系统代理、自定义代理和直连三种模式；应用代理覆盖请求与播放链路。\r\n- **网络诊断**：区分 DNS、TCP、代理和 HTTP 传输问题；补充线路、目标地址、耗时和处理建议；复制报告时自动隐藏代理凭据。\r\n- **界面**：更新了 UI，自己体验。\r\n\r\n### 修复点\r\n\r\n- 修复 Linux WebKit 将本机媒体请求错误送入系统代理，导致接口可用但视频无法播放的问题。\r\n- 修复重复 `Content-Length`、Linux 开发 CSP 和播放失败后的重试状态问题。\r\n- 修复 iOS 生成工程仍使用 Tauri 默认图标的问题。\r\n- 修复 Windows NSIS 构建中图标生成脚本嵌套启动 `pnpm.cmd` 导致 `spawnSync EINVAL` 的问题。\r\n\r\n\r\n### 构建产物\r\n\r\n- Linux amd64：`.deb`\r\n- Android：arm64、arm、x86_64 分 ABI APK\r\n- Windows：x64 安装包和便携版 ZIP\r\n- macOS：Universal `.dmg`\r\n- iOS：未签名 `.ipa`\r\n\r\n## What's Changed\r\n* feat: HGhubX 1.3.0 品牌收口与功能更新 by @zxsos in https://github.com/zxsos/HGhubX/pull/71\r\n* 修复 HGhubX 播放与移动端布局，恢复选线并增加应用代理 by @zxsos in https://github.com/zxsos/HGhubX/pull/73\r\n* 统一 HGhubX 命名，迁移旧本地数据并兼容旧环境变量 by @zxsos in https://github.com/zxsos/HGhubX/pull/72\r\n* chore(release): prepare v2.0.0 by @zxsos in https://github.com/zxsos/HGhubX/pull/79\r\n* fix(build): avoid Windows pnpm wrapper in icon generation by @zxsos in https://github.com/zxsos/HGhubX/pull/80\r\n\r\n\r\n**Full Changelog**: https://github.com/zxsos/HGhubX/compare/v1.2.19...v2.0.0\r\n",
-      "ipas": [
-        {
-          "name": "HGhubX_2.0.0_ios.ipa",
-          "size": 3757105,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v2.0.0/HGhubX_2.0.0_ios.ipa",
-          "id": 744728178,
-          "updated_at": "2026-11-13T18:31:53Z",
-          "digest": "sha256:b041224e4066c448439403bd27e7d2d86d4e65cc2fb2282642315ed782663f1a"
-        }
-      ]
-    },
-    {
-      "tag": "v1.2.19",
-      "name": "v1.2.19",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-11",
-      "published_at": "2026-11-11T07:47:10Z",
-      "body": "## What's Changed\n* ci: 添加前端 PR 检查流水线 by @zxsos in https://github.com/zxsos/HGhub/pull/49\n* fix(clipboard): 分享与链接复制兜底改用原生剪贴板 by @zxsos in https://github.com/zxsos/HGhub/pull/42\n* fix(player): 切换短剧时先清空相关推荐 by @zxsos in https://github.com/zxsos/HGhub/pull/46\n* fix(search): 新关键词不再被进行中的请求吞掉 by @zxsos in https://github.com/zxsos/HGhub/pull/43\n* fix(home): 首页翻页失败后退避，避免反复弹错误提示 by @zxsos in https://github.com/zxsos/HGhub/pull/44\n* fix(line): 切换线路后重拉加载失败的首页与分类数据 by @zxsos in https://github.com/zxsos/HGhub/pull/45\n* fix(search): 就地搜索框对齐全局搜索，频道页搜索按钮归位 by @zxsos in https://github.com/zxsos/HGhub/pull/47\n* fix(category): 频道页翻页按页排序，避免加载更多时列表重排 by @zxsos in https://github.com/zxsos/HGhub/pull/48\n\n\n**Full Changelog**: https://github.com/zxsos/HGhub/compare/v1.2.18...v1.2.19",
-      "ipas": [
-        {
-          "name": "HGhub_1.2.19_ios.ipa",
-          "size": 3521136,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v1.2.19/HGhub_1.2.19_ios.ipa",
-          "id": 734629947,
-          "updated_at": "2026-11-11T07:47:09Z",
-          "digest": "sha256:449ef38a6f3e43436f7deaf1469a6fb8ce602e2e0cc768d9c05fb832c9dfa0ee"
-        }
-      ]
-    },
-    {
-      "tag": "v1.2.18",
-      "name": "v1.2.18",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-11",
-      "published_at": "2026-11-11T03:50:17Z",
-      "body": "## 1.2.18\n\n### 新增\n- **栏目内就地搜索**：各栏目页（吃瓜列表、频道详情、专题 / 专题详情、标签 / 标签视频、关注流、用户主页）顶栏搜索按钮改为**在当前栏目内就地搜索**，不再跳转到全局搜索页。\n  - 吃瓜列表搜索走 `type=post`，结果以两列封面墙呈现，点击进帖详情（修复此前吃瓜频道搜索永远为空的问题，#34 #38）。\n  - 其余栏目搜索走 `type=video`，结果以视频墙呈现，点击进播放。\n  - 全局搜索（底部「搜索」tab）保持只搜短剧，与栏目内搜索彻底分离。\n\n### 修复\n- **iOS 诊断报告复制失败（#39）**：此前 iOS 上点「网络诊断」后，先等异步诊断再调 Web Clipboard API，可能被 WebKit 以 NotAllowedError 拒绝。现改为通过 Tauri 官方剪贴板插件写入原生剪贴板，网络报告与播放诊断日志共用同一复制入口；诊断成功但复制失败时保留完整报告并给出独立「复制报告」重试按钮，不重新发起诊断。普通浏览器环境保留 Web Clipboard 回退。\n\n### 构建产物\n- Android：arm64 / arm / x86_64 分 ABI 分包\n- iOS：未签名 ipa（需自行签名）\n- Windows：安装包 + 便携版\n- macOS：universal dmg\n- Linux：amd64 deb\n\n所有提交与标签均已通过 GPG 签名验证。\n\n\n## What's Changed\n* refactor(search): 栏目内就地搜索，与全局搜索分离 by @zxsos in https://github.com/zxsos/HGhub/pull/40\n* fix(ios): 通过原生剪贴板复制诊断报告（#39） by @zxsos in https://github.com/zxsos/HGhub/pull/41\n\n\n**Full Changelog**: https://github.com/zxsos/HGhub/compare/v1.2.17...v1.2.18",
-      "ipas": [
-        {
-          "name": "HGhub_1.2.18_ios.ipa",
-          "size": 3519894,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v1.2.18/HGhub_1.2.18_ios.ipa",
-          "id": 734030860,
-          "updated_at": "2026-11-11T03:50:15Z",
-          "digest": "sha256:7e266bf5bbf36523c0c8019fde0f851bbf06826c6b6b0b2c6948b34a185e0662"
-        }
-      ]
-    },
-    {
-      "tag": "v1.2.17",
-      "name": "v1.2.17",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-11",
-      "published_at": "2026-11-11T02:47:57Z",
-      "body": "## 1.2.17\n\n### 修复\n- **iOS 长按快进唤起放大镜（#18）**：1.2.16 的 CSS 方案（`-webkit-user-select:none`）挡不住 iOS 15+ 的 WKWebView 原生文本选择放大镜（loupe）。改为原生关闭：页面加载后默认 `WKPreferences.isTextInteractionEnabled = false`，同时关掉 `allowsLinkPreview`；输入框获得焦点时前端自动重新打开、失焦再关闭，搜索 / 评论 / 登录等文本输入不受影响。\n- **竖版切集胶囊遮挡画面（#19）**：从画面正中移到右边缘、只留图标与状态点（去掉「切集」两字），显示 / 隐藏带淡入淡出过渡；横版视频保持原来的居中横排不变。\n- **搜索页自动弹键盘（#20）**：移动端进入搜索页不再自动聚焦搜索框（原来 iOS 会立刻弹出键盘遮住内容），桌面端仍自动聚焦。\n- **媒体连接失败自动恢复（#2）**：视频播放列表 / 密钥 / 分片连接的域名出现 DNS、连接超时或传输错误时，在原有重试次数内自动改用 AliDNS 加密解析（HTTPS）重新获取地址后重试；媒体 URL、Host、TLS SNI 与证书校验保持原样，成功后该域名短时优先走恢复路径。HTTP 权限错误与目标策略拒绝不触发回退。顺带修正 `operation timed out` 被归为未知错误类型的日志分类问题。\n\n### 新增\n- **全屏自动净屏**：移动端全屏 3 秒无操作自动隐藏全部控件，单击画面立即切换显隐，暂停时保持显示；竖版切集胶囊锚定操作栏上方，不再与收藏按钮重叠。\n- **播放页画质徽章（#12）**：该集存在 HEVC 高清源时，标题旁显示当前画质徽章（HD 高清 / 标清），点按一键切换，无需进设置。\n- **侧边控件风格统一**：上下划切集开关从悬浮胶囊移入右侧操作栏，与收藏 / 评论 / 全屏 / 分享同列（图标 + 文字竖排，开启时金色高亮）；HD / 标清画质徽章同样并入操作栏同风格显示，点按切换不变。\n- **各栏目页搜索入口（#34）**：吃瓜列表、频道详情、专题 / 专题详情、标签 / 标签视频、关注流、用户主页等页面顶栏右侧新增搜索按钮，点击直达搜索页，不用再退到首页或切底部标签。\n- **吃瓜帖可搜索（#34 #38）**：搜索页新增「短剧 / 吃瓜帖」范围切换。吃瓜帖搜索显式走 `type=post`（此前省略 type 后端只回短剧，导致吃瓜频道搜索永远为空），结果以两列封面墙呈现，点击进帖详情；从吃瓜列表进入时自动预选「吃瓜帖」范围。\n- **全屏下集按钮**：全屏态底部控件条新增「下集」按钮（有下一集才显示）。此前全屏下切集只能靠上下划手势，关掉手势就完全没法切。\n- **网络诊断升级**：DNS 探测改走与真实请求相同的解析路径（修复「诊断报 DNS 失败、实际却打得开」的假阴性），新增 TCP 连通性探测；诊断结果自动给出结论码与排查建议（fake-ip / DNS 失败 / TCP 阻断 / TLS 异常等 11 种），复制出来是分段可读报告，直接贴 issue 即可定位。\n\n### 变更\n- **播放页去黑边**：移除底部压暗渐变与整体压暗层（原来进度条周围一圈黑），标题与详情标签降透明度，进度条透明化、仅保留白色进度点标示播放位置。\n\n### 构建产物\n- Android：arm64 / arm / x86_64 分 ABI 分包\n- iOS：未签名 ipa（需自行签名）\n- Windows：安装包 + 便携版\n- macOS：universal dmg\n- Linux：amd64 deb\n\n所有提交与标签均已通过 GPG 签名验证。\n\n\n## What's Changed\n* fix(ui): 播放页快捷胶囊贴边 + 搜索页移动端不自动聚焦（#19 #20） by @zxsos in https://github.com/zxsos/HGhub/pull/21\n* fix(player): 竖版切集胶囊贴边 + 显隐淡入淡出 + 全屏下集入口（#19） by @zxsos in https://github.com/zxsos/HGhub/pull/22\n* feat(diag): 网络诊断升级——同路径 DNS + TCP 探测、结论建议、可读报告 by @zxsos in https://github.com/zxsos/HGhub/pull/25\n* style(player): 去掉播放页底部压暗黑边，进度条透明化只留进度点 by @zxsos in https://github.com/zxsos/HGhub/pull/26\n* sty",
-      "ipas": [
-        {
-          "name": "HGhub_1.2.17_ios.ipa",
-          "size": 3475759,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v1.2.17/HGhub_1.2.17_ios.ipa",
-          "id": 733866238,
-          "updated_at": "2026-11-11T02:47:56Z",
-          "digest": "sha256:167bd492eb3d70943386bf0839bc5d3f8d4e7285b83ea262cc7c50e407f28029"
-        }
-      ]
-    },
-    {
-      "tag": "v1.2.16",
-      "name": "v1.2.16",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-10",
-      "published_at": "2026-11-10T14:52:01Z",
-      "body": "## 1.2.16\n\n### 修复\n- **吃瓜帖视频不显示（#11）**：帖详情的 `video_url` 由服务端恒返回空，视频地址只由 `POST /api/posts/:id/playback` 下发。新增该接口调用后，吃瓜详情打开即自动起播，多段视频（同一帖拆成 2~6 段）可分段切换并自动续播。\n- **iOS 首屏底部白边（#8）**：关闭 WKWebView 自动安全区内边距，在 viewport-fit=cover 生效后立即重算布局视口，无需横屏再竖屏。\n- **iOS 横屏视频未适配（#8）**：HLS 横屏视频首帧宽高未检出，在 loadeddata/playing/resize 等时机补齐真实宽高，竖屏自动 letterbox，右侧「全屏」按钮按真实横竖方向进入全屏；修复横屏全屏 180° 倒置（去掉双 90° 叠加）。\n- **底部导航选中高亮偏移（#13）**：液滴高亮原先始终偏左，越靠后偏差越大，改为按四等分槽位中心定位并居中。\n- **iOS 长按快进唤起文本选择放大镜（#16）**：`body` 增加 `-webkit-user-select: none` 与 `-webkit-touch-callout: none`，输入框保留可编辑。\n\n### 新增\n- **优先高清 HEVC 源（#12）**：设置页新增「优先高清」开关，该集有 HEVC 高清源时优先播放，播不了自动切回标准。\n\n### 变更\n- 底栏重做为 iOS 26 液态玻璃悬浮胶囊：不贴边悬浮、液滴弹性跟随滑动、图标充色、按压放大，设计对齐 liuran001/WeChat-LiquidGlass。\n- 快捷胶囊「切集/铺满/横屏」单行不折行，横屏全屏控件增加安全区偏移。\n\n### 优化\n- 移动端内容底部让位同步加大（40 → 74），首页沉浸视频不被悬浮胶囊压住。\n\n### 构建产物\n- Android：arm64 / arm / x86_64 分 ABI 分包\n- iOS：未签名 ipa（需自行签名）\n- Windows：安装包 + 便携版\n- macOS：universal dmg\n- Linux：amd64 deb\n\n所有提交与标签均已通过 GPG 签名验证。\n\n\n## What's Changed\n* 修复 iOS 首屏白边、底部导航高亮与横屏视频/全屏显示 by @zxsos in https://github.com/zxsos/HGhub/pull/14\n* feat(player): 优先高清 HEVC 源（#12） by @zxsos in https://github.com/zxsos/HGhub/pull/15\n* 修复 iOS 长按快进时唤起文本选择放大镜 by @zxsos in https://github.com/zxsos/HGhub/pull/16\n\n## New Contributors\n* @zxsos made their first contribution in https://github.com/zxsos/HGhub/pull/14\n\n**Full Changelog**: https://github.com/zxsos/HGhub/compare/v1.2.15...v1.2.16",
-      "ipas": [
-        {
-          "name": "HGhub_1.2.16_ios.ipa",
-          "size": 3452956,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v1.2.16/HGhub_1.2.16_ios.ipa",
-          "id": 731798664,
-          "updated_at": "2026-11-10T14:52:00Z",
-          "digest": "sha256:5309e82a848498498d68168f1b2e3275e3dc913bf2e2e2f607e858fad5edb0da"
-        }
-      ]
-    },
-    {
-      "tag": "v1.2.15",
-      "name": "v1.2.15",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-10",
-      "published_at": "2026-11-10T10:06:51Z",
-      "body": "## 1.2.15\n\n### 变更\n- 专题列表与专题详情改为一次取全（此前接口默认每页仅回 9 个专题、20 部视频，会漏内容）。\n- 搜索页新增「热搜榜」（接口实时数据）。\n- 分类页新增「黄果吃瓜」入口：吃瓜分类（热门吃瓜 / AI原创）、图文详情、相关推荐。\n- 新增关注流（我的关注）与用户主页（资料、作品、关注）。\n- 播放页详情抽屉新增作者卡片（可跳用户主页）、相关推荐横滑。\n\n### 优化\n- 底栏改为液态玻璃（半透明 + 磨砂 + 顶部高光），Android 与 iOS 通用。\n- iOS 底部留白修复：改用 100dvh 动态视口，移除启动时 html 高度锁死逻辑。\n- iOS 横屏适配对齐 LNPANDY 增强版设计：原生旋转自动进入/退出全屏、screen.orientation 锁定、全屏与旋转后滚动位置校准（修复「横屏播放变成别的剧集」）。\n- 瀑布流改 CSS Grid，规避 WebKitGTK 2.52.6 下多列首卡被裁剪的问题（搜索/分类/专题详情共用）。\n\n### 构建产物\n- Android：arm64 / arm / x86_64 分 ABI 分包\n- iOS：未签名 ipa（需自行签名）\n- Windows：安装包 + 便携版\n- macOS：universal dmg\n- Linux：amd64 deb\n\n所有提交与标签均已通过 GPG 签名验证。\n\n\n**Full Changelog**: https://github.com/zxsos/HGhub/compare/v1.2.14...v1.2.15",
-      "ipas": [
-        {
-          "name": "HGhub_1.2.15_ios.ipa",
-          "size": 3440851,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v1.2.15/HGhub_1.2.15_ios.ipa",
-          "id": 730952143,
-          "updated_at": "2026-11-10T10:06:50Z",
-          "digest": "sha256:6f2df46bc87392dc1f507bf84d787e1a67d835dfec6d36c4af386653d7decc16"
-        }
-      ]
-    },
-    {
-      "tag": "v1.2.14",
-      "name": "v1.2.14",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-10",
-      "published_at": "2026-11-10T06:11:57Z",
-      "body": "## 1.2.14\n\n### 变更\n- 更新流程改为「打开下载页」：检测到新版本后，点「前往下载」用系统浏览器打开 GitHub Releases，由浏览器与系统完成下载与安装。此前应用内自行下载安装包再调起安装器的方式已移除。\n- 打开失败时自动把下载地址复制到剪贴板，便于在浏览器粘贴。\n\n### 优化\n- 重写视频页快捷胶囊：多个操作合并进一个玻璃拟态胶囊组，用细分隔线对齐，标签精简为二字（切集 / 铺满 / 适应 / 横屏），视觉更统一。\n\n### 修正\n- 关于页的仓库地址改为本仓库（zxsos/HGhub），点击直接用浏览器打开。\n- README 中的官方仓库与下载渠道链接同步更正。\n\n### 构建产物\n- Android：arm64 / arm / x86_64 分 ABI 分包\n- iOS：未签名 ipa（需自行签名）\n- Windows：安装包 + 便携版\n- macOS：universal dmg\n- Linux：amd64 deb\n\n所有提交与标签均已通过 GPG 签名验证。\n\n\n**Full Changelog**: https://github.com/zxsos/HGhub/compare/v1.2.13...v1.2.14",
-      "ipas": [
-        {
-          "name": "HGhub_1.2.14_ios.ipa",
-          "size": 3415456,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v1.2.14/HGhub_1.2.14_ios.ipa",
-          "id": 730348965,
-          "updated_at": "2026-11-10T06:18:38Z",
-          "digest": "sha256:8ab0b81d002176184e8edf4841b9833f9a7efb8d3347f95da5476902f24edec1"
-        }
-      ]
-    },
-    {
-      "tag": "v1.2.13",
-      "name": "v1.2.13",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-10",
-      "published_at": "2026-11-10T05:41:20Z",
-      "body": "## 1.2.13\n\n### 新增\n- 「上下划切集」开关下沉到视频页：多集剧播放时，画面中下方常驻胶囊开关，高亮为开、暗色为关，一点即切、立即生效，不必再进设置页。\n\n### 优化\n- 开关状态与设置页实时同步；竖屏单集视频不显示该胶囊，保持画面干净。\n- 长按倍速的锁定提示条去掉放大动画，不再被误认为画面缩放。\n\n### 构建产物\n- Android：arm64 / arm / x86_64 分 ABI 分包\n- iOS：未签名 ipa（需自行签名）\n- Windows：安装包 + 便携版\n- macOS：universal dmg\n- Linux：amd64 deb\n\n所有提交与标签均已通过 GPG 签名验证。",
-      "ipas": [
-        {
-          "name": "HGhub_1.2.13_ios.ipa",
-          "size": 3424727,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v1.2.13/HGhub_1.2.13_ios.ipa",
-          "id": 730266494,
-          "updated_at": "2026-11-10T05:41:19Z",
-          "digest": "sha256:bf187b2702b4a34c911e2272fb39bcf199fa7010da4769f62338d4047567cae4"
-        }
-      ]
-    },
-    {
-      "tag": "v1.2.12",
-      "name": "v1.2.12",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-10",
-      "published_at": "2026-11-10T05:35:04Z",
-      "body": "## 1.2.12\n\n### 新增\n- 竖屏下刷到横屏视频：默认完整显示（上下留黑边），画面下方出现「放大铺满 / 完整适应 / 横屏全屏」胶囊按钮，一键切换显示方式或进入横屏全屏。\n- 双指放大视频后可一键「还原缩放」。\n\n### 修复\n- iOS 打开播放页底部一截空白（横屏再竖屏才恢复）：WKWebView 工具栏收起后 layout viewport 高度不更新的问题；现在页面高度钉在可视高度上，并随旋转、键盘、工具栏变化自动校准。\n\n### 构建产物\n- Android：arm64 / arm / x86_64 分 ABI 分包\n- iOS：未签名 ipa（需自行签名）\n- Windows：安装包 + 便携版\n- macOS：universal dmg\n- Linux：amd64 deb\n\n所有提交与标签均已通过 GPG 签名验证。",
-      "ipas": [
-        {
-          "name": "HGhub_1.2.12_ios.ipa",
-          "size": 3424187,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v1.2.12/HGhub_1.2.12_ios.ipa",
-          "id": 730252277,
-          "updated_at": "2026-11-10T05:35:03Z",
-          "digest": "sha256:67d7b74503309024acf68794b336de324d7342eadad06a30fa34c173c5185699"
-        }
-      ]
-    },
-    {
-      "tag": "v1.2.11",
-      "name": "v1.2.11",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-10",
-      "published_at": "2026-11-10T05:19:53Z",
-      "body": "## 1.2.11\n\n### 新增\n- 剧集预热：当前集开始播放后，自动在后台取好上一集 / 下一集的播放地址，切集秒开，不再白屏等待。\n\n### 修复\n- 首页 / 分类 / 详情页不再因切换线路而被重建。此前线路切换会重置整个列表，正在刷的 feed 会“跑回最前面”，观感上就像翻页后排序乱掉；现在切换线路保持当前位置与播放状态。\n- 首页分页批量由 10 条调整为 30 条，减少翻页拼接次数。\n\n### 构建产物\n- Android：arm64 / arm / x86_64 分 ABI 分包\n- iOS：未签名 ipa（需自行签名）\n- Windows：安装包 + 便携版\n- macOS：universal dmg\n- Linux：amd64 deb\n\n所有提交与标签均已通过 GPG 签名验证。\n",
-      "ipas": [
-        {
-          "name": "HGhub_1.2.11_ios.ipa",
-          "size": 3424434,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v1.2.11/HGhub_1.2.11_ios.ipa",
-          "id": 730217620,
-          "updated_at": "2026-11-10T05:19:52Z",
-          "digest": "sha256:5a37dc1db699482d424f3778af3e11d67a9c8aa00591e272321d0946e5c01a82"
-        }
-      ]
-    },
-    {
-      "tag": "v1.2.10",
-      "name": "v1.2.10",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-10",
-      "published_at": "2026-11-10T04:50:34Z",
-      "body": "## 1.2.10\n\n### 功能重构\n- 重写「上下划切集」机制：由原先「滚动到相邻屏后回弹」的实现改为手势层直接判定，抬手一次只切一集，避免连续滑动时出现跳集、回错集的情况。\n- 开启「上下划切集」后，播放区禁用原生滚动（touch-action: none），上下划完全由手势层处理：上滑进入下一集，下滑返回上一集；处于首集 / 末集时自动切换上一部 / 下一部。\n- 切集成功时增加轻震动反馈。\n\n### 问题修复\n- 修复长按倍速后状态泄漏导致 touchmove 被持续拦截、列表无法滑动的问题（表现为播放后上下划失效）。\n- 修复长按后接双指捏合导致 2.0x 倍速残留的问题。\n- 「上下划切集」自 1.2.9 起默认开启，旧版本配置自动迁移，无需手动设置。\n\n### 构建产物\n- Android：arm64 / arm / x86_64 分 ABI 分包\n- iOS：未签名 ipa（需自行签名）\n- Windows：安装包 + 便携版\n- macOS：universal dmg\n- Linux：amd64 deb\n\n所有提交与标签均已通过 GPG 签名验证。",
-      "ipas": [
-        {
-          "name": "HGhub_1.2.10_ios.ipa",
-          "size": 3424167,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v1.2.10/HGhub_1.2.10_ios.ipa",
-          "id": 730147836,
-          "updated_at": "2026-11-10T04:50:34Z",
-          "digest": "sha256:2be64e2a907da59ad977417d15f0abef84c8526b2587d4fca706a898c1575f13"
-        }
-      ]
-    },
-    {
-      "tag": "v1.2.9",
-      "name": "v1.2.9",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-10",
-      "published_at": "2026-11-10T04:34:53Z",
-      "body": "## 1.2.9\n\n### 新增\n- 「上下划切集」默认开启：多集短剧上下滑直接换集，划到头再换下一部；老配置一次性迁移为开启，无需手动设置。\n\n### 修复\n- 长按倍速后状态泄漏导致 touchmove 被持续拦截、列表无法滑动的问题（表现为播放后上下划失效、回不到上一集）。\n- 列表滑到顶 / 底时也能正确切到上一集 / 下一部，不再卡在边界。\n\n### 构建产物\n- Android：arm64 / arm / x86_64 分 ABI 分包\n- iOS：未签名 ipa（需自行签名）\n- Windows：安装包 + 便携版\n- macOS：universal dmg\n- Linux：amd64 deb\n\n所有提交与标签均已通过 GPG 签名验证。",
-      "ipas": [
-        {
-          "name": "HGhub_1.2.9_ios.ipa",
-          "size": 3424618,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v1.2.9/HGhub_1.2.9_ios.ipa",
-          "id": 730110804,
-          "updated_at": "2026-11-10T04:34:52Z",
-          "digest": "sha256:9ef178042bbcbd9fe70bb34f1f0a5062305d1517ad0c95ea06a2cc939df130f0"
-        }
-      ]
-    },
-    {
-      "tag": "v1.2.8",
-      "name": "v1.2.8",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-10",
-      "published_at": "2026-11-10T04:10:37Z",
-      "body": "## 1.2.8\n\n这一版只修一个事：线路全挂的时候，不要再盲切。\n\n### 线路\n- 有用户反馈：启动后日志里出现 auto(boot) tier=cn ms=0 switched=true，也就是还没测延迟就直接切了 .ai。而 huangguoai.ai 实际只挂了静态落地页，/api/videos 是 404 —— 切过去必然白屏。\n- 现在 .com 与镜像全部不通时，返回 all-down，前端保持当前线路不动，不再盲跳。\n- 同时弹一次提示：「线路全部不可用，请检查网络或代理」，60 秒内不重复打扰。\n- 复探间隔从默认阶梯缩短到 10 秒，网络恢复后能很快自动接回。\n- autoLine 与 lines.rs 的推荐、镜像请求都加了超时（6s / 8s），不会再出现两个都 down 时来回试接近两分钟卡在启动页。\n\n### 说明\n- 如果启动后一直提示线路不可用，先看系统代理 / 软路由 / DNS 是否把三个域名都拦了。服务端本身正常。\n- 已确认 .com 与 .pages.dev 从国内直连可访问；.ai 只有静态页，不含接口。\n\n### 构建\n- Android：arm64 / arm / x86_64 分 ABI 分包\n- iOS：未签名 ipa（需自签）\n- Windows：setup + portable\n- macOS：universal dmg\n- Linux：amd64 deb\n\n全部提交与标签均已 GPG 签名。",
-      "ipas": [
-        {
-          "name": "HGhub_1.2.8_ios.ipa",
-          "size": 3423779,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v1.2.8/HGhub_1.2.8_ios.ipa",
-          "id": 730052334,
-          "updated_at": "2026-11-10T04:10:36Z",
-          "digest": "sha256:e2b8dd854434ff11da165f2e1f3846d801eb87bf53d01c82af7b423d9e78bac4"
-        }
-      ]
-    },
-    {
-      "tag": "v1.2.7",
-      "name": "v1.2.7",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-10",
-      "published_at": "2026-11-10T03:41:09Z",
-      "body": "## iOS\n- **装好打不开的问题修掉了**：之前的 ipa 是 dev 构建（缺 `--features custom-protocol`，还用 `-Wl,-undefined,dynamic_lookup` 把链接错误掩过去），打开就报 `Failed to request http://localhost:1420/`。现在照上游方案重写 `scripts/build-ios-unsigned.sh` + Release 的 iOS job，出真正的 release 包。\n- HLS 稳定性：iOS 上关掉 worker，收紧缓冲参数（30/60s buffer、hole 0.5、fragment 超时 25s），fatal 网络/解码错误退避重试 4 次，seek 贴片尾自动续播。\n- 原生屏幕方向：全屏进/出调 `set_orientation`，走 `UIWindowScene.requestGeometryUpdate`，`UIDevice` 兜底。\n- iPadOS（`MacIntel` + 多点触控）也认成 iOS。\n\n## 移动端手势\n- 单击净屏（230ms 延迟判定，不与双击冲突）/ 双击暂停。\n- 双指捏合缩放 1x–4x，双指中点跟随平移，松手低于 1.05x 自动归位。\n- 全屏切换期间反复 `keepAlive()` 补 `play()`，iOS 全屏不再断流。\n- 沉浸式：固定舞台 + `dvh` 旋转兜底，净屏时隐藏 TabBar 和底部留白。\n\n## 媒体服务\n- 缓存 AES Key（≤64KB，120 条）与分片（≤4MB，36 条），拖动进度条不再重复拉取。\n- 响应补 `Content-Length` / `Accept-Ranges` / CORS 暴露头。\n\n## 其他\n- 无 Origin 的本地协议请求放行，`set_orientation` 已注册。\n- 本版全部提交 GPG 签名验证通过。\n\n**Full Changelog**: https://github.com/zxsos/HGhub/compare/v1.2.6...v1.2.7",
-      "ipas": [
-        {
-          "name": "HGhub_1.2.7_ios.ipa",
-          "size": 3421431,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v1.2.7/HGhub_1.2.7_ios.ipa",
-          "id": 730000182,
-          "updated_at": "2026-11-10T03:48:58Z",
-          "digest": "sha256:88450beaa08b8762a764803089e5d74b511f385efabdfe4a0ad30146797b3e07"
-        }
-      ]
-    },
-    {
-      "tag": "v1.2.6",
-      "name": "v1.2.6",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-10",
-      "published_at": "2026-11-10T02:51:47Z",
-      "body": "## 新增\n\n- 播放诊断日志改为**纯 JSONL** 导出：一行一个事件，能直接 `grep` / `jq`；不再拼 `===环境===` 文本头和 `debug.log` 纯文本块\n- 新增 `web.play.resolve`：写出 `resolved / kind / host / status / msg`，接口 200 但不给播放地址时不用再猜\n- 新增 `web.app.env`（engine / webview / screen / dpr / lang）、`web.api.fail` / `retry` / `retry_ok`、`web.line.pick` / `main` / `health` / `fail` / `manual` / `offline`、`web.net.diag`、`web.app.error` / `reject`\n- `debug.line`：debug.log 尾部也转成 JSONL，忘了先开诊断时复制出来也不会是空的\n\n## 修复\n\n- iOS：`xcodebuild` 用小写 `release` 配置；绕开 `tauri ios xcode-script` 对 dev server 的硬依赖，改用 `cargo build --target aarch64-apple-ios --release --lib` 产出静态库；链接时跳过 Xcode 26 已移除的 `swiftCompatibility56`；`pbxproj` 脚本正则支持跨转义引号\n- CI：Release 等 iOS 完成但不因它失败中断，**iOS 首次随流程自动入包**\n\n## 安装包\n\n| 平台 | 文件 |\n| --- | --- |\n| Android arm64 | `HGhub_1.2.6_arm64.apk` |\n| Android armv7 | `HGhub_1.2.6_arm.apk` |\n| Android x86_64 | `HGhub_1.2.6_x86_64.apk` |\n| Windows | `HGhub_1.2.6_x64-setup.exe` / `HGhub_1.2.6_x64_portable.zip` |\n| macOS | `HGhub_1.2.6_universal.dmg` |\n| Linux | `HGhub_1.2.6_amd64.deb` |\n| iOS | `HGhub_1.2.6_ios.ipa`（未签名，需自签） |\n\n**Full Changelog**: https://github.com/zxsos/HGhub/compare/v1.2.5...v1.2.6",
-      "ipas": [
-        {
-          "name": "HGhub_1.2.6_ios.ipa",
-          "size": 2776108,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v1.2.6/HGhub_1.2.6_ios.ipa",
-          "id": 729865106,
-          "updated_at": "2026-11-10T02:51:46Z",
-          "digest": "sha256:eb3d37d9ddb1951101d547fe2cfc37ccb7f5b1fafb58c2558d51e886cfaacb37"
-        }
-      ]
-    },
-    {
-      "tag": "v1.2.5",
-      "name": "v1.2.5",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-10",
-      "published_at": "2026-11-10T01:50:49Z",
-      "body": "## 1.2.5\n\n### 新增\n- 应用内更新：设置 → 检查更新 → 立即更新，自动下载并调起系统安装器；直连 GitHub 拉不动时自动换加速源。\n- 上下划切集（设置里可开关）。\n- iOS ipa 构建（未签名，需自行签名）。\n\n### 修复\n- 安卓更新按架构选包：arm64 设备固定取 `_arm64.apk`，不再误下 32 位包。\n- iOS 版本号去掉 `+hg` 后缀，CFBundleVersion 只保留数字。\n\n### 构建产物\n- Android：arm64 / arm / x86_64 分 ABI 分包\n- iOS：未签名 ipa\n- Windows：setup + portable\n- macOS：universal dmg\n- Linux：amd64 deb\n\n所有提交与标签均已通过 GPG 签名验证。",
-      "ipas": [
-        {
-          "name": "HGhub_1.2.5_ios.ipa",
-          "size": 2820198,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v1.2.5/HGhub_1.2.5_ios.ipa",
-          "id": 729780102,
-          "updated_at": "2026-11-10T02:16:28Z",
-          "digest": "sha256:04838d6910072c12b3ab61ab52e820cef85bf966b963871508bc55cefc608bde"
-        }
-      ]
-    },
-    {
-      "tag": "v1.2.3+hg.1",
-      "name": "HGhub 1.2.3+hg.1 · 应用内更新（arm64 选包修正）",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-09",
-      "published_at": "2026-11-09T21:26:25Z",
-      "body": "## 修复\n\n- 安卓应用内更新按架构选包：之前只看扩展名，64 位机会先撞上 `_arm.apk` 下成 32 位包；现在 `arm64` 设备固定拿 `_arm64.apk`，`x86_64` 同理\n\n## 这一版怎么验证自更新\n\n1. 你现在装的是 `1.2.2+hg.1`\n2. 设置 → 检查更新 → 立即更新\n3. 会自动下载（直连 GitHub 拉不动时自动换加速源）→ 系统弹安装器 → 安装\n4. 装完版本变 `1.2.3+hg.1`（versionCode 1002003）\n\n## 安装包\n\n| 平台 | 文件 |\n| --- | --- |\n| Android arm64 | `HGhub_1.2.3+hg.1_arm64.apk` |\n| Android armv7 | `HGhub_1.2.3+hg.1_arm.apk` |\n| Windows | NSIS 安装包 + 便携版 |\n| macOS | Universal dmg |\n| Linux | deb + AppImage |",
-      "ipas": []
-    },
-    {
-      "tag": "v1.2.2+hg.1",
-      "name": "HGhub 1.2.2+hg.1 · 线路自动切换 + 应用内更新",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-09",
-      "published_at": "2026-11-09T21:14:49Z",
-      "body": "## 线路自动切换（本次重点）\n\n- 自动选线：探一次 `/api/videos` 判活，主站不通就用发布页上的镜像，全不通才退 `.ai`\n- 无感切换：业务请求连续两次链路失败立刻体检，再加 60s → 120s → 300s 自适应巡检；后台 / 断网不耗电\n- 挂上代理自动回 `.com`：停留在镜像时每个巡检周期敲一次主站，通了就切回并提示\n- 切换时弹线路卡片：国内 / 国外 + 域名 + 实测延迟\n- 切完线路列表自动重拉：榜单、分类、吃瓜不再显示上个域名的缓存\n- 严格模式只放行发布页给过的镜像，手填域名照样拦\n\n## 关于应用内更新\n\n- `1.2.1+hg.1` 的用户这次需要手动安装一次：旧版客户端没有下载安装逻辑，只能打开浏览器\n- 装到 `1.2.2+hg.1` 之后，「设置 → 检查更新 → 立即更新」会自己下载并调起安装器，直连 GitHub 拉不动时自动走加速源\n- versionCode 按 major.minor.patch 算，所以这次抬到 1.2.2（1002002），否则系统认不出是新版本\n\n## 安装包\n\n| 平台 | 文件 |\n| --- | --- |\n| Android arm64 | `HGhub_1.2.2+hg.1_arm64.apk` |\n| Android armv7 | `HGhub_1.2.2+hg.1_arm.apk` |\n| Windows | NSIS 安装包 + 便携版 |\n| macOS | Universal dmg |\n| Linux | deb + AppImage |",
-      "ipas": []
     }
   ],
   "openAnimeFlow/AnimeFlow": [
@@ -2447,6 +2142,16 @@
   ],
   "ARMSX2/ARMSX2": [
     {
+      "tag": "2.9.4",
+      "name": "ARMSX2 2.9.4 ",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-15",
+      "published_at": "2026-11-15T15:49:29Z",
+      "body": "# ARMSX2 2.9.4\r\n\r\n<img width=\"1280\" height=\"960\" alt=\"image\" src=\"https://github.com/user-attachments/assets/d967449e-f587-4707-9ce3-8937bde39be2\" />\r\n\r\n## New\r\n\r\n**Vulkan by default.** New installs start on the Vulkan renderer on every device whose driver reports Vulkan 1.1, and on Auto elsewhere. Existing installs keep the renderer they have. Auto now picks Vulkan on every Mali of the Bifrost G31, G51, G52 and G76 generation and of the Valhall generations (G57 to G78, G310 to G710, G615, G715, Immortalis-G715). done by @bmdhacks\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/12135b56-7b73-499a-8a6e-9513d820c458\" />\r\n\r\n**MaliSX2 on every Mali it drives.** The GPU Driver list, the GPU card, first-run setup and the driver notice offer MaliSX2 on the Mali-G31, G51, G52 and G76, G57, G68, G77 and G78, G310, G510, G610 and G710, and G615, G715 and Immortalis-G715. The G31, G51 and G310 to G710 need MaliSX2 0.5.0 or newer. done by @bmdhacks\r\n\r\n<img width=\"1280\" height=\"960\" alt=\"image\" src=\"https://github.com/user-attachments/assets/51febb87-adc2-4aaa-8d77-20ce446d1347\" />\r\n\r\n<img width=\"1600\" height=\"720\" alt=\"image\" src=\"https://github.com/user-attachments/assets/4d7f4a43-9066-4de1-85da-959a43cc28f3\" />\r\n\r\n**The right APK for your processor.** The a11, a13 and a15 APKs use instructions that some processors lack, such as the Snapdragon 845 and the Exynos 850. If you downloaded an ARMSX2 build for the wrong android system we now give you a clear error message instead of just crashing. done by @bmdhacks\r\n\r\n**Extended RAM (Dev Console).** A switch in Settings > Advanced > Memory gives the PS2 128MB of main memory and 8MB of IOP memory, as on a development console, for debug builds, prototypes, homebrew and game patches that need it. It can be set per game, runs on the ARM64 EE recompiler, and takes effect when the game next starts. Save states made with it on load only with it on, and the load menu says why when one doesn't. ",
+      "ipas": []
+    },
+    {
       "tag": "nightly-20261114",
       "name": "ARMSX2 nightly 20261114 (6d9511e29e)",
       "pre": true,
@@ -2714,16 +2419,6 @@
       "date": "2026-09-25",
       "published_at": "2026-09-25T18:39:10Z",
       "body": "# ARMSX2 2.7.1\r\n\r\nWhat's new: \r\n\r\n## ARMSX2 Turnip: our own GPU driver\r\n\r\n**We now build our own Adreno driver.** ARMSX2 Turnip is our build of Turnip, the open-source Vulkan\r\ndriver for Adreno GPUs, with a change of our own made for PS2 emulation. Pick it from the driver\r\nlist: it is recommended on Adreno 650 to 699 (Snapdragon 865, 870 and 888). The source is public at\r\ngithub.com/bmdhacks/armsx2-turnip. done by @bmdhacks \r\n\r\n**Games that read back the frame they are drawing run much faster on Adreno.** PS2 games do this\r\nconstantly, and on Adreno it meant copying the frame before each such draw. The renderer now asks\r\nthe driver database how each GPU and driver handle it. With ARMSX2's own Turnip build on Adreno 650\r\nto 699, the driver orders those reads itself: 2 to 3 times faster where they are what the frame\r\ncosts, as in Splashdown at native resolution on a Snapdragon 865, which went from 54.7 ms to 22.4 ms\r\na frame. On Adreno 730 and up with any Turnip, Stuntman and WRC 3 run 17 to 21% faster, Every\r\nother GPU and driver keeps what it had. done by @bmdhacks \r\n\r\n**ARMSX2's Turnip driver is in the driver list**, and recommended on Adreno 650 to 699. It is Mesa\r\n26.1.2 plus one Turnip change for those GPUs. done by @bmdhacks \r\n\r\n## Emulation\r\n\r\n**Faster recompilers.** By implementing a host of optimization concepts dreamed up by @pstef, the EE, VU and IOP recompilers and VIF unpacks now generate tighter ARM64 code and run about 10% faster, with every change checked by new instruction-level tests. On lower-end devices most games are held back by GS, so expect this mostly as real battery and heat savings. VU LQD and SQD addressing from vi00 and ILW's lane selection also match the console now. \r\n\r\n**Analog trigger pressure for L2 and R2.** On pads and handhelds with analog triggers, Pad -> Button\r\nmapping now offers Analog pressure on L2 and R2, so the game gets how far the trigger is pulled\r\ninstead of on or off, with a response curve for short handheld triggers ",
-      "ipas": []
-    },
-    {
-      "tag": "2.7",
-      "name": "ARMSX2 2.7",
-      "pre": false,
-      "draft": false,
-      "date": "2026-09-19",
-      "published_at": "2026-09-19T15:24:50Z",
-      "body": "ARMSX2 2.7\r\n\r\nWhat's new: \r\n\r\n**Texture packs, rebuilt by @bmdhacks** \r\n\r\nThe online texture pack catalog now comes from ARMSX2's own repository, and the packs are far\r\nsmaller and faster. All 490 packs in the catalog have been converted to ASTC, the compressed\r\ntexture format that mobile GPUs read directly, with their mipmaps included. The God of War II pack\r\nwent from 4.5 GB to 538 MB. ASTC textures stay compressed in GPU memory instead of being unpacked\r\non the way in, so packs take a fraction of the storage, use far less memory, load faster and run\r\nbetter, which matters most on phones and handhelds where HD packs used to struggle. \r\n\r\nTexture packs are now also easier to find. They now sit right under the resolution setting, both in the renderer settings and on the in-game menu's Graphics page. The catalog's submit link now points pack authors to our Discord. Coalesce Render Passes moved out of the in-game menu into the full settings. done by @jpolo1224 \r\n\r\n**Touch controls:** \r\n\r\nOn-screen controls have a new Always option that never hides the buttons, for playing with a controller and touch buttons together. A new \"Touch controls play as\" setting puts the touch screen on Player 2, so one person can use a\r\ncontroller while another plays on the screen, restart the game after changing it. done by @jpolo1224 \r\n\r\nGlide modes for multi-touch. Choose what a finger sliding across buttons does: Follow presses whatever is under it, Hold first keeps the first button held, and Hold all holds every button it crosses. done by @jpolo1224 \r\n\r\nHalf-Screen Sticks can now keep the on-screen left stick now with a new option in the touch layout editor: Left Stick: Half Screen/Onscreen, so only the right half of the screen becomes a stick. done by @jpolo1224 \r\n\r\n**With Half-Screen Sticks on, the face, shoulder and Start/Select buttons stopped responding.** Only\r\nthe D-pad kept working. They work again, and a stick thumb sliding across a button no longer\r\npresses it. done by @jpolo",
       "ipas": []
     }
   ],
