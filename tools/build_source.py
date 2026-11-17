@@ -383,7 +383,7 @@ APPS = [
     },
     {
         "repo": "zxsos/HGhubX",
-        "asset": lambda n: n.startswith("HGhub_") and n.endswith("_ios.ipa"),
+        "asset": lambda n: n.startswith("HGhubX_") and n.endswith("_ios.ipa"),
         "name": "HGhubX",
         "developerName": "zxsos",
         "subtitle": "沉浸式竖屏播放",
@@ -443,7 +443,7 @@ APPS = [
     },
     {
         "repo": "Xanerix/guoapp",
-        "asset": lambda n: n.startswith("zhenguojian-") and n.endswith("-ios-unsigned.ipa"),
+        "asset": lambda n: n.startswith("guoapp-") and n.endswith("-ios-unsigned.ipa"),
         "name": "真果鉴",
         "developerName": "Xanerix",
         "subtitle": "支持多站源的短剧与影视客户端",

@@ -699,11 +699,11 @@
     },
     {
       "name": "HGhubX",
-      "bundleIdentifier": "com.hghub.huangguo",
+      "bundleIdentifier": "com.hghubx.app",
       "developerName": "zxsos",
       "subtitle": "沉浸式竖屏播放",
       "localizedDescription": "第三方客户端（Rust + Tauri 2），沉浸式竖屏播放，界面采用 Fluent 设计。上游仅提供未签名的 iOS 安装包，需自行用 Apple ID 签名安装（TrollStore 可直接导入）。\n\n上游协议为 PolyForm Noncommercial 1.0.0，仅限个人学习与非商业用途，禁止商业使用。项目主页：https://github.com/zxsos/HGhubX",
-      "iconURL": "https://raw.githubusercontent.com/zxsos/HGhubX/v1.2.19/app-icon.png",
+      "iconURL": "https://raw.githubusercontent.com/zxsos/HGhubX/v2.1.2/app-icon.png",
       "tintColor": "#38BDF8",
       "category": "entertainment",
       "appPermissions": {
@@ -715,41 +715,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "1.2.19",
-              "date": "2026-11-11",
-              "publishedAt": "2026-11-11T07:47:10Z",
-              "buildVersion": "1.2.19",
-              "buildNumber": "1.2.19",
-              "localizedDescription": "What's Changed\n* ci: 添加前端 PR 检查流水线 by @zxsos in https://github.com/zxsos/HGhub/pull/49\n* fix(clipboard): 分享与链接复制兜底改用原生剪贴板 by @zxsos in https://github.com/zxsos/HGhub/pull/42\n* fix(player): 切换短剧时先清空相关推荐 by @zxsos in https://github.com/zxsos/HGhub/pull/46\n* fix(search): 新关键词不再被进行中的请求吞掉 by @zxsos in https://github.com/zxsos/HGhub/pull/43\n* fix(home): 首页翻页失败后退避，避免反复弹错误提示 by @zxsos in https://github.com/zxsos/HGhub/pull/44\n* fix(line): 切换线路后重拉加载失败的首页与分类数据 by @zxsos in https://github.com/zxsos/HGhub/pull/45\n* fix(search): 就地搜索框对齐全局搜索，频道页搜索按钮归位 by @zxsos in https://github.com/zxsos/HGhub/pull/47\n* fix(category): 频道页翻页按页排序，避免加载更多时列表重排 by @zxsos in https://github.com/zxsos/HGhub/pull/48\n\nFull Changel…",
-              "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v1.2.19/HGhub_1.2.19_ios.ipa",
-              "size": 3521136,
+              "version": "2.1.2",
+              "date": "2026-11-15",
+              "publishedAt": "2026-11-15T16:56:37Z",
+              "buildVersion": "2.1.2",
+              "buildNumber": "2.1.2",
+              "localizedDescription": "HGhubX 2.1.2\n更新点\n\n- 标签详情同时展示短剧和吃瓜帖子，并分别分页；标签热度会明确标注，不再与内容数量混淆。\n- 横屏视频按当前播放源的媒体尺寸识别，尺寸确认前使用完整画面适配。\n修复点\n\n- 修复社区标签只查询短剧接口，导致官网存在帖子但应用显示空列表的问题。\n- 修复切集、切源时媒体尺寸报告竞态导致首页横屏视频被裁切或未显示横屏控制的问题。\n\nFull Changelog: https://github.com/zxsos/HGhubX/compare/v2.1.1...v2.1.2",
+              "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.1.2/HGhubX_2.1.2_ios.ipa",
+              "size": 3852817,
               "minOSVersion": "15.0",
-              "releaseTag": "v1.2.19",
-              "source": "https://github.com/zxsos/HGhubX/releases/tag/v1.2.19"
+              "releaseTag": "v2.1.2",
+              "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.1.2"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "1.2.19",
-          "date": "2026-11-11",
-          "publishedAt": "2026-11-11T07:47:10Z",
-          "buildVersion": "1.2.19",
-          "buildNumber": "1.2.19",
-          "localizedDescription": "What's Changed\n* ci: 添加前端 PR 检查流水线 by @zxsos in https://github.com/zxsos/HGhub/pull/49\n* fix(clipboard): 分享与链接复制兜底改用原生剪贴板 by @zxsos in https://github.com/zxsos/HGhub/pull/42\n* fix(player): 切换短剧时先清空相关推荐 by @zxsos in https://github.com/zxsos/HGhub/pull/46\n* fix(search): 新关键词不再被进行中的请求吞掉 by @zxsos in https://github.com/zxsos/HGhub/pull/43\n* fix(home): 首页翻页失败后退避，避免反复弹错误提示 by @zxsos in https://github.com/zxsos/HGhub/pull/44\n* fix(line): 切换线路后重拉加载失败的首页与分类数据 by @zxsos in https://github.com/zxsos/HGhub/pull/45\n* fix(search): 就地搜索框对齐全局搜索，频道页搜索按钮归位 by @zxsos in https://github.com/zxsos/HGhub/pull/47\n* fix(category): 频道页翻页按页排序，避免加载更多时列表重排 by @zxsos in https://github.com/zxsos/HGhub/pull/48\n\nFull Changel…",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v1.2.19/HGhub_1.2.19_ios.ipa",
-          "size": 3521136,
+          "version": "2.1.2",
+          "date": "2026-11-15",
+          "publishedAt": "2026-11-15T16:56:37Z",
+          "buildVersion": "2.1.2",
+          "buildNumber": "2.1.2",
+          "localizedDescription": "HGhubX 2.1.2\n更新点\n\n- 标签详情同时展示短剧和吃瓜帖子，并分别分页；标签热度会明确标注，不再与内容数量混淆。\n- 横屏视频按当前播放源的媒体尺寸识别，尺寸确认前使用完整画面适配。\n修复点\n\n- 修复社区标签只查询短剧接口，导致官网存在帖子但应用显示空列表的问题。\n- 修复切集、切源时媒体尺寸报告竞态导致首页横屏视频被裁切或未显示横屏控制的问题。\n\nFull Changelog: https://github.com/zxsos/HGhubX/compare/v2.1.1...v2.1.2",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.1.2/HGhubX_2.1.2_ios.ipa",
+          "size": 3852817,
           "minOSVersion": "15.0",
-          "releaseTag": "v1.2.19",
-          "source": "https://github.com/zxsos/HGhubX/releases/tag/v1.2.19"
+          "releaseTag": "v2.1.2",
+          "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.1.2"
         }
       ],
-      "version": "1.2.19",
-      "versionDate": "2026-11-11",
-      "versionDescription": "What's Changed\n* ci: 添加前端 PR 检查流水线 by @zxsos in https://github.com/zxsos/HGhub/pull/49\n* fix(clipboard): 分享与链接复制兜底改用原生剪贴板 by @zxsos in https://github.com/zxsos/HGhub/pull/42\n* fix(player): 切换短剧时先清空相关推荐 by @zxsos in https://github.com/zxsos/HGhub/pull/46\n* fix(search): 新关键词不再被进行中的请求吞掉 by @zxsos in https://github.com/zxsos/HGhub/pull/43\n* fix(home): 首页翻页失败后退避，避免反复弹错误提示 by @zxsos in https://github.com/zxsos/HGhub/pull/44\n* fix(line): 切换线路后重拉加载失败的首页与分类数据 by @zxsos in https://github.com/zxsos/HGhub/pull/45\n* fix(search): 就地搜索框对齐全局搜索，频道页搜索按钮归位 by @zxsos in https://github.com/zxsos/HGhub/pull/47\n* fix(category): 频道页翻页按页排序，避免加载更多时列表重排 by @zxsos in https://github.com/zxsos/HGhub/pull/48\n\nFull Changel…",
-      "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v1.2.19/HGhub_1.2.19_ios.ipa",
-      "size": 3521136,
+      "version": "2.1.2",
+      "versionDate": "2026-11-15",
+      "versionDescription": "HGhubX 2.1.2\n更新点\n\n- 标签详情同时展示短剧和吃瓜帖子，并分别分页；标签热度会明确标注，不再与内容数量混淆。\n- 横屏视频按当前播放源的媒体尺寸识别，尺寸确认前使用完整画面适配。\n修复点\n\n- 修复社区标签只查询短剧接口，导致官网存在帖子但应用显示空列表的问题。\n- 修复切集、切源时媒体尺寸报告竞态导致首页横屏视频被裁切或未显示横屏控制的问题。\n\nFull Changelog: https://github.com/zxsos/HGhubX/compare/v2.1.1...v2.1.2",
+      "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.1.2/HGhubX_2.1.2_ios.ipa",
+      "size": 3852817,
       "minOSVersion": "15.0"
     },
     {
@@ -1418,7 +1418,7 @@
       "developerName": "Xanerix",
       "subtitle": "支持多站源的短剧与影视客户端",
       "localizedDescription": "Flutter 多平台短剧与影视客户端，包含全部站源，可在设置中逐个开关。支持追剧、观看记录、多用户、本地下载与备份。此处收录真果鉴全站源版；自 1.0.3 起使用独立 Bundle ID com.guoapp.all，可与仅含红果站源的红果鉴同时安装。旧包名版本不能覆盖升级，原有设置、追剧和下载记录不会自动迁移。\n\n安装包由上游发布，需自行签名安装。站源可用性取决于源站及网络；应用不解除源站 VIP 或其他授权限制。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Xanerix/guoapp",
-      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v1.0.11-111/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v2.0.1-113/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#E97642",
       "category": "entertainment",
       "appPermissions": {
@@ -1430,41 +1430,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "1.0.11",
-              "date": "2026-11-14",
-              "publishedAt": "2026-11-14T05:45:45Z",
-              "buildVersion": "111",
-              "buildNumber": "111",
-              "localizedDescription": "更新内容：\nJS 迁移通知\n\n站源将改为可自行安装和卸载的 JS 模块，之后的版本不再内置站源。迁移期间不对用户数据做担保，数据可能在版本更新时丢失，请提前导出备份。\n更新内容\n\n- 封面、剧库和榜单缓存移到各平台专用的缓存目录（Windows 为 %LOCALAPPDATA%\\<包名>，便携版为 userdata\\cache），升级后自动迁移；Android 上系统「清除缓存」可释放这部分空间，设置、记录、下载和红果设备不受影响。\n- Windows 安装包卸载时总是删除缓存目录。\n- MissAV 的请求改用浏览器指纹，减少被站点要求浏览器验证而报 HTTP 403 的情况（开发快照，需在出现该报错的网络上实测）。\n\n版本 1.0.11+111。两个版本功能相同，区别只在站源范围，按需选择：\n\n- 红果鉴 hongguojian：仅红果站源\n- 小果影视 zhenguojian：全部站源\n\nAndroid：\n- *-arm64-v8a.apk：适用于较新的安卓设备\n- *-armeabi-v7a.apk：适用于较老的安卓设备，电视推荐使用此版本\n- *-x86_64.apk：适用于模拟器\n\niOS：\n- *-ios-unsigned.ipa：未签名 IPA，可用相关工具安装\n\nWindows：\n- *-windows-x64-setup.exe：安装包，默认安装到当前用户，无需管理员权限；安装时可改为所有用户\n- *-windows-x64.zip：便携版，解压后运行 hongguojian.exe 或 zhenguojian.exe；设置、记录、海报缓存和默认下载都保存在…",
-              "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.11-111/zhenguojian-1.0.11%2B111-ios-unsigned.ipa",
-              "size": 30898911,
+              "version": "2.0.1",
+              "date": "2026-11-16",
+              "publishedAt": "2026-11-16T16:33:41Z",
+              "buildVersion": "113",
+              "buildNumber": "113",
+              "localizedDescription": "更新内容：\n\n- 修复红果取流失败，适配新的播放器接口与 v5 签名（#165）。\n- 红果站源公开，上架在线仓库，同时继续内置；内置模块在线仓库也有时两处都列出，可从在线仓库安装和更新。\n- 新增播放器锁，手机横屏全屏（锁在左侧中间）和竖屏短剧页可锁定画面手势，锁定期间不转屏（#157）。\n- 平板全屏播放也支持锁定，锁在左侧中间。\n- 拖动进度条后 5 秒未跳到目标位置时自动重新打开当前线路（开发快照，需实机验证）。\n- 在线仓库新增安装全部站源。\n- 备份新增站源开关。\n- 备份新增已安装模块列表，恢复后询问是否安装本机缺少的模块。\n- 修复 macOS 安装包无法打开文件选择器（导入本地站源、恢复备份等报 ENTITLEMENT_NOT_FOUND）：出包重签名时保留文件访问权限（开发快照，需在 macOS 上用新安装包实测）。\n- 底栏移除「模块」，入口移到「我的」页；「我的」页的下载卡片改为与设置相同的入口。\n- 模块页改为已安装、在线仓库、内置、手动四个标签页，每个模块单独一张卡片，站源开关和青空登录移到已安装模块的卡片上，在线仓库和内置只列未安装的模块。\n- 移除设置里的站源分组（站源管理、站源账号、目录请求间隔），站源请求默认不再额外间隔。\n- 修复模块声明的浏览器指纹从未生效，Hanime1、MissAV 等站源在部分网络下开屏即 403。\n- 设置里的「目录与空间」移出下载，改为与下载并列的「存储」分组。\n- 存储页新增清理缓存和删除全部数据，删除全部数据需要管理员，完成后退出应用；存储总用量计入缓存。\n- Windows 限制只能运行一个实例，重复打开时…",
+              "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v2.0.1-113/guoapp-2.0.1%2B113-ios-unsigned.ipa",
+              "size": 33878287,
               "minOSVersion": "15.1",
-              "releaseTag": "app-v1.0.11-111",
-              "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.11-111"
+              "releaseTag": "app-v2.0.1-113",
+              "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v2.0.1-113"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "1.0.11",
-          "date": "2026-11-14",
-          "publishedAt": "2026-11-14T05:45:45Z",
-          "buildVersion": "111",
-          "buildNumber": "111",
-          "localizedDescription": "更新内容：\nJS 迁移通知\n\n站源将改为可自行安装和卸载的 JS 模块，之后的版本不再内置站源。迁移期间不对用户数据做担保，数据可能在版本更新时丢失，请提前导出备份。\n更新内容\n\n- 封面、剧库和榜单缓存移到各平台专用的缓存目录（Windows 为 %LOCALAPPDATA%\\<包名>，便携版为 userdata\\cache），升级后自动迁移；Android 上系统「清除缓存」可释放这部分空间，设置、记录、下载和红果设备不受影响。\n- Windows 安装包卸载时总是删除缓存目录。\n- MissAV 的请求改用浏览器指纹，减少被站点要求浏览器验证而报 HTTP 403 的情况（开发快照，需在出现该报错的网络上实测）。\n\n版本 1.0.11+111。两个版本功能相同，区别只在站源范围，按需选择：\n\n- 红果鉴 hongguojian：仅红果站源\n- 小果影视 zhenguojian：全部站源\n\nAndroid：\n- *-arm64-v8a.apk：适用于较新的安卓设备\n- *-armeabi-v7a.apk：适用于较老的安卓设备，电视推荐使用此版本\n- *-x86_64.apk：适用于模拟器\n\niOS：\n- *-ios-unsigned.ipa：未签名 IPA，可用相关工具安装\n\nWindows：\n- *-windows-x64-setup.exe：安装包，默认安装到当前用户，无需管理员权限；安装时可改为所有用户\n- *-windows-x64.zip：便携版，解压后运行 hongguojian.exe 或 zhenguojian.exe；设置、记录、海报缓存和默认下载都保存在…",
-          "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.11-111/zhenguojian-1.0.11%2B111-ios-unsigned.ipa",
-          "size": 30898911,
+          "version": "2.0.1",
+          "date": "2026-11-16",
+          "publishedAt": "2026-11-16T16:33:41Z",
+          "buildVersion": "113",
+          "buildNumber": "113",
+          "localizedDescription": "更新内容：\n\n- 修复红果取流失败，适配新的播放器接口与 v5 签名（#165）。\n- 红果站源公开，上架在线仓库，同时继续内置；内置模块在线仓库也有时两处都列出，可从在线仓库安装和更新。\n- 新增播放器锁，手机横屏全屏（锁在左侧中间）和竖屏短剧页可锁定画面手势，锁定期间不转屏（#157）。\n- 平板全屏播放也支持锁定，锁在左侧中间。\n- 拖动进度条后 5 秒未跳到目标位置时自动重新打开当前线路（开发快照，需实机验证）。\n- 在线仓库新增安装全部站源。\n- 备份新增站源开关。\n- 备份新增已安装模块列表，恢复后询问是否安装本机缺少的模块。\n- 修复 macOS 安装包无法打开文件选择器（导入本地站源、恢复备份等报 ENTITLEMENT_NOT_FOUND）：出包重签名时保留文件访问权限（开发快照，需在 macOS 上用新安装包实测）。\n- 底栏移除「模块」，入口移到「我的」页；「我的」页的下载卡片改为与设置相同的入口。\n- 模块页改为已安装、在线仓库、内置、手动四个标签页，每个模块单独一张卡片，站源开关和青空登录移到已安装模块的卡片上，在线仓库和内置只列未安装的模块。\n- 移除设置里的站源分组（站源管理、站源账号、目录请求间隔），站源请求默认不再额外间隔。\n- 修复模块声明的浏览器指纹从未生效，Hanime1、MissAV 等站源在部分网络下开屏即 403。\n- 设置里的「目录与空间」移出下载，改为与下载并列的「存储」分组。\n- 存储页新增清理缓存和删除全部数据，删除全部数据需要管理员，完成后退出应用；存储总用量计入缓存。\n- Windows 限制只能运行一个实例，重复打开时…",
+          "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v2.0.1-113/guoapp-2.0.1%2B113-ios-unsigned.ipa",
+          "size": 33878287,
           "minOSVersion": "15.1",
-          "releaseTag": "app-v1.0.11-111",
-          "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v1.0.11-111"
+          "releaseTag": "app-v2.0.1-113",
+          "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v2.0.1-113"
         }
       ],
-      "version": "1.0.11",
-      "versionDate": "2026-11-14",
-      "versionDescription": "更新内容：\nJS 迁移通知\n\n站源将改为可自行安装和卸载的 JS 模块，之后的版本不再内置站源。迁移期间不对用户数据做担保，数据可能在版本更新时丢失，请提前导出备份。\n更新内容\n\n- 封面、剧库和榜单缓存移到各平台专用的缓存目录（Windows 为 %LOCALAPPDATA%\\<包名>，便携版为 userdata\\cache），升级后自动迁移；Android 上系统「清除缓存」可释放这部分空间，设置、记录、下载和红果设备不受影响。\n- Windows 安装包卸载时总是删除缓存目录。\n- MissAV 的请求改用浏览器指纹，减少被站点要求浏览器验证而报 HTTP 403 的情况（开发快照，需在出现该报错的网络上实测）。\n\n版本 1.0.11+111。两个版本功能相同，区别只在站源范围，按需选择：\n\n- 红果鉴 hongguojian：仅红果站源\n- 小果影视 zhenguojian：全部站源\n\nAndroid：\n- *-arm64-v8a.apk：适用于较新的安卓设备\n- *-armeabi-v7a.apk：适用于较老的安卓设备，电视推荐使用此版本\n- *-x86_64.apk：适用于模拟器\n\niOS：\n- *-ios-unsigned.ipa：未签名 IPA，可用相关工具安装\n\nWindows：\n- *-windows-x64-setup.exe：安装包，默认安装到当前用户，无需管理员权限；安装时可改为所有用户\n- *-windows-x64.zip：便携版，解压后运行 hongguojian.exe 或 zhenguojian.exe；设置、记录、海报缓存和默认下载都保存在…",
-      "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.11-111/zhenguojian-1.0.11%2B111-ios-unsigned.ipa",
-      "size": 30898911,
+      "version": "2.0.1",
+      "versionDate": "2026-11-16",
+      "versionDescription": "更新内容：\n\n- 修复红果取流失败，适配新的播放器接口与 v5 签名（#165）。\n- 红果站源公开，上架在线仓库，同时继续内置；内置模块在线仓库也有时两处都列出，可从在线仓库安装和更新。\n- 新增播放器锁，手机横屏全屏（锁在左侧中间）和竖屏短剧页可锁定画面手势，锁定期间不转屏（#157）。\n- 平板全屏播放也支持锁定，锁在左侧中间。\n- 拖动进度条后 5 秒未跳到目标位置时自动重新打开当前线路（开发快照，需实机验证）。\n- 在线仓库新增安装全部站源。\n- 备份新增站源开关。\n- 备份新增已安装模块列表，恢复后询问是否安装本机缺少的模块。\n- 修复 macOS 安装包无法打开文件选择器（导入本地站源、恢复备份等报 ENTITLEMENT_NOT_FOUND）：出包重签名时保留文件访问权限（开发快照，需在 macOS 上用新安装包实测）。\n- 底栏移除「模块」，入口移到「我的」页；「我的」页的下载卡片改为与设置相同的入口。\n- 模块页改为已安装、在线仓库、内置、手动四个标签页，每个模块单独一张卡片，站源开关和青空登录移到已安装模块的卡片上，在线仓库和内置只列未安装的模块。\n- 移除设置里的站源分组（站源管理、站源账号、目录请求间隔），站源请求默认不再额外间隔。\n- 修复模块声明的浏览器指纹从未生效，Hanime1、MissAV 等站源在部分网络下开屏即 403。\n- 设置里的「目录与空间」移出下载，改为与下载并列的「存储」分组。\n- 存储页新增清理缓存和删除全部数据，删除全部数据需要管理员，完成后退出应用；存储总用量计入缓存。\n- Windows 限制只能运行一个实例，重复打开时…",
+      "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v2.0.1-113/guoapp-2.0.1%2B113-ios-unsigned.ipa",
+      "size": 33878287,
       "minOSVersion": "15.1"
     }
   ],

@@ -2372,5 +2372,33 @@
       "size": 1445804612,
       "digest": "sha256:be54a5689d0166ead93c2ced86566ba42eba6a39c63612ea0694e001782f93fc"
     }
+  },
+  "https://github.com/zxsos/HGhubX/releases/download/v2.1.2/HGhubX_2.1.2_ios.ipa": {
+    "bundleIdentifier": "com.hghubx.app",
+    "version": "2.1.2",
+    "buildVersion": "2.1.2",
+    "displayName": "HGhubX",
+    "minOSVersion": "15.0",
+    "size": 3852817,
+    "assetIdentity": {
+      "id": 751672739,
+      "updated_at": "2026-11-15T16:57:51Z",
+      "size": 3852817,
+      "digest": "sha256:fdf8a64f296d7aa38720c21e440504dbfe6018bdc348b559902ce35382465254"
+    }
+  },
+  "https://github.com/Xanerix/guoapp/releases/download/app-v2.0.1-113/guoapp-2.0.1%2B113-ios-unsigned.ipa": {
+    "bundleIdentifier": "com.yingshib.xg",
+    "version": "2.0.1",
+    "buildVersion": "113",
+    "displayName": "GuoApp",
+    "minOSVersion": "15.1",
+    "size": 33878287,
+    "assetIdentity": {
+      "id": 755582596,
+      "updated_at": "2026-11-16T16:33:36Z",
+      "size": 33878287,
+      "digest": "sha256:c4e702f31a96a0061a41ab28019bcf10a673f3af1ad84655efce7a448666c8d4"
+    }
   }
 }
