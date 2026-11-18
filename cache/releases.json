@@ -461,6 +461,25 @@
   ],
   "AniBakaBaka/AniBaka": [
     {
+      "tag": "5.2.5+261113",
+      "name": "5.2.5",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-18",
+      "published_at": "2026-11-18T12:04:44Z",
+      "body": "本次更新重点优化手机端打开番剧详情和返回的体验，新增本地字体导入，并更新四个内置播放源。\r\n\r\n### 界面与交互\r\n\r\n- **优化番剧详情转场。** 点击卡片后，圆角小窗口从封面位置逐渐铺满全屏，返回时收回卡片。适配 Android 预测性返回和 iOS 侧滑返回手势。\r\n- **支持导入自定义字体。** 在「设置 → 外观 → 导入字体」选择本地 `.ttf` 或 `.otf` 文件，重启应用后会恢复已导入的字体。\r\n- **调整移动端底部导航。** 优化拖动切换和随滚动收起、显示的交互。社区发帖按钮随底栏一同收起。\r\n\r\n### 性能优化/修复\r\n\r\n- 优化 Android 首页触摸采样和海报网格绘制，减轻慢速滚动时的细节抖动。\r\n- 减少封面加载、详情刷新和播放选源时的重复处理。内存紧张时释放部分后台标签页。\r\n- 修复ios和macos异常播放器黑屏的问题。\r\n\r\n### 播放\r\n\r\n- 修复部分 HLS 视频因上游返回重复响应头而无法正常读取分片的问题。\r\n\r\n### 平台兼容\r\n\r\n- 统一 Android 各架构安装包的版本号，避免同一版本因架构不同而被识别为不同构建。\r\n- 同步 iOS 和 macOS 的媒体库与播放器渲染插件版本，并更新 Windows 打包流程以兼容六位构建号。\r\n**Full Changelog**: https://github.com/AniBakaBaka/AniBaka/compare/5.2.4+1101...5.2.5+261113",
+      "ipas": [
+        {
+          "name": "baka-5.2.5+261113-ios-unsigned.ipa",
+          "size": 23563780,
+          "url": "https://github.com/AniBakaBaka/AniBaka/releases/download/5.2.5%2B261113/baka-5.2.5%2B261113-ios-unsigned.ipa",
+          "id": 762069578,
+          "updated_at": "2026-11-18T05:34:10Z",
+          "digest": "sha256:574b241ff075041c744847dc62eb70a550dcc264ff70dfb360cb99103b1593b0"
+        }
+      ]
+    },
+    {
       "tag": "5.2.4+1101",
       "name": "5.2.4",
       "pre": false,
@@ -2435,6 +2454,16 @@
   ],
   "ARMSX2/ARMSX3": [
     {
+      "tag": "1.7",
+      "name": "ARMSX3 1.7 ",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-18",
+      "published_at": "2026-11-18T13:59:37Z",
+      "body": "# ARMSX3 1.7\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/0c315c44-4ddf-4e01-9a87-c38e26b17496\" />\r\n\r\n## Highlights\r\n- **New SPU code compiles in the background.** Games keep running while it compiles, so new areas load without pausing. Games that need the old pause keep it.\r\n- **Compiled SPU code now carries over between updates,** including game updates, so first boots after them are quick. Each game compiles once more on its first boot after this update.\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/9cb8777e-ebd4-4bb8-b0b2-7291bc171586\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/fb6928e6-5b5c-4dc1-8f63-4d17de71343e\" />\r\n\r\n## The Last of Us\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/64b64a6f-a55b-48e7-bb90-59324edb8b65\" />\r\n\r\n- **Fixed the freeze during play.** The game hands its work to background jobs and waits for them, and on phones a job list could stop with work still in it, freezing the game anywhere from minutes to hours in. ARMSX3 now keeps those jobs moving.\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/fd3dc958-8e4a-4044-b9da-2868ccbd7492\" />\r\n\r\n- **Fixed a crash after hours of play (4 hours of continuous play in this case):** Android's limit on memory mappings filled up while new shaders waited to be saved to disk.\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/e0ea275c-55db-4c78-b1f9-8a277c24f67a\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/685340e0-b8cd-457a-a700-b1823c238872\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/61c5a2eb-c66a-423c-8131-63ede454e382\" />\r\n\r\n- **Fixed a crash late in the game,** when its shaders used up the same limit. It als",
+      "ipas": []
+    },
+    {
       "tag": "ios-0.0.3",
       "name": "ARMSX3 for iOS 0.0.3 beta",
       "pre": true,
@@ -2649,16 +2678,6 @@
       "date": "2026-10-19",
       "published_at": "2026-10-19T17:06:49Z",
       "body": "# ARMSX3 1.3.1\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/96f7ad80-1ab1-4b14-ac49-5d42f463837c\" />\r\n\r\n## Games\r\n\r\n- **Blitz: The League II installs and plays**, everything it needs is turned on automatically. Includes RPCS3's fix by @elad335.\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/e0bbe156-a971-44df-ad7e-7af28ebe015a\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/6f1500d0-937a-4553-be41-2182dda8997f\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/6fa62225-0e26-467c-baae-1188538fddab\" />\r\n\r\n- **Castlevania: Harmony of Despair shows both pages of the menu book.** Thanks to buffy77 for the report.\r\n\r\n<img width=\"2400\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/fae7ec1e-c301-411b-8313-66ea289dfe64\" />\r\n\r\n- **Sonic the Hedgehog (2006) shows its levels on every version**, not just the updated US disc that our bundled patch covers. Versions without the patch may show a little flicker. This can be fixed by enabling SPU MMIO Delay Enabled, but it WILL slow down the game (cut the fps in half on my 8 elite). It's recommended to stick with the US version that has the patch. By @elad335 \r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/cad7c1ec-caf6-451f-8075-058c1480b98a\" />\r\n\r\n## Graphics\r\n\r\n- **Less video memory used on Adreno** by textures one pixel tall, which some games create by the hundreds while loading.\r\n\r\n## Settings\r\n\r\n- **Game-specific settings stay with their game.** When ARMSX3 turns on special settings for one game, every other game keeps running on your own settings.\r\n\r\n## GPU drivers\r\n\r\n- **ARMSX3 tells you when a custom driver can't load.** If a driver pack can't run on your device, ARMSX3 now says \"Custom driver couldn't load. Using the system driver.\" and plays on the system ",
-      "ipas": []
-    },
-    {
-      "tag": "1.3",
-      "name": "ARMSX3 1.3 ",
-      "pre": false,
-      "draft": false,
-      "date": "2026-10-18",
-      "published_at": "2026-10-18T17:22:23Z",
-      "body": "# ARMSX3 1.3\r\n\r\n## Games\r\n\r\n- **Uncharted 2 boots and plays**, with a fix to how ARMSX3 reads a game's graphics commands. By @elad335 \r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/2a7d704a-f837-40e2-b572-71699b369c2c\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/9353ddee-c246-472f-8cab-512ca9037267\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/e1cc3dfd-e5f1-4ae9-b946-67777078b617\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/916a5981-d558-4fb3-bd0b-f7c4598d2846\" />\r\n\r\n## Controllers\r\n\r\n- **All controllers can play as Player 1.** Turn on \"All controllers play as Player 1\" in Settings > Pad or in the in-game menu > controller tab > controller mapping, and a handheld's own controls and a Bluetooth pad both control Player 1. Dock it or pick up the other controller and keep playing, with nothing to reassign. The controller you used last gets the rumble. (Also in the next ARMSX2 nightly). \r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/2a7b6692-c0d7-4819-80ce-ad1c33156040\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/c5c2e646-3541-4518-850b-1bfee2a07ccd\" />\r\n\r\n- **Several controllers can share a player.** Pick each controller's player in the in-game Controls screen or in Settings > Pad. Two or more controllers can be on the same player.\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/395c3041-a687-4cbc-beb9-692b51d4249a\" />\r\n\r\n- **Mapping profiles for physical controllers in the in-game menu.** Open the in game-menu, controller tab > controller mapping and click on Mapping Profiles while playing to load a saved profile with one tap, or save the current buttons as a new one. \r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" ",
       "ipas": []
     }
   ],
@@ -3527,6 +3546,25 @@
   ],
   "open-ani/animeko": [
     {
+      "tag": "v6.4.1",
+      "name": "6.4.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-18",
+      "published_at": "2026-11-18T14:44:06Z",
+      "body": "- 安全性修复，请桌面端用户立刻更新\r\n\r\n----\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v6.4.0...v6.4.1\r\n\r\n[//]: # (ANI-SERVER-MAGIC-SEPARATOR)\r\n\r\n[//]: # (注意: api server 依赖这个特殊分隔符)\r\n\r\n[//]: # (对于所有可用的变量列表, 参考 CI release.yml 的 step release-notes)\r\n\r\n[github-win-x64]: https://github.com/open-ani/ani/releases/download/v6.4.1/ani-6.4.1-windows-x86_64.zip\r\n\r\n[github-win-aarch64]: https://github.com/open-ani/ani/releases/download/v6.4.1/ani-6.4.1-windows-aarch64.zip\r\n\r\n[github-mac-x64]: https://github.com/open-ani/ani/releases/download/v6.4.1/ani-6.4.1-macos-x86_64.dmg\r\n\r\n[github-mac-aarch64]: https://github.com/open-ani/ani/releases/download/v6.4.1/ani-6.4.1-macos-aarch64.dmg\r\n\r\n[github-android]: https://github.com/open-ani/ani/releases/download/v6.4.1/ani-6.4.1-universal.apk\r\n\r\n[github-android-arm64-v8a]: https://github.com/open-ani/ani/releases/download/v6.4.1/ani-6.4.1-arm64-v8a.apk\r\n\r\n[github-android-armeabi-v7a]: https://github.com/open-ani/ani/releases/download/v6.4.1/ani-6.4.1-armeabi-v7a.apk\r\n\r\n[github-android-x86_64]: https://github.com/open-ani/ani/releases/download/v6.4.1/ani-6.4.1-x86_64.apk\r\n\r\n[cf-win-x64]: https://d.myani.org/v6.4.1/ani-6.4.1-windows-x86_64.zip\r\n\r\n[cf-win-aarch64]: https://d.myani.org/v6.4.1/ani-6.4.1-windows-aarch64.zip\r\n\r\n[cf-linux-x64]: https://d.myani.org/v6.4.1/ani-6.4.1-linux-x86_64.appimage\r\n\r\n[cf-mac-x64]: https://d.myani.org/v6.4.1/ani-6.4.1-macos-x86_64.zip\r\n\r\n[cf-mac-aarch64]: https://d.myani.org/v6.4.1/ani-6.4.1-macos-aarch64.dmg\r\n\r\n[cf-ios]: https://d.myani.org/v6.4.1/ani-6.4.1.ipa\r\n\r\n[cf-android]: https://d.myani.org/v6.4.1/ani-6.4.1-universal.apk\r\n\r\n[cf-android-arm64-v8a]: https://d.myani.org/v6.4.1/ani-6.4.1-arm64-v8a.apk\r\n\r\n[cf-android-armeabi-v7a]: https://d.myani.org/v6.4.1/ani-6.4.1-armeabi-v7a.apk\r\n\r\n[cf-android-x86_64]: https://d.myani.org/v6.4.1/ani-6.4.1-x86_64.apk\r\n\r\n[ghproxy-win-x64]: https://ghfast.top/?q=https%3A%2F%2Fgithub.com%2Fopen-ani%2Fani%2Freleases%2Fdownload%2Fv6.4.1%2Fani-6.4.1-windows-x86_64.zip",
+      "ipas": [
+        {
+          "name": "ani-6.4.1.ipa",
+          "size": 48615556,
+          "url": "https://github.com/open-ani/animeko/releases/download/v6.4.1/ani-6.4.1.ipa",
+          "id": 762696249,
+          "updated_at": "2026-11-18T09:08:34Z",
+          "digest": "sha256:ec279f53792f827d203f33daf59a2969b60eec6b7a3d919005a76e9ca65fd069"
+        }
+      ]
+    },
+    {
       "tag": "v6.4.0",
       "name": "6.4.0",
       "pre": false,
@@ -3884,25 +3922,6 @@
           "id": 470527485,
           "updated_at": "2026-07-08T18:08:44Z",
           "digest": "sha256:920b3859975006404b254f78fe48feebb5c1149aecbf3ce0f0db21cb02afa08c"
-        }
-      ]
-    },
-    {
-      "tag": "v5.7.0",
-      "name": "5.7.0",
-      "pre": false,
-      "draft": false,
-      "date": "2026-06-28",
-      "published_at": "2026-06-28T06:14:58Z",
-      "body": "- 新增播放历史云同步\r\n- 收藏页新增分页缓存机制 (#3081 by @GeneralK1ng)\r\n- 修复快速选择数据源问题\r\n- 修复无法加载保存的播放进度\r\n----\r\n\r\n- 修复离线弹幕缓存回退异常，离线时弹幕加载更可靠\r\n- 修复 Android WebView 验证码处理的线程问题\r\n- 改进桌面端内置浏览器生命周期清理，减少资源残留和异常\r\n- 限制浏览器并发仅作用于数据源查询，降低无关浏览器任务受到影响的概率\r\n- 修复媒体选择器自动选择异常\r\n- 启动时会清理过期登录令牌，减少异常登录状态\r\n- 优化搜索结果和推荐列表的条目标识，减少重复条目导致的显示异常\r\n- 调整提示消息在主线程显示，提升提示弹出的稳定性\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v5.6.0...v5.7.0\r\n\r\n[//]: # (ANI-SERVER-MAGIC-SEPARATOR)\r\n\r\n[//]: # (注意: api server 依赖这个特殊分隔符)\r\n\r\n[//]: # (对于所有可用的变量列表, 参考 CI release.yml 的 step release-notes)\r\n\r\n[github-win-x64]: https://github.com/open-ani/ani/releases/download/v5.7.0/ani-5.7.0-windows-x86_64.zip\r\n\r\n[github-mac-x64]: https://github.com/open-ani/ani/releases/download/v5.7.0/ani-5.7.0-macos-x86_64.dmg\r\n\r\n[github-mac-aarch64]: https://github.com/open-ani/ani/releases/download/v5.7.0/ani-5.7.0-macos-aarch64.dmg\r\n\r\n[github-android]: https://github.com/open-ani/ani/releases/download/v5.7.0/ani-5.7.0-universal.apk\r\n\r\n[github-android-arm64-v8a]: https://github.com/open-ani/ani/releases/download/v5.7.0/ani-5.7.0-arm64-v8a.apk\r\n\r\n[github-android-armeabi-v7a]: https://github.com/open-ani/ani/releases/download/v5.7.0/ani-5.7.0-armeabi-v7a.apk\r\n\r\n[github-android-x86_64]: https://github.com/open-ani/ani/releases/download/v5.7.0/ani-5.7.0-x86_64.apk\r\n\r\n[cf-win-x64]: https://d.myani.org/v5.7.0/ani-5.7.0-windows-x86_64.zip\r\n\r\n[cf-linux-x64]: https://d.myani.org/v5.7.0/ani-5.7.0-linux-x86_64.appimage\r\n\r\n[cf-mac-x64]: https://d.myani.org/v5.7.0/ani-5.7.0-macos-x86_64.zip\r\n\r\n[cf-mac-aarch64]: https://d.myani.org/v5.7.0/ani-5.7.0-macos-aarch64.dmg\r\n\r\n[cf-ios]: https://d.myani.org/v5.7.0/ani-5.7.0.ipa\r\n\r\n[cf-android]: https://d.myani.org/v5.7.0/ani-5.7.0-universal.apk\r\n\r\n[cf-android-arm64-v8a]: https://d.myani.org/v5.7.0/ani-5.7.0-arm64-v8a.apk\r\n\r\n[cf-android-armeabi-v7a]: https://d.myani.org/v5.7.0/ani-5.7.0-armeabi-v7a.apk\r\n\r\n[cf-android-x86_64]: https://d.myani.org/v5.7.0/ani-5.7.0-x86_64.apk\r\n\r\n[ghproxy-win-x64]: https://ghfast.top/?q",
-      "ipas": [
-        {
-          "name": "ani-5.7.0.ipa",
-          "size": 30504854,
-          "url": "https://github.com/open-ani/animeko/releases/download/v5.7.0/ani-5.7.0.ipa",
-          "id": 459965833,
-          "updated_at": "2026-06-28T03:55:58Z",
-          "digest": "sha256:02b29bd984ff1cd55b5711e631096d01430217619ed3bd757886d9a4084ed47e"
         }
       ]
     }
@@ -6335,6 +6354,25 @@
   ],
   "ccbkv/PicaComic": [
     {
+      "tag": "5.1.2",
+      "name": "5.1.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-18",
+      "published_at": "2026-11-18T18:18:36Z",
+      "body": "# 5.1.2 (2026-11-18)\r\n**更新说明**\r\n- !! 由于微软onnxruntime仓库目前突发 404,目前无linux版 !!\r\n- 在app 的设置→关于里有tg群 \r\n- 修复下载闪退\r\n- 修复导出导入,\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/5.1.1...5.1.2",
+      "ipas": [
+        {
+          "name": "PicaComic-5.1.2-app-ios-build_no_sign.ipa",
+          "size": 31711081,
+          "url": "https://github.com/ccbkv/PicaComic/releases/download/5.1.2/PicaComic-5.1.2-app-ios-build_no_sign.ipa",
+          "id": 764208329,
+          "updated_at": "2026-11-18T16:55:35Z",
+          "digest": "sha256:6e3c86880ae1c4cceb3834bbdb272bed1c7070b3afa82913dc40f6bf01db1306"
+        }
+      ]
+    },
+    {
       "tag": "5.1.1",
       "name": "5.1.1",
       "pre": false,
@@ -6683,25 +6721,6 @@
           "id": 390961323,
           "updated_at": "2026-04-07T17:31:16Z",
           "digest": "sha256:e449fb82d1da71b28d2cf8cb84d0fb27942177d34280d36cc2cf5409d781a10b"
-        }
-      ]
-    },
-    {
-      "tag": "4.6.2",
-      "name": "4.6.2",
-      "pre": false,
-      "draft": false,
-      "date": "2026-04-07",
-      "published_at": "2026-04-07T14:54:16Z",
-      "body": "",
-      "ipas": [
-        {
-          "name": "PicaComic-4.6.2-app-ios-build.ipa",
-          "size": 15819550,
-          "url": "https://github.com/ccbkv/PicaComic/releases/download/4.6.2/PicaComic-4.6.2-app-ios-build.ipa",
-          "id": 390872741,
-          "updated_at": "2026-04-07T14:53:03Z",
-          "digest": "sha256:3d39b288e251cff133d455ff1c5a8cec1e9fc0f9b8df72b5fb422f0d4842092e"
         }
       ]
     }
@@ -7915,6 +7934,35 @@
   ],
   "drdon1234/Hentai-Park": [
     {
+      "tag": "v0.15.1",
+      "name": "HentaiPark v0.15.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-18",
+      "published_at": "2026-11-18T14:11:23Z",
+      "body": "## 中文\n\n### 新功能\n- 新增 Windows 桌面客户端，提供 x64 与 ARM64 安装包和便携包。\n- 站内搜索和栏目可分别记住筛选条件，并按日期范围查看作品。\n\n### 改进\n- Android 站内多语言搜索移入搜索栏，Web 结果页可直接调整筛选并保留关键词。\n- 改进移动端阅读和播放时的系统栏、屏幕方向恢复，以及 iOS 分享体验。\n\n### 修复\n- 修复 iOS 17 及以上版本内置网页的 HTTP 代理配置。\n- Android 下载多选可通过返回键退出，切换标签时清除勾选，并减少后台下载进度引起的界面刷新。\n- 修复移动端书库写入失败后影响后续保存，以及后台下载中断影响其他任务的问题。\n\n### 插件更新\n- E-Hentai 0.0.22：可拖动最低评分滑块，精确到 0.01 星。\n- itch.io 0.0.4、鲲 Galgame 0.0.11：itch.io 搜索支持作者和游戏类型筛选，鲲 Galgame 搜索支持资源平台和语言筛选。\n- 黄豆短剧 0.0.13、91短剧 0.0.13、黄果短剧 0.0.16：改进站点连接。\n\n## English\n\n### New\n- Add a Windows desktop client with installers and portable packages for x64 and ARM64.\n- Remember filters separately for each site search and feed, and filter works by date range.\n\n### Improvements\n- Move multilingual search into the Android site search bar and let Web users adjust filters directly on the results page while keeping their query.\n- Improve system bars and orientation restoration during mobile reading and playback, along with sharing on iOS.\n\n### Fixes\n- Fix HTTP proxy configuration for the built-in browser on iOS 17 and later.\n- Let Android users exit download selection with Back, clear selections when switching tabs, and reduce screen updates caused by background downloads.\n- Fix library write failures blocking later saves and interrupted background downloads affecting other tasks on mobile.\n\n### Plugin updates\n- E-Hentai 0.0.22: Set the minimum rating with a slider in increments of 0.01 stars.\n- itch.io 0.0.4 and KUN Galgame 0.0.11: Filter itch.io search results by author and genre, and KUN Galgame search results by resource platform and language.\n- Huangdou Drama 0.0.13, 91 Drama 0.0.13 and Huangguo Drama 0.0.16: Improve site connectivity.\n",
+      "ipas": [
+        {
+          "name": "HentaiPark-0.15.1-82-ios-arm64-unsigned.ipa",
+          "size": 17937496,
+          "url": "https://github.com/drdon1234/Hentai-Park/releases/download/v0.15.1/HentaiPark-0.15.1-82-ios-arm64-unsigned.ipa",
+          "id": 763652665,
+          "updated_at": "2026-11-18T14:11:22Z",
+          "digest": "sha256:a1095e6a71978b79eb002a3f78458af975182243cf9e3295dc29cedfff0921f8"
+        }
+      ]
+    },
+    {
+      "tag": "v0.15.0",
+      "name": "HentaiPark v0.15.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-18",
+      "published_at": "2026-11-18T13:56:09Z",
+      "body": "## 中文\n\n### 新功能\n- 新增 Windows 桌面客户端，提供 x64 与 ARM64 安装包和便携包。\n- 站内搜索和栏目可分别记住筛选条件，并按日期范围查看作品。\n\n### 改进\n- Android 站内多语言搜索移入搜索栏，Web 结果页可直接调整筛选并保留关键词。\n- 改进移动端阅读和播放时的系统栏、屏幕方向恢复，以及 iOS 分享体验。\n\n### 修复\n- Android 下载多选可通过返回键退出，切换标签时清除勾选，并减少后台下载进度引起的界面刷新。\n- 修复移动端书库写入失败后影响后续保存，以及后台下载中断影响其他任务的问题。\n\n### 插件更新\n- E-Hentai 0.0.22：可拖动最低评分滑块，精确到 0.01 星。\n- itch.io 0.0.4、鲲 Galgame 0.0.11：itch.io 搜索支持作者和游戏类型筛选，鲲 Galgame 搜索支持资源平台和语言筛选。\n- 黄豆短剧 0.0.13、91短剧 0.0.13、黄果短剧 0.0.16：改进站点连接。\n\n## English\n\n### New\n- Add a Windows desktop client with installers and portable packages for x64 and ARM64.\n- Remember filters separately for each site search and feed, and filter works by date range.\n\n### Improvements\n- Move multilingual search into the Android site search bar and let Web users adjust filters directly on the results page while keeping their query.\n- Improve system bars and orientation restoration during mobile reading and playback, along with sharing on iOS.\n\n### Fixes\n- Let Android users exit download selection with Back, clear selections when switching tabs, and reduce screen updates caused by background downloads.\n- Fix library write failures blocking later saves and interrupted background downloads affecting other tasks on mobile.\n\n### Plugin updates\n- E-Hentai 0.0.22: Set the minimum rating with a slider in increments of 0.01 stars.\n- itch.io 0.0.4 and KUN Galgame 0.0.11: Filter itch.io search results by author and genre, and KUN Galgame search results by resource platform and language.\n- Huangdou Drama 0.0.13, 91 Drama 0.0.13 and Huangguo Drama 0.0.16: Improve site connectivity.\n",
+      "ipas": []
+    },
+    {
       "tag": "v0.14.8",
       "name": "HentaiPark v0.14.8",
       "pre": false,
@@ -8101,26 +8149,6 @@
       "date": "2026-11-08",
       "published_at": "2026-11-08T16:32:16Z",
       "body": "## 中文\n\n### 新功能\n- 新增 xHamster，支持推荐、搜索和多清晰度视频播放。\n\n### 修复\n- 修复 E-Hentai 本地下载在图片解析或会话 key 失效时失败的问题，失败后可继续下载。\n\n### 插件更新\n- E-Hentai 0.0.20：修复画廊图片解析和本地下载恢复。\n\n## English\n\n### New\n- Added xHamster with recommendations, search and multiple video qualities.\n\n### Fixes\n- Fixed E-Hentai offline downloads failing on image parsing or expired session keys, and allowed failed downloads to resume.\n\n### Plugin updates\n- E-Hentai 0.0.20: fixed gallery image parsing and offline download recovery.\n",
-      "ipas": []
-    },
-    {
-      "tag": "v0.11.12",
-      "name": "HentaiPark v0.11.12",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-08",
-      "published_at": "2026-11-08T14:43:39Z",
-      "body": "## 中文\n\n### 改进\n- 小说书本卡片只在封面下方显示标题；主页和域页支持持续横向加载。\n- 下载页批量暂停和继续采用图标加文字按钮。\n- 收藏更新优先检查可能新增章节的作品，减少无效请求。\n- 屏蔽词组支持独立开启强力模式，补充关键词并减少默认规则的误判。\n- 站点页新增回到顶部和跳转原站页码入口，修改站点配置后自动刷新相关列表。\n- 改善长列表滚动和视频连接异常后的恢复体验。\n\n### 修复\n- 短视频及吃瓜视频支持左右边缘双击快退或快进五秒，并保存播放进度。\n- 修复播放器缓冲期间切换应用后的播放状态显示。\n- 吃瓜帖子增加原网页入口；没有视频封面时显示黑底，不再使用邻近图片补位。\n- 自动翻译失败保留原文，不再弹出容易与站点故障混淆的全局提示；主动翻译限流时明确提示来源。\n\n### 插件更新\n- Pornhub 0.0.12：修复作者解析，支持进入作者主页浏览作品。\n- 51吃瓜网、黑料网、每日大赛 0.0.9：修复部分列表封面识别，改进原站视频封面解析。\n\n## English\n\n### Improvements\n- Novel book cards show titles only below the cover; home and domain shelves support continued horizontal loading.\n- Bulk pause and resume actions on the downloads page use icons with text.\n- Library updates focus on works that may receive new chapters, reducing unnecessary requests.\n- Each block preset has an independent strong mode, with expanded keywords and fewer ambiguous default matches.\n- Source pages add scroll-to-top and original-page navigation, and related lists refresh after source settings change.\n- Improved long-list scrolling and recovery from video connection failures.\n\n### Fixes\n- Short videos and feed videos support double-tapping the left or right edge to seek five seconds and retain playback progress.\n- Fixed playback state display after switching apps while a video is buffering.\n- Feed posts add an original-page action; videos without a poster use a black background instead of a nearby image.\n- Failed automatic translations retain the original text without a global error that could be mistaken for a source failure; manual translation rate limits identify the translation service.\n\n### Plugin updates\n- Pornhub 0.0.12: fixed author parsing and added browsing of creator pages.\n- 51Chigua, Heiliao and Meiri Dasai 0.0.9: fixed some listing covers and improved parsing of original video posters.\n",
-      "ipas": []
-    },
-    {
-      "tag": "v0.11.11",
-      "name": "HentaiPark v0.11.11",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-04",
-      "published_at": "2026-11-04T05:28:51Z",
-      "body": "## 中文\n\n### 改进\n- 主页和域页的小说采用竖版书本卡片，支持横向滑动浏览。\n- 减少自动翻译完成后重复构建时的计算和刷新。\n- 频道与作者搜索保留原站搜索结果，并改进加载失败时的提示。\n\n### 修复\n- 修复漫画上下集跳转时继承当前章节页码，以及旧章节延迟回调干扰新章节的问题。\n- 修复视频开头和接近结尾的未完成进度无法准确恢复的问题。\n- 修复已加入频道和已关注作者页面顶部内容被遮挡的问题。\n- 修复 E-Hentai 热门和排行榜筛选后离开原栏目范围的问题。\n\n### 插件更新\n- E-Hentai 0.0.19：热门和排行榜支持在原栏目内筛选。\n- Reddit 0.0.16：指定社区改用网页加载帖子，支持图片、视频、纯文本和分页，订阅社区不再自动执行原站加入操作。\n- X 0.0.25：修正搜索请求方式，改进账号状态检查及频道、作者搜索结果处理。\n\n## English\n\n### Improvements\n- Novels on the home and domain pages use portrait book cards with horizontal scrolling.\n- Reduced repeated computation and refreshes when rebuilding completed automatic translations.\n- Channel and author searches preserve results returned by the site and provide clearer loading errors.\n\n### Fixes\n- Fixed chapter navigation inheriting the current comic chapter's page and delayed callbacks affecting the next chapter.\n- Fixed unfinished video progress near the beginning or end failing to resume accurately.\n- Fixed content being obscured at the top of joined-channel and followed-author pages.\n- Fixed E-Hentai popular and ranking filters switching away from the selected feed.\n\n### Plugin updates\n- E-Hentai 0.0.19: filter popular and ranking results within their original feeds.\n- Reddit 0.0.16: load community posts from webpages with images, videos, text and pagination; saving a community subscription no longer automatically joins it on Reddit.\n- X 0.0.25: corrected search requests and improved account checks and channel and author search result handling.\n",
       "ipas": []
     }
   ],

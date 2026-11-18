@@ -122,7 +122,7 @@
       "developerName": "AniBakaBaka",
       "subtitle": "开源弹幕追番应用",
       "localizedDescription": "开源跨平台动画播放应用。此处提供未签名 iOS 安装包，需自行签名安装。\n\n项目主页：https://github.com/AniBakaBaka/AniBaka",
-      "iconURL": "https://raw.githubusercontent.com/AniBakaBaka/AniBaka/5.2.4+1101/ios/Runner/Assets.xcassets/AppIcon.appiconset/1024.png",
+      "iconURL": "https://raw.githubusercontent.com/AniBakaBaka/AniBaka/5.2.5+261113/ios/Runner/Assets.xcassets/AppIcon.appiconset/1024.png",
       "tintColor": "#F06C8B",
       "category": "entertainment",
       "appPermissions": {
@@ -134,41 +134,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "5.2.4",
-              "date": "2026-11-05",
-              "publishedAt": "2026-11-05T04:35:12Z",
-              "buildVersion": "1101",
-              "buildNumber": "1101",
-              "localizedDescription": "新增\r\n\r\n- Windows 新增 AnimeJaNai 实时超分：播放器底栏一键开关，可与 Anime4K、DLSS 叠加；支持 TensorRT / DirectML 后端自动选择，提供质量、均衡、性能三档与原版、Sharp1 两种模型，附细节锐化、亮度、对比度、饱和度、伽马调节及原画/超分同帧对比。\r\n- AnimeJaNai 可选 RIFE 补帧：支持 2×、3×、4× 倍率，提供完整（原分辨率处理）与快速（最高 540p 处理）两种方案。\r\n- 新增“画质设置”面板，整合 AnimeJaNai 与 DLSS 全部选项；播放器内长按增强按钮或进入“实验室”页面均可打开，运行状态、安装进度与诊断信息集中展示。\r\n- Windows 播放器底栏常显 Anime4K / AnimeJaNai / DLSS 开关，点按切换、长按进入画质设置，无需先在实验室开启。\r\n- 评论区改版：正文按 Markdown / BBCode 渲染，评论中的时间点自动识别为跳转链接，点击可seek到对应进度或指定集数；表情贴图正常显示，加载时改用骨架占位。\r\n优化\r\n\r\n- 更新优化内置源规则\r\n- DLSS 与 AnimeJaNai 运行库改由组织维护的 media-kit fork 统一打包，应用内不再捆绑原生桥接代码，减小安装体积。\r\n- 充分优化日志系统\r\n- 优化了一些小细节\r\n使用说明\r\n\r\n- AnimeJaNai 仅支持 Windows；首次启用需联网下载运行库与模型（补帧组件约 441 MiB），下载过程可取消，TensorRT 后端首次使用需编译引擎。\r\n- 后端设为“自动”…",
-              "downloadURL": "https://github.com/AniBakaBaka/AniBaka/releases/download/5.2.4%2B1101/baka-5.2.4%2B1101-ios-unsigned.ipa",
-              "size": 23708307,
+              "version": "5.2.5",
+              "date": "2026-11-18",
+              "publishedAt": "2026-11-18T12:04:44Z",
+              "buildVersion": "261113",
+              "buildNumber": "261113",
+              "localizedDescription": "本次更新重点优化手机端打开番剧详情和返回的体验，新增本地字体导入，并更新四个内置播放源。\r\n界面与交互\r\n\r\n- 优化番剧详情转场。 点击卡片后，圆角小窗口从封面位置逐渐铺满全屏，返回时收回卡片。适配 Android 预测性返回和 iOS 侧滑返回手势。\r\n- 支持导入自定义字体。 在「设置 → 外观 → 导入字体」选择本地 .ttf 或 .otf 文件，重启应用后会恢复已导入的字体。\r\n- 调整移动端底部导航。 优化拖动切换和随滚动收起、显示的交互。社区发帖按钮随底栏一同收起。\r\n性能优化/修复\r\n\r\n- 优化 Android 首页触摸采样和海报网格绘制，减轻慢速滚动时的细节抖动。\r\n- 减少封面加载、详情刷新和播放选源时的重复处理。内存紧张时释放部分后台标签页。\r\n- 修复ios和macos异常播放器黑屏的问题。\r\n播放\r\n\r\n- 修复部分 HLS 视频因上游返回重复响应头而无法正常读取分片的问题。\r\n平台兼容\r\n\r\n- 统一 Android 各架构安装包的版本号，避免同一版本因架构不同而被识别为不同构建。\r\n- 同步 iOS 和 macOS 的媒体库与播放器渲染插件版本，并更新 Windows 打包流程以兼容六位构建号。\r\nFull Changelog: https://github.com/AniBakaBaka/AniBaka/compare/5.2.4+1101...5.2.5+261113",
+              "downloadURL": "https://github.com/AniBakaBaka/AniBaka/releases/download/5.2.5%2B261113/baka-5.2.5%2B261113-ios-unsigned.ipa",
+              "size": 23563780,
               "minOSVersion": "13.0",
-              "releaseTag": "5.2.4+1101",
-              "source": "https://github.com/AniBakaBaka/AniBaka/releases/tag/5.2.4+1101"
+              "releaseTag": "5.2.5+261113",
+              "source": "https://github.com/AniBakaBaka/AniBaka/releases/tag/5.2.5+261113"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "5.2.4",
-          "date": "2026-11-05",
-          "publishedAt": "2026-11-05T04:35:12Z",
-          "buildVersion": "1101",
-          "buildNumber": "1101",
-          "localizedDescription": "新增\r\n\r\n- Windows 新增 AnimeJaNai 实时超分：播放器底栏一键开关，可与 Anime4K、DLSS 叠加；支持 TensorRT / DirectML 后端自动选择，提供质量、均衡、性能三档与原版、Sharp1 两种模型，附细节锐化、亮度、对比度、饱和度、伽马调节及原画/超分同帧对比。\r\n- AnimeJaNai 可选 RIFE 补帧：支持 2×、3×、4× 倍率，提供完整（原分辨率处理）与快速（最高 540p 处理）两种方案。\r\n- 新增“画质设置”面板，整合 AnimeJaNai 与 DLSS 全部选项；播放器内长按增强按钮或进入“实验室”页面均可打开，运行状态、安装进度与诊断信息集中展示。\r\n- Windows 播放器底栏常显 Anime4K / AnimeJaNai / DLSS 开关，点按切换、长按进入画质设置，无需先在实验室开启。\r\n- 评论区改版：正文按 Markdown / BBCode 渲染，评论中的时间点自动识别为跳转链接，点击可seek到对应进度或指定集数；表情贴图正常显示，加载时改用骨架占位。\r\n优化\r\n\r\n- 更新优化内置源规则\r\n- DLSS 与 AnimeJaNai 运行库改由组织维护的 media-kit fork 统一打包，应用内不再捆绑原生桥接代码，减小安装体积。\r\n- 充分优化日志系统\r\n- 优化了一些小细节\r\n使用说明\r\n\r\n- AnimeJaNai 仅支持 Windows；首次启用需联网下载运行库与模型（补帧组件约 441 MiB），下载过程可取消，TensorRT 后端首次使用需编译引擎。\r\n- 后端设为“自动”…",
-          "downloadURL": "https://github.com/AniBakaBaka/AniBaka/releases/download/5.2.4%2B1101/baka-5.2.4%2B1101-ios-unsigned.ipa",
-          "size": 23708307,
+          "version": "5.2.5",
+          "date": "2026-11-18",
+          "publishedAt": "2026-11-18T12:04:44Z",
+          "buildVersion": "261113",
+          "buildNumber": "261113",
+          "localizedDescription": "本次更新重点优化手机端打开番剧详情和返回的体验，新增本地字体导入，并更新四个内置播放源。\r\n界面与交互\r\n\r\n- 优化番剧详情转场。 点击卡片后，圆角小窗口从封面位置逐渐铺满全屏，返回时收回卡片。适配 Android 预测性返回和 iOS 侧滑返回手势。\r\n- 支持导入自定义字体。 在「设置 → 外观 → 导入字体」选择本地 .ttf 或 .otf 文件，重启应用后会恢复已导入的字体。\r\n- 调整移动端底部导航。 优化拖动切换和随滚动收起、显示的交互。社区发帖按钮随底栏一同收起。\r\n性能优化/修复\r\n\r\n- 优化 Android 首页触摸采样和海报网格绘制，减轻慢速滚动时的细节抖动。\r\n- 减少封面加载、详情刷新和播放选源时的重复处理。内存紧张时释放部分后台标签页。\r\n- 修复ios和macos异常播放器黑屏的问题。\r\n播放\r\n\r\n- 修复部分 HLS 视频因上游返回重复响应头而无法正常读取分片的问题。\r\n平台兼容\r\n\r\n- 统一 Android 各架构安装包的版本号，避免同一版本因架构不同而被识别为不同构建。\r\n- 同步 iOS 和 macOS 的媒体库与播放器渲染插件版本，并更新 Windows 打包流程以兼容六位构建号。\r\nFull Changelog: https://github.com/AniBakaBaka/AniBaka/compare/5.2.4+1101...5.2.5+261113",
+          "downloadURL": "https://github.com/AniBakaBaka/AniBaka/releases/download/5.2.5%2B261113/baka-5.2.5%2B261113-ios-unsigned.ipa",
+          "size": 23563780,
           "minOSVersion": "13.0",
-          "releaseTag": "5.2.4+1101",
-          "source": "https://github.com/AniBakaBaka/AniBaka/releases/tag/5.2.4+1101"
+          "releaseTag": "5.2.5+261113",
+          "source": "https://github.com/AniBakaBaka/AniBaka/releases/tag/5.2.5+261113"
         }
       ],
-      "version": "5.2.4",
-      "versionDate": "2026-11-05",
-      "versionDescription": "新增\r\n\r\n- Windows 新增 AnimeJaNai 实时超分：播放器底栏一键开关，可与 Anime4K、DLSS 叠加；支持 TensorRT / DirectML 后端自动选择，提供质量、均衡、性能三档与原版、Sharp1 两种模型，附细节锐化、亮度、对比度、饱和度、伽马调节及原画/超分同帧对比。\r\n- AnimeJaNai 可选 RIFE 补帧：支持 2×、3×、4× 倍率，提供完整（原分辨率处理）与快速（最高 540p 处理）两种方案。\r\n- 新增“画质设置”面板，整合 AnimeJaNai 与 DLSS 全部选项；播放器内长按增强按钮或进入“实验室”页面均可打开，运行状态、安装进度与诊断信息集中展示。\r\n- Windows 播放器底栏常显 Anime4K / AnimeJaNai / DLSS 开关，点按切换、长按进入画质设置，无需先在实验室开启。\r\n- 评论区改版：正文按 Markdown / BBCode 渲染，评论中的时间点自动识别为跳转链接，点击可seek到对应进度或指定集数；表情贴图正常显示，加载时改用骨架占位。\r\n优化\r\n\r\n- 更新优化内置源规则\r\n- DLSS 与 AnimeJaNai 运行库改由组织维护的 media-kit fork 统一打包，应用内不再捆绑原生桥接代码，减小安装体积。\r\n- 充分优化日志系统\r\n- 优化了一些小细节\r\n使用说明\r\n\r\n- AnimeJaNai 仅支持 Windows；首次启用需联网下载运行库与模型（补帧组件约 441 MiB），下载过程可取消，TensorRT 后端首次使用需编译引擎。\r\n- 后端设为“自动”…",
-      "downloadURL": "https://github.com/AniBakaBaka/AniBaka/releases/download/5.2.4%2B1101/baka-5.2.4%2B1101-ios-unsigned.ipa",
-      "size": 23708307,
+      "version": "5.2.5",
+      "versionDate": "2026-11-18",
+      "versionDescription": "本次更新重点优化手机端打开番剧详情和返回的体验，新增本地字体导入，并更新四个内置播放源。\r\n界面与交互\r\n\r\n- 优化番剧详情转场。 点击卡片后，圆角小窗口从封面位置逐渐铺满全屏，返回时收回卡片。适配 Android 预测性返回和 iOS 侧滑返回手势。\r\n- 支持导入自定义字体。 在「设置 → 外观 → 导入字体」选择本地 .ttf 或 .otf 文件，重启应用后会恢复已导入的字体。\r\n- 调整移动端底部导航。 优化拖动切换和随滚动收起、显示的交互。社区发帖按钮随底栏一同收起。\r\n性能优化/修复\r\n\r\n- 优化 Android 首页触摸采样和海报网格绘制，减轻慢速滚动时的细节抖动。\r\n- 减少封面加载、详情刷新和播放选源时的重复处理。内存紧张时释放部分后台标签页。\r\n- 修复ios和macos异常播放器黑屏的问题。\r\n播放\r\n\r\n- 修复部分 HLS 视频因上游返回重复响应头而无法正常读取分片的问题。\r\n平台兼容\r\n\r\n- 统一 Android 各架构安装包的版本号，避免同一版本因架构不同而被识别为不同构建。\r\n- 同步 iOS 和 macOS 的媒体库与播放器渲染插件版本，并更新 Windows 打包流程以兼容六位构建号。\r\nFull Changelog: https://github.com/AniBakaBaka/AniBaka/compare/5.2.4+1101...5.2.5+261113",
+      "downloadURL": "https://github.com/AniBakaBaka/AniBaka/releases/download/5.2.5%2B261113/baka-5.2.5%2B261113-ios-unsigned.ipa",
+      "size": 23563780,
       "minOSVersion": "13.0"
     },
     {
@@ -287,7 +287,7 @@
       "developerName": "open-ani",
       "subtitle": "一站式弹幕追番平台",
       "localizedDescription": "集找番、追番、看番于一体的弹幕追番平台，支持 Bangumi 云收藏同步、离线缓存、BitTorrent 与弹幕云过滤。100% Kotlin / Compose Multiplatform 实现。\n\n开源协议：AGPL-3.0　·　项目主页：https://github.com/open-ani/animeko",
-      "iconURL": "https://raw.githubusercontent.com/open-ani/animeko/v6.4.0/app/ios/Animeko/Assets.xcassets/AppIcon.appiconset/1024.png",
+      "iconURL": "https://raw.githubusercontent.com/open-ani/animeko/v6.4.1/app/ios/Animeko/Assets.xcassets/AppIcon.appiconset/1024.png",
       "tintColor": "#3B82F6",
       "category": "entertainment",
       "appPermissions": {
@@ -299,17 +299,17 @@
           "track": "stable",
           "releases": [
             {
-              "version": "6.4.0",
-              "date": "2026-10-24",
-              "publishedAt": "2026-10-24T04:52:28Z",
-              "buildVersion": "6.4.99",
-              "buildNumber": "6.4.99",
-              "localizedDescription": "- 加快桌面端网页视频解析速度\r\n- 优化季度拆分资源的弹幕匹配准确性\r\n- 新增通知中心与公告，可查看互动消息、举报处理结果和账号安全提醒，并按类型设置通知\r\n- 新增弹幕文字转换设置，支持按弹幕来源单独配置并预览转换效果 (#3536 by @GeneralK1ng)\r\n- iOS 支持 Anime4K 视频增强，提升视频画面清晰度 (#3606 by @black4der)\r\n- Windows 和 macOS 自动更新支持增量下载，减少下载流量并加快更新\r\n- 新增 JSON API 数据源\r\n- 修复一系列播放相关问题\r\n\r\n----\r\n\r\n- TV 端支持配置全局网络代理 (#3550 by @LoliWolf)\r\n- Android 支持通过包含 Bangumi 章节 ID 或剧集 ID 的 ani 链接打开指定剧集\r\n- 优化续播与换源体验，直接从记忆进度开始播放，减少重复缓冲并避免换源后进度回退\r\n- 优化剧集页播放器快捷键，切换标签页或关闭侧边栏后可直接操作视频，输入文字时避免误触快捷键 (#3542 by @Tsukumi233)\r\n- 修复桌面端在部分多显卡或渲染模式切换场景下视频黑屏、窗口空白的问题\r\n- 修复 Windows 退出播放页时可能卡死的问题\r\n- 修复 Windows 和 Linux 播放纯音频媒体时可能卡在加载中的问题\r\n- 修复 Android 播放部分 MKV 视频时无法显示压缩字幕的问题，支持 ASS 和 SRT 字幕\r\n- 修复 Android 暂停或播放结束后切换全屏时画面缩在左侧或被裁切的问题\r\n- 修复 Android 应…",
-              "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.4.0/ani-6.4.0.ipa",
-              "size": 48615547,
+              "version": "6.4.1",
+              "date": "2026-11-18",
+              "publishedAt": "2026-11-18T14:44:06Z",
+              "buildVersion": "6.4.199",
+              "buildNumber": "6.4.199",
+              "localizedDescription": "- 安全性修复，请桌面端用户立刻更新\r\n\r\n----\r\n\r\nFull Changelog: https://github.com/open-ani/animeko/compare/v6.4.0...v6.4.1\r\n\r\n[//]: # (ANI-SERVER-MAGIC-SEPARATOR)\r\n\r\n[//]: # (注意: api server 依赖这个特殊分隔符)\r\n\r\n[//]: # (对于所有可用的变量列表, 参考 CI release.yml 的 step release-notes)\r\n\r\n[github-win-x64]: https://github.com/open-ani/ani/releases/download/v6.4.1/ani-6.4.1-windows-x86_64.zip\r\n\r\n[github-win-aarch64]: https://github.com/open-ani/ani/releases/download/v6.4.1/ani-6.4.1-windows-aarch64.zip\r\n\r\n[github-mac-x64]: https://github.com/open-ani/ani/releases/download/v6.4.1/ani-6.4.1-macos-x86_64.dmg\r\n\r\n[github-mac-aarch64]: https://github.com/open-ani/ani/releases/download/v6.4.1/ani-6.4.1-macos-aarch64.dmg\r\n\r\n[github-androi…",
+              "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.4.1/ani-6.4.1.ipa",
+              "size": 48615556,
               "minOSVersion": "16.0",
-              "releaseTag": "v6.4.0",
-              "source": "https://github.com/open-ani/animeko/releases/tag/v6.4.0"
+              "releaseTag": "v6.4.1",
+              "source": "https://github.com/open-ani/animeko/releases/tag/v6.4.1"
             }
           ]
         },
@@ -334,17 +334,17 @@
       ],
       "versions": [
         {
-          "version": "6.4.0",
-          "date": "2026-10-24",
-          "publishedAt": "2026-10-24T04:52:28Z",
-          "buildVersion": "6.4.99",
-          "buildNumber": "6.4.99",
-          "localizedDescription": "- 加快桌面端网页视频解析速度\r\n- 优化季度拆分资源的弹幕匹配准确性\r\n- 新增通知中心与公告，可查看互动消息、举报处理结果和账号安全提醒，并按类型设置通知\r\n- 新增弹幕文字转换设置，支持按弹幕来源单独配置并预览转换效果 (#3536 by @GeneralK1ng)\r\n- iOS 支持 Anime4K 视频增强，提升视频画面清晰度 (#3606 by @black4der)\r\n- Windows 和 macOS 自动更新支持增量下载，减少下载流量并加快更新\r\n- 新增 JSON API 数据源\r\n- 修复一系列播放相关问题\r\n\r\n----\r\n\r\n- TV 端支持配置全局网络代理 (#3550 by @LoliWolf)\r\n- Android 支持通过包含 Bangumi 章节 ID 或剧集 ID 的 ani 链接打开指定剧集\r\n- 优化续播与换源体验，直接从记忆进度开始播放，减少重复缓冲并避免换源后进度回退\r\n- 优化剧集页播放器快捷键，切换标签页或关闭侧边栏后可直接操作视频，输入文字时避免误触快捷键 (#3542 by @Tsukumi233)\r\n- 修复桌面端在部分多显卡或渲染模式切换场景下视频黑屏、窗口空白的问题\r\n- 修复 Windows 退出播放页时可能卡死的问题\r\n- 修复 Windows 和 Linux 播放纯音频媒体时可能卡在加载中的问题\r\n- 修复 Android 播放部分 MKV 视频时无法显示压缩字幕的问题，支持 ASS 和 SRT 字幕\r\n- 修复 Android 暂停或播放结束后切换全屏时画面缩在左侧或被裁切的问题\r\n- 修复 Android 应…",
-          "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.4.0/ani-6.4.0.ipa",
-          "size": 48615547,
+          "version": "6.4.1",
+          "date": "2026-11-18",
+          "publishedAt": "2026-11-18T14:44:06Z",
+          "buildVersion": "6.4.199",
+          "buildNumber": "6.4.199",
+          "localizedDescription": "- 安全性修复，请桌面端用户立刻更新\r\n\r\n----\r\n\r\nFull Changelog: https://github.com/open-ani/animeko/compare/v6.4.0...v6.4.1\r\n\r\n[//]: # (ANI-SERVER-MAGIC-SEPARATOR)\r\n\r\n[//]: # (注意: api server 依赖这个特殊分隔符)\r\n\r\n[//]: # (对于所有可用的变量列表, 参考 CI release.yml 的 step release-notes)\r\n\r\n[github-win-x64]: https://github.com/open-ani/ani/releases/download/v6.4.1/ani-6.4.1-windows-x86_64.zip\r\n\r\n[github-win-aarch64]: https://github.com/open-ani/ani/releases/download/v6.4.1/ani-6.4.1-windows-aarch64.zip\r\n\r\n[github-mac-x64]: https://github.com/open-ani/ani/releases/download/v6.4.1/ani-6.4.1-macos-x86_64.dmg\r\n\r\n[github-mac-aarch64]: https://github.com/open-ani/ani/releases/download/v6.4.1/ani-6.4.1-macos-aarch64.dmg\r\n\r\n[github-androi…",
+          "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.4.1/ani-6.4.1.ipa",
+          "size": 48615556,
           "minOSVersion": "16.0",
-          "releaseTag": "v6.4.0",
-          "source": "https://github.com/open-ani/animeko/releases/tag/v6.4.0"
+          "releaseTag": "v6.4.1",
+          "source": "https://github.com/open-ani/animeko/releases/tag/v6.4.1"
         },
         {
           "version": "6.4.0",
@@ -360,11 +360,11 @@
           "source": "https://github.com/open-ani/animeko/releases/tag/v6.4.0-beta02"
         }
       ],
-      "version": "6.4.0",
-      "versionDate": "2026-10-24",
-      "versionDescription": "- 加快桌面端网页视频解析速度\r\n- 优化季度拆分资源的弹幕匹配准确性\r\n- 新增通知中心与公告，可查看互动消息、举报处理结果和账号安全提醒，并按类型设置通知\r\n- 新增弹幕文字转换设置，支持按弹幕来源单独配置并预览转换效果 (#3536 by @GeneralK1ng)\r\n- iOS 支持 Anime4K 视频增强，提升视频画面清晰度 (#3606 by @black4der)\r\n- Windows 和 macOS 自动更新支持增量下载，减少下载流量并加快更新\r\n- 新增 JSON API 数据源\r\n- 修复一系列播放相关问题\r\n\r\n----\r\n\r\n- TV 端支持配置全局网络代理 (#3550 by @LoliWolf)\r\n- Android 支持通过包含 Bangumi 章节 ID 或剧集 ID 的 ani 链接打开指定剧集\r\n- 优化续播与换源体验，直接从记忆进度开始播放，减少重复缓冲并避免换源后进度回退\r\n- 优化剧集页播放器快捷键，切换标签页或关闭侧边栏后可直接操作视频，输入文字时避免误触快捷键 (#3542 by @Tsukumi233)\r\n- 修复桌面端在部分多显卡或渲染模式切换场景下视频黑屏、窗口空白的问题\r\n- 修复 Windows 退出播放页时可能卡死的问题\r\n- 修复 Windows 和 Linux 播放纯音频媒体时可能卡在加载中的问题\r\n- 修复 Android 播放部分 MKV 视频时无法显示压缩字幕的问题，支持 ASS 和 SRT 字幕\r\n- 修复 Android 暂停或播放结束后切换全屏时画面缩在左侧或被裁切的问题\r\n- 修复 Android 应…",
-      "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.4.0/ani-6.4.0.ipa",
-      "size": 48615547,
+      "version": "6.4.1",
+      "versionDate": "2026-11-18",
+      "versionDescription": "- 安全性修复，请桌面端用户立刻更新\r\n\r\n----\r\n\r\nFull Changelog: https://github.com/open-ani/animeko/compare/v6.4.0...v6.4.1\r\n\r\n[//]: # (ANI-SERVER-MAGIC-SEPARATOR)\r\n\r\n[//]: # (注意: api server 依赖这个特殊分隔符)\r\n\r\n[//]: # (对于所有可用的变量列表, 参考 CI release.yml 的 step release-notes)\r\n\r\n[github-win-x64]: https://github.com/open-ani/ani/releases/download/v6.4.1/ani-6.4.1-windows-x86_64.zip\r\n\r\n[github-win-aarch64]: https://github.com/open-ani/ani/releases/download/v6.4.1/ani-6.4.1-windows-aarch64.zip\r\n\r\n[github-mac-x64]: https://github.com/open-ani/ani/releases/download/v6.4.1/ani-6.4.1-macos-x86_64.dmg\r\n\r\n[github-mac-aarch64]: https://github.com/open-ani/ani/releases/download/v6.4.1/ani-6.4.1-macos-aarch64.dmg\r\n\r\n[github-androi…",
+      "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.4.1/ani-6.4.1.ipa",
+      "size": 48615556,
       "minOSVersion": "16.0"
     },
     {
@@ -758,7 +758,7 @@
       "developerName": "drdon1234",
       "subtitle": "成人内容聚合客户端（18+）",
       "localizedDescription": "本子、里番、JAV、写真、视频、小说与游戏的聚合客户端，跨站检索，阅读、观看与收藏统一管理。仅限成年人在当地法律允许的范围内使用；内容来自第三方站点，本应用不托管原站内容。IPA 为未签名包，需自行签名安装；覆盖安装应保持 Bundle ID 与签名身份。\n\n开源协议：AGPL-3.0　·　项目主页：https://github.com/drdon1234/Hentai-Park",
-      "iconURL": "https://raw.githubusercontent.com/drdon1234/Hentai-Park/v0.14.8/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/drdon1234/Hentai-Park/v0.15.1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#C96442",
       "category": "entertainment",
       "appPermissions": {
@@ -770,41 +770,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "0.14.8",
-              "date": "2026-11-17",
-              "publishedAt": "2026-11-17T10:43:21Z",
-              "buildVersion": "80",
-              "buildNumber": "80",
-              "localizedDescription": "中文\n新功能\n- 恢复 iOS 客户端，使用当前的阅读、播放、收藏、翻译、酒馆与备份功能。\n- iOS 接入应用锁、相册保存、系统分享与通知，支持音声后台播放和锁屏播放控制。\n改进\n- iOS 网页播放器使用独立临时会话，HTML 游戏按作品隔离存档。\n注意事项\n- iOS 长时间下载与录制建议保持前台；HTML 在线游戏需要 iOS 17 及以上，暂不支持 Flash。\nEnglish\nNew\n- Restore the iOS client with current reading, playback, library, translation, Tavern and backup features.\n- Add app lock, photo saving, system sharing and notifications on iOS, with background audio and lock-screen playback controls.\nImprovements\n- Isolate iOS web player sessions and keep separate storage for each HTML game.\nNotes\n- Keep iOS in the foreground for long downloads and recordings; HTML games require iOS 17 or later, and Flash is not supported.",
-              "downloadURL": "https://github.com/drdon1234/Hentai-Park/releases/download/v0.14.8/HentaiPark-0.14.8-80-ios-arm64-unsigned.ipa",
-              "size": 17908200,
+              "version": "0.15.1",
+              "date": "2026-11-18",
+              "publishedAt": "2026-11-18T14:11:23Z",
+              "buildVersion": "82",
+              "buildNumber": "82",
+              "localizedDescription": "中文\n新功能\n- 新增 Windows 桌面客户端，提供 x64 与 ARM64 安装包和便携包。\n- 站内搜索和栏目可分别记住筛选条件，并按日期范围查看作品。\n改进\n- Android 站内多语言搜索移入搜索栏，Web 结果页可直接调整筛选并保留关键词。\n- 改进移动端阅读和播放时的系统栏、屏幕方向恢复，以及 iOS 分享体验。\n修复\n- 修复 iOS 17 及以上版本内置网页的 HTTP 代理配置。\n- Android 下载多选可通过返回键退出，切换标签时清除勾选，并减少后台下载进度引起的界面刷新。\n- 修复移动端书库写入失败后影响后续保存，以及后台下载中断影响其他任务的问题。\n插件更新\n- E-Hentai 0.0.22：可拖动最低评分滑块，精确到 0.01 星。\n- itch.io 0.0.4、鲲 Galgame 0.0.11：itch.io 搜索支持作者和游戏类型筛选，鲲 Galgame 搜索支持资源平台和语言筛选。\n- 黄豆短剧 0.0.13、91短剧 0.0.13、黄果短剧 0.0.16：改进站点连接。\nEnglish\nNew\n- Add a Windows desktop client with installers and portable packages for x64 and ARM64.\n- Remember filters separately for each site search and feed, and filter works by date range.\nImprovements\n- Move multilingual search i…",
+              "downloadURL": "https://github.com/drdon1234/Hentai-Park/releases/download/v0.15.1/HentaiPark-0.15.1-82-ios-arm64-unsigned.ipa",
+              "size": 17937496,
               "minOSVersion": "15.0",
-              "releaseTag": "v0.14.8",
-              "source": "https://github.com/drdon1234/Hentai-Park/releases/tag/v0.14.8"
+              "releaseTag": "v0.15.1",
+              "source": "https://github.com/drdon1234/Hentai-Park/releases/tag/v0.15.1"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "0.14.8",
-          "date": "2026-11-17",
-          "publishedAt": "2026-11-17T10:43:21Z",
-          "buildVersion": "80",
-          "buildNumber": "80",
-          "localizedDescription": "中文\n新功能\n- 恢复 iOS 客户端，使用当前的阅读、播放、收藏、翻译、酒馆与备份功能。\n- iOS 接入应用锁、相册保存、系统分享与通知，支持音声后台播放和锁屏播放控制。\n改进\n- iOS 网页播放器使用独立临时会话，HTML 游戏按作品隔离存档。\n注意事项\n- iOS 长时间下载与录制建议保持前台；HTML 在线游戏需要 iOS 17 及以上，暂不支持 Flash。\nEnglish\nNew\n- Restore the iOS client with current reading, playback, library, translation, Tavern and backup features.\n- Add app lock, photo saving, system sharing and notifications on iOS, with background audio and lock-screen playback controls.\nImprovements\n- Isolate iOS web player sessions and keep separate storage for each HTML game.\nNotes\n- Keep iOS in the foreground for long downloads and recordings; HTML games require iOS 17 or later, and Flash is not supported.",
-          "downloadURL": "https://github.com/drdon1234/Hentai-Park/releases/download/v0.14.8/HentaiPark-0.14.8-80-ios-arm64-unsigned.ipa",
-          "size": 17908200,
+          "version": "0.15.1",
+          "date": "2026-11-18",
+          "publishedAt": "2026-11-18T14:11:23Z",
+          "buildVersion": "82",
+          "buildNumber": "82",
+          "localizedDescription": "中文\n新功能\n- 新增 Windows 桌面客户端，提供 x64 与 ARM64 安装包和便携包。\n- 站内搜索和栏目可分别记住筛选条件，并按日期范围查看作品。\n改进\n- Android 站内多语言搜索移入搜索栏，Web 结果页可直接调整筛选并保留关键词。\n- 改进移动端阅读和播放时的系统栏、屏幕方向恢复，以及 iOS 分享体验。\n修复\n- 修复 iOS 17 及以上版本内置网页的 HTTP 代理配置。\n- Android 下载多选可通过返回键退出，切换标签时清除勾选，并减少后台下载进度引起的界面刷新。\n- 修复移动端书库写入失败后影响后续保存，以及后台下载中断影响其他任务的问题。\n插件更新\n- E-Hentai 0.0.22：可拖动最低评分滑块，精确到 0.01 星。\n- itch.io 0.0.4、鲲 Galgame 0.0.11：itch.io 搜索支持作者和游戏类型筛选，鲲 Galgame 搜索支持资源平台和语言筛选。\n- 黄豆短剧 0.0.13、91短剧 0.0.13、黄果短剧 0.0.16：改进站点连接。\nEnglish\nNew\n- Add a Windows desktop client with installers and portable packages for x64 and ARM64.\n- Remember filters separately for each site search and feed, and filter works by date range.\nImprovements\n- Move multilingual search i…",
+          "downloadURL": "https://github.com/drdon1234/Hentai-Park/releases/download/v0.15.1/HentaiPark-0.15.1-82-ios-arm64-unsigned.ipa",
+          "size": 17937496,
           "minOSVersion": "15.0",
-          "releaseTag": "v0.14.8",
-          "source": "https://github.com/drdon1234/Hentai-Park/releases/tag/v0.14.8"
+          "releaseTag": "v0.15.1",
+          "source": "https://github.com/drdon1234/Hentai-Park/releases/tag/v0.15.1"
         }
       ],
-      "version": "0.14.8",
-      "versionDate": "2026-11-17",
-      "versionDescription": "中文\n新功能\n- 恢复 iOS 客户端，使用当前的阅读、播放、收藏、翻译、酒馆与备份功能。\n- iOS 接入应用锁、相册保存、系统分享与通知，支持音声后台播放和锁屏播放控制。\n改进\n- iOS 网页播放器使用独立临时会话，HTML 游戏按作品隔离存档。\n注意事项\n- iOS 长时间下载与录制建议保持前台；HTML 在线游戏需要 iOS 17 及以上，暂不支持 Flash。\nEnglish\nNew\n- Restore the iOS client with current reading, playback, library, translation, Tavern and backup features.\n- Add app lock, photo saving, system sharing and notifications on iOS, with background audio and lock-screen playback controls.\nImprovements\n- Isolate iOS web player sessions and keep separate storage for each HTML game.\nNotes\n- Keep iOS in the foreground for long downloads and recordings; HTML games require iOS 17 or later, and Flash is not supported.",
-      "downloadURL": "https://github.com/drdon1234/Hentai-Park/releases/download/v0.14.8/HentaiPark-0.14.8-80-ios-arm64-unsigned.ipa",
-      "size": 17908200,
+      "version": "0.15.1",
+      "versionDate": "2026-11-18",
+      "versionDescription": "中文\n新功能\n- 新增 Windows 桌面客户端，提供 x64 与 ARM64 安装包和便携包。\n- 站内搜索和栏目可分别记住筛选条件，并按日期范围查看作品。\n改进\n- Android 站内多语言搜索移入搜索栏，Web 结果页可直接调整筛选并保留关键词。\n- 改进移动端阅读和播放时的系统栏、屏幕方向恢复，以及 iOS 分享体验。\n修复\n- 修复 iOS 17 及以上版本内置网页的 HTTP 代理配置。\n- Android 下载多选可通过返回键退出，切换标签时清除勾选，并减少后台下载进度引起的界面刷新。\n- 修复移动端书库写入失败后影响后续保存，以及后台下载中断影响其他任务的问题。\n插件更新\n- E-Hentai 0.0.22：可拖动最低评分滑块，精确到 0.01 星。\n- itch.io 0.0.4、鲲 Galgame 0.0.11：itch.io 搜索支持作者和游戏类型筛选，鲲 Galgame 搜索支持资源平台和语言筛选。\n- 黄豆短剧 0.0.13、91短剧 0.0.13、黄果短剧 0.0.16：改进站点连接。\nEnglish\nNew\n- Add a Windows desktop client with installers and portable packages for x64 and ARM64.\n- Remember filters separately for each site search and feed, and filter works by date range.\nImprovements\n- Move multilingual search i…",
+      "downloadURL": "https://github.com/drdon1234/Hentai-Park/releases/download/v0.15.1/HentaiPark-0.15.1-82-ios-arm64-unsigned.ipa",
+      "size": 17937496,
       "minOSVersion": "15.0"
     },
     {
@@ -1088,7 +1088,7 @@
       "developerName": "ccbkv",
       "subtitle": "多源漫画阅读器（Pica Comic 分支）",
       "localizedDescription": "Flutter 编写的多源漫画阅读器，源自 wgh136/PicaComic（上游已归档），由 nyne 继续维护。内置 picacg、E-Hentai、JM、hitomi、nhentai 等漫画源，支持在线阅读、离线下载、本地与网络收藏、阅读历史以及 WebDAV 数据同步。此处为未签名 iOS 构建，需自行签名安装。\n\n开源协议：MIT　·　项目主页：https://github.com/ccbkv/PicaComic",
-      "iconURL": "https://raw.githubusercontent.com/ccbkv/PicaComic/5.1.1/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
+      "iconURL": "https://raw.githubusercontent.com/ccbkv/PicaComic/5.1.2/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
       "tintColor": "#F2683C",
       "category": "books",
       "appPermissions": {
@@ -1100,41 +1100,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "5.1.1",
-              "date": "2026-11-15",
-              "publishedAt": "2026-11-15T05:45:19Z",
-              "buildVersion": "46206",
-              "buildNumber": "46206",
-              "localizedDescription": "5.1.1 (2026-11-15)\r\n更新说明\r\n- 与5.1.0无差別，但5.1.1修复了翻页\r\n- 修复导出所有数据\r\n- 修复特定 soc 开启ai翻译后闪退, \r\n- 修复hitomi本地收藏 \r\n- 修复ios 27\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n安装&更新\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\nFull Changelog: https://github.com/ccbkv/PicaComic/compare/5.0.7...5.1.1",
-              "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.1.1/PicaComic-5.1.1-app-ios-build_no_sign.ipa",
-              "size": 31706166,
+              "version": "5.1.2",
+              "date": "2026-11-18",
+              "publishedAt": "2026-11-18T18:18:36Z",
+              "buildVersion": "46207",
+              "buildNumber": "46207",
+              "localizedDescription": "5.1.2 (2026-11-18)\r\n更新说明\r\n- !! 由于微软onnxruntime仓库目前突发 404,目前无linux版 !!\r\n- 在app 的设置→关于里有tg群 \r\n- 修复下载闪退\r\n- 修复导出导入,\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n安装&更新\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\nFull Changelog: https://github.com/ccbkv/PicaComic/compare/5.1.1...5.1.2",
+              "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.1.2/PicaComic-5.1.2-app-ios-build_no_sign.ipa",
+              "size": 31711081,
               "minOSVersion": "15.1",
-              "releaseTag": "5.1.1",
-              "source": "https://github.com/ccbkv/PicaComic/releases/tag/5.1.1"
+              "releaseTag": "5.1.2",
+              "source": "https://github.com/ccbkv/PicaComic/releases/tag/5.1.2"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "5.1.1",
-          "date": "2026-11-15",
-          "publishedAt": "2026-11-15T05:45:19Z",
-          "buildVersion": "46206",
-          "buildNumber": "46206",
-          "localizedDescription": "5.1.1 (2026-11-15)\r\n更新说明\r\n- 与5.1.0无差別，但5.1.1修复了翻页\r\n- 修复导出所有数据\r\n- 修复特定 soc 开启ai翻译后闪退, \r\n- 修复hitomi本地收藏 \r\n- 修复ios 27\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n安装&更新\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\nFull Changelog: https://github.com/ccbkv/PicaComic/compare/5.0.7...5.1.1",
-          "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.1.1/PicaComic-5.1.1-app-ios-build_no_sign.ipa",
-          "size": 31706166,
+          "version": "5.1.2",
+          "date": "2026-11-18",
+          "publishedAt": "2026-11-18T18:18:36Z",
+          "buildVersion": "46207",
+          "buildNumber": "46207",
+          "localizedDescription": "5.1.2 (2026-11-18)\r\n更新说明\r\n- !! 由于微软onnxruntime仓库目前突发 404,目前无linux版 !!\r\n- 在app 的设置→关于里有tg群 \r\n- 修复下载闪退\r\n- 修复导出导入,\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n安装&更新\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\nFull Changelog: https://github.com/ccbkv/PicaComic/compare/5.1.1...5.1.2",
+          "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.1.2/PicaComic-5.1.2-app-ios-build_no_sign.ipa",
+          "size": 31711081,
           "minOSVersion": "15.1",
-          "releaseTag": "5.1.1",
-          "source": "https://github.com/ccbkv/PicaComic/releases/tag/5.1.1"
+          "releaseTag": "5.1.2",
+          "source": "https://github.com/ccbkv/PicaComic/releases/tag/5.1.2"
         }
       ],
-      "version": "5.1.1",
-      "versionDate": "2026-11-15",
-      "versionDescription": "5.1.1 (2026-11-15)\r\n更新说明\r\n- 与5.1.0无差別，但5.1.1修复了翻页\r\n- 修复导出所有数据\r\n- 修复特定 soc 开启ai翻译后闪退, \r\n- 修复hitomi本地收藏 \r\n- 修复ios 27\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n安装&更新\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\nFull Changelog: https://github.com/ccbkv/PicaComic/compare/5.0.7...5.1.1",
-      "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.1.1/PicaComic-5.1.1-app-ios-build_no_sign.ipa",
-      "size": 31706166,
+      "version": "5.1.2",
+      "versionDate": "2026-11-18",
+      "versionDescription": "5.1.2 (2026-11-18)\r\n更新说明\r\n- !! 由于微软onnxruntime仓库目前突发 404,目前无linux版 !!\r\n- 在app 的设置→关于里有tg群 \r\n- 修复下载闪退\r\n- 修复导出导入,\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n安装&更新\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\nFull Changelog: https://github.com/ccbkv/PicaComic/compare/5.1.1...5.1.2",
+      "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.1.2/PicaComic-5.1.2-app-ios-build_no_sign.ipa",
+      "size": 31711081,
       "minOSVersion": "15.1"
     },
     {

@@ -2484,5 +2484,61 @@
       "size": 7261456,
       "digest": "sha256:e87e73c9383cf70aad976275cb47fe9cd1eec8e701f2b91e73397e172eaa5790"
     }
+  },
+  "https://github.com/open-ani/animeko/releases/download/v6.4.1/ani-6.4.1.ipa": {
+    "bundleIdentifier": "org.animeko.animeko",
+    "version": "6.4.1",
+    "buildVersion": "6.4.199",
+    "displayName": "Animeko",
+    "minOSVersion": "16.0",
+    "size": 48615556,
+    "assetIdentity": {
+      "id": 762696249,
+      "updated_at": "2026-11-18T09:08:34Z",
+      "size": 48615556,
+      "digest": "sha256:ec279f53792f827d203f33daf59a2969b60eec6b7a3d919005a76e9ca65fd069"
+    }
+  },
+  "https://github.com/ccbkv/PicaComic/releases/download/5.1.2/PicaComic-5.1.2-app-ios-build_no_sign.ipa": {
+    "bundleIdentifier": "com.github.pacalini.picaComic",
+    "version": "5.1.2",
+    "buildVersion": "46207",
+    "displayName": "Pica Comic",
+    "minOSVersion": "15.1",
+    "size": 31711081,
+    "assetIdentity": {
+      "id": 764208329,
+      "updated_at": "2026-11-18T16:55:35Z",
+      "size": 31711081,
+      "digest": "sha256:6e3c86880ae1c4cceb3834bbdb272bed1c7070b3afa82913dc40f6bf01db1306"
+    }
+  },
+  "https://github.com/AniBakaBaka/AniBaka/releases/download/5.2.5%2B261113/baka-5.2.5%2B261113-ios-unsigned.ipa": {
+    "bundleIdentifier": "ani.baka",
+    "version": "5.2.5",
+    "buildVersion": "261113",
+    "displayName": "Baka",
+    "minOSVersion": "13.0",
+    "size": 23563780,
+    "assetIdentity": {
+      "id": 762069578,
+      "updated_at": "2026-11-18T05:34:10Z",
+      "size": 23563780,
+      "digest": "sha256:574b241ff075041c744847dc62eb70a550dcc264ff70dfb360cb99103b1593b0"
+    }
+  },
+  "https://github.com/drdon1234/Hentai-Park/releases/download/v0.15.1/HentaiPark-0.15.1-82-ios-arm64-unsigned.ipa": {
+    "bundleIdentifier": "com.hentaipark.hentaiPark",
+    "version": "0.15.1",
+    "buildVersion": "82",
+    "displayName": "HentaiPark",
+    "minOSVersion": "15.0",
+    "size": 17937496,
+    "assetIdentity": {
+      "id": 763652665,
+      "updated_at": "2026-11-18T14:11:22Z",
+      "size": 17937496,
+      "digest": "sha256:a1095e6a71978b79eb002a3f78458af975182243cf9e3295dc29cedfff0921f8"
+    }
   }
 }
