@@ -703,7 +703,7 @@
       "developerName": "zxsos",
       "subtitle": "沉浸式竖屏播放",
       "localizedDescription": "第三方客户端（Rust + Tauri 2），沉浸式竖屏播放，界面采用 Fluent 设计。上游仅提供未签名的 iOS 安装包，需自行用 Apple ID 签名安装（TrollStore 可直接导入）。\n\n上游协议为 PolyForm Noncommercial 1.0.0，仅限个人学习与非商业用途，禁止商业使用。项目主页：https://github.com/zxsos/HGhubX",
-      "iconURL": "https://raw.githubusercontent.com/zxsos/HGhubX/v2.1.2/app-icon.png",
+      "iconURL": "https://github.com/zxsos.png?size=460",
       "tintColor": "#38BDF8",
       "category": "entertainment",
       "appPermissions": {
@@ -715,41 +715,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.1.2",
-              "date": "2026-11-15",
-              "publishedAt": "2026-11-15T16:56:37Z",
-              "buildVersion": "2.1.2",
-              "buildNumber": "2.1.2",
-              "localizedDescription": "HGhubX 2.1.2\n更新点\n\n- 标签详情同时展示短剧和吃瓜帖子，并分别分页；标签热度会明确标注，不再与内容数量混淆。\n- 横屏视频按当前播放源的媒体尺寸识别，尺寸确认前使用完整画面适配。\n修复点\n\n- 修复社区标签只查询短剧接口，导致官网存在帖子但应用显示空列表的问题。\n- 修复切集、切源时媒体尺寸报告竞态导致首页横屏视频被裁切或未显示横屏控制的问题。\n\nFull Changelog: https://github.com/zxsos/HGhubX/compare/v2.1.1...v2.1.2",
-              "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.1.2/HGhubX_2.1.2_ios.ipa",
-              "size": 3852817,
+              "version": "2.2.0",
+              "date": "2026-11-18",
+              "publishedAt": "2026-11-18T06:02:05Z",
+              "buildVersion": "2.2.0",
+              "buildNumber": "2.2.0",
+              "localizedDescription": "HGhubX 2.2.0\n\n架构重构 + Android TV / 车机老内核兼容 + 开屏与播放体验全面升级的正式版本。包含 pre.1 / pre.2 及后续全仓审计与性能打磨的全部内容。\n新增\n\n- Android TV 独立版（com.hghubx.tv）：Leanback 桌面入口与横屏 Banner、遥控器方向键 / 确认 / 返回 / 媒体键导航、本地 IndexedDB 片库与拼音/标题搜索索引、overscan 安全边距设置。\n- 老 WebView 与车机大屏兼容（#138）：前端构建降级至 chrome66 / safari14.1（含 CSS dvh / color-mix / cascade-layers 回退、经典 iife Worker、ES5 启动看门狗与运行时 API 垫片）；Android 标准版原生层桥接系统状态栏与车机常驻底栏安全区（--native-sat/sab/sal/sar），quick 与正式构建均覆盖 32 位 arm 与 64 位 arm64。\n- 长按加速可换挡（#146）：右上长按 2x 起，按住左右滑每 80px 换一档（2x → 3x → 4x → 6x，来回滑可升可降，每档震动反馈）；上滑后松手锁定当前档位。\n- 设置 → 播放新增「全屏无操作自动隐藏控件」：关 / 3秒 / 5秒 / 10秒（默认 3 秒，暂停时不隐藏）（#146）。\n- 长按操作提示加入「双击暂停播放」说明。\n改进\n\n- 开屏零闪烁与冷启动大幅提速：\n  - 原生窗口、index.html data-hg-launching 背景锁与开屏层统一…",
+              "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.0/HGhubX_2.2.0_ios.ipa",
+              "size": 3886166,
               "minOSVersion": "15.0",
-              "releaseTag": "v2.1.2",
-              "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.1.2"
+              "releaseTag": "v2.2.0",
+              "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.2.0"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.1.2",
-          "date": "2026-11-15",
-          "publishedAt": "2026-11-15T16:56:37Z",
-          "buildVersion": "2.1.2",
-          "buildNumber": "2.1.2",
-          "localizedDescription": "HGhubX 2.1.2\n更新点\n\n- 标签详情同时展示短剧和吃瓜帖子，并分别分页；标签热度会明确标注，不再与内容数量混淆。\n- 横屏视频按当前播放源的媒体尺寸识别，尺寸确认前使用完整画面适配。\n修复点\n\n- 修复社区标签只查询短剧接口，导致官网存在帖子但应用显示空列表的问题。\n- 修复切集、切源时媒体尺寸报告竞态导致首页横屏视频被裁切或未显示横屏控制的问题。\n\nFull Changelog: https://github.com/zxsos/HGhubX/compare/v2.1.1...v2.1.2",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.1.2/HGhubX_2.1.2_ios.ipa",
-          "size": 3852817,
+          "version": "2.2.0",
+          "date": "2026-11-18",
+          "publishedAt": "2026-11-18T06:02:05Z",
+          "buildVersion": "2.2.0",
+          "buildNumber": "2.2.0",
+          "localizedDescription": "HGhubX 2.2.0\n\n架构重构 + Android TV / 车机老内核兼容 + 开屏与播放体验全面升级的正式版本。包含 pre.1 / pre.2 及后续全仓审计与性能打磨的全部内容。\n新增\n\n- Android TV 独立版（com.hghubx.tv）：Leanback 桌面入口与横屏 Banner、遥控器方向键 / 确认 / 返回 / 媒体键导航、本地 IndexedDB 片库与拼音/标题搜索索引、overscan 安全边距设置。\n- 老 WebView 与车机大屏兼容（#138）：前端构建降级至 chrome66 / safari14.1（含 CSS dvh / color-mix / cascade-layers 回退、经典 iife Worker、ES5 启动看门狗与运行时 API 垫片）；Android 标准版原生层桥接系统状态栏与车机常驻底栏安全区（--native-sat/sab/sal/sar），quick 与正式构建均覆盖 32 位 arm 与 64 位 arm64。\n- 长按加速可换挡（#146）：右上长按 2x 起，按住左右滑每 80px 换一档（2x → 3x → 4x → 6x，来回滑可升可降，每档震动反馈）；上滑后松手锁定当前档位。\n- 设置 → 播放新增「全屏无操作自动隐藏控件」：关 / 3秒 / 5秒 / 10秒（默认 3 秒，暂停时不隐藏）（#146）。\n- 长按操作提示加入「双击暂停播放」说明。\n改进\n\n- 开屏零闪烁与冷启动大幅提速：\n  - 原生窗口、index.html data-hg-launching 背景锁与开屏层统一…",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.0/HGhubX_2.2.0_ios.ipa",
+          "size": 3886166,
           "minOSVersion": "15.0",
-          "releaseTag": "v2.1.2",
-          "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.1.2"
+          "releaseTag": "v2.2.0",
+          "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.2.0"
         }
       ],
-      "version": "2.1.2",
-      "versionDate": "2026-11-15",
-      "versionDescription": "HGhubX 2.1.2\n更新点\n\n- 标签详情同时展示短剧和吃瓜帖子，并分别分页；标签热度会明确标注，不再与内容数量混淆。\n- 横屏视频按当前播放源的媒体尺寸识别，尺寸确认前使用完整画面适配。\n修复点\n\n- 修复社区标签只查询短剧接口，导致官网存在帖子但应用显示空列表的问题。\n- 修复切集、切源时媒体尺寸报告竞态导致首页横屏视频被裁切或未显示横屏控制的问题。\n\nFull Changelog: https://github.com/zxsos/HGhubX/compare/v2.1.1...v2.1.2",
-      "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.1.2/HGhubX_2.1.2_ios.ipa",
-      "size": 3852817,
+      "version": "2.2.0",
+      "versionDate": "2026-11-18",
+      "versionDescription": "HGhubX 2.2.0\n\n架构重构 + Android TV / 车机老内核兼容 + 开屏与播放体验全面升级的正式版本。包含 pre.1 / pre.2 及后续全仓审计与性能打磨的全部内容。\n新增\n\n- Android TV 独立版（com.hghubx.tv）：Leanback 桌面入口与横屏 Banner、遥控器方向键 / 确认 / 返回 / 媒体键导航、本地 IndexedDB 片库与拼音/标题搜索索引、overscan 安全边距设置。\n- 老 WebView 与车机大屏兼容（#138）：前端构建降级至 chrome66 / safari14.1（含 CSS dvh / color-mix / cascade-layers 回退、经典 iife Worker、ES5 启动看门狗与运行时 API 垫片）；Android 标准版原生层桥接系统状态栏与车机常驻底栏安全区（--native-sat/sab/sal/sar），quick 与正式构建均覆盖 32 位 arm 与 64 位 arm64。\n- 长按加速可换挡（#146）：右上长按 2x 起，按住左右滑每 80px 换一档（2x → 3x → 4x → 6x，来回滑可升可降，每档震动反馈）；上滑后松手锁定当前档位。\n- 设置 → 播放新增「全屏无操作自动隐藏控件」：关 / 3秒 / 5秒 / 10秒（默认 3 秒，暂停时不隐藏）（#146）。\n- 长按操作提示加入「双击暂停播放」说明。\n改进\n\n- 开屏零闪烁与冷启动大幅提速：\n  - 原生窗口、index.html data-hg-launching 背景锁与开屏层统一…",
+      "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.0/HGhubX_2.2.0_ios.ipa",
+      "size": 3886166,
       "minOSVersion": "15.0"
     },
     {
@@ -1477,7 +1477,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 26 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "tintColor": "#7C5CFF",
       "notify": false
     }

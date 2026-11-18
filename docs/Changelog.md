@@ -4,4 +4,9 @@
 本文件启用之前的历史，见 git 提交记录。
 
 <!-- changelog:begin -->
+
+## 2026-11-18 14:51 (UTC+8)
+
+- **HGhubX** 2.1.2 → 2.2.0
+
 <!-- changelog:end -->
