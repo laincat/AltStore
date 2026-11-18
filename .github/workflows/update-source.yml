@@ -177,6 +177,17 @@ jobs:
             exit 0
           fi
 
+          # 同一 SHA 上的两次运行（例如 push 与手动触发）会串行排队，但后者的 checkout
+          # 仍停在旧提交；直接推送会被 non-fast-forward 拒绝。这里先确认远端没前进，
+          # 前进了就跳过本轮 —— 生成的源下一轮会重新算，不会丢数据。
+          git fetch --quiet origin main
+          if [ "$(git rev-parse origin/main)" != "$(git rev-parse HEAD)" ]; then
+            echo "远端 main 已前进，本轮结果基于旧提交，跳过推送（下一轮重新生成）"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            git reset --hard --quiet
+            exit 0
+          fi
+
           git commit -m "chore(source): 自动更新 $(date -u '+%Y-%m-%d')"
           git -c credential.helper= -c 'credential.helper=!gh auth git-credential' push
           echo "changed=true" >> "$GITHUB_OUTPUT"
