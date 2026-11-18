@@ -1,6 +1,6 @@
 # Laincat 工具箱 — SideStore / AltStore / LiveContainer 源文件
 
-自用的 iOS 侧载源（源名称 **Laincat 工具箱**，图标是 [@laincat](https://github.com/laincat) 的 GitHub 头像）：收录 27 个 iOS 应用，**自动跟随上游 GitHub Release 更新**。
+自用的 iOS 侧载源（源名称 **Laincat 工具箱**，图标是 [@laincat](https://github.com/laincat) 的 GitHub 头像）：收录 29 个 iOS 应用，**自动跟随上游 GitHub Release 更新**。
 
 三个客户端都能用：**SideStore / AltStore / LiveContainer**。
 
@@ -55,6 +55,7 @@ https://github.com/laincat/AltStore/releases/download/latest/apps.json
 | AvPlay | `com.javdb.avplay2` | 2.2.2 | iOS 15.3+ | 无 | [anonymousjav/AvPlayRelease](https://github.com/anonymousjav/AvPlayRelease) |
 | Breeze | `com.zephyr.breeze` | 3.0.38 | iOS 15.0+ | 无 | [breeze-project-org/Breeze](https://github.com/breeze-project-org/Breeze) |
 | EhPanda | `app.ehpanda` | 2.8.1 | iOS 26.0+ | 无 | [EhPanda-Team/EhPanda](https://github.com/EhPanda-Team/EhPanda) |
+| GestaltEdit | `me.ssus.gestaltedit` | 2.3.1 | iOS 26.0+ | 无 | [frs0n/GestaltEdit](https://github.com/frs0n/GestaltEdit) |
 | GestaltX | `com.huami.gestultx` | 1.1.1 | iOS 26.0+ | 无 | [huamidev/GestaltX](https://github.com/huamidev/GestaltX) |
 | HentaiPark | `com.hentaipark.hentaiPark` | 0.14.8 | iOS 15.0+ | 无 | [drdon1234/Hentai-Park](https://github.com/drdon1234/Hentai-Park) |
 | HGhubX | `com.hghubx.app` | 2.2.0 | iOS 15.0+ | 无 | [zxsos/HGhubX](https://github.com/zxsos/HGhubX) |
@@ -64,6 +65,7 @@ https://github.com/laincat/AltStore/releases/download/latest/apps.json
 | One | `com.ios151.one` | 1.7.1 | iOS 16.0+ | 无 | [ios151/One-releases](https://github.com/ios151/One-releases) |
 | PicaComic | `com.github.pacalini.picaComic` | 5.1.1 | iOS 15.1+ | 无 | [ccbkv/PicaComic](https://github.com/ccbkv/PicaComic) |
 | PicaX | `moye.PicaX` | 1.2.5 | iOS 15.2+ | 无 | [youshen2/PicaX](https://github.com/youshen2/PicaX) |
+| Placard | `me.ssus.placard` | 2.0.3 | iOS 26.0+ | 无 | [frs0n/placard](https://github.com/frs0n/placard) |
 | Swipt | `io.nekohasekai.swipt` | 0.1.0 | iOS 16.4+ | 无 | [swipt-automation/swipt](https://github.com/swipt-automation/swipt) |
 | Venera Prime | `com.github.wgh136.venera.prime` | 2.8.1 | iOS 14.0+ | 无 | [venera-app/venera-prime](https://github.com/venera-app/venera-prime) |
 | Venera-SSR | `com.github.kiastr.venera-ssr` | 2.1.5 | iOS 14.0+ | 无 | [Kiastr/Venera-SSR](https://github.com/Kiastr/Venera-SSR) |

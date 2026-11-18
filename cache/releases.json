@@ -8123,5 +8123,560 @@
       "body": "## 中文\n\n### 改进\n- 主页和域页的小说采用竖版书本卡片，支持横向滑动浏览。\n- 减少自动翻译完成后重复构建时的计算和刷新。\n- 频道与作者搜索保留原站搜索结果，并改进加载失败时的提示。\n\n### 修复\n- 修复漫画上下集跳转时继承当前章节页码，以及旧章节延迟回调干扰新章节的问题。\n- 修复视频开头和接近结尾的未完成进度无法准确恢复的问题。\n- 修复已加入频道和已关注作者页面顶部内容被遮挡的问题。\n- 修复 E-Hentai 热门和排行榜筛选后离开原栏目范围的问题。\n\n### 插件更新\n- E-Hentai 0.0.19：热门和排行榜支持在原栏目内筛选。\n- Reddit 0.0.16：指定社区改用网页加载帖子，支持图片、视频、纯文本和分页，订阅社区不再自动执行原站加入操作。\n- X 0.0.25：修正搜索请求方式，改进账号状态检查及频道、作者搜索结果处理。\n\n## English\n\n### Improvements\n- Novels on the home and domain pages use portrait book cards with horizontal scrolling.\n- Reduced repeated computation and refreshes when rebuilding completed automatic translations.\n- Channel and author searches preserve results returned by the site and provide clearer loading errors.\n\n### Fixes\n- Fixed chapter navigation inheriting the current comic chapter's page and delayed callbacks affecting the next chapter.\n- Fixed unfinished video progress near the beginning or end failing to resume accurately.\n- Fixed content being obscured at the top of joined-channel and followed-author pages.\n- Fixed E-Hentai popular and ranking filters switching away from the selected feed.\n\n### Plugin updates\n- E-Hentai 0.0.19: filter popular and ranking results within their original feeds.\n- Reddit 0.0.16: load community posts from webpages with images, videos, text and pagination; saving a community subscription no longer automatically joins it on Reddit.\n- X 0.0.25: corrected search requests and improved account checks and channel and author search result handling.\n",
       "ipas": []
     }
+  ],
+  "frs0n/placard": [
+    {
+      "tag": "v2.0.3",
+      "name": "Placard v2.0.3",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-14",
+      "published_at": "2026-11-14T07:47:09Z",
+      "body": "- 修复发布 IPA 未嵌入 App Group 权限声明的问题，便于重签工具识别所需权限。\n- 打包时验证实际签名和最终 IPA 中的 App Group 配置。\n\n本地编译，附带 ad-hoc 临时签名，仍需自行重签安装。\n",
+      "ipas": [
+        {
+          "name": "placard-v2.0.3-unsigned.ipa",
+          "size": 6699817,
+          "url": "https://github.com/frs0n/placard/releases/download/v2.0.3/placard-v2.0.3-unsigned.ipa",
+          "id": 746735057,
+          "updated_at": "2026-11-14T07:47:09Z",
+          "digest": "sha256:eeec5ab5063477d1f65b3835eb4ebabb2186ad766d84ae7f5e610b50dcc23f83"
+        }
+      ]
+    },
+    {
+      "tag": "v2.0.2",
+      "name": "Placard v2.0.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-13",
+      "published_at": "2026-11-13T15:59:56Z",
+      "body": "- 加快首次打开 Library 时的壁纸容器定位，找到目标后立即停止扫描。\n- 合并重复扫描，减少权限请求和签名信息读取。\n\n本地编译的未签名 Release IPA。\n",
+      "ipas": [
+        {
+          "name": "placard-v2.0.2-unsigned.ipa",
+          "size": 6695549,
+          "url": "https://github.com/frs0n/placard/releases/download/v2.0.2/placard-v2.0.2-unsigned.ipa",
+          "id": 744246377,
+          "updated_at": "2026-11-13T15:59:55Z",
+          "digest": "sha256:c64b7d42521a83fb53b4be447419e9df87670b12631605ec179339629cbcc74a"
+        }
+      ]
+    },
+    {
+      "tag": "v2.0.1",
+      "name": "Placard v2.0.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-13",
+      "published_at": "2026-11-13T15:35:54Z",
+      "body": "- 改进壁纸容器定位与缓存失效后的重新检测。\n- 兼容多 App Group 签名，保留并恢复原有缓存目录。\n- 自动识别壁纸存储版本，改善读取、安装和删除的兼容性。\n\n本地编译的未签名 Release IPA。\n",
+      "ipas": [
+        {
+          "name": "placard-v2.0.1-unsigned.ipa",
+          "size": 6697410,
+          "url": "https://github.com/frs0n/placard/releases/download/v2.0.1/placard-v2.0.1-unsigned.ipa",
+          "id": 744168877,
+          "updated_at": "2026-11-13T15:35:54Z",
+          "digest": "sha256:977ac96611a804da7275b87fab6895e91514508ad711b29cb8b105521fe5c900"
+        }
+      ]
+    },
+    {
+      "tag": "v2.0.0",
+      "name": "Placard v2.0.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-13",
+      "published_at": "2026-11-13T15:00:00Z",
+      "body": "Locally built unsigned Release IPA.",
+      "ipas": [
+        {
+          "name": "placard-v2.0.0-unsigned.ipa",
+          "size": 6678231,
+          "url": "https://github.com/frs0n/placard/releases/download/v2.0.0/placard-v2.0.0-unsigned.ipa",
+          "id": 744061839,
+          "updated_at": "2026-11-13T15:02:01Z",
+          "digest": "sha256:678cb7b4934011f72037f6bd1f24b43aaf07fcb81b20cf94e22da7d08199bc57"
+        }
+      ]
+    },
+    {
+      "tag": "v1.9.2",
+      "name": "Placard v1.9.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-26",
+      "published_at": "2026-09-26T07:37:42Z",
+      "body": "**Full Changelog**: https://github.com/frs0n/placard/compare/v1.9.1...v1.9.2",
+      "ipas": [
+        {
+          "name": "placard-v1.9.2-unsigned.ipa",
+          "size": 9600240,
+          "url": "https://github.com/frs0n/placard/releases/download/v1.9.2/placard-v1.9.2-unsigned.ipa",
+          "id": 590184352,
+          "updated_at": "2026-09-26T07:37:41Z",
+          "digest": "sha256:5d85d4a4385bd716fc2d026518575b60fe55d73c0c327117646b4a33771b45b2"
+        }
+      ]
+    },
+    {
+      "tag": "v1.9.1",
+      "name": "Placard v1.9.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-26",
+      "published_at": "2026-09-26T07:22:51Z",
+      "body": "**Full Changelog**: https://github.com/frs0n/placard/compare/v1.9...v1.9.1",
+      "ipas": [
+        {
+          "name": "placard-v1.9.1-unsigned.ipa",
+          "size": 9600366,
+          "url": "https://github.com/frs0n/placard/releases/download/v1.9.1/placard-v1.9.1-unsigned.ipa",
+          "id": 590163139,
+          "updated_at": "2026-09-26T07:22:50Z",
+          "digest": "sha256:d4becfc4120293b32a87cc747e3869e3149912a279bc7a4c31c7ec59d8c8d813"
+        }
+      ]
+    },
+    {
+      "tag": "v1.9",
+      "name": "Placard v1.9",
+      "pre": false,
+      "draft": false,
+      "date": "2026-09-25",
+      "published_at": "2026-09-25T16:03:25Z",
+      "body": "**Full Changelog**: https://github.com/frs0n/placard/compare/v1.6.7...v1.9",
+      "ipas": [
+        {
+          "name": "placard-v1.9-unsigned.ipa",
+          "size": 9596690,
+          "url": "https://github.com/frs0n/placard/releases/download/v1.9/placard-v1.9-unsigned.ipa",
+          "id": 588710021,
+          "updated_at": "2026-09-25T16:03:24Z",
+          "digest": "sha256:a4cc396719a15a2c5636ea43384acf17cf2f1a03e9e0aae619fd460e599e344b"
+        }
+      ]
+    },
+    {
+      "tag": "v1.6.7",
+      "name": "Placard v1.6.7",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-30",
+      "published_at": "2026-08-30T12:18:35Z",
+      "body": "**Full Changelog**: https://github.com/frs0n/placard/compare/v1.6.6...v1.6.7",
+      "ipas": [
+        {
+          "name": "placard-v1.6.7-unsigned.ipa",
+          "size": 4032516,
+          "url": "https://github.com/frs0n/placard/releases/download/v1.6.7/placard-v1.6.7-unsigned.ipa",
+          "id": 536582003,
+          "updated_at": "2026-08-30T12:18:34Z",
+          "digest": "sha256:e0297d5658f662d0e20f49078e8e649136361ac82b7a58db1b065c1bcb4d12c4"
+        }
+      ]
+    },
+    {
+      "tag": "v1.6.6",
+      "name": "Placard v1.6.6",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-21",
+      "published_at": "2026-08-21T14:27:27Z",
+      "body": "**Full Changelog**: https://github.com/frs0n/placard/compare/v1.6.5...v1.6.6",
+      "ipas": [
+        {
+          "name": "placard-v1.6.6-unsigned.ipa",
+          "size": 4032175,
+          "url": "https://github.com/frs0n/placard/releases/download/v1.6.6/placard-v1.6.6-unsigned.ipa",
+          "id": 523843136,
+          "updated_at": "2026-08-21T14:27:26Z",
+          "digest": "sha256:e28b3234aee0e0911f7fa030edee9d60119bcf5c49167eef82c3f59487620f51"
+        }
+      ]
+    },
+    {
+      "tag": "v1.6.5",
+      "name": "Placard v1.6.5",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-21",
+      "published_at": "2026-08-21T13:27:46Z",
+      "body": "**Full Changelog**: https://github.com/frs0n/placard/compare/v1.6.4...v1.6.5",
+      "ipas": [
+        {
+          "name": "placard-v1.6.5-unsigned.ipa",
+          "size": 4031986,
+          "url": "https://github.com/frs0n/placard/releases/download/v1.6.5/placard-v1.6.5-unsigned.ipa",
+          "id": 523777835,
+          "updated_at": "2026-08-21T13:27:45Z",
+          "digest": "sha256:4b264802a72cc8c069d46144c65cda803a3ca64c1569094896f09d406a3ddc60"
+        }
+      ]
+    },
+    {
+      "tag": "v1.6.4",
+      "name": "Placard v1.6.4",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-21",
+      "published_at": "2026-08-21T12:19:03Z",
+      "body": "**Full Changelog**: https://github.com/frs0n/placard/compare/v1.6.3...v1.6.4",
+      "ipas": [
+        {
+          "name": "placard-v1.6.4-unsigned.ipa",
+          "size": 4032027,
+          "url": "https://github.com/frs0n/placard/releases/download/v1.6.4/placard-v1.6.4-unsigned.ipa",
+          "id": 523705536,
+          "updated_at": "2026-08-21T12:19:02Z",
+          "digest": "sha256:319db5993fd2be7268682d98b58eae5963b89804fbbbed386409a82a571db503"
+        }
+      ]
+    },
+    {
+      "tag": "v1.6.3",
+      "name": "Placard v1.6.3",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-21",
+      "published_at": "2026-08-21T11:19:53Z",
+      "body": "**Full Changelog**: https://github.com/frs0n/placard/compare/v1.6.2...v1.6.3",
+      "ipas": [
+        {
+          "name": "placard-v1.6.3-unsigned.ipa",
+          "size": 4024791,
+          "url": "https://github.com/frs0n/placard/releases/download/v1.6.3/placard-v1.6.3-unsigned.ipa",
+          "id": 523644483,
+          "updated_at": "2026-08-21T11:19:53Z",
+          "digest": "sha256:b6ccdb745b8aba8873eb417e774174b2d1c238e4e86ee6d31f24aa7fe913bfb2"
+        }
+      ]
+    },
+    {
+      "tag": "v1.6.2",
+      "name": "Placard v1.6.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-20",
+      "published_at": "2026-08-20T13:09:46Z",
+      "body": "**Full Changelog**: https://github.com/frs0n/placard/compare/v1.6.1...v1.6.2",
+      "ipas": [
+        {
+          "name": "placard-v1.6.2-unsigned.ipa",
+          "size": 4024766,
+          "url": "https://github.com/frs0n/placard/releases/download/v1.6.2/placard-v1.6.2-unsigned.ipa",
+          "id": 522267674,
+          "updated_at": "2026-08-20T13:09:46Z",
+          "digest": "sha256:fc9acdc10c35b4b7bb7459b4acf4fbeb8226b916a2cb4194a629b1ff95e5bf1f"
+        }
+      ]
+    },
+    {
+      "tag": "v1.6.1",
+      "name": "Placard v1.6.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-19",
+      "published_at": "2026-08-19T13:40:56Z",
+      "body": "感谢拾之禾的测试\r\n**Full Changelog**: https://github.com/frs0n/placard/compare/v1.5.0-unsigned...v1.6.1",
+      "ipas": [
+        {
+          "name": "placard-v1.6.1-unsigned.ipa",
+          "size": 4007156,
+          "url": "https://github.com/frs0n/placard/releases/download/v1.6.1/placard-v1.6.1-unsigned.ipa",
+          "id": 520893004,
+          "updated_at": "2026-08-19T13:40:56Z",
+          "digest": "sha256:1102d5c88a22b53cdb1494c0cf0a02bb2cfda6c235df91ef28a440fa08c9c0bb"
+        }
+      ]
+    },
+    {
+      "tag": "v1.6.0-unsigned",
+      "name": "placard 1.6 (unsigned IPA)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-18",
+      "published_at": "2026-08-18T15:28:14Z",
+      "body": "## 新增功能与变更\n\n**Full Changelog**: https://github.com/frs0n/placard/compare/v1.5.0-unsigned...v1.6.0-unsigned\n\n## 构建信息\n\n- 版本：1.6\n- 构建：Release / iPhoneOS\n- 签名：无签名\n- SHA-256：5ade6ea1a29e4b292853f9cddc45b68546a385b927cb0f1bd7fbe44a173c78ab\n",
+      "ipas": [
+        {
+          "name": "placard-1.6-unsigned.ipa",
+          "size": 4196002,
+          "url": "https://github.com/frs0n/placard/releases/download/v1.6.0-unsigned/placard-1.6-unsigned.ipa",
+          "id": 519632305,
+          "updated_at": "2026-08-18T15:28:13Z",
+          "digest": "sha256:5ade6ea1a29e4b292853f9cddc45b68546a385b927cb0f1bd7fbe44a173c78ab"
+        }
+      ]
+    },
+    {
+      "tag": "v1.5.0-unsigned",
+      "name": "placard 1.5 (unsigned IPA)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-18",
+      "published_at": "2026-08-18T13:54:57Z",
+      "body": "Release build 1.5 (1), built from main at 6798339 with Xcode 27 / iOS 27 SDK and deployment target iOS 26.0. This IPA is intentionally unsigned and is not installable until signed with a valid provisioning profile.",
+      "ipas": [
+        {
+          "name": "placard-1.5-unsigned.ipa",
+          "size": 6821823,
+          "url": "https://github.com/frs0n/placard/releases/download/v1.5.0-unsigned/placard-1.5-unsigned.ipa",
+          "id": 519521692,
+          "updated_at": "2026-08-18T13:54:57Z",
+          "digest": "sha256:bf16cdae3ed06ff48b109814fc9975d01053f32e1cebbe1acf930cbecc15bf48"
+        }
+      ]
+    },
+    {
+      "tag": "v1.4.0-unsigned",
+      "name": "placard 1.4 (unsigned IPA)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-17",
+      "published_at": "2026-08-17T15:16:57Z",
+      "body": "Release build 1.4 (1), built from current main at e37fd31 with Xcode 27 / iOS 27 SDK and deployment target iOS 26.0. This IPA is intentionally unsigned and is not installable until signed with a valid provisioning profile.",
+      "ipas": [
+        {
+          "name": "placard-1.4-unsigned.ipa",
+          "size": 6821833,
+          "url": "https://github.com/frs0n/placard/releases/download/v1.4.0-unsigned/placard-1.4-unsigned.ipa",
+          "id": 519520320,
+          "updated_at": "2026-08-18T13:53:38Z",
+          "digest": "sha256:e95b85fb02c9e741af32129b04cd2600c4b21323e0588111086c709c7dfbfcb8"
+        }
+      ]
+    },
+    {
+      "tag": "v1.3.0-unsigned",
+      "name": "placard 1.3 (unsigned IPA)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-16",
+      "published_at": "2026-08-16T11:07:34Z",
+      "body": "Release build 1.3 (1), built for iOS 26.0. This IPA is intentionally unsigned and is not installable until signed with a valid provisioning profile.",
+      "ipas": [
+        {
+          "name": "placard-1.3-unsigned.ipa",
+          "size": 6529713,
+          "url": "https://github.com/frs0n/placard/releases/download/v1.3.0-unsigned/placard-1.3-unsigned.ipa",
+          "id": 516730235,
+          "updated_at": "2026-08-16T11:07:33Z",
+          "digest": "sha256:80ddb689f3100a3f231fee078d7a6676855510dcdc641a36665cdae3e0f0e16a"
+        }
+      ]
+    },
+    {
+      "tag": "v1.2.0-unsigned",
+      "name": "placard 1.2 (unsigned IPA)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-16",
+      "published_at": "2026-08-16T10:29:28Z",
+      "body": "Release build 1.2 (1), built for iOS 26.0. This IPA is intentionally unsigned and is not installable until signed with a valid provisioning profile.",
+      "ipas": [
+        {
+          "name": "placard-1.2-unsigned.ipa",
+          "size": 6499919,
+          "url": "https://github.com/frs0n/placard/releases/download/v1.2.0-unsigned/placard-1.2-unsigned.ipa",
+          "id": 516699663,
+          "updated_at": "2026-08-16T10:29:27Z",
+          "digest": "sha256:df8219844c386d5588a4fd1f31bd8ba98a3f5529649c7355a2c3efa706e067fb"
+        }
+      ]
+    },
+    {
+      "tag": "v1.1.0-unsigned",
+      "name": "placard 1.1 (unsigned IPA)",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-16",
+      "published_at": "2026-08-16T06:55:19Z",
+      "body": "Release build 1.1 (1), built for iOS 26.0. This IPA is intentionally unsigned and is not installable until signed with a valid provisioning profile.",
+      "ipas": [
+        {
+          "name": "placard-1.1-unsigned.ipa",
+          "size": 5771526,
+          "url": "https://github.com/frs0n/placard/releases/download/v1.1.0-unsigned/placard-1.1-unsigned.ipa",
+          "id": 516544318,
+          "updated_at": "2026-08-16T06:55:19Z",
+          "digest": "sha256:b346d5cfbd349aac57c313fa64fa2b877f8a9daac7755b2c50f62d97a62ce74c"
+        }
+      ]
+    }
+  ],
+  "frs0n/GestaltEdit": [
+    {
+      "tag": "v2.3.1",
+      "name": "GestaltEdit v2.3.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-16",
+      "published_at": "2026-11-16T16:03:54Z",
+      "body": "## What’s new\n\n- Fixed the Watch setup sheet dismissing immediately on its first presentation.\n- Added a native unsupported-system screen on iOS / iPadOS 26 and blocked on-device MobileGestalt access on unsupported systems. On-device editing requires iOS / iPadOS 27 or later.\n\n## Download and signing\n\n`GestaltEdit-v2.3.1-unsigned.ipa` is a local Release build, version **2.3.1 (14)**, containing the iPhone app and Watch helper.\n\nBoth apps carry **ad-hoc placeholder signatures with their App Group entitlements**. Re-sign both with suitable App Group-enabled profiles and preserve the embedded Watch app before installation. For Apple Watch signing and installation, see the community tool [WatchBridge](https://github.com/AdminZachary/WatchBridge), which is not affiliated with this project.\n\nRelease archive, preset/device-profile/backup/Watch/cache regression tests, signature verification and IPA integrity checks passed. The UI fixes have not been validated on physical devices.\n",
+      "ipas": [
+        {
+          "name": "GestaltEdit-v2.3.1-unsigned.ipa",
+          "size": 7261456,
+          "url": "https://github.com/frs0n/GestaltEdit/releases/download/v2.3.1/GestaltEdit-v2.3.1-unsigned.ipa",
+          "id": 759421725,
+          "updated_at": "2026-11-17T14:42:05Z",
+          "digest": "sha256:e87e73c9383cf70aad976275cb47fe9cd1eec8e701f2b91e73397e172eaa5790"
+        }
+      ]
+    },
+    {
+      "tag": "v2.3",
+      "name": "GestaltEdit v2.3",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-16",
+      "published_at": "2026-11-16T15:07:32Z",
+      "body": "## What’s new\n\n- Reorganized MG presets and added two-stage Siri AI setup for iOS 27, including recovery of the original device identity after model setup.\n- Added backup change details and clearer restore confirmation.\n- Simplified the expandable device selector and updated the connection status color.\n- Added an unsupported-system message for watchOS 26.\n\n## Download and signing\n\n`GestaltEdit-v2.3-unsigned.ipa` is a local Release build, version **2.3 (13)**, containing the iPhone app and Watch helper.\n\nBoth apps carry **ad-hoc placeholder signatures with their App Group entitlements**. Re-sign both with suitable App Group-enabled profiles and preserve the embedded Watch app before installation. For Apple Watch signing and installation, see the community tool [WatchBridge](https://github.com/AdminZachary/WatchBridge), which is not affiliated with this project.\n\nRelease archive, preset/device-profile/backup/Watch/cache regression tests, signature verification and IPA integrity checks passed. This release has not been validated on physical devices.\n",
+      "ipas": [
+        {
+          "name": "GestaltEdit-v2.3-unsigned.ipa",
+          "size": 7287092,
+          "url": "https://github.com/frs0n/GestaltEdit/releases/download/v2.3/GestaltEdit-v2.3-unsigned.ipa",
+          "id": 755289833,
+          "updated_at": "2026-11-16T15:07:31Z",
+          "digest": "sha256:428db3cca172eb170e3ad4467bc6876bc13cde6694ff35b20cf141ca5447ad10"
+        }
+      ]
+    },
+    {
+      "tag": "v2.2.1",
+      "name": "GestaltEdit v2.2.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-15",
+      "published_at": "2026-11-15T16:16:21Z",
+      "body": "## What's new\n\n- Apple Watch now automatically requests a NeoSpring interface restart after Apply, field saves, and backup restores, once writing and readback verification have succeeded.\n- Removed the separate Restart Watch Interface button.\n- If the restart request cannot be confirmed, the successful MG save remains recorded and is not retried automatically.\n\n## Download and signing\n\n`GestaltEdit-v2.2.1-unsigned.ipa` is a local Release build, version **2.2.1 (12)**. It contains both the iPhone app and the Watch helper.\n\nBoth apps have **ad-hoc placeholder signatures with their App Group entitlements**. Re-sign both with suitable App Group-enabled profiles and preserve the embedded Watch app. For Apple Watch signing and installation, see the community tool [WatchBridge](https://github.com/AdminZachary/WatchBridge), which is not affiliated with this project.\n\nThe release archive and package/signature checks passed. Actual Watch MG access and interface restart remain unverified on physical hardware.\n",
+      "ipas": [
+        {
+          "name": "GestaltEdit-v2.2.1-unsigned.ipa",
+          "size": 7218552,
+          "url": "https://github.com/frs0n/GestaltEdit/releases/download/v2.2.1/GestaltEdit-v2.2.1-unsigned.ipa",
+          "id": 751559710,
+          "updated_at": "2026-11-15T16:16:15Z",
+          "digest": "sha256:b01ad776b822db6b79569d401ea126dc5d2768f909690eddf2a13a27ebbc2c62"
+        }
+      ]
+    },
+    {
+      "tag": "v2.2",
+      "name": "GestaltEdit v2.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-15",
+      "published_at": "2026-11-15T15:56:40Z",
+      "body": "## What's new\n\n- Added an Apple Watch helper controlled from GestaltEdit on iPhone, with Watch-specific presets, field editing, backup and restore.\n- Added Hermès and Ultra watch face presets, including class 29/38 layout selection on supported watchOS builds.\n- Combined Watch intelligence options into one Siri AI preset, with automatic MG region adjustment for unsupported regions.\n- Improved device selection: Apple Watch remains discoverable when unpaired, the list starts collapsed, and opening setup or switching devices preserves its expanded state.\n- Added an iPhone control that asks the Watch helper to restart the Watch interface.\n\n## Download and signing\n\n`GestaltEdit-v2.2-unsigned.ipa` is a local Release build, version **2.2 (11)**. It includes both the iPhone app and the Watch helper.\n\nBoth apps carry **ad-hoc placeholder signatures with their App Group entitlements**. There is no developer certificate or provisioning profile in this package. Re-sign both apps with profiles authorizing their App Groups, and preserve the embedded Watch app.\n\nFor Apple Watch, we recommend [WatchBridge](https://github.com/AdminZachary/WatchBridge), a community tool that can enable Developer Mode and install an IPA containing both iPhone and Watch apps. It is not affiliated with this project.\n\nRelease archive, logic tests, package integrity and nested ad-hoc signature checks passed. Actual MG access, feature effects and Watch interface restart remain unverified on physical Apple Watch hardware.\n",
+      "ipas": [
+        {
+          "name": "GestaltEdit-v2.2-unsigned.ipa",
+          "size": 7219438,
+          "url": "https://github.com/frs0n/GestaltEdit/releases/download/v2.2/GestaltEdit-v2.2-unsigned.ipa",
+          "id": 751500917,
+          "updated_at": "2026-11-15T15:56:17Z",
+          "digest": "sha256:f71dafda8a1518833e083139963509dedcd19954cdff725a250cae4404f74724"
+        }
+      ]
+    },
+    {
+      "tag": "v2.1.1",
+      "name": "GestaltEdit v2.1.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-13",
+      "published_at": "2026-11-13T15:40:43Z",
+      "body": "## 更新内容\n\n- 改进重签后的 App Group 兼容性，访问失败时自动尝试其他可用组。\n- 验证 MobileGestalt 实际读写权限，并在必要时切换查询参数。\n- 自动补齐缺失的缓存目录，访问期间保留并恢复原有共享缓存。\n- 加强并发访问保护，细分访问失败原因。\n- 保留 v2.1.0 的 Siri AI 修复。\n\n## 下载与安装\n\n`GestaltEdit-v2.1.1.ipa` 为本地 Release 构建，版本 2.1.1（10）。打包时已嵌入 App Group 权限，仍需使用支持 App Group 的签名工具重新签名安装。\n\n本地构建、缓存处理测试与设备配置测试已通过。尚未对本版本进行真机验证。\n",
+      "ipas": [
+        {
+          "name": "GestaltEdit-v2.1.1.ipa",
+          "size": 5919514,
+          "url": "https://github.com/frs0n/GestaltEdit/releases/download/v2.1.1/GestaltEdit-v2.1.1.ipa",
+          "id": 744184893,
+          "updated_at": "2026-11-13T15:40:42Z",
+          "digest": "sha256:1c36fd97a3f6363afce57156ad6e45544b82a9ad4917ce295e80dbccbe3baf90"
+        }
+      ]
+    },
+    {
+      "tag": "v2.1.0",
+      "name": "GestaltEdit v2.1.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-13",
+      "published_at": "2026-11-13T13:42:17Z",
+      "body": "## 更新内容\n\n- iOS / iPadOS 27 老机型开启 Siri AI 时，保留美区修改并设置 SiriMode，不再伪装产品、硬件或 CPU 型号。\n- 保留旧系统上的原有开启逻辑。\n\n## 下载\n\n`GestaltEdit-v2.1.0-unsigned.ipa` 为本地 Release 构建的无签名 IPA，需要自行签名安装。\n",
+      "ipas": [
+        {
+          "name": "GestaltEdit-v2.1.0-unsigned.ipa",
+          "size": 5913108,
+          "url": "https://github.com/frs0n/GestaltEdit/releases/download/v2.1.0/GestaltEdit-v2.1.0-unsigned.ipa",
+          "id": 743805631,
+          "updated_at": "2026-11-13T13:42:17Z",
+          "digest": "sha256:340b09ce9c37b260e6cb350bbe55c29dd834c93d386553fab16bc06b4ca04f20"
+        }
+      ]
+    },
+    {
+      "tag": "v2.0.1",
+      "name": "GestaltEdit v2.0.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-09",
+      "published_at": "2026-11-09T13:40:17Z",
+      "body": "**Full Changelog**: https://github.com/frs0n/GestaltEdit/compare/v2.0.0...v2.0.1",
+      "ipas": [
+        {
+          "name": "GestaltEdit-v2.0.1-unsigned.ipa",
+          "size": 5889620,
+          "url": "https://github.com/frs0n/GestaltEdit/releases/download/v2.0.1/GestaltEdit-v2.0.1-unsigned.ipa",
+          "id": 727729269,
+          "updated_at": "2026-11-09T14:13:33Z",
+          "digest": "sha256:73e5e00eb2ab107f2b3948f2449873229e57039e096b9fbdf87ee4826130481f"
+        }
+      ]
+    },
+    {
+      "tag": "v2.0.0",
+      "name": "GestaltEdit v2.0.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-09",
+      "published_at": "2026-11-09T13:30:25Z",
+      "body": "**Full Changelog**: https://github.com/frs0n/GestaltEdit/compare/v1.2.1...v2.0.0",
+      "ipas": [
+        {
+          "name": "GestaltEdit-v2.0.0-unsigned.ipa",
+          "size": 5886959,
+          "url": "https://github.com/frs0n/GestaltEdit/releases/download/v2.0.0/GestaltEdit-v2.0.0-unsigned.ipa",
+          "id": 727597274,
+          "updated_at": "2026-11-09T13:30:24Z",
+          "digest": "sha256:730207e8a3ee311631ce68e04747dc30badeb85824a844f10aa1f2ef5fdf6457"
+        }
+      ]
+    },
+    {
+      "tag": "v1.2.1",
+      "name": "GestaltEdit v1.2.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-08-19",
+      "published_at": "2026-08-19T15:21:44Z",
+      "body": "**Full Changelog**: https://github.com/frs0n/GestaltEdit/compare/v1.2...v1.2.1",
+      "ipas": [
+        {
+          "name": "GestaltEdit-v1.2.1-unsigned.ipa",
+          "size": 5891844,
+          "url": "https://github.com/frs0n/GestaltEdit/releases/download/v1.2.1/GestaltEdit-v1.2.1-unsigned.ipa",
+          "id": 521004433,
+          "updated_at": "2026-08-19T15:21:44Z",
+          "digest": "sha256:2fbd595aed439f8078c5df09f2bffd181773ee513c2089166117fbf98e0b7add"
+        }
+      ]
+    }
   ]
 }

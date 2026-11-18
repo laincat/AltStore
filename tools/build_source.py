@@ -74,10 +74,10 @@ SOURCE = {
     "iconURL": "https://github.com/laincat.png?size=512",
     "subtitle": "多类 iOS 自签应用源",
     "description": (
-        "收录 26 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh，漫画阅读类 EhPanda、"
-        "VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX、PicaComic、Aidoku，"
-        "影音与工具类 One、AvPlay、HGhubX、INSAV、真果鉴、Swipt、AirCard、GestaltX，"
-        "游戏类 ARMSX2、ARMSX3、Rich4。"
+        "收录 29 款 iOS 应用：番剧与影视类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh、AvPlay、HGhubX、"
+        "HentaiPark、真果鉴，漫画阅读类 EhPanda、VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、"
+        "PicaX、PicaComic、Aidoku，工具与系统类 One、INSAV、Swipt、AirCard、GestaltX、GestaltEdit、Placard、"
+        "Nekularity，游戏类 ARMSX2、ARMSX3、Rich4。"
         "IPA 均直连各项目 GitHub Release 官方资产，"
         "由 SideStore / AltStore / LiveContainer 本地签名安装。"
     ),
@@ -474,6 +474,42 @@ APPS = [
             "仅限成年人在当地法律允许的范围内使用；内容来自第三方站点，本应用不托管原站内容。"
             "IPA 为未签名包，需自行签名安装；覆盖安装应保持 Bundle ID 与签名身份。\n\n"
             "开源协议：AGPL-3.0　·　项目主页：https://github.com/drdon1234/Hentai-Park"
+        ),
+    },
+    {
+        "repo": "frs0n/placard",
+        "asset": lambda n: n.startswith("placard-") and n.endswith("-unsigned.ipa"),
+        "name": "Placard",
+        "developerName": "frs0n",
+        "subtitle": "PosterBoard 壁纸管理（iOS 26+）",
+        "category": "utilities",
+        "tintColor": "#B4762E",
+        # 上游只提供 256x256 的 docs 图，没有 1024 版本；这里用它，不另造图。
+        "icon": "docs/images/app-icon.png",
+        "description": (
+            "在 iOS 上浏览、创建、安装和管理 PosterBoard 壁纸：社区壁纸、导入 .tendies 包、"
+            "用最长 12 秒的片段做视频壁纸，以及查看和删除已安装的壁纸。界面含简体中文。\n\n"
+            "要求 iOS 26.0 及以上；壁纸写入依赖 App Group 与 worse_query 相关权限，"
+            "上游是未签名包，普通自签可能拿不到这些权限。\n\n"
+            "开源协议：GPL-3.0　·　项目主页：https://github.com/frs0n/placard"
+        ),
+    },
+    {
+        "repo": "frs0n/GestaltEdit",
+        "asset": lambda n: n.startswith("GestaltEdit-") and n.endswith("-unsigned.ipa"),
+        "name": "GestaltEdit",
+        "developerName": "frs0n",
+        "subtitle": "iOS 27 MobileGestalt 编辑器",
+        "category": "utilities",
+        "tintColor": "#6E56CF",
+        # 上游只有 256x256 的 PNG 图标；.icon 是 Xcode 26 的分层资源，无法直接引用。
+        "icon": "GestaltEdit/PlacardIcon.png",
+        "description": (
+            "直接在 iPhone / iPad 上编辑 com.apple.MobileGestalt.plist：能力预设（Siri AI、灵动岛、"
+            "显示与 iPad 功能等）、完整字段编辑器，以及带修改前后对比的自动备份与恢复。\n\n"
+            "要求 iOS / iPadOS 27.0 及以上并开启开发者模式；需要能授予 MobileGestalt 权限的"
+            "签名工具（如 iLoader），普通自签通常无法写入系统配置。\n\n"
+            "开源协议：GPL-3.0-or-later　·　项目主页：https://github.com/frs0n/GestaltEdit"
         ),
     },
     {

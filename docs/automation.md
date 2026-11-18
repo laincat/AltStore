@@ -55,6 +55,6 @@ Action 已固定到完整 commit SHA（保留版本注释）；Dependabot 每日
 ```bash
 # 本地跑（需要 Python 3.8+，只用标准库）
 python tools/build_source.py --refresh      # 重新抓上游
-python tools/verify_source.py --min-apps 27  # 校验（数字取「等于当前应用数」）
+python tools/verify_source.py --min-apps 29  # 校验（数字取「等于当前应用数」）
 python tools/render_docs.py                  # 刷新 README 清单并记录 Changelog
 ```

@@ -3,7 +3,7 @@
   "identifier": "com.acgtoolbox.source",
   "iconURL": "https://github.com/laincat.png?size=512",
   "subtitle": "多类 iOS 自签应用源",
-  "description": "收录 26 款 iOS 应用：番剧类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh，漫画阅读类 EhPanda、VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX、PicaComic、Aidoku，影音与工具类 One、AvPlay、HGhubX、INSAV、真果鉴、Swipt、AirCard、GestaltX，游戏类 ARMSX2、ARMSX3、Rich4。IPA 均直连各项目 GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。",
+  "description": "收录 29 款 iOS 应用：番剧与影视类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh、AvPlay、HGhubX、HentaiPark、真果鉴，漫画阅读类 EhPanda、VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、PicaX、PicaComic、Aidoku，工具与系统类 One、INSAV、Swipt、AirCard、GestaltX、GestaltEdit、Placard、Nekularity，游戏类 ARMSX2、ARMSX3、Rich4。IPA 均直连各项目 GitHub Release 官方资产，由 SideStore / AltStore / LiveContainer 本地签名安装。",
   "tintColor": "#7C5CFF",
   "apps": [
     {
@@ -643,6 +643,61 @@
       "minOSVersion": "26.0"
     },
     {
+      "name": "GestaltEdit",
+      "bundleIdentifier": "me.ssus.gestaltedit",
+      "developerName": "frs0n",
+      "subtitle": "iOS 27 MobileGestalt 编辑器",
+      "localizedDescription": "直接在 iPhone / iPad 上编辑 com.apple.MobileGestalt.plist：能力预设（Siri AI、灵动岛、显示与 iPad 功能等）、完整字段编辑器，以及带修改前后对比的自动备份与恢复。\n\n要求 iOS / iPadOS 27.0 及以上并开启开发者模式；需要能授予 MobileGestalt 权限的签名工具（如 iLoader），普通自签通常无法写入系统配置。\n\n开源协议：GPL-3.0-or-later　·　项目主页：https://github.com/frs0n/GestaltEdit",
+      "iconURL": "https://raw.githubusercontent.com/frs0n/GestaltEdit/v2.3.1/GestaltEdit/PlacardIcon.png",
+      "tintColor": "#6E56CF",
+      "category": "utilities",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "releaseChannels": [
+        {
+          "track": "stable",
+          "releases": [
+            {
+              "version": "2.3.1",
+              "date": "2026-11-16",
+              "publishedAt": "2026-11-16T16:03:54Z",
+              "buildVersion": "14",
+              "buildNumber": "14",
+              "localizedDescription": "What’s new\n\n- Fixed the Watch setup sheet dismissing immediately on its first presentation.\n- Added a native unsupported-system screen on iOS / iPadOS 26 and blocked on-device MobileGestalt access on unsupported systems. On-device editing requires iOS / iPadOS 27 or later.\nDownload and signing\n\nGestaltEdit-v2.3.1-unsigned.ipa is a local Release build, version 2.3.1 (14), containing the iPhone app and Watch helper.\n\nBoth apps carry ad-hoc placeholder signatures with their App Group entitlements. Re-sign both with suitable App Group-enabled profiles and preserve the embedded Watch app before installation. For Apple Watch signing and installation, see the community tool WatchBridge, which is no…",
+              "downloadURL": "https://github.com/frs0n/GestaltEdit/releases/download/v2.3.1/GestaltEdit-v2.3.1-unsigned.ipa",
+              "size": 7261456,
+              "minOSVersion": "26.0",
+              "releaseTag": "v2.3.1",
+              "source": "https://github.com/frs0n/GestaltEdit/releases/tag/v2.3.1"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "version": "2.3.1",
+          "date": "2026-11-16",
+          "publishedAt": "2026-11-16T16:03:54Z",
+          "buildVersion": "14",
+          "buildNumber": "14",
+          "localizedDescription": "What’s new\n\n- Fixed the Watch setup sheet dismissing immediately on its first presentation.\n- Added a native unsupported-system screen on iOS / iPadOS 26 and blocked on-device MobileGestalt access on unsupported systems. On-device editing requires iOS / iPadOS 27 or later.\nDownload and signing\n\nGestaltEdit-v2.3.1-unsigned.ipa is a local Release build, version 2.3.1 (14), containing the iPhone app and Watch helper.\n\nBoth apps carry ad-hoc placeholder signatures with their App Group entitlements. Re-sign both with suitable App Group-enabled profiles and preserve the embedded Watch app before installation. For Apple Watch signing and installation, see the community tool WatchBridge, which is no…",
+          "downloadURL": "https://github.com/frs0n/GestaltEdit/releases/download/v2.3.1/GestaltEdit-v2.3.1-unsigned.ipa",
+          "size": 7261456,
+          "minOSVersion": "26.0",
+          "releaseTag": "v2.3.1",
+          "source": "https://github.com/frs0n/GestaltEdit/releases/tag/v2.3.1"
+        }
+      ],
+      "version": "2.3.1",
+      "versionDate": "2026-11-16",
+      "versionDescription": "What’s new\n\n- Fixed the Watch setup sheet dismissing immediately on its first presentation.\n- Added a native unsupported-system screen on iOS / iPadOS 26 and blocked on-device MobileGestalt access on unsupported systems. On-device editing requires iOS / iPadOS 27 or later.\nDownload and signing\n\nGestaltEdit-v2.3.1-unsigned.ipa is a local Release build, version 2.3.1 (14), containing the iPhone app and Watch helper.\n\nBoth apps carry ad-hoc placeholder signatures with their App Group entitlements. Re-sign both with suitable App Group-enabled profiles and preserve the embedded Watch app before installation. For Apple Watch signing and installation, see the community tool WatchBridge, which is no…",
+      "downloadURL": "https://github.com/frs0n/GestaltEdit/releases/download/v2.3.1/GestaltEdit-v2.3.1-unsigned.ipa",
+      "size": 7261456,
+      "minOSVersion": "26.0"
+    },
+    {
       "name": "GestaltX",
       "bundleIdentifier": "com.huami.gestultx",
       "developerName": "huami",
@@ -1138,6 +1193,61 @@
       "minOSVersion": "15.2"
     },
     {
+      "name": "Placard",
+      "bundleIdentifier": "me.ssus.placard",
+      "developerName": "frs0n",
+      "subtitle": "PosterBoard 壁纸管理（iOS 26+）",
+      "localizedDescription": "在 iOS 上浏览、创建、安装和管理 PosterBoard 壁纸：社区壁纸、导入 .tendies 包、用最长 12 秒的片段做视频壁纸，以及查看和删除已安装的壁纸。界面含简体中文。\n\n要求 iOS 26.0 及以上；壁纸写入依赖 App Group 与 worse_query 相关权限，上游是未签名包，普通自签可能拿不到这些权限。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/frs0n/placard",
+      "iconURL": "https://raw.githubusercontent.com/frs0n/placard/v2.0.3/docs/images/app-icon.png",
+      "tintColor": "#B4762E",
+      "category": "utilities",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "releaseChannels": [
+        {
+          "track": "stable",
+          "releases": [
+            {
+              "version": "2.0.3",
+              "date": "2026-11-14",
+              "publishedAt": "2026-11-14T07:47:09Z",
+              "buildVersion": "1",
+              "buildNumber": "1",
+              "localizedDescription": "- 修复发布 IPA 未嵌入 App Group 权限声明的问题，便于重签工具识别所需权限。\n- 打包时验证实际签名和最终 IPA 中的 App Group 配置。\n\n本地编译，附带 ad-hoc 临时签名，仍需自行重签安装。",
+              "downloadURL": "https://github.com/frs0n/placard/releases/download/v2.0.3/placard-v2.0.3-unsigned.ipa",
+              "size": 6699817,
+              "minOSVersion": "26.0",
+              "releaseTag": "v2.0.3",
+              "source": "https://github.com/frs0n/placard/releases/tag/v2.0.3"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "version": "2.0.3",
+          "date": "2026-11-14",
+          "publishedAt": "2026-11-14T07:47:09Z",
+          "buildVersion": "1",
+          "buildNumber": "1",
+          "localizedDescription": "- 修复发布 IPA 未嵌入 App Group 权限声明的问题，便于重签工具识别所需权限。\n- 打包时验证实际签名和最终 IPA 中的 App Group 配置。\n\n本地编译，附带 ad-hoc 临时签名，仍需自行重签安装。",
+          "downloadURL": "https://github.com/frs0n/placard/releases/download/v2.0.3/placard-v2.0.3-unsigned.ipa",
+          "size": 6699817,
+          "minOSVersion": "26.0",
+          "releaseTag": "v2.0.3",
+          "source": "https://github.com/frs0n/placard/releases/tag/v2.0.3"
+        }
+      ],
+      "version": "2.0.3",
+      "versionDate": "2026-11-14",
+      "versionDescription": "- 修复发布 IPA 未嵌入 App Group 权限声明的问题，便于重签工具识别所需权限。\n- 打包时验证实际签名和最终 IPA 中的 App Group 配置。\n\n本地编译，附带 ad-hoc 临时签名，仍需自行重签安装。",
+      "downloadURL": "https://github.com/frs0n/placard/releases/download/v2.0.3/placard-v2.0.3-unsigned.ipa",
+      "size": 6699817,
+      "minOSVersion": "26.0"
+    },
+    {
       "name": "Swipt",
       "bundleIdentifier": "io.nekohasekai.swipt",
       "developerName": "nekohasekai",
@@ -1531,7 +1641,7 @@
     {
       "title": "源已建立",
       "identifier": "source-created",
-      "caption": "收录 27 款应用，IPA 直连各项目 GitHub Release。",
+      "caption": "收录 29 款应用，IPA 直连各项目 GitHub Release。",
       "date": "2026-11-18",
       "tintColor": "#7C5CFF",
       "notify": false

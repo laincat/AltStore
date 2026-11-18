@@ -5,6 +5,12 @@
 
 <!-- changelog:begin -->
 
+## 2026-11-18 16:49 (UTC+8)
+
+- 新增 **GestaltEdit** 2.3.1
+- 新增 **Placard** 2.0.3
+
+
 ## 2026-11-18 16:44 (UTC+8)
 
 - 新增 **HentaiPark** 0.14.8
