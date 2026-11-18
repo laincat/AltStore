@@ -1,11 +1,12 @@
 # Laincat 工具箱 — SideStore / AltStore / LiveContainer 源文件
 
-自用的 iOS 侧载源（源名称 **Laincat 工具箱**，图标是 [@laincat](https://github.com/laincat) 的 GitHub 头像）：收录 20 个 iOS 应用，**自动跟随上游 GitHub Release 更新**。
+自用的 iOS 侧载源（源名称 **Laincat 工具箱**，图标是 [@laincat](https://github.com/laincat) 的 GitHub 头像）：收录 26 个 iOS 应用，**自动跟随上游 GitHub Release 更新**。
 
 三个客户端都能用：**SideStore / AltStore / LiveContainer**。
 
 > ⚠️ SideStore、AltStore 与 LiveContainer 的解析逻辑**不一样**，同一个源在两边看到的东西可能不同。
-> 典型例子：测试版（EhPanda 3.0.0 / Animeko 6.2.0）在 LiveContainer 里排在首位时默认就能装，在 SideStore 里得先开 Beta 开关 —— 详见《两个客户端的差异》。
+> 典型例子是测试版：LiveContainer 直接装 `versions[0]`，SideStore 得先开 Beta 开关。
+> 详见 [docs/clients.md](docs/clients.md)。
 
 ## 添加这个源
 
@@ -34,302 +35,59 @@ https://github.com/laincat/AltStore/releases/download/latest/apps.json
 - **SideStore / AltStore**：`Sources（源）` → 右上角 `+` → 粘贴上面的地址
 - **LiveContainer**：底部标签栏 `源`（英文是 `Sources`）→ 右上角 `+`（`添加源`）→ 粘贴同一地址
 
-> - cnb.cool 的原文直链必须是 `/-/git/raw/`，别用 `/-/raw/`——那个返回的是仓库网页的 HTML 外壳，不是文件内容。
-> - 三个地址的 `Content-Type` **并不相同**：前两个是 `text/plain; charset=utf-8`，Releases 那个是 `application/octet-stream`。**客户端不看 `Content-Type`，只按 HTTP 状态码 + JSON 内容解析** —— 这一点是核过两个客户端源码的：SideStore 的 `FetchSourceOperation` 直接把 body 交给 `JSONDecoder`（还开了 `allowsJSON5`），LiveContainer 只判 `200...299`。所以三个都能用。
-> - Releases 那个地址背后**只有一个** release，tag 固定为 `latest`，内容在每次变化后被覆盖 —— 它不会随更新堆积，地址也永远不变。
-> - `raw.githubusercontent.com` 在大陆经常被墙或极慢，用不了就换 cnb.cool 那个。
+> - cnb.cool 的原文直链必须是 `/-/git/raw/`，别用 `/-/raw/` —— 那个返回的是仓库网页的 HTML 外壳，不是文件内容。
+> - 三个地址的 `Content-Type` 并不相同（前两个 `text/plain; charset=utf-8`，Releases 是 `application/octet-stream`），但客户端只看 HTTP 状态码和 JSON 内容，三个都能用。
+> - Releases 那个地址背后**只有一个** release，tag 固定为 `latest`，内容在每次变化后被覆盖，地址永远不变。
 
 ## 应用清单
 
-以下版本、体积与案例为 2026-09-18 的历史说明，不代表最新状态；最新版本、最低系统与测试版标记以 [apps.json](apps.json) 为准。
+<!-- apps:begin -->
+| 应用 | Bundle ID | 稳定版 | 最低系统 | 测试版 | 上游 |
+|---|---|---|---|---|---|
+| Aidoku | `app.aidoku.Aidoku` | 0.9 | iOS 15.0+ | 无 | [Aidoku/Aidoku](https://github.com/Aidoku/Aidoku) |
+| AirCard | `com.mak5er.aircard` | 1.3.2 | iOS 18.0+ | 无 | [Mak5er/AirCard-iOS](https://github.com/Mak5er/AirCard-iOS) |
+| AniBaka | `ani.baka` | 5.2.4 | iOS 13.0+ | 无 | [AniBakaBaka/AniBaka](https://github.com/AniBakaBaka/AniBaka) |
+| AniCh | `app.anich` | 1.5.27 | iOS 12.0+ | 无 | [Sle2p/AniCh](https://github.com/Sle2p/AniCh) |
+| AnimeFlow | `com.ligg.animeflow` | 2.6.8 | iOS 15.0+ | 无 | [openAnimeFlow/AnimeFlow](https://github.com/openAnimeFlow/AnimeFlow) |
+| Animeko | `org.animeko.animeko` | 6.4.0 | iOS 16.0+ | 6.4.0 | [open-ani/animeko](https://github.com/open-ani/animeko) |
+| ARMSX2 Nightly | `com.armsx2.ios.nightly` | 2.6.0-nightly.20261114.1505 | iOS 17.4+ | 无 | [ARMSX2/ARMSX2](https://github.com/ARMSX2/ARMSX2) |
+| ARMSX3 | `com.armsx3.ARMSX3` | 0.0.3 | iOS 17.4+ | 无 | [ARMSX2/ARMSX3](https://github.com/ARMSX2/ARMSX3) |
+| AvPlay | `com.javdb.avplay2` | 2.2.2 | iOS 15.3+ | 无 | [anonymousjav/AvPlayRelease](https://github.com/anonymousjav/AvPlayRelease) |
+| Breeze | `com.zephyr.breeze` | 3.0.38 | iOS 15.0+ | 无 | [breeze-project-org/Breeze](https://github.com/breeze-project-org/Breeze) |
+| EhPanda | `app.ehpanda` | 2.8.1 | iOS 26.0+ | 无 | [EhPanda-Team/EhPanda](https://github.com/EhPanda-Team/EhPanda) |
+| GestaltX | `com.huami.gestultx` | 1.1.1 | iOS 26.0+ | 无 | [huamidev/GestaltX](https://github.com/huamidev/GestaltX) |
+| HGhubX | `com.hghubx.app` | 2.1.2 | iOS 15.0+ | 无 | [zxsos/HGhubX](https://github.com/zxsos/HGhubX) |
+| INSAV | `com.ios151.insav` | 1.3.1 | iOS 16.0+ | 无 | [ios151/Insav-releases](https://github.com/ios151/Insav-releases) |
+| Kazumi | `com.example.kazumi` | 2.4.4 | iOS 15.0+ | 无 | [Predidit/Kazumi](https://github.com/Predidit/Kazumi) |
+| Nekularity | `com.laincat.nekularity` | 0.4.9 | iOS 26.0+ | 无 | [laincat/Nekularity](https://github.com/laincat/Nekularity) |
+| One | `com.ios151.one` | 1.7.1 | iOS 16.0+ | 无 | [ios151/One-releases](https://github.com/ios151/One-releases) |
+| PicaComic | `com.github.pacalini.picaComic` | 5.1.1 | iOS 15.1+ | 无 | [ccbkv/PicaComic](https://github.com/ccbkv/PicaComic) |
+| PicaX | `moye.PicaX` | 1.2.5 | iOS 15.2+ | 无 | [youshen2/PicaX](https://github.com/youshen2/PicaX) |
+| Swipt | `io.nekohasekai.swipt` | 0.1.0 | iOS 16.4+ | 无 | [swipt-automation/swipt](https://github.com/swipt-automation/swipt) |
+| Venera Prime | `com.github.wgh136.venera.prime` | 2.8.1 | iOS 14.0+ | 无 | [venera-app/venera-prime](https://github.com/venera-app/venera-prime) |
+| Venera-SSR | `com.github.kiastr.venera-ssr` | 2.1.5 | iOS 14.0+ | 无 | [Kiastr/Venera-SSR](https://github.com/Kiastr/Venera-SSR) |
+| VeneraNext | `com.github.cyrilpeng.veneranext` | 1.18.3 | iOS 14.0+ | 无 | [CyrilPeng/Venera-Next](https://github.com/CyrilPeng/Venera-Next) |
+| VeneraX | `io.github.kyosee.venera` | 3.0.0 | iOS 15.1+ | 无 | [Kyosee/VeneraX](https://github.com/Kyosee/VeneraX) |
+| 大富翁4重制版 | `pro.areu.rich4` | 1.2.4 | iOS 15.0+ | 无 | [iam567/rich4-renew-app](https://github.com/iam567/rich4-renew-app) |
+| 真果鉴 | `com.yingshib.xg` | 2.0.1 | iOS 15.1+ | 无 | [Xanerix/guoapp](https://github.com/Xanerix/guoapp) |
+<!-- apps:end -->
 
-源中的应用按名称排序；源的精选应用仍保持独立配置。
+> - 版本、最低系统与测试版标记都取自 IPA 包内元数据，不是抄上游 README。
+> - 表格由 `tools/render_docs.py` 按 `apps.json` 生成，请勿手工编辑。
+> - 自动化只在上游确实有新版本时更新，每轮变化记在 [docs/Changelog.md](docs/Changelog.md)。
 
-| 应用 | Bundle ID | 稳定版 | 体积 | 最低系统 | 测试版 | 上游 |
-|---|---|---|---|---|---|---|
-| Kazumi | `com.example.kazumi` | 2.3.3 | 28.4 MB | iOS 15.0+ | 无 | [Predidit/Kazumi](https://github.com/Predidit/Kazumi) |
-| Animeko | `org.animeko.animeko` | 6.1.0 | 42.4 MB | iOS 14.0+ | **6.2.0**（42.7 MB） | [open-ani/animeko](https://github.com/open-ani/animeko) |
-| EhPanda | `app.ehpanda` | 2.8.1 | 7.0 MB | **iOS 26.0+** | **3.0.0**（9.7 MB） | [EhPanda-Team/EhPanda](https://github.com/EhPanda-Team/EhPanda) |
-| VeneraX | `io.github.kyosee.venera` | 2.3.2 | 33.8 MB | iOS 16.0+ | 无 | [Kyosee/VeneraX](https://github.com/Kyosee/VeneraX) |
-| Venera Prime | `com.github.wgh136.venera.prime` | 2.4.0 | 15.3 MB | iOS 14.0+ | 无 | [venera-app/venera-prime](https://github.com/venera-app/venera-prime) |
-| VeneraNext | `com.github.cyrilpeng.veneranext` | 1.15.0 | 19.0 MB | iOS 14.0+ | 无 | [CyrilPeng/Venera-Next](https://github.com/CyrilPeng/Venera-Next) |
-| Venera-SSR | `com.github.kiastr.venera-ssr` | 2.1.5 | 15.0 MB | iOS 14.0+ | 无 | [Kiastr/Venera-SSR](https://github.com/Kiastr/Venera-SSR) |
-| Breeze | `com.zephyr.breeze` | 3.0.31 | 24.6 MB | iOS 15.0+ | 无 | [breeze-project-org/Breeze](https://github.com/breeze-project-org/Breeze) |
-| PicaX | `moye.PicaX` | 1.2.3 | 10.7 MB | iOS 15.2+ | 无 | [youshen2/PicaX](https://github.com/youshen2/PicaX) |
-| PicaComic | `com.github.pacalini.picaComic` | 5.0.5 | 22.5 MB | iOS 15.0+ | 无 | [ccbkv/PicaComic](https://github.com/ccbkv/PicaComic) |
-| AvPlay | `com.javdb.avplay` | 2.2.0 | 22.7 MB | iOS 15.3+ | 无 | [anonymousjav/AvPlayRelease](https://github.com/anonymousjav/AvPlayRelease) |
-| AnimeFlow | `com.ligg.anime_flow` | 2.6.4 | 28.1 MB | iOS 15.0+ | 无 | [openAnimeFlow/AnimeFlow](https://github.com/openAnimeFlow/AnimeFlow) |
-| AniBaka | `ani.baka` | 5.2.3 | 22.7 MB | iOS 13.0+ | 无 | [AniBakaBaka/AniBaka](https://github.com/AniBakaBaka/AniBaka) |
-| AniCh | `app.anich` | 1.5.27 | 39.3 MB | iOS 12.0+ | 无 | [Sle2p/AniCh](https://github.com/Sle2p/AniCh) |
-| 真果鉴 | `com.duanju.duanjuApp` | 1.0.0（100） | 28.6 MB | iOS 15.1+ | 无 | [Xanerix/guoapp](https://github.com/Xanerix/guoapp) |
-| Aidoku | `app.aidoku.Aidoku` | 0.9 | 14.1 MB | iOS 15.0+ | 无 | [Aidoku/Aidoku](https://github.com/Aidoku/Aidoku) |
-| ARMSX2 Nightly | `com.armsx2.ios.nightly` | 2.6.0-nightly.20261023.1332 | 38.5 MB | iOS 17.4+ | 每日构建 | [ARMSX2/ARMSX2](https://github.com/ARMSX2/ARMSX2) |
-| AirCard | `com.mak5er.aircard` | 1.3.2 | 4.4 MB | iOS 18.0+ | 无 | [Mak5er/AirCard-iOS](https://github.com/Mak5er/AirCard-iOS) |
-| 大富翁4重制版 | `pro.areu.rich4` | 0.7.4 | 1.67 GiB | iOS 15.0+ | 无 | [iam567/rich4-renew-app](https://github.com/iam567/rich4-renew-app) |
+## 文档
 
-历史清单中每个应用提供 **stable（稳定）** 轨道；**EhPanda** 与 **Animeko** 另有 **nightly（测试）** 轨道（分别是 3.0.0 与 6.2.0）。
-
-## 两个客户端的差异（重要）
-
-同一个 `apps.json`，两家客户端读的字段**完全不同**：
-
-| | SideStore / AltStore | LiveContainer |
-|---|---|---|
-| 读哪个字段 | `releaseChannels` 里的轨道 | 只读扁平的 `versions` 数组 |
-| 认不认 `releaseChannels` | 认 | **完全不认**（代码里没有这个字段） |
-| 测试版开关 | 有，`设置 → Beta Testing`，**默认关闭** | **没有开关** |
-| 版本选择器 | 有（能挑历史版本） | **没有**，界面上只显示并安装 `versions[0]` |
-| 显示哪个版本 | stable 轨道；开关打开后 beta 轨道**取代** stable | 永远是 `versions[0]` |
-
-所以本仓库**两处都写**：
-
-```jsonc
-{
-  "releaseChannels": [                  // ← SideStore / AltStore 走这里
-    { "track": "stable",  "releases": [ /* 2.8.1 */ ] },
-    { "track": "nightly", "releases": [ /* 3.0.0 */ ] }
-  ],
-  "versions": [ /* 3.0.0, 2.8.1 */ ],   // ← LiveContainer 走这里，只取第 1 条
-  "beta": true                          // ← LiveContainer 会显示「测试版」角标
-}
-```
-
-**往扁平 `versions` 里塞测试版，对 SideStore 没有任何副作用。** 它的解码逻辑是：
-
-```swift
-var versions = getReleases(default: stableTrack) ?? []
-if versions.isEmpty {          // ← 只有轨道取不到东西时，才会回头看扁平 versions
-    versions = try container.decodeIfPresent([AppVersion].self, forKey: .versions) ?? ...
-}
-```
-
-stable 轨道非空，这个 `if` 永远不成立（整个 `StoreApp.swift` 里搜 `forKey: .versions` 只有这一处）。
-
-## 测试版（nightly 轨道）
-
-历史示例（2026-09-18）：两个应用带测试版：**EhPanda 3.0.0**（正式版 2.8.1）与 **Animeko 6.2.0**（正式版 6.1.0，上游 tag 是 `v6.2.0-alpha01`）。
-
-| 客户端 | 怎么才能拿到测试版 |
+| 文档 | 内容 |
 |---|---|
-| **LiveContainer** | **什么都不用做**。当源里 `versions[0]` 是测试版时，列表里直接显示、点安装就是它，旁边带「测试版」角标 |
-| **SideStore / AltStore** | 要手动开开关：`设置 → Beta Testing → 打开 Beta Updates`（轨道选 `nightly`，默认就是它，不用改） |
+| [docs/clients.md](docs/clients.md) | 两个客户端的解析差异、测试版开关、为什么不用「拆条目」 |
+| [docs/nightly.md](docs/nightly.md) | 哪些预发布会被收录，判断标准是什么 |
+| [docs/automation.md](docs/automation.md) | 自动更新流程、为什么轮询、依赖更新、网络与缓存安全 |
+| [docs/accuracy.md](docs/accuracy.md) | 数据准确性：Bundle ID、版本号、最低系统、图标 |
+| [docs/development.md](docs/development.md) | 本地运行、目录结构、参数 |
+| [docs/notes.md](docs/notes.md) | 使用注意事项 |
+| [docs/Changelog.md](docs/Changelog.md) | 更新记录（自动维护） |
 
-SideStore 那三层门槛（源码 `AltStore/Core/Model/StoreApp.swift`）：
+## 说明
 
-1. `isBetaUpdatesEnabled` —— 设置里的 `Beta Updates` 开关，**默认 false**
-2. `betaUdpatesTrack` —— 轨道名，默认 `nightly`（下拉框只提供 `alpha` 和 `nightly`）
-3. `betaSemVer >= stableSemVer` —— EhPanda 3.0.0 > 2.8.1 ✓；Animeko 6.2.0 > 6.1.0 ✓
-
-```swift
-private var betaReleases: [AppVersion]? {
-    if UserDefaults.standard.isBetaUpdatesEnabled,               // ← 必须手动打开
-       let betaTrack = UserDefaults.standard.betaUdpatesTrack {  // ← 默认 "nightly"
-        ...
-        betaSemVer >= stableSemVer
-    }
-    return nil
-}
-// 展示的版本列表：betaReleases ?? stableTrack.releases
-// 注意是「取代」不是「合并」：开关打开后看到的就是 beta 轨道的内容
-```
-
-### ⚠️ 为什么 Animeko 写的是 6.2.0，而不是上游的 6.2.0-alpha01
-
-因为**写成 `6.2.0-alpha01` 就一定装不上**。SideStore 安装前会拿声明值和包内真实值逐字核对，
-源码 `AltStore/Core/Operations/VerifyAppOperation.swift`：
-
-```swift
-// 第 5 步：版本 & build 版本校验
-if let buildVersion {
-    guard buildVersion == appBundle.buildVersion else {
-        throw VerificationError.mismatchedBuildVersion(...)
-    }
-}
-if version != appBundle.version {
-    throw VerificationError.mismatchedVersion(...)      // ← 不一致就中止安装
-}
-```
-
-而 Animeko 的预发布包**里面**写的是：
-
-| 字段 | 包内真实值 | 上游 tag |
-|---|---|---|
-| `CFBundleShortVersionString` | `6.2.0` | `v6.2.0-alpha01` |
-| `CFBundleVersion` | `60201` | ← 预发布序号其实编码在这里（alpha01 → `…01`） |
-
-所以 `version` **只能**填 `6.2.0`、`buildVersion` 填 `60201`。想一眼看出是哪个预发布，就只能写进**说明文字**——
-每条预发布的更新日志开头会自动加一行 `🧪 预发布 <tag>（日期）`。
-
-> 顺带一提：把预发布拆成独立 app 条目、`version` 直接写 tag 串的那种源，在 SideStore 上就是被这一步挡住的。
-
-### 本地就能验证，不用装到手机上
-
-```bash
-python tools/simulate_client.py                        # 两个客户端都算
-python tools/simulate_client.py --client livecontainer
-python tools/simulate_client.py --client sidestore
-```
-
-这个脚本把两家客户端的解析逻辑都照抄成了 Python，直接告诉你「谁会看到、会安装哪个版本」：
-
-```
-Animeko   (org.animeko.animeko)
-   SideStore · 关 Beta → ['6.1.0']
-   SideStore · 开 Beta → ['6.2.0']
-      ⚠️ ['6.2.0'] 只有开了 Beta 开关才可见
-   LiveContainer       → 会安装 6.2.0 (60201)  [BETA 角标]   [来源：扁平 versions[0]]
-
-EhPanda   (app.ehpanda)
-   SideStore · 关 Beta → ['2.8.1']
-   SideStore · 开 Beta → ['3.0.0']
-      ⚠️ ['3.0.0'] 只有开了 Beta 开关才可见
-   LiveContainer       → 会安装 3.0.0 (158)  [BETA 角标]   [来源：扁平 versions[0]]
-                          最低系统 26.0
-```
-
-它还会报告「两个客户端结论分歧」的条目 —— 万一以后扁平 `versions` 忘了放测试版，这里会立刻报出来。
-
-### ⚠️ 为什么不用「拆成两个 app 条目」的做法
-
-有些源（例如 `maxchang3/ani-altstore-source`）把测试版拆成**独立的 app 条目**（`Animeko` + `Animeko (Pre-Release)`）。它的 `versions` 是**不带 `releaseChannels` 的扁平列表**，所以预发布在两边都会一直显示、不需要任何开关。
-
-看起来省事，但代价是拆出来的条目**必须编造一个 Bundle ID**（参考源写的是 `org.animeko.animeko.beta`），而 Animeko 测试包内的真实 ID 是 `org.animeko.animeko`：
-
-| 约束 / 校验 | 出处 | 后果 |
-|---|---|---|
-| `StoreApp` 唯一约束 `(sourceIdentifier, bundleIdentifier)` | CoreData 模型 | 同一源内两个条目**不能共用 Bundle ID**，否则会被合并成一个 |
-| 于是测试版条目只能**编造 ID** | 参考源写的是 `org.animeko.animeko.beta` | 与包内真实 ID 不符 |
-| `verifyApp` 要求源声明 ID **必须等于** IPA 内真实 ID | `VerifyAppOperation.swift` | 安装时抛 `mismatchedBundleIdentifiers` |
-| 该步骤是**安装流水线第 2 步** | `OperationStepDefinition.install` | 默认就在流程里 |
-| 校验开关 `isBundleIDVerificationEnabled` 默认 **true** | `UserDefaults+AltStore.swift` | 且**设置界面里没有这个开关**（`DeveloperOptionsView` / `ExperimentalFeaturesView` 里都搜不到） |
-
-**结论**：拆条目的做法在 SideStore 上是「看得见、装不上」。本仓库不这么做——保留规范的 `releaseChannels` 轨道，**同时**用扁平 `versions` 照顾 LiveContainer，两边都看得见、也都装得上。
-
-## 自动更新
-
-`.github/workflows/update-source.yml` **每小时**检查一次上游（在每小时的第 7 分钟运行）。也可以随时手动触发：Actions → 更新 SideStore 源 → Run workflow。
-
-> ⚠️ GitHub 的定时任务是 **best-effort**，不是保证：实测会迟到几分钟，负载高时还会直接丢掉这一轮，而且**频率越高丢得越多**（对照实测：每天一次 100% 准点、每小时基本不漏、`NixOS/nixpkgs` 的 10 分钟粒度只跑到约一半）。
-> 丢一轮不影响结果——下一轮会补上，所以实际延迟通常 15~40 分钟，偶发更长。
-> 另：**新建的工作流，cron 要先被 GitHub「认领」**。本仓库实测：cron 变更后 **4 小时 48 分**才跑出第一次定时，此前一次都没有；推一个默认分支上的提交能有效催熟（这次是删掉调试文件的那次推送，54 分钟后定时就到点了）。这期间配置是对的，**别反复改表达式 —— 每改一次，认领倒计时就重置一次**。
-> 认领刚完成的头几个小时也可能比稳态稀疏（本仓库首 5 小时里约 20 个槽位只跑成 1 次）。
-> 真要「秒级」，工作流已经留了 `repository_dispatch` 入口（见下）。
-
-每轮做的事：
-
-```
-检查上游 Release（--refresh） → 重新生成 apps.json → verify_source.py 结构校验
-  → 有变更才提交到本仓库 → 发布/滚动更新 Release → 同步产物到 cnb.cool
-```
-
-- 单次实测约 **12 秒**，公开仓库的 Actions 分钟数免费不限量，约 96 次/天
-- 只在检测到真实变更时才产生提交，没有新版本就不动
-- Releases 页那个 `latest` 是**固定 tag 滚动覆盖**的：只在内容变化时重传，永远只留**一个** release。之所以不做成「一次更新一个 tag」，是因为这条流水线每小时跑一轮 —— 那样一天就是 24 个 tag。tag 会跟着内容指向当轮提交，所以 tag 的树和附件内容始终对得上
-- **校验不通过就不提交**：宁可这轮不动，也不把一个结构坏掉的源推上去（某个 app 的 `releases` 变成空数组时，SideStore 会整体解码失败、整个源都加载不了）
-- 某个仓库抓取失败时会**沿用上一次生成的数据**，不会把那个应用从源里抹掉
-- 同步到 cnb.cool 需要仓库里配好 `CNB_TOKEN` 与 `CNB_USER` 两个 Secrets；没配就自动跳过，只更新本仓库
-
-### 为什么是轮询，不是「上游发版就触发」
-
-想做到「上游一发版立刻同步」，需要在别的仓库发生 release 事件时触发本仓库的工作流。**GitHub 做不到这件事**：release 事件只在事件发生的那一个仓库里触发工作流，跨仓库收不到；官方给外部事件准备的机制是 `repository_dispatch`，但那需要上游主动往我们的 API 发请求——而给别人的仓库配 webhook，得先有那个仓库的管理权限。
-
-所以现实可行的就是短间隔轮询。按官方文档，定时任务最短只能 5 分钟一次，且负载高时会被延迟、甚至丢弃排队中的任务（整点前后最严重，所以这里错开了整点）。对轮询来说偶尔丢一轮无所谓，下一轮会补上。
-
-真想要「秒级」的话，工作流已经留了 `repository_dispatch` 入口（事件类型 `upstream-release`）：用 Cloudflare Workers 的 1 分钟定时之类去轮询上游 release，命中就打一次这个接口即可。
-
-> 为什么不用 cnb.cool 自带的定时构建：CNB 免费额度只有 160 核时/月，且构建前要预冻结 5 分钟（0.08 核时），额度见底时**所有构建**都会在 Prepare 阶段失败（2026-09 就被 `laincat/Rules` 一个仓库烧光了）。GitHub 公开仓库的 Actions 分钟数免费不限量，且 runner 原生直连 GitHub Release，不需要任何镜像代理。
-
-### 顺带：仓库自身的依赖更新（Dependabot）
-
-这个仓库**没有任何传统依赖** —— `tools/` 下三个脚本的 import 全部来自 Python 标准库（`argparse` / `json` / `os` / `plistlib` / `re` / `ssl` / `struct` / `sys` / `urllib` / `zlib`），仓库里也不存在 `requirements.txt` / `pyproject.toml` / `package.json`。所以依赖图里**唯一**的依赖，就是流水线用的那两个 Action。
-
-`.github/dependabot.yml` 因此只配了 `github-actions` 一个生态：每天 09:00（北京时间）检查一次，minor + patch 合并成一个 PR，**major 单独开**（这条流水线负责发布源文件，major 升级可能改行为，要单独看清再合）。
-
-Action 已固定到完整 commit SHA（保留版本注释）；Dependabot 每日提出更新，patch/minor 仅在对应提交验证通过后自动合并，major 单独审核。生成与发布前会在同一 checkout 上执行离线回归测试、结构校验和客户端模拟。
-
-### 网络与缓存安全
-
-- 所有 HTTPS 使用系统 CA 与主机名校验；不修改全局 SSL 上下文，不回退公共 GitHub 代理。
-- GitHub token 仅发送到 `https://api.github.com`；携带认证的请求拒绝全部重定向，普通资源禁止降级 HTTP。
-- IPA Range 必须返回精确的 206、Content-Range 和响应长度；单次最多 8 MiB，IPA 总长上限 8 GiB，Info.plist 压缩与展开均最多 2 MiB。ZIP64、多卷 ZIP、不支持的压缩算法和损坏 CRC 会失败并保留上一版条目。
-- IPA 探测缓存绑定资产 ID、updated_at、size、digest；旧的仅 URL 缓存会重新探测。`--refresh` 重新抓取发布和资产身份；`--reprobe` 强制探测。缺少资产身份时不永久缓存。
-- 完整发布时间用于排序，再按版本和构建号确定顺序；BETA 标记按完整发布身份判断，不能只比较版本号。
-- 如果曾在旧脚本中使用 GitHub token 且触发公共代理回退，应自行检查相关 token 的历史使用与撤销需求。本次代码修复不更改凭据或账号设置。
-
-离线测试：`python -m unittest discover -s tests -v`，再运行 `.github/scripts` 的合并门禁测试。测试使用模拟网络和虚拟 token，不访问真实凭据。
-
-想手动更新：
-
-```bash
-# 本地跑（需要 Python 3.8+，只用标准库）
-python tools/build_source.py --refresh      # 重新抓上游
-python tools/verify_source.py --min-apps 20  # 校验（数字取「等于当前应用数」）
-```
-
-## 目录结构
-
-```
-apps.json                                    # 源文件本体，客户端消费的就是它
-.github/workflows/update-source.yml          # 定时更新流水线
-.github/dependabot.yml                       # 只盯 github-actions 的版本（本仓库没有别的依赖）
-tools/build_source.py                        # 生成脚本（抓 GitHub Release + 探测 IPA 元数据）
-tools/verify_source.py                       # 结构校验，提交前的守门人
-tools/simulate_client.py                     # 模拟两个客户端的解析，回答「改完到底看不看得见」
-cache/releases.json                          # 各仓库的 Release 列表缓存
-cache/probes.json                            # IPA 元数据缓存（绑定资产 ID、更新时间、大小和 digest）
-cache/icons.json                             # 图标可达性缓存
-```
-
-### 参数
-
-```bash
-python tools/build_source.py                 # 用缓存，联网最少
-python tools/build_source.py --refresh       # 重新抓 Release 列表
-python tools/build_source.py --reprobe       # 连 IPA 元数据也重探（一般不需要）
-python tools/build_source.py --versions 4    # 稳定版轨道保留最近 4 个（便于回退）
-```
-
-## 数据准确性
-
-源里的 **Bundle ID、版本号、最低系统版本都是从 IPA 包内读出来的**，不是猜的，也不是抄 README：
-
-- 对每个 IPA 发 HTTP Range 请求，只读 zip 尾部的中央目录 + `Payload/*.app/Info.plist`（几十 KB，**不下载整包**），解析 `CFBundleIdentifier` / `CFBundleShortVersionString` / `MinimumOSVersion` / 实际字节数
-- **声明的 `version` / `buildVersion` 一律取包内真实值，不取 tag**（SideStore 会逐字比对，见上文《为什么 Animeko 写的是 6.2.0》）；tag 另存在 `releaseTag` 字段里，预发布的 tag 还会写进更新日志开头
-- 同一应用的测试版与稳定版做 Bundle ID 一致性校验，不一致的丢弃
-- 跨版本 Bundle ID 不一致的版本会被丢弃
-- 图标取自各仓库对应 tag 下的图标资源（**必须是 1024×1024**）。同名文件在不同项目里位置不一样：多数 Flutter 项目在 `ios/Runner/…/AppIcon`，venera-prime 用的却是 `assets/app_icon.png`。**光确认「文件存在」不够，还要量尺寸** —— venera-next 的 `assets/app_icon.png` 只有 512×512，1024×1024 的那张在 iOS appiconset 里；venera-ssr 更麻烦，两张都叫同名、都真是 1024×1024，**但内容不是同一张**（33710 B vs 33911 B），所以按 iOS appiconset 那张走（那才是 App Store 图标）。**用 tag 而不是分支名作 ref**，所以仓库默认分支叫 `main` 还是 `master` 都无所谓；探测失败自动回退为仓库头像
-- **源自身的 logo** 用的是 `https://github.com/laincat.png`（GitHub 头像，会 302 到 `avatars.githubusercontent.com`），换头像时源里自动跟着变
-
-## 哪些预发布会被收，为什么
-
-9 个原有开源应用仓库的发布记录全扫过（含 tag 名带 beta/alpha/rc/nightly 但没打预发布标记的）：
-
-| 仓库 | 情况 | 结论 |
-|---|---|---|
-| Kazumi | 最近 100+ 个发布里没有任何 beta/alpha/rc | 无测试版 |
-| Animeko | `v6.2.0-alpha01`（2026-09-17），更新日志是**全新的**内容（Bangumi 收藏冲突处理、弹幕颜色与位置、图片查看器独立窗口等），比正式版 6.1.0 新 | **收录** |
-| EhPanda | `3.0.0`，比稳定版 2.8.1 新一个月（离线下载、文件夹分类等） | **收录** |
-| VeneraX | `v2.1.8-beta.1`，比稳定版 2.3.2 **落后 5 个小版本**；作者发布说明写着「内部测试版，仅用于开发验证，**请勿分发**」 | 不收（版本号更低，SideStore 也不会显示） |
-| Venera Prime | 仓库刚起步，总共只有 1 个发布（`v2.4.0`），无预发布 | 无测试版 |
-| VeneraNext | 最新预发布 `v1.14.0-rc.1`（2026-08-06）比稳定版 `v1.15.0`（2026-08-31）**旧**，build 217 < 223 | 无测试版（版本号更低，SideStore 也不会显示） |
-| Venera-SSR | 总共 8 个发布、0 个预发布；且发布列表里混着两个**纯模型发布**（tag 为 `model`、`translation-models`，装的是 onnx / 翻译模型，不含 ipa） | 无测试版 |
-| Breeze | 最近 100 个发布里无 beta/alpha | 无测试版 |
-| PicaX | 仓库总共只有 13 个发布，无预发布 | 无测试版 |
-
-> **Animeko 早先为什么不收**：`v6.1.0-beta01` 的更新日志与正式版 6.1.0 **逐字相同**，等于没有独立内容；
-> `v6.2.0-alpha01` 是新东西，所以收了。判断标准是「有没有独立的新内容」，不是「tag 里带不带 alpha」。
->
-> 另外，Animeko 包内真实 Bundle ID 就是 `org.animeko.animeko`，**没有**独立的 beta ID ——
-> `org.animeko.animeko.beta` 是别的源编出来的，本仓库不编造 ID。
-
-## 注意事项
-
-1. **EhPanda 需 iOS 26.0 及以上**，稳定版 2.8.1 与测试版 3.0.0 都是这个要求。
-2. **免费 Apple ID 的侧载限制**：同时最多 3 个自签应用，签名 7 天过期（靠 SideStore 自身续签）。源里有 20 个应用，装不下全部。
-3. **PicaX 选的是不含 Watch 组件的包**（`PicaX-unsigned.ipa`）。带 Watch 的版本在免费账号签名时容易因附加 Target 失败。
-4. **EhPanda 含 Share Extension、PicaX 含 Widget**，签名时会额外占用标识符；报错可换用不带扩展的版本。
-5. **源里有四个 Venera 系阅读器**：VeneraX（`io.github.kyosee.venera`）、Venera Prime（`com.github.wgh136.venera.prime`）、VeneraNext（`com.github.cyrilpeng.veneranext`）、Venera-SSR（`com.github.kiastr.venera-ssr`）。四者是**独立应用**（Bundle ID 各不相同，分别是不同作者维护的 Venera 分支），可以同时安装 —— 但功能高度重叠，实际按需选一个就够。
-   - 其中 **Venera-SSR** 主要在「阅读增强」上做文章：黑白漫画 AI 上色、Anime4K 超分（含 Real-ESRGAN V4 推理模型）、图片内嵌文字的 OCR 翻译。源里取的是**标准版** iOS 包；上游的「翻译版」（OCR 模型内置版）只出了 Android，iOS 侧需要的模型要另外到上游那两个模型发布（`model` / `translation-models`）里下。
-   - 四个 Venera 的 tint 有意分开：三个蓝（`#4A8FE7` / `#0784FC` / `#2090E0`）+ 一个黄（`#C4BA12`），列表里好认。黄是会按白底可读性压过明度的，别照着图标原色改。
-6. **本仓库只做索引，IPA 全部由各项目自己在 GitHub Release 发布**，未重新打包、未修改任何二进制。开源应用请遵守各项目许可证；AvPlay 上游未提供应用源代码或开源许可证。
-
+本仓库**只做索引**：IPA 全部由各项目自己在 GitHub Release 发布，未重新打包、未修改任何二进制。开源应用请遵守各项目许可证；AvPlay 上游未提供应用源代码或开源许可证。

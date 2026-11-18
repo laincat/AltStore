@@ -143,6 +143,13 @@ jobs:
           # ⚠️ 每加/删一个应用，这里都要跟着改。
           python tools/verify_source.py --min-apps 26
 
+      - name: 更新 README 应用清单与更新记录
+        run: |
+          set -e
+          # 表格按 apps.json 重新生成；有版本变化时把本轮变化追加到 docs/Changelog.md。
+          # 没有变化时这两个文件不会改动，不会产生空提交。
+          python tools/render_docs.py
+
       - name: 核对两个客户端的解析结果
         run: |
           set -e
@@ -163,7 +170,7 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add apps.json cache/*.json
+          git add apps.json cache/*.json README.md docs/Changelog.md
           if git diff --cached --quiet; then
             echo "上游无新版本，无变更"
             echo "changed=false" >> "$GITHUB_OUTPUT"
