@@ -147,6 +147,7 @@ jobs:
         run: |
           set -e
           # 表格按 apps.json 重新生成；有版本变化时把本轮变化追加到 docs/Changelog.md。
+          # 预发布复核表同样按 cache/releases.json 重新生成。
           # 没有变化时这两个文件不会改动，不会产生空提交。
           python tools/render_docs.py
 
@@ -170,7 +171,7 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add apps.json cache/*.json README.md docs/Changelog.md
+          git add apps.json cache/*.json README.md docs/Changelog.md docs/nightly.md
           if git diff --cached --quiet; then
             echo "上游无新版本，无变更"
             echo "changed=false" >> "$GITHUB_OUTPUT"

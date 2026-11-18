@@ -107,5 +107,66 @@ class RepoReadmeTests(unittest.TestCase):
             self.assertIn(bundle, block)
 
 
+
+
+class NightlyTableTests(unittest.TestCase):
+    def _apps_and_configs(self):
+        configs = [
+            {"repo": "a/a"},
+            {"repo": "b/b", "nightly": True},
+            {"repo": "c/c", "prereleaseAsStable": True},
+            {"repo": "d/d"},
+            {"repo": "e/e"},
+        ]
+        apps = [
+            app("A", "a.a", "1.0", repo="a/a"),
+            app("B", "b.b", "1.0", repo="b/b", beta="1.1"),
+            app("C", "c.c", "2.0", repo="c/c"),
+            app("D", "d.d", "3.0", repo="d/d"),
+            app("E", "e.e", "1.5", repo="e/e"),
+        ]
+        return apps, configs
+
+    @staticmethod
+    def _rel(tag, day, ipas=True):
+        return {
+            "tag": tag,
+            "pre": True,
+            "draft": False,
+            "date": day,
+            "published_at": day + "T00:00:00Z",
+            "ipas": [{"name": "x.ipa"}] if ipas else [],
+        }
+
+    def test_conclusions_cover_each_case(self):
+        apps, configs = self._apps_and_configs()
+        releases = {
+            "a/a": [],
+            "b/b": [self._rel("v1.1-beta1", "2026-11-01")],
+            "c/c": [self._rel("v2.1", "2026-11-02")],
+            "d/d": [self._rel("v3.1", "2026-11-03", ipas=False)],
+            "e/e": [self._rel("v1.2-rc1", "2026-11-04")],
+        }
+        table = render_docs.render_nightly_table(apps, releases, configs)
+        self.assertIn("| A | 1.0 | 无 | 无预发布 |", table)
+        self.assertIn("| B | 1.0 | v1.1-beta1 (2026-11-01) | 收录（nightly 轨道） |", table)
+        self.assertIn("| C | 2.0 | v2.1 (2026-11-02) | 以预览版作为稳定版 |", table)
+        self.assertIn("| D | 3.0 | v3.1 (2026-11-03) | 不收：该预发布没有 iOS 包 |", table)
+        self.assertIn("| E | 1.5 | v1.2-rc1 (2026-11-04) | 不收：比稳定版旧 |", table)
+
+    def test_unknown_repo_is_ignored_not_crashing(self):
+        apps = [app("Z", "z.z", "1.0", repo="z/z")]
+        table = render_docs.render_nightly_table(apps, {}, [])
+        self.assertIn("无预发布", table)
+
+    def test_nightly_doc_markers_and_rows(self):
+        text = (render_docs.NIGHTLY).read_text(encoding="utf-8")
+        self.assertIn(render_docs.NIGHTLY_BEGIN, text)
+        self.assertIn(render_docs.NIGHTLY_END, text)
+        block = text.split(render_docs.NIGHTLY_BEGIN)[1].split(render_docs.NIGHTLY_END)[0]
+        rows = [line for line in block.splitlines() if line.startswith("| ") and "---" not in line]
+        apps = render_docs.load(render_docs.APPS)
+        self.assertEqual(len(rows), len(apps) + 1)
+
 if __name__ == "__main__":
     unittest.main()

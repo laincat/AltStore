@@ -19,13 +19,18 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 README = ROOT / "README.md"
 CHANGELOG = ROOT / "docs" / "Changelog.md"
+NIGHTLY = ROOT / "docs" / "nightly.md"
+RELEASES = ROOT / "cache" / "releases.json"
 APPS = ROOT / "apps.json"
 
 BEGIN = "<!-- apps:begin -->"
 END = "<!-- apps:end -->"
 LOG_BEGIN = "<!-- changelog:begin -->"
+NIGHTLY_BEGIN = "<!-- nightly:begin -->"
+NIGHTLY_END = "<!-- nightly:end -->"
 
 REPO_RE = re.compile(r"https://github\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+")
+NUM_RE = re.compile(r"\d+")
 
 
 def load(path: Path) -> list[dict]:
@@ -152,6 +157,64 @@ def append_changelog(lines: list[str], stamp: str) -> bool:
     return True
 
 
+def semver(text: str) -> tuple:
+    nums = NUM_RE.findall(str(text or ""))
+    return tuple(int(x) for x in nums[:3]) + (0,) * (3 - min(3, len(nums)))
+
+
+def app_configs() -> list[dict]:
+    """生成器的应用配置（repo / nightly / prereleaseAsStable）。"""
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import build_source
+
+    return build_source.APPS
+
+
+def repo_of(app: dict, configs: list[dict]) -> str | None:
+    desc = app.get("localizedDescription") or ""
+    for cfg in configs:
+        if cfg["repo"] in desc:
+            return cfg["repo"]
+    return None
+
+
+def render_nightly_table(apps: list[dict], releases: dict, configs: list[dict]) -> str:
+    rows = ["| 应用 | 稳定版 | 最新预发布 | 结论 |", "|---|---|---|---|"]
+    for app in sorted(apps, key=lambda a: a["name"].lower()):
+        repo = repo_of(app, configs)
+        cfg = next((c for c in configs if c["repo"] == repo), {})
+        cur = (stable(app) or {}).get("version") or "-"
+        pres = [r for r in (releases.get(repo) or []) if r.get("pre") and not r.get("draft")]
+        pres.sort(key=lambda r: r.get("published_at") or r.get("date") or "", reverse=True)
+        newest = pres[0] if pres else None
+        if newest:
+            when = newest.get("date") or (newest.get("published_at") or "")[:10]
+            col = "%s (%s)" % (newest.get("tag") or "?", when)
+        else:
+            col = "无"
+        if cfg.get("prereleaseAsStable"):
+            note = "以预览版作为稳定版"
+        elif beta(app):
+            note = "收录（nightly 轨道）"
+        elif not newest:
+            note = "无预发布"
+        elif not newest.get("ipas"):
+            note = "不收：该预发布没有 iOS 包"
+        elif semver(newest.get("tag")) < semver(cur):
+            note = "不收：比稳定版旧"
+        else:
+            note = "不收：未启用 nightly 轨道"
+        rows.append("| %s | %s | %s | %s |" % (cell(app["name"]), cur, cell(col), note))
+    return chr(10).join(rows)
+
+
+def refresh_nightly(apps: list[dict]) -> int:
+    releases = json.loads(RELEASES.read_text(encoding="utf-8")) if RELEASES.exists() else {}
+    text = NIGHTLY.read_text(encoding="utf-8")
+    table = render_nightly_table(apps, releases, app_configs())
+    NIGHTLY.write_text(replace_block(text, NIGHTLY_BEGIN, NIGHTLY_END, table), encoding="utf-8")
+    return len(table.splitlines()) - 2
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--date", default=None, help="记录用时间（默认取当前 UTC+8）")
@@ -164,6 +227,7 @@ def main(argv: list[str] | None = None) -> int:
     readme = re.sub(r"收录 \d+ 个 iOS 应用", "收录 %d 个 iOS 应用" % len(apps), readme, count=1)
     README.write_text(readme, encoding="utf-8")
     print("README 应用清单已更新（%d 个应用）" % len(apps))
+    print("docs/nightly.md 预发布复核已更新（%d 个应用）" % refresh_nightly(apps))
 
     if args.no_changelog:
         return 0
