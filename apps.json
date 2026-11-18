@@ -666,7 +666,7 @@
               "buildVersion": "11140102",
               "buildNumber": "11140102",
               "localizedDescription": "English | 简体中文\n\nBuild 11140102.\nAdded\n\n- App Audio Library: replace notification sounds with custom audio. Apps not shown in the list can use the capture guide to obtain their notification-sound paths.\n- Pairing & Device Connection: used to obtain required paths.\nChanged\n\n- Case-insensitive cache UUID comparison (#131)\n- Reject trailing text in date fields (#132)\n- Share-inbox fallback (#133)\n- Validate backup metadata filenames (#134)\n- Reduce cache descriptor string-scan allocations (#135)\n- Reuse one preview snapshot for field search (#136)\n- Preserve field edits over layout presets (#137)\n- Preserve existing plist keys when editing fields (#138)\n- Reduce allocations in exact plist compar…",
-              "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.1.1/GestaltX_1.1.1.ipa",
+              "downloadURL": "https://github.com/huami-dev/GestaltX/releases/download/v1.1.1/GestaltX_1.1.1.ipa",
               "size": 6774794,
               "minOSVersion": "26.0",
               "releaseTag": "v1.1.1",
@@ -683,7 +683,7 @@
           "buildVersion": "11140102",
           "buildNumber": "11140102",
           "localizedDescription": "English | 简体中文\n\nBuild 11140102.\nAdded\n\n- App Audio Library: replace notification sounds with custom audio. Apps not shown in the list can use the capture guide to obtain their notification-sound paths.\n- Pairing & Device Connection: used to obtain required paths.\nChanged\n\n- Case-insensitive cache UUID comparison (#131)\n- Reject trailing text in date fields (#132)\n- Share-inbox fallback (#133)\n- Validate backup metadata filenames (#134)\n- Reduce cache descriptor string-scan allocations (#135)\n- Reuse one preview snapshot for field search (#136)\n- Preserve field edits over layout presets (#137)\n- Preserve existing plist keys when editing fields (#138)\n- Reduce allocations in exact plist compar…",
-          "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.1.1/GestaltX_1.1.1.ipa",
+          "downloadURL": "https://github.com/huami-dev/GestaltX/releases/download/v1.1.1/GestaltX_1.1.1.ipa",
           "size": 6774794,
           "minOSVersion": "26.0",
           "releaseTag": "v1.1.1",
@@ -693,9 +693,64 @@
       "version": "1.1.1",
       "versionDate": "2026-11-13",
       "versionDescription": "English | 简体中文\n\nBuild 11140102.\nAdded\n\n- App Audio Library: replace notification sounds with custom audio. Apps not shown in the list can use the capture guide to obtain their notification-sound paths.\n- Pairing & Device Connection: used to obtain required paths.\nChanged\n\n- Case-insensitive cache UUID comparison (#131)\n- Reject trailing text in date fields (#132)\n- Share-inbox fallback (#133)\n- Validate backup metadata filenames (#134)\n- Reduce cache descriptor string-scan allocations (#135)\n- Reuse one preview snapshot for field search (#136)\n- Preserve field edits over layout presets (#137)\n- Preserve existing plist keys when editing fields (#138)\n- Reduce allocations in exact plist compar…",
-      "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.1.1/GestaltX_1.1.1.ipa",
+      "downloadURL": "https://github.com/huami-dev/GestaltX/releases/download/v1.1.1/GestaltX_1.1.1.ipa",
       "size": 6774794,
       "minOSVersion": "26.0"
+    },
+    {
+      "name": "HentaiPark",
+      "bundleIdentifier": "com.hentaipark.hentaiPark",
+      "developerName": "drdon1234",
+      "subtitle": "成人内容聚合客户端（18+）",
+      "localizedDescription": "本子、里番、JAV、写真、视频、小说与游戏的聚合客户端，跨站检索，阅读、观看与收藏统一管理。仅限成年人在当地法律允许的范围内使用；内容来自第三方站点，本应用不托管原站内容。IPA 为未签名包，需自行签名安装；覆盖安装应保持 Bundle ID 与签名身份。\n\n开源协议：AGPL-3.0　·　项目主页：https://github.com/drdon1234/Hentai-Park",
+      "iconURL": "https://raw.githubusercontent.com/drdon1234/Hentai-Park/v0.14.8/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "tintColor": "#C96442",
+      "category": "entertainment",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "releaseChannels": [
+        {
+          "track": "stable",
+          "releases": [
+            {
+              "version": "0.14.8",
+              "date": "2026-11-17",
+              "publishedAt": "2026-11-17T10:43:21Z",
+              "buildVersion": "80",
+              "buildNumber": "80",
+              "localizedDescription": "中文\n新功能\n- 恢复 iOS 客户端，使用当前的阅读、播放、收藏、翻译、酒馆与备份功能。\n- iOS 接入应用锁、相册保存、系统分享与通知，支持音声后台播放和锁屏播放控制。\n改进\n- iOS 网页播放器使用独立临时会话，HTML 游戏按作品隔离存档。\n注意事项\n- iOS 长时间下载与录制建议保持前台；HTML 在线游戏需要 iOS 17 及以上，暂不支持 Flash。\nEnglish\nNew\n- Restore the iOS client with current reading, playback, library, translation, Tavern and backup features.\n- Add app lock, photo saving, system sharing and notifications on iOS, with background audio and lock-screen playback controls.\nImprovements\n- Isolate iOS web player sessions and keep separate storage for each HTML game.\nNotes\n- Keep iOS in the foreground for long downloads and recordings; HTML games require iOS 17 or later, and Flash is not supported.",
+              "downloadURL": "https://github.com/drdon1234/Hentai-Park/releases/download/v0.14.8/HentaiPark-0.14.8-80-ios-arm64-unsigned.ipa",
+              "size": 17908200,
+              "minOSVersion": "15.0",
+              "releaseTag": "v0.14.8",
+              "source": "https://github.com/drdon1234/Hentai-Park/releases/tag/v0.14.8"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "version": "0.14.8",
+          "date": "2026-11-17",
+          "publishedAt": "2026-11-17T10:43:21Z",
+          "buildVersion": "80",
+          "buildNumber": "80",
+          "localizedDescription": "中文\n新功能\n- 恢复 iOS 客户端，使用当前的阅读、播放、收藏、翻译、酒馆与备份功能。\n- iOS 接入应用锁、相册保存、系统分享与通知，支持音声后台播放和锁屏播放控制。\n改进\n- iOS 网页播放器使用独立临时会话，HTML 游戏按作品隔离存档。\n注意事项\n- iOS 长时间下载与录制建议保持前台；HTML 在线游戏需要 iOS 17 及以上，暂不支持 Flash。\nEnglish\nNew\n- Restore the iOS client with current reading, playback, library, translation, Tavern and backup features.\n- Add app lock, photo saving, system sharing and notifications on iOS, with background audio and lock-screen playback controls.\nImprovements\n- Isolate iOS web player sessions and keep separate storage for each HTML game.\nNotes\n- Keep iOS in the foreground for long downloads and recordings; HTML games require iOS 17 or later, and Flash is not supported.",
+          "downloadURL": "https://github.com/drdon1234/Hentai-Park/releases/download/v0.14.8/HentaiPark-0.14.8-80-ios-arm64-unsigned.ipa",
+          "size": 17908200,
+          "minOSVersion": "15.0",
+          "releaseTag": "v0.14.8",
+          "source": "https://github.com/drdon1234/Hentai-Park/releases/tag/v0.14.8"
+        }
+      ],
+      "version": "0.14.8",
+      "versionDate": "2026-11-17",
+      "versionDescription": "中文\n新功能\n- 恢复 iOS 客户端，使用当前的阅读、播放、收藏、翻译、酒馆与备份功能。\n- iOS 接入应用锁、相册保存、系统分享与通知，支持音声后台播放和锁屏播放控制。\n改进\n- iOS 网页播放器使用独立临时会话，HTML 游戏按作品隔离存档。\n注意事项\n- iOS 长时间下载与录制建议保持前台；HTML 在线游戏需要 iOS 17 及以上，暂不支持 Flash。\nEnglish\nNew\n- Restore the iOS client with current reading, playback, library, translation, Tavern and backup features.\n- Add app lock, photo saving, system sharing and notifications on iOS, with background audio and lock-screen playback controls.\nImprovements\n- Isolate iOS web player sessions and keep separate storage for each HTML game.\nNotes\n- Keep iOS in the foreground for long downloads and recordings; HTML games require iOS 17 or later, and Flash is not supported.",
+      "downloadURL": "https://github.com/drdon1234/Hentai-Park/releases/download/v0.14.8/HentaiPark-0.14.8-80-ios-arm64-unsigned.ipa",
+      "size": 17908200,
+      "minOSVersion": "15.0"
     },
     {
       "name": "HGhubX",
@@ -1476,7 +1531,7 @@
     {
       "title": "源已建立",
       "identifier": "source-created",
-      "caption": "收录 26 款应用，IPA 直连各项目 GitHub Release。",
+      "caption": "收录 27 款应用，IPA 直连各项目 GitHub Release。",
       "date": "2026-11-18",
       "tintColor": "#7C5CFF",
       "notify": false

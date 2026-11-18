@@ -2428,5 +2428,33 @@
       "size": 3886166,
       "digest": "sha256:3fb8887eee6f4de20e4b3fb0bd2bfef17a50b40aafb50800b46978580b9110cc"
     }
+  },
+  "https://github.com/huami-dev/GestaltX/releases/download/v1.1.1/GestaltX_1.1.1.ipa": {
+    "bundleIdentifier": "com.huami.gestultx",
+    "version": "1.1.1",
+    "buildVersion": "11140102",
+    "displayName": "GestaltX",
+    "minOSVersion": "26.0",
+    "size": 6774794,
+    "assetIdentity": {
+      "id": 744397028,
+      "updated_at": "2026-11-13T16:46:07Z",
+      "size": 6774794,
+      "digest": "sha256:0621b070cafacb2f1f83fad459697d02263e513b04d77b462da333c5b0a4e708"
+    }
+  },
+  "https://github.com/drdon1234/Hentai-Park/releases/download/v0.14.8/HentaiPark-0.14.8-80-ios-arm64-unsigned.ipa": {
+    "bundleIdentifier": "com.hentaipark.hentaiPark",
+    "version": "0.14.8",
+    "buildVersion": "80",
+    "displayName": "HentaiPark",
+    "minOSVersion": "15.0",
+    "size": 17908200,
+    "assetIdentity": {
+      "id": 758649238,
+      "updated_at": "2026-11-17T10:43:20Z",
+      "size": 17908200,
+      "digest": "sha256:0ef78aea143ad7bde52200ad9827c091f30165d66ce3c35338401d1e5ec407b2"
+    }
   }
 }

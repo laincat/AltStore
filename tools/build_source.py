@@ -461,6 +461,22 @@ APPS = [
         ),
     },
     {
+        "repo": "drdon1234/Hentai-Park",
+        "asset": lambda n: n.startswith("HentaiPark-") and n.endswith("-ios-arm64-unsigned.ipa"),
+        "name": "HentaiPark",
+        "developerName": "drdon1234",
+        "subtitle": "成人内容聚合客户端（18+）",
+        "category": "entertainment",
+        "tintColor": "#C96442",
+        "icon": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+        "description": (
+            "本子、里番、JAV、写真、视频、小说与游戏的聚合客户端，跨站检索，阅读、观看与收藏统一管理。"
+            "仅限成年人在当地法律允许的范围内使用；内容来自第三方站点，本应用不托管原站内容。"
+            "IPA 为未签名包，需自行签名安装；覆盖安装应保持 Bundle ID 与签名身份。\n\n"
+            "开源协议：AGPL-3.0　·　项目主页：https://github.com/drdon1234/Hentai-Park"
+        ),
+    },
+    {
         "repo": "Aidoku/Aidoku",
         "asset": lambda n: n == "Aidoku.ipa",
         "name": "Aidoku",

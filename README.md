@@ -1,6 +1,6 @@
 # Laincat 工具箱 — SideStore / AltStore / LiveContainer 源文件
 
-自用的 iOS 侧载源（源名称 **Laincat 工具箱**，图标是 [@laincat](https://github.com/laincat) 的 GitHub 头像）：收录 26 个 iOS 应用，**自动跟随上游 GitHub Release 更新**。
+自用的 iOS 侧载源（源名称 **Laincat 工具箱**，图标是 [@laincat](https://github.com/laincat) 的 GitHub 头像）：收录 27 个 iOS 应用，**自动跟随上游 GitHub Release 更新**。
 
 三个客户端都能用：**SideStore / AltStore / LiveContainer**。
 
@@ -56,6 +56,7 @@ https://github.com/laincat/AltStore/releases/download/latest/apps.json
 | Breeze | `com.zephyr.breeze` | 3.0.38 | iOS 15.0+ | 无 | [breeze-project-org/Breeze](https://github.com/breeze-project-org/Breeze) |
 | EhPanda | `app.ehpanda` | 2.8.1 | iOS 26.0+ | 无 | [EhPanda-Team/EhPanda](https://github.com/EhPanda-Team/EhPanda) |
 | GestaltX | `com.huami.gestultx` | 1.1.1 | iOS 26.0+ | 无 | [huamidev/GestaltX](https://github.com/huamidev/GestaltX) |
+| HentaiPark | `com.hentaipark.hentaiPark` | 0.14.8 | iOS 15.0+ | 无 | [drdon1234/Hentai-Park](https://github.com/drdon1234/Hentai-Park) |
 | HGhubX | `com.hghubx.app` | 2.2.0 | iOS 15.0+ | 无 | [zxsos/HGhubX](https://github.com/zxsos/HGhubX) |
 | INSAV | `com.ios151.insav` | 1.3.1 | iOS 16.0+ | 无 | [ios151/Insav-releases](https://github.com/ios151/Insav-releases) |
 | Kazumi | `com.example.kazumi` | 2.4.4 | iOS 15.0+ | 无 | [Predidit/Kazumi](https://github.com/Predidit/Kazumi) |

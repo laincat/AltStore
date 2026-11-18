@@ -6984,7 +6984,7 @@
         {
           "name": "GestaltX_1.1.1.ipa",
           "size": 6774794,
-          "url": "https://github.com/huamidev/GestaltX/releases/download/v1.1.1/GestaltX_1.1.1.ipa",
+          "url": "https://github.com/huami-dev/GestaltX/releases/download/v1.1.1/GestaltX_1.1.1.ipa",
           "id": 744397028,
           "updated_at": "2026-11-13T16:46:07Z",
           "digest": "sha256:0621b070cafacb2f1f83fad459697d02263e513b04d77b462da333c5b0a4e708"
@@ -7003,7 +7003,7 @@
         {
           "name": "GestaltX_1.0.7.ipa",
           "size": 3563948,
-          "url": "https://github.com/huamidev/GestaltX/releases/download/v1.0.7/GestaltX_1.0.7.ipa",
+          "url": "https://github.com/huami-dev/GestaltX/releases/download/v1.0.7/GestaltX_1.0.7.ipa",
           "id": 740764196,
           "updated_at": "2026-11-12T19:18:23Z",
           "digest": "sha256:226f1a6ceb5267d6dcadbb5af228c1496bb4fd45c229857b9b2e19ca12ae5f72"
@@ -7032,7 +7032,7 @@
         {
           "name": "GestaltX_1.0.5.ipa",
           "size": 2942882,
-          "url": "https://github.com/huamidev/GestaltX/releases/download/v1.0.5/GestaltX_1.0.5.ipa",
+          "url": "https://github.com/huami-dev/GestaltX/releases/download/v1.0.5/GestaltX_1.0.5.ipa",
           "id": 734018005,
           "updated_at": "2026-11-11T03:45:18Z",
           "digest": "sha256:d2bd9f80cd4c1b6c1504a9b8fc32783440e4fd4c997e98890c341f28014a1bfe"
@@ -7051,7 +7051,7 @@
         {
           "name": "GestaltX_1.0.4.ipa",
           "size": 2865180,
-          "url": "https://github.com/huamidev/GestaltX/releases/download/v1.0.4/GestaltX_1.0.4.ipa",
+          "url": "https://github.com/huami-dev/GestaltX/releases/download/v1.0.4/GestaltX_1.0.4.ipa",
           "id": 730531994,
           "updated_at": "2026-11-10T07:33:13Z",
           "digest": "sha256:d7b6e4aebf77ea42deab365af1cc206f7f84250307111ddb098242704bcb06b6"
@@ -7070,7 +7070,7 @@
         {
           "name": "GestaltX_1.0.3.ipa",
           "size": 2744822,
-          "url": "https://github.com/huamidev/GestaltX/releases/download/v1.0.3/GestaltX_1.0.3.ipa",
+          "url": "https://github.com/huami-dev/GestaltX/releases/download/v1.0.3/GestaltX_1.0.3.ipa",
           "id": 728298370,
           "updated_at": "2026-11-09T17:15:15Z",
           "digest": "sha256:7fa0e4486ea6e478fa00d7415351ffeba1fc4af72b5d067e4e2aa03ed6c45f3f"
@@ -7089,7 +7089,7 @@
         {
           "name": "GestaltX_1.0.2.ipa",
           "size": 2489231,
-          "url": "https://github.com/huamidev/GestaltX/releases/download/v1.0.2/GestaltX_1.0.2.ipa",
+          "url": "https://github.com/huami-dev/GestaltX/releases/download/v1.0.2/GestaltX_1.0.2.ipa",
           "id": 727016803,
           "updated_at": "2026-11-09T10:06:30Z",
           "digest": "sha256:4748787786d45b57ff03449669a577ab086ec8b73b96d9109d72f4f6eca13f58"
@@ -7108,7 +7108,7 @@
         {
           "name": "GestaltX_1.0.1.ipa",
           "size": 2459454,
-          "url": "https://github.com/huamidev/GestaltX/releases/download/v1.0.1/GestaltX_1.0.1.ipa",
+          "url": "https://github.com/huami-dev/GestaltX/releases/download/v1.0.1/GestaltX_1.0.1.ipa",
           "id": 726347691,
           "updated_at": "2026-11-09T05:27:52Z",
           "digest": "sha256:e4303156ab01ae23e327f014bd10ef6c1f5b81e8d10a35c15f6b907339b72546"
@@ -7910,6 +7910,217 @@
       "date": "2026-10-22",
       "published_at": "2026-10-22T04:09:31Z",
       "body": "> **已有新版本：请移步最新版 [v1.0](https://github.com/iam567/rich4-renew-app/releases/tag/v1.0.0)**（iPhone、安卓、Mac、Windows、Win7 都有安装包）。从 v1.0 起游戏里就能直接更新，不用再来这里下载新安装包。最新版本永远在 [这里](https://github.com/iam567/rich4-renew-app/releases/latest)。\n\n- 派对模式：\n  - 修正：有人中途退出（包括房主）时，其他人会一直卡在「等待 … 操作」。现在掉线 10 秒后由电脑接手，房主走了由下一位接任。\n  - 总资产最多的玩家不能被投票请出。\n  - 被请出或掉线的玩家由电脑接着玩，土地不拍卖。\n  - 派对模式里的电脑变聪明了：会留够现金防过路费、挑骰子避开对手的贵地、对领先者用卡片和道具、善用银行和股票。单人模式的电脑保持原版不变。\n  - 同一房间的玩家请都更新到 v0.6.7，新旧版本混在一起会不同步。\n- 修正：出院、出狱时的行为和原版一致——先走到门口那一格并结算（门口有地雷会被炸回去）。\n- 星球、武侠、恐龙、海岛四张主题地图的旅馆恢复原版外观。\n- 电脑版：\n  - Windows：下载 `rich4-0.6.7-windows.zip`，解压后打开 `Rich4` 文件夹，双击 `Rich4.exe`。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 `rich4-0.6.7-mac.dmg`，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew 2d2a459\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "ipas": []
+    }
+  ],
+  "drdon1234/Hentai-Park": [
+    {
+      "tag": "v0.14.8",
+      "name": "HentaiPark v0.14.8",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-17",
+      "published_at": "2026-11-17T10:43:21Z",
+      "body": "## 中文\n\n### 新功能\n- 恢复 iOS 客户端，使用当前的阅读、播放、收藏、翻译、酒馆与备份功能。\n- iOS 接入应用锁、相册保存、系统分享与通知，支持音声后台播放和锁屏播放控制。\n\n### 改进\n- iOS 网页播放器使用独立临时会话，HTML 游戏按作品隔离存档。\n\n### 注意事项\n- iOS 长时间下载与录制建议保持前台；HTML 在线游戏需要 iOS 17 及以上，暂不支持 Flash。\n\n## English\n\n### New\n- Restore the iOS client with current reading, playback, library, translation, Tavern and backup features.\n- Add app lock, photo saving, system sharing and notifications on iOS, with background audio and lock-screen playback controls.\n\n### Improvements\n- Isolate iOS web player sessions and keep separate storage for each HTML game.\n\n### Notes\n- Keep iOS in the foreground for long downloads and recordings; HTML games require iOS 17 or later, and Flash is not supported.\n",
+      "ipas": [
+        {
+          "name": "HentaiPark-0.14.8-80-ios-arm64-unsigned.ipa",
+          "size": 17908200,
+          "url": "https://github.com/drdon1234/Hentai-Park/releases/download/v0.14.8/HentaiPark-0.14.8-80-ios-arm64-unsigned.ipa",
+          "id": 758649238,
+          "updated_at": "2026-11-17T10:43:20Z",
+          "digest": "sha256:0ef78aea143ad7bde52200ad9827c091f30165d66ce3c35338401d1e5ec407b2"
+        }
+      ]
+    },
+    {
+      "tag": "v0.14.7",
+      "name": "HentaiPark v0.14.7",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-17",
+      "published_at": "2026-11-17T08:09:43Z",
+      "body": "## 中文\n\n### 改进\n- 收紧发现页顶部工具间距和右侧留白，调整品牌标题比例，减少较宽手机上不必要的两行布局，同时保留系统大字体。\n- 酒馆关联世界书页面支持导入 JSON、在线浏览、多选和预览；导入或在线新保存的世界书自动选中，确认后关联到当前会话。\n\n### 修复\n- 修复独立世界书详情缺少保存到本地与导出入口的问题。\n- 修复关联世界书列表为空时只有提示、无法继续添加的问题。\n\n## English\n\n### Improvements\n- Tighten discovery toolbar spacing and trailing padding, refine the brand title proportions, and reduce unnecessary wrapping on wider phones while respecting larger system text.\n- Add JSON import, online browsing, multiple selection and previews to Tavern lorebook selection; imported and newly saved lorebooks are selected automatically for confirmation.\n\n### Fixes\n- Restore local saving and original-file export actions in standalone lorebook details.\n- Replace the dead-end empty lorebook prompt with ways to add and link lorebooks.\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.14.6",
+      "name": "HentaiPark v0.14.6",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-17",
+      "published_at": "2026-11-17T05:28:39Z",
+      "body": "## 中文\n\n### 新功能\n- 酒馆对话支持回滚，增强分支入口与历史预览；重新打开角色卡时可继续已有会话。\n- 酒馆 AI 配置支持系统 Prompt，默认要求使用当前界面语言回复。\n\n### 改进\n- 酒馆自动保存输入草稿与生成中的回复，退出时可停止生成并保存；默认上下文提高至 65,536 Token，输出提高至 4,096 Token。\n- 调整发现页顶部按钮间距，搜图入口使用更简洁的名称。\n- 酒馆 AI 配置增加 API Key 示例提示，移除清除已保存密钥的开关；获取模型入口整合到模型输入栏。\n\n### 修复\n- 修复酒馆角色消息未参与自动内容翻译的问题。\n\n## English\n\n### New\n- Add Tavern conversation rollback, clearer branching and history previews, and options to resume previous conversations from a character card.\n- Add a configurable Tavern system prompt that defaults to replies in the current interface language.\n\n### Improvements\n- Automatically save Tavern input drafts and replies during generation, save received content on exit, and raise defaults to 65,536 context tokens and 4,096 output tokens.\n- Refine discovery header spacing and use a shorter label for image search.\n- Add an API key example in Tavern AI settings, remove the saved-key clearing switch, and place model retrieval inside the model field.\n\n### Fixes\n- Fix automatic content translation not applying to Tavern character messages.\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.14.5",
+      "name": "HentaiPark v0.14.5",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-17",
+      "published_at": "2026-11-17T03:47:19Z",
+      "body": "## 中文\n\n### 新功能\n- 酒馆设置支持获取服务提供的模型列表并选择模型。\n\n### 改进\n- 优化酒馆消息气泡、续写、重新生成和候选回复操作，并增加回到底部入口。\n- 集中展示酒馆生成、保存、无痕模式及上下文用量状态。\n- 优化发现页标题栏和内容筛选，改善窄屏与大字体布局。\n\n## English\n\n### New\n- Fetch the model list from your AI service and select a model in Tavern settings.\n\n### Improvements\n- Improve Tavern message bubbles and controls for continuing, regenerating and switching replies, with a jump-to-bottom action.\n- Group Tavern generation, save, incognito and context usage statuses in one place.\n- Improve the discovery header and content filters for narrow screens and larger text.\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.14.4",
+      "name": "HentaiPark v0.14.4",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-14",
+      "published_at": "2026-11-14T15:14:52Z",
+      "body": "## 中文\n\n### 新功能\n- 新增音声整部作品、目录与文件下载，并保存关联字幕。\n- 新增短视频下载，以及订阅帖子和吃瓜文章正文与媒体附件的离线保存。\n- 新增音画分离 HLS 视频的下载、离线播放与完整打包导出。\n\n### 改进\n- 下载页支持重新选择未完成视频的下载线路，并保留已完成分集。\n- 改善 Android 长 HLS 视频的启动与跳转流畅度。\n\n### 修复\n- 修复同清晰度或零清晰度线路下载时可能选错线路的问题。\n\n## English\n\n### New\n- Download whole audio works, folders or individual files with associated subtitles.\n- Download short videos and save subscription posts and articles with their text and media attachments for offline access.\n- Download, play offline and export complete HLS videos with separate audio and video tracks.\n\n### Improvements\n- Choose another source for unfinished video downloads while keeping completed episodes.\n- Improve startup and seeking smoothness for long HLS videos on Android.\n\n### Fixes\n- Fixed downloads selecting the wrong source when sources share a resolution or report no resolution.\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.14.3",
+      "name": "HentaiPark v0.14.3",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-14",
+      "published_at": "2026-11-14T08:02:13Z",
+      "body": "## 中文\n\n### 改进\n- Android HLS 播放支持更稳定的分片读取、断点续播和媒体窗口加载。\n- 改善 HLS 网络异常时的节点切换和播放恢复。\n- 停止维护 Windows 客户端，后续版本聚焦 Android，并为 Web 端保留规划空间。\n\n### 修复\n- 修复部分 HLS 分片响应异常导致播放失败或卡住的问题。\n- 修复媒体转封装和裁剪窗口在部分音视频流上的兼容性问题。\n\n## English\n\n### Improvements\n- Improve Android HLS playback with more reliable segment reads, seeking, and media window loading.\n- Improve CDN fallback and playback recovery when HLS network requests fail.\n- End Windows client maintenance so future releases focus on Android while leaving room for a planned Web client.\n\n### Fixes\n- Fixed playback failures or stalls caused by malformed HLS segment responses.\n- Fixed compatibility issues with media remuxing and trimmed windows for some audio and video streams.\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.14.2",
+      "name": "HentaiPark v0.14.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-14",
+      "published_at": "2026-11-14T03:38:20Z",
+      "body": "## 中文\n\n### 改进\n- 世界书详情页打开后直接展示条目内容，减少额外操作。\n- 支持 Chub AI 常见的嵌套世界书结构，并按每条目扫描深度解析触发内容。\n\n### 修复\n- 修复 Chub AI 世界书选择性条目在次关键词为空时无法触发的问题。\n- 修复展开世界书条目时可能出现界面错误的问题。\n- 修复酒馆提示词、会话和网络请求处理中的兼容性问题。\n\n### 插件更新\n- Chub AI 更新至 0.0.4。\n- Character Tavern 更新至 0.0.4。\n- RisuRealm 更新至 0.0.2。\n\n## English\n\n### Improvements\n- Open lorebook details directly to the entry contents with fewer extra steps.\n- Support common nested Chub AI lorebook structures and per-entry scan depth matching.\n\n### Fixes\n- Fixed Chub AI selective entries failing to trigger when secondary keywords are empty.\n- Fixed an interface error that could occur while expanding lorebook entries.\n- Fixed compatibility issues in Tavern prompts, conversations, and network request handling.\n\n### Plugin updates\n- Updated Chub AI to 0.0.4.\n- Updated Character Tavern to 0.0.4.\n- Updated RisuRealm to 0.0.2.\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.14.1",
+      "name": "HentaiPark v0.14.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-14",
+      "published_at": "2026-11-14T02:08:11Z",
+      "body": "## 中文\n\n### 改进\n- 优化酒馆角色卡和世界书详情页操作布局，收藏保留在主操作区，保存与原文件导出移至更多菜单。\n- 世界书改用独立的分段浏览页面，大型世界书按需加载词条，减少详情页展开和滚动时的卡顿。\n- 酒馆详情、会话标题、世界书内容和已保存资源接入公共翻译能力。\n- Character Tavern 支持完整分页、排序、标签包含与排除、令牌长度、世界书和原创内容筛选。\n- 酒馆书库提供角色卡、世界书、会话与备份的分开导入入口，并校验导入类型。\n\n### 插件更新\n- 新增 RisuRealm 源 0.0.1，支持角色卡与世界书搜索、详情和访客下载。\n- 更新 Chub AI 源至 0.0.3，补充酒馆入口与筛选文案翻译。\n- 更新 Character Tavern 源至 0.0.3，支持分页、官方筛选和多语言文案。\n\n### 注意事项\n- 酒馆需自行配置 AI 服务；消息、角色设定、用户人格及匹配的世界书内容会发送至所选服务，可能产生费用。\n- 会话导出与书库备份未加密，应妥善保管；AI 服务配置和密钥不包含在备份中。\n\n## English\n\n### Improvements\n- Refined Tavern character and lorebook detail actions: favorites stay in the primary action area, while local save and original-file export move into More.\n- Moved lorebook entries to a separate segmented viewer that loads large books on demand, reducing detail-page layout and scrolling jank.\n- Added shared translation support to Tavern details, conversation titles, lorebook content, and saved resources.\n- Added full Character Tavern pagination, sorting, included and excluded tags, token-length, lorebook, and original-content filters.\n- Added separate import entry points for character cards, lorebooks, conversations, and backups with type validation.\n\n### Plugin updates\n- Added the RisuRealm source 0.0.1 with character and lorebook search, details, and guest downloads.\n- Updated Chub AI to 0.0.3 with translated Tavern entry and filter labels.\n- Updated Character Tavern to 0.0.3 with pagination, official filters, and multilingual labels.\n\n### Notes\n- Tavern requires your own AI service. Messages, character settings, user personas, and matched lorebook content are sent to that service and may incur charges.\n- Conversation exports and library backups are unencrypted and should be stored safely. AI service settings and keys are excluded from backups.\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.14.0",
+      "name": "HentaiPark v0.14.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-13",
+      "published_at": "2026-11-13T21:09:16Z",
+      "body": "## 中文\n\n### 新功能\n- 新增酒馆域，接入 Chub AI 与 Character Tavern，支持浏览、搜索、收藏和导入导出角色卡与世界书。\n- 新增内置角色聊天器，支持自配 AI 服务、用户人格、开场白选择、世界书关联和流式回复。\n- 支持编辑消息、续写、重新生成与候选切换、会话分支，以及包含角色和世界书的会话导入导出。\n- 酒馆资源、人格和会话纳入书库备份，无痕模式下不自动保存对话变更。\n\n### 改进\n- 聊天消息通过头像、名称和布局区分角色与用户，统一酒馆详情、会话与设置页面的视觉风格。\n- 生成中支持停止和回看历史，回复截断与保存失败提供明确提示和恢复入口。\n- 创作社区移至默认域顺序末尾。\n\n### 注意事项\n- 酒馆需自行配置 AI 服务；消息、角色设定、用户人格及匹配的世界书内容会发送至所选服务，可能产生费用。\n- 会话导出与书库备份未加密，应妥善保管；AI 服务配置和密钥不包含在备份中。部分复杂世界书扩展暂不支持。\n\n## English\n\n### New\n- Added the Tavern domain with Chub AI and Character Tavern, including browsing, searching, favorites, and character card and lorebook import/export.\n- Added built-in character chat with your own AI service, user personas, greeting selection, attached lorebooks, and streaming replies.\n- Added message editing, continuation, regeneration and reply variants, conversation branches, and conversation import/export including character resources and lorebooks.\n- Tavern resources, personas, and conversations are included in library backups; incognito mode does not automatically save conversation changes.\n\n### Improvements\n- Avatars, names, and layout distinguish characters from users, with consistent styling across Tavern details, conversations, and settings.\n- Stop generation or review earlier messages while streaming, with clear output-limit and save-failure feedback and recovery actions.\n- Moved Creative Community to the end of the default domain order.\n\n### Notes\n- Tavern requires your own AI service. Messages, character settings, user personas, and matched lorebook content are sent to that service and may incur charges.\n- Conversation exports and library backups are unencrypted and should be stored safely. AI service settings and keys are excluded from backups. Some complex lorebook extensions are not supported.\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.13.7",
+      "name": "HentaiPark v0.13.7",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-13",
+      "published_at": "2026-11-13T11:37:42Z",
+      "body": "## 中文\n\n### 改进\n- 音声播放页在小高度窗口和大字体下支持滚动，字幕与播放控制更易访问。\n- 推荐作品按需加载，搜索、更新与存储页面加载失败后可重试。\n\n### 修复\n- 修复部分列表遇到空页或重复游标时提前结束、遗漏后续结果的问题。\n- 修复视频切集、返回播放页和倍速设置失败后的状态恢复与资源释放问题。\n- 修复下载、录制与 CBZ 导入中的并发操作和异常恢复问题，避免覆盖未完成的数据。\n- 修复损坏配置文件恢复时覆盖此前保留原件的问题，并改进反搜历史加载失败后的重试。\n- 在线游戏存档导入校验游戏与网站来源，避免向错误游戏或已跳转的网站写入存档。\n- 修复登录、资源获取、备份与插件管理中的重复操作及页面退出后的状态更新问题。\n\n### 插件更新\n- 无码厂商 0.0.12、哔咔漫画 0.0.13、Eporner 0.0.12、电报 0.0.13：修复目录与分页完整性。\n- MissAV 0.0.14、PornPics 0.0.12、Literotica 0.0.10：推荐内容独立加载，失败时可重试。\n- 禁漫天堂 0.0.11：旧线路不可用时重新获取站点线路。\n- SWAG 短视频 0.0.7：请求失败时正常提示错误，避免显示为空列表。\n- XVideos 0.0.13：修复推荐内容接口识别错误。\n\n## English\n\n### Improvements\n- Voice playback pages scroll in short windows and with large text, keeping subtitles and playback controls accessible.\n- Related works load on demand, and failed searches, update checks, and storage measurements can be retried.\n\n### Fixes\n- Fixed lists ending early or missing later results after empty pages or repeated cursors.\n- Fixed state recovery and resource cleanup when switching episodes, returning to playback, or changing playback speed fails.\n- Fixed concurrent operations and failure recovery in downloads, recordings, and CBZ imports to avoid overwriting incomplete data.\n- Fixed recovery of damaged configuration files overwriting previously preserved originals, and improved retrying failed reverse-search history loads.\n- Game save imports validate the game and website origin to prevent writing saves to the wrong game or a redirected website.\n- Fixed repeated operations and state updates after leaving login, resource retrieval, backup, and plugin management pages.\n\n### Plugin updates\n- Uncensored Studios 0.0.12, PicACG 0.0.13, Eporner 0.0.12, Telegram 0.0.13: fixed catalog and pagination completeness.\n- MissAV 0.0.14, PornPics 0.0.12, Literotica 0.0.10: related content loads independently and supports retrying failures.\n- JMComic 0.0.11: refreshes site routes when old routes become unavailable.\n- SWAG Short Videos 0.0.7: failed requests report errors instead of appearing as",
+      "ipas": []
+    },
+    {
+      "tag": "v0.13.6",
+      "name": "HentaiPark v0.13.6",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-13",
+      "published_at": "2026-11-13T03:14:49Z",
+      "body": "## 中文\n\n### 新功能\n- 移动端游戏资源通过弹窗展示分享链接、提取码与解压密码，支持分别复制和一键复制全部。\n\n### 改进\n- 补齐阅读、下载、资料、音声字幕与弹幕等页面的文本翻译，已命中词包的内容直接使用译名，编号、链接、密码和账号保持原文。\n- 屏蔽预设区分普通规则与扩大范围规则，支持分别编辑和删除，减少歧义词造成的误判。\n- 次元茶馆与 Literotica Audio 站内使用文字列表，搜索与筛选结果保持一致；主页和域页继续使用卡片。\n- 无封面作品使用手柄、耳机、书本等内容图标，退出账号时显示处理进度并防止重复点击。\n- 播放支持原站返回的新 CDN 地址，减少站点更换播放域名或表单参数造成的失效。\n\n### 修复\n- EH 联想支持本地词库原词、译名及简繁输入匹配。\n- 修复结构化标签缓存与详情屏蔽遗漏，统一屏蔽提示并补齐页面临时显隐入口。\n- 详情顶部标题与副标题完整换行，避免长译文被行数限制截断。\n- 修复次元茶馆回复获取分享链接时提示站点表单地址无效的问题。\n- 修复部分站点表单、分页与跳转地址变化后无法继续浏览的问题。\n\n## English\n\n### New\n- Mobile game resources now show sharing links, access codes, and archive passwords in a dialog, with individual and copy-all actions.\n\n### Improvements\n- Expanded text translation across reading, downloads, metadata, voice subtitles, and live comments. Dictionary matches use their translations directly, while IDs, links, passwords, and accounts remain unchanged.\n- Blocking presets now separate standard and expanded rules, with independent editing and deletion to reduce ambiguous matches.\n- Cycg and Literotica Audio now use text lists within the site, including search and filtered results; Home and domain pages retain cards.\n- Works without covers use content icons such as gamepads, headphones, and books. Signing out shows progress and prevents repeated taps.\n- Playback accepts new CDN addresses returned by sites, reducing failures when playback domains or form parameters change.\n\n### Fixes\n- EH suggestions now match local original names, translations, and simplified or traditional Chinese input.\n- Fixed lost structured tags in cached lists and missing detail filtering, with consistent notices and temporary visibility controls.\n- Detail titles and subtitles wrap fully, avoiding line limits that cut off longer translations.\n- Fixed the invalid site form address error when replying to retrieve sharing links on Cycg.\n- Fixed browsing failures caused by changes to site forms, pagination, and redirect addresses.\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.13.5",
+      "name": "HentaiPark v0.13.5",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-13",
+      "published_at": "2026-11-13T01:01:31Z",
+      "body": "## 中文\n\n### 修复\n- 修复部分站点退出登录后仍保留登录状态、刷新后重新显示已登录的问题。\n- 修复退出登录依赖原站联网验证，导致网络异常或网页验证时无法正常完成退出的问题。\n- 修复后台浏览器验证过早停止重试，导致次元茶馆等站点登录或内容读取失败的问题。\n\n## English\n\n### Fixes\n- Fixed some sites retaining their login session after signing out and showing the account as signed in again after refreshing.\n- Fixed sign-out depending on an online account check, which could prevent completion during network failures or browser verification.\n- Fixed background browser verification stopping retries too early, causing sign-in or content loading to fail on Cycg and other sites.\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.13.4",
+      "name": "HentaiPark v0.13.4",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-12",
+      "published_at": "2026-11-12T12:00:02Z",
+      "body": "## 中文\n\n### 修复\n- 修复在线游戏及网页播放中空白子框架被误拦截，导致部分短链接验证无法完成的问题。\n- 修复次元茶馆登录后默认游戏列表无法读取的问题，默认展示热门游戏，保留最新列表与分页。\n- 改善浏览器验证交互，避免验证框尚未就绪时的一次输入使后续验证永久停止。\n\n### 插件更新\n- 次元茶馆 0.0.13。\n\n## English\n\n### Fixes\n- Fixed blank subframes being blocked in online games and web playback, preventing some short-link verification flows from completing.\n- Fixed the default game list failing after signing in to Cycg. Browsing now defaults to popular games, with the latest list and pagination retained.\n- Improved browser verification so an input sent before a challenge is ready does not permanently stop further verification attempts.\n\n### Plugin updates\n- Cycg 0.0.13.\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.13.3",
+      "name": "HentaiPark v0.13.3",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-12",
+      "published_at": "2026-11-12T11:06:10Z",
+      "body": "## 中文\n\n### 改进\n- 重做纯音频播放界面，缩小控制区、扩大字幕区域，独立展示选集，将后台播放和拼接放入播放设置。\n- 拼接播放按曲目加载音频和字幕，减少开启等待；各曲时长完整后显示总进度。\n- 音声目录恢复卡片展示，无封面时显示耳机图标，目录内保留分层浏览。\n- 视频信息区增加常驻选集入口，缩短标题与简介之间的留白；普通点播画面支持左右双击快退和快进。\n- 短剧播放适应播放接口返回的 CDN 地址变化。\n\n### 修复\n- 修复 ASMRHoney 普通作品误入目录导致无法播放的问题。\n- 修复 Hentai ASMR 默认只展示中文字幕分类的问题，默认浏览全部作品。\n- 改善 ASMR Gay、ASMR Moon 搜索，默认查找目录并提供文件筛选。\n- 修复 Honey 筛选候选不随地区和内容类型联动的问题，合并 EroASMR 重复浏览入口。\n\n### 插件更新\n- ASMRHoney 0.0.4、ASMR Gay 0.0.4、ASMR Moon 0.0.4、Hentai ASMR 0.0.3、EroASMR 0.0.3。\n- 黄豆短剧 0.0.11、黄果短剧 0.0.14、91短剧 0.0.11。\n\n### 注意事项\n- 未读取所有曲目时显示当前曲目进度，可通过选集或字幕中的曲目标题跳转；切换曲目可能短暂缓冲。\n\n## English\n\n### Improvements\n- Redesigned audio-only playback with compact controls, more subtitle space, a separate track selector, and background and joined playback in settings.\n- Joined playback loads audio and subtitles per track to reduce startup waits; the combined timeline appears once all track durations are known.\n- Restored cards for audio directories, with headphone icons for missing covers and hierarchical browsing inside folders.\n- Added a persistent episode selector below videos, reduced the title-to-description gap, and enabled double-tap seeking at the sides of regular on-demand videos.\n- Short-drama playback adapts to CDN addresses returned by playback services.\n\n### Fixes\n- Fixed ordinary ASMRHoney works incorrectly opening as directories and failing to play.\n- Fixed Hentai ASMR defaulting to the Chinese-subtitled category; browsing now defaults to all works.\n- Improved ASMR Gay and ASMR Moon search with directories selected by default and an optional file filter.\n- Fixed Honey filter choices not following region and content type, and merged duplicate EroASMR browsing entries.\n\n### Plugin updates\n- ASMRHoney 0.0.4, ASMR Gay 0.0.4, ASMR Moon 0.0.4, Hentai ASMR 0.0.3, EroASMR 0.0.3.\n- Huangdou 0.0.11, Huangguo 0.0.14, 91 short dramas 0.0.11.\n\n### Notes\n- Until all tracks have been opened, the progress bar shows the current track. Use the track selector or track headings in subtitles to ",
+      "ipas": []
+    },
+    {
+      "tag": "v0.13.2",
+      "name": "HentaiPark v0.13.2",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-12",
+      "published_at": "2026-11-12T10:02:03Z",
+      "body": "## 中文\n\n### 新功能\n- 多集音声支持可选拼接播放，统一音频进度与字幕时间轴。\n- ASMR Gay、ASMR Moon 支持树状目录浏览，搜索结果也可展开目录。\n\n### 修复\n- 修复图片反搜结果未复用图片缓存、吃瓜历史封面缺失的问题。\n- 修复重叠页和空页导致列表或音声目录提前停止加载的问题。\n- 修复 ASMRHoney 合集无法打开的问题，支持嵌套合集及图集。\n- 修复音声字幕高亮越界、目录展开状态恢复异常及快速切曲定位错误。\n- 恢复黄豆、黄果和 91 短剧播放。\n- 修复部分在线游戏跳转失败及重启应用后重复下载大型资源的问题。\n\n### 插件更新\n- ASMRHoney 0.0.3、ASMR Gay 0.0.3、ASMR Moon 0.0.3。\n- 黄豆短剧 0.0.10、黄果短剧 0.0.13、91短剧 0.0.10。\n- itch.io 0.0.3。\n\n### 注意事项\n- 拼接播放在切换曲目时可能短暂缓冲；在线游戏复用资源后仍可能需要解压和初始化。\n\n## English\n\n### New\n- Added optional joined playback for multi-track audio works, with a unified playback and subtitle timeline.\n- Added expandable directory browsing for ASMR Gay and ASMR Moon, including search results.\n\n### Fixes\n- Fixed image cache reuse in reverse image search and missing covers in article history.\n- Fixed overlapping or empty pages prematurely stopping lists and audio directories.\n- Fixed ASMRHoney collections, including nested collections and photo galleries.\n- Fixed overflowing subtitle highlights, restored directory expansion states, and seeking during rapid track changes.\n- Restored playback for Huangdou, Huangguo, and 91 short dramas.\n- Fixed redirects for some online games and repeated downloads of large resources after restarting the app.\n\n### Plugin updates\n- ASMRHoney 0.0.3, ASMR Gay 0.0.3, ASMR Moon 0.0.3.\n- Huangdou 0.0.10, Huangguo 0.0.13, 91 short dramas 0.0.10.\n- itch.io 0.0.3.\n\n### Notes\n- Joined playback may briefly buffer between tracks; online games may still unpack and initialize cached resources.\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.13.1",
+      "name": "HentaiPark v0.13.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-10",
+      "published_at": "2026-11-10T09:27:30Z",
+      "body": "## 中文\n\n### 改进\n- 移除互动立绘内容域及其相关插件与入口。\n\n### 修复\n- 修复已安装误发高版本后无法发现官方最新版本更新的问题；官方最新版本号较低时允许更新，并在安装前明确提示版本号回退。\n- 修复音声与在线游戏插件的最低应用版本要求错误，恢复在 0.13.0 及以上版本中的安装与使用。\n\n### 插件更新\n- Hentai ASMR 0.0.2、ASMRHoney 0.0.2、Literotica Audio 0.0.2、JASMR 0.0.2、ASMR Gay 0.0.2、ASMR Moon 0.0.2、EroASMR 0.0.2：修正最低应用版本要求。\n- itch.io 0.0.2、Gamcore 0.0.2：修正最低应用版本要求。\n\n## English\n\n### Improvements\n- Removed the interactive artwork domain and its related plugins and entry points.\n\n### Fixes\n- Fixed update detection after installing an accidentally published higher version; updates to the latest official release are now available even when its version number is lower, with an explicit rollback notice before installation.\n- Corrected the minimum app version requirements for audio and online game plugins, restoring installation and use on 0.13.0 and later.\n\n### Plugin updates\n- Hentai ASMR 0.0.2, ASMRHoney 0.0.2, Literotica Audio 0.0.2, JASMR 0.0.2, ASMR Gay 0.0.2, ASMR Moon 0.0.2, EroASMR 0.0.2: Corrected the minimum app version requirements.\n- itch.io 0.0.2, Gamcore 0.0.2: Corrected the minimum app version requirements.\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.13.0",
+      "name": "HentaiPark v0.13.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-10",
+      "published_at": "2026-11-10T07:20:19Z",
+      "body": "## 中文\n\n### 新功能\n- 新增音声内容域，支持目录筛选、连续播放、同步字幕与可选后台播放。\n- 新增在线游戏内容域，支持网页游戏、全屏与虚拟按键。\n- 新增互动立绘内容域，支持动态立绘浏览与原站交互。\n\n### 改进\n- 排行榜与作品资料统一使用资料插件更新频道。\n\n### 修复\n- 移除已停用的排行榜频道请求，避免影响官方插件更新与撤回检查。\n- 修复备份恢复、书库写入失败重试及阅读状态同步问题。\n- 修复离线导出遗漏、更换目录后旧导出不可见和录制内容离线读取问题。\n- 修复订阅分页、帖子定位与错误标记已读的问题。\n- 修复直播初始化、浏览器超时、朗读语言及筛选联动问题。\n- 登录凭据默认隐藏，支持显隐切换与正确的自动填充类型。\n\n### 插件更新\n- Telegram 0.0.12：修复服务消息导致分页提前结束的问题。\n\n## English\n\n### New\n- Added the audio domain with directory filters, continuous playback, synchronized subtitles and optional background playback.\n- Added online games with fullscreen and virtual controls.\n- Added interactive artwork with animated artwork and original-site interactions.\n\n### Improvements\n- Rankings and work information now share the metadata plugin update channel.\n\n### Fixes\n- Removed requests to the retired rankings channel so it no longer affects official plugin updates and withdrawal checks.\n- Fixed backup restoration, library write retries and reading-state synchronization.\n- Fixed incomplete exports, missing previous exports after directory changes and offline access to recordings.\n- Fixed subscription pagination, post navigation and premature read marking.\n- Fixed live playback initialization, browser timeouts, speech languages and dependent filters.\n- Login credentials are hidden by default with visibility controls and appropriate autofill types.\n\n### Plugin updates\n- Telegram 0.0.12: Fixed pagination stopping early on service messages.\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.12.0",
+      "name": "HentaiPark v0.12.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-08",
+      "published_at": "2026-11-08T16:32:16Z",
+      "body": "## 中文\n\n### 新功能\n- 新增 xHamster，支持推荐、搜索和多清晰度视频播放。\n\n### 修复\n- 修复 E-Hentai 本地下载在图片解析或会话 key 失效时失败的问题，失败后可继续下载。\n\n### 插件更新\n- E-Hentai 0.0.20：修复画廊图片解析和本地下载恢复。\n\n## English\n\n### New\n- Added xHamster with recommendations, search and multiple video qualities.\n\n### Fixes\n- Fixed E-Hentai offline downloads failing on image parsing or expired session keys, and allowed failed downloads to resume.\n\n### Plugin updates\n- E-Hentai 0.0.20: fixed gallery image parsing and offline download recovery.\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.11.12",
+      "name": "HentaiPark v0.11.12",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-08",
+      "published_at": "2026-11-08T14:43:39Z",
+      "body": "## 中文\n\n### 改进\n- 小说书本卡片只在封面下方显示标题；主页和域页支持持续横向加载。\n- 下载页批量暂停和继续采用图标加文字按钮。\n- 收藏更新优先检查可能新增章节的作品，减少无效请求。\n- 屏蔽词组支持独立开启强力模式，补充关键词并减少默认规则的误判。\n- 站点页新增回到顶部和跳转原站页码入口，修改站点配置后自动刷新相关列表。\n- 改善长列表滚动和视频连接异常后的恢复体验。\n\n### 修复\n- 短视频及吃瓜视频支持左右边缘双击快退或快进五秒，并保存播放进度。\n- 修复播放器缓冲期间切换应用后的播放状态显示。\n- 吃瓜帖子增加原网页入口；没有视频封面时显示黑底，不再使用邻近图片补位。\n- 自动翻译失败保留原文，不再弹出容易与站点故障混淆的全局提示；主动翻译限流时明确提示来源。\n\n### 插件更新\n- Pornhub 0.0.12：修复作者解析，支持进入作者主页浏览作品。\n- 51吃瓜网、黑料网、每日大赛 0.0.9：修复部分列表封面识别，改进原站视频封面解析。\n\n## English\n\n### Improvements\n- Novel book cards show titles only below the cover; home and domain shelves support continued horizontal loading.\n- Bulk pause and resume actions on the downloads page use icons with text.\n- Library updates focus on works that may receive new chapters, reducing unnecessary requests.\n- Each block preset has an independent strong mode, with expanded keywords and fewer ambiguous default matches.\n- Source pages add scroll-to-top and original-page navigation, and related lists refresh after source settings change.\n- Improved long-list scrolling and recovery from video connection failures.\n\n### Fixes\n- Short videos and feed videos support double-tapping the left or right edge to seek five seconds and retain playback progress.\n- Fixed playback state display after switching apps while a video is buffering.\n- Feed posts add an original-page action; videos without a poster use a black background instead of a nearby image.\n- Failed automatic translations retain the original text without a global error that could be mistaken for a source failure; manual translation rate limits identify the translation service.\n\n### Plugin updates\n- Pornhub 0.0.12: fixed author parsing and added browsing of creator pages.\n- 51Chigua, Heiliao and Meiri Dasai 0.0.9: fixed some listing covers and improved parsing of original video posters.\n",
+      "ipas": []
+    },
+    {
+      "tag": "v0.11.11",
+      "name": "HentaiPark v0.11.11",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-04",
+      "published_at": "2026-11-04T05:28:51Z",
+      "body": "## 中文\n\n### 改进\n- 主页和域页的小说采用竖版书本卡片，支持横向滑动浏览。\n- 减少自动翻译完成后重复构建时的计算和刷新。\n- 频道与作者搜索保留原站搜索结果，并改进加载失败时的提示。\n\n### 修复\n- 修复漫画上下集跳转时继承当前章节页码，以及旧章节延迟回调干扰新章节的问题。\n- 修复视频开头和接近结尾的未完成进度无法准确恢复的问题。\n- 修复已加入频道和已关注作者页面顶部内容被遮挡的问题。\n- 修复 E-Hentai 热门和排行榜筛选后离开原栏目范围的问题。\n\n### 插件更新\n- E-Hentai 0.0.19：热门和排行榜支持在原栏目内筛选。\n- Reddit 0.0.16：指定社区改用网页加载帖子，支持图片、视频、纯文本和分页，订阅社区不再自动执行原站加入操作。\n- X 0.0.25：修正搜索请求方式，改进账号状态检查及频道、作者搜索结果处理。\n\n## English\n\n### Improvements\n- Novels on the home and domain pages use portrait book cards with horizontal scrolling.\n- Reduced repeated computation and refreshes when rebuilding completed automatic translations.\n- Channel and author searches preserve results returned by the site and provide clearer loading errors.\n\n### Fixes\n- Fixed chapter navigation inheriting the current comic chapter's page and delayed callbacks affecting the next chapter.\n- Fixed unfinished video progress near the beginning or end failing to resume accurately.\n- Fixed content being obscured at the top of joined-channel and followed-author pages.\n- Fixed E-Hentai popular and ranking filters switching away from the selected feed.\n\n### Plugin updates\n- E-Hentai 0.0.19: filter popular and ranking results within their original feeds.\n- Reddit 0.0.16: load community posts from webpages with images, videos, text and pagination; saving a community subscription no longer automatically joins it on Reddit.\n- X 0.0.25: corrected search requests and improved account checks and channel and author search result handling.\n",
       "ipas": []
     }
   ]
