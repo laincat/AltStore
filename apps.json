@@ -428,7 +428,7 @@
       "developerName": "ARMSX2",
       "subtitle": "PlayStation 3 模拟器（iOS 预览版）",
       "localizedDescription": "基于 RPCS3 的 PlayStation 3 模拟器 iOS 移植版，需 A14 或更新芯片、iOS 17.4 及以上。运行游戏还需要开启 JIT（应用自带启用器，需配对文件或 StikDebug），以及自行准备 PS3 系统软件与游戏镜像，两者均不随包提供。\n\n上游只发布 ad hoc 签名的 iOS 预览构建，用 AltStore / SideStore 重签可保留其 entitlements；当成完全未签名的包处理会丢失权限并在启动时退出。0.0.2 起包名改为 com.armsx3.ARMSX3，旧版存档与设置不会自动迁移，升级前请在旧版内使用「备份与恢复」导出。\n\n开源协议：GPL-2.0　·　项目主页：https://github.com/ARMSX2/ARMSX3",
-      "iconURL": "https://raw.githubusercontent.com/ARMSX2/ARMSX3/ios-0.0.2/ios/app/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "iconURL": "https://raw.githubusercontent.com/ARMSX2/ARMSX3/ios-0.0.3/ios/app/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
       "tintColor": "#0EA5A4",
       "category": "games",
       "appPermissions": {
@@ -440,41 +440,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "0.0.2",
-              "date": "2026-11-10",
-              "publishedAt": "2026-11-10T13:03:24Z",
-              "buildVersion": "2",
-              "buildNumber": "2",
-              "localizedDescription": "🧪 预发布 ios-0.0.2（2026-11-10）\n\nChanges since 0.0.1. Thanks to everyone who sent problem reports, since most of these fixes came from them. This is a beta: the JIT changes ran on an iPhone, and everything else was tested on a Mac. Please send a report if something works worse than in 0.0.1.\r\nRequirements and install\r\n\r\nARMSX3 for iOS needs an iPhone or iPad with an A14 chip or newer, on iOS 17.4 or later. It isn't on the App Store, so install the IPA with SideStore, AltStore or LiveContainer. JIT needs a pairing file for your device (see Pairing files below).\r\nUpdate LiveContainer first\r\n\r\nIf you run ARMSX3 inside LiveContainer, update LiveContainer to 3.8.13 or later before you install this build. That is the nightly buil…",
-              "downloadURL": "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.2/ARMSX3-0.0.2.ipa",
-              "size": 40900099,
+              "version": "0.0.3",
+              "date": "2026-11-17",
+              "publishedAt": "2026-11-17T22:24:53Z",
+              "buildVersion": "5",
+              "buildNumber": "5",
+              "localizedDescription": "🧪 预发布 ios-0.0.3（2026-11-17）\n\nXMB mode\r\n\r\nThe PS3's own menu. ARMSX3 can now look and work like the PS3's XMB: the wave and sparkles, the boot, every column with its rows and settings, music with the Waves, Valley and Gaia visualizers, a video player, a photo viewer with slideshows, the XMB keyboard, and the in-game XMB with save states, Change Disc and Turn Off System. The icons, words, font and sounds come from your installed firmware, and a PS3 theme brings its own. Turn it on with the wave button in the library bar or in the last step of setup. On an iPhone it holds the screen in landscape, and while a game runs it lets go of its wave to leave the game more memory.\r\n\r\nBuilt-in Track and Turned off. The Music column p…",
+              "downloadURL": "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.3/ARMSX3-0.0.3.ipa",
+              "size": 46182129,
               "minOSVersion": "17.4",
-              "releaseTag": "ios-0.0.2",
-              "source": "https://github.com/ARMSX2/ARMSX3/releases/tag/ios-0.0.2"
+              "releaseTag": "ios-0.0.3",
+              "source": "https://github.com/ARMSX2/ARMSX3/releases/tag/ios-0.0.3"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "0.0.2",
-          "date": "2026-11-10",
-          "publishedAt": "2026-11-10T13:03:24Z",
-          "buildVersion": "2",
-          "buildNumber": "2",
-          "localizedDescription": "🧪 预发布 ios-0.0.2（2026-11-10）\n\nChanges since 0.0.1. Thanks to everyone who sent problem reports, since most of these fixes came from them. This is a beta: the JIT changes ran on an iPhone, and everything else was tested on a Mac. Please send a report if something works worse than in 0.0.1.\r\nRequirements and install\r\n\r\nARMSX3 for iOS needs an iPhone or iPad with an A14 chip or newer, on iOS 17.4 or later. It isn't on the App Store, so install the IPA with SideStore, AltStore or LiveContainer. JIT needs a pairing file for your device (see Pairing files below).\r\nUpdate LiveContainer first\r\n\r\nIf you run ARMSX3 inside LiveContainer, update LiveContainer to 3.8.13 or later before you install this build. That is the nightly buil…",
-          "downloadURL": "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.2/ARMSX3-0.0.2.ipa",
-          "size": 40900099,
+          "version": "0.0.3",
+          "date": "2026-11-17",
+          "publishedAt": "2026-11-17T22:24:53Z",
+          "buildVersion": "5",
+          "buildNumber": "5",
+          "localizedDescription": "🧪 预发布 ios-0.0.3（2026-11-17）\n\nXMB mode\r\n\r\nThe PS3's own menu. ARMSX3 can now look and work like the PS3's XMB: the wave and sparkles, the boot, every column with its rows and settings, music with the Waves, Valley and Gaia visualizers, a video player, a photo viewer with slideshows, the XMB keyboard, and the in-game XMB with save states, Change Disc and Turn Off System. The icons, words, font and sounds come from your installed firmware, and a PS3 theme brings its own. Turn it on with the wave button in the library bar or in the last step of setup. On an iPhone it holds the screen in landscape, and while a game runs it lets go of its wave to leave the game more memory.\r\n\r\nBuilt-in Track and Turned off. The Music column p…",
+          "downloadURL": "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.3/ARMSX3-0.0.3.ipa",
+          "size": 46182129,
           "minOSVersion": "17.4",
-          "releaseTag": "ios-0.0.2",
-          "source": "https://github.com/ARMSX2/ARMSX3/releases/tag/ios-0.0.2"
+          "releaseTag": "ios-0.0.3",
+          "source": "https://github.com/ARMSX2/ARMSX3/releases/tag/ios-0.0.3"
         }
       ],
-      "version": "0.0.2",
-      "versionDate": "2026-11-10",
-      "versionDescription": "🧪 预发布 ios-0.0.2（2026-11-10）\n\nChanges since 0.0.1. Thanks to everyone who sent problem reports, since most of these fixes came from them. This is a beta: the JIT changes ran on an iPhone, and everything else was tested on a Mac. Please send a report if something works worse than in 0.0.1.\r\nRequirements and install\r\n\r\nARMSX3 for iOS needs an iPhone or iPad with an A14 chip or newer, on iOS 17.4 or later. It isn't on the App Store, so install the IPA with SideStore, AltStore or LiveContainer. JIT needs a pairing file for your device (see Pairing files below).\r\nUpdate LiveContainer first\r\n\r\nIf you run ARMSX3 inside LiveContainer, update LiveContainer to 3.8.13 or later before you install this build. That is the nightly buil…",
-      "downloadURL": "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.2/ARMSX3-0.0.2.ipa",
-      "size": 40900099,
+      "version": "0.0.3",
+      "versionDate": "2026-11-17",
+      "versionDescription": "🧪 预发布 ios-0.0.3（2026-11-17）\n\nXMB mode\r\n\r\nThe PS3's own menu. ARMSX3 can now look and work like the PS3's XMB: the wave and sparkles, the boot, every column with its rows and settings, music with the Waves, Valley and Gaia visualizers, a video player, a photo viewer with slideshows, the XMB keyboard, and the in-game XMB with save states, Change Disc and Turn Off System. The icons, words, font and sounds come from your installed firmware, and a PS3 theme brings its own. Turn it on with the wave button in the library bar or in the last step of setup. On an iPhone it holds the screen in landscape, and while a game runs it lets go of its wave to leave the game more memory.\r\n\r\nBuilt-in Track and Turned off. The Music column p…",
+      "downloadURL": "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.3/ARMSX3-0.0.3.ipa",
+      "size": 46182129,
       "minOSVersion": "17.4"
     },
     {
@@ -1477,7 +1477,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 26 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "tintColor": "#7C5CFF",
       "notify": false
     }

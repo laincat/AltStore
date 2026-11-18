@@ -2416,6 +2416,25 @@
   ],
   "ARMSX2/ARMSX3": [
     {
+      "tag": "ios-0.0.3",
+      "name": "ARMSX3 for iOS 0.0.3 beta",
+      "pre": true,
+      "draft": false,
+      "date": "2026-11-17",
+      "published_at": "2026-11-17T22:24:53Z",
+      "body": "## XMB mode\r\n\r\n**The PS3's own menu.** ARMSX3 can now look and work like the PS3's XMB: the wave and sparkles, the boot, every column with its rows and settings, music with the Waves, Valley and Gaia visualizers, a video player, a photo viewer with slideshows, the XMB keyboard, and the in-game XMB with save states, Change Disc and Turn Off System. The icons, words, font and sounds come from your installed firmware, and a PS3 theme brings its own. Turn it on with the wave button in the library bar or in the last step of setup. On an iPhone it holds the screen in landscape, and while a game runs it lets go of its wave to leave the game more memory.\r\n\r\n**Built-in Track and Turned off.** The Music column plays a built-in track, and Diagnostics lists a session you ended with Turn Off System as Turned off, where it said Closed by iOS.\r\n\r\n## Black Ops III\r\n\r\n**No more freezes after the profile loads or in Zombies.** The game froze a few seconds after your profile loaded, and in the Zombies menu, on two races in its own job code. Zombies runs as a separate program the old fix never reached. Both fixes now apply to BLES02166 and BLUS31527 on 01.07, and the multiplayer fix on 01.06 too. On an iPhone the multiplayer menu ran 5 minutes past the profile load and Zombies ran several rounds without a freeze.\r\n\r\n## 4 GB iPhones\r\n\r\n**Fewer memory kills on the iPhone 12 and 13.** The graphics ring buffers stop at 128 MB on these phones and wait for the GPU when full, where they kept growing. The texture upload buffer frees finished frames first and the space is really released, where it stayed marked in use until the next frame; on a Mac set up like a 4 GB phone, God of War III's buffer swaps during gameplay went from 31 to none.\r\n\r\n**Two compile threads.** PPU code compiles on two threads instead of one, so first boots are faster without running out of memory.\r\n\r\n## Fixed\r\n\r\n**The Last of Us cold start.** The game froze 30 to 40 seconds into a cold start while its SPU code compiled.",
+      "ipas": [
+        {
+          "name": "ARMSX3-0.0.3.ipa",
+          "size": 46182129,
+          "url": "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.3/ARMSX3-0.0.3.ipa",
+          "id": 760874427,
+          "updated_at": "2026-11-17T22:23:26Z",
+          "digest": "sha256:15254f1359c65aef56b75a6d89cf249e9ae8f1db32aa4c5c0ee15a08341f6fb4"
+        }
+      ]
+    },
+    {
       "tag": "ios-0.0.2",
       "name": "ARMSX3 for iOS 0.0.2 beta",
       "pre": true,
@@ -2621,16 +2640,6 @@
       "date": "2026-10-18",
       "published_at": "2026-10-18T17:22:23Z",
       "body": "# ARMSX3 1.3\r\n\r\n## Games\r\n\r\n- **Uncharted 2 boots and plays**, with a fix to how ARMSX3 reads a game's graphics commands. By @elad335 \r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/2a7d704a-f837-40e2-b572-71699b369c2c\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/9353ddee-c246-472f-8cab-512ca9037267\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/e1cc3dfd-e5f1-4ae9-b946-67777078b617\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/916a5981-d558-4fb3-bd0b-f7c4598d2846\" />\r\n\r\n## Controllers\r\n\r\n- **All controllers can play as Player 1.** Turn on \"All controllers play as Player 1\" in Settings > Pad or in the in-game menu > controller tab > controller mapping, and a handheld's own controls and a Bluetooth pad both control Player 1. Dock it or pick up the other controller and keep playing, with nothing to reassign. The controller you used last gets the rumble. (Also in the next ARMSX2 nightly). \r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/2a7b6692-c0d7-4819-80ce-ad1c33156040\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/c5c2e646-3541-4518-850b-1bfee2a07ccd\" />\r\n\r\n- **Several controllers can share a player.** Pick each controller's player in the in-game Controls screen or in Settings > Pad. Two or more controllers can be on the same player.\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/395c3041-a687-4cbc-beb9-692b51d4249a\" />\r\n\r\n- **Mapping profiles for physical controllers in the in-game menu.** Open the in game-menu, controller tab > controller mapping and click on Mapping Profiles while playing to load a saved profile with one tap, or save the current buttons as a new one. \r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" ",
-      "ipas": []
-    },
-    {
-      "tag": "1.2.1",
-      "name": "ARMSX3 1.2.1 ",
-      "pre": false,
-      "draft": false,
-      "date": "2026-10-17",
-      "published_at": "2026-10-17T13:42:21Z",
-      "body": "# ARMSX3 1.2.1\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/648241c3-1f4d-438f-933f-fbebbbce84bc\" />\r\n\r\n## Improvements\r\n\r\n- **Per-game settings are more reliable.** Each game always loads and saves its own settings, even when you switch between several games in one session.\r\n\r\n- **Emulated Clock Speed bug fix.** Changes now apply correctly when the game starts, and the in-game menu now has an Apply & Restart button for it under \"Speed Limit %\" in the in-game performance tab. Games that keep time by the clock speed up or slow down with it, while games paced by frames keep their normal speed.\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/552e6842-4235-4e40-b23f-7f6aa7bb3aae\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/488b4584-0efb-4209-8c18-883511fc1a0c\" />\r\n\r\n- **The Idolm@ster 2 is fixed and now starts reliably**\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/5b1766c3-b798-4c9f-935f-7e74a00679b5\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/1750bfeb-1062-465e-8d77-14c082cc3503\" />\r\n\r\n- **System messages always wait for your answer**, so first-time setup in games like The Idolm@ster 2 goes through smoothly.\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/4f6e6f02-8e87-4c6a-b4c2-7a4ef411f651\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/348b6b80-e954-4e60-869c-e9434c6b2a6c\" />",
       "ipas": []
     }
   ],
