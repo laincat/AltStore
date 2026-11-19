@@ -8698,5 +8698,83 @@
         }
       ]
     }
+  ],
+  "Kianuni/Camlo": [
+    {
+      "tag": "v1.3.3",
+      "name": "Camlo v1.3.3 (Build 26) — Fix SideStore / AltStore App ID Registration (#6) | 修复 SideStore 安装报错",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-19",
+      "published_at": "2026-11-19T00:45:24Z",
+      "body": "## Camlo v1.3.3 (Build 26)\n\n### 修复 SideStore / AltStore 个人免费 Apple ID 安装失败 (#6)\n- **修复 `appIdName` 非法字符报错**：感谢 `@linszx` 的精准定位！此前主 `Info.plist` 顶层 `CFBundleDisplayName` 设为 `\"开幕 Camlo\"`，导致 SideStore / AltStore（底层 `SideSign` / `AltSign`）在向苹果开发者接口 `addAppId` 注册 App ID 时因包含中文及空格而触发 `An invalid value '开幕 Camlo' was provided for the parameter 'appIdName'` 安装失败。\n- **纯 ASCII 顶层名称 + 原生 `InfoPlist.strings` 本地化**：现已将主 `Info.plist` 顶层 `CFBundleDisplayName` 与 `apps.json` `name` 统一改为纯 ASCII 的 `\"Camlo\"`，同时启用 `LSHasLocalizedDisplayName` 并通过 `InfoPlist.xcstrings` 生成 `zh-Hans.lproj/InfoPlist.strings` 与 `en.lproj/InfoPlist.strings`——SideStore / AltStore 个人免费签可顺利完成 App ID 注册并保留 `App Group` 权限，简体中文桌面图标仍优雅显示为 **「开幕 Camlo」**。\n- 完整继承 `v1.3.2` 对 iPhone Duo 折叠屏 `retinaMultiplier` 与内屏偏移的修复、10 套原创「次元 3D」二次元交互云端包与金库旧包自动原地自愈。\n\n### Fix SideStore / AltStore Free Apple ID Installation Failure (#6)\n- **Fixed `appIdName` Validation Error**: Thanks to `@linszx` for the detailed root-cause report! SideStore / AltStore pass the top-level `Info.plist` `CFBundleDisplayName` directly to Apple's `addAppId` Developer Portal API, which rejects non-ASCII characters (`\"开幕 Camlo\"`).\n- **Pure ASCII Bundle Display Name + Localized `InfoPlist.strings`**: Top-level `CFBundleDisplayName` and `apps.json` `name` are now `\"Camlo\"`, while `zh-Hans.lproj/InfoPlist.strings` (via `InfoPlist.xcstrings` + `LSHasLocalizedDisplayName = true`) preserves the localized Chinese Home Screen label (`\"开幕 Camlo\"`). Free Apple ID sideloading via SideStore / AltStore now registers seamlessly with `App Group` entitlements preserved.\n- Includes all `v1.3.2` iPhone Duo scaling/centering fixes, 10 official 3D Anime Cloud packs, and automatic Vault self-healing.\n\n> ⚠️ **iOS Compatibility Reminder**: On-device Computer-Free Direct Write supports **iOS / iPadOS 26.0 – 27.3 beta 1** (Apple patched `worse_query` in `27.3 beta 2`). Creation, 120Hz preview, and `.tendies` export continue to work on all versions.\n",
+      "ipas": [
+        {
+          "name": "Camlo_v1.3.3_Bilingual.ipa",
+          "size": 9541240,
+          "url": "https://github.com/Kianuni/Camlo/releases/download/v1.3.3/Camlo_v1.3.3_Bilingual.ipa",
+          "id": 765624212,
+          "updated_at": "2026-11-19T00:45:23Z",
+          "digest": "sha256:654f86282601b28d2883149bb419ccfc46c51d408045c7d92c94ec6874cdf9b5"
+        }
+      ]
+    },
+    {
+      "tag": "v1.3.2",
+      "name": "Camlo v1.3.2 (Build 25) — Fix iPhone Duo 1/3 Scaling & Inner-Screen Offset | 修复 iPhone Duo 折叠屏壁纸缩放与内屏偏移",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-17",
+      "published_at": "2026-11-17T23:46:39Z",
+      "body": "## Camlo v1.3.2 (Build 25)\n\n### 修复 iPhone Duo（折叠屏）所有壁纸缩小为 1/3 与展开内屏偏移问题 (#4)\n- **彻底修复缩放比例 (`retinaMultiplier: 3 → 1`)**：在 `WallpaperKit` `<wallpapers>` 多屏描述中，由于 Camlo 以逻辑点坐标（外屏 `466×678`、内屏 `951×669`）编译底层 Core Animation 图层树，将其 `retinaMultiplier` 设为 `3` 会导致系统 `WKParameterizedCAPackageLoader` 将绘制尺寸再除以 `3`，从而把壁纸缩小为约 `1/3`（实测 `951×669` px）；现已修正为 `retinaMultiplier = 1` 并保留完整物理像素资源。\n- **修复展开内屏居中偏移 (`BACKGROUND_INNER` / `FLOATING_INNER` position 对齐)**：在折叠屏展开状态下，`WKParameterizedCAWallpaperRepresentedView` 会将 `BACKGROUND_INNER` / `FLOATING_INNER` 直接挂入外屏 `__capRootLayer__` 的 `hostingLayer`（中心点 `233 339`），旧版 `475.5 334.5` 坐标会导致向右下角明显偏移；现统一对齐为 `233 339`，实现外屏/内屏严丝合缝全屏铺满。\n- **Duo 导出分辨率升级**：外屏素材采样升级至原生 `@3x`（`1398×2034`），展开内屏升级至高清（`2282×1606`）；10 套官方云端 iPhone Duo 双屏壁纸（`18951`–`18960`）已全量重新编译并通过 `CAPackage` 渲染校验。\n- **金库旧包自动原地自愈 + 120Hz 实时预览居中修复**：升级至 `v1.3.2` 后，已下载或自制保存在金库的旧版 Duo `.tendies` 包会在后台与写入瞬间自动原地修复（无需重新下载或重新创作，只需重新点击一次**「一键应用到锁屏」**并注销即可满屏生效）；同时修复应用内 `120Hz` 实时预览外/内屏定位。\n\n### Fix iPhone Duo 1/3 Shrunk Scaling & Off-Center Inner Screen (#4)\n- **Fixed `retinaMultiplier` (`3 → 1`)**: `CAMLCompiler` authors Duo root layers in logical points (`466×678` Outer, `951×669` Inner); changing `<wallpapers>` `retinaMultiplier` from `3` to `1` stops `WallpaperKit` from shrinking the rendered wallpaper to `1/3` size while keeping full-resolution texture assets (`1398×2034` Outer `@3x`, `2282×1606` Inner).\n- **Fixed Unfolded Inner-Screen Offset**: Aligned `BACKGROUND_INNER` / `FLOATING_INNER` layer `position` to `__capRootLayer__` center (`233 339`) so `WKParameterizedCAWallpaperRepresentedView`'s `hostingLayer` fills `(0, 0, 951, 669)` edge-to-edge on unfold.\n- **Recompiled All 10 Official Cloud Duo Packs (`18951`–`18960`)**: Verified via `CAPackage` & simulated `WallpaperKit` layout bounds.\n- **Automatic Vault Self-Healing & Accurate Live Preview**: Existing downloaded or Studio-created Duo packs in your Vault heal automatically in-place upon updating to `v1.3.2` — just tap **1-Tap Apply*",
+      "ipas": [
+        {
+          "name": "Camlo_v1.3.2_Bilingual.ipa",
+          "size": 9540236,
+          "url": "https://github.com/Kianuni/Camlo/releases/download/v1.3.2/Camlo_v1.3.2_Bilingual.ipa",
+          "id": 761103687,
+          "updated_at": "2026-11-17T23:46:38Z",
+          "digest": "sha256:5be9239af9f228957cff3d0f6dbeacd62948e12ae68bf3c2901fb3dfc2dfe595"
+        }
+      ]
+    },
+    {
+      "tag": "v1.3.1",
+      "name": "Camlo v1.3.1 — 10 Original 3D Anime Cloud Packs & Anime 3D Gallery",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-17",
+      "published_at": "2026-11-17T15:05:46Z",
+      "body": "## What's New in Camlo v1.3.1 (Build 24)\n\n### 1. 10 Original 「次元 3D (Anime 3D)」 Cloud Wallpapers (`ParameterizedCA` + Apple Vision Clock Depth)\n- Official zero-bloat Cloud Gallery (`wallpapers/`) expanded from 60 to **70 packs** (**395+ total** across Official + Community channels), while keeping `Camlo_v1.3.1_Bilingual.ipa` ultra-slim at **~9.5 MB (`9.1 MiB`)**.\n- All 10 new 100%-original Anime packs (`18961`–`18970`) are natively compiled as single-screen **`ParameterizedCA` (`Marble` / `wantsDeviceMotion = true`)** bundles with **real hardware 120Hz 3D Gyroscope Parallax**, **Apple Vision foreground cutouts occluding the `09:41` clock**, **3-state (`Sleep → Locked → Unlock`) morphing**, and **hardware `CAEmitterLayer` / volumetric particles**:\n  1. `18961` · **墨线初醒 · 樱绘少女** (*Ink Sketch Bloom · Sakura*) — Obsidian ink sketch blooming into full color & drifting sakura\n  2. `18962` · **赛博视界 · 瞳孔开机** (*Cyber Visor · Wake Protocol*) — Standby cyber courier awakening cyan/magenta visor rings\n  3. `18963` · **雨岸平交道 · 破云霞光** (*Rainy Crossing · Sunbreak*) — Coastal rain clearing into amber cumulonimbus sunbeams\n  4. `18964` · **狐面鸟居 · 千灯夜祭** (*Kitsune Torii · Lantern Festival*) — Midnight shrine igniting vermilion-gold lanterns & maple sparks\n  5. `18965` · **猩红爵士 · 破屏切入** (*Crimson Velvet · Cut-In*) — Monochrome phantom erupting into crimson & gold-leaf graphic cut-in\n  6. `18966` · **天台星镜 · 流星夜话** (*Rooftop Observatory · Meteors*) — Twilight refractor telescope awakening Milky Way & meteor shower\n  7. `18967` · **深夜窗猫 · 暖灯可可** (*Midnight Desk · Cat & Cocoa*) — Cool moonlit Lo-Fi study switching on honey-amber lamp light\n  8. `18968` · **星穹魔女 · 古铜星盘** (*Astral Witch · Celestial Astrolabe*) — Silver-braided witch awakening molten-gold celestial rings & butterflies\n  9. `18969` · **格纳库整备 · 光翼出击** (*Orbital Hangar · Wing Ignition*) — Titanium mecha standby igniting emerald optics & azure plasma wings\n  10. `18970` · **松崖剑意 · 破晓青莲** (*Cliff Pine Swordswoman · Lotus Dawn*) —",
+      "ipas": [
+        {
+          "name": "Camlo_v1.3.1_Bilingual.ipa",
+          "size": 9534904,
+          "url": "https://github.com/Kianuni/Camlo/releases/download/v1.3.1/Camlo_v1.3.1_Bilingual.ipa",
+          "id": 759503053,
+          "updated_at": "2026-11-17T15:05:45Z",
+          "digest": "sha256:c71a392d9d13f69337e810345f3aec3af55c84ab8cbf28a6a3231ca3eb03c037"
+        }
+      ]
+    },
+    {
+      "tag": "v1.3.0",
+      "name": "Camlo v1.3.0 — iPhone Duo Dual-Screen & 10 Duo Cloud Exclusives",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-16",
+      "published_at": "2026-11-16T02:20:27Z",
+      "body": "## What's New in Camlo v1.3.0\n\n### 📱 Native iPhone Duo Dual-Screen Canvas (Inner + Outer)\n- Compiles unified WallpaperKit `<wallpapers>` `ParameterizedCA` packages embedding both the **Outer Cover** (`466×678` pt) and **Inner Unfolded Landscape** (`951×669` pt) canvases with `requiresLandscapeScaling = true`, scaled gyro parallax, and synchronized `Sleep / Locked / Unlock` transitions.\n- Auto-detects **iPhone Duo (`iPhone19,4`)** and switches Slide-to-Morph Studio & Video Studio to dual-screen mode by default (with manual toggle available on every iPhone).\n- Interactive **Outer / Inner live preview switcher**, landscape crop guides, dual Vision AI foreground clock-depth cutouts, and 120Hz `.ca` preview support in Vault X-Ray.\n\n### 🎨 10 Exclusive iPhone Duo Official Cloud Packs (60 Official · 385+ Total)\n- Added a dedicated **iPhone Duo** category in Cloud Gallery with **10 bespoke museum-grade Inner+Outer packs** (8 Dual-Screen Depth Morph + 2 Dual-Screen Living Cinemagraphs) hosted outside the IPA for zero app bloat (~9.1 MB IPA).",
+      "ipas": [
+        {
+          "name": "Camlo_v1.3.0_Bilingual.ipa",
+          "size": 9528701,
+          "url": "https://github.com/Kianuni/Camlo/releases/download/v1.3.0/Camlo_v1.3.0_Bilingual.ipa",
+          "id": 753127114,
+          "updated_at": "2026-11-16T02:20:27Z",
+          "digest": "sha256:ec9e5855ecfdc9e846e615ce2ae33b5a10aae22af9a08cba6e40bed8d022cfbc"
+        }
+      ]
+    }
   ]
 }

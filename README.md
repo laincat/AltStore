@@ -1,6 +1,6 @@
 # Laincat 工具箱 — SideStore / AltStore / LiveContainer 源文件
 
-自用的 iOS 侧载源（源名称 **Laincat 工具箱**，图标是 [@laincat](https://github.com/laincat) 的 GitHub 头像）：收录 29 个 iOS 应用，**自动跟随上游 GitHub Release 更新**。
+自用的 iOS 侧载源（源名称 **Laincat 工具箱**，图标是 [@laincat](https://github.com/laincat) 的 GitHub 头像）：收录 30 个 iOS 应用，**自动跟随上游 GitHub Release 更新**。
 
 三个客户端都能用：**SideStore / AltStore / LiveContainer**。
 
@@ -54,6 +54,7 @@ https://github.com/laincat/AltStore/releases/download/latest/apps.json
 | ARMSX3 | `com.armsx3.ARMSX3` | 0.0.3 | iOS 17.4+ | 无 | [ARMSX2/ARMSX3](https://github.com/ARMSX2/ARMSX3) |
 | AvPlay | `com.javdb.avplay2` | 2.2.2 | iOS 15.3+ | 无 | [anonymousjav/AvPlayRelease](https://github.com/anonymousjav/AvPlayRelease) |
 | Breeze | `com.zephyr.breeze` | 3.0.38 | iOS 15.0+ | 无 | [breeze-project-org/Breeze](https://github.com/breeze-project-org/Breeze) |
+| Camlo | `com.kianuni.Camlo` | 1.3.3 | iOS 26.0+ | 无 | [Kianuni/Camlo](https://github.com/Kianuni/Camlo) |
 | EhPanda | `app.ehpanda` | 2.8.1 | iOS 26.0+ | 无 | [EhPanda-Team/EhPanda](https://github.com/EhPanda-Team/EhPanda) |
 | GestaltEdit | `me.ssus.gestaltedit` | 2.3.1 | iOS 26.0+ | 无 | [frs0n/GestaltEdit](https://github.com/frs0n/GestaltEdit) |
 | GestaltX | `com.huami.gestultx` | 1.1.1 | iOS 26.0+ | 无 | [huamidev/GestaltX](https://github.com/huamidev/GestaltX) |

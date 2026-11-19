@@ -74,10 +74,10 @@ SOURCE = {
     "iconURL": "https://github.com/laincat.png?size=512",
     "subtitle": "多类 iOS 自签应用源",
     "description": (
-        "收录 29 款 iOS 应用：番剧与影视类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh、AvPlay、HGhubX、"
+        "收录 30 款 iOS 应用：番剧与影视类 Kazumi、Animeko、AnimeFlow、AniBaka、AniCh、AvPlay、HGhubX、"
         "HentaiPark、真果鉴，漫画阅读类 EhPanda、VeneraX、Venera Prime、VeneraNext、Venera-SSR、Breeze、"
         "PicaX、PicaComic、Aidoku，工具与系统类 One、INSAV、Swipt、AirCard、GestaltX、GestaltEdit、Placard、"
-        "Nekularity，游戏类 ARMSX2、ARMSX3、Rich4。"
+        "Camlo、Nekularity，游戏类 ARMSX2、ARMSX3、Rich4。"
         "IPA 均直连各项目 GitHub Release 官方资产，"
         "由 SideStore / AltStore / LiveContainer 本地签名安装。"
     ),
@@ -510,6 +510,22 @@ APPS = [
             "要求 iOS / iPadOS 27.0 及以上并开启开发者模式；需要能授予 MobileGestalt 权限的"
             "签名工具（如 iLoader），普通自签通常无法写入系统配置。\n\n"
             "开源协议：GPL-3.0-or-later　·　项目主页：https://github.com/frs0n/GestaltEdit"
+        ),
+    },
+    {
+        "repo": "Kianuni/Camlo",
+        "asset": lambda n: n.startswith("Camlo_") and n.endswith("_Bilingual.ipa"),
+        "name": "Camlo",
+        "developerName": "Kianuni",
+        "subtitle": "锁屏动态壁纸制作与预览",
+        "category": "utilities",
+        "tintColor": "#6A4DF5",
+        "icon": "PreviewIcon.png",
+        "description": (
+            "在 iPhone 和 iPad 上制作、预览和导出锁屏壁纸，支持动态转场、实况照片、视频和 3D 视差。"
+            "锁屏直写取决于系统版本和签名权限，上游注明支持至 iOS / iPadOS 27.3 beta 1；"
+            "27.3 beta 2 起仍可制作和导出 .tendies 壁纸包。\n\n"
+            "开源协议：GPL-3.0　·　项目主页：https://github.com/Kianuni/Camlo"
         ),
     },
     {
