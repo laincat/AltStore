@@ -2540,5 +2540,19 @@
       "size": 17937496,
       "digest": "sha256:a1095e6a71978b79eb002a3f78458af975182243cf9e3295dc29cedfff0921f8"
     }
+  },
+  "https://github.com/Xanerix/guoapp/releases/download/app-v2.0.2-114/guoapp-2.0.2%2B114-ios-unsigned.ipa": {
+    "bundleIdentifier": "com.yingshib.xg",
+    "version": "2.0.2",
+    "buildVersion": "114",
+    "displayName": "GuoApp",
+    "minOSVersion": "15.1",
+    "size": 34234019,
+    "assetIdentity": {
+      "id": 765668450,
+      "updated_at": "2026-11-19T01:02:59Z",
+      "size": 34234019,
+      "digest": "sha256:a61c0cc323b736ae5ff0869554df4225b1e7bd30682ab563f8ae87acf547d7ec"
+    }
   }
 }

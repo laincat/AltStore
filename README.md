@@ -72,7 +72,7 @@ https://github.com/laincat/AltStore/releases/download/latest/apps.json
 | VeneraNext | `com.github.cyrilpeng.veneranext` | 1.18.3 | iOS 14.0+ | 无 | [CyrilPeng/Venera-Next](https://github.com/CyrilPeng/Venera-Next) |
 | VeneraX | `io.github.kyosee.venera` | 3.0.0 | iOS 15.1+ | 无 | [Kyosee/VeneraX](https://github.com/Kyosee/VeneraX) |
 | 大富翁4重制版 | `pro.areu.rich4` | 1.2.4 | iOS 15.0+ | 无 | [iam567/rich4-renew-app](https://github.com/iam567/rich4-renew-app) |
-| 真果鉴 | `com.yingshib.xg` | 2.0.1 | iOS 15.1+ | 无 | [Xanerix/guoapp](https://github.com/Xanerix/guoapp) |
+| 真果鉴 | `com.yingshib.xg` | 2.0.2 | iOS 15.1+ | 无 | [Xanerix/guoapp](https://github.com/Xanerix/guoapp) |
 <!-- apps:end -->
 
 > - 版本、最低系统与测试版标记都取自 IPA 包内元数据，不是抄上游 README。

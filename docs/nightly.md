@@ -43,7 +43,7 @@
 | VeneraNext | 1.18.3 | v1.18.4-rc.3 (2026-11-16) | 不收：未启用 nightly 轨道 |
 | VeneraX | 3.0.0 | mobile-3.0.1-beta.1 (2026-11-16) | 不收：该预发布没有 iOS 包 |
 | 大富翁4重制版 | 1.2.4 | 无 | 无预发布 |
-| 真果鉴 | 2.0.1 | windows-native-deps (2026-11-04) | 不收：该预发布没有 iOS 包 |
+| 真果鉴 | 2.0.2 | windows-native-deps (2026-11-04) | 不收：该预发布没有 iOS 包 |
 <!-- nightly:end -->
 
 > 这张表由 `tools/render_docs.py` 按 `apps.json` 与 `cache/releases.json` 生成，每轮自动化后刷新：
