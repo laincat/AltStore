@@ -2568,5 +2568,33 @@
       "size": 9541240,
       "digest": "sha256:654f86282601b28d2883149bb419ccfc46c51d408045c7d92c94ec6874cdf9b5"
     }
+  },
+  "https://github.com/zxsos/HGhubX/releases/download/v2.2.2/HGhubX_2.2.2_ios.ipa": {
+    "bundleIdentifier": "com.hghubx.app",
+    "version": "2.2.2",
+    "buildVersion": "2.2.2",
+    "displayName": "HGhubX",
+    "minOSVersion": "15.0",
+    "size": 3891126,
+    "assetIdentity": {
+      "id": 766239590,
+      "updated_at": "2026-11-19T04:39:11Z",
+      "size": 3891126,
+      "digest": "sha256:daa16c6aeaa97dd8cec0bc57cef01f03a2aed5e4666263b263c7ea39b268b25f"
+    }
+  },
+  "https://github.com/drdon1234/Hentai-Park/releases/download/v0.15.2/HentaiPark-0.15.2-83-ios-arm64-unsigned.ipa": {
+    "bundleIdentifier": "com.hentaipark.hentaiPark",
+    "version": "0.15.2",
+    "buildVersion": "83",
+    "displayName": "HentaiPark",
+    "minOSVersion": "15.0",
+    "size": 18025060,
+    "assetIdentity": {
+      "id": 766265908,
+      "updated_at": "2026-11-19T04:49:03Z",
+      "size": 18025060,
+      "digest": "sha256:5c24b283a4b560f6efd5155c1a5dec2eb99eda6a0bc98a17a29e7dd4fa76ac90"
+    }
   }
 }
