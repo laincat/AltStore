@@ -813,7 +813,7 @@
       "developerName": "drdon1234",
       "subtitle": "成人内容聚合客户端（18+）",
       "localizedDescription": "本子、里番、JAV、写真、视频、小说与游戏的聚合客户端，跨站检索，阅读、观看与收藏统一管理。仅限成年人在当地法律允许的范围内使用；内容来自第三方站点，本应用不托管原站内容。IPA 为未签名包，需自行签名安装；覆盖安装应保持 Bundle ID 与签名身份。\n\n开源协议：AGPL-3.0　·　项目主页：https://github.com/drdon1234/Hentai-Park",
-      "iconURL": "https://raw.githubusercontent.com/drdon1234/Hentai-Park/v0.15.2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/drdon1234/Hentai-Park/v0.15.3/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#C96442",
       "category": "entertainment",
       "appPermissions": {
@@ -825,41 +825,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "0.15.2",
+              "version": "0.15.3",
               "date": "2026-11-19",
-              "publishedAt": "2026-11-19T04:42:15Z",
-              "buildVersion": "83",
-              "buildNumber": "83",
-              "localizedDescription": "中文\n新功能\n- 酒馆支持自建和编辑角色卡、PNG 头像与世界书，可用 AI 分轮创作、生成世界书大纲，并逐个采纳字段或词条。\n- 酒馆编辑器可恢复本机草稿、回看文本版本，并用示例消息查看世界书词条命中或跳过的原因。\n- 酒馆会话可切换发言角色，保存标签、笔记与记忆，生成摘要并查看本轮提示词。\n改进\n- 酒馆资源可按名称和标签搜索、置顶、另存副本，也可从其他世界书导入词条。\n- 站内搜索的数值筛选支持直接输入；启动时优先展示应用更新，再处理插件更新。\n插件更新\n- RisuRealm 0.0.4：增加成人内容显示开关，改进世界书筛选。\nEnglish\nNew\n- Create and edit Tavern character cards, PNG portraits and world books. Work with AI over multiple rounds, generate a world book outline and accept individual fields or entries.\n- Resume local editor drafts, review text revisions and test a sample message to see why world book entries matched or were skipped.\n- Switch speakers in Tavern conversations, keep tags, notes and story memory, generate summaries and insp…",
-              "downloadURL": "https://github.com/drdon1234/Hentai-Park/releases/download/v0.15.2/HentaiPark-0.15.2-83-ios-arm64-unsigned.ipa",
-              "size": 18025060,
+              "publishedAt": "2026-11-19T10:19:57Z",
+              "buildVersion": "84",
+              "buildNumber": "84",
+              "localizedDescription": "中文\n新功能\n- 酒馆支持自建和编辑角色卡、PNG 头像与世界书，可用 AI 分轮创作、生成世界书大纲，并逐个采纳字段或词条。\n- 酒馆编辑器可恢复本机草稿、回看文本版本，并用示例消息查看世界书词条命中或跳过的原因。\n- 酒馆会话可切换发言角色，保存标签、笔记与记忆，生成摘要并查看本轮提示词。\n改进\n- 酒馆资源可按名称和标签搜索、置顶、另存副本，也可从其他世界书导入词条。\n- 站内搜索的数值筛选支持直接输入；启动时优先展示应用更新，再处理插件更新。\n- 酒馆域页提供 AI 创作、导入和新建角色卡或世界书的独立入口；资源库页专注保存资源与会话。\n- AI 创作支持自然语言或结构化字段输入，生成预览可顺畅上下滚动，角色卡编辑器统一字段间距。\n- 酒馆会话会出现在主页的会话记录中；对话与资源生成提示词要求直接输出内容，减少额外建议和警告文本。\n插件更新\n- RisuRealm 0.0.4：增加成人内容显示开关，改进世界书筛选。\nEnglish\nNew\n- Create and edit Tavern character cards, PNG portraits and world books. Work with AI over multiple rounds, generate a world book outline and accept individual fields or entries.\n- Resume local editor drafts, review text revisions and test a sample message to see why wo…",
+              "downloadURL": "https://github.com/drdon1234/Hentai-Park/releases/download/v0.15.3/HentaiPark-0.15.3-84-ios-arm64-unsigned.ipa",
+              "size": 18035069,
               "minOSVersion": "15.0",
-              "releaseTag": "v0.15.2",
-              "source": "https://github.com/drdon1234/Hentai-Park/releases/tag/v0.15.2"
+              "releaseTag": "v0.15.3",
+              "source": "https://github.com/drdon1234/Hentai-Park/releases/tag/v0.15.3"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "0.15.2",
+          "version": "0.15.3",
           "date": "2026-11-19",
-          "publishedAt": "2026-11-19T04:42:15Z",
-          "buildVersion": "83",
-          "buildNumber": "83",
-          "localizedDescription": "中文\n新功能\n- 酒馆支持自建和编辑角色卡、PNG 头像与世界书，可用 AI 分轮创作、生成世界书大纲，并逐个采纳字段或词条。\n- 酒馆编辑器可恢复本机草稿、回看文本版本，并用示例消息查看世界书词条命中或跳过的原因。\n- 酒馆会话可切换发言角色，保存标签、笔记与记忆，生成摘要并查看本轮提示词。\n改进\n- 酒馆资源可按名称和标签搜索、置顶、另存副本，也可从其他世界书导入词条。\n- 站内搜索的数值筛选支持直接输入；启动时优先展示应用更新，再处理插件更新。\n插件更新\n- RisuRealm 0.0.4：增加成人内容显示开关，改进世界书筛选。\nEnglish\nNew\n- Create and edit Tavern character cards, PNG portraits and world books. Work with AI over multiple rounds, generate a world book outline and accept individual fields or entries.\n- Resume local editor drafts, review text revisions and test a sample message to see why world book entries matched or were skipped.\n- Switch speakers in Tavern conversations, keep tags, notes and story memory, generate summaries and insp…",
-          "downloadURL": "https://github.com/drdon1234/Hentai-Park/releases/download/v0.15.2/HentaiPark-0.15.2-83-ios-arm64-unsigned.ipa",
-          "size": 18025060,
+          "publishedAt": "2026-11-19T10:19:57Z",
+          "buildVersion": "84",
+          "buildNumber": "84",
+          "localizedDescription": "中文\n新功能\n- 酒馆支持自建和编辑角色卡、PNG 头像与世界书，可用 AI 分轮创作、生成世界书大纲，并逐个采纳字段或词条。\n- 酒馆编辑器可恢复本机草稿、回看文本版本，并用示例消息查看世界书词条命中或跳过的原因。\n- 酒馆会话可切换发言角色，保存标签、笔记与记忆，生成摘要并查看本轮提示词。\n改进\n- 酒馆资源可按名称和标签搜索、置顶、另存副本，也可从其他世界书导入词条。\n- 站内搜索的数值筛选支持直接输入；启动时优先展示应用更新，再处理插件更新。\n- 酒馆域页提供 AI 创作、导入和新建角色卡或世界书的独立入口；资源库页专注保存资源与会话。\n- AI 创作支持自然语言或结构化字段输入，生成预览可顺畅上下滚动，角色卡编辑器统一字段间距。\n- 酒馆会话会出现在主页的会话记录中；对话与资源生成提示词要求直接输出内容，减少额外建议和警告文本。\n插件更新\n- RisuRealm 0.0.4：增加成人内容显示开关，改进世界书筛选。\nEnglish\nNew\n- Create and edit Tavern character cards, PNG portraits and world books. Work with AI over multiple rounds, generate a world book outline and accept individual fields or entries.\n- Resume local editor drafts, review text revisions and test a sample message to see why wo…",
+          "downloadURL": "https://github.com/drdon1234/Hentai-Park/releases/download/v0.15.3/HentaiPark-0.15.3-84-ios-arm64-unsigned.ipa",
+          "size": 18035069,
           "minOSVersion": "15.0",
-          "releaseTag": "v0.15.2",
-          "source": "https://github.com/drdon1234/Hentai-Park/releases/tag/v0.15.2"
+          "releaseTag": "v0.15.3",
+          "source": "https://github.com/drdon1234/Hentai-Park/releases/tag/v0.15.3"
         }
       ],
-      "version": "0.15.2",
+      "version": "0.15.3",
       "versionDate": "2026-11-19",
-      "versionDescription": "中文\n新功能\n- 酒馆支持自建和编辑角色卡、PNG 头像与世界书，可用 AI 分轮创作、生成世界书大纲，并逐个采纳字段或词条。\n- 酒馆编辑器可恢复本机草稿、回看文本版本，并用示例消息查看世界书词条命中或跳过的原因。\n- 酒馆会话可切换发言角色，保存标签、笔记与记忆，生成摘要并查看本轮提示词。\n改进\n- 酒馆资源可按名称和标签搜索、置顶、另存副本，也可从其他世界书导入词条。\n- 站内搜索的数值筛选支持直接输入；启动时优先展示应用更新，再处理插件更新。\n插件更新\n- RisuRealm 0.0.4：增加成人内容显示开关，改进世界书筛选。\nEnglish\nNew\n- Create and edit Tavern character cards, PNG portraits and world books. Work with AI over multiple rounds, generate a world book outline and accept individual fields or entries.\n- Resume local editor drafts, review text revisions and test a sample message to see why world book entries matched or were skipped.\n- Switch speakers in Tavern conversations, keep tags, notes and story memory, generate summaries and insp…",
-      "downloadURL": "https://github.com/drdon1234/Hentai-Park/releases/download/v0.15.2/HentaiPark-0.15.2-83-ios-arm64-unsigned.ipa",
-      "size": 18025060,
+      "versionDescription": "中文\n新功能\n- 酒馆支持自建和编辑角色卡、PNG 头像与世界书，可用 AI 分轮创作、生成世界书大纲，并逐个采纳字段或词条。\n- 酒馆编辑器可恢复本机草稿、回看文本版本，并用示例消息查看世界书词条命中或跳过的原因。\n- 酒馆会话可切换发言角色，保存标签、笔记与记忆，生成摘要并查看本轮提示词。\n改进\n- 酒馆资源可按名称和标签搜索、置顶、另存副本，也可从其他世界书导入词条。\n- 站内搜索的数值筛选支持直接输入；启动时优先展示应用更新，再处理插件更新。\n- 酒馆域页提供 AI 创作、导入和新建角色卡或世界书的独立入口；资源库页专注保存资源与会话。\n- AI 创作支持自然语言或结构化字段输入，生成预览可顺畅上下滚动，角色卡编辑器统一字段间距。\n- 酒馆会话会出现在主页的会话记录中；对话与资源生成提示词要求直接输出内容，减少额外建议和警告文本。\n插件更新\n- RisuRealm 0.0.4：增加成人内容显示开关，改进世界书筛选。\nEnglish\nNew\n- Create and edit Tavern character cards, PNG portraits and world books. Work with AI over multiple rounds, generate a world book outline and accept individual fields or entries.\n- Resume local editor drafts, review text revisions and test a sample message to see why wo…",
+      "downloadURL": "https://github.com/drdon1234/Hentai-Park/releases/download/v0.15.3/HentaiPark-0.15.3-84-ios-arm64-unsigned.ipa",
+      "size": 18035069,
       "minOSVersion": "15.0"
     },
     {

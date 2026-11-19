@@ -58,7 +58,7 @@ https://github.com/laincat/AltStore/releases/download/latest/apps.json
 | EhPanda | `app.ehpanda` | 2.8.1 | iOS 26.0+ | 无 | [EhPanda-Team/EhPanda](https://github.com/EhPanda-Team/EhPanda) |
 | GestaltEdit | `me.ssus.gestaltedit` | 2.3.1 | iOS 26.0+ | 无 | [frs0n/GestaltEdit](https://github.com/frs0n/GestaltEdit) |
 | GestaltX | `com.huami.gestultx` | 1.1.1 | iOS 26.0+ | 无 | [huamidev/GestaltX](https://github.com/huamidev/GestaltX) |
-| HentaiPark | `com.hentaipark.hentaiPark` | 0.15.2 | iOS 15.0+ | 无 | [drdon1234/Hentai-Park](https://github.com/drdon1234/Hentai-Park) |
+| HentaiPark | `com.hentaipark.hentaiPark` | 0.15.3 | iOS 15.0+ | 无 | [drdon1234/Hentai-Park](https://github.com/drdon1234/Hentai-Park) |
 | HGhubX | `com.hghubx.app` | 2.2.2 | iOS 15.0+ | 无 | [zxsos/HGhubX](https://github.com/zxsos/HGhubX) |
 | INSAV | `com.ios151.insav` | 1.3.1 | iOS 16.0+ | 无 | [ios151/Insav-releases](https://github.com/ios151/Insav-releases) |
 | Kazumi | `com.example.kazumi` | 2.4.4 | iOS 15.0+ | 无 | [Predidit/Kazumi](https://github.com/Predidit/Kazumi) |

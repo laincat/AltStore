@@ -7945,6 +7945,25 @@
   ],
   "drdon1234/Hentai-Park": [
     {
+      "tag": "v0.15.3",
+      "name": "HentaiPark v0.15.3",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-19",
+      "published_at": "2026-11-19T10:19:57Z",
+      "body": "## 中文\n\n### 新功能\n- 酒馆支持自建和编辑角色卡、PNG 头像与世界书，可用 AI 分轮创作、生成世界书大纲，并逐个采纳字段或词条。\n- 酒馆编辑器可恢复本机草稿、回看文本版本，并用示例消息查看世界书词条命中或跳过的原因。\n- 酒馆会话可切换发言角色，保存标签、笔记与记忆，生成摘要并查看本轮提示词。\n\n### 改进\n- 酒馆资源可按名称和标签搜索、置顶、另存副本，也可从其他世界书导入词条。\n- 站内搜索的数值筛选支持直接输入；启动时优先展示应用更新，再处理插件更新。\n- 酒馆域页提供 AI 创作、导入和新建角色卡或世界书的独立入口；资源库页专注保存资源与会话。\n- AI 创作支持自然语言或结构化字段输入，生成预览可顺畅上下滚动，角色卡编辑器统一字段间距。\n- 酒馆会话会出现在主页的会话记录中；对话与资源生成提示词要求直接输出内容，减少额外建议和警告文本。\n\n### 插件更新\n- RisuRealm 0.0.4：增加成人内容显示开关，改进世界书筛选。\n\n## English\n\n### New\n- Create and edit Tavern character cards, PNG portraits and world books. Work with AI over multiple rounds, generate a world book outline and accept individual fields or entries.\n- Resume local editor drafts, review text revisions and test a sample message to see why world book entries matched or were skipped.\n- Switch speakers in Tavern conversations, keep tags, notes and story memory, generate summaries and inspect the current prompt.\n\n### Improvements\n- Search Tavern resources by name or tag, pin items, save copies and import entries from another world book.\n- Enter numeric search filters directly. At startup, app updates appear before plugin updates.\n- The Tavern domain now has dedicated AI creation, import and new character or world book entry points. The library focuses on saved resources and sessions.\n- AI creation supports natural-language or structured field input, generated previews scroll with the page, and character-card fields use consistent spacing.\n- Tavern sessions now appear in the home session history. Chat and resource-generation prompts request direct output without extra advice or warnings.\n\n### Plugin updates\n- RisuRealm 0.0.4 adds an adult-content visibility setting and improves world book filtering.\n",
+      "ipas": [
+        {
+          "name": "HentaiPark-0.15.3-84-ios-arm64-unsigned.ipa",
+          "size": 18035069,
+          "url": "https://github.com/drdon1234/Hentai-Park/releases/download/v0.15.3/HentaiPark-0.15.3-84-ios-arm64-unsigned.ipa",
+          "id": 767210916,
+          "updated_at": "2026-11-19T10:19:55Z",
+          "digest": "sha256:9844e37f8a256848675efb1f03e46dd96ec7f1644d2b8e494b26e1ac33404dfc"
+        }
+      ]
+    },
+    {
       "tag": "v0.15.2",
       "name": "HentaiPark v0.15.2",
       "pre": false,
@@ -8159,16 +8178,6 @@
       "date": "2026-11-10",
       "published_at": "2026-11-10T09:27:30Z",
       "body": "## 中文\n\n### 改进\n- 移除互动立绘内容域及其相关插件与入口。\n\n### 修复\n- 修复已安装误发高版本后无法发现官方最新版本更新的问题；官方最新版本号较低时允许更新，并在安装前明确提示版本号回退。\n- 修复音声与在线游戏插件的最低应用版本要求错误，恢复在 0.13.0 及以上版本中的安装与使用。\n\n### 插件更新\n- Hentai ASMR 0.0.2、ASMRHoney 0.0.2、Literotica Audio 0.0.2、JASMR 0.0.2、ASMR Gay 0.0.2、ASMR Moon 0.0.2、EroASMR 0.0.2：修正最低应用版本要求。\n- itch.io 0.0.2、Gamcore 0.0.2：修正最低应用版本要求。\n\n## English\n\n### Improvements\n- Removed the interactive artwork domain and its related plugins and entry points.\n\n### Fixes\n- Fixed update detection after installing an accidentally published higher version; updates to the latest official release are now available even when its version number is lower, with an explicit rollback notice before installation.\n- Corrected the minimum app version requirements for audio and online game plugins, restoring installation and use on 0.13.0 and later.\n\n### Plugin updates\n- Hentai ASMR 0.0.2, ASMRHoney 0.0.2, Literotica Audio 0.0.2, JASMR 0.0.2, ASMR Gay 0.0.2, ASMR Moon 0.0.2, EroASMR 0.0.2: Corrected the minimum app version requirements.\n- itch.io 0.0.2, Gamcore 0.0.2: Corrected the minimum app version requirements.\n",
-      "ipas": []
-    },
-    {
-      "tag": "v0.13.0",
-      "name": "HentaiPark v0.13.0",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-10",
-      "published_at": "2026-11-10T07:20:19Z",
-      "body": "## 中文\n\n### 新功能\n- 新增音声内容域，支持目录筛选、连续播放、同步字幕与可选后台播放。\n- 新增在线游戏内容域，支持网页游戏、全屏与虚拟按键。\n- 新增互动立绘内容域，支持动态立绘浏览与原站交互。\n\n### 改进\n- 排行榜与作品资料统一使用资料插件更新频道。\n\n### 修复\n- 移除已停用的排行榜频道请求，避免影响官方插件更新与撤回检查。\n- 修复备份恢复、书库写入失败重试及阅读状态同步问题。\n- 修复离线导出遗漏、更换目录后旧导出不可见和录制内容离线读取问题。\n- 修复订阅分页、帖子定位与错误标记已读的问题。\n- 修复直播初始化、浏览器超时、朗读语言及筛选联动问题。\n- 登录凭据默认隐藏，支持显隐切换与正确的自动填充类型。\n\n### 插件更新\n- Telegram 0.0.12：修复服务消息导致分页提前结束的问题。\n\n## English\n\n### New\n- Added the audio domain with directory filters, continuous playback, synchronized subtitles and optional background playback.\n- Added online games with fullscreen and virtual controls.\n- Added interactive artwork with animated artwork and original-site interactions.\n\n### Improvements\n- Rankings and work information now share the metadata plugin update channel.\n\n### Fixes\n- Removed requests to the retired rankings channel so it no longer affects official plugin updates and withdrawal checks.\n- Fixed backup restoration, library write retries and reading-state synchronization.\n- Fixed incomplete exports, missing previous exports after directory changes and offline access to recordings.\n- Fixed subscription pagination, post navigation and premature read marking.\n- Fixed live playback initialization, browser timeouts, speech languages and dependent filters.\n- Login credentials are hidden by default with visibility controls and appropriate autofill types.\n\n### Plugin updates\n- Telegram 0.0.12: Fixed pagination stopping early on service messages.\n",
       "ipas": []
     }
   ],
