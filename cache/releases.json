@@ -1,6 +1,44 @@
 {
   "zxsos/HGhubX": [
     {
+      "tag": "v2.2.5",
+      "name": "v2.2.5",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T18:49:08Z",
+      "body": "# HGhubX v2.2.5\n\n聚焦多语言支持（简体中文、繁体中文、英语）、播放器微光效果与多端播放交互修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n\n## 新增与优化\n1. **简体中文、繁体中文与英语界面切换（#190）**：默认使用简体中文，可在「设置 → 外观 → 语言」中一键切换简体中文、繁體中文与 English，切换后立即生效并跨重启持久化；繁体中文与英语词典按需异步加载，首屏默认体积接近零增长。\n2. **播放器微光效果（#192）**：低分辨率实时采样当前播放画面颜色并柔和扩散至视频黑边区域；可在「设置 → 播放 → 微光效果」中随时开关（默认开启，关闭后不挂载采样层以节省电量）。\n3. **精简移动端长按倍速交互（#193）**：移除拖动至顶部胶囊锁定倍速的繁琐交互，长按右侧仅作临时加速、长按左侧临时 0.5x 减速、松手即恢复原倍速；持久倍速统一在全屏倍速按钮或「更多 → 播放设置」中调整。\n\n## 修复\n1. **桌面端开启「上下划切集」滚轮切集失效（#195）**：桌面端开启「上下划切集」后，鼠标滚轮或触控板纵向滑动原本直接触发列表原生滚动跳到下一部剧；现拦截播放区纵向滚轮并在当前剧内顺滑切集、弹出集数提示，底部控制栏「下一集 ↓ / 下一部 ↓」按钮同步遵循该开关。\n2. **清屏锁定后锁图标常驻遮挡画面（#194）**：移动端清屏模式点击锁定后立即隐藏右侧锁图标，锁定期间仅在点按屏幕触发「轻触即可解锁」提示时同步显示解锁按钮 2.2 秒，避免图标常驻干扰观看。\n3. **横屏全屏切集时集数提示重复闪现（#191）**：横屏全屏切集时暂存集数提示，待下一集视频尺寸解析完成并真正开播后再于横屏旋转舞台弹出一次，消除切换瞬间在竖屏和横屏位置各弹一次的问题。\n\n## 安装与兼容提示\n- Windows 提供 NSIS 安装包与便携压缩包；macOS 提供 Universal DMG；Linux 提供 amd64 `.deb`；Android 标准版按 ABI 提供已签名 APK（`versionCode=2002005`）；iOS 提供未签名 `.ipa`（需自行签名安装）。\n- 覆盖安装保留本机收藏、观看记录、界面语言、线路与内容偏好；Android TV 版（`com.hghubx.tv`）由独立 `tv-v*` 标签单独发布。\n\n## 致谢\n- 感谢 `@makisekurisu-jp` 贡献 #191、#192、#193、#194 播放器视觉与手势交互优化。\n\n## 验证\n- 本地 `make check`（Rust 114 项单元测试、TypeScript 三套配置与 Vite 构建、791 项多语言词典键一致性校验、文档链接、尺寸预算、版本同步）、`pnpm test:smoke`（8/8 套件通过）与 `pnpm test:playback`（`seek`、`gesture`、`episode-toast`、`ambient`、`portrait-fit` 5/5 场景通过）全量验证通过。\n- 各平台正式安装包由 `v2.2.5` 标签触发的 GitHub Actions `CI/CD` 工作流构建并校验。\n",
+      "ipas": [
+        {
+          "name": "HGhubX_2.2.5_ios.ipa",
+          "size": 3927965,
+          "url": "https://github.com/zxsos/HGhubX/releases/download/v2.2.5/HGhubX_2.2.5_ios.ipa",
+          "id": 772952554,
+          "updated_at": "2026-11-20T18:49:07Z",
+          "digest": "sha256:42e95bf6d45997d6124506acefa9af43a93f56973ac2571da7e5ae3aa4904276"
+        }
+      ]
+    },
+    {
+      "tag": "v2.2.4",
+      "name": "v2.2.4",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T15:17:02Z",
+      "body": "# HGhubX v2.2.4\r\n\r\n聚焦播放交互细节打磨、搜索历史批量管理和桌面全屏体验优化，并完成 Android TV 子项目与标准版发版流程解耦；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\r\n@makisekurisu-jp @zxsos\r\n\r\n## 新增与优化\r\n1. **启动页偏好设置（#180 / #185）**：可在「设置」中选择应用启动后默认进入的页面 。\r\n2. **搜索历史支持长按批量删除（#184）**：在搜索页与就地搜索面板长按历史词条即可进入多选批量删除。\r\n3. **清屏锁屏按钮对齐与状态提示（#187）**：对齐横屏与净屏模式下的锁屏/解锁锚点，并补齐锁定状态提示。\r\n4. **TV 子项目版本与 CI/CD 独立解耦（#189）**：标准版 `v*` 与 TV 版 `tv-v*` 拆分至各自工作流与独立版本号，后续互不阻塞发版。\r\n\r\n## 修复\r\n1. **桌面全屏定位与空闲隐藏（#180 / #183）**：修复桌面端全屏区域锚点偏移，播放空闲时自动隐藏悬浮控件与鼠标指针。\r\n2. **暂停时点击中央播放图标恢复播放（#182）**：暂停态点击画面中央播放图标直接恢复播放，不再被外层手势拦截。\r\n3. **移除横版视频上方重复控件（#177）**：去掉与底部操作栏重复的铺满与横屏悬浮按钮，减少画面遮挡。\r\n4. **全屏切集方向与提示去重（#176 / #178 / #179 / #181）**：统一全屏上下划切集方向与信息流一致，旋转全屏切集提示固定在视频底部，并消除快速切换上下划开关或触及剧集边界时的提示重复堆叠。\r\n\r\n## 安装与兼容提示\r\n- Windows 提供 NSIS 安装包与便携压缩包；macOS 提供 Universal DMG；Linux 提供 amd64 `.deb`；Android 标准版按 ABI 提供已签名 APK（`versionCode=2002004`）；iOS 提供未签名 `.ipa`（需自行签名安装）。\r\n- 覆盖安装保留本机收藏、观看记录、线路与内容偏好；Android TV 版（`com.hghubx.tv`）即日起由独立 `tv-v*` 标签单独发布，不包含在本标准版 Release 附件中。\r\n\r\n## 致谢\r\n- 感谢 @makisekurisu-jp 贡献 #176、#177、#178、#179、#181、#182、#184、#187 全部交互修复与增强。\r\n\r\n## 验证\r\n- 本地 `make check`（Rust `cargo check --all-targets` + `cargo test --lib`、标准版 `pnpm build`、文档链接、尺寸预算、标准版与 TV 版版本校验）与 `pnpm test:smoke` 全量通过。\r\n- 各平台构建产物由 `v2.2.4` 标签触发的 GitHub Actions `CI/CD` 工作流产出并验证。",
+      "ipas": [
+        {
+          "name": "HGhubX_2.2.4_ios.ipa",
+          "size": 3897090,
+          "url": "https://github.com/zxsos/HGhubX/releases/download/v2.2.4/HGhubX_2.2.4_ios.ipa",
+          "id": 772282577,
+          "updated_at": "2026-11-20T15:17:01Z",
+          "digest": "sha256:469f34608cec04de4d85d51a605dc777603b82a582bf3a20184ed6cd4df43f5d"
+        }
+      ]
+    },
+    {
       "tag": "v2.2.3",
       "name": "v2.2.3",
       "pre": false,
@@ -2796,16 +2834,16 @@
       "pre": true,
       "draft": false,
       "date": "2026-11-20",
-      "published_at": "2026-11-20T05:39:28Z",
-      "body": "* Fix cellular data being detected on Wi-Fi\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack options for ZIP archives\n* Replace the hand-written ZIP code of the CLI with fflate\n* Simplify screen streaming and recording\n* Share one atomic file write\n* Fix mDNS browsing and name conflict handling\n* Simplify the JavaScriptCore adapter\n* Add swipt driver to serve a device from the computer\n* Build the Linux and Windows driver with the WebKit of a Bun release\n* Port the driver and the CLI to Linux and Windows\n* Follow Apple's terms and style guides in the CLI translations\n* Improve automatic unlocking\n* Remove unsourced and misattributed claims from comments\n* Require iOS 26 for the accessibility API\n* Fix network lockdown connections closing without a heartbeat\n* Extend Swiplet icon colors\n* Add the chart and data grid components\n* Remove the guards against bad values from Swiplets\n* Add stream actions and the process API\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the developer service\n* Fix slow detection of unsupported networks\n* Resolve DNS with the system configuration on iOS\n* Detect the foreground app right after connecting\n* Connect touch input before the first tap\n* Send input without checking the lock state\n* Split the CLI commands into one file each\n* Fix the detection of the foreground app\n* Download swiplet updates on demand and show progress\n* Number ",
+      "published_at": "2026-11-20T16:41:31Z",
+      "body": "* Replace polling loops with event-driven notifications\n* Fix sideload setup opening Settings after the Always location alert\n* Stream discovered devices into the CLI device picker\n* Request Always location access for the background service\n* Fix pairing, language updates and container SQLite in the driver\n* Fix cellular data being detected on Wi-Fi\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack options for ZIP archives\n* Replace the hand-written ZIP code of the CLI with fflate\n* Simplify screen streaming and recording\n* Share one atomic file write\n* Fix mDNS browsing and name conflict handling\n* Simplify the JavaScriptCore adapter\n* Add swipt driver to serve a device from the computer\n* Build the Linux and Windows driver with the WebKit of a Bun release\n* Port the driver and the CLI to Linux and Windows\n* Follow Apple's terms and style guides in the CLI translations\n* Improve automatic unlocking\n* Remove unsourced and misattributed claims from comments\n* Require iOS 26 for the accessibility API\n* Fix network lockdown connections closing without a heartbeat\n* Extend Swiplet icon colors\n* Add the chart and data grid components\n* Remove the guards against bad values from Swiplets\n* Add stream actions and the process API\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the developer service\n* Fix slow detection of unsupported networks\n* Resolve DNS with the system co",
       "ipas": [
         {
           "name": "Swipt.ipa",
-          "size": 48173853,
+          "size": 48182818,
           "url": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-          "id": 770617015,
-          "updated_at": "2026-11-20T05:39:26Z",
-          "digest": "sha256:d06e400e6aa84cc9b44d35a6bab05cd33e71adcbf6ee2de374f96a14bb9fa320"
+          "id": 772557948,
+          "updated_at": "2026-11-20T16:41:28Z",
+          "digest": "sha256:405edaf1cc92b1d830f19672d88e432860c5916fd340cc499ae418c26ff72a87"
         }
       ]
     }
@@ -3975,6 +4013,22 @@
           "digest": "sha256:e608764292ae550f6d73819e9b6822209e0205f9ddbb97300cef613fa3b2d490"
         },
         {
+          "name": "EhPanda-AltStorePAL-647d58c8-9641-3e96-9f9f-cce15e24ce2c.ipa",
+          "size": 15385978,
+          "url": "https://github.com/EhPanda-Team/EhPanda/releases/download/3.0.0/EhPanda-AltStorePAL-647d58c8-9641-3e96-9f9f-cce15e24ce2c.ipa",
+          "id": 772684849,
+          "updated_at": "2026-11-20T17:21:58Z",
+          "digest": "sha256:332eb7672b1f0cb433633e2a80801c4c2e0d9bcd68760f748f8877d0909d1fe6"
+        },
+        {
+          "name": "EhPanda-AltStorePAL-e02d8e15-2647-3a6b-928d-038446b3e5e1.ipa",
+          "size": 15386016,
+          "url": "https://github.com/EhPanda-Team/EhPanda/releases/download/3.0.0/EhPanda-AltStorePAL-e02d8e15-2647-3a6b-928d-038446b3e5e1.ipa",
+          "id": 772684848,
+          "updated_at": "2026-11-20T17:21:58Z",
+          "digest": "sha256:f6fda99037e01baa8dc186c2e9803f6bd258b7ca4a93cf35ed972c3778a24b36"
+        },
+        {
           "name": "EhPanda-GitHub.ipa",
           "size": 18858404,
           "url": "https://github.com/EhPanda-Team/EhPanda/releases/download/3.0.0/EhPanda-GitHub.ipa",
@@ -4362,7 +4416,7 @@
       "draft": false,
       "date": "2026-11-20",
       "published_at": "2026-11-20T10:56:20Z",
-      "body": "## 下载安装 / Downloads\n\n**手动安装或更新请从下表选择完整安装包。** 不确定 Android 架构时请选择通用 APK。\n**For manual installs or updates, choose a full package below.** Use the universal APK if unsure of your Android architecture.\n\n> `.patch` 和 `update-manifest.json` 仅供应用自动更新使用，无法直接安装，无需手动下载。\n> `.patch` files and `update-manifest.json` are for in-app updates only. They cannot be installed manually.\n\n| 平台 / Platform | 安装包 / Package | 其他版本 / Alternatives |\n| --- | --- | --- |\n| Android | [通用 APK / Universal](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1.apk) | [ARM64](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-arm64-v8a.apk) · [ARMv7](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-armeabi-v7a.apk) · [x86_64](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-x86_64.apk) |\n| Windows | [安装版 / Installer](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-windows-installer.exe) | [便携版 / Portable ZIP](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-windows.zip) |\n| macOS | [DMG](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1%2B260.dmg) | — |\n| iOS | [未签名 IPA / Unsigned](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-ios-3.0.1%2B260.ipa) | — |\n| Linux | [AppImage x86_64](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-x86_64.AppImage) · [AppImage ARM64](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-aarch64.AppImage) | [Debian x86_64](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-amd64.deb) · [Debian ARM64](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-arm64.deb) · [Arch x86_64](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-260-x86_64.pkg.tar.zst) |\n| HarmonyOS | [未签名 HAP / Unsigned](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1%2B260-harmonyos-unsigned.ha",
+      "body": "## 下载安装 / Downloads\n\n**手动安装或更新请从下表选择完整安装包。** 不确定 Android 架构时请选择通用 APK。\n**For manual installs or updates, choose a full package below.** Use the universal APK if unsure of your Android architecture.\n\n> 本次更新请下载完整安装包。安装 3.0.1 后，后续版本可在有匹配补丁时使用增量更新。\n> Use a full package for this release. After installing 3.0.1, future updates can use matching incremental packages when available.\n\n| 平台 / Platform | 安装包 / Package | 其他版本 / Alternatives |\n| --- | --- | --- |\n| Android | [通用 APK / Universal](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1.apk) | [ARM64](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-arm64-v8a.apk) · [ARMv7](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-armeabi-v7a.apk) · [x86_64](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-x86_64.apk) |\n| Windows | [安装版 / Installer](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-windows-installer.exe) | [便携版 / Portable ZIP](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-windows.zip) |\n| macOS | [DMG](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1%2B260.dmg) | — |\n| iOS | [未签名 IPA / Unsigned](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-ios-3.0.1%2B260.ipa) | — |\n| Linux | [AppImage x86_64](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-x86_64.AppImage) · [AppImage ARM64](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-aarch64.AppImage) | [Debian x86_64](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-amd64.deb) · [Debian ARM64](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-arm64.deb) · [Arch x86_64](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-260-x86_64.pkg.tar.zst) |\n| HarmonyOS | [未签名 HAP / Unsigned](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1%2B260-harmonyos-uns",
       "ipas": [
         {
           "name": "VeneraX-ios-3.0.1+260.ipa",
