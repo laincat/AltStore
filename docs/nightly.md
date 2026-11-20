@@ -29,7 +29,7 @@
 | EhPanda | 2.8.1 | 无 | 无预发布 |
 | GestaltEdit | 2.3.1 | 无 | 无预发布 |
 | GestaltX | 1.1.1 | 无 | 无预发布 |
-| HentaiPark | 0.15.3 | 无 | 无预发布 |
+| HentaiPark | 0.15.4 | 无 | 无预发布 |
 | HGhubX | 2.2.2 | 无 | 无预发布 |
 | INSAV | 1.3.1 | 无 | 无预发布 |
 | Kazumi | 2.4.4 | 无 | 无预发布 |

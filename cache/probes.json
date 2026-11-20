@@ -2610,5 +2610,19 @@
       "size": 18035069,
       "digest": "sha256:9844e37f8a256848675efb1f03e46dd96ec7f1644d2b8e494b26e1ac33404dfc"
     }
+  },
+  "https://github.com/drdon1234/Hentai-Park/releases/download/v0.15.4/HentaiPark-0.15.4-85-ios-arm64-unsigned.ipa": {
+    "bundleIdentifier": "com.hentaipark.hentaiPark",
+    "version": "0.15.4",
+    "buildVersion": "85",
+    "displayName": "HentaiPark",
+    "minOSVersion": "15.0",
+    "size": 18027346,
+    "assetIdentity": {
+      "id": 770082969,
+      "updated_at": "2026-11-20T02:09:33Z",
+      "size": 18027346,
+      "digest": "sha256:713ab1e2415d37e81596d816ba49eb1ee146313750c206b79c4ce8eccec21172"
+    }
   }
 }
