@@ -1956,15 +1956,15 @@
   "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa": {
     "bundleIdentifier": "io.nekohasekai.swipt",
     "version": "0.1.0",
-    "buildVersion": "83",
+    "buildVersion": "84",
     "displayName": "Swipt",
     "minOSVersion": "16.4",
-    "size": 48174010,
+    "size": 48173853,
     "assetIdentity": {
-      "id": 746286356,
-      "updated_at": "2026-11-14T04:28:32Z",
-      "size": 48174010,
-      "digest": "sha256:b42585e0c988d200bd854219bc840510d6cf1867f27b38d64af0ef7a87aa9756"
+      "id": 770617015,
+      "updated_at": "2026-11-20T05:39:26Z",
+      "size": 48173853,
+      "digest": "sha256:d06e400e6aa84cc9b44d35a6bab05cd33e71adcbf6ee2de374f96a14bb9fa320"
     }
   },
   "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.2/ARMSX3-0.0.2.ipa": {
@@ -2623,6 +2623,62 @@
       "updated_at": "2026-11-20T02:09:33Z",
       "size": 18027346,
       "digest": "sha256:713ab1e2415d37e81596d816ba49eb1ee146313750c206b79c4ce8eccec21172"
+    }
+  },
+  "https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-ios-3.0.1%2B260.ipa": {
+    "bundleIdentifier": "io.github.kyosee.venera",
+    "version": "3.0.1",
+    "buildVersion": "260",
+    "displayName": "VeneraX",
+    "minOSVersion": "15.1",
+    "size": 39632748,
+    "assetIdentity": {
+      "id": 771477030,
+      "updated_at": "2026-11-20T10:56:14Z",
+      "size": 39632748,
+      "digest": "sha256:8f3cd589602006cdb6a8ea5bb98a82b7720f85c951213c03dfad5603e04e2140"
+    }
+  },
+  "https://github.com/zxsos/HGhubX/releases/download/v2.2.3/HGhubX_2.2.3_ios.ipa": {
+    "bundleIdentifier": "com.hghubx.app",
+    "version": "2.2.3",
+    "buildVersion": "2.2.3",
+    "displayName": "HGhubX",
+    "minOSVersion": "15.0",
+    "size": 3895060,
+    "assetIdentity": {
+      "id": 770602926,
+      "updated_at": "2026-11-20T05:33:54Z",
+      "size": 3895060,
+      "digest": "sha256:41ffe0ff2648186fb05f902c021a34e8574c567abaf9d65effa1cd12be3702ca"
+    }
+  },
+  "https://github.com/Kianuni/Camlo/releases/download/v1.3.4/Camlo_v1.3.4_Bilingual.ipa": {
+    "bundleIdentifier": "com.kianuni.Camlo",
+    "version": "1.3.4",
+    "buildVersion": "27",
+    "displayName": "Camlo",
+    "minOSVersion": "26.0",
+    "size": 9563095,
+    "assetIdentity": {
+      "id": 770932448,
+      "updated_at": "2026-11-20T07:44:47Z",
+      "size": 9563095,
+      "digest": "sha256:963b83163a5c0b2c336b63728dfd4c61350d5641ccccd35ec1449fbd82f537cd"
+    }
+  },
+  "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261120/ARMSX2-nightly-20261120-1d1c26d8a2-iOS-arm64.ipa": {
+    "bundleIdentifier": "com.armsx2.ios.nightly",
+    "version": "2.6.0-nightly.20261120.0157",
+    "buildVersion": "260",
+    "displayName": "ARMSX2 Nightly",
+    "minOSVersion": "17.4",
+    "size": 40427581,
+    "assetIdentity": {
+      "id": 770120655,
+      "updated_at": "2026-11-20T02:24:44Z",
+      "size": 40427581,
+      "digest": "sha256:73c26362521f374947f15bfe37f3fdf8d1d3b4cce038e04e01c5b5a2dfa33410"
     }
   }
 }

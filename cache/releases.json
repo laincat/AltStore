@@ -1,6 +1,25 @@
 {
   "zxsos/HGhubX": [
     {
+      "tag": "v2.2.3",
+      "name": "v2.2.3",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T05:33:55Z",
+      "body": "# HGhubX v2.2.3\r\n\r\n本版重新安排手机播放控件，改善桌面子页的宽屏布局，并优化「我的」内容管理与吃瓜详情的稳定性。\r\n\r\n## **TV 端无任何改动**\r\n\r\n## 新增与优化\r\n\r\n1. **手机播放控件与全屏手势（#170）**：选集、静音、切集开关和全屏集中到屏幕底部；首页四个按钮使用更透明的底色，减少对画面的遮挡。横屏设置抽屉完整显示倍速选项；全屏支持上下滑切集并提示首尾边界，清屏时保留锁屏入口。\r\n2. **播放详情、标签与搜索（#170）**：「详情」和「选集」支持左右滑动切换，下拉关闭；点按标签查看同类，长按或右键可屏蔽。在栏目内打开的播放页可按当前内容类型搜索，首页底部的全局搜索不受影响。\r\n3. **收藏与观看历史管理（#168、#169）**：在「我的」中长按或右键卡片进入多选，可批量取消收藏或删除观看记录；列表接近底部时自动加载更多，网格列数保持不变。\r\n\r\n## 修复\r\n\r\n1. **吃瓜详情闪烁（#165）**：切换线路或代理时保留已展示的正文和滚动位置；阅读位置更新时复用未变的图片，短暂缓冲不再立即弹出加载动画。\r\n2. **桌面子页顶栏两侧断开（#171）**：「排行榜」「关注」等子页和页内搜索层的顶栏底色、分隔线铺满面板；标题、筛选项和正文仍按原宽度居中。\r\n3. **本人主页与批量操作**：本人主页隐藏「关注」入口；批量取消收藏期间切换账号、线路或代理时，旧批次停止发送后续项目，不显示旧批次的结果。\r\n\r\n## 安装与兼容提示\r\n\r\n- Windows 提供安装程序和便携包；macOS 提供通用架构 DMG；Linux 提供 amd64 DEB。\r\n- Android 标准版和 TV 版分别提供 APK，按设备架构选择 `arm64`、`armv7` 或 `x86_64`。覆盖升级请选相同版本类别，避免卸载造成应用数据丢失。\r\n- iOS 提供未签名 IPA，需自行签名并侧载。收藏「新更 N 集」的提醒基线仍按设备记录，不跨设备同步。\r\n\r\n## 致谢\r\n\r\n- 感谢 @makisekurisu-jp 对手机播放和「我的」页面的贡献；本版由 @zxsos 整合、验证并发布，也感谢反馈桌面布局和吃瓜闪烁问题的用户。\r\n\r\n## 验证\r\n\r\n- [候选版 CI #44678989121](https://github.com/zxsos/HGhubX/actions/runs/44678989121)：标准版与 TV 版前端构建通过；Rust 114 项通过、4 项忽略；浏览器 smoke 7／7 通过；播放核心 7／7、扩展 4／4 通过。浏览器回归确认连续划到第 2、3 集时未跳到其他剧。\r\n",
+      "ipas": [
+        {
+          "name": "HGhubX_2.2.3_ios.ipa",
+          "size": 3895060,
+          "url": "https://github.com/zxsos/HGhubX/releases/download/v2.2.3/HGhubX_2.2.3_ios.ipa",
+          "id": 770602926,
+          "updated_at": "2026-11-20T05:33:54Z",
+          "digest": "sha256:41ffe0ff2648186fb05f902c021a34e8574c567abaf9d65effa1cd12be3702ca"
+        }
+      ]
+    },
+    {
       "tag": "v2.2.2",
       "name": "v2.2.2",
       "pre": false,
@@ -2183,6 +2202,25 @@
   ],
   "ARMSX2/ARMSX2": [
     {
+      "tag": "nightly-20261120",
+      "name": "ARMSX2 nightly 20261120 (1d1c26d8a2)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T02:24:38Z",
+      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- Catalog: a cache entry stamped one second ahead of time() is fresh\n- SDL frontend: pausing a game launched from the command line no longer quits\n- GS/Vulkan: the pipeline builder checks each vertex array against its own limit\n- tests: a Vulkan pipeline with eight vertex attributes takes a second buffer and a ninth attribute\n- eerunner: --frame-hashes reads VU1 memory once the VU1 thread is idle\n- GS/HW: below 1x, give every render target an exact scaled size\n- Android: launch extras that turn PINE on and pick the GPU driver\n- gsctl: pad commands and a TCP connection\n- eerunner: --pad-script, --pad-record, --frame-hashes and the nullhw renderer\n- PINE: messages to hold pads, play pad scripts and record pad input\n- Pad: scripts, clients and recordings ca",
+      "ipas": [
+        {
+          "name": "ARMSX2-nightly-20261120-1d1c26d8a2-iOS-arm64.ipa",
+          "size": 40427581,
+          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261120/ARMSX2-nightly-20261120-1d1c26d8a2-iOS-arm64.ipa",
+          "id": 770120655,
+          "updated_at": "2026-11-20T02:24:44Z",
+          "digest": "sha256:73c26362521f374947f15bfe37f3fdf8d1d3b4cce038e04e01c5b5a2dfa33410"
+        }
+      ]
+    },
+    {
       "tag": "2.9.5",
       "name": "ARMSX2 2.9.5 ",
       "pre": false,
@@ -2343,25 +2381,6 @@
       "published_at": "2026-11-06T18:59:52Z",
       "body": "# ARMSX2 2.9.2\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/061107f7-41a7-4cda-9366-b0a8e9081158\" />\r\n\r\nWhat's new:\r\n\r\n**Report a problem.** Found in the library menu, the side drawer and every game's pause menu. Pick what went wrong, add a few words if you like, and see every file and its size before anything is sent. From a game's pause menu the report can carry a save state and a one-frame graphics dump, so we can see the exact scene. You get a report code to paste into Discord or GitHub. Uploads keep going in the background, wait for Wi-Fi when a report is large, and can be stopped and retried. My reports in Settings > App keeps your codes and how each one went. Reports are kept for 90 days and used only to fix bugs. Memory cards, BIOS files and games are never sent, and your RetroAchievements name, network addresses and file paths are taken out of the logs. If ARMSX2 closes unexpectedly while you're using it, it offers to send a crash report the next time it opens, and the GS dump option can start a report with the dump attached. done by @bmdhacks\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/4600678a-1d61-481c-a5a9-8e21ce6b0334\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/57cf075a-f248-443d-9ca9-ed94038952f3\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/fdc87cd1-0cb2-47b9-87d5-80da6450bcbd\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/0141fbb5-d568-41c7-9034-18fee9aca4b4\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/cf9c4c80-a437-44be-824c-4bb673f4a5d8\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/2dbe4694-30db-4102-bc79-cdea766d6e76\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://githu",
       "ipas": []
-    },
-    {
-      "tag": "nightly-20261106",
-      "name": "ARMSX2 nightly 20261106 (afd93842f9)",
-      "pre": true,
-      "draft": false,
-      "date": "2026-11-06",
-      "published_at": "2026-11-06T15:32:28Z",
-      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- Android: regenerate the PGO profile on the GS span source\n- GS/HW: a target takes the destination-alpha loop only after more than 64 such draws in a frame\n- GS/Vulkan: the Adreno 613's destination-alpha loop leaves only the targets it reads uncompressed\n- GS/Vulkan: on the Adreno 613 destination-alpha draws read the target in the pass\n- GS: with draw buffering off, the draw's environment is copied once\n- GS: sprite pair layouts enter the two-pass kick kernel, autoflush included\n- GS/SW: build only the colour table entry a row's span reads\n- GS/HW: copy road kernels read the texture a block at a time and write the frame a block row at a time\n- GS/TC: a block grid per target in place of the dirty rectangle lists\n- Android: Auto hides the on-screen contro",
-      "ipas": [
-        {
-          "name": "ARMSX2-nightly-20261106-afd93842f9-iOS-arm64.ipa",
-          "size": 40577893,
-          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261106/ARMSX2-nightly-20261106-afd93842f9-iOS-arm64.ipa",
-          "id": 717610743,
-          "updated_at": "2026-11-06T15:32:33Z",
-          "digest": "sha256:d1d7c48a42b50e682c2fae8eba048f4f0b7cd52288b1256fa63b6ca1c8300557"
-        }
-      ]
     },
     {
       "tag": "2.9.1",
@@ -2776,17 +2795,17 @@
       "name": "Nightly build",
       "pre": true,
       "draft": false,
-      "date": "2026-11-14",
-      "published_at": "2026-11-14T04:28:34Z",
-      "body": "* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack options for ZIP archives\n* Replace the hand-written ZIP code of the CLI with fflate\n* Simplify screen streaming and recording\n* Share one atomic file write\n* Fix mDNS browsing and name conflict handling\n* Simplify the JavaScriptCore adapter\n* Add swipt driver to serve a device from the computer\n* Build the Linux and Windows driver with the WebKit of a Bun release\n* Port the driver and the CLI to Linux and Windows\n* Follow Apple's terms and style guides in the CLI translations\n* Improve automatic unlocking\n* Remove unsourced and misattributed claims from comments\n* Require iOS 26 for the accessibility API\n* Fix network lockdown connections closing without a heartbeat\n* Extend Swiplet icon colors\n* Add the chart and data grid components\n* Remove the guards against bad values from Swiplets\n* Add stream actions and the process API\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the developer service\n* Fix slow detection of unsupported networks\n* Resolve DNS with the system configuration on iOS\n* Detect the foreground app right after connecting\n* Connect touch input before the first tap\n* Send input without checking the lock state\n* Split the CLI commands into one file each\n* Fix the detection of the foreground app\n* Download swiplet updates on demand and show progress\n* Number enumerations with iota\n* Skip unchanged buil",
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T05:39:28Z",
+      "body": "* Fix cellular data being detected on Wi-Fi\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack options for ZIP archives\n* Replace the hand-written ZIP code of the CLI with fflate\n* Simplify screen streaming and recording\n* Share one atomic file write\n* Fix mDNS browsing and name conflict handling\n* Simplify the JavaScriptCore adapter\n* Add swipt driver to serve a device from the computer\n* Build the Linux and Windows driver with the WebKit of a Bun release\n* Port the driver and the CLI to Linux and Windows\n* Follow Apple's terms and style guides in the CLI translations\n* Improve automatic unlocking\n* Remove unsourced and misattributed claims from comments\n* Require iOS 26 for the accessibility API\n* Fix network lockdown connections closing without a heartbeat\n* Extend Swiplet icon colors\n* Add the chart and data grid components\n* Remove the guards against bad values from Swiplets\n* Add stream actions and the process API\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the developer service\n* Fix slow detection of unsupported networks\n* Resolve DNS with the system configuration on iOS\n* Detect the foreground app right after connecting\n* Connect touch input before the first tap\n* Send input without checking the lock state\n* Split the CLI commands into one file each\n* Fix the detection of the foreground app\n* Download swiplet updates on demand and show progress\n* Number ",
       "ipas": [
         {
           "name": "Swipt.ipa",
-          "size": 48174010,
+          "size": 48173853,
           "url": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-          "id": 746286356,
-          "updated_at": "2026-11-14T04:28:32Z",
-          "digest": "sha256:b42585e0c988d200bd854219bc840510d6cf1867f27b38d64af0ef7a87aa9756"
+          "id": 770617015,
+          "updated_at": "2026-11-20T05:39:26Z",
+          "digest": "sha256:d06e400e6aa84cc9b44d35a6bab05cd33e71adcbf6ee2de374f96a14bb9fa320"
         }
       ]
     }
@@ -4337,6 +4356,25 @@
   ],
   "Kyosee/VeneraX": [
     {
+      "tag": "v3.0.1",
+      "name": "v3.0.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T10:56:20Z",
+      "body": "## 下载安装 / Downloads\n\n**手动安装或更新请从下表选择完整安装包。** 不确定 Android 架构时请选择通用 APK。\n**For manual installs or updates, choose a full package below.** Use the universal APK if unsure of your Android architecture.\n\n> `.patch` 和 `update-manifest.json` 仅供应用自动更新使用，无法直接安装，无需手动下载。\n> `.patch` files and `update-manifest.json` are for in-app updates only. They cannot be installed manually.\n\n| 平台 / Platform | 安装包 / Package | 其他版本 / Alternatives |\n| --- | --- | --- |\n| Android | [通用 APK / Universal](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1.apk) | [ARM64](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-arm64-v8a.apk) · [ARMv7](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-armeabi-v7a.apk) · [x86_64](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-x86_64.apk) |\n| Windows | [安装版 / Installer](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-windows-installer.exe) | [便携版 / Portable ZIP](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-windows.zip) |\n| macOS | [DMG](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1%2B260.dmg) | — |\n| iOS | [未签名 IPA / Unsigned](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-ios-3.0.1%2B260.ipa) | — |\n| Linux | [AppImage x86_64](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-x86_64.AppImage) · [AppImage ARM64](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-aarch64.AppImage) | [Debian x86_64](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-amd64.deb) · [Debian ARM64](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-arm64.deb) · [Arch x86_64](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1-260-x86_64.pkg.tar.zst) |\n| HarmonyOS | [未签名 HAP / Unsigned](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1%2B260-harmonyos-unsigned.ha",
+      "ipas": [
+        {
+          "name": "VeneraX-ios-3.0.1+260.ipa",
+          "size": 39632748,
+          "url": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-ios-3.0.1%2B260.ipa",
+          "id": 771477030,
+          "updated_at": "2026-11-20T10:56:14Z",
+          "digest": "sha256:8f3cd589602006cdb6a8ea5bb98a82b7720f85c951213c03dfad5603e04e2140"
+        }
+      ]
+    },
+    {
       "tag": "mobile-3.0.1-beta.1",
       "name": "VeneraX 3.0.1 Beta 1 (Android & HarmonyOS)",
       "pre": true,
@@ -4676,25 +4714,6 @@
           "id": 531922761,
           "updated_at": "2026-08-27T07:33:26Z",
           "digest": "sha256:9b843c763499951e4d558dd512c3e4c6ff0b6ef483e39c5c23eb230a95932ef8"
-        }
-      ]
-    },
-    {
-      "tag": "v2.2.9",
-      "name": "v2.2.9",
-      "pre": false,
-      "draft": false,
-      "date": "2026-08-25",
-      "published_at": "2026-08-25T12:27:59Z",
-      "body": "> **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v2.2.9/release-notes/v2.2.9.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v2.2.9/release-notes/v2.2.9.zh-CN.md)\n\n## What's Changed\n\n### Added\n- Reading Statistics now supports swiping a comic left to delete its record\n\n### Changed\n- The Reading Statistics sort choice is now saved with your synced data\n\n### Fixed\n- Fixed some comic covers not showing\n- Fixed the app crashing when a network request failed\n- Fixed pressing back while editing the home layout leaving the app instead of exiting edit mode\n- Fixed Reading Statistics still listing blocked comics\n\n**Full Changelog**: https://github.com/Kyosee/VeneraX/compare/v2.2.8...v2.2.9\n",
-      "ipas": [
-        {
-          "name": "VeneraX-ios-2.2.9+239.ipa",
-          "size": 35242955,
-          "url": "https://github.com/Kyosee/VeneraX/releases/download/v2.2.9/VeneraX-ios-2.2.9%2B239.ipa",
-          "id": 529167728,
-          "updated_at": "2026-08-25T12:27:55Z",
-          "digest": "sha256:a222b407a4db27b3335aab3cdee0d0a6584f78e408f2d9d7c811c6769fe24c94"
         }
       ]
     }
@@ -8746,6 +8765,25 @@
     }
   ],
   "Kianuni/Camlo": [
+    {
+      "tag": "v1.3.4",
+      "name": "Camlo v1.3.4 (Build 27) — Fix On-Device Clock-Depth & 3D Gyroscope Ghosting (#7, #3) | 修复真机景深破框与陀螺仪重影",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T07:44:48Z",
+      "body": "## Camlo v1.3.4 (Build 27)\n\n### 彻底修复 iOS 真机锁屏景深破框不触发 (#7, #3)\n- **定位并满足 `WallpaperKit` 原生景深白名单校验**：通过逆向 iOS `WallpaperKit.framework` (`supportsDepthEffect`)，确认系统会在切换真机锁屏前强制检查路径中是否包含 `Clownfish` 标记（`ParameterizedCA` 检查 `wallpaper.ca` 所在 `.wallpaper` 路径；`LayeredAnimation` 检查 `floatingAnimationFileNameKey` 指向的 `Floating.ca` 路径）；若不满足，系统即记录 `Depth not supported, collapsing floating view into foreground view` 并将前景层降级压到系统时间之后（导致在 Camlo App 内能遮挡 `09:41`，回到系统真机锁屏却总是时间压人物）。\n- **双引擎与历史壁纸自动原地自愈**：现已全面升级 3D `ParameterizedCA`（`7920.Camlo_Clownfish_3D-...wallpaper`）与滑动变身/实况 `LayeredAnimation`（`7400.Clownfish_WWDC_2022-...wallpaper` / `7400.WWDC_2022_Clownfish_Floating-...ca`）；**已保存在金库或外部导入的旧版 `.tendies` 壁纸**在升级至 `v1.3.4` 后会自动原地自愈迁移，无需重新创作。\n\n### 重塑 3D 陀螺仪 (`ParameterizedCA`) 立体视差与消重影 (#3)\n- **消除主体背后「双重轮廓重影」**：将背景 (`BG`) 与前景抠图 (`FG`) 的静止超采样倍率对齐为严格 `1:1`（`1.065x`），彻底解决旧版 `1.104x` 与 `1.052x` 尺寸不一致导致静止或晃动时人物头部、剑柄外侧露出一圈较大残影的问题。\n- **自动背景遮挡补全 (Occlusion Inpainting)**：在编译 3D 陀螺仪壁纸及金库自愈旧包时，自动对被前景抠图遮住的背景区域执行多尺度金字塔与水平扫线上下文补全，晃动手机错位时背后露出自然衔接的天空/云海/背景纹理，不再出现克隆人影。\n- **增加 `sublayerTransform` 3D 透视与立体倾斜**：收窄合理平移幅度并加入 `transform.rotation.x` / `transform.rotation.y` 空间倾角变换，还原接近原生的立体视差体验。\n- **云端全部 76 套官方 `.tendies` 同步升级**：涵盖「次元 3D」「海岸海报 3D」「iPhone Duo」「馆藏名画」共 76 套官方云端包已全部重新编译并通过 `CAPackage` 与 SHA-256 校验。\n\n---\n\n### Fix On-Device Lock Screen Clock-Depth (#7, #3)\n- **Satisfies `WallpaperKit` `Clownfish` Depth Gate**: Disassembling `WallpaperKit.framework` (`supportsDepthEffect`) confirmed that iOS collapses `FLOATING` behind the system clock (`\"Depth not supported, collapsing floating view into foreground view\"`) unless `\"Clownfish\"` appears in the `ParameterizedCA` bundle path or `LayeredAnimation` `Floating.ca` path. Both Camlo compilers (`7920.Camlo_Clownfish_3D-...wallpaper` & `7400.WWDC_2022_Clownfish_Floating-...ca`), all 76 cloud `.tendies` packs, and automatic in-place Vault/import self-healing now conform cleanly.\n\n### Overhaul 3D Gyroscope (`ParameterizedCA`) Spatial Depth & Ghosting Fix (#3)\n",
+      "ipas": [
+        {
+          "name": "Camlo_v1.3.4_Bilingual.ipa",
+          "size": 9563095,
+          "url": "https://github.com/Kianuni/Camlo/releases/download/v1.3.4/Camlo_v1.3.4_Bilingual.ipa",
+          "id": 770932448,
+          "updated_at": "2026-11-20T07:44:47Z",
+          "digest": "sha256:963b83163a5c0b2c336b63728dfd4c61350d5641ccccd35ec1449fbd82f537cd"
+        }
+      ]
+    },
     {
       "tag": "v1.3.3",
       "name": "Camlo v1.3.3 (Build 26) — Fix SideStore / AltStore App ID Registration (#6) | 修复 SideStore 安装报错",

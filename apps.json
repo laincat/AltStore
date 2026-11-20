@@ -385,41 +385,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.6.0-nightly.20261114.1505",
-              "date": "2026-11-14",
-              "publishedAt": "2026-11-14T15:41:20Z",
+              "version": "2.6.0-nightly.20261120.0157",
+              "date": "2026-11-20",
+              "publishedAt": "2026-11-20T02:24:38Z",
               "buildVersion": "260",
               "buildNumber": "260",
-              "localizedDescription": "🧪 预发布 nightly-20261114（2026-11-14）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-              "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261114/ARMSX2-nightly-20261114-6d9511e29e-iOS-arm64.ipa",
-              "size": 40717380,
+              "localizedDescription": "🧪 预发布 nightly-20261120（2026-11-20）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+              "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261120/ARMSX2-nightly-20261120-1d1c26d8a2-iOS-arm64.ipa",
+              "size": 40427581,
               "minOSVersion": "17.4",
-              "releaseTag": "nightly-20261114",
-              "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261114"
+              "releaseTag": "nightly-20261120",
+              "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261120"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.6.0-nightly.20261114.1505",
-          "date": "2026-11-14",
-          "publishedAt": "2026-11-14T15:41:20Z",
+          "version": "2.6.0-nightly.20261120.0157",
+          "date": "2026-11-20",
+          "publishedAt": "2026-11-20T02:24:38Z",
           "buildVersion": "260",
           "buildNumber": "260",
-          "localizedDescription": "🧪 预发布 nightly-20261114（2026-11-14）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261114/ARMSX2-nightly-20261114-6d9511e29e-iOS-arm64.ipa",
-          "size": 40717380,
+          "localizedDescription": "🧪 预发布 nightly-20261120（2026-11-20）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261120/ARMSX2-nightly-20261120-1d1c26d8a2-iOS-arm64.ipa",
+          "size": 40427581,
           "minOSVersion": "17.4",
-          "releaseTag": "nightly-20261114",
-          "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261114"
+          "releaseTag": "nightly-20261120",
+          "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261120"
         }
       ],
-      "version": "2.6.0-nightly.20261114.1505",
-      "versionDate": "2026-11-14",
-      "versionDescription": "🧪 预发布 nightly-20261114（2026-11-14）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-      "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261114/ARMSX2-nightly-20261114-6d9511e29e-iOS-arm64.ipa",
-      "size": 40717380,
+      "version": "2.6.0-nightly.20261120.0157",
+      "versionDate": "2026-11-20",
+      "versionDescription": "🧪 预发布 nightly-20261120（2026-11-20）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+      "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261120/ARMSX2-nightly-20261120-1d1c26d8a2-iOS-arm64.ipa",
+      "size": 40427581,
       "minOSVersion": "17.4"
     },
     {
@@ -593,7 +593,7 @@
       "developerName": "Kianuni",
       "subtitle": "锁屏动态壁纸制作与预览",
       "localizedDescription": "在 iPhone 和 iPad 上制作、预览和导出锁屏壁纸，支持动态转场、实况照片、视频和 3D 视差。锁屏直写取决于系统版本和签名权限，上游注明支持至 iOS / iPadOS 27.3 beta 1；27.3 beta 2 起仍可制作和导出 .tendies 壁纸包。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Kianuni/Camlo",
-      "iconURL": "https://raw.githubusercontent.com/Kianuni/Camlo/v1.3.3/PreviewIcon.png",
+      "iconURL": "https://raw.githubusercontent.com/Kianuni/Camlo/v1.3.4/PreviewIcon.png",
       "tintColor": "#6A4DF5",
       "category": "utilities",
       "appPermissions": {
@@ -605,41 +605,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "1.3.3",
-              "date": "2026-11-19",
-              "publishedAt": "2026-11-19T00:45:24Z",
-              "buildVersion": "26",
-              "buildNumber": "26",
-              "localizedDescription": "Camlo v1.3.3 (Build 26)\n修复 SideStore / AltStore 个人免费 Apple ID 安装失败 (#6)\n- 修复 appIdName 非法字符报错：感谢 @linszx 的精准定位！此前主 Info.plist 顶层 CFBundleDisplayName 设为 \"开幕 Camlo\"，导致 SideStore / AltStore（底层 SideSign / AltSign）在向苹果开发者接口 addAppId 注册 App ID 时因包含中文及空格而触发 An invalid value '开幕 Camlo' was provided for the parameter 'appIdName' 安装失败。\n- 纯 ASCII 顶层名称 + 原生 InfoPlist.strings 本地化：现已将主 Info.plist 顶层 CFBundleDisplayName 与 apps.json name 统一改为纯 ASCII 的 \"Camlo\"，同时启用 LSHasLocalizedDisplayName 并通过 InfoPlist.xcstrings 生成 zh-Hans.lproj/InfoPlist.strings 与 en.lproj/InfoPlist.strings——SideStore / AltStore 个人免费签可顺利完成 App ID 注册并保留 App Group 权限，简体中文桌面图标仍优雅显示为 「开幕 Camlo」。\n- 完整继承 v1.3.2 对 iPhone Duo 折叠屏 retinaMultiplier…",
-              "downloadURL": "https://github.com/Kianuni/Camlo/releases/download/v1.3.3/Camlo_v1.3.3_Bilingual.ipa",
-              "size": 9541240,
+              "version": "1.3.4",
+              "date": "2026-11-20",
+              "publishedAt": "2026-11-20T07:44:48Z",
+              "buildVersion": "27",
+              "buildNumber": "27",
+              "localizedDescription": "Camlo v1.3.4 (Build 27)\n彻底修复 iOS 真机锁屏景深破框不触发 (#7, #3)\n- 定位并满足 WallpaperKit 原生景深白名单校验：通过逆向 iOS WallpaperKit.framework (supportsDepthEffect)，确认系统会在切换真机锁屏前强制检查路径中是否包含 Clownfish 标记（ParameterizedCA 检查 wallpaper.ca 所在 .wallpaper 路径；LayeredAnimation 检查 floatingAnimationFileNameKey 指向的 Floating.ca 路径）；若不满足，系统即记录 Depth not supported, collapsing floating view into foreground view 并将前景层降级压到系统时间之后（导致在 Camlo App 内能遮挡 09:41，回到系统真机锁屏却总是时间压人物）。\n- 双引擎与历史壁纸自动原地自愈：现已全面升级 3D ParameterizedCA（7920.Camlo_Clownfish_3D-...wallpaper）与滑动变身/实况 LayeredAnimation（7400.Clownfish_WWDC_2022-...wallpaper / 7400.WWDC_2022_Clownfish_Floating-...ca）；已保存在金库或外部导入的旧版 .tendies 壁纸在升级至 v1.3.4 后会自动原地自愈迁移，无需重新创作。\n重塑 3D 陀螺仪 (Parameterize…",
+              "downloadURL": "https://github.com/Kianuni/Camlo/releases/download/v1.3.4/Camlo_v1.3.4_Bilingual.ipa",
+              "size": 9563095,
               "minOSVersion": "26.0",
-              "releaseTag": "v1.3.3",
-              "source": "https://github.com/Kianuni/Camlo/releases/tag/v1.3.3"
+              "releaseTag": "v1.3.4",
+              "source": "https://github.com/Kianuni/Camlo/releases/tag/v1.3.4"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "1.3.3",
-          "date": "2026-11-19",
-          "publishedAt": "2026-11-19T00:45:24Z",
-          "buildVersion": "26",
-          "buildNumber": "26",
-          "localizedDescription": "Camlo v1.3.3 (Build 26)\n修复 SideStore / AltStore 个人免费 Apple ID 安装失败 (#6)\n- 修复 appIdName 非法字符报错：感谢 @linszx 的精准定位！此前主 Info.plist 顶层 CFBundleDisplayName 设为 \"开幕 Camlo\"，导致 SideStore / AltStore（底层 SideSign / AltSign）在向苹果开发者接口 addAppId 注册 App ID 时因包含中文及空格而触发 An invalid value '开幕 Camlo' was provided for the parameter 'appIdName' 安装失败。\n- 纯 ASCII 顶层名称 + 原生 InfoPlist.strings 本地化：现已将主 Info.plist 顶层 CFBundleDisplayName 与 apps.json name 统一改为纯 ASCII 的 \"Camlo\"，同时启用 LSHasLocalizedDisplayName 并通过 InfoPlist.xcstrings 生成 zh-Hans.lproj/InfoPlist.strings 与 en.lproj/InfoPlist.strings——SideStore / AltStore 个人免费签可顺利完成 App ID 注册并保留 App Group 权限，简体中文桌面图标仍优雅显示为 「开幕 Camlo」。\n- 完整继承 v1.3.2 对 iPhone Duo 折叠屏 retinaMultiplier…",
-          "downloadURL": "https://github.com/Kianuni/Camlo/releases/download/v1.3.3/Camlo_v1.3.3_Bilingual.ipa",
-          "size": 9541240,
+          "version": "1.3.4",
+          "date": "2026-11-20",
+          "publishedAt": "2026-11-20T07:44:48Z",
+          "buildVersion": "27",
+          "buildNumber": "27",
+          "localizedDescription": "Camlo v1.3.4 (Build 27)\n彻底修复 iOS 真机锁屏景深破框不触发 (#7, #3)\n- 定位并满足 WallpaperKit 原生景深白名单校验：通过逆向 iOS WallpaperKit.framework (supportsDepthEffect)，确认系统会在切换真机锁屏前强制检查路径中是否包含 Clownfish 标记（ParameterizedCA 检查 wallpaper.ca 所在 .wallpaper 路径；LayeredAnimation 检查 floatingAnimationFileNameKey 指向的 Floating.ca 路径）；若不满足，系统即记录 Depth not supported, collapsing floating view into foreground view 并将前景层降级压到系统时间之后（导致在 Camlo App 内能遮挡 09:41，回到系统真机锁屏却总是时间压人物）。\n- 双引擎与历史壁纸自动原地自愈：现已全面升级 3D ParameterizedCA（7920.Camlo_Clownfish_3D-...wallpaper）与滑动变身/实况 LayeredAnimation（7400.Clownfish_WWDC_2022-...wallpaper / 7400.WWDC_2022_Clownfish_Floating-...ca）；已保存在金库或外部导入的旧版 .tendies 壁纸在升级至 v1.3.4 后会自动原地自愈迁移，无需重新创作。\n重塑 3D 陀螺仪 (Parameterize…",
+          "downloadURL": "https://github.com/Kianuni/Camlo/releases/download/v1.3.4/Camlo_v1.3.4_Bilingual.ipa",
+          "size": 9563095,
           "minOSVersion": "26.0",
-          "releaseTag": "v1.3.3",
-          "source": "https://github.com/Kianuni/Camlo/releases/tag/v1.3.3"
+          "releaseTag": "v1.3.4",
+          "source": "https://github.com/Kianuni/Camlo/releases/tag/v1.3.4"
         }
       ],
-      "version": "1.3.3",
-      "versionDate": "2026-11-19",
-      "versionDescription": "Camlo v1.3.3 (Build 26)\n修复 SideStore / AltStore 个人免费 Apple ID 安装失败 (#6)\n- 修复 appIdName 非法字符报错：感谢 @linszx 的精准定位！此前主 Info.plist 顶层 CFBundleDisplayName 设为 \"开幕 Camlo\"，导致 SideStore / AltStore（底层 SideSign / AltSign）在向苹果开发者接口 addAppId 注册 App ID 时因包含中文及空格而触发 An invalid value '开幕 Camlo' was provided for the parameter 'appIdName' 安装失败。\n- 纯 ASCII 顶层名称 + 原生 InfoPlist.strings 本地化：现已将主 Info.plist 顶层 CFBundleDisplayName 与 apps.json name 统一改为纯 ASCII 的 \"Camlo\"，同时启用 LSHasLocalizedDisplayName 并通过 InfoPlist.xcstrings 生成 zh-Hans.lproj/InfoPlist.strings 与 en.lproj/InfoPlist.strings——SideStore / AltStore 个人免费签可顺利完成 App ID 注册并保留 App Group 权限，简体中文桌面图标仍优雅显示为 「开幕 Camlo」。\n- 完整继承 v1.3.2 对 iPhone Duo 折叠屏 retinaMultiplier…",
-      "downloadURL": "https://github.com/Kianuni/Camlo/releases/download/v1.3.3/Camlo_v1.3.3_Bilingual.ipa",
-      "size": 9541240,
+      "version": "1.3.4",
+      "versionDate": "2026-11-20",
+      "versionDescription": "Camlo v1.3.4 (Build 27)\n彻底修复 iOS 真机锁屏景深破框不触发 (#7, #3)\n- 定位并满足 WallpaperKit 原生景深白名单校验：通过逆向 iOS WallpaperKit.framework (supportsDepthEffect)，确认系统会在切换真机锁屏前强制检查路径中是否包含 Clownfish 标记（ParameterizedCA 检查 wallpaper.ca 所在 .wallpaper 路径；LayeredAnimation 检查 floatingAnimationFileNameKey 指向的 Floating.ca 路径）；若不满足，系统即记录 Depth not supported, collapsing floating view into foreground view 并将前景层降级压到系统时间之后（导致在 Camlo App 内能遮挡 09:41，回到系统真机锁屏却总是时间压人物）。\n- 双引擎与历史壁纸自动原地自愈：现已全面升级 3D ParameterizedCA（7920.Camlo_Clownfish_3D-...wallpaper）与滑动变身/实况 LayeredAnimation（7400.Clownfish_WWDC_2022-...wallpaper / 7400.WWDC_2022_Clownfish_Floating-...ca）；已保存在金库或外部导入的旧版 .tendies 壁纸在升级至 v1.3.4 后会自动原地自愈迁移，无需重新创作。\n重塑 3D 陀螺仪 (Parameterize…",
+      "downloadURL": "https://github.com/Kianuni/Camlo/releases/download/v1.3.4/Camlo_v1.3.4_Bilingual.ipa",
+      "size": 9563095,
       "minOSVersion": "26.0"
     },
     {
@@ -880,41 +880,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.2.2",
-              "date": "2026-11-19",
-              "publishedAt": "2026-11-19T04:39:12Z",
-              "buildVersion": "2.2.2",
-              "buildNumber": "2.2.2",
-              "localizedDescription": "HGhubX 2.2.2\n\n2.2.0 之后的体验修复版本：收藏续播与新集提醒、底部进度预览、TV 启动密码，以及冷启动登录保持与移动端布局 / 键盘修复。\n新增\n\n- 收藏进度、续播与新集提醒（#154）：收藏卡片显示上次观看进度；看完一集且有后续时从下一集开头继续；返回收藏页后台刷新集数并保留现有卡片，未看新集显示「新更 N 集」角标。\n- TV 启动密码（#152）：设置 → 启动密码可开启 / 修改 / 关闭四位 PIN 或立即锁定；支持遥控器数字键与屏幕键盘，连续输入不再被步骤切换清空，连续输错 5 次进入 15 秒冷却。\n改进\n\n- 底部进度预览（#152）：横拖画面或拖动进度条统一在底部预览时间，松手才提交跳转，不再把进度条叠在画面中央。\n- 连续切集（#156、#157）：下一集加载期间仍可继续划；同类集数提示只更新同一张卡片，不堆叠。\n- TV 解锁页移除重复副标题与底部操作说明，仅保留标题、输入提示与错误反馈。\n修复\n\n- 冷启动与账号恢复（#156）：启动动画期间按返回只跳过动画；镜像验证暂时失败不再显示登出；账号同步 401 时同账号静默重登，身份或会话代次不符时保留原会话并提示手动处理。\n- 移动端布局与登录键盘（#157、#163）：窄屏全宽、平板 / 桌面限宽居中；横竖屏底栏与弹层避开系统安全区；Android 标准版软键盘弹出后，密码框与「登录」按钮仍可滚到可见位置。\n验证\n\n- 集成校验全绿：前端标准版 + TV 版构建、Rust、浏览器 smoke、Playback core / extended（run 44454852498）。\n- 全平…",
-              "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.2/HGhubX_2.2.2_ios.ipa",
-              "size": 3891126,
+              "version": "2.2.3",
+              "date": "2026-11-20",
+              "publishedAt": "2026-11-20T05:33:55Z",
+              "buildVersion": "2.2.3",
+              "buildNumber": "2.2.3",
+              "localizedDescription": "HGhubX v2.2.3\r\n\r\n本版重新安排手机播放控件，改善桌面子页的宽屏布局，并优化「我的」内容管理与吃瓜详情的稳定性。\r\nTV 端无任何改动\r\n新增与优化\r\n\r\n1. 手机播放控件与全屏手势（#170）：选集、静音、切集开关和全屏集中到屏幕底部；首页四个按钮使用更透明的底色，减少对画面的遮挡。横屏设置抽屉完整显示倍速选项；全屏支持上下滑切集并提示首尾边界，清屏时保留锁屏入口。\r\n2. 播放详情、标签与搜索（#170）：「详情」和「选集」支持左右滑动切换，下拉关闭；点按标签查看同类，长按或右键可屏蔽。在栏目内打开的播放页可按当前内容类型搜索，首页底部的全局搜索不受影响。\r\n3. 收藏与观看历史管理（#168、#169）：在「我的」中长按或右键卡片进入多选，可批量取消收藏或删除观看记录；列表接近底部时自动加载更多，网格列数保持不变。\r\n修复\r\n\r\n1. 吃瓜详情闪烁（#165）：切换线路或代理时保留已展示的正文和滚动位置；阅读位置更新时复用未变的图片，短暂缓冲不再立即弹出加载动画。\r\n2. 桌面子页顶栏两侧断开（#171）：「排行榜」「关注」等子页和页内搜索层的顶栏底色、分隔线铺满面板；标题、筛选项和正文仍按原宽度居中。\r\n3. 本人主页与批量操作：本人主页隐藏「关注」入口；批量取消收藏期间切换账号、线路或代理时，旧批次停止发送后续项目，不显示旧批次的结果。\r\n安装与兼容提示\r\n\r\n- Windows 提供安装程序和便携包；macOS 提供通用架构 DMG；Linux 提供 amd64 DEB。\r\n- Android 标准版和 TV 版分别提供 APK，按设备架构选择 ar…",
+              "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.3/HGhubX_2.2.3_ios.ipa",
+              "size": 3895060,
               "minOSVersion": "15.0",
-              "releaseTag": "v2.2.2",
-              "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.2.2"
+              "releaseTag": "v2.2.3",
+              "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.2.3"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.2.2",
-          "date": "2026-11-19",
-          "publishedAt": "2026-11-19T04:39:12Z",
-          "buildVersion": "2.2.2",
-          "buildNumber": "2.2.2",
-          "localizedDescription": "HGhubX 2.2.2\n\n2.2.0 之后的体验修复版本：收藏续播与新集提醒、底部进度预览、TV 启动密码，以及冷启动登录保持与移动端布局 / 键盘修复。\n新增\n\n- 收藏进度、续播与新集提醒（#154）：收藏卡片显示上次观看进度；看完一集且有后续时从下一集开头继续；返回收藏页后台刷新集数并保留现有卡片，未看新集显示「新更 N 集」角标。\n- TV 启动密码（#152）：设置 → 启动密码可开启 / 修改 / 关闭四位 PIN 或立即锁定；支持遥控器数字键与屏幕键盘，连续输入不再被步骤切换清空，连续输错 5 次进入 15 秒冷却。\n改进\n\n- 底部进度预览（#152）：横拖画面或拖动进度条统一在底部预览时间，松手才提交跳转，不再把进度条叠在画面中央。\n- 连续切集（#156、#157）：下一集加载期间仍可继续划；同类集数提示只更新同一张卡片，不堆叠。\n- TV 解锁页移除重复副标题与底部操作说明，仅保留标题、输入提示与错误反馈。\n修复\n\n- 冷启动与账号恢复（#156）：启动动画期间按返回只跳过动画；镜像验证暂时失败不再显示登出；账号同步 401 时同账号静默重登，身份或会话代次不符时保留原会话并提示手动处理。\n- 移动端布局与登录键盘（#157、#163）：窄屏全宽、平板 / 桌面限宽居中；横竖屏底栏与弹层避开系统安全区；Android 标准版软键盘弹出后，密码框与「登录」按钮仍可滚到可见位置。\n验证\n\n- 集成校验全绿：前端标准版 + TV 版构建、Rust、浏览器 smoke、Playback core / extended（run 44454852498）。\n- 全平…",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.2/HGhubX_2.2.2_ios.ipa",
-          "size": 3891126,
+          "version": "2.2.3",
+          "date": "2026-11-20",
+          "publishedAt": "2026-11-20T05:33:55Z",
+          "buildVersion": "2.2.3",
+          "buildNumber": "2.2.3",
+          "localizedDescription": "HGhubX v2.2.3\r\n\r\n本版重新安排手机播放控件，改善桌面子页的宽屏布局，并优化「我的」内容管理与吃瓜详情的稳定性。\r\nTV 端无任何改动\r\n新增与优化\r\n\r\n1. 手机播放控件与全屏手势（#170）：选集、静音、切集开关和全屏集中到屏幕底部；首页四个按钮使用更透明的底色，减少对画面的遮挡。横屏设置抽屉完整显示倍速选项；全屏支持上下滑切集并提示首尾边界，清屏时保留锁屏入口。\r\n2. 播放详情、标签与搜索（#170）：「详情」和「选集」支持左右滑动切换，下拉关闭；点按标签查看同类，长按或右键可屏蔽。在栏目内打开的播放页可按当前内容类型搜索，首页底部的全局搜索不受影响。\r\n3. 收藏与观看历史管理（#168、#169）：在「我的」中长按或右键卡片进入多选，可批量取消收藏或删除观看记录；列表接近底部时自动加载更多，网格列数保持不变。\r\n修复\r\n\r\n1. 吃瓜详情闪烁（#165）：切换线路或代理时保留已展示的正文和滚动位置；阅读位置更新时复用未变的图片，短暂缓冲不再立即弹出加载动画。\r\n2. 桌面子页顶栏两侧断开（#171）：「排行榜」「关注」等子页和页内搜索层的顶栏底色、分隔线铺满面板；标题、筛选项和正文仍按原宽度居中。\r\n3. 本人主页与批量操作：本人主页隐藏「关注」入口；批量取消收藏期间切换账号、线路或代理时，旧批次停止发送后续项目，不显示旧批次的结果。\r\n安装与兼容提示\r\n\r\n- Windows 提供安装程序和便携包；macOS 提供通用架构 DMG；Linux 提供 amd64 DEB。\r\n- Android 标准版和 TV 版分别提供 APK，按设备架构选择 ar…",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.3/HGhubX_2.2.3_ios.ipa",
+          "size": 3895060,
           "minOSVersion": "15.0",
-          "releaseTag": "v2.2.2",
-          "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.2.2"
+          "releaseTag": "v2.2.3",
+          "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.2.3"
         }
       ],
-      "version": "2.2.2",
-      "versionDate": "2026-11-19",
-      "versionDescription": "HGhubX 2.2.2\n\n2.2.0 之后的体验修复版本：收藏续播与新集提醒、底部进度预览、TV 启动密码，以及冷启动登录保持与移动端布局 / 键盘修复。\n新增\n\n- 收藏进度、续播与新集提醒（#154）：收藏卡片显示上次观看进度；看完一集且有后续时从下一集开头继续；返回收藏页后台刷新集数并保留现有卡片，未看新集显示「新更 N 集」角标。\n- TV 启动密码（#152）：设置 → 启动密码可开启 / 修改 / 关闭四位 PIN 或立即锁定；支持遥控器数字键与屏幕键盘，连续输入不再被步骤切换清空，连续输错 5 次进入 15 秒冷却。\n改进\n\n- 底部进度预览（#152）：横拖画面或拖动进度条统一在底部预览时间，松手才提交跳转，不再把进度条叠在画面中央。\n- 连续切集（#156、#157）：下一集加载期间仍可继续划；同类集数提示只更新同一张卡片，不堆叠。\n- TV 解锁页移除重复副标题与底部操作说明，仅保留标题、输入提示与错误反馈。\n修复\n\n- 冷启动与账号恢复（#156）：启动动画期间按返回只跳过动画；镜像验证暂时失败不再显示登出；账号同步 401 时同账号静默重登，身份或会话代次不符时保留原会话并提示手动处理。\n- 移动端布局与登录键盘（#157、#163）：窄屏全宽、平板 / 桌面限宽居中；横竖屏底栏与弹层避开系统安全区；Android 标准版软键盘弹出后，密码框与「登录」按钮仍可滚到可见位置。\n验证\n\n- 集成校验全绿：前端标准版 + TV 版构建、Rust、浏览器 smoke、Playback core / extended（run 44454852498）。\n- 全平…",
-      "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.2/HGhubX_2.2.2_ios.ipa",
-      "size": 3891126,
+      "version": "2.2.3",
+      "versionDate": "2026-11-20",
+      "versionDescription": "HGhubX v2.2.3\r\n\r\n本版重新安排手机播放控件，改善桌面子页的宽屏布局，并优化「我的」内容管理与吃瓜详情的稳定性。\r\nTV 端无任何改动\r\n新增与优化\r\n\r\n1. 手机播放控件与全屏手势（#170）：选集、静音、切集开关和全屏集中到屏幕底部；首页四个按钮使用更透明的底色，减少对画面的遮挡。横屏设置抽屉完整显示倍速选项；全屏支持上下滑切集并提示首尾边界，清屏时保留锁屏入口。\r\n2. 播放详情、标签与搜索（#170）：「详情」和「选集」支持左右滑动切换，下拉关闭；点按标签查看同类，长按或右键可屏蔽。在栏目内打开的播放页可按当前内容类型搜索，首页底部的全局搜索不受影响。\r\n3. 收藏与观看历史管理（#168、#169）：在「我的」中长按或右键卡片进入多选，可批量取消收藏或删除观看记录；列表接近底部时自动加载更多，网格列数保持不变。\r\n修复\r\n\r\n1. 吃瓜详情闪烁（#165）：切换线路或代理时保留已展示的正文和滚动位置；阅读位置更新时复用未变的图片，短暂缓冲不再立即弹出加载动画。\r\n2. 桌面子页顶栏两侧断开（#171）：「排行榜」「关注」等子页和页内搜索层的顶栏底色、分隔线铺满面板；标题、筛选项和正文仍按原宽度居中。\r\n3. 本人主页与批量操作：本人主页隐藏「关注」入口；批量取消收藏期间切换账号、线路或代理时，旧批次停止发送后续项目，不显示旧批次的结果。\r\n安装与兼容提示\r\n\r\n- Windows 提供安装程序和便携包；macOS 提供通用架构 DMG；Linux 提供 amd64 DEB。\r\n- Android 标准版和 TV 版分别提供 APK，按设备架构选择 ar…",
+      "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.3/HGhubX_2.2.3_ios.ipa",
+      "size": 3895060,
       "minOSVersion": "15.0"
     },
     {
@@ -1321,13 +1321,13 @@
           "releases": [
             {
               "version": "0.1.0",
-              "date": "2026-11-14",
-              "publishedAt": "2026-11-14T04:28:34Z",
-              "buildVersion": "83",
-              "buildNumber": "83",
-              "localizedDescription": "🧪 预发布 nightly（2026-11-14）\n\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack options for ZIP archives\n* Replace the hand-written ZIP code of the CLI with fflate\n* Simplify screen streaming and recording\n* Share one atomic file write\n* Fix mDNS browsing and name conflict handling\n* Simplify the JavaScriptCore adapter\n* Add swipt driver to serve a device from the computer\n* Build the Linux and Windows driver with the WebKit of a Bu…",
+              "date": "2026-11-20",
+              "publishedAt": "2026-11-20T05:39:28Z",
+              "buildVersion": "84",
+              "buildNumber": "84",
+              "localizedDescription": "🧪 预发布 nightly（2026-11-20）\n\n* Fix cellular data being detected on Wi-Fi\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack options for ZIP archives\n* Replace the hand-written ZIP code of the CLI with fflate\n* Simplify screen streaming and recording\n* Share one atomic file write\n* Fix mDNS browsing and name conflict handling\n* Simplify the JavaScriptCore adapter\n* Add swipt driver to serve a device from the computer\n* Build the Linu…",
               "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-              "size": 48174010,
+              "size": 48173853,
               "minOSVersion": "16.4",
               "releaseTag": "nightly",
               "source": "https://github.com/swipt-automation/swipt/releases/tag/nightly"
@@ -1338,23 +1338,23 @@
       "versions": [
         {
           "version": "0.1.0",
-          "date": "2026-11-14",
-          "publishedAt": "2026-11-14T04:28:34Z",
-          "buildVersion": "83",
-          "buildNumber": "83",
-          "localizedDescription": "🧪 预发布 nightly（2026-11-14）\n\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack options for ZIP archives\n* Replace the hand-written ZIP code of the CLI with fflate\n* Simplify screen streaming and recording\n* Share one atomic file write\n* Fix mDNS browsing and name conflict handling\n* Simplify the JavaScriptCore adapter\n* Add swipt driver to serve a device from the computer\n* Build the Linux and Windows driver with the WebKit of a Bu…",
+          "date": "2026-11-20",
+          "publishedAt": "2026-11-20T05:39:28Z",
+          "buildVersion": "84",
+          "buildNumber": "84",
+          "localizedDescription": "🧪 预发布 nightly（2026-11-20）\n\n* Fix cellular data being detected on Wi-Fi\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack options for ZIP archives\n* Replace the hand-written ZIP code of the CLI with fflate\n* Simplify screen streaming and recording\n* Share one atomic file write\n* Fix mDNS browsing and name conflict handling\n* Simplify the JavaScriptCore adapter\n* Add swipt driver to serve a device from the computer\n* Build the Linu…",
           "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-          "size": 48174010,
+          "size": 48173853,
           "minOSVersion": "16.4",
           "releaseTag": "nightly",
           "source": "https://github.com/swipt-automation/swipt/releases/tag/nightly"
         }
       ],
       "version": "0.1.0",
-      "versionDate": "2026-11-14",
-      "versionDescription": "🧪 预发布 nightly（2026-11-14）\n\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack options for ZIP archives\n* Replace the hand-written ZIP code of the CLI with fflate\n* Simplify screen streaming and recording\n* Share one atomic file write\n* Fix mDNS browsing and name conflict handling\n* Simplify the JavaScriptCore adapter\n* Add swipt driver to serve a device from the computer\n* Build the Linux and Windows driver with the WebKit of a Bu…",
+      "versionDate": "2026-11-20",
+      "versionDescription": "🧪 预发布 nightly（2026-11-20）\n\n* Fix cellular data being detected on Wi-Fi\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack options for ZIP archives\n* Replace the hand-written ZIP code of the CLI with fflate\n* Simplify screen streaming and recording\n* Share one atomic file write\n* Fix mDNS browsing and name conflict handling\n* Simplify the JavaScriptCore adapter\n* Add swipt driver to serve a device from the computer\n* Build the Linu…",
       "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-      "size": 48174010,
+      "size": 48173853,
       "minOSVersion": "16.4"
     },
     {
@@ -1528,7 +1528,7 @@
       "developerName": "Kyosee",
       "subtitle": "多图源漫画阅读器",
       "localizedDescription": "原版 Venera 的个人维护增强分支，支持通过插件接入多种漫画图源，提供本地收藏、阅读进度同步等能力。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Kyosee/VeneraX",
-      "iconURL": "https://raw.githubusercontent.com/Kyosee/VeneraX/v3.0.0/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Kyosee/VeneraX/v3.0.1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#4A8FE7",
       "category": "books",
       "appPermissions": {
@@ -1540,41 +1540,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "3.0.0",
-              "date": "2026-11-15",
-              "publishedAt": "2026-11-15T10:37:41Z",
-              "buildVersion": "258",
-              "buildNumber": "258",
-              "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Added a HarmonyOS version with two packages: ARM64 for phones and x64 for the emulator. The packages are unsigned, so you need to sign them yourself before installing (#296).\n- Added Recent reading, Following, New updates and Local comics widgets for Android, HarmonyOS (service cards), iOS and macOS; whether they work on Apple platforms depends on how the app is signed and sideloaded (#338).\n- Long-press the app icon to jump to Favorites, Following, History or Search on Android, iOS and HarmonyOS; on Android and iOS, open the app once after updating for the shortcuts to appear (#346).\n- Added an optional adaptive reading mode that tells…",
-              "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.0/VeneraX-ios-3.0.0%2B258.ipa",
-              "size": 39423677,
+              "version": "3.0.1",
+              "date": "2026-11-20",
+              "publishedAt": "2026-11-20T10:56:20Z",
+              "buildVersion": "260",
+              "buildNumber": "260",
+              "localizedDescription": "下载安装 / Downloads\n\n手动安装或更新请从下表选择完整安装包。 不确定 Android 架构时请选择通用 APK。\nFor manual installs or updates, choose a full package below. Use the universal APK if unsure of your Android architecture.\n\n> .patch 和 update-manifest.json 仅供应用自动更新使用，无法直接安装，无需手动下载。\n> .patch files and update-manifest.json are for in-app updates only. They cannot be installed manually.\n\n| 平台 / Platform | 安装包 / Package | 其他版本 / Alternatives |\n| --- | --- | --- |\n| Android | 通用 APK / Universal | ARM64 · ARMv7 · x86_64 |\n| Windows | 安装版 / Installer | 便携版 / Portable ZIP |\n| macOS | DMG | — |\n| iOS | 未签名 IPA / Unsigned | — |\n| Linux | AppImage x86_64 · AppImage ARM64 | Debian x86_64 · Debian ARM64 · Arch x86_64 |\n| HarmonyOS | 未签名 HAP…",
+              "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-ios-3.0.1%2B260.ipa",
+              "size": 39632748,
               "minOSVersion": "15.1",
-              "releaseTag": "v3.0.0",
-              "source": "https://github.com/Kyosee/VeneraX/releases/tag/v3.0.0"
+              "releaseTag": "v3.0.1",
+              "source": "https://github.com/Kyosee/VeneraX/releases/tag/v3.0.1"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "3.0.0",
-          "date": "2026-11-15",
-          "publishedAt": "2026-11-15T10:37:41Z",
-          "buildVersion": "258",
-          "buildNumber": "258",
-          "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Added a HarmonyOS version with two packages: ARM64 for phones and x64 for the emulator. The packages are unsigned, so you need to sign them yourself before installing (#296).\n- Added Recent reading, Following, New updates and Local comics widgets for Android, HarmonyOS (service cards), iOS and macOS; whether they work on Apple platforms depends on how the app is signed and sideloaded (#338).\n- Long-press the app icon to jump to Favorites, Following, History or Search on Android, iOS and HarmonyOS; on Android and iOS, open the app once after updating for the shortcuts to appear (#346).\n- Added an optional adaptive reading mode that tells…",
-          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.0/VeneraX-ios-3.0.0%2B258.ipa",
-          "size": 39423677,
+          "version": "3.0.1",
+          "date": "2026-11-20",
+          "publishedAt": "2026-11-20T10:56:20Z",
+          "buildVersion": "260",
+          "buildNumber": "260",
+          "localizedDescription": "下载安装 / Downloads\n\n手动安装或更新请从下表选择完整安装包。 不确定 Android 架构时请选择通用 APK。\nFor manual installs or updates, choose a full package below. Use the universal APK if unsure of your Android architecture.\n\n> .patch 和 update-manifest.json 仅供应用自动更新使用，无法直接安装，无需手动下载。\n> .patch files and update-manifest.json are for in-app updates only. They cannot be installed manually.\n\n| 平台 / Platform | 安装包 / Package | 其他版本 / Alternatives |\n| --- | --- | --- |\n| Android | 通用 APK / Universal | ARM64 · ARMv7 · x86_64 |\n| Windows | 安装版 / Installer | 便携版 / Portable ZIP |\n| macOS | DMG | — |\n| iOS | 未签名 IPA / Unsigned | — |\n| Linux | AppImage x86_64 · AppImage ARM64 | Debian x86_64 · Debian ARM64 · Arch x86_64 |\n| HarmonyOS | 未签名 HAP…",
+          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-ios-3.0.1%2B260.ipa",
+          "size": 39632748,
           "minOSVersion": "15.1",
-          "releaseTag": "v3.0.0",
-          "source": "https://github.com/Kyosee/VeneraX/releases/tag/v3.0.0"
+          "releaseTag": "v3.0.1",
+          "source": "https://github.com/Kyosee/VeneraX/releases/tag/v3.0.1"
         }
       ],
-      "version": "3.0.0",
-      "versionDate": "2026-11-15",
-      "versionDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Added a HarmonyOS version with two packages: ARM64 for phones and x64 for the emulator. The packages are unsigned, so you need to sign them yourself before installing (#296).\n- Added Recent reading, Following, New updates and Local comics widgets for Android, HarmonyOS (service cards), iOS and macOS; whether they work on Apple platforms depends on how the app is signed and sideloaded (#338).\n- Long-press the app icon to jump to Favorites, Following, History or Search on Android, iOS and HarmonyOS; on Android and iOS, open the app once after updating for the shortcuts to appear (#346).\n- Added an optional adaptive reading mode that tells…",
-      "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.0/VeneraX-ios-3.0.0%2B258.ipa",
-      "size": 39423677,
+      "version": "3.0.1",
+      "versionDate": "2026-11-20",
+      "versionDescription": "下载安装 / Downloads\n\n手动安装或更新请从下表选择完整安装包。 不确定 Android 架构时请选择通用 APK。\nFor manual installs or updates, choose a full package below. Use the universal APK if unsure of your Android architecture.\n\n> .patch 和 update-manifest.json 仅供应用自动更新使用，无法直接安装，无需手动下载。\n> .patch files and update-manifest.json are for in-app updates only. They cannot be installed manually.\n\n| 平台 / Platform | 安装包 / Package | 其他版本 / Alternatives |\n| --- | --- | --- |\n| Android | 通用 APK / Universal | ARM64 · ARMv7 · x86_64 |\n| Windows | 安装版 / Installer | 便携版 / Portable ZIP |\n| macOS | DMG | — |\n| iOS | 未签名 IPA / Unsigned | — |\n| Linux | AppImage x86_64 · AppImage ARM64 | Debian x86_64 · Debian ARM64 · Arch x86_64 |\n| HarmonyOS | 未签名 HAP…",
+      "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-ios-3.0.1%2B260.ipa",
+      "size": 39632748,
       "minOSVersion": "15.1"
     },
     {
