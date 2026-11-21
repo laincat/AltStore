@@ -4429,8 +4429,18 @@
       ]
     },
     {
+      "tag": "mobile-3.0.2-beta.2",
+      "name": "v3.0.2 Beta 2 (Android & HarmonyOS)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-11-21",
+      "published_at": "2026-11-21T00:11:20Z",
+      "body": "## 下载安装 / Downloads\n\n本次预览版提供 Android 和鸿蒙安装包。 / This preview includes Android and HarmonyOS.\n\n| 平台 / Platform | 安装包 / Package | 其他版本 / Alternatives |\n| --- | --- | --- |\n| Android | [通用 APK / Universal](https://github.com/Kyosee/VeneraX/releases/download/mobile-3.0.2-beta.2/VeneraX-3.0.2-beta.2.apk) | [ARM64](https://github.com/Kyosee/VeneraX/releases/download/mobile-3.0.2-beta.2/VeneraX-3.0.2-beta.2-arm64-v8a.apk) · [ARMv7](https://github.com/Kyosee/VeneraX/releases/download/mobile-3.0.2-beta.2/VeneraX-3.0.2-beta.2-armeabi-v7a.apk) · [x86_64](https://github.com/Kyosee/VeneraX/releases/download/mobile-3.0.2-beta.2/VeneraX-3.0.2-beta.2-x86_64.apk) |\n| HarmonyOS | [ARM64 真机 / Unsigned HAP](https://github.com/Kyosee/VeneraX/releases/download/mobile-3.0.2-beta.2/VeneraX-3.0.2-beta.2%2B262-harmonyos-unsigned.hap) | — |\n\n不确定 Android 架构时选通用 APK。鸿蒙真机安装前需自行签名。\nUse the universal APK if unsure of your Android architecture. Sign the HarmonyOS HAP before installing it on a device.\n\n> **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/mobile-3.0.2-beta.2/release-notes/mobile-3.0.2-beta.2.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/mobile-3.0.2-beta.2/release-notes/mobile-3.0.2-beta.2.zh-CN.md)\n\n## What's changed\n\n### Added\n- No standalone features were added in this release.\n\n### Changed\n- This 3.0.2 Beta 2 preview includes Android and HarmonyOS packages for testing fixes and sharing feedback.\n\n### Fixed\n- Fixed quick horizontal swipes not reliably collecting or uncollecting the current image in continuous reading mode when swipe collection is enabled (#349).\n- Fixed a possible crash when a network request is cancelled (#349).\n- Fixed a possible Android crash when accessing an authorized folder after a background task ends (#349).\n\n### Removed\n- No features were removed in this release.\n\n**Android installation**: If you are unsure of your device architecture, choose the universal APK without an architecture suffix. It can be installed over the existing ",
+      "ipas": []
+    },
+    {
       "tag": "mobile-3.0.1-beta.1",
-      "name": "VeneraX 3.0.1 Beta 1 (Android & HarmonyOS)",
+      "name": "v3.0.1 Beta 1 (Android & HarmonyOS)",
       "pre": true,
       "draft": false,
       "date": "2026-11-16",
@@ -4459,7 +4469,7 @@
     },
     {
       "tag": "harmonyos-2.3.12-test.1",
-      "name": "VeneraX 鸿蒙开发预览版 · 2.3.12 (test.1，未签名)",
+      "name": "v2.3.12 Test 1 (HarmonyOS)",
       "pre": true,
       "draft": false,
       "date": "2026-11-09",
@@ -4749,25 +4759,6 @@
           "id": 533118572,
           "updated_at": "2026-08-28T01:56:20Z",
           "digest": "sha256:754faebaa88585e1d4669c384f7e3c0954f7b45a63a2f8d0d237c640a76367bd"
-        }
-      ]
-    },
-    {
-      "tag": "v2.2.10",
-      "name": "v2.2.10",
-      "pre": false,
-      "draft": false,
-      "date": "2026-08-27",
-      "published_at": "2026-08-27T07:33:29Z",
-      "body": "> **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v2.2.10/release-notes/v2.2.10.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v2.2.10/release-notes/v2.2.10.zh-CN.md)\n\n## What's Changed\n\n### Added\n- Comic details now lets you hide duplicate chapters for each comic, keeping chapter, download, and pre-translation lists consistent\n- Desktop now offers an option to enter fullscreen automatically when reading starts\n- Added an option to remove a comic from Read Later automatically when reading starts\n\n### Changed\n- Continuous reading now lets you adjust image width from 40% to 150% of screen height\n- Reorganized Settings and moved Appearance options into App\n- `comic.onThumbnailLoad` now matches `comic.onImageLoad`: configuration functions may be async, Promise results from `onResponse` are awaited, response types are validated, and `comicId` is passed as the second argument\n\n### Fixed\n- Fixed mouse wheel and touchpad scrolling not working over blank side margins when image width was limited in continuous reading\n- Fixed per-comic image width limits not being applied correctly in continuous reading\n- Fixed Settings sometimes crashing when a saved setting value was empty\n\n**Full Changelog**: https://github.com/Kyosee/VeneraX/compare/v2.2.9...v2.2.10\n",
-      "ipas": [
-        {
-          "name": "VeneraX-ios-2.2.10+240.ipa",
-          "size": 35250462,
-          "url": "https://github.com/Kyosee/VeneraX/releases/download/v2.2.10/VeneraX-ios-2.2.10%2B240.ipa",
-          "id": 531922761,
-          "updated_at": "2026-08-27T07:33:26Z",
-          "digest": "sha256:9b843c763499951e4d558dd512c3e4c6ff0b6ef483e39c5c23eb230a95932ef8"
         }
       ]
     }
