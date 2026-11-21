@@ -885,7 +885,7 @@
               "publishedAt": "2026-11-20T18:49:08Z",
               "buildVersion": "2.2.5",
               "buildNumber": "2.2.5",
-              "localizedDescription": "HGhubX v2.2.5\n\n聚焦多语言支持（简体中文、繁体中文、英语）、播放器微光效果与多端播放交互修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. 简体中文、繁体中文与英语界面切换（#190）：默认使用简体中文，可在「设置 → 外观 → 语言」中一键切换简体中文、繁體中文与 English，切换后立即生效并跨重启持久化；繁体中文与英语词典按需异步加载，首屏默认体积接近零增长。\n2. 播放器微光效果（#192）：低分辨率实时采样当前播放画面颜色并柔和扩散至视频黑边区域；可在「设置 → 播放 → 微光效果」中随时开关（默认开启，关闭后不挂载采样层以节省电量）。\n3. 精简移动端长按倍速交互（#193）：移除拖动至顶部胶囊锁定倍速的繁琐交互，长按右侧仅作临时加速、长按左侧临时 0.5x 减速、松手即恢复原倍速；持久倍速统一在全屏倍速按钮或「更多 → 播放设置」中调整。\n修复\n1. 桌面端开启「上下划切集」滚轮切集失效（#195）：桌面端开启「上下划切集」后，鼠标滚轮或触控板纵向滑动原本直接触发列表原生滚动跳到下一部剧；现拦截播放区纵向滚轮并在当前剧内顺滑切集、弹出集数提示，底部控制栏「下一集 ↓ / 下一部 ↓」按钮同步遵循该开关。\n2. 清屏锁定后锁图标常驻遮挡画面（#194）：移动端清屏模式点击锁定后立即隐藏右侧锁图标，锁定期间仅在点按屏幕触发「轻触即可解锁」提示时同步显示解锁按钮 2.2 秒，避免图标常驻干扰观看。\n3. 横屏全屏切集时集数提示重复闪现（#191）：横屏全屏切集时暂存集数提示，待下一集视频尺寸解析完成…",
+              "localizedDescription": "HGhubX v2.2.5\r\n\r\n聚焦多语言支持（简体中文、繁体中文、英语）、播放器微光效果与多端播放交互修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\r\n@makisekurisu-jp @zxsos\r\n新增与优化\r\n1. 简体中文、繁体中文与英语界面切换（#190）：默认使用简体中文，可在「设置 → 外观 → 语言」中一键切换简体中文、繁體中文与 English，切换后立即生效并跨重启持久化；繁体中文与英语词典按需异步加载，首屏默认体积接近零增长。\r\n2. 播放器微光效果（#192）：低分辨率实时采样当前播放画面颜色并柔和扩散至视频黑边区域；可在「设置 → 播放 → 微光效果」中随时开关（默认开启，关闭后不挂载采样层以节省电量）。\r\n3. 精简移动端长按倍速交互（#193）：移除拖动至顶部胶囊锁定倍速的繁琐交互，长按右侧仅作临时加速、长按左侧临时 0.5x 减速、松手即恢复原倍速；持久倍速统一在全屏倍速按钮或「更多 → 播放设置」中调整。\r\n修复\r\n1. 桌面端开启「上下划切集」滚轮切集失效（#195）：桌面端开启「上下划切集」后，鼠标滚轮或触控板纵向滑动原本直接触发列表原生滚动跳到下一部剧；现拦截播放区纵向滚轮并在当前剧内顺滑切集、弹出集数提示，底部控制栏「下一集 ↓ / 下一部 ↓」按钮同步遵循该开关。\r\n2. 清屏锁定后锁图标常驻遮挡画面（#194）：移动端清屏模式点击锁定后立即隐藏右侧锁图标，锁定期间仅在点按屏幕触发「轻触即可解锁」提示时同步显示解锁按钮 2.2 秒，避免图标常驻干扰观看。\r\n3. 横屏全屏切集时集数提示重复…",
               "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.5/HGhubX_2.2.5_ios.ipa",
               "size": 3927965,
               "minOSVersion": "15.0",
@@ -902,7 +902,7 @@
           "publishedAt": "2026-11-20T18:49:08Z",
           "buildVersion": "2.2.5",
           "buildNumber": "2.2.5",
-          "localizedDescription": "HGhubX v2.2.5\n\n聚焦多语言支持（简体中文、繁体中文、英语）、播放器微光效果与多端播放交互修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. 简体中文、繁体中文与英语界面切换（#190）：默认使用简体中文，可在「设置 → 外观 → 语言」中一键切换简体中文、繁體中文与 English，切换后立即生效并跨重启持久化；繁体中文与英语词典按需异步加载，首屏默认体积接近零增长。\n2. 播放器微光效果（#192）：低分辨率实时采样当前播放画面颜色并柔和扩散至视频黑边区域；可在「设置 → 播放 → 微光效果」中随时开关（默认开启，关闭后不挂载采样层以节省电量）。\n3. 精简移动端长按倍速交互（#193）：移除拖动至顶部胶囊锁定倍速的繁琐交互，长按右侧仅作临时加速、长按左侧临时 0.5x 减速、松手即恢复原倍速；持久倍速统一在全屏倍速按钮或「更多 → 播放设置」中调整。\n修复\n1. 桌面端开启「上下划切集」滚轮切集失效（#195）：桌面端开启「上下划切集」后，鼠标滚轮或触控板纵向滑动原本直接触发列表原生滚动跳到下一部剧；现拦截播放区纵向滚轮并在当前剧内顺滑切集、弹出集数提示，底部控制栏「下一集 ↓ / 下一部 ↓」按钮同步遵循该开关。\n2. 清屏锁定后锁图标常驻遮挡画面（#194）：移动端清屏模式点击锁定后立即隐藏右侧锁图标，锁定期间仅在点按屏幕触发「轻触即可解锁」提示时同步显示解锁按钮 2.2 秒，避免图标常驻干扰观看。\n3. 横屏全屏切集时集数提示重复闪现（#191）：横屏全屏切集时暂存集数提示，待下一集视频尺寸解析完成…",
+          "localizedDescription": "HGhubX v2.2.5\r\n\r\n聚焦多语言支持（简体中文、繁体中文、英语）、播放器微光效果与多端播放交互修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\r\n@makisekurisu-jp @zxsos\r\n新增与优化\r\n1. 简体中文、繁体中文与英语界面切换（#190）：默认使用简体中文，可在「设置 → 外观 → 语言」中一键切换简体中文、繁體中文与 English，切换后立即生效并跨重启持久化；繁体中文与英语词典按需异步加载，首屏默认体积接近零增长。\r\n2. 播放器微光效果（#192）：低分辨率实时采样当前播放画面颜色并柔和扩散至视频黑边区域；可在「设置 → 播放 → 微光效果」中随时开关（默认开启，关闭后不挂载采样层以节省电量）。\r\n3. 精简移动端长按倍速交互（#193）：移除拖动至顶部胶囊锁定倍速的繁琐交互，长按右侧仅作临时加速、长按左侧临时 0.5x 减速、松手即恢复原倍速；持久倍速统一在全屏倍速按钮或「更多 → 播放设置」中调整。\r\n修复\r\n1. 桌面端开启「上下划切集」滚轮切集失效（#195）：桌面端开启「上下划切集」后，鼠标滚轮或触控板纵向滑动原本直接触发列表原生滚动跳到下一部剧；现拦截播放区纵向滚轮并在当前剧内顺滑切集、弹出集数提示，底部控制栏「下一集 ↓ / 下一部 ↓」按钮同步遵循该开关。\r\n2. 清屏锁定后锁图标常驻遮挡画面（#194）：移动端清屏模式点击锁定后立即隐藏右侧锁图标，锁定期间仅在点按屏幕触发「轻触即可解锁」提示时同步显示解锁按钮 2.2 秒，避免图标常驻干扰观看。\r\n3. 横屏全屏切集时集数提示重复…",
           "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.5/HGhubX_2.2.5_ios.ipa",
           "size": 3927965,
           "minOSVersion": "15.0",
@@ -912,7 +912,7 @@
       ],
       "version": "2.2.5",
       "versionDate": "2026-11-20",
-      "versionDescription": "HGhubX v2.2.5\n\n聚焦多语言支持（简体中文、繁体中文、英语）、播放器微光效果与多端播放交互修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. 简体中文、繁体中文与英语界面切换（#190）：默认使用简体中文，可在「设置 → 外观 → 语言」中一键切换简体中文、繁體中文与 English，切换后立即生效并跨重启持久化；繁体中文与英语词典按需异步加载，首屏默认体积接近零增长。\n2. 播放器微光效果（#192）：低分辨率实时采样当前播放画面颜色并柔和扩散至视频黑边区域；可在「设置 → 播放 → 微光效果」中随时开关（默认开启，关闭后不挂载采样层以节省电量）。\n3. 精简移动端长按倍速交互（#193）：移除拖动至顶部胶囊锁定倍速的繁琐交互，长按右侧仅作临时加速、长按左侧临时 0.5x 减速、松手即恢复原倍速；持久倍速统一在全屏倍速按钮或「更多 → 播放设置」中调整。\n修复\n1. 桌面端开启「上下划切集」滚轮切集失效（#195）：桌面端开启「上下划切集」后，鼠标滚轮或触控板纵向滑动原本直接触发列表原生滚动跳到下一部剧；现拦截播放区纵向滚轮并在当前剧内顺滑切集、弹出集数提示，底部控制栏「下一集 ↓ / 下一部 ↓」按钮同步遵循该开关。\n2. 清屏锁定后锁图标常驻遮挡画面（#194）：移动端清屏模式点击锁定后立即隐藏右侧锁图标，锁定期间仅在点按屏幕触发「轻触即可解锁」提示时同步显示解锁按钮 2.2 秒，避免图标常驻干扰观看。\n3. 横屏全屏切集时集数提示重复闪现（#191）：横屏全屏切集时暂存集数提示，待下一集视频尺寸解析完成…",
+      "versionDescription": "HGhubX v2.2.5\r\n\r\n聚焦多语言支持（简体中文、繁体中文、英语）、播放器微光效果与多端播放交互修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\r\n@makisekurisu-jp @zxsos\r\n新增与优化\r\n1. 简体中文、繁体中文与英语界面切换（#190）：默认使用简体中文，可在「设置 → 外观 → 语言」中一键切换简体中文、繁體中文与 English，切换后立即生效并跨重启持久化；繁体中文与英语词典按需异步加载，首屏默认体积接近零增长。\r\n2. 播放器微光效果（#192）：低分辨率实时采样当前播放画面颜色并柔和扩散至视频黑边区域；可在「设置 → 播放 → 微光效果」中随时开关（默认开启，关闭后不挂载采样层以节省电量）。\r\n3. 精简移动端长按倍速交互（#193）：移除拖动至顶部胶囊锁定倍速的繁琐交互，长按右侧仅作临时加速、长按左侧临时 0.5x 减速、松手即恢复原倍速；持久倍速统一在全屏倍速按钮或「更多 → 播放设置」中调整。\r\n修复\r\n1. 桌面端开启「上下划切集」滚轮切集失效（#195）：桌面端开启「上下划切集」后，鼠标滚轮或触控板纵向滑动原本直接触发列表原生滚动跳到下一部剧；现拦截播放区纵向滚轮并在当前剧内顺滑切集、弹出集数提示，底部控制栏「下一集 ↓ / 下一部 ↓」按钮同步遵循该开关。\r\n2. 清屏锁定后锁图标常驻遮挡画面（#194）：移动端清屏模式点击锁定后立即隐藏右侧锁图标，锁定期间仅在点按屏幕触发「轻触即可解锁」提示时同步显示解锁按钮 2.2 秒，避免图标常驻干扰观看。\r\n3. 横屏全屏切集时集数提示重复…",
       "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.5/HGhubX_2.2.5_ios.ipa",
       "size": 3927965,
       "minOSVersion": "15.0"
@@ -978,7 +978,7 @@
       "developerName": "Predidit",
       "subtitle": "自定义规则的番剧采集与在线观看",
       "localizedDescription": "基于自定义规则的番剧采集 App，支持流媒体在线观看、弹幕与实时超分辨率。支持多平台，此处为未签名 iOS 构建，需自行签名安装。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Predidit/Kazumi",
-      "iconURL": "https://raw.githubusercontent.com/Predidit/Kazumi/2.4.4/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Predidit/Kazumi/2.4.5/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#E86AA6",
       "category": "entertainment",
       "appPermissions": {
@@ -990,41 +990,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.4.4",
-              "date": "2026-11-12",
-              "publishedAt": "2026-11-12T10:27:44Z",
-              "buildVersion": "20404",
-              "buildNumber": "20404",
-              "localizedDescription": "- 适配 flutter 3.50",
-              "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.4/Kazumi_ios_2.4.4_no_sign.ipa",
-              "size": 30341213,
+              "version": "2.4.5",
+              "date": "2026-11-21",
+              "publishedAt": "2026-11-21T05:56:21Z",
+              "buildVersion": "20405",
+              "buildNumber": "20405",
+              "localizedDescription": "- 重新设计播放页的选集与评论面板\r\n- 番剧详情页的评分编辑在窄屏上改为底部面板\r\n- 追番页头部随列表滚动，竖屏可显示更多内容 (#2859)\r\n- 优化 Material 3 Expressive 组件的选中配色与过渡动画\r\n- 精简各页面的说明文案\r\n- 修复 Linux 下部分 NVIDIA 设备画面偏移到左下角的问题 (#2838)\r\n- 修复 Windows 启动后画面偶发拉伸的问题",
+              "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.5/Kazumi_ios_2.4.5_no_sign.ipa",
+              "size": 30370674,
               "minOSVersion": "15.0",
-              "releaseTag": "2.4.4",
-              "source": "https://github.com/Predidit/Kazumi/releases/tag/2.4.4"
+              "releaseTag": "2.4.5",
+              "source": "https://github.com/Predidit/Kazumi/releases/tag/2.4.5"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.4.4",
-          "date": "2026-11-12",
-          "publishedAt": "2026-11-12T10:27:44Z",
-          "buildVersion": "20404",
-          "buildNumber": "20404",
-          "localizedDescription": "- 适配 flutter 3.50",
-          "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.4/Kazumi_ios_2.4.4_no_sign.ipa",
-          "size": 30341213,
+          "version": "2.4.5",
+          "date": "2026-11-21",
+          "publishedAt": "2026-11-21T05:56:21Z",
+          "buildVersion": "20405",
+          "buildNumber": "20405",
+          "localizedDescription": "- 重新设计播放页的选集与评论面板\r\n- 番剧详情页的评分编辑在窄屏上改为底部面板\r\n- 追番页头部随列表滚动，竖屏可显示更多内容 (#2859)\r\n- 优化 Material 3 Expressive 组件的选中配色与过渡动画\r\n- 精简各页面的说明文案\r\n- 修复 Linux 下部分 NVIDIA 设备画面偏移到左下角的问题 (#2838)\r\n- 修复 Windows 启动后画面偶发拉伸的问题",
+          "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.5/Kazumi_ios_2.4.5_no_sign.ipa",
+          "size": 30370674,
           "minOSVersion": "15.0",
-          "releaseTag": "2.4.4",
-          "source": "https://github.com/Predidit/Kazumi/releases/tag/2.4.4"
+          "releaseTag": "2.4.5",
+          "source": "https://github.com/Predidit/Kazumi/releases/tag/2.4.5"
         }
       ],
-      "version": "2.4.4",
-      "versionDate": "2026-11-12",
-      "versionDescription": "- 适配 flutter 3.50",
-      "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.4/Kazumi_ios_2.4.4_no_sign.ipa",
-      "size": 30341213,
+      "version": "2.4.5",
+      "versionDate": "2026-11-21",
+      "versionDescription": "- 重新设计播放页的选集与评论面板\r\n- 番剧详情页的评分编辑在窄屏上改为底部面板\r\n- 追番页头部随列表滚动，竖屏可显示更多内容 (#2859)\r\n- 优化 Material 3 Expressive 组件的选中配色与过渡动画\r\n- 精简各页面的说明文案\r\n- 修复 Linux 下部分 NVIDIA 设备画面偏移到左下角的问题 (#2838)\r\n- 修复 Windows 启动后画面偶发拉伸的问题",
+      "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.5/Kazumi_ios_2.4.5_no_sign.ipa",
+      "size": 30370674,
       "minOSVersion": "15.0"
     },
     {
@@ -1697,7 +1697,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 30 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-11-20",
+      "date": "2026-11-21",
       "tintColor": "#7C5CFF",
       "notify": false
     }
