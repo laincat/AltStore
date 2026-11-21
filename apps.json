@@ -385,41 +385,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.6.0-nightly.20261120.0157",
-              "date": "2026-11-20",
-              "publishedAt": "2026-11-20T02:24:38Z",
+              "version": "2.6.0-nightly.20261121.1609",
+              "date": "2026-11-21",
+              "publishedAt": "2026-11-21T16:45:32Z",
               "buildVersion": "260",
               "buildNumber": "260",
-              "localizedDescription": "🧪 预发布 nightly-20261120（2026-11-20）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-              "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261120/ARMSX2-nightly-20261120-1d1c26d8a2-iOS-arm64.ipa",
-              "size": 40427581,
+              "localizedDescription": "🧪 预发布 nightly-20261121（2026-11-21）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+              "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261121/ARMSX2-nightly-20261121-8bee9fff99-iOS-arm64.ipa",
+              "size": 40743520,
               "minOSVersion": "17.4",
-              "releaseTag": "nightly-20261120",
-              "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261120"
+              "releaseTag": "nightly-20261121",
+              "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261121"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.6.0-nightly.20261120.0157",
-          "date": "2026-11-20",
-          "publishedAt": "2026-11-20T02:24:38Z",
+          "version": "2.6.0-nightly.20261121.1609",
+          "date": "2026-11-21",
+          "publishedAt": "2026-11-21T16:45:32Z",
           "buildVersion": "260",
           "buildNumber": "260",
-          "localizedDescription": "🧪 预发布 nightly-20261120（2026-11-20）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261120/ARMSX2-nightly-20261120-1d1c26d8a2-iOS-arm64.ipa",
-          "size": 40427581,
+          "localizedDescription": "🧪 预发布 nightly-20261121（2026-11-21）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261121/ARMSX2-nightly-20261121-8bee9fff99-iOS-arm64.ipa",
+          "size": 40743520,
           "minOSVersion": "17.4",
-          "releaseTag": "nightly-20261120",
-          "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261120"
+          "releaseTag": "nightly-20261121",
+          "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261121"
         }
       ],
-      "version": "2.6.0-nightly.20261120.0157",
-      "versionDate": "2026-11-20",
-      "versionDescription": "🧪 预发布 nightly-20261120（2026-11-20）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-      "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261120/ARMSX2-nightly-20261120-1d1c26d8a2-iOS-arm64.ipa",
-      "size": 40427581,
+      "version": "2.6.0-nightly.20261121.1609",
+      "versionDate": "2026-11-21",
+      "versionDescription": "🧪 预发布 nightly-20261121（2026-11-21）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+      "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261121/ARMSX2-nightly-20261121-8bee9fff99-iOS-arm64.ipa",
+      "size": 40743520,
       "minOSVersion": "17.4"
     },
     {
@@ -538,7 +538,7 @@
       "developerName": "deretame",
       "subtitle": "插件化漫画阅读器",
       "localizedDescription": "使用 Flutter 构建的漫画阅读器，通过插件机制提供漫画源支持，已支持哔咔、禁漫、E-Hentai、nhentai、拷贝漫画、包子漫画等多个图源。\n\n开源协议：MPL-2.0　·　项目主页：https://github.com/breeze-project-org/Breeze",
-      "iconURL": "https://raw.githubusercontent.com/breeze-project-org/Breeze/v3.0.38/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/breeze-project-org/Breeze/v3.1.0/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#4FB3F5",
       "category": "books",
       "appPermissions": {
@@ -550,41 +550,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "3.0.38",
-              "date": "2026-11-15",
-              "publishedAt": "2026-11-15T09:03:41Z",
-              "buildVersion": "2225",
-              "buildNumber": "2225",
-              "localizedDescription": "📝 更新日志\r\n[v3.0.38]\r\n功能更新\r\n\r\n- 添加编辑已下载漫画的功能\r\n- 添加章节已读标记\r\n- 移动端阅读新增「横屏自动双页」功能\r\n- 新增「内网拦截」开关\r\n- 更新弹窗支持「一周内不再提醒」\r\n- 新增「显示搜索书签」开关\r\n- 追更与更新日志新增 NEW 提示\r\n- 插件筛选面板新增下拉框支持\r\n- 添加doh支持\r\n- 网络层支持域名前置（IP 直连 / SNI 绕过）与 ECH，改善部分图源的连通性 with daiwenwen3\r\n修复\r\n\r\n- 修复导入漫画时失败的问题\r\n优化\r\n\r\n- 优化部分性能\r\n- 调整部分文本与ui样式\r\n杂项\r\n\r\n- 重做Windows安装器\r\n\r\n---\r\n📦 推荐下载\r\n| 平台 | 下载链接 |\r\n| :--- | :--- |\r\n| Windows | windows-installer-v3.0.38.exe |\r\n| macOS | Breeze-macOS-v3.0.38.dmg |\r\n| Android | app-arm64-v8a-release-v3.0.38.apk |\r\n| iOS | Breeze-iOS-v3.0.38.ipa |\r\n| Linux | breeze-v3.0.38.flatpak |\r\n| Linux (DEB) | breeze_3.0.38_amd64-v3.0.38.deb |\r\n\r\n> 💡 不知道该下载哪个文件？\r\n> 请查看 详细安装指南。",
-              "downloadURL": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.38/Breeze-iOS-v3.0.38.ipa",
-              "size": 27173399,
+              "version": "3.1.0",
+              "date": "2026-11-21",
+              "publishedAt": "2026-11-21T13:52:36Z",
+              "buildVersion": "2226",
+              "buildNumber": "2226",
+              "localizedDescription": "📝 更新日志\n[v3.1.0]\n功能更新\n\n- 添加鸿蒙（HarmonyOS NEXT）支持\n- 添加导入外部漫画功能，支持文件夹与 CBZ / CBR / CB7 / CBT 等压缩包\n- 编辑已下载漫画时支持导入章节与图片、编辑分卷\n- 外观设置新增「漫画详情页」样式，可分别隐藏点赞、评论、本地收藏与云收藏按钮\n- 新增显示滚动条与滚动条常驻开关\n- 同步设置支持自定义自动同步间隔\n- 阅读设置新增「条漫放大后连续滚动」实验性开关 by 0kitasan\n修复\n\n- 修复书架文件夹的漫画数量不随来源筛选变化的问题\n- 修复下载任务重启后进度丢失的问题\n- 修复不包含下载内容的备份无法导入的问题\n优化\n\n- 优化插件启动速度\n- 优化内存占用\nui调整\n\n- 调整部分ui样式\n杂项\n\n- 数据存储全面迁移到 SQLite\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.1.0.exe |\n| macOS | Breeze-macOS-v3.1.0.dmg |\n| Android | app-arm64-v8a-release-v3.1.0.apk |\n| iOS | Breeze-iOS-v3.1.0.ipa |\n| Linux | breeze-v3.1.0.flatpak |\n| Linux (DEB) | breeze_3.1.0_amd64-v3.1.0.deb |\n| HarmonyOS (未签名) | Breeze-ohos-arm64-v3.1.0.hap |…",
+              "downloadURL": "https://github.com/breeze-project-org/Breeze/releases/download/v3.1.0/Breeze-iOS-v3.1.0.ipa",
+              "size": 27861953,
               "minOSVersion": "15.0",
-              "releaseTag": "v3.0.38",
-              "source": "https://github.com/breeze-project-org/Breeze/releases/tag/v3.0.38"
+              "releaseTag": "v3.1.0",
+              "source": "https://github.com/breeze-project-org/Breeze/releases/tag/v3.1.0"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "3.0.38",
-          "date": "2026-11-15",
-          "publishedAt": "2026-11-15T09:03:41Z",
-          "buildVersion": "2225",
-          "buildNumber": "2225",
-          "localizedDescription": "📝 更新日志\r\n[v3.0.38]\r\n功能更新\r\n\r\n- 添加编辑已下载漫画的功能\r\n- 添加章节已读标记\r\n- 移动端阅读新增「横屏自动双页」功能\r\n- 新增「内网拦截」开关\r\n- 更新弹窗支持「一周内不再提醒」\r\n- 新增「显示搜索书签」开关\r\n- 追更与更新日志新增 NEW 提示\r\n- 插件筛选面板新增下拉框支持\r\n- 添加doh支持\r\n- 网络层支持域名前置（IP 直连 / SNI 绕过）与 ECH，改善部分图源的连通性 with daiwenwen3\r\n修复\r\n\r\n- 修复导入漫画时失败的问题\r\n优化\r\n\r\n- 优化部分性能\r\n- 调整部分文本与ui样式\r\n杂项\r\n\r\n- 重做Windows安装器\r\n\r\n---\r\n📦 推荐下载\r\n| 平台 | 下载链接 |\r\n| :--- | :--- |\r\n| Windows | windows-installer-v3.0.38.exe |\r\n| macOS | Breeze-macOS-v3.0.38.dmg |\r\n| Android | app-arm64-v8a-release-v3.0.38.apk |\r\n| iOS | Breeze-iOS-v3.0.38.ipa |\r\n| Linux | breeze-v3.0.38.flatpak |\r\n| Linux (DEB) | breeze_3.0.38_amd64-v3.0.38.deb |\r\n\r\n> 💡 不知道该下载哪个文件？\r\n> 请查看 详细安装指南。",
-          "downloadURL": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.38/Breeze-iOS-v3.0.38.ipa",
-          "size": 27173399,
+          "version": "3.1.0",
+          "date": "2026-11-21",
+          "publishedAt": "2026-11-21T13:52:36Z",
+          "buildVersion": "2226",
+          "buildNumber": "2226",
+          "localizedDescription": "📝 更新日志\n[v3.1.0]\n功能更新\n\n- 添加鸿蒙（HarmonyOS NEXT）支持\n- 添加导入外部漫画功能，支持文件夹与 CBZ / CBR / CB7 / CBT 等压缩包\n- 编辑已下载漫画时支持导入章节与图片、编辑分卷\n- 外观设置新增「漫画详情页」样式，可分别隐藏点赞、评论、本地收藏与云收藏按钮\n- 新增显示滚动条与滚动条常驻开关\n- 同步设置支持自定义自动同步间隔\n- 阅读设置新增「条漫放大后连续滚动」实验性开关 by 0kitasan\n修复\n\n- 修复书架文件夹的漫画数量不随来源筛选变化的问题\n- 修复下载任务重启后进度丢失的问题\n- 修复不包含下载内容的备份无法导入的问题\n优化\n\n- 优化插件启动速度\n- 优化内存占用\nui调整\n\n- 调整部分ui样式\n杂项\n\n- 数据存储全面迁移到 SQLite\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.1.0.exe |\n| macOS | Breeze-macOS-v3.1.0.dmg |\n| Android | app-arm64-v8a-release-v3.1.0.apk |\n| iOS | Breeze-iOS-v3.1.0.ipa |\n| Linux | breeze-v3.1.0.flatpak |\n| Linux (DEB) | breeze_3.1.0_amd64-v3.1.0.deb |\n| HarmonyOS (未签名) | Breeze-ohos-arm64-v3.1.0.hap |…",
+          "downloadURL": "https://github.com/breeze-project-org/Breeze/releases/download/v3.1.0/Breeze-iOS-v3.1.0.ipa",
+          "size": 27861953,
           "minOSVersion": "15.0",
-          "releaseTag": "v3.0.38",
-          "source": "https://github.com/breeze-project-org/Breeze/releases/tag/v3.0.38"
+          "releaseTag": "v3.1.0",
+          "source": "https://github.com/breeze-project-org/Breeze/releases/tag/v3.1.0"
         }
       ],
-      "version": "3.0.38",
-      "versionDate": "2026-11-15",
-      "versionDescription": "📝 更新日志\r\n[v3.0.38]\r\n功能更新\r\n\r\n- 添加编辑已下载漫画的功能\r\n- 添加章节已读标记\r\n- 移动端阅读新增「横屏自动双页」功能\r\n- 新增「内网拦截」开关\r\n- 更新弹窗支持「一周内不再提醒」\r\n- 新增「显示搜索书签」开关\r\n- 追更与更新日志新增 NEW 提示\r\n- 插件筛选面板新增下拉框支持\r\n- 添加doh支持\r\n- 网络层支持域名前置（IP 直连 / SNI 绕过）与 ECH，改善部分图源的连通性 with daiwenwen3\r\n修复\r\n\r\n- 修复导入漫画时失败的问题\r\n优化\r\n\r\n- 优化部分性能\r\n- 调整部分文本与ui样式\r\n杂项\r\n\r\n- 重做Windows安装器\r\n\r\n---\r\n📦 推荐下载\r\n| 平台 | 下载链接 |\r\n| :--- | :--- |\r\n| Windows | windows-installer-v3.0.38.exe |\r\n| macOS | Breeze-macOS-v3.0.38.dmg |\r\n| Android | app-arm64-v8a-release-v3.0.38.apk |\r\n| iOS | Breeze-iOS-v3.0.38.ipa |\r\n| Linux | breeze-v3.0.38.flatpak |\r\n| Linux (DEB) | breeze_3.0.38_amd64-v3.0.38.deb |\r\n\r\n> 💡 不知道该下载哪个文件？\r\n> 请查看 详细安装指南。",
-      "downloadURL": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.38/Breeze-iOS-v3.0.38.ipa",
-      "size": 27173399,
+      "version": "3.1.0",
+      "versionDate": "2026-11-21",
+      "versionDescription": "📝 更新日志\n[v3.1.0]\n功能更新\n\n- 添加鸿蒙（HarmonyOS NEXT）支持\n- 添加导入外部漫画功能，支持文件夹与 CBZ / CBR / CB7 / CBT 等压缩包\n- 编辑已下载漫画时支持导入章节与图片、编辑分卷\n- 外观设置新增「漫画详情页」样式，可分别隐藏点赞、评论、本地收藏与云收藏按钮\n- 新增显示滚动条与滚动条常驻开关\n- 同步设置支持自定义自动同步间隔\n- 阅读设置新增「条漫放大后连续滚动」实验性开关 by 0kitasan\n修复\n\n- 修复书架文件夹的漫画数量不随来源筛选变化的问题\n- 修复下载任务重启后进度丢失的问题\n- 修复不包含下载内容的备份无法导入的问题\n优化\n\n- 优化插件启动速度\n- 优化内存占用\nui调整\n\n- 调整部分ui样式\n杂项\n\n- 数据存储全面迁移到 SQLite\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.1.0.exe |\n| macOS | Breeze-macOS-v3.1.0.dmg |\n| Android | app-arm64-v8a-release-v3.1.0.apk |\n| iOS | Breeze-iOS-v3.1.0.ipa |\n| Linux | breeze-v3.1.0.flatpak |\n| Linux (DEB) | breeze_3.1.0_amd64-v3.1.0.deb |\n| HarmonyOS (未签名) | Breeze-ohos-arm64-v3.1.0.hap |…",
+      "downloadURL": "https://github.com/breeze-project-org/Breeze/releases/download/v3.1.0/Breeze-iOS-v3.1.0.ipa",
+      "size": 27861953,
       "minOSVersion": "15.0"
     },
     {
@@ -880,41 +880,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.2.5",
-              "date": "2026-11-20",
-              "publishedAt": "2026-11-20T18:49:08Z",
-              "buildVersion": "2.2.5",
-              "buildNumber": "2.2.5",
-              "localizedDescription": "HGhubX v2.2.5\r\n\r\n聚焦多语言支持（简体中文、繁体中文、英语）、播放器微光效果与多端播放交互修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\r\n@makisekurisu-jp @zxsos\r\n新增与优化\r\n1. 简体中文、繁体中文与英语界面切换（#190）：默认使用简体中文，可在「设置 → 外观 → 语言」中一键切换简体中文、繁體中文与 English，切换后立即生效并跨重启持久化；繁体中文与英语词典按需异步加载，首屏默认体积接近零增长。\r\n2. 播放器微光效果（#192）：低分辨率实时采样当前播放画面颜色并柔和扩散至视频黑边区域；可在「设置 → 播放 → 微光效果」中随时开关（默认开启，关闭后不挂载采样层以节省电量）。\r\n3. 精简移动端长按倍速交互（#193）：移除拖动至顶部胶囊锁定倍速的繁琐交互，长按右侧仅作临时加速、长按左侧临时 0.5x 减速、松手即恢复原倍速；持久倍速统一在全屏倍速按钮或「更多 → 播放设置」中调整。\r\n修复\r\n1. 桌面端开启「上下划切集」滚轮切集失效（#195）：桌面端开启「上下划切集」后，鼠标滚轮或触控板纵向滑动原本直接触发列表原生滚动跳到下一部剧；现拦截播放区纵向滚轮并在当前剧内顺滑切集、弹出集数提示，底部控制栏「下一集 ↓ / 下一部 ↓」按钮同步遵循该开关。\r\n2. 清屏锁定后锁图标常驻遮挡画面（#194）：移动端清屏模式点击锁定后立即隐藏右侧锁图标，锁定期间仅在点按屏幕触发「轻触即可解锁」提示时同步显示解锁按钮 2.2 秒，避免图标常驻干扰观看。\r\n3. 横屏全屏切集时集数提示重复…",
-              "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.5/HGhubX_2.2.5_ios.ipa",
-              "size": 3927965,
+              "version": "2.2.6",
+              "date": "2026-11-21",
+              "publishedAt": "2026-11-21T17:01:54Z",
+              "buildVersion": "2.2.6",
+              "buildNumber": "2.2.6",
+              "localizedDescription": "HGhubX v2.2.6\n\n聚焦分类频道与官网排序同步、全站分页上滑自动加载、海报角标、多页左右滑动切栏与 FakeIP 代理连接修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. 分类与原创频道与官网排序同步（#202、#211）：短剧、漫剧频道的「最近更新」「当前热播」「精选推荐」以及「原创」频道的「全部原创」「原创漫剧」「原创短剧」优先解析官网服务端渲染频道页，与网站更新排序、总页数、标签及统计保持一致，解析异常时自动回退原有 JSON 接口。\n2. 海报左上角新增「原创」「热播」「新片」角标（#202、#211）：瀑布流与横向预览卡片海报左上角按「原创」「热播」「新片」（72 小时窗口）顺序显示高对比度角标，避免与右上角评分重叠；集数状态移至海报底部遮罩左侧与播放量同排展示，「我的」页继续保留「新更 N 集」角标。\n3. 分页列表统一改为上滑自动加载（#202、#211）：频道页、吃瓜列表、专题详情、标签详情、关注/创作者作品与全局/栏目搜索均在接近底部时自动续载下一页，不再常驻手动「加载更多」按钮；开启标签屏蔽时同样保持自动加载，仅当连续 2 页过滤后均无可见条目时熔断暂停并展示手动兜底按钮。\n4. 多页面支持左右滑动切换标签栏（#208、#209）：排行榜支持左右滑动切换热播/推荐/潜力榜；「我的」页支持左右滑动切换收藏/历史；分类频道页支持左右滑动切换筛选 tab。\n5. 「我的」页批量管理新增「全选」（#205）：收藏与观看历史进入多选模式后支持一键「全选」，并移除历史页底部多余的独立清空按钮，统一收口到…",
+              "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.6/HGhubX_2.2.6_ios.ipa",
+              "size": 3990783,
               "minOSVersion": "15.0",
-              "releaseTag": "v2.2.5",
-              "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.2.5"
+              "releaseTag": "v2.2.6",
+              "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.2.6"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.2.5",
-          "date": "2026-11-20",
-          "publishedAt": "2026-11-20T18:49:08Z",
-          "buildVersion": "2.2.5",
-          "buildNumber": "2.2.5",
-          "localizedDescription": "HGhubX v2.2.5\r\n\r\n聚焦多语言支持（简体中文、繁体中文、英语）、播放器微光效果与多端播放交互修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\r\n@makisekurisu-jp @zxsos\r\n新增与优化\r\n1. 简体中文、繁体中文与英语界面切换（#190）：默认使用简体中文，可在「设置 → 外观 → 语言」中一键切换简体中文、繁體中文与 English，切换后立即生效并跨重启持久化；繁体中文与英语词典按需异步加载，首屏默认体积接近零增长。\r\n2. 播放器微光效果（#192）：低分辨率实时采样当前播放画面颜色并柔和扩散至视频黑边区域；可在「设置 → 播放 → 微光效果」中随时开关（默认开启，关闭后不挂载采样层以节省电量）。\r\n3. 精简移动端长按倍速交互（#193）：移除拖动至顶部胶囊锁定倍速的繁琐交互，长按右侧仅作临时加速、长按左侧临时 0.5x 减速、松手即恢复原倍速；持久倍速统一在全屏倍速按钮或「更多 → 播放设置」中调整。\r\n修复\r\n1. 桌面端开启「上下划切集」滚轮切集失效（#195）：桌面端开启「上下划切集」后，鼠标滚轮或触控板纵向滑动原本直接触发列表原生滚动跳到下一部剧；现拦截播放区纵向滚轮并在当前剧内顺滑切集、弹出集数提示，底部控制栏「下一集 ↓ / 下一部 ↓」按钮同步遵循该开关。\r\n2. 清屏锁定后锁图标常驻遮挡画面（#194）：移动端清屏模式点击锁定后立即隐藏右侧锁图标，锁定期间仅在点按屏幕触发「轻触即可解锁」提示时同步显示解锁按钮 2.2 秒，避免图标常驻干扰观看。\r\n3. 横屏全屏切集时集数提示重复…",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.5/HGhubX_2.2.5_ios.ipa",
-          "size": 3927965,
+          "version": "2.2.6",
+          "date": "2026-11-21",
+          "publishedAt": "2026-11-21T17:01:54Z",
+          "buildVersion": "2.2.6",
+          "buildNumber": "2.2.6",
+          "localizedDescription": "HGhubX v2.2.6\n\n聚焦分类频道与官网排序同步、全站分页上滑自动加载、海报角标、多页左右滑动切栏与 FakeIP 代理连接修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. 分类与原创频道与官网排序同步（#202、#211）：短剧、漫剧频道的「最近更新」「当前热播」「精选推荐」以及「原创」频道的「全部原创」「原创漫剧」「原创短剧」优先解析官网服务端渲染频道页，与网站更新排序、总页数、标签及统计保持一致，解析异常时自动回退原有 JSON 接口。\n2. 海报左上角新增「原创」「热播」「新片」角标（#202、#211）：瀑布流与横向预览卡片海报左上角按「原创」「热播」「新片」（72 小时窗口）顺序显示高对比度角标，避免与右上角评分重叠；集数状态移至海报底部遮罩左侧与播放量同排展示，「我的」页继续保留「新更 N 集」角标。\n3. 分页列表统一改为上滑自动加载（#202、#211）：频道页、吃瓜列表、专题详情、标签详情、关注/创作者作品与全局/栏目搜索均在接近底部时自动续载下一页，不再常驻手动「加载更多」按钮；开启标签屏蔽时同样保持自动加载，仅当连续 2 页过滤后均无可见条目时熔断暂停并展示手动兜底按钮。\n4. 多页面支持左右滑动切换标签栏（#208、#209）：排行榜支持左右滑动切换热播/推荐/潜力榜；「我的」页支持左右滑动切换收藏/历史；分类频道页支持左右滑动切换筛选 tab。\n5. 「我的」页批量管理新增「全选」（#205）：收藏与观看历史进入多选模式后支持一键「全选」，并移除历史页底部多余的独立清空按钮，统一收口到…",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.6/HGhubX_2.2.6_ios.ipa",
+          "size": 3990783,
           "minOSVersion": "15.0",
-          "releaseTag": "v2.2.5",
-          "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.2.5"
+          "releaseTag": "v2.2.6",
+          "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.2.6"
         }
       ],
-      "version": "2.2.5",
-      "versionDate": "2026-11-20",
-      "versionDescription": "HGhubX v2.2.5\r\n\r\n聚焦多语言支持（简体中文、繁体中文、英语）、播放器微光效果与多端播放交互修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\r\n@makisekurisu-jp @zxsos\r\n新增与优化\r\n1. 简体中文、繁体中文与英语界面切换（#190）：默认使用简体中文，可在「设置 → 外观 → 语言」中一键切换简体中文、繁體中文与 English，切换后立即生效并跨重启持久化；繁体中文与英语词典按需异步加载，首屏默认体积接近零增长。\r\n2. 播放器微光效果（#192）：低分辨率实时采样当前播放画面颜色并柔和扩散至视频黑边区域；可在「设置 → 播放 → 微光效果」中随时开关（默认开启，关闭后不挂载采样层以节省电量）。\r\n3. 精简移动端长按倍速交互（#193）：移除拖动至顶部胶囊锁定倍速的繁琐交互，长按右侧仅作临时加速、长按左侧临时 0.5x 减速、松手即恢复原倍速；持久倍速统一在全屏倍速按钮或「更多 → 播放设置」中调整。\r\n修复\r\n1. 桌面端开启「上下划切集」滚轮切集失效（#195）：桌面端开启「上下划切集」后，鼠标滚轮或触控板纵向滑动原本直接触发列表原生滚动跳到下一部剧；现拦截播放区纵向滚轮并在当前剧内顺滑切集、弹出集数提示，底部控制栏「下一集 ↓ / 下一部 ↓」按钮同步遵循该开关。\r\n2. 清屏锁定后锁图标常驻遮挡画面（#194）：移动端清屏模式点击锁定后立即隐藏右侧锁图标，锁定期间仅在点按屏幕触发「轻触即可解锁」提示时同步显示解锁按钮 2.2 秒，避免图标常驻干扰观看。\r\n3. 横屏全屏切集时集数提示重复…",
-      "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.5/HGhubX_2.2.5_ios.ipa",
-      "size": 3927965,
+      "version": "2.2.6",
+      "versionDate": "2026-11-21",
+      "versionDescription": "HGhubX v2.2.6\n\n聚焦分类频道与官网排序同步、全站分页上滑自动加载、海报角标、多页左右滑动切栏与 FakeIP 代理连接修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. 分类与原创频道与官网排序同步（#202、#211）：短剧、漫剧频道的「最近更新」「当前热播」「精选推荐」以及「原创」频道的「全部原创」「原创漫剧」「原创短剧」优先解析官网服务端渲染频道页，与网站更新排序、总页数、标签及统计保持一致，解析异常时自动回退原有 JSON 接口。\n2. 海报左上角新增「原创」「热播」「新片」角标（#202、#211）：瀑布流与横向预览卡片海报左上角按「原创」「热播」「新片」（72 小时窗口）顺序显示高对比度角标，避免与右上角评分重叠；集数状态移至海报底部遮罩左侧与播放量同排展示，「我的」页继续保留「新更 N 集」角标。\n3. 分页列表统一改为上滑自动加载（#202、#211）：频道页、吃瓜列表、专题详情、标签详情、关注/创作者作品与全局/栏目搜索均在接近底部时自动续载下一页，不再常驻手动「加载更多」按钮；开启标签屏蔽时同样保持自动加载，仅当连续 2 页过滤后均无可见条目时熔断暂停并展示手动兜底按钮。\n4. 多页面支持左右滑动切换标签栏（#208、#209）：排行榜支持左右滑动切换热播/推荐/潜力榜；「我的」页支持左右滑动切换收藏/历史；分类频道页支持左右滑动切换筛选 tab。\n5. 「我的」页批量管理新增「全选」（#205）：收藏与观看历史进入多选模式后支持一键「全选」，并移除历史页底部多余的独立清空按钮，统一收口到…",
+      "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.6/HGhubX_2.2.6_ios.ipa",
+      "size": 3990783,
       "minOSVersion": "15.0"
     },
     {

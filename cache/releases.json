@@ -1,6 +1,54 @@
 {
   "zxsos/HGhubX": [
     {
+      "tag": "v2.2.6",
+      "name": "v2.2.6",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-21",
+      "published_at": "2026-11-21T17:01:54Z",
+      "body": "# HGhubX v2.2.6\n\n聚焦分类频道与官网排序同步、全站分页上滑自动加载、海报角标、多页左右滑动切栏与 FakeIP 代理连接修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n\n## 新增与优化\n1. **分类与原创频道与官网排序同步（#202、#211）**：短剧、漫剧频道的「最近更新」「当前热播」「精选推荐」以及「原创」频道的「全部原创」「原创漫剧」「原创短剧」优先解析官网服务端渲染频道页，与网站更新排序、总页数、标签及统计保持一致，解析异常时自动回退原有 JSON 接口。\n2. **海报左上角新增「原创」「热播」「新片」角标（#202、#211）**：瀑布流与横向预览卡片海报左上角按「原创」「热播」「新片」（72 小时窗口）顺序显示高对比度角标，避免与右上角评分重叠；集数状态移至海报底部遮罩左侧与播放量同排展示，「我的」页继续保留「新更 N 集」角标。\n3. **分页列表统一改为上滑自动加载（#202、#211）**：频道页、吃瓜列表、专题详情、标签详情、关注/创作者作品与全局/栏目搜索均在接近底部时自动续载下一页，不再常驻手动「加载更多」按钮；开启标签屏蔽时同样保持自动加载，仅当连续 2 页过滤后均无可见条目时熔断暂停并展示手动兜底按钮。\n4. **多页面支持左右滑动切换标签栏（#208、#209）**：排行榜支持左右滑动切换热播/推荐/潜力榜；「我的」页支持左右滑动切换收藏/历史；分类频道页支持左右滑动切换筛选 tab。\n5. **「我的」页批量管理新增「全选」（#205）**：收藏与观看历史进入多选模式后支持一键「全选」，并移除历史页底部多余的独立清空按钮，统一收口到批量管理操作栏。\n\n## 修复\n1. **iOS / 桌面 TUN FakeIP 代理导致请求全部被拒（#199）**：开启 Shadowrocket / Clash / Surge / sing-box 等 FakeIP 代理后，系统 DNS 同时返回 FakeIP IPv4 与合成 ULA IPv6 假地址，此前整组校验会误判私网并拒绝请求；现严格模式在系统解析路径丢弃不可直达的假 IPv6 ULA、仅固定可放行的地址，整组均不可放行时仍拒绝，且不放宽任何安全白名单。\n2. **搜索历史长按编辑态胶囊字号与尺寸异常（#207）**：修正搜索历史进入编辑态时胶囊字号与内边距跳动问题，保持常规态与编辑态视觉一致。\n\n## 安装与兼容提示\n- Windows 提供 NSIS 安装包与便携压缩包；macOS 提供 Universal DMG；Linux 提供 amd64 `.deb`；Android 标准版按 ABI 提供已签名 APK（`versionCode=2002006`）；iOS 提供未签名 `.ipa`（需自行签名安装）。\n- 覆盖安装保留本机收藏、观看记录、界面语言、线路与内容偏好；Android TV 版（`com.hghubx.tv`）由独立 `tv-v2.2.4` 标签单独发布。\n\n## 致谢\n- 感谢 @zxsos 完成 #202/#211 分类频道与官网排序同步、全站上滑自动加载、海报角标以及 #210/#212/#214 工作流拆分与自动预览体系建设。\n- 感谢 @oahceh 贡献 #199 FakeIP DNS 混合结果固定修复。\n- 感谢 @makisekurisu-jp 贡献 #205、#207、#208、#209 批量全选、搜索历史样式与多页滑动切栏优化。\n\n## 验证\n- 本地 `make check`（Rust 118 项单元测试通过 / 0 失败 / 4 联网测试跳过、TypeScript 三套配置与 Vite 构建、789 项多语言词典键一致性校验、文档链接、尺寸预算、版本同步）与 `pnpm test:smoke`（12/12 套件通过，含 `channel-autoload-badges`、`profile-swipe`、`channel-swipe`、`rank-swipe`）全量通过。\n- 各平台正式安装包由 `v2.2.6` 标签触发的 GitHub Actions `Release` 工作流构建并校验。\n",
+      "ipas": [
+        {
+          "name": "HGhubX_2.2.6_ios.ipa",
+          "size": 3990783,
+          "url": "https://github.com/zxsos/HGhubX/releases/download/v2.2.6/HGhubX_2.2.6_ios.ipa",
+          "id": 776248427,
+          "updated_at": "2026-11-21T17:01:53Z",
+          "digest": "sha256:c581c6718c758fc2769cfd16255e7bdf391231bcdd2eb65e120ed5834be674af"
+        }
+      ]
+    },
+    {
+      "tag": "tv-v2.2.4",
+      "name": "HGhubX TV tv-v2.2.4",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-21",
+      "published_at": "2026-11-21T17:05:51Z",
+      "body": "# HGhubX TV tv-v2.2.4\n\n新增 Android TV 应用内一键检查与安装更新（含加速节点回退与 SHA-256 校验），并修复 FakeIP 代理连接与电视遥控器焦点恢复问题；适用于 Android TV / 电视盒子（`com.hghubx.tv`）。\n\n## 新增与优化\n1. **应用内一键检查、下载与安装更新（#201）**：在「设置 → 关于」新增独立更新卡片，支持启动后后台静默检查新版本并在侧边栏与「关于」项显示红点/「新版」角标；下载内置多加速节点与 GitHub 直连自动回退、实时进度条与取消下载，落盘前严格校验目标 URL 白名单、APK 文件头、字节长度与 SHA-256 摘要，校验通过后通过原生 `FileProvider` 拉起系统安装器（首次自动引导开启「允许安装未知应用」权限）。\n\n## 修复\n1. **FakeIP 代理环境下网络请求被误拒（#199）**：修复 TUN FakeIP 代理返回混合 IPv4 FakeIP 与 IPv6 ULA 假地址时被严格模式整组拒绝的问题，仅固定可放行地址且不放宽安全白名单。\n2. **设置页「检查更新」文字与卡片尺寸跳动**：为更新主操作按钮设置固定最小宽度、为更新状态卡片设置最小高度并使用等宽数字（`tabular-nums`），避免点击「检查更新」或下载进度刷新时按钮伸缩和卡片高度跳动。\n3. **设置页切换或弹窗关闭时遥控器焦点偶发抢回侧边栏（#201）**：优化 `restoreFocus` 焦点恢复时序，同步优先恢复目标焦点并避免在已有活跃非导航控件时被延迟 `rAF` 覆盖。\n\n## 安装与兼容提示\n- Android TV 按 ABI 分包提供 `HGhubX-TV_2.2.4_arm64.apk`、`HGhubX-TV_2.2.4_arm.apk`、`HGhubX-TV_2.2.4_x86_64.apk`（`com.hghubx.tv`，`versionCode=2002004`）。\n- 沿用与既有 `com.hghubx.tv` 相同的签名证书与单调递增 `versionCode`，支持直接覆盖升级，保留本机收藏、观看记录、线路偏好与启动 PIN。\n\n## 致谢\n- 感谢 @zxsos 完成 #201 Android TV 应用内一键更新（多加速节点回退与 SHA-256 校验）、遥控器焦点恢复修复与设置页更新布局防抖优化。\n- 感谢 @oahceh 贡献 #199 FakeIP DNS 混合结果固定修复。\n\n## 验证\n- 本地 `make check`（Rust 118 项单元测试通过 / 0 失败 / 4 联网测试跳过、文档链接、版本同步）与 `make test-tv`（TV 版本字段与 `VITE_APP_EDITION=tv pnpm build`）全量通过。\n- TV 正式安装包由 `tv-v2.2.4` 标签触发的 GitHub Actions `TV Release` 工作流构建并校验。\n",
+      "ipas": []
+    },
+    {
+      "tag": "test-pre",
+      "name": "HGhubX Test Preview (4166a93)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-11-21",
+      "published_at": "2026-11-21T16:49:36Z",
+      "body": "# HGhubX Test Preview\n\n基于 `main`（`5cb1159`）自动合成的全平台预览构建（更新时间：`2026-11-21T16:39:40Z`，测试提交：`4166a93`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（8）\n1. #199 fix(network): keep fake-ip answers pinnable instead of rejecting the whole dns set（@oahceh，`6f7bd96`）\n2. #201 feat(tv): add in-app one-click updater with sha256 verification（@zxsos，`4b91c09`）\n3. #205 我的页批量管理增加全选，移除底部清空观看历史（@makisekurisu-jp，`72cc184`）\n4. #207 修复搜索历史长按编辑时的字号和胶囊尺寸（@makisekurisu-jp，`18815b3`）\n5. #208 排行榜支持左右滑动切换热播/推荐/潜力榜（@makisekurisu-jp，`d4a37f7`）\n6. #209 我的页与分类频道页支持左右滑动切换 tab（@makisekurisu-jp，`d5900b4`）\n7. #211 fix(feed,category,ui): sync SSR channel lists, enable scroll auto-load, and show poster corner badges (#202)（@zxsos，`8af98c5`）\n8. #214 ci,docs: extract composite actions, add release preflight, and optimize CI/Test Preview triggers（@zxsos，`fd89316`）\n",
+      "ipas": [
+        {
+          "name": "HGhubX_2.2.5_ios.ipa",
+          "size": 4091251,
+          "url": "https://github.com/zxsos/HGhubX/releases/download/test-pre/HGhubX_2.2.5_ios.ipa",
+          "id": 776213446,
+          "updated_at": "2026-11-21T16:49:34Z",
+          "digest": "sha256:d6e45f6a8da5a2fb6b96746f634a5e020c64dc947ef95e52b61db78da849af55"
+        }
+      ]
+    },
+    {
       "tag": "v2.2.5",
       "name": "v2.2.5",
       "pre": false,
@@ -2240,6 +2288,25 @@
   ],
   "ARMSX2/ARMSX2": [
     {
+      "tag": "nightly-20261121",
+      "name": "ARMSX2 nightly 20261121 (8bee9fff99)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-11-21",
+      "published_at": "2026-11-21T16:45:32Z",
+      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- iOS: split the menu controller input router\n- iOS: split the controller accessibility navigation file\n- iOS: split the orb field file and move the theme tables to Appearance\n- iOS: localize the Report a Problem screens in nine languages\n- iOS: offer a report after a session that ended badly\n- iOS: report a problem from the pause menu with the paused frame\n- iOS: add Settings Diagnostics with the report sheet\n- iOS: carry the paused frame, a photo and crash files in the report\n- iOS: build a redacted problem report zip from the session logs\n- iOS: read how each session ended from its log markers\n- iOS: keep each launch's logs in a session folder with markers\n\nFull changelog: https://github.com/ARMSX2/ARMSX2/compare/nightly-20261120...8bee9fff99b2063ecb0",
+      "ipas": [
+        {
+          "name": "ARMSX2-nightly-20261121-8bee9fff99-iOS-arm64.ipa",
+          "size": 40743520,
+          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261121/ARMSX2-nightly-20261121-8bee9fff99-iOS-arm64.ipa",
+          "id": 776201692,
+          "updated_at": "2026-11-21T16:45:37Z",
+          "digest": "sha256:b4012b383e0e53f3c3c7f72c1c2253a96d674325b504cd01b4a3c28566cbc7e7"
+        }
+      ]
+    },
+    {
       "tag": "nightly-20261120",
       "name": "ARMSX2 nightly 20261120 (1d1c26d8a2)",
       "pre": true,
@@ -2380,33 +2447,6 @@
           "id": 724395186,
           "updated_at": "2026-11-08T15:47:03Z",
           "digest": "sha256:2db4f53d4659158267ae0e1380e85ef51573d2e6f10676e72908c3604b559032"
-        }
-      ]
-    },
-    {
-      "tag": "nightly-20261107",
-      "name": "ARMSX2 nightly 20261107 (9144e4ff1f)",
-      "pre": true,
-      "draft": false,
-      "date": "2026-11-07",
-      "published_at": "2026-11-07T15:31:52Z",
-      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- Texture packs: a This Game list in both browsers, shown while a game runs\n- Driver list: show only the sources built for the device's GPU family\n- arm64: a post-mortem in the log for a fault in recompiled code\n- PageFaultHandler: a reporter for the faults it cannot handle\n- Crash handler: let the fault's own signal kill the process\n- Console: expose the log file's descriptor for crash handlers\n- arm64: read guest words for the post-mortems without allocating\n- AutoTune: lower the Android Display Resolution (HW scaler) to the render resolution when GPU-bound\n- AutoTune: add Disabled to the download mode ladder, and step over a rung that did not help\n- Driver list: a release with one zip per device lists each zip by its own name\n- Translations: the batch",
-      "ipas": [
-        {
-          "name": "ARMSX2-nightly-20261107-9144e4ff1f-iOS-arm64.ipa",
-          "size": 40593571,
-          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261107/ARMSX2-nightly-20261107-9144e4ff1f-iOS-arm64.ipa",
-          "id": 722352219,
-          "updated_at": "2026-11-08T00:08:19Z",
-          "digest": "sha256:baea750fe661ca384eeba609e5932caea10e543db99a5453c3140d9d1047c278"
-        },
-        {
-          "name": "ARMSX2-nightly-20261107-acfe231f4a-iOS-arm64.ipa",
-          "size": 40589664,
-          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261107/ARMSX2-nightly-20261107-acfe231f4a-iOS-arm64.ipa",
-          "id": 721091078,
-          "updated_at": "2026-11-07T15:31:57Z",
-          "digest": "sha256:fcdde28bed9b3cc53ae276fd705d7ddd9ed4fa6fefde50868aaba97efbfff609"
         }
       ]
     },
@@ -5656,6 +5696,35 @@
   ],
   "breeze-project-org/Breeze": [
     {
+      "tag": "v3.1.0",
+      "name": "Breeze v3.1.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-21",
+      "published_at": "2026-11-21T13:52:36Z",
+      "body": "## 📝 更新日志\n## [v3.1.0]\n\n### 功能更新\n\n- 添加鸿蒙（HarmonyOS NEXT）支持\n- 添加导入外部漫画功能，支持文件夹与 CBZ / CBR / CB7 / CBT 等压缩包\n- 编辑已下载漫画时支持导入章节与图片、编辑分卷\n- 外观设置新增「漫画详情页」样式，可分别隐藏点赞、评论、本地收藏与云收藏按钮\n- 新增显示滚动条与滚动条常驻开关\n- 同步设置支持自定义自动同步间隔\n- 阅读设置新增「条漫放大后连续滚动」实验性开关 by [0kitasan](https://github.com/0kitasan)\n\n### 修复\n\n- 修复书架文件夹的漫画数量不随来源筛选变化的问题\n- 修复下载任务重启后进度丢失的问题\n- 修复不包含下载内容的备份无法导入的问题\n\n### 优化\n\n- 优化插件启动速度\n- 优化内存占用\n\n### ui调整\n\n- 调整部分ui样式\n\n### 杂项\n\n- 数据存储全面迁移到 SQLite\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.1.0.exe](https://github.com/breeze-project-org/Breeze/releases/download/v3.1.0/windows-installer-v3.1.0.exe) |\n| **macOS** | [Breeze-macOS-v3.1.0.dmg](https://github.com/breeze-project-org/Breeze/releases/download/v3.1.0/Breeze-macOS-v3.1.0.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.1.0.apk](https://github.com/breeze-project-org/Breeze/releases/download/v3.1.0/app-arm64-v8a-release-v3.1.0.apk) |\n| **iOS** | [Breeze-iOS-v3.1.0.ipa](https://github.com/breeze-project-org/Breeze/releases/download/v3.1.0/Breeze-iOS-v3.1.0.ipa) |\n| **Linux** | [breeze-v3.1.0.flatpak](https://github.com/breeze-project-org/Breeze/releases/download/v3.1.0/breeze-v3.1.0.flatpak) |\n| **Linux (DEB)** | [breeze_3.1.0_amd64-v3.1.0.deb](https://github.com/breeze-project-org/Breeze/releases/download/v3.1.0/breeze_3.1.0_amd64-v3.1.0.deb) |\n| **HarmonyOS (未签名)** | [Breeze-ohos-arm64-v3.1.0.hap](https://github.com/breeze-project-org/Breeze/releases/download/v3.1.0/Breeze-ohos-arm64-v3.1.0.hap) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/breeze-project-org/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n> ⚠️ **HarmonyOS HAP 未签名**（仅 arm64，最低 HarmonyOS 5.0.5(17)）：需要用自己设备信任的证书/profile 自签后安装，不能用 OpenHarmony 测试证书装零售机。\n",
+      "ipas": [
+        {
+          "name": "Breeze-iOS-v3.1.0.ipa",
+          "size": 27861953,
+          "url": "https://github.com/breeze-project-org/Breeze/releases/download/v3.1.0/Breeze-iOS-v3.1.0.ipa",
+          "id": 775738659,
+          "updated_at": "2026-11-21T13:52:33Z",
+          "digest": "sha256:aa490d7b20e224b2cb52c26cc5774c98c3518137b2d3bef501aa2febc21249b8"
+        }
+      ]
+    },
+    {
+      "tag": "custom-issue-246",
+      "name": "Breeze v3.0.38 定制版（Issue #246：旧版首页/排行榜）",
+      "pre": true,
+      "draft": false,
+      "date": "2026-11-21",
+      "published_at": "2026-11-21T15:27:07Z",
+      "body": "## Issue #246 定制版（非官方正式版，仅 Android）\n\n- 基线：`v3.0.38`（`836e3581`，SQLite 迁移前）\n- 内容：恢复旧版内置首页与排行榜；底栏为 首页 / 排行 / 书架 / 发现 / 更多。首页与排行榜右下角的切换按钮只在哔咔 / 禁漫之间切换，不再弹出插件选择器\n- 设置中「显示首页 / 显示排行榜」可隐藏对应页签\n- 定制版停用启动自动更新提示，避免被引导升级到没有旧页面的正式版\n\n### 安装注意\n\n- 包名仍为 `com.zephyr.breeze`。若设备已安装更新的正式版（3.1.x），需要先卸载再安装；本版仍是 SQLite 迁移前的 ObjectBox 存储，数据不会迁移，插件与登录需重新添加\n- 推荐 `arm64-v8a`（绝大多数手机）；`armeabi-v7a` 供 32 位旧机；`x86_64` 供模拟器\n- Release 签名，与正式版使用同一证书\n\n### 校验\n\n| 文件 | SHA-256 |\n|---|---|\n| `Breeze-v3.0.38-custom-issue246-arm64-v8a.apk` | `9db6a24426d1be37f68209c8880e436af68ec352cc6c725b1dcdb91a97088409` |\n| `Breeze-v3.0.38-custom-issue246-armeabi-v7a.apk` | `2635f0fc21dcea19d09bb6ace7a172b3423f9bccbca81c10b73b58a69e96d678` |\n| `Breeze-v3.0.38-custom-issue246-x86_64.apk` | `60fb30bc54b1821a2d6e08ac66b2b6c80df2d939cc8ba55d49e420a53e87f517` |\n",
+      "ipas": []
+    },
+    {
       "tag": "v3.0.38",
       "name": "Breeze v3.0.38",
       "pre": false,
@@ -5994,44 +6063,6 @@
           "id": 467329659,
           "updated_at": "2026-07-05T18:02:19Z",
           "digest": "sha256:f614e33710dc1ced52bca421e04e688b4dd2944e813f389c74467948eaed4497"
-        }
-      ]
-    },
-    {
-      "tag": "v3.0.19",
-      "name": "Breeze v3.0.19",
-      "pre": false,
-      "draft": false,
-      "date": "2026-06-29",
-      "published_at": "2026-06-29T02:00:19Z",
-      "body": "## 📝 更新日志\n## [v3.0.19]\n\n### 功能更新\n\n- 书架收藏与下载添加类资源管理模式文件夹逻辑\n- 新增全局简繁转换开关(issue #128) by [@Enigma-Soul](https://github.com/deretame/Breeze/pull/143)\n\n### 优化\n\n- 修复部分情况下章节列表高亮不正确的问题 by [@Enigma-Soul](https://github.com/deretame/Breeze/pull/135)\n- 优化插件性能\n- 优化部分ui显示效果及部分文本描述\n\n### bug 修复\n\n- 修复Windows安装器在部分设备上无法正常安装的问题\n\n### 杂项\n\n- 部分设置不再跟随同步\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.19.exe](https://github.com/deretame/Breeze/releases/download/v3.0.19/windows-installer-v3.0.19.exe) |\n| **macOS** | [Breeze-macOS-v3.0.19.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.19/Breeze-macOS-v3.0.19.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.19.apk](https://github.com/deretame/Breeze/releases/download/v3.0.19/app-arm64-v8a-release-v3.0.19.apk) |\n| **iOS** | [Breeze-iOS-v3.0.19.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.19/Breeze-iOS-v3.0.19.ipa) |\n| **Linux** | [breeze-v3.0.19.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.19/breeze-v3.0.19.flatpak) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
-      "ipas": [
-        {
-          "name": "Breeze-iOS-v3.0.19.ipa",
-          "size": 23296013,
-          "url": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.19/Breeze-iOS-v3.0.19.ipa",
-          "id": 460667466,
-          "updated_at": "2026-06-29T02:00:18Z",
-          "digest": "sha256:87b6897a4c0dde59d9a11a021c513cd254cd3596f429196b11c3457ed5ac649b"
-        }
-      ]
-    },
-    {
-      "tag": "v3.0.18",
-      "name": "Breeze v3.0.18",
-      "pre": false,
-      "draft": false,
-      "date": "2026-06-21",
-      "published_at": "2026-06-21T15:28:44Z",
-      "body": "## 📝 更新日志\n## [v3.0.18]\n\n### 功能更新\n\n- 添加图片自动超分功能（实验性，可能不稳定）\n\n### 优化\n\n- 阅读界面章节选择对话框定位到当前章节并高亮的功能 by @Enigma-Soul in https://github.com/deretame/Breeze/pull/135\n\n#### New Contributors\n\n- @Enigma-Soul made their first contribution in https://github.com/deretame/Breeze/pull/135\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.18.exe](https://github.com/deretame/Breeze/releases/download/v3.0.18/windows-installer-v3.0.18.exe) |\n| **macOS** | [Breeze-macOS-v3.0.18.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.18/Breeze-macOS-v3.0.18.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.18.apk](https://github.com/deretame/Breeze/releases/download/v3.0.18/app-arm64-v8a-release-v3.0.18.apk) |\n| **iOS** | [Breeze-iOS-v3.0.18.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.18/Breeze-iOS-v3.0.18.ipa) |\n| **Linux** | [breeze-v3.0.18.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.18/breeze-v3.0.18.flatpak) |\n\n> 💡 **不知道该下载哪个文件？**\n> 请查看 [详细安装指南](https://github.com/deretame/Breeze#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)。\n",
-      "ipas": [
-        {
-          "name": "Breeze-iOS-v3.0.18.ipa",
-          "size": 23643829,
-          "url": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.18/Breeze-iOS-v3.0.18.ipa",
-          "id": 453784248,
-          "updated_at": "2026-06-21T15:28:43Z",
-          "digest": "sha256:c1c1525a7ff4ce323be5999fb1297c5ab57aa998c7a2f91e78b4b84c28550b69"
         }
       ]
     }

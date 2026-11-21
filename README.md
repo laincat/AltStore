@@ -50,16 +50,16 @@ https://github.com/laincat/AltStore/releases/download/latest/apps.json
 | AniCh | `app.anich` | 1.5.27 | iOS 12.0+ | 无 | [Sle2p/AniCh](https://github.com/Sle2p/AniCh) |
 | AnimeFlow | `com.ligg.animeflow` | 2.6.8 | iOS 15.0+ | 无 | [openAnimeFlow/AnimeFlow](https://github.com/openAnimeFlow/AnimeFlow) |
 | Animeko | `org.animeko.animeko` | 6.4.1 | iOS 16.0+ | 6.4.0 | [open-ani/animeko](https://github.com/open-ani/animeko) |
-| ARMSX2 Nightly | `com.armsx2.ios.nightly` | 2.6.0-nightly.20261120.0157 | iOS 17.4+ | 无 | [ARMSX2/ARMSX2](https://github.com/ARMSX2/ARMSX2) |
+| ARMSX2 Nightly | `com.armsx2.ios.nightly` | 2.6.0-nightly.20261121.1609 | iOS 17.4+ | 无 | [ARMSX2/ARMSX2](https://github.com/ARMSX2/ARMSX2) |
 | ARMSX3 | `com.armsx3.ARMSX3` | 0.0.3 | iOS 17.4+ | 无 | [ARMSX2/ARMSX3](https://github.com/ARMSX2/ARMSX3) |
 | AvPlay | `com.javdb.avplay2` | 2.2.2 | iOS 15.3+ | 无 | [anonymousjav/AvPlayRelease](https://github.com/anonymousjav/AvPlayRelease) |
-| Breeze | `com.zephyr.breeze` | 3.0.38 | iOS 15.0+ | 无 | [breeze-project-org/Breeze](https://github.com/breeze-project-org/Breeze) |
+| Breeze | `com.zephyr.breeze` | 3.1.0 | iOS 15.0+ | 无 | [breeze-project-org/Breeze](https://github.com/breeze-project-org/Breeze) |
 | Camlo | `com.kianuni.Camlo` | 1.3.4 | iOS 26.0+ | 无 | [Kianuni/Camlo](https://github.com/Kianuni/Camlo) |
 | EhPanda | `app.ehpanda` | 2.8.1 | iOS 26.0+ | 无 | [EhPanda-Team/EhPanda](https://github.com/EhPanda-Team/EhPanda) |
 | GestaltEdit | `me.ssus.gestaltedit` | 2.3.1 | iOS 26.0+ | 无 | [frs0n/GestaltEdit](https://github.com/frs0n/GestaltEdit) |
 | GestaltX | `com.huami.gestultx` | 1.1.1 | iOS 26.0+ | 无 | [huamidev/GestaltX](https://github.com/huamidev/GestaltX) |
 | HentaiPark | `com.hentaipark.hentaiPark` | 0.15.4 | iOS 15.0+ | 无 | [drdon1234/Hentai-Park](https://github.com/drdon1234/Hentai-Park) |
-| HGhubX | `com.hghubx.app` | 2.2.5 | iOS 15.0+ | 无 | [zxsos/HGhubX](https://github.com/zxsos/HGhubX) |
+| HGhubX | `com.hghubx.app` | 2.2.6 | iOS 15.0+ | 无 | [zxsos/HGhubX](https://github.com/zxsos/HGhubX) |
 | INSAV | `com.ios151.insav` | 1.3.1 | iOS 16.0+ | 无 | [ios151/Insav-releases](https://github.com/ios151/Insav-releases) |
 | Kazumi | `com.example.kazumi` | 2.4.5 | iOS 15.0+ | 无 | [Predidit/Kazumi](https://github.com/Predidit/Kazumi) |
 | Nekularity | `com.laincat.nekularity` | 0.4.9 | iOS 26.0+ | 无 | [laincat/Nekularity](https://github.com/laincat/Nekularity) |

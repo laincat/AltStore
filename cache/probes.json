@@ -2708,5 +2708,47 @@
       "size": 30370674,
       "digest": "sha256:29f63290d92c9cb5a4e854972a16e9a3c9d85e7641b6ebbc030b2efa4fae974f"
     }
+  },
+  "https://github.com/breeze-project-org/Breeze/releases/download/v3.1.0/Breeze-iOS-v3.1.0.ipa": {
+    "bundleIdentifier": "com.zephyr.breeze",
+    "version": "3.1.0",
+    "buildVersion": "2226",
+    "displayName": "Breeze",
+    "minOSVersion": "15.0",
+    "size": 27861953,
+    "assetIdentity": {
+      "id": 775738659,
+      "updated_at": "2026-11-21T13:52:33Z",
+      "size": 27861953,
+      "digest": "sha256:aa490d7b20e224b2cb52c26cc5774c98c3518137b2d3bef501aa2febc21249b8"
+    }
+  },
+  "https://github.com/zxsos/HGhubX/releases/download/v2.2.6/HGhubX_2.2.6_ios.ipa": {
+    "bundleIdentifier": "com.hghubx.app",
+    "version": "2.2.6",
+    "buildVersion": "2.2.6",
+    "displayName": "HGhubX",
+    "minOSVersion": "15.0",
+    "size": 3990783,
+    "assetIdentity": {
+      "id": 776248427,
+      "updated_at": "2026-11-21T17:01:53Z",
+      "size": 3990783,
+      "digest": "sha256:c581c6718c758fc2769cfd16255e7bdf391231bcdd2eb65e120ed5834be674af"
+    }
+  },
+  "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261121/ARMSX2-nightly-20261121-8bee9fff99-iOS-arm64.ipa": {
+    "bundleIdentifier": "com.armsx2.ios.nightly",
+    "version": "2.6.0-nightly.20261121.1609",
+    "buildVersion": "260",
+    "displayName": "ARMSX2 Nightly",
+    "minOSVersion": "17.4",
+    "size": 40743520,
+    "assetIdentity": {
+      "id": 776201692,
+      "updated_at": "2026-11-21T16:45:37Z",
+      "size": 40743520,
+      "digest": "sha256:b4012b383e0e53f3c3c7f72c1c2253a96d674325b504cd01b4a3c28566cbc7e7"
+    }
   }
 }
