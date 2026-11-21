@@ -31,20 +31,20 @@
     },
     {
       "tag": "test-pre",
-      "name": "HGhubX Test Preview (4166a93)",
+      "name": "HGhubX Test Preview (c727c39)",
       "pre": true,
       "draft": false,
       "date": "2026-11-21",
       "published_at": "2026-11-21T16:49:36Z",
-      "body": "# HGhubX Test Preview\n\n基于 `main`（`5cb1159`）自动合成的全平台预览构建（更新时间：`2026-11-21T16:39:40Z`，测试提交：`4166a93`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（8）\n1. #199 fix(network): keep fake-ip answers pinnable instead of rejecting the whole dns set（@oahceh，`6f7bd96`）\n2. #201 feat(tv): add in-app one-click updater with sha256 verification（@zxsos，`4b91c09`）\n3. #205 我的页批量管理增加全选，移除底部清空观看历史（@makisekurisu-jp，`72cc184`）\n4. #207 修复搜索历史长按编辑时的字号和胶囊尺寸（@makisekurisu-jp，`18815b3`）\n5. #208 排行榜支持左右滑动切换热播/推荐/潜力榜（@makisekurisu-jp，`d4a37f7`）\n6. #209 我的页与分类频道页支持左右滑动切换 tab（@makisekurisu-jp，`d5900b4`）\n7. #211 fix(feed,category,ui): sync SSR channel lists, enable scroll auto-load, and show poster corner badges (#202)（@zxsos，`8af98c5`）\n8. #214 ci,docs: extract composite actions, add release preflight, and optimize CI/Test Preview triggers（@zxsos，`fd89316`）\n",
+      "body": "# HGhubX Test Preview\n\n基于 `main`（`848a199`）自动合成的全平台预览构建（更新时间：`2026-11-21T18:21:37Z`，测试提交：`c727c39`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（1）\n1. #215 fix(playback,ui): keep landscape fullscreen stage and toast host across episode switches (#200)（@zxsos，`821d4de`）\n",
       "ipas": [
         {
-          "name": "HGhubX_2.2.5_ios.ipa",
-          "size": 4091251,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/test-pre/HGhubX_2.2.5_ios.ipa",
-          "id": 776213446,
-          "updated_at": "2026-11-21T16:49:34Z",
-          "digest": "sha256:d6e45f6a8da5a2fb6b96746f634a5e020c64dc947ef95e52b61db78da849af55"
+          "name": "HGhubX_2.2.6_ios.ipa",
+          "size": 4090952,
+          "url": "https://github.com/zxsos/HGhubX/releases/download/test-pre/HGhubX_2.2.6_ios.ipa",
+          "id": 776495564,
+          "updated_at": "2026-11-21T18:33:42Z",
+          "digest": "sha256:959a62e97113dadb618b60684e33c58dd44e6b0e30bdbfb103c740168a732880"
         }
       ]
     },
@@ -1349,6 +1349,25 @@
   ],
   "Xanerix/guoapp": [
     {
+      "tag": "app-v2.0.3-115",
+      "name": "小果影视 2.0.3+115",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-21",
+      "published_at": "2026-11-21T18:31:19Z",
+      "body": "更新内容：\n\n- 手机上标题栏和底栏更紧凑；往下翻时收起发现页的标题和底栏，快速往回翻时恢复（#208）。\n- 修复 Windows 触摸屏上左右滑切换分类时内容偏在半路不动。\n- 下拉刷新时往回推可以收起并取消刷新，拉过触发点后不再必定刷新。\n- 外观的预设色板新增「白色」，浅色使用白底，深色使用中性色。\n- 播放失败且已有进度时，可点「从头播放」从当前集开头重试。\n- 手机上点开剧集恢复先进详情页，设置 › 播放 新增「点开剧集直接播放」开关，电视以外可用，默认关闭（#214）。\n- 设置 › 代理 可按站源单独设置连接方式，未单独设置的站源跟随全局。\n- 发现页左右滑切换分类不再等待加载，未加载完的分类显示封面骨架，并提前加载相邻分类（#215）。\n- 发现页分类、下载页标签和详情页选集分组改为跟手翻页，左右两页同时可见，分类栏下划线随手指移动；发现页每个分类各自滚动和下拉刷新（#215）。\n- 分类栏选中文字颜色改为渐变过渡（#215）。\n- 移除打开详情页时封面飞入的过渡动画。\n- Windows 小窗拖到屏幕边缘自动收起，鼠标移到边缘展开，设置 › 摸鱼 可开启（#228）。\n- Windows 新增「贴边自动暂停」，小窗贴边收起时暂停，展开后继续。\n- 设置新增「摸鱼」分类，老板键和小窗贴边设置移入其中。\n- Windows 小窗拖近屏幕边缘时吸附到边缘，不再拖出屏幕外。\n- 分集多数有标题时（如有声书章节），选集改为单列显示标题，播放页顶部显示当前分集标题（#219）。\n- 音频内容改用新的音频播放页：大封面、章节标题、进度条、倍速、上下集、选集、定时停止、下载、投屏，宽屏时左右分栏；电视和小窗显示封面，不再黑屏。站源模块可在分集上声明 `mediaType: \"audio\"`，未声明时只有音轨的文件也按音频处理。\n- 修复站源每次返回不同签名的封面地址时，进入详情或播放页封面重新加载；直接播放音频不再多等 3 秒。\n- 调用本地核心改为复用常驻线程，不再每次新建，封面批量加载更流畅。\n- 设置 › 关于 新增赞助致谢。\n- 修复红果取流提示「未返回有效数据」，改用新的播放信息接口（模块 1.0.6）。\n- 站源模块的 `fetch` 可收发二进制内容，新增 `gzip`、`gunzip`。\n- 站源模块新增 `host.sha512`。\n- 修复红果部分剧集只有 H.266 线路时无法播放，改为经备用接口取 H.265 线路（模块 1.0.7）。\n- 红果请求里的客户端版本更新到 7.4.5.32（模块 1.0.7）。\n- 修复 Android「硬解（修正偏蓝）」黑屏无法播放，改用着色器交换色度（#144，开发快照）。\n- Android 解码方式新增「硬解（直通）」，解码后不再拷贝画面，减轻电视和投影仪播放 1080P 卡顿（#220、#234，开发快照）。\n\n版本 2.0.3+115。安装包内置红果站源，其余站源在 设置 › 站源 › 模块管理 的模块商店安装。\n\nAndroid：\n- *-arm64-v8a.apk：适用于较新的安卓设备\n- *-armeabi-v7a.apk：适用于较老的安卓设备，电视推荐使用此版本\n- *-x86_64.apk：适用于模拟器\n\niOS：\n- *-ios-unsigned.ipa：未签名 IPA，可用相关工具安装\n\nWindows：\n- *-windows-x64-setup.exe：安装包，默认安装到当前用户，无需管理员权限；安装时可改为所有用户\n- *-windows-x64.zip：便携版，解压后运行 guoapp.exe；设置、记录、海报缓存和默认下载都保存在程序旁的 userdata 目录，升级时把旧版的 userdata 目录复制过来即可\n\nmacOS：\n- *-macos-universal.dmg：适用于 macOS 12 及以上的 Apple 芯片和 Intel 电脑，打开后拖入 Applications；未经公证，首次打开前在终端执行 xattr -dr com.apple.quarantine /Applications/小果影视.app\n\nAndroid 签名证书 SHA-256：39ead05821dda5e60c820919eadac0f396edfd4bbf81f764f1d4a12bca889207\n",
+      "ipas": [
+        {
+          "name": "guoapp-2.0.3+115-ios-unsigned.ipa",
+          "size": 34300644,
+          "url": "https://github.com/Xanerix/guoapp/releases/download/app-v2.0.3-115/guoapp-2.0.3%2B115-ios-unsigned.ipa",
+          "id": 776489992,
+          "updated_at": "2026-11-21T18:31:15Z",
+          "digest": "sha256:8b0f1c9ff99acf632b12bfd945928de3d8fc3e1a8a0fe1e21fd488ac58a2ea53"
+        }
+      ]
+    },
+    {
       "tag": "app-v2.0.2-114",
       "name": "小果影视 2.0.2+114",
       "pre": false,
@@ -1817,33 +1836,6 @@
           "id": 655128059,
           "updated_at": "2026-10-19T03:27:13Z",
           "digest": "sha256:f14cc2602a031ec36fb05886baf51c2664071d2fba47ac1d6fcd0ba24155ffe3"
-        }
-      ]
-    },
-    {
-      "tag": "app-v0.2.75-85",
-      "name": "红果鉴 / 真果鉴 0.2.75+85",
-      "pre": false,
-      "draft": false,
-      "date": "2026-10-17",
-      "published_at": "2026-10-17T14:54:48Z",
-      "body": "更新内容：\n\n- Android 最低系统版本从 8.0 降到 7.0，Android 7.x 设备可以安装。7.x 系统不支持画中画，该入口不会出现。（未实测）\n- 电视端播放设置新增「兼容渲染模式」：开启后改用 Skia 渲染（关闭 Impeller），用于排查切换解码方式后仍有声音没画面的电视盒子；切换需确认后自动重启应用生效，播放日记首行记录当前渲染方式。（未实测）\n- 修复系统关闭动画（过渡动画缩放为 0）的设备上弹幕飞得极快、看不清：弹幕滚动不再受系统动画缩放影响，始终按 8 秒穿过画面。\n\n版本 0.2.75+85。两个版本功能相同，区别只在站源范围，按需选择：\n\n- 红果鉴 hongguojian：仅红果站源\n- 真果鉴 zhenguojian：全部站源\n\nAndroid：\n- *-arm64-v8a.apk：适用于较新的安卓设备\n- *-armeabi-v7a.apk：适用于较老的安卓设备，电视推荐使用此版本\n- *-x86_64.apk：适用于模拟器\n\niOS：\n- *-ios-unsigned.ipa：未签名 IPA，可用相关工具安装\n\nWindows：\n- *-windows-x64.zip：解压后运行 hongguojian.exe 或 zhenguojian.exe\n\n签名证书 SHA-256：f819175143d1bff5b06c9bfdb4c2f6001ae73077cc8e35ce2adb43bd3f9aed92\n",
-      "ipas": [
-        {
-          "name": "hongguojian-0.2.75+85-ios-unsigned.ipa",
-          "size": 30433138,
-          "url": "https://github.com/Xanerix/guoapp/releases/download/app-v0.2.75-85/hongguojian-0.2.75%2B85-ios-unsigned.ipa",
-          "id": 650738890,
-          "updated_at": "2026-10-17T14:54:43Z",
-          "digest": "sha256:4c841dfa99768a8ff44238c13243b21a252adbdbe6e3c7b125f179b8486506dd"
-        },
-        {
-          "name": "zhenguojian-0.2.75+85-ios-unsigned.ipa",
-          "size": 30435902,
-          "url": "https://github.com/Xanerix/guoapp/releases/download/app-v0.2.75-85/zhenguojian-0.2.75%2B85-ios-unsigned.ipa",
-          "id": 650738988,
-          "updated_at": "2026-10-17T14:54:45Z",
-          "digest": "sha256:683a5a255507b66377f820a118361007416b5c8ac5e1fad8f9b985b125a54fbc"
         }
       ]
     }
