@@ -1956,15 +1956,15 @@
   "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa": {
     "bundleIdentifier": "io.nekohasekai.swipt",
     "version": "0.1.0",
-    "buildVersion": "86",
+    "buildVersion": "90",
     "displayName": "Swipt",
     "minOSVersion": "16.4",
-    "size": 48182818,
+    "size": 48185875,
     "assetIdentity": {
-      "id": 772557948,
-      "updated_at": "2026-11-20T16:41:28Z",
-      "size": 48182818,
-      "digest": "sha256:405edaf1cc92b1d830f19672d88e432860c5916fd340cc499ae418c26ff72a87"
+      "id": 779459754,
+      "updated_at": "2026-11-22T15:13:51Z",
+      "size": 48185875,
+      "digest": "sha256:bee6e80dc1377794b0454278579e5366a77a539602ab1239e6bec24ee6632426"
     }
   },
   "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.2/ARMSX3-0.0.2.ipa": {
@@ -2805,6 +2805,34 @@
       "updated_at": "2026-11-22T06:28:30Z",
       "size": 40780130,
       "digest": "sha256:634d21475c76488963f72088c3f73c67e1fbd323bb13a92956e290bd1dc75939"
+    }
+  },
+  "https://github.com/zxsos/HGhubX/releases/download/v2.2.7/HGhubX_2.2.7_ios.ipa": {
+    "bundleIdentifier": "com.hghubx.app",
+    "version": "2.2.7",
+    "buildVersion": "2.2.7",
+    "displayName": "HGhubX",
+    "minOSVersion": "15.0",
+    "size": 3992968,
+    "assetIdentity": {
+      "id": 778954993,
+      "updated_at": "2026-11-22T12:13:10Z",
+      "size": 3992968,
+      "digest": "sha256:9d8e99969f6e078d29fb96007b41b8035d72b3fa1001b0af4bfae075072c5fac"
+    }
+  },
+  "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261122/ARMSX2-nightly-20261122-c9b6e89f34-iOS-arm64.ipa": {
+    "bundleIdentifier": "com.armsx2.ios.nightly",
+    "version": "2.6.0-nightly.20261122.0919",
+    "buildVersion": "260",
+    "displayName": "ARMSX2 Nightly",
+    "minOSVersion": "17.4",
+    "size": 40934979,
+    "assetIdentity": {
+      "id": 778569061,
+      "updated_at": "2026-11-22T09:44:38Z",
+      "size": 40934979,
+      "digest": "sha256:6c23b597aa05951cf6ae9002c17a8af79f882a44a67d321ec87073fbd74ac6d4"
     }
   }
 }

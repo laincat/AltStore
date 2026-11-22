@@ -21,7 +21,7 @@
 | AniCh | 1.5.27 | 无 | 无预发布 |
 | AnimeFlow | 2.7.0 | 无 | 无预发布 |
 | Animeko | 6.4.1 | v6.4.0-beta02 (2026-10-22) | 收录（nightly 轨道） |
-| ARMSX2 Nightly | 2.6.0-nightly.20261122.0600 | nightly-20261122 (2026-11-22) | 以预览版作为稳定版 |
+| ARMSX2 Nightly | 2.6.0-nightly.20261122.0919 | nightly-20261122 (2026-11-22) | 以预览版作为稳定版 |
 | ARMSX3 | 0.0.3 | ios-0.0.3 (2026-11-17) | 以预览版作为稳定版 |
 | AvPlay | 2.2.2 | 无 | 无预发布 |
 | Breeze | 3.1.0 | custom-issue-246 (2026-11-21) | 不收：该预发布没有 iOS 包 |
@@ -30,7 +30,7 @@
 | GestaltEdit | 2.3.1 | 无 | 无预发布 |
 | GestaltX | 1.1.1 | 无 | 无预发布 |
 | HentaiPark | 0.15.4 | 无 | 无预发布 |
-| HGhubX | 2.2.6 | test-pre (2026-11-21) | 不收：比稳定版旧 |
+| HGhubX | 2.2.7 | test-pre (2026-11-21) | 不收：比稳定版旧 |
 | INSAV | 1.3.1 | 无 | 无预发布 |
 | Kazumi | 2.4.6 | 无 | 无预发布 |
 | Nekularity | 0.4.9 | 无 | 无预发布 |
@@ -38,11 +38,11 @@
 | PicaComic | 5.1.2 | 无 | 无预发布 |
 | PicaX | 1.2.5 | 无 | 无预发布 |
 | Placard | 2.0.3 | 无 | 无预发布 |
-| Swipt | 0.1.0 | nightly (2026-11-20) | 以预览版作为稳定版 |
+| Swipt | 0.1.0 | nightly (2026-11-22) | 以预览版作为稳定版 |
 | Venera Prime | 2.8.1 | 无 | 无预发布 |
 | Venera-SSR | 2.1.5 | 无 | 无预发布 |
 | VeneraNext | 1.18.3 | v1.18.4-rc.3 (2026-11-16) | 不收：未启用 nightly 轨道 |
-| VeneraX | 3.0.1 | mobile-3.0.2-beta.2 (2026-11-21) | 不收：该预发布没有 iOS 包 |
+| VeneraX | 3.0.1 | mobile-3.0.2-beta.3 (2026-11-22) | 不收：该预发布没有 iOS 包 |
 | 大富翁4重制版 | 1.2.4 | 无 | 无预发布 |
 | 真果鉴 | 2.0.3 | windows-native-deps (2026-11-04) | 不收：该预发布没有 iOS 包 |
 <!-- nightly:end -->

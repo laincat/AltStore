@@ -1,21 +1,40 @@
 {
   "zxsos/HGhubX": [
     {
+      "tag": "v2.2.7",
+      "name": "v2.2.7",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-22",
+      "published_at": "2026-11-22T12:13:11Z",
+      "body": "# HGhubX v2.2.7\n\n围绕搜索与排行榜、标签排序、吃瓜正文站内视频直达及播放器全屏交互稳定性打磨体验，并新增 Android 13+ Material You 动态主题图标适配；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n\n## 新增与优化\n1. **Android 13+ Material You 动态主题图标（#216）**：补充 `108dp × 108dp` 纯单色自适应矢量图层（`ic_launcher_monochrome.xml`）及圆角/默认自适应配置，支持 Android 13+ 启动器按壁纸动态着色，同时保持 Android 8–12 与既有彩色桌面图标外观不变。\n2. **搜索热搜榜官网同步与单行紧凑布局（#221、#225）**：搜索页热搜请求改为直连干净路径 `{base}/search/`（移除防缓存查询串），与官网 CDN 边缘快照条目、名次及播放量保持同源同序；卡片布局调整为「序号 + 单行省略片名 + 右对齐播放量 + 右箭头」的官网紧凑单行样式。\n3. **视频页操作区与全屏交互打磨（#217、#218、#219、#220）**：统一视频页顶部「搜短剧」与清晰度徽标高度及基线对齐；右侧评论入口改为与点赞/收藏一致的空心线条图标；点赞、收藏、关注共用 `playback-hint` 提示单槽位避免连续点击堆叠；全屏锁屏图标改为随闲置控件同步自动隐藏。\n\n## 修复\n1. **排行榜「热播榜」与官网实时热度不同步（#221、#226）**：修正匿名 JSON `/api/ranks/hot` 返回历史累计总榜导致的内容偏差，热播榜改为优先解析官网 `/ranks/hot/` 服务端渲染页面中的实时热度 TOP20（解析失败自动回退 `/api/ranks/hot`），「推荐榜」「潜力榜」与既有 `RankItem` 契约保持不变。\n2. **标签页短剧默认排序与官网不一致（#223、#228）**：`api_tag_videos` 与前端 `tagVideos` 显式默认携带 `sort=latest`（仅明确指定 `\"hot\"` 时切热播排序），使标准版标签页与 TV 端标签筛选对齐官网 `/tag/{slug}/` 默认最新排序。\n3. **吃瓜详情「点击观看」站内短剧链接跳出系统浏览器（#224、#229）**：新增主站及当前激活线路同源 `/video/{id}/` 严格识别校验；在吃瓜详情与 Feed 图文详情中点击站内视频链接时直接在应用内打开播放页，其余外链与非规范路径仍按原安全策略交由系统浏览器或剪贴板处理。\n4. **横屏全屏切集时旋转舞台瞬时退回竖屏与提示坐标错位（#200、#215）**：同剧同作用域切集加载期间保留最近确认的视频宽高比例，避免 `.player-root` 丢掉 `.fs-landscape` 导致切集提示闪现竖屏底部；`ToastHost` 改由 `registerRotatedToastHost` 响应式同步挂载宿主，退全屏时立即回归竖屏底部。\n\n## 安装与兼容提示\n- Windows 提供 NSIS 安装包与便携压缩包；macOS 提供 Universal DMG；Linux 提供 amd64 `.deb`；Android 标准版按 ABI 提供已签名 APK（`versionCode=2002007`）；iOS 提供未签名 `.ipa`（需自行签名安装）。\n- 覆盖安装保留本机收藏、观看记录、界面语言、线路与内容偏好；Android TV 版（`com.hghubx.tv`）独立沿用 `tv-v2.2.4` 发布。\n\n## 致谢\n- 感谢 @zxsos 审查整合全部待合入 PR、排查并修复热播榜/热搜榜/标签排序/站内视频跳转及全屏舞台问题并完成发布验证。\n- 感谢 @makisekurisu-jp 贡献视频页顶部布局对齐、空心评论图标、操作提示防堆叠、全屏锁随控隐藏等体验优化并提交多项缺陷反馈。\n\n## 验证\n- 合入后本地严检：`make check`（Rust `118 passed; 0 failed; 4 ignored`、`pnpm build` 三套 `tsc` + Vite 构建、789 项 i18n 键校验、文档链接、代码尺寸预算及 `release-check: ok 2.2.7, android versionCode=2002007`）、`pnpm test:smoke`（12/12 套件通过）、`pnpm test:playback`（6/6 场景通过，含 `episode-toast` 与 `portrait-fit`）以及 TV 兼容性验证 `make test-t",
+      "ipas": [
+        {
+          "name": "HGhubX_2.2.7_ios.ipa",
+          "size": 3992968,
+          "url": "https://github.com/zxsos/HGhubX/releases/download/v2.2.7/HGhubX_2.2.7_ios.ipa",
+          "id": 778954993,
+          "updated_at": "2026-11-22T12:13:10Z",
+          "digest": "sha256:9d8e99969f6e078d29fb96007b41b8035d72b3fa1001b0af4bfae075072c5fac"
+        }
+      ]
+    },
+    {
       "tag": "test-pre",
-      "name": "HGhubX Test Preview (453cd0d)",
+      "name": "HGhubX Test Preview (604fbd7)",
       "pre": true,
       "draft": false,
       "date": "2026-11-21",
       "published_at": "2026-11-21T16:49:36Z",
-      "body": "# HGhubX Test Preview\n\n基于 `main`（`848a199`）自动合成的全平台预览构建（更新时间：`2026-11-22T03:22:43Z`，测试提交：`453cd0d`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（2）\n1. #215 fix(playback,ui): keep landscape fullscreen stage and toast host across episode switches (#200)（@zxsos，`821d4de`）\n2. #216 feat(android): add Material You monochrome adaptive icon layer（@zxsos，`e7f7416`）\n",
+      "body": "# HGhubX Test Preview\n\n基于 `main`（`666d6a4`）自动合成的全平台预览构建（更新时间：`2026-11-22T13:34:58Z`，测试提交：`604fbd7`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（2）\n1. #230 修复搜索页“视频/帖子”Tab 不支持左右滑动（@makisekurisu-jp，`4cd57c5`）\n2. #232 fix(posts): sync gossip post list order from official SSR page (#231)（@zxsos，`ef8c581`）\n",
       "ipas": [
         {
-          "name": "HGhubX_2.2.6_ios.ipa",
-          "size": 4090953,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/test-pre/HGhubX_2.2.6_ios.ipa",
-          "id": 777753403,
-          "updated_at": "2026-11-22T03:35:02Z",
-          "digest": "sha256:cddea7f4d2fc72bde1578c678c82f86ae2c594ccc17e9971ea587b7b891dbd74"
+          "name": "HGhubX_2.2.7_ios.ipa",
+          "size": 4105007,
+          "url": "https://github.com/zxsos/HGhubX/releases/download/test-pre/HGhubX_2.2.7_ios.ipa",
+          "id": 779210379,
+          "updated_at": "2026-11-22T13:47:20Z",
+          "digest": "sha256:9a614928abd3267ce6a9c08047257bc8d56e09e6bc33326fc1b2a024eeac4d6e"
         }
       ]
     },
@@ -2281,7 +2300,7 @@
   "ARMSX2/ARMSX2": [
     {
       "tag": "nightly-20261122",
-      "name": "ARMSX2 nightly 20261122 (8909645d55)",
+      "name": "ARMSX2 nightly 20261122 (c9b6e89f34)",
       "pre": true,
       "draft": false,
       "date": "2026-11-22",
@@ -2289,12 +2308,12 @@
       "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- GameDB: VU1 clamp mode Extra for Tales of Destiny\n- GS/Vulkan: run program off on Qualcomm's driver\n- Comments: drop pointers to notes that are not in this tree\n- eerunner: --gamedb runs a no-disc savestate under a game's serial and CRC\n- eerunner: --dump-config loads --savestate first\n- eerunner: --nodisc boots with the tray empty and loads the savestate\n- Android: remove the live GS apply queue, which nothing calls\n- Android: queue settings applies on the CPU thread instead of waiting for them\n- Android: drop a trigger's duplicate key event whenever its axis moves (#674)\n- arm64: drop the blank line at the end of BaseblockEx-arm64.h\n- gsrunner: -panvk-bifrost puts PanVK's Bifrost paths on any Vulkan device\n- GS/Vulkan: neither load nor store a stenci",
       "ipas": [
         {
-          "name": "ARMSX2-nightly-20261122-8909645d55-iOS-arm64.ipa",
-          "size": 40780130,
-          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261122/ARMSX2-nightly-20261122-8909645d55-iOS-arm64.ipa",
-          "id": 778119457,
-          "updated_at": "2026-11-22T06:28:30Z",
-          "digest": "sha256:634d21475c76488963f72088c3f73c67e1fbd323bb13a92956e290bd1dc75939"
+          "name": "ARMSX2-nightly-20261122-c9b6e89f34-iOS-arm64.ipa",
+          "size": 40934979,
+          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261122/ARMSX2-nightly-20261122-c9b6e89f34-iOS-arm64.ipa",
+          "id": 778569061,
+          "updated_at": "2026-11-22T09:44:38Z",
+          "digest": "sha256:6c23b597aa05951cf6ae9002c17a8af79f882a44a67d321ec87073fbd74ac6d4"
         }
       ]
     },
@@ -2865,17 +2884,17 @@
       "name": "Nightly build",
       "pre": true,
       "draft": false,
-      "date": "2026-11-20",
-      "published_at": "2026-11-20T16:41:31Z",
-      "body": "* Replace polling loops with event-driven notifications\n* Fix sideload setup opening Settings after the Always location alert\n* Stream discovered devices into the CLI device picker\n* Request Always location access for the background service\n* Fix pairing, language updates and container SQLite in the driver\n* Fix cellular data being detected on Wi-Fi\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack options for ZIP archives\n* Replace the hand-written ZIP code of the CLI with fflate\n* Simplify screen streaming and recording\n* Share one atomic file write\n* Fix mDNS browsing and name conflict handling\n* Simplify the JavaScriptCore adapter\n* Add swipt driver to serve a device from the computer\n* Build the Linux and Windows driver with the WebKit of a Bun release\n* Port the driver and the CLI to Linux and Windows\n* Follow Apple's terms and style guides in the CLI translations\n* Improve automatic unlocking\n* Remove unsourced and misattributed claims from comments\n* Require iOS 26 for the accessibility API\n* Fix network lockdown connections closing without a heartbeat\n* Extend Swiplet icon colors\n* Add the chart and data grid components\n* Remove the guards against bad values from Swiplets\n* Add stream actions and the process API\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the developer service\n* Fix slow detection of unsupported networks\n* Resolve DNS with the system co",
+      "date": "2026-11-22",
+      "published_at": "2026-11-22T15:13:53Z",
+      "body": "* Avoid redundant SpringBoard reads when dismissing setup alerts\n* Fix sideload setup stalling on permission alerts and reopening Settings\n* Discover vphone virtual machines without Launchpad\n* Request unicast mDNS responses in the CLI\n* Replace polling loops with event-driven notifications\n* Fix sideload setup opening Settings after the Always location alert\n* Stream discovered devices into the CLI device picker\n* Request Always location access for the background service\n* Fix pairing, language updates and container SQLite in the driver\n* Fix cellular data being detected on Wi-Fi\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack options for ZIP archives\n* Replace the hand-written ZIP code of the CLI with fflate\n* Simplify screen streaming and recording\n* Share one atomic file write\n* Fix mDNS browsing and name conflict handling\n* Simplify the JavaScriptCore adapter\n* Add swipt driver to serve a device from the computer\n* Build the Linux and Windows driver with the WebKit of a Bun release\n* Port the driver and the CLI to Linux and Windows\n* Follow Apple's terms and style guides in the CLI translations\n* Improve automatic unlocking\n* Remove unsourced and misattributed claims from comments\n* Require iOS 26 for the accessibility API\n* Fix network lockdown connections closing without a heartbeat\n* Extend Swiplet icon colors\n* Add the chart and data grid components\n* Remove the guards against bad values from Swiplets\n* Add stream actions and the process API\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swipl",
       "ipas": [
         {
           "name": "Swipt.ipa",
-          "size": 48182818,
+          "size": 48185875,
           "url": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-          "id": 772557948,
-          "updated_at": "2026-11-20T16:41:28Z",
-          "digest": "sha256:405edaf1cc92b1d830f19672d88e432860c5916fd340cc499ae418c26ff72a87"
+          "id": 779459754,
+          "updated_at": "2026-11-22T15:13:51Z",
+          "digest": "sha256:bee6e80dc1377794b0454278579e5366a77a539602ab1239e6bec24ee6632426"
         }
       ]
     }
@@ -4442,6 +4461,16 @@
   ],
   "Kyosee/VeneraX": [
     {
+      "tag": "mobile-3.0.2-beta.3",
+      "name": "v3.0.2 Beta 3 (Android, HarmonyOS & Windows)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-11-22",
+      "published_at": "2026-11-22T14:51:19Z",
+      "body": "## 下载安装 / Downloads\n\n本次预览版提供 Android、Windows 和鸿蒙安装包。 / This preview includes Android, Windows and HarmonyOS.\n\n| 平台 / Platform | 安装包 / Package | 其他版本 / Alternatives |\n| --- | --- | --- |\n| Android | [通用 APK / Universal](https://github.com/Kyosee/VeneraX/releases/download/mobile-3.0.2-beta.3/VeneraX-3.0.2-beta.3.apk) | [ARM64](https://github.com/Kyosee/VeneraX/releases/download/mobile-3.0.2-beta.3/VeneraX-3.0.2-beta.3-arm64-v8a.apk) · [ARMv7](https://github.com/Kyosee/VeneraX/releases/download/mobile-3.0.2-beta.3/VeneraX-3.0.2-beta.3-armeabi-v7a.apk) · [x86_64](https://github.com/Kyosee/VeneraX/releases/download/mobile-3.0.2-beta.3/VeneraX-3.0.2-beta.3-x86_64.apk) |\n| Windows | [安装版 / Installer](https://github.com/Kyosee/VeneraX/releases/download/mobile-3.0.2-beta.3/VeneraX-3.0.2-beta.3-windows-installer.exe) | [便携版 / Portable ZIP](https://github.com/Kyosee/VeneraX/releases/download/mobile-3.0.2-beta.3/VeneraX-3.0.2-beta.3-windows.zip) |\n| HarmonyOS | [ARM64 真机 / Unsigned HAP](https://github.com/Kyosee/VeneraX/releases/download/mobile-3.0.2-beta.3/VeneraX-3.0.2-beta.3%2B265-harmonyos-unsigned.hap) | — |\n\n不确定 Android 架构时选通用 APK。鸿蒙真机安装前需自行签名。\nUse the universal APK if unsure of your Android architecture. Sign the HarmonyOS HAP before installing it on a device.\n\n> **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/mobile-3.0.2-beta.3/release-notes/mobile-3.0.2-beta.3.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/mobile-3.0.2-beta.3/release-notes/mobile-3.0.2-beta.3.zh-CN.md)\n\n## What's Changed\n\n### Added\n\n- Choose a custom cover for an individual comic or a collection from its details page, and restore the default cover at any time. (#361)\n- Include custom covers in app backups and exported comic archives, with incremental WebDAV syncing to reduce repeated transfers. (#361)\n- Added a mobile \"Return to Home before exiting\" option, enabled by default. Back from another main tab returns to Home first; this can be turned off in Settings. (#243)\n- AI ",
+      "ipas": []
+    },
+    {
       "tag": "v3.0.1",
       "name": "v3.0.1",
       "pre": false,
@@ -4772,25 +4801,6 @@
           "id": 534574861,
           "updated_at": "2026-08-29T01:39:34Z",
           "digest": "sha256:e2dff900d58ed1daf31b2244978c706964ddeb385d1024da65a458e3f20e9021"
-        }
-      ]
-    },
-    {
-      "tag": "v2.2.11",
-      "name": "v2.2.11",
-      "pre": false,
-      "draft": false,
-      "date": "2026-08-28",
-      "published_at": "2026-08-28T01:56:25Z",
-      "body": "> **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v2.2.11/release-notes/v2.2.11.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v2.2.11/release-notes/v2.2.11.zh-CN.md)\n\n## What's Changed\n\n### Fixed\n- Chewed through a few bugs\n\n**Full Changelog**: https://github.com/Kyosee/VeneraX/compare/v2.2.10...v2.2.11\n",
-      "ipas": [
-        {
-          "name": "VeneraX-ios-2.2.11+241.ipa",
-          "size": 35251962,
-          "url": "https://github.com/Kyosee/VeneraX/releases/download/v2.2.11/VeneraX-ios-2.2.11%2B241.ipa",
-          "id": 533118572,
-          "updated_at": "2026-08-28T01:56:20Z",
-          "digest": "sha256:754faebaa88585e1d4669c384f7e3c0954f7b45a63a2f8d0d237c640a76367bd"
         }
       ]
     }

@@ -385,14 +385,14 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.6.0-nightly.20261122.0600",
+              "version": "2.6.0-nightly.20261122.0919",
               "date": "2026-11-22",
               "publishedAt": "2026-11-22T06:28:24Z",
               "buildVersion": "260",
               "buildNumber": "260",
               "localizedDescription": "🧪 预发布 nightly-20261122（2026-11-22）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-              "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261122/ARMSX2-nightly-20261122-8909645d55-iOS-arm64.ipa",
-              "size": 40780130,
+              "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261122/ARMSX2-nightly-20261122-c9b6e89f34-iOS-arm64.ipa",
+              "size": 40934979,
               "minOSVersion": "17.4",
               "releaseTag": "nightly-20261122",
               "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261122"
@@ -402,24 +402,24 @@
       ],
       "versions": [
         {
-          "version": "2.6.0-nightly.20261122.0600",
+          "version": "2.6.0-nightly.20261122.0919",
           "date": "2026-11-22",
           "publishedAt": "2026-11-22T06:28:24Z",
           "buildVersion": "260",
           "buildNumber": "260",
           "localizedDescription": "🧪 预发布 nightly-20261122（2026-11-22）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261122/ARMSX2-nightly-20261122-8909645d55-iOS-arm64.ipa",
-          "size": 40780130,
+          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261122/ARMSX2-nightly-20261122-c9b6e89f34-iOS-arm64.ipa",
+          "size": 40934979,
           "minOSVersion": "17.4",
           "releaseTag": "nightly-20261122",
           "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261122"
         }
       ],
-      "version": "2.6.0-nightly.20261122.0600",
+      "version": "2.6.0-nightly.20261122.0919",
       "versionDate": "2026-11-22",
       "versionDescription": "🧪 预发布 nightly-20261122（2026-11-22）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-      "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261122/ARMSX2-nightly-20261122-8909645d55-iOS-arm64.ipa",
-      "size": 40780130,
+      "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261122/ARMSX2-nightly-20261122-c9b6e89f34-iOS-arm64.ipa",
+      "size": 40934979,
       "minOSVersion": "17.4"
     },
     {
@@ -880,41 +880,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.2.6",
-              "date": "2026-11-21",
-              "publishedAt": "2026-11-21T17:01:54Z",
-              "buildVersion": "2.2.6",
-              "buildNumber": "2.2.6",
-              "localizedDescription": "HGhubX v2.2.6\n\n聚焦分类频道与官网排序同步、全站分页上滑自动加载、海报角标、多页左右滑动切栏与 FakeIP 代理连接修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. 分类与原创频道与官网排序同步（#202、#211）：短剧、漫剧频道的「最近更新」「当前热播」「精选推荐」以及「原创」频道的「全部原创」「原创漫剧」「原创短剧」优先解析官网服务端渲染频道页，与网站更新排序、总页数、标签及统计保持一致，解析异常时自动回退原有 JSON 接口。\n2. 海报左上角新增「原创」「热播」「新片」角标（#202、#211）：瀑布流与横向预览卡片海报左上角按「原创」「热播」「新片」（72 小时窗口）顺序显示高对比度角标，避免与右上角评分重叠；集数状态移至海报底部遮罩左侧与播放量同排展示，「我的」页继续保留「新更 N 集」角标。\n3. 分页列表统一改为上滑自动加载（#202、#211）：频道页、吃瓜列表、专题详情、标签详情、关注/创作者作品与全局/栏目搜索均在接近底部时自动续载下一页，不再常驻手动「加载更多」按钮；开启标签屏蔽时同样保持自动加载，仅当连续 2 页过滤后均无可见条目时熔断暂停并展示手动兜底按钮。\n4. 多页面支持左右滑动切换标签栏（#208、#209）：排行榜支持左右滑动切换热播/推荐/潜力榜；「我的」页支持左右滑动切换收藏/历史；分类频道页支持左右滑动切换筛选 tab。\n5. 「我的」页批量管理新增「全选」（#205）：收藏与观看历史进入多选模式后支持一键「全选」，并移除历史页底部多余的独立清空按钮，统一收口到…",
-              "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.6/HGhubX_2.2.6_ios.ipa",
-              "size": 3990783,
+              "version": "2.2.7",
+              "date": "2026-11-22",
+              "publishedAt": "2026-11-22T12:13:11Z",
+              "buildVersion": "2.2.7",
+              "buildNumber": "2.2.7",
+              "localizedDescription": "HGhubX v2.2.7\n\n围绕搜索与排行榜、标签排序、吃瓜正文站内视频直达及播放器全屏交互稳定性打磨体验，并新增 Android 13+ Material You 动态主题图标适配；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. Android 13+ Material You 动态主题图标（#216）：补充 108dp × 108dp 纯单色自适应矢量图层（ic_launcher_monochrome.xml）及圆角/默认自适应配置，支持 Android 13+ 启动器按壁纸动态着色，同时保持 Android 8–12 与既有彩色桌面图标外观不变。\n2. 搜索热搜榜官网同步与单行紧凑布局（#221、#225）：搜索页热搜请求改为直连干净路径 {base}/search/（移除防缓存查询串），与官网 CDN 边缘快照条目、名次及播放量保持同源同序；卡片布局调整为「序号 + 单行省略片名 + 右对齐播放量 + 右箭头」的官网紧凑单行样式。\n3. 视频页操作区与全屏交互打磨（#217、#218、#219、#220）：统一视频页顶部「搜短剧」与清晰度徽标高度及基线对齐；右侧评论入口改为与点赞/收藏一致的空心线条图标；点赞、收藏、关注共用 playback-hint 提示单槽位避免连续点击堆叠；全屏锁屏图标改为随闲置控件同步自动隐藏。\n修复\n1. 排行榜「热播榜」与官网实时热度不同步（#221、#226）：修正匿名 JSON /api/ranks/hot 返回历史累计总榜导致的内容偏差，热播榜改为优先解析官网 /ranks/ho…",
+              "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.7/HGhubX_2.2.7_ios.ipa",
+              "size": 3992968,
               "minOSVersion": "15.0",
-              "releaseTag": "v2.2.6",
-              "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.2.6"
+              "releaseTag": "v2.2.7",
+              "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.2.7"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.2.6",
-          "date": "2026-11-21",
-          "publishedAt": "2026-11-21T17:01:54Z",
-          "buildVersion": "2.2.6",
-          "buildNumber": "2.2.6",
-          "localizedDescription": "HGhubX v2.2.6\n\n聚焦分类频道与官网排序同步、全站分页上滑自动加载、海报角标、多页左右滑动切栏与 FakeIP 代理连接修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. 分类与原创频道与官网排序同步（#202、#211）：短剧、漫剧频道的「最近更新」「当前热播」「精选推荐」以及「原创」频道的「全部原创」「原创漫剧」「原创短剧」优先解析官网服务端渲染频道页，与网站更新排序、总页数、标签及统计保持一致，解析异常时自动回退原有 JSON 接口。\n2. 海报左上角新增「原创」「热播」「新片」角标（#202、#211）：瀑布流与横向预览卡片海报左上角按「原创」「热播」「新片」（72 小时窗口）顺序显示高对比度角标，避免与右上角评分重叠；集数状态移至海报底部遮罩左侧与播放量同排展示，「我的」页继续保留「新更 N 集」角标。\n3. 分页列表统一改为上滑自动加载（#202、#211）：频道页、吃瓜列表、专题详情、标签详情、关注/创作者作品与全局/栏目搜索均在接近底部时自动续载下一页，不再常驻手动「加载更多」按钮；开启标签屏蔽时同样保持自动加载，仅当连续 2 页过滤后均无可见条目时熔断暂停并展示手动兜底按钮。\n4. 多页面支持左右滑动切换标签栏（#208、#209）：排行榜支持左右滑动切换热播/推荐/潜力榜；「我的」页支持左右滑动切换收藏/历史；分类频道页支持左右滑动切换筛选 tab。\n5. 「我的」页批量管理新增「全选」（#205）：收藏与观看历史进入多选模式后支持一键「全选」，并移除历史页底部多余的独立清空按钮，统一收口到…",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.6/HGhubX_2.2.6_ios.ipa",
-          "size": 3990783,
+          "version": "2.2.7",
+          "date": "2026-11-22",
+          "publishedAt": "2026-11-22T12:13:11Z",
+          "buildVersion": "2.2.7",
+          "buildNumber": "2.2.7",
+          "localizedDescription": "HGhubX v2.2.7\n\n围绕搜索与排行榜、标签排序、吃瓜正文站内视频直达及播放器全屏交互稳定性打磨体验，并新增 Android 13+ Material You 动态主题图标适配；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. Android 13+ Material You 动态主题图标（#216）：补充 108dp × 108dp 纯单色自适应矢量图层（ic_launcher_monochrome.xml）及圆角/默认自适应配置，支持 Android 13+ 启动器按壁纸动态着色，同时保持 Android 8–12 与既有彩色桌面图标外观不变。\n2. 搜索热搜榜官网同步与单行紧凑布局（#221、#225）：搜索页热搜请求改为直连干净路径 {base}/search/（移除防缓存查询串），与官网 CDN 边缘快照条目、名次及播放量保持同源同序；卡片布局调整为「序号 + 单行省略片名 + 右对齐播放量 + 右箭头」的官网紧凑单行样式。\n3. 视频页操作区与全屏交互打磨（#217、#218、#219、#220）：统一视频页顶部「搜短剧」与清晰度徽标高度及基线对齐；右侧评论入口改为与点赞/收藏一致的空心线条图标；点赞、收藏、关注共用 playback-hint 提示单槽位避免连续点击堆叠；全屏锁屏图标改为随闲置控件同步自动隐藏。\n修复\n1. 排行榜「热播榜」与官网实时热度不同步（#221、#226）：修正匿名 JSON /api/ranks/hot 返回历史累计总榜导致的内容偏差，热播榜改为优先解析官网 /ranks/ho…",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.7/HGhubX_2.2.7_ios.ipa",
+          "size": 3992968,
           "minOSVersion": "15.0",
-          "releaseTag": "v2.2.6",
-          "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.2.6"
+          "releaseTag": "v2.2.7",
+          "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.2.7"
         }
       ],
-      "version": "2.2.6",
-      "versionDate": "2026-11-21",
-      "versionDescription": "HGhubX v2.2.6\n\n聚焦分类频道与官网排序同步、全站分页上滑自动加载、海报角标、多页左右滑动切栏与 FakeIP 代理连接修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. 分类与原创频道与官网排序同步（#202、#211）：短剧、漫剧频道的「最近更新」「当前热播」「精选推荐」以及「原创」频道的「全部原创」「原创漫剧」「原创短剧」优先解析官网服务端渲染频道页，与网站更新排序、总页数、标签及统计保持一致，解析异常时自动回退原有 JSON 接口。\n2. 海报左上角新增「原创」「热播」「新片」角标（#202、#211）：瀑布流与横向预览卡片海报左上角按「原创」「热播」「新片」（72 小时窗口）顺序显示高对比度角标，避免与右上角评分重叠；集数状态移至海报底部遮罩左侧与播放量同排展示，「我的」页继续保留「新更 N 集」角标。\n3. 分页列表统一改为上滑自动加载（#202、#211）：频道页、吃瓜列表、专题详情、标签详情、关注/创作者作品与全局/栏目搜索均在接近底部时自动续载下一页，不再常驻手动「加载更多」按钮；开启标签屏蔽时同样保持自动加载，仅当连续 2 页过滤后均无可见条目时熔断暂停并展示手动兜底按钮。\n4. 多页面支持左右滑动切换标签栏（#208、#209）：排行榜支持左右滑动切换热播/推荐/潜力榜；「我的」页支持左右滑动切换收藏/历史；分类频道页支持左右滑动切换筛选 tab。\n5. 「我的」页批量管理新增「全选」（#205）：收藏与观看历史进入多选模式后支持一键「全选」，并移除历史页底部多余的独立清空按钮，统一收口到…",
-      "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.6/HGhubX_2.2.6_ios.ipa",
-      "size": 3990783,
+      "version": "2.2.7",
+      "versionDate": "2026-11-22",
+      "versionDescription": "HGhubX v2.2.7\n\n围绕搜索与排行榜、标签排序、吃瓜正文站内视频直达及播放器全屏交互稳定性打磨体验，并新增 Android 13+ Material You 动态主题图标适配；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. Android 13+ Material You 动态主题图标（#216）：补充 108dp × 108dp 纯单色自适应矢量图层（ic_launcher_monochrome.xml）及圆角/默认自适应配置，支持 Android 13+ 启动器按壁纸动态着色，同时保持 Android 8–12 与既有彩色桌面图标外观不变。\n2. 搜索热搜榜官网同步与单行紧凑布局（#221、#225）：搜索页热搜请求改为直连干净路径 {base}/search/（移除防缓存查询串），与官网 CDN 边缘快照条目、名次及播放量保持同源同序；卡片布局调整为「序号 + 单行省略片名 + 右对齐播放量 + 右箭头」的官网紧凑单行样式。\n3. 视频页操作区与全屏交互打磨（#217、#218、#219、#220）：统一视频页顶部「搜短剧」与清晰度徽标高度及基线对齐；右侧评论入口改为与点赞/收藏一致的空心线条图标；点赞、收藏、关注共用 playback-hint 提示单槽位避免连续点击堆叠；全屏锁屏图标改为随闲置控件同步自动隐藏。\n修复\n1. 排行榜「热播榜」与官网实时热度不同步（#221、#226）：修正匿名 JSON /api/ranks/hot 返回历史累计总榜导致的内容偏差，热播榜改为优先解析官网 /ranks/ho…",
+      "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.7/HGhubX_2.2.7_ios.ipa",
+      "size": 3992968,
       "minOSVersion": "15.0"
     },
     {
@@ -1321,13 +1321,13 @@
           "releases": [
             {
               "version": "0.1.0",
-              "date": "2026-11-20",
-              "publishedAt": "2026-11-20T16:41:31Z",
-              "buildVersion": "86",
-              "buildNumber": "86",
-              "localizedDescription": "🧪 预发布 nightly（2026-11-20）\n\n* Replace polling loops with event-driven notifications\n* Fix sideload setup opening Settings after the Always location alert\n* Stream discovered devices into the CLI device picker\n* Request Always location access for the background service\n* Fix pairing, language updates and container SQLite in the driver\n* Fix cellular data being detected on Wi-Fi\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack opti…",
+              "date": "2026-11-22",
+              "publishedAt": "2026-11-22T15:13:53Z",
+              "buildVersion": "90",
+              "buildNumber": "90",
+              "localizedDescription": "🧪 预发布 nightly（2026-11-22）\n\n* Avoid redundant SpringBoard reads when dismissing setup alerts\n* Fix sideload setup stalling on permission alerts and reopening Settings\n* Discover vphone virtual machines without Launchpad\n* Request unicast mDNS responses in the CLI\n* Replace polling loops with event-driven notifications\n* Fix sideload setup opening Settings after the Always location alert\n* Stream discovered devices into the CLI device picker\n* Request Always location access for the background service\n* Fix pairing, language updates and container SQLite in the driver\n* Fix cellular data being detected on Wi-Fi\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the…",
               "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-              "size": 48182818,
+              "size": 48185875,
               "minOSVersion": "16.4",
               "releaseTag": "nightly",
               "source": "https://github.com/swipt-automation/swipt/releases/tag/nightly"
@@ -1338,23 +1338,23 @@
       "versions": [
         {
           "version": "0.1.0",
-          "date": "2026-11-20",
-          "publishedAt": "2026-11-20T16:41:31Z",
-          "buildVersion": "86",
-          "buildNumber": "86",
-          "localizedDescription": "🧪 预发布 nightly（2026-11-20）\n\n* Replace polling loops with event-driven notifications\n* Fix sideload setup opening Settings after the Always location alert\n* Stream discovered devices into the CLI device picker\n* Request Always location access for the background service\n* Fix pairing, language updates and container SQLite in the driver\n* Fix cellular data being detected on Wi-Fi\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack opti…",
+          "date": "2026-11-22",
+          "publishedAt": "2026-11-22T15:13:53Z",
+          "buildVersion": "90",
+          "buildNumber": "90",
+          "localizedDescription": "🧪 预发布 nightly（2026-11-22）\n\n* Avoid redundant SpringBoard reads when dismissing setup alerts\n* Fix sideload setup stalling on permission alerts and reopening Settings\n* Discover vphone virtual machines without Launchpad\n* Request unicast mDNS responses in the CLI\n* Replace polling loops with event-driven notifications\n* Fix sideload setup opening Settings after the Always location alert\n* Stream discovered devices into the CLI device picker\n* Request Always location access for the background service\n* Fix pairing, language updates and container SQLite in the driver\n* Fix cellular data being detected on Wi-Fi\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the…",
           "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-          "size": 48182818,
+          "size": 48185875,
           "minOSVersion": "16.4",
           "releaseTag": "nightly",
           "source": "https://github.com/swipt-automation/swipt/releases/tag/nightly"
         }
       ],
       "version": "0.1.0",
-      "versionDate": "2026-11-20",
-      "versionDescription": "🧪 预发布 nightly（2026-11-20）\n\n* Replace polling loops with event-driven notifications\n* Fix sideload setup opening Settings after the Always location alert\n* Stream discovered devices into the CLI device picker\n* Request Always location access for the background service\n* Fix pairing, language updates and container SQLite in the driver\n* Fix cellular data being detected on Wi-Fi\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack opti…",
+      "versionDate": "2026-11-22",
+      "versionDescription": "🧪 预发布 nightly（2026-11-22）\n\n* Avoid redundant SpringBoard reads when dismissing setup alerts\n* Fix sideload setup stalling on permission alerts and reopening Settings\n* Discover vphone virtual machines without Launchpad\n* Request unicast mDNS responses in the CLI\n* Replace polling loops with event-driven notifications\n* Fix sideload setup opening Settings after the Always location alert\n* Stream discovered devices into the CLI device picker\n* Request Always location access for the background service\n* Fix pairing, language updates and container SQLite in the driver\n* Fix cellular data being detected on Wi-Fi\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the…",
       "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-      "size": 48182818,
+      "size": 48185875,
       "minOSVersion": "16.4"
     },
     {
