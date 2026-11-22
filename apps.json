@@ -232,7 +232,7 @@
       "developerName": "openAnimeFlow",
       "subtitle": "弹幕追番与 Bangumi 收藏同步",
       "localizedDescription": "跨平台追番应用，支持 Bangumi 收藏同步与弹幕播放。未签名 iOS 安装包来自上游 GitHub Release。\n\n开源协议：AGPL-3.0　·　项目主页：https://github.com/openAnimeFlow/AnimeFlow",
-      "iconURL": "https://raw.githubusercontent.com/openAnimeFlow/AnimeFlow/v2.6.8/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/openAnimeFlow/AnimeFlow/v2.7.0/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#4F7CF7",
       "category": "entertainment",
       "appPermissions": {
@@ -244,41 +244,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.6.8",
-              "date": "2026-11-13",
-              "publishedAt": "2026-11-13T20:37:13Z",
-              "buildVersion": "2.6.8",
-              "buildNumber": "2.6.8",
-              "localizedDescription": "🔄 更新内容\n2.6.8 更新\n新增\n\n- 壁纸页面支持关键词筛选、支持收藏壁纸集合(登录后)、我的页面右上角打开收藏集合\n- 重构视频资源下载模块，下载功能完全和播放页解耦不在需要等待内容解析完成后才能看到下载菜单，可以在番剧详情剧集弹窗和播放页剧集区域进入下载页面\n- 排行榜页面加载动画替换成骨架屏\n- 壁纸页面加载动画替换成骨架屏\n- 播放页的番剧详情信息展示方式从原来的内嵌路由替换成抽屉方式展示\n-  Linux 支持 Nix 安装(详情在仓库README下载项查看) #128 (@yebei199)\n优化\n\n- 优化更新信息页面布局\n- 优化大屏设置侧边栏效果(开启磨砂玻璃ui)\n- 优化推荐、排行榜页面开始磨砂玻璃时的页面顶部状态效果\n- 离开社区页面10秒后取消实时数据更新订阅减小服务器压力\n- 优化animeflow服务器网络请求延迟(可能有用)\n修复\n\n- 修复部分数据源线路名称文字ui溢出问题\n- 修复宽屏设备打开壁纸详情页时切换tabview时的异常问题\n- 修复在切换视频播放源时没有自动保持播放进度问题\n- 修复 Linux 客户端窗口问题 #129 (@lyndon0na)\n\n---\n📦 下载\n- 每个设备的安装包后缀: 苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip或.exe)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)\n- android分多个包: v7a(32位架构旧手机或TV)、arm64(新手机,推荐用这个)、x86(模拟器) \n- windows分多个包: .zip(解压直接使用)、.ex…",
-              "downloadURL": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.6.8/AnimeFlow-ios-2.6.8.ipa",
-              "size": 29518672,
+              "version": "2.7.0",
+              "date": "2026-11-22",
+              "publishedAt": "2026-11-22T04:50:04Z",
+              "buildVersion": "2.7.0",
+              "buildNumber": "2.7.0",
+              "localizedDescription": "🔄 更新内容\n2.7.0 更新\n新增\n\n- 在数据源弹窗右上角点击文件按钮支持导入播放本地视频进行播放\n- android(ExoPlayer)、ios(AVPlayer)原生播放器支持超分辨效率挡\n- 字体库支持多线路下载资源\n优化\n\n- 优化播放器亮度、音量调节ui效果\n修复\n\n- 修复切换播放源时没有立即结束当前正在播放的视频\n- 修复播放器亮度、音量调节ui抖动问题\n- 修复Linux平台在NVIDIA上窗口画面偏移问题\n\n---\n📦 下载\n- 每个设备的安装包后缀: 苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip或.exe)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)\n- android分多个包: v7a(32位架构旧手机或TV)、arm64(新手机,推荐用这个)、x86(模拟器) \n- windows分多个包: .zip(解压直接使用)、.exe(安装后使用，推荐用这个)",
+              "downloadURL": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.7.0/AnimeFlow-ios-2.7.0.ipa",
+              "size": 29735422,
               "minOSVersion": "15.0",
-              "releaseTag": "v2.6.8",
-              "source": "https://github.com/openAnimeFlow/AnimeFlow/releases/tag/v2.6.8"
+              "releaseTag": "v2.7.0",
+              "source": "https://github.com/openAnimeFlow/AnimeFlow/releases/tag/v2.7.0"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.6.8",
-          "date": "2026-11-13",
-          "publishedAt": "2026-11-13T20:37:13Z",
-          "buildVersion": "2.6.8",
-          "buildNumber": "2.6.8",
-          "localizedDescription": "🔄 更新内容\n2.6.8 更新\n新增\n\n- 壁纸页面支持关键词筛选、支持收藏壁纸集合(登录后)、我的页面右上角打开收藏集合\n- 重构视频资源下载模块，下载功能完全和播放页解耦不在需要等待内容解析完成后才能看到下载菜单，可以在番剧详情剧集弹窗和播放页剧集区域进入下载页面\n- 排行榜页面加载动画替换成骨架屏\n- 壁纸页面加载动画替换成骨架屏\n- 播放页的番剧详情信息展示方式从原来的内嵌路由替换成抽屉方式展示\n-  Linux 支持 Nix 安装(详情在仓库README下载项查看) #128 (@yebei199)\n优化\n\n- 优化更新信息页面布局\n- 优化大屏设置侧边栏效果(开启磨砂玻璃ui)\n- 优化推荐、排行榜页面开始磨砂玻璃时的页面顶部状态效果\n- 离开社区页面10秒后取消实时数据更新订阅减小服务器压力\n- 优化animeflow服务器网络请求延迟(可能有用)\n修复\n\n- 修复部分数据源线路名称文字ui溢出问题\n- 修复宽屏设备打开壁纸详情页时切换tabview时的异常问题\n- 修复在切换视频播放源时没有自动保持播放进度问题\n- 修复 Linux 客户端窗口问题 #129 (@lyndon0na)\n\n---\n📦 下载\n- 每个设备的安装包后缀: 苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip或.exe)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)\n- android分多个包: v7a(32位架构旧手机或TV)、arm64(新手机,推荐用这个)、x86(模拟器) \n- windows分多个包: .zip(解压直接使用)、.ex…",
-          "downloadURL": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.6.8/AnimeFlow-ios-2.6.8.ipa",
-          "size": 29518672,
+          "version": "2.7.0",
+          "date": "2026-11-22",
+          "publishedAt": "2026-11-22T04:50:04Z",
+          "buildVersion": "2.7.0",
+          "buildNumber": "2.7.0",
+          "localizedDescription": "🔄 更新内容\n2.7.0 更新\n新增\n\n- 在数据源弹窗右上角点击文件按钮支持导入播放本地视频进行播放\n- android(ExoPlayer)、ios(AVPlayer)原生播放器支持超分辨效率挡\n- 字体库支持多线路下载资源\n优化\n\n- 优化播放器亮度、音量调节ui效果\n修复\n\n- 修复切换播放源时没有立即结束当前正在播放的视频\n- 修复播放器亮度、音量调节ui抖动问题\n- 修复Linux平台在NVIDIA上窗口画面偏移问题\n\n---\n📦 下载\n- 每个设备的安装包后缀: 苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip或.exe)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)\n- android分多个包: v7a(32位架构旧手机或TV)、arm64(新手机,推荐用这个)、x86(模拟器) \n- windows分多个包: .zip(解压直接使用)、.exe(安装后使用，推荐用这个)",
+          "downloadURL": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.7.0/AnimeFlow-ios-2.7.0.ipa",
+          "size": 29735422,
           "minOSVersion": "15.0",
-          "releaseTag": "v2.6.8",
-          "source": "https://github.com/openAnimeFlow/AnimeFlow/releases/tag/v2.6.8"
+          "releaseTag": "v2.7.0",
+          "source": "https://github.com/openAnimeFlow/AnimeFlow/releases/tag/v2.7.0"
         }
       ],
-      "version": "2.6.8",
-      "versionDate": "2026-11-13",
-      "versionDescription": "🔄 更新内容\n2.6.8 更新\n新增\n\n- 壁纸页面支持关键词筛选、支持收藏壁纸集合(登录后)、我的页面右上角打开收藏集合\n- 重构视频资源下载模块，下载功能完全和播放页解耦不在需要等待内容解析完成后才能看到下载菜单，可以在番剧详情剧集弹窗和播放页剧集区域进入下载页面\n- 排行榜页面加载动画替换成骨架屏\n- 壁纸页面加载动画替换成骨架屏\n- 播放页的番剧详情信息展示方式从原来的内嵌路由替换成抽屉方式展示\n-  Linux 支持 Nix 安装(详情在仓库README下载项查看) #128 (@yebei199)\n优化\n\n- 优化更新信息页面布局\n- 优化大屏设置侧边栏效果(开启磨砂玻璃ui)\n- 优化推荐、排行榜页面开始磨砂玻璃时的页面顶部状态效果\n- 离开社区页面10秒后取消实时数据更新订阅减小服务器压力\n- 优化animeflow服务器网络请求延迟(可能有用)\n修复\n\n- 修复部分数据源线路名称文字ui溢出问题\n- 修复宽屏设备打开壁纸详情页时切换tabview时的异常问题\n- 修复在切换视频播放源时没有自动保持播放进度问题\n- 修复 Linux 客户端窗口问题 #129 (@lyndon0na)\n\n---\n📦 下载\n- 每个设备的安装包后缀: 苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip或.exe)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)\n- android分多个包: v7a(32位架构旧手机或TV)、arm64(新手机,推荐用这个)、x86(模拟器) \n- windows分多个包: .zip(解压直接使用)、.ex…",
-      "downloadURL": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.6.8/AnimeFlow-ios-2.6.8.ipa",
-      "size": 29518672,
+      "version": "2.7.0",
+      "versionDate": "2026-11-22",
+      "versionDescription": "🔄 更新内容\n2.7.0 更新\n新增\n\n- 在数据源弹窗右上角点击文件按钮支持导入播放本地视频进行播放\n- android(ExoPlayer)、ios(AVPlayer)原生播放器支持超分辨效率挡\n- 字体库支持多线路下载资源\n优化\n\n- 优化播放器亮度、音量调节ui效果\n修复\n\n- 修复切换播放源时没有立即结束当前正在播放的视频\n- 修复播放器亮度、音量调节ui抖动问题\n- 修复Linux平台在NVIDIA上窗口画面偏移问题\n\n---\n📦 下载\n- 每个设备的安装包后缀: 苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip或.exe)、mac电脑(.dmg)、linux电脑(.tar.gz或.deb)\n- android分多个包: v7a(32位架构旧手机或TV)、arm64(新手机,推荐用这个)、x86(模拟器) \n- windows分多个包: .zip(解压直接使用)、.exe(安装后使用，推荐用这个)",
+      "downloadURL": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.7.0/AnimeFlow-ios-2.7.0.ipa",
+      "size": 29735422,
       "minOSVersion": "15.0"
     },
     {
@@ -385,41 +385,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.6.0-nightly.20261121.1609",
-              "date": "2026-11-21",
-              "publishedAt": "2026-11-21T16:45:32Z",
+              "version": "2.6.0-nightly.20261122.0600",
+              "date": "2026-11-22",
+              "publishedAt": "2026-11-22T06:28:24Z",
               "buildVersion": "260",
               "buildNumber": "260",
-              "localizedDescription": "🧪 预发布 nightly-20261121（2026-11-21）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-              "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261121/ARMSX2-nightly-20261121-8bee9fff99-iOS-arm64.ipa",
-              "size": 40743520,
+              "localizedDescription": "🧪 预发布 nightly-20261122（2026-11-22）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+              "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261122/ARMSX2-nightly-20261122-8909645d55-iOS-arm64.ipa",
+              "size": 40780130,
               "minOSVersion": "17.4",
-              "releaseTag": "nightly-20261121",
-              "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261121"
+              "releaseTag": "nightly-20261122",
+              "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261122"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.6.0-nightly.20261121.1609",
-          "date": "2026-11-21",
-          "publishedAt": "2026-11-21T16:45:32Z",
+          "version": "2.6.0-nightly.20261122.0600",
+          "date": "2026-11-22",
+          "publishedAt": "2026-11-22T06:28:24Z",
           "buildVersion": "260",
           "buildNumber": "260",
-          "localizedDescription": "🧪 预发布 nightly-20261121（2026-11-21）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261121/ARMSX2-nightly-20261121-8bee9fff99-iOS-arm64.ipa",
-          "size": 40743520,
+          "localizedDescription": "🧪 预发布 nightly-20261122（2026-11-22）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261122/ARMSX2-nightly-20261122-8909645d55-iOS-arm64.ipa",
+          "size": 40780130,
           "minOSVersion": "17.4",
-          "releaseTag": "nightly-20261121",
-          "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261121"
+          "releaseTag": "nightly-20261122",
+          "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261122"
         }
       ],
-      "version": "2.6.0-nightly.20261121.1609",
-      "versionDate": "2026-11-21",
-      "versionDescription": "🧪 预发布 nightly-20261121（2026-11-21）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
-      "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261121/ARMSX2-nightly-20261121-8bee9fff99-iOS-arm64.ipa",
-      "size": 40743520,
+      "version": "2.6.0-nightly.20261122.0600",
+      "versionDate": "2026-11-22",
+      "versionDescription": "🧪 预发布 nightly-20261122（2026-11-22）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk…",
+      "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261122/ARMSX2-nightly-20261122-8909645d55-iOS-arm64.ipa",
+      "size": 40780130,
       "minOSVersion": "17.4"
     },
     {
@@ -555,7 +555,7 @@
               "publishedAt": "2026-11-21T13:52:36Z",
               "buildVersion": "2226",
               "buildNumber": "2226",
-              "localizedDescription": "📝 更新日志\n[v3.1.0]\n功能更新\n\n- 添加鸿蒙（HarmonyOS NEXT）支持\n- 添加导入外部漫画功能，支持文件夹与 CBZ / CBR / CB7 / CBT 等压缩包\n- 编辑已下载漫画时支持导入章节与图片、编辑分卷\n- 外观设置新增「漫画详情页」样式，可分别隐藏点赞、评论、本地收藏与云收藏按钮\n- 新增显示滚动条与滚动条常驻开关\n- 同步设置支持自定义自动同步间隔\n- 阅读设置新增「条漫放大后连续滚动」实验性开关 by 0kitasan\n修复\n\n- 修复书架文件夹的漫画数量不随来源筛选变化的问题\n- 修复下载任务重启后进度丢失的问题\n- 修复不包含下载内容的备份无法导入的问题\n优化\n\n- 优化插件启动速度\n- 优化内存占用\nui调整\n\n- 调整部分ui样式\n杂项\n\n- 数据存储全面迁移到 SQLite\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.1.0.exe |\n| macOS | Breeze-macOS-v3.1.0.dmg |\n| Android | app-arm64-v8a-release-v3.1.0.apk |\n| iOS | Breeze-iOS-v3.1.0.ipa |\n| Linux | breeze-v3.1.0.flatpak |\n| Linux (DEB) | breeze_3.1.0_amd64-v3.1.0.deb |\n| HarmonyOS (未签名) | Breeze-ohos-arm64-v3.1.0.hap |…",
+              "localizedDescription": "📝 更新日志\r\n[v3.1.0]\r\n功能更新\r\n\r\n- 添加鸿蒙（HarmonyOS NEXT）支持\r\n- 添加导入外部漫画功能，支持文件夹与 CBZ / CBR / CB7 / CBT 等压缩包\r\n- 编辑已下载漫画时支持导入章节与图片、编辑分卷\r\n- 外观设置新增「漫画详情页」样式，可分别隐藏点赞、评论、本地收藏与云收藏按钮\r\n- 新增显示滚动条与滚动条常驻开关\r\n- 同步设置支持自定义自动同步间隔\r\n- 阅读设置新增「条漫放大后连续滚动」实验性开关 by 0kitasan\r\n修复\r\n\r\n- 修复书架文件夹的漫画数量不随来源筛选变化的问题\r\n- 修复下载任务重启后进度丢失的问题\r\n- 修复不包含下载内容的备份无法导入的问题\r\n优化\r\n\r\n- 优化插件启动速度\r\n- 优化内存占用\r\nui调整\r\n\r\n- 调整部分ui样式\r\n杂项\r\n\r\n- 数据存储全面迁移到 SQLite\r\n\r\n---\r\n📦 推荐下载\r\n| 平台 | 下载链接 |\r\n| :--- | :--- |\r\n| Windows | windows-installer-v3.1.0.exe |\r\n| macOS | Breeze-macOS-v3.1.0.dmg |\r\n| Android | app-arm64-v8a-release-v3.1.0.apk |\r\n| iOS | Breeze-iOS-v3.1.0.ipa |\r\n| Linux | breeze-v3.1.0.flatpak |\r\n| Linux (DEB) | breeze_3.1.0_amd64-v3.1.0.deb |\r\n| HarmonyOS |…",
               "downloadURL": "https://github.com/breeze-project-org/Breeze/releases/download/v3.1.0/Breeze-iOS-v3.1.0.ipa",
               "size": 27861953,
               "minOSVersion": "15.0",
@@ -572,7 +572,7 @@
           "publishedAt": "2026-11-21T13:52:36Z",
           "buildVersion": "2226",
           "buildNumber": "2226",
-          "localizedDescription": "📝 更新日志\n[v3.1.0]\n功能更新\n\n- 添加鸿蒙（HarmonyOS NEXT）支持\n- 添加导入外部漫画功能，支持文件夹与 CBZ / CBR / CB7 / CBT 等压缩包\n- 编辑已下载漫画时支持导入章节与图片、编辑分卷\n- 外观设置新增「漫画详情页」样式，可分别隐藏点赞、评论、本地收藏与云收藏按钮\n- 新增显示滚动条与滚动条常驻开关\n- 同步设置支持自定义自动同步间隔\n- 阅读设置新增「条漫放大后连续滚动」实验性开关 by 0kitasan\n修复\n\n- 修复书架文件夹的漫画数量不随来源筛选变化的问题\n- 修复下载任务重启后进度丢失的问题\n- 修复不包含下载内容的备份无法导入的问题\n优化\n\n- 优化插件启动速度\n- 优化内存占用\nui调整\n\n- 调整部分ui样式\n杂项\n\n- 数据存储全面迁移到 SQLite\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.1.0.exe |\n| macOS | Breeze-macOS-v3.1.0.dmg |\n| Android | app-arm64-v8a-release-v3.1.0.apk |\n| iOS | Breeze-iOS-v3.1.0.ipa |\n| Linux | breeze-v3.1.0.flatpak |\n| Linux (DEB) | breeze_3.1.0_amd64-v3.1.0.deb |\n| HarmonyOS (未签名) | Breeze-ohos-arm64-v3.1.0.hap |…",
+          "localizedDescription": "📝 更新日志\r\n[v3.1.0]\r\n功能更新\r\n\r\n- 添加鸿蒙（HarmonyOS NEXT）支持\r\n- 添加导入外部漫画功能，支持文件夹与 CBZ / CBR / CB7 / CBT 等压缩包\r\n- 编辑已下载漫画时支持导入章节与图片、编辑分卷\r\n- 外观设置新增「漫画详情页」样式，可分别隐藏点赞、评论、本地收藏与云收藏按钮\r\n- 新增显示滚动条与滚动条常驻开关\r\n- 同步设置支持自定义自动同步间隔\r\n- 阅读设置新增「条漫放大后连续滚动」实验性开关 by 0kitasan\r\n修复\r\n\r\n- 修复书架文件夹的漫画数量不随来源筛选变化的问题\r\n- 修复下载任务重启后进度丢失的问题\r\n- 修复不包含下载内容的备份无法导入的问题\r\n优化\r\n\r\n- 优化插件启动速度\r\n- 优化内存占用\r\nui调整\r\n\r\n- 调整部分ui样式\r\n杂项\r\n\r\n- 数据存储全面迁移到 SQLite\r\n\r\n---\r\n📦 推荐下载\r\n| 平台 | 下载链接 |\r\n| :--- | :--- |\r\n| Windows | windows-installer-v3.1.0.exe |\r\n| macOS | Breeze-macOS-v3.1.0.dmg |\r\n| Android | app-arm64-v8a-release-v3.1.0.apk |\r\n| iOS | Breeze-iOS-v3.1.0.ipa |\r\n| Linux | breeze-v3.1.0.flatpak |\r\n| Linux (DEB) | breeze_3.1.0_amd64-v3.1.0.deb |\r\n| HarmonyOS |…",
           "downloadURL": "https://github.com/breeze-project-org/Breeze/releases/download/v3.1.0/Breeze-iOS-v3.1.0.ipa",
           "size": 27861953,
           "minOSVersion": "15.0",
@@ -582,7 +582,7 @@
       ],
       "version": "3.1.0",
       "versionDate": "2026-11-21",
-      "versionDescription": "📝 更新日志\n[v3.1.0]\n功能更新\n\n- 添加鸿蒙（HarmonyOS NEXT）支持\n- 添加导入外部漫画功能，支持文件夹与 CBZ / CBR / CB7 / CBT 等压缩包\n- 编辑已下载漫画时支持导入章节与图片、编辑分卷\n- 外观设置新增「漫画详情页」样式，可分别隐藏点赞、评论、本地收藏与云收藏按钮\n- 新增显示滚动条与滚动条常驻开关\n- 同步设置支持自定义自动同步间隔\n- 阅读设置新增「条漫放大后连续滚动」实验性开关 by 0kitasan\n修复\n\n- 修复书架文件夹的漫画数量不随来源筛选变化的问题\n- 修复下载任务重启后进度丢失的问题\n- 修复不包含下载内容的备份无法导入的问题\n优化\n\n- 优化插件启动速度\n- 优化内存占用\nui调整\n\n- 调整部分ui样式\n杂项\n\n- 数据存储全面迁移到 SQLite\n\n---\n📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| Windows | windows-installer-v3.1.0.exe |\n| macOS | Breeze-macOS-v3.1.0.dmg |\n| Android | app-arm64-v8a-release-v3.1.0.apk |\n| iOS | Breeze-iOS-v3.1.0.ipa |\n| Linux | breeze-v3.1.0.flatpak |\n| Linux (DEB) | breeze_3.1.0_amd64-v3.1.0.deb |\n| HarmonyOS (未签名) | Breeze-ohos-arm64-v3.1.0.hap |…",
+      "versionDescription": "📝 更新日志\r\n[v3.1.0]\r\n功能更新\r\n\r\n- 添加鸿蒙（HarmonyOS NEXT）支持\r\n- 添加导入外部漫画功能，支持文件夹与 CBZ / CBR / CB7 / CBT 等压缩包\r\n- 编辑已下载漫画时支持导入章节与图片、编辑分卷\r\n- 外观设置新增「漫画详情页」样式，可分别隐藏点赞、评论、本地收藏与云收藏按钮\r\n- 新增显示滚动条与滚动条常驻开关\r\n- 同步设置支持自定义自动同步间隔\r\n- 阅读设置新增「条漫放大后连续滚动」实验性开关 by 0kitasan\r\n修复\r\n\r\n- 修复书架文件夹的漫画数量不随来源筛选变化的问题\r\n- 修复下载任务重启后进度丢失的问题\r\n- 修复不包含下载内容的备份无法导入的问题\r\n优化\r\n\r\n- 优化插件启动速度\r\n- 优化内存占用\r\nui调整\r\n\r\n- 调整部分ui样式\r\n杂项\r\n\r\n- 数据存储全面迁移到 SQLite\r\n\r\n---\r\n📦 推荐下载\r\n| 平台 | 下载链接 |\r\n| :--- | :--- |\r\n| Windows | windows-installer-v3.1.0.exe |\r\n| macOS | Breeze-macOS-v3.1.0.dmg |\r\n| Android | app-arm64-v8a-release-v3.1.0.apk |\r\n| iOS | Breeze-iOS-v3.1.0.ipa |\r\n| Linux | breeze-v3.1.0.flatpak |\r\n| Linux (DEB) | breeze_3.1.0_amd64-v3.1.0.deb |\r\n| HarmonyOS |…",
       "downloadURL": "https://github.com/breeze-project-org/Breeze/releases/download/v3.1.0/Breeze-iOS-v3.1.0.ipa",
       "size": 27861953,
       "minOSVersion": "15.0"
@@ -978,7 +978,7 @@
       "developerName": "Predidit",
       "subtitle": "自定义规则的番剧采集与在线观看",
       "localizedDescription": "基于自定义规则的番剧采集 App，支持流媒体在线观看、弹幕与实时超分辨率。支持多平台，此处为未签名 iOS 构建，需自行签名安装。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Predidit/Kazumi",
-      "iconURL": "https://raw.githubusercontent.com/Predidit/Kazumi/2.4.5/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Predidit/Kazumi/2.4.6/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#E86AA6",
       "category": "entertainment",
       "appPermissions": {
@@ -990,41 +990,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.4.5",
-              "date": "2026-11-21",
-              "publishedAt": "2026-11-21T05:56:21Z",
-              "buildVersion": "20405",
-              "buildNumber": "20405",
-              "localizedDescription": "- 重新设计播放页的选集与评论面板\r\n- 番剧详情页的评分编辑在窄屏上改为底部面板\r\n- 追番页头部随列表滚动，竖屏可显示更多内容 (#2859)\r\n- 优化 Material 3 Expressive 组件的选中配色与过渡动画\r\n- 精简各页面的说明文案\r\n- 修复 Linux 下部分 NVIDIA 设备画面偏移到左下角的问题 (#2838)\r\n- 修复 Windows 启动后画面偶发拉伸的问题",
-              "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.5/Kazumi_ios_2.4.5_no_sign.ipa",
-              "size": 30370674,
+              "version": "2.4.6",
+              "date": "2026-11-22",
+              "publishedAt": "2026-11-22T05:42:23Z",
+              "buildVersion": "20406",
+              "buildNumber": "20406",
+              "localizedDescription": "- 修复 Bangumi 同步无法使用的问题",
+              "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.6/Kazumi_ios_2.4.6_no_sign.ipa",
+              "size": 30369553,
               "minOSVersion": "15.0",
-              "releaseTag": "2.4.5",
-              "source": "https://github.com/Predidit/Kazumi/releases/tag/2.4.5"
+              "releaseTag": "2.4.6",
+              "source": "https://github.com/Predidit/Kazumi/releases/tag/2.4.6"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.4.5",
-          "date": "2026-11-21",
-          "publishedAt": "2026-11-21T05:56:21Z",
-          "buildVersion": "20405",
-          "buildNumber": "20405",
-          "localizedDescription": "- 重新设计播放页的选集与评论面板\r\n- 番剧详情页的评分编辑在窄屏上改为底部面板\r\n- 追番页头部随列表滚动，竖屏可显示更多内容 (#2859)\r\n- 优化 Material 3 Expressive 组件的选中配色与过渡动画\r\n- 精简各页面的说明文案\r\n- 修复 Linux 下部分 NVIDIA 设备画面偏移到左下角的问题 (#2838)\r\n- 修复 Windows 启动后画面偶发拉伸的问题",
-          "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.5/Kazumi_ios_2.4.5_no_sign.ipa",
-          "size": 30370674,
+          "version": "2.4.6",
+          "date": "2026-11-22",
+          "publishedAt": "2026-11-22T05:42:23Z",
+          "buildVersion": "20406",
+          "buildNumber": "20406",
+          "localizedDescription": "- 修复 Bangumi 同步无法使用的问题",
+          "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.6/Kazumi_ios_2.4.6_no_sign.ipa",
+          "size": 30369553,
           "minOSVersion": "15.0",
-          "releaseTag": "2.4.5",
-          "source": "https://github.com/Predidit/Kazumi/releases/tag/2.4.5"
+          "releaseTag": "2.4.6",
+          "source": "https://github.com/Predidit/Kazumi/releases/tag/2.4.6"
         }
       ],
-      "version": "2.4.5",
-      "versionDate": "2026-11-21",
-      "versionDescription": "- 重新设计播放页的选集与评论面板\r\n- 番剧详情页的评分编辑在窄屏上改为底部面板\r\n- 追番页头部随列表滚动，竖屏可显示更多内容 (#2859)\r\n- 优化 Material 3 Expressive 组件的选中配色与过渡动画\r\n- 精简各页面的说明文案\r\n- 修复 Linux 下部分 NVIDIA 设备画面偏移到左下角的问题 (#2838)\r\n- 修复 Windows 启动后画面偶发拉伸的问题",
-      "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.5/Kazumi_ios_2.4.5_no_sign.ipa",
-      "size": 30370674,
+      "version": "2.4.6",
+      "versionDate": "2026-11-22",
+      "versionDescription": "- 修复 Bangumi 同步无法使用的问题",
+      "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.6/Kazumi_ios_2.4.6_no_sign.ipa",
+      "size": 30369553,
       "minOSVersion": "15.0"
     },
     {
@@ -1697,7 +1697,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 30 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-11-21",
+      "date": "2026-11-22",
       "tintColor": "#7C5CFF",
       "notify": false
     }

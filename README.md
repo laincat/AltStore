@@ -48,9 +48,9 @@ https://github.com/laincat/AltStore/releases/download/latest/apps.json
 | AirCard | `com.mak5er.aircard` | 1.3.2 | iOS 18.0+ | 无 | [Mak5er/AirCard-iOS](https://github.com/Mak5er/AirCard-iOS) |
 | AniBaka | `ani.baka` | 5.2.5 | iOS 13.0+ | 无 | [AniBakaBaka/AniBaka](https://github.com/AniBakaBaka/AniBaka) |
 | AniCh | `app.anich` | 1.5.27 | iOS 12.0+ | 无 | [Sle2p/AniCh](https://github.com/Sle2p/AniCh) |
-| AnimeFlow | `com.ligg.animeflow` | 2.6.8 | iOS 15.0+ | 无 | [openAnimeFlow/AnimeFlow](https://github.com/openAnimeFlow/AnimeFlow) |
+| AnimeFlow | `com.ligg.animeflow` | 2.7.0 | iOS 15.0+ | 无 | [openAnimeFlow/AnimeFlow](https://github.com/openAnimeFlow/AnimeFlow) |
 | Animeko | `org.animeko.animeko` | 6.4.1 | iOS 16.0+ | 6.4.0 | [open-ani/animeko](https://github.com/open-ani/animeko) |
-| ARMSX2 Nightly | `com.armsx2.ios.nightly` | 2.6.0-nightly.20261121.1609 | iOS 17.4+ | 无 | [ARMSX2/ARMSX2](https://github.com/ARMSX2/ARMSX2) |
+| ARMSX2 Nightly | `com.armsx2.ios.nightly` | 2.6.0-nightly.20261122.0600 | iOS 17.4+ | 无 | [ARMSX2/ARMSX2](https://github.com/ARMSX2/ARMSX2) |
 | ARMSX3 | `com.armsx3.ARMSX3` | 0.0.3 | iOS 17.4+ | 无 | [ARMSX2/ARMSX3](https://github.com/ARMSX2/ARMSX3) |
 | AvPlay | `com.javdb.avplay2` | 2.2.2 | iOS 15.3+ | 无 | [anonymousjav/AvPlayRelease](https://github.com/anonymousjav/AvPlayRelease) |
 | Breeze | `com.zephyr.breeze` | 3.1.0 | iOS 15.0+ | 无 | [breeze-project-org/Breeze](https://github.com/breeze-project-org/Breeze) |
@@ -61,7 +61,7 @@ https://github.com/laincat/AltStore/releases/download/latest/apps.json
 | HentaiPark | `com.hentaipark.hentaiPark` | 0.15.4 | iOS 15.0+ | 无 | [drdon1234/Hentai-Park](https://github.com/drdon1234/Hentai-Park) |
 | HGhubX | `com.hghubx.app` | 2.2.6 | iOS 15.0+ | 无 | [zxsos/HGhubX](https://github.com/zxsos/HGhubX) |
 | INSAV | `com.ios151.insav` | 1.3.1 | iOS 16.0+ | 无 | [ios151/Insav-releases](https://github.com/ios151/Insav-releases) |
-| Kazumi | `com.example.kazumi` | 2.4.5 | iOS 15.0+ | 无 | [Predidit/Kazumi](https://github.com/Predidit/Kazumi) |
+| Kazumi | `com.example.kazumi` | 2.4.6 | iOS 15.0+ | 无 | [Predidit/Kazumi](https://github.com/Predidit/Kazumi) |
 | Nekularity | `com.laincat.nekularity` | 0.4.9 | iOS 26.0+ | 无 | [laincat/Nekularity](https://github.com/laincat/Nekularity) |
 | One | `com.ios151.one` | 1.7.1 | iOS 16.0+ | 无 | [ios151/One-releases](https://github.com/ios151/One-releases) |
 | PicaComic | `com.github.pacalini.picaComic` | 5.1.2 | iOS 15.1+ | 无 | [ccbkv/PicaComic](https://github.com/ccbkv/PicaComic) |

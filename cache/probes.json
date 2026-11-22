@@ -2764,5 +2764,47 @@
       "size": 34300644,
       "digest": "sha256:8b0f1c9ff99acf632b12bfd945928de3d8fc3e1a8a0fe1e21fd488ac58a2ea53"
     }
+  },
+  "https://github.com/Predidit/Kazumi/releases/download/2.4.6/Kazumi_ios_2.4.6_no_sign.ipa": {
+    "bundleIdentifier": "com.example.kazumi",
+    "version": "2.4.6",
+    "buildVersion": "20406",
+    "displayName": "Kazumi",
+    "minOSVersion": "15.0",
+    "size": 30369553,
+    "assetIdentity": {
+      "id": 778019762,
+      "updated_at": "2026-11-22T05:42:22Z",
+      "size": 30369553,
+      "digest": "sha256:11f56776543e9c7ce65704c649311f3af77916da8b3de9d3f32cb48971d5b641"
+    }
+  },
+  "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.7.0/AnimeFlow-ios-2.7.0.ipa": {
+    "bundleIdentifier": "com.ligg.animeflow",
+    "version": "2.7.0",
+    "buildVersion": "2.7.0",
+    "displayName": "AnimeFlow",
+    "minOSVersion": "15.0",
+    "size": 29735422,
+    "assetIdentity": {
+      "id": 777908712,
+      "updated_at": "2026-11-22T04:50:01Z",
+      "size": 29735422,
+      "digest": "sha256:f5d799f9892299d99d39ebd93823a333ce13590639640ebe2466971812522a60"
+    }
+  },
+  "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261122/ARMSX2-nightly-20261122-8909645d55-iOS-arm64.ipa": {
+    "bundleIdentifier": "com.armsx2.ios.nightly",
+    "version": "2.6.0-nightly.20261122.0600",
+    "buildVersion": "260",
+    "displayName": "ARMSX2 Nightly",
+    "minOSVersion": "17.4",
+    "size": 40780130,
+    "assetIdentity": {
+      "id": 778119457,
+      "updated_at": "2026-11-22T06:28:30Z",
+      "size": 40780130,
+      "digest": "sha256:634d21475c76488963f72088c3f73c67e1fbd323bb13a92956e290bd1dc75939"
+    }
   }
 }
