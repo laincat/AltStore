@@ -21,20 +21,20 @@
     },
     {
       "tag": "test-pre",
-      "name": "HGhubX Test Preview (604fbd7)",
+      "name": "HGhubX Test Preview (12ea8ce)",
       "pre": true,
       "draft": false,
       "date": "2026-11-21",
       "published_at": "2026-11-21T16:49:36Z",
-      "body": "# HGhubX Test Preview\n\n基于 `main`（`666d6a4`）自动合成的全平台预览构建（更新时间：`2026-11-22T13:34:58Z`，测试提交：`604fbd7`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（2）\n1. #230 修复搜索页“视频/帖子”Tab 不支持左右滑动（@makisekurisu-jp，`4cd57c5`）\n2. #232 fix(posts): sync gossip post list order from official SSR page (#231)（@zxsos，`ef8c581`）\n",
+      "body": "# HGhubX Test Preview\n\n基于 `main`（`666d6a4`）自动合成的全平台预览构建（更新时间：`2026-11-22T18:07:31Z`，测试提交：`12ea8ce`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（3）\n1. #230 修复搜索页“视频/帖子”Tab 不支持左右滑动（@makisekurisu-jp，`4cd57c5`）\n2. #232 fix(posts): sync gossip post list order from official SSR page (#231)（@zxsos，`ef8c581`）\n3. #236 全屏双击暂停时显示当前集提示（@makisekurisu-jp，`f2c5893`）\n\n## 自动跳过的 PR（1）\n- #234 fix(search): 点击底栏「搜索」复位搜索页（@makisekurisu-jp）：与当前测试基线存在代码冲突，已跳过\n",
       "ipas": [
         {
           "name": "HGhubX_2.2.7_ios.ipa",
-          "size": 4105007,
+          "size": 4105587,
           "url": "https://github.com/zxsos/HGhubX/releases/download/test-pre/HGhubX_2.2.7_ios.ipa",
-          "id": 779210379,
-          "updated_at": "2026-11-22T13:47:20Z",
-          "digest": "sha256:9a614928abd3267ce6a9c08047257bc8d56e09e6bc33326fc1b2a024eeac4d6e"
+          "id": 780005916,
+          "updated_at": "2026-11-22T18:19:46Z",
+          "digest": "sha256:fc45f9fccc57a6b24ced2e72f5c01c02390cd1b841b81b4af842d33ae507ddd4"
         }
       ]
     },
@@ -2309,11 +2309,11 @@
       "ipas": [
         {
           "name": "ARMSX2-nightly-20261122-c9b6e89f34-iOS-arm64.ipa",
-          "size": 40934979,
+          "size": 40934970,
           "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261122/ARMSX2-nightly-20261122-c9b6e89f34-iOS-arm64.ipa",
-          "id": 778569061,
-          "updated_at": "2026-11-22T09:44:38Z",
-          "digest": "sha256:6c23b597aa05951cf6ae9002c17a8af79f882a44a67d321ec87073fbd74ac6d4"
+          "id": 779765803,
+          "updated_at": "2026-11-22T16:56:57Z",
+          "digest": "sha256:81e1c3a772a38e27a9d524102d80c21d1e0659067675ccaa8569fc7ab0c1b4b9"
         }
       ]
     },
@@ -2573,6 +2573,25 @@
   ],
   "ARMSX2/ARMSX3": [
     {
+      "tag": "ios-0.0.4",
+      "name": "ARMSX3 for iOS 0.0.4 beta",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-22",
+      "published_at": "2026-11-22T18:51:36Z",
+      "body": "## Graphics and memory\r\n\r\n**Faster frame submission.** MoltenVK now turns each frame into Metal work on its own thread instead of on the graphics thread, so the graphics thread spends almost no time submitting a frame. Framebuffers are now freed only after the GPU has finished with them, which this needed. Thanks to RewindBox, whose work led to this.\r\n\r\n**Freed textures give their memory back.** Large texture allocations now get memory of their own, which goes back to iOS when the texture is freed. Before, one texture still in use kept a whole 64 MB block, and One Piece held 2.3 GB of blocks for 643 MB of textures. Thanks to RewindBox, whose work led to this.\r\n\r\n**Upload buffer space comes back sooner.** The texture upload buffer gives back finished space after every full GPU wait, where it held it until the next frame and swapped in a new buffer instead.\r\n\r\n**No stall on the first new shader.** The shader compiler's one-time setup now happens at boot. It used to land in gameplay, on the first shader a game hadn't shown before. Thanks to RewindBox, whose work led to this.\r\n\r\n**Black Ops II weapon.** The weapon in your hands no longer draws with its triangles over each other.\r\n\r\n**Resolution scale below 100%.** Some copies between images ran a pixel past the edge and stopped the game with \"Verification failed\". They are now trimmed to fit.\r\n\r\n**Half-precision shader math from RPCS3.** Shaders now handle 16-bit floating point the way the PS3's GPU does, with RPCS3's newest fixes.\r\n\r\n## Faster\r\n\r\n**Short waits are the right length.** The timer scale was never set on iOS, so on phones whose counter runs at 1 GHz every short wait lasted about a 33rd of what was meant. It is now set before the emulator starts. Thanks to RewindBox, whose work led to this.\r\n\r\n**Less heat while SPU code compiles.** With Pause Game During SPU Compilation, every paused thread spun at full speed for the whole compile. Paused threads now sleep.\r\n\r\n**Loops move to compiled code sooner.** New SPU ",
+      "ipas": [
+        {
+          "name": "ARMSX3-0.0.4.ipa",
+          "size": 46267291,
+          "url": "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.4/ARMSX3-0.0.4.ipa",
+          "id": 780040470,
+          "updated_at": "2026-11-22T18:32:01Z",
+          "digest": "sha256:3ee6eaca9ddb061f03329f72a013f00b344c6df8936bc6bc59425aa5c2d3bead"
+        }
+      ]
+    },
+    {
       "tag": "1.7.1",
       "name": "ARMSX3 1.7.1 ",
       "pre": false,
@@ -2787,16 +2806,6 @@
       "date": "2026-10-25",
       "published_at": "2026-10-25T04:58:31Z",
       "body": "# ARMSX3 1.4\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/43e390e0-c297-403d-8685-53e0cc3ac078\" />\r\n\r\n## Batman: Arkham Origins online\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/a33ae612-d620-415a-823d-183defdf7bf2\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/0e60b298-f5b7-499d-8b96-4a6b6bda600a\" />\r\n\r\n- **Batman: Arkham Origins multiplayer is back online** through Arkham: Revived, KiwifruitDev's community servers. ARMSX3 sets the game up for Revived by itself when it boots, in every language, so there's no patch file to copy. You play with other ARMSX3 players over RPCN.\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/6060994d-a299-44ec-a24a-e411f2fba31b\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/d83398e2-1326-4bd9-ad6e-2358853a2c51\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/aff96a9b-ca83-41ec-82f3-dfdac456f9f2\" />\r\n\r\n- **Quick match and joining a friend's lobby both work.**\r\n- **Invite your RPCN friends.** When a friend invites you, a banner shows who it's from, and you join from the in-game menu in Friends. Friend requests can be accepted in Settings > RPCN or in Friends.\r\n\r\n<img width=\"1242\" height=\"2208\" alt=\"image\" src=\"https://github.com/user-attachments/assets/2b360d85-ab85-45e5-ac5f-0836af9e1cba\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/2c976ad8-99d5-4d48-a230-0dbafee6afcb\" />\r\n\r\n- **Leave ARMSX3 mid-lobby and come back to it.** The game pauses while you're away, and a \"Staying online\" notification keeps it connected. If the connection drops, ARMSX3 signs you back in by itself.\r\n- **Switching between single-player and multiplayer keeps the game's data installed** when you play from an ISO fil",
-      "ipas": []
-    },
-    {
-      "tag": "1.3.2",
-      "name": "ARMSX3 1.3.2 ",
-      "pre": false,
-      "draft": false,
-      "date": "2026-10-20",
-      "published_at": "2026-10-20T19:53:49Z",
-      "body": "# ARMSX3 1.3.2\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/bb95d752-5b2e-401a-b16e-58e2d8c28607\" />\r\n\r\n## Online\r\n\r\n- **RPCN has been updated so sign-in works again with the latest RPCN server**, including its new title storage (TSS) support that some games use online. \r\n\r\n## Controls\r\n\r\n- **New option: Tight L1/L2/R1/R2 touch areas**, in Settings > Controls > On-Screen Controls. The shoulder buttons respond only on the button itself, and their outlines in the touch layout editor fit the buttons. (In the next ARMSX2 nightly as well). \r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/7da39a82-6f88-4780-8370-8700aade5dab\" />\r\n\r\n## Home screen\r\n\r\n- **Home screen shortcuts show the game's cover** instead of the ARMSX3 icon. (In the next ARMSX2 nightly as well). \r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/52582292-9c88-4f2b-8ee7-64907aa80119\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/2e2e7c6c-c50b-4db0-a752-2c148cef2fef\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/e5402d4c-eb93-4e7b-b36b-a62d7af50b4e\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/313a2eec-f433-4f61-9e8e-12a5866376a9\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/d3b64648-52c1-45bb-852b-6e39ed913f03\" />\r\n\r\n(P.S. The Yakuza Dead Souls fix is already in ARMSX3! Start Yakuza and open All Core Settings from the in-game menu, so the setting only applies to that game. Search “PPU Event” and the setting PPU Event Wake-Up Delay will appear. \r\nSet PPU Event Wake-Up Delay (between 0 and 200 µs, experiment with what works for your device). \r\n\r\nThe 60 FPS patch: FlexBy’s patch is in RPCS3’s patch database for BLUS30826, BLES01399 and NPEB02034. Tap Download / u",
       "ipas": []
     }
   ],
@@ -6462,6 +6471,25 @@
   ],
   "ccbkv/PicaComic": [
     {
+      "tag": "5.1.3",
+      "name": "5.1.3",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-22",
+      "published_at": "2026-11-22T18:19:56Z",
+      "body": "# 5.1.3 (2026-11-22)\r\n**更新说明**\r\n- 有Linux版 !!\r\n-  新增加圖片增強功能,在app 的设置和阅读 的设置\r\n- 改善日志UI ,改善已下载搜索 ,\r\n- [优化设置UI,优化ai翻译 ]\r\n- 在app 的设置底下→关于里有tg群 \r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\n\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/5.1.2...5.1.3",
+      "ipas": [
+        {
+          "name": "PicaComic-5.1.3-app-ios-build_no_sign.ipa",
+          "size": 31853757,
+          "url": "https://github.com/ccbkv/PicaComic/releases/download/5.1.3/PicaComic-5.1.3-app-ios-build_no_sign.ipa",
+          "id": 779987271,
+          "updated_at": "2026-11-22T18:12:48Z",
+          "digest": "sha256:159dd3d26fa94051eb842c4151bbb493fefec9611df36e4338eaeec249e80ac8"
+        }
+      ]
+    },
+    {
       "tag": "5.1.2",
       "name": "5.1.2",
       "pre": false,
@@ -6810,25 +6838,6 @@
           "id": 391920493,
           "updated_at": "2026-04-08T22:34:11Z",
           "digest": "sha256:d7e3db7f30adeabfab4bd6c15bc3da61ab6f747491e6723f18283310fa766019"
-        }
-      ]
-    },
-    {
-      "tag": "4.6.3",
-      "name": "4.6.3",
-      "pre": false,
-      "draft": false,
-      "date": "2026-04-07",
-      "published_at": "2026-04-07T17:33:18Z",
-      "body": "# 4.6.3 (2026-04-08)\r\n\r\n\r\n\r\n\r\n**更新说明**\r\n\r\n\r\n- 1.修复hitomi搜索结果只有最新的bug\r\n- 2.增加滚动界面回弹效果\r\n- 3.修复章节评论\r\n- 4.修复rule.json编辑器滑动异常\r\n我更新了拷贝漫画源,在漫画源的浏览列表里\r\n\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何测试，不受任何支持.\r\n\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/4.5.8...4.6.3",
-      "ipas": [
-        {
-          "name": "PicaComic-4.6.3-app-ios-build.ipa",
-          "size": 15819140,
-          "url": "https://github.com/ccbkv/PicaComic/releases/download/4.6.3/PicaComic-4.6.3-app-ios-build.ipa",
-          "id": 390961323,
-          "updated_at": "2026-04-07T17:31:16Z",
-          "digest": "sha256:e449fb82d1da71b28d2cf8cb84d0fb27942177d34280d36cc2cf5409d781a10b"
         }
       ]
     }

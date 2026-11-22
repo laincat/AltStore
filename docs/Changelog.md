@@ -5,6 +5,13 @@
 
 <!-- changelog:begin -->
 
+## 2026-11-23 05:43 (UTC+8)
+
+- **ARMSX2 Nightly** 2.6.0-nightly.20261122.0919 → 2.6.0-nightly.20261122.1618
+- **ARMSX3** 0.0.3 → 0.0.4
+- **PicaComic** 5.1.2 → 5.1.3
+
+
 ## 2026-11-22 23:15 (UTC+8)
 
 - **ARMSX2 Nightly** 2.6.0-nightly.20261122.0600 → 2.6.0-nightly.20261122.0919
