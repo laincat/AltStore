@@ -2876,5 +2876,33 @@
       "size": 40930252,
       "digest": "sha256:0dc77a3a9a287670c1b3230e1b9d5b4745262971765b1a3dd6bc58d9bdacac50"
     }
+  },
+  "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.4/VeneraNext-ios-1.18.4%2B253.ipa": {
+    "bundleIdentifier": "com.github.cyrilpeng.veneranext",
+    "version": "1.18.4",
+    "buildVersion": "253",
+    "displayName": "VeneraNext",
+    "minOSVersion": "14.0",
+    "size": 21589601,
+    "assetIdentity": {
+      "id": 781368596,
+      "updated_at": "2026-11-23T03:27:12Z",
+      "size": 21589601,
+      "digest": "sha256:216df42291d1be9a502151c2a17be0901aff38cf29927be7777559c64acbee14"
+    }
+  },
+  "https://github.com/zxsos/HGhubX/releases/download/v2.2.8/HGhubX_2.2.8_ios.ipa": {
+    "bundleIdentifier": "com.hghubx.app",
+    "version": "2.2.8",
+    "buildVersion": "2.2.8",
+    "displayName": "HGhubX",
+    "minOSVersion": "15.0",
+    "size": 4004198,
+    "assetIdentity": {
+      "id": 781437263,
+      "updated_at": "2026-11-23T03:55:28Z",
+      "size": 4004198,
+      "digest": "sha256:ca321bcc8491895d33d6f775fa592455727fa82f1f374ecce2e967f26c03014e"
+    }
   }
 }

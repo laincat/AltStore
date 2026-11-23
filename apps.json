@@ -880,41 +880,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.2.7",
-              "date": "2026-11-22",
-              "publishedAt": "2026-11-22T12:13:11Z",
-              "buildVersion": "2.2.7",
-              "buildNumber": "2.2.7",
-              "localizedDescription": "HGhubX v2.2.7\n\n围绕搜索与排行榜、标签排序、吃瓜正文站内视频直达及播放器全屏交互稳定性打磨体验，并新增 Android 13+ Material You 动态主题图标适配；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. Android 13+ Material You 动态主题图标（#216）：补充 108dp × 108dp 纯单色自适应矢量图层（ic_launcher_monochrome.xml）及圆角/默认自适应配置，支持 Android 13+ 启动器按壁纸动态着色，同时保持 Android 8–12 与既有彩色桌面图标外观不变。\n2. 搜索热搜榜官网同步与单行紧凑布局（#221、#225）：搜索页热搜请求改为直连干净路径 {base}/search/（移除防缓存查询串），与官网 CDN 边缘快照条目、名次及播放量保持同源同序；卡片布局调整为「序号 + 单行省略片名 + 右对齐播放量 + 右箭头」的官网紧凑单行样式。\n3. 视频页操作区与全屏交互打磨（#217、#218、#219、#220）：统一视频页顶部「搜短剧」与清晰度徽标高度及基线对齐；右侧评论入口改为与点赞/收藏一致的空心线条图标；点赞、收藏、关注共用 playback-hint 提示单槽位避免连续点击堆叠；全屏锁屏图标改为随闲置控件同步自动隐藏。\n修复\n1. 排行榜「热播榜」与官网实时热度不同步（#221、#226）：修正匿名 JSON /api/ranks/hot 返回历史累计总榜导致的内容偏差，热播榜改为优先解析官网 /ranks/ho…",
-              "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.7/HGhubX_2.2.7_ios.ipa",
-              "size": 3992968,
+              "version": "2.2.8",
+              "date": "2026-11-23",
+              "publishedAt": "2026-11-23T03:55:29Z",
+              "buildVersion": "2.2.8",
+              "buildNumber": "2.2.8",
+              "localizedDescription": "HGhubX v2.2.8\n\n围绕分类导航快捷入口、搜索交互、吃瓜列表官网同步、「我的收藏」排序与已完结封面标签以及播放器全屏暂停提示打磨体验；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. 分类总览 2×2 快捷入口并接入「最近上新」「热门推荐」（#233、#238）：移除移动端与搜索页重复的「排行榜」单列入口（保留搜索页右上角与桌面侧栏「排行榜」），在移动端与桌面端统一展示「最近上新」「热门推荐」「专题」「标签」2×2 等宽卡片；「最近上新」「热门推荐」优先解析官网 /newest/ 与 /recommend/ 服务端渲染页面（失败时按 /api/videos?sort=new|hot 回退），支持自动分页与切线重载。\n2. 「我的 → 收藏 → 短剧」排序与已完结封面标签（#235、#239）：在「我的收藏 → 短剧」新增「最近添加」「最近更新」「完结进度」（点击可切换「已完结优先 ↕」/「更新中优先 ↕」）排序，切到更新/完结排序时自动分批补齐全部收藏详情；全站剧集卡片在左上角按「原创」「热播」「新片」「完结」显示角标，「我的」页已完结短剧使用绿色封面标签（兼有未看新集时并行显示「新更 N 集」与「完结」角标）。\n3. 搜索页左右滑动切 Tab 与底栏快捷复位（#230、#234）：搜索结果支持左右滑动切换「视频 / 帖子」Tab（未提交查询时不拦截横向手势）；在移动端底栏再次点击激活的「搜索」可一键清空结果并回到热搜与历史界面，且不主动弹出软键盘。\n4. 全屏双击暂停显示当前集数提示（#236）：移动端全屏下双击暂…",
+              "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.8/HGhubX_2.2.8_ios.ipa",
+              "size": 4004198,
               "minOSVersion": "15.0",
-              "releaseTag": "v2.2.7",
-              "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.2.7"
+              "releaseTag": "v2.2.8",
+              "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.2.8"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.2.7",
-          "date": "2026-11-22",
-          "publishedAt": "2026-11-22T12:13:11Z",
-          "buildVersion": "2.2.7",
-          "buildNumber": "2.2.7",
-          "localizedDescription": "HGhubX v2.2.7\n\n围绕搜索与排行榜、标签排序、吃瓜正文站内视频直达及播放器全屏交互稳定性打磨体验，并新增 Android 13+ Material You 动态主题图标适配；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. Android 13+ Material You 动态主题图标（#216）：补充 108dp × 108dp 纯单色自适应矢量图层（ic_launcher_monochrome.xml）及圆角/默认自适应配置，支持 Android 13+ 启动器按壁纸动态着色，同时保持 Android 8–12 与既有彩色桌面图标外观不变。\n2. 搜索热搜榜官网同步与单行紧凑布局（#221、#225）：搜索页热搜请求改为直连干净路径 {base}/search/（移除防缓存查询串），与官网 CDN 边缘快照条目、名次及播放量保持同源同序；卡片布局调整为「序号 + 单行省略片名 + 右对齐播放量 + 右箭头」的官网紧凑单行样式。\n3. 视频页操作区与全屏交互打磨（#217、#218、#219、#220）：统一视频页顶部「搜短剧」与清晰度徽标高度及基线对齐；右侧评论入口改为与点赞/收藏一致的空心线条图标；点赞、收藏、关注共用 playback-hint 提示单槽位避免连续点击堆叠；全屏锁屏图标改为随闲置控件同步自动隐藏。\n修复\n1. 排行榜「热播榜」与官网实时热度不同步（#221、#226）：修正匿名 JSON /api/ranks/hot 返回历史累计总榜导致的内容偏差，热播榜改为优先解析官网 /ranks/ho…",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.7/HGhubX_2.2.7_ios.ipa",
-          "size": 3992968,
+          "version": "2.2.8",
+          "date": "2026-11-23",
+          "publishedAt": "2026-11-23T03:55:29Z",
+          "buildVersion": "2.2.8",
+          "buildNumber": "2.2.8",
+          "localizedDescription": "HGhubX v2.2.8\n\n围绕分类导航快捷入口、搜索交互、吃瓜列表官网同步、「我的收藏」排序与已完结封面标签以及播放器全屏暂停提示打磨体验；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. 分类总览 2×2 快捷入口并接入「最近上新」「热门推荐」（#233、#238）：移除移动端与搜索页重复的「排行榜」单列入口（保留搜索页右上角与桌面侧栏「排行榜」），在移动端与桌面端统一展示「最近上新」「热门推荐」「专题」「标签」2×2 等宽卡片；「最近上新」「热门推荐」优先解析官网 /newest/ 与 /recommend/ 服务端渲染页面（失败时按 /api/videos?sort=new|hot 回退），支持自动分页与切线重载。\n2. 「我的 → 收藏 → 短剧」排序与已完结封面标签（#235、#239）：在「我的收藏 → 短剧」新增「最近添加」「最近更新」「完结进度」（点击可切换「已完结优先 ↕」/「更新中优先 ↕」）排序，切到更新/完结排序时自动分批补齐全部收藏详情；全站剧集卡片在左上角按「原创」「热播」「新片」「完结」显示角标，「我的」页已完结短剧使用绿色封面标签（兼有未看新集时并行显示「新更 N 集」与「完结」角标）。\n3. 搜索页左右滑动切 Tab 与底栏快捷复位（#230、#234）：搜索结果支持左右滑动切换「视频 / 帖子」Tab（未提交查询时不拦截横向手势）；在移动端底栏再次点击激活的「搜索」可一键清空结果并回到热搜与历史界面，且不主动弹出软键盘。\n4. 全屏双击暂停显示当前集数提示（#236）：移动端全屏下双击暂…",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.8/HGhubX_2.2.8_ios.ipa",
+          "size": 4004198,
           "minOSVersion": "15.0",
-          "releaseTag": "v2.2.7",
-          "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.2.7"
+          "releaseTag": "v2.2.8",
+          "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.2.8"
         }
       ],
-      "version": "2.2.7",
-      "versionDate": "2026-11-22",
-      "versionDescription": "HGhubX v2.2.7\n\n围绕搜索与排行榜、标签排序、吃瓜正文站内视频直达及播放器全屏交互稳定性打磨体验，并新增 Android 13+ Material You 动态主题图标适配；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. Android 13+ Material You 动态主题图标（#216）：补充 108dp × 108dp 纯单色自适应矢量图层（ic_launcher_monochrome.xml）及圆角/默认自适应配置，支持 Android 13+ 启动器按壁纸动态着色，同时保持 Android 8–12 与既有彩色桌面图标外观不变。\n2. 搜索热搜榜官网同步与单行紧凑布局（#221、#225）：搜索页热搜请求改为直连干净路径 {base}/search/（移除防缓存查询串），与官网 CDN 边缘快照条目、名次及播放量保持同源同序；卡片布局调整为「序号 + 单行省略片名 + 右对齐播放量 + 右箭头」的官网紧凑单行样式。\n3. 视频页操作区与全屏交互打磨（#217、#218、#219、#220）：统一视频页顶部「搜短剧」与清晰度徽标高度及基线对齐；右侧评论入口改为与点赞/收藏一致的空心线条图标；点赞、收藏、关注共用 playback-hint 提示单槽位避免连续点击堆叠；全屏锁屏图标改为随闲置控件同步自动隐藏。\n修复\n1. 排行榜「热播榜」与官网实时热度不同步（#221、#226）：修正匿名 JSON /api/ranks/hot 返回历史累计总榜导致的内容偏差，热播榜改为优先解析官网 /ranks/ho…",
-      "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.7/HGhubX_2.2.7_ios.ipa",
-      "size": 3992968,
+      "version": "2.2.8",
+      "versionDate": "2026-11-23",
+      "versionDescription": "HGhubX v2.2.8\n\n围绕分类导航快捷入口、搜索交互、吃瓜列表官网同步、「我的收藏」排序与已完结封面标签以及播放器全屏暂停提示打磨体验；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. 分类总览 2×2 快捷入口并接入「最近上新」「热门推荐」（#233、#238）：移除移动端与搜索页重复的「排行榜」单列入口（保留搜索页右上角与桌面侧栏「排行榜」），在移动端与桌面端统一展示「最近上新」「热门推荐」「专题」「标签」2×2 等宽卡片；「最近上新」「热门推荐」优先解析官网 /newest/ 与 /recommend/ 服务端渲染页面（失败时按 /api/videos?sort=new|hot 回退），支持自动分页与切线重载。\n2. 「我的 → 收藏 → 短剧」排序与已完结封面标签（#235、#239）：在「我的收藏 → 短剧」新增「最近添加」「最近更新」「完结进度」（点击可切换「已完结优先 ↕」/「更新中优先 ↕」）排序，切到更新/完结排序时自动分批补齐全部收藏详情；全站剧集卡片在左上角按「原创」「热播」「新片」「完结」显示角标，「我的」页已完结短剧使用绿色封面标签（兼有未看新集时并行显示「新更 N 集」与「完结」角标）。\n3. 搜索页左右滑动切 Tab 与底栏快捷复位（#230、#234）：搜索结果支持左右滑动切换「视频 / 帖子」Tab（未提交查询时不拦截横向手势）；在移动端底栏再次点击激活的「搜索」可一键清空结果并回到热搜与历史界面，且不主动弹出软键盘。\n4. 全屏双击暂停显示当前集数提示（#236）：移动端全屏下双击暂…",
+      "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.8/HGhubX_2.2.8_ios.ipa",
+      "size": 4004198,
       "minOSVersion": "15.0"
     },
     {
@@ -1473,7 +1473,7 @@
       "developerName": "CyrilPeng",
       "subtitle": "支持 WebDAV 同步的漫画阅读器",
       "localizedDescription": "Venera 的 fork 分支，基于 Flutter 的跨平台漫画阅读器，支持本地漫画与网络漫画源，覆盖 iOS / Android / Windows / Linux / macOS。核心思路是尽量减少打断阅读：长篇作品可用瀑布流跨章节连续阅读，支持收藏、追更、离线下载，并能通过 WebDAV 在多台设备之间同步数据。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/CyrilPeng/Venera-Next",
-      "iconURL": "https://raw.githubusercontent.com/CyrilPeng/Venera-Next/v1.18.3/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
+      "iconURL": "https://raw.githubusercontent.com/CyrilPeng/Venera-Next/v1.18.4/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
       "tintColor": "#2090E0",
       "category": "books",
       "appPermissions": {
@@ -1485,41 +1485,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "1.18.3",
-              "date": "2026-11-07",
-              "publishedAt": "2026-11-07T18:10:18Z",
-              "buildVersion": "249",
-              "buildNumber": "249",
-              "localizedDescription": "正式版与升级\n\n- 发布正式版 1.18.3+249，集中交付收藏操作、目录导航、归档兼容和依赖解耦后的构建，运行时代码沿用已验收的 RC3。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 与鸿蒙从同一正式版提交重新构建；保留历史标签，不复用或重命名候选安装包。\n- 稳定更新渠道推进至本版；AltStore 与 Winget 元数据依据实际公开安装包更新，Winget 公共源收录需等待 Microsoft 审核。iOS IPA 与鸿蒙 HAP 仍需自行签名侧载。\n- 升级前导出并另存完整应用数据备份，保留原漫画文件。共享 WebDAV 数据的设备统一使用兼容版本；回退使用升级前的备份，不让旧版覆盖新版收藏库。覆盖升级保留原数据，无需清库或重新导入。\n鸿蒙随版分发\n\n- 正式版继续包含同版本的鸿蒙 ARM64 未签名测试版 HAP、harmonyos-manifest.json、harmonyos-SHA256SUMS 和中英文安装指南。应用源码与平台适配统一在 main；普通平台使用官方 Flutter 和根锁，鸿蒙使用独立固定 Flutter OH SDK、CPF 覆盖与受控锁模板。\n- 鸿蒙应用为 VeneraNext (HarmonyOS Beta)，包名为 com.github.cyrilpeng.veneranext.harmony，最低／目标 SDK 为 API 26，版本为 1.18.3，构建号为 249。升级须沿用原签名身份／密钥，同一助手或账号不保证同一把密钥。\n- 鸿蒙本地导入支持系统提供的目录选择、多选归档，…",
-              "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.3/VeneraNext-ios-1.18.3%2B249.ipa",
-              "size": 21467556,
+              "version": "1.18.4",
+              "date": "2026-11-23",
+              "publishedAt": "2026-11-23T03:27:29Z",
+              "buildVersion": "253",
+              "buildNumber": "253",
+              "localizedDescription": "正式发布与验收\n\n- 发布 1.18.4+253，汇总 RC1–RC3 和后续反馈修复。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 从同一正式标签重新构建，公开并核验后推进稳定更新渠道、AltStore 和 Winget 元数据。\n- 鸿蒙改为独立 Actions Beta 分发，继续从准确主线提交构建 ARM64／API 26 未签名 HAP，提供来源 manifest、校验值和独立设备验收模板；本次正式 Release 不附带 HAP，也不声明鸿蒙真机验收通过。历史 RC、正式版及其鸿蒙附件保持原样。\n- #178 的 Android 120 Hz 连续翻页和 #188 的收藏目录切换已获提出者明确确认；#129、#152 已交付可安装修复且超过 72 小时未收到新的失败反馈，按约定接受，不将超时视为真机确认。\n- #166 的强 Cloudflare／TLS 兼容问题及 #186 原设备更新检查网络故障因缺少充分证据暂缓，相关异常处理与诊断改进不代表原始问题已修复。白边裁剪仍会保留带扫描痕迹、压缩灰点或靠边内容的区域；#159 长期外部目录及 #163、#81、#123 等增强继续后续安排。\n- 升级前导出并另存完整应用数据备份、保留原漫画文件；沿用原包名与签名身份覆盖安装，无需清库或重新导入。鸿蒙独立 Beta 仍需用户沿用原密钥自行签装。\n候选版已交付的功能与修复\n\n- 阅读器提供「锁定阅读菜单」和靠边小锁，锁定期间阻止触摸／右键唤出菜单，保留翻页、滚动、缩放，跨章与旋转保持锁定；TV 确定键先解锁，再次操作打开菜单…",
+              "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.4/VeneraNext-ios-1.18.4%2B253.ipa",
+              "size": 21589601,
               "minOSVersion": "14.0",
-              "releaseTag": "v1.18.3",
-              "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.18.3"
+              "releaseTag": "v1.18.4",
+              "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.18.4"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "1.18.3",
-          "date": "2026-11-07",
-          "publishedAt": "2026-11-07T18:10:18Z",
-          "buildVersion": "249",
-          "buildNumber": "249",
-          "localizedDescription": "正式版与升级\n\n- 发布正式版 1.18.3+249，集中交付收藏操作、目录导航、归档兼容和依赖解耦后的构建，运行时代码沿用已验收的 RC3。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 与鸿蒙从同一正式版提交重新构建；保留历史标签，不复用或重命名候选安装包。\n- 稳定更新渠道推进至本版；AltStore 与 Winget 元数据依据实际公开安装包更新，Winget 公共源收录需等待 Microsoft 审核。iOS IPA 与鸿蒙 HAP 仍需自行签名侧载。\n- 升级前导出并另存完整应用数据备份，保留原漫画文件。共享 WebDAV 数据的设备统一使用兼容版本；回退使用升级前的备份，不让旧版覆盖新版收藏库。覆盖升级保留原数据，无需清库或重新导入。\n鸿蒙随版分发\n\n- 正式版继续包含同版本的鸿蒙 ARM64 未签名测试版 HAP、harmonyos-manifest.json、harmonyos-SHA256SUMS 和中英文安装指南。应用源码与平台适配统一在 main；普通平台使用官方 Flutter 和根锁，鸿蒙使用独立固定 Flutter OH SDK、CPF 覆盖与受控锁模板。\n- 鸿蒙应用为 VeneraNext (HarmonyOS Beta)，包名为 com.github.cyrilpeng.veneranext.harmony，最低／目标 SDK 为 API 26，版本为 1.18.3，构建号为 249。升级须沿用原签名身份／密钥，同一助手或账号不保证同一把密钥。\n- 鸿蒙本地导入支持系统提供的目录选择、多选归档，…",
-          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.3/VeneraNext-ios-1.18.3%2B249.ipa",
-          "size": 21467556,
+          "version": "1.18.4",
+          "date": "2026-11-23",
+          "publishedAt": "2026-11-23T03:27:29Z",
+          "buildVersion": "253",
+          "buildNumber": "253",
+          "localizedDescription": "正式发布与验收\n\n- 发布 1.18.4+253，汇总 RC1–RC3 和后续反馈修复。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 从同一正式标签重新构建，公开并核验后推进稳定更新渠道、AltStore 和 Winget 元数据。\n- 鸿蒙改为独立 Actions Beta 分发，继续从准确主线提交构建 ARM64／API 26 未签名 HAP，提供来源 manifest、校验值和独立设备验收模板；本次正式 Release 不附带 HAP，也不声明鸿蒙真机验收通过。历史 RC、正式版及其鸿蒙附件保持原样。\n- #178 的 Android 120 Hz 连续翻页和 #188 的收藏目录切换已获提出者明确确认；#129、#152 已交付可安装修复且超过 72 小时未收到新的失败反馈，按约定接受，不将超时视为真机确认。\n- #166 的强 Cloudflare／TLS 兼容问题及 #186 原设备更新检查网络故障因缺少充分证据暂缓，相关异常处理与诊断改进不代表原始问题已修复。白边裁剪仍会保留带扫描痕迹、压缩灰点或靠边内容的区域；#159 长期外部目录及 #163、#81、#123 等增强继续后续安排。\n- 升级前导出并另存完整应用数据备份、保留原漫画文件；沿用原包名与签名身份覆盖安装，无需清库或重新导入。鸿蒙独立 Beta 仍需用户沿用原密钥自行签装。\n候选版已交付的功能与修复\n\n- 阅读器提供「锁定阅读菜单」和靠边小锁，锁定期间阻止触摸／右键唤出菜单，保留翻页、滚动、缩放，跨章与旋转保持锁定；TV 确定键先解锁，再次操作打开菜单…",
+          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.4/VeneraNext-ios-1.18.4%2B253.ipa",
+          "size": 21589601,
           "minOSVersion": "14.0",
-          "releaseTag": "v1.18.3",
-          "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.18.3"
+          "releaseTag": "v1.18.4",
+          "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.18.4"
         }
       ],
-      "version": "1.18.3",
-      "versionDate": "2026-11-07",
-      "versionDescription": "正式版与升级\n\n- 发布正式版 1.18.3+249，集中交付收藏操作、目录导航、归档兼容和依赖解耦后的构建，运行时代码沿用已验收的 RC3。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 与鸿蒙从同一正式版提交重新构建；保留历史标签，不复用或重命名候选安装包。\n- 稳定更新渠道推进至本版；AltStore 与 Winget 元数据依据实际公开安装包更新，Winget 公共源收录需等待 Microsoft 审核。iOS IPA 与鸿蒙 HAP 仍需自行签名侧载。\n- 升级前导出并另存完整应用数据备份，保留原漫画文件。共享 WebDAV 数据的设备统一使用兼容版本；回退使用升级前的备份，不让旧版覆盖新版收藏库。覆盖升级保留原数据，无需清库或重新导入。\n鸿蒙随版分发\n\n- 正式版继续包含同版本的鸿蒙 ARM64 未签名测试版 HAP、harmonyos-manifest.json、harmonyos-SHA256SUMS 和中英文安装指南。应用源码与平台适配统一在 main；普通平台使用官方 Flutter 和根锁，鸿蒙使用独立固定 Flutter OH SDK、CPF 覆盖与受控锁模板。\n- 鸿蒙应用为 VeneraNext (HarmonyOS Beta)，包名为 com.github.cyrilpeng.veneranext.harmony，最低／目标 SDK 为 API 26，版本为 1.18.3，构建号为 249。升级须沿用原签名身份／密钥，同一助手或账号不保证同一把密钥。\n- 鸿蒙本地导入支持系统提供的目录选择、多选归档，…",
-      "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.3/VeneraNext-ios-1.18.3%2B249.ipa",
-      "size": 21467556,
+      "version": "1.18.4",
+      "versionDate": "2026-11-23",
+      "versionDescription": "正式发布与验收\n\n- 发布 1.18.4+253，汇总 RC1–RC3 和后续反馈修复。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 从同一正式标签重新构建，公开并核验后推进稳定更新渠道、AltStore 和 Winget 元数据。\n- 鸿蒙改为独立 Actions Beta 分发，继续从准确主线提交构建 ARM64／API 26 未签名 HAP，提供来源 manifest、校验值和独立设备验收模板；本次正式 Release 不附带 HAP，也不声明鸿蒙真机验收通过。历史 RC、正式版及其鸿蒙附件保持原样。\n- #178 的 Android 120 Hz 连续翻页和 #188 的收藏目录切换已获提出者明确确认；#129、#152 已交付可安装修复且超过 72 小时未收到新的失败反馈，按约定接受，不将超时视为真机确认。\n- #166 的强 Cloudflare／TLS 兼容问题及 #186 原设备更新检查网络故障因缺少充分证据暂缓，相关异常处理与诊断改进不代表原始问题已修复。白边裁剪仍会保留带扫描痕迹、压缩灰点或靠边内容的区域；#159 长期外部目录及 #163、#81、#123 等增强继续后续安排。\n- 升级前导出并另存完整应用数据备份、保留原漫画文件；沿用原包名与签名身份覆盖安装，无需清库或重新导入。鸿蒙独立 Beta 仍需用户沿用原密钥自行签装。\n候选版已交付的功能与修复\n\n- 阅读器提供「锁定阅读菜单」和靠边小锁，锁定期间阻止触摸／右键唤出菜单，保留翻页、滚动、缩放，跨章与旋转保持锁定；TV 确定键先解锁，再次操作打开菜单…",
+      "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.4/VeneraNext-ios-1.18.4%2B253.ipa",
+      "size": 21589601,
       "minOSVersion": "14.0"
     },
     {
@@ -1697,7 +1697,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 30 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-11-22",
+      "date": "2026-11-23",
       "tintColor": "#7C5CFF",
       "notify": false
     }

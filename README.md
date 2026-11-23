@@ -59,7 +59,7 @@ https://github.com/laincat/AltStore/releases/download/latest/apps.json
 | GestaltEdit | `me.ssus.gestaltedit` | 2.3.1 | iOS 26.0+ | 无 | [frs0n/GestaltEdit](https://github.com/frs0n/GestaltEdit) |
 | GestaltX | `com.huami.gestultx` | 1.1.1 | iOS 26.0+ | 无 | [huamidev/GestaltX](https://github.com/huamidev/GestaltX) |
 | HentaiPark | `com.hentaipark.hentaiPark` | 0.15.4 | iOS 15.0+ | 无 | [drdon1234/Hentai-Park](https://github.com/drdon1234/Hentai-Park) |
-| HGhubX | `com.hghubx.app` | 2.2.7 | iOS 15.0+ | 无 | [zxsos/HGhubX](https://github.com/zxsos/HGhubX) |
+| HGhubX | `com.hghubx.app` | 2.2.8 | iOS 15.0+ | 无 | [zxsos/HGhubX](https://github.com/zxsos/HGhubX) |
 | INSAV | `com.ios151.insav` | 1.3.1 | iOS 16.0+ | 无 | [ios151/Insav-releases](https://github.com/ios151/Insav-releases) |
 | Kazumi | `com.example.kazumi` | 2.4.6 | iOS 15.0+ | 无 | [Predidit/Kazumi](https://github.com/Predidit/Kazumi) |
 | Nekularity | `com.laincat.nekularity` | 0.4.9 | iOS 26.0+ | 无 | [laincat/Nekularity](https://github.com/laincat/Nekularity) |
@@ -70,7 +70,7 @@ https://github.com/laincat/AltStore/releases/download/latest/apps.json
 | Swipt | `io.nekohasekai.swipt` | 0.1.0 | iOS 16.4+ | 无 | [swipt-automation/swipt](https://github.com/swipt-automation/swipt) |
 | Venera Prime | `com.github.wgh136.venera.prime` | 2.8.1 | iOS 14.0+ | 无 | [venera-app/venera-prime](https://github.com/venera-app/venera-prime) |
 | Venera-SSR | `com.github.kiastr.venera-ssr` | 2.1.5 | iOS 14.0+ | 无 | [Kiastr/Venera-SSR](https://github.com/Kiastr/Venera-SSR) |
-| VeneraNext | `com.github.cyrilpeng.veneranext` | 1.18.3 | iOS 14.0+ | 无 | [CyrilPeng/Venera-Next](https://github.com/CyrilPeng/Venera-Next) |
+| VeneraNext | `com.github.cyrilpeng.veneranext` | 1.18.4 | iOS 14.0+ | 无 | [CyrilPeng/Venera-Next](https://github.com/CyrilPeng/Venera-Next) |
 | VeneraX | `io.github.kyosee.venera` | 3.0.1 | iOS 15.1+ | 无 | [Kyosee/VeneraX](https://github.com/Kyosee/VeneraX) |
 | 大富翁4重制版 | `pro.areu.rich4` | 1.2.4 | iOS 15.0+ | 无 | [iam567/rich4-renew-app](https://github.com/iam567/rich4-renew-app) |
 | 真果鉴 | `com.yingshib.xg` | 2.0.3 | iOS 15.1+ | 无 | [Xanerix/guoapp](https://github.com/Xanerix/guoapp) |
