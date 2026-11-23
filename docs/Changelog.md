@@ -5,6 +5,11 @@
 
 <!-- changelog:begin -->
 
+## 2026-11-23 10:39 (UTC+8)
+
+- **ARMSX2 Nightly** 2.6.0-nightly.20261122.1618 → 2.6.0-nightly.20261122.2300
+
+
 ## 2026-11-23 05:43 (UTC+8)
 
 - **ARMSX2 Nightly** 2.6.0-nightly.20261122.0919 → 2.6.0-nightly.20261122.1618

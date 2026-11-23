@@ -50,7 +50,7 @@ https://github.com/laincat/AltStore/releases/download/latest/apps.json
 | AniCh | `app.anich` | 1.5.27 | iOS 12.0+ | 无 | [Sle2p/AniCh](https://github.com/Sle2p/AniCh) |
 | AnimeFlow | `com.ligg.animeflow` | 2.7.0 | iOS 15.0+ | 无 | [openAnimeFlow/AnimeFlow](https://github.com/openAnimeFlow/AnimeFlow) |
 | Animeko | `org.animeko.animeko` | 6.4.1 | iOS 16.0+ | 6.4.0 | [open-ani/animeko](https://github.com/open-ani/animeko) |
-| ARMSX2 Nightly | `com.armsx2.ios.nightly` | 2.6.0-nightly.20261122.1618 | iOS 17.4+ | 无 | [ARMSX2/ARMSX2](https://github.com/ARMSX2/ARMSX2) |
+| ARMSX2 Nightly | `com.armsx2.ios.nightly` | 2.6.0-nightly.20261122.2300 | iOS 17.4+ | 无 | [ARMSX2/ARMSX2](https://github.com/ARMSX2/ARMSX2) |
 | ARMSX3 | `com.armsx3.ARMSX3` | 0.0.4 | iOS 17.4+ | 无 | [ARMSX2/ARMSX3](https://github.com/ARMSX2/ARMSX3) |
 | AvPlay | `com.javdb.avplay2` | 2.2.2 | iOS 15.3+ | 无 | [anonymousjav/AvPlayRelease](https://github.com/anonymousjav/AvPlayRelease) |
 | Breeze | `com.zephyr.breeze` | 3.1.0 | iOS 15.0+ | 无 | [breeze-project-org/Breeze](https://github.com/breeze-project-org/Breeze) |

@@ -21,20 +21,20 @@
     },
     {
       "tag": "test-pre",
-      "name": "HGhubX Test Preview (12ea8ce)",
+      "name": "HGhubX Test Preview (80fee6c)",
       "pre": true,
       "draft": false,
       "date": "2026-11-21",
       "published_at": "2026-11-21T16:49:36Z",
-      "body": "# HGhubX Test Preview\n\n基于 `main`（`666d6a4`）自动合成的全平台预览构建（更新时间：`2026-11-22T18:07:31Z`，测试提交：`12ea8ce`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（3）\n1. #230 修复搜索页“视频/帖子”Tab 不支持左右滑动（@makisekurisu-jp，`4cd57c5`）\n2. #232 fix(posts): sync gossip post list order from official SSR page (#231)（@zxsos，`ef8c581`）\n3. #236 全屏双击暂停时显示当前集提示（@makisekurisu-jp，`f2c5893`）\n\n## 自动跳过的 PR（1）\n- #234 fix(search): 点击底栏「搜索」复位搜索页（@makisekurisu-jp）：与当前测试基线存在代码冲突，已跳过\n",
+      "body": "# HGhubX Test Preview\n\n基于 `main`（`44a7d4d`）自动合成的全平台预览构建（更新时间：`2026-11-22T22:29:34Z`，测试提交：`80fee6c`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（1）\n1. #239 feat(profile,ui): add favorites sorting and finished cover badge (#235)（@zxsos，`0577963`）\n",
       "ipas": [
         {
           "name": "HGhubX_2.2.7_ios.ipa",
-          "size": 4105587,
+          "size": 4110983,
           "url": "https://github.com/zxsos/HGhubX/releases/download/test-pre/HGhubX_2.2.7_ios.ipa",
-          "id": 780005916,
-          "updated_at": "2026-11-22T18:19:46Z",
-          "digest": "sha256:fc45f9fccc57a6b24ced2e72f5c01c02390cd1b841b81b4af842d33ae507ddd4"
+          "id": 780706359,
+          "updated_at": "2026-11-22T22:43:33Z",
+          "digest": "sha256:378be6e4982c2655747671d5195cb1c940320003e1a8ecaf590e702b42fbeb10"
         }
       ]
     },
@@ -2300,13 +2300,21 @@
   "ARMSX2/ARMSX2": [
     {
       "tag": "nightly-20261122",
-      "name": "ARMSX2 nightly 20261122 (c9b6e89f34)",
+      "name": "ARMSX2 nightly 20261122 (6370337611)",
       "pre": true,
       "draft": false,
       "date": "2026-11-22",
       "published_at": "2026-11-22T06:28:24Z",
-      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- GameDB: VU1 clamp mode Extra for Tales of Destiny\n- GS/Vulkan: run program off on Qualcomm's driver\n- Comments: drop pointers to notes that are not in this tree\n- eerunner: --gamedb runs a no-disc savestate under a game's serial and CRC\n- eerunner: --dump-config loads --savestate first\n- eerunner: --nodisc boots with the tray empty and loads the savestate\n- Android: remove the live GS apply queue, which nothing calls\n- Android: queue settings applies on the CPU thread instead of waiting for them\n- Android: drop a trigger's duplicate key event whenever its axis moves (#674)\n- arm64: drop the blank line at the end of BaseblockEx-arm64.h\n- gsrunner: -panvk-bifrost puts PanVK's Bifrost paths on any Vulkan device\n- GS/Vulkan: neither load nor store a stenci",
+      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64.AppImage, for 4K, 16K and 64K page kernels alike\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- Android: describe what applyPadButton does with p_range\n- Android: drop unchanged USB pad reports on the reader thread\n- Android: rumble for a DualShock 3 under the USB takeover\n- Android: keep a DualShock 3 button pressed while its pressure reads 0\n- Android: native DualShock 3 button pressure over USB\n- Linux arm64: pad shared structures to 128 bytes, warn only on a smaller line\n- tests: drop host_page_test, its tests already run in common_test and recompiler_tests\n- Linux arm64: detect host page geometry at runtime\n- iOS: stop SettingsStore's init from starting GameSession\n- iOS: move the DEV9 settings into SettingsStore.Network\n- iOS: move the controller settings into SettingsStore.Controller\n- iOS: move the appearance preferences into SettingsStore.Appearance\n- iOS: make the setting descriptors static tables in their domain files\n- iOS: move the types and rang",
       "ipas": [
+        {
+          "name": "ARMSX2-nightly-20261122-6370337611-iOS-arm64.ipa",
+          "size": 40930252,
+          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261122/ARMSX2-nightly-20261122-6370337611-iOS-arm64.ipa",
+          "id": 780811276,
+          "updated_at": "2026-11-22T23:27:30Z",
+          "digest": "sha256:0dc77a3a9a287670c1b3230e1b9d5b4745262971765b1a3dd6bc58d9bdacac50"
+        },
         {
           "name": "ARMSX2-nightly-20261122-c9b6e89f34-iOS-arm64.ipa",
           "size": 40934970,
