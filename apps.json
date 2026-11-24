@@ -1322,12 +1322,12 @@
             {
               "version": "0.1.0",
               "date": "2026-11-24",
-              "publishedAt": "2026-11-24T10:08:34Z",
-              "buildVersion": "91",
-              "buildNumber": "91",
-              "localizedDescription": "🧪 预发布 nightly（2026-11-24）\n\n* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availability checks in CLI\n* Split automation runtime and host by target OS with API level 4\n* Unify internal/graphics with event-driven Darwin cancellation\n* Extract api.Publish and api.Device\n* Extract tailscale.Controller and rename login Wait to Complete\n* Extract internal/fault, internal/screen, and internal/selector\n* Avoid redundant SpringBoard reads when dismissing setup alerts\n* Fix sideload setup stalling on permission alerts and reopening Settings\n* Discover vphone virtual machi…",
+              "publishedAt": "2026-11-24T16:31:56Z",
+              "buildVersion": "94",
+              "buildNumber": "94",
+              "localizedDescription": "🧪 预发布 nightly（2026-11-24）\n\n* Remove 1-minute timeout from iOS JIT debugserver session\n* Add iOS JIT support to device, gRPC, JS API, and CLI\n* Discover wireless Android devices over mDNS\n* Fix secrets context in release_android job condition\n* Add Android release build and CI workflow\n* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availability checks in CLI\n* Split automation runtime and host by target OS with API level 4\n* Unify internal/graphics with event-driven Darwin cancellation\n* Extract api.Publish and api.Device\n* Extract tailscale.Controller and rename…",
               "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-              "size": 48245453,
+              "size": 48263153,
               "minOSVersion": "16.4",
               "releaseTag": "nightly",
               "source": "https://github.com/swipt-automation/swipt/releases/tag/nightly"
@@ -1339,12 +1339,12 @@
         {
           "version": "0.1.0",
           "date": "2026-11-24",
-          "publishedAt": "2026-11-24T10:08:34Z",
-          "buildVersion": "91",
-          "buildNumber": "91",
-          "localizedDescription": "🧪 预发布 nightly（2026-11-24）\n\n* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availability checks in CLI\n* Split automation runtime and host by target OS with API level 4\n* Unify internal/graphics with event-driven Darwin cancellation\n* Extract api.Publish and api.Device\n* Extract tailscale.Controller and rename login Wait to Complete\n* Extract internal/fault, internal/screen, and internal/selector\n* Avoid redundant SpringBoard reads when dismissing setup alerts\n* Fix sideload setup stalling on permission alerts and reopening Settings\n* Discover vphone virtual machi…",
+          "publishedAt": "2026-11-24T16:31:56Z",
+          "buildVersion": "94",
+          "buildNumber": "94",
+          "localizedDescription": "🧪 预发布 nightly（2026-11-24）\n\n* Remove 1-minute timeout from iOS JIT debugserver session\n* Add iOS JIT support to device, gRPC, JS API, and CLI\n* Discover wireless Android devices over mDNS\n* Fix secrets context in release_android job condition\n* Add Android release build and CI workflow\n* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availability checks in CLI\n* Split automation runtime and host by target OS with API level 4\n* Unify internal/graphics with event-driven Darwin cancellation\n* Extract api.Publish and api.Device\n* Extract tailscale.Controller and rename…",
           "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-          "size": 48245453,
+          "size": 48263153,
           "minOSVersion": "16.4",
           "releaseTag": "nightly",
           "source": "https://github.com/swipt-automation/swipt/releases/tag/nightly"
@@ -1352,9 +1352,9 @@
       ],
       "version": "0.1.0",
       "versionDate": "2026-11-24",
-      "versionDescription": "🧪 预发布 nightly（2026-11-24）\n\n* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availability checks in CLI\n* Split automation runtime and host by target OS with API level 4\n* Unify internal/graphics with event-driven Darwin cancellation\n* Extract api.Publish and api.Device\n* Extract tailscale.Controller and rename login Wait to Complete\n* Extract internal/fault, internal/screen, and internal/selector\n* Avoid redundant SpringBoard reads when dismissing setup alerts\n* Fix sideload setup stalling on permission alerts and reopening Settings\n* Discover vphone virtual machi…",
+      "versionDescription": "🧪 预发布 nightly（2026-11-24）\n\n* Remove 1-minute timeout from iOS JIT debugserver session\n* Add iOS JIT support to device, gRPC, JS API, and CLI\n* Discover wireless Android devices over mDNS\n* Fix secrets context in release_android job condition\n* Add Android release build and CI workflow\n* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availability checks in CLI\n* Split automation runtime and host by target OS with API level 4\n* Unify internal/graphics with event-driven Darwin cancellation\n* Extract api.Publish and api.Device\n* Extract tailscale.Controller and rename…",
       "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-      "size": 48245453,
+      "size": 48263153,
       "minOSVersion": "16.4"
     },
     {
@@ -1528,7 +1528,7 @@
       "developerName": "Kyosee",
       "subtitle": "多图源漫画阅读器",
       "localizedDescription": "原版 Venera 的个人维护增强分支，支持通过插件接入多种漫画图源，提供本地收藏、阅读进度同步等能力。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Kyosee/VeneraX",
-      "iconURL": "https://raw.githubusercontent.com/Kyosee/VeneraX/v3.0.1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Kyosee/VeneraX/v3.0.2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#4A8FE7",
       "category": "books",
       "appPermissions": {
@@ -1540,41 +1540,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "3.0.1",
-              "date": "2026-11-20",
-              "publishedAt": "2026-11-20T10:56:20Z",
-              "buildVersion": "260",
-              "buildNumber": "260",
-              "localizedDescription": "下载安装 / Downloads\n\n手动安装或更新请从下表选择完整安装包。 不确定 Android 架构时请选择通用 APK。\nFor manual installs or updates, choose a full package below. Use the universal APK if unsure of your Android architecture.\n\n> 本次更新请下载完整安装包。安装 3.0.1 后，后续版本可在有匹配补丁时使用增量更新。\n> Use a full package for this release. After installing 3.0.1, future updates can use matching incremental packages when available.\n\n| 平台 / Platform | 安装包 / Package | 其他版本 / Alternatives |\n| --- | --- | --- |\n| Android | 通用 APK / Universal | ARM64 · ARMv7 · x86_64 |\n| Windows | 安装版 / Installer | 便携版 / Portable ZIP |\n| macOS | DMG | — |\n| iOS | 未签名 IPA / Unsigned | — |\n| Linux | AppImage x86_64 · AppImage ARM64 | Debian x86_64 · Debian ARM64 · Arch x86_64 |\n| Har…",
-              "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-ios-3.0.1%2B260.ipa",
-              "size": 39632748,
+              "version": "3.0.2",
+              "date": "2026-11-24",
+              "publishedAt": "2026-11-24T14:57:44Z",
+              "buildVersion": "266",
+              "buildNumber": "266",
+              "localizedDescription": "下载安装 / Downloads\n\n手动安装或更新请从下表选择完整安装包。 不确定 Android 架构时请选择通用 APK。\nFor manual installs or updates, choose a full package below. Use the universal APK if unsure of your Android architecture.\n\n> .patch 和 update-manifest.json 仅供应用自动更新使用，无法直接安装，无需手动下载。\n> .patch files and update-manifest.json are for in-app updates only. They cannot be installed manually.\n\n| 平台 / Platform | 安装包 / Package | 其他版本 / Alternatives |\n| --- | --- | --- |\n| Android | 通用 APK / Universal | ARM64 · ARMv7 · x86_64 |\n| Windows | 安装版 / Installer | 便携版 / Portable ZIP |\n| macOS | DMG | — |\n| iOS | 未签名 IPA / Unsigned | — |\n| Linux | AppImage x86_64 · AppImage ARM64 | Debian x86_64 · Debian ARM64 · Arch x86_64 |\n| HarmonyOS | ARM64 真…",
+              "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.2/VeneraX-ios-3.0.2%2B266.ipa",
+              "size": 40285175,
               "minOSVersion": "15.1",
-              "releaseTag": "v3.0.1",
-              "source": "https://github.com/Kyosee/VeneraX/releases/tag/v3.0.1"
+              "releaseTag": "v3.0.2",
+              "source": "https://github.com/Kyosee/VeneraX/releases/tag/v3.0.2"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "3.0.1",
-          "date": "2026-11-20",
-          "publishedAt": "2026-11-20T10:56:20Z",
-          "buildVersion": "260",
-          "buildNumber": "260",
-          "localizedDescription": "下载安装 / Downloads\n\n手动安装或更新请从下表选择完整安装包。 不确定 Android 架构时请选择通用 APK。\nFor manual installs or updates, choose a full package below. Use the universal APK if unsure of your Android architecture.\n\n> 本次更新请下载完整安装包。安装 3.0.1 后，后续版本可在有匹配补丁时使用增量更新。\n> Use a full package for this release. After installing 3.0.1, future updates can use matching incremental packages when available.\n\n| 平台 / Platform | 安装包 / Package | 其他版本 / Alternatives |\n| --- | --- | --- |\n| Android | 通用 APK / Universal | ARM64 · ARMv7 · x86_64 |\n| Windows | 安装版 / Installer | 便携版 / Portable ZIP |\n| macOS | DMG | — |\n| iOS | 未签名 IPA / Unsigned | — |\n| Linux | AppImage x86_64 · AppImage ARM64 | Debian x86_64 · Debian ARM64 · Arch x86_64 |\n| Har…",
-          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-ios-3.0.1%2B260.ipa",
-          "size": 39632748,
+          "version": "3.0.2",
+          "date": "2026-11-24",
+          "publishedAt": "2026-11-24T14:57:44Z",
+          "buildVersion": "266",
+          "buildNumber": "266",
+          "localizedDescription": "下载安装 / Downloads\n\n手动安装或更新请从下表选择完整安装包。 不确定 Android 架构时请选择通用 APK。\nFor manual installs or updates, choose a full package below. Use the universal APK if unsure of your Android architecture.\n\n> .patch 和 update-manifest.json 仅供应用自动更新使用，无法直接安装，无需手动下载。\n> .patch files and update-manifest.json are for in-app updates only. They cannot be installed manually.\n\n| 平台 / Platform | 安装包 / Package | 其他版本 / Alternatives |\n| --- | --- | --- |\n| Android | 通用 APK / Universal | ARM64 · ARMv7 · x86_64 |\n| Windows | 安装版 / Installer | 便携版 / Portable ZIP |\n| macOS | DMG | — |\n| iOS | 未签名 IPA / Unsigned | — |\n| Linux | AppImage x86_64 · AppImage ARM64 | Debian x86_64 · Debian ARM64 · Arch x86_64 |\n| HarmonyOS | ARM64 真…",
+          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.2/VeneraX-ios-3.0.2%2B266.ipa",
+          "size": 40285175,
           "minOSVersion": "15.1",
-          "releaseTag": "v3.0.1",
-          "source": "https://github.com/Kyosee/VeneraX/releases/tag/v3.0.1"
+          "releaseTag": "v3.0.2",
+          "source": "https://github.com/Kyosee/VeneraX/releases/tag/v3.0.2"
         }
       ],
-      "version": "3.0.1",
-      "versionDate": "2026-11-20",
-      "versionDescription": "下载安装 / Downloads\n\n手动安装或更新请从下表选择完整安装包。 不确定 Android 架构时请选择通用 APK。\nFor manual installs or updates, choose a full package below. Use the universal APK if unsure of your Android architecture.\n\n> 本次更新请下载完整安装包。安装 3.0.1 后，后续版本可在有匹配补丁时使用增量更新。\n> Use a full package for this release. After installing 3.0.1, future updates can use matching incremental packages when available.\n\n| 平台 / Platform | 安装包 / Package | 其他版本 / Alternatives |\n| --- | --- | --- |\n| Android | 通用 APK / Universal | ARM64 · ARMv7 · x86_64 |\n| Windows | 安装版 / Installer | 便携版 / Portable ZIP |\n| macOS | DMG | — |\n| iOS | 未签名 IPA / Unsigned | — |\n| Linux | AppImage x86_64 · AppImage ARM64 | Debian x86_64 · Debian ARM64 · Arch x86_64 |\n| Har…",
-      "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-ios-3.0.1%2B260.ipa",
-      "size": 39632748,
+      "version": "3.0.2",
+      "versionDate": "2026-11-24",
+      "versionDescription": "下载安装 / Downloads\n\n手动安装或更新请从下表选择完整安装包。 不确定 Android 架构时请选择通用 APK。\nFor manual installs or updates, choose a full package below. Use the universal APK if unsure of your Android architecture.\n\n> .patch 和 update-manifest.json 仅供应用自动更新使用，无法直接安装，无需手动下载。\n> .patch files and update-manifest.json are for in-app updates only. They cannot be installed manually.\n\n| 平台 / Platform | 安装包 / Package | 其他版本 / Alternatives |\n| --- | --- | --- |\n| Android | 通用 APK / Universal | ARM64 · ARMv7 · x86_64 |\n| Windows | 安装版 / Installer | 便携版 / Portable ZIP |\n| macOS | DMG | — |\n| iOS | 未签名 IPA / Unsigned | — |\n| Linux | AppImage x86_64 · AppImage ARM64 | Debian x86_64 · Debian ARM64 · Arch x86_64 |\n| HarmonyOS | ARM64 真…",
+      "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.2/VeneraX-ios-3.0.2%2B266.ipa",
+      "size": 40285175,
       "minOSVersion": "15.1"
     },
     {

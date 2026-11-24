@@ -42,7 +42,7 @@
 | Venera Prime | 2.8.1 | 无 | 无预发布 |
 | Venera-SSR | 2.1.5 | 无 | 无预发布 |
 | VeneraNext | 1.18.4 | v1.18.4-rc.3 (2026-11-16) | 不收：未启用 nightly 轨道 |
-| VeneraX | 3.0.1 | mobile-3.0.2-beta.3 (2026-11-22) | 不收：该预发布没有 iOS 包 |
+| VeneraX | 3.0.2 | mobile-3.0.2-beta.3 (2026-11-22) | 不收：该预发布没有 iOS 包 |
 | 大富翁4重制版 | 1.2.4 | 无 | 无预发布 |
 | 真果鉴 | 2.0.3 | windows-native-deps (2026-11-04) | 不收：该预发布没有 iOS 包 |
 <!-- nightly:end -->
