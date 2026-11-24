@@ -30,7 +30,7 @@
 | GestaltEdit | 2.3.1 | 无 | 无预发布 |
 | GestaltX | 1.1.1 | 无 | 无预发布 |
 | HentaiPark | 0.15.4 | 无 | 无预发布 |
-| HGhubX | 2.2.9 | test-pre (2026-11-21) | 不收：比稳定版旧 |
+| HGhubX | 2.2.10 | test-pre (2026-11-21) | 不收：比稳定版旧 |
 | INSAV | 1.3.1 | 无 | 无预发布 |
 | Kazumi | 2.4.6 | 无 | 无预发布 |
 | Nekularity | 0.4.9 | 无 | 无预发布 |
@@ -38,7 +38,7 @@
 | PicaComic | 5.1.3 | 无 | 无预发布 |
 | PicaX | 1.2.5 | 无 | 无预发布 |
 | Placard | 2.0.3 | 无 | 无预发布 |
-| Swipt | 0.1.0 | nightly (2026-11-22) | 以预览版作为稳定版 |
+| Swipt | 0.1.0 | nightly (2026-11-24) | 以预览版作为稳定版 |
 | Venera Prime | 2.8.1 | 无 | 无预发布 |
 | Venera-SSR | 2.1.5 | 无 | 无预发布 |
 | VeneraNext | 1.18.4 | v1.18.4-rc.3 (2026-11-16) | 不收：未启用 nightly 轨道 |

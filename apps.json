@@ -880,41 +880,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.2.9",
+              "version": "2.2.10",
               "date": "2026-11-24",
-              "publishedAt": "2026-11-24T00:07:31Z",
-              "buildVersion": "2.2.9",
-              "buildNumber": "2.2.9",
-              "localizedDescription": "HGhubX v2.2.9\n\n重点修复 Android WebView 播放页合成器闪烁问题，并升级「我的收藏」单图标追剧状态筛选与频道/标签结果页指标排序；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. 「我的收藏 → 短剧」单图标追剧状态筛选与底栏快捷复位（#243）：收藏短剧右上角合并为单图标筛选胶囊，点击展开「追剧状态」菜单并展示「在追剧」「连载中」「已完结」及各自数量（三类允许重叠，按更新时间倒序稳定排列）；卡片统一只保留单个左上角角标随分类切换（「未看 N 集」/「更新至 N 集」/「全 N 集」）；移动端再次点击底栏激活中的「我的」可一键复位回「我的收藏 / 短剧 / 全部收藏」并回到顶部。\n2. 分类频道与标签结果页指标排序（#244）：原创、AI 短剧、AI 漫剧频道及标签结果页短剧区块右侧新增排序入口，支持按「点赞数」「收藏数」「播放数」「评分」降序/升序切换（再次点击当前指标反转方向，切 Tab 保留当前指标），通过 jsonOnly 抓取完整结果并按 20 条渐进渲染，不影响标签页吃瓜帖。\n修复\n1. Android 播放页画面闪烁与瓦片异常（#240、#242）：针对 Android WebView（Skia/Viz）在硬件 <video> 上方叠加高半径模糊与持久动画层引发的闪烁问题，在 .plat-android 播放页关闭压在视频上的 backdrop-filter（改用等价半透明深色底），移除被遮盖的 blur-3xl 与未缩放时的 3D translate3d，仅在活跃条目渲染 FeedI…",
-              "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.9/HGhubX_2.2.9_ios.ipa",
-              "size": 4009527,
+              "publishedAt": "2026-11-24T10:16:05Z",
+              "buildVersion": "2.2.10",
+              "buildNumber": "2.2.10",
+              "localizedDescription": "HGhubX v2.2.10\n\n紧急适配上游全新 dx150-edge-v1 四作用域加密网关修复全接口 503，并合入标签置顶、右半屏长按倍速胶囊、搜索页热门标签官网同步、网络切换静默恢复、完结剧集「全 N 集」与窄屏布局修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. 标签页长按置顶与标签结果页标题栏置顶（#247、#252）：在「分类 → 标签」顶部新增「置顶标签」板块，支持长按标签 600ms 切换置顶/取消（最多 24 个，横向拖动超过 10px 取消防误触）；进入任意标签结果页后，标题栏右侧新增图钉按钮一键置顶（已置顶朝下扎稳并高亮），状态保存在内容偏好 pinnedTags 并跨重启保留。\n2. 移动端右半屏长按倍速与顶部只读胶囊提示（#247、#251）：长按手势取消对角线斜切与居中死区，改为直觉的左右半屏切分（右半屏 2× 倍速、左半屏 0.5× 慢放，起手延迟缩至 260ms，横滑 68px 换挡，松手即恢复不锁定）；长按激活期间在安全区顶部居中显示无 backdrop-filter 的只读倍速胶囊与挡位点，清屏模式下也有清晰视觉反馈。\n3. 搜索结果 / 分类 / 标签卡片完结剧集显示「全 N 集」（#248）：已完结剧目在海报底部集数角标统一显示「全 N 集」（优先取 total_episodes，缺失时回退 episode_count），未完结剧目保持原有更新集数文案。\n修复\n1. 适配上游 dx150-edge-v1 四作用域加密网关，修复接口全 503（#255、#256）：上游于 2026…",
+              "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.10/HGhubX_2.2.10_ios.ipa",
+              "size": 4048150,
               "minOSVersion": "15.0",
-              "releaseTag": "v2.2.9",
-              "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.2.9"
+              "releaseTag": "v2.2.10",
+              "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.2.10"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.2.9",
+          "version": "2.2.10",
           "date": "2026-11-24",
-          "publishedAt": "2026-11-24T00:07:31Z",
-          "buildVersion": "2.2.9",
-          "buildNumber": "2.2.9",
-          "localizedDescription": "HGhubX v2.2.9\n\n重点修复 Android WebView 播放页合成器闪烁问题，并升级「我的收藏」单图标追剧状态筛选与频道/标签结果页指标排序；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. 「我的收藏 → 短剧」单图标追剧状态筛选与底栏快捷复位（#243）：收藏短剧右上角合并为单图标筛选胶囊，点击展开「追剧状态」菜单并展示「在追剧」「连载中」「已完结」及各自数量（三类允许重叠，按更新时间倒序稳定排列）；卡片统一只保留单个左上角角标随分类切换（「未看 N 集」/「更新至 N 集」/「全 N 集」）；移动端再次点击底栏激活中的「我的」可一键复位回「我的收藏 / 短剧 / 全部收藏」并回到顶部。\n2. 分类频道与标签结果页指标排序（#244）：原创、AI 短剧、AI 漫剧频道及标签结果页短剧区块右侧新增排序入口，支持按「点赞数」「收藏数」「播放数」「评分」降序/升序切换（再次点击当前指标反转方向，切 Tab 保留当前指标），通过 jsonOnly 抓取完整结果并按 20 条渐进渲染，不影响标签页吃瓜帖。\n修复\n1. Android 播放页画面闪烁与瓦片异常（#240、#242）：针对 Android WebView（Skia/Viz）在硬件 <video> 上方叠加高半径模糊与持久动画层引发的闪烁问题，在 .plat-android 播放页关闭压在视频上的 backdrop-filter（改用等价半透明深色底），移除被遮盖的 blur-3xl 与未缩放时的 3D translate3d，仅在活跃条目渲染 FeedI…",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.9/HGhubX_2.2.9_ios.ipa",
-          "size": 4009527,
+          "publishedAt": "2026-11-24T10:16:05Z",
+          "buildVersion": "2.2.10",
+          "buildNumber": "2.2.10",
+          "localizedDescription": "HGhubX v2.2.10\n\n紧急适配上游全新 dx150-edge-v1 四作用域加密网关修复全接口 503，并合入标签置顶、右半屏长按倍速胶囊、搜索页热门标签官网同步、网络切换静默恢复、完结剧集「全 N 集」与窄屏布局修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. 标签页长按置顶与标签结果页标题栏置顶（#247、#252）：在「分类 → 标签」顶部新增「置顶标签」板块，支持长按标签 600ms 切换置顶/取消（最多 24 个，横向拖动超过 10px 取消防误触）；进入任意标签结果页后，标题栏右侧新增图钉按钮一键置顶（已置顶朝下扎稳并高亮），状态保存在内容偏好 pinnedTags 并跨重启保留。\n2. 移动端右半屏长按倍速与顶部只读胶囊提示（#247、#251）：长按手势取消对角线斜切与居中死区，改为直觉的左右半屏切分（右半屏 2× 倍速、左半屏 0.5× 慢放，起手延迟缩至 260ms，横滑 68px 换挡，松手即恢复不锁定）；长按激活期间在安全区顶部居中显示无 backdrop-filter 的只读倍速胶囊与挡位点，清屏模式下也有清晰视觉反馈。\n3. 搜索结果 / 分类 / 标签卡片完结剧集显示「全 N 集」（#248）：已完结剧目在海报底部集数角标统一显示「全 N 集」（优先取 total_episodes，缺失时回退 episode_count），未完结剧目保持原有更新集数文案。\n修复\n1. 适配上游 dx150-edge-v1 四作用域加密网关，修复接口全 503（#255、#256）：上游于 2026…",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.10/HGhubX_2.2.10_ios.ipa",
+          "size": 4048150,
           "minOSVersion": "15.0",
-          "releaseTag": "v2.2.9",
-          "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.2.9"
+          "releaseTag": "v2.2.10",
+          "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.2.10"
         }
       ],
-      "version": "2.2.9",
+      "version": "2.2.10",
       "versionDate": "2026-11-24",
-      "versionDescription": "HGhubX v2.2.9\n\n重点修复 Android WebView 播放页合成器闪烁问题，并升级「我的收藏」单图标追剧状态筛选与频道/标签结果页指标排序；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. 「我的收藏 → 短剧」单图标追剧状态筛选与底栏快捷复位（#243）：收藏短剧右上角合并为单图标筛选胶囊，点击展开「追剧状态」菜单并展示「在追剧」「连载中」「已完结」及各自数量（三类允许重叠，按更新时间倒序稳定排列）；卡片统一只保留单个左上角角标随分类切换（「未看 N 集」/「更新至 N 集」/「全 N 集」）；移动端再次点击底栏激活中的「我的」可一键复位回「我的收藏 / 短剧 / 全部收藏」并回到顶部。\n2. 分类频道与标签结果页指标排序（#244）：原创、AI 短剧、AI 漫剧频道及标签结果页短剧区块右侧新增排序入口，支持按「点赞数」「收藏数」「播放数」「评分」降序/升序切换（再次点击当前指标反转方向，切 Tab 保留当前指标），通过 jsonOnly 抓取完整结果并按 20 条渐进渲染，不影响标签页吃瓜帖。\n修复\n1. Android 播放页画面闪烁与瓦片异常（#240、#242）：针对 Android WebView（Skia/Viz）在硬件 <video> 上方叠加高半径模糊与持久动画层引发的闪烁问题，在 .plat-android 播放页关闭压在视频上的 backdrop-filter（改用等价半透明深色底），移除被遮盖的 blur-3xl 与未缩放时的 3D translate3d，仅在活跃条目渲染 FeedI…",
-      "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.9/HGhubX_2.2.9_ios.ipa",
-      "size": 4009527,
+      "versionDescription": "HGhubX v2.2.10\n\n紧急适配上游全新 dx150-edge-v1 四作用域加密网关修复全接口 503，并合入标签置顶、右半屏长按倍速胶囊、搜索页热门标签官网同步、网络切换静默恢复、完结剧集「全 N 集」与窄屏布局修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. 标签页长按置顶与标签结果页标题栏置顶（#247、#252）：在「分类 → 标签」顶部新增「置顶标签」板块，支持长按标签 600ms 切换置顶/取消（最多 24 个，横向拖动超过 10px 取消防误触）；进入任意标签结果页后，标题栏右侧新增图钉按钮一键置顶（已置顶朝下扎稳并高亮），状态保存在内容偏好 pinnedTags 并跨重启保留。\n2. 移动端右半屏长按倍速与顶部只读胶囊提示（#247、#251）：长按手势取消对角线斜切与居中死区，改为直觉的左右半屏切分（右半屏 2× 倍速、左半屏 0.5× 慢放，起手延迟缩至 260ms，横滑 68px 换挡，松手即恢复不锁定）；长按激活期间在安全区顶部居中显示无 backdrop-filter 的只读倍速胶囊与挡位点，清屏模式下也有清晰视觉反馈。\n3. 搜索结果 / 分类 / 标签卡片完结剧集显示「全 N 集」（#248）：已完结剧目在海报底部集数角标统一显示「全 N 集」（优先取 total_episodes，缺失时回退 episode_count），未完结剧目保持原有更新集数文案。\n修复\n1. 适配上游 dx150-edge-v1 四作用域加密网关，修复接口全 503（#255、#256）：上游于 2026…",
+      "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.10/HGhubX_2.2.10_ios.ipa",
+      "size": 4048150,
       "minOSVersion": "15.0"
     },
     {
@@ -1321,13 +1321,13 @@
           "releases": [
             {
               "version": "0.1.0",
-              "date": "2026-11-22",
-              "publishedAt": "2026-11-22T15:13:53Z",
-              "buildVersion": "90",
-              "buildNumber": "90",
-              "localizedDescription": "🧪 预发布 nightly（2026-11-22）\n\n* Avoid redundant SpringBoard reads when dismissing setup alerts\n* Fix sideload setup stalling on permission alerts and reopening Settings\n* Discover vphone virtual machines without Launchpad\n* Request unicast mDNS responses in the CLI\n* Replace polling loops with event-driven notifications\n* Fix sideload setup opening Settings after the Always location alert\n* Stream discovered devices into the CLI device picker\n* Request Always location access for the background service\n* Fix pairing, language updates and container SQLite in the driver\n* Fix cellular data being detected on Wi-Fi\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the…",
+              "date": "2026-11-24",
+              "publishedAt": "2026-11-24T10:08:34Z",
+              "buildVersion": "91",
+              "buildNumber": "91",
+              "localizedDescription": "🧪 预发布 nightly（2026-11-24）\n\n* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availability checks in CLI\n* Split automation runtime and host by target OS with API level 4\n* Unify internal/graphics with event-driven Darwin cancellation\n* Extract api.Publish and api.Device\n* Extract tailscale.Controller and rename login Wait to Complete\n* Extract internal/fault, internal/screen, and internal/selector\n* Avoid redundant SpringBoard reads when dismissing setup alerts\n* Fix sideload setup stalling on permission alerts and reopening Settings\n* Discover vphone virtual machi…",
               "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-              "size": 48185875,
+              "size": 48245453,
               "minOSVersion": "16.4",
               "releaseTag": "nightly",
               "source": "https://github.com/swipt-automation/swipt/releases/tag/nightly"
@@ -1338,23 +1338,23 @@
       "versions": [
         {
           "version": "0.1.0",
-          "date": "2026-11-22",
-          "publishedAt": "2026-11-22T15:13:53Z",
-          "buildVersion": "90",
-          "buildNumber": "90",
-          "localizedDescription": "🧪 预发布 nightly（2026-11-22）\n\n* Avoid redundant SpringBoard reads when dismissing setup alerts\n* Fix sideload setup stalling on permission alerts and reopening Settings\n* Discover vphone virtual machines without Launchpad\n* Request unicast mDNS responses in the CLI\n* Replace polling loops with event-driven notifications\n* Fix sideload setup opening Settings after the Always location alert\n* Stream discovered devices into the CLI device picker\n* Request Always location access for the background service\n* Fix pairing, language updates and container SQLite in the driver\n* Fix cellular data being detected on Wi-Fi\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the…",
+          "date": "2026-11-24",
+          "publishedAt": "2026-11-24T10:08:34Z",
+          "buildVersion": "91",
+          "buildNumber": "91",
+          "localizedDescription": "🧪 预发布 nightly（2026-11-24）\n\n* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availability checks in CLI\n* Split automation runtime and host by target OS with API level 4\n* Unify internal/graphics with event-driven Darwin cancellation\n* Extract api.Publish and api.Device\n* Extract tailscale.Controller and rename login Wait to Complete\n* Extract internal/fault, internal/screen, and internal/selector\n* Avoid redundant SpringBoard reads when dismissing setup alerts\n* Fix sideload setup stalling on permission alerts and reopening Settings\n* Discover vphone virtual machi…",
           "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-          "size": 48185875,
+          "size": 48245453,
           "minOSVersion": "16.4",
           "releaseTag": "nightly",
           "source": "https://github.com/swipt-automation/swipt/releases/tag/nightly"
         }
       ],
       "version": "0.1.0",
-      "versionDate": "2026-11-22",
-      "versionDescription": "🧪 预发布 nightly（2026-11-22）\n\n* Avoid redundant SpringBoard reads when dismissing setup alerts\n* Fix sideload setup stalling on permission alerts and reopening Settings\n* Discover vphone virtual machines without Launchpad\n* Request unicast mDNS responses in the CLI\n* Replace polling loops with event-driven notifications\n* Fix sideload setup opening Settings after the Always location alert\n* Stream discovered devices into the CLI device picker\n* Request Always location access for the background service\n* Fix pairing, language updates and container SQLite in the driver\n* Fix cellular data being detected on Wi-Fi\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the…",
+      "versionDate": "2026-11-24",
+      "versionDescription": "🧪 预发布 nightly（2026-11-24）\n\n* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availability checks in CLI\n* Split automation runtime and host by target OS with API level 4\n* Unify internal/graphics with event-driven Darwin cancellation\n* Extract api.Publish and api.Device\n* Extract tailscale.Controller and rename login Wait to Complete\n* Extract internal/fault, internal/screen, and internal/selector\n* Avoid redundant SpringBoard reads when dismissing setup alerts\n* Fix sideload setup stalling on permission alerts and reopening Settings\n* Discover vphone virtual machi…",
       "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-      "size": 48185875,
+      "size": 48245453,
       "minOSVersion": "16.4"
     },
     {

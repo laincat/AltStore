@@ -1956,15 +1956,15 @@
   "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa": {
     "bundleIdentifier": "io.nekohasekai.swipt",
     "version": "0.1.0",
-    "buildVersion": "90",
+    "buildVersion": "91",
     "displayName": "Swipt",
     "minOSVersion": "16.4",
-    "size": 48185875,
+    "size": 48245453,
     "assetIdentity": {
-      "id": 779459754,
-      "updated_at": "2026-11-22T15:13:51Z",
-      "size": 48185875,
-      "digest": "sha256:bee6e80dc1377794b0454278579e5366a77a539602ab1239e6bec24ee6632426"
+      "id": 786651486,
+      "updated_at": "2026-11-24T10:08:31Z",
+      "size": 48245453,
+      "digest": "sha256:42e9a303ef27a7b5c1db6f1167ae559d3a739df9a547a12024e08966af2cdcc1"
     }
   },
   "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.2/ARMSX3-0.0.2.ipa": {
@@ -2931,6 +2931,20 @@
       "updated_at": "2026-11-23T20:48:23Z",
       "size": 40949886,
       "digest": "sha256:077cc48628786c03b9575d323f4b395efdde530b577fbe58b57df8ffea11d1f5"
+    }
+  },
+  "https://github.com/zxsos/HGhubX/releases/download/v2.2.10/HGhubX_2.2.10_ios.ipa": {
+    "bundleIdentifier": "com.hghubx.app",
+    "version": "2.2.10",
+    "buildVersion": "2.2.10",
+    "displayName": "HGhubX",
+    "minOSVersion": "15.0",
+    "size": 4048150,
+    "assetIdentity": {
+      "id": 786677200,
+      "updated_at": "2026-11-24T10:16:03Z",
+      "size": 4048150,
+      "digest": "sha256:0879658ba08c1f775d19e2d0d13968da2ea7407042c2c701e52c83cf55654393"
     }
   }
 }

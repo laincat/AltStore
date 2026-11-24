@@ -1,6 +1,54 @@
 {
   "zxsos/HGhubX": [
     {
+      "tag": "v2.2.10",
+      "name": "v2.2.10",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-24",
+      "published_at": "2026-11-24T10:16:05Z",
+      "body": "# HGhubX v2.2.10\n\n紧急适配上游全新 `dx150-edge-v1` 四作用域加密网关修复全接口 503，并合入标签置顶、右半屏长按倍速胶囊、搜索页热门标签官网同步、网络切换静默恢复、完结剧集「全 N 集」与窄屏布局修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n\n## 新增与优化\n1. **标签页长按置顶与标签结果页标题栏置顶（#247、#252）**：在「分类 → 标签」顶部新增「置顶标签」板块，支持长按标签 600ms 切换置顶/取消（最多 24 个，横向拖动超过 10px 取消防误触）；进入任意标签结果页后，标题栏右侧新增图钉按钮一键置顶（已置顶朝下扎稳并高亮），状态保存在内容偏好 `pinnedTags` 并跨重启保留。\n2. **移动端右半屏长按倍速与顶部只读胶囊提示（#247、#251）**：长按手势取消对角线斜切与居中死区，改为直觉的左右半屏切分（右半屏 `2×` 倍速、左半屏 `0.5×` 慢放，起手延迟缩至 `260ms`，横滑 `68px` 换挡，松手即恢复不锁定）；长按激活期间在安全区顶部居中显示无 `backdrop-filter` 的只读倍速胶囊与挡位点，清屏模式下也有清晰视觉反馈。\n3. **搜索结果 / 分类 / 标签卡片完结剧集显示「全 N 集」（#248）**：已完结剧目在海报底部集数角标统一显示「全 N 集」（优先取 `total_episodes`，缺失时回退 `episode_count`），未完结剧目保持原有更新集数文案。\n\n## 修复\n1. **适配上游 `dx150-edge-v1` 四作用域加密网关，修复接口全 503（#255、#256）**：上游于 2026-11-24 下线旧统一入口 `/api/edge/request`（返回 `HTTP 503 {\"msg\":\"接口已停用\"}`）并拆分为 `/api/{public,dynamic,playback,user}/request`；客户端新增 `edge_crypto` 模块复用 `ring` 实现 ECDH P-256 + HKDF-SHA256 + AES-256-GCM 单飞会话加解密、`public` 作用域 `X-HG-Public-JSON: 1` 快速路径与 `session_expired` 自动重建，同时对未迁移镜像保留旧接口 `404`/`405` 兼容回退，并同步更新草稿代理连通性探测。\n2. **搜索页热门题材与官网首页「热门标签」同步（#250、#254）**：新增 `api_hot_tags` 直接解析官网首页 SSR `section.hg-home-popular-tags`，搜索页严格按官网热门标签集合与顺序展示，移除前端全量 `/api/tags` 重排，点「换一批」不再混入非热门普通标签，保留内容屏蔽过滤与手动刷新同步。\n3. **网络切换误报 401 与静默恢复（#246）**：修复 `edge.rs` 将 HTTP 403 折叠为 `401` 导致切网后误报登录态失效的问题；网络恢复挂起并在回到前台时强制重建客户端与自动选线，跨镜像静默重登按需刷新发布页信任，瞬时失败不再永久锁死同步，不可恢复时去重提示并提供原地「重新登录」入口。\n4. **窄屏手机中英文控件异常折行与裁切（#249）**：收紧 360px / 320px 窄屏容器下「我的关注」「我的主页」「最近上新」「热门推荐」、账号卡 `ID` 与统计行、设置页分段器及海报角标间距，修复中文两字断行与英文按字母切碎/裁切问题。\n\n## 安装与兼容提示\n- Windows 提供 NSIS 安装包与便携压缩包；macOS 提供 Universal DMG；Linux 提供 amd64 `.deb`；Android 标准版按 ABI 提供已签名 APK（`versionCode=2002010`）；iOS 提供未签名 `.ipa`（需自行签名安装）。\n- 覆盖安装保留本机收藏、观看记录、界面语言、线路与内容偏好；Android TV 版（`com.hghubx.tv`）同步发布 `tv-v2.2.5` 修复上游 503。\n\n## 致谢\n- 感谢 @makisekurisu-jp 贡献 #248 完结剧集「全 N 集」展示、#252 标签页与标签结果页置顶功能，以及 #250 搜索页热门标签不同步的根因定位与建议。\n- 感谢 @zxsos 完成 #256 上游 `dx150-edge-v1` 加密网关紧急适配、#246 网络切换静默恢复、#249 窄屏中英文布局修复、#251 移动端右半屏长按倍速胶囊与 #254 搜索页热门标签同步。\n- 感谢 `enjue` 提出 #247",
+      "ipas": [
+        {
+          "name": "HGhubX_2.2.10_ios.ipa",
+          "size": 4048150,
+          "url": "https://github.com/zxsos/HGhubX/releases/download/v2.2.10/HGhubX_2.2.10_ios.ipa",
+          "id": 786677200,
+          "updated_at": "2026-11-24T10:16:03Z",
+          "digest": "sha256:0879658ba08c1f775d19e2d0d13968da2ea7407042c2c701e52c83cf55654393"
+        }
+      ]
+    },
+    {
+      "tag": "tv-v2.2.5",
+      "name": "HGhubX TV tv-v2.2.5",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-24",
+      "published_at": "2026-11-24T10:10:36Z",
+      "body": "# HGhubX TV tv-v2.2.5\n\n紧急适配上游全新 `dx150-edge-v1` 四作用域加密网关，修复全部业务接口返回 HTTP 503 的问题，并同步带来网络切换静默恢复改进；适用于 Android TV / 电视盒子（`com.hghubx.tv`）。\n\n## 修复\n1. **适配上游 `dx150-edge-v1` 四作用域加密网关，修复接口全 503（#255、#256）**：上游于 2026-11-24 下线旧统一入口 `/api/edge/request`（返回 `HTTP 503 {\"msg\":\"接口已停用\"}`）并拆分为 `/api/{public,dynamic,playback,user}/request`；TV 版共用底层 Rust 网络层同步切换至 `dx150-edge-v1`（ECDH P-256 + HKDF-SHA256 + AES-256-GCM 单飞会话与 `public` 快速通道），恢复片单、详情、搜索与播放地址解析，同时对未迁移镜像保留旧接口 `404`/`405` 兼容回退。\n2. **网络切换与代理探测恢复（#246、#256）**：仅将 HTTP 401 折叠为登录态失效，保留 403 状态供线路探测感知；健康检查与登录前刷新客户端缓存，草稿代理探测同步切至 `/api/public/request`。\n\n## 安装与兼容提示\n- Android TV 按 ABI 分包提供 `HGhubX-TV_2.2.5_arm64.apk`、`HGhubX-TV_2.2.5_arm.apk`、`HGhubX-TV_2.2.5_x86_64.apk`（`com.hghubx.tv`，`versionCode=2002005`）。\n- 沿用与既有 `com.hghubx.tv` 相同的签名证书与单调递增 `versionCode`，支持直接覆盖升级，保留本机收藏、观看记录、线路偏好与启动 PIN。\n\n## 致谢\n- 感谢 @zxsos 完成 #256 上游 `dx150-edge-v1` 加密网关紧急适配与 #246 网络恢复改进。\n\n## 验证\n- 本地 `make check`（Rust `124 passed; 0 failed; 5 ignored`、文档链接与版本同步 `release-check(tv): ok 2.2.5, android versionCode=2002005`）、`make test-tv`（TV 版本字段与 `VITE_APP_EDITION=tv pnpm build`）以及 `node scripts/test-tv-remote.mjs`（14/14 场景通过）全部通过。\n- 实网四作用域联调（`cargo test --lib edge_crypto::tests::live_dx150_edge_all_four_scopes -- --ignored` 对 `https://huangguoai.com`）全通。\n- TV 正式安装包由 `tv-v2.2.5` 标签触发的 GitHub Actions `TV Release` 工作流构建并校验。\n",
+      "ipas": []
+    },
+    {
+      "tag": "test-pre",
+      "name": "HGhubX Test Preview (5780bb7)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-11-21",
+      "published_at": "2026-11-21T16:49:36Z",
+      "body": "# HGhubX Test Preview\n\n基于 `main`（`6370c44`）自动合成的全平台预览构建（更新时间：`2026-11-24T10:38:35Z`，测试提交：`5780bb7`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（1）\n1. #259 feat(feed): unify hold-speed rail across 0.5x to 6x for seamless transitions（@zxsos，`fad6c8d`）\n",
+      "ipas": [
+        {
+          "name": "HGhubX_2.2.10_ios.ipa",
+          "size": 4158985,
+          "url": "https://github.com/zxsos/HGhubX/releases/download/test-pre/HGhubX_2.2.10_ios.ipa",
+          "id": 786787005,
+          "updated_at": "2026-11-24T10:49:26Z",
+          "digest": "sha256:5d9e94d8df1fe64b26ae53cc16ed8f76955cdd4a74baab176d2a25e7c817d648"
+        }
+      ]
+    },
+    {
       "tag": "v2.2.9",
       "name": "v2.2.9",
       "pre": false,
@@ -35,25 +83,6 @@
           "id": 781437263,
           "updated_at": "2026-11-23T03:55:28Z",
           "digest": "sha256:ca321bcc8491895d33d6f775fa592455727fa82f1f374ecce2e967f26c03014e"
-        }
-      ]
-    },
-    {
-      "tag": "test-pre",
-      "name": "HGhubX Test Preview (5d9fd8c)",
-      "pre": true,
-      "draft": false,
-      "date": "2026-11-21",
-      "published_at": "2026-11-21T16:49:36Z",
-      "body": "# HGhubX Test Preview\n\n基于 `main`（`61f5a55`）自动合成的全平台预览构建（更新时间：`2026-11-23T23:50:33Z`，测试提交：`5d9fd8c`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（1）\n1. #244 feat(category,discover): 分类与标签结果页增加点赞/收藏/播放/评分排序（@makisekurisu-jp，`fc8ebf0`）\n",
-      "ipas": [
-        {
-          "name": "HGhubX_2.2.8_ios.ipa",
-          "size": 4111759,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/test-pre/HGhubX_2.2.8_ios.ipa",
-          "id": 785030164,
-          "updated_at": "2026-11-24T00:03:01Z",
-          "digest": "sha256:689aae52814e76976f65db8a09ff86b59de9d5361b4b1c3de2d43f6be34d6300"
         }
       ]
     },
@@ -2939,17 +2968,17 @@
       "name": "Nightly build",
       "pre": true,
       "draft": false,
-      "date": "2026-11-22",
-      "published_at": "2026-11-22T15:13:53Z",
-      "body": "* Avoid redundant SpringBoard reads when dismissing setup alerts\n* Fix sideload setup stalling on permission alerts and reopening Settings\n* Discover vphone virtual machines without Launchpad\n* Request unicast mDNS responses in the CLI\n* Replace polling loops with event-driven notifications\n* Fix sideload setup opening Settings after the Always location alert\n* Stream discovered devices into the CLI device picker\n* Request Always location access for the background service\n* Fix pairing, language updates and container SQLite in the driver\n* Fix cellular data being detected on Wi-Fi\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack options for ZIP archives\n* Replace the hand-written ZIP code of the CLI with fflate\n* Simplify screen streaming and recording\n* Share one atomic file write\n* Fix mDNS browsing and name conflict handling\n* Simplify the JavaScriptCore adapter\n* Add swipt driver to serve a device from the computer\n* Build the Linux and Windows driver with the WebKit of a Bun release\n* Port the driver and the CLI to Linux and Windows\n* Follow Apple's terms and style guides in the CLI translations\n* Improve automatic unlocking\n* Remove unsourced and misattributed claims from comments\n* Require iOS 26 for the accessibility API\n* Fix network lockdown connections closing without a heartbeat\n* Extend Swiplet icon colors\n* Add the chart and data grid components\n* Remove the guards against bad values from Swiplets\n* Add stream actions and the process API\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swipl",
+      "date": "2026-11-24",
+      "published_at": "2026-11-24T10:08:34Z",
+      "body": "* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availability checks in CLI\n* Split automation runtime and host by target OS with API level 4\n* Unify internal/graphics with event-driven Darwin cancellation\n* Extract api.Publish and api.Device\n* Extract tailscale.Controller and rename login Wait to Complete\n* Extract internal/fault, internal/screen, and internal/selector\n* Avoid redundant SpringBoard reads when dismissing setup alerts\n* Fix sideload setup stalling on permission alerts and reopening Settings\n* Discover vphone virtual machines without Launchpad\n* Request unicast mDNS responses in the CLI\n* Replace polling loops with event-driven notifications\n* Fix sideload setup opening Settings after the Always location alert\n* Stream discovered devices into the CLI device picker\n* Request Always location access for the background service\n* Fix pairing, language updates and container SQLite in the driver\n* Fix cellular data being detected on Wi-Fi\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack options for ZIP archives\n* Replace the hand-written ZIP code of the CLI with fflate\n* Simplify screen streaming and recording\n* Share one atomic file write\n* Fix mDNS browsing and name conflict handling\n* Simplify the JavaScriptCore adapter\n* Add swipt driver to serve a device from the computer\n* Build the Linux and Windows driver with the WebKit of a Bun release\n* Port the driver and the CLI to Linux and Windows\n* Follow Apple's terms and style guides in the CLI translations\n* Improve automatic unlocking\n* Remove unsourced and misa",
       "ipas": [
         {
           "name": "Swipt.ipa",
-          "size": 48185875,
+          "size": 48245453,
           "url": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-          "id": 779459754,
-          "updated_at": "2026-11-22T15:13:51Z",
-          "digest": "sha256:bee6e80dc1377794b0454278579e5366a77a539602ab1239e6bec24ee6632426"
+          "id": 786651486,
+          "updated_at": "2026-11-24T10:08:31Z",
+          "digest": "sha256:42e9a303ef27a7b5c1db6f1167ae559d3a739df9a547a12024e08966af2cdcc1"
         }
       ]
     }
