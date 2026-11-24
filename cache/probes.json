@@ -2904,5 +2904,33 @@
       "size": 4004198,
       "digest": "sha256:ca321bcc8491895d33d6f775fa592455727fa82f1f374ecce2e967f26c03014e"
     }
+  },
+  "https://github.com/zxsos/HGhubX/releases/download/v2.2.9/HGhubX_2.2.9_ios.ipa": {
+    "bundleIdentifier": "com.hghubx.app",
+    "version": "2.2.9",
+    "buildVersion": "2.2.9",
+    "displayName": "HGhubX",
+    "minOSVersion": "15.0",
+    "size": 4009527,
+    "assetIdentity": {
+      "id": 785041264,
+      "updated_at": "2026-11-24T00:07:28Z",
+      "size": 4009527,
+      "digest": "sha256:40d064d42e75fe7216a5981ee1162a28065ba727446b6c237c4b6a88f9f818cd"
+    }
+  },
+  "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261123/ARMSX2-nightly-20261123-d8d9a02783-iOS-arm64.ipa": {
+    "bundleIdentifier": "com.armsx2.ios.nightly",
+    "version": "2.6.0-nightly.20261123.2028",
+    "buildVersion": "260",
+    "displayName": "ARMSX2 Nightly",
+    "minOSVersion": "17.4",
+    "size": 40949886,
+    "assetIdentity": {
+      "id": 784490616,
+      "updated_at": "2026-11-23T20:48:23Z",
+      "size": 40949886,
+      "digest": "sha256:077cc48628786c03b9575d323f4b395efdde530b577fbe58b57df8ffea11d1f5"
+    }
   }
 }

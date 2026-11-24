@@ -1,6 +1,25 @@
 {
   "zxsos/HGhubX": [
     {
+      "tag": "v2.2.9",
+      "name": "v2.2.9",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-24",
+      "published_at": "2026-11-24T00:07:31Z",
+      "body": "# HGhubX v2.2.9\n\n重点修复 Android WebView 播放页合成器闪烁问题，并升级「我的收藏」单图标追剧状态筛选与频道/标签结果页指标排序；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n\n## 新增与优化\n1. **「我的收藏 → 短剧」单图标追剧状态筛选与底栏快捷复位（#243）**：收藏短剧右上角合并为单图标筛选胶囊，点击展开「追剧状态」菜单并展示「在追剧」「连载中」「已完结」及各自数量（三类允许重叠，按更新时间倒序稳定排列）；卡片统一只保留单个左上角角标随分类切换（「未看 N 集」/「更新至 N 集」/「全 N 集」）；移动端再次点击底栏激活中的「我的」可一键复位回「我的收藏 / 短剧 / 全部收藏」并回到顶部。\n2. **分类频道与标签结果页指标排序（#244）**：原创、AI 短剧、AI 漫剧频道及标签结果页短剧区块右侧新增排序入口，支持按「点赞数」「收藏数」「播放数」「评分」降序/升序切换（再次点击当前指标反转方向，切 Tab 保留当前指标），通过 `jsonOnly` 抓取完整结果并按 20 条渐进渲染，不影响标签页吃瓜帖。\n\n## 修复\n1. **Android 播放页画面闪烁与瓦片异常（#240、#242）**：针对 Android WebView（Skia/Viz）在硬件 `<video>` 上方叠加高半径模糊与持久动画层引发的闪烁问题，在 `.plat-android` 播放页关闭压在视频上的 `backdrop-filter`（改用等价半透明深色底），移除被遮盖的 `blur-3xl` 与未缩放时的 3D `translate3d`，仅在活跃条目渲染 `FeedItemChrome` 且仅缩放态挂载还原胶囊；Android 端「微光效果」改用 `8×5` 画布按 `250ms` 采样配合 GPU 双线性放大替代全屏 `filter: blur(44px)`；`LayerBox` 动画结束后立即移除入场动画类与过渡阴影，Android 进入 `feed` 栈页跳过变换/透明度入场动画。\n\n## 安装与兼容提示\n- Windows 提供 NSIS 安装包与便携压缩包；macOS 提供 Universal DMG；Linux 提供 amd64 `.deb`；Android 标准版按 ABI 提供已签名 APK（`versionCode=2002009`）；iOS 提供未签名 `.ipa`（需自行签名安装）。\n- 覆盖安装保留本机收藏、观看记录、界面语言、线路与内容偏好；Android TV 版（`com.hghubx.tv`）独立沿用 `tv-v2.2.4` 发布。\n\n## 致谢\n- 感谢 @makisekurisu-jp 贡献 #243 收藏页单图标追剧状态筛选与 #244 频道/标签指标排序。\n- 感谢 @zxsos 定位修复 #240/#242 Android 播放页合成器闪烁问题并完成本轮 PR 审查、冲突整合与版本发布校验。\n\n## 验证\n- 合入后本地严检：`make check`（Rust `118 passed; 0 failed; 4 ignored`、`pnpm build` 三套 `tsc` + Vite 构建、814 项 i18n 键校验、202 条文档链接、代码尺寸预算及 `release-check: ok 2.2.9, android versionCode=2002009`）、`pnpm test:smoke`（17/17 套件通过）、`node scripts/test-playback.mjs`（10/10 场景通过）以及 TV 兼容性验证 `make test-tv` + `node scripts/test-tv-remote.mjs`（14/14 场景通过）全部通过。\n- PR #242、#243、#244 均在 GitHub Actions 审查检查（8/8）全绿通过后合入；各平台正式产物由 `v2.2.9` 标签触发的 GitHub Actions `Release` 工作流构建并校验。\n",
+      "ipas": [
+        {
+          "name": "HGhubX_2.2.9_ios.ipa",
+          "size": 4009527,
+          "url": "https://github.com/zxsos/HGhubX/releases/download/v2.2.9/HGhubX_2.2.9_ios.ipa",
+          "id": 785041264,
+          "updated_at": "2026-11-24T00:07:28Z",
+          "digest": "sha256:40d064d42e75fe7216a5981ee1162a28065ba727446b6c237c4b6a88f9f818cd"
+        }
+      ]
+    },
+    {
       "tag": "v2.2.8",
       "name": "v2.2.8",
       "pre": false,
@@ -21,20 +40,20 @@
     },
     {
       "tag": "test-pre",
-      "name": "HGhubX Test Preview (c5486a2)",
+      "name": "HGhubX Test Preview (5d9fd8c)",
       "pre": true,
       "draft": false,
       "date": "2026-11-21",
       "published_at": "2026-11-21T16:49:36Z",
-      "body": "# HGhubX Test Preview\n\n基于 `main`（`ccf80c3`）自动合成的全平台预览构建（更新时间：`2026-11-23T11:51:35Z`，测试提交：`c5486a2`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（2）\n1. #242 fix(playback,ui): remove Android WebView blur and animation layers over video (#240)（@zxsos，`14ff641`）\n2. #243 feat(profile): 收藏页改为单图标追剧状态筛选（@makisekurisu-jp，`94bd778`）\n",
+      "body": "# HGhubX Test Preview\n\n基于 `main`（`61f5a55`）自动合成的全平台预览构建（更新时间：`2026-11-23T23:50:33Z`，测试提交：`5d9fd8c`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（1）\n1. #244 feat(category,discover): 分类与标签结果页增加点赞/收藏/播放/评分排序（@makisekurisu-jp，`fc8ebf0`）\n",
       "ipas": [
         {
           "name": "HGhubX_2.2.8_ios.ipa",
-          "size": 4110722,
+          "size": 4111759,
           "url": "https://github.com/zxsos/HGhubX/releases/download/test-pre/HGhubX_2.2.8_ios.ipa",
-          "id": 782773042,
-          "updated_at": "2026-11-23T12:01:47Z",
-          "digest": "sha256:986f5f3c72367d6d29f2854dcc408c54a5e4054523627fa42afe34049bb98c8d"
+          "id": 785030164,
+          "updated_at": "2026-11-24T00:03:01Z",
+          "digest": "sha256:689aae52814e76976f65db8a09ff86b59de9d5361b4b1c3de2d43f6be34d6300"
         }
       ]
     },
@@ -2318,6 +2337,25 @@
   ],
   "ARMSX2/ARMSX2": [
     {
+      "tag": "nightly-20261123",
+      "name": "ARMSX2 nightly 20261123 (d8d9a02783)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-11-23",
+      "published_at": "2026-11-23T20:48:17Z",
+      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64.AppImage, for 4K, 16K and 64K page kernels alike\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- EE: charge taking an exception 9 cycles, as the console takes\n- EE: charge ERET 6 cycles, as the console takes\n- EE rec: do not charge a cycle the interpreter does not after ERET, SYSCALL and EI\n- EE: charge SYNC.P 5 cycles, as the console takes\n- microVU: keep the program cache in a few large blocks, bounded by the RAM cap\n- iOS: put EmulatorBridge on the main actor\n- iOS: put ExternalGameLibrary on the main actor\n- iOS: type NumberRowActivity's closure for the main actor\n- iOS: drop @unchecked Sendable from the controller image cache\n- iOS: put PadLayoutStore on the main actor\n- iOS: put the pad preset and skin library stores on the main actor\n- iOS: enable cheats through SettingsStore\n- iOS: read the boot and logging keys through SettingsStore\n- iOS: make the dynamic thumbstick settings a SettingsStore sub-store\n- iOS: read the RetroAchievements keys through Set",
+      "ipas": [
+        {
+          "name": "ARMSX2-nightly-20261123-d8d9a02783-iOS-arm64.ipa",
+          "size": 40949886,
+          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261123/ARMSX2-nightly-20261123-d8d9a02783-iOS-arm64.ipa",
+          "id": 784490616,
+          "updated_at": "2026-11-23T20:48:23Z",
+          "digest": "sha256:077cc48628786c03b9575d323f4b395efdde530b577fbe58b57df8ffea11d1f5"
+        }
+      ]
+    },
+    {
       "tag": "nightly-20261122",
       "name": "ARMSX2 nightly 20261122 (6370337611)",
       "pre": true,
@@ -2456,25 +2494,6 @@
           "id": 739312263,
           "updated_at": "2026-11-12T11:58:16Z",
           "digest": "sha256:ca921e091824f59f3b2e85fb2349d631e522452b150fd25427464768a5e36458"
-        }
-      ]
-    },
-    {
-      "tag": "nightly-20261111",
-      "name": "ARMSX2 nightly 20261111 (22b1a7661f)",
-      "pre": true,
-      "draft": false,
-      "date": "2026-11-11",
-      "published_at": "2026-11-11T07:21:22Z",
-      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- Android: regenerate the PGO profile on the source with the GS runs build\n- tests: the block hasher's unaligned update stays inside the test memory\n- GS: comments that named removed gsrunner switches, and an include they needed\n- GS/Vulkan: the run machine's development log goes\n- GS/TC: the lean path's mode switch and check halves go\n- gsrunner: the burst memo's switches and statistics line go\n- gsrunner: the readback lane's statistics, trace and switches go\n- gsrunner: the kick's two check modes go\n- GS/Vulkan: the run machine sleeps where runs do not form\n- GS: the vertex buffer grows in 64-bit sizes and fails loudly past a ceiling\n- GS: a reset of the draw buffers frees the buffers it replaces\n- GS/SW: a draw whose frame and Z buffers share pages is",
-      "ipas": [
-        {
-          "name": "ARMSX2-nightly-20261111-22b1a7661f-iOS-arm64.ipa",
-          "size": 40652510,
-          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261111/ARMSX2-nightly-20261111-22b1a7661f-iOS-arm64.ipa",
-          "id": 734559251,
-          "updated_at": "2026-11-11T07:21:27Z",
-          "digest": "sha256:077525bd7e4ad4e183a2565f14417199fc30bc4d39ff8272b2ceb9d3a48a7d2a"
         }
       ]
     },

@@ -385,41 +385,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.6.0-nightly.20261122.2300",
-              "date": "2026-11-22",
-              "publishedAt": "2026-11-22T06:28:24Z",
+              "version": "2.6.0-nightly.20261123.2028",
+              "date": "2026-11-23",
+              "publishedAt": "2026-11-23T20:48:17Z",
               "buildVersion": "260",
               "buildNumber": "260",
-              "localizedDescription": "🧪 预发布 nightly-20261122（2026-11-22）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64.AppImage, for 4K, 16K and 64K page kernels alike\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARM…",
-              "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261122/ARMSX2-nightly-20261122-6370337611-iOS-arm64.ipa",
-              "size": 40930252,
+              "localizedDescription": "🧪 预发布 nightly-20261123（2026-11-23）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64.AppImage, for 4K, 16K and 64K page kernels alike\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARM…",
+              "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261123/ARMSX2-nightly-20261123-d8d9a02783-iOS-arm64.ipa",
+              "size": 40949886,
               "minOSVersion": "17.4",
-              "releaseTag": "nightly-20261122",
-              "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261122"
+              "releaseTag": "nightly-20261123",
+              "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261123"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.6.0-nightly.20261122.2300",
-          "date": "2026-11-22",
-          "publishedAt": "2026-11-22T06:28:24Z",
+          "version": "2.6.0-nightly.20261123.2028",
+          "date": "2026-11-23",
+          "publishedAt": "2026-11-23T20:48:17Z",
           "buildVersion": "260",
           "buildNumber": "260",
-          "localizedDescription": "🧪 预发布 nightly-20261122（2026-11-22）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64.AppImage, for 4K, 16K and 64K page kernels alike\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARM…",
-          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261122/ARMSX2-nightly-20261122-6370337611-iOS-arm64.ipa",
-          "size": 40930252,
+          "localizedDescription": "🧪 预发布 nightly-20261123（2026-11-23）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64.AppImage, for 4K, 16K and 64K page kernels alike\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARM…",
+          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261123/ARMSX2-nightly-20261123-d8d9a02783-iOS-arm64.ipa",
+          "size": 40949886,
           "minOSVersion": "17.4",
-          "releaseTag": "nightly-20261122",
-          "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261122"
+          "releaseTag": "nightly-20261123",
+          "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261123"
         }
       ],
-      "version": "2.6.0-nightly.20261122.2300",
-      "versionDate": "2026-11-22",
-      "versionDescription": "🧪 预发布 nightly-20261122（2026-11-22）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64.AppImage, for 4K, 16K and 64K page kernels alike\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARM…",
-      "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261122/ARMSX2-nightly-20261122-6370337611-iOS-arm64.ipa",
-      "size": 40930252,
+      "version": "2.6.0-nightly.20261123.2028",
+      "versionDate": "2026-11-23",
+      "versionDescription": "🧪 预发布 nightly-20261123（2026-11-23）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64.AppImage, for 4K, 16K and 64K page kernels alike\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARM…",
+      "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261123/ARMSX2-nightly-20261123-d8d9a02783-iOS-arm64.ipa",
+      "size": 40949886,
       "minOSVersion": "17.4"
     },
     {
@@ -880,41 +880,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.2.8",
-              "date": "2026-11-23",
-              "publishedAt": "2026-11-23T03:55:29Z",
-              "buildVersion": "2.2.8",
-              "buildNumber": "2.2.8",
-              "localizedDescription": "HGhubX v2.2.8\n\n围绕分类导航快捷入口、搜索交互、吃瓜列表官网同步、「我的收藏」排序与已完结封面标签以及播放器全屏暂停提示打磨体验；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. 分类总览 2×2 快捷入口并接入「最近上新」「热门推荐」（#233、#238）：移除移动端与搜索页重复的「排行榜」单列入口（保留搜索页右上角与桌面侧栏「排行榜」），在移动端与桌面端统一展示「最近上新」「热门推荐」「专题」「标签」2×2 等宽卡片；「最近上新」「热门推荐」优先解析官网 /newest/ 与 /recommend/ 服务端渲染页面（失败时按 /api/videos?sort=new|hot 回退），支持自动分页与切线重载。\n2. 「我的 → 收藏 → 短剧」排序与已完结封面标签（#235、#239）：在「我的收藏 → 短剧」新增「最近添加」「最近更新」「完结进度」（点击可切换「已完结优先 ↕」/「更新中优先 ↕」）排序，切到更新/完结排序时自动分批补齐全部收藏详情；全站剧集卡片在左上角按「原创」「热播」「新片」「完结」显示角标，「我的」页已完结短剧使用绿色封面标签（兼有未看新集时并行显示「新更 N 集」与「完结」角标）。\n3. 搜索页左右滑动切 Tab 与底栏快捷复位（#230、#234）：搜索结果支持左右滑动切换「视频 / 帖子」Tab（未提交查询时不拦截横向手势）；在移动端底栏再次点击激活的「搜索」可一键清空结果并回到热搜与历史界面，且不主动弹出软键盘。\n4. 全屏双击暂停显示当前集数提示（#236）：移动端全屏下双击暂…",
-              "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.8/HGhubX_2.2.8_ios.ipa",
-              "size": 4004198,
+              "version": "2.2.9",
+              "date": "2026-11-24",
+              "publishedAt": "2026-11-24T00:07:31Z",
+              "buildVersion": "2.2.9",
+              "buildNumber": "2.2.9",
+              "localizedDescription": "HGhubX v2.2.9\n\n重点修复 Android WebView 播放页合成器闪烁问题，并升级「我的收藏」单图标追剧状态筛选与频道/标签结果页指标排序；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. 「我的收藏 → 短剧」单图标追剧状态筛选与底栏快捷复位（#243）：收藏短剧右上角合并为单图标筛选胶囊，点击展开「追剧状态」菜单并展示「在追剧」「连载中」「已完结」及各自数量（三类允许重叠，按更新时间倒序稳定排列）；卡片统一只保留单个左上角角标随分类切换（「未看 N 集」/「更新至 N 集」/「全 N 集」）；移动端再次点击底栏激活中的「我的」可一键复位回「我的收藏 / 短剧 / 全部收藏」并回到顶部。\n2. 分类频道与标签结果页指标排序（#244）：原创、AI 短剧、AI 漫剧频道及标签结果页短剧区块右侧新增排序入口，支持按「点赞数」「收藏数」「播放数」「评分」降序/升序切换（再次点击当前指标反转方向，切 Tab 保留当前指标），通过 jsonOnly 抓取完整结果并按 20 条渐进渲染，不影响标签页吃瓜帖。\n修复\n1. Android 播放页画面闪烁与瓦片异常（#240、#242）：针对 Android WebView（Skia/Viz）在硬件 <video> 上方叠加高半径模糊与持久动画层引发的闪烁问题，在 .plat-android 播放页关闭压在视频上的 backdrop-filter（改用等价半透明深色底），移除被遮盖的 blur-3xl 与未缩放时的 3D translate3d，仅在活跃条目渲染 FeedI…",
+              "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.9/HGhubX_2.2.9_ios.ipa",
+              "size": 4009527,
               "minOSVersion": "15.0",
-              "releaseTag": "v2.2.8",
-              "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.2.8"
+              "releaseTag": "v2.2.9",
+              "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.2.9"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.2.8",
-          "date": "2026-11-23",
-          "publishedAt": "2026-11-23T03:55:29Z",
-          "buildVersion": "2.2.8",
-          "buildNumber": "2.2.8",
-          "localizedDescription": "HGhubX v2.2.8\n\n围绕分类导航快捷入口、搜索交互、吃瓜列表官网同步、「我的收藏」排序与已完结封面标签以及播放器全屏暂停提示打磨体验；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. 分类总览 2×2 快捷入口并接入「最近上新」「热门推荐」（#233、#238）：移除移动端与搜索页重复的「排行榜」单列入口（保留搜索页右上角与桌面侧栏「排行榜」），在移动端与桌面端统一展示「最近上新」「热门推荐」「专题」「标签」2×2 等宽卡片；「最近上新」「热门推荐」优先解析官网 /newest/ 与 /recommend/ 服务端渲染页面（失败时按 /api/videos?sort=new|hot 回退），支持自动分页与切线重载。\n2. 「我的 → 收藏 → 短剧」排序与已完结封面标签（#235、#239）：在「我的收藏 → 短剧」新增「最近添加」「最近更新」「完结进度」（点击可切换「已完结优先 ↕」/「更新中优先 ↕」）排序，切到更新/完结排序时自动分批补齐全部收藏详情；全站剧集卡片在左上角按「原创」「热播」「新片」「完结」显示角标，「我的」页已完结短剧使用绿色封面标签（兼有未看新集时并行显示「新更 N 集」与「完结」角标）。\n3. 搜索页左右滑动切 Tab 与底栏快捷复位（#230、#234）：搜索结果支持左右滑动切换「视频 / 帖子」Tab（未提交查询时不拦截横向手势）；在移动端底栏再次点击激活的「搜索」可一键清空结果并回到热搜与历史界面，且不主动弹出软键盘。\n4. 全屏双击暂停显示当前集数提示（#236）：移动端全屏下双击暂…",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.8/HGhubX_2.2.8_ios.ipa",
-          "size": 4004198,
+          "version": "2.2.9",
+          "date": "2026-11-24",
+          "publishedAt": "2026-11-24T00:07:31Z",
+          "buildVersion": "2.2.9",
+          "buildNumber": "2.2.9",
+          "localizedDescription": "HGhubX v2.2.9\n\n重点修复 Android WebView 播放页合成器闪烁问题，并升级「我的收藏」单图标追剧状态筛选与频道/标签结果页指标排序；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. 「我的收藏 → 短剧」单图标追剧状态筛选与底栏快捷复位（#243）：收藏短剧右上角合并为单图标筛选胶囊，点击展开「追剧状态」菜单并展示「在追剧」「连载中」「已完结」及各自数量（三类允许重叠，按更新时间倒序稳定排列）；卡片统一只保留单个左上角角标随分类切换（「未看 N 集」/「更新至 N 集」/「全 N 集」）；移动端再次点击底栏激活中的「我的」可一键复位回「我的收藏 / 短剧 / 全部收藏」并回到顶部。\n2. 分类频道与标签结果页指标排序（#244）：原创、AI 短剧、AI 漫剧频道及标签结果页短剧区块右侧新增排序入口，支持按「点赞数」「收藏数」「播放数」「评分」降序/升序切换（再次点击当前指标反转方向，切 Tab 保留当前指标），通过 jsonOnly 抓取完整结果并按 20 条渐进渲染，不影响标签页吃瓜帖。\n修复\n1. Android 播放页画面闪烁与瓦片异常（#240、#242）：针对 Android WebView（Skia/Viz）在硬件 <video> 上方叠加高半径模糊与持久动画层引发的闪烁问题，在 .plat-android 播放页关闭压在视频上的 backdrop-filter（改用等价半透明深色底），移除被遮盖的 blur-3xl 与未缩放时的 3D translate3d，仅在活跃条目渲染 FeedI…",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.9/HGhubX_2.2.9_ios.ipa",
+          "size": 4009527,
           "minOSVersion": "15.0",
-          "releaseTag": "v2.2.8",
-          "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.2.8"
+          "releaseTag": "v2.2.9",
+          "source": "https://github.com/zxsos/HGhubX/releases/tag/v2.2.9"
         }
       ],
-      "version": "2.2.8",
-      "versionDate": "2026-11-23",
-      "versionDescription": "HGhubX v2.2.8\n\n围绕分类导航快捷入口、搜索交互、吃瓜列表官网同步、「我的收藏」排序与已完结封面标签以及播放器全屏暂停提示打磨体验；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. 分类总览 2×2 快捷入口并接入「最近上新」「热门推荐」（#233、#238）：移除移动端与搜索页重复的「排行榜」单列入口（保留搜索页右上角与桌面侧栏「排行榜」），在移动端与桌面端统一展示「最近上新」「热门推荐」「专题」「标签」2×2 等宽卡片；「最近上新」「热门推荐」优先解析官网 /newest/ 与 /recommend/ 服务端渲染页面（失败时按 /api/videos?sort=new|hot 回退），支持自动分页与切线重载。\n2. 「我的 → 收藏 → 短剧」排序与已完结封面标签（#235、#239）：在「我的收藏 → 短剧」新增「最近添加」「最近更新」「完结进度」（点击可切换「已完结优先 ↕」/「更新中优先 ↕」）排序，切到更新/完结排序时自动分批补齐全部收藏详情；全站剧集卡片在左上角按「原创」「热播」「新片」「完结」显示角标，「我的」页已完结短剧使用绿色封面标签（兼有未看新集时并行显示「新更 N 集」与「完结」角标）。\n3. 搜索页左右滑动切 Tab 与底栏快捷复位（#230、#234）：搜索结果支持左右滑动切换「视频 / 帖子」Tab（未提交查询时不拦截横向手势）；在移动端底栏再次点击激活的「搜索」可一键清空结果并回到热搜与历史界面，且不主动弹出软键盘。\n4. 全屏双击暂停显示当前集数提示（#236）：移动端全屏下双击暂…",
-      "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.8/HGhubX_2.2.8_ios.ipa",
-      "size": 4004198,
+      "version": "2.2.9",
+      "versionDate": "2026-11-24",
+      "versionDescription": "HGhubX v2.2.9\n\n重点修复 Android WebView 播放页合成器闪烁问题，并升级「我的收藏」单图标追剧状态筛选与频道/标签结果页指标排序；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. 「我的收藏 → 短剧」单图标追剧状态筛选与底栏快捷复位（#243）：收藏短剧右上角合并为单图标筛选胶囊，点击展开「追剧状态」菜单并展示「在追剧」「连载中」「已完结」及各自数量（三类允许重叠，按更新时间倒序稳定排列）；卡片统一只保留单个左上角角标随分类切换（「未看 N 集」/「更新至 N 集」/「全 N 集」）；移动端再次点击底栏激活中的「我的」可一键复位回「我的收藏 / 短剧 / 全部收藏」并回到顶部。\n2. 分类频道与标签结果页指标排序（#244）：原创、AI 短剧、AI 漫剧频道及标签结果页短剧区块右侧新增排序入口，支持按「点赞数」「收藏数」「播放数」「评分」降序/升序切换（再次点击当前指标反转方向，切 Tab 保留当前指标），通过 jsonOnly 抓取完整结果并按 20 条渐进渲染，不影响标签页吃瓜帖。\n修复\n1. Android 播放页画面闪烁与瓦片异常（#240、#242）：针对 Android WebView（Skia/Viz）在硬件 <video> 上方叠加高半径模糊与持久动画层引发的闪烁问题，在 .plat-android 播放页关闭压在视频上的 backdrop-filter（改用等价半透明深色底），移除被遮盖的 blur-3xl 与未缩放时的 3D translate3d，仅在活跃条目渲染 FeedI…",
+      "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.9/HGhubX_2.2.9_ios.ipa",
+      "size": 4009527,
       "minOSVersion": "15.0"
     },
     {
@@ -1697,7 +1697,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 30 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "tintColor": "#7C5CFF",
       "notify": false
     }
