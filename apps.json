@@ -385,41 +385,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.6.0-nightly.20261123.2028",
-              "date": "2026-11-23",
-              "publishedAt": "2026-11-23T20:48:17Z",
+              "version": "2.6.0-nightly.20261124.1937",
+              "date": "2026-11-25",
+              "publishedAt": "2026-11-25T00:49:03Z",
               "buildVersion": "260",
               "buildNumber": "260",
-              "localizedDescription": "🧪 预发布 nightly-20261123（2026-11-23）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64.AppImage, for 4K, 16K and 64K page kernels alike\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARM…",
-              "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261123/ARMSX2-nightly-20261123-d8d9a02783-iOS-arm64.ipa",
-              "size": 40949886,
+              "localizedDescription": "🧪 预发布 nightly-20261124（2026-11-25）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64.AppImage, for 4K, 16K and 64K page kernels alike\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARM…",
+              "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261124/ARMSX2-nightly-20261124-61a4b2b2f6-iOS-arm64.ipa",
+              "size": 41101991,
               "minOSVersion": "17.4",
-              "releaseTag": "nightly-20261123",
-              "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261123"
+              "releaseTag": "nightly-20261124",
+              "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261124"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.6.0-nightly.20261123.2028",
-          "date": "2026-11-23",
-          "publishedAt": "2026-11-23T20:48:17Z",
+          "version": "2.6.0-nightly.20261124.1937",
+          "date": "2026-11-25",
+          "publishedAt": "2026-11-25T00:49:03Z",
           "buildVersion": "260",
           "buildNumber": "260",
-          "localizedDescription": "🧪 预发布 nightly-20261123（2026-11-23）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64.AppImage, for 4K, 16K and 64K page kernels alike\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARM…",
-          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261123/ARMSX2-nightly-20261123-d8d9a02783-iOS-arm64.ipa",
-          "size": 40949886,
+          "localizedDescription": "🧪 预发布 nightly-20261124（2026-11-25）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64.AppImage, for 4K, 16K and 64K page kernels alike\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARM…",
+          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261124/ARMSX2-nightly-20261124-61a4b2b2f6-iOS-arm64.ipa",
+          "size": 41101991,
           "minOSVersion": "17.4",
-          "releaseTag": "nightly-20261123",
-          "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261123"
+          "releaseTag": "nightly-20261124",
+          "source": "https://github.com/ARMSX2/ARMSX2/releases/tag/nightly-20261124"
         }
       ],
-      "version": "2.6.0-nightly.20261123.2028",
-      "versionDate": "2026-11-23",
-      "versionDescription": "🧪 预发布 nightly-20261123（2026-11-23）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64.AppImage, for 4K, 16K and 64K page kernels alike\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARM…",
-      "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261123/ARMSX2-nightly-20261123-d8d9a02783-iOS-arm64.ipa",
-      "size": 40949886,
+      "version": "2.6.0-nightly.20261124.1937",
+      "versionDate": "2026-11-25",
+      "versionDescription": "🧪 预发布 nightly-20261124（2026-11-25）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64.AppImage, for 4K, 16K and 64K page kernels alike\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARM…",
+      "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261124/ARMSX2-nightly-20261124-61a4b2b2f6-iOS-arm64.ipa",
+      "size": 41101991,
       "minOSVersion": "17.4"
     },
     {
@@ -1473,7 +1473,7 @@
       "developerName": "CyrilPeng",
       "subtitle": "支持 WebDAV 同步的漫画阅读器",
       "localizedDescription": "Venera 的 fork 分支，基于 Flutter 的跨平台漫画阅读器，支持本地漫画与网络漫画源，覆盖 iOS / Android / Windows / Linux / macOS。核心思路是尽量减少打断阅读：长篇作品可用瀑布流跨章节连续阅读，支持收藏、追更、离线下载，并能通过 WebDAV 在多台设备之间同步数据。\n\n注意：本源里收录了 4 个 Venera 系阅读器（VeneraX、Venera Prime、VeneraNext、Venera-SSR）。它们是各自独立的应用，Bundle ID 各不相同，可以同时安装；但功能高度重叠，一般按需选一个。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/CyrilPeng/Venera-Next",
-      "iconURL": "https://raw.githubusercontent.com/CyrilPeng/Venera-Next/v1.18.4/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
+      "iconURL": "https://raw.githubusercontent.com/CyrilPeng/Venera-Next/v1.18.5/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
       "tintColor": "#2090E0",
       "category": "books",
       "appPermissions": {
@@ -1485,41 +1485,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "1.18.4",
-              "date": "2026-11-23",
-              "publishedAt": "2026-11-23T03:27:29Z",
-              "buildVersion": "253",
-              "buildNumber": "253",
-              "localizedDescription": "正式发布与验收\n\n- 发布 1.18.4+253，汇总 RC1–RC3 和后续反馈修复。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 从同一正式标签重新构建，公开并核验后推进稳定更新渠道、AltStore 和 Winget 元数据。\n- 鸿蒙改为独立 Actions Beta 分发，继续从准确主线提交构建 ARM64／API 26 未签名 HAP，提供来源 manifest、校验值和独立设备验收模板；本次正式 Release 不附带 HAP，也不声明鸿蒙真机验收通过。历史 RC、正式版及其鸿蒙附件保持原样。\n- #178 的 Android 120 Hz 连续翻页和 #188 的收藏目录切换已获提出者明确确认；#129、#152 已交付可安装修复且超过 72 小时未收到新的失败反馈，按约定接受，不将超时视为真机确认。\n- #166 的强 Cloudflare／TLS 兼容问题及 #186 原设备更新检查网络故障因缺少充分证据暂缓，相关异常处理与诊断改进不代表原始问题已修复。白边裁剪仍会保留带扫描痕迹、压缩灰点或靠边内容的区域；#159 长期外部目录及 #163、#81、#123 等增强继续后续安排。\n- 升级前导出并另存完整应用数据备份、保留原漫画文件；沿用原包名与签名身份覆盖安装，无需清库或重新导入。鸿蒙独立 Beta 仍需用户沿用原密钥自行签装。\n候选版已交付的功能与修复\n\n- 阅读器提供「锁定阅读菜单」和靠边小锁，锁定期间阻止触摸／右键唤出菜单，保留翻页、滚动、缩放，跨章与旋转保持锁定；TV 确定键先解锁，再次操作打开菜单…",
-              "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.4/VeneraNext-ios-1.18.4%2B253.ipa",
-              "size": 21589601,
+              "version": "1.18.5",
+              "date": "2026-11-25",
+              "publishedAt": "2026-11-25T04:24:33Z",
+              "buildVersion": "254",
+              "buildNumber": "254",
+              "localizedDescription": "正式发布与鸿蒙下载\n\n- 发布 1.18.5+254，鸿蒙与 Android 手机／TV、Windows、macOS、iOS、Linux 从同一正式标签重新构建，统一在 GitHub Releases 提供安装包；鸿蒙取消 Beta 分类，用户可从公开发布页直接取得 HAP，应用内稳定更新检查可识别同版本的 HAP 和 manifest。\n- 鸿蒙采用 distribution: bundled、channel: harmonyos 与可选真机报告，HAP、来源 manifest 和 SHA-256 随 Release 长期提供，四种语言 README 与安装指南同步统一下载入口。保持现有包名、桌面名称及递增构建号，覆盖升级仍需沿用用户原签名密钥。\n- 构建、源码、版本、原生库及原始包摘要核验仍为发布前置条件；HAP 继续如实记录 signed: false、runtime_verified: false 和已知平台能力限制。缺少真机报告不阻止发布，主动提供的无效或失败报告仍会被拒绝；历史标签读取原提交的分发、渠道和验收策略。\n新增语言\n\n- 新增德语和日语各 1067 条界面翻译，覆盖设置、阅读器、收藏、导入导出、备份恢复和错误提示；语言设置、系统语言匹配、Flutter 组件及 JS APP.locale 同步支持 de_DE、ja_JP，德语不同地区与日语无地区设置均能识别，保留已有语言选择和系统默认策略。\n- 补充 Apple 平台支持语言声明，日语桌面显示优先使用日文字体；语言菜单的「系统」随界面语言翻译，德日继续保留英文未知文案回退和第三方标签原文，新增实际资源、语…",
+              "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.5/VeneraNext-ios-1.18.5%2B254.ipa",
+              "size": 21685908,
               "minOSVersion": "14.0",
-              "releaseTag": "v1.18.4",
-              "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.18.4"
+              "releaseTag": "v1.18.5",
+              "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.18.5"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "1.18.4",
-          "date": "2026-11-23",
-          "publishedAt": "2026-11-23T03:27:29Z",
-          "buildVersion": "253",
-          "buildNumber": "253",
-          "localizedDescription": "正式发布与验收\n\n- 发布 1.18.4+253，汇总 RC1–RC3 和后续反馈修复。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 从同一正式标签重新构建，公开并核验后推进稳定更新渠道、AltStore 和 Winget 元数据。\n- 鸿蒙改为独立 Actions Beta 分发，继续从准确主线提交构建 ARM64／API 26 未签名 HAP，提供来源 manifest、校验值和独立设备验收模板；本次正式 Release 不附带 HAP，也不声明鸿蒙真机验收通过。历史 RC、正式版及其鸿蒙附件保持原样。\n- #178 的 Android 120 Hz 连续翻页和 #188 的收藏目录切换已获提出者明确确认；#129、#152 已交付可安装修复且超过 72 小时未收到新的失败反馈，按约定接受，不将超时视为真机确认。\n- #166 的强 Cloudflare／TLS 兼容问题及 #186 原设备更新检查网络故障因缺少充分证据暂缓，相关异常处理与诊断改进不代表原始问题已修复。白边裁剪仍会保留带扫描痕迹、压缩灰点或靠边内容的区域；#159 长期外部目录及 #163、#81、#123 等增强继续后续安排。\n- 升级前导出并另存完整应用数据备份、保留原漫画文件；沿用原包名与签名身份覆盖安装，无需清库或重新导入。鸿蒙独立 Beta 仍需用户沿用原密钥自行签装。\n候选版已交付的功能与修复\n\n- 阅读器提供「锁定阅读菜单」和靠边小锁，锁定期间阻止触摸／右键唤出菜单，保留翻页、滚动、缩放，跨章与旋转保持锁定；TV 确定键先解锁，再次操作打开菜单…",
-          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.4/VeneraNext-ios-1.18.4%2B253.ipa",
-          "size": 21589601,
+          "version": "1.18.5",
+          "date": "2026-11-25",
+          "publishedAt": "2026-11-25T04:24:33Z",
+          "buildVersion": "254",
+          "buildNumber": "254",
+          "localizedDescription": "正式发布与鸿蒙下载\n\n- 发布 1.18.5+254，鸿蒙与 Android 手机／TV、Windows、macOS、iOS、Linux 从同一正式标签重新构建，统一在 GitHub Releases 提供安装包；鸿蒙取消 Beta 分类，用户可从公开发布页直接取得 HAP，应用内稳定更新检查可识别同版本的 HAP 和 manifest。\n- 鸿蒙采用 distribution: bundled、channel: harmonyos 与可选真机报告，HAP、来源 manifest 和 SHA-256 随 Release 长期提供，四种语言 README 与安装指南同步统一下载入口。保持现有包名、桌面名称及递增构建号，覆盖升级仍需沿用用户原签名密钥。\n- 构建、源码、版本、原生库及原始包摘要核验仍为发布前置条件；HAP 继续如实记录 signed: false、runtime_verified: false 和已知平台能力限制。缺少真机报告不阻止发布，主动提供的无效或失败报告仍会被拒绝；历史标签读取原提交的分发、渠道和验收策略。\n新增语言\n\n- 新增德语和日语各 1067 条界面翻译，覆盖设置、阅读器、收藏、导入导出、备份恢复和错误提示；语言设置、系统语言匹配、Flutter 组件及 JS APP.locale 同步支持 de_DE、ja_JP，德语不同地区与日语无地区设置均能识别，保留已有语言选择和系统默认策略。\n- 补充 Apple 平台支持语言声明，日语桌面显示优先使用日文字体；语言菜单的「系统」随界面语言翻译，德日继续保留英文未知文案回退和第三方标签原文，新增实际资源、语…",
+          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.5/VeneraNext-ios-1.18.5%2B254.ipa",
+          "size": 21685908,
           "minOSVersion": "14.0",
-          "releaseTag": "v1.18.4",
-          "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.18.4"
+          "releaseTag": "v1.18.5",
+          "source": "https://github.com/CyrilPeng/Venera-Next/releases/tag/v1.18.5"
         }
       ],
-      "version": "1.18.4",
-      "versionDate": "2026-11-23",
-      "versionDescription": "正式发布与验收\n\n- 发布 1.18.4+253，汇总 RC1–RC3 和后续反馈修复。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 从同一正式标签重新构建，公开并核验后推进稳定更新渠道、AltStore 和 Winget 元数据。\n- 鸿蒙改为独立 Actions Beta 分发，继续从准确主线提交构建 ARM64／API 26 未签名 HAP，提供来源 manifest、校验值和独立设备验收模板；本次正式 Release 不附带 HAP，也不声明鸿蒙真机验收通过。历史 RC、正式版及其鸿蒙附件保持原样。\n- #178 的 Android 120 Hz 连续翻页和 #188 的收藏目录切换已获提出者明确确认；#129、#152 已交付可安装修复且超过 72 小时未收到新的失败反馈，按约定接受，不将超时视为真机确认。\n- #166 的强 Cloudflare／TLS 兼容问题及 #186 原设备更新检查网络故障因缺少充分证据暂缓，相关异常处理与诊断改进不代表原始问题已修复。白边裁剪仍会保留带扫描痕迹、压缩灰点或靠边内容的区域；#159 长期外部目录及 #163、#81、#123 等增强继续后续安排。\n- 升级前导出并另存完整应用数据备份、保留原漫画文件；沿用原包名与签名身份覆盖安装，无需清库或重新导入。鸿蒙独立 Beta 仍需用户沿用原密钥自行签装。\n候选版已交付的功能与修复\n\n- 阅读器提供「锁定阅读菜单」和靠边小锁，锁定期间阻止触摸／右键唤出菜单，保留翻页、滚动、缩放，跨章与旋转保持锁定；TV 确定键先解锁，再次操作打开菜单…",
-      "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.4/VeneraNext-ios-1.18.4%2B253.ipa",
-      "size": 21589601,
+      "version": "1.18.5",
+      "versionDate": "2026-11-25",
+      "versionDescription": "正式发布与鸿蒙下载\n\n- 发布 1.18.5+254，鸿蒙与 Android 手机／TV、Windows、macOS、iOS、Linux 从同一正式标签重新构建，统一在 GitHub Releases 提供安装包；鸿蒙取消 Beta 分类，用户可从公开发布页直接取得 HAP，应用内稳定更新检查可识别同版本的 HAP 和 manifest。\n- 鸿蒙采用 distribution: bundled、channel: harmonyos 与可选真机报告，HAP、来源 manifest 和 SHA-256 随 Release 长期提供，四种语言 README 与安装指南同步统一下载入口。保持现有包名、桌面名称及递增构建号，覆盖升级仍需沿用用户原签名密钥。\n- 构建、源码、版本、原生库及原始包摘要核验仍为发布前置条件；HAP 继续如实记录 signed: false、runtime_verified: false 和已知平台能力限制。缺少真机报告不阻止发布，主动提供的无效或失败报告仍会被拒绝；历史标签读取原提交的分发、渠道和验收策略。\n新增语言\n\n- 新增德语和日语各 1067 条界面翻译，覆盖设置、阅读器、收藏、导入导出、备份恢复和错误提示；语言设置、系统语言匹配、Flutter 组件及 JS APP.locale 同步支持 de_DE、ja_JP，德语不同地区与日语无地区设置均能识别，保留已有语言选择和系统默认策略。\n- 补充 Apple 平台支持语言声明，日语桌面显示优先使用日文字体；语言菜单的「系统」随界面语言翻译，德日继续保留英文未知文案回退和第三方标签原文，新增实际资源、语…",
+      "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.5/VeneraNext-ios-1.18.5%2B254.ipa",
+      "size": 21685908,
       "minOSVersion": "14.0"
     },
     {
@@ -1697,7 +1697,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 30 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "tintColor": "#7C5CFF",
       "notify": false
     }

@@ -2960,5 +2960,33 @@
       "size": 40285175,
       "digest": "sha256:0f9c289d8b45e87e72eee8371fdb2bf6e1e92b65c306a8ed677f5a11edcbd230"
     }
+  },
+  "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.5/VeneraNext-ios-1.18.5%2B254.ipa": {
+    "bundleIdentifier": "com.github.cyrilpeng.veneranext",
+    "version": "1.18.5",
+    "buildVersion": "254",
+    "displayName": "VeneraNext",
+    "minOSVersion": "14.0",
+    "size": 21685908,
+    "assetIdentity": {
+      "id": 790033052,
+      "updated_at": "2026-11-25T04:23:09Z",
+      "size": 21685908,
+      "digest": "sha256:035427113c59bcd9416dce3dde10dbabc75aef10927ccc1e6a77927259b01d93"
+    }
+  },
+  "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261124/ARMSX2-nightly-20261124-61a4b2b2f6-iOS-arm64.ipa": {
+    "bundleIdentifier": "com.armsx2.ios.nightly",
+    "version": "2.6.0-nightly.20261124.1937",
+    "buildVersion": "260",
+    "displayName": "ARMSX2 Nightly",
+    "minOSVersion": "17.4",
+    "size": 41101991,
+    "assetIdentity": {
+      "id": 789484168,
+      "updated_at": "2026-11-25T00:49:08Z",
+      "size": 41101991,
+      "digest": "sha256:ec8ffd0f687e66ff19a2d3d9e2dee34e3d4ef8a88b2e4a8ad8185600f0bd1730"
+    }
   }
 }

@@ -2376,6 +2376,25 @@
       "ipas": []
     },
     {
+      "tag": "nightly-20261124",
+      "name": "ARMSX2 nightly 20261124 (61a4b2b2f6)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-11-25",
+      "published_at": "2026-11-25T00:49:03Z",
+      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64.AppImage, for 4K, 16K and 64K page kernels alike\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- iOS: skip the indentation commit in git blame\n- Translations: the MaliSX2 driver notice in all 19 languages\n- Android: regenerate the PGO profile on the source with the VU1 chunk store and the EE two-issue timing model\n- microVU: the program memory bound is 192 MiB\n- VU1 chunk store: a lookup that installs a body writes no log line\n- VU AOT: a routine keeps up to 32 tiered bodies\n- VU AOT: a routine's finished jobs wait for their own copies\n- VU AOT: a tiered body taken in at a copy leaves its root's job for a copy outside it\n- VU1 chunk store: a routine brings back as many of the tier's bodies as a head keeps\n- VU1 chunk store: only a copy whose tiered body cannot be placed asks at its first run\n- VU1 chunk store: a routine brings back the 16 plain bodies used last\n- VU1 chunk store: print its counters at each reset, and count the first tiered placement since the ",
+      "ipas": [
+        {
+          "name": "ARMSX2-nightly-20261124-61a4b2b2f6-iOS-arm64.ipa",
+          "size": 41101991,
+          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261124/ARMSX2-nightly-20261124-61a4b2b2f6-iOS-arm64.ipa",
+          "id": 789484168,
+          "updated_at": "2026-11-25T00:49:08Z",
+          "digest": "sha256:ec8ffd0f687e66ff19a2d3d9e2dee34e3d4ef8a88b2e4a8ad8185600f0bd1730"
+        }
+      ]
+    },
+    {
       "tag": "nightly-20261123",
       "name": "ARMSX2 nightly 20261123 (d8d9a02783)",
       "pre": true,
@@ -2514,25 +2533,6 @@
           "id": 742320362,
           "updated_at": "2026-11-13T04:53:55Z",
           "digest": "sha256:10ae36945d8c76d806774bafcfde306c41e1c3f518df9461ea7e9bfe193a00d7"
-        }
-      ]
-    },
-    {
-      "tag": "nightly-20261112",
-      "name": "ARMSX2 nightly 20261112 (c25493a202)",
-      "pre": true,
-      "draft": false,
-      "date": "2026-11-12",
-      "published_at": "2026-11-12T11:58:10Z",
-      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- IOP thread: hold the lag bound tight for 196,608 cycles after every SIF transfer the EE starts\n- GS/Vulkan: a run's texture set is a fixed array of 32, without a variable descriptor count\n- Android: Auto picks Vulkan on the Bifrost arch 7 parts\n- DriverPacks: offer malisx2 on every Mali of its four arches\n- Android: Auto picks Vulkan on every Mali Valhall v10 part\n- Offer malisx2 on every Mali of arch 7, 9, 10 and 11\n- GPU Drivers pages: name both pack families, pass the session to the setup offer\n- DriverPacks: a malisx2 feed for Mali GPUs on Arm's kbase driver\n- Android: Auto picks Vulkan on the Mali-G610 and G710\n- Android: Vulkan is the default renderer instead of Auto\n- Offer malisx2 on the Mali-G610 and G710 (Valhall v10)\n- GS/Vulkan: VkResultToS",
-      "ipas": [
-        {
-          "name": "ARMSX2-nightly-20261112-c25493a202-iOS-arm64.ipa",
-          "size": 40658081,
-          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261112/ARMSX2-nightly-20261112-c25493a202-iOS-arm64.ipa",
-          "id": 739312263,
-          "updated_at": "2026-11-12T11:58:16Z",
-          "digest": "sha256:ca921e091824f59f3b2e85fb2349d631e522452b150fd25427464768a5e36458"
         }
       ]
     },
@@ -5273,6 +5273,25 @@
   ],
   "CyrilPeng/Venera-Next": [
     {
+      "tag": "v1.18.5",
+      "name": "v1.18.5",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-25",
+      "published_at": "2026-11-25T04:24:33Z",
+      "body": "### 正式发布与鸿蒙下载\n\n- 发布 `1.18.5+254`，鸿蒙与 Android 手机／TV、Windows、macOS、iOS、Linux 从同一正式标签重新构建，统一在 GitHub Releases 提供安装包；鸿蒙取消 Beta 分类，用户可从公开发布页直接取得 HAP，应用内稳定更新检查可识别同版本的 HAP 和 manifest。\n- 鸿蒙采用 `distribution: bundled`、`channel: harmonyos` 与可选真机报告，HAP、来源 manifest 和 SHA-256 随 Release 长期提供，四种语言 README 与安装指南同步统一下载入口。保持现有包名、桌面名称及递增构建号，覆盖升级仍需沿用用户原签名密钥。\n- 构建、源码、版本、原生库及原始包摘要核验仍为发布前置条件；HAP 继续如实记录 `signed: false`、`runtime_verified: false` 和已知平台能力限制。缺少真机报告不阻止发布，主动提供的无效或失败报告仍会被拒绝；历史标签读取原提交的分发、渠道和验收策略。\n\n### 新增语言\n\n- 新增德语和日语各 1067 条界面翻译，覆盖设置、阅读器、收藏、导入导出、备份恢复和错误提示；语言设置、系统语言匹配、Flutter 组件及 JS `APP.locale` 同步支持 `de_DE`、`ja_JP`，德语不同地区与日语无地区设置均能识别，保留已有语言选择和系统默认策略。\n- 补充 Apple 平台支持语言声明，日语桌面显示优先使用日文字体；语言菜单的「系统」随界面语言翻译，德日继续保留英文未知文案回退和第三方标签原文，新增实际资源、语言切换以及真实字体下的手机／横屏／桌面与两倍字号设置、菜单、覆盖确认回归。\n- 设置选择器限制长选项的占宽，为标题保留空间；确认窗口的长标题支持换行，操作按钮在空间不足时改为纵向排列，避免德语、日语及大字号下布局失败、省略关键标题或挤出确认操作。\n- GitHub 全平台正式构建和手动构建在实际安装包中核对翻译词典与来源提交一致，避免漏打包或携带旧版译文；继续使用指定 commit 的工作流产物验证新增语言。\n\n### 语言与翻译修复\n\n- 补齐下载备份覆盖本地修改确认提示的繁体翻译，以及漫画源更新取消提示的简繁翻译；润色阅读器横／竖屏图片数量的英文文案并统一中文括号。\n- 将语言选项、持久化标识、Flutter 支持列表和翻译标识集中维护，保留现有简／繁／英文选择及系统语言匹配行为；JS 的 `APP.locale` 在英文下返回约定的 `en_US`，修复原先的 `en_null`，补齐 Flutter 组件本地化代理。\n- 启动时载入简繁内置标签词库，查找按当前语言选择，显式切换和系统语言变化立即生效；避免继续使用启动时的旧词库，并保留英文原标签及未知标签回退。\n- 文案参数按完整名称替换所有出现位置，避免短参数名替换其他名称的前缀或将参数值再次当作文案参数处理；未知参数继续保留原文。\n\n### 应用启动诊断\n\n- Windows 启动记录细化到 COM、工程与参数准备、实例检查、窗口类、显示器／DPI、窗口、引擎和插件阶段，补充应用版本、系统架构与 CPU 指令能力；主线程异常通过预先准备的句柄记录原始异常代码、模块文件名和相对偏移，捕获边界与 C++ 对象生命周期隔离，保留原异常传播及 Windows 错误报告，并验证日志轮转、不可写时的行为及真实安装包启动记录。用于继续定位 #190 的原设备启动失败，尚未确认原始兼容故障已修复。\n\n### 阅读器修复\n\n- 连续／瀑布流阅读在图片旁的空白区域右键保存或复制时，按当前可见图片行确定原图，复用活动滚动视口的几何与来源校验，保留缩放、平移、重复图片及跨章节的实际页码和章节归属；章节分隔和阅读区域外不选择图片，避免返回「没有图片」或选中隐藏预加载页面（#193）。\n\n### 开发维护\n\n- 阅读器保存失败后恢复悬浮章节导航的回归复用受控帧与真实 I/O 推进，等待退出处理完成后再验证恢复结果，修复鸿蒙 SDK 宿主测试中直接等待退出 Future 可能停滞的问题；保留保存期间禁止导航及失败后可重试的实际行为验证。\n- 鸿蒙真机验收报告改为显式 `optional` 策略，随版正式版和候选版均可在缺报告时发布或恢复草稿；已附报告仍核对维护者权限、准确 HAP、源码、版本、摘要和测试结果。继续强制包体与原生库核验，保留未签名和未完成真机验收标记，历史 `required`／`stable_required` 标签仍按原策略恢复。\n- 新增德语和日语完整 README，四份项目说明互相提供语言入口，默认 README 继续使用中文；同步更新翻译贡献、术语与",
+      "ipas": [
+        {
+          "name": "VeneraNext-ios-1.18.5+254.ipa",
+          "size": 21685908,
+          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.5/VeneraNext-ios-1.18.5%2B254.ipa",
+          "id": 790033052,
+          "updated_at": "2026-11-25T04:23:09Z",
+          "digest": "sha256:035427113c59bcd9416dce3dde10dbabc75aef10927ccc1e6a77927259b01d93"
+        }
+      ]
+    },
+    {
       "tag": "v1.18.4",
       "name": "v1.18.4",
       "pre": false,
@@ -5630,25 +5649,6 @@
           "id": 493948564,
           "updated_at": "2026-07-29T11:11:00Z",
           "digest": "sha256:81b53784a4bfea345a3e1a744ff7fcdc23f96d84298d799a6b2bf7611833a2df"
-        }
-      ]
-    },
-    {
-      "tag": "v1.13.1-rc.3",
-      "name": "v1.13.1-rc.3",
-      "pre": true,
-      "draft": false,
-      "date": "2026-07-27",
-      "published_at": "2026-07-27T09:43:20Z",
-      "body": "### 新增\n\n- 在“关于”中新增赞助者名单页面，支持置顶赞助、当前赞助者和历史赞助者分区展示。\n\n### 变更\n\n- 赞助者名单改用结构化数据统一生成应用数据、GitHub 名单和 README 置顶宣传区，并增加格式校验、确定性检查及旧版数据兼容。\n- 赞助状态改由爱发电 API 定时同步，自动识别当前方案、到期状态、历史档位和符合条件的一次性赞助；同步失败时保留上次成功名单。\n\n### 修复\n\n- 修复桌面端标题栏品牌标识在侧栏折叠时仍显示文字并穿过分割线的问题；折叠状态下仅显示应用 logo。\n- 修复开启不可变 GitHub Release 后，预发布构建可能先发布空 Release 导致资产上传失败的问题。\n- 修复 Windows 升级后可能无法读取旧应用身份目录中本地数据的问题；迁移过程现在兼容多代目录，并且不会因新目录已生成日志等文件而跳过缺失数据。\n- 修复应用配置写入中断或内容异常时直接删除 `appdata.json` 的问题；配置文件现在采用原子替换并保留备份，启动时可从备份或同步数据恢复，同时保留损坏文件用于排查。\n\n### 文档\n\n- 更新 Windows 安装与分发说明，明确 winget 已正式可用，并补充安装、升级、源刷新、审核延迟和便携版限制。\n- 完善赞助档位、永久鸣谢、置顶宣传、排序规则和维护边界说明，并在项目介绍下方恢复漫画源分离声明。\n- 新增完整英文 README，并在中英文首页增加语言切换、GitHub 主仓库和 Gitee 国内镜像入口。\n",
-      "ipas": [
-        {
-          "name": "VeneraNext-ios-1.13.1-rc.3+215.ipa",
-          "size": 15957987,
-          "url": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.13.1-rc.3/VeneraNext-ios-1.13.1-rc.3%2B215.ipa",
-          "id": 491280602,
-          "updated_at": "2026-07-27T09:43:17Z",
-          "digest": "sha256:d39e905ce57de5f6ce5504df20a191ea0ff17c4f7de3181f6144b2fa1e3c3287"
         }
       ]
     }
