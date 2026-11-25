@@ -1956,15 +1956,15 @@
   "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa": {
     "bundleIdentifier": "io.nekohasekai.swipt",
     "version": "0.1.0",
-    "buildVersion": "94",
+    "buildVersion": "95",
     "displayName": "Swipt",
     "minOSVersion": "16.4",
-    "size": 48263153,
+    "size": 48264471,
     "assetIdentity": {
-      "id": 787960639,
-      "updated_at": "2026-11-24T16:31:49Z",
-      "size": 48263153,
-      "digest": "sha256:510c13d70a7ce36f004391e94c5a35ae7a11fdfbf683001fb1a0ce62181c06dd"
+      "id": 791795485,
+      "updated_at": "2026-11-25T14:04:05Z",
+      "size": 48264471,
+      "digest": "sha256:e263964c0d438d70c7620f43fe2e9b101f1c3fa1a0b1f17d93422b7074892eed"
     }
   },
   "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.2/ARMSX3-0.0.2.ipa": {
@@ -2987,6 +2987,20 @@
       "updated_at": "2026-11-25T00:49:08Z",
       "size": 41101991,
       "digest": "sha256:ec8ffd0f687e66ff19a2d3d9e2dee34e3d4ef8a88b2e4a8ad8185600f0bd1730"
+    }
+  },
+  "https://github.com/iam567/rich4-renew-app/releases/download/v1.3.0/rich4-1.3.0-unsigned.ipa": {
+    "bundleIdentifier": "pro.areu.rich4",
+    "version": "1.3.0",
+    "buildVersion": "63",
+    "displayName": "大富翁4",
+    "minOSVersion": "15.0",
+    "size": 1698625747,
+    "assetIdentity": {
+      "id": 790668219,
+      "updated_at": "2026-11-25T08:14:51Z",
+      "size": 1698625747,
+      "digest": "sha256:d982401a775d34a65a72f5079825053cb7854d89e79ce6fa4bb0b6749a9a249b"
     }
   }
 }

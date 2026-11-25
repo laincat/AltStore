@@ -1,6 +1,25 @@
 {
   "zxsos/HGhubX": [
     {
+      "tag": "test-pre",
+      "name": "HGhubX Test Preview (0b0f59b)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-11-21",
+      "published_at": "2026-11-21T16:49:36Z",
+      "body": "# HGhubX Test Preview\n\n基于 `main`（`1becc8d`）自动合成的全平台预览构建（更新时间：`2026-11-25T14:49:07Z`，测试提交：`0b0f59b`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（4）\n1. #260 修复标签置顶与帖子点赞/收藏提示堆叠，统一动作提示单槽（@makisekurisu-jp，`e15aeb2`）\n2. #262 feat: 搜索页热门作者、作者主页筛选排序与分类作者入口（@makisekurisu-jp，`ccd2617`）\n3. #267 fix: 搜索页热门标签 10+10 并保留热搜榜/热门标签刷新入口（@makisekurisu-jp，`402879f`）\n4. #268 fix: 移除视频卡片「完结」角标（@makisekurisu-jp，`4d5018e`）\n\n## 自动跳过的 PR（1）\n- #263 feat: 标签结果页按连载状态筛选（@makisekurisu-jp）：与当前测试基线存在代码冲突，已跳过\n",
+      "ipas": [
+        {
+          "name": "HGhubX_2.2.10_ios.ipa",
+          "size": 4167789,
+          "url": "https://github.com/zxsos/HGhubX/releases/download/test-pre/HGhubX_2.2.10_ios.ipa",
+          "id": 791993016,
+          "updated_at": "2026-11-25T15:02:40Z",
+          "digest": "sha256:6a34f9afe95843a313c12f724947fedbe959c9a0f806034e6b4032da18e2f4c7"
+        }
+      ]
+    },
+    {
       "tag": "v2.2.10",
       "name": "v2.2.10",
       "pre": false,
@@ -28,25 +47,6 @@
       "published_at": "2026-11-24T10:10:36Z",
       "body": "# HGhubX TV tv-v2.2.5\n\n紧急适配上游全新 `dx150-edge-v1` 四作用域加密网关，修复全部业务接口返回 HTTP 503 的问题，并同步带来网络切换静默恢复改进；适用于 Android TV / 电视盒子（`com.hghubx.tv`）。\n\n## 修复\n1. **适配上游 `dx150-edge-v1` 四作用域加密网关，修复接口全 503（#255、#256）**：上游于 2026-11-24 下线旧统一入口 `/api/edge/request`（返回 `HTTP 503 {\"msg\":\"接口已停用\"}`）并拆分为 `/api/{public,dynamic,playback,user}/request`；TV 版共用底层 Rust 网络层同步切换至 `dx150-edge-v1`（ECDH P-256 + HKDF-SHA256 + AES-256-GCM 单飞会话与 `public` 快速通道），恢复片单、详情、搜索与播放地址解析，同时对未迁移镜像保留旧接口 `404`/`405` 兼容回退。\n2. **网络切换与代理探测恢复（#246、#256）**：仅将 HTTP 401 折叠为登录态失效，保留 403 状态供线路探测感知；健康检查与登录前刷新客户端缓存，草稿代理探测同步切至 `/api/public/request`。\n\n## 安装与兼容提示\n- Android TV 按 ABI 分包提供 `HGhubX-TV_2.2.5_arm64.apk`、`HGhubX-TV_2.2.5_arm.apk`、`HGhubX-TV_2.2.5_x86_64.apk`（`com.hghubx.tv`，`versionCode=2002005`）。\n- 沿用与既有 `com.hghubx.tv` 相同的签名证书与单调递增 `versionCode`，支持直接覆盖升级，保留本机收藏、观看记录、线路偏好与启动 PIN。\n\n## 致谢\n- 感谢 @zxsos 完成 #256 上游 `dx150-edge-v1` 加密网关紧急适配与 #246 网络恢复改进。\n\n## 验证\n- 本地 `make check`（Rust `124 passed; 0 failed; 5 ignored`、文档链接与版本同步 `release-check(tv): ok 2.2.5, android versionCode=2002005`）、`make test-tv`（TV 版本字段与 `VITE_APP_EDITION=tv pnpm build`）以及 `node scripts/test-tv-remote.mjs`（14/14 场景通过）全部通过。\n- 实网四作用域联调（`cargo test --lib edge_crypto::tests::live_dx150_edge_all_four_scopes -- --ignored` 对 `https://huangguoai.com`）全通。\n- TV 正式安装包由 `tv-v2.2.5` 标签触发的 GitHub Actions `TV Release` 工作流构建并校验。\n",
       "ipas": []
-    },
-    {
-      "tag": "test-pre",
-      "name": "HGhubX Test Preview (d346ca8)",
-      "pre": true,
-      "draft": false,
-      "date": "2026-11-21",
-      "published_at": "2026-11-21T16:49:36Z",
-      "body": "# HGhubX Test Preview\n\n基于 `main`（`6370c44`）自动合成的全平台预览构建（更新时间：`2026-11-24T15:01:56Z`，测试提交：`d346ca8`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（3）\n1. #259 feat(feed): unify hold-speed rail across 0.5x to 6x for seamless transitions（@zxsos，`fad6c8d`）\n2. #260 修复标签置顶与帖子点赞/收藏提示堆叠，统一动作提示单槽（@makisekurisu-jp，`e15aeb2`）\n3. #262 feat: 搜索页新增热门作者并支持未登录关注（@makisekurisu-jp，`00a3847`）\n",
-      "ipas": [
-        {
-          "name": "HGhubX_2.2.10_ios.ipa",
-          "size": 4164407,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/test-pre/HGhubX_2.2.10_ios.ipa",
-          "id": 787689142,
-          "updated_at": "2026-11-24T15:15:27Z",
-          "digest": "sha256:b1ff39ab05410d7114762ee6e54d73e659bb1771f227f8a13260a360b3fe94fc"
-        }
-      ]
     },
     {
       "tag": "v2.2.9",
@@ -2968,17 +2968,17 @@
       "name": "Nightly build",
       "pre": true,
       "draft": false,
-      "date": "2026-11-24",
-      "published_at": "2026-11-24T16:31:56Z",
-      "body": "* Remove 1-minute timeout from iOS JIT debugserver session\n* Add iOS JIT support to device, gRPC, JS API, and CLI\n* Discover wireless Android devices over mDNS\n* Fix secrets context in release_android job condition\n* Add Android release build and CI workflow\n* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availability checks in CLI\n* Split automation runtime and host by target OS with API level 4\n* Unify internal/graphics with event-driven Darwin cancellation\n* Extract api.Publish and api.Device\n* Extract tailscale.Controller and rename login Wait to Complete\n* Extract internal/fault, internal/screen, and internal/selector\n* Avoid redundant SpringBoard reads when dismissing setup alerts\n* Fix sideload setup stalling on permission alerts and reopening Settings\n* Discover vphone virtual machines without Launchpad\n* Request unicast mDNS responses in the CLI\n* Replace polling loops with event-driven notifications\n* Fix sideload setup opening Settings after the Always location alert\n* Stream discovered devices into the CLI device picker\n* Request Always location access for the background service\n* Fix pairing, language updates and container SQLite in the driver\n* Fix cellular data being detected on Wi-Fi\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack options for ZIP archives\n* Replace the hand-written ZIP code of the CLI with fflate\n* Simplify screen streaming and recording\n* Share one atomic file write\n* Fix mDNS browsing and name conflict handling\n* Simplify the JavaScriptCore adapter\n* Add swipt driver to serve a device f",
+      "date": "2026-11-25",
+      "published_at": "2026-11-25T14:04:10Z",
+      "body": "* Stop forwarding SIGSTOP to the iOS JIT process\n* Remove 1-minute timeout from iOS JIT debugserver session\n* Add iOS JIT support to device, gRPC, JS API, and CLI\n* Discover wireless Android devices over mDNS\n* Fix secrets context in release_android job condition\n* Add Android release build and CI workflow\n* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availability checks in CLI\n* Split automation runtime and host by target OS with API level 4\n* Unify internal/graphics with event-driven Darwin cancellation\n* Extract api.Publish and api.Device\n* Extract tailscale.Controller and rename login Wait to Complete\n* Extract internal/fault, internal/screen, and internal/selector\n* Avoid redundant SpringBoard reads when dismissing setup alerts\n* Fix sideload setup stalling on permission alerts and reopening Settings\n* Discover vphone virtual machines without Launchpad\n* Request unicast mDNS responses in the CLI\n* Replace polling loops with event-driven notifications\n* Fix sideload setup opening Settings after the Always location alert\n* Stream discovered devices into the CLI device picker\n* Request Always location access for the background service\n* Fix pairing, language updates and container SQLite in the driver\n* Fix cellular data being detected on Wi-Fi\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack options for ZIP archives\n* Replace the hand-written ZIP code of the CLI with fflate\n* Simplify screen streaming and recording\n* Share one atomic file write\n* Fix mDNS browsing and name conflict handling\n* Simplify the JavaScriptCo",
       "ipas": [
         {
           "name": "Swipt.ipa",
-          "size": 48263153,
+          "size": 48264471,
           "url": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-          "id": 787960639,
-          "updated_at": "2026-11-24T16:31:49Z",
-          "digest": "sha256:510c13d70a7ce36f004391e94c5a35ae7a11fdfbf683001fb1a0ce62181c06dd"
+          "id": 791795485,
+          "updated_at": "2026-11-25T14:04:05Z",
+          "digest": "sha256:e263964c0d438d70c7620f43fe2e9b101f1c3fa1a0b1f17d93422b7074892eed"
         }
       ]
     }
@@ -7789,6 +7789,25 @@
   ],
   "iam567/rich4-renew-app": [
     {
+      "tag": "v1.3.0",
+      "name": "安装包 v1.3.0（2026-11-25）",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-25",
+      "published_at": "2026-11-25T06:52:08Z",
+      "body": "## 谢谢大家\n说好的 1.3 来了。谢谢每一位在玩、在报 bug、在评论区出主意的朋友，这一版等得比较久，谢谢大家的耐心。\n\n1.3 最大的心血是两张古代大地图：大唐长安的「开元盛世」，和北宋汴京的「清明上河」——还有八百里水泊梁山。城墙、楼阁、路人、音乐、小报、小游戏，一样一样全是重新做的。\n\n**这个游戏属于每一位喜欢大富翁4的玩家：永远不收任何费用，也不做任何商业用途，大家尽管拿去玩、拿去分享。**\n\n- **想玩两张新地图，请下载这个页面的 1.3.0 安装包覆盖安装**，存档会保留（保险起见，可以先在「游戏设置 → 存档备份」导出一份）。游戏内更新到的是「1.3.0 simple」版：只有几 MB，不含这两张地图，其他功能（私服、联机等）跟完整版一样，可以和完整版的玩家一起玩。iPhone 要连私服，需要装 1.3.0 安装包。\n- **国内下载慢**：在国内提供下载需要备案，我个人没办法申请，建议挂梯子下载，或者等网盘版。\n- **遇到 bug 或小问题**：可以在 [Issues](https://github.com/iam567/rich4-renew-app/issues) 提交，也可以在 B 站 UP 主 **TrustBox**、**阿姆西_MC** 发布的大富翁4 重制版视频下面留言，各个评论区我都会看，能修的一定会修。\n\n祝大家玩得开心，梁山见！\n\n## v1.3 更新内容\n\n- **两张全新的古代大地图，都在「自制地图」里，音乐、界面、开场动画、小报和卦肆（新闻、命运）、路人全是自己的一套，钱也用「文」：**\n  - **开元盛世（大唐长安）**：贡院答题考状元、斗鸡场下注、驿站快马、博戏坊押大小、发配所，路上还有几十个「小事件」格子，踩上去随机前进后退。\n  - **清明上河（北宋汴京）**：城墙、虹桥、樊楼、大相国寺都立起来了。城外是水泊梁山——坐汴河漕运的船过去，打虎、射野猪、跟燕青摔跤、十字坡看碗，抽 108 张「梁山令」，凑齐一组好汉到聚义厅换奖励。\n  - 清明上河的企业各有各的用处：汴河漕运把人送上梁山，东京车坊收加油费，将作监帮你加盖，官窑卖瓷器，常平仓卖保险；当上董事长还有专属好处。\n- **新增「私服」：想自己架一台给朋友玩的人，可以下载「私服架设包」，一条命令装好。** 派对模式的「局域网房间」改成了「私服房间」，里面有局域网、连线私服和私服列表；输入房间码就会自动连到那台私服。私服可以有公告、活动报名、私信、介绍和横幅，掉线两分钟内回来座位还在。iPhone 要装 1.3 的安装包才能连私服。\n- **新增「游戏节奏」：慢节奏、原版、快节奏三种。** 慢节奏：物价涨得慢、过路费六折、周转不灵可以清算资产；快节奏：物价涨得快，房价地价 1.2 倍。排行榜只收原版节奏。\n- **所有股票都能自由买卖：** 企业的保留股份不用再走到那栋楼才能买，在股市就能直接按市价买；买不了的时候会写明原因。\n- **电脑版的存档改放在游戏目录里的 save 文件夹**（Windows 在 Rich4.exe 旁边，Mac 在「大富翁4」旁边），换电脑直接复制走；原来的存档第一次打开会自动复制过去。标题画面多了「回到桌面」。\n- 新增「状态条」：游戏画面右上角显示现在的状态，例如谁坐牢还剩几天、股市休市还剩几天，可以收起来。\n- 结果窗口：一次影响很多人或很多块地时，列成清单慢慢滚动，相同的合并成一行，镜头不再一个个跑。\n- 冬眠的人轮到时只弹一条消息，镜头不再切过去。\n- 地狱难度：研究所做的道具在商店里变灰，点一下老板会说明不能卖。\n- 嫁祸卡可以再嫁祸：被嫁祸的人可以用自己的免罪卡或嫁祸卡，直到有人没有为止。飞弹、核弹炸到旅馆，里面的客人也会受伤住院。\n- 新闻、命运送的道具，只会是商店里买得到的。\n- 大富豪模式：卡片改成全国共用一池，商店没有常备卡片了。\n- 修正：有些新闻的结果写成「undefined 的 12 支股票」。\n- 修正：创作乐园的地图说明太长时，按钮被挤出画面。\n- 修正：很旧的安卓系统和部分电视停在绿色画面打不开（需要装 1.3 的安装包）。\n- 修正：iPhone 上连点屏幕下方会退回主屏幕；现在要滑两次才会退出。\n- 修正：简体显示里「著称」「毕昇」等字。\n- 1.3 只能和 1.3 的玩家一起玩派对模式。存档可以直接沿用。\n\n### v1.2.5（2026-11-17，游戏内更新）\n- 修正：抢夺卡现在是「用抢夺卡换对方一张卡」。卡片栏满了也不会再要你丢掉一张；抢到对方的抢夺卡，自己手里会留下一张（以前地狱难度下两边的抢夺卡都会不见）。派对模式里有旧版本的玩家一起玩时，按旧规则进行。\n- **新增：排行榜「总榜」。** 地图那一排最前面多了「总榜」，所有地图一",
+      "ipas": [
+        {
+          "name": "rich4-1.3.0-unsigned.ipa",
+          "size": 1698625747,
+          "url": "https://github.com/iam567/rich4-renew-app/releases/download/v1.3.0/rich4-1.3.0-unsigned.ipa",
+          "id": 790668219,
+          "updated_at": "2026-11-25T08:14:51Z",
+          "digest": "sha256:d982401a775d34a65a72f5079825053cb7854d89e79ce6fa4bb0b6749a9a249b"
+        }
+      ]
+    },
+    {
       "tag": "v1.2.4",
       "name": "安装包 v1.2.4（2026-11-16）",
       "pre": false,
@@ -8111,16 +8130,6 @@
       "date": "2026-10-22",
       "published_at": "2026-10-22T14:56:53Z",
       "body": "> **已有新版本：请移步最新版 [v1.0](https://github.com/iam567/rich4-renew-app/releases/tag/v1.0.0)**（iPhone、安卓、Mac、Windows、Win7 都有安装包）。从 v1.0 起游戏里就能直接更新，不用再来这里下载新安装包。最新版本永远在 [这里](https://github.com/iam567/rich4-renew-app/releases/latest)。\n\n**此版本有缺图问题已下架，安装包已删除，内容都包含在 v0.7.1 里。**\n\n- 新地图「激情岁月」（自制地图第 8 张，经典模式）：\n  - 照 1966–76 年的北京旧城画：长安街、天安门、紫禁城、王府井、前门、天坛，胡同四合院和赫鲁晓夫楼，满街红旗、标语和大字报。\n  - 开局有一段「穿越」动画，所有人回到 1966 年。\n  - 五种大型设施：人民公园（地主抽好事卡、别人抽坏事卡）、招待所、供销社、宣传站（骑车开车来的人判「走资本主义道路」，罚款并进学习班 2 天，可升到 5 级）、研究所。\n  - 全新的新闻和大字报（命运）卡，写的是那个年代的事：上山下乡、大串联、学大寨、乒乓外交、一打三反、批林批孔……以调侃为主。\n  - 银行、卡片屋、道具屋、魔法屋、有奖销售、医院、牛棚、拍卖等界面都换成那个年代的样子；接待员换上那时的衣服、手握红宝书；称呼一律「同志」。\n  - 角色台词前加一句毛主席语录；街上有游行、忠字舞、广播体操、自行车流；大喇叭放原创的年代风格音乐（设置里都可以关）。\n- 单人模式：可以选电脑难度——简单（原版）、中级、困难。\n- 道具和高级卡片的电影动画：飞弹、核子飞弹、传送机、工程车、机器工人、超级工人、时光机、时空机、汽车、机车，以及均富卡、均贫卡、天使卡、恶魔卡、冬眠卡、怪兽卡等（点一下可跳过）。\n- 派对模式：新增「嘲讽」——选一位对手和一句话，对方画面会跳出你角色的嘲讽动画（不影响游戏）。同一房间的玩家请都更新到 v0.7.0。\n- 代码：rich4-renew 05c41e2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-      "ipas": []
-    },
-    {
-      "tag": "v0.6.7",
-      "name": "安装包 v0.6.7（2026-10-22）",
-      "pre": false,
-      "draft": false,
-      "date": "2026-10-22",
-      "published_at": "2026-10-22T04:09:31Z",
-      "body": "> **已有新版本：请移步最新版 [v1.0](https://github.com/iam567/rich4-renew-app/releases/tag/v1.0.0)**（iPhone、安卓、Mac、Windows、Win7 都有安装包）。从 v1.0 起游戏里就能直接更新，不用再来这里下载新安装包。最新版本永远在 [这里](https://github.com/iam567/rich4-renew-app/releases/latest)。\n\n- 派对模式：\n  - 修正：有人中途退出（包括房主）时，其他人会一直卡在「等待 … 操作」。现在掉线 10 秒后由电脑接手，房主走了由下一位接任。\n  - 总资产最多的玩家不能被投票请出。\n  - 被请出或掉线的玩家由电脑接着玩，土地不拍卖。\n  - 派对模式里的电脑变聪明了：会留够现金防过路费、挑骰子避开对手的贵地、对领先者用卡片和道具、善用银行和股票。单人模式的电脑保持原版不变。\n  - 同一房间的玩家请都更新到 v0.6.7，新旧版本混在一起会不同步。\n- 修正：出院、出狱时的行为和原版一致——先走到门口那一格并结算（门口有地雷会被炸回去）。\n- 星球、武侠、恐龙、海岛四张主题地图的旅馆恢复原版外观。\n- 电脑版：\n  - Windows：下载 `rich4-0.6.7-windows.zip`，解压后打开 `Rich4` 文件夹，双击 `Rich4.exe`。第一次打开如果出现「Windows 已保护你的电脑」，点「更多信息 → 仍要执行」。\n  - Mac：下载 `rich4-0.6.7-mac.dmg`，打开后把「大富翁4」拖进「应用程序」（Intel 和 M 芯片都能用）。第一次打开请在「应用程序」里对它按右键 →「打开」。\n- 代码：rich4-renew 2d2a459\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
       "ipas": []
     }
   ],

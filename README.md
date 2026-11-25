@@ -72,7 +72,7 @@ https://github.com/laincat/AltStore/releases/download/latest/apps.json
 | Venera-SSR | `com.github.kiastr.venera-ssr` | 2.1.5 | iOS 14.0+ | 无 | [Kiastr/Venera-SSR](https://github.com/Kiastr/Venera-SSR) |
 | VeneraNext | `com.github.cyrilpeng.veneranext` | 1.18.5 | iOS 14.0+ | 无 | [CyrilPeng/Venera-Next](https://github.com/CyrilPeng/Venera-Next) |
 | VeneraX | `io.github.kyosee.venera` | 3.0.2 | iOS 15.1+ | 无 | [Kyosee/VeneraX](https://github.com/Kyosee/VeneraX) |
-| 大富翁4重制版 | `pro.areu.rich4` | 1.2.4 | iOS 15.0+ | 无 | [iam567/rich4-renew-app](https://github.com/iam567/rich4-renew-app) |
+| 大富翁4重制版 | `pro.areu.rich4` | 1.3.0 | iOS 15.0+ | 无 | [iam567/rich4-renew-app](https://github.com/iam567/rich4-renew-app) |
 | 真果鉴 | `com.yingshib.xg` | 2.0.3 | iOS 15.1+ | 无 | [Xanerix/guoapp](https://github.com/Xanerix/guoapp) |
 <!-- apps:end -->
 
