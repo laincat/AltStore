@@ -1,288 +1,50 @@
 {
   "zxsos/HGhubX": [
     {
+      "tag": "v3.0.0",
+      "name": "v3.0.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-26",
+      "published_at": "2026-11-26T14:16:54Z",
+      "body": "# HGhubX v3.0.0\r\n\r\nHGhubX 3.0 正式版：视频内容改由可导入的视频源提供，支持多来源切换与手机、TV 局域网同步，并完成收藏筛选、缓存清理、扫码等多项体验升级；覆盖 Windows、macOS、Linux、Android 与 iOS。\r\n\r\n## 新增与优化\r\n1. **视频源插件系统与离线示例试用**：支持扫码、`hghubx://` 深链、剪贴板口令、HTTPS 链接及本地文件导入，提供切换、回滚、连通性测试及每次进入静默检查更新（60 秒冷却）；无源引导页提供「试用离线示例源」与顶部一键「移除示例源」，可零网络预览界面，随时一键移除。\r\n2. **「我的收藏」组合筛选与下拉刷新（#278）**：将收藏筛选拆分为「观看状态（不限 / 未看完 / 已看完）」与「连载状态（不限 / 连载中 / 已完结）」两轴正交交集，实时联动计数并统一三道杠筛选图标；新增顶部下拉刷新手势与「刷新收藏」按钮，同步检查更新部数与新增集数。\r\n3. **手机与 TV 局域网双向同步配对**：支持手机「扫一扫」识别 TV 二维码或 4 位配对码直连电视端，同步视频源配置、本机收藏/观看记录、内容偏好与常用播放设置；桌面端不再显示 TV 连接与扫码同步入口。\r\n4. **作者目录、标签页与列表加载提速**：作者目录首屏第 1 页即刻渲染并在后台 4 并发补齐分页；「标签」「专题」与搜索页「热门题材」接入按源与线路隔离的本地缓存，二次进入秒开并后台静默刷新；优化源存储并发读写性能。\r\n5. **真实跨平台缓存清理与最高无上限档位**：支持 `128 MB`、`256 MB`、`512 MB`、`1 GB` 与「无上限」5 档调节，真实统计并清理跨端缓存文件（Windows / macOS / Linux / Android / iOS），完整保留登录态、收藏、观看记录与偏好设置。\r\n6. **扫码画质与对焦升级**：「扫一扫」升级 1080p/720p 高清优先流与主后置镜头识别，支持连续自动对焦、点击画面对焦、多镜头「切镜头」切换以及硬件 `BarcodeDetector` 直连解码。\r\n7. **界面细节与包体积优化**：「关于 HGhubX」弹窗换回正式应用 Logo；去掉视频源导入框冗长提示；开启 Android `.so` 与资源压缩及播放器按需拆包，安装包体积大幅减小（Android `arm64` 约 `5.3 MB`）。\r\n\r\n## 修复\r\n1. **切换视频源后封面正常但播放失败**：从离线示例源导入或切换视频源后，推荐流可能停留在旧源条目、播放能力未及时刷新，需要再导入一次才能播放；现在切源后首页、搜索、分类按新源重新加载，播放地址在能力就绪后自动获取。\r\n2. **剪贴板「粘贴」权限不足**：开放原生剪贴板读取能力并统一走原生插件读取，解决部分端拦截网页粘贴的问题。\r\n3. **分类页功能布局与排行榜/标签排版**：恢复完整能力门控入口并修正紧凑双格按钮对齐与文字错位。\r\n4. **iOS 侧载「文件损坏」与插件连接池（#261、#266）**：补齐 iOS 未签包 ad-hoc 签名与权限/深链配置；为源请求接入复用连接池与受控 DoH 回退，改善部分网络下的误报失败。\r\n\r\n## 安装与兼容提示\r\n- Windows 提供 NSIS 安装包与便携压缩包；macOS 提供 Universal DMG；Linux 提供 amd64 `.deb` 与 `.rpm`；Android 提供按 ABI 分包签名 APK（`versionCode=3000000`）；iOS 提供已 ad-hoc 签名的 `.ipa`（需自行重签侧载安装）。\r\n- 从 2.x 升级后首次启动需导入视频源（也可先试用离线示例源）；既有本地收藏、观看记录与偏好设置均予保留。\r\n- 从 3.0 预发布版可直接覆盖安装。\r\n\r\n## 致谢\r\n- 感谢 @makisekurisu-jp、@zxsos 与所有社区反馈者对本版本的贡献。\r\n\r\n## 验证\r\n- 发版前本地完成 `pnpm build`（三套 TypeScript + Vite 构建）、`check-i18n`、`check-doc-links`、`check-size-budgets`、`check-version-sync`、`check-shell-purity`、`make test-tv`、`pnpm test:smoke`（18/18）与 `test-tv-remote`（14/14 场景）；Rust 源码自 3.0.0-pre.2 起无改动，Rust 检查与单元测试由 GitHub Actions `CI` 工作流执行，全平台产物由 GitHub Actions `Re",
+      "ipas": [
+        {
+          "name": "HGhubX_3.0.0_ios.ipa",
+          "size": 4865415,
+          "url": "https://github.com/zxsos/HGhubX/releases/download/v3.0.0/HGhubX_3.0.0_ios.ipa",
+          "id": 796229596,
+          "updated_at": "2026-11-26T14:16:53Z",
+          "digest": "sha256:e3267be43faf0be5b354395a560c198e10207d762752d4dd95906a109076324d"
+        }
+      ]
+    },
+    {
+      "tag": "tv-v3.0.0",
+      "name": "HGhubX TV tv-v3.0.0",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-26",
+      "published_at": "2026-11-26T14:17:50Z",
+      "body": "# HGhubX TV tv-v3.0.0\r\n\r\nHGhubX TV 3.0 正式版（`com.hghubx.tv`）：支持手机扫码同步与视频源导入，并全新调整界面配色与遥控焦点样式。\r\n\r\n## 新增与优化\r\n1. **界面视觉焕新**：改用中性深色背景与无边框按钮，遥控焦点统一为白底高亮并轻微放大；货架中未选中的卡片适度压暗，详情页「播放」主按钮、剧集格、播放器控制栏、搜索键盘与启动 PIN 界面同步更新，长标题不再被截断。\r\n2. **视频源管理与离线示例试用**：支持手机局域网扫码 / 4 位 PIN 码推源、`hghubx://` 深链导入及进入时静默检查更新；引导页与「设置 → 视频源」提供「试用离线示例源」与一键「移除示例源」，方便无源状态下先体验界面布局与导航交互。\r\n3. **手机与 TV 双向同步配对**：支持一次扫码配对后同局域网双向同步片库收藏、观看进度、内容屏蔽偏好与播放设置，并在「设置 → 手机同步」管理已配对设备。\r\n4. **真实缓存清理与最高无上限档位**：TV「设置 → 缓存」支持 `128 MB` / `256 MB` / `512 MB` / `1 GB` / `无上限` 5 档调节与真实清理释放，保留本机片库、同步记录与启动 PIN。\r\n5. **关于页图标与包体积优化**：「设置 → 关于」展示正式应用 Logo；启用 R8 资源裁剪与原生库压缩，Android TV APK 体积大幅缩小。\r\n\r\n## 修复\r\n1. **修复 Android TV 启动闪退（#276）**：原地替换模板默认 `FileProvider` 声明，消除部分设备上因重复 `ContentProvider` 导致的开机崩溃。\r\n2. **请求连接池与 DoH 回退（#266）**：复用底层 HTTP 连接池并支持受控 DoH 回退，改善复杂网络下的线路失败与误报。\r\n\r\n## 安装与兼容提示\r\n- Android TV 按 ABI 分包提供 `HGhubX-TV_3.0.0_arm64.apk`、`HGhubX-TV_3.0.0_arm.apk`、`HGhubX-TV_3.0.0_x86_64.apk`（`com.hghubx.tv`，`versionCode=3000000`）。\r\n- 沿用既有签名证书与版本序列，支持覆盖安装并保留本机片库、观看记录、启动 PIN 与偏好设置；从 2.x 升级后首次需通过手机扫码或 `hghubx://` 深链导入视频源。\r\n\r\n## 致谢\r\n- 感谢 @zxsos、@makisekurisu-jp 与社区成员的测试反馈。\r\n\r\n## 验证\r\n- 发版前本地完成 `make test-tv`（版本一致性校验与 `VITE_APP_EDITION=tv pnpm build`）与 TV 遥控器验收套件（14/14 场景），并由 GitHub Actions `TV Release` 工作流构建签名发布。\r\n",
+      "ipas": []
+    },
+    {
       "tag": "test-pre",
-      "name": "HGhubX Test Preview (a728153)",
+      "name": "HGhubX Test Preview (52c8565)",
       "pre": true,
       "draft": false,
-      "date": "2026-11-21",
-      "published_at": "2026-11-21T16:49:36Z",
-      "body": "# HGhubX Test Preview\n\n基于 `main`（`af811da`）自动合成的全平台预览构建（更新时间：`2026-11-26T07:59:13Z`，测试提交：`a728153`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（2）\n1. #276 fix(tv,android): replace Tauri default FileProvider in place to prevent TV launch crash（@zxsos，`0bfed9e`）\n2. #278 我的收藏：拆分为追剧/连载组合筛选，并统一筛选图标（@makisekurisu-jp，`0b6cff1`）\n",
+      "date": "2026-11-26",
+      "published_at": "2026-11-26T15:05:45Z",
+      "body": "# HGhubX Test Preview\n\n基于 `main`（`e651ce8`）自动合成的全平台预览构建（更新时间：`2026-11-26T18:17:23Z`，测试提交：`52c8565`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（3）\n1. #281 feat(playback,settings): 移植 #279 画面增强与细节纹理周期噪点修复（@zxsos，`a29b3b7`）\n2. #282 feat(desktop,test): 接入桌面端 hghubx:// 深链跳转并修复 gesture 播放测试视口（@zxsos，`8a273bd`）\n3. #284 ci: post release assets to Telegram group on publish（@zxsos，`16281c6`）\n",
       "ipas": [
         {
-          "name": "HGhubX_2.2.10_ios.ipa",
-          "size": 4169740,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/test-pre/HGhubX_2.2.10_ios.ipa",
-          "id": 794889536,
-          "updated_at": "2026-11-26T08:08:43Z",
-          "digest": "sha256:9ed5a89462d376ce9572071640073982d4f3b7bb98304789973a9d10100f7eb3"
-        }
-      ]
-    },
-    {
-      "tag": "v2.2.10",
-      "name": "v2.2.10",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-24",
-      "published_at": "2026-11-24T10:16:05Z",
-      "body": "# HGhubX v2.2.10\n\n紧急适配上游全新 `dx150-edge-v1` 四作用域加密网关修复全接口 503，并合入标签置顶、右半屏长按倍速胶囊、搜索页热门标签官网同步、网络切换静默恢复、完结剧集「全 N 集」与窄屏布局修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n\n## 新增与优化\n1. **标签页长按置顶与标签结果页标题栏置顶（#247、#252）**：在「分类 → 标签」顶部新增「置顶标签」板块，支持长按标签 600ms 切换置顶/取消（最多 24 个，横向拖动超过 10px 取消防误触）；进入任意标签结果页后，标题栏右侧新增图钉按钮一键置顶（已置顶朝下扎稳并高亮），状态保存在内容偏好 `pinnedTags` 并跨重启保留。\n2. **移动端右半屏长按倍速与顶部只读胶囊提示（#247、#251）**：长按手势取消对角线斜切与居中死区，改为直觉的左右半屏切分（右半屏 `2×` 倍速、左半屏 `0.5×` 慢放，起手延迟缩至 `260ms`，横滑 `68px` 换挡，松手即恢复不锁定）；长按激活期间在安全区顶部居中显示无 `backdrop-filter` 的只读倍速胶囊与挡位点，清屏模式下也有清晰视觉反馈。\n3. **搜索结果 / 分类 / 标签卡片完结剧集显示「全 N 集」（#248）**：已完结剧目在海报底部集数角标统一显示「全 N 集」（优先取 `total_episodes`，缺失时回退 `episode_count`），未完结剧目保持原有更新集数文案。\n\n## 修复\n1. **适配上游 `dx150-edge-v1` 四作用域加密网关，修复接口全 503（#255、#256）**：上游于 2026-11-24 下线旧统一入口 `/api/edge/request`（返回 `HTTP 503 {\"msg\":\"接口已停用\"}`）并拆分为 `/api/{public,dynamic,playback,user}/request`；客户端新增 `edge_crypto` 模块复用 `ring` 实现 ECDH P-256 + HKDF-SHA256 + AES-256-GCM 单飞会话加解密、`public` 作用域 `X-HG-Public-JSON: 1` 快速路径与 `session_expired` 自动重建，同时对未迁移镜像保留旧接口 `404`/`405` 兼容回退，并同步更新草稿代理连通性探测。\n2. **搜索页热门题材与官网首页「热门标签」同步（#250、#254）**：新增 `api_hot_tags` 直接解析官网首页 SSR `section.hg-home-popular-tags`，搜索页严格按官网热门标签集合与顺序展示，移除前端全量 `/api/tags` 重排，点「换一批」不再混入非热门普通标签，保留内容屏蔽过滤与手动刷新同步。\n3. **网络切换误报 401 与静默恢复（#246）**：修复 `edge.rs` 将 HTTP 403 折叠为 `401` 导致切网后误报登录态失效的问题；网络恢复挂起并在回到前台时强制重建客户端与自动选线，跨镜像静默重登按需刷新发布页信任，瞬时失败不再永久锁死同步，不可恢复时去重提示并提供原地「重新登录」入口。\n4. **窄屏手机中英文控件异常折行与裁切（#249）**：收紧 360px / 320px 窄屏容器下「我的关注」「我的主页」「最近上新」「热门推荐」、账号卡 `ID` 与统计行、设置页分段器及海报角标间距，修复中文两字断行与英文按字母切碎/裁切问题。\n\n## 安装与兼容提示\n- Windows 提供 NSIS 安装包与便携压缩包；macOS 提供 Universal DMG；Linux 提供 amd64 `.deb`；Android 标准版按 ABI 提供已签名 APK（`versionCode=2002010`）；iOS 提供未签名 `.ipa`（需自行签名安装）。\n- 覆盖安装保留本机收藏、观看记录、界面语言、线路与内容偏好；Android TV 版（`com.hghubx.tv`）同步发布 `tv-v2.2.5` 修复上游 503。\n\n## 致谢\n- 感谢 @makisekurisu-jp 贡献 #248 完结剧集「全 N 集」展示、#252 标签页与标签结果页置顶功能，以及 #250 搜索页热门标签不同步的根因定位与建议。\n- 感谢 @zxsos 完成 #256 上游 `dx150-edge-v1` 加密网关紧急适配、#246 网络切换静默恢复、#249 窄屏中英文布局修复、#251 移动端右半屏长按倍速胶囊与 #254 搜索页热门标签同步。\n- 感谢 `enjue` 提出 #247",
-      "ipas": [
-        {
-          "name": "HGhubX_2.2.10_ios.ipa",
-          "size": 4048150,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v2.2.10/HGhubX_2.2.10_ios.ipa",
-          "id": 786677200,
-          "updated_at": "2026-11-24T10:16:03Z",
-          "digest": "sha256:0879658ba08c1f775d19e2d0d13968da2ea7407042c2c701e52c83cf55654393"
-        }
-      ]
-    },
-    {
-      "tag": "tv-v2.2.5",
-      "name": "HGhubX TV tv-v2.2.5",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-24",
-      "published_at": "2026-11-24T10:10:36Z",
-      "body": "# HGhubX TV tv-v2.2.5\n\n紧急适配上游全新 `dx150-edge-v1` 四作用域加密网关，修复全部业务接口返回 HTTP 503 的问题，并同步带来网络切换静默恢复改进；适用于 Android TV / 电视盒子（`com.hghubx.tv`）。\n\n## 修复\n1. **适配上游 `dx150-edge-v1` 四作用域加密网关，修复接口全 503（#255、#256）**：上游于 2026-11-24 下线旧统一入口 `/api/edge/request`（返回 `HTTP 503 {\"msg\":\"接口已停用\"}`）并拆分为 `/api/{public,dynamic,playback,user}/request`；TV 版共用底层 Rust 网络层同步切换至 `dx150-edge-v1`（ECDH P-256 + HKDF-SHA256 + AES-256-GCM 单飞会话与 `public` 快速通道），恢复片单、详情、搜索与播放地址解析，同时对未迁移镜像保留旧接口 `404`/`405` 兼容回退。\n2. **网络切换与代理探测恢复（#246、#256）**：仅将 HTTP 401 折叠为登录态失效，保留 403 状态供线路探测感知；健康检查与登录前刷新客户端缓存，草稿代理探测同步切至 `/api/public/request`。\n\n## 安装与兼容提示\n- Android TV 按 ABI 分包提供 `HGhubX-TV_2.2.5_arm64.apk`、`HGhubX-TV_2.2.5_arm.apk`、`HGhubX-TV_2.2.5_x86_64.apk`（`com.hghubx.tv`，`versionCode=2002005`）。\n- 沿用与既有 `com.hghubx.tv` 相同的签名证书与单调递增 `versionCode`，支持直接覆盖升级，保留本机收藏、观看记录、线路偏好与启动 PIN。\n\n## 致谢\n- 感谢 @zxsos 完成 #256 上游 `dx150-edge-v1` 加密网关紧急适配与 #246 网络恢复改进。\n\n## 验证\n- 本地 `make check`（Rust `124 passed; 0 failed; 5 ignored`、文档链接与版本同步 `release-check(tv): ok 2.2.5, android versionCode=2002005`）、`make test-tv`（TV 版本字段与 `VITE_APP_EDITION=tv pnpm build`）以及 `node scripts/test-tv-remote.mjs`（14/14 场景通过）全部通过。\n- 实网四作用域联调（`cargo test --lib edge_crypto::tests::live_dx150_edge_all_four_scopes -- --ignored` 对 `https://huangguoai.com`）全通。\n- TV 正式安装包由 `tv-v2.2.5` 标签触发的 GitHub Actions `TV Release` 工作流构建并校验。\n",
-      "ipas": []
-    },
-    {
-      "tag": "v2.2.9",
-      "name": "v2.2.9",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-24",
-      "published_at": "2026-11-24T00:07:31Z",
-      "body": "# HGhubX v2.2.9\n\n重点修复 Android WebView 播放页合成器闪烁问题，并升级「我的收藏」单图标追剧状态筛选与频道/标签结果页指标排序；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n\n## 新增与优化\n1. **「我的收藏 → 短剧」单图标追剧状态筛选与底栏快捷复位（#243）**：收藏短剧右上角合并为单图标筛选胶囊，点击展开「追剧状态」菜单并展示「在追剧」「连载中」「已完结」及各自数量（三类允许重叠，按更新时间倒序稳定排列）；卡片统一只保留单个左上角角标随分类切换（「未看 N 集」/「更新至 N 集」/「全 N 集」）；移动端再次点击底栏激活中的「我的」可一键复位回「我的收藏 / 短剧 / 全部收藏」并回到顶部。\n2. **分类频道与标签结果页指标排序（#244）**：原创、AI 短剧、AI 漫剧频道及标签结果页短剧区块右侧新增排序入口，支持按「点赞数」「收藏数」「播放数」「评分」降序/升序切换（再次点击当前指标反转方向，切 Tab 保留当前指标），通过 `jsonOnly` 抓取完整结果并按 20 条渐进渲染，不影响标签页吃瓜帖。\n\n## 修复\n1. **Android 播放页画面闪烁与瓦片异常（#240、#242）**：针对 Android WebView（Skia/Viz）在硬件 `<video>` 上方叠加高半径模糊与持久动画层引发的闪烁问题，在 `.plat-android` 播放页关闭压在视频上的 `backdrop-filter`（改用等价半透明深色底），移除被遮盖的 `blur-3xl` 与未缩放时的 3D `translate3d`，仅在活跃条目渲染 `FeedItemChrome` 且仅缩放态挂载还原胶囊；Android 端「微光效果」改用 `8×5` 画布按 `250ms` 采样配合 GPU 双线性放大替代全屏 `filter: blur(44px)`；`LayerBox` 动画结束后立即移除入场动画类与过渡阴影，Android 进入 `feed` 栈页跳过变换/透明度入场动画。\n\n## 安装与兼容提示\n- Windows 提供 NSIS 安装包与便携压缩包；macOS 提供 Universal DMG；Linux 提供 amd64 `.deb`；Android 标准版按 ABI 提供已签名 APK（`versionCode=2002009`）；iOS 提供未签名 `.ipa`（需自行签名安装）。\n- 覆盖安装保留本机收藏、观看记录、界面语言、线路与内容偏好；Android TV 版（`com.hghubx.tv`）独立沿用 `tv-v2.2.4` 发布。\n\n## 致谢\n- 感谢 @makisekurisu-jp 贡献 #243 收藏页单图标追剧状态筛选与 #244 频道/标签指标排序。\n- 感谢 @zxsos 定位修复 #240/#242 Android 播放页合成器闪烁问题并完成本轮 PR 审查、冲突整合与版本发布校验。\n\n## 验证\n- 合入后本地严检：`make check`（Rust `118 passed; 0 failed; 4 ignored`、`pnpm build` 三套 `tsc` + Vite 构建、814 项 i18n 键校验、202 条文档链接、代码尺寸预算及 `release-check: ok 2.2.9, android versionCode=2002009`）、`pnpm test:smoke`（17/17 套件通过）、`node scripts/test-playback.mjs`（10/10 场景通过）以及 TV 兼容性验证 `make test-tv` + `node scripts/test-tv-remote.mjs`（14/14 场景通过）全部通过。\n- PR #242、#243、#244 均在 GitHub Actions 审查检查（8/8）全绿通过后合入；各平台正式产物由 `v2.2.9` 标签触发的 GitHub Actions `Release` 工作流构建并校验。\n",
-      "ipas": [
-        {
-          "name": "HGhubX_2.2.9_ios.ipa",
-          "size": 4009527,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v2.2.9/HGhubX_2.2.9_ios.ipa",
-          "id": 785041264,
-          "updated_at": "2026-11-24T00:07:28Z",
-          "digest": "sha256:40d064d42e75fe7216a5981ee1162a28065ba727446b6c237c4b6a88f9f818cd"
-        }
-      ]
-    },
-    {
-      "tag": "v2.2.8",
-      "name": "v2.2.8",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-23",
-      "published_at": "2026-11-23T03:55:29Z",
-      "body": "# HGhubX v2.2.8\n\n围绕分类导航快捷入口、搜索交互、吃瓜列表官网同步、「我的收藏」排序与已完结封面标签以及播放器全屏暂停提示打磨体验；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n\n## 新增与优化\n1. **分类总览 2×2 快捷入口并接入「最近上新」「热门推荐」（#233、#238）**：移除移动端与搜索页重复的「排行榜」单列入口（保留搜索页右上角与桌面侧栏「排行榜」），在移动端与桌面端统一展示「最近上新」「热门推荐」「专题」「标签」2×2 等宽卡片；「最近上新」「热门推荐」优先解析官网 `/newest/` 与 `/recommend/` 服务端渲染页面（失败时按 `/api/videos?sort=new|hot` 回退），支持自动分页与切线重载。\n2. **「我的 → 收藏 → 短剧」排序与已完结封面标签（#235、#239）**：在「我的收藏 → 短剧」新增「最近添加」「最近更新」「完结进度」（点击可切换「已完结优先 ↕」/「更新中优先 ↕」）排序，切到更新/完结排序时自动分批补齐全部收藏详情；全站剧集卡片在左上角按「原创」「热播」「新片」「完结」显示角标，「我的」页已完结短剧使用绿色封面标签（兼有未看新集时并行显示「新更 N 集」与「完结」角标）。\n3. **搜索页左右滑动切 Tab 与底栏快捷复位（#230、#234）**：搜索结果支持左右滑动切换「视频 / 帖子」Tab（未提交查询时不拦截横向手势）；在移动端底栏再次点击激活的「搜索」可一键清空结果并回到热搜与历史界面，且不主动弹出软键盘。\n4. **全屏双击暂停显示当前集数提示（#236）**：移动端全屏下双击暂停时，在 `playback-hint` 提示槽常驻展示「第 X 集 / Y」，随恢复播放、退出全屏、拖动进度或锁屏同步收起。\n\n## 修复\n1. **吃瓜列表与分类预览排序同官网不一致（#231、#232）**：修复匿名 JSON `/api/posts/category/remen-chigua?sort=latest` 按 `publish_time` 排序导致的顺序偏移，`api_post_category` 优先解析官网 `/blog/gossip/` 服务端渲染列表并补全邻近标签与时间字段，使「吃瓜」列表与分类预览同官网保持一致。\n2. **多次从标签进入播放后画面遮盖、缺失与闪烁（#240）**：被页面栈覆盖的底层主标签页与历史栈页自动从合成器隐藏并隔离堆叠上下文（返回时保留列表滚动位置、豁免画中画），非活跃播放页卸载 `AmbientGlow` / `blur-3xl` 模糊层并释放被覆盖页 `hls.js` 与 `<video>` 硬件解码器（返回时按原进度与暂停意图恢复），同时移除海报卡片逐项 `translateZ(0)` 强提层并限制导航栈最大深度为 8 层，避免 Android WebView GPU 合成层与解码器耗尽。\n\n## 安装与兼容提示\n- Windows 提供 NSIS 安装包与便携压缩包；macOS 提供 Universal DMG；Linux 提供 amd64 `.deb`；Android 标准版按 ABI 提供已签名 APK（`versionCode=2002008`）；iOS 提供未签名 `.ipa`（需自行签名安装）。\n- 覆盖安装保留本机收藏、观看记录、界面语言、线路与内容偏好；Android TV 版（`com.hghubx.tv`）独立沿用 `tv-v2.2.4` 发布。\n\n## 致谢\n- 感谢 @zxsos 审查合入本轮全部 PR、梳理修复分类快捷入口与吃瓜排序并完成 #235 与版本发布校验。\n- 感谢 @makisekurisu-jp 贡献搜索 Tab 滑动切换、底栏搜索复位与全屏暂停集数提示并反馈分类入口及吃瓜排序问题。\n- 感谢 `enjue` 提出 #235 收藏排序与已完结封面标签建议。\n- 感谢 `Rabbit2108` 反馈 #240 Android 标签跳转播放画面遮盖与闪烁问题并提供现场截图。\n\n## 验证\n- 合入后本地严检：`make check`（Rust `118 passed; 0 failed; 4 ignored`、`pnpm build` 三套 `tsc` + Vite 构建、799 项 i18n 键校验、文档链接、代码尺寸预算及 `release-check: ok 2.2.8, android versionCode=2002008`）、`pnpm test:smoke`（14/14 套件通过）、`node scripts/test-playback.mjs`（10/10 场景通过，含 `episode-",
-      "ipas": [
-        {
-          "name": "HGhubX_2.2.8_ios.ipa",
-          "size": 4004198,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v2.2.8/HGhubX_2.2.8_ios.ipa",
-          "id": 781437263,
-          "updated_at": "2026-11-23T03:55:28Z",
-          "digest": "sha256:ca321bcc8491895d33d6f775fa592455727fa82f1f374ecce2e967f26c03014e"
-        }
-      ]
-    },
-    {
-      "tag": "v2.2.7",
-      "name": "v2.2.7",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-22",
-      "published_at": "2026-11-22T12:13:11Z",
-      "body": "# HGhubX v2.2.7\n\n围绕搜索与排行榜、标签排序、吃瓜正文站内视频直达及播放器全屏交互稳定性打磨体验，并新增 Android 13+ Material You 动态主题图标适配；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n\n## 新增与优化\n1. **Android 13+ Material You 动态主题图标（#216）**：补充 `108dp × 108dp` 纯单色自适应矢量图层（`ic_launcher_monochrome.xml`）及圆角/默认自适应配置，支持 Android 13+ 启动器按壁纸动态着色，同时保持 Android 8–12 与既有彩色桌面图标外观不变。\n2. **搜索热搜榜官网同步与单行紧凑布局（#221、#225）**：搜索页热搜请求改为直连干净路径 `{base}/search/`（移除防缓存查询串），与官网 CDN 边缘快照条目、名次及播放量保持同源同序；卡片布局调整为「序号 + 单行省略片名 + 右对齐播放量 + 右箭头」的官网紧凑单行样式。\n3. **视频页操作区与全屏交互打磨（#217、#218、#219、#220）**：统一视频页顶部「搜短剧」与清晰度徽标高度及基线对齐；右侧评论入口改为与点赞/收藏一致的空心线条图标；点赞、收藏、关注共用 `playback-hint` 提示单槽位避免连续点击堆叠；全屏锁屏图标改为随闲置控件同步自动隐藏。\n\n## 修复\n1. **排行榜「热播榜」与官网实时热度不同步（#221、#226）**：修正匿名 JSON `/api/ranks/hot` 返回历史累计总榜导致的内容偏差，热播榜改为优先解析官网 `/ranks/hot/` 服务端渲染页面中的实时热度 TOP20（解析失败自动回退 `/api/ranks/hot`），「推荐榜」「潜力榜」与既有 `RankItem` 契约保持不变。\n2. **标签页短剧默认排序与官网不一致（#223、#228）**：`api_tag_videos` 与前端 `tagVideos` 显式默认携带 `sort=latest`（仅明确指定 `\"hot\"` 时切热播排序），使标准版标签页与 TV 端标签筛选对齐官网 `/tag/{slug}/` 默认最新排序。\n3. **吃瓜详情「点击观看」站内短剧链接跳出系统浏览器（#224、#229）**：新增主站及当前激活线路同源 `/video/{id}/` 严格识别校验；在吃瓜详情与 Feed 图文详情中点击站内视频链接时直接在应用内打开播放页，其余外链与非规范路径仍按原安全策略交由系统浏览器或剪贴板处理。\n4. **横屏全屏切集时旋转舞台瞬时退回竖屏与提示坐标错位（#200、#215）**：同剧同作用域切集加载期间保留最近确认的视频宽高比例，避免 `.player-root` 丢掉 `.fs-landscape` 导致切集提示闪现竖屏底部；`ToastHost` 改由 `registerRotatedToastHost` 响应式同步挂载宿主，退全屏时立即回归竖屏底部。\n\n## 安装与兼容提示\n- Windows 提供 NSIS 安装包与便携压缩包；macOS 提供 Universal DMG；Linux 提供 amd64 `.deb`；Android 标准版按 ABI 提供已签名 APK（`versionCode=2002007`）；iOS 提供未签名 `.ipa`（需自行签名安装）。\n- 覆盖安装保留本机收藏、观看记录、界面语言、线路与内容偏好；Android TV 版（`com.hghubx.tv`）独立沿用 `tv-v2.2.4` 发布。\n\n## 致谢\n- 感谢 @zxsos 审查整合全部待合入 PR、排查并修复热播榜/热搜榜/标签排序/站内视频跳转及全屏舞台问题并完成发布验证。\n- 感谢 @makisekurisu-jp 贡献视频页顶部布局对齐、空心评论图标、操作提示防堆叠、全屏锁随控隐藏等体验优化并提交多项缺陷反馈。\n\n## 验证\n- 合入后本地严检：`make check`（Rust `118 passed; 0 failed; 4 ignored`、`pnpm build` 三套 `tsc` + Vite 构建、789 项 i18n 键校验、文档链接、代码尺寸预算及 `release-check: ok 2.2.7, android versionCode=2002007`）、`pnpm test:smoke`（12/12 套件通过）、`pnpm test:playback`（6/6 场景通过，含 `episode-toast` 与 `portrait-fit`）以及 TV 兼容性验证 `make test-t",
-      "ipas": [
-        {
-          "name": "HGhubX_2.2.7_ios.ipa",
-          "size": 3992968,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v2.2.7/HGhubX_2.2.7_ios.ipa",
-          "id": 778954993,
-          "updated_at": "2026-11-22T12:13:10Z",
-          "digest": "sha256:9d8e99969f6e078d29fb96007b41b8035d72b3fa1001b0af4bfae075072c5fac"
-        }
-      ]
-    },
-    {
-      "tag": "v2.2.6",
-      "name": "v2.2.6",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-21",
-      "published_at": "2026-11-21T17:01:54Z",
-      "body": "# HGhubX v2.2.6\n\n聚焦分类频道与官网排序同步、全站分页上滑自动加载、海报角标、多页左右滑动切栏与 FakeIP 代理连接修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n\n## 新增与优化\n1. **分类与原创频道与官网排序同步（#202、#211）**：短剧、漫剧频道的「最近更新」「当前热播」「精选推荐」以及「原创」频道的「全部原创」「原创漫剧」「原创短剧」优先解析官网服务端渲染频道页，与网站更新排序、总页数、标签及统计保持一致，解析异常时自动回退原有 JSON 接口。\n2. **海报左上角新增「原创」「热播」「新片」角标（#202、#211）**：瀑布流与横向预览卡片海报左上角按「原创」「热播」「新片」（72 小时窗口）顺序显示高对比度角标，避免与右上角评分重叠；集数状态移至海报底部遮罩左侧与播放量同排展示，「我的」页继续保留「新更 N 集」角标。\n3. **分页列表统一改为上滑自动加载（#202、#211）**：频道页、吃瓜列表、专题详情、标签详情、关注/创作者作品与全局/栏目搜索均在接近底部时自动续载下一页，不再常驻手动「加载更多」按钮；开启标签屏蔽时同样保持自动加载，仅当连续 2 页过滤后均无可见条目时熔断暂停并展示手动兜底按钮。\n4. **多页面支持左右滑动切换标签栏（#208、#209）**：排行榜支持左右滑动切换热播/推荐/潜力榜；「我的」页支持左右滑动切换收藏/历史；分类频道页支持左右滑动切换筛选 tab。\n5. **「我的」页批量管理新增「全选」（#205）**：收藏与观看历史进入多选模式后支持一键「全选」，并移除历史页底部多余的独立清空按钮，统一收口到批量管理操作栏。\n\n## 修复\n1. **iOS / 桌面 TUN FakeIP 代理导致请求全部被拒（#199）**：开启 Shadowrocket / Clash / Surge / sing-box 等 FakeIP 代理后，系统 DNS 同时返回 FakeIP IPv4 与合成 ULA IPv6 假地址，此前整组校验会误判私网并拒绝请求；现严格模式在系统解析路径丢弃不可直达的假 IPv6 ULA、仅固定可放行的地址，整组均不可放行时仍拒绝，且不放宽任何安全白名单。\n2. **搜索历史长按编辑态胶囊字号与尺寸异常（#207）**：修正搜索历史进入编辑态时胶囊字号与内边距跳动问题，保持常规态与编辑态视觉一致。\n\n## 安装与兼容提示\n- Windows 提供 NSIS 安装包与便携压缩包；macOS 提供 Universal DMG；Linux 提供 amd64 `.deb`；Android 标准版按 ABI 提供已签名 APK（`versionCode=2002006`）；iOS 提供未签名 `.ipa`（需自行签名安装）。\n- 覆盖安装保留本机收藏、观看记录、界面语言、线路与内容偏好；Android TV 版（`com.hghubx.tv`）由独立 `tv-v2.2.4` 标签单独发布。\n\n## 致谢\n- 感谢 @zxsos 完成 #202/#211 分类频道与官网排序同步、全站上滑自动加载、海报角标以及 #210/#212/#214 工作流拆分与自动预览体系建设。\n- 感谢 @oahceh 贡献 #199 FakeIP DNS 混合结果固定修复。\n- 感谢 @makisekurisu-jp 贡献 #205、#207、#208、#209 批量全选、搜索历史样式与多页滑动切栏优化。\n\n## 验证\n- 本地 `make check`（Rust 118 项单元测试通过 / 0 失败 / 4 联网测试跳过、TypeScript 三套配置与 Vite 构建、789 项多语言词典键一致性校验、文档链接、尺寸预算、版本同步）与 `pnpm test:smoke`（12/12 套件通过，含 `channel-autoload-badges`、`profile-swipe`、`channel-swipe`、`rank-swipe`）全量通过。\n- 各平台正式安装包由 `v2.2.6` 标签触发的 GitHub Actions `Release` 工作流构建并校验。\n",
-      "ipas": [
-        {
-          "name": "HGhubX_2.2.6_ios.ipa",
-          "size": 3990783,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v2.2.6/HGhubX_2.2.6_ios.ipa",
-          "id": 776248427,
-          "updated_at": "2026-11-21T17:01:53Z",
-          "digest": "sha256:c581c6718c758fc2769cfd16255e7bdf391231bcdd2eb65e120ed5834be674af"
-        }
-      ]
-    },
-    {
-      "tag": "tv-v2.2.4",
-      "name": "HGhubX TV tv-v2.2.4",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-21",
-      "published_at": "2026-11-21T17:05:51Z",
-      "body": "# HGhubX TV tv-v2.2.4\n\n新增 Android TV 应用内一键检查与安装更新（含加速节点回退与 SHA-256 校验），并修复 FakeIP 代理连接与电视遥控器焦点恢复问题；适用于 Android TV / 电视盒子（`com.hghubx.tv`）。\n\n## 新增与优化\n1. **应用内一键检查、下载与安装更新（#201）**：在「设置 → 关于」新增独立更新卡片，支持启动后后台静默检查新版本并在侧边栏与「关于」项显示红点/「新版」角标；下载内置多加速节点与 GitHub 直连自动回退、实时进度条与取消下载，落盘前严格校验目标 URL 白名单、APK 文件头、字节长度与 SHA-256 摘要，校验通过后通过原生 `FileProvider` 拉起系统安装器（首次自动引导开启「允许安装未知应用」权限）。\n\n## 修复\n1. **FakeIP 代理环境下网络请求被误拒（#199）**：修复 TUN FakeIP 代理返回混合 IPv4 FakeIP 与 IPv6 ULA 假地址时被严格模式整组拒绝的问题，仅固定可放行地址且不放宽安全白名单。\n2. **设置页「检查更新」文字与卡片尺寸跳动**：为更新主操作按钮设置固定最小宽度、为更新状态卡片设置最小高度并使用等宽数字（`tabular-nums`），避免点击「检查更新」或下载进度刷新时按钮伸缩和卡片高度跳动。\n3. **设置页切换或弹窗关闭时遥控器焦点偶发抢回侧边栏（#201）**：优化 `restoreFocus` 焦点恢复时序，同步优先恢复目标焦点并避免在已有活跃非导航控件时被延迟 `rAF` 覆盖。\n\n## 安装与兼容提示\n- Android TV 按 ABI 分包提供 `HGhubX-TV_2.2.4_arm64.apk`、`HGhubX-TV_2.2.4_arm.apk`、`HGhubX-TV_2.2.4_x86_64.apk`（`com.hghubx.tv`，`versionCode=2002004`）。\n- 沿用与既有 `com.hghubx.tv` 相同的签名证书与单调递增 `versionCode`，支持直接覆盖升级，保留本机收藏、观看记录、线路偏好与启动 PIN。\n\n## 致谢\n- 感谢 @zxsos 完成 #201 Android TV 应用内一键更新（多加速节点回退与 SHA-256 校验）、遥控器焦点恢复修复与设置页更新布局防抖优化。\n- 感谢 @oahceh 贡献 #199 FakeIP DNS 混合结果固定修复。\n\n## 验证\n- 本地 `make check`（Rust 118 项单元测试通过 / 0 失败 / 4 联网测试跳过、文档链接、版本同步）与 `make test-tv`（TV 版本字段与 `VITE_APP_EDITION=tv pnpm build`）全量通过。\n- TV 正式安装包由 `tv-v2.2.4` 标签触发的 GitHub Actions `TV Release` 工作流构建并校验。\n",
-      "ipas": []
-    },
-    {
-      "tag": "v2.2.5",
-      "name": "v2.2.5",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-20",
-      "published_at": "2026-11-20T18:49:08Z",
-      "body": "# HGhubX v2.2.5\r\n\r\n聚焦多语言支持（简体中文、繁体中文、英语）、播放器微光效果与多端播放交互修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\r\n@makisekurisu-jp @zxsos\r\n## 新增与优化\r\n1. **简体中文、繁体中文与英语界面切换（#190）**：默认使用简体中文，可在「设置 → 外观 → 语言」中一键切换简体中文、繁體中文与 English，切换后立即生效并跨重启持久化；繁体中文与英语词典按需异步加载，首屏默认体积接近零增长。\r\n2. **播放器微光效果（#192）**：低分辨率实时采样当前播放画面颜色并柔和扩散至视频黑边区域；可在「设置 → 播放 → 微光效果」中随时开关（默认开启，关闭后不挂载采样层以节省电量）。\r\n3. **精简移动端长按倍速交互（#193）**：移除拖动至顶部胶囊锁定倍速的繁琐交互，长按右侧仅作临时加速、长按左侧临时 0.5x 减速、松手即恢复原倍速；持久倍速统一在全屏倍速按钮或「更多 → 播放设置」中调整。\r\n\r\n## 修复\r\n1. **桌面端开启「上下划切集」滚轮切集失效（#195）**：桌面端开启「上下划切集」后，鼠标滚轮或触控板纵向滑动原本直接触发列表原生滚动跳到下一部剧；现拦截播放区纵向滚轮并在当前剧内顺滑切集、弹出集数提示，底部控制栏「下一集 ↓ / 下一部 ↓」按钮同步遵循该开关。\r\n2. **清屏锁定后锁图标常驻遮挡画面（#194）**：移动端清屏模式点击锁定后立即隐藏右侧锁图标，锁定期间仅在点按屏幕触发「轻触即可解锁」提示时同步显示解锁按钮 2.2 秒，避免图标常驻干扰观看。\r\n3. **横屏全屏切集时集数提示重复闪现（#191）**：横屏全屏切集时暂存集数提示，待下一集视频尺寸解析完成并真正开播后再于横屏旋转舞台弹出一次，消除切换瞬间在竖屏和横屏位置各弹一次的问题。\r\n\r\n## 安装与兼容提示\r\n- Windows 提供 NSIS 安装包与便携压缩包；macOS 提供 Universal DMG；Linux 提供 amd64 `.deb`；Android 标准版按 ABI 提供已签名 APK（`versionCode=2002005`）；iOS 提供未签名 `.ipa`（需自行签名安装）。\r\n- 覆盖安装保留本机收藏、观看记录、界面语言、线路与内容偏好；Android TV 版（`com.hghubx.tv`）由独立 `tv-v*` 标签单独发布。\r\n\r\n## 致谢\r\n- 感谢 `@makisekurisu-jp` 贡献 #191、#192、#193、#194 播放器视觉与手势交互优化。\r\n\r\n## 验证\r\n- 本地 `make check`（Rust 114 项单元测试、TypeScript 三套配置与 Vite 构建、791 项多语言词典键一致性校验、文档链接、尺寸预算、版本同步）、`pnpm test:smoke`（8/8 套件通过）与 `pnpm test:playback`（`seek`、`gesture`、`episode-toast`、`ambient`、`portrait-fit` 5/5 场景通过）全量验证通过。\r\n- 各平台正式安装包由 `v2.2.5` 标签触发的 GitHub Actions `CI/CD` 工作流构建并校验。\r\n",
-      "ipas": [
-        {
-          "name": "HGhubX_2.2.5_ios.ipa",
-          "size": 3927965,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v2.2.5/HGhubX_2.2.5_ios.ipa",
-          "id": 772952554,
-          "updated_at": "2026-11-20T18:49:07Z",
-          "digest": "sha256:42e95bf6d45997d6124506acefa9af43a93f56973ac2571da7e5ae3aa4904276"
-        }
-      ]
-    },
-    {
-      "tag": "v2.2.4",
-      "name": "v2.2.4",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-20",
-      "published_at": "2026-11-20T15:17:02Z",
-      "body": "# HGhubX v2.2.4\r\n\r\n聚焦播放交互细节打磨、搜索历史批量管理和桌面全屏体验优化，并完成 Android TV 子项目与标准版发版流程解耦；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\r\n@makisekurisu-jp @zxsos\r\n\r\n## 新增与优化\r\n1. **启动页偏好设置（#180 / #185）**：可在「设置」中选择应用启动后默认进入的页面 。\r\n2. **搜索历史支持长按批量删除（#184）**：在搜索页与就地搜索面板长按历史词条即可进入多选批量删除。\r\n3. **清屏锁屏按钮对齐与状态提示（#187）**：对齐横屏与净屏模式下的锁屏/解锁锚点，并补齐锁定状态提示。\r\n4. **TV 子项目版本与 CI/CD 独立解耦（#189）**：标准版 `v*` 与 TV 版 `tv-v*` 拆分至各自工作流与独立版本号，后续互不阻塞发版。\r\n\r\n## 修复\r\n1. **桌面全屏定位与空闲隐藏（#180 / #183）**：修复桌面端全屏区域锚点偏移，播放空闲时自动隐藏悬浮控件与鼠标指针。\r\n2. **暂停时点击中央播放图标恢复播放（#182）**：暂停态点击画面中央播放图标直接恢复播放，不再被外层手势拦截。\r\n3. **移除横版视频上方重复控件（#177）**：去掉与底部操作栏重复的铺满与横屏悬浮按钮，减少画面遮挡。\r\n4. **全屏切集方向与提示去重（#176 / #178 / #179 / #181）**：统一全屏上下划切集方向与信息流一致，旋转全屏切集提示固定在视频底部，并消除快速切换上下划开关或触及剧集边界时的提示重复堆叠。\r\n\r\n## 安装与兼容提示\r\n- Windows 提供 NSIS 安装包与便携压缩包；macOS 提供 Universal DMG；Linux 提供 amd64 `.deb`；Android 标准版按 ABI 提供已签名 APK（`versionCode=2002004`）；iOS 提供未签名 `.ipa`（需自行签名安装）。\r\n- 覆盖安装保留本机收藏、观看记录、线路与内容偏好；Android TV 版（`com.hghubx.tv`）即日起由独立 `tv-v*` 标签单独发布，不包含在本标准版 Release 附件中。\r\n\r\n## 致谢\r\n- 感谢 @makisekurisu-jp 贡献 #176、#177、#178、#179、#181、#182、#184、#187 全部交互修复与增强。\r\n\r\n## 验证\r\n- 本地 `make check`（Rust `cargo check --all-targets` + `cargo test --lib`、标准版 `pnpm build`、文档链接、尺寸预算、标准版与 TV 版版本校验）与 `pnpm test:smoke` 全量通过。\r\n- 各平台构建产物由 `v2.2.4` 标签触发的 GitHub Actions `CI/CD` 工作流产出并验证。",
-      "ipas": [
-        {
-          "name": "HGhubX_2.2.4_ios.ipa",
-          "size": 3897090,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v2.2.4/HGhubX_2.2.4_ios.ipa",
-          "id": 772282577,
-          "updated_at": "2026-11-20T15:17:01Z",
-          "digest": "sha256:469f34608cec04de4d85d51a605dc777603b82a582bf3a20184ed6cd4df43f5d"
-        }
-      ]
-    },
-    {
-      "tag": "v2.2.3",
-      "name": "v2.2.3",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-20",
-      "published_at": "2026-11-20T05:33:55Z",
-      "body": "# HGhubX v2.2.3\r\n\r\n本版重新安排手机播放控件，改善桌面子页的宽屏布局，并优化「我的」内容管理与吃瓜详情的稳定性。\r\n\r\n## **TV 端无任何改动**\r\n\r\n## 新增与优化\r\n\r\n1. **手机播放控件与全屏手势（#170）**：选集、静音、切集开关和全屏集中到屏幕底部；首页四个按钮使用更透明的底色，减少对画面的遮挡。横屏设置抽屉完整显示倍速选项；全屏支持上下滑切集并提示首尾边界，清屏时保留锁屏入口。\r\n2. **播放详情、标签与搜索（#170）**：「详情」和「选集」支持左右滑动切换，下拉关闭；点按标签查看同类，长按或右键可屏蔽。在栏目内打开的播放页可按当前内容类型搜索，首页底部的全局搜索不受影响。\r\n3. **收藏与观看历史管理（#168、#169）**：在「我的」中长按或右键卡片进入多选，可批量取消收藏或删除观看记录；列表接近底部时自动加载更多，网格列数保持不变。\r\n\r\n## 修复\r\n\r\n1. **吃瓜详情闪烁（#165）**：切换线路或代理时保留已展示的正文和滚动位置；阅读位置更新时复用未变的图片，短暂缓冲不再立即弹出加载动画。\r\n2. **桌面子页顶栏两侧断开（#171）**：「排行榜」「关注」等子页和页内搜索层的顶栏底色、分隔线铺满面板；标题、筛选项和正文仍按原宽度居中。\r\n3. **本人主页与批量操作**：本人主页隐藏「关注」入口；批量取消收藏期间切换账号、线路或代理时，旧批次停止发送后续项目，不显示旧批次的结果。\r\n\r\n## 安装与兼容提示\r\n\r\n- Windows 提供安装程序和便携包；macOS 提供通用架构 DMG；Linux 提供 amd64 DEB。\r\n- Android 标准版和 TV 版分别提供 APK，按设备架构选择 `arm64`、`armv7` 或 `x86_64`。覆盖升级请选相同版本类别，避免卸载造成应用数据丢失。\r\n- iOS 提供未签名 IPA，需自行签名并侧载。收藏「新更 N 集」的提醒基线仍按设备记录，不跨设备同步。\r\n\r\n## 致谢\r\n\r\n- 感谢 @makisekurisu-jp 对手机播放和「我的」页面的贡献；本版由 @zxsos 整合、验证并发布，也感谢反馈桌面布局和吃瓜闪烁问题的用户。\r\n\r\n## 验证\r\n\r\n- [候选版 CI #44678989121](https://github.com/zxsos/HGhubX/actions/runs/44678989121)：标准版与 TV 版前端构建通过；Rust 114 项通过、4 项忽略；浏览器 smoke 7／7 通过；播放核心 7／7、扩展 4／4 通过。浏览器回归确认连续划到第 2、3 集时未跳到其他剧。\r\n",
-      "ipas": [
-        {
-          "name": "HGhubX_2.2.3_ios.ipa",
-          "size": 3895060,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v2.2.3/HGhubX_2.2.3_ios.ipa",
-          "id": 770602926,
-          "updated_at": "2026-11-20T05:33:54Z",
-          "digest": "sha256:41ffe0ff2648186fb05f902c021a34e8574c567abaf9d65effa1cd12be3702ca"
-        }
-      ]
-    },
-    {
-      "tag": "v2.2.2",
-      "name": "v2.2.2",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-19",
-      "published_at": "2026-11-19T04:39:12Z",
-      "body": "## HGhubX 2.2.2\n\n2.2.0 之后的体验修复版本：收藏续播与新集提醒、底部进度预览、TV 启动密码，以及冷启动登录保持与移动端布局 / 键盘修复。\n\n### 新增\n\n- **收藏进度、续播与新集提醒**（#154）：收藏卡片显示上次观看进度；看完一集且有后续时从下一集开头继续；返回收藏页后台刷新集数并保留现有卡片，未看新集显示「新更 N 集」角标。\n- **TV 启动密码**（#152）：设置 → 启动密码可开启 / 修改 / 关闭四位 PIN 或立即锁定；支持遥控器数字键与屏幕键盘，连续输入不再被步骤切换清空，连续输错 5 次进入 15 秒冷却。\n\n### 改进\n\n- **底部进度预览**（#152）：横拖画面或拖动进度条统一在底部预览时间，松手才提交跳转，不再把进度条叠在画面中央。\n- **连续切集**（#156、#157）：下一集加载期间仍可继续划；同类集数提示只更新同一张卡片，不堆叠。\n- TV 解锁页移除重复副标题与底部操作说明，仅保留标题、输入提示与错误反馈。\n\n### 修复\n\n- **冷启动与账号恢复**（#156）：启动动画期间按返回只跳过动画；镜像验证暂时失败不再显示登出；账号同步 401 时同账号静默重登，身份或会话代次不符时保留原会话并提示手动处理。\n- **移动端布局与登录键盘**（#157、#163）：窄屏全宽、平板 / 桌面限宽居中；横竖屏底栏与弹层避开系统安全区；Android 标准版软键盘弹出后，密码框与「登录」按钮仍可滚到可见位置。\n\n### 验证\n\n- 集成校验全绿：前端标准版 + TV 版构建、Rust、浏览器 smoke、Playback core / extended（run 44454852498）。\n- 全平台打包成功：Windows、macOS、Linux、iOS 未签名 IPA、Android 标准版与 TV 版（run 44454856257），Android `versionCode=2002002`。\n- Android 登录键盘修复在 Android 16 手机模拟器按 320×568、360×840 dp 实测通过（#163）；TV PIN 流程由 Chromium TV 用例 14/14 覆盖，未做 TV 实机验收。\n\n### 已知限制\n\n- iOS 包为无证书构建（需自行签名侧载）；macOS 为 ad-hoc 签名。\n- Android `versionCode` 为 `2002002`；已安装更高版本号测试包（如 2.3.0 / `2003000`）的设备需先卸载再安装。\n- 收藏「新更 N 集」基线按设备本地记录，不随账号跨设备同步；新设备首次登录可能显示与旧设备不同的新集数。\n",
-      "ipas": [
-        {
-          "name": "HGhubX_2.2.2_ios.ipa",
-          "size": 3891126,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v2.2.2/HGhubX_2.2.2_ios.ipa",
-          "id": 766239590,
-          "updated_at": "2026-11-19T04:39:11Z",
-          "digest": "sha256:daa16c6aeaa97dd8cec0bc57cef01f03a2aed5e4666263b263c7ea39b268b25f"
-        }
-      ]
-    },
-    {
-      "tag": "v2.2.0",
-      "name": "v2.2.0",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-18",
-      "published_at": "2026-11-18T06:02:05Z",
-      "body": "## HGhubX 2.2.0\n\n架构重构 + Android TV / 车机老内核兼容 + 开屏与播放体验全面升级的正式版本。包含 pre.1 / pre.2 及后续全仓审计与性能打磨的全部内容。\n\n### 新增\n\n- **Android TV 独立版**（`com.hghubx.tv`）：Leanback 桌面入口与横屏 Banner、遥控器方向键 / 确认 / 返回 / 媒体键导航、本地 IndexedDB 片库与拼音/标题搜索索引、overscan 安全边距设置。\n- **老 WebView 与车机大屏兼容**（#138）：前端构建降级至 `chrome66 / safari14.1`（含 CSS `dvh / color-mix / cascade-layers` 回退、经典 `iife` Worker、ES5 启动看门狗与运行时 API 垫片）；Android 标准版原生层桥接系统状态栏与车机常驻底栏安全区（`--native-sat/sab/sal/sar`），`quick` 与正式构建均覆盖 32 位 `arm` 与 64 位 `arm64`。\n- **长按加速可换挡**（#146）：右上长按 2x 起，按住左右滑每 80px 换一档（2x → 3x → 4x → 6x，来回滑可升可降，每档震动反馈）；上滑后松手锁定当前档位。\n- 设置 → 播放新增「全屏无操作自动隐藏控件」：关 / 3秒 / 5秒 / 10秒（默认 3 秒，暂停时不隐藏）（#146）。\n- 长按操作提示加入「双击暂停播放」说明。\n\n### 改进\n\n- **开屏零闪烁与冷启动大幅提速**：\n  - 原生窗口、`index.html` `data-hg-launching` 背景锁与开屏层统一锚定 `#071218`，彻底消除亮色/暗色主题切换时的首尾白屏或灰屏闪烁，以及 `<Suspense>` 未就绪时的空帧跳变；\n  - 开屏动画改为全外层独立 GPU 合成层（仅驱动 `transform3d` + `opacity`），消除逐帧 SVG 路径重绘与多段缓动顿挫，首帧独占上屏后下一帧并发挂载业务壳；\n  - 消除入口二次动态分包瀑布流，并将 `Feed` + `hls.js`（`524 kB`）从首屏壳剥离并行预热，`AcceptedApp` 关键路径体积缩减 **84.6%**（降至 `113.8 kB`），首屏选线与推荐流请求显著提前。\n- **前端渲染与状态隔离**：Toast 通知与账号同步状态改为独立订阅，避免全局重渲染；内联播放器全屏与分页请求逻辑收口复用；亮色模式表面层次与对比度优化。\n- 加速提示弱化并入顶部倍速胶囊（「上滑后松手锁定 / 松手锁定」），移除画面中部拖放提示；全屏右上「退出 / 锁定」两键 44×44、间距 12px（#146）；大屏横屏操作栏自动切换双列紧凑布局避免顶边裁切（#138）。\n- **全站界面视觉对齐与内容屏蔽补全**：修复分类页「排行榜 / 专题 / 标签」窄屏高度偏大与上偏错位并补齐专属语义图标，统一全站二级页顶栏尺寸与边距、标签分组卡片与单行屏蔽工具条、搜索页三段式卡片间距、海报双徽章等高防撞、桌面侧栏图标中轴及设置展开面板双重内边距问题；搜索页「热搜榜」与「热门题材」同步接入屏蔽标签过滤；移除视频与帖子详情的分享入口并重排操作栏对齐；清理冗余副标题，「HGhubX 热榜」统一为「排行榜」。\n- 仓库结构整理：前端按 `app / features / shared` 归组并拆分 `Feed` 子面板与手势模块；Rust 按 `api / net / media / lines` 拆分并独立 `updater / net_diag / publish_parser`。\n\n### 修复\n\n- **切换线路不再掉登录，且在播流不中断转圈**（#145）：\n  - 固定线路与发布页确认镜像之间手动/自动切线及冷启动重启均保留登录会话（即使当前回退到固定线路也会校验已存镜像信任）；自定义线路仍严格清空凭据，移除 `.ai` 导航站；\n  - 区分代理变更与线路变更事件：后台自动选线后健康在播视频保持连贯播放，仅对未就绪/报错/预取项按新线路重拉。\n- **播放与多实例交互修复**：\n  - 修复移动端底部信息浮层遮挡右侧「全屏」按钮命中区域，并补齐旧版 WebKit 前缀 Fullscreen API、桌面窗口全屏回退及 Linux WebKitGTK 窗口全屏状态同步；\n  - 暂停状态下进入/退出全屏或拖动进度条均保留用户暂停意图，不再意外恢复播放（#138）；\n  - 修复压栈多级 `Feed` 页面同时响应全屏快捷键或画中画状态串扰、音量滑块松手跳变、锁屏态残留手势、搜索返回焦点与我的/关",
-      "ipas": [
-        {
-          "name": "HGhubX_2.2.0_ios.ipa",
-          "size": 3886166,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v2.2.0/HGhubX_2.2.0_ios.ipa",
-          "id": 762138236,
-          "updated_at": "2026-11-18T06:02:04Z",
-          "digest": "sha256:3fb8887eee6f4de20e4b3fb0bd2bfef17a50b40aafb50800b46978580b9110cc"
-        }
-      ]
-    },
-    {
-      "tag": "v2.1.2",
-      "name": "v2.1.2",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-15",
-      "published_at": "2026-11-15T16:56:37Z",
-      "body": "## HGhubX 2.1.2\n\n### 更新点\n\n- 标签详情同时展示短剧和吃瓜帖子，并分别分页；标签热度会明确标注，不再与内容数量混淆。\n- 横屏视频按当前播放源的媒体尺寸识别，尺寸确认前使用完整画面适配。\n\n### 修复点\n\n- 修复社区标签只查询短剧接口，导致官网存在帖子但应用显示空列表的问题。\n- 修复切集、切源时媒体尺寸报告竞态导致首页横屏视频被裁切或未显示横屏控制的问题。\n\n\n**Full Changelog**: https://github.com/zxsos/HGhubX/compare/v2.1.1...v2.1.2",
-      "ipas": [
-        {
-          "name": "HGhubX_2.1.2_ios.ipa",
-          "size": 3852817,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v2.1.2/HGhubX_2.1.2_ios.ipa",
-          "id": 751672739,
-          "updated_at": "2026-11-15T16:57:51Z",
-          "digest": "sha256:fdf8a64f296d7aa38720c21e440504dbfe6018bdc348b559902ce35382465254"
-        }
-      ]
-    },
-    {
-      "tag": "v2.1.1",
-      "name": "v2.1.1",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-15",
-      "published_at": "2026-11-15T15:26:37Z",
-      "body": "## HGhubX 2.1.1\r\n\r\n### 更新点\r\n\r\n- **线路选择**：合并重复的“推荐镜像”和“镜像线路”区域为一个镜像列表，当前线路置顶。\r\n- **启动体验**：统一各平台启动背景，减少启动首帧闪烁。\r\n- **搜索**：热门题材使用真实标签数据，并可直接打开对应片单。\r\n\r\n### 修复点\r\n\r\n- 修复播放恢复、代理切换后的恢复队列及媒体分片缓存隔离问题。\r\n- 修复专题分页、收藏同步空状态和搜索框焦点处理。\r\n- 补齐 iOS 原生媒体传输的 Range 响应，改善视频探测与播放兼容性。\r\n- 修复帖子详情热度和清理观看历史前的确认交互。\r\n\r\n### 构建产物\r\n\r\n- Linux amd64：`.deb`\r\n- Android：arm64、arm、x86_64 分 ABI  `.apk`\r\n- Windows：x64 安装包 `.exe` 和便携版 `.zip`\r\n- macOS：Universal `.dmg`\r\n- iOS：未签名 `.ipa`\r\n\r\n\r\n## What's Changed\r\n* fix: 2026-11-15 修复轮次合并 by @zxsos in https://github.com/zxsos/HGhubX/pull/131\r\n* fix: 修复播放恢复、缓存与收藏状态回归 by @zxsos in https://github.com/zxsos/HGhubX/pull/133\r\n* fix(launch): 补齐 Android 夜间与 macOS 启动背景 by @zxsos in https://github.com/zxsos/HGhubX/pull/132\r\n* fix(ios): 修复原生播放器的本地媒体传输 by @zxsos in https://github.com/zxsos/HGhubX/pull/130\r\n\r\n\r\n**Full Changelog**: https://github.com/zxsos/HGhubX/compare/v2.1.0...v2.1.1",
-      "ipas": [
-        {
-          "name": "HGhubX_2.1.1_ios.ipa",
-          "size": 3849882,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v2.1.1/HGhubX_2.1.1_ios.ipa",
-          "id": 751415610,
-          "updated_at": "2026-11-15T15:26:35Z",
-          "digest": "sha256:e7db7afc6e39df3658d5e0c76e5a1950dbd8f5669bb0acf04c11de45d7c133cb"
-        }
-      ]
-    },
-    {
-      "tag": "v2.1.0",
-      "name": "v2.1.0",
-      "pre": false,
-      "draft": false,
-      "date": "2026-11-15",
-      "published_at": "2026-11-15T08:37:59Z",
-      "body": "## HGhubX 2.1.0\r\n\r\nHGhubX 2.1 新增标签屏蔽，完善账号同步，并优化播放和加载体验。\r\n\r\n### 更新点\r\n\r\n- **内容偏好**：新增按标签屏蔽，可在设置或视频“不感兴趣”中添加规则；首页自动跳过命中内容，列表支持临时展开，收藏和历史保留记录。\r\n- **播放手势**：手机端支持左下长按减速、右上长按加速，中心小方块长按“不感兴趣”；首次进入播放器显示区域提示，视频详情支持点击标签跳转。\r\n- **启动体验**：新增开屏动画和首次使用协议。\r\n- **性能**：优化页面按需加载、下一条视频和下一集预取，精简无效代码与重复请求。\r\n- **界面**：更新了 UI，自己体验。\r\n\r\n### 修复点\r\n\r\n- 修复游客模式保存观看进度、收藏等数据时回滚设置的问题，包括自动恢复静音，以及音量、启动静音、优先高清、滑动切集和搜索历史被旧快照覆盖。\r\n- 修复评论区出现 HTML 标签和脚本片段、长评论和长昵称换行异常的问题；手机播放页面显示评论数量，评论面板读取当前剧集的数量。\r\n- 修复首页刷视频后进入全屏跳到其他视频的问题。\r\n- 修复手机端吃瓜视频控制按钮隐藏的问题，调整小屏控制栏，并补充全屏失败时的屏幕内全屏模式。\r\n- 修复收藏和观看历史只显示首批内容、账号数据未完整回填的问题，完善关注列表分页和失败重试。\r\n- 修复账号、线路切换后的迟到请求污染当前数据，以及互动操作失败仍显示成功的问题。\r\n- 修复详情封面加载状态异常，优先加载详情封面，并合并同地址的下载和解密请求。\r\n- 补齐原生播放器的单段 Range 响应，返回正确的 `206`、`416` 和 `Content-Range`，改善 iOS 媒体探测流程。\r\n\r\n### 构建产物\r\n\r\n- Linux amd64：`.deb`\r\n- Android：arm64、arm、x86_64 分 ABI  `.apk`\r\n- Windows：x64 安装包 `.exe` 和便携版 `.zip`\r\n- macOS：Universal `.dmg`\r\n- iOS：未签名 `.ipa`\r\n\r\n\r\n## What's Changed\r\n* feat(app): integrate UI and playback updates for v2.1.0 by @zxsos in https://github.com/zxsos/HGhubX/pull/110\r\n* fix(comments): 修复评论显示并发布 v2.1.1 by @zxsos in https://github.com/zxsos/HGhubX/pull/111\r\n* fix(account): 修复游客设置被重置并重新发布 v2.1.0 by @zxsos in https://github.com/zxsos/HGhubX/pull/113\r\n\r\n\r\n**Full Changelog**: https://github.com/zxsos/HGhubX/compare/v2.0.0...v2.1.0",
-      "ipas": [
-        {
-          "name": "HGhubX_2.1.0_ios.ipa",
-          "size": 3819956,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/v2.1.0/HGhubX_2.1.0_ios.ipa",
-          "id": 750365751,
-          "updated_at": "2026-11-15T08:37:59Z",
-          "digest": "sha256:7f9035c02a52c717eb87b7742331174c801a0d1f38225a6dd005ee054583bd98"
+          "name": "HGhubX_3.0.0_ios.ipa",
+          "size": 5162627,
+          "url": "https://github.com/zxsos/HGhubX/releases/download/test-pre/HGhubX_3.0.0_ios.ipa",
+          "id": 797189096,
+          "updated_at": "2026-11-26T18:28:05Z",
+          "digest": "sha256:f64026f78a91c185a2dec3202b0660a046b9908429b2b7a2f6e66c42e1dd30c2"
         }
       ]
     }
@@ -2366,6 +2128,16 @@
   ],
   "ARMSX2/ARMSX2": [
     {
+      "tag": "nightly-20261126",
+      "name": "ARMSX2 nightly 20261126 (46f1575205)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-11-26",
+      "published_at": "2026-11-26T18:57:46Z",
+      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64.AppImage, for 4K, 16K and 64K page kernels alike\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- Discord: the status comes back after leaving ARMSX2\n\nFull changelog: https://github.com/ARMSX2/ARMSX2/compare/nightly-20261125...46f157520540a2538b8cb48f4695398ef2908025",
+      "ipas": []
+    },
+    {
       "tag": "2.9.7",
       "name": "ARMSX2 2.9.7 ",
       "pre": false,
@@ -2633,16 +2405,6 @@
       "date": "2026-10-07",
       "published_at": "2026-10-07T00:57:22Z",
       "body": "# ARMSX2 2.8.2\r\n\r\nWhat's new:\r\n\r\n**Texture upscaling.** RAISR filters sharpen game textures while you play. The upscaling happens in the background, so textures sharpen a moment after they first show up. Use RAISR 2x for most games, or RAISR 4x if you play at a high internal resolution. You'll find it in All Settings > Renderer, and in the quick menu right under the internal resolution. It works on Vulkan and OpenGL, and if a game has a texture pack loaded, the pack wins. done by @bmdhacks\r\n\r\n<img width=\"774\" height=\"725\" alt=\"image\" src=\"https://github.com/user-attachments/assets/b78cce3f-237c-4a1e-b93b-7e94e6f58b51\" />\r\n\r\n<img width=\"774\" height=\"725\" alt=\"image\" src=\"https://github.com/user-attachments/assets/c01c01e3-1ed7-43cb-a8f5-11423c8b8882\" />\r\n\r\n<img width=\"1669\" height=\"1214\" alt=\"image\" src=\"https://github.com/user-attachments/assets/67a28834-1342-4e94-b2d9-b9e63996d025\" />\r\n\r\n<img width=\"1669\" height=\"1214\" alt=\"image\" src=\"https://github.com/user-attachments/assets/3ec279da-da50-4f08-9d95-83bfaaf91281\" />\r\n\r\n**Two controllers, one player.** In Controls > Player & Rumble you can set your handheld's built-in controls and a Bluetooth controller both to Player 1, and both will work at the same time. Dock to a TV and keep playing without changing anything. Rumble goes to whichever one you used last. done by @jpolo1224\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/c9025a11-c5f0-4bc1-9769-af3e16f042d3\" />\r\n\r\n**More autosaves.** You can keep up to 5 autosaves now (3 by default). Set it in the save state picker. Each new autosave pushes the older ones back, so if one gets made right before you die, you still have earlier ones to go back to. done by @jpolo1224\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/6cc4d3ca-6f1c-435b-b71e-2edea0ea6d9b\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/1506345d-fbd8-4666-b278-6bc",
-      "ipas": []
-    },
-    {
-      "tag": "2.8.1",
-      "name": "ARMSX2 2.8.1",
-      "pre": false,
-      "draft": false,
-      "date": "2026-10-05",
-      "published_at": "2026-10-05T01:14:06Z",
-      "body": "# ARMSX2 2.8.1\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/986d5d9a-8878-40eb-88dd-bd31fb158867\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/23608d1d-4314-42ef-94dd-b8b69dd38f7a\" />\r\n\r\nWhat's new: \r\n\r\n## Namco System 246/256\r\n\r\nThe import is gone, an arcade game in your game folders shows up in the library by itself, as a PCSX2x6 game folder (.acgame) or just its image and dongle named after its game ID (NM00010.chd and NM00010.ps2). Nothing is copied but the 8 MB dongle, so there is no second game copy, and no more nameless duplicates in the library. done by @jpolo1224 \r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/9d103288-a35c-4ba2-aa94-b607be931bf1\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/f402b607-528e-4aaf-8c01-01cfdc6f504f\" />\r\n\r\n**Hard drive games start.** CHD hard drives over 10 GB (Battle Gear 3, Cobra the Arcade, Ace Driver 3)\r\nstopped at \"Cannot open the arcade game's media image\". They open now, and what a game writes to its\r\nhard drive is kept between sessions, beside its settings and never in the CHD. done by @jpolo1224 \r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/b0ef0824-fa40-4eda-a085-4b843d0f1100\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/d26b6892-3ddf-460e-baee-34110d59a5f0\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/d462fc68-67f2-4d49-acb8-d6b29bcc7c26\" />\r\n\r\n**The System 246 and 256 BIOS together.** Import both and there is nothing to pick: every game starts\r\non the System 256 BIOS, as in PCSX2x6, and Battle Gear 3 and Battle Gear 3 Tuned, which refuse it\r\n(\"RACK ERROR\"), on the System 246 one. A game that needs a BIOS you don't have says which. done by @jpolo1224 \r\n\r\n**Arcade c",
       "ipas": []
     }
   ],
@@ -4137,15 +3899,15 @@
       "draft": false,
       "date": "2026-11-26",
       "published_at": "2026-11-26T03:08:21Z",
-      "body": "EhPanda 3.1.0 beta includes the following improvements.\n\n- Tags you keep in My Tags are marked in every list and on gallery pages. Add or remove a tag from its menu, and manage your tag sets in Settings.\n- Webtoons can always be read vertically. Turn it on in Reading settings, and EhPanda switches when a gallery's pages are tall.\n- Waiting downloads are listed in the order they will run, and each gallery's menu can download it now, next or at another place in the queue.\n- The Read button shows the page you will resume at and how far you've read. Lists mark the galleries you've favorited and strike through the date of an expunged gallery. Each E-Hentai setting saves on its own, the Sort Order menu in Favorites shows the order in use, and editing a comment keeps its formatting.\n- Save a search keyword as a saved search, and get tag suggestions in the saved search editor. Crash reports are sent, with personal details removed, so crashes can be fixed. Plus pointer hover effects on iPad and many fixes.\n\n",
+      "body": "EhPanda 3.1.0 beta includes the following improvements.\n\n- Tags you keep in My Tags are marked in every list and on gallery pages. Add or remove a tag from its menu, and manage your tag sets in Settings.\n- Webtoons can always be read vertically. Turn it on in Reading settings, and EhPanda switches when a gallery's pages are tall.\n- Waiting downloads are listed in the order they will run, and each gallery's menu can download it now, next or at another place in the queue.\n- The Read button shows the page you will resume at and how far you've read. Lists mark the galleries you've favorited and strike through the date of an expunged gallery. Each E-Hentai setting saves on its own, the Sort Order menu in Favorites shows the order in use, and editing a comment keeps its formatting.\n- Save a search keyword as a saved search, and get tag suggestions in the saved search editor. Crash reports are sent, with personal details removed, so crashes can be fixed. Plus pointer hover effects on iPad and many fixes.\n",
       "ipas": [
         {
           "name": "EhPanda-Beta.ipa",
-          "size": 20832997,
+          "size": 20848432,
           "url": "https://github.com/EhPanda-Team/EhPanda/releases/download/3.1.0/EhPanda-Beta.ipa",
-          "id": 794556970,
-          "updated_at": "2026-11-26T06:08:02Z",
-          "digest": "sha256:fd938ba25dcff93db2818181017c083b4b126cb2d57fb0a2ab9b2fb925dbcf00"
+          "id": 795483457,
+          "updated_at": "2026-11-26T11:00:41Z",
+          "digest": "sha256:f8a37c05aeaa2536f866cd200b84e9088479c0fe9ac79ea1a3de8104b2efd04c"
         }
       ]
     },

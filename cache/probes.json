@@ -3030,5 +3030,19 @@
       "size": 30376353,
       "digest": "sha256:148fae14e0a90a853b4a1a60da6a75aaeaf30b729103528d53edd711c5786f36"
     }
+  },
+  "https://github.com/zxsos/HGhubX/releases/download/v3.0.0/HGhubX_3.0.0_ios.ipa": {
+    "bundleIdentifier": "com.hghubx.app",
+    "version": "3.0.0",
+    "buildVersion": "3.0.0",
+    "displayName": "HGhubX",
+    "minOSVersion": "15.0",
+    "size": 4865415,
+    "assetIdentity": {
+      "id": 796229596,
+      "updated_at": "2026-11-26T14:16:53Z",
+      "size": 4865415,
+      "digest": "sha256:e3267be43faf0be5b354395a560c198e10207d762752d4dd95906a109076324d"
+    }
   }
 }
