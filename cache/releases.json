@@ -2366,6 +2366,44 @@
   ],
   "ARMSX2/ARMSX2": [
     {
+      "tag": "iOSv2.6.1",
+      "name": "ARMSX2 iOS 2.6.1",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-25",
+      "published_at": "2026-11-25T19:03:43Z",
+      "body": "Everything below is compared with 2.6.0.\n\n## New\n\n**Report a Problem.** (@J1coding: #1032) Settings has a new Diagnostics page and the pause menu has a Report a Problem row. They bundle recent logs, settings, crash files, a photo and the paused frame into one report, with sensitive details redacted. After a crash, a freeze or a failed start, the next launch asks once whether you want to send one.\n\n**Automatic Performance Tuning.** (@bmdhacks) A new switch in the emulator settings tries lower resolution, blending accuracy and other options on its own when a game runs slow. It keeps what helps and tells you on screen. It can also lower the emulated CPU clock when the device can't keep up. It is off by default.\n\n**Rebuilt pad layout editor.** (@J1coding: #1065) The old editor is gone, and every entry point now opens the new one: Settings > Virtual Pad > Edit Layout, the pause menu, Per-Game Settings > Pad and the library's game menu. It works with a controller and VoiceOver. You can move, resize and fade pad pieces from 10 percent to full opacity, including the whole D-pad or face button cluster as one piece.\n\n**Floating sticks and L3/R3 in layouts.** (@J1coding: #1065) Each stick can float or stay put, overriding the global Dynamic Thumbsticks setting, and can have its own touch zone. L3 and R3 buttons can be shown, placed and sized like Select and Start. They start hidden, so your existing layouts play as before.\n\n**iPhone Duo support.** (@J1coding) The pause card and in-game panels now lay themselves out around the hinge and fold. Folding or unfolding with the pause card open keeps the item your controller had selected instead of jumping back to Resume. The on-screen pad is refit to the shorter portrait screens, OrbitKeys sizes its keys by window size so the inner screen no longer gets phone-sized keys, and the library, pad editor and menus no longer flip between portrait and landscape when the on-screen keyboard shrinks the window.\n\n## Controls and menus\n\n**Held ke",
+      "ipas": [
+        {
+          "name": "ARMSX2-iOS-2.6.1.ipa",
+          "size": 41420239,
+          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/iOSv2.6.1/ARMSX2-iOS-2.6.1.ipa",
+          "id": 792737795,
+          "updated_at": "2026-11-25T18:54:20Z",
+          "digest": "sha256:bc656ab8376e1b91fbf91b335c40942c3fba45a9643bb08277ef0b365a986823"
+        }
+      ]
+    },
+    {
+      "tag": "nightly-20261125",
+      "name": "ARMSX2 nightly 20261125 (d4fe08faeb)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-11-25",
+      "published_at": "2026-11-25T21:31:21Z",
+      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64.AppImage, for 4K, 16K and 64K page kernels alike\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- COP2: a VU0 sync runs VU0 to the EE's clock, never past it\n- iOS: bump to 2.6.1\n- Android: compile the GS shaders and the GameDB into the core\n- Embedded resources: the compiled-in copy wins over the resources folder\n- iOS: L3 and R3 buttons in the pad layout\n- iOS: move the D-pad and face buttons as one in the pad editor\n- iOS: drop the old pad layout editor\n- iOS: floating sticks in the pad layout\n- iOS: touch pad editor with drop cards, controller and VoiceOver\n- iOS: per-class pad layouts with opacity and a book slot\n- Android: offer our Turnip pack on the Adreno 8xx parts its device table lists\n- Adreno 8xx on Turnip takes the declared feedback loop with the per-draw barriers\n\nFull changelog: https://github.com/ARMSX2/ARMSX2/compare/nightly-20261124...d4fe08faebcb977da891b20477a3f8b7eb9ee531",
+      "ipas": [
+        {
+          "name": "ARMSX2-nightly-20261125-d4fe08faeb-iOS-arm64.ipa",
+          "size": 41389234,
+          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261125/ARMSX2-nightly-20261125-d4fe08faeb-iOS-arm64.ipa",
+          "id": 793218177,
+          "updated_at": "2026-11-25T21:31:26Z",
+          "digest": "sha256:edab7a47463785084ea638b19943f97bc91feeb2634834f853ee5f0bbc60a359"
+        }
+      ]
+    },
+    {
       "tag": "2.9.6",
       "name": "ARMSX2 2.9.6",
       "pre": false,
@@ -2518,25 +2556,6 @@
       ]
     },
     {
-      "tag": "nightly-20261113",
-      "name": "ARMSX2 nightly 20261113 (37ed35b88f)",
-      "pre": true,
-      "draft": false,
-      "date": "2026-11-13",
-      "published_at": "2026-11-13T04:53:50Z",
-      "body": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ARMSX2 Nightly, alongside the stable app)\n- iOS: iOS-arm64.ipa, unsigned, sideload it (installs as ARMSX2 Nightly, alongside the stable app)\n\nComing from an old nightly? Nightlies are now a separate app, ARMSX2 Nightly, next to stable.\n\n- Android: stable cannot install over an old nightly. Back up your saves and memory cards, uninstall the old nightly, then install the stable APK.\n- iOS: your old nightly is the ARMSX2 iOS app and still has your saves. Copy them into ARMSX2 Nightly with the Files app.\n\n## What's new\n- microVU0: compute the VU1 register window's address at run time\n- Tests: a persisted VU0 program that uses the window onto VU1's registers\n- Android: link the core with emulated TLS when the minimum API is below 29\n- iOS: give the layout editor and the manifest skin their own views\n- iOS: split the patch and skin library stores by their own sections\n- iOS: split navigation and gameplay views into one file per view\n- iOS: split the controls and skin files along their types\n- iOS: split the dynamic backgrounds into one file per background\n\nFull changelog: https://github.com/ARMSX2/ARMSX2/compare/nightly-20261112...37ed35b88fe9a0164369c8042f2c9aa707e33667",
-      "ipas": [
-        {
-          "name": "ARMSX2-nightly-20261113-37ed35b88f-iOS-arm64.ipa",
-          "size": 40715589,
-          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261113/ARMSX2-nightly-20261113-37ed35b88f-iOS-arm64.ipa",
-          "id": 742320362,
-          "updated_at": "2026-11-13T04:53:55Z",
-          "digest": "sha256:10ae36945d8c76d806774bafcfde306c41e1c3f518df9461ea7e9bfe193a00d7"
-        }
-      ]
-    },
-    {
       "tag": "2.9.3",
       "name": "ARMSX2 2.9.3 ",
       "pre": false,
@@ -2625,25 +2644,6 @@
       "published_at": "2026-10-03T23:34:39Z",
       "body": "# ARMSX2 2.8\r\n\r\nWhat's new: \r\n\r\n## Namco System 246/256\r\n\r\n**Namco's arcade board support in ARMSX2.** The boards are emulated whole: the drive (CD, DVD and hard\r\ndrive images, CHD included), the settings memory, the I/O boards for buttons, coins, wheels, drums, twin\r\nlevers, light guns and the touch panel, the security dongle, and the faster clocks of the System 256\r\nboards. 55 arcade games are in the game database, with PCSX2x6's fixes for them. *Board emulation from PCSX2x6 by @israpps, @Tovarichtch and @DiscoStarslayer. ported by @jpolo1224.*\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/0fb03cf6-4df3-4d56-9229-5008cbaac070\" />\r\n\r\n**The NAMCO screen.** In the left side menu in the game library, right under Texture Packs. It takes you through it in order:\r\n- **An arcade games folder**, picked or made in the system picker and added to your library folders.\r\n- **The boot files**, downloaded once (about 1 MB).\r\n- **The arcade BIOS**, with a shortcut to BIOS Location. A 2 MB System 246/256 dump works.\r\n- **Import a game:** its disc or hard drive image and its dongle, each with its own button and in any\r\n  order. plus Soul Calibur II's Conquest card. Gzipped dumps are unpacked as they are copied, a file\r\n  under 8 MB is refused as a dongle, and Cancel stops an import.\r\n- **Uninstall** an imported arcade game from the same screen.\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/c4170730-9fc0-4e75-9c66-bb605397a6b2\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/e557de2f-73f3-46a1-a2ab-7b6cdfdf649f\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/1463da4b-6679-44dd-80f6-474017497523\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/2a07f462-9f4a-4239-a51a-9bdaa74f9ec5\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https",
       "ipas": []
-    },
-    {
-      "tag": "iOSv2.6.0",
-      "name": "ARMSX2 iOS 2.6.0",
-      "pre": false,
-      "draft": false,
-      "date": "2026-10-02",
-      "published_at": "2026-10-02T16:14:50Z",
-      "body": "This one is big. The whole app works with a controller now, and save states were rebuilt around auto-save and Undo. Shaders and texture packs are new on iOS. Everything below is compared with 2.5.2.\r\n\r\niOS 17.4 or newer is required now.\r\n\r\n## New\r\n\r\n**Controller support across the whole app** (@henyckma, @J1coding: #757, #753, #782)\r\n- Every screen works with a controller: the Games, BIOS and Settings tabs, the pause menu and its panels, Per-Game Settings, Shaders, Texture Packs, game menus, pop-ups, RetroAchievements and Licenses.\r\n- D-pad or left stick moves the focus box, the right stick scrolls, and holding a direction speeds up. Cross selects and Circle goes back. In the library, Square opens the game menu and Triangle adds a favorite.\r\n- Settings remembers the page, the option and the scroll position when you switch tabs or come back from a game. A fresh Down press on the last option loops to the top, while holding the D-pad stops at the end so you don't fly past it.\r\n- Pop-ups and confirmations work with the controller, and Circle cancels them. Stop asks in a small panel next to the Stop button.\r\n- The focus box style and colour, its glowing corners and the orbs are all in Settings > Appearance. L2 and R2 can switch themes in the menus if you turn that on (off by default).\r\n\r\n**Controller macros** (@henyckma, @J1coding: #757)\r\n- Settings > Game Controller > Controller Macros, at the top of the page.\r\n- Select + Start opens the pause menu. Start + R2 Quick Saves and Start + L2 Quick Loads. Start + D-pad changes the game speed and fast forward, and Start + Circle undoes the last save state action (press Start first).\r\n- Every macro can move to other buttons. Macros only read the D-pad, so steering with the stick while holding Start does nothing extra, and the buttons of a macro don't reach the game.\r\n\r\n**OrbitKeys** (@henyckma: #757)\r\n- A controller keyboard with grid and QWERTY layouts. It's used to rename games, save slots and themes, and to sign in to RetroA",
-      "ipas": [
-        {
-          "name": "ARMSX2-iOS-2.6.0.ipa",
-          "size": 39142823,
-          "url": "https://github.com/ARMSX2/ARMSX2/releases/download/iOSv2.6.0/ARMSX2-iOS-2.6.0.ipa",
-          "id": 609725050,
-          "updated_at": "2026-10-04T11:33:37Z",
-          "digest": "sha256:86189c429769cbabdec2c842744a4541351c142a5576f5078c5fc94b553ee7d0"
-        }
-      ]
     }
   ],
   "ARMSX2/ARMSX3": [
