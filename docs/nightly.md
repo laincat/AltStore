@@ -26,13 +26,13 @@
 | AvPlay | 2.2.2 | 无 | 无预发布 |
 | Breeze | 3.1.0 | custom-issue-246 (2026-11-21) | 不收：该预发布没有 iOS 包 |
 | Camlo | 1.3.4 | 无 | 无预发布 |
-| EhPanda | 2.8.1 | 无 | 无预发布 |
+| EhPanda | 2.8.1 | 3.1.0 (2026-11-26) | 不收：未启用 nightly 轨道 |
 | GestaltEdit | 2.3.1 | 无 | 无预发布 |
 | GestaltX | 1.1.1 | 无 | 无预发布 |
 | HentaiPark | 0.15.4 | 无 | 无预发布 |
 | HGhubX | 2.2.10 | test-pre (2026-11-21) | 不收：比稳定版旧 |
 | INSAV | 1.3.1 | 无 | 无预发布 |
-| Kazumi | 2.4.6 | 无 | 无预发布 |
+| Kazumi | 2.4.7 | 无 | 无预发布 |
 | Nekularity | 0.4.9 | 无 | 无预发布 |
 | One | 1.7.1 | 无 | 无预发布 |
 | PicaComic | 5.1.3 | 无 | 无预发布 |

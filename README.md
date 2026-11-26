@@ -61,7 +61,7 @@ https://github.com/laincat/AltStore/releases/download/latest/apps.json
 | HentaiPark | `com.hentaipark.hentaiPark` | 0.15.4 | iOS 15.0+ | 无 | [drdon1234/Hentai-Park](https://github.com/drdon1234/Hentai-Park) |
 | HGhubX | `com.hghubx.app` | 2.2.10 | iOS 15.0+ | 无 | [zxsos/HGhubX](https://github.com/zxsos/HGhubX) |
 | INSAV | `com.ios151.insav` | 1.3.1 | iOS 16.0+ | 无 | [ios151/Insav-releases](https://github.com/ios151/Insav-releases) |
-| Kazumi | `com.example.kazumi` | 2.4.6 | iOS 15.0+ | 无 | [Predidit/Kazumi](https://github.com/Predidit/Kazumi) |
+| Kazumi | `com.example.kazumi` | 2.4.7 | iOS 15.0+ | 无 | [Predidit/Kazumi](https://github.com/Predidit/Kazumi) |
 | Nekularity | `com.laincat.nekularity` | 0.4.9 | iOS 26.0+ | 无 | [laincat/Nekularity](https://github.com/laincat/Nekularity) |
 | One | `com.ios151.one` | 1.7.1 | iOS 16.0+ | 无 | [ios151/One-releases](https://github.com/ios151/One-releases) |
 | PicaComic | `com.github.pacalini.picaComic` | 5.1.3 | iOS 15.1+ | 无 | [ccbkv/PicaComic](https://github.com/ccbkv/PicaComic) |
