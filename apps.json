@@ -880,41 +880,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "3.0.0",
-              "date": "2026-11-26",
-              "publishedAt": "2026-11-26T14:16:54Z",
-              "buildVersion": "3.0.0",
-              "buildNumber": "3.0.0",
-              "localizedDescription": "HGhubX v3.0.0\r\n\r\nHGhubX 3.0 正式版：视频内容改由可导入的视频源提供，支持多来源切换与手机、TV 局域网同步，并完成收藏筛选、缓存清理、扫码等多项体验升级；覆盖 Windows、macOS、Linux、Android 与 iOS。\r\n新增与优化\r\n1. 视频源插件系统与离线示例试用：支持扫码、hghubx:// 深链、剪贴板口令、HTTPS 链接及本地文件导入，提供切换、回滚、连通性测试及每次进入静默检查更新（60 秒冷却）；无源引导页提供「试用离线示例源」与顶部一键「移除示例源」，可零网络预览界面，随时一键移除。\r\n2. 「我的收藏」组合筛选与下拉刷新（#278）：将收藏筛选拆分为「观看状态（不限 / 未看完 / 已看完）」与「连载状态（不限 / 连载中 / 已完结）」两轴正交交集，实时联动计数并统一三道杠筛选图标；新增顶部下拉刷新手势与「刷新收藏」按钮，同步检查更新部数与新增集数。\r\n3. 手机与 TV 局域网双向同步配对：支持手机「扫一扫」识别 TV 二维码或 4 位配对码直连电视端，同步视频源配置、本机收藏/观看记录、内容偏好与常用播放设置；桌面端不再显示 TV 连接与扫码同步入口。\r\n4. 作者目录、标签页与列表加载提速：作者目录首屏第 1 页即刻渲染并在后台 4 并发补齐分页；「标签」「专题」与搜索页「热门题材」接入按源与线路隔离的本地缓存，二次进入秒开并后台静默刷新；优化源存储并发读写性能。\r\n5. 真实跨平台缓存清理与最高无上限档位：支持 128 MB、256 MB、512 MB、1 GB 与「无上限」5 档调节，真实统计并清理跨端缓存…",
-              "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v3.0.0/HGhubX_3.0.0_ios.ipa",
-              "size": 4865415,
+              "version": "3.1.2",
+              "date": "2026-11-27",
+              "publishedAt": "2026-11-27T19:01:14Z",
+              "buildVersion": "3.1.2",
+              "buildNumber": "3.1.2",
+              "localizedDescription": "HGhubX v3.1.2\n\nHGhubX 3.1.2 正式版：正式纳入 HarmonyOS 鸿蒙未签名安装包（自签可用），新增视频加载 DNS 并发竞速与 Rust 媒体代理层 HLS 后台并发预取，统一全端网络、视频源与播放器错误代号层，并修复安卓端返回退出后重新打开闪退与切后台继续拉流问题；覆盖 Windows、macOS、Linux、Android、iOS 与 HarmonyOS。\n新增与优化\n1. 正式纳入 HarmonyOS 鸿蒙自签版（#283）：同步标准版全部功能与界面，随本版同步提供 HGhubX_3.1.2_ohos_arm64_unsigned.hap 未签名安装包；前端自动识别 HarmonyOS 平台，内置更新检查支持优先匹配 .hap 产物。\n2. 视频加载与首播提速：\n   - 底层客户端构建与域名解析引入同主机 single-flight 合并与 900ms 系统 DNS / 阿里 DoH 并发竞速（保留严格模式既有 IP 与重定向安全校验），降低冷启动并发排队与弱网 DNS 阻塞。\n   - Rust 媒体代理层新增 HLS 后台并发预取：解析播放列表后即并发预热加密 Key、初始化片段与前 2 个分片，播放期间按当前分片自动预取后续 N+1 / N+2 分片（全局并发限流 3，切线、切集或清缓存即时取消），显著提升起播与续播缓冲速度。\n3. 统一错误代号层与历史同步自动重试：\n   - 后端网络请求、视频源脚本与播放器错误统一收口为带语义代号的可读提示（如 NET_TIMEOUT、NET_DNS、NET_PROXY、HTTP_*、SRC_*、…",
+              "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v3.1.2/HGhubX_3.1.2_ios.ipa",
+              "size": 5216729,
               "minOSVersion": "15.0",
-              "releaseTag": "v3.0.0",
-              "source": "https://github.com/zxsos/HGhubX/releases/tag/v3.0.0"
+              "releaseTag": "v3.1.2",
+              "source": "https://github.com/zxsos/HGhubX/releases/tag/v3.1.2"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "3.0.0",
-          "date": "2026-11-26",
-          "publishedAt": "2026-11-26T14:16:54Z",
-          "buildVersion": "3.0.0",
-          "buildNumber": "3.0.0",
-          "localizedDescription": "HGhubX v3.0.0\r\n\r\nHGhubX 3.0 正式版：视频内容改由可导入的视频源提供，支持多来源切换与手机、TV 局域网同步，并完成收藏筛选、缓存清理、扫码等多项体验升级；覆盖 Windows、macOS、Linux、Android 与 iOS。\r\n新增与优化\r\n1. 视频源插件系统与离线示例试用：支持扫码、hghubx:// 深链、剪贴板口令、HTTPS 链接及本地文件导入，提供切换、回滚、连通性测试及每次进入静默检查更新（60 秒冷却）；无源引导页提供「试用离线示例源」与顶部一键「移除示例源」，可零网络预览界面，随时一键移除。\r\n2. 「我的收藏」组合筛选与下拉刷新（#278）：将收藏筛选拆分为「观看状态（不限 / 未看完 / 已看完）」与「连载状态（不限 / 连载中 / 已完结）」两轴正交交集，实时联动计数并统一三道杠筛选图标；新增顶部下拉刷新手势与「刷新收藏」按钮，同步检查更新部数与新增集数。\r\n3. 手机与 TV 局域网双向同步配对：支持手机「扫一扫」识别 TV 二维码或 4 位配对码直连电视端，同步视频源配置、本机收藏/观看记录、内容偏好与常用播放设置；桌面端不再显示 TV 连接与扫码同步入口。\r\n4. 作者目录、标签页与列表加载提速：作者目录首屏第 1 页即刻渲染并在后台 4 并发补齐分页；「标签」「专题」与搜索页「热门题材」接入按源与线路隔离的本地缓存，二次进入秒开并后台静默刷新；优化源存储并发读写性能。\r\n5. 真实跨平台缓存清理与最高无上限档位：支持 128 MB、256 MB、512 MB、1 GB 与「无上限」5 档调节，真实统计并清理跨端缓存…",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v3.0.0/HGhubX_3.0.0_ios.ipa",
-          "size": 4865415,
+          "version": "3.1.2",
+          "date": "2026-11-27",
+          "publishedAt": "2026-11-27T19:01:14Z",
+          "buildVersion": "3.1.2",
+          "buildNumber": "3.1.2",
+          "localizedDescription": "HGhubX v3.1.2\n\nHGhubX 3.1.2 正式版：正式纳入 HarmonyOS 鸿蒙未签名安装包（自签可用），新增视频加载 DNS 并发竞速与 Rust 媒体代理层 HLS 后台并发预取，统一全端网络、视频源与播放器错误代号层，并修复安卓端返回退出后重新打开闪退与切后台继续拉流问题；覆盖 Windows、macOS、Linux、Android、iOS 与 HarmonyOS。\n新增与优化\n1. 正式纳入 HarmonyOS 鸿蒙自签版（#283）：同步标准版全部功能与界面，随本版同步提供 HGhubX_3.1.2_ohos_arm64_unsigned.hap 未签名安装包；前端自动识别 HarmonyOS 平台，内置更新检查支持优先匹配 .hap 产物。\n2. 视频加载与首播提速：\n   - 底层客户端构建与域名解析引入同主机 single-flight 合并与 900ms 系统 DNS / 阿里 DoH 并发竞速（保留严格模式既有 IP 与重定向安全校验），降低冷启动并发排队与弱网 DNS 阻塞。\n   - Rust 媒体代理层新增 HLS 后台并发预取：解析播放列表后即并发预热加密 Key、初始化片段与前 2 个分片，播放期间按当前分片自动预取后续 N+1 / N+2 分片（全局并发限流 3，切线、切集或清缓存即时取消），显著提升起播与续播缓冲速度。\n3. 统一错误代号层与历史同步自动重试：\n   - 后端网络请求、视频源脚本与播放器错误统一收口为带语义代号的可读提示（如 NET_TIMEOUT、NET_DNS、NET_PROXY、HTTP_*、SRC_*、…",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v3.1.2/HGhubX_3.1.2_ios.ipa",
+          "size": 5216729,
           "minOSVersion": "15.0",
-          "releaseTag": "v3.0.0",
-          "source": "https://github.com/zxsos/HGhubX/releases/tag/v3.0.0"
+          "releaseTag": "v3.1.2",
+          "source": "https://github.com/zxsos/HGhubX/releases/tag/v3.1.2"
         }
       ],
-      "version": "3.0.0",
-      "versionDate": "2026-11-26",
-      "versionDescription": "HGhubX v3.0.0\r\n\r\nHGhubX 3.0 正式版：视频内容改由可导入的视频源提供，支持多来源切换与手机、TV 局域网同步，并完成收藏筛选、缓存清理、扫码等多项体验升级；覆盖 Windows、macOS、Linux、Android 与 iOS。\r\n新增与优化\r\n1. 视频源插件系统与离线示例试用：支持扫码、hghubx:// 深链、剪贴板口令、HTTPS 链接及本地文件导入，提供切换、回滚、连通性测试及每次进入静默检查更新（60 秒冷却）；无源引导页提供「试用离线示例源」与顶部一键「移除示例源」，可零网络预览界面，随时一键移除。\r\n2. 「我的收藏」组合筛选与下拉刷新（#278）：将收藏筛选拆分为「观看状态（不限 / 未看完 / 已看完）」与「连载状态（不限 / 连载中 / 已完结）」两轴正交交集，实时联动计数并统一三道杠筛选图标；新增顶部下拉刷新手势与「刷新收藏」按钮，同步检查更新部数与新增集数。\r\n3. 手机与 TV 局域网双向同步配对：支持手机「扫一扫」识别 TV 二维码或 4 位配对码直连电视端，同步视频源配置、本机收藏/观看记录、内容偏好与常用播放设置；桌面端不再显示 TV 连接与扫码同步入口。\r\n4. 作者目录、标签页与列表加载提速：作者目录首屏第 1 页即刻渲染并在后台 4 并发补齐分页；「标签」「专题」与搜索页「热门题材」接入按源与线路隔离的本地缓存，二次进入秒开并后台静默刷新；优化源存储并发读写性能。\r\n5. 真实跨平台缓存清理与最高无上限档位：支持 128 MB、256 MB、512 MB、1 GB 与「无上限」5 档调节，真实统计并清理跨端缓存…",
-      "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v3.0.0/HGhubX_3.0.0_ios.ipa",
-      "size": 4865415,
+      "version": "3.1.2",
+      "versionDate": "2026-11-27",
+      "versionDescription": "HGhubX v3.1.2\n\nHGhubX 3.1.2 正式版：正式纳入 HarmonyOS 鸿蒙未签名安装包（自签可用），新增视频加载 DNS 并发竞速与 Rust 媒体代理层 HLS 后台并发预取，统一全端网络、视频源与播放器错误代号层，并修复安卓端返回退出后重新打开闪退与切后台继续拉流问题；覆盖 Windows、macOS、Linux、Android、iOS 与 HarmonyOS。\n新增与优化\n1. 正式纳入 HarmonyOS 鸿蒙自签版（#283）：同步标准版全部功能与界面，随本版同步提供 HGhubX_3.1.2_ohos_arm64_unsigned.hap 未签名安装包；前端自动识别 HarmonyOS 平台，内置更新检查支持优先匹配 .hap 产物。\n2. 视频加载与首播提速：\n   - 底层客户端构建与域名解析引入同主机 single-flight 合并与 900ms 系统 DNS / 阿里 DoH 并发竞速（保留严格模式既有 IP 与重定向安全校验），降低冷启动并发排队与弱网 DNS 阻塞。\n   - Rust 媒体代理层新增 HLS 后台并发预取：解析播放列表后即并发预热加密 Key、初始化片段与前 2 个分片，播放期间按当前分片自动预取后续 N+1 / N+2 分片（全局并发限流 3，切线、切集或清缓存即时取消），显著提升起播与续播缓冲速度。\n3. 统一错误代号层与历史同步自动重试：\n   - 后端网络请求、视频源脚本与播放器错误统一收口为带语义代号的可读提示（如 NET_TIMEOUT、NET_DNS、NET_PROXY、HTTP_*、SRC_*、…",
+      "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v3.1.2/HGhubX_3.1.2_ios.ipa",
+      "size": 5216729,
       "minOSVersion": "15.0"
     },
     {

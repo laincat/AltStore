@@ -30,7 +30,7 @@
 | GestaltEdit | 2.3.1 | 无 | 无预发布 |
 | GestaltX | 1.1.1 | 无 | 无预发布 |
 | HentaiPark | 0.15.4 | 无 | 无预发布 |
-| HGhubX | 3.0.0 | test-pre (2026-11-26) | 不收：比稳定版旧 |
+| HGhubX | 3.1.2 | test-pre (2026-11-26) | 不收：比稳定版旧 |
 | INSAV | 1.3.1 | 无 | 无预发布 |
 | Kazumi | 2.4.7 | 无 | 无预发布 |
 | Nekularity | 0.4.9 | 无 | 无预发布 |
