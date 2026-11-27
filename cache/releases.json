@@ -2,20 +2,20 @@
   "zxsos/HGhubX": [
     {
       "tag": "test-pre",
-      "name": "HGhubX Test Preview (2407895)",
+      "name": "HGhubX Test Preview (c81efe6)",
       "pre": true,
       "draft": false,
       "date": "2026-11-26",
       "published_at": "2026-11-26T15:05:45Z",
-      "body": "# HGhubX Test Preview\n\n基于 `main`（`57ad208`）自动合成的全平台预览构建（更新时间：`2026-11-27T01:18:20Z`，测试提交：`2407895`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（4）\n1. #281 feat(playback,settings): add AI picture enhancement with stabilized detail grain (#279)（@zxsos，`fbf3cc5`）\n2. #282 feat(desktop,source): register hghubx deep-link scheme and single-instance forwarding（@zxsos，`d7c9042`）\n3. #289 feat(account,ui): remove duplicate favorite refresh button and scope pull-to-refresh（@zxsos，`40e5d01`）\n4. #290 feat(feed,storage): expand home random paging and unseen-first shuffling（@zxsos，`83d75b8`）\n\n## 自动跳过的 PR（1）\n- #284 ci: post release assets to Telegram group on publish（@zxsos）：仅涉及文档或工作流变更，不影响客户端构建，已跳过\n",
+      "body": "# HGhubX Test Preview\n\n基于 `main`（`57ad208`）全量合入并手工解冲突后的 6 平台预览构建（更新时间：`2026-11-27T11:20:40Z`，测试提交：`c81efe6`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（15）\n1. #281 feat(playback,settings): add AI picture enhancement with stabilized detail grain (#279)\n2. #282 feat(desktop,source): register hghubx deep-link scheme and single-instance forwarding\n3. #284 ci: post release assets to Telegram group on publish\n4. #289 feat(account,ui): remove duplicate favorite refresh button and scope pull-to-refresh\n5. #290 feat(feed,storage): expand home random paging and unseen-first shuffling\n6. #292 feat(ui): sync main tab panes with mobile tabbar horizontal swipe\n7. #293 fix(discover,storage): cache probed non-empty tag directory and re-probe on refresh (#271)\n8. #294 图文帖子页移除「全部」标签，默认首个分类并支持左右滑动\n9. #295 分类页频道标题行只保留「全部」可点击，避免整行误触\n10. #296 fix(tv,playback): fall back to default stream when HEVC decoding fails (#286)\n11. #297 fix(playback,linux): disable ambient glow video sampling on Linux WebKitGTK (#291)\n12. #299 feat(playback,tv): preheat next episode HLS playlist and first segment near end\n13. #300 fix(ui): prevent segmented capsule and nav indicators from overshooting bounds\n14. #301 搜索页热门作者移除长按关注，仅保留作者页长按关注/取消关注\n15. #302 feat(haptics): add mobile scroll detent ticks and defer button tap pulse\n\n## 未合入项说明（2）\n- #298 修复移动端滑动经过按钮时误触觉反馈（搜索页与底栏）：已由 #302（保留滚动刻度震动 + 按钮抬手确认）替代\n- `exp/harmonyos-ci`（鸿蒙试验构建）：按要求不包含在本轮全平台构建内\n",
       "ipas": [
         {
           "name": "HGhubX_3.0.0_ios.ipa",
-          "size": 5166480,
+          "size": 5170968,
           "url": "https://github.com/zxsos/HGhubX/releases/download/test-pre/HGhubX_3.0.0_ios.ipa",
-          "id": 798457669,
-          "updated_at": "2026-11-27T01:31:16Z",
-          "digest": "sha256:7e897e192e3942988cedfb293bb467268d7498c377d89fcadc915c3237d93a4d"
+          "id": 800235633,
+          "updated_at": "2026-11-27T11:33:11Z",
+          "digest": "sha256:3d82237cea5d62df05754a434a55b77a56532440c4afcf5375155598a469f89d"
         }
       ]
     },
