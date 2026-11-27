@@ -3044,5 +3044,33 @@
       "size": 4865415,
       "digest": "sha256:e3267be43faf0be5b354395a560c198e10207d762752d4dd95906a109076324d"
     }
+  },
+  "https://github.com/Sle2p/AniCh/releases/download/1.5.28/anich-ios-no_sign-1.5.28.ipa": {
+    "bundleIdentifier": "app.anich",
+    "version": "1.5.28",
+    "buildVersion": "1",
+    "displayName": "AniCh",
+    "minOSVersion": "12.0",
+    "size": 41232889,
+    "assetIdentity": {
+      "id": 798340896,
+      "updated_at": "2026-11-27T00:47:10Z",
+      "size": 41232889,
+      "digest": "sha256:8c61d4aeb70a095b40f83ba620419043eadee9f0abbf4a5296bd5a1a2b998482"
+    }
+  },
+  "https://github.com/Xanerix/guoapp/releases/download/app-v2.0.4-116/guoapp-2.0.4%2B116-ios-unsigned.ipa": {
+    "bundleIdentifier": "com.yingshib.xg",
+    "version": "2.0.4",
+    "buildVersion": "116",
+    "displayName": "GuoApp",
+    "minOSVersion": "15.1",
+    "size": 34334761,
+    "assetIdentity": {
+      "id": 798450761,
+      "updated_at": "2026-11-27T01:29:02Z",
+      "size": 34334761,
+      "digest": "sha256:7d540c92e8ae60998b88e127fc38eaead3fd1130892749d4e0a1f5edaa7140ef"
+    }
   }
 }

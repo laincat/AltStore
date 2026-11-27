@@ -177,7 +177,7 @@
       "developerName": "Sle2p",
       "subtitle": "支持超分辨率的弹幕追番应用",
       "localizedDescription": "多平台动漫弹幕应用，支持多番剧源、超分辨率、弹幕过滤、追番管理与离线缓存。此处提供上游发布的未签名 iOS 安装包，需自行签名安装。\n\n项目主页：https://github.com/Sle2p/AniCh",
-      "iconURL": "https://raw.githubusercontent.com/Sle2p/AniCh/1.5.27/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Sle2p/AniCh/1.5.28/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#5A8DEE",
       "category": "entertainment",
       "appPermissions": {
@@ -189,41 +189,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "1.5.27",
-              "date": "2026-10-05",
-              "publishedAt": "2026-10-05T03:15:29Z",
+              "version": "1.5.28",
+              "date": "2026-11-27",
+              "publishedAt": "2026-11-27T01:01:29Z",
               "buildVersion": "1",
               "buildNumber": "1",
-              "localizedDescription": "- 修复内存泄漏的问题",
-              "downloadURL": "https://github.com/Sle2p/AniCh/releases/download/1.5.27/anich-ios-no_sign-1.5.27.ipa",
-              "size": 41226765,
+              "localizedDescription": "- 播放信息中新增软硬解码状态显示功能\r\n- 画廊来源地址支持点击复制\r\n- 修复画廊每次打开详情评论都会重新加载的问题\r\n- 修复部分线路花屏或缺少前几秒画面的问题\r\n- 修复处于画中画模式时弹幕开关被隐藏的问题\r\n- 修复打开线路面板导致界面卡死的问题\r\n- 修复线路面板部分视频无法正确探测大小的问题\r\n- 修复线路面板无法正确显示错误码的问题\r\n- 修复触控板无法双指滑动滚动的问题 (#107)\r\n- 升级battery_plus的版本 (#106)",
+              "downloadURL": "https://github.com/Sle2p/AniCh/releases/download/1.5.28/anich-ios-no_sign-1.5.28.ipa",
+              "size": 41232889,
               "minOSVersion": "12.0",
-              "releaseTag": "1.5.27",
-              "source": "https://github.com/Sle2p/AniCh/releases/tag/1.5.27"
+              "releaseTag": "1.5.28",
+              "source": "https://github.com/Sle2p/AniCh/releases/tag/1.5.28"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "1.5.27",
-          "date": "2026-10-05",
-          "publishedAt": "2026-10-05T03:15:29Z",
+          "version": "1.5.28",
+          "date": "2026-11-27",
+          "publishedAt": "2026-11-27T01:01:29Z",
           "buildVersion": "1",
           "buildNumber": "1",
-          "localizedDescription": "- 修复内存泄漏的问题",
-          "downloadURL": "https://github.com/Sle2p/AniCh/releases/download/1.5.27/anich-ios-no_sign-1.5.27.ipa",
-          "size": 41226765,
+          "localizedDescription": "- 播放信息中新增软硬解码状态显示功能\r\n- 画廊来源地址支持点击复制\r\n- 修复画廊每次打开详情评论都会重新加载的问题\r\n- 修复部分线路花屏或缺少前几秒画面的问题\r\n- 修复处于画中画模式时弹幕开关被隐藏的问题\r\n- 修复打开线路面板导致界面卡死的问题\r\n- 修复线路面板部分视频无法正确探测大小的问题\r\n- 修复线路面板无法正确显示错误码的问题\r\n- 修复触控板无法双指滑动滚动的问题 (#107)\r\n- 升级battery_plus的版本 (#106)",
+          "downloadURL": "https://github.com/Sle2p/AniCh/releases/download/1.5.28/anich-ios-no_sign-1.5.28.ipa",
+          "size": 41232889,
           "minOSVersion": "12.0",
-          "releaseTag": "1.5.27",
-          "source": "https://github.com/Sle2p/AniCh/releases/tag/1.5.27"
+          "releaseTag": "1.5.28",
+          "source": "https://github.com/Sle2p/AniCh/releases/tag/1.5.28"
         }
       ],
-      "version": "1.5.27",
-      "versionDate": "2026-10-05",
-      "versionDescription": "- 修复内存泄漏的问题",
-      "downloadURL": "https://github.com/Sle2p/AniCh/releases/download/1.5.27/anich-ios-no_sign-1.5.27.ipa",
-      "size": 41226765,
+      "version": "1.5.28",
+      "versionDate": "2026-11-27",
+      "versionDescription": "- 播放信息中新增软硬解码状态显示功能\r\n- 画廊来源地址支持点击复制\r\n- 修复画廊每次打开详情评论都会重新加载的问题\r\n- 修复部分线路花屏或缺少前几秒画面的问题\r\n- 修复处于画中画模式时弹幕开关被隐藏的问题\r\n- 修复打开线路面板导致界面卡死的问题\r\n- 修复线路面板部分视频无法正确探测大小的问题\r\n- 修复线路面板无法正确显示错误码的问题\r\n- 修复触控板无法双指滑动滚动的问题 (#107)\r\n- 升级battery_plus的版本 (#106)",
+      "downloadURL": "https://github.com/Sle2p/AniCh/releases/download/1.5.28/anich-ios-no_sign-1.5.28.ipa",
+      "size": 41232889,
       "minOSVersion": "12.0"
     },
     {
@@ -1638,7 +1638,7 @@
       "developerName": "Xanerix",
       "subtitle": "支持多站源的短剧与影视客户端",
       "localizedDescription": "Flutter 多平台短剧与影视客户端，包含全部站源，可在设置中逐个开关。支持追剧、观看记录、多用户、本地下载与备份。此处收录真果鉴全站源版；自 1.0.3 起使用独立 Bundle ID com.guoapp.all，可与仅含红果站源的红果鉴同时安装。旧包名版本不能覆盖升级，原有设置、追剧和下载记录不会自动迁移。\n\n安装包由上游发布，需自行签名安装。站源可用性取决于源站及网络；应用不解除源站 VIP 或其他授权限制。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/Xanerix/guoapp",
-      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v2.0.3-115/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v2.0.4-116/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#E97642",
       "category": "entertainment",
       "appPermissions": {
@@ -1650,41 +1650,41 @@
           "track": "stable",
           "releases": [
             {
-              "version": "2.0.3",
-              "date": "2026-11-21",
-              "publishedAt": "2026-11-21T18:31:19Z",
-              "buildVersion": "115",
-              "buildNumber": "115",
-              "localizedDescription": "更新内容：\n\n- 手机上标题栏和底栏更紧凑；往下翻时收起发现页的标题和底栏，快速往回翻时恢复（#208）。\n- 修复 Windows 触摸屏上左右滑切换分类时内容偏在半路不动。\n- 下拉刷新时往回推可以收起并取消刷新，拉过触发点后不再必定刷新。\n- 外观的预设色板新增「白色」，浅色使用白底，深色使用中性色。\n- 播放失败且已有进度时，可点「从头播放」从当前集开头重试。\n- 手机上点开剧集恢复先进详情页，设置 › 播放 新增「点开剧集直接播放」开关，电视以外可用，默认关闭（#214）。\n- 设置 › 代理 可按站源单独设置连接方式，未单独设置的站源跟随全局。\n- 发现页左右滑切换分类不再等待加载，未加载完的分类显示封面骨架，并提前加载相邻分类（#215）。\n- 发现页分类、下载页标签和详情页选集分组改为跟手翻页，左右两页同时可见，分类栏下划线随手指移动；发现页每个分类各自滚动和下拉刷新（#215）。\n- 分类栏选中文字颜色改为渐变过渡（#215）。\n- 移除打开详情页时封面飞入的过渡动画。\n- Windows 小窗拖到屏幕边缘自动收起，鼠标移到边缘展开，设置 › 摸鱼 可开启（#228）。\n- Windows 新增「贴边自动暂停」，小窗贴边收起时暂停，展开后继续。\n- 设置新增「摸鱼」分类，老板键和小窗贴边设置移入其中。\n- Windows 小窗拖近屏幕边缘时吸附到边缘，不再拖出屏幕外。\n- 分集多数有标题时（如有声书章节），选集改为单列显示标题，播放页顶部显示当前分集标题（#219）。\n- 音频内容改用新的音频播放页：大封面、章节标题、进度条、倍速、上下集、选集、定时停止、下载…",
-              "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v2.0.3-115/guoapp-2.0.3%2B115-ios-unsigned.ipa",
-              "size": 34300644,
+              "version": "2.0.4",
+              "date": "2026-11-27",
+              "publishedAt": "2026-11-27T01:29:07Z",
+              "buildVersion": "116",
+              "buildNumber": "116",
+              "localizedDescription": "更新内容：\n\n- 优化桌面端和平板的有声书详情页与音频播放页布局，支持左右独立滚动、分段选择、常驻选集栏、就近浮层和音量条（#219）。\n- 优化桌面端 Esc 键返回，并新增鼠标后退侧键返回（#196）。\n- 启动时检查已安装站源的新版本，可选择更新、稍后或此版本不再提醒（#230）。\n- 模块仓库新增多组 jsDelivr 与 GitHub 镜像源，提升直连拉取与安装成功率。\n- Android 手机播放页新增「返回主页」按钮，竖屏和横屏均可一键返回，免去逐层后退（#242）。\n- iPhone 和 iPad 支持系统画中画，进入系统小窗后隐藏页内播放器画面，可在播放器手动打开或在设置 › 播放 开启「离开应用时自动小窗」（#238、#243）。\n- iOS 默认启用 VideoToolbox 原始帧硬解直通播放，可在设置 › 播放 切换解码方式（#243）。\n- 修复 iOS 暂停后锁屏一段时间，回到 App 换集或重试失败（#241，开发快照，需在 iOS 上实测）。\n- 修复追剧页和历史页没有内容时，上滑仍会收起底栏。\n- 修复未开启「后台播放」时，Windows 小窗贴边自动暂停和桌面端老板键暂停不生效（#249）。\n- 修复从正常界面点小窗时偶发暂停播放（#249）。\n- 红果站源收回为私有，撤出在线仓库，安装包内置并支持应用内静默云更新。\n\n版本 2.0.4+116。安装包内置红果站源，其余站源在 设置 › 站源 › 模块管理 的模块商店安装。\n\nAndroid：\n- *-arm64-v8a.apk：适用于较新的安卓设备\n- *-armeabi-v7a.apk：…",
+              "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v2.0.4-116/guoapp-2.0.4%2B116-ios-unsigned.ipa",
+              "size": 34334761,
               "minOSVersion": "15.1",
-              "releaseTag": "app-v2.0.3-115",
-              "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v2.0.3-115"
+              "releaseTag": "app-v2.0.4-116",
+              "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v2.0.4-116"
             }
           ]
         }
       ],
       "versions": [
         {
-          "version": "2.0.3",
-          "date": "2026-11-21",
-          "publishedAt": "2026-11-21T18:31:19Z",
-          "buildVersion": "115",
-          "buildNumber": "115",
-          "localizedDescription": "更新内容：\n\n- 手机上标题栏和底栏更紧凑；往下翻时收起发现页的标题和底栏，快速往回翻时恢复（#208）。\n- 修复 Windows 触摸屏上左右滑切换分类时内容偏在半路不动。\n- 下拉刷新时往回推可以收起并取消刷新，拉过触发点后不再必定刷新。\n- 外观的预设色板新增「白色」，浅色使用白底，深色使用中性色。\n- 播放失败且已有进度时，可点「从头播放」从当前集开头重试。\n- 手机上点开剧集恢复先进详情页，设置 › 播放 新增「点开剧集直接播放」开关，电视以外可用，默认关闭（#214）。\n- 设置 › 代理 可按站源单独设置连接方式，未单独设置的站源跟随全局。\n- 发现页左右滑切换分类不再等待加载，未加载完的分类显示封面骨架，并提前加载相邻分类（#215）。\n- 发现页分类、下载页标签和详情页选集分组改为跟手翻页，左右两页同时可见，分类栏下划线随手指移动；发现页每个分类各自滚动和下拉刷新（#215）。\n- 分类栏选中文字颜色改为渐变过渡（#215）。\n- 移除打开详情页时封面飞入的过渡动画。\n- Windows 小窗拖到屏幕边缘自动收起，鼠标移到边缘展开，设置 › 摸鱼 可开启（#228）。\n- Windows 新增「贴边自动暂停」，小窗贴边收起时暂停，展开后继续。\n- 设置新增「摸鱼」分类，老板键和小窗贴边设置移入其中。\n- Windows 小窗拖近屏幕边缘时吸附到边缘，不再拖出屏幕外。\n- 分集多数有标题时（如有声书章节），选集改为单列显示标题，播放页顶部显示当前分集标题（#219）。\n- 音频内容改用新的音频播放页：大封面、章节标题、进度条、倍速、上下集、选集、定时停止、下载…",
-          "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v2.0.3-115/guoapp-2.0.3%2B115-ios-unsigned.ipa",
-          "size": 34300644,
+          "version": "2.0.4",
+          "date": "2026-11-27",
+          "publishedAt": "2026-11-27T01:29:07Z",
+          "buildVersion": "116",
+          "buildNumber": "116",
+          "localizedDescription": "更新内容：\n\n- 优化桌面端和平板的有声书详情页与音频播放页布局，支持左右独立滚动、分段选择、常驻选集栏、就近浮层和音量条（#219）。\n- 优化桌面端 Esc 键返回，并新增鼠标后退侧键返回（#196）。\n- 启动时检查已安装站源的新版本，可选择更新、稍后或此版本不再提醒（#230）。\n- 模块仓库新增多组 jsDelivr 与 GitHub 镜像源，提升直连拉取与安装成功率。\n- Android 手机播放页新增「返回主页」按钮，竖屏和横屏均可一键返回，免去逐层后退（#242）。\n- iPhone 和 iPad 支持系统画中画，进入系统小窗后隐藏页内播放器画面，可在播放器手动打开或在设置 › 播放 开启「离开应用时自动小窗」（#238、#243）。\n- iOS 默认启用 VideoToolbox 原始帧硬解直通播放，可在设置 › 播放 切换解码方式（#243）。\n- 修复 iOS 暂停后锁屏一段时间，回到 App 换集或重试失败（#241，开发快照，需在 iOS 上实测）。\n- 修复追剧页和历史页没有内容时，上滑仍会收起底栏。\n- 修复未开启「后台播放」时，Windows 小窗贴边自动暂停和桌面端老板键暂停不生效（#249）。\n- 修复从正常界面点小窗时偶发暂停播放（#249）。\n- 红果站源收回为私有，撤出在线仓库，安装包内置并支持应用内静默云更新。\n\n版本 2.0.4+116。安装包内置红果站源，其余站源在 设置 › 站源 › 模块管理 的模块商店安装。\n\nAndroid：\n- *-arm64-v8a.apk：适用于较新的安卓设备\n- *-armeabi-v7a.apk：…",
+          "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v2.0.4-116/guoapp-2.0.4%2B116-ios-unsigned.ipa",
+          "size": 34334761,
           "minOSVersion": "15.1",
-          "releaseTag": "app-v2.0.3-115",
-          "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v2.0.3-115"
+          "releaseTag": "app-v2.0.4-116",
+          "source": "https://github.com/Xanerix/guoapp/releases/tag/app-v2.0.4-116"
         }
       ],
-      "version": "2.0.3",
-      "versionDate": "2026-11-21",
-      "versionDescription": "更新内容：\n\n- 手机上标题栏和底栏更紧凑；往下翻时收起发现页的标题和底栏，快速往回翻时恢复（#208）。\n- 修复 Windows 触摸屏上左右滑切换分类时内容偏在半路不动。\n- 下拉刷新时往回推可以收起并取消刷新，拉过触发点后不再必定刷新。\n- 外观的预设色板新增「白色」，浅色使用白底，深色使用中性色。\n- 播放失败且已有进度时，可点「从头播放」从当前集开头重试。\n- 手机上点开剧集恢复先进详情页，设置 › 播放 新增「点开剧集直接播放」开关，电视以外可用，默认关闭（#214）。\n- 设置 › 代理 可按站源单独设置连接方式，未单独设置的站源跟随全局。\n- 发现页左右滑切换分类不再等待加载，未加载完的分类显示封面骨架，并提前加载相邻分类（#215）。\n- 发现页分类、下载页标签和详情页选集分组改为跟手翻页，左右两页同时可见，分类栏下划线随手指移动；发现页每个分类各自滚动和下拉刷新（#215）。\n- 分类栏选中文字颜色改为渐变过渡（#215）。\n- 移除打开详情页时封面飞入的过渡动画。\n- Windows 小窗拖到屏幕边缘自动收起，鼠标移到边缘展开，设置 › 摸鱼 可开启（#228）。\n- Windows 新增「贴边自动暂停」，小窗贴边收起时暂停，展开后继续。\n- 设置新增「摸鱼」分类，老板键和小窗贴边设置移入其中。\n- Windows 小窗拖近屏幕边缘时吸附到边缘，不再拖出屏幕外。\n- 分集多数有标题时（如有声书章节），选集改为单列显示标题，播放页顶部显示当前分集标题（#219）。\n- 音频内容改用新的音频播放页：大封面、章节标题、进度条、倍速、上下集、选集、定时停止、下载…",
-      "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v2.0.3-115/guoapp-2.0.3%2B115-ios-unsigned.ipa",
-      "size": 34300644,
+      "version": "2.0.4",
+      "versionDate": "2026-11-27",
+      "versionDescription": "更新内容：\n\n- 优化桌面端和平板的有声书详情页与音频播放页布局，支持左右独立滚动、分段选择、常驻选集栏、就近浮层和音量条（#219）。\n- 优化桌面端 Esc 键返回，并新增鼠标后退侧键返回（#196）。\n- 启动时检查已安装站源的新版本，可选择更新、稍后或此版本不再提醒（#230）。\n- 模块仓库新增多组 jsDelivr 与 GitHub 镜像源，提升直连拉取与安装成功率。\n- Android 手机播放页新增「返回主页」按钮，竖屏和横屏均可一键返回，免去逐层后退（#242）。\n- iPhone 和 iPad 支持系统画中画，进入系统小窗后隐藏页内播放器画面，可在播放器手动打开或在设置 › 播放 开启「离开应用时自动小窗」（#238、#243）。\n- iOS 默认启用 VideoToolbox 原始帧硬解直通播放，可在设置 › 播放 切换解码方式（#243）。\n- 修复 iOS 暂停后锁屏一段时间，回到 App 换集或重试失败（#241，开发快照，需在 iOS 上实测）。\n- 修复追剧页和历史页没有内容时，上滑仍会收起底栏。\n- 修复未开启「后台播放」时，Windows 小窗贴边自动暂停和桌面端老板键暂停不生效（#249）。\n- 修复从正常界面点小窗时偶发暂停播放（#249）。\n- 红果站源收回为私有，撤出在线仓库，安装包内置并支持应用内静默云更新。\n\n版本 2.0.4+116。安装包内置红果站源，其余站源在 设置 › 站源 › 模块管理 的模块商店安装。\n\nAndroid：\n- *-arm64-v8a.apk：适用于较新的安卓设备\n- *-armeabi-v7a.apk：…",
+      "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v2.0.4-116/guoapp-2.0.4%2B116-ios-unsigned.ipa",
+      "size": 34334761,
       "minOSVersion": "15.1"
     }
   ],
@@ -1697,7 +1697,7 @@
       "title": "源已建立",
       "identifier": "source-created",
       "caption": "收录 30 款应用，IPA 直连各项目 GitHub Release。",
-      "date": "2026-11-26",
+      "date": "2026-11-27",
       "tintColor": "#7C5CFF",
       "notify": false
     }

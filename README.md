@@ -47,7 +47,7 @@ https://github.com/laincat/AltStore/releases/download/latest/apps.json
 | Aidoku | `app.aidoku.Aidoku` | 0.9 | iOS 15.0+ | 无 | [Aidoku/Aidoku](https://github.com/Aidoku/Aidoku) |
 | AirCard | `com.mak5er.aircard` | 1.3.2 | iOS 18.0+ | 无 | [Mak5er/AirCard-iOS](https://github.com/Mak5er/AirCard-iOS) |
 | AniBaka | `ani.baka` | 5.2.5 | iOS 13.0+ | 无 | [AniBakaBaka/AniBaka](https://github.com/AniBakaBaka/AniBaka) |
-| AniCh | `app.anich` | 1.5.27 | iOS 12.0+ | 无 | [Sle2p/AniCh](https://github.com/Sle2p/AniCh) |
+| AniCh | `app.anich` | 1.5.28 | iOS 12.0+ | 无 | [Sle2p/AniCh](https://github.com/Sle2p/AniCh) |
 | AnimeFlow | `com.ligg.animeflow` | 2.7.0 | iOS 15.0+ | 无 | [openAnimeFlow/AnimeFlow](https://github.com/openAnimeFlow/AnimeFlow) |
 | Animeko | `org.animeko.animeko` | 6.4.1 | iOS 16.0+ | 6.4.0 | [open-ani/animeko](https://github.com/open-ani/animeko) |
 | ARMSX2 Nightly | `com.armsx2.ios.nightly` | 2.6.1-nightly.20261125.2101 | iOS 17.4+ | 无 | [ARMSX2/ARMSX2](https://github.com/ARMSX2/ARMSX2) |
@@ -73,7 +73,7 @@ https://github.com/laincat/AltStore/releases/download/latest/apps.json
 | VeneraNext | `com.github.cyrilpeng.veneranext` | 1.18.5 | iOS 14.0+ | 无 | [CyrilPeng/Venera-Next](https://github.com/CyrilPeng/Venera-Next) |
 | VeneraX | `io.github.kyosee.venera` | 3.0.2 | iOS 15.1+ | 无 | [Kyosee/VeneraX](https://github.com/Kyosee/VeneraX) |
 | 大富翁4重制版 | `pro.areu.rich4` | 1.3.0 | iOS 15.0+ | 无 | [iam567/rich4-renew-app](https://github.com/iam567/rich4-renew-app) |
-| 真果鉴 | `com.yingshib.xg` | 2.0.3 | iOS 15.1+ | 无 | [Xanerix/guoapp](https://github.com/Xanerix/guoapp) |
+| 真果鉴 | `com.yingshib.xg` | 2.0.4 | iOS 15.1+ | 无 | [Xanerix/guoapp](https://github.com/Xanerix/guoapp) |
 <!-- apps:end -->
 
 > - 版本、最低系统与测试版标记都取自 IPA 包内元数据，不是抄上游 README。

@@ -18,7 +18,7 @@
 | Aidoku | 0.9 | 无 | 无预发布 |
 | AirCard | 1.3.2 | 无 | 无预发布 |
 | AniBaka | 5.2.5 | 无 | 无预发布 |
-| AniCh | 1.5.27 | 无 | 无预发布 |
+| AniCh | 1.5.28 | 无 | 无预发布 |
 | AnimeFlow | 2.7.0 | 无 | 无预发布 |
 | Animeko | 6.4.1 | v6.4.0-beta02 (2026-10-22) | 收录（nightly 轨道） |
 | ARMSX2 Nightly | 2.6.1-nightly.20261125.2101 | nightly-20261126 (2026-11-26) | 以预览版作为稳定版 |
@@ -44,7 +44,7 @@
 | VeneraNext | 1.18.5 | v1.18.4-rc.3 (2026-11-16) | 不收：比稳定版旧 |
 | VeneraX | 3.0.2 | mobile-3.0.2-beta.3 (2026-11-22) | 不收：该预发布没有 iOS 包 |
 | 大富翁4重制版 | 1.3.0 | 无 | 无预发布 |
-| 真果鉴 | 2.0.3 | windows-native-deps (2026-11-04) | 不收：该预发布没有 iOS 包 |
+| 真果鉴 | 2.0.4 | windows-native-deps (2026-11-04) | 不收：该预发布没有 iOS 包 |
 <!-- nightly:end -->
 
 > 这张表由 `tools/render_docs.py` 按 `apps.json` 与 `cache/releases.json` 生成，每轮自动化后刷新：

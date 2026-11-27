@@ -1,6 +1,25 @@
 {
   "zxsos/HGhubX": [
     {
+      "tag": "test-pre",
+      "name": "HGhubX Test Preview (2407895)",
+      "pre": true,
+      "draft": false,
+      "date": "2026-11-26",
+      "published_at": "2026-11-26T15:05:45Z",
+      "body": "# HGhubX Test Preview\n\n基于 `main`（`57ad208`）自动合成的全平台预览构建（更新时间：`2026-11-27T01:18:20Z`，测试提交：`2407895`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（4）\n1. #281 feat(playback,settings): add AI picture enhancement with stabilized detail grain (#279)（@zxsos，`fbf3cc5`）\n2. #282 feat(desktop,source): register hghubx deep-link scheme and single-instance forwarding（@zxsos，`d7c9042`）\n3. #289 feat(account,ui): remove duplicate favorite refresh button and scope pull-to-refresh（@zxsos，`40e5d01`）\n4. #290 feat(feed,storage): expand home random paging and unseen-first shuffling（@zxsos，`83d75b8`）\n\n## 自动跳过的 PR（1）\n- #284 ci: post release assets to Telegram group on publish（@zxsos）：仅涉及文档或工作流变更，不影响客户端构建，已跳过\n",
+      "ipas": [
+        {
+          "name": "HGhubX_3.0.0_ios.ipa",
+          "size": 5166480,
+          "url": "https://github.com/zxsos/HGhubX/releases/download/test-pre/HGhubX_3.0.0_ios.ipa",
+          "id": 798457669,
+          "updated_at": "2026-11-27T01:31:16Z",
+          "digest": "sha256:7e897e192e3942988cedfb293bb467268d7498c377d89fcadc915c3237d93a4d"
+        }
+      ]
+    },
+    {
       "tag": "v3.0.0",
       "name": "v3.0.0",
       "pre": false,
@@ -28,25 +47,6 @@
       "published_at": "2026-11-26T14:17:50Z",
       "body": "# HGhubX TV tv-v3.0.0\r\n\r\nHGhubX TV 3.0 正式版（`com.hghubx.tv`）：支持手机扫码同步与视频源导入，并全新调整界面配色与遥控焦点样式。\r\n\r\n## 新增与优化\r\n1. **界面视觉焕新**：改用中性深色背景与无边框按钮，遥控焦点统一为白底高亮并轻微放大；货架中未选中的卡片适度压暗，详情页「播放」主按钮、剧集格、播放器控制栏、搜索键盘与启动 PIN 界面同步更新，长标题不再被截断。\r\n2. **视频源管理与离线示例试用**：支持手机局域网扫码 / 4 位 PIN 码推源、`hghubx://` 深链导入及进入时静默检查更新；引导页与「设置 → 视频源」提供「试用离线示例源」与一键「移除示例源」，方便无源状态下先体验界面布局与导航交互。\r\n3. **手机与 TV 双向同步配对**：支持一次扫码配对后同局域网双向同步片库收藏、观看进度、内容屏蔽偏好与播放设置，并在「设置 → 手机同步」管理已配对设备。\r\n4. **真实缓存清理与最高无上限档位**：TV「设置 → 缓存」支持 `128 MB` / `256 MB` / `512 MB` / `1 GB` / `无上限` 5 档调节与真实清理释放，保留本机片库、同步记录与启动 PIN。\r\n5. **关于页图标与包体积优化**：「设置 → 关于」展示正式应用 Logo；启用 R8 资源裁剪与原生库压缩，Android TV APK 体积大幅缩小。\r\n\r\n## 修复\r\n1. **修复 Android TV 启动闪退（#276）**：原地替换模板默认 `FileProvider` 声明，消除部分设备上因重复 `ContentProvider` 导致的开机崩溃。\r\n2. **请求连接池与 DoH 回退（#266）**：复用底层 HTTP 连接池并支持受控 DoH 回退，改善复杂网络下的线路失败与误报。\r\n\r\n## 安装与兼容提示\r\n- Android TV 按 ABI 分包提供 `HGhubX-TV_3.0.0_arm64.apk`、`HGhubX-TV_3.0.0_arm.apk`、`HGhubX-TV_3.0.0_x86_64.apk`（`com.hghubx.tv`，`versionCode=3000000`）。\r\n- 沿用既有签名证书与版本序列，支持覆盖安装并保留本机片库、观看记录、启动 PIN 与偏好设置；从 2.x 升级后首次需通过手机扫码或 `hghubx://` 深链导入视频源。\r\n\r\n## 致谢\r\n- 感谢 @zxsos、@makisekurisu-jp 与社区成员的测试反馈。\r\n\r\n## 验证\r\n- 发版前本地完成 `make test-tv`（版本一致性校验与 `VITE_APP_EDITION=tv pnpm build`）与 TV 遥控器验收套件（14/14 场景），并由 GitHub Actions `TV Release` 工作流构建签名发布。\r\n",
       "ipas": []
-    },
-    {
-      "tag": "test-pre",
-      "name": "HGhubX Test Preview (52c8565)",
-      "pre": true,
-      "draft": false,
-      "date": "2026-11-26",
-      "published_at": "2026-11-26T15:05:45Z",
-      "body": "# HGhubX Test Preview\n\n基于 `main`（`e651ce8`）自动合成的全平台预览构建（更新时间：`2026-11-26T18:17:23Z`，测试提交：`52c8565`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（3）\n1. #281 feat(playback,settings): 移植 #279 画面增强与细节纹理周期噪点修复（@zxsos，`a29b3b7`）\n2. #282 feat(desktop,test): 接入桌面端 hghubx:// 深链跳转并修复 gesture 播放测试视口（@zxsos，`8a273bd`）\n3. #284 ci: post release assets to Telegram group on publish（@zxsos，`16281c6`）\n",
-      "ipas": [
-        {
-          "name": "HGhubX_3.0.0_ios.ipa",
-          "size": 5162627,
-          "url": "https://github.com/zxsos/HGhubX/releases/download/test-pre/HGhubX_3.0.0_ios.ipa",
-          "id": 797189096,
-          "updated_at": "2026-11-26T18:28:05Z",
-          "digest": "sha256:f64026f78a91c185a2dec3202b0660a046b9908429b2b7a2f6e66c42e1dd30c2"
-        }
-      ]
     }
   ],
   "openAnimeFlow/AnimeFlow": [
@@ -815,6 +815,25 @@
   ],
   "Sle2p/AniCh": [
     {
+      "tag": "1.5.28",
+      "name": "1.5.28",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-27",
+      "published_at": "2026-11-27T01:01:29Z",
+      "body": "- 播放信息中新增软硬解码状态显示功能\r\n- 画廊来源地址支持点击复制\r\n- 修复画廊每次打开详情评论都会重新加载的问题\r\n- 修复部分线路花屏或缺少前几秒画面的问题\r\n- 修复处于画中画模式时弹幕开关被隐藏的问题\r\n- 修复打开线路面板导致界面卡死的问题\r\n- 修复线路面板部分视频无法正确探测大小的问题\r\n- 修复线路面板无法正确显示错误码的问题\r\n- 修复触控板无法双指滑动滚动的问题 (#107)\r\n- 升级battery_plus的版本 (#106)",
+      "ipas": [
+        {
+          "name": "anich-ios-no_sign-1.5.28.ipa",
+          "size": 41232889,
+          "url": "https://github.com/Sle2p/AniCh/releases/download/1.5.28/anich-ios-no_sign-1.5.28.ipa",
+          "id": 798340896,
+          "updated_at": "2026-11-27T00:47:10Z",
+          "digest": "sha256:8c61d4aeb70a095b40f83ba620419043eadee9f0abbf4a5296bd5a1a2b998482"
+        }
+      ]
+    },
+    {
       "tag": "1.5.27",
       "name": "1.5.27",
       "pre": false,
@@ -1174,28 +1193,28 @@
           "digest": "sha256:cfdb5ec1d275508ec07a613fcaa64de56e744ef3692cc237f986f025dcd8de68"
         }
       ]
-    },
-    {
-      "tag": "1.5.8",
-      "name": "1.5.8",
-      "pre": false,
-      "draft": false,
-      "date": "2026-03-08",
-      "published_at": "2026-03-08T07:35:04Z",
-      "body": "- 新增自定义缓冲时长设置\r\n- 新增音频输出驱动设置\r\n- 新增自动同步(--autosync)设置\r\n- 移除画廊以降低服务器压力\r\n- 默认开启弹幕速度跟随倍速\r\n- 修复弹幕速度跟随倍速设置持久化失效的问题",
-      "ipas": [
-        {
-          "name": "anich-ios-no_sign-1.5.8.ipa",
-          "size": 36063403,
-          "url": "https://github.com/Sle2p/AniCh/releases/download/1.5.8/anich-ios-no_sign-1.5.8.ipa",
-          "id": 369323361,
-          "updated_at": "2026-03-08T07:16:49Z",
-          "digest": "sha256:b84ce03d80730577a593c0072c0d7a32791d964dd713819defc9250341049005"
-        }
-      ]
     }
   ],
   "Xanerix/guoapp": [
+    {
+      "tag": "app-v2.0.4-116",
+      "name": "小果影视 2.0.4+116",
+      "pre": false,
+      "draft": false,
+      "date": "2026-11-27",
+      "published_at": "2026-11-27T01:29:07Z",
+      "body": "更新内容：\n\n- 优化桌面端和平板的有声书详情页与音频播放页布局，支持左右独立滚动、分段选择、常驻选集栏、就近浮层和音量条（#219）。\n- 优化桌面端 Esc 键返回，并新增鼠标后退侧键返回（#196）。\n- 启动时检查已安装站源的新版本，可选择更新、稍后或此版本不再提醒（#230）。\n- 模块仓库新增多组 jsDelivr 与 GitHub 镜像源，提升直连拉取与安装成功率。\n- Android 手机播放页新增「返回主页」按钮，竖屏和横屏均可一键返回，免去逐层后退（#242）。\n- iPhone 和 iPad 支持系统画中画，进入系统小窗后隐藏页内播放器画面，可在播放器手动打开或在设置 › 播放 开启「离开应用时自动小窗」（#238、#243）。\n- iOS 默认启用 VideoToolbox 原始帧硬解直通播放，可在设置 › 播放 切换解码方式（#243）。\n- 修复 iOS 暂停后锁屏一段时间，回到 App 换集或重试失败（#241，开发快照，需在 iOS 上实测）。\n- 修复追剧页和历史页没有内容时，上滑仍会收起底栏。\n- 修复未开启「后台播放」时，Windows 小窗贴边自动暂停和桌面端老板键暂停不生效（#249）。\n- 修复从正常界面点小窗时偶发暂停播放（#249）。\n- 红果站源收回为私有，撤出在线仓库，安装包内置并支持应用内静默云更新。\n\n版本 2.0.4+116。安装包内置红果站源，其余站源在 设置 › 站源 › 模块管理 的模块商店安装。\n\nAndroid：\n- *-arm64-v8a.apk：适用于较新的安卓设备\n- *-armeabi-v7a.apk：适用于较老的安卓设备，电视推荐使用此版本\n- *-x86_64.apk：适用于模拟器\n\niOS：\n- *-ios-unsigned.ipa：未签名 IPA，可用相关工具安装\n\nWindows：\n- *-windows-x64-setup.exe：安装包，默认安装到当前用户，无需管理员权限；安装时可改为所有用户\n- *-windows-x64.zip：便携版，解压后运行 guoapp.exe；设置、记录、海报缓存和默认下载都保存在程序旁的 userdata 目录，升级时把旧版的 userdata 目录复制过来即可\n\nmacOS：\n- *-macos-universal.dmg：适用于 macOS 12 及以上的 Apple 芯片和 Intel 电脑，打开后拖入 Applications；未经公证，首次打开前在终端执行 xattr -dr com.apple.quarantine /Applications/小果影视.app\n\nAndroid 签名证书 SHA-256：39ead05821dda5e60c820919eadac0f396edfd4bbf81f764f1d4a12bca889207\n",
+      "ipas": [
+        {
+          "name": "guoapp-2.0.4+116-ios-unsigned.ipa",
+          "size": 34334761,
+          "url": "https://github.com/Xanerix/guoapp/releases/download/app-v2.0.4-116/guoapp-2.0.4%2B116-ios-unsigned.ipa",
+          "id": 798450761,
+          "updated_at": "2026-11-27T01:29:02Z",
+          "digest": "sha256:7d540c92e8ae60998b88e127fc38eaead3fd1130892749d4e0a1f5edaa7140ef"
+        }
+      ]
+    },
     {
       "tag": "app-v2.0.3-115",
       "name": "小果影视 2.0.3+115",
@@ -1657,33 +1676,6 @@
           "id": 661188875,
           "updated_at": "2026-10-21T03:04:42Z",
           "digest": "sha256:c94a5fc6ed1951b1be9985fbaae1361f6f5c3f1b435bc173399950501cb0a8bd"
-        }
-      ]
-    },
-    {
-      "tag": "app-v0.2.76-86",
-      "name": "红果鉴 / 真果鉴 0.2.76+86",
-      "pre": false,
-      "draft": false,
-      "date": "2026-10-19",
-      "published_at": "2026-10-19T03:27:16Z",
-      "body": "更新内容：\n\n- 修复剧集封面上的追剧标记挡住「共 N 集」、看不出是否更新：标记移到集数上方，两者同时可见。\n- 修复电视端榜单页遥控器移到列表后焦点卡在第一项、无法继续上下移动或返回。\n- 电视端播放页播控条显示时按返回键先收起播控条，播控条隐藏后再按返回才退出播放页。\n- 修复电视端观看记录、追剧和下载页的搜索框获得焦点后无法移出、不弹输入法：遥控器上下键可移出搜索框，按确认键重新唤起输入法，按返回键收起输入法并移出搜索框。\n\n版本 0.2.76+86。两个版本功能相同，区别只在站源范围，按需选择：\n\n- 红果鉴 hongguojian：仅红果站源\n- 真果鉴 zhenguojian：全部站源\n\nAndroid：\n- *-arm64-v8a.apk：适用于较新的安卓设备\n- *-armeabi-v7a.apk：适用于较老的安卓设备，电视推荐使用此版本\n- *-x86_64.apk：适用于模拟器\n\niOS：\n- *-ios-unsigned.ipa：未签名 IPA，可用相关工具安装\n\nWindows：\n- *-windows-x64.zip：解压后运行 hongguojian.exe 或 zhenguojian.exe\n\n签名证书 SHA-256：f819175143d1bff5b06c9bfdb4c2f6001ae73077cc8e35ce2adb43bd3f9aed92\n",
-      "ipas": [
-        {
-          "name": "hongguojian-0.2.76+86-ios-unsigned.ipa",
-          "size": 30433468,
-          "url": "https://github.com/Xanerix/guoapp/releases/download/app-v0.2.76-86/hongguojian-0.2.76%2B86-ios-unsigned.ipa",
-          "id": 655127992,
-          "updated_at": "2026-10-19T03:27:11Z",
-          "digest": "sha256:544b90c4643ba4b4ccc841d77137f5a7ad89242a3841cceb6742ab7c3812a1ed"
-        },
-        {
-          "name": "zhenguojian-0.2.76+86-ios-unsigned.ipa",
-          "size": 30435061,
-          "url": "https://github.com/Xanerix/guoapp/releases/download/app-v0.2.76-86/zhenguojian-0.2.76%2B86-ios-unsigned.ipa",
-          "id": 655128059,
-          "updated_at": "2026-10-19T03:27:13Z",
-          "digest": "sha256:f14cc2602a031ec36fb05886baf51c2664071d2fba47ac1d6fcd0ba24155ffe3"
         }
       ]
     }
