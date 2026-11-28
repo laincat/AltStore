@@ -1956,15 +1956,15 @@
   "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa": {
     "bundleIdentifier": "io.nekohasekai.swipt",
     "version": "0.1.0",
-    "buildVersion": "95",
+    "buildVersion": "96",
     "displayName": "Swipt",
     "minOSVersion": "16.4",
-    "size": 48264471,
+    "size": 48265190,
     "assetIdentity": {
-      "id": 791795485,
-      "updated_at": "2026-11-25T14:04:05Z",
-      "size": 48264471,
-      "digest": "sha256:e263964c0d438d70c7620f43fe2e9b101f1c3fa1a0b1f17d93422b7074892eed"
+      "id": 802779390,
+      "updated_at": "2026-11-28T01:41:13Z",
+      "size": 48265190,
+      "digest": "sha256:49bc5cc32ad9abc653d083f53846b0d453797c1c39baa4ff41c3a9a8fe9bae08"
     }
   },
   "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.2/ARMSX3-0.0.2.ipa": {
@@ -3085,6 +3085,20 @@
       "updated_at": "2026-11-27T19:01:13Z",
       "size": 5216729,
       "digest": "sha256:ff9058ee3a20e532be82f20b133add80a18999d660ddb53ccf1c2c6aeb7c89a1"
+    }
+  },
+  "https://github.com/Kyosee/VeneraX/releases/download/v3.0.3/VeneraX-ios-3.0.3%2B267.ipa": {
+    "bundleIdentifier": "io.github.kyosee.venera",
+    "version": "3.0.3",
+    "buildVersion": "267",
+    "displayName": "VeneraX",
+    "minOSVersion": "15.1",
+    "size": 40925901,
+    "assetIdentity": {
+      "id": 803099861,
+      "updated_at": "2026-11-28T03:46:33Z",
+      "size": 40925901,
+      "digest": "sha256:3121e60f755c48afc76242a5ef054bfb83b32804d9de0abd7e1410ea498d2a47"
     }
   }
 }
